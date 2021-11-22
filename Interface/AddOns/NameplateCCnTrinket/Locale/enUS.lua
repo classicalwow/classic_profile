@@ -1,0 +1,126 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("NameplateCCnTrinket", "enUS", true)
+
+L["Show Friendly Player"] = true
+L["CC Common Icon"] = true
+L["CC Show Monster"] = true
+L["FrameSize"] = "Icon Size"
+L["Left Frame X"] = true
+L["Right Frame X"] = true
+L["Y"] = true
+L["TargetAlpha"] = "Target Opacity"
+L["OtherAlpha"] = "non-Target Opacity"
+L["/NCT\n/NameplateCCnTrinket\n"] = true
+L["Version"] = true
+L["Author"] = true
+L["Test"] = true
+L["selectnameplate"] = "|c00008000".."NameplateCCnTrinket".." |r ".."Please select a nameplate to test"
+L["Test Desc"] = "First, select a nameplate and then press the Test button"
+L["Show Friendly Player Desc"] = "Also displayed on friendly targets"
+L["CC Common Icon Desc"] = "Marked by icon representing CC category"
+L["CC Show Monster Desc"] = "Show CC on Monster"
+L["FrameSize Desc"] = "Icon Size inc or dec(20 ~ 30 Recommended)"
+L["Left X Desc"] = "X point of Left Frame Icon"
+L["Right X Desc"] = "X point of Right Frame Icon"
+L["Y Desc"] = "Y point of Icon"
+L["TargetAlpha Desc"] = "Opacity of Target Frame"
+L["OtherAlpha Desc"] = "Opacity of non-Target Frame"
+
+L["Category"] = "LCD CC Category"
+L["Category Desc"] = "CC Diminish category based on LibClassicDurations.\n"
+
+L["FEAR"] = "FEAR"
+L["SILENCE"] = "SILENCE"
+L["INCAP"] = "INCAP"
+L["STUN"] = "STUN"
+L["HORROR"] = "HORROR"
+L["ROOT"] = "ROOT"
+L["OPENER_STUN"] = "OPENER_STUN"
+L["RANDOM_STUN"] = "RANDOM_STUN"
+L["RANDOM_ROOT"] = "RANDOM_ROOT"
+L["FROST_SHOCK"] = "FROST_SHOCK"
+L["KIDNEY_SHOT"] = "KIDNEY_SHOT"
+
+L["FEAR Desc"] = "FEAR"
+L["SILENCE Desc"] = "SILENCE"
+L["INCAP Desc"] = "INCAP"
+L["STUN Desc"] = "STUN"
+L["HORROR Desc"] = "HORROR"
+L["ROOT Desc"] = "ROOT"
+L["OPENER_STUN Desc"] = "OPENER_STUN"
+L["RANDOM_STUN Desc"] = "RANDOM_STUN"
+L["RANDOM_ROOT Desc"] = "RANDOM_ROOT"
+L["FROST_SHOCK Desc"] = "FROST_SHOCK"
+L["KIDNEY_SHOT Desc"] = "KIDNEY_SHOT"
+
+L["DRLCategory"] = "DRL CC Category"
+L["DRLCategory Desc"] = "CC Diminish category based on DRList-1.0.\n"
+
+L["incapacitate"] = true
+L["silence"] = true
+L["stun"] = true
+L["root"] = true
+L["disarm"] = true
+L["opener_stun"] = true
+L["random_stun"] = true
+L["random_root"] = true
+L["fear"] = true
+L["death_coil"] = true
+L["mind_control"] = true
+L["frost_shock"] = true
+L["entrapment"] = true
+L["charge"] = true
+L["kidney_shot"] = true
+
+L["incapacitate Desc"] = true
+L["silence Desc"] = true
+L["stun Desc"] = true
+L["root Desc"] = true
+L["disarm Desc"] = true
+L["opener_stun Desc"] = true
+L["random_stun Desc"] = true
+L["random_root Desc"] = true
+L["fear Desc"] = true
+L["death_coil Desc"] = true
+L["mind_control Desc"] = true
+L["frost_shock Desc"] = true
+L["entrapment Desc"] = true
+L["charge Desc"] = true
+L["kidney_shot Desc"] = true
+
+L["sellib"] = "CC Library"
+L["sellib Desc"] = "Choose the CC libraries to use."
+L["LibClassicDurations"] = true
+L["DRList-1.0"] = true
+
+L["Function"] = true
+L["Interrupt"] = true
+L["Interrupt Desc"] = true
+L["Racial"] = true
+L["Racial Desc"] = true
+L["Trinket"] = true
+L["Trinket Desc"] = true
+L["CC"] = true
+L["CC Desc"] = true
+L["Dispel"] = true
+L["Dispel Desc"] = true
+L["CurrentTime"] = "CC Highlight"
+L["CurrentTime Desc"] = true
+
+L["OtherScale"] = true
+L["OtherScale Desc"] = true
+L["CooldownSpiral"] = "Cooldown Spiral"
+L["CooldownSpiral Desc"] = "Toggle showing of the cooldown spiral"
+
+L["pSetting"] = "My Diminish"
+L["pSetting Desc"] = "Player Diminish Frame Setting(To use this feature, [Show Friendly Player] option in Settings must be turned on.)\n"
+L["Enable"] = true
+L["Enable Desc"] = true
+L["pxOfs"] = "X"
+L["pxOfs Desc"] = "Move to Left and Right"
+L["pyOfs"] = "Y"
+L["pyOfs Desc"] = "Move to Up and Down"
+L["pScale"] = "Scale"
+L["pScale Desc"] = "Scale"
+L["attachFrame"] = "Relative Frame"
+L["attachFrame Desc"] = "Relative to Player Diminish Frame"
+L["rightframe"] = " Please enter a valid frame name"

@@ -1,0 +1,19 @@
+
+DataStore_ReputationsDB = {
+	["profileKeys"] = {
+		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.玉石礦坑.特變電工"] = {
+				["lastUpdate"] = 1637382394,
+				["Factions"] = {
+					3175, -- [1]
+					nil, -- [2]
+					3648, -- [3]
+					7547, -- [4]
+				},
+			},
+		},
+	},
+}

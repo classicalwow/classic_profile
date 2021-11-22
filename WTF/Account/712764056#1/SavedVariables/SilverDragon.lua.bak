@@ -1,0 +1,29 @@
+
+SilverDragon3DB = {
+	["namespaces"] = {
+		["ClickTarget"] = {
+		},
+		["Marker"] = {
+		},
+		["LDB"] = {
+		},
+		["Sync"] = {
+		},
+		["Macro"] = {
+		},
+		["Tooltip"] = {
+		},
+		["Announce"] = {
+		},
+		["Scan_Targets"] = {
+		},
+	},
+	["profileKeys"] = {
+		["特變電工 - 玉石礦坑"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+SilverDragon2DB = nil

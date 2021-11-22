@@ -1,0 +1,13 @@
+
+AtlasLootClassicDB = {
+	["profileKeys"] = {
+		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040000,
+	},
+	["profiles"] = {
+		["特變電工 - 玉石礦坑"] = {
+		},
+	},
+}
