@@ -6,12 +6,12 @@ DataStore_ReputationsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1637601969,
+				["lastUpdate"] = 1637604197,
 				["Factions"] = {
-					6264, -- [1]
+					6704, -- [1]
 					nil, -- [2]
-					5967, -- [3]
-					11068, -- [4]
+					6256, -- [3]
+					11192, -- [4]
 				},
 			},
 		},

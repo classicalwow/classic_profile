@@ -6,10 +6,10 @@ weizPVPDatabase = {
 	["global"] = {
 		["Tomllamas"] = {
 			["Estimated"] = true,
-			["Class"] = "DRUID",
-			["Timestamp"] = 54579.503,
-			["Level"] = 0,
 			["Name"] = "Tomllamas",
+			["Class"] = "DRUID",
+			["Level"] = 0,
+			["Timestamp"] = 54579.503,
 		},
 	},
 }

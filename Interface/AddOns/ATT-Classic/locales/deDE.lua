@@ -3,6 +3,10 @@ if GetLocale() ~= "deDE" then return; end
 local app = select(2, ...);
 local L = app.L;
 
+--TODO: L.FACTION_MODE_TOOLTIP = "Turn this setting on if you want to see Account Mode data only for races and classes of your current faction.";
+
+--TODO: L.TOGGLE_FACTION_MODE = "Toggle Faction Mode";
+
 -- TODO
 L.SAVED_TO_DJ_INSTANCES["Violette Festung"] = "Die Violette Festung";
 L.SAVED_TO_DJ_INSTANCES["Geschmolzener Kern"] = "Der Geschmolzene Kern";
@@ -14,38 +18,100 @@ L.SAVED_TO_DJ_INSTANCES["Rubinsanktum"] = "Das Rubinsanktum";
 L.SAVED_TO_DJ_INSTANCES["Terrasse des Endlosen Frühlings"] = "Terrasse d. Endlosen Frühlings";
 L.SAVED_TO_DJ_INSTANCES["Herz der Angst"] = "Das Herz der Angst";
 
--- Dungeons
-L.ZONE_TEXT_TO_MAP_ID["Tiefschwarze Grotte"] = 221;	-- BFD
-L.ZONE_TEXT_TO_MAP_ID["Blackrocktiefen"] = 242;	-- BRD
-L.ZONE_TEXT_TO_MAP_ID["Der Blackrock"] = 35;	-- BRM
-L.ZONE_TEXT_TO_MAP_ID["Blackrockspitze"] = 250;	-- BRS
-L.ZONE_TEXT_TO_MAP_ID["Todesminen"] = 291;	-- DM/VC
-L.ZONE_TEXT_TO_MAP_ID["Die Todesminen"] = 291;	-- DM/VC
-L.ZONE_TEXT_TO_MAP_ID["Düsterbruch"] = 234;	-- Dire Maul
-L.ZONE_TEXT_TO_MAP_ID["Gnomeregan"] = 226;	-- Gnomer
-L.ZONE_TEXT_TO_MAP_ID["Maraudon"] = 280;	-- Maraudon
-L.ZONE_TEXT_TO_MAP_ID["Ragefireabgrund"] = 213;	-- RFC
-L.ZONE_TEXT_TO_MAP_ID["Die Hügel von Razorfen"] = 300;	-- RFD
-L.ZONE_TEXT_TO_MAP_ID["Der Kral von Razorfen"] = 301;	-- RFK
-L.ZONE_TEXT_TO_MAP_ID["Scholomance"] = 310;	-- SCHOLO
-L.ZONE_TEXT_TO_MAP_ID["Burg Schattenfang"] = 310;	-- SFK
-L.ZONE_TEXT_TO_MAP_ID["Das scharlachrote Kloster"] = 435;	-- SM
-L.ZONE_TEXT_TO_MAP_ID["Strathholme"] = 317;	-- STRATH
-L.ZONE_TEXT_TO_MAP_ID["Der Tempel von Atal'Hakkar"] = 220;	-- ST
-L.ZONE_TEXT_TO_MAP_ID["Uldaman"] = 230;	-- ULDA
-L.ZONE_TEXT_TO_MAP_ID["Die Höhlen des Wehklagens"] = 279;	-- WC
-L.ZONE_TEXT_TO_MAP_ID["Zul'Farrak"] = 219;	-- ZF
+local a = L.ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Tiefschwarze Grotte"] = 221,	-- Blackfathom Deeps
+	["Blackrocktiefen"] = 242,	-- Blackrock Depths
+	["Pechschwingenhort"] = 287,	-- Blackwing Lair
+	["Der Blackrock"] = 33,	-- Blackrock Mountain
+	["Blackrockspitze"] = 250,	-- Blackrock Spire
+	["Höhlen der Zeit"] = 75,	-- Caverns of Time
+	["Düsterbruch"] = 234,	-- Dire Maul
+	["Die Tiefenbahn"] = 499,	-- Deeprun Tram
+	["Gnomeregan"] = 226,	-- Gnomeregan
+	["Maraudon"] = 280,	-- Maraudon
+	["Geschmolzener Kern"] = 232,	-- Molten Core
+	["Naxxramas"] = 162,	-- Naxxramas
+	["Onyxias Hort"] = 248,	-- Onyxia's Lair
+	["Ragefireabgrund"] = 213,	-- Ragefire Chasm
+	["Die Hügel von Razorfen"] = 300,	-- Razorfen Downs
+	["Der Kral von Razorfen"] = 301,	-- Razorfen Kraul
+	["Ruinen von Ahn'Qiraj"] = 247,	-- Ruins of Ahn'Qiraj
+	["Das scharlachrote Kloster"] = 435,	-- Scarlet Monastery
+	["Scholomance"] = 476,	-- Scholomance
+	["Burg Schattenfang"] = 310,	-- Shadowfang Keep
+	["Strathholme"] = 317,	-- Stratholme
+	["Tempel von Ahn'Qiraj"] = 320,	-- Temple of Ahn'Qiraj
+	["Die Todesminen"] = 291,	-- The Deadmines
+	["Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'hakkar
+	["Der Tempel von Atal'Hakkar"] = 220,	-- The Temple of Atal'Hakkar
+	["Das Verlies"] = 225,	-- The Stockade
+	["Uldaman"] = 230,	-- Uldaman
+	["Die Höhlen des Wehklagens"] = 279,	-- Wailing Caverns
+	["Zul'Farrak"] = 219,	-- Zul'Farrak
+	["Zul'Gurub"] = 337,	-- Zul'Gurub
+	
+	-- TBC
+	["Auchenaikrypta"] = 256,	-- Auchenai Crypts
+	["Karazhan"] = 350,	-- Karazhan
+	["Gruuls Unterschlupf"] = 330,	-- Gruul's Lair
+	["Höllenfeuerbollwerk"] = 347,	-- Hellfire Ramparts
+	["Hyjalgipfel"] = 329,	-- Hyjal Summit
+	["Terrasse der Magister"] = 348,	-- Magister's Terrace
+	["Magtheridons Kammer"] = 331,	-- Magtheridon's Lair
+	["Managruft"] = 272,	-- Mana Tombs
+	["Vorgebirge des Alten Hügellands"] = 274,	-- Old Hillsbrad Foothills
+	["Höhle des Schlangenschreins"] = 332,	-- Serpentshrine Cavern
+	["Sethekkhallen"] = 258,	-- Sethekk Halls
+	["Schattenlabyrinth"] = 260,	-- Shadow Labyrinth
+	["Sonnenbrunnenplateau"] = 335,	-- Sunwell Plataeu
+	["Festung der Stürme"] = 334,	-- Tempest Keep
+	["Die Arkatraz"] = 269,	-- The Arcatraz
+	["Der Schwarze Morast"] = 273,	-- The Black Morass
+	["Der Blutkessel"] = 261,	-- The Blood Furnace
+	["Der Schwarze Tempel"] = 340,	-- The Black Temple
+	["Die Botanika"] = 266,	-- The Botanica
+	["Die Mechanar"] = 267,	-- The Mechanar
+	["Die Zerschmetterten Hallen"] = 246,	-- The Shattered Halls
+	["Die Sklavenunterkünfte"] = 265,	-- The Slave Pens
+	["Die Dampfkammer"] = 263,	-- The Steamvault
+	["Der Tiefensumpf"] = 262,	-- The Underbog
+	["Zul'Aman"] = 333,	-- Zul'Aman
+})
+do a[key] = value; end
 
-local a = L.NPC_ID_NAMES;
+local a = L.ALT_ZONE_TEXT_TO_MAP_ID;
+wipe(a);
+for key,value in pairs({
+	-- Classic
+	["Ahn'Qiraj"] = 320,	-- Ahn'Qiraj
+	["Todesminen"] = 291,	-- Deadmines
+	["Tore von Ahn'Qiraj"] = 1451,	-- Gates of Ahn'Qiraj
+	["Festung der Stürme"] = 334,	-- The Eye
+})
+do a[key] = value; end
+
+
+local a = L.ALT_PROFESSION_TEXT_TO_ID;
+for key,value in pairs({
+	["Ingenieurskunst"] = 4036,	-- Engineering
+	["Erste Hilfe"] = 3273,	-- First Aid
+	["Lederverarbeitung"] = 2108,	-- Leatherworking
+})
+do a[key] = value; end
+
+local a = L.HEADER_NAMES;
 for key,value in pairs({
 	[-1] = "Gemeinsame Bossbeute",										-- Common Boss Drop
 })
 do a[key] = value; end
 
-local a = L.OBJECT_ID_NAMES;
+local a = app.ObjectNames;
 for key,value in pairs({
 	-- Enter translated OBJECTID's here
-    [31] = "Alte Löwenstatue",
+	[31] = "Alte Löwenstatue",
 	[34] = "Alter Henkelkrug",
 	[55] = "Ein halb aufgefressener Körper",
 	[56] = "Rolfs Leichnam",

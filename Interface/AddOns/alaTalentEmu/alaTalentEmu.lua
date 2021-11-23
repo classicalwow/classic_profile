@@ -2,6 +2,22 @@
 	by ALA @ 163UI
 --]]--
 ----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------
+local noop = function() end
+local C_ChatInfo = {
+	RegisterAddonMessagePrefix = noop,
+	IsAddonMessagePrefixRegistered = noop,
+	GetRegisteredAddonMessagePrefixes = noop,
+	SendAddonMessage = noop,
+};
+local RegisterAddonMessagePrefix = noop
+local IsAddonMessagePrefixRegistered = noop
+local GetRegisteredAddonMessagePrefixes = noop
+local SendAddonMessage = noop
+----------------------------------------------------------------
+
+
 local ADDON, NS = ...;
 _G.__ala_meta__ = _G.__ala_meta__ or {  };
 __ala_meta__.emu = NS;

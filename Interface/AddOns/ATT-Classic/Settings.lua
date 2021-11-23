@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 --                        A L L   T H E   T H I N G S                         --
 --------------------------------------------------------------------------------
---				Copyright 2017-2019 Dylan Fortune (Crieve-Sargeras)           --
+--				Copyright 2017-2021 Dylan Fortune (Crieve-Sargeras)           --
 --------------------------------------------------------------------------------
 local app = select(2, ...);
 local L = app.L;
@@ -10,6 +10,7 @@ local L = app.L;
 BINDING_HEADER_ATTC = L["TITLE"];
 BINDING_NAME_ATTC_TOGGLEACCOUNTMODE = L["TOGGLE_ACCOUNT_MODE"];
 BINDING_NAME_ATTC_TOGGLEDEBUGMODE = L["TOGGLE_DEBUG_MODE"];
+BINDING_NAME_ATTC_TOGGLEFACTIONMODE = L["TOGGLE_FACTION_MODE"];
 
 BINDING_HEADER_ATTC_PREFERENCES = L["PREFERENCES"];
 BINDING_NAME_ATTC_TOGGLECOMPLETEDTHINGS = L["TOGGLE_COMPLETEDTHINGS"];
@@ -27,15 +28,16 @@ BINDING_NAME_ATTC_TOGGLERANDOM = L["TOGGLE_RANDOM"];
 BINDING_NAME_ATTC_REROLL_RANDOM = L["REROLL_RANDOM"];
 
 -- The Settings Frame
-local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", UIParent );
+local settings = CreateFrame("FRAME", app:GetName() .. "-Settings", InterfaceOptionsFramePanelContainer or UIParent, BackdropTemplateMixin and "BackdropTemplate");
 app.Settings = settings;
-settings.name = "ATT-Classic";
+settings.name = app:GetName();
 settings.MostRecentTab = nil;
+settings:Hide();
 settings.Tabs = {};
 settings:SetBackdrop({
-	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg", 
-	edgeFile = "Interface/Tooltips/UI-Tooltip-Border", 
-	tile = false, edgeSize = 16, 
+	bgFile = "Interface/RAIDFRAME/UI-RaidFrame-GroupBg",
+	edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
+	tile = false, edgeSize = 16,
 	insets = { left = 4, right = 4, top = 4, bottom = 4 }
 });
 settings:SetBackdropColor(0, 0, 0, 1);
@@ -49,27 +51,30 @@ settings.Open = function(self)
 		InterfaceOptionsFrame_OpenToCategory(self.name);
 	end
 end
+settings:SetScript("OnShow", function(self)
+	self:Refresh();
+end);
 
 -- Music / Sound Management (You can add your own sounds for this if you want.)
 settings.AUDIO_COMPLETE_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\complete1.ogg",
+	app.asset("complete1.ogg"),
 };
 settings.AUDIO_DEATH_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\death.ogg",
+	app.asset("death.ogg"),
 };
 settings.AUDIO_FANFARE_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare1.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare2.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare3.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare4.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare5.ogg",
-	"Interface\\Addons\\ATT-Classic\\assets\\fanfare6.ogg",
+	app.asset("fanfare1.ogg"),
+	app.asset("fanfare2.ogg"),
+	app.asset("fanfare3.ogg"),
+	app.asset("fanfare4.ogg"),
+	app.asset("fanfare5.ogg"),
+	app.asset("fanfare6.ogg"),
 };
 settings.AUDIO_RAREFIND_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\rarefind1.ogg",
+	app.asset("rarefind1.ogg"),
 };
 settings.AUDIO_REMOVE_TABLE = {
-	"Interface\\Addons\\ATT-Classic\\assets\\remove1.ogg",
+	app.asset("remove1.ogg"),
 };
 
 -- Settings Class
@@ -77,11 +82,19 @@ local GeneralSettingsBase = {
 	__index = {
 		["AccountMode"] = false,
 		["DebugMode"] = false,
+		["FactionMode"] = false,
+		["AccountWide:Deaths"] = true,
+		["AccountWide:Exploration"] = false,
 		["AccountWide:FlightPaths"] = true,
+		["AccountWide:PVPRanks"] = false,
 		["AccountWide:Quests"] = false,
 		["AccountWide:Recipes"] = true,
 		["AccountWide:Reputations"] = true,
+		["Thing:Deaths"] = true,
+		["Thing:Exploration"] = true,
 		["Thing:FlightPaths"] = true,
+		["Thing:Loot"] = false,
+		["Thing:PVPRanks"] = false,
 		["Thing:Quests"] = true,
 		["Thing:Recipes"] = true,
 		["Thing:Reputations"] = true,
@@ -91,7 +104,7 @@ local GeneralSettingsBase = {
 };
 local FilterSettingsBase = {
 	__index = {
-		
+
 	},
 };
 local TooltipSettingsBase = {
@@ -101,30 +114,59 @@ local TooltipSettingsBase = {
 		["Celebrate"] = true,
 		["Channel"] = "master",
 		["ClassRequirements"] = true,
+		["Coordinates"] = true,
 		["Descriptions"] = true,
 		["DisplayInCombat"] = true,
 		["Enabled"] = true,
-		["MinimapButton"] = true,
-		["MinimapSize"] = 36,
-		["MinimapStyle"] = true,
-		["Models"] = true,
+		["KnownBy"] = true,
 		["Locations"] = 5,
 		["MainListScale"] = 1,
 		["MiniListScale"] = 1,
+		["MinimapButton"] = true,
+		["MinimapSize"] = 36,
+		["MinimapStyle"] = false,
+		["Models"] = true,
+		["Objectives"] = true,
 		["PlayDeathSound"] = false,
 		["Precision"] = 2,
 		["Progress"] = true,
 		["QuestGivers"] = true,
 		["RaceRequirements"] = true,
 		["Report:Collected"] = true,
+		["Report:CompletedQuests"] = false,
 		["ShowIconOnly"] = false,
+		["Show:CraftedItems"] = false,
+		["Show:OtherCharacterQuests"] = false,
+		["Show:Recipes"] = false,
 		["Show:Remaining"] = false,
+		["Show:SpellRanks"] = true,
+		["SoftReserves"] = true,
+		["SoftReservePersistence"] = false,
 		["SourceLocations"] = true,
 		["SourceLocations:Completed"] = true,
 		["SourceLocations:Creatures"] = true,
 		["SourceLocations:Things"] = true,
 		["SummarizeThings"] = true,
 		["Warn:Removed"] = true,
+	},
+};
+local UnobtainableSettingsBase = {
+	__index = {
+		[1] = false,	-- Never Implemented
+		[2] = false,	-- Removed From Game
+
+		-- Seasonal Filters
+		[1000] = false,	-- Brewfest
+		[1001] = false,	-- Children's Week
+		[1002] = false,	-- Day of the Dead
+		[1003] = false,	-- Feast of Winter Veil
+		[1004] = false,	-- Hallow's End
+		[1005] = false,	-- Harvest Festival
+		[1006] = false,	-- Love is in the Air (Valentine's Day)
+		[1007] = false,	-- Lunar Festival
+		[1008] = false,	-- Midsummer Fire Festival
+		[1010] = false,	-- Noblegarden
+		[1011] = false,	-- Pirate's Day
 	},
 };
 local OnClickForTab = function(self)
@@ -146,20 +188,22 @@ local OnClickForTab = function(self)
 end;
 settings.Initialize = function(self)
 	PanelTemplates_SetNumTabs(self, #self.Tabs);
-	
+
 	-- Assign the default settings
 	if not ATTClassicSettings then ATTClassicSettings = {}; end
 	if not ATTClassicSettings.General then ATTClassicSettings.General = {}; end
 	if not ATTClassicSettings.Tooltips then ATTClassicSettings.Tooltips = {}; end
+	if not ATTClassicSettings.Unobtainables then ATTClassicSettings.Unobtainables = {}; end
 	setmetatable(ATTClassicSettings.General, GeneralSettingsBase);
 	setmetatable(ATTClassicSettings.Tooltips, TooltipSettingsBase);
-	
+	setmetatable(ATTClassicSettings.Unobtainables, UnobtainableSettingsBase);
+
 	-- Assign the preset filters for your character class as the default states
 	if not ATTClassicSettingsPerCharacter then ATTClassicSettingsPerCharacter = {}; end
 	if not ATTClassicSettingsPerCharacter.Filters then ATTClassicSettingsPerCharacter.Filters = {}; end
 	setmetatable(ATTClassicSettingsPerCharacter.Filters, FilterSettingsBase);
 	FilterSettingsBase.__index = app.Presets[app.Class] or app.Presets.ALL;
-	
+
 	self.LocationsSlider:SetValue(self:GetTooltipSetting("Locations"));
 	self.MainListScaleSlider:SetValue(self:GetTooltipSetting("MainListScale"));
 	self.MiniListScaleSlider:SetValue(self:GetTooltipSetting("MiniListScale"));
@@ -172,9 +216,8 @@ settings.Initialize = function(self)
 		app.Minimap:Hide();
 	end
 	OnClickForTab(self.Tabs[1]);
-	self:Refresh();
 	self:UpdateMode();
-	
+
 	if self:GetTooltipSetting("Auto:MainList") then
 		app:OpenMainList();
 	end
@@ -197,9 +240,13 @@ settings.GetModeString = function(self)
 		mode = "Debug " .. mode;
 	else
 		if self:Get("AccountMode") then
-			mode = "Account " .. mode;
+			if self:Get("FactionMode") then
+				mode = FACTION .. " " .. mode;
+			else
+				mode = "Account " .. mode;
+			end
 		end
-		
+
 		local things = {};
 		local thingCount = 0;
 		local totalThingCount = 0;
@@ -244,6 +291,9 @@ end
 settings.GetTooltipSetting = function(self, setting)
 	return ATTClassicSettings.Tooltips[setting];
 end
+settings.GetUnobtainableFilter = function(self, u)
+	return ATTClassicSettings.Unobtainables[u];
+end
 settings.Set = function(self, setting, value)
 	ATTClassicSettings.General[setting] = value;
 	self:Refresh();
@@ -257,6 +307,11 @@ settings.SetTooltipSetting = function(self, setting, value)
 	ATTClassicSettings.Tooltips[setting] = value;
 	wipe(app.searchCache);
 	self:Refresh();
+end
+settings.SetUnobtainableFilter = function(self, u, value)
+	ATTClassicSettings.Unobtainables[u] = value;
+	self:Refresh();
+	app:RefreshData();
 end
 settings.SetPersonal = function(self, setting, value)
 	ATTClassicSettingsPerCharacter[setting] = value;
@@ -292,7 +347,7 @@ settings.CreateTab = function(self, text)
 	return tab;
 end
 settings.ShowCopyPasteDialog = function(self)
-	app:ShowPopupDialogWithEditBox(nil, self:GetText());
+	app:ShowPopupDialogWithEditBox("Ctrl+A, Ctrl+C to Copy to your Clipboard.", self:GetText(), nil, 10);
 end
 
 settings.SetAccountMode = function(self, accountMode)
@@ -311,6 +366,15 @@ settings.SetDebugMode = function(self, debugMode)
 end
 settings.ToggleDebugMode = function(self)
 	self:SetDebugMode(not self:Get("DebugMode"));
+end
+settings.SetFactionMode = function(self, factionMode)
+	self:Set("FactionMode", factionMode);
+	self:UpdateMode();
+	if factionMode then app.RefreshCollections(); end
+	app:RefreshData();
+end
+settings.ToggleFactionMode = function(self)
+	self:SetFactionMode(not self:Get("FactionMode"));
 end
 settings.SetCompletedThings = function(self, checked)
 	self:Set("Show:CompletedGroups", checked);
@@ -354,13 +418,19 @@ settings.UpdateMode = function(self)
 		app.GroupFilter = app.NoFilter;
 		app.SeasonalItemFilter = app.NoFilter;
 		app.VisibilityFilter = app.NoFilter;
-		
+
+		app.AccountWideDeaths = true;
+		app.AccountWideExploration = true;
 		app.AccountWideFlightPaths = true;
+		app.AccountWidePVPRanks = true;
 		app.AccountWideQuests = true;
 		app.AccountWideRecipes = true;
 		app.AccountWideReputations = true;
-		
+
+		app.CollectibleExploration = true;
 		app.CollectibleFlightPaths = true;
+		app.CollectibleLoot = true;
+		app.CollectiblePVPRanks = true;
 		app.CollectibleQuests = true;
 		app.CollectibleRecipes = true;
 		app.CollectibleReputations = true;
@@ -372,25 +442,40 @@ settings.UpdateMode = function(self)
 		else
 			app.SeasonalItemFilter = app.NoFilter;
 		end
-		
+
+		app.AccountWideDeaths = self:Get("AccountWide:Deaths");
+		app.AccountWideExploration = self:Get("AccountWide:Exploration");
 		app.AccountWideFlightPaths = self:Get("AccountWide:FlightPaths");
+		app.AccountWidePVPRanks = self:Get("AccountWide:PVPRanks");
 		app.AccountWideQuests = self:Get("AccountWide:Quests");
 		app.AccountWideRecipes = self:Get("AccountWide:Recipes");
 		app.AccountWideReputations = self:Get("AccountWide:Reputations");
-		
+
+		app.CollectibleExploration = self:Get("Thing:Exploration");
 		app.CollectibleFlightPaths = self:Get("Thing:FlightPaths");
+		app.CollectibleLoot = self:Get("Thing:Loot");
+		app.CollectiblePVPRanks = self:Get("Thing:PVPRanks");
 		app.CollectibleQuests = self:Get("Thing:Quests");
 		app.CollectibleRecipes = self:Get("Thing:Recipes");
 		app.CollectibleReputations = self:Get("Thing:Reputations");
-	end
-	if self:Get("AccountMode") then
-		app.ItemTypeFilter = app.NoFilter;
-		app.ClassRequirementFilter = app.NoFilter;
-		app.RaceRequirementFilter = app.NoFilter;
-	else
-		app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
-		app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
-		app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+
+		if self:Get("AccountMode") then
+			app.ItemTypeFilter = app.NoFilter;
+			app.ClassRequirementFilter = app.NoFilter;
+			app.RequiredSkillFilter = app.NoFilter;
+			app.RequireFactionFilter = app.NoFilter;
+			if self:Get("FactionMode") then
+				app.RaceRequirementFilter = app.FilterItemClass_RequireRacesCurrentFaction;
+			else
+				app.RaceRequirementFilter = app.NoFilter;
+			end
+		else
+			app.ItemTypeFilter = app.FilterItemClass_RequireItemFilter;
+			app.ClassRequirementFilter = app.FilterItemClass_RequireClasses;
+			app.RaceRequirementFilter = app.FilterItemClass_RequireRaces;
+			app.RequiredSkillFilter = app.FilterItemClass_RequiredSkill;
+			app.RequireFactionFilter = app.FilterItemClass_RequireFaction;
+		end
 	end
 	if self:Get("Show:CompletedGroups") or self:Get("DebugMode") then
 		app.GroupVisibilityFilter = app.NoFilter;
@@ -407,12 +492,6 @@ settings.UpdateMode = function(self)
 	else
 		app.ShowIncompleteThings = app.Filter;
 	end
-	if self:Get("AccountWide:Recipes") then
-		app.RecipeChecker = app.GetDataSubMember;
-	else
-		app.RecipeChecker = app.GetTempDataSubMember;
-	end
-	
 	if self:Get("Filter:BoEs") then
 		app.ItemBindFilter = app.FilterItemBind;
 	else
@@ -424,7 +503,7 @@ settings.UpdateMode = function(self)
 		app.RequireBindingFilter = app.NoFilter;
 	end
 	app:UnregisterEvent("PLAYER_LEVEL_UP");
-	if self:Get("Filter:ByLevel") then
+	if self:Get("Filter:ByLevel") and not self:Get("DebugMode") then
 		app:RegisterEvent("PLAYER_LEVEL_UP");
 		app.GroupRequirementsFilter = app.FilterGroupsByLevel;
 	else
@@ -457,7 +536,7 @@ settings.title = f;
 f = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 f:SetPoint("TOPRIGHT", settings, "TOPRIGHT", -8, -8);
 f:SetJustifyH("RIGHT");
-f:SetText("v" .. GetAddOnMetadata("ATT-Classic", "Version"));
+f:SetText("Crieve-Atiesh\nv" .. GetAddOnMetadata("ATT-Classic", "Version"));
 f:Show();
 settings.version = f;
 
@@ -514,7 +593,7 @@ end);
 DebugModeCheckBox:SetATTTooltip("Quite literally... ALL THE THINGS IN THE GAME. PERIOD. DOT. YEAH, ALL OF IT. Even Uncollectible things like bags, consumables, reagents, etc will appear in the lists. (Even yourself! No, really. Look.)\n\nThis is for Debugging purposes only. Not intended to be used for completion tracking.\n\nThis mode bypasses all filters, including Unobtainables.");
 DebugModeCheckBox:SetPoint("TOPLEFT", ModeLabel, "BOTTOMLEFT", 0, -8);
 
-local AccountModeCheckBox = settings:CreateCheckBox("|Cff00ab00Account Mode|r (All Characters)",
+local AccountModeCheckBox = settings:CreateCheckBox("|Cff00ab00Account Mode|r",
 function(self)
 	self:SetChecked(settings:Get("AccountMode"));
 	if settings:Get("DebugMode") then
@@ -531,7 +610,22 @@ end);
 AccountModeCheckBox:SetATTTooltip("Turn this setting on if you want to track all of the Things for all of your characters regardless of class and race filters.\n\nUnobtainable filters still apply.");
 AccountModeCheckBox:SetPoint("TOPLEFT", DebugModeCheckBox, "BOTTOMLEFT", 0, 4);
 
-
+local FactionModeCheckBox = settings:CreateCheckBox("Only Current Faction",
+function(self)
+	self:SetChecked(settings:Get("FactionMode"));
+	if settings:Get("DebugMode") or not settings:Get("AccountMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetFactionMode(self:GetChecked());
+end);
+FactionModeCheckBox:SetATTTooltip(L["FACTION_MODE_TOOLTIP"]);
+FactionModeCheckBox:SetPoint("TOPLEFT", AccountModeCheckBox, "TOPLEFT", 140, 0);
 
 -- This creates the "Precision" slider.
 local PrecisionSlider = CreateFrame("Slider", "ATTPrecisionSlider", settings, "OptionsSliderTemplate");
@@ -605,6 +699,82 @@ ThingsLabel.OnRefresh = function(self)
 	end
 end;
 
+local DeathsCheckBox = settings:CreateCheckBox("Deaths / Soul Fragments",
+function(self)
+	self:SetChecked(settings:Get("Thing:Deaths"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Deaths", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+DeathsCheckBox:SetATTTooltip("Enable this option to track each time one of your characters die and show it as a Collectible section within the addon.\n\nNOTE: If you turn this off, we'll still track it, but we simply will not show the statistic unless you're in Debug Mode.");
+DeathsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+
+local DeathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Deaths"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Deaths") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Deaths", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+DeathsAccountWideCheckBox:SetATTTooltip("Most people keep this setting turned on. It may be considered insane to turn it off!");
+DeathsAccountWideCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "TOPLEFT", 220, 0);
+
+local ExplorationCheckBox = settings:CreateCheckBox("Exploration / Map Completion",
+function(self)
+	self:SetChecked(settings:Get("Thing:Exploration"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Exploration", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ExplorationCheckBox:SetATTTooltip("Enable this option to track exploration completion for outdoor maps. If you want the Explorer title, completing this in preparation for Wrath Classic will greatly help you!");
+ExplorationCheckBox:SetPoint("TOPLEFT", DeathsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ExplorationAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
+function(self)
+	self:SetChecked(settings:Get("AccountWide:Exploration"));
+	if settings:Get("DebugMode") or not settings:Get("Thing:Exploration") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("AccountWide:Exploration", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+ExplorationAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
+ExplorationAccountWideCheckBox:SetPoint("TOPLEFT", ExplorationCheckBox, "TOPLEFT", 220, 0);
+
 local FlightPathsCheckBox = settings:CreateCheckBox("Flight Paths / Ferry Stations",
 function(self)
 	self:SetChecked(settings:Get("Thing:FlightPaths"));
@@ -622,7 +792,7 @@ function(self)
 	app:RefreshData();
 end);
 FlightPathsCheckBox:SetATTTooltip("Enable this option to track flight paths and ferry stations.\n\nTo collect these, open the dialog with the flight / ferry master in each continent.\n\NOTE: Due to phasing technology, you may have to phase to the other versions of a zone to get credit for those points of interest.");
-FlightPathsCheckBox:SetPoint("TOPLEFT", ThingsLabel, "BOTTOMLEFT", 0, -8);
+FlightPathsCheckBox:SetPoint("TOPLEFT", ExplorationCheckBox, "BOTTOMLEFT", 0, 4);
 
 local FlightPathsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -643,6 +813,25 @@ end);
 FlightPathsAccountWideCheckBox:SetATTTooltip("Flight Paths tracking is only really useful per character, but do you really want to collect them all on all 50 of your characters?");
 FlightPathsAccountWideCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "TOPLEFT", 220, 0);
 
+local LootCheckBox = settings:CreateCheckBox("Loot / Drops / Items",
+function(self)
+	self:SetChecked(settings:Get("Thing:Loot"));
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:Set("Thing:Loot", self:GetChecked());
+	settings:UpdateMode();
+	app:RefreshData();
+end);
+LootCheckBox:SetATTTooltip("Enable this option to track loot.\n\nLoot being any item you can get from a mob, quest, or container. Loot that qualifies for one of the other filters will still appear in ATT if this filter is turned off.\n\nYou can change which sort of loot displays for you based on the Filters tab.\n\nDefault: Class Defaults, Disabled.");
+LootCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local QuestsCheckBox = settings:CreateCheckBox("Quests",
 function(self)
 	self:SetChecked(settings:Get("Thing:Quests"));
@@ -660,7 +849,7 @@ function(self)
 	app:RefreshData();
 end);
 QuestsCheckBox:SetATTTooltip("Enable this option to track quests.\n\nYou can right click any quest in the lists to pop out their full quest chain to show your progress and any prerequisite or breadcrumb quests.\n\nNOTE: Quests are not permanently tracked due to the nature of how Daily, Weekly, Yearly, and Repeatable Quests are tracked in the Blizzard Database.");
-QuestsCheckBox:SetPoint("TOPLEFT", FlightPathsCheckBox, "BOTTOMLEFT", 0, 4);
+QuestsCheckBox:SetPoint("TOPLEFT", LootCheckBox, "BOTTOMLEFT", 0, 4);
 
 local QuestsAccountWideCheckBox = settings:CreateCheckBox("Account Wide",
 function(self)
@@ -931,7 +1120,7 @@ end)();
 ------------------------------------------
 (function()
 local tab = settings:CreateTab("Filters");
-tab.OnRefresh = function(self) 
+tab.OnRefresh = function(self)
 	if settings:Get("DebugMode") then
 		PanelTemplates_DisableTab(settings, self:GetID());
 	else
@@ -968,7 +1157,7 @@ local ItemFilterOnRefresh = function(self)
 		self:SetAlpha(0.2);
 	end
 end;
-for i,filterID in ipairs({ 4, 5, 6, 7 }) do
+for i,filterID in ipairs({ 2, 4, 5, 6, 7 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -978,7 +1167,17 @@ end
 
 -- Weapons
 yoffset = -4;
-for i,filterID in ipairs({ 20, 29, 28  }) do
+for i,filterID in ipairs({ 20, 34, 29, 8, 28  }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Ranged Weapons
+yoffset = -4;
+for i,filterID in ipairs({ 33, 32, 31, 27  }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -988,17 +1187,7 @@ end
 
 -- Big Ole Boys
 yoffset = -4;
-for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26, 1, 8 }) do
-	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
-	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
-	filter.filterID = filterID;
-	last = filter;
-	yoffset = 6;
-end
-
--- Weird Boys
-yoffset = -4;
-for i,filterID in ipairs({ 50, 57, 34, 27 }) do
+for i,filterID in ipairs({ 21, 22, 23, 24, 25, 26 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
 	filter.filterID = filterID;
@@ -1008,12 +1197,32 @@ end
 
 -- Secondary Armor Classes
 last, xoffset, yoffset = ItemFiltersLabel, 120, -4;
-for i,filterID in ipairs({ 2, 10, 9, 33, 32, 31 }) do
+for i,filterID in ipairs({ 10, 9, 51, 52, 53 }) do
 	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
 	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", xoffset, yoffset);
 	filter.filterID = filterID;
 	last = filter;
 	xoffset = 0;
+	yoffset = 6;
+end
+
+-- Secondary Weapon Classes
+yoffset = -4;
+for i,filterID in ipairs({ 50, 57, 100, 54, 1 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
+	yoffset = 6;
+end
+
+-- Miscellaneous
+yoffset = -4;
+for i,filterID in ipairs({ 113, 55, 104, 200 }) do
+	local filter = settings:CreateCheckBox(itemFilterNames[filterID] or tostring(filterID), ItemFilterOnRefresh, ItemFilterOnClick);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.filterID = filterID;
+	last = filter;
 	yoffset = 6;
 end
 
@@ -1031,7 +1240,7 @@ f:SetScript("OnClick", function(self)
 	app:RefreshData();
 end);
 f:SetATTTooltip("Click this button to reset all of the filters to your class defaults.\n\nNOTE: Only filters that are collectible for your class can be turned on.");
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1072,7 +1281,7 @@ f:SetScript("OnClick", function(self)
 	end
 end);
 f:SetATTTooltip("Click this button to toggle all of the filters at once.");
-f.OnRefresh = function(self) 
+f.OnRefresh = function(self)
 	if settings:Get("AccountMode") or settings:Get("DebugMode") then
 		self:Disable();
 	else
@@ -1080,35 +1289,139 @@ f.OnRefresh = function(self)
 	end
 end;
 table.insert(settings.MostRecentTab.objects, f);
-
-local LegacyFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
-LegacyFiltersLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -88, -8);
-LegacyFiltersLabel:SetJustifyH("LEFT");
-LegacyFiltersLabel:SetText("Legacy / Unobtainable Filters");
-LegacyFiltersLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersLabel);
-
-local LegacyFiltersTempLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
-LegacyFiltersTempLabel:SetPoint("TOPLEFT", LegacyFiltersLabel, "BOTTOMLEFT", 0, -8);
-LegacyFiltersTempLabel:SetPoint("TOPRIGHT", LegacyFiltersLabel, "BOTTOMRIGHT", 0, -8);
-LegacyFiltersTempLabel:SetJustifyH("LEFT");
-LegacyFiltersTempLabel:SetText("|CFFFFFFFFI'm going to completely rework how our Legacy, Unobtainable, and Seasonal filters work.\n\nComing Soon™.|r");
-LegacyFiltersTempLabel:Show();
-table.insert(settings.MostRecentTab.objects, LegacyFiltersTempLabel);
 end)();
 
 ------------------------------------------
--- The "Social" Tab.					--
+-- The "Phases" Tab.					--
 ------------------------------------------
---[[
 (function()
-local tab = settings:CreateTab("Social");
-tab.OnRefresh = function(self) 
-	-- We aren't ready yet. :(
-	PanelTemplates_DisableTab(settings, self:GetID());
+local tab = settings:CreateTab("Phases");
+local currentBuild = select(4, GetBuildInfo());
+local reasons = L["UNOBTAINABLE_ITEM_REASONS"];
+tab.OnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		PanelTemplates_DisableTab(settings, self:GetID());
+	else
+		PanelTemplates_EnableTab(settings, self:GetID());
+	end
 end;
+local UnobtainableFilterOnClick = function(self)
+	settings:SetUnobtainableFilter(self.u, self:GetChecked());
+end;
+local UnobtainableOnRefresh = function(self)
+	if settings:Get("DebugMode") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:SetChecked(settings:GetUnobtainableFilter(self.u));
+
+		local minimumBuild = reasons[self.u][4];
+		if minimumBuild and minimumBuild > currentBuild then
+			self:Disable();
+			self:SetAlpha(0.2);
+		else
+			self:Enable();
+			self:SetAlpha(1);
+		end
+	end
+end;
+
+-- Update the default unobtainable states based on build version.
+for u,reason in pairs(reasons) do
+	if reason[4] then
+		if currentBuild >= reason[4] then
+			if reason[5] and currentBuild >= reason[5] then
+				UnobtainableSettingsBase.__index[u] = true;
+			else
+				UnobtainableSettingsBase.__index[u] = false;
+			end
+		else
+			UnobtainableSettingsBase.__index[u] = false;
+		end
+	end
+end
+UnobtainableSettingsBase.__index[11] = true;
+
+local ClassicPhasesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+ClassicPhasesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
+ClassicPhasesLabel:SetJustifyH("LEFT");
+ClassicPhasesLabel:SetText("|CFFAAFFAAClassic Phases|r");
+ClassicPhasesLabel:Show();
+table.insert(settings.MostRecentTab.objects, ClassicPhasesLabel);
+
+-- Classic Phases
+local last, xoffset, yoffset, offset, spacing, vspacing = ClassicPhasesLabel, 0, -4, 0, 8, 1;
+for i,o in ipairs({ { 11, 0, 0 }, {1101, spacing, -vspacing }, { 12, -spacing, -vspacing }, { 13, 0 }, { 14, 0 }, { 15, 0 }, { 1501, spacing, -vspacing }, { 1502, 0 }, { 1503, 0 }, { 1504, 0 }, { 16, -spacing, -vspacing }, { 1601, spacing, -vspacing }, { 1602, 0 }, { 1603, 0 }, }) do
+	local u = o[1];
+	offset = offset + o[2];
+	yoffset = o[3] or 6;
+	local reason = reasons[u];
+	local filter = settings:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", o[2], yoffset);
+	filter:SetScale(offset > 0 and 0.8 or 1);
+	filter.u = u;
+	last = filter;
+end
+
+local TBCPhasesLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+TBCPhasesLabel:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 148, -8);
+TBCPhasesLabel:SetJustifyH("LEFT");
+TBCPhasesLabel:SetText("|CFFAAFFAATBC Phases|r");
+TBCPhasesLabel:Show();
+table.insert(settings.MostRecentTab.objects, TBCPhasesLabel);
+
+last, xoffset, yoffset, offset = TBCPhasesLabel, 0, -4, 0;
+for i,o in ipairs({ { 17, 0, 0 }, {1701, spacing, -vspacing }, { 18, -spacing, -vspacing }, { 19, 0 }, {1901, spacing, -vspacing }, { 1902, 0 }, { 1903, 0 }, { 20, -spacing, -vspacing }, { 21, 0 }, }) do
+	local u = o[1];
+	offset = offset + o[2];
+	yoffset = o[3] or 6;
+	local reason = reasons[u];
+	local filter = settings:CreateCheckBox(reason[3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(reason[2] .. (reason[6] or ""));
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", o[2], yoffset);
+	filter:SetScale(offset > 0 and 0.8 or 1);
+	filter.u = u;
+	last = filter;
+end
+
+local SeasonalHolidayFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+SeasonalHolidayFiltersLabel:SetPoint("TOPLEFT", line, "BOTTOMRIGHT", -200, -8);
+SeasonalHolidayFiltersLabel:SetJustifyH("LEFT");
+SeasonalHolidayFiltersLabel:SetText("|CFFAAAAFFSeasonal Holiday Filters|r");
+SeasonalHolidayFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, SeasonalHolidayFiltersLabel);
+
+-- Seasonal Filters
+last, xoffset, yoffset = SeasonalHolidayFiltersLabel, 0, -4;
+for i,u in ipairs({ 1000, 1001, 1002, 1012, 1003, 1004, 1005, 1006, 1007, 1008, 1010, 1011 }) do
+	local filter = settings:CreateCheckBox(reasons[u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(reasons[u][2]);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.u = u;
+	last = filter;
+	yoffset = 6;
+end
+
+local GeneralUnobtainableFiltersLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
+GeneralUnobtainableFiltersLabel:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, -8);
+GeneralUnobtainableFiltersLabel:SetJustifyH("LEFT");
+GeneralUnobtainableFiltersLabel:SetText("|CFFFFAAAAGeneral Unobtainable Filters|r");
+GeneralUnobtainableFiltersLabel:Show();
+table.insert(settings.MostRecentTab.objects, GeneralUnobtainableFiltersLabel);
+
+-- General Unobtainable Filters
+yoffset = -4;
+last = GeneralUnobtainableFiltersLabel;
+for i,u in ipairs({ 1, 2  }) do
+	local filter = settings:CreateCheckBox(reasons[u][3] or tostring(u), UnobtainableOnRefresh, UnobtainableFilterOnClick);
+	filter:SetATTTooltip(reasons[u][2]);
+	filter:SetPoint("TOPLEFT", last, "BOTTOMLEFT", 0, yoffset);
+	filter.u = u;
+	last = filter;
+	yoffset = 6;
+end
 end)();
---]]
 
 ------------------------------------------
 -- The "Interface" Tab.					--
@@ -1202,6 +1515,56 @@ end);
 SummarizeThingsCheckBox:SetATTTooltip("Enable this option to summarize Things in the tooltip. For example, if a Thing can be turned into a Vendor for another Thing, then show that other thing in the tooltip to provide visibility for its multiple uses. If a Thing acts as a Container for a number of other Things, this option will show all of the other Things that the container Contains.\n\nWe recommend that you keep this setting turned on.");
 SummarizeThingsCheckBox:SetPoint("TOPLEFT", ShortenProgressCheckBox, "BOTTOMLEFT", -8, 4);
 
+local ShowCraftedItemsCheckBox = settings:CreateCheckBox("Show Crafted Items",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:CraftedItems"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:CraftedItems", self:GetChecked());
+end);
+ShowCraftedItemsCheckBox:SetATTTooltip("Enable this option if you want to see a list of all of the items that can be crafted by any of your characters for a reagent in its tooltip.");
+ShowCraftedItemsCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 8, 4);
+
+local ShowRecipesCheckBox = settings:CreateCheckBox("Show Recipes",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Recipes"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Recipes", self:GetChecked());
+end);
+ShowRecipesCheckBox:SetATTTooltip("Enable this option if you want to see a list of all of the recipes that can be crafted by any of your characters for a reagent in its tooltip.");
+ShowRecipesCheckBox:SetPoint("TOPLEFT", ShowCraftedItemsCheckBox, "BOTTOMLEFT", 0, 4);
+
+local ShowSpellRanksCheckBox = settings:CreateCheckBox("Show Spell Ranks",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:SpellRanks"));
+	if not settings:GetTooltipSetting("Enabled") or not settings:GetTooltipSetting("SummarizeThings") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:SpellRanks", self:GetChecked());
+end);
+ShowSpellRanksCheckBox:SetATTTooltip("Enable this option if you want to see the best spell rank of triviality for any unleveled related profession for a reagent in its tooltip.\n\nSpell Ranks of 'trivial' or lesser will not be displayed.\nWhile on Account or Debug Mode, this will show for all of your characters that you have cached in ATT.");
+ShowSpellRanksCheckBox:SetPoint("TOPLEFT", ShowRecipesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowCoordinatesCheckBox = settings:CreateCheckBox("Show Coordinates",
 function(self)
@@ -1218,7 +1581,7 @@ function(self)
 	settings:SetTooltipSetting("Coordinates", self:GetChecked());
 end);
 ShowCoordinatesCheckBox:SetATTTooltip("Enable this option if you want to see coordinates in the tooltip when hovering over an entry in the mini list.");
-ShowCoordinatesCheckBox:SetPoint("TOPLEFT", SummarizeThingsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowCoordinatesCheckBox:SetPoint("TOPLEFT", ShowSpellRanksCheckBox, "BOTTOMLEFT", -8, 4);
 
 local ShowDescriptionsCheckBox = settings:CreateCheckBox("Show Descriptions",
 function(self)
@@ -1241,6 +1604,7 @@ local ShowKnownByCheckBox = settings:CreateCheckBox("Show Known By",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("KnownBy"));
 	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
 		self:Disable();
 		self:SetAlpha(0.2);
 	else
@@ -1271,22 +1635,22 @@ end);
 ShowModelsCheckBox:SetATTTooltip("Enable this option to show models within a preview instead of the icon on the tooltip.\n\nThis option may assist you in identifying what a Rare Spawn or Vendor looks like. It might be a good idea to keep this turned on for that reason.");
 ShowModelsCheckBox:SetPoint("TOPLEFT", ShowKnownByCheckBox, "BOTTOMLEFT", 0, 4);
 
-local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
+local ShowOtherCharactersCheckBox = settings:CreateCheckBox("Show Other Characters",
 function(self)
-	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
-	if self:GetChecked() then
-		app.GetProgressText = app.GetProgressTextRemaining;
+	self:SetChecked(settings:GetTooltipSetting("Show:OtherCharacterQuests"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
 	else
-		app.GetProgressText = app.GetProgressTextDefault;
+		self:Enable();
+		self:SetAlpha(1);
 	end
 end,
 function(self)
-	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
-	-- app:RefreshData();
-	app:UpdateWindows();
+	settings:SetTooltipSetting("Show:OtherCharacterQuests", self:GetChecked());
 end);
-ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
-ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowOtherCharactersCheckBox:SetATTTooltip("Enable this option if you want to see all of the characters on your account that still need to complete a quest in its tooltip.\n\nIE: You can look at a quest item and see that it may still be useful to a different character before getting rid of it.");
+ShowOtherCharactersCheckBox:SetPoint("TOPLEFT", ShowModelsCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowClassRequirementsCheckBox = settings:CreateCheckBox("Show Class Requirements",
 function(self)
@@ -1303,7 +1667,7 @@ function(self)
 	settings:SetTooltipSetting("ClassRequirements", self:GetChecked());
 end);
 ShowClassRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of class requirements in the tooltip.");
-ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowRemainingCheckBox, "BOTTOMLEFT", -8, 4);
+ShowClassRequirementsCheckBox:SetPoint("TOPLEFT", ShowOtherCharactersCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowRaceRequirementsCheckBox = settings:CreateCheckBox("Show Race Requirements",
 function(self)
@@ -1322,6 +1686,23 @@ end);
 ShowRaceRequirementsCheckBox:SetATTTooltip("Enable this option if you want to see the full list of race requirements in the tooltip.");
 ShowRaceRequirementsCheckBox:SetPoint("TOPLEFT", ShowClassRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowSoftReservesCheckBox = settings:CreateCheckBox("Show Soft Reserves",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("SoftReserves"));
+	if not settings:GetTooltipSetting("Enabled") then
+		self:Disable();
+		self:SetAlpha(0.2);
+	else
+		self:Enable();
+		self:SetAlpha(1);
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("SoftReserves", self:GetChecked());
+end);
+ShowSoftReservesCheckBox:SetATTTooltip("Enable this option if you want to see Soft Reserves made by your Raid Members within the ATT database in the tooltip.");
+ShowSoftReservesCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+
 local ShowSourceLocationsCheckBox = settings:CreateCheckBox("Show Source Locations",
 function(self)
 	self:SetChecked(settings:GetTooltipSetting("SourceLocations"));
@@ -1337,7 +1718,7 @@ function(self)
 	settings:SetTooltipSetting("SourceLocations", self:GetChecked());
 end);
 ShowSourceLocationsCheckBox:SetATTTooltip("Enable this option if you want to see full Source Location Paths for objects within the ATT database in the tooltip.");
-ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", ShowRaceRequirementsCheckBox, "BOTTOMLEFT", 0, 4);
+ShowSourceLocationsCheckBox:SetPoint("TOPLEFT", ShowSoftReservesCheckBox, "BOTTOMLEFT", 0, 4);
 
 local ShowCompletedSourceLocationsForCheckBox = settings:CreateCheckBox("For Completed Sources",
 function(self)
@@ -1390,6 +1771,23 @@ end);
 ShowSourceLocationsForThingsCheckBox:SetATTTooltip("Enable this option if you want to see Source Locations for Things.");
 ShowSourceLocationsForThingsCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForCreaturesCheckBox, "BOTTOMLEFT", 0, 4);
 
+local ShowRemainingCheckBox = settings:CreateCheckBox("Show Remaining Things",
+function(self)
+	self:SetChecked(settings:GetTooltipSetting("Show:Remaining"));
+	if self:GetChecked() then
+		app.GetProgressText = app.GetProgressTextRemaining;
+	else
+		app.GetProgressText = app.GetProgressTextDefault;
+	end
+end,
+function(self)
+	settings:SetTooltipSetting("Show:Remaining", self:GetChecked());
+	-- app:RefreshData();
+	app:UpdateWindows();
+end);
+ShowRemainingCheckBox:SetATTTooltip("Enable this option if you want to see the number of items remaining instead of the progress over total.");
+ShowRemainingCheckBox:SetPoint("TOPLEFT", ShowSourceLocationsForThingsCheckBox, "BOTTOMLEFT", -8, 4);
+
 local DebuggingLabel = settings:CreateFontString(nil, "ARTWORK", "GameFontNormalLarge");
 DebuggingLabel:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -220, -8);
 DebuggingLabel:SetJustifyH("LEFT");
@@ -1397,12 +1795,14 @@ DebuggingLabel:SetText("Debugging");
 DebuggingLabel:Show();
 table.insert(settings.MostRecentTab.objects, DebuggingLabel);
 local ids = {
+	["artID"] = "Art ID",
 	["creatureID"] = "Creature ID",
 	["creatures"] = "Creatures List",
 	["Coordinates"] = "Coordinates",
 	["currencyID"] = "Currency ID",
 	["Descriptions"] = "Descriptions",
 	["displayID"] = "Display ID",
+	["explorationID"] = "Exploration ID",
 	["factionID"] = "Faction ID",
 	["filterID"] = "Filter ID",
 	["flightPathID"] = "Flight Path ID",
@@ -1417,9 +1817,9 @@ local ids = {
 	["spellID"] = "Spell ID",
 };
 local last = nil;
-for _,id in pairs({"creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","factionID","filterID","flightPathID"}) do
+for _,id in pairs({"artID", "creatureID","creatures","Coordinates","currencyID","Descriptions","displayID","explorationID","factionID","filterID","flightPathID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
-	function(self) 
+	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)
@@ -1436,7 +1836,7 @@ end
 last = nil;
 for _,id in pairs({"itemID","itemString","mapID","modelID","objectID","Objectives","questID","QuestGivers","spellID"}) do
 	local filter = settings:CreateCheckBox(ids[id],
-	function(self) 
+	function(self)
 		self:SetChecked(settings:GetTooltipSetting(id));
 	end,
 	function(self)
@@ -1472,9 +1872,6 @@ MainListScaleSlider.Label:SetPoint("TOP", MainListScaleSlider, "BOTTOM", 0, 0);
 MainListScaleSlider.Label:SetText(MainListScaleSlider:GetValue());
 MainListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("MainListScale") then
-		return 1;
-	end
 	settings:SetTooltipSetting("MainListScale", newValue)
 	app:GetWindow("Prime"):SetScale(newValue);
 end);
@@ -1500,9 +1897,6 @@ MiniListScaleSlider.Label:SetPoint("TOP", MiniListScaleSlider, "BOTTOM", 0, 0);
 MiniListScaleSlider.Label:SetText(MiniListScaleSlider:GetValue());
 MiniListScaleSlider:SetScript("OnValueChanged", function(self, newValue)
 	self.Label:SetText(newValue);
-	if newValue == settings:GetTooltipSetting("MiniListScale") then
-		return 1;
-	end
 	settings:SetTooltipSetting("MiniListScale", newValue)
 	for key,window in pairs(app.Windows) do
 		if key ~= "Prime" then
@@ -1689,7 +2083,7 @@ local AboutText = settings:CreateFontString(nil, "ARTWORK", "GameFontNormal");
 AboutText:SetPoint("TOPLEFT", line, "BOTTOMLEFT", 8, -8);
 AboutText:SetPoint("TOPRIGHT", line, "BOTTOMRIGHT", -8, -8);
 AboutText:SetJustifyH("LEFT");
-AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve (DFortun81 on GitHub)|CFFFFFFFF\n\nIf you wish to play with us, we're on Atiesh (Alliance) in the <ATT> guild! (Currently need all!)\n\nAlso... NO, we do NOT work for the phone company.\n\nWebsite for comparing Collections coming Soon™.|r\n\n\nContributors working on Classic:\n |CFFFFFFFF\nPr3vention, Avella, Mogwai, and Crieve|r\n\n\n\nIf we're missing something, please let us know!\n\nStill lots of things to add, but thankfully there is a finite number of things in WoW Classic, so we should eventually get it all!");
+AboutText:SetText(L["TITLE"] .. " |CFFFFFFFFis a collection tracking addon that shows you where and how to get everything in the game! We have a large community of users on our Discord (link at the bottom) where you can ask questions, submit suggestions as well as report bugs or missing items. If you find something collectible or a quest that isn't documented, you can tell us on the Discord, or for the more technical savvy, we have a Git that you may contribute directly to.\n\nWhile we do strive for completion, there's a lot of stuff getting added into the game each patch, so if we're missing something, please understand that we're a small team trying to keep up with changes as well as collect things ourselves. :D\n\nFeel free to ask me questions when I'm streaming and I'll try my best to answer it, even if it's not directly related to ATT (general WoW addon programming as well).\n\n- |r|Cffff8000Crieve (DFortun81 on GitHub)|CFFFFFFFF\n\nIf you wish to play with us, we're on Atiesh (Alliance) in the <All The Things> guild!|r\n\n\nContributors working on Classic:\n |CFFFFFFFF\nPr3vention, Avella, Mogwai, Crieve and Talonzor |r\n\n\n\nIf we're missing something, please let us know!\n\nStill lots of things to add, but thankfully there is a finite number of things in WoW Classic and TBC Classic, so we should eventually get it all!");
 AboutText:Show();
 table.insert(settings.MostRecentTab.objects, AboutText);
 end)();
