@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.053,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		[7] = {
 			["ID"] = 6087,
@@ -42,20 +44,18 @@ PawnOptions = {
 			["Level"] = 18,
 			["Link"] = "|cff1eff00|Hitem:15404::::::::23:::::::::|h[破浪束带]|h|r",
 		},
-		[18] = {
-			["ID"] = 15807,
-			["Level"] = 8,
-			["Link"] = "|cffffffff|Hitem:15807::::::::10:::::::::|h[轻弩]|h|r",
-		},
 		[17] = {
 			["ID"] = 5196,
 			["Level"] = 22,
 			["AlsoFitsIn"] = 16,
 			["Link"] = "|cff1eff00|Hitem:5196::::::::19:::::::::|h[重拳先生的战斧]|h|r",
 		},
+		[18] = {
+			["ID"] = 15807,
+			["Level"] = 8,
+			["Link"] = "|cffffffff|Hitem:15807::::::::10:::::::::|h[轻弩]|h|r",
+		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
