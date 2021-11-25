@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.053,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		[7] = {
 			["ID"] = 6087,
@@ -30,19 +28,30 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:6550::::::1179:1917742208:18:::::::::|h[野熊之士兵腕甲]|h|r",
 		},
 		[5] = {
-			["ID"] = 3166,
-			["Level"] = 15,
-			["Link"] = "|cff1eff00|Hitem:3166::::::::14:::::::::|h[铁心链甲]|h|r",
+			["ID"] = 6545,
+			["Level"] = 18,
+			["Link"] = "|cff1eff00|Hitem:6545::::::1185:1179030656:26:::::::::|h[野熊之士兵护甲]|h|r",
 		},
 		[10] = {
 			["ID"] = 7606,
 			["Level"] = 22,
 			["Link"] = "|cff1eff00|Hitem:7606::::::::21:::::::::|h[极地护手]|h|r",
 		},
+		[11] = {
+			["ID"] = 1449,
+			["Level"] = 24,
+			["AlsoFitsIn"] = 12,
+			["Link"] = "|cff1eff00|Hitem:1449::::::::26:::::::::|h[弱效导魔戒指]|h|r",
+		},
 		[6] = {
 			["ID"] = 15404,
 			["Level"] = 18,
 			["Link"] = "|cff1eff00|Hitem:15404::::::::23:::::::::|h[破浪束带]|h|r",
+		},
+		[18] = {
+			["ID"] = 15807,
+			["Level"] = 8,
+			["Link"] = "|cffffffff|Hitem:15807::::::::10:::::::::|h[轻弩]|h|r",
 		},
 		[17] = {
 			["ID"] = 5196,
@@ -50,12 +59,9 @@ PawnOptions = {
 			["AlsoFitsIn"] = 16,
 			["Link"] = "|cff1eff00|Hitem:5196::::::::19:::::::::|h[重拳先生的战斧]|h|r",
 		},
-		[18] = {
-			["ID"] = 15807,
-			["Level"] = 8,
-			["Link"] = "|cffffffff|Hitem:15807::::::::10:::::::::|h[轻弩]|h|r",
-		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

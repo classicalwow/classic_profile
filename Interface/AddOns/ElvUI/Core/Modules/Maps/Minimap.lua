@@ -98,38 +98,48 @@ tinsert(menuList, { text = _G.MAINMENU_BUTTON,
 tinsert(menuList, { text = _G.HELP_BUTTON, bottom = true, func = ToggleHelpFrame })
 
 function M:HandleGarrisonButton()
-	local button = _G.GarrisonLandingPageMinimapButton
-	if button then
-		local db = E.db.general.minimap.icons.classHall
-		local scale, pos = db.scale or 1, db.position or 'BOTTOMLEFT'
-		button:ClearAllPoints()
-		button:Point(pos, Minimap, pos, db.xOffset or 0, db.yOffset or 0)
-		button:SetScale(scale)
+	local garrison = _G.GarrisonLandingPageMinimapButton
+	if not garrison then return end
 
-		local box = _G.GarrisonLandingPageTutorialBox
-		if box then
-			box:SetScale(1/scale)
-			box:SetClampedToScreen(true)
-		end
+	local scale, position, xOffset, yOffset = M:GetIconSettings('classHall')
+	garrison:ClearAllPoints()
+	garrison:Point(position, Minimap, xOffset, yOffset)
+	garrison:SetScale(scale)
+
+	local box = _G.GarrisonLandingPageTutorialBox
+	if box then
+		box:SetScale(1 / scale)
+		box:SetClampedToScreen(true)
 	end
 end
 
-function M:GetLocTextColor()
-	local pvpType = GetZonePVPInfo()
-	if pvpType == 'arena' then
-		return 0.84, 0.03, 0.03
-	elseif pvpType == 'friendly' then
-		return 0.05, 0.85, 0.03
-	elseif pvpType == 'contested' then
-		return 0.9, 0.85, 0.05
-	elseif pvpType == 'hostile' then
-		return 0.84, 0.03, 0.03
-	elseif pvpType == 'sanctuary' then
-		return 0.035, 0.58, 0.84
-	elseif pvpType == 'combat' then
-		return 0.84, 0.03, 0.03
+function M:HandleTrackingButton()
+	local tracking = _G.MiniMapTrackingFrame or _G.MiniMapTracking
+	if not tracking then return end
+
+	if E.private.general.minimap.hideTracking then
+		tracking:SetParent(E.HiddenFrame)
 	else
-		return 0.9, 0.85, 0.05
+		local scale, position, xOffset, yOffset = M:GetIconSettings('tracking')
+
+		tracking:ClearAllPoints()
+		tracking:Point(position, Minimap, xOffset, yOffset)
+		tracking:SetScale(scale)
+		tracking:SetParent(Minimap)
+
+		if _G.MiniMapTrackingBorder then
+			_G.MiniMapTrackingBorder:Hide()
+		end
+
+		if _G.MiniMapTrackingBackground then
+			_G.MiniMapTrackingBackground:Hide()
+		end
+
+		if _G.MiniMapTrackingIcon then
+			_G.MiniMapTrackingIcon:SetDrawLayer('ARTWORK')
+			_G.MiniMapTrackingIcon:SetTexCoord(unpack(E.TexCoords))
+			_G.MiniMapTrackingIcon:SetInside()
+		end
 	end
 end
 
@@ -223,9 +233,28 @@ function M:Minimap_OnMouseWheel(d)
 	end
 end
 
+function M:GetLocTextColor()
+	local pvpType = GetZonePVPInfo()
+	if pvpType == 'arena' then
+		return 0.84, 0.03, 0.03
+	elseif pvpType == 'friendly' then
+		return 0.05, 0.85, 0.03
+	elseif pvpType == 'contested' then
+		return 0.9, 0.85, 0.05
+	elseif pvpType == 'hostile' then
+		return 0.84, 0.03, 0.03
+	elseif pvpType == 'sanctuary' then
+		return 0.035, 0.58, 0.84
+	elseif pvpType == 'combat' then
+		return 0.84, 0.03, 0.03
+	else
+		return 0.9, 0.85, 0.05
+	end
+end
+
 function M:Update_ZoneText()
 	if E.db.general.minimap.locationText == 'HIDE' then return end
-	Minimap.location:FontTemplate(LSM:Fetch('font', E.db.general.minimap.locationFont), E.db.general.minimap.locationFontSize, E.db.general.minimap.locationFontOutline)
+
 	Minimap.location:SetText(utf8sub(GetMinimapZoneText(), 1, 46))
 	Minimap.location:SetTextColor(M:GetLocTextColor())
 end
@@ -245,6 +274,7 @@ do
 			E:Delay(E.db.general.minimap.resetZoom.time, ResetZoom)
 		end
 	end
+
 	hooksecurefunc(Minimap, 'SetZoom', SetupZoomReset)
 end
 
@@ -279,13 +309,11 @@ function M:UpdateSettings()
 	MMHolder:SetSize(WIDTH + bWidth, HEIGHT + bHeight)
 
 	Minimap.location:Width(E.MinimapSize)
-	if E.db.general.minimap.locationText ~= 'SHOW' then
-		Minimap.location:Hide()
-	else
-		Minimap.location:Show()
-	end
+	Minimap.location:SetShown(E.db.general.minimap.locationText == 'SHOW')
+	Minimap.location:FontTemplate(LSM:Fetch('font', E.db.general.minimap.locationFont), E.db.general.minimap.locationFontSize, E.db.general.minimap.locationFontOutline)
 
 	M.HandleGarrisonButton()
+	M.HandleTrackingButton()
 
 	_G.MiniMapMailIcon:SetTexture(E.Media.MailIcons[E.db.general.minimap.icons.mail.texture] or E.Media.MailIcons.Mail3)
 
@@ -340,34 +368,6 @@ function M:UpdateSettings()
 
 		if not db.enable and queueStatusDisplay.title then
 			M:ClearQueueStatus()
-		end
-	end
-
-	local MiniMapTracking = _G.MiniMapTrackingFrame or _G.MiniMapTracking
-	if MiniMapTracking then
-		if E.private.general.minimap.hideTracking then
-			MiniMapTracking:SetParent(E.HiddenFrame)
-		else
-			local scale, position, xOffset, yOffset = M:GetIconSettings('tracking')
-
-			MiniMapTracking:ClearAllPoints()
-			MiniMapTracking:Point(position, Minimap, xOffset, yOffset)
-			MiniMapTracking:SetScale(scale)
-			MiniMapTracking:SetParent(Minimap)
-
-			if _G.MiniMapTrackingBorder then
-				_G.MiniMapTrackingBorder:Hide()
-			end
-
-			if _G.MiniMapTrackingBackground then
-				_G.MiniMapTrackingBackground:Hide()
-			end
-
-			if _G.MiniMapTrackingIcon then
-				_G.MiniMapTrackingIcon:SetDrawLayer('ARTWORK')
-				_G.MiniMapTrackingIcon:SetTexCoord(unpack(E.TexCoords))
-				_G.MiniMapTrackingIcon:SetInside()
-			end
 		end
 	end
 
@@ -492,7 +492,7 @@ function M:Initialize()
 		return
 	end
 
-	self.Initialized = true
+	M.Initialized = true
 
 	menuFrame:SetTemplate('Transparent')
 
@@ -502,8 +502,6 @@ function M:Initialize()
 
 	Minimap:CreateBackdrop()
 	Minimap:SetFrameLevel(Minimap:GetFrameLevel() + 2)
-	Minimap:ClearAllPoints()
-	Minimap:Point('TOPRIGHT', mmholder, 'TOPRIGHT', -E.Border, -E.Border)
 	Minimap:HookScript('OnEnter', function(mm) if E.db.general.minimap.locationText == 'MOUSEOVER' then mm.location:Show() end end)
 	Minimap:HookScript('OnLeave', function(mm) if E.db.general.minimap.locationText == 'MOUSEOVER' then mm.location:Hide() end end)
 
@@ -513,13 +511,9 @@ function M:Initialize()
 	end
 
 	Minimap.location = Minimap:CreateFontString(nil, 'OVERLAY')
-	Minimap.location:FontTemplate(nil, nil, 'OUTLINE')
 	Minimap.location:Point('TOP', Minimap, 'TOP', 0, -2)
 	Minimap.location:SetJustifyH('CENTER')
 	Minimap.location:SetJustifyV('MIDDLE')
-	if E.db.general.minimap.locationText ~= 'SHOW' then
-		Minimap.location:Hide()
-	end
 
 	local frames = {
 		_G.MinimapBorder,
@@ -561,6 +555,8 @@ function M:Initialize()
 		_G.MiniMapInstanceDifficulty:SetParent(Minimap)
 		_G.GuildInstanceDifficulty:SetParent(Minimap)
 		_G.MiniMapChallengeMode:SetParent(Minimap)
+	elseif E.Classic then
+		hooksecurefunc('SetLookingForGroupUIAvailable', M.HandleTrackingButton)
 	end
 
 	if not E.Classic then
@@ -587,12 +583,12 @@ function M:Initialize()
 	Minimap:SetScript('OnMouseDown', M.Minimap_OnMouseDown)
 	Minimap:SetScript('OnMouseUp', E.noop)
 
-	self:RegisterEvent('PLAYER_ENTERING_WORLD', 'Update_ZoneText')
-	self:RegisterEvent('ZONE_CHANGED_NEW_AREA', 'Update_ZoneText')
-	self:RegisterEvent('ZONE_CHANGED_INDOORS', 'Update_ZoneText')
-	self:RegisterEvent('ZONE_CHANGED', 'Update_ZoneText')
-	self:RegisterEvent('ADDON_LOADED')
-	self:UpdateSettings()
+	M:RegisterEvent('PLAYER_ENTERING_WORLD', 'Update_ZoneText')
+	M:RegisterEvent('ZONE_CHANGED_NEW_AREA', 'Update_ZoneText')
+	M:RegisterEvent('ZONE_CHANGED_INDOORS', 'Update_ZoneText')
+	M:RegisterEvent('ZONE_CHANGED', 'Update_ZoneText')
+	M:RegisterEvent('ADDON_LOADED')
+	M:UpdateSettings()
 end
 
 E:RegisterModule(M:GetName())

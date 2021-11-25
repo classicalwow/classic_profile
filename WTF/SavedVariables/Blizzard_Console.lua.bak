@@ -1,1994 +1,1993 @@
 
 Blizzard_Console_SavedVars = {
 	["version"] = 3,
-	["height"] = 300,
 	["messageHistory"] = {
-		{
-			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
-			0, -- [2]
-		}, -- [1]
-		{
-			"Proficiency in item class 4 set to 0x0000000009", -- [1]
-			0, -- [2]
-		}, -- [2]
-		{
-			"Proficiency in item class 4 set to 0x000000000d", -- [1]
-			0, -- [2]
-		}, -- [3]
-		{
-			"Proficiency in item class 4 set to 0x000000000f", -- [1]
-			0, -- [2]
-		}, -- [4]
-		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
-			0, -- [2]
-		}, -- [5]
-		{
-			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
-			0, -- [2]
-		}, -- [6]
-		{
-			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
-			0, -- [2]
-		}, -- [7]
-		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
-			0, -- [2]
-		}, -- [8]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [9]
-		{
-			"Time set to 11/21/2021 (Sun) 23:22", -- [1]
-			0, -- [2]
-		}, -- [10]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [11]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [12]
-		{
-			"Total: 0d 9h 42m 8s", -- [1]
-			0, -- [2]
-		}, -- [13]
-		{
-			"Level: 0d 0h 23m 24s", -- [1]
-			0, -- [2]
-		}, -- [14]
-		{
-			"Received pong with old sequence", -- [1]
-			0, -- [2]
-		}, -- [15]
-		{
-			"Received pong with old sequence", -- [1]
-			0, -- [2]
-		}, -- [16]
-		{
-			"Received pong with old sequence", -- [1]
-			0, -- [2]
-		}, -- [17]
-		{
-			"Skill 95 increased from 86 to 87", -- [1]
-			0, -- [2]
-		}, -- [18]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [19]
-		{
-			"NetClient::HandleDisconnect()\n", -- [1]
-			0, -- [2]
-		}, -- [20]
-		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
-			0, -- [2]
-		}, -- [21]
-		{
-			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"true\"", -- [1]
-			0, -- [2]
-		}, -- [22]
-		{
-			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
-			0, -- [2]
-		}, -- [23]
-		{
-			"[GlueLogin] Resetting", -- [1]
-			0, -- [2]
-		}, -- [24]
-		{
-			"[IBN_Login] DestroyingisInitialized=\"true\"", -- [1]
-			0, -- [2]
-		}, -- [25]
-		{
-			"[IBN_Login] Initializing", -- [1]
-			0, -- [2]
-		}, -- [26]
-		{
-			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
-			0, -- [2]
-		}, -- [27]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [28]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [29]
-		{
-			"[GlueLogin] Waiting for server response.", -- [1]
-			0, -- [2]
-		}, -- [30]
-		{
-			"[GlueLogin] Logon complete.", -- [1]
-			0, -- [2]
-		}, -- [31]
-		{
-			"[GlueLogin] Reconnect token saved; creationTime=\"1637508529\" expirationTime=\"1637522929\"", -- [1]
-			0, -- [2]
-		}, -- [32]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [33]
-		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
-			0, -- [2]
-		}, -- [34]
-		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [35]
-		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
-			0, -- [2]
-		}, -- [36]
-		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [37]
-		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
-			0, -- [2]
-		}, -- [38]
-		{
-			"[GlueLogin] Realm list ready.", -- [1]
-			0, -- [2]
-		}, -- [39]
-		{
-			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
-			0, -- [2]
-		}, -- [40]
-		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [41]
-		{
-			"NetClient::HandleConnect()\n", -- [1]
-			0, -- [2]
-		}, -- [42]
-		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
-			0, -- [2]
-		}, -- [43]
-		{
-			"[IBN_Login] Front disconnectingconnectionId=\"2\"", -- [1]
-			0, -- [2]
-		}, -- [44]
-		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [45]
-		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
-			0, -- [2]
-		}, -- [46]
-		{
-			"[IBN_Login] Front disconnectedconnectionId=\"2\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
-			0, -- [2]
-		}, -- [47]
-		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
-			0, -- [2]
-		}, -- [48]
-		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
-			0, -- [2]
-		}, -- [49]
-		{
-			"Attempted to register existing command: ShowObjUsage\n", -- [1]
-			0, -- [2]
-		}, -- [50]
-		{
-			"Attempted to register existing command: SetDifficulty\n", -- [1]
-			0, -- [2]
-		}, -- [51]
-		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [52]
-		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
-			0, -- [2]
-		}, -- [53]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [54]
-		{
-			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
-			0, -- [2]
-		}, -- [55]
-		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
-			0, -- [2]
-		}, -- [56]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [57]
-		{
-			"Time set to 11/21/2021 (Sun) 23:28", -- [1]
-			0, -- [2]
-		}, -- [58]
-		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
-			0, -- [2]
-		}, -- [59]
-		{
-			"Time played:", -- [1]
-			0, -- [2]
-		}, -- [60]
-		{
-			"Total: 0d 9h 48m 41s", -- [1]
-			0, -- [2]
-		}, -- [61]
-		{
-			"Level: 0d 0h 29m 57s", -- [1]
-			0, -- [2]
-		}, -- [62]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [63]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [64]
-		{
-			"Skill 226 increased from 50 to 51", -- [1]
-			0, -- [2]
-		}, -- [65]
-		{
-			"Skill 95 increased from 87 to 88", -- [1]
-			0, -- [2]
-		}, -- [66]
-		{
-			"Got new connection 3", -- [1]
-			0, -- [2]
-		}, -- [67]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [68]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [69]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [70]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [71]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [72]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [73]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [74]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [75]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [76]
-		{
-			"Trainer service 3286 unavailable", -- [1]
-			0, -- [2]
-		}, -- [77]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [78]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [79]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [80]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [81]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [82]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [83]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [84]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [85]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [86]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [87]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [88]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [89]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [90]
-		{
-			"World transfer pending...", -- [1]
-			0, -- [2]
-		}, -- [91]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [92]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [93]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [94]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [95]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [96]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [97]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [98]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [99]
-		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
-			0, -- [2]
-		}, -- [100]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [101]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [102]
-		{
-			"Skill 26 increased from 90 to 95", -- [1]
-			0, -- [2]
-		}, -- [103]
-		{
-			"Skill 183 increased from 90 to 95", -- [1]
-			0, -- [2]
-		}, -- [104]
-		{
-			"Skill 256 increased from 90 to 95", -- [1]
-			0, -- [2]
-		}, -- [105]
-		{
-			"Skill 257 increased from 90 to 95", -- [1]
-			0, -- [2]
-		}, -- [106]
-		{
-			"Skill 754 increased from 90 to 95", -- [1]
-			0, -- [2]
-		}, -- [107]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [108]
-		{
-			"Skill 95 increased from 88 to 89", -- [1]
-			0, -- [2]
-		}, -- [109]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [110]
-		{
-			"Skill 55 increased from 90 to 96", -- [1]
-			0, -- [2]
-		}, -- [111]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [112]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [113]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [114]
-		{
-			"Skill 55 increased from 91 to 97", -- [1]
-			0, -- [2]
-		}, -- [115]
-		{
-			"World transfer aborted (reason: 30)", -- [1]
-			0, -- [2]
-		}, -- [116]
-		{
-			"Skill 55 increased from 92 to 98", -- [1]
-			0, -- [2]
-		}, -- [117]
 		{
 			"Skill 162 increased from 1 to 2", -- [1]
 			0, -- [2]
-		}, -- [118]
+		}, -- [1]
 		{
 			"Skill 162 increased from 2 to 3", -- [1]
 			0, -- [2]
-		}, -- [119]
+		}, -- [2]
 		{
 			"Skill 55 increased from 93 to 99", -- [1]
 			0, -- [2]
-		}, -- [120]
+		}, -- [3]
 		{
 			"Skill 95 increased from 89 to 90", -- [1]
 			0, -- [2]
-		}, -- [121]
+		}, -- [4]
 		{
 			"Skill 55 increased from 94 to 100", -- [1]
 			0, -- [2]
-		}, -- [122]
+		}, -- [5]
 		{
 			"Skill 162 increased from 3 to 4", -- [1]
 			0, -- [2]
-		}, -- [123]
+		}, -- [6]
 		{
 			"Skill 162 increased from 4 to 5", -- [1]
 			0, -- [2]
-		}, -- [124]
+		}, -- [7]
 		{
 			"Skill 162 increased from 5 to 6", -- [1]
 			0, -- [2]
-		}, -- [125]
+		}, -- [8]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [126]
+		}, -- [9]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [127]
+		}, -- [10]
 		{
 			"Skill 162 increased from 6 to 7", -- [1]
 			0, -- [2]
-		}, -- [128]
+		}, -- [11]
 		{
 			"Skill 162 increased from 7 to 8", -- [1]
 			0, -- [2]
-		}, -- [129]
+		}, -- [12]
 		{
 			"Skill 162 increased from 8 to 9", -- [1]
 			0, -- [2]
-		}, -- [130]
+		}, -- [13]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [131]
+		}, -- [14]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [132]
+		}, -- [15]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [133]
+		}, -- [16]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [134]
+		}, -- [17]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [135]
+		}, -- [18]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [136]
+		}, -- [19]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [137]
+		}, -- [20]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [138]
+		}, -- [21]
 		{
 			"Skill 129 increased from 71 to 72", -- [1]
 			0, -- [2]
-		}, -- [139]
+		}, -- [22]
 		{
 			"Skill 129 increased from 72 to 73", -- [1]
 			0, -- [2]
-		}, -- [140]
+		}, -- [23]
 		{
 			"Skill 129 increased from 73 to 74", -- [1]
 			0, -- [2]
-		}, -- [141]
+		}, -- [24]
 		{
 			"Skill 129 increased from 74 to 75", -- [1]
 			0, -- [2]
-		}, -- [142]
+		}, -- [25]
 		{
 			"Skill 129 increased from 75 to 76", -- [1]
 			0, -- [2]
-		}, -- [143]
+		}, -- [26]
 		{
 			"Skill 129 increased from 76 to 77", -- [1]
 			0, -- [2]
-		}, -- [144]
+		}, -- [27]
 		{
 			"Skill 129 increased from 77 to 78", -- [1]
 			0, -- [2]
-		}, -- [145]
+		}, -- [28]
 		{
 			"Skill 129 increased from 78 to 79", -- [1]
 			0, -- [2]
-		}, -- [146]
+		}, -- [29]
 		{
 			"Skill 129 increased from 79 to 80", -- [1]
 			0, -- [2]
-		}, -- [147]
+		}, -- [30]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [148]
+		}, -- [31]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [149]
+		}, -- [32]
 		{
 			"Skill 43 increased from 65 to 71", -- [1]
 			0, -- [2]
-		}, -- [150]
+		}, -- [33]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [151]
+		}, -- [34]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [152]
+		}, -- [35]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [153]
+		}, -- [36]
 		{
 			"Skill 43 increased from 66 to 72", -- [1]
 			0, -- [2]
-		}, -- [154]
+		}, -- [37]
 		{
 			"Skill 226 increased from 51 to 52", -- [1]
 			0, -- [2]
-		}, -- [155]
+		}, -- [38]
 		{
 			"Skill 43 increased from 67 to 73", -- [1]
 			0, -- [2]
-		}, -- [156]
+		}, -- [39]
 		{
 			"Skill 43 increased from 68 to 74", -- [1]
 			0, -- [2]
-		}, -- [157]
+		}, -- [40]
 		{
 			"Skill 43 increased from 69 to 75", -- [1]
 			0, -- [2]
-		}, -- [158]
+		}, -- [41]
 		{
 			"Skill 226 increased from 52 to 53", -- [1]
 			0, -- [2]
-		}, -- [159]
+		}, -- [42]
 		{
 			"Skill 226 increased from 53 to 54", -- [1]
 			0, -- [2]
-		}, -- [160]
+		}, -- [43]
 		{
 			"Skill 43 increased from 70 to 76", -- [1]
 			0, -- [2]
-		}, -- [161]
+		}, -- [44]
 		{
 			"Skill 43 increased from 71 to 77", -- [1]
 			0, -- [2]
-		}, -- [162]
+		}, -- [45]
 		{
 			"Skill 95 increased from 90 to 91", -- [1]
 			0, -- [2]
-		}, -- [163]
+		}, -- [46]
 		{
 			"Skill 43 increased from 72 to 78", -- [1]
 			0, -- [2]
-		}, -- [164]
+		}, -- [47]
 		{
 			"Skill 43 increased from 73 to 79", -- [1]
 			0, -- [2]
-		}, -- [165]
+		}, -- [48]
 		{
 			"Skill 43 increased from 74 to 80", -- [1]
 			0, -- [2]
-		}, -- [166]
+		}, -- [49]
 		{
 			"Skill 43 increased from 75 to 81", -- [1]
 			0, -- [2]
-		}, -- [167]
+		}, -- [50]
 		{
 			"Skill 43 increased from 76 to 82", -- [1]
 			0, -- [2]
-		}, -- [168]
+		}, -- [51]
 		{
 			"Skill 43 increased from 77 to 83", -- [1]
 			0, -- [2]
-		}, -- [169]
+		}, -- [52]
 		{
 			"Skill 43 increased from 78 to 84", -- [1]
 			0, -- [2]
-		}, -- [170]
+		}, -- [53]
 		{
 			"Skill 43 increased from 79 to 85", -- [1]
 			0, -- [2]
-		}, -- [171]
+		}, -- [54]
 		{
 			"Skill 43 increased from 80 to 86", -- [1]
 			0, -- [2]
-		}, -- [172]
+		}, -- [55]
 		{
 			"Skill 43 increased from 81 to 87", -- [1]
 			0, -- [2]
-		}, -- [173]
+		}, -- [56]
 		{
 			"Skill 43 increased from 82 to 88", -- [1]
 			0, -- [2]
-		}, -- [174]
+		}, -- [57]
 		{
 			"Skill 43 increased from 83 to 89", -- [1]
 			0, -- [2]
-		}, -- [175]
+		}, -- [58]
 		{
 			"Skill 43 increased from 84 to 90", -- [1]
 			0, -- [2]
-		}, -- [176]
+		}, -- [59]
 		{
 			"Skill 43 increased from 85 to 91", -- [1]
 			0, -- [2]
-		}, -- [177]
+		}, -- [60]
 		{
 			"Skill 43 increased from 86 to 92", -- [1]
 			0, -- [2]
-		}, -- [178]
+		}, -- [61]
 		{
 			"Skill 226 increased from 54 to 55", -- [1]
 			0, -- [2]
-		}, -- [179]
+		}, -- [62]
 		{
 			"Skill 43 increased from 87 to 93", -- [1]
 			0, -- [2]
-		}, -- [180]
+		}, -- [63]
 		{
 			"Skill 95 increased from 91 to 92", -- [1]
 			0, -- [2]
-		}, -- [181]
+		}, -- [64]
 		{
 			"Skill 43 increased from 88 to 94", -- [1]
 			0, -- [2]
-		}, -- [182]
+		}, -- [65]
 		{
 			"Skill 43 increased from 89 to 95", -- [1]
 			0, -- [2]
-		}, -- [183]
+		}, -- [66]
 		{
 			"Skill 43 increased from 90 to 96", -- [1]
 			0, -- [2]
-		}, -- [184]
+		}, -- [67]
 		{
 			"Skill 43 increased from 91 to 97", -- [1]
 			0, -- [2]
-		}, -- [185]
+		}, -- [68]
 		{
 			"Skill 43 increased from 92 to 98", -- [1]
 			0, -- [2]
-		}, -- [186]
+		}, -- [69]
 		{
 			"Skill 226 increased from 55 to 56", -- [1]
 			0, -- [2]
-		}, -- [187]
+		}, -- [70]
 		{
 			"Skill 43 increased from 93 to 99", -- [1]
 			0, -- [2]
-		}, -- [188]
+		}, -- [71]
 		{
 			"Skill 43 increased from 94 to 100", -- [1]
 			0, -- [2]
-		}, -- [189]
+		}, -- [72]
 		{
 			"Skill 95 increased from 92 to 93", -- [1]
 			0, -- [2]
-		}, -- [190]
+		}, -- [73]
 		{
 			"Skill 162 increased from 9 to 10", -- [1]
 			0, -- [2]
-		}, -- [191]
+		}, -- [74]
 		{
 			"Skill 162 increased from 10 to 11", -- [1]
 			0, -- [2]
-		}, -- [192]
+		}, -- [75]
 		{
 			"Skill 162 increased from 11 to 12", -- [1]
 			0, -- [2]
-		}, -- [193]
+		}, -- [76]
 		{
 			"Skill 226 increased from 56 to 57", -- [1]
 			0, -- [2]
-		}, -- [194]
+		}, -- [77]
 		{
 			"Skill 226 increased from 57 to 58", -- [1]
 			0, -- [2]
-		}, -- [195]
+		}, -- [78]
 		{
 			"Skill 226 increased from 58 to 59", -- [1]
 			0, -- [2]
-		}, -- [196]
+		}, -- [79]
 		{
 			"Skill 226 increased from 59 to 60", -- [1]
 			0, -- [2]
-		}, -- [197]
+		}, -- [80]
 		{
 			"Skill 226 increased from 60 to 61", -- [1]
 			0, -- [2]
-		}, -- [198]
+		}, -- [81]
 		{
 			"Skill 226 increased from 61 to 62", -- [1]
 			0, -- [2]
-		}, -- [199]
+		}, -- [82]
 		{
 			"Skill 226 increased from 62 to 63", -- [1]
 			0, -- [2]
-		}, -- [200]
+		}, -- [83]
 		{
 			"Skill 95 increased from 93 to 94", -- [1]
 			0, -- [2]
-		}, -- [201]
+		}, -- [84]
 		{
 			"Skill 226 increased from 63 to 64", -- [1]
 			0, -- [2]
-		}, -- [202]
+		}, -- [85]
 		{
 			"Skill 226 increased from 64 to 65", -- [1]
 			0, -- [2]
-		}, -- [203]
+		}, -- [86]
 		{
 			"Skill 226 increased from 65 to 66", -- [1]
 			0, -- [2]
-		}, -- [204]
+		}, -- [87]
 		{
 			"Skill 44 increased from 1 to 2", -- [1]
 			0, -- [2]
-		}, -- [205]
+		}, -- [88]
 		{
 			"Skill 44 increased from 2 to 3", -- [1]
 			0, -- [2]
-		}, -- [206]
+		}, -- [89]
 		{
 			"Skill 44 increased from 3 to 4", -- [1]
 			0, -- [2]
-		}, -- [207]
+		}, -- [90]
 		{
 			"Skill 44 increased from 4 to 5", -- [1]
 			0, -- [2]
-		}, -- [208]
+		}, -- [91]
 		{
 			"Skill 44 increased from 5 to 7", -- [1]
 			0, -- [2]
-		}, -- [209]
+		}, -- [92]
 		{
 			"Skill 44 increased from 7 to 8", -- [1]
 			0, -- [2]
-		}, -- [210]
+		}, -- [93]
 		{
 			"Skill 44 increased from 8 to 9", -- [1]
 			0, -- [2]
-		}, -- [211]
+		}, -- [94]
 		{
 			"Skill 44 increased from 9 to 10", -- [1]
 			0, -- [2]
-		}, -- [212]
+		}, -- [95]
 		{
 			"Skill 44 increased from 10 to 11", -- [1]
 			0, -- [2]
-		}, -- [213]
+		}, -- [96]
 		{
 			"Skill 44 increased from 11 to 12", -- [1]
 			0, -- [2]
-		}, -- [214]
+		}, -- [97]
 		{
 			"Skill 44 increased from 12 to 13", -- [1]
 			0, -- [2]
-		}, -- [215]
+		}, -- [98]
 		{
 			"Skill 44 increased from 13 to 14", -- [1]
 			0, -- [2]
-		}, -- [216]
+		}, -- [99]
 		{
 			"Skill 44 increased from 14 to 15", -- [1]
 			0, -- [2]
-		}, -- [217]
+		}, -- [100]
 		{
 			"Skill 44 increased from 15 to 17", -- [1]
 			0, -- [2]
-		}, -- [218]
+		}, -- [101]
 		{
 			"Skill 44 increased from 17 to 18", -- [1]
 			0, -- [2]
-		}, -- [219]
+		}, -- [102]
 		{
 			"Skill 44 increased from 18 to 19", -- [1]
 			0, -- [2]
-		}, -- [220]
+		}, -- [103]
 		{
 			"Skill 44 increased from 19 to 20", -- [1]
 			0, -- [2]
-		}, -- [221]
+		}, -- [104]
 		{
 			"Skill 44 increased from 20 to 21", -- [1]
 			0, -- [2]
-		}, -- [222]
+		}, -- [105]
 		{
 			"Skill 44 increased from 21 to 22", -- [1]
 			0, -- [2]
-		}, -- [223]
+		}, -- [106]
 		{
 			"Skill 44 increased from 22 to 23", -- [1]
 			0, -- [2]
-		}, -- [224]
+		}, -- [107]
 		{
 			"Skill 44 increased from 23 to 24", -- [1]
 			0, -- [2]
-		}, -- [225]
+		}, -- [108]
 		{
 			"Skill 44 increased from 24 to 25", -- [1]
 			0, -- [2]
-		}, -- [226]
+		}, -- [109]
 		{
 			"Skill 44 increased from 25 to 26", -- [1]
 			0, -- [2]
-		}, -- [227]
+		}, -- [110]
 		{
 			"Skill 44 increased from 26 to 27", -- [1]
 			0, -- [2]
-		}, -- [228]
+		}, -- [111]
 		{
 			"Skill 44 increased from 27 to 28", -- [1]
 			0, -- [2]
-		}, -- [229]
+		}, -- [112]
 		{
 			"Skill 44 increased from 28 to 29", -- [1]
 			0, -- [2]
-		}, -- [230]
+		}, -- [113]
 		{
 			"Skill 44 increased from 29 to 30", -- [1]
 			0, -- [2]
-		}, -- [231]
+		}, -- [114]
 		{
 			"Skill 44 increased from 30 to 31", -- [1]
 			0, -- [2]
-		}, -- [232]
+		}, -- [115]
 		{
 			"Skill 44 increased from 31 to 32", -- [1]
 			0, -- [2]
-		}, -- [233]
+		}, -- [116]
 		{
 			"Skill 44 increased from 32 to 33", -- [1]
 			0, -- [2]
-		}, -- [234]
+		}, -- [117]
 		{
 			"Skill 44 increased from 33 to 34", -- [1]
 			0, -- [2]
-		}, -- [235]
+		}, -- [118]
 		{
 			"Skill 44 increased from 34 to 35", -- [1]
 			0, -- [2]
-		}, -- [236]
+		}, -- [119]
 		{
 			"Skill 44 increased from 35 to 36", -- [1]
 			0, -- [2]
-		}, -- [237]
+		}, -- [120]
 		{
 			"Skill 44 increased from 36 to 37", -- [1]
 			0, -- [2]
-		}, -- [238]
+		}, -- [121]
 		{
 			"Skill 44 increased from 37 to 38", -- [1]
 			0, -- [2]
-		}, -- [239]
+		}, -- [122]
 		{
 			"Skill 44 increased from 38 to 39", -- [1]
 			0, -- [2]
-		}, -- [240]
+		}, -- [123]
 		{
 			"Skill 44 increased from 39 to 40", -- [1]
 			0, -- [2]
-		}, -- [241]
+		}, -- [124]
 		{
 			"Skill 44 increased from 40 to 41", -- [1]
 			0, -- [2]
-		}, -- [242]
+		}, -- [125]
 		{
 			"Skill 44 increased from 41 to 42", -- [1]
 			0, -- [2]
-		}, -- [243]
+		}, -- [126]
 		{
 			"Skill 44 increased from 42 to 43", -- [1]
 			0, -- [2]
-		}, -- [244]
+		}, -- [127]
 		{
 			"Skill 44 increased from 43 to 44", -- [1]
 			0, -- [2]
-		}, -- [245]
+		}, -- [128]
 		{
 			"Skill 44 increased from 44 to 45", -- [1]
 			0, -- [2]
-		}, -- [246]
+		}, -- [129]
 		{
 			"Skill 44 increased from 45 to 46", -- [1]
 			0, -- [2]
-		}, -- [247]
+		}, -- [130]
 		{
 			"Skill 44 increased from 46 to 47", -- [1]
 			0, -- [2]
-		}, -- [248]
+		}, -- [131]
 		{
 			"Skill 44 increased from 47 to 48", -- [1]
 			0, -- [2]
-		}, -- [249]
+		}, -- [132]
 		{
 			"Skill 44 increased from 48 to 49", -- [1]
 			0, -- [2]
-		}, -- [250]
+		}, -- [133]
 		{
 			"Skill 44 increased from 49 to 50", -- [1]
 			0, -- [2]
-		}, -- [251]
+		}, -- [134]
 		{
 			"Skill 44 increased from 50 to 51", -- [1]
 			0, -- [2]
-		}, -- [252]
+		}, -- [135]
 		{
 			"Skill 44 increased from 51 to 52", -- [1]
 			0, -- [2]
-		}, -- [253]
+		}, -- [136]
 		{
 			"Skill 44 increased from 52 to 53", -- [1]
 			0, -- [2]
-		}, -- [254]
+		}, -- [137]
 		{
 			"Skill 44 increased from 53 to 54", -- [1]
 			0, -- [2]
-		}, -- [255]
+		}, -- [138]
 		{
 			"Skill 44 increased from 54 to 55", -- [1]
 			0, -- [2]
-		}, -- [256]
+		}, -- [139]
 		{
 			"Skill 44 increased from 55 to 56", -- [1]
 			0, -- [2]
-		}, -- [257]
+		}, -- [140]
 		{
 			"Skill 44 increased from 56 to 57", -- [1]
 			0, -- [2]
-		}, -- [258]
+		}, -- [141]
 		{
 			"Skill 44 increased from 57 to 58", -- [1]
 			0, -- [2]
-		}, -- [259]
+		}, -- [142]
 		{
 			"Skill 44 increased from 58 to 59", -- [1]
 			0, -- [2]
-		}, -- [260]
+		}, -- [143]
 		{
 			"Skill 44 increased from 59 to 60", -- [1]
 			0, -- [2]
-		}, -- [261]
+		}, -- [144]
 		{
 			"Skill 44 increased from 60 to 61", -- [1]
 			0, -- [2]
-		}, -- [262]
+		}, -- [145]
 		{
 			"Skill 226 increased from 66 to 67", -- [1]
 			0, -- [2]
-		}, -- [263]
+		}, -- [146]
 		{
 			"Skill 44 increased from 61 to 62", -- [1]
 			0, -- [2]
-		}, -- [264]
+		}, -- [147]
 		{
 			"Skill 44 increased from 62 to 63", -- [1]
 			0, -- [2]
-		}, -- [265]
+		}, -- [148]
 		{
 			"Skill 226 increased from 67 to 68", -- [1]
 			0, -- [2]
-		}, -- [266]
+		}, -- [149]
 		{
 			"Skill 44 increased from 63 to 64", -- [1]
 			0, -- [2]
-		}, -- [267]
+		}, -- [150]
 		{
 			"Skill 44 increased from 64 to 65", -- [1]
 			0, -- [2]
-		}, -- [268]
+		}, -- [151]
 		{
 			"Skill 44 increased from 65 to 66", -- [1]
 			0, -- [2]
-		}, -- [269]
+		}, -- [152]
 		{
 			"Skill 44 increased from 66 to 67", -- [1]
 			0, -- [2]
-		}, -- [270]
+		}, -- [153]
 		{
 			"Skill 44 increased from 67 to 68", -- [1]
 			0, -- [2]
-		}, -- [271]
+		}, -- [154]
 		{
 			"Skill 44 increased from 68 to 69", -- [1]
 			0, -- [2]
-		}, -- [272]
+		}, -- [155]
 		{
 			"Skill 226 increased from 68 to 69", -- [1]
 			0, -- [2]
-		}, -- [273]
+		}, -- [156]
 		{
 			"Skill 44 increased from 69 to 70", -- [1]
 			0, -- [2]
-		}, -- [274]
+		}, -- [157]
 		{
 			"Skill 44 increased from 70 to 71", -- [1]
 			0, -- [2]
-		}, -- [275]
+		}, -- [158]
 		{
 			"Skill 44 increased from 71 to 72", -- [1]
 			0, -- [2]
-		}, -- [276]
+		}, -- [159]
 		{
 			"Skill 44 increased from 72 to 73", -- [1]
 			0, -- [2]
-		}, -- [277]
+		}, -- [160]
 		{
 			"Skill 44 increased from 73 to 74", -- [1]
 			0, -- [2]
-		}, -- [278]
+		}, -- [161]
 		{
 			"Skill 44 increased from 74 to 75", -- [1]
 			0, -- [2]
-		}, -- [279]
+		}, -- [162]
 		{
 			"Skill 44 increased from 75 to 76", -- [1]
 			0, -- [2]
-		}, -- [280]
+		}, -- [163]
 		{
 			"Skill 44 increased from 76 to 77", -- [1]
 			0, -- [2]
-		}, -- [281]
+		}, -- [164]
 		{
 			"Skill 44 increased from 77 to 78", -- [1]
 			0, -- [2]
-		}, -- [282]
+		}, -- [165]
 		{
 			"Skill 226 increased from 69 to 70", -- [1]
 			0, -- [2]
-		}, -- [283]
+		}, -- [166]
 		{
 			"Skill 44 increased from 78 to 79", -- [1]
 			0, -- [2]
-		}, -- [284]
+		}, -- [167]
 		{
 			"Skill 44 increased from 79 to 80", -- [1]
 			0, -- [2]
-		}, -- [285]
+		}, -- [168]
 		{
 			"Skill 44 increased from 80 to 81", -- [1]
 			0, -- [2]
-		}, -- [286]
+		}, -- [169]
 		{
 			"Skill 226 increased from 70 to 71", -- [1]
 			0, -- [2]
-		}, -- [287]
+		}, -- [170]
 		{
 			"Skill 44 increased from 81 to 82", -- [1]
 			0, -- [2]
-		}, -- [288]
+		}, -- [171]
 		{
 			"Skill 44 increased from 82 to 83", -- [1]
 			0, -- [2]
-		}, -- [289]
+		}, -- [172]
 		{
 			"Skill 44 increased from 83 to 84", -- [1]
 			0, -- [2]
-		}, -- [290]
+		}, -- [173]
 		{
 			"Skill 44 increased from 84 to 85", -- [1]
 			0, -- [2]
-		}, -- [291]
+		}, -- [174]
 		{
 			"Skill 44 increased from 85 to 86", -- [1]
 			0, -- [2]
-		}, -- [292]
+		}, -- [175]
 		{
 			"Skill 226 increased from 71 to 72", -- [1]
 			0, -- [2]
-		}, -- [293]
+		}, -- [176]
 		{
 			"Skill 44 increased from 86 to 87", -- [1]
 			0, -- [2]
-		}, -- [294]
+		}, -- [177]
 		{
 			"Skill 44 increased from 87 to 88", -- [1]
 			0, -- [2]
-		}, -- [295]
+		}, -- [178]
 		{
 			"World transfer pending...", -- [1]
 			0, -- [2]
-		}, -- [296]
+		}, -- [179]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [297]
+		}, -- [180]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [298]
+		}, -- [181]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
-		}, -- [299]
+		}, -- [182]
 		{
 			"Skill 172 increased from 1 to 2", -- [1]
 			0, -- [2]
-		}, -- [300]
+		}, -- [183]
 		{
 			"Skill 172 increased from 2 to 3", -- [1]
 			0, -- [2]
-		}, -- [301]
+		}, -- [184]
 		{
 			"Skill 172 increased from 3 to 4", -- [1]
 			0, -- [2]
-		}, -- [302]
+		}, -- [185]
 		{
 			"Skill 172 increased from 4 to 5", -- [1]
 			0, -- [2]
-		}, -- [303]
+		}, -- [186]
 		{
 			"Skill 172 increased from 5 to 6", -- [1]
 			0, -- [2]
-		}, -- [304]
+		}, -- [187]
 		{
 			"Skill 172 increased from 6 to 7", -- [1]
 			0, -- [2]
-		}, -- [305]
+		}, -- [188]
 		{
 			"Skill 172 increased from 7 to 8", -- [1]
 			0, -- [2]
-		}, -- [306]
+		}, -- [189]
 		{
 			"Skill 172 increased from 8 to 9", -- [1]
 			0, -- [2]
-		}, -- [307]
+		}, -- [190]
 		{
 			"Skill 172 increased from 9 to 10", -- [1]
 			0, -- [2]
-		}, -- [308]
+		}, -- [191]
 		{
 			"Skill 172 increased from 10 to 11", -- [1]
 			0, -- [2]
-		}, -- [309]
+		}, -- [192]
 		{
 			"Skill 172 increased from 11 to 12", -- [1]
 			0, -- [2]
-		}, -- [310]
+		}, -- [193]
 		{
 			"Skill 172 increased from 12 to 13", -- [1]
 			0, -- [2]
-		}, -- [311]
+		}, -- [194]
 		{
 			"Skill 172 increased from 13 to 14", -- [1]
 			0, -- [2]
-		}, -- [312]
+		}, -- [195]
 		{
 			"Skill 172 increased from 14 to 15", -- [1]
 			0, -- [2]
-		}, -- [313]
+		}, -- [196]
 		{
 			"Skill 172 increased from 15 to 16", -- [1]
 			0, -- [2]
-		}, -- [314]
+		}, -- [197]
 		{
 			"Skill 172 increased from 16 to 17", -- [1]
 			0, -- [2]
-		}, -- [315]
+		}, -- [198]
 		{
 			"Skill 172 increased from 17 to 18", -- [1]
 			0, -- [2]
-		}, -- [316]
+		}, -- [199]
 		{
 			"Skill 172 increased from 18 to 19", -- [1]
 			0, -- [2]
-		}, -- [317]
+		}, -- [200]
 		{
 			"Skill 172 increased from 19 to 20", -- [1]
 			0, -- [2]
-		}, -- [318]
+		}, -- [201]
 		{
 			"Skill 172 increased from 20 to 21", -- [1]
 			0, -- [2]
-		}, -- [319]
+		}, -- [202]
 		{
 			"Skill 172 increased from 21 to 22", -- [1]
 			0, -- [2]
-		}, -- [320]
+		}, -- [203]
 		{
 			"Skill 172 increased from 22 to 23", -- [1]
 			0, -- [2]
-		}, -- [321]
+		}, -- [204]
 		{
 			"Skill 172 increased from 23 to 24", -- [1]
 			0, -- [2]
-		}, -- [322]
+		}, -- [205]
 		{
 			"Skill 172 increased from 24 to 25", -- [1]
 			0, -- [2]
-		}, -- [323]
+		}, -- [206]
 		{
 			"Skill 172 increased from 25 to 26", -- [1]
 			0, -- [2]
-		}, -- [324]
+		}, -- [207]
 		{
 			"Skill 162 increased from 12 to 13", -- [1]
 			0, -- [2]
-		}, -- [325]
+		}, -- [208]
 		{
 			"Skill 162 increased from 13 to 14", -- [1]
 			0, -- [2]
-		}, -- [326]
+		}, -- [209]
 		{
 			"Skill 162 increased from 14 to 15", -- [1]
 			0, -- [2]
-		}, -- [327]
+		}, -- [210]
 		{
 			"Skill 172 increased from 26 to 27", -- [1]
 			0, -- [2]
-		}, -- [328]
+		}, -- [211]
 		{
 			"Skill 172 increased from 27 to 28", -- [1]
 			0, -- [2]
-		}, -- [329]
+		}, -- [212]
 		{
 			"Skill 172 increased from 28 to 29", -- [1]
 			0, -- [2]
-		}, -- [330]
+		}, -- [213]
 		{
 			"Skill 172 increased from 29 to 30", -- [1]
 			0, -- [2]
-		}, -- [331]
+		}, -- [214]
 		{
 			"Skill 172 increased from 30 to 31", -- [1]
 			0, -- [2]
-		}, -- [332]
+		}, -- [215]
 		{
 			"Skill 172 increased from 31 to 32", -- [1]
 			0, -- [2]
-		}, -- [333]
+		}, -- [216]
 		{
 			"Skill 172 increased from 32 to 33", -- [1]
 			0, -- [2]
-		}, -- [334]
+		}, -- [217]
 		{
 			"Skill 172 increased from 33 to 34", -- [1]
 			0, -- [2]
-		}, -- [335]
+		}, -- [218]
 		{
 			"Skill 172 increased from 34 to 35", -- [1]
 			0, -- [2]
-		}, -- [336]
+		}, -- [219]
 		{
 			"Skill 172 increased from 35 to 36", -- [1]
 			0, -- [2]
-		}, -- [337]
+		}, -- [220]
 		{
 			"Skill 172 increased from 36 to 37", -- [1]
 			0, -- [2]
-		}, -- [338]
+		}, -- [221]
 		{
 			"Skill 172 increased from 37 to 38", -- [1]
 			0, -- [2]
-		}, -- [339]
+		}, -- [222]
 		{
 			"Skill 172 increased from 38 to 39", -- [1]
 			0, -- [2]
-		}, -- [340]
+		}, -- [223]
 		{
 			"Skill 172 increased from 39 to 40", -- [1]
 			0, -- [2]
-		}, -- [341]
+		}, -- [224]
 		{
 			"Skill 172 increased from 40 to 41", -- [1]
 			0, -- [2]
-		}, -- [342]
+		}, -- [225]
 		{
 			"Skill 172 increased from 41 to 42", -- [1]
 			0, -- [2]
-		}, -- [343]
+		}, -- [226]
 		{
 			"Skill 172 increased from 42 to 43", -- [1]
 			0, -- [2]
-		}, -- [344]
+		}, -- [227]
 		{
 			"Skill 172 increased from 43 to 44", -- [1]
 			0, -- [2]
-		}, -- [345]
+		}, -- [228]
 		{
 			"Skill 172 increased from 44 to 45", -- [1]
 			0, -- [2]
-		}, -- [346]
+		}, -- [229]
 		{
 			"Skill 172 increased from 45 to 46", -- [1]
 			0, -- [2]
-		}, -- [347]
+		}, -- [230]
 		{
 			"Skill 172 increased from 46 to 47", -- [1]
 			0, -- [2]
-		}, -- [348]
+		}, -- [231]
 		{
 			"Skill 172 increased from 47 to 48", -- [1]
 			0, -- [2]
-		}, -- [349]
+		}, -- [232]
 		{
 			"Skill 172 increased from 48 to 49", -- [1]
 			0, -- [2]
-		}, -- [350]
+		}, -- [233]
 		{
 			"Skill 172 increased from 49 to 50", -- [1]
 			0, -- [2]
-		}, -- [351]
+		}, -- [234]
 		{
 			"Skill 172 increased from 50 to 51", -- [1]
 			0, -- [2]
-		}, -- [352]
+		}, -- [235]
 		{
 			"Skill 172 increased from 51 to 52", -- [1]
 			0, -- [2]
-		}, -- [353]
+		}, -- [236]
 		{
 			"Skill 172 increased from 52 to 53", -- [1]
 			0, -- [2]
-		}, -- [354]
+		}, -- [237]
 		{
 			"Skill 172 increased from 53 to 54", -- [1]
 			0, -- [2]
-		}, -- [355]
+		}, -- [238]
 		{
 			"Skill 162 increased from 15 to 16", -- [1]
 			0, -- [2]
-		}, -- [356]
+		}, -- [239]
 		{
 			"Skill 172 increased from 54 to 55", -- [1]
 			0, -- [2]
-		}, -- [357]
+		}, -- [240]
 		{
 			"Skill 172 increased from 55 to 56", -- [1]
 			0, -- [2]
-		}, -- [358]
+		}, -- [241]
 		{
 			"Skill 172 increased from 56 to 57", -- [1]
 			0, -- [2]
-		}, -- [359]
+		}, -- [242]
 		{
 			"Skill 172 increased from 57 to 58", -- [1]
 			0, -- [2]
-		}, -- [360]
+		}, -- [243]
 		{
 			"Skill 172 increased from 58 to 59", -- [1]
 			0, -- [2]
-		}, -- [361]
+		}, -- [244]
 		{
 			"Skill 172 increased from 59 to 60", -- [1]
 			0, -- [2]
-		}, -- [362]
+		}, -- [245]
 		{
 			"Skill 172 increased from 60 to 61", -- [1]
 			0, -- [2]
-		}, -- [363]
+		}, -- [246]
 		{
 			"Skill 172 increased from 61 to 62", -- [1]
 			0, -- [2]
-		}, -- [364]
+		}, -- [247]
 		{
 			"Skill 172 increased from 62 to 63", -- [1]
 			0, -- [2]
-		}, -- [365]
+		}, -- [248]
 		{
 			"Skill 172 increased from 63 to 64", -- [1]
 			0, -- [2]
-		}, -- [366]
+		}, -- [249]
 		{
 			"Skill 172 increased from 64 to 65", -- [1]
 			0, -- [2]
-		}, -- [367]
+		}, -- [250]
 		{
 			"Skill 172 increased from 65 to 66", -- [1]
 			0, -- [2]
-		}, -- [368]
+		}, -- [251]
 		{
 			"Skill 172 increased from 66 to 67", -- [1]
 			0, -- [2]
-		}, -- [369]
+		}, -- [252]
 		{
 			"Skill 172 increased from 67 to 68", -- [1]
 			0, -- [2]
-		}, -- [370]
+		}, -- [253]
 		{
 			"Skill 172 increased from 68 to 69", -- [1]
 			0, -- [2]
-		}, -- [371]
+		}, -- [254]
 		{
 			"Skill 26 increased from 95 to 100", -- [1]
 			0, -- [2]
-		}, -- [372]
+		}, -- [255]
 		{
 			"Skill 183 increased from 95 to 100", -- [1]
 			0, -- [2]
-		}, -- [373]
+		}, -- [256]
 		{
 			"Skill 256 increased from 95 to 100", -- [1]
 			0, -- [2]
-		}, -- [374]
+		}, -- [257]
 		{
 			"Skill 257 increased from 95 to 100", -- [1]
 			0, -- [2]
-		}, -- [375]
+		}, -- [258]
 		{
 			"Skill 754 increased from 95 to 100", -- [1]
 			0, -- [2]
-		}, -- [376]
+		}, -- [259]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [377]
+		}, -- [260]
 		{
 			"Total: 0d 12h 35m 47s", -- [1]
 			0, -- [2]
-		}, -- [378]
+		}, -- [261]
 		{
 			"Level: 0d 0h 2m 11s", -- [1]
 			0, -- [2]
-		}, -- [379]
+		}, -- [262]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [380]
+		}, -- [263]
 		{
 			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
 			0, -- [2]
-		}, -- [381]
+		}, -- [264]
 		{
 			"Disconnecting for reason 14", -- [1]
 			0, -- [2]
-		}, -- [382]
+		}, -- [265]
 		{
 			"NetClient::HandleDisconnect()\n", -- [1]
 			0, -- [2]
-		}, -- [383]
+		}, -- [266]
 		{
 			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
 			0, -- [2]
-		}, -- [384]
+		}, -- [267]
 		{
 			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
 			0, -- [2]
-		}, -- [385]
+		}, -- [268]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [386]
+		}, -- [269]
 		{
 			"Sorting particles normally.", -- [1]
 			0, -- [2]
-		}, -- [387]
+		}, -- [270]
 		{
 			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
-		}, -- [388]
+		}, -- [271]
 		{
 			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
-		}, -- [389]
+		}, -- [272]
 		{
 			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
-		}, -- [390]
+		}, -- [273]
 		{
 			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
-		}, -- [391]
+		}, -- [274]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [392]
+		}, -- [275]
 		{
 			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [393]
+		}, -- [276]
 		{
 			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [394]
+		}, -- [277]
 		{
 			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [395]
+		}, -- [278]
 		{
 			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
-		}, -- [396]
+		}, -- [279]
 		{
 			"Water detail changed to 3", -- [1]
 			0, -- [2]
-		}, -- [397]
+		}, -- [280]
 		{
 			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
-		}, -- [398]
+		}, -- [281]
 		{
 			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
-		}, -- [399]
+		}, -- [282]
 		{
 			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
-		}, -- [400]
+		}, -- [283]
 		{
 			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
-		}, -- [401]
+		}, -- [284]
 		{
 			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
-		}, -- [402]
+		}, -- [285]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [403]
+		}, -- [286]
 		{
 			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
-		}, -- [404]
+		}, -- [287]
 		{
 			"Projected textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [405]
+		}, -- [288]
 		{
 			"Spell Clutter set to dynamic", -- [1]
 			0, -- [2]
-		}, -- [406]
+		}, -- [289]
 		{
 			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
 			0, -- [2]
-		}, -- [407]
+		}, -- [290]
 		{
 			"Shadow texture size changed to 1024.", -- [1]
 			0, -- [2]
-		}, -- [408]
+		}, -- [291]
 		{
 			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [409]
+		}, -- [292]
 		{
 			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
-		}, -- [410]
+		}, -- [293]
 		{
 			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
-		}, -- [411]
+		}, -- [294]
 		{
 			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [412]
+		}, -- [295]
 		{
 			"SSAO mode set to 4", -- [1]
 			0, -- [2]
-		}, -- [413]
+		}, -- [296]
 		{
 			"SSAO type set to 0", -- [1]
 			0, -- [2]
-		}, -- [414]
+		}, -- [297]
 		{
 			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
-		}, -- [415]
+		}, -- [298]
 		{
 			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
-		}, -- [416]
+		}, -- [299]
 		{
 			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
-		}, -- [417]
+		}, -- [300]
 		{
 			"Render scale changed to 1", -- [1]
 			0, -- [2]
-		}, -- [418]
+		}, -- [301]
 		{
 			"Resample quality changed to 3", -- [1]
 			0, -- [2]
-		}, -- [419]
+		}, -- [302]
 		{
 			"MSAA disabled", -- [1]
 			0, -- [2]
-		}, -- [420]
+		}, -- [303]
 		{
 			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
-		}, -- [421]
+		}, -- [304]
 		{
 			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
-		}, -- [422]
+		}, -- [305]
 		{
 			"Volume fog enabled.", -- [1]
 			0, -- [2]
-		}, -- [423]
+		}, -- [306]
 		{
 			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
-		}, -- [424]
+		}, -- [307]
 		{
 			"dynamicLod enabled", -- [1]
 			0, -- [2]
-		}, -- [425]
+		}, -- [308]
 		{
 			"World preload object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [426]
+		}, -- [309]
 		{
 			"World load object sort enabled.", -- [1]
 			0, -- [2]
-		}, -- [427]
+		}, -- [310]
 		{
 			"World preload non critical enabled.", -- [1]
 			0, -- [2]
-		}, -- [428]
+		}, -- [311]
 		{
 			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
-		}, -- [429]
+		}, -- [312]
 		{
 			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
-		}, -- [430]
+		}, -- [313]
 		{
 			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
-		}, -- [431]
+		}, -- [314]
 		{
 			"Error display disabled", -- [1]
 			0, -- [2]
-		}, -- [432]
+		}, -- [315]
 		{
 			"Error display shown", -- [1]
 			0, -- [2]
-		}, -- [433]
+		}, -- [316]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [434]
+		}, -- [317]
 		{
 			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
-		}, -- [435]
+		}, -- [318]
 		{
 			"Now filtering: all messages", -- [1]
 			0, -- [2]
-		}, -- [436]
+		}, -- [319]
 		{
 			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [437]
+		}, -- [320]
 		{
 			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [438]
+		}, -- [321]
 		{
 			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [439]
+		}, -- [322]
 		{
 			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
-		}, -- [440]
+		}, -- [323]
 		{
 			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
-		}, -- [441]
+		}, -- [324]
 		{
 			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
-		}, -- [442]
+		}, -- [325]
 		{
 			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
-		}, -- [443]
+		}, -- [326]
 		{
 			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
-		}, -- [444]
+		}, -- [327]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [445]
+		}, -- [328]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [446]
+		}, -- [329]
 		{
 			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
-		}, -- [447]
+		}, -- [330]
 		{
 			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
-		}, -- [448]
+		}, -- [331]
 		{
 			"[GlueLogin] Reconnect token saved; creationTime=\"1637590600\" expirationTime=\"1637605000\"", -- [1]
 			0, -- [2]
-		}, -- [449]
+		}, -- [332]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [450]
+		}, -- [333]
 		{
 			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
-		}, -- [451]
+		}, -- [334]
 		{
 			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [452]
+		}, -- [335]
 		{
 			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
-		}, -- [453]
+		}, -- [336]
 		{
 			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [454]
+		}, -- [337]
 		{
 			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [455]
+		}, -- [338]
 		{
 			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
-		}, -- [456]
+		}, -- [339]
 		{
 			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
 			0, -- [2]
-		}, -- [457]
+		}, -- [340]
 		{
 			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [458]
+		}, -- [341]
 		{
 			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
-		}, -- [459]
+		}, -- [342]
 		{
 			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
-		}, -- [460]
+		}, -- [343]
 		{
 			"[WowEntitlements] [BNetAccount-0-00000BC426B8] [WowAccount-0-000004FE320E] Initialized with 1 entitlements.", -- [1]
 			0, -- [2]
-		}, -- [461]
+		}, -- [344]
 		{
 			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
-		}, -- [462]
+		}, -- [345]
 		{
 			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
-		}, -- [463]
+		}, -- [346]
 		{
 			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [464]
+		}, -- [347]
 		{
 			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
-		}, -- [465]
+		}, -- [348]
 		{
 			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
-		}, -- [466]
+		}, -- [349]
 		{
 			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
-		}, -- [467]
+		}, -- [350]
 		{
 			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [468]
+		}, -- [351]
 		{
 			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
-		}, -- [469]
+		}, -- [352]
 		{
 			"Got new connection 3", -- [1]
 			0, -- [2]
-		}, -- [470]
+		}, -- [353]
 		{
 			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
-		}, -- [471]
+		}, -- [354]
 		{
 			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
-		}, -- [472]
+		}, -- [355]
 		{
 			"Proficiency in item class 2 set to 0x0000000089", -- [1]
 			0, -- [2]
-		}, -- [473]
+		}, -- [356]
 		{
 			"Proficiency in item class 2 set to 0x0000000099", -- [1]
 			0, -- [2]
-		}, -- [474]
+		}, -- [357]
 		{
 			"Proficiency in item class 2 set to 0x0000000199", -- [1]
 			0, -- [2]
-		}, -- [475]
+		}, -- [358]
 		{
 			"Proficiency in item class 2 set to 0x0000000599", -- [1]
 			0, -- [2]
-		}, -- [476]
+		}, -- [359]
 		{
 			"Proficiency in item class 2 set to 0x00000005b9", -- [1]
 			0, -- [2]
-		}, -- [477]
+		}, -- [360]
 		{
 			"Proficiency in item class 2 set to 0x00000005bb", -- [1]
 			0, -- [2]
-		}, -- [478]
+		}, -- [361]
 		{
 			"Proficiency in item class 2 set to 0x00000085bb", -- [1]
 			0, -- [2]
-		}, -- [479]
+		}, -- [362]
 		{
 			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
-		}, -- [480]
+		}, -- [363]
 		{
 			"Proficiency in item class 2 set to 0x000000c5bb", -- [1]
 			0, -- [2]
-		}, -- [481]
+		}, -- [364]
 		{
 			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
 			0, -- [2]
-		}, -- [482]
+		}, -- [365]
 		{
 			"Proficiency in item class 4 set to 0x0000000009", -- [1]
 			0, -- [2]
-		}, -- [483]
+		}, -- [366]
 		{
 			"Proficiency in item class 4 set to 0x000000000d", -- [1]
 			0, -- [2]
-		}, -- [484]
+		}, -- [367]
 		{
 			"Proficiency in item class 4 set to 0x000000000f", -- [1]
 			0, -- [2]
-		}, -- [485]
+		}, -- [368]
 		{
 			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
-		}, -- [486]
+		}, -- [369]
 		{
 			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
 			0, -- [2]
-		}, -- [487]
+		}, -- [370]
 		{
 			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
 			0, -- [2]
-		}, -- [488]
+		}, -- [371]
 		{
 			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
-		}, -- [489]
+		}, -- [372]
 		{
 			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
-		}, -- [490]
+		}, -- [373]
 		{
 			"Time set to 11/22/2021 (Mon) 22:40", -- [1]
 			0, -- [2]
-		}, -- [491]
+		}, -- [374]
 		{
 			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
-		}, -- [492]
+		}, -- [375]
 		{
 			"Time played:", -- [1]
 			0, -- [2]
-		}, -- [493]
+		}, -- [376]
 		{
 			"Total: 0d 12h 35m 54s", -- [1]
 			0, -- [2]
-		}, -- [494]
+		}, -- [377]
 		{
 			"Level: 0d 0h 2m 18s", -- [1]
 			0, -- [2]
-		}, -- [495]
+		}, -- [378]
 		{
 			"Skill 172 increased from 69 to 70", -- [1]
 			0, -- [2]
-		}, -- [496]
+		}, -- [379]
 		{
 			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [380]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [381]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [382]
+		{
+			"Skill 95 increased from 94 to 95", -- [1]
+			0, -- [2]
+		}, -- [383]
+		{
+			"Skill 172 increased from 70 to 71", -- [1]
+			0, -- [2]
+		}, -- [384]
+		{
+			"Skill 172 increased from 71 to 72", -- [1]
+			0, -- [2]
+		}, -- [385]
+		{
+			"Skill 172 increased from 72 to 73", -- [1]
+			0, -- [2]
+		}, -- [386]
+		{
+			"Skill 172 increased from 73 to 74", -- [1]
+			0, -- [2]
+		}, -- [387]
+		{
+			"Skill 172 increased from 74 to 75", -- [1]
+			0, -- [2]
+		}, -- [388]
+		{
+			"Skill 172 increased from 75 to 76", -- [1]
+			0, -- [2]
+		}, -- [389]
+		{
+			"Skill 172 increased from 76 to 77", -- [1]
+			0, -- [2]
+		}, -- [390]
+		{
+			"Skill 172 increased from 77 to 78", -- [1]
+			0, -- [2]
+		}, -- [391]
+		{
+			"Skill 172 increased from 78 to 79", -- [1]
+			0, -- [2]
+		}, -- [392]
+		{
+			"Skill 172 increased from 79 to 80", -- [1]
+			0, -- [2]
+		}, -- [393]
+		{
+			"Skill 172 increased from 80 to 81", -- [1]
+			0, -- [2]
+		}, -- [394]
+		{
+			"Skill 172 increased from 81 to 82", -- [1]
+			0, -- [2]
+		}, -- [395]
+		{
+			"Skill 172 increased from 82 to 83", -- [1]
+			0, -- [2]
+		}, -- [396]
+		{
+			"Skill 172 increased from 83 to 84", -- [1]
+			0, -- [2]
+		}, -- [397]
+		{
+			"Skill 172 increased from 84 to 85", -- [1]
+			0, -- [2]
+		}, -- [398]
+		{
+			"Skill 172 increased from 85 to 86", -- [1]
+			0, -- [2]
+		}, -- [399]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [400]
+		{
+			"Skill 172 increased from 86 to 87", -- [1]
+			0, -- [2]
+		}, -- [401]
+		{
+			"Skill 172 increased from 87 to 88", -- [1]
+			0, -- [2]
+		}, -- [402]
+		{
+			"Skill 44 increased from 88 to 89", -- [1]
+			0, -- [2]
+		}, -- [403]
+		{
+			"Skill 95 increased from 95 to 96", -- [1]
+			0, -- [2]
+		}, -- [404]
+		{
+			"Skill 44 increased from 89 to 90", -- [1]
+			0, -- [2]
+		}, -- [405]
+		{
+			"Skill 44 increased from 90 to 91", -- [1]
+			0, -- [2]
+		}, -- [406]
+		{
+			"Skill 44 increased from 91 to 92", -- [1]
+			0, -- [2]
+		}, -- [407]
+		{
+			"Skill 44 increased from 92 to 93", -- [1]
+			0, -- [2]
+		}, -- [408]
+		{
+			"Skill 95 increased from 96 to 97", -- [1]
+			0, -- [2]
+		}, -- [409]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [410]
+		{
+			"Skill 44 increased from 93 to 94", -- [1]
+			0, -- [2]
+		}, -- [411]
+		{
+			"Skill 44 increased from 94 to 95", -- [1]
+			0, -- [2]
+		}, -- [412]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [413]
+		{
+			"Skill 172 increased from 88 to 89", -- [1]
+			0, -- [2]
+		}, -- [414]
+		{
+			"Skill 172 increased from 89 to 90", -- [1]
+			0, -- [2]
+		}, -- [415]
+		{
+			"Skill 95 increased from 97 to 98", -- [1]
+			0, -- [2]
+		}, -- [416]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [417]
+		{
+			"Skill 172 increased from 90 to 91", -- [1]
+			0, -- [2]
+		}, -- [418]
+		{
+			"Skill 172 increased from 91 to 92", -- [1]
+			0, -- [2]
+		}, -- [419]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [420]
+		{
+			"Skill 172 increased from 92 to 93", -- [1]
+			0, -- [2]
+		}, -- [421]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [422]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [423]
+		{
+			"Total: 0d 14h 9m 9s", -- [1]
+			0, -- [2]
+		}, -- [424]
+		{
+			"Level: 0d 1h 35m 33s", -- [1]
+			0, -- [2]
+		}, -- [425]
+		{
+			"Skill 172 increased from 93 to 94", -- [1]
+			0, -- [2]
+		}, -- [426]
+		{
+			"Skill 226 increased from 72 to 73", -- [1]
+			0, -- [2]
+		}, -- [427]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [428]
+		{
+			"Skill 172 increased from 94 to 95", -- [1]
+			0, -- [2]
+		}, -- [429]
+		{
+			"Skill 172 increased from 95 to 96", -- [1]
+			0, -- [2]
+		}, -- [430]
+		{
+			"Skill 95 increased from 98 to 99", -- [1]
+			0, -- [2]
+		}, -- [431]
+		{
+			"Skill 226 increased from 73 to 74", -- [1]
+			0, -- [2]
+		}, -- [432]
+		{
+			"Skill 172 increased from 96 to 97", -- [1]
+			0, -- [2]
+		}, -- [433]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [434]
+		{
+			"Skill 226 increased from 74 to 75", -- [1]
+			0, -- [2]
+		}, -- [435]
+		{
+			"Skill 172 increased from 97 to 98", -- [1]
+			0, -- [2]
+		}, -- [436]
+		{
+			"Skill 226 increased from 75 to 76", -- [1]
+			0, -- [2]
+		}, -- [437]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [438]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [439]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [440]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [441]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [442]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [443]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [444]
+		{
+			"Skill 26 increased from 100 to 105", -- [1]
+			0, -- [2]
+		}, -- [445]
+		{
+			"Skill 183 increased from 100 to 105", -- [1]
+			0, -- [2]
+		}, -- [446]
+		{
+			"Skill 256 increased from 100 to 105", -- [1]
+			0, -- [2]
+		}, -- [447]
+		{
+			"Skill 257 increased from 100 to 105", -- [1]
+			0, -- [2]
+		}, -- [448]
+		{
+			"Skill 754 increased from 100 to 105", -- [1]
+			0, -- [2]
+		}, -- [449]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [450]
+		{
+			"Total: 0d 14h 55m 55s", -- [1]
+			0, -- [2]
+		}, -- [451]
+		{
+			"Level: 0d 0h 0m 43s", -- [1]
+			0, -- [2]
+		}, -- [452]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [453]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [454]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [455]
+		{
+			"Total: 0d 15h 1m 33s", -- [1]
+			0, -- [2]
+		}, -- [456]
+		{
+			"Level: 0d 0h 6m 21s", -- [1]
+			0, -- [2]
+		}, -- [457]
+		{
+			"Skill 118 increased from 0 to 105", -- [1]
+			0, -- [2]
+		}, -- [458]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [459]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [460]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [461]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [462]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [463]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [464]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [465]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [466]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [467]
+		{
+			"Total: 0d 15h 20m 35s", -- [1]
+			0, -- [2]
+		}, -- [468]
+		{
+			"Level: 0d 0h 25m 23s", -- [1]
+			0, -- [2]
+		}, -- [469]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [470]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [471]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [472]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [473]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [474]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [475]
+		{
+			"Total: 0d 15h 20m 52s", -- [1]
+			0, -- [2]
+		}, -- [476]
+		{
+			"Level: 0d 0h 25m 40s", -- [1]
+			0, -- [2]
+		}, -- [477]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [478]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [479]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [480]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [481]
+		{
+			"Total: 0d 15h 23m 25s", -- [1]
+			0, -- [2]
+		}, -- [482]
+		{
+			"Level: 0d 0h 28m 13s", -- [1]
+			0, -- [2]
+		}, -- [483]
+		{
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			0, -- [2]
+		}, -- [484]
+		{
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [485]
+		{
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			0, -- [2]
+		}, -- [486]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [487]
+		{
+			"Total: 0d 15h 23m 45s", -- [1]
+			0, -- [2]
+		}, -- [488]
+		{
+			"Level: 0d 0h 28m 33s", -- [1]
+			0, -- [2]
+		}, -- [489]
+		{
+			"Trainer service 3286 unavailable", -- [1]
+			0, -- [2]
+		}, -- [490]
+		{
+			"Skill 172 increased from 98 to 99", -- [1]
+			0, -- [2]
+		}, -- [491]
+		{
+			"Skill 172 increased from 99 to 100", -- [1]
+			0, -- [2]
+		}, -- [492]
+		{
+			"Skill 95 increased from 99 to 100", -- [1]
+			0, -- [2]
+		}, -- [493]
+		{
+			"Skill 172 increased from 100 to 101", -- [1]
+			0, -- [2]
+		}, -- [494]
+		{
+			"Skill 95 increased from 100 to 101", -- [1]
+			0, -- [2]
+		}, -- [495]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [496]
+		{
+			"Skill 172 increased from 101 to 102", -- [1]
 			0, -- [2]
 		}, -- [497]
 		{
@@ -1996,1711 +1995,1711 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [498]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 95 increased from 101 to 102", -- [1]
 			0, -- [2]
 		}, -- [499]
 		{
-			"Skill 95 increased from 94 to 95", -- [1]
+			"Skill 172 increased from 102 to 103", -- [1]
 			0, -- [2]
 		}, -- [500]
 		{
-			"Skill 172 increased from 70 to 71", -- [1]
+			"Skill 26 increased from 105 to 110", -- [1]
 			0, -- [2]
 		}, -- [501]
 		{
-			"Skill 172 increased from 71 to 72", -- [1]
+			"Skill 118 increased from 105 to 110", -- [1]
 			0, -- [2]
 		}, -- [502]
 		{
-			"Skill 172 increased from 72 to 73", -- [1]
+			"Skill 183 increased from 105 to 110", -- [1]
 			0, -- [2]
 		}, -- [503]
 		{
-			"Skill 172 increased from 73 to 74", -- [1]
+			"Skill 256 increased from 105 to 110", -- [1]
 			0, -- [2]
 		}, -- [504]
 		{
-			"Skill 172 increased from 74 to 75", -- [1]
+			"Skill 257 increased from 105 to 110", -- [1]
 			0, -- [2]
 		}, -- [505]
 		{
-			"Skill 172 increased from 75 to 76", -- [1]
+			"Skill 754 increased from 105 to 110", -- [1]
 			0, -- [2]
 		}, -- [506]
 		{
-			"Skill 172 increased from 76 to 77", -- [1]
+			"Skill 129 increased from 80 to 81", -- [1]
 			0, -- [2]
 		}, -- [507]
 		{
-			"Skill 172 increased from 77 to 78", -- [1]
+			"Skill 129 increased from 81 to 82", -- [1]
 			0, -- [2]
 		}, -- [508]
 		{
-			"Skill 172 increased from 78 to 79", -- [1]
+			"Skill 129 increased from 82 to 83", -- [1]
 			0, -- [2]
 		}, -- [509]
 		{
-			"Skill 172 increased from 79 to 80", -- [1]
+			"Skill 129 increased from 83 to 84", -- [1]
 			0, -- [2]
 		}, -- [510]
 		{
-			"Skill 172 increased from 80 to 81", -- [1]
+			"Skill 129 increased from 84 to 85", -- [1]
 			0, -- [2]
 		}, -- [511]
 		{
-			"Skill 172 increased from 81 to 82", -- [1]
+			"Skill 129 increased from 85 to 86", -- [1]
 			0, -- [2]
 		}, -- [512]
 		{
-			"Skill 172 increased from 82 to 83", -- [1]
+			"Skill 129 increased from 86 to 87", -- [1]
 			0, -- [2]
 		}, -- [513]
 		{
-			"Skill 172 increased from 83 to 84", -- [1]
+			"Skill 129 increased from 87 to 88", -- [1]
 			0, -- [2]
 		}, -- [514]
 		{
-			"Skill 172 increased from 84 to 85", -- [1]
+			"Skill 129 increased from 88 to 89", -- [1]
 			0, -- [2]
 		}, -- [515]
 		{
-			"Skill 172 increased from 85 to 86", -- [1]
+			"Skill 129 increased from 89 to 90", -- [1]
 			0, -- [2]
 		}, -- [516]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 129 increased from 90 to 91", -- [1]
 			0, -- [2]
 		}, -- [517]
 		{
-			"Skill 172 increased from 86 to 87", -- [1]
+			"Skill 129 increased from 91 to 92", -- [1]
 			0, -- [2]
 		}, -- [518]
 		{
-			"Skill 172 increased from 87 to 88", -- [1]
+			"Skill 129 increased from 92 to 93", -- [1]
 			0, -- [2]
 		}, -- [519]
 		{
-			"Skill 44 increased from 88 to 89", -- [1]
+			"Skill 129 increased from 93 to 94", -- [1]
 			0, -- [2]
 		}, -- [520]
 		{
-			"Skill 95 increased from 95 to 96", -- [1]
+			"Skill 129 increased from 94 to 95", -- [1]
 			0, -- [2]
 		}, -- [521]
 		{
-			"Skill 44 increased from 89 to 90", -- [1]
+			"Skill 129 increased from 95 to 96", -- [1]
 			0, -- [2]
 		}, -- [522]
 		{
-			"Skill 44 increased from 90 to 91", -- [1]
+			"Skill 129 increased from 96 to 97", -- [1]
 			0, -- [2]
 		}, -- [523]
 		{
-			"Skill 44 increased from 91 to 92", -- [1]
+			"Skill 129 increased from 97 to 98", -- [1]
 			0, -- [2]
 		}, -- [524]
 		{
-			"Skill 44 increased from 92 to 93", -- [1]
+			"Skill 129 increased from 98 to 99", -- [1]
 			0, -- [2]
 		}, -- [525]
 		{
-			"Skill 95 increased from 96 to 97", -- [1]
+			"Skill 129 increased from 99 to 100", -- [1]
 			0, -- [2]
 		}, -- [526]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 129 increased from 100 to 101", -- [1]
 			0, -- [2]
 		}, -- [527]
 		{
-			"Skill 44 increased from 93 to 94", -- [1]
+			"Skill 129 increased from 101 to 102", -- [1]
 			0, -- [2]
 		}, -- [528]
 		{
-			"Skill 44 increased from 94 to 95", -- [1]
+			"Skill 129 increased from 102 to 103", -- [1]
 			0, -- [2]
 		}, -- [529]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [530]
 		{
-			"Skill 172 increased from 88 to 89", -- [1]
+			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
 			0, -- [2]
 		}, -- [531]
 		{
-			"Skill 172 increased from 89 to 90", -- [1]
+			"Disconnecting for reason 14", -- [1]
 			0, -- [2]
 		}, -- [532]
 		{
-			"Skill 95 increased from 97 to 98", -- [1]
+			"NetClient::HandleDisconnect()\n", -- [1]
 			0, -- [2]
 		}, -- [533]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
 			0, -- [2]
 		}, -- [534]
 		{
-			"Skill 172 increased from 90 to 91", -- [1]
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
 			0, -- [2]
 		}, -- [535]
 		{
-			"Skill 172 increased from 91 to 92", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [536]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [537]
 		{
-			"Skill 172 increased from 92 to 93", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [538]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [539]
 		{
-			"Time played:", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [540]
 		{
-			"Total: 0d 14h 9m 9s", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [541]
 		{
-			"Level: 0d 1h 35m 33s", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [542]
 		{
-			"Skill 172 increased from 93 to 94", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [543]
 		{
-			"Skill 226 increased from 72 to 73", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [544]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [545]
 		{
-			"Skill 172 increased from 94 to 95", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [546]
 		{
-			"Skill 172 increased from 95 to 96", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [547]
 		{
-			"Skill 95 increased from 98 to 99", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [548]
 		{
-			"Skill 226 increased from 73 to 74", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [549]
 		{
-			"Skill 172 increased from 96 to 97", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [550]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [551]
 		{
-			"Skill 226 increased from 74 to 75", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [552]
 		{
-			"Skill 172 increased from 97 to 98", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [553]
 		{
-			"Skill 226 increased from 75 to 76", -- [1]
+			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
 		}, -- [554]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [555]
 		{
-			"World transfer pending...", -- [1]
+			"Spell Clutter set to dynamic", -- [1]
 			0, -- [2]
 		}, -- [556]
 		{
-			"Got new connection 3", -- [1]
+			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
 			0, -- [2]
 		}, -- [557]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Shadow texture size changed to 1024.", -- [1]
 			0, -- [2]
 		}, -- [558]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [559]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
 		}, -- [560]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
 		}, -- [561]
 		{
-			"Skill 26 increased from 100 to 105", -- [1]
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [562]
 		{
-			"Skill 183 increased from 100 to 105", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [563]
 		{
-			"Skill 256 increased from 100 to 105", -- [1]
+			"SSAO type set to 0", -- [1]
 			0, -- [2]
 		}, -- [564]
 		{
-			"Skill 257 increased from 100 to 105", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [565]
 		{
-			"Skill 754 increased from 100 to 105", -- [1]
+			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
 		}, -- [566]
 		{
-			"Time played:", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [567]
 		{
-			"Total: 0d 14h 55m 55s", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [568]
 		{
-			"Level: 0d 0h 0m 43s", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [569]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [570]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [571]
 		{
-			"Time played:", -- [1]
+			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
 		}, -- [572]
 		{
-			"Total: 0d 15h 1m 33s", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [573]
 		{
-			"Level: 0d 0h 6m 21s", -- [1]
+			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
 		}, -- [574]
 		{
-			"Skill 118 increased from 0 to 105", -- [1]
+			"dynamicLod enabled", -- [1]
 			0, -- [2]
 		}, -- [575]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [576]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [577]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [578]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [579]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [580]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [581]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [582]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [583]
 		{
-			"Time played:", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [584]
 		{
-			"Total: 0d 15h 20m 35s", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [585]
 		{
-			"Level: 0d 0h 25m 23s", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [586]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [587]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [588]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [589]
 		{
-			"World transfer pending...", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [590]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"nullopt\" loginPortal=\"CN.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [591]
 		{
-			"Time played:", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [592]
 		{
-			"Total: 0d 15h 20m 52s", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [593]
 		{
-			"Level: 0d 0h 25m 40s", -- [1]
+			"[IBN_Login] Attempting logonhost=\"CN.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [594]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [595]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [596]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [597]
 		{
-			"Time played:", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [598]
 		{
-			"Total: 0d 15h 23m 25s", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [599]
 		{
-			"Level: 0d 0h 28m 13s", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [600]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [601]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [602]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [603]
 		{
-			"Time played:", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [604]
 		{
-			"Total: 0d 15h 23m 45s", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [605]
 		{
-			"Level: 0d 0h 28m 33s", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [606]
 		{
-			"Trainer service 3286 unavailable", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [607]
 		{
-			"Skill 172 increased from 98 to 99", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [608]
 		{
-			"Skill 172 increased from 99 to 100", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
 			0, -- [2]
 		}, -- [609]
 		{
-			"Skill 95 increased from 99 to 100", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [610]
 		{
-			"Skill 172 increased from 100 to 101", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [611]
 		{
-			"Skill 95 increased from 100 to 101", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [612]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[WowEntitlements] [BNetAccount-0-00000BC426B8] [WowAccount-0-000004FE320E] Initialized with 1 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [613]
 		{
-			"Skill 172 increased from 101 to 102", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [614]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [615]
 		{
-			"Skill 95 increased from 101 to 102", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [616]
 		{
-			"Skill 172 increased from 102 to 103", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [617]
 		{
-			"Skill 26 increased from 105 to 110", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [618]
 		{
-			"Skill 118 increased from 105 to 110", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [619]
 		{
-			"Skill 183 increased from 105 to 110", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [620]
 		{
-			"Skill 256 increased from 105 to 110", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [621]
 		{
-			"Skill 257 increased from 105 to 110", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [622]
 		{
-			"Skill 754 increased from 105 to 110", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [623]
 		{
-			"Skill 129 increased from 80 to 81", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [624]
 		{
-			"Skill 129 increased from 81 to 82", -- [1]
+			"Proficiency in item class 2 set to 0x0000000089", -- [1]
 			0, -- [2]
 		}, -- [625]
 		{
-			"Skill 129 increased from 82 to 83", -- [1]
+			"Proficiency in item class 2 set to 0x0000000099", -- [1]
 			0, -- [2]
 		}, -- [626]
 		{
-			"Skill 129 increased from 83 to 84", -- [1]
+			"Proficiency in item class 2 set to 0x0000000199", -- [1]
 			0, -- [2]
 		}, -- [627]
 		{
-			"Skill 129 increased from 84 to 85", -- [1]
+			"Proficiency in item class 2 set to 0x0000000599", -- [1]
 			0, -- [2]
 		}, -- [628]
 		{
-			"Skill 129 increased from 85 to 86", -- [1]
+			"Proficiency in item class 2 set to 0x00000005b9", -- [1]
 			0, -- [2]
 		}, -- [629]
 		{
-			"Skill 129 increased from 86 to 87", -- [1]
+			"Proficiency in item class 2 set to 0x00000005bb", -- [1]
 			0, -- [2]
 		}, -- [630]
 		{
-			"Skill 129 increased from 87 to 88", -- [1]
+			"Proficiency in item class 2 set to 0x00000085bb", -- [1]
 			0, -- [2]
 		}, -- [631]
 		{
-			"Skill 129 increased from 88 to 89", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [632]
 		{
-			"Skill 129 increased from 89 to 90", -- [1]
+			"Proficiency in item class 2 set to 0x000000c5bb", -- [1]
 			0, -- [2]
 		}, -- [633]
 		{
-			"Skill 129 increased from 90 to 91", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
 			0, -- [2]
 		}, -- [634]
 		{
-			"Skill 129 increased from 91 to 92", -- [1]
+			"Proficiency in item class 4 set to 0x0000000009", -- [1]
 			0, -- [2]
 		}, -- [635]
 		{
-			"Skill 129 increased from 92 to 93", -- [1]
+			"Proficiency in item class 4 set to 0x000000000d", -- [1]
 			0, -- [2]
 		}, -- [636]
 		{
-			"Skill 129 increased from 93 to 94", -- [1]
+			"Proficiency in item class 4 set to 0x000000000f", -- [1]
 			0, -- [2]
 		}, -- [637]
 		{
-			"Skill 129 increased from 94 to 95", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [638]
 		{
-			"Skill 129 increased from 95 to 96", -- [1]
+			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
 			0, -- [2]
 		}, -- [639]
 		{
-			"Skill 129 increased from 96 to 97", -- [1]
+			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
 			0, -- [2]
 		}, -- [640]
 		{
-			"Skill 129 increased from 97 to 98", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [641]
 		{
-			"Skill 129 increased from 98 to 99", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [642]
 		{
-			"Skill 129 increased from 99 to 100", -- [1]
+			"Time set to 11/23/2021 (Tue) 21:50", -- [1]
 			0, -- [2]
 		}, -- [643]
 		{
-			"Skill 129 increased from 100 to 101", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [644]
 		{
-			"Skill 129 increased from 101 to 102", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [645]
 		{
-			"Skill 129 increased from 102 to 103", -- [1]
+			"Total: 0d 16h 6m 53s", -- [1]
 			0, -- [2]
 		}, -- [646]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Level: 0d 0h 9m 0s", -- [1]
 			0, -- [2]
 		}, -- [647]
 		{
-			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
+			"Skill 172 increased from 103 to 104", -- [1]
 			0, -- [2]
 		}, -- [648]
 		{
-			"Disconnecting for reason 14", -- [1]
+			"Skill 95 increased from 102 to 103", -- [1]
 			0, -- [2]
 		}, -- [649]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [650]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [651]
 		{
-			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [652]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [653]
 		{
-			"Sorting particles normally.", -- [1]
+			"Skill 172 increased from 104 to 105", -- [1]
 			0, -- [2]
 		}, -- [654]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [655]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [656]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Skill 95 increased from 103 to 104", -- [1]
 			0, -- [2]
 		}, -- [657]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"Skill 172 increased from 105 to 106", -- [1]
 			0, -- [2]
 		}, -- [658]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Skill 95 increased from 104 to 105", -- [1]
 			0, -- [2]
 		}, -- [659]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Skill 172 increased from 106 to 107", -- [1]
 			0, -- [2]
 		}, -- [660]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Skill 95 increased from 105 to 106", -- [1]
 			0, -- [2]
 		}, -- [661]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Skill 162 increased from 16 to 17", -- [1]
 			0, -- [2]
 		}, -- [662]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Skill 162 increased from 17 to 18", -- [1]
 			0, -- [2]
 		}, -- [663]
 		{
-			"Water detail changed to 3", -- [1]
+			"Skill 162 increased from 18 to 19", -- [1]
 			0, -- [2]
 		}, -- [664]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Skill 162 increased from 19 to 20", -- [1]
 			0, -- [2]
 		}, -- [665]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Skill 162 increased from 20 to 21", -- [1]
 			0, -- [2]
 		}, -- [666]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Skill 162 increased from 21 to 22", -- [1]
 			0, -- [2]
 		}, -- [667]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Skill 172 increased from 107 to 108", -- [1]
 			0, -- [2]
 		}, -- [668]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Skill 226 increased from 76 to 77", -- [1]
 			0, -- [2]
 		}, -- [669]
 		{
-			"Volume fog enabled.", -- [1]
+			"Skill 95 increased from 106 to 107", -- [1]
 			0, -- [2]
 		}, -- [670]
 		{
-			"Particulate volumes enabled.", -- [1]
+			"Skill 162 increased from 22 to 23", -- [1]
 			0, -- [2]
 		}, -- [671]
 		{
-			"Projected textures enabled.", -- [1]
+			"Skill 162 increased from 23 to 24", -- [1]
 			0, -- [2]
 		}, -- [672]
 		{
-			"Spell Clutter set to dynamic", -- [1]
+			"Skill 162 increased from 24 to 25", -- [1]
 			0, -- [2]
 		}, -- [673]
 		{
-			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
+			"Skill 162 increased from 25 to 26", -- [1]
 			0, -- [2]
 		}, -- [674]
 		{
-			"Shadow texture size changed to 1024.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [675]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Skill 95 increased from 107 to 108", -- [1]
 			0, -- [2]
 		}, -- [676]
 		{
-			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
+			"Skill 162 increased from 26 to 27", -- [1]
 			0, -- [2]
 		}, -- [677]
 		{
-			"maxLightCount must be in range 0 to 32.", -- [1]
+			"Skill 162 increased from 27 to 28", -- [1]
 			0, -- [2]
 		}, -- [678]
 		{
-			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
+			"Skill 172 increased from 108 to 109", -- [1]
 			0, -- [2]
 		}, -- [679]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Skill 162 increased from 28 to 29", -- [1]
 			0, -- [2]
 		}, -- [680]
 		{
-			"SSAO type set to 0", -- [1]
+			"Skill 162 increased from 29 to 30", -- [1]
 			0, -- [2]
 		}, -- [681]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Skill 162 increased from 30 to 31", -- [1]
 			0, -- [2]
 		}, -- [682]
 		{
-			"Texture filtering mode updated.", -- [1]
+			"Skill 162 increased from 31 to 32", -- [1]
 			0, -- [2]
 		}, -- [683]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [684]
 		{
-			"Render scale changed to 1", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [685]
 		{
-			"Resample quality changed to 3", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [686]
 		{
-			"MSAA disabled", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [687]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"Skill 95 increased from 108 to 109", -- [1]
 			0, -- [2]
 		}, -- [688]
 		{
-			"lodObjectSizeScale cannot be changed.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [689]
 		{
-			"Volume fog enabled.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [690]
 		{
-			"Particulate volumes enabled.", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [691]
 		{
-			"dynamicLod enabled", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [692]
 		{
-			"World preload object sort enabled.", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [693]
 		{
-			"World load object sort enabled.", -- [1]
+			"Skill 26 increased from 110 to 115", -- [1]
 			0, -- [2]
 		}, -- [694]
 		{
-			"World preload non critical enabled.", -- [1]
+			"Skill 118 increased from 110 to 115", -- [1]
 			0, -- [2]
 		}, -- [695]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"Skill 183 increased from 110 to 115", -- [1]
 			0, -- [2]
 		}, -- [696]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Skill 256 increased from 110 to 115", -- [1]
 			0, -- [2]
 		}, -- [697]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Skill 257 increased from 110 to 115", -- [1]
 			0, -- [2]
 		}, -- [698]
 		{
-			"Error display disabled", -- [1]
+			"Skill 754 increased from 110 to 115", -- [1]
 			0, -- [2]
 		}, -- [699]
 		{
-			"Error display shown", -- [1]
+			"Skill 172 increased from 109 to 110", -- [1]
 			0, -- [2]
 		}, -- [700]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Skill 226 increased from 77 to 78", -- [1]
 			0, -- [2]
 		}, -- [701]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Skill 172 increased from 110 to 111", -- [1]
 			0, -- [2]
 		}, -- [702]
 		{
-			"Now filtering: all messages", -- [1]
+			"Skill 95 increased from 109 to 110", -- [1]
 			0, -- [2]
 		}, -- [703]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Skill 172 increased from 111 to 112", -- [1]
 			0, -- [2]
 		}, -- [704]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Skill 172 increased from 112 to 113", -- [1]
 			0, -- [2]
 		}, -- [705]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Terrain mip level changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [706]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"Projected textures disabled.", -- [1]
 			0, -- [2]
 		}, -- [707]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"nullopt\" loginPortal=\"CN.actual.battle.net:1119\"", -- [1]
+			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
 			0, -- [2]
 		}, -- [708]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"Shadow texture size changed to 1024.", -- [1]
 			0, -- [2]
 		}, -- [709]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"Soft shadows changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [710]
 		{
-			"[IBN_Login] Attempting logonhost=\"CN.actual.battle.net\" port=\"1119\"", -- [1]
+			"Water detail changed to 0", -- [1]
 			0, -- [2]
 		}, -- [711]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Reflection mode changed to 0", -- [1]
 			0, -- [2]
 		}, -- [712]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Ripple detail changed to 0", -- [1]
 			0, -- [2]
 		}, -- [713]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Sunshafts quality changed to 0", -- [1]
 			0, -- [2]
 		}, -- [714]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"SSAO mode set to 0", -- [1]
 			0, -- [2]
 		}, -- [715]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Skill 95 increased from 110 to 111", -- [1]
 			0, -- [2]
 		}, -- [716]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"Skill 172 increased from 113 to 114", -- [1]
 			0, -- [2]
 		}, -- [717]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [718]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [719]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [720]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [721]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"World transfer pending...", -- [1]
 			0, -- [2]
 		}, -- [722]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 1, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [723]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			"Weather changed to 1, intensity 0.500000\n", -- [1]
 			0, -- [2]
 		}, -- [724]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [725]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [726]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [727]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"Skill 129 increased from 103 to 104", -- [1]
 			0, -- [2]
 		}, -- [728]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"Skill 129 increased from 104 to 105", -- [1]
 			0, -- [2]
 		}, -- [729]
 		{
-			"[WowEntitlements] [BNetAccount-0-00000BC426B8] [WowAccount-0-000004FE320E] Initialized with 1 entitlements.", -- [1]
+			"Skill 129 increased from 105 to 106", -- [1]
 			0, -- [2]
 		}, -- [730]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Skill 129 increased from 106 to 107", -- [1]
 			0, -- [2]
 		}, -- [731]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"Skill 129 increased from 107 to 108", -- [1]
 			0, -- [2]
 		}, -- [732]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"Skill 129 increased from 108 to 109", -- [1]
 			0, -- [2]
 		}, -- [733]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"Skill 129 increased from 109 to 110", -- [1]
 			0, -- [2]
 		}, -- [734]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"Skill 129 increased from 110 to 111", -- [1]
 			0, -- [2]
 		}, -- [735]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Skill 129 increased from 111 to 112", -- [1]
 			0, -- [2]
 		}, -- [736]
 		{
-			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 129 increased from 112 to 113", -- [1]
 			0, -- [2]
 		}, -- [737]
 		{
-			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
+			"Skill 129 increased from 113 to 114", -- [1]
 			0, -- [2]
 		}, -- [738]
 		{
-			"Got new connection 3", -- [1]
+			"Skill 129 increased from 114 to 115", -- [1]
 			0, -- [2]
 		}, -- [739]
 		{
-			"Proficiency in item class 2 set to 0x0000000080", -- [1]
+			"Skill 129 increased from 115 to 116", -- [1]
 			0, -- [2]
 		}, -- [740]
 		{
-			"Proficiency in item class 2 set to 0x0000000081", -- [1]
+			"Skill 129 increased from 116 to 117", -- [1]
 			0, -- [2]
 		}, -- [741]
 		{
-			"Proficiency in item class 2 set to 0x0000000089", -- [1]
+			"Skill 129 increased from 117 to 118", -- [1]
 			0, -- [2]
 		}, -- [742]
 		{
-			"Proficiency in item class 2 set to 0x0000000099", -- [1]
+			"Skill 129 increased from 118 to 119", -- [1]
 			0, -- [2]
 		}, -- [743]
 		{
-			"Proficiency in item class 2 set to 0x0000000199", -- [1]
+			"Skill 129 increased from 119 to 120", -- [1]
 			0, -- [2]
 		}, -- [744]
 		{
-			"Proficiency in item class 2 set to 0x0000000599", -- [1]
+			"Skill 129 increased from 120 to 121", -- [1]
 			0, -- [2]
 		}, -- [745]
 		{
-			"Proficiency in item class 2 set to 0x00000005b9", -- [1]
+			"Skill 129 increased from 121 to 122", -- [1]
 			0, -- [2]
 		}, -- [746]
 		{
-			"Proficiency in item class 2 set to 0x00000005bb", -- [1]
+			"Skill 129 increased from 122 to 123", -- [1]
 			0, -- [2]
 		}, -- [747]
 		{
-			"Proficiency in item class 2 set to 0x00000085bb", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [748]
 		{
-			"Proficiency in item class 4 set to 0x0000000001", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [749]
 		{
-			"Proficiency in item class 2 set to 0x000000c5bb", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [750]
 		{
-			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [751]
 		{
-			"Proficiency in item class 4 set to 0x0000000009", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [752]
 		{
-			"Proficiency in item class 4 set to 0x000000000d", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [753]
 		{
-			"Proficiency in item class 4 set to 0x000000000f", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [754]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [755]
 		{
-			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [756]
 		{
-			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
+			"World transfer aborted (reason: 30)", -- [1]
 			0, -- [2]
 		}, -- [757]
 		{
-			"Proficiency in item class 4 set to 0x000000004f", -- [1]
+			"Skill 95 increased from 111 to 112", -- [1]
 			0, -- [2]
 		}, -- [758]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Skill 226 increased from 78 to 79", -- [1]
 			0, -- [2]
 		}, -- [759]
 		{
-			"Time set to 11/23/2021 (Tue) 21:50", -- [1]
+			"Skill 226 increased from 79 to 80", -- [1]
 			0, -- [2]
 		}, -- [760]
 		{
-			"Gamespeed set from 0.017 to 0.017", -- [1]
+			"Skill 226 increased from 80 to 81", -- [1]
 			0, -- [2]
 		}, -- [761]
 		{
-			"Time played:", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [762]
 		{
-			"Total: 0d 16h 6m 53s", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [763]
 		{
-			"Level: 0d 0h 9m 0s", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [764]
 		{
-			"Skill 172 increased from 103 to 104", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [765]
 		{
-			"Skill 95 increased from 102 to 103", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [766]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [767]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [768]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [769]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [770]
 		{
-			"Skill 172 increased from 104 to 105", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [771]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 226 increased from 81 to 82", -- [1]
 			0, -- [2]
 		}, -- [772]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Skill 172 increased from 114 to 115", -- [1]
 			0, -- [2]
 		}, -- [773]
 		{
-			"Skill 95 increased from 103 to 104", -- [1]
+			"Skill 26 increased from 115 to 120", -- [1]
 			0, -- [2]
 		}, -- [774]
 		{
-			"Skill 172 increased from 105 to 106", -- [1]
+			"Skill 118 increased from 115 to 120", -- [1]
 			0, -- [2]
 		}, -- [775]
 		{
-			"Skill 95 increased from 104 to 105", -- [1]
+			"Skill 183 increased from 115 to 120", -- [1]
 			0, -- [2]
 		}, -- [776]
 		{
-			"Skill 172 increased from 106 to 107", -- [1]
+			"Skill 256 increased from 115 to 120", -- [1]
 			0, -- [2]
 		}, -- [777]
 		{
-			"Skill 95 increased from 105 to 106", -- [1]
+			"Skill 257 increased from 115 to 120", -- [1]
 			0, -- [2]
 		}, -- [778]
 		{
-			"Skill 162 increased from 16 to 17", -- [1]
+			"Skill 754 increased from 115 to 120", -- [1]
 			0, -- [2]
 		}, -- [779]
 		{
-			"Skill 162 increased from 17 to 18", -- [1]
+			"Skill 226 increased from 82 to 83", -- [1]
 			0, -- [2]
 		}, -- [780]
 		{
-			"Skill 162 increased from 18 to 19", -- [1]
+			"Skill 95 increased from 112 to 113", -- [1]
 			0, -- [2]
 		}, -- [781]
 		{
-			"Skill 162 increased from 19 to 20", -- [1]
+			"Skill 172 increased from 115 to 116", -- [1]
 			0, -- [2]
 		}, -- [782]
 		{
-			"Skill 162 increased from 20 to 21", -- [1]
+			"Skill 95 increased from 113 to 114", -- [1]
 			0, -- [2]
 		}, -- [783]
 		{
-			"Skill 162 increased from 21 to 22", -- [1]
+			"Skill 172 increased from 116 to 117", -- [1]
 			0, -- [2]
 		}, -- [784]
 		{
-			"Skill 172 increased from 107 to 108", -- [1]
+			"Skill 226 increased from 83 to 84", -- [1]
 			0, -- [2]
 		}, -- [785]
 		{
-			"Skill 226 increased from 76 to 77", -- [1]
+			"Skill 95 increased from 114 to 115", -- [1]
 			0, -- [2]
 		}, -- [786]
 		{
-			"Skill 95 increased from 106 to 107", -- [1]
+			"Skill 172 increased from 117 to 118", -- [1]
 			0, -- [2]
 		}, -- [787]
 		{
-			"Skill 162 increased from 22 to 23", -- [1]
+			"Skill 226 increased from 84 to 85", -- [1]
 			0, -- [2]
 		}, -- [788]
 		{
-			"Skill 162 increased from 23 to 24", -- [1]
+			"Skill 226 increased from 85 to 86", -- [1]
 			0, -- [2]
 		}, -- [789]
 		{
-			"Skill 162 increased from 24 to 25", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [790]
 		{
-			"Skill 162 increased from 25 to 26", -- [1]
+			"Total: 0d 19h 44m 26s", -- [1]
 			0, -- [2]
 		}, -- [791]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Level: 0d 0h 18m 50s", -- [1]
 			0, -- [2]
 		}, -- [792]
 		{
-			"Skill 95 increased from 107 to 108", -- [1]
+			"Skill 95 increased from 115 to 116", -- [1]
 			0, -- [2]
 		}, -- [793]
 		{
-			"Skill 162 increased from 26 to 27", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [794]
 		{
-			"Skill 162 increased from 27 to 28", -- [1]
+			"Total: 0d 19h 53m 33s", -- [1]
 			0, -- [2]
 		}, -- [795]
 		{
-			"Skill 172 increased from 108 to 109", -- [1]
+			"Level: 0d 0h 27m 57s", -- [1]
 			0, -- [2]
 		}, -- [796]
 		{
-			"Skill 162 increased from 28 to 29", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [797]
 		{
-			"Skill 162 increased from 29 to 30", -- [1]
+			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
 			0, -- [2]
 		}, -- [798]
 		{
-			"Skill 162 increased from 30 to 31", -- [1]
+			"Disconnecting for reason 14", -- [1]
 			0, -- [2]
 		}, -- [799]
 		{
-			"Skill 162 increased from 31 to 32", -- [1]
+			"NetClient::HandleDisconnect()\n", -- [1]
 			0, -- [2]
 		}, -- [800]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
 			0, -- [2]
 		}, -- [801]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
 			0, -- [2]
 		}, -- [802]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [803]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [804]
 		{
-			"Skill 95 increased from 108 to 109", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [805]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [806]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [807]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [808]
 		{
-			"Got new connection 3", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [809]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [810]
 		{
-			"Skill 26 increased from 110 to 115", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [811]
 		{
-			"Skill 118 increased from 110 to 115", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [812]
 		{
-			"Skill 183 increased from 110 to 115", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [813]
 		{
-			"Skill 256 increased from 110 to 115", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [814]
 		{
-			"Skill 257 increased from 110 to 115", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [815]
 		{
-			"Skill 754 increased from 110 to 115", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [816]
 		{
-			"Skill 172 increased from 109 to 110", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [817]
 		{
-			"Skill 226 increased from 77 to 78", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [818]
 		{
-			"Skill 172 increased from 110 to 111", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [819]
 		{
-			"Skill 95 increased from 109 to 110", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [820]
 		{
-			"Skill 172 increased from 111 to 112", -- [1]
+			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
 		}, -- [821]
 		{
-			"Skill 172 increased from 112 to 113", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [822]
 		{
-			"Terrain mip level changed to 1.", -- [1]
+			"Spell Clutter set to dynamic", -- [1]
 			0, -- [2]
 		}, -- [823]
 		{
-			"Projected textures disabled.", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [824]
 		{
-			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [825]
 		{
-			"Shadow texture size changed to 1024.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [826]
 		{
-			"Soft shadows changed to 0.", -- [1]
+			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
 		}, -- [827]
 		{
-			"Water detail changed to 0", -- [1]
+			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
 		}, -- [828]
 		{
-			"Reflection mode changed to 0", -- [1]
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [829]
 		{
-			"Ripple detail changed to 0", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [830]
 		{
-			"Sunshafts quality changed to 0", -- [1]
+			"SSAO type set to 0", -- [1]
 			0, -- [2]
 		}, -- [831]
 		{
-			"SSAO mode set to 0", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [832]
 		{
-			"Skill 95 increased from 110 to 111", -- [1]
+			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
 		}, -- [833]
 		{
-			"Skill 172 increased from 113 to 114", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [834]
 		{
-			"World transfer pending...", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [835]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [836]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [837]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [838]
 		{
-			"World transfer pending...", -- [1]
+			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
 		}, -- [839]
 		{
-			"Weather changed to 1, intensity 0.500000\n", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [840]
 		{
-			"Weather changed to 1, intensity 0.500000\n", -- [1]
+			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
 		}, -- [841]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"dynamicLod enabled", -- [1]
 			0, -- [2]
 		}, -- [842]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [843]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [844]
 		{
-			"Skill 129 increased from 103 to 104", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [845]
 		{
-			"Skill 129 increased from 104 to 105", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [846]
 		{
-			"Skill 129 increased from 105 to 106", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [847]
 		{
-			"Skill 129 increased from 106 to 107", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [848]
 		{
-			"Skill 129 increased from 107 to 108", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [849]
 		{
-			"Skill 129 increased from 108 to 109", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [850]
 		{
-			"Skill 129 increased from 109 to 110", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [851]
 		{
-			"Skill 129 increased from 110 to 111", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [852]
 		{
-			"Skill 129 increased from 111 to 112", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [853]
 		{
-			"Skill 129 increased from 112 to 113", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [854]
 		{
-			"Skill 129 increased from 113 to 114", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [855]
 		{
-			"Skill 129 increased from 114 to 115", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [856]
 		{
-			"Skill 129 increased from 115 to 116", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [857]
 		{
-			"Skill 129 increased from 116 to 117", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [858]
 		{
-			"Skill 129 increased from 117 to 118", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [859]
 		{
-			"Skill 129 increased from 118 to 119", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [860]
 		{
-			"Skill 129 increased from 119 to 120", -- [1]
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [861]
 		{
-			"Skill 129 increased from 120 to 121", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [862]
 		{
-			"Skill 129 increased from 121 to 122", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [863]
 		{
-			"Skill 129 increased from 122 to 123", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [864]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [865]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Reconnect token saved; creationTime=\"1637689877\" expirationTime=\"1637704277\"", -- [1]
 			0, -- [2]
 		}, -- [866]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [867]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [868]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [869]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [870]
 		{
-			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [871]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [872]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [873]
 		{
-			"World transfer aborted (reason: 30)", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
 			0, -- [2]
 		}, -- [874]
 		{
-			"Skill 95 increased from 111 to 112", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [875]
 		{
-			"Skill 226 increased from 78 to 79", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [876]
 		{
-			"Skill 226 increased from 79 to 80", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [877]
 		{
-			"Skill 226 increased from 80 to 81", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [878]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [879]
 		{
-			"Projected textures enabled.", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [880]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [881]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [882]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"[WowEntitlements] [BNetAccount-0-00000BC426B8] [WowAccount-0-000004FE320E] Initialized with 1 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [883]
 		{
-			"Water detail changed to 3", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [884]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Failed to set SpellClutter callback on graphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [885]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Failed to set SpellClutter callback on RAIDgraphicsQuality CVar - using default of 30.0", -- [1]
 			0, -- [2]
 		}, -- [886]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Got new connection 3", -- [1]
 			0, -- [2]
 		}, -- [887]
 		{
-			"SSAO mode set to 4", -- [1]
+			"Proficiency in item class 2 set to 0x0000000080", -- [1]
 			0, -- [2]
 		}, -- [888]
 		{
-			"Skill 226 increased from 81 to 82", -- [1]
+			"Proficiency in item class 2 set to 0x0000000081", -- [1]
 			0, -- [2]
 		}, -- [889]
 		{
-			"Skill 172 increased from 114 to 115", -- [1]
+			"Proficiency in item class 2 set to 0x0000000089", -- [1]
 			0, -- [2]
 		}, -- [890]
 		{
-			"Skill 26 increased from 115 to 120", -- [1]
+			"Proficiency in item class 2 set to 0x0000000099", -- [1]
 			0, -- [2]
 		}, -- [891]
 		{
-			"Skill 118 increased from 115 to 120", -- [1]
+			"Proficiency in item class 2 set to 0x0000000199", -- [1]
 			0, -- [2]
 		}, -- [892]
 		{
-			"Skill 183 increased from 115 to 120", -- [1]
+			"Proficiency in item class 2 set to 0x0000000599", -- [1]
 			0, -- [2]
 		}, -- [893]
 		{
-			"Skill 256 increased from 115 to 120", -- [1]
+			"Proficiency in item class 2 set to 0x00000005b9", -- [1]
 			0, -- [2]
 		}, -- [894]
 		{
-			"Skill 257 increased from 115 to 120", -- [1]
+			"Proficiency in item class 2 set to 0x00000005bb", -- [1]
 			0, -- [2]
 		}, -- [895]
 		{
-			"Skill 754 increased from 115 to 120", -- [1]
+			"Proficiency in item class 2 set to 0x00000085bb", -- [1]
 			0, -- [2]
 		}, -- [896]
 		{
-			"Skill 226 increased from 82 to 83", -- [1]
+			"Proficiency in item class 4 set to 0x0000000001", -- [1]
 			0, -- [2]
 		}, -- [897]
 		{
-			"Skill 95 increased from 112 to 113", -- [1]
+			"Proficiency in item class 2 set to 0x000000c5bb", -- [1]
 			0, -- [2]
 		}, -- [898]
 		{
-			"Skill 172 increased from 115 to 116", -- [1]
+			"Proficiency in item class 2 set to 0x000004c5bb", -- [1]
 			0, -- [2]
 		}, -- [899]
 		{
-			"Skill 95 increased from 113 to 114", -- [1]
+			"Proficiency in item class 4 set to 0x0000000009", -- [1]
 			0, -- [2]
 		}, -- [900]
 		{
-			"Skill 172 increased from 116 to 117", -- [1]
+			"Proficiency in item class 4 set to 0x000000000d", -- [1]
 			0, -- [2]
 		}, -- [901]
 		{
-			"Skill 226 increased from 83 to 84", -- [1]
+			"Proficiency in item class 4 set to 0x000000000f", -- [1]
 			0, -- [2]
 		}, -- [902]
 		{
-			"Skill 95 increased from 114 to 115", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [903]
 		{
-			"Skill 172 increased from 117 to 118", -- [1]
+			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
 			0, -- [2]
 		}, -- [904]
 		{
-			"Skill 226 increased from 84 to 85", -- [1]
+			"Proficiency in item class 2 set to 0x000004e5bb", -- [1]
 			0, -- [2]
 		}, -- [905]
 		{
-			"Skill 226 increased from 85 to 86", -- [1]
+			"Proficiency in item class 4 set to 0x000000004f", -- [1]
 			0, -- [2]
 		}, -- [906]
 		{
-			"Time played:", -- [1]
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
 			0, -- [2]
 		}, -- [907]
 		{
-			"Total: 0d 19h 44m 26s", -- [1]
+			"Time set to 11/24/2021 (Wed) 1:50", -- [1]
 			0, -- [2]
 		}, -- [908]
 		{
-			"Level: 0d 0h 18m 50s", -- [1]
+			"Gamespeed set from 0.017 to 0.017", -- [1]
 			0, -- [2]
 		}, -- [909]
 		{
-			"Skill 95 increased from 115 to 116", -- [1]
+			"Time played:", -- [1]
 			0, -- [2]
 		}, -- [910]
 		{
-			"Time played:", -- [1]
+			"Total: 0d 19h 57m 22s", -- [1]
 			0, -- [2]
 		}, -- [911]
 		{
-			"Total: 0d 19h 53m 33s", -- [1]
+			"Level: 0d 0h 31m 46s", -- [1]
 			0, -- [2]
 		}, -- [912]
 		{
-			"Level: 0d 0h 27m 57s", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [913]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
 			0, -- [2]
 		}, -- [914]
 		{
-			"[GlueLogin] Explicitly disconnecting from realm server", -- [1]
+			"Disconnecting for reason 14", -- [1]
 			0, -- [2]
 		}, -- [915]
 		{
-			"Disconnecting for reason 14", -- [1]
+			"NetClient::HandleDisconnect()\n", -- [1]
 			0, -- [2]
 		}, -- [916]
 		{
-			"NetClient::HandleDisconnect()\n", -- [1]
+			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
 			0, -- [2]
 		}, -- [917]
 		{
-			"[IBN_BackInterface] Session with Battle.net destroyed.", -- [1]
+			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
 			0, -- [2]
 		}, -- [918]
 		{
-			"[GlueLogin] Disconnected from WoWpreviouslyConnected=\"false\"", -- [1]
+			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
 			0, -- [2]
 		}, -- [919]
 		{
-			"-------------------------------------------------- Previous Session --------------------------------------------------", -- [1]
+			"Sorting particles normally.", -- [1]
 			0, -- [2]
 		}, -- [920]
 		{
-			"Sorting particles normally.", -- [1]
+			"Multithreaded rendering enabled.", -- [1]
 			0, -- [2]
 		}, -- [921]
 		{
-			"Multithreaded rendering enabled.", -- [1]
+			"Multithreaded BeginDraw enabled.", -- [1]
 			0, -- [2]
 		}, -- [922]
 		{
-			"Multithreaded BeginDraw enabled.", -- [1]
+			"Multithread shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [923]
 		{
-			"Multithread shadows changed to 1.", -- [1]
+			"Multithreaded prepass enabled.", -- [1]
 			0, -- [2]
 		}, -- [924]
 		{
-			"Multithreaded prepass enabled.", -- [1]
+			"Multithreaded opaque pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [925]
 		{
@@ -3708,167 +3707,167 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [926]
 		{
-			"Multithreaded opaque pass enabled.", -- [1]
+			"Multithreaded alpha M2 pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [927]
 		{
-			"Multithreaded alpha M2 pass enabled.", -- [1]
+			"Multithreaded opaque WMO pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [928]
 		{
-			"Multithreaded opaque WMO pass enabled.", -- [1]
+			"Multithreaded terrain pass enabled.", -- [1]
 			0, -- [2]
 		}, -- [929]
 		{
-			"Multithreaded terrain pass enabled.", -- [1]
+			"Water detail changed to 3", -- [1]
 			0, -- [2]
 		}, -- [930]
 		{
-			"Water detail changed to 3", -- [1]
+			"Ripple detail changed to 2", -- [1]
 			0, -- [2]
 		}, -- [931]
 		{
-			"Ripple detail changed to 2", -- [1]
+			"Reflection mode changed to 3", -- [1]
 			0, -- [2]
 		}, -- [932]
 		{
-			"Reflection mode changed to 3", -- [1]
+			"Reflection downscale changed to 0", -- [1]
 			0, -- [2]
 		}, -- [933]
 		{
-			"Reflection downscale changed to 0", -- [1]
+			"Sunshafts quality changed to 2", -- [1]
 			0, -- [2]
 		}, -- [934]
 		{
-			"Sunshafts quality changed to 2", -- [1]
+			"Enabling BSP node cache (first time - starting up)", -- [1]
 			0, -- [2]
 		}, -- [935]
 		{
-			"Enabling BSP node cache (first time - starting up)", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [936]
 		{
-			"Volume fog enabled.", -- [1]
+			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
 		}, -- [937]
 		{
-			"Particulate volumes enabled.", -- [1]
+			"Projected textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [938]
 		{
-			"Projected textures enabled.", -- [1]
+			"Spell Clutter set to dynamic", -- [1]
 			0, -- [2]
 		}, -- [939]
 		{
-			"Spell Clutter set to dynamic", -- [1]
+			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
 			0, -- [2]
 		}, -- [940]
 		{
-			"Shadow mode changed to 4 - 4 band dynamic shadows on units and terrain, 2048", -- [1]
+			"Shadow texture size changed to 2048.", -- [1]
 			0, -- [2]
 		}, -- [941]
 		{
-			"Shadow texture size changed to 2048.", -- [1]
+			"Soft shadows changed to 1.", -- [1]
 			0, -- [2]
 		}, -- [942]
 		{
-			"Soft shadows changed to 1.", -- [1]
+			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
 			0, -- [2]
 		}, -- [943]
 		{
-			"Shadow RT mode changed to 3 (High) - Full-resolution directional & local light shadows", -- [1]
+			"maxLightCount must be in range 0 to 32.", -- [1]
 			0, -- [2]
 		}, -- [944]
 		{
-			"maxLightCount must be in range 0 to 32.", -- [1]
+			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [945]
 		{
-			"CVar 'maxLightCount' failed validation for its initial value.", -- [1]
+			"SSAO mode set to 4", -- [1]
 			0, -- [2]
 		}, -- [946]
 		{
-			"SSAO mode set to 4", -- [1]
+			"SSAO type set to 0", -- [1]
 			0, -- [2]
 		}, -- [947]
 		{
-			"SSAO type set to 0", -- [1]
+			"SkyCloudLOD set to 0", -- [1]
 			0, -- [2]
 		}, -- [948]
 		{
-			"SkyCloudLOD set to 0", -- [1]
+			"Texture filtering mode updated.", -- [1]
 			0, -- [2]
 		}, -- [949]
 		{
-			"Texture filtering mode updated.", -- [1]
+			"Terrain mip level changed to 0.", -- [1]
 			0, -- [2]
 		}, -- [950]
 		{
-			"Terrain mip level changed to 0.", -- [1]
+			"Render scale changed to 1", -- [1]
 			0, -- [2]
 		}, -- [951]
 		{
-			"Render scale changed to 1", -- [1]
+			"Resample quality changed to 3", -- [1]
 			0, -- [2]
 		}, -- [952]
 		{
-			"Resample quality changed to 3", -- [1]
+			"MSAA disabled", -- [1]
 			0, -- [2]
 		}, -- [953]
 		{
-			"MSAA disabled", -- [1]
+			"MSAA for alpha-test enabled.", -- [1]
 			0, -- [2]
 		}, -- [954]
 		{
-			"MSAA for alpha-test enabled.", -- [1]
+			"lodObjectSizeScale cannot be changed.", -- [1]
 			0, -- [2]
 		}, -- [955]
 		{
-			"lodObjectSizeScale cannot be changed.", -- [1]
+			"Volume fog enabled.", -- [1]
 			0, -- [2]
 		}, -- [956]
 		{
-			"Volume fog enabled.", -- [1]
+			"Particulate volumes enabled.", -- [1]
 			0, -- [2]
 		}, -- [957]
 		{
-			"Particulate volumes enabled.", -- [1]
+			"dynamicLod enabled", -- [1]
 			0, -- [2]
 		}, -- [958]
 		{
-			"dynamicLod enabled", -- [1]
+			"World preload object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [959]
 		{
-			"World preload object sort enabled.", -- [1]
+			"World load object sort enabled.", -- [1]
 			0, -- [2]
 		}, -- [960]
 		{
-			"World load object sort enabled.", -- [1]
+			"World preload non critical enabled.", -- [1]
 			0, -- [2]
 		}, -- [961]
 		{
-			"World preload non critical enabled.", -- [1]
+			"World preload high res textures enabled.", -- [1]
 			0, -- [2]
 		}, -- [962]
 		{
-			"World preload high res textures enabled.", -- [1]
+			"FFX: Color Blind Test Mode Disabled", -- [1]
 			0, -- [2]
 		}, -- [963]
 		{
-			"FFX: Color Blind Test Mode Disabled", -- [1]
+			"Full memory crash dump disabled", -- [1]
 			0, -- [2]
 		}, -- [964]
 		{
-			"Full memory crash dump disabled", -- [1]
+			"Error display disabled", -- [1]
 			0, -- [2]
 		}, -- [965]
 		{
-			"Error display disabled", -- [1]
+			"Error display shown", -- [1]
 			0, -- [2]
 		}, -- [966]
 		{
-			"Error display shown", -- [1]
+			"Displaying errors through fatal errors", -- [1]
 			0, -- [2]
 		}, -- [967]
 		{
@@ -3876,43 +3875,43 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [968]
 		{
-			"Displaying errors through fatal errors", -- [1]
+			"Now filtering: all messages", -- [1]
 			0, -- [2]
 		}, -- [969]
 		{
-			"Now filtering: all messages", -- [1]
+			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [970]
 		{
-			"CVar 'Sound_AmbienceHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [971]
 		{
-			"CVar 'Sound_AllyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [972]
 		{
-			"CVar 'Sound_EnemyPlayerHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
 			0, -- [2]
 		}, -- [973]
 		{
-			"CVar 'Sound_NPCHighpassDSPCutoff' failed validation for its initial value.", -- [1]
+			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
 			0, -- [2]
 		}, -- [974]
 		{
-			"[GlueLogin] Starting loginlauncherPortal=\"cn.actual.battle.net\" loginPortal=\"cn.actual.battle.net:1119\"", -- [1]
+			"[GlueLogin] Resetting", -- [1]
 			0, -- [2]
 		}, -- [975]
 		{
-			"[GlueLogin] Resetting", -- [1]
+			"[IBN_Login] Initializing", -- [1]
 			0, -- [2]
 		}, -- [976]
 		{
-			"[IBN_Login] Initializing", -- [1]
+			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
 			0, -- [2]
 		}, -- [977]
 		{
-			"[IBN_Login] Attempting logonhost=\"cn.actual.battle.net\" port=\"1119\"", -- [1]
+			"[GlueLogin] Waiting for server response.", -- [1]
 			0, -- [2]
 		}, -- [978]
 		{
@@ -3924,83 +3923,83 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [980]
 		{
-			"[GlueLogin] Waiting for server response.", -- [1]
+			"[GlueLogin] Logon complete.", -- [1]
 			0, -- [2]
 		}, -- [981]
 		{
-			"[GlueLogin] Logon complete.", -- [1]
+			"[GlueLogin] Reconnect token saved; creationTime=\"1637759138\" expirationTime=\"1637773538\"", -- [1]
 			0, -- [2]
 		}, -- [982]
 		{
-			"[GlueLogin] Reconnect token saved; creationTime=\"1637689877\" expirationTime=\"1637704277\"", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [983]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[IBN_Login] Requesting realm list ticket", -- [1]
 			0, -- [2]
 		}, -- [984]
 		{
-			"[IBN_Login] Requesting realm list ticket", -- [1]
+			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [985]
 		{
-			"[IBN_Login] Received realm list ticketcode=\"ERROR_OK (0)\"", -- [1]
+			"[GlueLogin] Waiting for realm list.", -- [1]
 			0, -- [2]
 		}, -- [986]
 		{
-			"[GlueLogin] Waiting for realm list.", -- [1]
+			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [987]
 		{
-			"[IBN_Login] Received sub region listcode=\"ERROR_OK (0)\"", -- [1]
+			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [988]
 		{
-			"[IBN_Login] Requesting last played charsnumSubRegions=\"1\"", -- [1]
+			"[GlueLogin] Realm list ready.", -- [1]
 			0, -- [2]
 		}, -- [989]
 		{
-			"[GlueLogin] Realm list ready.", -- [1]
+			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
 			0, -- [2]
 		}, -- [990]
 		{
-			"[IBN_Login] Joining realmsubRegion=\"85-1-89\" realmAddress=\"85-5-39\"", -- [1]
+			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [991]
 		{
-			"[IBN_Login] OnRealmJoincode=\"ERROR_OK (0)\"", -- [1]
+			"NetClient::HandleConnect()\n", -- [1]
 			0, -- [2]
 		}, -- [992]
 		{
-			"NetClient::HandleConnect()\n", -- [1]
+			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
 			0, -- [2]
 		}, -- [993]
 		{
-			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
+			"Got new connection 2", -- [1]
 			0, -- [2]
 		}, -- [994]
 		{
-			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
+			"[WowEntitlements] [BNetAccount-0-00000BC426B8] [WowAccount-0-000004FE320E] Initialized with 1 entitlements.", -- [1]
 			0, -- [2]
 		}, -- [995]
 		{
-			"[GlueLogin] Disconnecting from authentication server.", -- [1]
+			"[GlueLogin] Received AuthedToWoWresult=\"ERROR_OK (0)\"", -- [1]
 			0, -- [2]
 		}, -- [996]
 		{
-			"[IBN_BackInterface] Session with Battle.net established.", -- [1]
+			"[IBN_Login] Front disconnectingconnectionId=\"1\"", -- [1]
 			0, -- [2]
 		}, -- [997]
 		{
-			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
+			"[GlueLogin] Disconnecting from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [998]
 		{
-			"[GlueLogin] Disconnected from authentication server.", -- [1]
+			"[IBN_Login] Front disconnectedconnectionId=\"1\" result=\"( code=\"ERROR_NETWORK_MODULE_SOCKET_CLOSED (1016)\" localizedMessage=\"\" debugMessage=\"\")\"", -- [1]
 			0, -- [2]
 		}, -- [999]
 		{
-			"[WowEntitlements] [BNetAccount-0-00000BC426B8] [WowAccount-0-000004FE320E] Initialized with 1 entitlements.", -- [1]
+			"[GlueLogin] Disconnected from authentication server.", -- [1]
 			0, -- [2]
 		}, -- [1000]
 		{
@@ -4100,7 +4099,7 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1024]
 		{
-			"Time set to 11/24/2021 (Wed) 1:50", -- [1]
+			"Time set to 11/24/2021 (Wed) 22:00", -- [1]
 			0, -- [2]
 		}, -- [1025]
 		{
@@ -4112,16 +4111,833 @@ Blizzard_Console_SavedVars = {
 			0, -- [2]
 		}, -- [1027]
 		{
-			"Total: 0d 19h 57m 22s", -- [1]
+			"Total: 0d 19h 57m 28s", -- [1]
 			0, -- [2]
 		}, -- [1028]
 		{
-			"Level: 0d 0h 31m 46s", -- [1]
+			"Level: 0d 0h 31m 52s", -- [1]
 			0, -- [2]
 		}, -- [1029]
+		{
+			"Skill 226 increased from 86 to 87", -- [1]
+			0, -- [2]
+		}, -- [1030]
+		{
+			"Skill 172 increased from 118 to 119", -- [1]
+			0, -- [2]
+		}, -- [1031]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1032]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1033]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1034]
+		{
+			"Skill 95 increased from 116 to 117", -- [1]
+			0, -- [2]
+		}, -- [1035]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1036]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1037]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1038]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1039]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1040]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1041]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1042]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1043]
+		{
+			"Skill 44 increased from 95 to 96", -- [1]
+			0, -- [2]
+		}, -- [1044]
+		{
+			"Skill 54 increased from 60 to 66", -- [1]
+			0, -- [2]
+		}, -- [1045]
+		{
+			"Skill 54 increased from 61 to 67", -- [1]
+			0, -- [2]
+		}, -- [1046]
+		{
+			"Skill 54 increased from 62 to 68", -- [1]
+			0, -- [2]
+		}, -- [1047]
+		{
+			"Skill 54 increased from 63 to 69", -- [1]
+			0, -- [2]
+		}, -- [1048]
+		{
+			"Skill 54 increased from 64 to 70", -- [1]
+			0, -- [2]
+		}, -- [1049]
+		{
+			"Skill 44 increased from 96 to 97", -- [1]
+			0, -- [2]
+		}, -- [1050]
+		{
+			"Skill 54 increased from 65 to 71", -- [1]
+			0, -- [2]
+		}, -- [1051]
+		{
+			"Skill 54 increased from 66 to 72", -- [1]
+			0, -- [2]
+		}, -- [1052]
+		{
+			"Skill 54 increased from 67 to 73", -- [1]
+			0, -- [2]
+		}, -- [1053]
+		{
+			"Skill 54 increased from 68 to 74", -- [1]
+			0, -- [2]
+		}, -- [1054]
+		{
+			"Skill 54 increased from 69 to 75", -- [1]
+			0, -- [2]
+		}, -- [1055]
+		{
+			"Skill 54 increased from 70 to 76", -- [1]
+			0, -- [2]
+		}, -- [1056]
+		{
+			"Skill 44 increased from 97 to 98", -- [1]
+			0, -- [2]
+		}, -- [1057]
+		{
+			"Skill 54 increased from 71 to 77", -- [1]
+			0, -- [2]
+		}, -- [1058]
+		{
+			"Skill 54 increased from 72 to 78", -- [1]
+			0, -- [2]
+		}, -- [1059]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1060]
+		{
+			"Skill 54 increased from 73 to 79", -- [1]
+			0, -- [2]
+		}, -- [1061]
+		{
+			"Skill 54 increased from 74 to 80", -- [1]
+			0, -- [2]
+		}, -- [1062]
+		{
+			"Skill 44 increased from 98 to 99", -- [1]
+			0, -- [2]
+		}, -- [1063]
+		{
+			"Skill 54 increased from 75 to 81", -- [1]
+			0, -- [2]
+		}, -- [1064]
+		{
+			"Skill 54 increased from 76 to 82", -- [1]
+			0, -- [2]
+		}, -- [1065]
+		{
+			"Skill 54 increased from 77 to 83", -- [1]
+			0, -- [2]
+		}, -- [1066]
+		{
+			"Skill 54 increased from 78 to 84", -- [1]
+			0, -- [2]
+		}, -- [1067]
+		{
+			"Skill 44 increased from 99 to 100", -- [1]
+			0, -- [2]
+		}, -- [1068]
+		{
+			"Skill 54 increased from 79 to 85", -- [1]
+			0, -- [2]
+		}, -- [1069]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1070]
+		{
+			"Skill 54 increased from 80 to 86", -- [1]
+			0, -- [2]
+		}, -- [1071]
+		{
+			"Skill 54 increased from 81 to 87", -- [1]
+			0, -- [2]
+		}, -- [1072]
+		{
+			"Skill 54 increased from 82 to 88", -- [1]
+			0, -- [2]
+		}, -- [1073]
+		{
+			"Skill 95 increased from 117 to 118", -- [1]
+			0, -- [2]
+		}, -- [1074]
+		{
+			"Skill 54 increased from 83 to 89", -- [1]
+			0, -- [2]
+		}, -- [1075]
+		{
+			"Skill 44 increased from 100 to 101", -- [1]
+			0, -- [2]
+		}, -- [1076]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1077]
+		{
+			"Skill 54 increased from 84 to 90", -- [1]
+			0, -- [2]
+		}, -- [1078]
+		{
+			"Skill 54 increased from 85 to 91", -- [1]
+			0, -- [2]
+		}, -- [1079]
+		{
+			"Skill 44 increased from 101 to 102", -- [1]
+			0, -- [2]
+		}, -- [1080]
+		{
+			"Skill 54 increased from 86 to 92", -- [1]
+			0, -- [2]
+		}, -- [1081]
+		{
+			"Skill 54 increased from 87 to 93", -- [1]
+			0, -- [2]
+		}, -- [1082]
+		{
+			"Skill 54 increased from 88 to 94", -- [1]
+			0, -- [2]
+		}, -- [1083]
+		{
+			"Skill 54 increased from 89 to 95", -- [1]
+			0, -- [2]
+		}, -- [1084]
+		{
+			"Skill 44 increased from 102 to 103", -- [1]
+			0, -- [2]
+		}, -- [1085]
+		{
+			"Skill 54 increased from 90 to 96", -- [1]
+			0, -- [2]
+		}, -- [1086]
+		{
+			"Skill 54 increased from 91 to 97", -- [1]
+			0, -- [2]
+		}, -- [1087]
+		{
+			"Skill 44 increased from 103 to 104", -- [1]
+			0, -- [2]
+		}, -- [1088]
+		{
+			"Skill 54 increased from 92 to 98", -- [1]
+			0, -- [2]
+		}, -- [1089]
+		{
+			"Skill 54 increased from 93 to 99", -- [1]
+			0, -- [2]
+		}, -- [1090]
+		{
+			"Skill 54 increased from 94 to 100", -- [1]
+			0, -- [2]
+		}, -- [1091]
+		{
+			"Skill 44 increased from 104 to 105", -- [1]
+			0, -- [2]
+		}, -- [1092]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1093]
+		{
+			"Skill 54 increased from 95 to 101", -- [1]
+			0, -- [2]
+		}, -- [1094]
+		{
+			"Skill 54 increased from 96 to 102", -- [1]
+			0, -- [2]
+		}, -- [1095]
+		{
+			"Skill 26 increased from 120 to 125", -- [1]
+			0, -- [2]
+		}, -- [1096]
+		{
+			"Skill 118 increased from 120 to 125", -- [1]
+			0, -- [2]
+		}, -- [1097]
+		{
+			"Skill 183 increased from 120 to 125", -- [1]
+			0, -- [2]
+		}, -- [1098]
+		{
+			"Skill 256 increased from 120 to 125", -- [1]
+			0, -- [2]
+		}, -- [1099]
+		{
+			"Skill 257 increased from 120 to 125", -- [1]
+			0, -- [2]
+		}, -- [1100]
+		{
+			"Skill 754 increased from 120 to 125", -- [1]
+			0, -- [2]
+		}, -- [1101]
+		{
+			"Got new connection 3", -- [1]
+			0, -- [2]
+		}, -- [1102]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1103]
+		{
+			"Trainer service 3286 unavailable", -- [1]
+			0, -- [2]
+		}, -- [1104]
+		{
+			"Skill 44 increased from 105 to 106", -- [1]
+			0, -- [2]
+		}, -- [1105]
+		{
+			"Skill 54 increased from 97 to 103", -- [1]
+			0, -- [2]
+		}, -- [1106]
+		{
+			"Skill 54 increased from 98 to 104", -- [1]
+			0, -- [2]
+		}, -- [1107]
+		{
+			"Skill 44 increased from 106 to 107", -- [1]
+			0, -- [2]
+		}, -- [1108]
+		{
+			"Skill 54 increased from 99 to 105", -- [1]
+			0, -- [2]
+		}, -- [1109]
+		{
+			"Skill 54 increased from 100 to 106", -- [1]
+			0, -- [2]
+		}, -- [1110]
+		{
+			"Skill 44 increased from 107 to 108", -- [1]
+			0, -- [2]
+		}, -- [1111]
+		{
+			"Skill 54 increased from 101 to 107", -- [1]
+			0, -- [2]
+		}, -- [1112]
+		{
+			"Skill 54 increased from 102 to 108", -- [1]
+			0, -- [2]
+		}, -- [1113]
+		{
+			"Skill 54 increased from 103 to 109", -- [1]
+			0, -- [2]
+		}, -- [1114]
+		{
+			"Skill 44 increased from 108 to 109", -- [1]
+			0, -- [2]
+		}, -- [1115]
+		{
+			"Skill 54 increased from 104 to 110", -- [1]
+			0, -- [2]
+		}, -- [1116]
+		{
+			"Skill 54 increased from 105 to 111", -- [1]
+			0, -- [2]
+		}, -- [1117]
+		{
+			"Skill 44 increased from 109 to 110", -- [1]
+			0, -- [2]
+		}, -- [1118]
+		{
+			"Skill 54 increased from 106 to 112", -- [1]
+			0, -- [2]
+		}, -- [1119]
+		{
+			"Skill 54 increased from 107 to 113", -- [1]
+			0, -- [2]
+		}, -- [1120]
+		{
+			"Skill 44 increased from 110 to 111", -- [1]
+			0, -- [2]
+		}, -- [1121]
+		{
+			"Skill 95 increased from 118 to 119", -- [1]
+			0, -- [2]
+		}, -- [1122]
+		{
+			"Skill 54 increased from 108 to 114", -- [1]
+			0, -- [2]
+		}, -- [1123]
+		{
+			"Skill 54 increased from 109 to 115", -- [1]
+			0, -- [2]
+		}, -- [1124]
+		{
+			"Skill 44 increased from 111 to 112", -- [1]
+			0, -- [2]
+		}, -- [1125]
+		{
+			"Skill 226 increased from 87 to 88", -- [1]
+			0, -- [2]
+		}, -- [1126]
+		{
+			"Skill 54 increased from 110 to 116", -- [1]
+			0, -- [2]
+		}, -- [1127]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1128]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1129]
+		{
+			"Skill 54 increased from 111 to 117", -- [1]
+			0, -- [2]
+		}, -- [1130]
+		{
+			"Skill 44 increased from 112 to 113", -- [1]
+			0, -- [2]
+		}, -- [1131]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1132]
+		{
+			"Skill 54 increased from 112 to 118", -- [1]
+			0, -- [2]
+		}, -- [1133]
+		{
+			"Skill 95 increased from 119 to 120", -- [1]
+			0, -- [2]
+		}, -- [1134]
+		{
+			"Skill 54 increased from 113 to 119", -- [1]
+			0, -- [2]
+		}, -- [1135]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1136]
+		{
+			"Skill 44 increased from 113 to 114", -- [1]
+			0, -- [2]
+		}, -- [1137]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1138]
+		{
+			"Skill 54 increased from 114 to 120", -- [1]
+			0, -- [2]
+		}, -- [1139]
+		{
+			"Skill 54 increased from 115 to 121", -- [1]
+			0, -- [2]
+		}, -- [1140]
+		{
+			"Skill 44 increased from 114 to 115", -- [1]
+			0, -- [2]
+		}, -- [1141]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1142]
+		{
+			"Skill 54 increased from 116 to 122", -- [1]
+			0, -- [2]
+		}, -- [1143]
+		{
+			"Skill 44 increased from 115 to 116", -- [1]
+			0, -- [2]
+		}, -- [1144]
+		{
+			"Skill 54 increased from 117 to 123", -- [1]
+			0, -- [2]
+		}, -- [1145]
+		{
+			"Skill 95 increased from 120 to 121", -- [1]
+			0, -- [2]
+		}, -- [1146]
+		{
+			"Skill 44 increased from 116 to 117", -- [1]
+			0, -- [2]
+		}, -- [1147]
+		{
+			"Skill 54 increased from 118 to 124", -- [1]
+			0, -- [2]
+		}, -- [1148]
+		{
+			"Skill 44 increased from 117 to 118", -- [1]
+			0, -- [2]
+		}, -- [1149]
+		{
+			"Skill 54 increased from 119 to 125", -- [1]
+			0, -- [2]
+		}, -- [1150]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1151]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1152]
+		{
+			"Skill 54 increased from 120 to 126", -- [1]
+			0, -- [2]
+		}, -- [1153]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1154]
+		{
+			"Skill 44 increased from 118 to 119", -- [1]
+			0, -- [2]
+		}, -- [1155]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1156]
+		{
+			"Skill 54 increased from 121 to 127", -- [1]
+			0, -- [2]
+		}, -- [1157]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1158]
+		{
+			"Skill 95 increased from 121 to 122", -- [1]
+			0, -- [2]
+		}, -- [1159]
+		{
+			"Skill 54 increased from 122 to 128", -- [1]
+			0, -- [2]
+		}, -- [1160]
+		{
+			"Skill 44 increased from 119 to 120", -- [1]
+			0, -- [2]
+		}, -- [1161]
+		{
+			"Skill 226 increased from 88 to 89", -- [1]
+			0, -- [2]
+		}, -- [1162]
+		{
+			"Skill 226 increased from 89 to 90", -- [1]
+			0, -- [2]
+		}, -- [1163]
+		{
+			"Skill 54 increased from 123 to 129", -- [1]
+			0, -- [2]
+		}, -- [1164]
+		{
+			"Skill 44 increased from 120 to 121", -- [1]
+			0, -- [2]
+		}, -- [1165]
+		{
+			"Skill 54 increased from 124 to 130", -- [1]
+			0, -- [2]
+		}, -- [1166]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1167]
+		{
+			"Skill 44 increased from 121 to 122", -- [1]
+			0, -- [2]
+		}, -- [1168]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1169]
+		{
+			"Skill 226 increased from 90 to 91", -- [1]
+			0, -- [2]
+		}, -- [1170]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1171]
+		{
+			"Skill 26 increased from 125 to 130", -- [1]
+			0, -- [2]
+		}, -- [1172]
+		{
+			"Skill 118 increased from 125 to 130", -- [1]
+			0, -- [2]
+		}, -- [1173]
+		{
+			"Skill 183 increased from 125 to 130", -- [1]
+			0, -- [2]
+		}, -- [1174]
+		{
+			"Skill 256 increased from 125 to 130", -- [1]
+			0, -- [2]
+		}, -- [1175]
+		{
+			"Skill 257 increased from 125 to 130", -- [1]
+			0, -- [2]
+		}, -- [1176]
+		{
+			"Skill 754 increased from 125 to 130", -- [1]
+			0, -- [2]
+		}, -- [1177]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1178]
+		{
+			"Shadow mode changed to 0 - Blob shadows, precomputed terrain shadows", -- [1]
+			0, -- [2]
+		}, -- [1179]
+		{
+			"Shadow texture size changed to 1024.", -- [1]
+			0, -- [2]
+		}, -- [1180]
+		{
+			"Soft shadows changed to 0.", -- [1]
+			0, -- [2]
+		}, -- [1181]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1182]
+		{
+			"Proficiency in item class 2 set to 0x000004e5fb", -- [1]
+			0, -- [2]
+		}, -- [1183]
+		{
+			"Skill 229 increased from 0 to 1", -- [1]
+			0, -- [2]
+		}, -- [1184]
+		{
+			"Skill 129 increased from 123 to 124", -- [1]
+			0, -- [2]
+		}, -- [1185]
+		{
+			"Skill 129 increased from 124 to 125", -- [1]
+			0, -- [2]
+		}, -- [1186]
+		{
+			"Skill 129 increased from 125 to 126", -- [1]
+			0, -- [2]
+		}, -- [1187]
+		{
+			"Skill 129 increased from 126 to 127", -- [1]
+			0, -- [2]
+		}, -- [1188]
+		{
+			"Skill 129 increased from 127 to 128", -- [1]
+			0, -- [2]
+		}, -- [1189]
+		{
+			"Skill 129 increased from 128 to 129", -- [1]
+			0, -- [2]
+		}, -- [1190]
+		{
+			"Skill 129 increased from 129 to 130", -- [1]
+			0, -- [2]
+		}, -- [1191]
+		{
+			"Skill 129 increased from 130 to 131", -- [1]
+			0, -- [2]
+		}, -- [1192]
+		{
+			"Skill 129 increased from 131 to 132", -- [1]
+			0, -- [2]
+		}, -- [1193]
+		{
+			"Skill 129 increased from 132 to 133", -- [1]
+			0, -- [2]
+		}, -- [1194]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1195]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1196]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1197]
+		{
+			"Total: 0d 22h 49m 20s", -- [1]
+			0, -- [2]
+		}, -- [1198]
+		{
+			"Level: 0d 0h 22m 54s", -- [1]
+			0, -- [2]
+		}, -- [1199]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1200]
+		{
+			"World transfer pending...", -- [1]
+			0, -- [2]
+		}, -- [1201]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1202]
+		{
+			"Skill 44 increased from 122 to 123", -- [1]
+			0, -- [2]
+		}, -- [1203]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1204]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1205]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1206]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1207]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1208]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1209]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1210]
+		{
+			"Trainer service 3286 unavailable", -- [1]
+			0, -- [2]
+		}, -- [1211]
+		{
+			"Weather changed to 0, intensity 0.000000\n", -- [1]
+			0, -- [2]
+		}, -- [1212]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1213]
+		{
+			"Total: 0d 23h 14m 22s", -- [1]
+			0, -- [2]
+		}, -- [1214]
+		{
+			"Level: 0d 0h 47m 56s", -- [1]
+			0, -- [2]
+		}, -- [1215]
+		{
+			"Skill 95 increased from 122 to 123", -- [1]
+			0, -- [2]
+		}, -- [1216]
+		{
+			"Skill 54 increased from 125 to 131", -- [1]
+			0, -- [2]
+		}, -- [1217]
+		{
+			"Skill 44 increased from 123 to 124", -- [1]
+			0, -- [2]
+		}, -- [1218]
+		{
+			"Skill 54 increased from 126 to 132", -- [1]
+			0, -- [2]
+		}, -- [1219]
+		{
+			"Skill 44 increased from 124 to 125", -- [1]
+			0, -- [2]
+		}, -- [1220]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1221]
+		{
+			"Skill 226 increased from 91 to 92", -- [1]
+			0, -- [2]
+		}, -- [1222]
+		{
+			"Skill 54 increased from 127 to 133", -- [1]
+			0, -- [2]
+		}, -- [1223]
+		{
+			"Skill 226 increased from 92 to 93", -- [1]
+			0, -- [2]
+		}, -- [1224]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1225]
+		{
+			"Skill 95 increased from 123 to 124", -- [1]
+			0, -- [2]
+		}, -- [1226]
+		{
+			"Skill 44 increased from 125 to 126", -- [1]
+			0, -- [2]
+		}, -- [1227]
+		{
+			"Skill 54 increased from 128 to 134", -- [1]
+			0, -- [2]
+		}, -- [1228]
+		{
+			"Time played:", -- [1]
+			0, -- [2]
+		}, -- [1229]
+		{
+			"Total: 0d 23h 38m 48s", -- [1]
+			0, -- [2]
+		}, -- [1230]
+		{
+			"Level: 0d 1h 12m 22s", -- [1]
+			0, -- [2]
+		}, -- [1231]
+		{
+			"Skill 54 increased from 129 to 135", -- [1]
+			0, -- [2]
+		}, -- [1232]
+		{
+			"World transfer aborted (reason: 30)", -- [1]
+			0, -- [2]
+		}, -- [1233]
 	},
-	["isShown"] = false,
+	["height"] = 300,
 	["fontHeight"] = 14,
+	["isShown"] = false,
 	["commandHistory"] = {
 	},
 }

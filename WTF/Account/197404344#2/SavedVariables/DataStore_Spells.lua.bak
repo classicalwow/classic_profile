@@ -6,7 +6,7 @@ DataStore_SpellsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1637684545,
+				["lastUpdate"] = 1637689899,
 				["Spells"] = {
 					["武器"] = {
 						"100|等级 1", -- [1]
