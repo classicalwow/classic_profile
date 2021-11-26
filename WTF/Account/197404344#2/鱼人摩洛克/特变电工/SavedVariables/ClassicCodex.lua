@@ -10,9 +10,9 @@ CodexConfig = {
 	["minimumDropChance"] = 2,
 	["showLowLevel"] = false,
 	["_tom_waypoint"] = {
-		1429, -- [1]
-		0.652, -- [2]
-		0.6970000000000001, -- [3]
+		1433, -- [1]
+		0.296, -- [2]
+		0.462, -- [3]
 		["arrivaldistance"] = 15,
 		["callbacks"] = {
 			["distance"] = {
@@ -33,22 +33,22 @@ CodexConfig = {
 		["persistent"] = true,
 		["minimap"] = true,
 		["cleardistance"] = 10,
-		["title"] = "塞欧克瑞图斯",
+		["title"] = "通缉：加塞尔佐格",
 		["from"] = "?",
 		["crazy"] = true,
 		["world"] = true,
 	},
+	["continentIcon"] = false,
+	["currentQuestGivers"] = true,
 	["spawnMarkerSize"] = 15,
-	["minimapButton"] = true,
-	["autoTurnin"] = false,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["miniMapIcon"] = true,
-	["currentQuestGivers"] = true,
-	["continentIcon"] = false,
+	["autoTurnin"] = false,
+	["minimapButton"] = true,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {

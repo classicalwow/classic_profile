@@ -2,7 +2,7 @@ VER 3 0000000001000001 " 5人本提醒" "134400"
 /p 請大家看好自己頭上的標記控怪，打怪時注意仇恨UI
 END
 VER 3 0000000001000002 "target" "132090"
-/target 恐怖骸
+/target 范
 /script SetRaidTarget("target",8)
 END
 VER 3 0000000001000003 "吐口水" "132100"

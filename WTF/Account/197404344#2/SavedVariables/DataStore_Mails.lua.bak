@@ -9,23 +9,23 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1637689249,
 				["Mails"] = {
 					{
-						["link"] = "|cffffffff|Hitem:4496::::::::24:::::::::|h[棕色小包]|h|r",
+						["returned"] = false,
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 4496,
-						["returned"] = false,
-						["icon"] = 133634,
-						["count"] = 1,
+						["link"] = "|cffffffff|Hitem:4496::::::::24:::::::::|h[棕色小包]|h|r",
 						["lastCheck"] = 1637689249,
+						["count"] = 1,
+						["icon"] = 133634,
 						["daysLeft"] = 29.31745338439941,
 					}, -- [1]
 					{
-						["link"] = "|cffffffff|Hitem:4496::::::::24:::::::::|h[棕色小包]|h|r",
+						["returned"] = false,
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 4496,
-						["returned"] = false,
-						["icon"] = 133634,
-						["count"] = 1,
+						["link"] = "|cffffffff|Hitem:4496::::::::24:::::::::|h[棕色小包]|h|r",
 						["lastCheck"] = 1637689249,
+						["count"] = 1,
+						["icon"] = 133634,
 						["daysLeft"] = 29.31745338439941,
 					}, -- [2]
 				},
