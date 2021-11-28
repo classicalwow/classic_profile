@@ -17,9 +17,9 @@ CodexConfig = {
 		["callbacks"] = {
 			["distance"] = {
 			},
-			["minimap"] = {
-			},
 			["world"] = {
+			},
+			["minimap"] = {
 			},
 		},
 		["persistent"] = true,
@@ -30,25 +30,27 @@ CodexConfig = {
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["minimapButton"] = true,
-	["autoTurnin"] = false,
+	["continentIcon"] = false,
+	["currentQuestGivers"] = true,
 	["spawnMarkerSize"] = 15,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["miniMapIcon"] = true,
-	["currentQuestGivers"] = true,
-	["continentIcon"] = false,
+	["autoTurnin"] = false,
+	["minimapButton"] = true,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
 	[64] = true,
 	[151] = true,
 	[968] = true,
-	[741] = true,
 	[995] = true,
+	[741] = true,
+	[344] = true,
+	[1242] = true,
 	[730] = true,
 }
 CodexBrowserFavorites = {
@@ -62,4 +64,9 @@ CodexBrowserFavorites = {
 	},
 }
 CodexColors = {
+	["爆炸品"] = {
+		0.3137254901960784, -- [1]
+		0.7686274509803922, -- [2]
+		0.02745098039215686, -- [3]
+	},
 }
