@@ -11,3 +11,4 @@ WeakAurasArchive: enabled
 ElvUI_OptionsUI: enabled
 Prat-3.0: disabled
 Prat-3.0_Libraries: disabled
+ItemRackOptions: enabled

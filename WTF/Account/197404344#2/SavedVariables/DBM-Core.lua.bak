@@ -179,14 +179,14 @@ DBM_AllSavedOptions = {
 			0, -- [2]
 			1, -- [3]
 		},
-		["DontShowBossAnnounces"] = false,
+		["InfoFrameLines"] = 0,
 		["DontSetIcons"] = false,
-		["WarningX"] = 0,
+		["DontShowBossAnnounces"] = false,
 		["SpecialWarningVibrate1"] = false,
 		["CountdownVoice"] = "Corsica",
 		["SpecialWarningFlashCount4"] = 2,
-		["RecordOnlyBosses"] = false,
 		["DontShowUserTimers"] = false,
+		["CountdownVoice3"] = "Smooth",
 		["SpecialWarningFlash4"] = true,
 		["DisableStatusWhisper"] = false,
 		["AutoRespond"] = true,
@@ -209,10 +209,10 @@ DBM_AllSavedOptions = {
 		["DontShowBossTimers"] = false,
 		["SpecialWarningFontStyle"] = "THICKOUTLINE",
 		["DontShowSpecialWarningFlash"] = false,
-		["CountdownVoice3"] = "Smooth",
+		["RecordOnlyBosses"] = false,
 		["SpecialWarningFlashCount5"] = 3,
 		["WorldBossNearAlert"] = false,
-		["InfoFrameLines"] = 0,
+		["WarningX"] = 0,
 		["BadIDAlert"] = false,
 		["SpecialWarningFlashCol1"] = {
 			1, -- [1]

@@ -3,7 +3,10 @@ ElvDB = {
 	["profileKeys"] = {
 		["特变电工 - 鱼人摩洛克"] = "my profile",
 	},
-	["DisabledAddOns"] = {
+	["faction"] = {
+		["鱼人摩洛克"] = {
+			["特变电工"] = "Alliance",
+		},
 	},
 	["global"] = {
 		["nameplate"] = {
@@ -53,9 +56,9 @@ ElvDB = {
 			},
 		},
 	},
-	["faction"] = {
+	["gold"] = {
 		["鱼人摩洛克"] = {
-			["特变电工"] = "Alliance",
+			["特变电工"] = 281687,
 		},
 	},
 	["serverID"] = {
@@ -68,10 +71,7 @@ ElvDB = {
 			["特变电工"] = "WARRIOR",
 		},
 	},
-	["gold"] = {
-		["鱼人摩洛克"] = {
-			["特变电工"] = 75085,
-		},
+	["DisabledAddOns"] = {
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -232,15 +232,15 @@ ElvDB = {
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,-1",
 				["ElvAB_2"] = "TOP,ElvUIParent,TOP,-346,-309",
 				["BelowMinimapContainerMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-4,-236",
-				["QuestTimerFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
 				["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,373",
+				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
 				["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,294",
 				["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
 				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,339,0",
 				["ReputationBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,484,4",
 				["VehicleLeaveButton"] = "BOTTOM,UIParent,BOTTOM,-149,416",
 				["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
-				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
+				["QuestTimerFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
 				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
 				["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-273",
 				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-150",

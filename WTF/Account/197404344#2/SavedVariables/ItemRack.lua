@@ -1,6 +1,6 @@
 
 ItemRackSettings = {
-	["HideOOC"] = "OFF",
+	["HideOOC"] = "ON",
 	["Cooldown90"] = "OFF",
 	["ShowMinimap"] = true,
 	["Notify"] = "ON",
@@ -96,11 +96,11 @@ ItemRackEvents = {
 			["The Exodar"] = 1,
 			["Stormwind City"] = 1,
 			["Orgrimmar"] = 1,
-			["Silvermoon City"] = 1,
-			["Shattrath City"] = 1,
 			["Ironforge"] = 1,
-			["Dalaran"] = 1,
+			["Shattrath City"] = 1,
 			["Thunder Bluff"] = 1,
+			["Dalaran"] = 1,
+			["Silvermoon City"] = 1,
 			["Darnassus"] = 1,
 		},
 	},

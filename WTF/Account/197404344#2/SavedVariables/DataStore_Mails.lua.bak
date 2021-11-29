@@ -6,50 +6,114 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1637992071,
+				["lastUpdate"] = 1638099675,
 				["Mails"] = {
 					{
-						["link"] = "|cffffffff|Hitem:4496::::::::30:::::::::|h[棕色小包]|h|r",
+						["returned"] = false,
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 4496,
-						["returned"] = false,
-						["icon"] = 133634,
+						["link"] = "|cffffffff|Hitem:4496::::::::36:::::::::|h[棕色小包]|h|r",
+						["lastCheck"] = 1638099675,
 						["count"] = 1,
-						["lastCheck"] = 1637992071,
-						["daysLeft"] = 25.81234931945801,
+						["icon"] = 133634,
+						["daysLeft"] = 24.56697845458984,
 					}, -- [1]
 					{
-						["link"] = "|cffffffff|Hitem:4496::::::::30:::::::::|h[棕色小包]|h|r",
+						["returned"] = false,
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 4496,
-						["returned"] = false,
-						["icon"] = 133634,
+						["link"] = "|cffffffff|Hitem:4496::::::::36:::::::::|h[棕色小包]|h|r",
+						["lastCheck"] = 1638099675,
 						["count"] = 1,
-						["lastCheck"] = 1637992071,
-						["daysLeft"] = 25.81234931945801,
+						["icon"] = 133634,
+						["daysLeft"] = 24.56697845458984,
 					}, -- [2]
 					{
-						["link"] = "|cff1eff00|Hitem:15225::::::1551:545490688:30:::::::::|h[能量之杉木锤]|h|r",
 						["sender"] = "联盟拍卖行",
-						["itemID"] = 15225,
+						["subject"] = "拍卖成功：绿玛瑙",
 						["returned"] = false,
-						["icon"] = 133045,
-						["count"] = 1,
-						["lastCheck"] = 1637992071,
-						["daysLeft"] = 29.99929428100586,
+						["money"] = 650,
+						["lastCheck"] = 1638099675,
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 28.85288238525391,
 					}, -- [3]
 					{
-						["icon"] = 135724,
+						["sender"] = "联盟拍卖行",
+						["subject"] = "拍卖成功：初级法力药水 (3)",
+						["returned"] = false,
+						["money"] = 83,
+						["lastCheck"] = 1638099675,
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 28.85787010192871,
+					}, -- [4]
+					{
+						["sender"] = "联盟拍卖行",
+						["subject"] = "拍卖成功：次级法力药水 (2)",
+						["returned"] = false,
+						["money"] = 422,
+						["lastCheck"] = 1638099675,
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 28.8659725189209,
+					}, -- [5]
+					{
+						["sender"] = "联盟拍卖行",
+						["subject"] = "拍卖成功：次级法力药水 (5)",
+						["returned"] = false,
+						["money"] = 1054,
+						["lastCheck"] = 1638099675,
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 28.86600685119629,
+					}, -- [6]
+					{
+						["sender"] = "联盟拍卖行",
+						["subject"] = "拍卖成功：毛料 (20)",
+						["returned"] = false,
+						["money"] = 1196,
+						["lastCheck"] = 1638099675,
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 28.87959480285645,
+					}, -- [7]
+					{
+						["sender"] = "联盟拍卖行",
+						["subject"] = "拍卖成功：毛料 (10)",
+						["returned"] = false,
+						["money"] = 596,
+						["lastCheck"] = 1638099675,
+						["icon"] = "Interface\\Icons\\INV_Misc_Coin_01",
+						["daysLeft"] = 28.87989616394043,
+					}, -- [8]
+					{
+						["lastCheck"] = 1638099675,
 						["sender"] = "客服支持",
 						["subject"] = "举报处理通知",
 						["returned"] = true,
 						["money"] = 0,
 						["text"] = "尊敬的艾泽拉斯勇士： \n您好! \n我们已经收到了您于 2021-11-24 23时,在游戏中对玩家 鱼人摩洛克-修*帅的举报，我们将持续对该角色进行监控，后续可登录暴雪游戏安全中心-个人中心我的举报查看举报详情。 \n感谢您为维护《魔兽世界》游戏环境做出的贡献！ \n本邮箱只作为发出邮件使用，请不要回复本邮件。 \n此致 \n网 易 暴 雪 游 戏 客 服 团队",
-						["lastCheck"] = 1637992071,
-						["daysLeft"] = 362.5500793457031,
-					}, -- [4]
+						["icon"] = 135724,
+						["daysLeft"] = 361.3046875,
+					}, -- [9]
+					{
+						["lastCheck"] = 1638099675,
+						["sender"] = "客服支持",
+						["subject"] = "举报处理通知",
+						["returned"] = true,
+						["money"] = 0,
+						["text"] = "尊敬的艾泽拉斯勇士： \n您好! \n我们已经收到了您于 2021-11-28 14时,在游戏中对玩家 鱼人摩洛克-小*蛋的举报，我们将持续对该角色进行监控，后续可登录暴雪游戏安全中心-个人中心我的举报查看举报详情。 \n感谢您为维护《魔兽世界》游戏环境做出的贡献！ \n本邮箱只作为发出邮件使用，请不要回复本邮件。 \n此致 \n网 易 暴 雪 游 戏 客 服 团队",
+						["icon"] = 135724,
+						["daysLeft"] = 364.7914123535156,
+					}, -- [10]
+					{
+						["lastCheck"] = 1638099675,
+						["sender"] = "客服支持",
+						["subject"] = "举报处理通知",
+						["returned"] = true,
+						["money"] = 0,
+						["text"] = "尊敬的艾泽拉斯勇士： \n您好! \n我们已经收到了您于 2021-11-28 14时,在游戏中对玩家 鱼人摩洛克-职**怪的举报，我们将持续对该角色进行监控，后续可登录暴雪游戏安全中心-个人中心我的举报查看举报详情。 \n感谢您为维护《魔兽世界》游戏环境做出的贡献！ \n本邮箱只作为发出邮件使用，请不要回复本邮件。 \n此致 \n网 易 暴 雪 游 戏 客 服 团队",
+						["icon"] = 135724,
+						["daysLeft"] = 364.80517578125,
+					}, -- [11]
 				},
-				["lastVisitDate"] = "2021/11/27 13:47",
+				["lastVisitDate"] = "2021/11/28 19:41",
 			},
 		},
 	},
