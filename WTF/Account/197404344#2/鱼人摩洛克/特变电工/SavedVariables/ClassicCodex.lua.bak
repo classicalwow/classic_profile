@@ -10,49 +10,50 @@ CodexConfig = {
 	["minimumDropChance"] = 2,
 	["showLowLevel"] = false,
 	["_tom_waypoint"] = {
-		1433, -- [1]
-		0.296, -- [2]
-		0.462, -- [3]
+		1417, -- [1]
+		0.5329999999999999, -- [2]
+		0.493, -- [3]
 		["arrivaldistance"] = 15,
 		["callbacks"] = {
 			["distance"] = {
 			},
-			["minimap"] = {
-			},
 			["world"] = {
+			},
+			["minimap"] = {
 			},
 		},
 		["persistent"] = true,
 		["minimap"] = true,
 		["cleardistance"] = 10,
-		["title"] = "通缉：加塞尔佐格",
+		["title"] = "雷霆流放者",
 		["from"] = "?",
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["minimapButton"] = true,
-	["autoTurnin"] = false,
+	["continentIcon"] = false,
+	["currentQuestGivers"] = true,
 	["spawnMarkerSize"] = 15,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["miniMapIcon"] = true,
-	["currentQuestGivers"] = true,
-	["continentIcon"] = false,
+	["autoTurnin"] = false,
+	["minimapButton"] = true,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
 	[1242] = true,
 	[730] = true,
+	[522] = true,
 	[995] = true,
 	[344] = true,
 	[1267] = true,
 	[151] = true,
-	[968] = true,
-	[741] = true,
 	[64] = true,
+	[741] = true,
+	[968] = true,
 }
 CodexBrowserFavorites = {
 	["objects"] = {
