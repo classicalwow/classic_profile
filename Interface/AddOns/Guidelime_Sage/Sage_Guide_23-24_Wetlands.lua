@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Wetlands
 [OC]====================================
-[OC]* Minimum /played: 12 hours, 11 minutes, 0 seconds
+[OC]* Minimum /played: 10 hours, 11 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 20 minutes, 0 seconds
-[OC]* Average /played: 1 days, 0 hours, 22 minutes, 0 seconds
+[OC]* Average /played: 20 hours, 22 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 40 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 4/20
@@ -23,8 +23,7 @@ Guidelime.registerGuide(
               |cFFFFFFFFO|r [QA538 Southshore]
 [OC]====================================
 [OC]In Menethil Harbor
-       [OC]Inside the inn at Innkeeper Helbrek
-              Bind your Hearthstone to the innkeeper in [S Menethil Harbor] [V]
+       Inside the inn at Innkeeper Helbrek, Bind your Hearthstone to [S Menethil Harbor]
        [OC]|cFFa335eeFirst Aid:|r Upstairs in the inn at Fremal Doohickey, train First Aid
        [OC]Outside the inn at First Mate Fitzsimmons
               [QA463 The Greenwarden]
@@ -73,21 +72,20 @@ Guidelime.registerGuide(
        [OC]If you want to do Blackfathom Deeps soon
        [OC]Refer to this guide for quests pickups before you reach Ashenvale
 
-[OC]|cFFfff8a3Take the boat from Menethil Harbor to Auberdine, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Menethil Harbor to Auberdine, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
        [OC]Run east to flightmaster Caylais Moonfeather
 
 [OC]|cFFa335ee[A Priest]Priest:|r
-       [A Priest]|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
+       [OC][A Priest]|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
        [OC][A Priest]Run through the pink portal to Darnassus
        [OC][A Priest]Run south to Temple of the Moon
               [A Priest]At Astarii Starseeker, [QA5674 Elune's Grace]
               [A Priest]At Priestess Alathea, [QT5674 Elune's Grace]
               [OC][A Priest]You can now use Elune's Grace
        [OC][A Priest]Run through the pink portal to Rut'Theran Village
-       [A Priest]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+       [OC][A Priest]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
 
-|cFFfff8a3Fly from Auberdine to [F Astranaar], eta 02:48|r
+[OC]|cFFfff8a3Fly from Auberdine to [F Astranaar], eta 02:48|r
 
 [OC]====================================
 [OC]    Finished

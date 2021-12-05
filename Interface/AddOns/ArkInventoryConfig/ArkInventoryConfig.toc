@@ -3,7 +3,7 @@
 ## Title: ArkInventory [Configuration]
 ## Author: Arkayenro - Khaz'goroth
 ## Email: arkayenro at gmail dot com
-## Version: 30951
+## Version: 30963
 
 ## Notes: Configuration options for ArkInventory
 

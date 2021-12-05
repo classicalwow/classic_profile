@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Searing Gorge
 [OC]====================================
-[OC]* Minimum /played: 2 days, 4 hours, 59 minutes, 0 seconds
+[OC]* Minimum /played: 2 days, 2 hours, 59 minutes, 0 seconds
 [OC]* Minimum Segment Time: 3 hours, 55 minutes, 0 seconds
-[OC]* Average /played: 4 days, 9 hours, 58 minutes, 0 seconds
+[OC]* Average /played: 4 days, 5 hours, 58 minutes, 0 seconds
 [OC]* Average Segment Time: 7 hours, 50 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 11/20 (~200K Total XP)
@@ -168,7 +168,7 @@ Do [QC3463 Set Them Ablaze!]
 
 [OC]Run northeast to Thelsamar
 
-|cFFfff8a3Fly from Thelsamar to [F Ironforge], eta 01:44|r
+[OC]|cFFfff8a3Fly from Thelsamar to [F Ironforge], eta 01:44|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run northeast to the Hall of Explorers
               [OC]At Curator Thorius
@@ -188,14 +188,14 @@ Do [QC3463 Set Them Ablaze!]
        [OC]Run southeast to the inn
               At Innkeeper Firebrew, [QA3790 Assisting Arch Druid Staghelm]
        [OC]At the bank
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth
+              [OC]|cFFe6cc80Deposit:|r Extra cloth
        [OC]Run southeast to the Hall of Arms in The Military Ward
               [OC]At Xiggs Fuselighter
                      [QT3450 An Easy Pickup] [QA3451 Signal for Pickup]
                      [QT3451 Signal for Pickup] for Standard Issue Flare Gun
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
 
 [OC]Run southwest to the Valley of Kings
        At Mountaineer Pebblebitty, [QT3201 At Last!]
@@ -203,7 +203,7 @@ Do [QC3463 Set Them Ablaze!]
 
 [OC]Run northeast back to Thelsamar
 
-|cFFfff8a3Fly from Thelsamar to [F Thorium Point], eta 03:06|r
+[OC]|cFFfff8a3Fly from Thelsamar to [F Thorium Point], eta 03:06|r
 
 [OC]Run south to the chain through the hole in the ground
        [OC]Jump down so you land on the suspended block
@@ -217,7 +217,7 @@ Do [QC3463 Set Them Ablaze!]
 [OC]Run out of the ravine and north around to Thorium Point
        [OC]At Master Smith Burninate, [R][V]
 
-|cFFfff8a3Fly from Thorium Point to [F Nethergarde Keep], eta |r
+[OC]|cFFfff8a3Fly from Thorium Point to [F Nethergarde Keep], eta |r
 
 [OC]====================================
 [OC]    Finished

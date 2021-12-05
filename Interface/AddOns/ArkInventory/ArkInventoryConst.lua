@@ -1259,7 +1259,7 @@ end
 
 -- item_openable = right click to open
 --[[
-local z = "cannot change equip"
+local z = "cannot be"
 ArkInventory.Output( "search=", z )
 for k, v in pairs (_G) do
 	if type( k ) == "string" and type( v ) == "string" then

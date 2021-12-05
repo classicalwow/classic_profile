@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Stranglethorn Vale
 [OC]====================================
-[OC]* Minimum /played: 1 days, 6 hours, 47 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 4 hours, 47 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 50 minutes, 0 seconds
-[OC]* Average /played: 2 days, 13 hours, 34 minutes, 0 seconds
+[OC]* Average /played: 2 days, 9 hours, 34 minutes, 0 seconds
 [OC]* Average Segment Time: 3 hours, 40 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 13/20
@@ -37,8 +37,7 @@ Guidelime.registerGuide(
               [OC]Singing Crystal Shard
               [OC]|cFFe6cc80Deposit:|r Letter of Commendation, Karnitol's Satchel
        [OC]Inside the inn
-              [OC]At Innkeeper Skindle
-                     Bind your Hearthstone to the innkeeper in [S Booty Bay] [V]
+              At Innkeeper Skindle, Bind your Hearthstone to [S Booty Bay]
               [OC]At Crank Fizzlebub
                      [QT605 Singing Blue Shards] [QA600 Venture Company Mining]
                      [QA621 Zanzil's Secret]
@@ -56,7 +55,7 @@ Guidelime.registerGuide(
               [QT575 Supply and Demand] [QA577 Some Assembly Required]
        [OC]Run southwest to flightmaster Gyll
 
-|cFFfff8a3Fly from Booty Bay to [F Darkshire], eta 02:46|r
+[OC]|cFFfff8a3Fly from Booty Bay to [F Darkshire], eta 02:46|r
 [OC]Run south following the road west to the crossroads
 [OC]Run south to Stranglethorn Vale
 
@@ -84,10 +83,9 @@ Guidelime.registerGuide(
        [OC]Grind along the coast
               Do [QC577 Some Assembly Required] (Kill Snapjaw Crocolisk (Slow) (Aoe'able) for 5 Snapjaw Crocolisk Skin)
        [OC]Grind up the structure
-              [OC]Kill Foreman Cozzle for Cozzle's Key
-       [OC]Requires: Cozzle's Key
-              [OC]In the small house [G 43,20 Stranglethorn Vale] (43, 20)
-                     Do [QC1182 Goblin Sponsorship] (Loot Cozzle's Footlocker for Fuel Regulator Blueprints)
+              Kill Foreman Cozzle for 1 [CI5851,1]
+       [OC]In the small house [G 43,20 Stranglethorn Vale] (43, 20)
+              Do [QC1182 Goblin Sponsorship] (Loot Cozzle's Footlocker for Fuel Regulator Blueprints)
 
 [OC]Run west across the river to the raptor spawn
        Do [QC195 Raptor Mastery] (Kill 10 Lashtail Raptor (Stun) (Disarm) (Aoe'able))
@@ -133,15 +131,14 @@ Guidelime.registerGuide(
               [OC][A Mage]Teleport to Ironforge, continue at Ironforge below
        [OC]Run southwest to the flightmaster
 
-|cFFfff8a3Fly from Booty Bay to [F Stormwind], eta 03:28|r
+[OC]|cFFfff8a3Fly from Booty Bay to [F Stormwind], eta 03:28|r
        [OC]Run northeast to Stormwind Keep
               At Major Samuelson, [QT563 Reassignment]
        [OC]Run southwest to flightmaster Gyll
 
-|cFFfff8a3Fly from Stormwind to [F Ironforge], eta 04:06|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Ironforge], eta 04:06|r
        [OC]Keep your mount in mind but [T] Train spells at your class trainer, Equip new spells
-       [OC]At the Auction House
-              [OC]Buy 2-4 Elixir of Water Breathing for an upcoming quest
+       From the bank or auction house, collect 2 [CI5996,2] for a quest in Arathi Highlands
        [OC]Run northeast to Hall of Explorers
               [OC]At Roetten Stonehammer
                      [QT1457 The Karnitol Shipwreck]
@@ -149,10 +146,9 @@ Guidelime.registerGuide(
               |cFFFFFFFF(D)|r At Librarian Mae Paledust, [QA1050 Mythology of the Titans]
        [OC]Run to  flightmaster Gryth Thurden
 
-|cFFfff8a3Fly from Ironforge to [F Southshore], eta 04:10|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Southshore], eta 04:10|r
        In front of the inn at Phin Odelic, [QA659 Hints of a New Plague]
-       [OC]Inside the inn at Innkeeper Anderson
-              Bind your Hearthstone to the innkeeper in [S Southshore] [V]
+       Inside the inn at Innkeeper Anderson, Bind your Hearthstone to [S Southshore]
        [OC]Upstairs in the inn at Raleigh the Devout
               [QT1052 Down the Scarlet Path], wait
               |cFFFFFFFF(D)|r [QA1053 In the Name of the Light]

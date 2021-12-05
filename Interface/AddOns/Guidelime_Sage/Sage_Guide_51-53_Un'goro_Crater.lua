@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Un'goro Crater
 [OC]====================================
-[OC]* Minimum /played: 2 days, 23 hours, 10 minutes, 9 seconds
+[OC]* Minimum /played: 2 days, 21 hours, 10 minutes, 9 seconds
 [OC]* Minimum Segment Time: 3 hours, 5 minutes, 0 seconds
-[OC]* Average /played: 5 days, 22 hours, 20 minutes, 18 seconds
+[OC]* Average /played: 5 days, 18 hours, 20 minutes, 18 seconds
 [OC]* Average Segment Time: 6 hours, 10 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 10/20  (~262/294K Total XP)
@@ -42,12 +42,12 @@ Guidelime.registerGuide(
        [OC]Ironforge ! A Little Slime Goes a Long Way
        [OC]Tanaris ! Bungle in the Jungle
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       [OC]For ? Bungle in the Jungle (Loot Un'Goro Dirt Pile for 5 Un'Goro Soil)
-       [OC]For ? Un'Goro Soil (Loot Un'Goro Dirt Pile for 20 Un'Goro Soil)
-       [OC]For ? A Little Slime Goes a Long Way
-              [OC]Kill 10 Muculent Ooze, Primal Ooze, use Empty Pure Sample Jar on their corpse
-       [OC]For an upcoming quest (Loot 7 Green, 7 Red, 7 Yellow, 7 Blue Power Crystal)
+
+[O]|cFF66ff66On the go:|r [QC4496 Bungle in the Jungle] (Loot Un'Goro Dirt Pile for 5 Un'Goro Soil)
+[O]|cFF66ff66On the go:|r [QC3764 Un'Goro Soil] (Loot Un'Goro Dirt Pile for 20 Un'Goro Soil)
+[O]|cFF66ff66On the go:|r [QC4513 A Little Slime Goes a Long Way]
+       [OC]Kill 10 Muculent Ooze, Primal Ooze, use Empty Pure Sample Jar on their corpse
+[OC]for a quest (Loot 7 Green, 7 Red, 7 Yellow, 7 Blue Power Crystal)
 
 [OC]Run north near the rivers to Fresh Threshadon Carcass [G 69,57 Un'Goro Crater] (69, 57) (Prime Aoe)
        [OC](Discover The Marshlands)
@@ -98,8 +98,7 @@ Guidelime.registerGuide(
        Right click A Mangled Journal, [QA3884 Williden's Journal]
        At Williden Marshal, [QT3884 Williden's Journal]
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       [OC]For ? Muigin and Larion (Kill Bloodpetal Flayer for 15 Bloodpetal)
+[O]|cFF66ff66On the go:|r [QC4141 Muigin and Larion] (Kill Bloodpetal Flayer for 15 Bloodpetal)
 
 [OC]Grind east to the Northern Crystal Pylon [G 56.5,12.5 Un'Goro Crater] (56.5, 12.5)
        Loot it for [QC4285 The Northern Pylon]
@@ -161,11 +160,11 @@ Finish [QC4141 Muigin and Larion]
        Do [QC4501,1 Beware of Pterrordax] (Kill 10 Pterrordax (Fear) (Aoe'able)) [G 57,86 Un'Goro Crater] (57, 86)
        Finish [QC4503 Shizzle's Flyer] (Kill Pterrordax (Fear) (Aoe'able) for 8 Webbed Pterrordax Scale) [G 57,86 Un'Goro Crater] (57, 86)
        Finish [QC3882 Roll the Bones] (Kill Dinosaur for 8 Dinosaur Bone) [G 57,86 Un'Goro Crater] (57, 86)
+       Collect 5 [CI11018,5] for a quest
 
 [OC]Grind down into the Slithering Scar [G 50,80 Un'Goro Crater] (50, 80) (Prime Aoe)
        [OC]Drag Unused Scraping Vial onto your skill bars
        Finish [QC4496 Bungle in the Jungle] (Kill Gorishi (Prime Aoe) for 1 Gorishi Scent Gland)
-              [OC]Make sure you save 5 Un'Goro Soil for upcoming part
        [OC]Grind to the close south room
        [OC]On top of the center mound
               Use Unused Scraping Vial for [QC3883 Alien Ecology]
@@ -179,7 +178,7 @@ Finish [QC4141 Muigin and Larion]
                      [QA4507 Pawn Captures Queen]
        [OC]Run south to the flightmaster
 
-|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
        [OC]In the center of camp
               At Hol'anyee Marshal, [QT3883 Alien Ecology]
               At Spark Nilminer, [QT3882 Roll the Bones]
@@ -236,7 +235,7 @@ Finish [QC4141 Muigin and Larion]
                      [QT4507 Pawn Captures Queen] [QA4508 Calm Before the Storm]
        [OC]Run south to the flightmaster
 
-|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
        [OC]In the center of camp
               At Williden Marshal, [QT3881 Expedition Salvation]
               At Spraggle Frock, [QT4501 Beware of Pterrordax]
@@ -267,10 +266,9 @@ Finish [QC4141 Muigin and Larion]
 [OC]Grind northwest and escort Ringo to Marshal's Refuge
        At Spraggle Frock, [QT4491 A Little Help From My Friends] (Treetop Leggings)
 
-[OC]Make sure you have the following for upcoming quests
-       20 Un'Goro Soil for [QC3764 Un'Goro Soil]
-       1 Bloodpetal for [QC4142 A Visit to Gregan]
-       [OC]20 Packet of Tharlendris Seeds for upcoming quest
+Finish [QC3764 Un'Goro Soil] (Collect 20 Un'Goro Soil)
+Finish [QC4142 A Visit to Gregan] (Collect 1 Bloodpetal)
+Verify you have 20 [CI11022,20]
 
 [OC]Run far southwest to Krakle [G 31,50 Un'Goro Crater] (31, 50)
        [QT974 Finding the Source] [QA980 The New Springs]
@@ -288,7 +286,7 @@ Finish [QC4141 Muigin and Larion]
               [OC]At flightmaster Cloud Skydancer
                      Get the [P Cenarion Hold] flightpoint
 
-|cFFfff8a3Fly from Cenarion Hold to [F Feathermoon], eta 02:46|r
+[OC]|cFFfff8a3Fly from Cenarion Hold to [F Feathermoon], eta 02:46|r
 
 [OC]====================================
 [OC]    Level 53

@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Badlands
 [OC]====================================
-[OC]* Minimum /played: 1 days, 11 hours, 11 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 9 hours, 11 minutes, 0 seconds
 [OC]* Minimum Segment Time: 3 hours, 30 minutes, 0 seconds
-[OC]* Average /played: 2 days, 22 hours, 22 minutes, 0 seconds
+[OC]* Average /played: 2 days, 18 hours, 22 minutes, 0 seconds
 [OC]* Average Segment Time: 7 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 13/20
@@ -67,11 +67,8 @@ Guidelime.registerGuide(
        [OC](Discover Angor Fortress, Dustbowl)
        [OC]At Lotwil Veriatus
               [QA710 Study of the Elements: Rock]
-              [OC]Requires: 1 Frost Oil
                      [QA713 Coolant Heads Prevail] [QT713 Coolant Heads Prevail]
-              [OC]Requires: 1 Gyrochronatom
                      [QA714 Gyro... What?] [QT714 Gyro... What?]
-              [OC]Requires: 1 Healing Potion and 1 Lesser Invisibility Potion
                      At Lucien Tosselwrench, [QA715 Liquid Stone] [QT715 Liquid Stone]
 
 [OC]Grind west
@@ -152,7 +149,7 @@ Guidelime.registerGuide(
        [OC]At the Mystic Ward
               [OC]At Talvash del Kissel
                      [QT2198 The Shattered Necklace] [QA2199 Lore for a Price]
-                     [OC]Requires: 5 Silver Bar
+                     [OC]|cFFFF0000Requires:|r 5 Silver Bar
                             [QT2199 Lore for a Price] |cFFFFFFFF(D)|r[QA2200 Back to Uldaman]
        [OC]|cFFFFFFFF(D)|r At the Hall of Explorers
               At Krom Stoutarm, [QA1360 Reclaimed Treasures]
@@ -171,13 +168,14 @@ Guidelime.registerGuide(
 [OC]Travel to Ironforge
        [OC][T] Train spells at your class trainer, Equip new spells
 
-|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
        [OC]Run into the middle southern house
               At Ghak Healtouch, [QT2500 Badlands Reagent Run] |cFFFFFFFF(D)|r[QA17 Uldaman Reagent Run]
 
 [OC]Run southeast around the loch to Ironband's Excavation Site
        At Prospector Ironband, [QT739 Murdaloc] |cFFFFFFFF(D)|r[QA704 Agmond's Fate]
-              [OC]|cFFa335ee[A Paladin, Warrior]Paladin, Warrior:|r Rock Pulverizer
+              [OC]|cFFa335ee[A Paladin]Paladin:|r Rock Pulverizer
+              [OC]|cFFa335ee[A Warrior]Warrior:|r Rock Pulverizer
 
 [OC]Run southwest to the Badlands
 
@@ -194,11 +192,10 @@ Guidelime.registerGuide(
        |cFFFFFFFFO|r [QA2398 The Lost Dwarves] |cFFFFFFFFO|r [QA2200 Back to Uldaman]
 
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       For |cFFFFFFFFO|r [QA2418 Power Stones]
-              [OC]Kill Shadowforge dwarves for 8 Dentrium Power Stone, 8 An'Alleum Power Stone
-       For |cFFFFFFFFO|r [QA704 Agmond's Fate] (Loot 4 Carved Stone Urn)
-       For |cFFFFFFFFO|r [QA17 Uldaman Reagent Run] (Loot Magenta Cap Clusters for 12 Magenta Fungus Cap)
+[O]|cFF66ff66On the go:|r [QC2418 Power Stones]
+       [OC]Kill Shadowforge dwarves for 8 Dentrium Power Stone, 8 An'Alleum Power Stone
+[O]|cFF66ff66On the go:|r [QC704 Agmond's Fate] (Loot 4 Carved Stone Urn)
+[O]|cFF66ff66On the go:|r [QC17 Uldaman Reagent Run] (Loot Magenta Cap Clusters for 12 Magenta Fungus Cap)
 
 [OC]Grind south to spot 3
        Do [QC722 Amulet of Secrets] (Kill Magregan Deepshadow for Hammertoe's Amulet)
@@ -237,7 +234,7 @@ Guidelime.registerGuide(
        [OC]At the Hall of Explorers
               At Krom Stoutarm, [QT1360 Reclaimed Treasures]
 
-|cFFFFFFFF(D)|r |cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
+[OC]|cFFFFFFFF(D)|r |cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
        [OC]Run into the middle southern house
               At Ghak Healtouch, [QT17 Uldaman Reagent Run]
                      [OC]Save 5 Restorative Potion for raiding at Level 60
@@ -265,8 +262,7 @@ Guidelime.registerGuide(
 [OC]Run west to the dustbowl camp [G 26,45 Badlands] (26, 45)
        [OC]At Lotwil Veriatus
               [QT712 Study of the Elements: Rock]
-              If you did all prerequisites you can now [QA734 This Is Going to Be Hard]
-       [OC]Requires: 1 Patterned Bronze Bracer
+              If you did all prerequisites you can [QA734 This Is Going to Be Hard]
               [OC]At Lucien Tosselwrench
                      [QA716 Stone Is Better than Cloth] [QT716 Stone Is Better than Cloth]
        At Lucien Tosselwrench, [QT734 This Is Going to Be Hard] [QA777 This Is Going to Be Hard]
@@ -284,7 +280,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge, continue at Ironforge below
 [OC]Run far north to Thelsamar in Loch Modan
 
-|cFFfff8a3Fly from Thelsamar to [F Ironforge], eta 01:44|r
+[OC]|cFFfff8a3Fly from Thelsamar to [F Ironforge], eta 01:44|r
        [OC]|cFFFFFFFF(D)|r At the Hall of Explorers
               [OC]At Historian Karnik
                      [QT724 Prospect of Faith]
@@ -292,13 +288,13 @@ Guidelime.registerGuide(
               At Advisor Belgrum, [QT725 Passing Word of a Threat] [QA726 Passing Word of a Threat]
               At Historian Karnik, [QT726 Passing Word of a Threat]
 
-|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
        [OC]At the Dwarven District
               [OC]Run to the southwestern building
               At Caskbelly, [QA1448 In Search of The Temple]
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
 
 [OC]====================================
 [OC]    Finished

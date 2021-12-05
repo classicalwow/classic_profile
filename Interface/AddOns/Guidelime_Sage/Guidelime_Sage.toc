@@ -1,7 +1,7 @@
 ## Title: Guidelime_Sage
 ## Author: Sage
-## Version: 1.0
-## Interface: 20502
+## Version: 1.0.0
+## Interface: 11401
 ## Dependencies: Guidelime
 ## Notes: Sage Guide: Classic WoW Leveling Guide (Alliance 1-60) for Guidelime
 
@@ -9,9 +9,7 @@ Sage_Guide_1-10_Dun_Morogh.lua
 Sage_Guide_1-10_Elwynn_Forest.lua
 Sage_Guide_1-11_Teldrassil.lua
 Sage_Guide_10-12_Loch_Modan.lua
-Sage_Guide_11-15_Darkshore.lua
-Sage_Guide_14-17_Loch_Modan.lua
-Sage_Guide_17-19_Darkshore.lua
+Sage_Guide_11-19_Darkshore.lua
 Sage_Guide_19-20_Redridge.lua
 Sage_Guide_20-21_Duskwood.lua
 Sage_Guide_21-22_Redridge.lua
@@ -55,3 +53,5 @@ Sage_Guide_56-57_Plaguelands.lua
 Sage_Guide_57-58_Blackrock_Depths.lua
 Sage_Guide_58-59_Silithus.lua
 Sage_Guide_59-60_Winterspring.lua
+Sage_Guide_12-14_Westfall.lua
+Sage_Guide_14-17_Loch_Modan.lua

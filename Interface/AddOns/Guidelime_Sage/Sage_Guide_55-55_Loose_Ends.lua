@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Glue
 [OC]====================================
-[OC]* Minimum /played: 3 days, 11 hours, 26 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 9 hours, 26 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 6 days, 22 hours, 52 minutes, 18 seconds
+[OC]* Average /played: 6 days, 18 hours, 52 minutes, 18 seconds
 [OC]* Average Segment Time: 2 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 18/20 (~52K Total XP)
@@ -38,15 +38,14 @@ Guidelime.registerGuide(
               |cFFFFFFFFO|r [QA5086 Toxic Horrors]
               |cFFFFFFFFX|r [QA5245 Troubled Spirits of Kel'Theril]
 [OC]====================================
-|cFFfff8a3Fly from Chillwind Camp to [F Menethil Harbor], eta 03:04|r
+[OC]|cFFfff8a3Fly from Chillwind Camp to [F Menethil Harbor], eta 03:04|r
        [OC]Run to the south docks
 
-[OC]|cFFfff8a3Take the boat from Menethil Harbor to Theramore Isle, a boat shows up every 05:28.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Menethil Harbor to Theramore Isle, a boat shows up every 05:28.\\Craft bandages or fish while you wait.|r
        [OC]|cFFa335eeFirst Aid:|r Inside the keep at Doctor Gustaf VanHowzen, train your First Aid
        [OC]Run north to the flightmaster
 
-|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
+[OC]|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
        At Krinkle Goodsteel, [QT5538 Mold Rhymes With...] [QA5801 Fire Plume Forged]
        [OC]Run east to the Tanaris Graveyard
               [OC]Use Videre Elixir which will kill you, release spirit
@@ -57,7 +56,7 @@ Guidelime.registerGuide(
        [OC]Destroy extra Videre Elixir
        [OC]Run west to flightmaster Bera Stonehammer
 
-|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
        [OC]At Linken
               [QT3914 Linken's Sword] [QA3941 A Gnome's Assistance]
        [OC]Run north to the back of the crystal cave
@@ -65,23 +64,22 @@ Guidelime.registerGuide(
                      [QT3941 A Gnome's Assistance], wait, [QA3942 Linken's Memory]
        [OC]Run south out of the cave
 
-[OC]Requires: 2 Thorium Bar
-       [OC]Run south to Fire Plume Ridge
-              [OC]At the top at the lava lake
-              Do [QC5801 Fire Plume Forged]
-                     [OC]Right click Skeleton Key Mold to create Unfinished Skeleton Key
+[OC]Run south to Fire Plume Ridge
+       [OC]At the top at the lava lake
+       Do [QC5801 Fire Plume Forged]
+              [OC]Right click Skeleton Key Mold to create Unfinished Skeleton Key
 
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Silva Fil'naveth [G 44,45 Moonglade] (44, 45)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
        [OC][A Druid]Continue at Rut'Theran Village below
 
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Darnassus, continue at Darnassus below
 
 [OC]Run north back to Marshal's Refuge
 
-|cFFfff8a3Fly from Marshal's Refuge to [F Rut'Theran Village], eta 12:57|r
+[OC]|cFFfff8a3Fly from Marshal's Refuge to [F Rut'Theran Village], eta 12:57|r
 
 [OC]Take the pink portal to Darnassus
        [OC]At the pond in Temple of the Moon
@@ -97,7 +95,7 @@ Guidelime.registerGuide(
               At Erelas Ambersky, [QT978 Moontouched Wildkin] [QA979 Find Ranshalla]
        [OC]Run to flightmaster Vesprystus
 
-|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+[OC]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
 
 [OC]Run northeast to Felwood
 
@@ -138,7 +136,7 @@ Guidelime.registerGuide(
        [OC](Discover Lake Elune'ara, Nighthaven)
        [OC]At the southeast lodge
               [QT6762 Rabine Saturna] [QA1124 Wasteland]
-              [OC]Phase 2: Requires: Entering Dire Maul at least once
+              [OC]Phase 2: |cFFFF0000Requires:|r Entering Dire Maul at least once
                      [QA5527 A Reliquary of Purity]
 
 [OC]Run south to flightmaster Sindrayl [G 48,67 Moonglade] (48, 67)

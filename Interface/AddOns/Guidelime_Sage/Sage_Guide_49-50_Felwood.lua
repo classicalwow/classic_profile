@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Felwood
 [OC]====================================
-[OC]* Minimum /played: 2 days, 14 hours, 17 minutes, 9 seconds
+[OC]* Minimum /played: 2 days, 12 hours, 17 minutes, 9 seconds
 [OC]* Minimum Segment Time: 2 hours, 31 minutes, 0 seconds
-[OC]* Average /played: 5 days, 4 hours, 34 minutes, 18 seconds
+[OC]* Average /played: 5 days, 0 hours, 34 minutes, 18 seconds
 [OC]* Average Segment Time: 5 hours, 2 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~140K Total XP)
@@ -102,7 +102,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Silva Fil'naveth [G 44,45 Moonglade] (44, 45)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
        [OC][A Druid]Continue at Rut'Theran Village below
 
 [OC]|cFFa335ee[A Mage]Mage:|r
@@ -112,7 +112,7 @@ Guidelime.registerGuide(
 
 |cFFfff8a3Hearth to [H Auberdine] [V]|r
 
-|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
+[OC]|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
 
 [OC]Run north through the portal to Darnassus
        [OC]At the Bank
@@ -141,7 +141,7 @@ Guidelime.registerGuide(
 
 [OC]Run through the pink portal to Rut'Theran Village
 
-|cFFfff8a3Fly from Rut'Theran Village to [F Talrendis Point], eta 06:21|r
+[OC]|cFFfff8a3Fly from Rut'Theran Village to [F Talrendis Point], eta 06:21|r
 
 [OC]====================================
 [OC]    Finished

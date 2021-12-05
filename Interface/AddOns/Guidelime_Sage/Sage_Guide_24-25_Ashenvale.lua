@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Ashenvale
 [OC]====================================
-[OC]* Minimum /played: 13 hours, 31 minutes, 0 seconds
+[OC]* Minimum /played: 11 hours, 31 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 25 minutes, 0 seconds
-[OC]* Average /played: 1 days, 3 hours, 2 minutes, 0 seconds
+[OC]* Average /played: 23 hours, 2 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 50 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 7/20
@@ -34,6 +34,18 @@ Guidelime.registerGuide(
                      [QA1054 Culling the Threat]
               [OC]At Maliynn, [V]
 
+[OC]|cFFa335ee[A Hunter]Hunter:|r
+       [OC][A Hunter]East at Maluressian, stable your cat
+       [OC][A Hunter]Run northwest
+       [OC][A Hunter]Tame Ashenvale Bear
+              [OC][A Hunter]Use Growl Rank 3 to learn it
+              [OC][A Hunter]Use Claw Rank 3 to learn it
+       [OC][A Hunter]Grind southwest
+       [OC][A Hunter]Right click pet, abandon pet
+       [OC][A Hunter]Tame Ghostpaw Runner, use Bite Rank 3 to learn it
+       [OC][A Hunter]Right click pet, abandon pet
+       [OC][A Hunter]In Astranaar at Maluressian, unstable your cat
+
 [OC]Take the road northwest to Maestra's Post
        At Orendil Broadleaf, [QA1010 Bathran's Hair]
 
@@ -55,7 +67,7 @@ Guidelime.registerGuide(
 [OC]Grind north to Zoram Strand near the little boat in the water [G 14,20. Ashenvale] (14, 20.)
        [OC](Discover Zoram Strand)
        Loot Ancient Statuette for [QC1007 The Ancient Statuette]
-       [OC]Do some ? The Zoram Strand (Kill Wrathtail (Slow) for some Wrathtail Head)
+       Do some |cFFFFFFFFO|r [QA1008 The Zoram Strand] (Kill Wrathtail (Slow) for some Wrathtail Head)
 
 [OC]Grind south back to Talen
        [QT1007 The Ancient Statuette], wait, [QA1009 Ruuzel]
@@ -112,7 +124,7 @@ Guidelime.registerGuide(
 
 [OC]Grind southeast to Greenpaw Village [G 55,62 Ashenvale] (55, 62)
        [OC](Discover Fallen Sky Lake, Greenpaw Village)
-       [OC]Do some ? An Aggressive Defense (Kill 1 Foulweald Den Watcher, 2 Ursa, 10 Totemic, 12 Warrior)
+       Do some |cFFFFFFFFO|r [QA1025 An Aggressive Defense] (Kill 1 Foulweald Den Watcher, 2 Ursa, 10 Totemic, 12 Warrior)
 
 [OC]|cFFFF0000GROUP 2+ Players|r
        [OC]Grind far southeast along road to Fallen Sky Lake [G 66,82 Ashenvale] (66, 82)

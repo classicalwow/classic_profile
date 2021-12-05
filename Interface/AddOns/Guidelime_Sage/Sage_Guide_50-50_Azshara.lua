@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Azshara
 [OC]====================================
-[OC]* Minimum /played: 2 days, 16 hours, 48 minutes, 9 seconds
+[OC]* Minimum /played: 2 days, 14 hours, 48 minutes, 9 seconds
 [OC]* Minimum Segment Time: 2 hours, 22 minutes, 0 seconds
-[OC]* Average /played: 5 days, 9 hours, 36 minutes, 18 seconds
+[OC]* Average /played: 5 days, 5 hours, 36 minutes, 18 seconds
 [OC]* Average Segment Time: 4 hours, 44 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 15/20 (~65K Total XP)
@@ -64,8 +64,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Hunter]Hunter:|r
        [OC][A Hunter]Grind northeast along the road to Ogtinc [G 42.5,42.5 Azshara] (42.5, 42.5)
               [A Hunter][QT8151 The Hunter's Charm] [QA8153 Courser Antlers]
-       [OC][A Hunter]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-              [OC][A Hunter]For ? Courser Antlers (Kill Mosshoof Courser for 2 Perfect Courser Antler)
+              [A Hunter][O]|cFF66ff66On the go:|r [QC8153 Courser Antlers] (Kill Mosshoof Courser for 2 Perfect Courser Antler)
 
 [OC]Grind northeast to Ursolan [G 45,26.5 Azshara] (45, 26.5)
        [OC](Discover Timbermaw Hold, Ursolan)
@@ -116,27 +115,25 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Sindrayl [G 48,67 Moonglade] (48, 67)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Auberdine], eta |r
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Auberdine], eta |r
        [OC][A Druid]Continue at Auberdine below
 
 [OC]|cFFa335ee[A Mage]Mage:|r
        [OC][A Mage]Teleport to Ironforge
               [OC][A Mage]At the Bank
-                     [OC][A Mage]|cFFe6cc80Deposit:|r Extra Cloth, Extra Potions, Extra Recipes
-       [A Mage]|cFFfff8a3Fly from Ironforge to [F Aerie Peak], eta 04:42|r
+                     [OC][A Mage]|cFFe6cc80Deposit:|r Extra cloth, potions, recipes
+       [OC][A Mage]|cFFfff8a3Fly from Ironforge to [F Aerie Peak], eta 04:42|r
        [OC][A Mage]Continue at Aerie Peak below
 
 |cFFfff8a3Hearth to [H Auberdine] [V]|r
        [OC]Run to the south dock
 
-[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
 
-|cFFfff8a3Fly from Menethil Harbor to [F Aerie Peak], eta 02:49|r
+[OC]|cFFfff8a3Fly from Menethil Harbor to [F Aerie Peak], eta 02:49|r
 
 [OC]Just east at Wildhammer Keep
-       [OC]Upstairs at Innkeeper Thulfram
-              Bind your Hearthstone to the innkeeper in [S Wildhammer Keep] [V]
+       Upstairs at Innkeeper Thulfram, Bind your Hearthstone to [S Wildhammer Keep]
 
 [OC]Run east along the road to Shindigger's Camp [G 27,48.5 The Hinterlands] (27, 48.5)
        [QT1452 Rhapsody's Kalimdor Kocktail], wait, [QA1469 Rhapsody's Tale]
@@ -159,7 +156,7 @@ Guidelime.registerGuide(
 
 [OC]Run west to the top of Aerie Peak
 
-|cFFfff8a3Fly from Aerie Peak to [F Chillwind Camp], eta 50|r
+[OC]|cFFfff8a3Fly from Aerie Peak to [F Chillwind Camp], eta 50|r
 
 [OC]====================================
 [OC]    Finished

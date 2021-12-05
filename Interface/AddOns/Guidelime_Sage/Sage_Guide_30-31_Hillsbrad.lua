@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Hillsbrad
 [OC]====================================
-[OC]* Minimum /played: 20 hours, 56 minutes, 0 seconds
+[OC]* Minimum /played: 18 hours, 56 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 5 minutes, 0 seconds
-[OC]* Average /played: 1 days, 17 hours, 52 minutes, 0 seconds
+[OC]* Average /played: 1 days, 13 hours, 52 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 10 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 5/20
@@ -65,8 +65,7 @@ Guidelime.registerGuide(
 |cFFfff8a3Hearth to [H Menethil Harbor] [V]|r
        [OC]Run to the southern docks
 
-[OC]|cFFfff8a3Take the boat from Menethil Harbor to Theramore Isle, a boat shows up every 05:28.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Menethil Harbor to Theramore Isle, a boat shows up every 05:28.\\Craft bandages or fish while you wait.|r
        Get the [P Theramore Isle] flightpoint
        [OC]Run northeast to the inn
        Outside the inn at Guard Byron, [QA1282 They Call Him Smiling Jim]

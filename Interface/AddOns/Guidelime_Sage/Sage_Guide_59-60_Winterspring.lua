@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Winterspring
 [OC]====================================
-[OC]* Minimum /played: 3 days, 23 hours, 26 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 21 hours, 26 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 7 days, 22 hours, 52 minutes, 18 seconds
+[OC]* Average /played: 7 days, 18 hours, 52 minutes, 18 seconds
 [OC]* Average Segment Time: 2 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 5/20 (~50K Total XP)
@@ -32,7 +32,7 @@ Guidelime.registerGuide(
 
 [OC]Run east back to Talrendis Point
 
-|cFFfff8a3Fly from Talrendis Point to [F Everlook], eta 02:06|r
+[OC]|cFFfff8a3Fly from Talrendis Point to [F Everlook], eta 02:06|r
 
 [OC]Run east to Winterfall Village
        [OC]Grind to High Chief Winterfall [G 70,38 Winterspring] (70, 38)
@@ -59,13 +59,13 @@ Guidelime.registerGuide(
               [QT6844 Umber, Archivist] 3k [QA6845 Uncovering Past Secrets]
        [OC]Run southeast to Rabine Saturna [G 52,45 Moonglade] (52, 45)
               [QT6845 Uncovering Past Secrets] 7.5k
-              [OC]Phase 2: Requires: Entering Dire Maul at least once
+              [OC]Phase 2: |cFFFF0000Requires:|r Entering Dire Maul at least once
                      [QT5527 A Reliquary of Purity], skip follow up
        [OC]Run northwest back to Umber
               [QT1185 Under the Chitin Was...] 3k
        [OC]Run south to the flightmaster Sindrayl
 
-|cFFfff8a3Fly from Moonglade to [F Talonbranch Glade], eta 01:00|r
+[OC]|cFFfff8a3Fly from Moonglade to [F Talonbranch Glade], eta 01:00|r
 
 [OC]Run west along the road to Jadefire Run [G 39,22 Felwood] (39, 22)
        [OC]This is a grind spot for Felcloth
@@ -104,7 +104,7 @@ Guidelime.registerGuide(
        [OC]Scholomance
        [OC]Stratholme Living
        [OC]Stratholme Undead
-       [OC]Requires: Seal of Ascension
+       [OC]|cFFFF0000Requires:|r Seal of Ascension
               [OC]Upper Blackrock Spire for ! Drakefire Amulet to finish your Onyxia Attunement
 
 [OC]Class Quests:

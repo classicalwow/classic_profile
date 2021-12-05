@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Duskwood
 [OC]====================================
-[OC]* Minimum /played: 9 hours, 5 minutes, 0 seconds
+[OC]* Minimum /played: 7 hours, 5 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 18 hours, 10 minutes, 0 seconds
+[OC]* Average /played: 14 hours, 10 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 3/20
@@ -25,57 +25,52 @@ Guidelime.registerGuide(
 [OC]In Darkshire
        [OC]In the first house on the left
               At Madame Eva, [QA101 The Totem of Infliction]
-       [OC]Run to the southeastern-most house
-              At Viktori Prism'Antras, [QA174 Look To The Stars]
-              [OC]Requires: Bronze Tube
-                     [QT174 Look To The Stars] [QA175 Look To The Stars]
-              [OC]If you still need a Bronze Tube you can get one
-                     [OC]Nearby at Herble Baubbletump
-                     [OC]Soon at Stormwind
-       [OC]Run northwest to flightmaster Felicia Maline
+       Southeast at Herble Baubbletump, try to buy 1 [CI4371,1]
+       [OC]Run north to flightmaster Felicia Maline
               Get the [P Darkshire] flightpoint
 
-|cFFfff8a3Fly from Darkshire to [F Stormwind], eta 01:24|r
-       [OC]At the entrance of Stormwind
-              [OC]At General Marcus Jonathan
-                     [QT120 Messenger to Stormwind] [QA121 Messenger to Stormwind]
+[OC]|cFFfff8a3Fly from Darkshire to [F Stormwind], eta 01:24|r
        [OC][T] Train spells at your class trainer, Equip new spells
-       [OC]Remember to keep your spell reagents stocked from now on!
-       [OC]The reagent vendor in Stormwind is at a shop in the Trade District
        [OC]|cFFa335ee[A Mage]Mage:|r
               [OC][A Mage]In The Mage Quarter at the top of the Wizard's Sanctum
               [OC][A Mage]At Larimaine Purdue, train Teleport: Stormwind
-              [OC][A Mage]Buy Rune of Teleportation from reagent vendors, keep these stocked
-       [OC]|cFFa335ee[A Priest]Priest:|r
-              [OC][A Priest]Human Priest
-                     [OC][A Priest]In the Cathedral Square
-                            [A Priest]At Brother Joshua, [QA5676 Arcane Feedback]
-                            [A Priest]At High Priestess Laurena, [QT5676 Arcane Feedback]
-                            [OC][A Priest]You can now use Feedback
-              [OC][A Priest]Dwarf Priest
-                     [OC][A Priest]Take the Deeprun Tram to Ironforge
-                     [OC][A Priest]In The Mystic Ward
-                            [A Priest]At Toldren Deepiron, [QA5645 A Lack of Fear]
-                            [A Priest]At High Priest Rohan, [QT5645 A Lack of Fear]
-                            [OC][A Priest]You can now use Fear Ward
-                     [OC][A Priest]Take the Deeprun Tram to Stormwind
+              [A Mage]At Kyra Boucher, buy 10 [CI17031,10]
+       [OC]|cFFa335ee[A Human]Human:|r |cFFa335ee[A Priest]Priest:|r
+              [OC][A Human]In the Cathedral Square
+                     [A Human]At Brother Joshua, [QA5676 Arcane Feedback]
+                     [A Human]At High Priestess Laurena, [QT5676 Arcane Feedback]
+                     [OC][A Human]You can now use Feedback
+       [OC]|cFFa335ee[A Dwarf]Dwarf:|r |cFFa335ee[A Priest]Priest:|r
+              [OC][A Dwarf]Take the Deeprun Tram to Ironforge
+              [OC][A Dwarf]In The Mystic Ward
+                     [A Dwarf]At Toldren Deepiron, [QA5645 A Lack of Fear]
+                     [A Dwarf]At High Priest Rohan, [QT5645 A Lack of Fear]
+                     [OC][A Dwarf]You can now use Fear Ward
+                     [OC][A Dwarf]Take the Deeprun Tram to Stormwind
        [OC]|cFFa335ee[A Rogue]Rogue:|r
               [OC][A Rogue]In Old Town at the SI:7 building
               [A Rogue]At Master Mathias Shaw, [QA2360 Mathias and the Defias]
               [OC][A Rogue]This is your Poisons and Recipe: Thistle Tea quest
               [OC][A Rogue]Your Lockpicking level should be 70+ from previous segments
               [OC][A Rogue]Your Lockpicking level must be 70+ to continue this quest
+       [OC]|cFFa335ee[A Druid]Druid:|r In the Trade District at Kyra Boucher, stock reagents
+       [OC]|cFFa335ee[A Mage]Mage:|r In the Trade District at Kyra Boucher, stock reagents
+       [OC]|cFFa335ee[A Paladin]Paladin:|r In the Trade District at Kyra Boucher, stock reagents
+       [OC]|cFFa335ee[A Warlock]Warlock:|r In the Trade District at Kyra Boucher, stock reagents
+       From the Auction house, try buying 1 [CI4371,1]
        [OC]Run to the bank
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth, Extra Materials
-       [OC]|cFFa335eeCooking:|r Train cooking at least to level 50 for upcoming quest in Duskwood
-       [OC]This is your last chance for a Bronze Tube, you can get one
-              [OC]From the Auction house
-              [OC]Northeast in the Dwarven District at Billibub Cogspinner
+              [OC]|cFFe6cc80Deposit:|r Extra cloth
+       [OC]|cFFa335eeCooking:|r Train cooking to level 50 for a quest in Duskwood
+       [OC]At the entrance of Stormwind
+              At General Marcus Jonathan, [QT120 Messenger to Stormwind] [QA121 Messenger to Stormwind]
 
 [OC]Exit Stormwind and run southeast to Goldshire
        [OC](Discover Goldshire)
-       [OC]At the blacksmith Smith Argus
-              [QT118 The Price of Shoes] [QA119 Return to Verner]
+       At the blacksmith Smith Argus, [QT118 The Price of Shoes] [QA119 Return to Verner]
+       [OC]|cFFa335eeFirst Aid:|r
+              [OC]Upstairs in the inn at Michelle Belle
+              [OC]Learn Journeyman First Aid
+              [OC]Learn Wool Bandage
 
 |cFFfff8a3Hearth to [H Lakeshire] [V]|r
        [OC]In the main hall
@@ -84,12 +79,15 @@ Guidelime.registerGuide(
                      [QA143 Messenger to Westfall]
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Lakeshire to [F Darkshire], eta |r
+[OC]|cFFfff8a3Fly from Lakeshire to [F Darkshire], eta |r
+       [OC]Run southeast to the house
+              At Viktori Prism'Antras, [QA174 Look To The Stars]
+                     [QT174 Look To The Stars] [QA175 Look To The Stars]
        [OC]Run west to the house with the well in front
               [OC]At Elaine Carevin
                      [QA163 Raven Hill]
-                     [QA164 Deliveries to Sven]
                      [QA165 The Hermit]
+                     [QA164 Deliveries to Sven]
        [OC]Run west to Commander Althea Ebonlocke
               [QA56 The Night Watch]
        [OC]|cFFa335eeCooking 50:|r
@@ -113,7 +111,7 @@ Guidelime.registerGuide(
 [OC]Grind north and south along the riverbank
        Do [QC245 Eight-Legged Menaces] (Kill 15 Pygmy Venom Web Spider)
        Do [QC101,2 The Totem of Infliction] (Kill spiders for 5 Vial of Spider Venom)
-       [OC]Save 6 Gooey Spider Leg for an upcoming quest
+       Kill spiders for 6 [CI2251,6] for a quest in Duskwood
 
 [OC]Keep grinding north until you reach The Hushed Bank
        [OC]At Sven Yorgen
@@ -197,11 +195,11 @@ Guidelime.registerGuide(
        [OC][A Rogue]Stealth southeast to the Malformed Defias Drone [G 71.5,75 Westfall] (71.5, 75)
               [A Rogue][QC2359,2 Klaven's Tower] (Pickpocket Malformed Defias Drone for the Defias Tower Key)
        [OC][A Rogue]Stealth carefully up the tower to Klaven Mortwake
-              [OC][A Rogue]Requires: Lockpicking 70+
+              [OC][A Rogue]|cFFFF0000Requires:|r Lockpicking 70+
                      [A Rogue][QC2359,1 Klaven's Tower] (Loot Duskwood Chest for Klaven Mortwake's Journal)
        [OC][A Rogue]Run northwest back to Sentinel Hill
 
-|cFFfff8a3Fly from Sentinel Hill to [F Lakeshire], eta |r
+[OC]|cFFfff8a3Fly from Sentinel Hill to [F Lakeshire], eta |r
 
 [OC]====================================
 [OC]    Finished

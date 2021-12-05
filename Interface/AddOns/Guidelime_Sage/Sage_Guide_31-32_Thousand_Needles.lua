@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Thousand Needles
 [OC]====================================
-[OC]* Minimum /played: 22 hours, 1 minutes, 0 seconds
+[OC]* Minimum /played: 20 hours, 1 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 35 minutes, 0 seconds
-[OC]* Average /played: 1 days, 20 hours, 2 minutes, 0 seconds
+[OC]* Average /played: 1 days, 16 hours, 2 minutes, 0 seconds
 [OC]* Average Segment Time: 3 hours, 10 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 7/20
@@ -77,7 +77,7 @@ Guidelime.registerGuide(
        [OC]Run just south Gadgetzan to the flightmaster
        Get the [P Gadgetzan] flightpoint
 
-|cFFfff8a3Fly from Gadgetzan to [F Theramore Isle], eta 02:25|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Theramore Isle], eta 02:25|r
        [OC]Run north to Foothold Citadel
               [OC]Upstairs at Captain Garran Vimes
                      [QT1253 The Black Shield] [QA1319 The Black Shield]
@@ -126,8 +126,7 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Level 32
 [OC]====================================
-[OC]|cFFfff8a3Take the boat from Ratchet to Booty Bay, a boat shows up every 05:50.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Ratchet to Booty Bay, a boat shows up every 05:50.\\Craft bandages or fish while you wait.|r
 
 [OC]====================================
 [OC]    Finished

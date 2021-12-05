@@ -10,7 +10,7 @@ Guidelime.registerGuide(
 [OC]* Minimum Segment Time: 2 hours, 0 minutes, 0 seconds
 [OC]* Average /played: 0 days, 0 hours, 0 minutes, 0 seconds
 [OC]* Average Segment Time: 4 hours, 0 minutes, 0 seconds
-[OC]Run forward to Deputy Willem
+[OC]At Deputy Willem
        [QA783 A Threat Within]
 
 [OC]Run north into Northshire Abbey
@@ -40,7 +40,12 @@ Guidelime.registerGuide(
        [OC]At Marshal McBride
               [QT7 Kobold Camp Cleanup]
               [QA15 Investigate Echo Ridge]
-              [OC]Accept your level 1 class quest named "X Letter"
+              |cFFa335ee[A Mage]Mage:|r [QA3104 Glyphic Letter]
+              |cFFa335ee[A Paladin]Paladin:|r [QA3101 Consecrated Letter]
+              |cFFa335ee[A Priest]Priest:|r [QA3103 Hallowed Letter]
+              |cFFa335ee[A Rogue]Rogue:|r [QA3102 Encrypted Letter]
+              |cFFa335ee[A Warlock]Warlock:|r [QA3105 Tainted Letter]
+              |cFFa335ee[A Warrior]Warrior:|r [QA3100 Simple Letter]
 
 [OC]Outside at Deputy Willem
        [QA18 Brotherhood of Thieves]
@@ -53,13 +58,12 @@ Guidelime.registerGuide(
 [OC]In Northshire Abbey
        [OC]At Marshal McBride
               [QT15 Investigate Echo Ridge], skip follow up
-       [OC]Turn in X Letter quest at your class trainer
-       [OC]|cFFa335ee[A Mage]Mage:|r Your trainer is inside Northshire Abbey, in the north wing upstairs.
-       [OC]|cFFa335ee[A Paladin]Paladin:|r Your trainer is inside Northshire Abbey, in the south wing downstairs.
-       [OC]|cFFa335ee[A Priest]Priest:|r Your trainer is inside Northshire Abbey, in the north wing downstairs.
-       [OC]|cFFa335ee[A Rogue]Rogue:|r Your trainer is northeast of Northshire Abbey, in the stables.
-       [OC]|cFFa335ee[A Warlock]Warlock:|r Your trainer is south of Northshire Abbey, in the graveyard.
-       [OC]|cFFa335ee[A Warrior]Warrior:|r Your trainer is inside Northshire Abbey, in the south wing downstairs.
+       |cFFa335ee[A Mage]Mage:|r Inside the north wing upstairs at Khelden Bremen, [QT3104 Glyphic Letter]
+       |cFFa335ee[A Paladin]Paladin:|r Inside the south wing at Brother Sammuel, [QT3101 Consecrated Letter]
+       |cFFa335ee[A Priest]Priest:|r Inside the north wing upstairs at Priestess Anetta, [QT3103 Hallowed Letter]
+       |cFFa335ee[A Rogue]Rogue:|r Outside around back at the stables at Jorik Kerridan, [QT3102 Encrypted Letter]
+       |cFFa335ee[A Warlock]Warlock:|r Outside at the graveyard at Drusilla La Salle, [QT3105 Tainted Letter]
+       |cFFa335ee[A Warrior]Warrior:|r Inside the south wing at Llane Beshere, [QT3100 Simple Letter]
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]|cFFa335ee[A Warlock]Warlock:|r
               [A Warlock]At Drusilla La Salle, [QA1598 The Stolen Tome]
@@ -117,11 +121,13 @@ Guidelime.registerGuide(
        [OC](Discover Elwynn Forest, Goldshire, Crystal Lake)
        [OC]Inside the inn
               At William Pestle, [QA60 Kobold Candles]
-              [OC]At Innkeeper Farley
+              At Innkeeper Farley, Bind your Hearthstone to [S Goldshire]
                      [QT2158 Rest and Relaxation]
-                     Bind your Hearthstone to the innkeeper in [S Goldshire] [V]
-                     [OC]Stock up on Ice Cold Milk (10+)
-                     [OC]Stock up on Dalaran Sharp (5+)
+                     |cFFa335ee[A Druid]Druid:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Mage]Mage:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Paladin]Paladin:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Priest]Priest:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Warlock]Warlock:|r  Buy 10 [CI1179,10]
               [OC]|cFFa335eeFirst Aid:|r Upstairs at Michelle Belle, learn Apprentice First Aid
        Just west at Marshal Dughan, [QA62 The Fargodeep Mine]
        [OC]At Corina Steele, [R][V]
@@ -185,8 +191,14 @@ Guidelime.registerGuide(
                      [QT60 Kobold Candles] [QA61 Shipment to Stormwind]
                      [QT107 Note to William] [QA112 Collecting Kelp]
               [OC]At Innkeeper Farley
-                     [OC]Stock up on Ice Cold Milk (10+)
-                     [OC]Stock up on Dalaran Sharp (10+)
+                     |cFFa335ee[A Druid]Druid:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Mage]Mage:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Paladin]Paladin:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Priest]Priest:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Warlock]Warlock:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Hunter]Hunter:|r  Buy 10 [CI414,10]
+                     |cFFa335ee[A Rogue]Rogue:|r  Buy 10 [CI414,10]
+                     |cFFa335ee[A Warrior]Warrior:|r  Buy 10 [CI414,10]
               [OC]At Brog Hamfist
                      [OC]Stock up on Small Brown Pouch
        [OC]At Corina Steele, [R][V]
@@ -222,7 +234,7 @@ Guidelime.registerGuide(
 [OC]Grind northwest to Rolf's Corpse [G 80,55.5 Elwynn Forest] (80, 55.5)
        [QT45 Discover Rolf's Fate] [QA71 Report to Thomas]
 Do [QC5545 A Bundle of Trouble] (Loot Bundle of Wood for 8 Bundle of Wood)
-[OC]Do some ? Protect the Frontier (Kill Prowler, Young Forest Bear)
+Do some |cFFFFFFFFO|r [QA52 Protect the Frontier] (Kill Prowler, Young Forest Bear)
 
 [OC]Grind southeast back to the Eastvale Logging Camp
        At Supervisor Raelen, [QT5545 A Bundle of Trouble]
@@ -256,8 +268,14 @@ Do [QC5545 A Bundle of Trouble] (Loot Bundle of Wood for 8 Bundle of Wood)
               [OC]At William Pestle
                      [QT112 Collecting Kelp], wait, [QA114 The Escape]
               [OC]At Innkeeper Farley
-                     [OC]Stock up on Ice Cold Milk (10+)
-                     [OC]Stock up on Dalaran Sharp (10+)
+                     |cFFa335ee[A Druid]Druid:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Mage]Mage:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Paladin]Paladin:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Priest]Priest:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Warlock]Warlock:|r  Buy 10 [CI1179,10]
+                     |cFFa335ee[A Hunter]Hunter:|r  Buy 10 [CI414,10]
+                     |cFFa335ee[A Rogue]Rogue:|r  Buy 10 [CI414,10]
+                     |cFFa335ee[A Warrior]Warrior:|r  Buy 10 [CI414,10]
               [OC]At Brog Hamfist
                      [OC]Stock up on Small Brown Pouch
        [OC]At Marshal Dughan
@@ -279,40 +297,30 @@ Do [QC5545 A Bundle of Trouble] (Loot Bundle of Wood for 8 Bundle of Wood)
 [OC]Grind northeast back to Goldshire
        In the blacksmith at Smith Argus, [QA1097 Elmore's Task]
 
-[OC]Weapon Skill Training Guide
-       [OC]In Darnassus at Ilyenia Moonfire
-              [OC]Train: Bows, Daggers, Fist Weapons, Staves, Thrown
-       [OC]In Ironforge at Buliwyf Stonehand
-              [OC]Train: Fist Weapons, Guns, 1H Axes, 2H Axes, 1H Maces, 2H Maces
-       [OC]In Ironforge at  Bixi Wobblebonk
-              [OC]Train: Crossbows, Daggers, Thrown
-       [OC]In Stormwind at Woo Ping
-              [OC]Train: Crossbows, Daggers, 1H Swords, Polearms (level 20), Staves, 2H Swords
-
 [OC]Grind far northwest to Stormwind
        [OC]In the Trade District
               At Morgan Pestle, [QT61 Shipment to Stormwind]
+              [OC]At Woo Ping, you can train Crossbows, Daggers, 1H Swords, 2H Swords, Polearms (10s)
        [OC]Run northeast to the Dwarven District
               [OC]On the northwest side at Grimand Elmore
                      [QT1097 Elmore's Task]
                      [QA353 Stormpike's Delivery]
 
 [OC]Run east into the Deeprun Tram
-[OC]Take the tram from Stormwind to Ironforge, a tram shows up every 01:00.
-[OC]Craft bandages or cook while you wait.
+[OC]Take the tram from Stormwind to Ironforge, a tram shows up every 01:00.\\Craft bandages or cook while you wait.
 [OC]Exit the Deeprun Tram to Ironforge
 
 [OC]In Ironforge
        [OC]In the center at The Great Forge
               [OC]At flightmaster Gryth Thurden
-                     Get the [P Ironforge] flightpoint
+              Get the [P Ironforge] flightpoint
 
 [OC]Exit southwest out of Ironforge to Dun Morogh
 
 [OC]Grind far east to Amberstill Ranch
        [OC](Discover Amberstill Ranch)
 [OC]|cFFFF0000GROUP 2+ Players|r
-       At Rudra Amberstill, [QA314 Protecting the Herd]
+       At Rudra Amberstill, [QA314 Protecting the Herd] 
        [OC]Run north up the hill
               Do [QC314 Protecting the Herd] (Kill Vagash (Stun) for Fang of Vagash)
               [OC]He can be kited directly south down the hill over the roofs to the guard
@@ -335,26 +343,31 @@ Do [QC5545 A Bundle of Trouble] (Loot Bundle of Wood for 8 Bundle of Wood)
               [OC]At Frast Dokner, [R][V]
               AtForeman Stonebrow, [QT432 Those Blasted Troggs]
               At Senator Mehr Stonehallow, [QT433 The Public Servant]
+       [OC]|cFFa335eeCooking:|r At Cook Ghilm, learn Apprentice Cook
 
 [OC]====================================
 [OC]    Level 10
 [OC]====================================
 [OC]|cFFa335ee[A Hunter]Hunter:|r
        [OC][A Hunter]Run west back to Kharanos
-              [OC][A Hunter]At Grif Wildheart
-              [A Hunter][QA6064 Taming the Beast]
-              [OC][A Hunter]Run southeast to a Large Crag Boar, use Taming Rod to tame it
-              [A Hunter]Run northwest back to Grif Wildheart, [QT6064 Taming the Beast] [QA6084 Taming the Beast]
-              [OC][A Hunter]Run further southeast to a Snow Leopard, use Taming Rod to tame it
-              [A Hunter]Run northwest back to Grif Wildheart, [QT6084 Taming the Beast] [QA6085 Taming the Beast]
-              [OC][A Hunter]Run further southeast to an Ice Claw Bear, use Taming Rod to tame it
-              [A Hunter]Run northwest back to Grif Wildheart, [QT6085 Taming the Beast] [QA6086 Training the Beast]
+       [A Hunter]At Grif Wildheart, [QA6064 Taming the Beast]
+       [A Hunter]Run southeast for [QC6064 Taming the Beast]
+       [OC][A Hunter]Use Taming Rod on Large Crag Boar
+       [A Hunter]At Grif Wildheart, [QT6064 Taming the Beast] [QA6084 Taming the Beast]
+       [OC][A Hunter]Right click pet, dismiss pet
+       [A Hunter]Run further southeast for [QC6084 Taming the Beast]
+       [OC][A Hunter]Use Taming Rod on Snow Leopard
+       [A Hunter]At Grif Wildheart, [QT6084 Taming the Beast] [QA6085 Taming the Beast]
+       [OC][A Hunter]Right click pet, dismiss pet
+       [A Hunter]Run further southeast for [QC6085 Taming the Beast]
+       [OC][A Hunter]Use Taming Rod on Ice Claw Bear
+       [A Hunter]At Grif Wildheart, [QT6085 Taming the Beast] [QA6086 Training the Beast]
        [OC][A Hunter]Run northeast to Ironforge
               [OC][A Hunter]Run southeast to Hall of Arms in the Military Ward [G 71,86 Ironforge] (71, 86)
                      [OC][A Hunter]At Belia Thundergranite
-                            [A Hunter][QT6086 Training the Beast]
-                            [OC][A Hunter][T] Train spells at your class trainer, Equip new spells
-                            [OC][A Hunter]Train pet spells at the pet trainer
+                     [A Hunter][QT6086 Training the Beast]
+                     [OC][A Hunter][T] Train spells at your class trainer, Equip new spells
+                     [OC][A Hunter]Train pet spells at the pet trainer
               [OC][A Hunter]Weapon Skill Training Guide
                      [OC][A Hunter]At Buliwyf Stonehand
                             [OC][A Hunter]Train: Fist Weapons, Guns, 1H Axes, 2H Axes, 1H Maces, 2H Maces
@@ -364,7 +377,8 @@ Do [QC5545 A Bundle of Trouble] (Loot Bundle of Wood for 8 Bundle of Wood)
                      [OC][A Hunter]At Bryllia Ironbrand
                             [OC][A Hunter]Buy Heavy Shot and use them from now on
        [OC][A Hunter]Exit the city and run southeast to the road
-       [OC][A Hunter]Tame a Snow Leopard along the road to use as your pet going forward
+       [OC][A Hunter]Right click pet, abandon pet
+       [OC][A Hunter]Tame a Snow Leopard along the road
 
 [OC]|cFFa335ee[A Priest]Priest:|r
        [OC][A Priest]Run west back to Kharanos
@@ -376,23 +390,22 @@ Do [QC5545 A Bundle of Trouble] (Loot Bundle of Wood for 8 Bundle of Wood)
 [OC]Run east along the road to the fork in the road
        [OC](Discover Helm's Bed Lake)
 
-[OC]|cFFFF0000Optional:|r for a few extra bars but could put you behind on a fresh server
-       [OC]Grind east along the road and then north until you reach the North Gate Pass
+[OC]Grind northeast through the tunnel to North Gate Outpost
        [OC](Discover North Gate Outpost)
-       [OC]Run through the tunnel to Pilot Hammerfoot 
-              [QA419 The Lost Pilot] 
-       [OC]Grind northwest to [G 79,36 Dun Morogh] (79, 36) 
+       [OC]At Pilot Hammerfoot
+              [QA419 The Lost Pilot]
+       [OC]Grind northwest to [G 78.8,37.3 Dun Morogh] (78.8, 37.3)
               [OC]Loot A Dwarven Corpse
               [QT419 The Lost Pilot] [QA417 A Pilot's Revenge]
-       [OC]Grind southwest to Mangeclaw 
+       [OC]Grind southwest to Mangeclaw
               Do [QC417 A Pilot's Revenge] (Kill Mangeclaw (Stun) for Mangy Claw)
-       [OC]Grind southeast back to Pilot Hammerfoot 
+       [OC]Grind southeast back to Pilot Hammerfoot
               [QT417 A Pilot's Revenge]
-                     [OC]|cFFa335ee[A Paladin, Warrior]Paladin, Warrior:|r Compact Hammer
-       [OC]Run south back through the North Gate Pass
-       [OC]Grind south back to the fork in the road
+                     [OC]|cFFa335ee[A Paladin]Paladin:|r Compact Hammer
+                     [OC]|cFFa335ee[A Warrior]Warrior:|r Compact Hammer
+       [OC]Grind southwest back to the fork in the road
 
-[OC]Grind east through the tunnel to the South Gate Outpost  
+[OC]Grind east through the tunnel to the South Gate Outpost
        [OC](Discover South Gate Outpost)
        [OC]At Mountaineer Barleybrew
               [QT413 Shimmer Stout] [QA414 Stout to Kadrell]

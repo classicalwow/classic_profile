@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Duskwood
 [OC]====================================
-[OC]* Minimum /played: 17 hours, 56 minutes, 0 seconds
+[OC]* Minimum /played: 15 hours, 56 minutes, 0 seconds
 [OC]* Minimum Segment Time: 3 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 1 days, 11 hours, 52 minutes, 0 seconds
+[OC]* Average /played: 1 days, 7 hours, 52 minutes, 0 seconds
 [OC]* Average Segment Time: 6 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 5/20
@@ -169,7 +169,7 @@ Run west to The Hushed Bank, [QT323 Proving Your Worth] [QA269 Seeking Wisdom]
               [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind, continue at Stormwind below
               [OC]Run east to flightmaster Felicia Maline
 
-|cFFfff8a3Fly from Darkshire to [F Stormwind], eta 01:24|r
+[OC]|cFFfff8a3Fly from Darkshire to [F Stormwind], eta 01:24|r
        [OC]BANK/BANKALT/AUCTION
        [OC]Run to the entrance of Stormwind
               [OC]Upstairs in Tria's Cheese shop
@@ -189,7 +189,7 @@ Run west to The Hushed Bank, [QT323 Proving Your Worth] [QA269 Seeking Wisdom]
               At Elling Trias,[QT1247 The Missing Diplomat][QA1248 The Missing Diplomat]
        [OC]At the Auction House
               [OC]If your class has no Movement Speed or Slowfall spells
-                     [OC]Buy 1 Swiftness Potion for an upcoming quest
+                     [OC]Buy 1 Swiftness Potion for a quest in Arathi Highlands
        [OC]Run west to the Mage Quarter to the bottom of the Wizard's Sanctum
               At Archmage Malin, [QA690 Malin's Request]
        [OC][T] Train spells at your class trainer, Equip new spells
@@ -219,7 +219,7 @@ Run west to The Hushed Bank, [QT323 Proving Your Worth] [QA269 Seeking Wisdom]
               In the inn at Mikhail, [QT1249 The Missing Diplomat]
        At Tapoke "Slim" Jahn, [QA1250 The Missing Diplomat]
        At Mikhail, [QT1250 The Missing Diplomat] [QA1264 The Missing Diplomat]
-       [OC]|cFFa335eeFirst Aid:|r Upstairs in the inn at Fremal Doohickey, train First Aid to about 150
+       [OC]|cFFa335eeFirst Aid:|r Upstairs in the inn at Fremal Doohickey, train First Aid to 150
        [OC]At the blacksmith Morg Gnarltree, [R][V]
 
 [OC]Run southeast of Menethil Harbor to the ship wreckage
@@ -253,7 +253,7 @@ Run west to The Hushed Bank, [QT323 Proving Your Worth] [QA269 Seeking Wisdom]
 
 [OC]Run north across the Thandol Span into Arathi Highlands
 [OC]Just west at the broken bridge of the Thandol Span
-       [OC]Requires: Movement speed, Slowfall or Swiftness Potion
+       [OC]|cFFFF0000Requires:|r Movement speed, Slowfall or Swiftness Potion
               [OC]Use your Movement speed, Slowfall or Swiftness Potion
               [OC]Jump south across the gap to Foggy MacKreel
                      [OC]This quest is timed so you have to work quickly after this

@@ -4,8 +4,8 @@
 
 License: All Rights Reserved, (c) 2006-2020
 
-$Revision: 2953 $
-$Date: 2021-11-15 14:05:32 +1100 (Mon, 15 Nov 2021) $
+$Revision: 2963 $
+$Date: 2021-11-24 19:29:01 +1100 (Wed, 24 Nov 2021) $
 
 ]]--
 
@@ -1962,7 +1962,11 @@ ArkInventory.Const.DatabaseDefaults.global = {
 			["refresh"] = true,
 		},
 		["tracking"] = {
-			["items"] = { },
+			["items"] = { }, --move these down to item.list at some point
+			["item"] = {
+				["showzero"] = true,
+				["list"] = { },
+			},
 			["reputation"] = {
 				["custom"] = 1, -- 1 = default, 2 = custom
 				["style"] = {

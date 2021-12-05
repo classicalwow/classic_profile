@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Winterspring
 [OC]====================================
-[OC]* Minimum /played: 3 days, 5 hours, 31 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 3 hours, 31 minutes, 9 seconds
 [OC]* Minimum Segment Time: 2 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 6 days, 11 hours, 2 minutes, 18 seconds
+[OC]* Average /played: 6 days, 7 hours, 2 minutes, 18 seconds
 [OC]* Average Segment Time: 4 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~105K Total XP)
@@ -42,8 +42,7 @@ Guidelime.registerGuide(
        [OC]In the south house, the inn
               [OC]At Gregor Greystone
                      [QA6028 The Everlook Report] [QA6030 Duke Nicholas Zverenhoff]
-              [OC]At Innkeeper Vizzie
-                     Bind your Hearthstone to the innkeeper in [S Everlook] [V]
+              At Innkeeper Vizzie, Bind your Hearthstone to [S Everlook]
 
 [OC]Run southeast to Ice Thistle Hills
        [OC](Discover Ice Thistle Hills)
@@ -100,8 +99,8 @@ Guidelime.registerGuide(
        [QA8464 Winterfall Activity]
 
 [OC]Run east to the Frostfire Hot Springs
-       [OC]Do some ? Threat of the Winterfall (Kill 8 Winterfall Pathfinder, 8 Den Watcher, 8 Totemic)
-       [OC]Do some ? Winterfall Activity (Kill 8 Winterfall Shaman, 8 Den Watcher, 8 Ursa)
+       Do some |cFFFFFFFFO|r [QA5082 Threat of the Winterfall] (Kill 8 Winterfall Pathfinder, 8 Den Watcher, 8 Totemic)
+       Do some |cFFFFFFFFO|r [QA8464 Winterfall Activity] (Kill 8 Winterfall Shaman, 8 Den Watcher, 8 Ursa)
        [OC]Prioritize Den Watcher
 
 [OC]When you get Empty Firewater Flask
@@ -142,7 +141,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Sindrayl [G 48,67 Moonglade] (48, 67)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Auberdine], eta |r
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Auberdine], eta |r
        [OC][A Druid]Continue at Auberdine below
 
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge, continue at Ironforge below
@@ -151,13 +150,12 @@ Guidelime.registerGuide(
 
 [OC]Run south to Talonbranch Glade
 
-|cFFfff8a3Fly from Talonbranch Glade to [F Auberdine], eta 02:58|r
+[OC]|cFFfff8a3Fly from Talonbranch Glade to [F Auberdine], eta 02:58|r
        [OC]Run to the southern dock
 
-[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
 
-|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
+[OC]|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run northeast to Hall of Explorers
               At Laris Geardawdle, [QT4513 A Little Slime Goes a Long Way]
@@ -170,12 +168,12 @@ Guidelime.registerGuide(
                      [QT3702 The Smoldering Ruins of Thaurissan] [QA3701 The Smoldering Ruins of Thaurissan]
        [OC]If you are not a Mage
               [OC]Run west to the inn
-              Bind your Hearthstone to the innkeeper in [S Ironforge] [V]
+              Bind your Hearthstone to [S Ironforge]
        [OC]At the bank
               [OC]|cFFe6cc80Deposit:|r Extra cloth, consumables, materials, patterns
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind, then fly to Morgan's Vigil
 
-|cFFfff8a3Fly from Ironforge to [F Morgan's Vigil], eta 05:50|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Morgan's Vigil], eta 05:50|r
 
 [OC]====================================
 [OC]    Finished

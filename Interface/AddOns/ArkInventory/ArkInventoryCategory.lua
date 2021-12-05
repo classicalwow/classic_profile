@@ -721,7 +721,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	if ArkInventory.db.option.junk.soulbound.known then --and not ArkInventory.Global.Location[i.loc_id].isOffline
 		if ArkInventory.IsBound( i.sb ) then
 			if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["ALREADY_KNOWN"], false, true, false, ArkInventory.Const.Tooltip.Search.Base ) then
-				--ArkInventory.Output( i.name, " is junk?" )
+				--ArkInventory.Output( i.h, " is junk?" )
 				return ArkInventory.CategoryGetSystemID( "SYSTEM_JUNK" )
 			end
 		end

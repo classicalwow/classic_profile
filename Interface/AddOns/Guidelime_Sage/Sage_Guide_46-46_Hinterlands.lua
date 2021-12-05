@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Hinterlands
 [OC]====================================
-[OC]* Minimum /played: 2 days, 3 hours, 55 minutes, 0 seconds
+[OC]* Minimum /played: 2 days, 1 hours, 55 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 4 minutes, 0 seconds
-[OC]* Average /played: 4 days, 7 hours, 50 minutes, 0 seconds
+[OC]* Average /played: 4 days, 3 hours, 50 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 8 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 11/20
@@ -47,15 +47,13 @@ Guidelime.registerGuide(
               [OC]At Fraggar Thundermantle
                      [QA2877 Skulk Rock Clean-up]
                      [QA2880 Troll Necklace Bounty]
-       [OC]Upstairs at Innkeeper Thulfram
-              Bind your Hearthstone to the innkeeper in [S Wildhammer Keep] [V]
+       Upstairs at Innkeeper Thulfram, Bind your Hearthstone to [S Wildhammer Keep]
 
 [OC]Run east along the road to Shindigger's Camp [G 27,48.5 The Hinterlands] (27, 48.5)
        [OC]At Rhapsody Shindigger
               [QT1451 Rhapsody Shindigger] [QA1452 Rhapsody's Kalimdor Kocktail]
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       [OC]For ? Favored of Elune? (Loot 15 Wildkin Feather)
+[O]|cFF66ff66On the go:|r [QC3661 Favored of Elune?] (Loot 15 Wildkin Feather)
 
 [OC]Run southeast to Zun'watha [G 23,58 The Hinterlands] (23, 58)
        [OC](Discover Zun'watha)
@@ -111,13 +109,12 @@ Guidelime.registerGuide(
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Aerie Peak to [F Ironforge], eta 04:03|r
+[OC]|cFFfff8a3Fly from Aerie Peak to [F Ironforge], eta 04:03|r
        [OC]At the bank
-              [OC]|cFFe6cc80Withdraw:|r 15 Silk Cloth for upcoming quest (buy off AH if needed)
+              |cFFe6cc80Withdraw:|r 15 [CI4306,15] (buy off AH if needed)
 
-|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
-       [OC]At Innkeeper Hearthstove
-              Bind your Hearthstone to the innkeeper in [S Thelsamar] [V]
+[OC]|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
+       At Innkeeper Hearthstove, Bind your Hearthstone to [S Thelsamar]
 
 [OC]Run southeast to the Badlands
 

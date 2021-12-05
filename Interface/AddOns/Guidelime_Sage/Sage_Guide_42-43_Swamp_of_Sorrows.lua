@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Swamp of Sorrows
 [OC]====================================
-[OC]* Minimum /played: 1 days, 21 hours, 11 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 19 hours, 11 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 3 days, 18 hours, 22 minutes, 0 seconds
+[OC]* Average /played: 3 days, 14 hours, 22 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 9/20
@@ -62,7 +62,7 @@ Guidelime.registerGuide(
               Get the [P Nethergarde Keep] flightpoint
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind
 
-|cFFfff8a3Fly from Nethergarde Keep to [F Stormwind], eta 03:21|r
+[OC]|cFFfff8a3Fly from Nethergarde Keep to [F Stormwind], eta 03:21|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]At the top of the Wizard's Sanctum in The Mage District
               At Jennea Cannon, [QA2861 Tabetha's Task]
@@ -76,25 +76,24 @@ Guidelime.registerGuide(
                      [QT1116 Dream Dust in the Swamp], wait, [QA1117 Rumors for Kravel]
                      [QA2864 Tran'rek]
        [OC]At the bank
-              [OC]|cFFe6cc80Deposit:|r Thick Armor Kit, Extra Cloth
+              [OC]|cFFe6cc80Deposit:|r Thick Armor Kit, cloth
        [OC]At Auctioneer O'reely
               [OC]Auction the rest of your Green Hills of Stranglethorn pages individually
 
 [OC]====================================
 [OC]    Level 43
 [OC]====================================
-[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.\\Craft bandages or fish while you wait.|r
        [OC]Run to flightmaster Bragok
 
-|cFFfff8a3Fly from Ratchet to [F Theramore Isle], eta 01:40|r
+[OC]|cFFfff8a3Fly from Ratchet to [F Theramore Isle], eta 01:40|r
        [OC]Run southeast to the docks
               At Privateer Groy, [QT623 Akiris by the Bundle]
        [OC]|cFFa335eeFirst Aid 225+:|r
               [OC]At Doctor Gustaf VanHowzen, train First Aid
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
+[OC]|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
 
 [OC]====================================
 [OC]    Finished

@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Feralas
 [OC]====================================
-[OC]* Minimum /played: 2 days, 1 hours, 3 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 23 hours, 3 minutes, 0 seconds
 [OC]* Minimum Segment Time: 2 hours, 52 minutes, 0 seconds
-[OC]* Average /played: 4 days, 2 hours, 6 minutes, 0 seconds
+[OC]* Average /played: 3 days, 22 hours, 6 minutes, 0 seconds
 [OC]* Average Segment Time: 5 hours, 44 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 7/20
@@ -28,8 +28,7 @@ Guidelime.registerGuide(
 [OC]At Feathermoon Stronghold
        [OC]Just northeast at the gazeebo
               At Pratt McGrubben, [QA2821 The Mark of Quality]
-       [OC]At Innkeeper Shyria
-              Bind your Hearthstone to the innkeeper in [S Feathermoon Stronghold] [V]
+       At Innkeeper Shyria, Bind your Hearthstone to [S Feathermoon Stronghold]
        [OC]At the south lodge
               At Shandris Feathermoon, [QA2866 The Ruins of Solarsal]
               At Latronicus Moonspear, [QA4124 The Missing Courier]
@@ -107,7 +106,7 @@ Guidelime.registerGuide(
 [OC]Run south of the Ruins of Isildien to the hill passage [G 58,75 Feralas] (58, 75)
        [OC](Discover Fray Feather Highlands)
        [OC]Run up the hill to [G 58,77 Feralas] (58, 77)
-       [OC]Loot Hippogryph Egg for Hippogryph Egg for upcoming quest
+       Loot Hippogryph Egg for 1 [CI8564,1] for a quest in Tanaris
 
 [OC]|cFFFF0000GROUP 2+ Players|r
        [OC]Run northeast to the Grimtotom Camp [G 66.5,46.5 Feralas] (66.5, 46.5)
@@ -166,7 +165,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Silva Fil'naveth [G 44,45 Moonglade] (44, 45)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
        [OC][A Druid]Continue at Rut'Theran Village below
 
 [OC]|cFFa335ee[A Mage]Mage:|r
@@ -183,13 +182,13 @@ Guidelime.registerGuide(
               [A Mage]At Daryn Lightwind [QT2940 Feralas: A History] [QA2941 The Borrower]
        [OC][A Mage]Teleport to Ironforge
        [OC][A Mage][T] Train spells at your class trainer, Equip new spells
-       [A Mage]|cFFfff8a3Fly from Ironforge to [F Southshore], eta 04:10|r
+       [OC][A Mage]|cFFfff8a3Fly from Ironforge to [F Southshore], eta 04:10|r
        [OC][A Mage]Run far northeast of Durnholde Keep to [G 87,29 Hillsbrad Foothills] (87, 29)
               [OC][A Mage](Discover Durnholde Keep)
        [OC][A Mage]Run northeast through the mountains to the Hinterlands
               [OC][A Mage]You are done with this segment, continue at the next segment
 
-|cFFfff8a3Fly from Feathermoon to [F Rut'Theran Village], eta 08:39|r
+[OC]|cFFfff8a3Fly from Feathermoon to [F Rut'Theran Village], eta 08:39|r
        [OC]At the house near the docks
               At Erelas Ambersky, [QA3661 Favored of Elune?]
               Upstairs at Daryn Lightwind, [QT2939 In Search of Knowledge]
@@ -206,14 +205,13 @@ Guidelime.registerGuide(
 [OC]Take the pink portal to Rut'theran Village
        [OC]Run to flightmaster Vesprystus on the left dock
 
-|cFFfff8a3Fly from Rut'Theran Village to [F Auberdine], eta 01:21|r
+[OC]|cFFfff8a3Fly from Rut'Theran Village to [F Auberdine], eta 01:21|r
        [OC]Run to the southern dock
 
-[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Menethil Harbor to [F Southshore], eta 01:41|r
+[OC]|cFFfff8a3Fly from Menethil Harbor to [F Southshore], eta 01:41|r
 
 [OC]Run far northeast of Durnholde Keep to [G 87,29 Hillsbrad Foothills] (87, 29)
        [OC](Discover Durnholde Keep)

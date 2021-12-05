@@ -1202,14 +1202,15 @@ local function helper_AcceptableRedText( txt, allow_known, allow_level )
 	elseif string.match( txt, ArkInventory.Localise["WOW_TOOLTIP_DURABLITY"] ) then
 		--ArkInventory.Output2( "WOW_TOOLTIP_DURABLITY" )
 		return true
-	elseif txt == ArkInventory.Localise["ITEM_NOT_DISENCHANTABLE"] then
-		--ArkInventory.Output2( "ITEM_NOT_DISENCHANTABLE" )
+	elseif txt == ArkInventory.Localise["ITEM_CANNOT_DISENCHANT"] then
+		return true
+	elseif txt == ArkInventory.Localise["ITEM_CANNOT_OBLITERATE"] then
+		return true
+	elseif txt == ArkInventory.Localise["ITEM_CANNOT_SCRAP"] then
 		return true
 	elseif txt == ArkInventory.Localise["PREVIOUS_RANK_UNKNOWN"] then
-		--ArkInventory.Output2( "PREVIOUS_RANK_UNKNOWN" )
 		return true
 	elseif txt == ArkInventory.Localise["WOW_TOOLTIP_RETRIEVING_ITEM_INFO"] then
-		--ArkInventory.Output2( "WOW_TOOLTIP_RETRIEVING_ITEM_INFO" )
 		return true
 	elseif txt == ArkInventory.Localise["HEART_OF_AZEROTH_INACTIVE"] then
 		return true

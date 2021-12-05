@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Hillsbrad
 [OC]====================================
-[OC]* Minimum /played: 1 days, 1 hours, 6 minutes, 0 seconds
+[OC]* Minimum /played: 23 hours, 6 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 25 minutes, 0 seconds
-[OC]* Average /played: 2 days, 2 hours, 12 minutes, 0 seconds
+[OC]* Average /played: 1 days, 22 hours, 12 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 50 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20
@@ -38,8 +38,7 @@ Guidelime.registerGuide(
               At Marshal Redpath, [QA500 Crushridge Bounty]
        [OC]Inside the inn
               At Chef Jessen, [QT555 Soothing Turtle Bisque]
-              [OC]At Innkeeper Anderson
-                     Bind your Hearthstone to the innkeeper in [S Southshore] [V]
+              At Innkeeper Anderson, Bind your Hearthstone to [S Southshore]
        Inside the main hall at Magistrate Henry Maleb, [QA505 Syndicate Assassins]
 
 [OC]Run north of Southshore to the Yeti Cave
@@ -84,7 +83,7 @@ Guidelime.registerGuide(
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge, continue at Ironforge below
        [OC]Run northwest to flightmaster Darla Harris
 
-|cFFfff8a3Fly from Southshore to [F Ironforge], eta 03:15|r
+[OC]|cFFfff8a3Fly from Southshore to [F Ironforge], eta 03:15|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run northeast to Hall of Explorers
               Left of entrance at Roetten Stonehammer, [QA1453 Reclaimers' Business in Desolace]
@@ -103,24 +102,23 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Sindrayl [G 48,67 Moonglade] (48, 67)
-       [A Druid]|cFFfff8a3Fly from Moonglade to [F Astranaar], eta 05:02|r
+       [OC][A Druid]|cFFfff8a3Fly from Moonglade to [F Astranaar], eta 05:02|r
        [OC][A Druid]Continue at Astranaar below
 
-|cFFfff8a3Fly from Ironforge to [F Menethil Harbor], eta 02:02|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Menethil Harbor], eta 02:02|r
        [OC]Run to the northwest docks
 
-[OC]|cFFfff8a3Take the boat from Menethil Harbor to Auberdine, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Menethil Harbor to Auberdine, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
        [OC]Run just south to the flightmaster
        [OC]|cFFa335ee[A Mage]Mage:|r
-              [A Mage]|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
+              [OC][A Mage]|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
               [OC][A Mage]Run through the pink portal to Darnassus
                      [OC][A Mage]In The Temple of the Moon at Elissa Dumas
                             [OC][A Mage]Train Teleport: Darnassus
               [OC][A Mage]Run through the pink portal to Rut'Theran Village
-              [A Mage]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+              [OC][A Mage]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
 
-|cFFfff8a3Fly from Auberdine to [F Astranaar], eta 02:48|r
+[OC]|cFFfff8a3Fly from Auberdine to [F Astranaar], eta 02:48|r
 [OC]Run southeast of Astranaar to the cave named Talondeep Path [G 42,72 Ashenvale] (42, 72)
 [OC]Follow the cobblestones and run through the cave into Stonetalon Mountains
        [OC](Discover The Talondeep Path)

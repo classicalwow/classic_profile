@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Wetlands
 [OC]====================================
-[OC]* Minimum /played: 14 hours, 56 minutes, 0 seconds
+[OC]* Minimum /played: 12 hours, 56 minutes, 0 seconds
 [OC]* Minimum Segment Time: 3 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 1 days, 5 hours, 52 minutes, 0 seconds
+[OC]* Average /played: 1 days, 1 hours, 52 minutes, 0 seconds
 [OC]* Average Segment Time: 6 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 7/20
@@ -191,7 +191,7 @@ Do [QC295 Ormer's Revenge] (Kill 10 Mottled Scytheclaw (Aoe'able), 10 Razormaw (
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
+[OC]|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run southeast to the military ward
        In the Hall of Arms at Pilot Longbeard, [QA1179 The Brassbolts Brothers]
@@ -201,7 +201,7 @@ Do [QC295 Ormer's Revenge] (Kill 10 Mottled Scytheclaw (Aoe'able), 10 Razormaw (
               [OC][A Warlock]This is your Summon Succubus quest
               [OC][A Warlock]There are many steps, investigate how to do them and complete at your convenience
 
-|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
        [OC]|cFFa335ee[A Druid]Druid:|r [T] Train spells at your class trainer, Equip new spells
        [OC]BANK/BANKALT/AUCTION 
        [OC]Run to the Cathedral of Light in Cathedral Square 
@@ -220,7 +220,7 @@ Do [QC295 Ormer's Revenge] (Kill 10 Mottled Scytheclaw (Aoe'able), 10 Razormaw (
 
 [OC]|cFFFFFFFF(D)|r |cFFFF0000Optional:|r (Not recommended) You can do Stockades at this time
 
-|cFFfff8a3Fly from Stormwind to [F Darkshire], eta 01:50|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Darkshire], eta 01:50|r
 
 [OC]====================================
 [OC]    Finished

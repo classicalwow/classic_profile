@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Tanaris
 [OC]====================================
-[OC]* Minimum /played: 2 days, 10 hours, 4 minutes, 0 seconds
+[OC]* Minimum /played: 2 days, 8 hours, 4 minutes, 0 seconds
 [OC]* Minimum Segment Time: 3 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 4 days, 20 hours, 8 minutes, 0 seconds
+[OC]* Average /played: 4 days, 16 hours, 8 minutes, 0 seconds
 [OC]* Average Segment Time: 6 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~170K Total XP)
@@ -36,9 +36,8 @@ Guidelime.registerGuide(
        [OC]On the south side
               At Marin Noggenfogger, [QA2605 The Thirsty Goblin]
        [OC]At the Bank
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth, Extra Potions
-       [OC]At Innkeeper Fizzgrimble
-              Bind your Hearthstone to the innkeeper in [S Gadgetzan] [V]
+              [OC]|cFFe6cc80Deposit:|r Extra cloth, potions
+       At Innkeeper Fizzgrimble, Bind your Hearthstone to [S Gadgetzan]
        [OC]In the northeast corner
               At Andi Lynn, [QA5863 The Dunemaul Compound]
        [OC]At Curgle Cranklehop
@@ -164,9 +163,8 @@ Guidelime.registerGuide(
        |cFFFFFFFFO|r [QA2991 Nekrum's Medallion] |cFFFFFFFFO|r [QA3527 The Prophecy of Mosh'aru] |cFFFFFFFFO|r [QA2770 Gahz'rilla]
 
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       [OC]For ? Troll Temper (Kill Sandfury trolls for 20 Troll Temper)
-       [OC]For ? Scarab Shells (Kill Scarab (Aoe'able) for 5 Uncracked Scarab Shell)
+[O]|cFF66ff66On the go:|r [QC3042 Troll Temper] (Kill Sandfury trolls for 20 Troll Temper)
+[O]|cFF66ff66On the go:|r [QC2865 Scarab Shells] (Kill Scarab (Aoe'able) for 5 Uncracked Scarab Shell)
 
 [OC]Grind north to spot 2
        Do [QC3527 The Prophecy of Mosh'aru] (Kill Theka the Martyr for First Mosh'aru Tablet)
@@ -181,7 +179,7 @@ Guidelime.registerGuide(
 [OC]Grind south to spot 6
        Do [QC2846 Tiara of the Deep] (Kill Hydromancer Velratha for Tiara of the Deep)
        Do [QC3527 The Prophecy of Mosh'aru] (Kill Hydromancer Velratha for Second Mosh'aru Tablet)
-       [OC]Requires: Mallet of Zul'Farrak
+       [OC]|cFFFF0000Requires:|r Mallet of Zul'Farrak
               [OC]Do (Kill Gahz'rilla for Gahz'rilla's Electrified Scale)
 [OC]|cFFFF0000Optional:|r Grind northeast to spot 7
        [OC]Kill Chief Ukorz Sandscalp
@@ -213,11 +211,11 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Level 49
 [OC]====================================
-|cFFfff8a3Fly from Gadgetzan to [F Thalanaar], eta 02:48|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Thalanaar], eta 02:48|r
        Right click Undelivered Parcel, [QA4281 Thalanaar Delivery]
        At Falfindel Waywarder, [QT4281 Thalanaar Delivery]
 
-|cFFfff8a3Fly from Thalanaar to [F Feathermoon], eta 02:48|r
+[OC]|cFFfff8a3Fly from Thalanaar to [F Feathermoon], eta 02:48|r
 
 [OC]====================================
 [OC]    Finished

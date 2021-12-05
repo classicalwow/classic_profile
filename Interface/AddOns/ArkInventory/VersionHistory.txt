@@ -13,6 +13,14 @@
  ** note - a recipe item will show "Learn" next to the characters that have not currently learned that recipe (skill level requirements are not checked)
  
  
+*3.09.63 (30-NOV-2021)*
+ * fixed - issue with toc value in search mods toc file
+ 
+*3.09.62 (28-NOV-2021)*
+ * added - client specific toc files
+ * added - config option advanced > ldb > item tracking > show zero - disabling this option will hide the icon for any items you dont have (zero count), they will remain in the tooltip
+ * note - contains new files - do NOT upgrade while the game is running
+ 
 *3.09.61 (19-NOV-2021)*
  * fixed - (mostly) issue when right clicking on a completely identical item in your bags that you are also currently wearing not updating the locked status (remained faded) when they swap (if you keep swapping them multiple times it will eventually get out of sync until the next window update)
  * fixed - issue with the junk quality, and soulbound options, not clearing the item cache when you change them (so would need a reload to actually change)

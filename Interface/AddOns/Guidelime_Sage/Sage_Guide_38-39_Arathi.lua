@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Arathi
 [OC]====================================
-[OC]* Minimum /played: 1 days, 9 hours, 11 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 7 hours, 11 minutes, 0 seconds
 [OC]* Minimum Segment Time: 2 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 2 days, 18 hours, 22 minutes, 0 seconds
+[OC]* Average /played: 2 days, 14 hours, 22 minutes, 0 seconds
 [OC]* Average Segment Time: 4 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 13/20
@@ -100,10 +100,10 @@ Guidelime.registerGuide(
        At Captain Nials, [QT681 Northfold Manor]
 
 [OC]If you don't have 1+ Elixir of Water Breathing
-       |cFFfff8a3Fly from Refuge Pointe to [F Ironforge], eta 00:00:00:00|r
+       [OC]|cFFfff8a3Fly from Refuge Pointe to [F Ironforge], eta 00:00:00:00|r
        [OC]At the Auction House
               [OC]Buy 2-4 Elixir of Water Breathing
-       |cFFfff8a3Fly from Ironforge to [F Refuge Pointe], eta 04:00|r
+       [OC]|cFFfff8a3Fly from Ironforge to [F Refuge Pointe], eta 04:00|r
 
 [OC]Run southwest to Circle of Inner Binding [G 36,58 Arathi Highlands] (36, 58)
        Loot Circle of Inner Binding, [QT651 Stones of Binding]
@@ -125,7 +125,7 @@ Guidelime.registerGuide(
 [OC]Back at the bonfire
        At Doctor Draxlegauge, [QT665 Sunken Treasure] [QA666 Sunken Treasure]
 
-[OC]Requires: Elixir of Water Breathing or similar effect
+[OC]|cFFFF0000Requires:|r Elixir of Water Breathing or similar effect
        [OC]Swim west off the coast to the ship wreckage, The Drowned Reef
               [OC]You do NOT want to die here, be careful
               [OC]Equip Goggles of Gem Hunting
@@ -164,25 +164,25 @@ Guidelime.registerGuide(
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge
        [OC]Run north to the flightmaster
 
-|cFFfff8a3Fly from Southshore to [F Ironforge], eta 03:15|r
+[OC]|cFFfff8a3Fly from Southshore to [F Ironforge], eta 03:15|r
        [OC]At Hall of Explorers
               At Prospector Stormpike, [QT554 Stormpike's Deciphering], skip follow ups
               [OC]|cFFFFFFFF(D)|r If you did ! Mythology of the Titans
                      At Librarian Mae Paledust, [QT1050 Mythology of the Titans]
-       [OC]At Innkeeper Firebrew
-              Bind your Hearthstone to the innkeeper in [S Ironforge] [V]
+       At Innkeeper Firebrew, Bind your Hearthstone to [S Ironforge]
        [OC]Keep your mount in mind but [T] Train spells at your class trainer, Equip new spells
        [OC]BANK/BANKALT[R][V]
               [OC]|cFFe6cc80Withdraw:|r Fizzle Brassbolts' Letter
               [OC]|cFFe6cc80Withdraw:|r 60 Wool Cloth, 60 Silk Cloth (Buy rest from AH if you don't have)
               [OC]|cFFe6cc80Deposit:|r Sample Elven Gem
        [OC]At the Auction House
-              [OC]Try to obtain the following items for upcoming quests
-                     [OC]1 Patterned Bronze Bracer
+              Buy 1 [CI2868,1] for a quest in Badlands
               [OC]If you can't obtain an item in this list, don't purchase the ones listed after it
-                     [OC]1 Frost Oil
-                     [OC]1 Gyrochronatom (Sold by Gearcutter Cogspinner in Tinker Town and other Engeneering Supplies merchants)
-                     [OC]1 Healing Potion and 1 Lesser Invisibility Potion
+                     Buy 1 [CI3829,1] for a quest in Badlands
+                     Buy 1 [CI4389,1] for a quest in Badlands
+                     [OC](also sold by Gearcutter Cogspinner in Tinker Town)
+                     Buy 1 [CI929,1] for a quest in Badlands
+                     Buy 1 [CI3823,1] for a quest in Badlands
        [OC]Run to the center of the city
               [OC]At Mistina Steelshield
                      [QT7807 A Donation of Wool]
@@ -190,7 +190,7 @@ Guidelime.registerGuide(
        [OC]|cFFa335ee[A Hunter]Hunter:|r Stock up on arrows, you won't have a vendor for a while.
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
        [OC]In the middle southern house
        At Ghak Healtouch, [QA2500 Badlands Reagent Run]
 

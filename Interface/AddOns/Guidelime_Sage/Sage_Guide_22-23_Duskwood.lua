@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Duskwood
 [OC]====================================
-[OC]* Minimum /played: 11 hours, 25 minutes, 0 seconds
+[OC]* Minimum /played: 9 hours, 25 minutes, 0 seconds
 [OC]* Minimum Segment Time: 46 minutes, 0 seconds
-[OC]* Average /played: 22 hours, 50 minutes, 0 seconds
+[OC]* Average /played: 18 hours, 50 minutes, 0 seconds
 [OC]* Average Segment Time: 1 hours, 32 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 8/20
@@ -31,8 +31,7 @@ Guidelime.registerGuide(
        [OC]At the blacksmith Morg Gnarltree, [R][V]
        [OC]In the inn
               At Tavernkeep Smitts, [QT158 Zombie Juice] [QA156 Gather Rot Blossoms]
-              [OC]At Innkeeper Trelayne
-                     Bind your Hearthstone to the innkeeper in [S Darkshire] [V]
+              At Innkeeper Trelayne, Bind your Hearthstone to [S Darkshire]
        [OC]Run west into the main hall
               [OC]At Clerk Daltry
                      [QT66 The Legend of Stalvan] [QA67 The Legend of Stalvan]
@@ -40,7 +39,7 @@ Guidelime.registerGuide(
                      [QT145 Messenger to Darkshire], skip follow up
        [OC]Run west back to flightmaster Felicia Maline
 
-|cFFfff8a3Fly from Darkshire to [F Sentinel Hill], eta |r
+[OC]|cFFfff8a3Fly from Darkshire to [F Sentinel Hill], eta |r
        [OC]At Gryan Stoutmantle
               [QT132 The Defias Brotherhood], skip follow up
 
@@ -91,7 +90,7 @@ Guidelime.registerGuide(
 
 [OC]Run northwest to Stormwind
        [OC]At the Bank
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth
+              [OC]|cFFe6cc80Deposit:|r Extra cloth
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run to the canal northwest of the Mage Quarter
               [QT70 The Legend of Stalvan] [QA72 The Legend of Stalvan]
@@ -112,7 +111,7 @@ Guidelime.registerGuide(
        [OC]Otherwise
               [OC]Run southeast to flightmaster Dungar Longdrink
 
-|cFFfff8a3Fly from Stormwind to [F Darkshire], eta 01:50|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Darkshire], eta 01:50|r
        [OC]Just west in the house at Madame Eva
               [QT101 The Totem of Infliction]
               [QT262 The Shadowy Figure] [QA265 The Shadowy Search Continues]
@@ -139,12 +138,12 @@ Guidelime.registerGuide(
 [OC]Run east to Redridge Mountains
        [OC]Run northeast to the flightmaster
 
-|cFFfff8a3Fly from Lakeshire to [F Stormwind], eta 01:47|r
+[OC]|cFFfff8a3Fly from Lakeshire to [F Stormwind], eta 01:47|r
 
-|cFFfff8a3Fly from Stormwind to [F Ironforge], eta 04:06|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Ironforge], eta 04:06|r
        [OC]|cFFa335ee[A Mage]Mage:|r At Milstaff Stormeye in The Mystic Ward, train Teleport: Ironforge
 
-|cFFfff8a3Fly from Ironforge to [F Menethil Harbor], eta 02:02|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Menethil Harbor], eta 02:02|r
 
 [OC]====================================
 [OC]    Finished

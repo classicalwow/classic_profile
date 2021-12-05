@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Western Plaguelands
 [OC]====================================
-[OC]* Minimum /played: 3 days, 8 hours, 46 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 6 hours, 46 minutes, 9 seconds
 [OC]* Minimum Segment Time: 2 hours, 40 minutes, 0 seconds
-[OC]* Average /played: 6 days, 17 hours, 32 minutes, 18 seconds
+[OC]* Average /played: 6 days, 13 hours, 32 minutes, 18 seconds
 [OC]* Average Segment Time: 5 hours, 20 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~163K Total XP)
@@ -134,10 +134,9 @@ Guidelime.registerGuide(
 [OC]Run north along the western coast to Tirion Fordring
        [QA5542 Demon Dogs] [QA5543 Blood Tinged Skies] [QA5544 Carrion Grubbage]
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       [OC]For ? Blood Tinged Skies (Kill 30 Plaguebat (Fear) (Aoe'able))
-       [OC]For ? Carrion Grubbage (Kill Carrion Grub (Aoe'able) for 15 Slab of Carrion Worm Meat)
-       [OC]For ? Demon Dogs (Kill 5 Plaguehound (Aoe'able), 5 Frenzied Plaguehound (Aoe'able), 20 Plaguehound Runt (Aoe'able))
+[O]|cFF66ff66On the go:|r [QC5543 Blood Tinged Skies] (Kill 30 Plaguebat (Fear) (Aoe'able))
+[O]|cFF66ff66On the go:|r [QC5544 Carrion Grubbage] (Kill Carrion Grub (Aoe'able) for 15 Slab of Carrion Worm Meat)
+[O]|cFF66ff66On the go:|r [QC5542 Demon Dogs] (Kill 5 Plaguehound (Aoe'able), 5 Frenzied Plaguehound (Aoe'able), 20 Plaguehound Runt (Aoe'able))
 
 [OC]Grind southeast to Pamela Redpath [G 36.5,91 Eastern Plaguelands] (36.5, 91)
        [OC](Discover The Undercroft, Darrowshire)
@@ -167,17 +166,21 @@ Guidelime.registerGuide(
               [QT5241 Uncle Carlin]
        [OC]At flightmaster Khaelyn Steelwing
               Get the [P Light's Hope Chapel] flightpoint
-       [OC]Phase 6: Inside the chapel at Jessica Chambers
-              Bind your Hearthstone to the innkeeper in [S Light's Hope Chapel] [V]
+       Phase 6: Inside the chapel at Jessica Chambers, Bind your Hearthstone to [S Light's Hope Chapel]
 
-[OC]Requires: Friendly with the Argent Dawn
+[OC]|cFFFF0000Requires:|r Friendly with the Argent Dawn
        [OC]At Quartermaster Miranda Breechlock
-              [OC]Stock up on Enriched Manna Biscuit (80+)
+              |cFFa335ee[A Druid]Druid:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Hunter]Hunter:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Mage]Mage:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Paladin]Paladin:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Priest]Priest:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Warlock]Warlock:|r  Buy 80 [CI4542,80]
 
 [OC]====================================
 [OC]    Western Plaguelands
 [OC]====================================
-|cFFfff8a3Fly from Light's Hope Chapel to [F Chillwind Camp], eta 02:22|r
+[OC]|cFFfff8a3Fly from Light's Hope Chapel to [F Chillwind Camp], eta 02:22|r
        [OC]At High Priestess MacDonnel
               [QT5223 Return to Chillwind Camp] [QA5225 Target: Gahrron's Withering]
        [OC]At Leonard Porter, [R][V]

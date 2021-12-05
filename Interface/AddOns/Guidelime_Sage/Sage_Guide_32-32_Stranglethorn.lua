@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Stranglethorn Vale
 [OC]====================================
-[OC]* Minimum /played: 23 hours, 36 minutes, 0 seconds
+[OC]* Minimum /played: 21 hours, 36 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 30 minutes, 0 seconds
-[OC]* Average /played: 1 days, 23 hours, 12 minutes, 0 seconds
+[OC]* Average /played: 1 days, 19 hours, 12 minutes, 0 seconds
 [OC]* Average Segment Time: 3 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 7/20
@@ -45,7 +45,7 @@ Guidelime.registerGuide(
        [OC]Run southwest on upper level of Booty Bay to the flightmaster
        Get the [P Booty Bay] flightpoint
 
-|cFFfff8a3Fly from Booty Bay to [F Darkshire], eta 02:46|r
+[OC]|cFFfff8a3Fly from Booty Bay to [F Darkshire], eta 02:46|r
 [OC]Run south following the road west to the crossroads
 [OC]Run south to Stranglethorn Vale
 
@@ -84,8 +84,8 @@ Guidelime.registerGuide(
        [OC]At Jaquilina Dramet, [R][V]
 
 [OC]Grind on the north ridge of the river
-       [OC]Do some ? Panther Mastery (Kill Young Panther (Aoe'able))
-       [OC]Do some ? Singing Blue Shards
+       Do some |cFFFFFFFFO|r [QA190 Panther Mastery] (Kill Young Panther (Aoe'able))
+       Do some |cFFFFFFFFO|r [QA605 Singing Blue Shards]
               [OC]Kill Stone Maw Basilisk (Stun), Crystal Spine Basilisk (Stun) for Singing Crystal Shard
 
 [OC]Grind east to Kurzen's Compound
@@ -104,7 +104,7 @@ Guidelime.registerGuide(
 
 [OC]Run south, grind on the north ridge of the river again
        Finish [QC190 Panther Mastery] (Kill 10 Young Panther (Aoe'able))
-       [OC]Do some ? Singing Blue Shards
+       Do some |cFFFFFFFFO|r [QA605 Singing Blue Shards]
               [OC]Kill Stone Maw Basilisk (Stun), Crystal Spine Basilisk (Stun) for 10 Singing Crystal Shard
 
 [OC]Grind south to Nesingwary's Expedition
@@ -124,7 +124,7 @@ Guidelime.registerGuide(
 
 [OC]Grind southwest near Tkashi Ruins
        Do [QC187 Tiger Mastery] (Kill 10 Elder Stranglethorn Tiger (Aoe'able)) [G 32,18 Stranglethorn Vale] (32, 18)
-       [OC]Do some ? Bloodscalp Ears (Kill Bloodscalp for 15 Bloodscalp Ear)
+       Do some |cFFFFFFFFO|r [QA189 Bloodscalp Ears] (Kill Bloodscalp for 15 Bloodscalp Ear)
 
 [OC]Run north to Nesingwary's Expedition
        At Ajeck Rouack, [QT187 Tiger Mastery]
@@ -143,7 +143,7 @@ Guidelime.registerGuide(
 |cFFfff8a3Hearth to [H Menethil Harbor] [V]|r
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
+[OC]|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run to The Military Ward
               [OC]At Sara Balloo
@@ -160,7 +160,7 @@ Guidelime.registerGuide(
               [OC]|cFFe6cc80Deposit:|r Krazek's Crock Pot, Singing Crystal Shard, Bloodscalp Ear, Large River Crocolisk Skin, Stranglethorn Pages, Extra Cloth
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Ironforge to [F Southshore], eta 04:10|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Southshore], eta 04:10|r
 
 [OC]====================================
 [OC]    Finished

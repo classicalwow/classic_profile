@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Alterac
 [OC]====================================
-[OC]* Minimum /played: 1 days, 8 hours, 37 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 6 hours, 37 minutes, 0 seconds
 [OC]* Minimum Segment Time: 34 minutes, 0 seconds
-[OC]* Average /played: 2 days, 17 hours, 14 minutes, 0 seconds
+[OC]* Average /played: 2 days, 13 hours, 14 minutes, 0 seconds
 [OC]* Average Segment Time: 1 hours, 8 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 16/20
@@ -78,7 +78,7 @@ Guidelime.registerGuide(
               Do [QC1053,4 In the Name of the Light] (Kill Houndmaster Loksey)
               [OC]Behind High Inquisitor Whitemane
                      [OC]Loot Doan's Strongbox for The Scarlet Key!!!
-       [OC]Requires: The Scarlet Key
+       [OC]|cFFFF0000Requires:|r The Scarlet Key
               [OC]Open the Armory Door and zone into Scarlet Monastery Armory
                      Do [QC1053,3 In the Name of the Light] (Kill Herod)
               [OC]Open the Cathedral Door and zone into Scarlet Monastery Cathedral
@@ -107,7 +107,7 @@ Guidelime.registerGuide(
               [QT537 Dark Council]
        [OC]Run north to the flightmaster
 
-|cFFfff8a3Fly from Southshore to [F Refuge Pointe], eta 01:10|r
+[OC]|cFFfff8a3Fly from Southshore to [F Refuge Pointe], eta 01:10|r
 
 [OC]====================================
 [OC]    Finished

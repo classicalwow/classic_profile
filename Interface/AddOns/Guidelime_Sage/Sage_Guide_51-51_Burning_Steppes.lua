@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Burning Steppes
 [OC]====================================
-[OC]* Minimum /played: 2 days, 20 hours, 40 minutes, 9 seconds
+[OC]* Minimum /played: 2 days, 18 hours, 40 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 30 minutes, 0 seconds
-[OC]* Average /played: 5 days, 17 hours, 20 minutes, 18 seconds
+[OC]* Average /played: 5 days, 13 hours, 20 minutes, 18 seconds
 [OC]* Average Segment Time: 3 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~50K Total XP)
@@ -44,12 +44,11 @@ Guidelime.registerGuide(
               [QA4182 Dragonkin Menace] (This is the start of your Onyxia Attunement)
        [OC]At Felder Stover, [R][V]
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       [OC]For ? FIFTY! YEP! (Kill Ember Worg (Aoe'able) for 50 Blackrock Medallion)
+[O]|cFF66ff66On the go:|r [QC4283 FIFTY! YEP!] (Kill Ember Worg (Aoe'able) for 50 Blackrock Medallion)
 
 [OC]Grind north to Dreadmaul Rock (Aoe'able)
        [OC](Discover Terror Wing Path, Dreadmaul Rock)
-       [OC]Do some ? Extinguish the Firegut (Kill some Firegut Ogre Mage (Aoe'able), Ogre (Aoe'able), Brute (Aoe'able))
+       Do some |cFFFFFFFFO|r [QA3823 Extinguish the Firegut] (Kill some Firegut Ogre Mage (Aoe'able), Ogre (Aoe'able), Brute (Aoe'able))
 
 [OC]Grind northwest to Flamecrest [G 65,24 Burning Steppes] (65, 24)
        [OC](Discover Ruins of Thaurissan)
@@ -95,12 +94,12 @@ Finish [QC4283 FIFTY! YEP!] (Kill Ember Worg (Aoe'able) for 50 Blackrock Medalli
        [OC]At Felder Stover, [R][V]
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind
 
-|cFFfff8a3Fly from Morgan's Vigil to [F Stormwind], eta 02:23|r
+[OC]|cFFfff8a3Fly from Morgan's Vigil to [F Stormwind], eta 02:23|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]At the Auction House
-              [OC]Buy 1 Mithril Casing for upcoming quest
+              Buy 1 [CI10561,1] for a quest in Un'goro Crater
 
-|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
 
 [OC]====================================
 [OC]    Finished

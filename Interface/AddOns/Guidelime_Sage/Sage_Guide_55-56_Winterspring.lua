@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Winterspring
 [OC]====================================
-[OC]* Minimum /played: 3 days, 12 hours, 26 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 10 hours, 26 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 40 minutes, 0 seconds
-[OC]* Average /played: 7 days, 0 hours, 52 minutes, 18 seconds
+[OC]* Average /played: 6 days, 20 hours, 52 minutes, 18 seconds
 [OC]* Average Segment Time: 3 hours, 20 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 14/20 (~50K Total XP)
@@ -45,7 +45,8 @@ Guidelime.registerGuide(
        [OC]On the west side
               At Umi Rumplesnicker, [QA977 Are We There, Yeti?]
 
-[OC]|cFFa335ee[A Hunter]Hunter:|r Run south of Everlook, tame Elder Shardtooth for Claw Rank 8
+[OC]|cFFa335ee[A Hunter]Hunter:|r Run south of Everlook
+       [OC][A Hunter]Tame Elder Shardtooth, use Claw Rank 8 to learn it
 
 [OC]Run south to Ranshalla [G 63,59.5 Winterspring] (63, 59.5)
        [QT979 Find Ranshalla] [QA4901 Guardians of the Altar]
@@ -83,7 +84,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Silva Fil'naveth [G 44,45 Moonglade] (44, 45)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
        [OC][A Druid]Continue at Rut'Theran Village below
 
 [OC]|cFFa335ee[A Mage]Mage:|r
@@ -95,7 +96,7 @@ Guidelime.registerGuide(
 
 [OC]Run south to Talonbranch Glade
 
-|cFFfff8a3Fly from Talonbranch Glade to [F Rut'Theran Village], eta 04:16|r
+[OC]|cFFfff8a3Fly from Talonbranch Glade to [F Rut'Theran Village], eta 04:16|r
        [OC]At the house by the docks
               At Erelas Ambersky, [QT4901 Guardians of the Altar] [QA4902 Wildkin of Elune]
 
@@ -115,14 +116,13 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]Take the pink portal to Rut'Theran Village
 
-|cFFfff8a3Fly from Rut'Theran Village to [F Auberdine], eta 01:21|r
+[OC]|cFFfff8a3Fly from Rut'Theran Village to [F Auberdine], eta 01:21|r
 
-[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Auberdine to Menethil Harbor, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
 
-|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
+[OC]|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
 
-|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
        [OC][T] Train spells at your class trainer, Equip new spells
        [OC]Run northeast to Stormwind Keep
               At Highlord Bolvar Fordragon, [QA6182 The First and the Last]
@@ -134,8 +134,8 @@ Guidelime.registerGuide(
 [OC]Phase 6:
        |cFFfff8a3Hearth to [H Light's Hope Chapel] [V]|r
 [OC]Otherwise
-       |cFFfff8a3Fly from Stormwind to [F Ironforge], eta 04:06|r
-       |cFFfff8a3Fly from Ironforge to [F Light's Hope Chapel], eta |r
+       [OC]|cFFfff8a3Fly from Stormwind to [F Ironforge], eta 04:06|r
+       [OC]|cFFfff8a3Fly from Ironforge to [F Light's Hope Chapel], eta |r
 
 [OC]====================================
 [OC]    Finished

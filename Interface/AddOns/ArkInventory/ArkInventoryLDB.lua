@@ -368,8 +368,10 @@ function ArkInventory.LDB.Tracking_Item:Update( )
 		ready = ready and info.ready
 		
 		if me.player.data.ldb.tracking.item.tracked[k] then
-			local count = GetItemCount( k, true )
-			hasText = string.format( "%s  |T%s:0|t %s", hasText or "", info.texture or ArkInventory.Const.Texture.Missing, FormatLargeNumber( count or 0 ) )
+			local count = GetItemCount( k, true ) or 0
+			if count > 0 or ( count == 0 and ArkInventory.db.option.tracking.item.showzero ) then
+				hasText = string.format( "%s  |T%s:0|t %s", hasText or "", info.texture or ArkInventory.Const.Texture.Missing, FormatLargeNumber( count ) )
+			end
 		end
 		
 	end

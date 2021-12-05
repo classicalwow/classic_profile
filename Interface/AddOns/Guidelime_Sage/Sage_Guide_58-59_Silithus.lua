@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Silithus
 [OC]====================================
-[OC]* Minimum /played: 3 days, 21 hours, 26 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 19 hours, 26 minutes, 9 seconds
 [OC]* Minimum Segment Time: 2 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 7 days, 18 hours, 52 minutes, 18 seconds
+[OC]* Average /played: 7 days, 14 hours, 52 minutes, 18 seconds
 [OC]* Average Segment Time: 4 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 7/20 (~161K Total XP)
@@ -56,7 +56,7 @@ Guidelime.registerGuide(
        |cFFfff8a3Hearth to [H Ratchet] [V]|r
               [OC]Run to flightmaster Bragok
 
-|cFFfff8a3Fly from Ratchet to [F Talrendis Point], eta 02:06|r
+[OC]|cFFfff8a3Fly from Ratchet to [F Talrendis Point], eta 02:06|r
 
 [OC]Phase 5:
 [OC]In Cenarion Hold
@@ -101,7 +101,7 @@ Guidelime.registerGuide(
 [OC]Run southeast to Southwind Village
        [OC](Discover Southwind Village)
        [OC](HIGH DEATH ALERT) When the mobs here die they summon a Hive'Ashi Drone
-       [OC]Phase 2: Requires: Entering Dire Maul at least once
+       [OC]Phase 2: |cFFFF0000Requires:|r Entering Dire Maul at least once
               [OC]Grind to [G 63.2,55.4 Silithus] (63.2, 55.4)
               Do [QC5527 A Reliquary of Purity] (Loot Dusty Reliquary for Reliquary of Purity)
        Do [QC1125 The Spirits of Southwind]
@@ -109,7 +109,7 @@ Guidelime.registerGuide(
 
 [OC]Grind south of Southwind Village
        Do [QC8278 Noggle's Last Hope] (Kill Stonelash Pincer (Slow) (Aoe'able) for 3 Stonelash Pincer Stinger)
-       [OC]Do some ? Stepping Up Security (Kill 20 Dredge Crusher (Stun) (Disarm) (Aoe'able))
+       Do some |cFFFFFFFFO|r [QA8281 Stepping Up Security] (Kill 20 Dredge Crusher (Stun) (Disarm) (Aoe'able))
 
 [OC]Run southeast to Hermit Ortell [G 67,70 Silithus] (67, 70)
        [OC](Discover Hive'Regal)
@@ -203,7 +203,7 @@ Guidelime.registerGuide(
 |cFFfff8a3Hearth to [H Ratchet] [V]|r
        [OC]Run to flightmaster Bragok
 
-|cFFfff8a3Fly from Ratchet to [F Talrendis Point], eta 02:06|r
+[OC]|cFFfff8a3Fly from Ratchet to [F Talrendis Point], eta 02:06|r
 
 [OC]====================================
 [OC]    Finished

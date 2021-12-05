@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Stranglethorn Vale
 [OC]====================================
-[OC]* Minimum /played: 2 days, 22 hours, 10 minutes, 9 seconds
+[OC]* Minimum /played: 2 days, 20 hours, 10 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 5 days, 20 hours, 20 minutes, 18 seconds
+[OC]* Average /played: 5 days, 16 hours, 20 minutes, 18 seconds
 [OC]* Average Segment Time: 2 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 13/20 (~45K Total XP)
@@ -37,12 +37,11 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]In Booty Bay
        [OC]At the inn
-              [OC]At Innkeeper Skindle
-                     Bind your Hearthstone to the innkeeper in [S Booty Bay] [V]
+              At Innkeeper Skindle, Bind your Hearthstone to [S Booty Bay]
               At Crank Fizzlebub, [QT1118 Back to Booty Bay]
        [OC]At the bank
-              [OC]|cFFe6cc80Withdraw:|r 10 Gorilla Fang for upcoming quest
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth, Extra Potions
+              |cFFe6cc80Withdraw:|r 10 [CI2799,10]
+              [OC]|cFFe6cc80Deposit:|r Extra cloth, potions
        [OC]At Auctioneer O'reely
               [OC]Auction the rest of your Green Hills of Stranglethorn pages individually
        [OC]Under the boat hut
@@ -85,8 +84,7 @@ Guidelime.registerGuide(
               At Captain Hecklebury Smotts, [QT8551 The Captain's Chest]
        [OC]Destroy Carefully Folded Note
 
-[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.\\Craft bandages or fish while you wait.|r
        [OC]As the boat is arriving in Ratchet
        [OC]Jump early southwest toward the quest marker [G 66,44 The Barrens] (66, 44)
        [OC]At Islen Waterseer
@@ -99,7 +97,7 @@ Guidelime.registerGuide(
               At Liv Rizzlefix, [QA4502 Volcanic Activity]
        [OC]Run to flightmaster Bragok
 
-|cFFfff8a3Fly from Ratchet to [F Theramore Isle], eta 01:40|r
+[OC]|cFFfff8a3Fly from Ratchet to [F Theramore Isle], eta 01:40|r
        [OC]|cFFa335eeFirst Aid:|r Inside the keep at Doctor Gustaf VanHowzen, train your First Aid
 
 [OC]|cFFFFFFFF(D)|r Run far southwest to Tabetha [G 46,57 Dustwallow Marsh] (46, 57)
@@ -107,10 +105,8 @@ Guidelime.registerGuide(
 
 [OC]Run northwest back to Theramore Isle
 
-|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
-       [OC]At Innkeeper Fizzgrimble
-              Bind your Hearthstone to the innkeeper in [S Theramore Isle] [V]
-       [OC]On the northwest side
+[OC]|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
+       [OC]At Innkeeper Fizzgrimble, On the northwest side
               At Sprinkle, [QT2641 Sprinkle's Secret Ingredient], wait, [QA2661 Delivery for Marin]
        [OC]In the hut
               At Alchemist Pestlezugg, [QT4493 March of the Silithid] [QA4496 Bungle in the Jungle]

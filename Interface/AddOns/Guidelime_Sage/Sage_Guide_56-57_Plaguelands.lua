@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Plaguelands
 [OC]====================================
-[OC]* Minimum /played: 3 days, 14 hours, 6 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 12 hours, 6 minutes, 9 seconds
 [OC]* Minimum Segment Time: 3 hours, 20 minutes, 0 seconds
-[OC]* Average /played: 7 days, 4 hours, 12 minutes, 18 seconds
+[OC]* Average /played: 7 days, 0 hours, 12 minutes, 18 seconds
 [OC]* Average Segment Time: 6 hours, 40 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 16/20 (~200K Total XP)
@@ -44,16 +44,21 @@ Guidelime.registerGuide(
        [OC]Just south at Caretaker Alen
               [QA5281 The Restless Souls]
 
-[OC]Requires: Friendly with the Argent Dawn
+[OC]|cFFFF0000Requires:|r Friendly with the Argent Dawn
        [OC]At Quartermaster Miranda Breechlock
-              [OC]Stock up on Enriched Manna Biscuit (80+)
+              |cFFa335ee[A Druid]Druid:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Hunter]Hunter:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Mage]Mage:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Paladin]Paladin:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Priest]Priest:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Warlock]Warlock:|r  Buy 80 [CI4542,80]
 
-|cFFfff8a3Fly from Light's Hope Chapel to [F Chillwind Camp], eta 02:22|r
+[OC]|cFFfff8a3Fly from Light's Hope Chapel to [F Chillwind Camp], eta 02:22|r
        At Flint Shadowmore, [QT6184 Flint Shadowmore] [QA6185 The Eastern Plagues]
        At Alchemist Arbington, [QT5801 Fire Plume Forged] [QA5803 Araj's Scarab]
        At Commander Ashlam Valorfist, [QA211 Alas, Andorhal]
 
-|cFFfff8a3Fly from Chillwind Camp to [F Light's Hope Chapel], eta 02:18|r
+[OC]|cFFfff8a3Fly from Chillwind Camp to [F Light's Hope Chapel], eta 02:18|r
 
 [OC]Grind far northwest to Northdale near the lake [G 71,36 Eastern Plaguelands] (71, 36)
        [OC](Discover Pestilent Scar, Eastwall Tower, Northdale)
@@ -198,13 +203,18 @@ Guidelime.registerGuide(
 [OC]Phase 6:
        |cFFfff8a3Hearth to [H Light's Hope Chapel] [V]|r
 [OC]Otherwise
-       |cFFfff8a3Fly from Chillwind Camp to [F Light's Hope Chapel], eta 02:18|r
+       [OC]|cFFfff8a3Fly from Chillwind Camp to [F Light's Hope Chapel], eta 02:18|r
        At Carlin Redpath, [QT5181 Villains of Darrowshire]
        [OC]At Duke Nicholas Zverenhoff
               [OC]! Minion's Scourgestones as many times as you can
               [OC]Use all Argent Dawn Valor Token
        [OC]At Quartermaster Miranda Breechlock
-              [OC]Stock up on Enriched Manna Biscuit (80+)
+              |cFFa335ee[A Druid]Druid:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Hunter]Hunter:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Mage]Mage:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Paladin]Paladin:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Priest]Priest:|r  Buy 80 [CI4542,80]
+              |cFFa335ee[A Warlock]Warlock:|r  Buy 80 [CI4542,80]
        [OC]At Craftsman Wilhelm, [R][V]
 
 [OC]Just south at Caretaker Alen
@@ -242,7 +252,12 @@ Guidelime.registerGuide(
 
 [OC]Run southwest to Chillwind Camp
        [OC]At Argent Quartermaster Lightspark
-              [OC]Stock up on Enriched Manna Biscuit (400+)
+              |cFFa335ee[A Druid]Druid:|r  Buy 400 [CI4542,400]
+              |cFFa335ee[A Hunter]Hunter:|r  Buy 400 [CI4542,400]
+              |cFFa335ee[A Mage]Mage:|r  Buy 400 [CI4542,400]
+              |cFFa335ee[A Paladin]Paladin:|r  Buy 400 [CI4542,400]
+              |cFFa335ee[A Priest]Priest:|r  Buy 400 [CI4542,400]
+              |cFFa335ee[A Warlock]Warlock:|r  Buy 400 [CI4542,400]
        [OC]At Leonard Porter, [R][V]
 
 [OC]Phase 4:

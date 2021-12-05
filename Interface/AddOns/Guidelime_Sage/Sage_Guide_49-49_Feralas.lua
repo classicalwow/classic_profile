@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Feralas
 [OC]====================================
-[OC]* Minimum /played: 2 days, 13 hours, 4 minutes, 0 seconds
+[OC]* Minimum /played: 2 days, 11 hours, 4 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 13 minutes, 9 seconds
-[OC]* Average /played: 5 days, 2 hours, 8 minutes, 0 seconds
+[OC]* Average /played: 4 days, 22 hours, 8 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 26 minutes, 18 seconds
 [OC]====================================
 [OC]Current Quest Log: 16/20 (~50K Total XP)
@@ -38,8 +38,7 @@ Guidelime.registerGuide(
               |cFFFFFFFFX|r [QA2846 Tiara of the Deep]
 [OC]====================================
 [OC]In Feathermoon
-       [OC]At Innkeeper Shyria
-              Bind your Hearthstone to the innkeeper in [S Feathermoon Stronghold] [V]
+       At Innkeeper Shyria, Bind your Hearthstone to [S Feathermoon Stronghold]
 
 [OC]Swim east across the water to the dock
        [OC]At Zorbin Fandazzle
@@ -56,7 +55,7 @@ Guidelime.registerGuide(
               [QT7721 Fuel for the Zapping] (Zorbin's Water Resistant Hat)
 
 [OC]Run northeast to The Twin Colossals [G 50,30 Feralas] (50, 30)
-       [OC]|cFFa335ee[A Hunter]Hunter:|r Tame Ironfur Patriarch for Growl Rank 5
+       [OC]|cFFa335ee[A Hunter]Hunter:|r Tame Ironfur Patriarch, use Growl Rank 5 to learn it
        Do [QC1452,2 Rhapsody's Kalimdor Kocktail] (Kill Ironfur Patriarch (Aoe'able) for 3 Ironfur Liver)
        Do [QC1452,3 Rhapsody's Kalimdor Kocktail] (Kill Groddoc Thunderer (Aoe'able) for 3 Groddoc Liver)
 
@@ -78,7 +77,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Silva Fil'naveth [G 44,45 Feralas] (44, 45)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
        [OC][A Druid]Continue at Rut'Theran Village below
 
 [OC]|cFFa335ee[A Mage]Mage:|r
@@ -90,14 +89,13 @@ Guidelime.registerGuide(
               [OC][A Mage]At Erelas Ambersky
                      [A Mage][QT3022 Handle With Care]
                      [A Mage][QT3661 Favored of Elune?]
-       [A Mage]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+       [OC][A Mage]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
        [OC][A Mage]Continue at Astranaar below
 
-|cFFfff8a3Fly from Feathermoon to [F Auberdine], eta 07:21|r
-       [OC]At Innkeeper Shaussiy
-              Bind your Hearthstone to the innkeeper in [S Auberdine] [V]
+[OC]|cFFfff8a3Fly from Feathermoon to [F Auberdine], eta 07:21|r
+       At Innkeeper Shaussiy, Bind your Hearthstone to [S Auberdine]
 
-|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
+[OC]|cFFfff8a3Fly from Auberdine to [F Rut'Theran Village], eta 01:20|r
        [OC]At the house near the dock
               [OC]At Erelas Ambersky
                      [QT3022 Handle With Care]
@@ -107,10 +105,9 @@ Guidelime.registerGuide(
               At Zilzibin Drumlore, [QT162 Rise of the Silithid]
        [OC]Run through the pink portal to Rut'Theran Village
 
-|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+[OC]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
        [OC]|cFFa335ee[A Druid, Mage]Druid, Mage:|r
-              [OC][A Druid, Mage]At Innkeeper Kimlya
-                     [A Druid, Mage]Bind your Hearthstone to the innkeeper in [S Astranaar] [V]
+              [A Druid, Mage]At Innkeeper Kimlya, Bind your Hearthstone to [S Astranaar]
 
 [OC]Run east along the road and then all the way north to Felwood
 

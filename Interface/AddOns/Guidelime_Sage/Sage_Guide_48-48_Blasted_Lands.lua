@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Blasted Lands
 [OC]====================================
-[OC]* Minimum /played: 2 days, 8 hours, 54 minutes, 0 seconds
+[OC]* Minimum /played: 2 days, 6 hours, 54 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 10 minutes, 0 seconds
-[OC]* Average /played: 4 days, 17 hours, 48 minutes, 0 seconds
+[OC]* Average /played: 4 days, 13 hours, 48 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 20 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 14/20 (~88K Total XP)
@@ -74,17 +74,16 @@ Guidelime.registerGuide(
 
 [OC]Run east to Nethergarde Keep
 
-|cFFfff8a3Fly from Nethergarde Keep to [F Booty Bay], eta 04:09|r
+[OC]|cFFfff8a3Fly from Nethergarde Keep to [F Booty Bay], eta 04:09|r
        [OC]At the bottom of the inn
               At Whiskey Slim, [QT580 Whiskey Slim's Lost Grog]
        [OC]At the first house northeast of the inn
               At "Sea Wolf" MacKinley, [QT2874 Deliver to MacKinley]
 
-[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.\\Craft bandages or fish while you wait.|r
        [OC]Run to flightmaster Bragok
 
-|cFFfff8a3Fly from Ratchet to [F Gadgetzan], eta 04:07|r
+[OC]|cFFfff8a3Fly from Ratchet to [F Gadgetzan], eta 04:07|r
 
 [OC]====================================
 [OC]    Finished

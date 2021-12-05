@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Dustwallow Marsh
 [OC]====================================
-[OC]* Minimum /played: 1 days, 5 hours, 17 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 3 hours, 17 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 30 minutes, 0 seconds
-[OC]* Average /played: 2 days, 10 hours, 34 minutes, 0 seconds
+[OC]* Average /played: 2 days, 6 hours, 34 minutes, 0 seconds
 [OC]* Average Segment Time: 3 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 13/20
@@ -37,7 +37,7 @@ Guidelime.registerGuide(
        [OC]Run east to Foothold Citadel
               Upstairs at Captain Garran Vimes, [QA1286 The Deserters]
        [OC]Run north to the inn
-       Bind your Hearthstone to the innkeeper in [S Theramore Isle] [V]
+              At Innkeeper Janene, Bind your Hearthstone to [S Theramore Isle]
        [OC]Stock up on Soft Banana Bread, Moonberry Juice or equivalent
 
 [OC]Run northwest along the road to Swamplight Manor [G 55.4,26.3 Dustwallow Marsh] (55.4, 26.3)
@@ -98,7 +98,7 @@ Guidelime.registerGuide(
               [OC]Downstairs at Piter Verance, [R][V]
        [OC]Run south to flightmaster Baldruc
 
-|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
+[OC]|cFFfff8a3Fly from Theramore Isle to [F Gadgetzan], eta 02:28|r
 
 [OC]Run north to the Mirage Raceway in Shimmering Flats
        [OC]On the gnome side
@@ -109,16 +109,15 @@ Guidelime.registerGuide(
                      [A Mage]At Magus Tirth, [QA1951 Rituals of Power]
                      [OC][A Mage]Teleport to Stormwind
                      [OC][A Mage]Keep your mount in mind but [T] Train spells at your class trainer, Equip new spells
-                     [A Mage]|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
+                     [OC][A Mage]|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
                      [OC][A Mage]You are done with this segment, continue on the next segment
 
 [OC]Run south back to Gadgetzan
 
-|cFFfff8a3Fly from Gadgetzan to [F Ratchet], eta 04:14|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Ratchet], eta 04:14|r
        [OC]Run southeast to the docks
 
-[OC]|cFFfff8a3Take the boat from Ratchet to Booty Bay, a boat shows up every 05:50.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Ratchet to Booty Bay, a boat shows up every 05:50.\\Craft bandages or fish while you wait.|r
 
 [OC]====================================
 [OC]    Finished

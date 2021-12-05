@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Feralas
 [OC]====================================
-[OC]* Minimum /played: 3 days, 2 hours, 15 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 0 hours, 15 minutes, 9 seconds
 [OC]* Minimum Segment Time: 3 hours, 16 minutes, 0 seconds
-[OC]* Average /played: 6 days, 4 hours, 30 minutes, 18 seconds
+[OC]* Average /played: 6 days, 0 hours, 30 minutes, 18 seconds
 [OC]* Average Segment Time: 6 hours, 32 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~170K Total XP)
@@ -34,18 +34,17 @@ Guidelime.registerGuide(
               |cFFFFFFFFX|r [QA5050 Good Luck Charm]
 [OC]====================================
 [OC]In Feathermoon Stronghold
-       [OC]At Innkeeper Shyria
-              Bind your Hearthstone to the innkeeper in [S Feathermoon Stronghold] [V]
+       At Innkeeper Shyria, Bind your Hearthstone to [S Feathermoon Stronghold]
 
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Silva Fil'naveth [G 44,45 Moonglade] (44, 45)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Rut'Theran Village], eta 02:24|r [G 44,45 Moonglade] (44, 45)
        [OC][A Druid]Continue at Rut'Theran Village below
 
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Darnassus, continue at Darnassus below
 
-|cFFfff8a3Fly from Feathermoon to [F Rut'Theran Village], eta 08:39|r
+[OC]|cFFfff8a3Fly from Feathermoon to [F Rut'Theran Village], eta 08:39|r
 
 [OC]Take the pink portal to Darnassus
        [OC][T] Train spells at your class trainer, Equip new spells
@@ -71,7 +70,7 @@ Guidelime.registerGuide(
                      [QT2944 The Super Snapper FX] [QA2943 Return to Troyas]
                      [QA5250 Starfall]
 
-|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+[OC]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
 
 [OC]====================================
 [OC]    Felwood
@@ -218,7 +217,7 @@ Guidelime.registerGuide(
 [OC]|cFFa335ee[A Druid]Druid:|r
        [OC][A Druid]Teleport to Moonglade
        [OC][A Druid]Run southwest to flightmaster Sindrayl [G 48,67 Moonglade] (48, 67)
-       [A Druid]|cFFfff8a3Fly from Nighthaven to [F Astranaar], eta |r
+       [OC][A Druid]|cFFfff8a3Fly from Nighthaven to [F Astranaar], eta |r
        [OC][A Druid]Continue at Astranaar below
 
 [OC]|cFFa335ee[A Mage]Mage:|r
@@ -226,9 +225,9 @@ Guidelime.registerGuide(
               [OC][A Mage]At the Bank
                      [OC][A Mage]|cFFe6cc80Deposit:|r Extra cloth, potions
        [OC][A Mage]Take the pink portal to Rut'Theran Village
-       [A Mage]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
+       [OC][A Mage]|cFFfff8a3Fly from Rut'Theran Village to [F Astranaar], eta 04:07|r
 
-|cFFfff8a3Fly from Feathermoon to [F Astranaar], eta 10:06|r
+[OC]|cFFfff8a3Fly from Feathermoon to [F Astranaar], eta 10:06|r
 
 [OC]Run northeast to Felwood
 
@@ -272,7 +271,7 @@ Guidelime.registerGuide(
 [OC]Run all the way northeast along the road and then southeast to Talonbranch Glade
        [OC]At Mylini Frostmoon, [R][V]
 
-|cFFfff8a3Fly from Talonbranch Glade to [F Everlook], eta 01:53|r
+[OC]|cFFfff8a3Fly from Talonbranch Glade to [F Everlook], eta 01:53|r
 
 [OC]====================================
 [OC]    Finished

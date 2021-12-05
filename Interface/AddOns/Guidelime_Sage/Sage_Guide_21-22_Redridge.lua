@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Redridge
 [OC]====================================
-[OC]* Minimum /played: 10 hours, 5 minutes, 0 seconds
+[OC]* Minimum /played: 8 hours, 5 minutes, 0 seconds
 [OC]* Minimum Segment Time: 1 hours, 20 minutes, 0 seconds
-[OC]* Average /played: 20 hours, 10 minutes, 0 seconds
+[OC]* Average /played: 16 hours, 10 minutes, 0 seconds
 [OC]* Average Segment Time: 2 hours, 40 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 9/20
@@ -56,7 +56,7 @@ Guidelime.registerGuide(
        Do [QC124 A Baying of Gnolls] (Kill 10 Redridge Brute, 8 Redridge Mystic) [G 39,32 Redridge Mountains] (39, 32)
        Do [QC89 The Everstill Bridge] (Kill gnolls for 5 Iron Pike, 5 Iron Rivet)
        Do [QC122 Underbelly Scales] (Kill Black Dragon Whelp for 6 Underbelly Whelp Scale)
-       [OC]There are more Black Dragon Whelp south of bridge if needed
+       [OC]More Black Dragon Whelp southeast of bridge if necessary
 
 [OC]Grind southwest back to Lakeshire
        At Foreman Oslow, [QT89 The Everstill Bridge]
@@ -102,7 +102,7 @@ Guidelime.registerGuide(
               [QT128 Blackrock Bounty]
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Lakeshire to [F Darkshire], eta |r
+[OC]|cFFfff8a3Fly from Lakeshire to [F Darkshire], eta |r
 
 [OC]====================================
 [OC]    Finished

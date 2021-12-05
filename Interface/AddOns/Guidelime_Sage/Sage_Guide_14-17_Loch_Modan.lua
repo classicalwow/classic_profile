@@ -29,7 +29,7 @@ Guidelime.registerGuide(
               [QA1339 Mountaineer Stormpike's Task]
 
 [OC]Grind north toward the Silver Stream Mine [G 35,19 Loch Modan] (35, 19)
-       [OC]Do some ? Thelsamar Blood Sausages
+       Do some |cFFFFFFFFO|r [QA418 Thelsamar Blood Sausages]
               [OC]Kill bears for 3 Bear Meat
               [OC]Kill boars for 3 Boar Intestines
               [OC]Kill spiders for 3 Spider Ichor
@@ -52,8 +52,13 @@ Guidelime.registerGuide(
        At Prospector Ironband, [QA298 Excavation Progress Report]
        [OC]Run northeast into the excavation site
 
-[OC]Aggro a bunch of mobs to die (Can use stuck command to die if hearthstone is on cooldown)
-[OC]Resurrect at Thelsamar. Repair if needed.
+[OC]|cFFa335eeSoftcore|r
+       [OC] Aggro a bunch of mobs to die
+       [OC]If hearthstone is on cooldown /stuck will instakill you
+       [OC] Resurrect at Thelsamar. Repair if needed.
+[OC]|cFFa335eeHardcore|r Grind to Thelsamar
+
+[OC]At Thelsamar
        [OC]Outside the northwestern-most house at Morhan Coppertongue, [R][V]
        [OC]In the inn at Vidra Hearthstove
               [QT418 Thelsamar Blood Sausages]
@@ -72,8 +77,11 @@ Guidelime.registerGuide(
        [OC](Discover North Gate Outpost)
        [OC]Run southwest through the tunnel
 
-[OC]Aggro a bunch of mobs to die (Can use stuck command to die if hearthstone is on cooldown)
-[OC]Resurrect at Ironforge. Repair if needed.
+[OC]|cFFa335eeSoftcore|r
+       [OC] Aggro a bunch of mobs to die
+       [OC]If hearthstone is on cooldown /stuck will instakill you
+       [OC] Resurrect at Ironforge. Repair if needed.
+[OC]|cFFa335eeHardcore|r Grind to Ironforge
 [OC]Run northwest into Ironforge
        [OC](Discover Gates of Ironforge, Ironforge)
 
@@ -83,7 +91,7 @@ Guidelime.registerGuide(
               At Prospector Stormpike, [QT301 Report to Ironforge] [QA302 Powder to Ironband]
        Get the [P Ironforge] flightpoint
 
-|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Thelsamar], eta 01:36|r
        [OC]At the southeastern-most house
               At Jern Hornhelm, [QT302 Powder to Ironband] [QA273 Resupplying the Excavation]
 
@@ -115,17 +123,12 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    14-17 Loch Modan
 [OC]====================================
-[OC]* Minimum /played: 4 hours, 0 minutes, 0 seconds
-[OC]* Minimum Segment Time: 2 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 8 hours, 0 minutes, 0 seconds
-[OC]* Average Segment Time: 4 hours, 0 minutes, 0 seconds
+
 [OC]====================================
-[OC]Current Quest Log: ?/20 (Quests are listed for all races, don't worry if you are missing some)
+[OC]Current Quest Log: 5/20 (If you have more quests don't worry)
        [OC]Darnassus
               |cFFFFFFFFX|r [QA952 Grove of the Ancients]
               |cFFFFFFFFX|r [QA967 The Tower of Althalaxx]
-       [OC]Ironforge
-              |cFFFFFFFFX|r [QA2039 Find Bingles]
        [OC]Loch Modan
               |cFFFFFFFFX|r [QA1338 Stormpike's Order]
               |cFFFFFFFFO|r [QA237 In Defense of the King's Lands]
@@ -134,9 +137,9 @@ Guidelime.registerGuide(
 [OC]In Thelsamar
        [OC]At the southeastern-most house
        At Jern Hornhelm, [QA436 Ironband's Excavation]
-       [OC]|cFFa335ee[A Paladin, Warrior]Paladin, Warrior:|r
-              [OC][A Paladin, Warrior]When you have 73s50c, run north to Stonewrought Dam
-              [OC][A Paladin, Warrior]At Nillen Andemar, buy Heavy Spiked Mace for 73s50c
+
+|cFFa335ee[A Paladin]Paladin:|r At the dam northeast at Nillen Andemar, try to buy 1 [CI4778,1] (73s50c)
+|cFFa335ee[A Warrior]Warrior:|r At the dam northeast at Nillen Andemar, try to buy 1 [CI4778,1] (73s50c)
 
 [OC]Grind south along the road then turn east into Stonesplinter Valley
        [OC]Grind deep to the southeast
@@ -275,29 +278,39 @@ Guidelime.registerGuide(
 [OC]If your hearthstone is set to Auberdine and you don't need level 16 spells
        |cFFfff8a3Hearth to [H Auberdine] [V]|r
 
-[OC]If your hearthstone is set to Auberdine
-       [OC]Aggro a bunch of mobs to die (Can use stuck command to die if hearthstone is on cooldown)
-[OC]Resurrect at Thelsamar. Repair if needed.
-       |cFFfff8a3Fly from Thelsamar to [F Ironforge], eta 01:44|r
+[OC]If your hearthstone is not set to Auberdine
+[OC]|cFFa335eeSoftcore|r
+       [OC] Aggro a bunch of mobs to die
+       [OC]If hearthstone is on cooldown /stuck will instakill you
+       [OC] Resurrect at Thelsamar. Repair if needed.
+[OC]|cFFa335eeHardcore|r Grind to Thelsamar
+
+[OC]At Thelsamar
+       [OC]|cFFfff8a3Fly from Thelsamar to [F Ironforge], eta 01:44|r
               [OC][T] Train spells at your class trainer, Equip new spells
               [OC]If your hearthstone is set to Auberdine
                      |cFFfff8a3Hearth to [H Auberdine] [V]|r
 
 [OC]If your hearthstone is not set to Auberdine
 [OC]Exit Ironforge
-[OC]Grind far west to [G 30.6,34.6 Dun Morogh] (30.6, 34.6)
-[OC]Run northeast up the mountains to [G 33,27 Dun Morogh] (33, 27) (Follow video for directions)
-[OC] Jump north off the hill to die
-[OC] Resurrect at the Baradin Bay near Menethil Harbor
 
-[OC]Swim and then run southeast to Menethil Harbor
+[OC]|cFFa335eeSoftcore|r
+       [OC]Follow video for directions
+       [OC]Grind far west to [G 30.6,34.6 Dun Morogh] (30.6, 34.6)
+       [OC]Run northeast up the mountains to [G 33,27 Dun Morogh] (33, 27)
+       [OC] Jump north off the hill to die
+       [OC] Resurrect at the Baradin Bay near Menethil Harbor
+       [OC]Swim and then run southeast to Menethil Harbor
+[OC]|cFFa335eeHardcore|r
+       [OC]Follow video for directions
+
+[OC]In Menethil Harbor
        [OC](Discover Menethil Harbor)
        [OC]Run south to flightmaster Shellei Brondir
               Get the [P Menethil Harbor] flightpoint
        [OC]Run to the northern dock
 
-[OC]|cFFfff8a3Take the boat from Menethil Harbor to Auberdine, a boat shows up every 04:55.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Menethil Harbor to Auberdine, a boat shows up every 04:55.\\Craft bandages or fish while you wait.|r
        [OC]As the boat is approaching Auberdine, jump off to get there faster
 
 [OC]====================================
@@ -310,5 +323,4 @@ Guidelime.registerGuide(
 [OC]*Discord:* https://discord.gg/jYNdkac
 [OC]Copyright (C) 2019 Tim Brown. All rights reserved.
 [OC]Check this box to proceed!
-[NX 17-19 Darkshore]
 ]], "Sage Guide")

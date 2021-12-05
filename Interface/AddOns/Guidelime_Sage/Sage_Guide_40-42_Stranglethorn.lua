@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Stranglethorn Vale
 [OC]====================================
-[OC]* Minimum /played: 1 days, 14 hours, 41 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 12 hours, 41 minutes, 0 seconds
 [OC]* Minimum Segment Time: 6 hours, 30 minutes, 0 seconds
-[OC]* Average /played: 3 days, 5 hours, 22 minutes, 0 seconds
+[OC]* Average /played: 3 days, 1 hours, 22 minutes, 0 seconds
 [OC]* Average Segment Time: 13 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20
@@ -34,8 +34,7 @@ Guidelime.registerGuide(
               At Privateer Bloads, [QA617 Akiris by the Bundle]
               [OC]|cFFe6cc80Withdraw:|r Sample Elven Gem, Singing Blue Crystal
        [OC]At the bottom of the inn
-              [OC]At Innkeeper Skindle
-                     Bind your Hearthstone to the innkeeper in [S Booty Bay] [V]
+              At Innkeeper Skindle, Bind your Hearthstone to [S Booty Bay]
               At Whiskey Slim, [QA580 Whiskey Slim's Lost Grog]
        [OC]On the second floor of the inn
               At Catelyn the Blade, [QT603 Ansirem's Key] [QA610 "Pretty Boy" Duncan]
@@ -67,8 +66,8 @@ Guidelime.registerGuide(
 [OC]Run north out of Booty Bay to Mistvale Valley [G 32,68 Stranglethorn Vale] (32, 68)
        [OC](Discover Mistvale Valley)
        Do [QC606 Scaring Shaky] (Kill Elder Mistvale Gorilla (Aoe'able) for 5 Mistvale Giblet)
-       [OC]Grind until you have 10 Gorilla Fang for upcoming quest
-       [OC]There are more Elder Mistvale Gorilla northwest
+       Kill Elder Mistvale Gorilla for 10 [CI2799,10] for a quest in Stranglethorn
+       [OC](more northwest if needed)
 
 [OC]Run northwest behind the Gurubashi Arena
        [OC](Discover Gurubashi Arena)
@@ -199,7 +198,7 @@ Guidelime.registerGuide(
        [OC]Grind northeast along the coast to Ruins of Aboraz
               [OC](Discover Ruins of Aboraz)
               Do [QC609 Voodoo Dues] (Kill Chucky "Ten Thumbs" for Huge Ring)
-              [OC]Do some ? Zanzil's Secret (Kill Zanzil for 12 Zanzil's Mixture)
+              Do some |cFFFFFFFFO|r [QA621 Zanzil's Secret] (Kill Zanzil for 12 Zanzil's Mixture)
        [OC]Grind northwest to Ruins of Jubuwal
               [OC](Discover Ruins of Jubuwal)
               Finish [QC609 Voodoo Dues]
@@ -237,11 +236,11 @@ Guidelime.registerGuide(
               At Fleet Master Seahorn, [QT608 The Bloodsail Buccaneers]
 
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind
-|cFFfff8a3Fly from Booty Bay to [F Stormwind], eta 03:28|r
+[OC]|cFFfff8a3Fly from Booty Bay to [F Stormwind], eta 03:28|r
        [OC]At the top of the Wizard's Sanctum in the Mage Quarter
               At High Sorcerer Andromath, [QA1477 Vital Supplies]
 
-|cFFfff8a3Fly from Stormwind to [F Darkshire], eta 01:50|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Darkshire], eta 01:50|r
        At Watchmaster Sorigal, [QT1477 Vital Supplies] [QA1395 Supplies for Nethergarde]
 
 [OC]Run east along the road to Deadwind Pass

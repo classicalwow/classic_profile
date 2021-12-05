@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Blackrock Depths
 [OC]====================================
-[OC]* Minimum /played: 3 days, 17 hours, 26 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 15 hours, 26 minutes, 9 seconds
 [OC]* Minimum Segment Time: 4 hours, 0 minutes, 0 seconds
-[OC]* Average /played: 7 days, 10 hours, 52 minutes, 18 seconds
+[OC]* Average /played: 7 days, 6 hours, 52 minutes, 18 seconds
 [OC]* Average Segment Time: 8 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 6/20 (~130K Total XP)
@@ -26,13 +26,12 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge, continue at Ironforge below
 
-|cFFfff8a3Fly from Chillwind Camp to [F Ironforge], eta 04:07|r
+[OC]|cFFfff8a3Fly from Chillwind Camp to [F Ironforge], eta 04:07|r
        [OC]Run northeast of the flightmaster
               Phase 5: At Cenarion Emissary Jademoon, [QA8275 Taking Back Silithus]
        [OC]At the High Seat
               At King Magni Bronzebeard, |cFFFFFFFF(D)|r[QA4341 Kharan Mighthammer]
-       [OC]At Innkeeper Firebrew
-              Bind your Hearthstone to the innkeeper in [S Ironforge] [V]
+       At Innkeeper Firebrew, Bind your Hearthstone to [S Ironforge]
        [OC]At the Bank
               [OC]|cFFe6cc80Deposit:|r Extra cloth, potions, recipes
               [OC]|cFFe6cc80Deposit:|r Extra Enriched Manna Biscuit so 120 is left in your bags
@@ -49,7 +48,7 @@ Guidelime.registerGuide(
 [OC]|cFFFFFFFF(D)|r Run north back to Ironforge
        [OC]Run to the flightmaster
 
-|cFFFFFFFF(D)|r |cFFfff8a3Fly from Ironforge to [F Morgan's Vigil], eta 05:50|r
+[OC]|cFFFFFFFF(D)|r |cFFfff8a3Fly from Ironforge to [F Morgan's Vigil], eta 05:50|r
        At Oralius, [QA4286 The Good Stuff]
        At Marshal Maxwell, [QA4241 Marshal Windsor]
        At Jalinda Sprig, [QA4262 Overmaster Pyron]
@@ -95,8 +94,7 @@ Guidelime.registerGuide(
 [OC]Run to the Blackrock Depths portal
 [OC]Enter Blackrock Depths
 
-[OC]On-The-Go Quests: (Take a moment to read over this section, maybe write it down)
-       For |cFFFFFFFFO|r [QA4286 The Good Stuff] (Kill dwarves for 20 Dark Iron Fanny Pack)
+[O]|cFF66ff66On the go:|r [QC4286 The Good Stuff] (Kill dwarves for 20 Dark Iron Fanny Pack)
 
 [OC]Grind to spot 5
        [OC]Kill High Interrogator Gerstahn for the Prison Cell Key
@@ -125,7 +123,7 @@ Guidelime.registerGuide(
        [OC]At the High Seat
               At King Magni Bronzebeard, [QT4361 The Bearer of Bad News] [QA4362 The Fate of the Kingdom]
 
-|cFFfff8a3Fly from Ironforge to [F Morgan's Vigil], eta 05:50|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Morgan's Vigil], eta 05:50|r
        At Marshal Maxwell, [QT4242 Abandoned Hope]
        At Jalinda Sprig, [QT4262 Overmaster Pyron] [QA4263 Incendius!]
 
@@ -250,7 +248,7 @@ Right click A Crumpled Up Note, [QA4264 A Crumpled Up Note]
 [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind, continue at Stormwind below
 [OC]|cFFFFFFFF(D)|r Run north back to Ironforge
 
-|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
        [OC]|cFFFFFFFF(D)|r Run to the entrance of Stormwind to Squire Rowe
               [OC]Speak through all the dialogue to summon Reginald Windsor
               [OC]At Reginald Windsor
@@ -270,26 +268,24 @@ Right click A Crumpled Up Note, [QA4264 A Crumpled Up Note]
                      [OC]! A Donation of Mageweave
                      [OC]! A Donation of Runecloth
 
-|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Booty Bay], eta 03:51|r
 
-[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.
-[OC]Craft bandages or fish while you wait.|r
+[OC]|cFFfff8a3Take the boat from Booty Bay to Ratchet, a boat shows up every 05:50.\\Craft bandages or fish while you wait.|r
        [OC]Left of the dock in the hut
               At Liv Rizzlefix, [QT4502 Volcanic Activity]
        [OC]Run south to the inn
-              [OC]At Innkeeper Wiley
-                     Bind your Hearthstone to the innkeeper in [S Ratchet] [V]
+              At Innkeeper Wiley, Bind your Hearthstone to [S Ratchet]
        [OC]Run north to flightmaster Bragok
 
 [OC]====================================
 [OC]    Level 58
 [OC]====================================
-|cFFfff8a3Fly from Ratchet to [F Gadgetzan], eta 04:07|r
+[OC]|cFFfff8a3Fly from Ratchet to [F Gadgetzan], eta 04:07|r
        [OC]On the northwest side at Sprinkle
        Do [QC5163,1 Are We There, Yeti?] (Use Umi's Mechanical Yeti to scare Sprinkle)
        [OC]Run south to flightmaster Bragok
 
-|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Marshal's Refuge], eta 01:38|r
        [OC]Just west at Quixxil
        Do [QC5163,1 Are We There, Yeti?] (Use Umi's Mechanical Yeti to scare Quixxil)
        [OC]Run east to the flightmaster
@@ -302,7 +298,7 @@ Right click A Crumpled Up Note, [QA4264 A Crumpled Up Note]
        [OC]! Zulian, Razzashi, and Hakkari Coins
        [OC]If there aren't enough coins available continue the guide normally
 
-|cFFfff8a3Fly from Marshal's Refuge to [F Cenarion Hold], eta 01:30|r
+[OC]|cFFfff8a3Fly from Marshal's Refuge to [F Cenarion Hold], eta 01:30|r
 
 [OC]====================================
 [OC]    Finished

@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Tanaris
 [OC]====================================
-[OC]* Minimum /played: 1 days, 22 hours, 11 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 20 hours, 11 minutes, 0 seconds
 [OC]* Minimum Segment Time: 2 hours, 52 minutes, 0 seconds
-[OC]* Average /played: 3 days, 20 hours, 22 minutes, 0 seconds
+[OC]* Average /played: 3 days, 16 hours, 22 minutes, 0 seconds
 [OC]* Average Segment Time: 5 hours, 44 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 9/20
@@ -28,8 +28,7 @@ Guidelime.registerGuide(
               |cFFFFFFFFO|r [QA2861 Tabetha's Task]
 [OC]====================================
 [OC]In Gadgetzan
-       [OC]At Innkeeper Fizzgrimble
-              Bind your Hearthstone to the innkeeper in [S Gadgetzan] [V]
+       At Innkeeper Fizzgrimble, Bind your Hearthstone to [S Gadgetzan]
        [OC]On the southeast side
               At Chief Engineer Bilgewhizzle, [QA1690 Wastewander Justice]
               At Spigot Operator Luglunket, [QA1707 Water Pouch Bounty]
@@ -59,13 +58,14 @@ Guidelime.registerGuide(
        [OC]Destroy Sample of Indurium Ore
 
 [OC]Run south back to Tanaris
-[OC]|cFFa335ee[A Hunter]Hunter:|r South of Gadgetzan, tame a Scorpid Hunter
+[OC]|cFFa335ee[A Hunter]Hunter:|r South of Gadgetzan
+       [OC][A Hunter]Tame a Scorpid Hunter, use Scorpid Poison Rank 3 to learn it
 
 [OC]Run east to Noonshade Ruins [G 60,24 Tanaris] (60, 24)
        [OC](Discover Noonshade Ruins)
        [OC]Clear the entire camp
-       [OC]Do some ? Wastewander Justice (Kill Wastewander Bandit (Prime Aoe), Wastewander Thief (Prime Aoe))
-       [OC]Do some ? Water Pouch Bounty (Kill Wastewander (Prime Aoe) for Water Pouch)
+       Do some |cFFFFFFFFO|r [QA1690 Wastewander Justice] (Kill Wastewander Bandit (Prime Aoe), Wastewander Thief (Prime Aoe))
+       Do some |cFFFFFFFFO|r [QA1707 Water Pouch Bounty] (Kill Wastewander (Prime Aoe) for Water Pouch)
 
 [OC]Run east to Steamwheedle Port
        [OC](Discover Steamwheedle Port)
@@ -87,7 +87,7 @@ Guidelime.registerGuide(
        At Spigot Operator Luglunket, [QT1707 Water Pouch Bounty]
        [OC]At Blizrik Buckshot, [R][V]
        [OC]At the bank
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth, Extra Potions, Recipes
+              [OC]|cFFe6cc80Deposit:|r Extra cloth, potions, recipes
 
 [OC]Run southeast to Wastewander Field [G 60,41 Tanaris] (60, 41)
        [OC]Find the patroller Caliph Scorpidsting
@@ -135,7 +135,7 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]Run back to Gadgetzan
        [OC]At the bank
-              [OC]|cFFe6cc80Deposit:|r Extra Cloth, Extra Potions, Recipes
+              [OC]|cFFe6cc80Deposit:|r Extra cloth, potions, recipes
 
 [OC]Run far west to Sandorrow Watch [G 39,29 Tanaris] (39, 29)
        [OC](Discover Sandorrow Watch)
@@ -146,7 +146,7 @@ Guidelime.registerGuide(
               At Senior Surveyor Fizzledowser, [QT992 Gadgetzan Water Survey]
        [OC]Run south to the flightmaster
 
-|cFFfff8a3Fly from Gadgetzan to [F Theramore Isle], eta 02:25|r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Theramore Isle], eta 02:25|r
 
 [OC]Run southwest to the Gizmorium Shipping Crate [G 54,56.5 Dustwallow Marsh] (54, 56.5)
        Do [QC1187 Razzeric's Tweaking] (Loot Gizmorium Shipping Crate for Seaforium Booster)
@@ -166,7 +166,7 @@ Guidelime.registerGuide(
 |cFFfff8a3Hearth to [H Gadgetzan] [V]|r
        [OC]Run south to flightmaster Bera Stonehammer
 
-|cFFfff8a3Fly from Gadgetzan to [F Feathermoon Stronghold], eta |r
+[OC]|cFFfff8a3Fly from Gadgetzan to [F Feathermoon Stronghold], eta |r
 
 [OC]====================================
 [OC]    Finished

@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Western Plaguelands
 [OC]====================================
-[OC]* Minimum /played: 2 days, 19 hours, 10 minutes, 9 seconds
+[OC]* Minimum /played: 2 days, 17 hours, 10 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 30 minutes, 0 seconds
-[OC]* Average /played: 5 days, 14 hours, 20 minutes, 18 seconds
+[OC]* Average /played: 5 days, 10 hours, 20 minutes, 18 seconds
 [OC]* Average Segment Time: 3 hours, 0 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 15/20 (~82K Total XP)
@@ -81,7 +81,7 @@ Guidelime.registerGuide(
               [OC]! Minion's Scourgestones as many times as you can
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge
 
-|cFFfff8a3Fly from Chillwind Camp to [F Ironforge], eta 04:07|r
+[OC]|cFFfff8a3Fly from Chillwind Camp to [F Ironforge], eta 04:07|r
        [OC]Run west to The Mystic Ward
               At Tymor, [QT3461 Return to Tymor]
        [OC]Run northeast to Hall of Explorers
@@ -89,7 +89,7 @@ Guidelime.registerGuide(
                      [QT4512 A Little Slime Goes a Long Way], wait, [QA4513 A Little Slime Goes a Long Way]
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind
 
-|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Stormwind], eta 03:20|r
        [OC]Run northwest to Cathedral Square
               Upstairs at Royal Factor Bathrilor, [QT5022 Better Late Than Never] [QA5048 Good Natured Emma]
        [OC]Run just southeast to the canal side of Cathedral Square
@@ -98,7 +98,7 @@ Guidelime.registerGuide(
               At Brohann Caskbelly, [QT1469 Rhapsody's Tale]
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Stormwind to [F Nethergarde Keep], eta 02:47|r
+[OC]|cFFfff8a3Fly from Stormwind to [F Nethergarde Keep], eta 02:47|r
        [OC]Just north atop the tower
               [OC]|cFFFFFFFF(D)|r At Thadius Grimshade
                      [QT2991 Nekrum's Medallion]
@@ -118,7 +118,7 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]Run southeast back to Nethergarde Keep
 
-|cFFfff8a3Fly from Nethergarde Keep to [F Lakeshire], eta 02:23|r
+[OC]|cFFfff8a3Fly from Nethergarde Keep to [F Lakeshire], eta 02:23|r
 
 [OC]Run northeast along the road to Burning Steppes
        [OC](Discover Blackrock Pass)

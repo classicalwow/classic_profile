@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Desolace
 [OC]====================================
-[OC]* Minimum /played: 1 days, 2 hours, 31 minutes, 0 seconds
+[OC]* Minimum /played: 1 days, 0 hours, 31 minutes, 0 seconds
 [OC]* Minimum Segment Time: 2 hours, 46 minutes, 0 seconds
-[OC]* Average /played: 2 days, 5 hours, 2 minutes, 0 seconds
+[OC]* Average /played: 2 days, 1 hours, 2 minutes, 0 seconds
 [OC]* Average Segment Time: 5 hours, 32 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20
@@ -45,8 +45,8 @@ Guidelime.registerGuide(
               [QA1458 Reagents for Reclaimers Inc.]
        [OC]Run west up the hill to flightmaster Baritanas Skyriver
               Get the [P Nijel's Point] flightpoint
-       [OC]Run northeast to the inn to Innkeeper Lyshaerya
-              Bind your Hearthstone to the innkeeper in [S Nijel's Point] [V]
+       [OC]Run northeast to the inn
+              At Innkeeper Lyshaerya, Bind your Hearthstone to [S Nijel's Point]
        [OC]Jump off the ledge heading south and exit Nijel's Point
 
 [OC]Run east to Sargeron
@@ -174,19 +174,18 @@ Finish [QC1459,1 Reagents for Reclaimers Inc.] (Kill scorpions (Aoe'able) for 7 
 
 [OC]If you are fine with your First Aid being < 225
        [OC]Run west up the hill to flightmaster Baritanas Skyriver
-       |cFFfff8a3Fly from Nijel's Point to [F Theramore Isle], eta 04:50|r
+       [OC]|cFFfff8a3Fly from Nijel's Point to [F Theramore Isle], eta 04:50|r
        [OC]You are done with this segment, continue on the next segment
 
 [OC]|cFFa335eeFirst Aid 225:|r
        [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Ironforge, continue at Ironforge below
        [OC]Run west up the hill to flightmaster Baritanas Skyriver
-       |cFFfff8a3Fly from Nijel's Point to [F Theramore Isle], eta 04:50|r
+       [OC]|cFFfff8a3Fly from Nijel's Point to [F Theramore Isle], eta 04:50|r
        [OC]Run to the docks
-       [OC]|cFFfff8a3Take the boat from Theramore Isle to Menethil Harbor, a boat shows up every 05:28.
-[OC]Craft bandages or fish while you wait.|r
+       [OC]|cFFfff8a3Take the boat from Theramore Isle to Menethil Harbor, a boat shows up every 05:28.\\Craft bandages or fish while you wait.|r
 
 [OC]|cFFa335eeFirst Aid 225:|r
-       |cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
+       [OC]|cFFfff8a3Fly from Menethil Harbor to [F Ironforge], eta 01:24|r
               [OC]Run near the flightmaster to the Ironforge Physician shop [G 55,58 Dustwallow Marsh] (55, 58)
                      At Nissa Firestone, [QA6625 Alliance Trauma]
               [OC]BANK/BANKALT/AUCTION
@@ -194,10 +193,9 @@ Finish [QC1459,1 Reagents for Reclaimers Inc.] (Kill scorpions (Aoe'able) for 7 
               [OC]Keep your mount in mind but [T] Train spells at your class trainer, Equip new spells
 
 [OC]|cFFa335eeFirst Aid 225:|r
-       |cFFfff8a3Fly from Ironforge to [F Menethil Harbor], eta 02:02|r
+       [OC]|cFFfff8a3Fly from Ironforge to [F Menethil Harbor], eta 02:02|r
        [OC]Run to the docks
-       [OC]|cFFfff8a3Take the boat from Theramore Isle to Menethil Harbor, a boat shows up every 05:28.
-[OC]Craft bandages or fish while you wait.|r
+       [OC]|cFFfff8a3Take the boat from Theramore Isle to Menethil Harbor, a boat shows up every 05:28.\\Craft bandages or fish while you wait.|r
               [OC]This quest is time sensitive
               [OC]You will use Triage Bandage on 15 patients before 6 die
                      [OC]Prioritize Critically Injured victims, then Badly Injured victims then Injured victims

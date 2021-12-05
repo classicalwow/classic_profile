@@ -6,9 +6,9 @@ Guidelime.registerGuide(
 [OC]====================================
 [OC]    Burning Steppes
 [OC]====================================
-[OC]* Minimum /played: 3 days, 7 hours, 31 minutes, 9 seconds
+[OC]* Minimum /played: 3 days, 5 hours, 31 minutes, 9 seconds
 [OC]* Minimum Segment Time: 1 hours, 15 minutes, 0 seconds
-[OC]* Average /played: 6 days, 15 hours, 2 minutes, 18 seconds
+[OC]* Average /played: 6 days, 11 hours, 2 minutes, 18 seconds
 [OC]* Average Segment Time: 2 hours, 30 minutes, 0 seconds
 [OC]====================================
 [OC]Current Quest Log: 12/20 (~40K Total XP)
@@ -51,22 +51,22 @@ Guidelime.registerGuide(
        [OC]Run southeast to Morgan's Vigil
               [OC]At Helendis Riverhorn
                      [QT4182 Dragonkin Menace] [QA4183 The True Masters]
-       |cFFfff8a3Fly from Morgan's Vigil to [F Lakeshire], eta 01:00|r
+       [OC]|cFFfff8a3Fly from Morgan's Vigil to [F Lakeshire], eta 01:00|r
               [OC]Run across the bridge to the main hall
               At Magistrate Solomon, [QT4183 The True Masters] [QA4184 The True Masters]
               [OC]|cFFa335ee[A Mage]Mage:|r Teleport to Stormwind, continue at Stormwind below
               [OC]Run back across the bridge to the flightmaster
-       |cFFfff8a3Fly from Lakeshire to [F Stormwind], eta 01:47|r
+       [OC]|cFFfff8a3Fly from Lakeshire to [F Stormwind], eta 01:47|r
               [OC]Run northeast to Stormwind Keep
               At Highlord Bolvar Fordragon, [QT4184 The True Masters] [QA4185 The True Masters]
               [OC]Speak with Lady Katrana Prestor through all the dialog
               At Highlord Bolvar Fordragon,[QT4185 The True Masters] [QA4186 The True Masters]
               [OC]Run southwest back to the flightmaster
-       |cFFfff8a3Fly from Stormwind to [F Lakeshire], eta 01:47|r
+       [OC]|cFFfff8a3Fly from Stormwind to [F Lakeshire], eta 01:47|r
               [OC]Run across the bridge to the main hall
               At Magistrate Solomon, [QT4186 The True Masters] [QA4223 The True Masters]
               [OC]Run back across the bridge to the flightmaster
-       |cFFfff8a3Fly from Lakeshire to [F Morgan's Vigil], eta 58|r
+       [OC]|cFFfff8a3Fly from Lakeshire to [F Morgan's Vigil], eta 58|r
               At Marshal Maxwell, [QT4223 The True Masters] [QA4224 The True Masters]
 
 [OC]Run far northwest to Flame Crest [G 65,24 Burning Steppes] (65, 24)
@@ -76,7 +76,7 @@ Guidelime.registerGuide(
               Speak through all the dialog for [QC4224 The True Masters]
 
 [OC]Grind southwest to Tablet of the Seven [G 54,41 Burning Steppes] (54, 41) at the statue
-       [OC]Do some ? The Smoldering Ruins of Thaurissan (Loot 12 Thaurissan Relic)
+       Do some |cFFFFFFFFO|r [QA3701 The Smoldering Ruins of Thaurissan] (Loot 12 Thaurissan Relic)
        Loot it for Tablet Transcript for [QC4296 Tablet of the Seven]
 
 [OC]Grind northeast to Flame Crest
@@ -92,12 +92,12 @@ Guidelime.registerGuide(
 
 |cFFfff8a3Hearth to [H Ironforge] [V]|r
        [OC]At the Auction House
-              [OC]Buy 2 Thorium Bar for upcoming quest
+              Buy 2 [CI12359,2] for a quest in Un'goro Crater
        [OC]Run to the center to The High Seat
               At Royal Historian Archesonus, [QT3701 The Smoldering Ruins of Thaurissan]
        [OC]Run to the flightmaster
 
-|cFFfff8a3Fly from Ironforge to [F Chillwind Camp], eta 04:39|r
+[OC]|cFFfff8a3Fly from Ironforge to [F Chillwind Camp], eta 04:39|r
 
 [OC]====================================
 [OC]    Finished

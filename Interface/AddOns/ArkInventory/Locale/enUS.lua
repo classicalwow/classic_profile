@@ -896,10 +896,13 @@ if not L then return end
 	L["LDB_OBJECT_TEXT_SET_DESC"] = "Set this %1$s as the LDB object text"
 	L["LDB_OBJECT_TEXT_INCLUDE"] = "Include in Text"
 	L["LDB_OBJECT_TEXT_INCLUDE_DESC"] = "Include the icon and count for this %1$s in the LDB object text"
-	L["LDB_OBJECT_TEXT_FORMAT DESC"] = "What format do you want to use to build the values in the LDB object text"
+	L["LDB_OBJECT_TEXT_FORMAT_DESC"] = "What format do you want to use to build the values in the LDB object text"
 	L["LDB_OBJECT_TOOLTIP_INCLUDE"] = "Include in Tooltip"
 	L["LDB_OBJECT_TOOLTIP_INCLUDE_DESC"] = "Include the icon and count for this %1$s in the LDB object tooltip"
 	L["LDB_OBJECT_TOOLTIP_FORMAT_DESC"] = "What format do you want to use to build the values in the LDB object tooltip"
+	
+	L["LDB_ITEMS_SHOWZERO"] = "Show Zero"
+	L["LDB_ITEMS_SHOWZERO_DESC"] = "Show items that have a count of zero"
 	
 	L["LDB_TRACKED_NONE"] = "no %1$s is currently being tracked"
 	L["LDB_LOCATION_NOT_READY"] = "%1$s data is not ready"
