@@ -1,11 +1,13 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.053,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 1282,
-			["Level"] = 33,
-			["Link"] = "|cff1eff00|Hitem:1282::::::::34:::::::::|h[火花铁帽]|h|r",
+			["ID"] = 9664,
+			["Level"] = 45,
+			["Link"] = "|cff1eff00|Hitem:9664::::::::46:::::::::|h[卫戍头盔]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 12028,
@@ -23,9 +25,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:6087::::::::19:::::::::|h[西部荒野马裤]|h|r",
 		},
 		[15] = {
-			["ID"] = 5193,
-			["Level"] = 25,
-			["Link"] = "|cff0070dd|Hitem:5193::::::::20:::::::::|h[兄弟会斗篷]|h|r",
+			["ID"] = 4114,
+			["Level"] = 42,
+			["Link"] = "|cff1eff00|Hitem:4114::::::::45:::::::::|h[黑潮斗篷]|h|r",
 		},
 		[8] = {
 			["ID"] = 4653,
@@ -52,16 +54,16 @@ PawnOptions = {
 			["Level"] = 45,
 			["Link"] = "|cff0070dd|Hitem:9410::::::1208:1184142464:42:::::::::|h[野熊之山壁之拳]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 6223,
+			["Level"] = 35,
+			["Link"] = "|cff1eff00|Hitem:6223::::::::34:::::::::|h[夜色镇徽记之盾]|h|r",
 		},
 		[11] = {
-			["ID"] = 7552,
-			["Level"] = 44,
+			["ID"] = 4549,
+			["Level"] = 46,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff1eff00|Hitem:7552::::::::43:::::::::|h[猎鹰之钩]|h|r",
+			["Link"] = "|cff1eff00|Hitem:4549::::::::46:::::::::|h[海焰指环]|h|r",
 		},
 		[6] = {
 			["ID"] = 14906,
@@ -74,14 +76,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff1eff00|Hitem:7552::::::::44:::::::::|h[猎鹰之钩]|h|r",
 		},
-		[17] = {
-			["ID"] = 6223,
-			["Level"] = 35,
-			["Link"] = "|cff1eff00|Hitem:6223::::::::34:::::::::|h[夜色镇徽记之盾]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
