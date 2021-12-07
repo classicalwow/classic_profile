@@ -97,6 +97,13 @@ X: 0
 Y: 0
 W: 56
 H: 429
+Frame: ATT-Classic-Window-AuctionData
+FrameLevel: 2
+Anchor: TOP
+X: -85
+Y: -114
+W: 300
+H: 427
 Frame: aux_frame
 FrameLevel: 1
 Anchor: CENTER
