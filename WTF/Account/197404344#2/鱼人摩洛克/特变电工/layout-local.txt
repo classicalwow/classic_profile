@@ -90,13 +90,6 @@ X: 0
 Y: 0
 W: 300
 H: 300
-Frame: ATT-Classic-Window-Tradeskills
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 56
-H: 429
 Frame: ATT-Classic-Window-AuctionData
 FrameLevel: 2
 Anchor: TOP
@@ -111,3 +104,10 @@ X: -119
 Y: -13
 W: 768
 H: 447
+Frame: ATT-Classic-Window-Tradeskills
+FrameLevel: 1
+Anchor: TOPLEFT
+X: 347
+Y: -115
+W: 56
+H: 429
