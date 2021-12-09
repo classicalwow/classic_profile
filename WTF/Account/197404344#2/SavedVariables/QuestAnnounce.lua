@@ -5,6 +5,9 @@ QuestAnnounceDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["announceIn"] = {
+				["say"] = true,
+			},
 			["profile"] = {
 				["announceTo"] = {
 					["raidWarningFrame"] = false,
@@ -13,8 +16,8 @@ QuestAnnounceDB = {
 				},
 				["settings"] = {
 					["enable"] = true,
-					["sound"] = true,
 					["debug"] = false,
+					["sound"] = true,
 					["every"] = 1,
 				},
 				["announceIn"] = {
@@ -24,9 +27,6 @@ QuestAnnounceDB = {
 					["whisper"] = false,
 					["officer"] = false,
 				},
-			},
-			["announceIn"] = {
-				["say"] = true,
 			},
 		},
 	},

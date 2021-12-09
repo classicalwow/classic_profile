@@ -6,6 +6,7 @@ DataStore_CraftsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
+				["lastUpdate"] = 1638981312,
 				["Professions"] = {
 					["急救"] = {
 						["Categories"] = {
@@ -27,7 +28,7 @@ DataStore_CraftsDB = {
 							"0|材料", -- [10]
 							"4|6452", -- [11]
 						},
-						["Rank"] = 240,
+						["Rank"] = 267,
 					},
 					["骑术：马"] = {
 						["isSecondary"] = true,
@@ -35,7 +36,6 @@ DataStore_CraftsDB = {
 						["Rank"] = 300,
 					},
 				},
-				["lastUpdate"] = 1638893641,
 			},
 		},
 	},
