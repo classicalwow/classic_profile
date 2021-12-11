@@ -6,7 +6,7 @@ DataStore_TalentsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1639069731,
+				["lastUpdate"] = 1639162297,
 				["Class"] = "WARRIOR",
 				["TalentTrees"] = {
 					["武器"] = {
@@ -70,9 +70,9 @@ DataStore_TalentsRefDB = {
 					["icon"] = 132292,
 					["prereqs"] = {
 						[8] = "2|2",
-						[11] = "3|3",
-						[9] = "1|3",
 						[18] = "5|2",
+						[9] = "1|3",
+						[11] = "3|3",
 					},
 				},
 				["防护"] = {

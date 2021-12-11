@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.053,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 9664,
@@ -52,10 +54,10 @@ PawnOptions = {
 			["Level"] = 45,
 			["Link"] = "|cff0070dd|Hitem:9410::::::1208:1184142464:42:::::::::|h[野熊之山壁之拳]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 6223,
+			["Level"] = 35,
+			["Link"] = "|cff1eff00|Hitem:6223::::::::34:::::::::|h[夜色镇徽记之盾]|h|r",
 		},
 		[11] = {
 			["ID"] = 9533,
@@ -69,19 +71,17 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:14906::::::1560:1157381632:40:::::::::|h[能量之蛮兽腰带]|h|r",
 		},
 		[12] = {
-			["ID"] = 4549,
-			["Level"] = 46,
+			["ID"] = 9533,
+			["Level"] = 47,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff1eff00|Hitem:4549::::::::47:::::::::|h[海焰指环]|h|r",
+			["Link"] = "|cff0070dd|Hitem:9533::::::::51:::::::::|h[石工兄弟会之戒]|h|r",
 		},
-		[17] = {
-			["ID"] = 6223,
-			["Level"] = 35,
-			["Link"] = "|cff1eff00|Hitem:6223::::::::34:::::::::|h[夜色镇徽记之盾]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
