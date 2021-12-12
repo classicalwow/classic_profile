@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.14.10 (1st December 2021)
+	-- 	Leatrix Maps 1.14.13 (8th December 2021)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList = {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.14.10"
+	LeaMapsLC["AddonVer"] = "1.14.13"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -1392,7 +1392,7 @@
 				if WorldMapFrame:IsShown() then WorldMapFrame:Hide() else WorldMapFrame:Show() end
 			end
 
-			-- Close map with Escape key
+			-- Handle open and close the map for sticky map frame
 			if LeaMapsLC["StickyMapFrame"] == "Off" then
 				table.insert(UISpecialFrames, "WorldMapFrame")
 			end
@@ -1613,7 +1613,6 @@
 					{"Spirit", 39.2, 93.7, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Spirit", 80.4, 65.3, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 11.8, 72.7, L["Western Plaguelands"], nil, arTex, nil, nil, nil, nil, nil, 1.6, 1422},
-					{"Arrow", 58.7, 17.5, L["Ghostlands"], nil, arTex, nil, nil, nil, nil, nil, 0.4, 1942},
 				},
 				--[[Hillsbrad Foothills]] [1424] = {
 					{"FlightA", 49.3, 52.3, L["Southshore"] .. ", " .. L["Hillsbrad Foothills"], nil, tATex, nil, nil},
@@ -1689,7 +1688,7 @@
 					{"Arrow", 20.4, 17.4, L["Dun Morogh"], L["North Gate Pass"], arTex, nil, nil, nil, nil, nil, 1.1, 1426},
 					{"Arrow", 46.8, 76.9, L["Badlands"], nil, arTex, nil, nil, nil, nil, nil, 3.2, 1418},
 					{"Arrow", 21.5, 66.2, L["Dun Morogh"], L["South Gate Pass"], arTex, nil, nil, nil, nil, nil, 0.5, 1426},
-					{"Arrow", 25.4, 10.9, L["Wetlands"], nil, arTex, nil, nil, nil, nil, nil, 0.1, 1437},
+					{"Arrow", 25.4, 10.9, L["Wetlands"], L["Dun Algaz"], arTex, nil, nil, nil, nil, nil, 0.1, 1437},
 				},
 				--[[Redridge Mountains]] [1433] = {
 					{"FlightA", 30.6, 59.4, L["Lake Everstill"] .. ", " .. L["Redridge Mountains"], nil, tATex, nil, nil},
@@ -1731,7 +1730,7 @@
 					{"Spirit", 11.0, 43.8, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Spirit", 49.3, 41.8, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 51.3, 10.3, L["Arathi Highlands"], L["Thandol Span"], arTex, nil, nil, nil, nil, nil, 0, 1417},
-					{"Arrow", 56.0, 70.3, L["Loch Modan"], L["Dul Algaz"], arTex, nil, nil, nil, nil, nil, 1.8, 1432},
+					{"Arrow", 56.0, 70.3, L["Loch Modan"], L["Dun Algaz"], arTex, nil, nil, nil, nil, nil, 1.8, 1432},
 				},
 				--[[Stormwind City]] [1453] = {
 					{"Dungeon", 42.3, 59.0, L["The Stockade"], L["Dungeon"], dnTex, 24, 32},
@@ -2018,6 +2017,8 @@
 								myPOI["description"] = pinInfo[5]
 								myPOI["atlasName"] = pinInfo[6]
 								local pin = self:GetMap():AcquirePin("LeaMapsGlobalPinTemplate", myPOI)
+								pin.Texture:SetRotation(0)
+								pin.HighlightTexture:SetRotation(0)
 								-- Override travel textures
 								if pinInfo[1] == "TravelA" then
 									pin.Texture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")

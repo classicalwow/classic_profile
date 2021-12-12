@@ -1,7 +1,7 @@
 
 alaTalentEmuSV = {
 	["var"] = {
-		["Player-5458-02F6D2A3"] = "9UKBW-yBVVGn0",
+		["Player-5458-02F6D2A3"] = "9UKBW-yBVVG8-p0",
 		["savedTalent"] = {
 		},
 	},

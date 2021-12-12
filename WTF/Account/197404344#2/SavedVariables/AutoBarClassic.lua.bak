@@ -90,7 +90,7 @@ AutoBarDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonQuest"] = {
-					["arrangeOnUse"] = 8584,
+					["arrangeOnUse"] = 17693,
 				},
 				["AutoBarButtonBuff"] = {
 					["arrangeOnUse"] = 2289,
