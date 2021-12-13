@@ -6,8 +6,8 @@ AtlasDB = {
 	["profiles"] = {
 		["Default"] = {
 			["dropdowns"] = {
-				["东部王国副本"] = 7,
 				["卡利姆多副本"] = 13,
+				["东部王国副本"] = 7,
 			},
 			["options"] = {
 				["dropdowns"] = {

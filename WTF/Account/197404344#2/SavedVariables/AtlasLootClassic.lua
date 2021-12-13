@@ -1,10 +1,10 @@
 
 AtlasLootClassicDB = {
-	["profileKeys"] = {
-		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
-	},
 	["global"] = {
 		["__addonrevision"] = 2040000,
+	},
+	["profileKeys"] = {
+		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
 	},
 	["profiles"] = {
 		["特变电工 - 鱼人摩洛克"] = {
@@ -18,8 +18,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"Maraudon", -- [2]
-					10, -- [3]
+					"TheTempleOfAtal'Hakkar", -- [2]
+					11, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

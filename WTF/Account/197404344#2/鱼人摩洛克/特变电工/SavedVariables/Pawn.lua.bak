@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 9664,
@@ -8,9 +10,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:9664::::::::46:::::::::|h[卫戍头盔]|h|r",
 		}, -- [1]
 		{
-			["ID"] = 12028,
-			["Level"] = 32,
-			["Link"] = "|cff1eff00|Hitem:12028::::::1188:2053675904:35:::::::::|h[野熊之黑陶项链]|h|r",
+			["ID"] = 17772,
+			["Level"] = 42,
+			["Link"] = "|cff1eff00|Hitem:17772::::::::53:::::::::|h[热情暗影残片坠饰]|h|r",
 		}, -- [2]
 		{
 			["ID"] = 9531,
@@ -39,9 +41,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:15216::::::682:1946349312:52:::::::::|h[猛虎之符文剑]|h|r",
 		},
 		[9] = {
-			["ID"] = 9409,
-			["Level"] = 42,
-			["Link"] = "|cff0070dd|Hitem:9409::::::1557:176719232:42:::::::::|h[能量之艾隆纳亚的护腕]|h|r",
+			["ID"] = 10239,
+			["Level"] = 51,
+			["Link"] = "|cff1eff00|Hitem:10239::::::193:1698566400:53:::::::::|h[力量之重型板层臂铠]|h|r",
 		},
 		[18] = {
 			["ID"] = 15807,
@@ -53,10 +55,10 @@ PawnOptions = {
 			["Level"] = 45,
 			["Link"] = "|cff0070dd|Hitem:9410::::::1208:1184142464:42:::::::::|h[野熊之山壁之拳]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 6828,
+			["Level"] = 38,
+			["Link"] = "|cff1eff00|Hitem:6828::::::::52:::::::::|h[幻像圆盾]|h|r",
 		},
 		[11] = {
 			["ID"] = 9533,
@@ -75,14 +77,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff0070dd|Hitem:9533::::::::51:::::::::|h[石工兄弟会之戒]|h|r",
 		},
-		[17] = {
-			["ID"] = 6223,
-			["Level"] = 35,
-			["Link"] = "|cff1eff00|Hitem:6223::::::::34:::::::::|h[夜色镇徽记之盾]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
