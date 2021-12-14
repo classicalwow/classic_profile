@@ -6,7 +6,7 @@ DataStore_TalentsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1639332964,
+				["lastUpdate"] = 1639418313,
 				["Class"] = "WARRIOR",
 				["TalentTrees"] = {
 					["武器"] = {
@@ -14,8 +14,9 @@ DataStore_TalentsDB = {
 						2, -- [2]
 						3, -- [3]
 						[5] = 5,
-						[7] = 1,
+						[7] = 2,
 						[9] = 3,
+						[11] = 1,
 					},
 					["狂怒"] = {
 						nil, -- [1]
@@ -37,7 +38,7 @@ DataStore_TalentsDB = {
 						1, -- [17]
 					},
 				},
-				["PointsSpent"] = "14,31,0",
+				["PointsSpent"] = "16,31,0",
 			},
 		},
 	},
@@ -53,9 +54,9 @@ DataStore_TalentsRefDB = {
 				["武器"] = {
 					["prereqs"] = {
 						[8] = "2|2",
-						[11] = "3|3",
-						[9] = "1|3",
 						[18] = "5|2",
+						[9] = "1|3",
+						[11] = "3|3",
 					},
 					["background"] = "WarriorArms",
 					["icon"] = 132292,

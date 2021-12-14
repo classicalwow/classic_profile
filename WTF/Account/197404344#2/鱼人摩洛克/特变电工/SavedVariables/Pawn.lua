@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 20521,
@@ -18,9 +20,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:9531::::::::51:::::::::|h[晶岩肩铠]|h|r",
 		}, -- [3]
 		[7] = {
-			["ID"] = 9652,
-			["Level"] = 53,
-			["Link"] = "|cff1eff00|Hitem:9652::::::::51:::::::::|h[狮鹫骑士护腿]|h|r",
+			["ID"] = 15062,
+			["Level"] = 60,
+			["Link"] = "|cff0070dd|Hitem:15062::::::::56:::::::::|h[魔暴龙皮护腿]|h|r",
 		},
 		[15] = {
 			["ID"] = 4114,
@@ -49,14 +51,15 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:3430::::::132:1813535872:54:::::::::|h[敏捷之狙击步枪]|h|r",
 		},
 		[10] = {
-			["ID"] = 9410,
-			["Level"] = 45,
-			["Link"] = "|cff0070dd|Hitem:9410::::::1208:1184142464:42:::::::::|h[野熊之山壁之拳]|h|r",
+			["ID"] = 15063,
+			["Level"] = 58,
+			["Link"] = "|cff0070dd|Hitem:15063::::::::56:::::::::|h[魔暴龙皮手套]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 10797,
+			["Level"] = 53,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cff0070dd|Hitem:10797::::::::54:::::::::|h[喷火者]|h|r",
 		},
 		[11] = {
 			["ID"] = 10780,
@@ -75,15 +78,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff0070dd|Hitem:9533::::::::51:::::::::|h[石工兄弟会之戒]|h|r",
 		},
-		[17] = {
-			["ID"] = 10797,
-			["Level"] = 53,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:10797::::::::54:::::::::|h[喷火者]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

@@ -1,10 +1,10 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 2040000,
-	},
 	["profileKeys"] = {
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040000,
 	},
 	["profiles"] = {
 		["特变电工 - 鱼人摩洛克"] = {
@@ -13,13 +13,13 @@ AtlasLootClassicDB = {
 					"BOTTOM", -- [1]
 					nil, -- [2]
 					"BOTTOM", -- [3]
-					8.888955116271973, -- [4]
-					108.8890075683594, -- [5]
+					142.3332214355469, -- [4]
+					108.4446258544922, -- [5]
 				},
 				["selected"] = {
-					nil, -- [1]
-					"TheTempleOfAtal'Hakkar", -- [2]
-					11, -- [3]
+					"AtlasLootClassic_Crafting", -- [1]
+					"Enchanting", -- [2]
+					9, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
