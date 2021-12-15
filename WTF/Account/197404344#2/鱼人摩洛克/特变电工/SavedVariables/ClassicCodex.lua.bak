@@ -10,37 +10,45 @@ CodexConfig = {
 	["minimumDropChance"] = 2,
 	["showLowLevel"] = false,
 	["_tom_waypoint"] = {
-		1449, -- [1]
-		0.429, -- [2]
-		0.096, -- [3]
+		1428, -- [1]
+		0.6759999999999999, -- [2]
+		0.4370000000000001, -- [3]
 		["arrivaldistance"] = 15,
 		["callbacks"] = {
 			["distance"] = {
-			},
-			["minimap"] = {
+				[10] = nil --[[ skipped inline function ]],
+				[15] = nil --[[ skipped inline function ]],
 			},
 			["world"] = {
+				["onclick"] = nil --[[ skipped inline function ]],
+				["tooltip_update"] = nil --[[ skipped inline function ]],
+				["tooltip_show"] = nil --[[ skipped inline function ]],
+			},
+			["minimap"] = {
+				["onclick"] = nil --[[ skipped inline function ]],
+				["tooltip_update"] = nil --[[ skipped inline function ]],
+				["tooltip_show"] = nil --[[ skipped inline function ]],
 			},
 		},
 		["persistent"] = true,
 		["minimap"] = true,
 		["cleardistance"] = 10,
-		["title"] = "穆尔金",
+		["title"] = "索瑞森圣物",
 		["from"] = "?",
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["minimapButton"] = true,
-	["autoTurnin"] = false,
+	["continentIcon"] = false,
+	["currentQuestGivers"] = true,
 	["spawnMarkerSize"] = 15,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["miniMapIcon"] = true,
-	["currentQuestGivers"] = true,
-	["continentIcon"] = false,
+	["autoTurnin"] = false,
+	["minimapButton"] = true,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
@@ -51,9 +59,9 @@ CodexHiddenQuests = {
 	[344] = true,
 	[1267] = true,
 	[151] = true,
-	[968] = true,
-	[741] = true,
 	[64] = true,
+	[741] = true,
+	[968] = true,
 }
 CodexBrowserFavorites = {
 	["objects"] = {

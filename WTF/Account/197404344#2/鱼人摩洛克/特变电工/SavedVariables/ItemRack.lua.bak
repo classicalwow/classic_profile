@@ -7,11 +7,11 @@ ItemRackUser = {
 	["MainScale"] = 1,
 	["SetMenuWrapValue"] = 3,
 	["SetMenuWrap"] = "OFF",
-	["Queues"] = {
-	},
+	["CurrentSet"] = "坐骑",
 	["Sets"] = {
 		["~CombatQueue"] = {
 			["equip"] = {
+				[14] = "1490::::::::56:::::::::",
 			},
 		},
 		["狂暴"] = {
@@ -46,17 +46,19 @@ ItemRackUser = {
 			["oldset"] = "坐骑",
 			["icon"] = 134010,
 			["old"] = {
-				[14] = "1490::::::::55:::::::::",
+				[14] = "1490::::::::56:::::::::",
 			},
 		},
 		["~Unequip"] = {
 			["equip"] = {
+				[14] = "1490::::::::56:::::::::",
 			},
 		},
 	},
 	["EnableQueues"] = "ON",
 	["EnablePerSetQueues"] = "OFF",
-	["EnableEvents"] = "ON",
+	["Buttons"] = {
+	},
 	["ItemsUsed"] = {
 	},
 	["Events"] = {
@@ -67,11 +69,11 @@ ItemRackUser = {
 			["Mounted"] = "坐骑",
 		},
 	},
+	["Alpha"] = 1,
 	["Hidden"] = {
 	},
-	["Alpha"] = 1,
-	["Buttons"] = {
-	},
+	["EnableEvents"] = "ON",
 	["MenuScale"] = 0.85,
-	["CurrentSet"] = "坐骑",
+	["Queues"] = {
+	},
 }
