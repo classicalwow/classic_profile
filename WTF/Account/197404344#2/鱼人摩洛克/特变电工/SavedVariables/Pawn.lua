@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 10749,
@@ -53,10 +55,10 @@ PawnOptions = {
 			["Level"] = 58,
 			["Link"] = "|cff0070dd|Hitem:15063::::::::56:::::::::|h[魔暴龙皮手套]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 11915,
+			["Level"] = 55,
+			["Link"] = "|cff1eff00|Hitem:11915::::::::56:::::::::|h[希兹尔的遮雨板]|h|r",
 		},
 		[11] = {
 			["ID"] = 10780,
@@ -70,19 +72,17 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:14960::::::1206:1952731648:51:::::::::|h[野熊之大酋长腰带]|h|r",
 		},
 		[12] = {
-			["ID"] = 9533,
-			["Level"] = 47,
-			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:9533::::::::51:::::::::|h[石工兄弟会之戒]|h|r",
-		},
-		[17] = {
-			["ID"] = 11915,
+			["ID"] = 10780,
 			["Level"] = 55,
-			["Link"] = "|cff1eff00|Hitem:11915::::::::56:::::::::|h[希兹尔的遮雨板]|h|r",
+			["AlsoFitsIn"] = 11,
+			["Link"] = "|cff1eff00|Hitem:10780::::::::57:::::::::|h[哈卡印记]|h|r",
+		},
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

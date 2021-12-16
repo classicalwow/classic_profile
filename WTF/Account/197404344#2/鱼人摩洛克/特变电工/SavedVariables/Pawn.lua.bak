@@ -1,13 +1,11 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
-			["ID"] = 20521,
-			["Level"] = 52,
-			["Link"] = "|cff0070dd|Hitem:20521::::::::54:::::::::|h[怒火面甲]|h|r",
+			["ID"] = 10749,
+			["Level"] = 54,
+			["Link"] = "|cff0070dd|Hitem:10749::::::::56:::::::::|h[灰岩头盔]|h|r",
 		}, -- [1]
 		{
 			["ID"] = 17772,
@@ -30,9 +28,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:4114::::::::45:::::::::|h[黑潮斗篷]|h|r",
 		},
 		[8] = {
-			["ID"] = 4653,
-			["Level"] = 45,
-			["Link"] = "|cff1eff00|Hitem:4653::::::::44:::::::::|h[铁踵之靴]|h|r",
+			["ID"] = 12021,
+			["Level"] = 54,
+			["Link"] = "|cff1eff00|Hitem:12021::::::::56:::::::::|h[盾甲铁靴]|h|r",
 		},
 		[16] = {
 			["ID"] = 17705,
@@ -55,11 +53,10 @@ PawnOptions = {
 			["Level"] = 58,
 			["Link"] = "|cff0070dd|Hitem:15063::::::::56:::::::::|h[魔暴龙皮手套]|h|r",
 		},
-		[17] = {
-			["ID"] = 10797,
-			["Level"] = 53,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cff0070dd|Hitem:10797::::::::54:::::::::|h[喷火者]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 		[11] = {
 			["ID"] = 10780,
@@ -78,12 +75,14 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff0070dd|Hitem:9533::::::::51:::::::::|h[石工兄弟会之戒]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 11915,
+			["Level"] = 55,
+			["Link"] = "|cff1eff00|Hitem:11915::::::::56:::::::::|h[希兹尔的遮雨板]|h|r",
 		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
