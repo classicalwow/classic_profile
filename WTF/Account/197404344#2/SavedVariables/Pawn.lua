@@ -12,12 +12,6 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["Digits"] = 1,
 	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["LastVersion"] = 2.0531,
-	["ButtonPosition"] = 2,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["IgnoreGemsWhileLeveling"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
 			["PerCharacterOptions"] = {
@@ -433,4 +427,10 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 	},
+	["LastVersion"] = 2.0531,
+	["ButtonPosition"] = 2,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowSpecIcons"] = true,
 }
