@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 10749,
@@ -15,9 +13,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:17772::::::::53:::::::::|h[热情暗影残片坠饰]|h|r",
 		}, -- [2]
 		{
-			["ID"] = 9531,
-			["Level"] = 46,
-			["Link"] = "|cff1eff00|Hitem:9531::::::::51:::::::::|h[晶岩肩铠]|h|r",
+			["ID"] = 12082,
+			["Level"] = 58,
+			["Link"] = "|cff1eff00|Hitem:12082::::::::58:::::::::|h[龙皮肩铠]|h|r",
 		}, -- [3]
 		[7] = {
 			["ID"] = 15062,
@@ -25,9 +23,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:15062::::::::56:::::::::|h[魔暴龙皮护腿]|h|r",
 		},
 		[15] = {
-			["ID"] = 4114,
-			["Level"] = 42,
-			["Link"] = "|cff1eff00|Hitem:4114::::::::45:::::::::|h[黑潮斗篷]|h|r",
+			["ID"] = 11930,
+			["Level"] = 60,
+			["Link"] = "|cff0070dd|Hitem:11930::::::::58:::::::::|h[皇帝的新斗篷]|h|r",
 		},
 		[8] = {
 			["ID"] = 12021,
@@ -35,10 +33,9 @@ PawnOptions = {
 			["Link"] = "|cff1eff00|Hitem:12021::::::::56:::::::::|h[盾甲铁靴]|h|r",
 		},
 		[16] = {
-			["ID"] = 17705,
-			["Level"] = 53,
-			["AlsoFitsIn"] = 17,
-			["Link"] = "|cff0070dd|Hitem:17705::::::::54:::::::::|h[痛击之刃]|h|r",
+			["ID"] = 11817,
+			["Level"] = 56,
+			["Link"] = "|cff0070dd|Hitem:11817::::::::58:::::::::|h[安格弗的剑]|h|r",
 		},
 		[9] = {
 			["ID"] = 10239,
@@ -55,16 +52,16 @@ PawnOptions = {
 			["Level"] = 58,
 			["Link"] = "|cff0070dd|Hitem:15063::::::::56:::::::::|h[魔暴龙皮手套]|h|r",
 		},
-		[17] = {
-			["ID"] = 11915,
-			["Level"] = 55,
-			["Link"] = "|cff1eff00|Hitem:11915::::::::56:::::::::|h[希兹尔的遮雨板]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 		[11] = {
-			["ID"] = 10780,
-			["Level"] = 55,
+			["ID"] = 12548,
+			["Level"] = 60,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cff1eff00|Hitem:10780::::::::54:::::::::|h[哈卡印记]|h|r",
+			["Link"] = "|cff0070dd|Hitem:12548::::::::58:::::::::|h[麦格尼的意志]|h|r",
 		},
 		[6] = {
 			["ID"] = 14960,
@@ -77,12 +74,14 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff1eff00|Hitem:10780::::::::57:::::::::|h[哈卡印记]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 11915,
+			["Level"] = 55,
+			["Link"] = "|cff1eff00|Hitem:11915::::::::56:::::::::|h[希兹尔的遮雨板]|h|r",
 		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

@@ -1,16 +1,16 @@
 
 alaTalentEmuSV = {
-	["var"] = {
-		["Player-5458-02F6D2A3"] = "985vU70YJVGsWI7:=t0",
-		["savedTalent"] = {
-		},
-	},
-	["__upgraded"] = true,
-	["_version"] = 210524,
 	["set"] = {
 		["credible"] = false,
-		["minimapPos"] = 185,
-		["talents_in_tip"] = false,
 		["supreme"] = false,
+		["talents_in_tip"] = false,
+		["minimapPos"] = 185,
+	},
+	["_version"] = 210524,
+	["__upgraded"] = true,
+	["var"] = {
+		["Player-5458-02F6D2A3"] = "985vU70YJVG8rI7:=u0",
+		["savedTalent"] = {
+		},
 	},
 }
