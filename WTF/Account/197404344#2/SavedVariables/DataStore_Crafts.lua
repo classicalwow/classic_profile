@@ -41,7 +41,7 @@ DataStore_CraftsDB = {
 						["Rank"] = 300,
 					},
 				},
-				["lastUpdate"] = 1639825560,
+				["lastUpdate"] = 1639851838,
 				["Prof1"] = "附魔",
 			},
 		},

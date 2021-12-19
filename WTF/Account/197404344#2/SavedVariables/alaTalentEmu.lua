@@ -9,7 +9,7 @@ alaTalentEmuSV = {
 	["_version"] = 210524,
 	["__upgraded"] = true,
 	["var"] = {
-		["Player-5458-02F6D2A3"] = "985vU70YJVG8rI7:=u0",
+		["Player-5458-02F6D2A3"] = "985vU70YJVGckK7:=v0",
 		["savedTalent"] = {
 		},
 	},

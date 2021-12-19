@@ -10,22 +10,30 @@ CodexConfig = {
 	["minimumDropChance"] = 2,
 	["showLowLevel"] = false,
 	["_tom_waypoint"] = {
-		1428, -- [1]
-		0.6759999999999999, -- [2]
-		0.4370000000000001, -- [3]
+		1423, -- [1]
+		0.813, -- [2]
+		0.594, -- [3]
 		["arrivaldistance"] = 15,
 		["callbacks"] = {
 			["distance"] = {
-			},
-			["minimap"] = {
+				[10] = nil --[[ skipped inline function ]],
+				[15] = nil --[[ skipped inline function ]],
 			},
 			["world"] = {
+				["onclick"] = nil --[[ skipped inline function ]],
+				["tooltip_update"] = nil --[[ skipped inline function ]],
+				["tooltip_show"] = nil --[[ skipped inline function ]],
+			},
+			["minimap"] = {
+				["onclick"] = nil --[[ skipped inline function ]],
+				["tooltip_update"] = nil --[[ skipped inline function ]],
+				["tooltip_show"] = nil --[[ skipped inline function ]],
 			},
 		},
 		["persistent"] = true,
 		["minimap"] = true,
 		["cleardistance"] = 10,
-		["title"] = "索瑞森圣物",
+		["title"] = "密使·白须",
 		["from"] = "?",
 		["crazy"] = true,
 		["world"] = true,
