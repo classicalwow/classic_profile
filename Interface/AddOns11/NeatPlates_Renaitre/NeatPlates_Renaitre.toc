@@ -1,0 +1,12 @@
+## Interface: 11401
+## Title: NeatPlates:|cffa335ee Renaitre|r
+## Version: v7.0.3
+## Notes: Renaitre's custom nameplates.
+## Author: Renaitre
+## Credits: Binbwen
+## Dependencies: NeatPlates, NeatPlatesHub
+NeatPlates_Renaitre.lua
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名板Renaitre主题
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板Renaitre主题
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

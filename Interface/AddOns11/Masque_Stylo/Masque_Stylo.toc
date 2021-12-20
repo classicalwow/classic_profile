@@ -1,0 +1,12 @@
+## Interface: 11401
+## Title: Masque |cffff8000Stylo|r
+## Version: v7.2.0
+## Notes: Stylo Designs for Masque
+## Author: Stylo
+## Credits: Creators of Masque and Opaque for asking for a Masque version of Stylo 
+## Dependencies: Masque
+Stylo.lua
+
+## Title-zhCN: |cff880303[有爱]|r Masque 皮肤
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

@@ -1,0 +1,10 @@
+## Interface: 11401
+## Title: NeatPlates: Graphite
+## Notes: Minimalisty
+## Author: Binny
+## Dependencies: NeatPlates, NeatPlatesHub
+Graphite.lua
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名板Graphite主题
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板Graphite主题
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

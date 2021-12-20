@@ -1,0 +1,31 @@
+## Interface: 11401
+
+## Notes: ClassicCodex-db
+## Title: ClassicCodex database
+## Title-zhCN: ClassicCodex 数据库
+## Title-zhTW: ClassicCodex 數據庫
+
+## Author: Pgarneau, Shagu, SwimmingTiger
+## Version: v1.4.7b
+
+## Dependencies: ClassicCodex-loader
+## LoadOnDemand: 1
+
+## X-Curse-Project-ID: 351302
+## X-WoWI-ID: 25442
+
+# database init
+init.lua
+
+# database index
+items.lua
+units.lua
+objects.lua
+refloot.lua
+quests.lua
+meta.lua
+exclude.lua
+
+## Title-zhCN: |cff880303[有爱]|r ClassicCodex 数据库
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

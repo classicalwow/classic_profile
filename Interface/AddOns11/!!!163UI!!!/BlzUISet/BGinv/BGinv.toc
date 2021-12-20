@@ -1,0 +1,8 @@
+## Interface: 11302
+## Title: BG Inv
+## Author: Esentiel
+## Version: 0.1
+
+## Notes: Battleground invitation makes WoW icon blinking.
+
+main.lua

@@ -1,0 +1,11 @@
+## Interface: 11401
+## Title: Blizzmove
+## Notes: Move those blizzard windows
+## Author: yess
+## X-WoWI-ID: 23875
+## Version: 1.9
+Handle.lua
+BlizzMove.lua
+## Title-zhCN: |cff880303[有爱]|r BlizzMove 框架移动
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

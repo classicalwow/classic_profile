@@ -1,0 +1,12 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+
+    <Script file="announce.lua"/>
+    <Script file="auto_follow.lua"/>
+    <Script file="EasyFlat.lua"/>
+    <Script file="quest_auto_turnin.lua"/>
+    <Script file="163promotiong.lua"/>
+
+</Ui>
+

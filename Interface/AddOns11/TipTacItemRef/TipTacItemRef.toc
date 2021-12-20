@@ -1,0 +1,16 @@
+## Interface: 11401
+## Version: 19.03.31
+## Title: TipTacItemRef
+## Author: Aezay (Earthen Ring EU)
+## Author-zhCN: Aezay (Earthen Ring EU), Localized by springsnow (Feathermoon CN)
+## Notes: Improved ItemRefTooltip
+## OptionalDeps: TipTac
+Local_enUS.lua
+Local_zhCN.lua
+Local_zhTW.lua
+LibItemString.lua
+ttItemRef.lua
+
+## Title-zhCN: |cff880303[有爱]|r TipTac 鼠标提示物品面板增强
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

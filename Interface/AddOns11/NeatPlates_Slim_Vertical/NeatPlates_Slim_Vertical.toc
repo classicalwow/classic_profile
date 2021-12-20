@@ -1,0 +1,10 @@
+## Interface: 11401
+## Title: NeatPlates: Slim Vertical|r
+## Author: Dotfix
+## Version: 2.2
+## Dependencies: NeatPlates, NeatPlatesHub
+NeatPlates_Slim_Vertical.lua
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名板Vertical主题
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板Vertical主题
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

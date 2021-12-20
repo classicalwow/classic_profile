@@ -1,0 +1,12 @@
+## Interface: 11401
+## Title: XLoot Frame
+## Notes: A customizable, skinnable loot frame.
+## Version: 8.1-1
+## Author: Xuerian
+## X-Category: Inventory
+## Dependencies: XLoot
+load.xml
+
+## Title-zhCN: |cff880303[有爱]|r XLoot 拾取界面增强
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

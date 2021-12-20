@@ -1,0 +1,17 @@
+## Interface: 11401
+## Title: SilverDragon (Classic)
+## Notes: Mobs for Classic
+## Version: v20501.0
+## Author: Kemayo
+## eMail: kemayo at gmail dot com
+## X-Category: Interface Enhancements
+## X-Donate: PayPal:kemayo AT gmail DOT com
+## Dependencies: SilverDragon
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+
+module.lua
+
+## Title-zhCN: |cff880303[有爱]|r SilverDragon 怀旧服数据库
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

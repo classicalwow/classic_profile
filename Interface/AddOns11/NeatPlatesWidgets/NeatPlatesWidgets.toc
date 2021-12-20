@@ -1,0 +1,9 @@
+## Interface: 11401
+## Title: NeatPlates Widgets
+## Notes: Library of Widgets
+## Dependencies: NeatPlates
+Widgets.xml
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名板界面组件
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板界面组件
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

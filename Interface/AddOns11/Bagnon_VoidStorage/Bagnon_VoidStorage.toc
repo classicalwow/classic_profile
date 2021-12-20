@@ -1,0 +1,11 @@
+## Interface: 11401
+## Title: Bagnon Void Storage
+## Author: Jaliborc (João Cardoso)
+## Notes: Single window display for your void storage
+## RequiredDeps: Bagnon
+## LoadOnDemand: 1
+..\Bagnon\addons\vault\vault.xml
+
+## Title-zhCN: |cff880303[有爱]|r Bagnon 虚空仓库
+## X-Vendor: NetEase
+## X-163UI-Version: 20211209165844

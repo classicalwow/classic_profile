@@ -1,0 +1,18 @@
+## Interface: 11401
+## Version: 2.2.5
+## Title: SpellWhisper
+## Author: Aoikaze
+## SavedVariables: SpellWhisperDB
+## Notes-zhCN: 法术技能自动通告
+## Notes: Automatic Spell Announcer.
+
+Locale.lua
+Core.lua
+Events.lua
+Config.lua
+GUI.lua
+MinimapIcon.lua
+Command.lua
+## Title-zhCN: |cff880303[有爱]|r SpellWhisper 法术技能自动通告
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

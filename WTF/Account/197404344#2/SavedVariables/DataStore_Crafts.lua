@@ -10,7 +10,7 @@ DataStore_CraftsDB = {
 					["附魔"] = {
 						["isPrimary"] = true,
 						["MaxRank"] = 75,
-						["Rank"] = 7,
+						["Rank"] = 13,
 					},
 					["急救"] = {
 						["Categories"] = {
@@ -18,6 +18,7 @@ DataStore_CraftsDB = {
 							"材料", -- [2]
 						},
 						["isSecondary"] = true,
+						["MaxRank"] = 300,
 						["Crafts"] = {
 							"0|消耗品", -- [1]
 							"2|14529", -- [2]
@@ -32,8 +33,7 @@ DataStore_CraftsDB = {
 							"0|材料", -- [11]
 							"4|6452", -- [12]
 						},
-						["MaxRank"] = 300,
-						["Rank"] = 284,
+						["Rank"] = 299,
 					},
 					["骑术：马"] = {
 						["isSecondary"] = true,
@@ -41,7 +41,7 @@ DataStore_CraftsDB = {
 						["Rank"] = 300,
 					},
 				},
-				["lastUpdate"] = 1639851838,
+				["lastUpdate"] = 1639934759,
 				["Prof1"] = "附魔",
 			},
 		},
@@ -60,9 +60,9 @@ DataStore_CraftsRefDB = {
 			[3530] = "2592,1",
 			[3531] = "2592,2",
 			[8544] = "4338,1",
-			[14529] = "14047,1",
-			[6450] = "4306,1",
 			[2581] = "2589,2",
+			[6450] = "4306,1",
+			[14529] = "14047,1",
 		},
 	},
 }

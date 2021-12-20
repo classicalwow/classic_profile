@@ -1,0 +1,11 @@
+## Interface: 11401
+## Title: Bagnon Config
+## Author: Tuller and Jaliborc (João Cardoso)
+## Notes: An options menu for Bagnon
+## Dependencies: Bagnon
+## LoadOnDemand: 1
+..\Bagnon\addons\config\config.xml
+
+## Title-zhCN: |cff880303[有爱]|r Bagnon 配置
+## X-Vendor: NetEase
+## X-163UI-Version: 20211209165844

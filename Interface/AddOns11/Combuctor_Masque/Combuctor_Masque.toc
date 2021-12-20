@@ -1,0 +1,18 @@
+## Interface: 11401
+## Title: Combuctor Masque
+## Notes: Allows Masque to skin Combuctor windows
+## Author: Jaliborc (João Cardoso)
+## X-Category: Inventory
+## X-License: GNU General Public License Version 3
+## Dependencies: Combuctor, Masque
+## Version: 8.3.0
+
+Combuctor_Masque.lua
+
+## Title-zhCN: |cff880303[有爱]|r Masque 皮肤
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314
+
+## Title-zhCN: |cff880303[有爱]|r Masque 皮肤
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

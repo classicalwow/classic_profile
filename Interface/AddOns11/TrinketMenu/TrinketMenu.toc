@@ -1,0 +1,17 @@
+## Interface: 11401
+## Title: TrinketMenu |cFF99CC01rev|r |cFFFF00007.3.2|r
+## Version: 1.13.2.2
+## Author: Gello, Resike
+## Notes: Addon to manage trinkets.
+## SavedVariables: TrinketMenuOptions
+## SavedVariablesPerCharacter: TrinketMenuPerOptions, TrinketMenuQueue
+TrinketMenu.lua
+TrinketMenu.xml
+TrinketMenuOpt.lua
+TrinketMenuOpt.xml
+TrinketMenuQueue.lua
+TrinketMenuQueue.xml
+
+## Title-zhCN: |cff880303[有爱]|r TrinketMenu 饰品管理
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

@@ -1,0 +1,11 @@
+## Interface: 11401
+## Title: NeatPlates: Alvara
+## Notes: Made to Alvara's specifications. Very Simple.
+## Author: Alvara - Zul'Jin
+## Version: 5a
+## Dependencies: NeatPlates, NeatPlatesHub
+NeatPlates_Alvara.lua
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名板Alvara主题
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板Alvara主题
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

@@ -1,0 +1,14 @@
+## Interface: 11401
+## Author: Atlas Team
+## Version: v1.0.0
+## Dependencies: AtlasLootClassic
+## LoadOnDemand: 1
+
+## Title: AtlasLoot |cFF0099FF[Maps]|r
+## Notes: AtlasLoot maps module
+
+## X-Curse-Project-ID: 340018
+
+core.lua
+## Title-zhCN: |cff880303[有爱]|r AtlasLootClassic 副本地图模块
+## X-163UI-Version: 20211111165314

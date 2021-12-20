@@ -1,0 +1,12 @@
+## Interface: 11401
+## Title: Mark Me
+## Notes: Simple Marking bar
+## Author: Solloway
+## Dependencies:
+## Version: 0.9.7
+## SavedVariablesPerCharacter: MMSettings
+## SavedVariables: MMGLOBALS
+MarkMe.lua
+## Title-zhCN: |cff880303[有爱]|r MarkMe 标记助手
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

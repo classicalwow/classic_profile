@@ -1,0 +1,19 @@
+## Interface: 11401
+## Version: 19.03.31
+## Title: TipTac Classic - MAIN|cff00aa00(GepyFix)
+## Author: Aezay (Earthen Ring EU)
+## Notes: Highly Customizable Tooltip Enhancement Addon (Classic fix by DaMaGepy)
+## SavedVariables: TipTac_Config
+Local_enUS.lua
+Local_zhCN.lua
+Local_zhTW.lua
+ttCore.lua
+ttStyle.lua
+ttBars.lua
+ttAuras.lua
+ttIcons.lua
+ttHyperlink.lua
+## Q-CAT-Version: 103
+## Title-zhCN: |cff880303[有爱]|r TipTac 鼠标提示
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

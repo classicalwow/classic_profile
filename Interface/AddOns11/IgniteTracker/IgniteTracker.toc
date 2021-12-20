@@ -1,0 +1,15 @@
+## Interface: 11401
+## Author: pjp (Pixel-Draka (NA) <From Chaos>, Moxxe-Benediction (NA) <Summit>)
+## Version: 1.08
+## Title: IgniteTracker
+## Notes: Track Ignite and Scorch debuffs
+## SavedVariablesPerCharacter: IgniteTrackerDB
+## OptionalDeps: 
+## DefaultState: enabled
+embeds.xml
+IgniteTracker.lua
+CombustTracker.lua
+
+## Title-zhCN: |cff880303[有爱]|r IgniteTracker 点燃提示
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

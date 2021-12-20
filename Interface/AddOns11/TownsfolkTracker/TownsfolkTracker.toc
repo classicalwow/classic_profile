@@ -1,0 +1,16 @@
+## Interface: 11401
+## Title: Townsfolk Tracker
+## Notes: Allows tracking of townsfolk NPCs on the map and minimap.
+## Author: Mokulu
+## Version: 1.0.12
+## SavedVariables: TownsfolkTrackerDB
+## SavedVariablesPerCharacter: tfTrackingList
+
+Libs\Load_Libraries.xml
+Locale\Load_Locales.xml
+Data\Load_Data.xml
+TownsfolkTracker.xml
+
+## Title-zhCN: |cff880303[有爱]|r TownsfolkTracker NPC标记
+## X-Vendor: NetEase
+## X-163UI-Version: 20211119144851

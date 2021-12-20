@@ -1,0 +1,11 @@
+## Interface: 11401
+## Title: tdInspect
+## Author: Dencer
+## Version: 1.0.7
+## SavedVariables: TDDB_INSPECT
+
+Load.xml
+
+## Title-zhCN: |cff880303[有爱]|r 远程观察
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

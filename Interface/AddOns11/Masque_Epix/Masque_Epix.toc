@@ -1,0 +1,11 @@
+## Interface: 11401
+## Title: Masque: |cff99CCFFEpix|r
+## Version: 1.2
+## Author: Epix
+## Notes: Epix's skin for Masque.
+## Dependencies: Masque
+
+Masque_Epix.lua
+## Title-zhCN: |cff880303[有爱]|r Masque 皮肤
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

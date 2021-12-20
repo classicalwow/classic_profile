@@ -1,0 +1,10 @@
+## Interface: 11401
+## Title: NeatPlates: |cffff6060ClassicPlates
+## Notes: Vanilla-Style Plates.
+## Author: delabarra 
+## Dependencies: NeatPlates, NeatPlatesHub
+NeatPlates_ClassicPlates.lua
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名版经典主题
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名版经典主题
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

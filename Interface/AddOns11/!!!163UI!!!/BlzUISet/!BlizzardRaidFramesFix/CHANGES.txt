@@ -1,0 +1,10 @@
+lightweight tag 7e28f7a728424823cc3a3bffabdcf3bad40fa0d5 v1.2.19-classic
+Author:	dev7355608 <dev7355608@gmail.com>
+Date:	Mon Mar 23 21:05:47 2020 +0100
+
+commit 45280dd035ef5d255c664722cfe1843db55ff7b6
+Author: dev7355608 <dev7355608@gmail.com>
+Date:   Mon Mar 23 16:52:03 2020 +0100
+
+    Use a simpler solution to avoid taint errors
+

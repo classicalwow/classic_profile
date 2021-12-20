@@ -1,0 +1,26 @@
+## Interface: 11401
+## Title: NugRunning
+## Notes: Spelltimers
+## Author: d87
+## SavedVariablesPerCharacter: NRunDB_Char
+## SavedVariables: NRunDB_Global, NugRunningConfigCustom
+## Version: 9.0.1-classic
+
+## X-WoWI-ID: 10440
+## X-Curse-Project-ID: 27470
+
+Libs\LibStub\LibStub.lua
+Libs\CallbackHandler-1.0\CallbackHandler-1.0.lua
+Libs\LibSharedMedia-3.0\lib.xml
+
+helpers.lua
+classic.config.lua
+NugRunning.lua
+frame.lua
+special.lua
+totems.lua
+nameplates.lua
+
+## Title-zhCN: |cff880303[有爱]|r NugRunning 施法计时
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

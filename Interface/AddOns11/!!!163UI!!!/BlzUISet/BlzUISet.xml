@@ -1,0 +1,24 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+
+    <Script file="!BlizzardRaidFramesFix\BlizzardRaidFramesFix.lua"/>
+    <Script file="BGinv\main.lua"/>
+    <Script file="Bag.lua"/>
+    <!-- <Script file="ChatFrame.lua"/> -->
+    <Script file="CastingFrame.lua"/>
+    <Script file="FriendFrame.lua"/>
+    <Script file="GuildFrame.lua"/>
+    <Script file="ItemRefTooltip.lua"/>
+    <Script file="MainMenuBar.lua"/>
+    <Script file="Menus.lua"/>
+    <Script file="misc.lua"/>
+    <Script file="PlayerStatus.lua"/>
+    <Script file="raidui.lua"/>
+    <Script file="repair_cost.lua"/>
+    <Script file="TempEnchant.lua"/>
+    <Script file="UnitFrame.lua"/>
+    <Script file="WhoFrame.lua"/>
+
+</Ui>
+

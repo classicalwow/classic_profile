@@ -1,25 +1,25 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 2040000,
-	},
 	["profileKeys"] = {
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040000,
 	},
 	["profiles"] = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["GUI"] = {
 				["point"] = {
-					"LEFT", -- [1]
+					nil, -- [1]
 					nil, -- [2]
-					"LEFT", -- [3]
-					189.2223815917969, -- [4]
-					-43.11091232299805, -- [5]
+					"CENTER", -- [3]
+					-245.4444580078125, -- [4]
+					-30.22216033935547, -- [5]
 				},
 				["selected"] = {
-					nil, -- [1]
-					"BlackrockDepths", -- [2]
-					4, -- [3]
+					"AtlasLootClassic_Crafting", -- [1]
+					"Enchanting", -- [2]
+					10, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

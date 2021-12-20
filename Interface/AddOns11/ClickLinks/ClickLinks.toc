@@ -1,0 +1,9 @@
+## Interface: 11401
+## Title: ClickLinks
+## Author: tannerng
+## Notes: Makes URLs clickable
+## Version: 1.0.8
+ClickLinks.lua
+## Title-zhCN: |cff880303[有爱]|r ClickLinks
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

@@ -1,0 +1,16 @@
+## Interface: 11401
+## Title: NeatPlates
+## Notes: Enjoys long walks on Darkshore
+## Author: Luxocracy and friends
+## Version: 1.14.0.5
+## SavedVariables: NeatPlatesSettings
+## SavedVariablesPerCharacter: NeatPlatesOptions
+
+embeds-classic.xml
+locales.xml
+NeatPlates.xml
+
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名版增强
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板增强
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

@@ -1,0 +1,14 @@
+## Interface: 11401
+## Title: HandyNotes_DungeonLocations (Classic)
+## Version: 1.05-classic
+## Notes: Shows locations of old world dungeon and raid entrances
+## Author: Caliaha of Cairne
+## RequiredDeps: HandyNotes
+## SavedVariables: HandyNotes_DungeonLocationsClassicDB
+
+locales\classic\Locales.xml
+classic.lua
+
+## Title-zhCN: |cff880303[有爱]|r HandyNotes 地下城入口标记
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

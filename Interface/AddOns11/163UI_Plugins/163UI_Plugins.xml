@@ -1,0 +1,33 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/
+..\FrameXML\UI.xsd">
+
+
+        <Script file="163UI_Plugins.lua"/>
+        <Script file="163UI_Quest.lua"/>
+        <Script file="AlreadyKnown.lua"/>
+        <Script file="BattleField.lua"/>
+        <Script file="CopyFriendList.lua"/>
+        <!-- <Script file="ChatFrameAddMessage.lua"/> -->
+        <!-- <Script file="ExtraActionButton.lua"/> -->
+        <!-- <Script file="GuildRosterButtons.lua"/> -->
+        <Script file="MapPartyMember.lua"/>
+        <!-- <Script file="MerchantFilterButtons.lua"/> -->
+        <Script file="PingPing.lua"/>
+        <Script file="QuestFont.lua"/>
+        <Script file="SlashCommands.lua"/>
+
+        <!-- <Script file="yClassColors\core.lua"/> -->
+        <!-- <Script file="yClassColors\battlefield.lua"/> -->
+        <!-- <Script file="yClassColors\friends.lua"/> -->
+        <!-- <Script file="yClassColors\guild.lua"/> -->
+        <!-- <Script file="yClassColors\lfr.lua"/> -->
+        <!-- <Script file="yClassColors\who.lua"/> -->
+
+        <!-- <Script file="7.0\CompletedTip.lua"/> -->
+        <!-- <Script file="7.0\FixArchievementUIFreeze.lua"/> -->
+        <!-- <Script file="7.0\QuestWatchSort.lua"/> -->
+        <!-- <Script file="7.0\EncounterJournalPlus_InstanceInfo.lua"/> -->
+        <!-- <Script file="7.0\HideQuickJoin.lua"/> -->
+
+</Ui>
+

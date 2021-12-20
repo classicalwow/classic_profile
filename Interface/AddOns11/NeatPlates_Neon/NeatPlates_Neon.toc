@@ -1,0 +1,10 @@
+## Interface: 11401
+## Title: NeatPlates: Neon Theme
+## Notes: It toasts your Eggo waffles, and butters your bread.
+## Author: Binny
+## Dependencies: NeatPlates, NeatPlatesHub
+Neon.lua
+## Title-zhCN: |cff880303[有爱]|r NeatPlates 姓名板Neon主题
+## Title-zhTW: |cff880303[有爱]|r NeatPlates 姓名板Neon主题
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

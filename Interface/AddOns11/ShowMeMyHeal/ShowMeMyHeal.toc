@@ -1,0 +1,14 @@
+## Interface: 11401
+## Title: ShowMeMyHeal v0.6.1
+## Author: Saveme
+## Version: 0.6.1
+## SavedVariables: ShowMeMyHealDB
+## OptionalDeps: Ace3
+## X-Embeds: Ace3
+
+embeds.xml
+Core.lua
+
+## Title-zhCN: |cff880303[有爱]|r ShowMeMyHeal 治疗数值显示
+## X-Vendor: NetEase
+## X-163UI-Version: 20211111165314

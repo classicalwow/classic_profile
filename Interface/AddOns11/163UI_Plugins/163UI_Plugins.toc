@@ -1,0 +1,10 @@
+## Interface: 11401
+## Title: |cff880303[163UI]|r 163UI Utils
+## Title-zhCN: |cff880303[有爱]|r 163UI 小功能集合
+## X-Vendor: NetEase
+
+
+163UI_Plugins.xml
+
+
+## X-163UI-Version: 20211111165314
