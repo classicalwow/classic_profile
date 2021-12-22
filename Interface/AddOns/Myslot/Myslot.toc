@@ -28,3 +28,7 @@ keys.lua
 Myslot.lua
 gui.lua
 options.lua
+
+## Title-zhCN: |cff880303[有爱]|r MySlot 技能栏保存
+## X-Vendor: NetEase
+## X-163UI-Version: 20211119144851

@@ -7,7 +7,7 @@ VER 3 0000000001000002 "33" "132089"
 /2  {十字}{十字}{十字} 3V3 戰術德衝分隊伍招募一補D 要求300+韌 意者詳聊
 END
 VER 3 0000000001000003 "target" "132090"
-/target 老
+/target 熔岩
 /script SetRaidTarget("target",8)
 END
 VER 3 0000000001000004 "傳核" "132108"
@@ -20,15 +20,15 @@ END
 VER 3 0000000001000005 "吐口水" "132100"
 /耳光
 END
+VER 3 0000000001000007 "喊人" "132089"
+/5 {十字}{十字}{十字} STSM 45分钟DK 黑爵士披风已需 出了一人30G 来各职业
+END
 VER 3 0000000001000008 "喊人" "132089"
 /1   節日王-1坦 2DD
 END
 VER 3 0000000001000006 "喊人" "132089"
 /script C=CastSpellByName;
 /script if(GetActionCooldown(63)==0) then C("压制");end /script if(UnitHealth("target")<20) then C("斩杀");end /施放 致死打击 /script if(IsActionInRange(63)==1)then C("旋风斩");end /script if(UnitMana("Player")>39) then C("英勇打击");end
-END
-VER 3 0000000001000007 "喊人" "132089"
-/1 {十字}{十字}{十字} H亞克徵補 DD     a
 END
 VER 3 0000000001000009 "嗜血" "136012"
 /startattack

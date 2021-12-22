@@ -6,12 +6,12 @@ AtlasDB = {
 	["profiles"] = {
 		["Default"] = {
 			["dropdowns"] = {
+				["东部王国副本"] = 23,
 				["卡利姆多副本"] = 13,
-				["东部王国副本"] = 4,
 			},
 			["options"] = {
 				["dropdowns"] = {
-					["zone"] = 4,
+					["zone"] = 23,
 				},
 			},
 		},

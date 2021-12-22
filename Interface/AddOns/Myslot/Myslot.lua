@@ -663,3 +663,5 @@ function MySlot:Clear(what)
         SaveBindings(GetCurrentBindingSet())
     end
 end
+
+_G["_163ui_MySlot"] = MySlot

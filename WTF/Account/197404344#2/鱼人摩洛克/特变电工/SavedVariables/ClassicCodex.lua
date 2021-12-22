@@ -6,7 +6,7 @@ CodexConfig = {
 	["showTrackingMethodDropdown"] = true,
 	["autoAccept"] = false,
 	["allQuestGivers"] = true,
-	["trackingMethod"] = 1,
+	["trackingMethod"] = 3,
 	["minimumDropChance"] = 2,
 	["showLowLevel"] = false,
 	["_tom_waypoint"] = {
@@ -17,9 +17,9 @@ CodexConfig = {
 		["callbacks"] = {
 			["distance"] = {
 			},
-			["minimap"] = {
-			},
 			["world"] = {
+			},
+			["minimap"] = {
 			},
 		},
 		["persistent"] = true,
@@ -30,17 +30,17 @@ CodexConfig = {
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["continentIcon"] = false,
-	["currentQuestGivers"] = true,
+	["minimapButton"] = true,
+	["autoTurnin"] = false,
 	["spawnMarkerSize"] = 15,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["miniMapIcon"] = true,
-	["autoTurnin"] = false,
-	["minimapButton"] = true,
+	["currentQuestGivers"] = true,
+	["continentIcon"] = false,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
@@ -51,9 +51,9 @@ CodexHiddenQuests = {
 	[344] = true,
 	[1267] = true,
 	[151] = true,
-	[64] = true,
-	[741] = true,
 	[968] = true,
+	[741] = true,
+	[64] = true,
 }
 CodexBrowserFavorites = {
 	["objects"] = {
@@ -66,20 +66,20 @@ CodexBrowserFavorites = {
 	},
 }
 CodexColors = {
-	["黑鳍战士"] = {
-		0.9294117647058824, -- [1]
-		0.5568627450980392, -- [2]
-		0.1490196078431373, -- [3]
+	["爆炸品"] = {
+		0.3137254901960784, -- [1]
+		0.7686274509803922, -- [2]
+		0.02745098039215686, -- [3]
 	},
 	["地狱野猪"] = {
 		0.207843137254902, -- [1]
 		0.06666666666666667, -- [2]
 		0.7098039215686275, -- [3]
 	},
-	["爆炸品"] = {
-		0.3137254901960784, -- [1]
-		0.7686274509803922, -- [2]
-		0.02745098039215686, -- [3]
+	["黑鳍战士"] = {
+		0.9294117647058824, -- [1]
+		0.5568627450980392, -- [2]
+		0.1490196078431373, -- [3]
 	},
 	["洛索斯·天痕"] = {
 		0.7725490196078432, -- [1]

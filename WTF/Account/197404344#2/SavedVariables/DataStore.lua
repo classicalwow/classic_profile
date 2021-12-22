@@ -15,8 +15,8 @@ DataStoreDB = {
 		["Version"] = 1,
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["guildName"] = "污手党",
 				["faction"] = "Alliance",
+				["guildName"] = "污手党",
 			},
 		},
 		["ShortToLongRealmNames"] = {

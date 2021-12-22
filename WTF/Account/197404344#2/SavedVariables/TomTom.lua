@@ -1,6 +1,7 @@
 
 TomTomDB = {
 	["profileKeys"] = {
+		["Dwac - 鱼人摩洛克"] = "Default",
 		["特变电工 - 鱼人摩洛克"] = "Default",
 	},
 	["profiles"] = {
@@ -29,9 +30,12 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
+		["Dwac - 鱼人摩洛克"] = "Dwac - 鱼人摩洛克",
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
 	},
 	["profiles"] = {
+		["Dwac - 鱼人摩洛克"] = {
+		},
 		["特变电工 - 鱼人摩洛克"] = {
 		},
 	},

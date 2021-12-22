@@ -124,3 +124,4 @@ DBM-Party-Classic: enabled
 DBM-BWL: enabled
 Questie: enabled
 HeyboxPlayerInfo: enabled
+CharacterStatsClassic: enabled
