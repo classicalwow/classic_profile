@@ -7,7 +7,7 @@ MEETINGHORN_DB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["cache"] = {
 				["cooldown"] = {
-					["start"] = 1640103272,
+					["start"] = 1640112029,
 					["duration"] = 50,
 				},
 			},

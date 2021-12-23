@@ -37,6 +37,37 @@ TomTomWaypointsM = {
 		["Dwac - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+			[1423] = {
+				["1423:308312958.43521:167481662.59169:安泰恩·哈尔蒙"] = {
+					1423, -- [1]
+					0.3083129584352078, -- [2]
+					0.1674816625916871, -- [3]
+					["arrivaldistance"] = 15,
+					["callbacks"] = {
+						["distance"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+					},
+					["persistent"] = true,
+					["minimap"] = true,
+					["cleardistance"] = 10,
+					["title"] = "安泰恩·哈尔蒙",
+					["from"] = "?",
+					["crazy"] = true,
+					["world"] = true,
+				},
+			},
 		},
 	},
 }
