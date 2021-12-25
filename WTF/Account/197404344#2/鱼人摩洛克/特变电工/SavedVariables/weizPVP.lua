@@ -6,9 +6,6 @@ weizPVPOptions = {
 	["profiles"] = {
 		["Default"] = {
 			["Options"] = {
-				["Window"] = {
-					["Pinned"] = true,
-				},
 				["Frames"] = {
 					["Width"] = 204.33349609375,
 					["Y"] = -204.1666870117188,
