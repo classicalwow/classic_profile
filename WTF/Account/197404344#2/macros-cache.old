@@ -1,6 +1,9 @@
 VER 3 0000000000000042 " 5人本提醒" "134400"
 /p 請大家看好自己頭上的標記控怪，打怪時注意仇恨UI
 END
+VER 3 0000000000000003 "12" "132112"
+/4 {十字}{十字}{十字} H 18波  {十字}{十字}{十字} 徵 補 DD 原始虛空和沙漏拍金
+END
 VER 3 0000000000000001 "12" "132112"
 /4 {十字}{十字}{十字} 斯坦索姆血色区 {十字}{十字}{十字} 
 END
@@ -9,9 +12,6 @@ VER 3 0000000000000043 "12" "132112"
 END
 VER 3 0000000000000002 "12" "132112"
 /4 {十字}{十字}{十字} PT 破碎ae {十字}{十字}{十字} 徵 補 DD(法術)~
-END
-VER 3 0000000000000003 "12" "132112"
-/4 {十字}{十字}{十字} H 18波  {十字}{十字}{十字} 徵 補 DD 原始虛空和沙漏拍金
 END
 VER 3 0000000000000044 "22" "132090"
 /1 2v2 戰德衝分隊 招一個補D 280韌+
@@ -101,6 +101,13 @@ END
 VER 3 0000000000000012 "VuhDoDCShieldNames" "132281"
 N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Dde[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]鬆餅給
 END
+VER 3 000000000000001A "假死" "INV_Misc_QuestionMark"
+#showtooltip
+/petpassive
+/stopcasting
+/cleartarget
+/castsequence reset=10 假死,冰凍陷阱
+END
 VER 3 000000000000001B "假死" "INV_Misc_QuestionMark"
 #showtooltip
 /PetPassiveMode
@@ -122,13 +129,6 @@ VER 3 0000000000000019 "假死" "INV_Misc_QuestionMark"
 /stopcasting
 /cleartarget
 /castsequence reset=10 假死,獻祭陷阱
-END
-VER 3 000000000000001A "假死" "INV_Misc_QuestionMark"
-#showtooltip
-/petpassive
-/stopcasting
-/cleartarget
-/castsequence reset=10 假死,冰凍陷阱
 END
 VER 3 000000000000001C "假死爆" "INV_Misc_QuestionMark"
 #showtooltip
@@ -240,12 +240,12 @@ VER 3 0000000000000029 "手雷" "INV_Misc_QuestionMark"
 /petfollow
 /施放 瑟銀手榴彈
 END
-VER 3 0000000000000055 "援護" "132365"
+VER 3 0000000000000054 "援護" "132365"
+/target 毛茸茸的玩意
 /cast [stance:1/3] 防禦姿態
 /cast 阻擾
 END
-VER 3 0000000000000054 "援護" "132365"
-/target 毛茸茸的玩意
+VER 3 0000000000000055 "援護" "132365"
 /cast [stance:1/3] 防禦姿態
 /cast 阻擾
 END
@@ -337,15 +337,15 @@ VER 3 0000000000000033 "萬能" "INV_Misc_QuestionMark"
 #showtooltip
 /castsequence [@pet,dead] 復活寵物;[nopet]reset=2 召喚寵物,復活寵物;reset=2 治療寵物, 解散寵物
 END
-VER 3 0000000000000035 "通告" "132111"
-/RA 上組門神重置時間 20:38
-/RA 下組門神重置時間 20:39
-END
 VER 3 0000000000000034 "通告" "132111"
 /RA 樓梯眼睛要殺 刷太快沒和平
 /RA 蟲子重置時間 20:13
 /RA 上組門神重置時間 20:46
 /RA 下組門神重置時間 20:55
+END
+VER 3 0000000000000035 "通告" "132111"
+/RA 上組門神重置時間 20:38
+/RA 下組門神重置時間 20:39
 END
 VER 3 0000000000000036 "野性" "132104"
 /castsequence 野性守護,獵豹守護
@@ -376,26 +376,19 @@ VER 3 000000000000003A "開抓" "INV_Misc_QuestionMark"
 /targetenemy
 / SetCVar("targetNearestDistance", 41)
 END
-VER 3 000000000000003C "雄鹰" "136076"
-/cast [mod:shift]獵豹守護
-/cast [mod:alt]自然守護
-/cast 雄鷹守護
-END
 VER 3 000000000000003B "雄鹰" "136076"
 /cast [mod:shift]獵豹守護
 /cast [mod:alt]野性守護
 /cast 雄鷹守護
 END
+VER 3 000000000000003C "雄鹰" "136076"
+/cast [mod:shift]獵豹守護
+/cast [mod:alt]自然守護
+/cast 雄鷹守護
+END
 VER 3 000000000000005C "雙手武器" "132090"
 /cast 狂暴姿態
 /equip 深雷
-END
-VER 3 000000000000003E "驅散" "INV_Misc_QuestionMark"
-#showtooltip
-/petpassive
-/petfollow
-/stopcasting
-/施放 驅散射擊
 END
 VER 3 000000000000003D "驅散" "INV_Misc_QuestionMark"
 #showtooltip 驅散射擊
@@ -403,6 +396,13 @@ VER 3 000000000000003D "驅散" "INV_Misc_QuestionMark"
 /cast 猛禽一擊
 /cast 驅散射擊
 /stopattack
+END
+VER 3 000000000000003E "驅散" "INV_Misc_QuestionMark"
+#showtooltip
+/petpassive
+/petfollow
+/stopcasting
+/施放 驅散射擊
 END
 VER 3 000000000000003F "魔化" "INV_Misc_QuestionMark"
 #showtooltip

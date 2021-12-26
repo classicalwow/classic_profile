@@ -125,3 +125,15 @@ DBM-BWL: enabled
 Questie: enabled
 HeyboxPlayerInfo: enabled
 CharacterStatsClassic: enabled
+ConsolePort_Keyboard: disabled
+ConsolePort_Bar: disabled
+ConsolePort_Config: disabled
+ConsolePort_Menu: disabled
+ConsolePort_World: disabled
+ConsolePortAdvanced: disabled
+ConsolePortBar: disabled
+ConsolePortHelp: disabled
+ConsolePortLoader: disabled
+ConsolePortUI_Loot: disabled
+ConsolePortUI_Menu: disabled
+ConsolePort: disabled
