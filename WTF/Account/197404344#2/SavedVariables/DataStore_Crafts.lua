@@ -10,7 +10,7 @@ DataStore_CraftsDB = {
 					["附魔"] = {
 						["isPrimary"] = true,
 						["MaxRank"] = 75,
-						["Rank"] = 37,
+						["Rank"] = 45,
 					},
 					["急救"] = {
 						["Categories"] = {
@@ -34,7 +34,7 @@ DataStore_CraftsDB = {
 							"0|材料", -- [12]
 							"4|6452", -- [13]
 						},
-						["Rank"] = 299,
+						["Rank"] = 300,
 					},
 					["骑术：马"] = {
 						["isSecondary"] = true,
@@ -42,7 +42,7 @@ DataStore_CraftsDB = {
 						["Rank"] = 300,
 					},
 				},
-				["lastUpdate"] = 1640458252,
+				["lastUpdate"] = 1640542571,
 				["Prof1"] = "附魔",
 			},
 		},

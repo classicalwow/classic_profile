@@ -124,3 +124,9 @@ ElvUI_AuraBarsMovers: disabled
 ElvUI_CustomTweaks: disabled
 ElvUI_DTBars2: disabled
 ElvUI_QuestXP: disabled
+ConsolePortAdvanced: disabled
+ConsolePortBar: disabled
+ConsolePortHelp: disabled
+ConsolePortLoader: disabled
+ConsolePortUI_Loot: disabled
+ConsolePortUI_Menu: disabled

@@ -27,17 +27,17 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:16996::::::::60:::::::::|h[血木猎弓]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 60.41176470588236,
-				["lastUpdate"] = 1640458300,
+				["lastUpdate"] = 1640542639,
 			},
 		},
 		["Guilds"] = {
 			["Default.鱼人摩洛克.山河归一"] = {
 				["Members"] = {
-					["阿阮"] = {
-						["averageItemLvl"] = 3,
+					["特变电工"] = {
+						["averageItemLvl"] = 60,
 					},
-					["哈宁"] = {
-						["averageItemLvl"] = 61,
+					["阿阮"] = {
+						["averageItemLvl"] = 52,
 					},
 				},
 			},

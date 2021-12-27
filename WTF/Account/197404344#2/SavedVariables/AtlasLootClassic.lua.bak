@@ -9,7 +9,7 @@ AtlasLootClassicDB = {
 	["profiles"] = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["minimap"] = {
-				["minimapPos"] = 222.3186545152385,
+				["minimapPos"] = 267.8934792918902,
 			},
 			["GUI"] = {
 				["point"] = {
@@ -21,9 +21,9 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"WorldBosses", -- [2]
-					nil, -- [3]
-					4, -- [4]
+					"Stratholme", -- [2]
+					13, -- [3]
+					1, -- [4]
 					0, -- [5]
 				},
 			},
