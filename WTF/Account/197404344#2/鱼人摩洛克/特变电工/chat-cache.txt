@@ -9,7 +9,7 @@ CHANNELS
 寻求组队 1 4 0
 大脚世界频道 1 5 0
 交易 0 6 0
-大脚 1 8 0
+大脚 1 7 0
 END
 
 ZONECHANNELS 0
