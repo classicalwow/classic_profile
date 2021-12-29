@@ -26,15 +26,15 @@ MessageClassifierConfig = {
 			["class"] = "黑龙",
 		}, -- [2]
 		{
-			["class"] = "斯坦索姆",
+			["class"] = "通灵学院",
 			["conditions"] = {
 				{
-					["value"] = "STSM",
+					["value"] = "通灵",
 					["field"] = "content",
 					["operator"] = "contain",
 				}, -- [1]
 				{
-					["value"] = "DK",
+					["value"] = "TL",
 					["operator"] = "contain",
 					["field"] = "content",
 				}, -- [2]

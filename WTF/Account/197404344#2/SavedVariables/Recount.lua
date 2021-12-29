@@ -7,12 +7,13 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -499.9997482299805,
-					["x"] = -428.055419921875,
+					["y"] = -499.999755859375,
+					["x"] = -428.0555114746094,
 					["w"] = 281.6668090820313,
 					["h"] = 190.0000915527344,
 				},
 			},
+			["MainWindowHeight"] = 190.0000915527344,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -23,10 +24,9 @@ RecountDB = {
 					},
 				},
 			},
-			["MainWindowWidth"] = 281.6667785644531,
-			["MainWindowHeight"] = 190.0000915527344,
+			["LastInstanceName"] = "黑石塔",
 			["CurDataSet"] = "OverallData",
-			["LastInstanceName"] = "通灵学院",
+			["MainWindowWidth"] = 281.6667785644531,
 		},
 	},
 }

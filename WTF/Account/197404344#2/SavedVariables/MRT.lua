@@ -61,9 +61,11 @@ VMRT = {
 	["ExCD2"] = {
 		["upd4525"] = true,
 		["gnGUIDs"] = {
+			["前凸后翘"] = 0,
+			["橘寳"] = 0,
 			["狡诈之刃"] = 0,
 			["特变电工"] = 0,
-			["橘寳"] = 0,
+			["朝先"] = 0,
 		},
 		["NoRaid"] = true,
 		["CDECol"] = {
@@ -273,12 +275,13 @@ VMRT = {
 	},
 	["Addon"] = {
 		["Timer"] = 0.1,
+		["PreVersion"] = 4600,
 		["Version"] = 4600,
-		["PreVersion"] = 0,
-	},
-	["Profiles"] = {
+		["Scale"] = 1,
 	},
 	["WhoPulled"] = {
+	},
+	["Profiles"] = {
 	},
 	["BossWatcher"] = {
 		["optionsDamageGraph"] = true,
@@ -294,6 +297,7 @@ VMRT = {
 	["RaidGroups"] = {
 		["KeepPosInGroup"] = true,
 		["upd4550"] = true,
+		["importType"] = 4,
 		["profiles"] = {
 		},
 	},
@@ -319,9 +323,6 @@ VMRT = {
 	["Logging"] = {
 	},
 	["MarksBar"] = {
-		["pulltimer"] = 10,
-		["pulltimer_right"] = 10,
-		["Strata"] = "HIGH",
 		["Show"] = {
 			true, -- [1]
 			true, -- [2]
@@ -329,9 +330,18 @@ VMRT = {
 			true, -- [4]
 			true, -- [5]
 		},
+		["Strata"] = "HIGH",
+		["pulltimer_right"] = 10,
+		["pulltimer"] = 5,
+		["enabled"] = true,
+		["Left"] = 419.8340454101563,
+		["Top"] = 250.3333435058594,
 	},
 	["VisNote"] = {
 		["data"] = {
+			{
+				"545802F6D2A31640703125", -- [1]
+			}, -- [1]
 		},
 		["sync_data"] = {
 		},

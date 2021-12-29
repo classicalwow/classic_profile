@@ -28,19 +28,14 @@ MessageClassifierConfig = {
 			},
 		}, -- [2]
 		{
+			["class"] = "黑下",
 			["conditions"] = {
 				{
-					["value"] = "通灵",
-					["operator"] = "contain",
+					["value"] = "黑下",
 					["field"] = "content",
+					["operator"] = "contain",
 				}, -- [1]
-				{
-					["value"] = "TL",
-					["field"] = "content",
-					["operator"] = "contain",
-				}, -- [2]
 			},
-			["class"] = "通灵学院",
 		}, -- [3]
 	},
 }
