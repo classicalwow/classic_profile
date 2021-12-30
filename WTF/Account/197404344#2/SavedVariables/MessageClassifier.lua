@@ -4,38 +4,43 @@ MessageClassifierConfig = {
 	},
 	["defRulHideFromChatWindow"] = {
 	},
-	["minDupInterval"] = 0,
-	["enabled"] = true,
 	["classificationRules"] = {
 		{
+			["class"] = "MC",
 			["conditions"] = {
 				{
 					["value"] = "MC",
-					["operator"] = "contain",
 					["field"] = "content",
+					["operator"] = "contain",
 				}, -- [1]
 			},
-			["class"] = "MC",
 		}, -- [1]
 		{
-			["class"] = "黑龙",
 			["conditions"] = {
 				{
 					["value"] = "黑龙",
-					["field"] = "content",
 					["operator"] = "contain",
+					["field"] = "content",
 				}, -- [1]
 			},
+			["class"] = "黑龙",
 		}, -- [2]
 		{
-			["class"] = "黑下",
+			["class"] = "救公主",
 			["conditions"] = {
 				{
-					["value"] = "黑下",
+					["value"] = "救公主",
 					["field"] = "content",
 					["operator"] = "contain",
 				}, -- [1]
+				{
+					["value"] = "JJC",
+					["field"] = "content",
+					["operator"] = "contain",
+				}, -- [2]
 			},
 		}, -- [3]
 	},
+	["enabled"] = true,
+	["minDupInterval"] = 0,
 }

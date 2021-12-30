@@ -1,10 +1,10 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 2040000,
-	},
 	["profileKeys"] = {
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040000,
 	},
 	["profiles"] = {
 		["特变电工 - 鱼人摩洛克"] = {
@@ -16,13 +16,13 @@ AtlasLootClassicDB = {
 					nil, -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					202.9999542236328, -- [4]
-					23.99998092651367, -- [5]
+					-248.6668701171875, -- [4]
+					5.111097812652588, -- [5]
 				},
 				["selected"] = {
 					nil, -- [1]
-					"Scholomance", -- [2]
-					3, -- [3]
+					"BlackrockDepths", -- [2]
+					19, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

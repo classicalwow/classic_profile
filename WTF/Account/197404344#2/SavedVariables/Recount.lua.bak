@@ -8,11 +8,12 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -499.999755859375,
-					["x"] = -428.0554504394531,
+					["x"] = -428.0555114746094,
 					["w"] = 281.6668090820313,
 					["h"] = 190.0000915527344,
 				},
 			},
+			["MainWindowHeight"] = 190.0000915527344,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -26,7 +27,6 @@ RecountDB = {
 			["LastInstanceName"] = "黑石塔",
 			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 281.6667785644531,
-			["MainWindowHeight"] = 190.0000915527344,
 		},
 	},
 }
