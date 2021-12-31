@@ -13,7 +13,6 @@ RecountDB = {
 					["h"] = 190.0000915527344,
 				},
 			},
-			["MainWindowHeight"] = 190.0000915527344,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -24,9 +23,10 @@ RecountDB = {
 					},
 				},
 			},
-			["LastInstanceName"] = "黑石塔",
+			["LastInstanceName"] = "黑石深渊",
 			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 281.6667785644531,
+			["MainWindowHeight"] = 190.0000915527344,
 		},
 	},
 }
