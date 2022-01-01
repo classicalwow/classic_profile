@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 18718,
@@ -58,10 +60,10 @@ PawnOptions = {
 			["Level"] = 62,
 			["Link"] = "|cff0070dd|Hitem:14525::::::::60:::::::::|h[骨节护手]|h|r",
 		},
-		[5] = {
-			["ID"] = 11195,
-			["Level"] = 57,
-			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
+		[17] = {
+			["ID"] = 12939,
+			["Level"] = 63,
+			["Link"] = "|cff0070dd|Hitem:12939::::::::60:::::::::|h[雷德的部族护卫者]|h|r",
 		},
 		[11] = {
 			["ID"] = 13098,
@@ -80,14 +82,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cff0070dd|Hitem:12548::::::::59:::::::::|h[麦格尼的意志]|h|r",
 		},
-		[17] = {
-			["ID"] = 12939,
-			["Level"] = 63,
-			["Link"] = "|cff0070dd|Hitem:12939::::::::60:::::::::|h[雷德的部族护卫者]|h|r",
+		[5] = {
+			["ID"] = 11195,
+			["Level"] = 57,
+			["Link"] = "|cff1eff00|Hitem:11195::::::::44:::::::::|h[战铸胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

@@ -7,13 +7,12 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -499.999755859375,
-					["x"] = -428.0555114746094,
-					["w"] = 281.6668090820313,
-					["h"] = 190.0000915527344,
+					["y"] = -500,
+					["x"] = -428.0000610351563,
+					["w"] = 282.0000305175781,
+					["h"] = 190,
 				},
 			},
-			["MainWindowHeight"] = 190.0000915527344,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -24,9 +23,10 @@ RecountDB = {
 					},
 				},
 			},
-			["LastInstanceName"] = "奥特兰克山谷",
+			["LastInstanceName"] = "黑石深渊",
 			["CurDataSet"] = "OverallData",
 			["MainWindowWidth"] = 281.6667785644531,
+			["MainWindowHeight"] = 190.0000915527344,
 		},
 	},
 }
