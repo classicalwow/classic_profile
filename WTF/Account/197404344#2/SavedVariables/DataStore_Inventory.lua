@@ -27,14 +27,14 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:18323:664:::::::60:::::::::|h[萨特强弓]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 61,
-				["lastUpdate"] = 1640976759,
+				["lastUpdate"] = 1641065194,
 			},
 		},
 		["Guilds"] = {
 			["Default.鱼人摩洛克.山河归一"] = {
 				["Members"] = {
-					["阿阮"] = {
-						["averageItemLvl"] = 59,
+					["哈宁"] = {
+						["averageItemLvl"] = 63,
 					},
 				},
 			},

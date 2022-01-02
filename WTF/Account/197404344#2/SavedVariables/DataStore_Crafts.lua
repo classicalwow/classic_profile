@@ -10,7 +10,7 @@ DataStore_CraftsDB = {
 					["附魔"] = {
 						["isPrimary"] = true,
 						["MaxRank"] = 75,
-						["Rank"] = 50,
+						["Rank"] = 51,
 					},
 					["急救"] = {
 						["Categories"] = {
@@ -42,7 +42,7 @@ DataStore_CraftsDB = {
 						["Rank"] = 300,
 					},
 				},
-				["lastUpdate"] = 1640976759,
+				["lastUpdate"] = 1641065194,
 				["Prof1"] = "附魔",
 			},
 		},
