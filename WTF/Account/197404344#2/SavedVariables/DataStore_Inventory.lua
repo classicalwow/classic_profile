@@ -6,8 +6,8 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1641147405,
-				["averageItemLvl"] = 60.94117647058823,
+				["lastUpdate"] = 1641200438,
+				["averageItemLvl"] = 61.41176470588236,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:21999:1503:::::::60:::::::::|h[英勇头盔]|h|r", -- [1]
 					"|cff0070dd|Hitem:22150::::::::60:::::::::|h[食人魔的力量珠串]|h|r", -- [2]
@@ -22,7 +22,7 @@ DataStore_InventoryDB = {
 					"|cffa335ee|Hitem:2246::::::::60:::::::::|h[侍从的徽记]|h|r", -- [11]
 					"|cffa335ee|Hitem:18821::::::::60:::::::::|h[迅击戒指]|h|r", -- [12]
 					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [13]
-					"|cff1eff00|Hitem:11122::::::::60:::::::::|h[棍子上的胡萝卜]|h|r", -- [14]
+					"|cff0070dd|Hitem:11815::::::::60:::::::::|h[正义之手]|h|r", -- [14]
 					"|cff0070dd|Hitem:13397:849:::::::60:::::::::|h[石像鬼斗篷]|h|r", -- [15]
 					"|cff0070dd|Hitem:12940:1900:::::::60:::::::::|h[雷德的神圣控诉者]|h|r", -- [16]
 					"|cff0070dd|Hitem:12939:1900:::::::60:::::::::|h[雷德的部族护卫者]|h|r", -- [17]
@@ -36,8 +36,11 @@ DataStore_InventoryDB = {
 					["阿阮"] = {
 						["averageItemLvl"] = 60,
 					},
+					["特变电工"] = {
+						["averageItemLvl"] = 2,
+					},
 					["哈宁"] = {
-						["averageItemLvl"] = 59,
+						["averageItemLvl"] = 58,
 					},
 				},
 			},

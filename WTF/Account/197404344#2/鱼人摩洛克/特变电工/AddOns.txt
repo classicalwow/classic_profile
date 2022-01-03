@@ -137,3 +137,4 @@ ConsolePortLoader: disabled
 ConsolePortUI_Loot: disabled
 ConsolePortUI_Menu: disabled
 ConsolePort: disabled
+RaidLedger: disabled

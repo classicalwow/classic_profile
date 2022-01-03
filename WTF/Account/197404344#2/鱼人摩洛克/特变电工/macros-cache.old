@@ -23,12 +23,12 @@ END
 VER 3 0000000001000005 "吐口水" "132100"
 /耳光
 END
+VER 3 0000000001000007 "喊人" "132089"
+/5 {十字}{十字} 奥山荣誉2人战骑小分队 招募一个奶骑 等你起飞！！！！  {十字}{十字}{十字} 
+END
 VER 3 0000000001000006 "喊人" "132089"
 /script C=CastSpellByName;
 /script if(GetActionCooldown(63)==0) then C("压制");end /script if(UnitHealth("target")<20) then C("斩杀");end /施放 致死打击 /script if(IsActionInRange(63)==1)then C("旋风斩");end /script if(UnitMana("Player")>39) then C("英勇打击");end
-END
-VER 3 0000000001000007 "喊人" "132089"
-/5 {十字}{十字} 黑上全通 G团 杰德随缘 + T0.5 BOSS  {十字}{十字}{十字}  所有装备10G起  来 奶
 END
 VER 3 0000000001000009 "嗜血" "136012"
 /startattack
@@ -51,14 +51,14 @@ VER 3 000000000100000C "王子" "132148"
 /targetenemyplayer
 /castsequence reset=alt/5 破甲攻擊(等級 6),破甲攻擊(等級 6),破甲攻擊(等級 6)
 END
-VER 3 000000000100000D "盾反宏" "132361"
-/cast [stance:1/3] 防禦姿態
-/equip 潮汐之錘
+VER 3 000000000100000E "盾反宏" "132361"
+/equip 葛洛姆特的斧頭
 /equip 奧多爾遺產防衛者
 /cast 法術反射
 END
-VER 3 000000000100000E "盾反宏" "132361"
-/equip 葛洛姆特的斧頭
+VER 3 000000000100000D "盾反宏" "132361"
+/cast [stance:1/3] 防禦姿態
+/equip 潮汐之錘
 /equip 奧多爾遺產防衛者
 /cast 法術反射
 END
