@@ -23,15 +23,12 @@ END
 VER 3 0000000001000005 "吐口水" "132100"
 /耳光
 END
+VER 3 0000000001000007 "喊人" "132089"
+/5 {十字}{十字} 奥山荣誉2人战骑小分队 招募一个奶骑 等你起飞！！！！  {十字}{十字}{十字} 
+END
 VER 3 0000000001000006 "喊人" "132089"
 /script C=CastSpellByName;
 /script if(GetActionCooldown(63)==0) then C("压制");end /script if(UnitHealth("target")<20) then C("斩杀");end /施放 致死打击 /script if(IsActionInRange(63)==1)then C("旋风斩");end /script if(UnitMana("Player")>39) then C("英勇打击");end
-END
-VER 3 0000000001000008 "喊人" "132089"
-/1   節日王-1坦 2DD
-END
-VER 3 0000000001000007 "喊人" "132089"
-/5 {十字}{十字} 黑石深渊JJC -> mc门任务 -> 救公主  {十字}{十字}{十字}  来个奶 =1
 END
 VER 3 0000000001000009 "嗜血" "136012"
 /startattack
@@ -40,6 +37,9 @@ END
 VER 3 000000000100000A "坐騎" "132231"
 /cast 迅捷紅色雙足飛龍
 /cast 黑色戰鬥迅猛龍之哨
+END
+VER 3 0000000001000008 "拯救" "132093"
+/w 有内鬼啊 
 END
 VER 3 000000000100000B "挫敗" "132269"
 /startattack
