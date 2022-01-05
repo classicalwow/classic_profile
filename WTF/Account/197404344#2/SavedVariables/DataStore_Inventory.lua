@@ -6,11 +6,11 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1641234637,
-				["averageItemLvl"] = 61.41176470588236,
+				["lastUpdate"] = 1641320249,
+				["averageItemLvl"] = 62.05882352941177,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:21999:1503:::::::60:::::::::|h[英勇头盔]|h|r", -- [1]
-					"|cff0070dd|Hitem:22150::::::::60:::::::::|h[食人魔的力量珠串]|h|r", -- [2]
+					"|cffa335ee|Hitem:18404::::::::60:::::::::|h[奥妮克希亚龙牙坠饰]|h|r", -- [2]
 					"|cff0070dd|Hitem:22001::::::::60:::::::::|h[英勇肩铠]|h|r", -- [3]
 					"|cffffffff|Hitem:14617::::::::60:::::::::|h[外科医生衬衣]|h|r", -- [4]
 					"|cffa335ee|Hitem:21997:1891:::::::60:::::::::|h[英勇胸甲]|h|r", -- [5]
@@ -36,9 +36,6 @@ DataStore_InventoryDB = {
 					["阿阮"] = {
 						["averageItemLvl"] = 61,
 					},
-					["特变电工"] = {
-						["averageItemLvl"] = 61,
-					},
 					["哈宁"] = {
 						["averageItemLvl"] = 58,
 					},
@@ -46,11 +43,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["雪凉"] = {
-						["averageItemLvl"] = 41,
-					},
 					["奶不住快跑啊"] = {
 						["averageItemLvl"] = 17,
+					},
+					["雪凉"] = {
+						["averageItemLvl"] = 41,
 					},
 				},
 			},
