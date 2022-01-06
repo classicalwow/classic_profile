@@ -27,7 +27,7 @@ RecountDB = {
 			["DetailWindowY"] = -428.0000305175781,
 			["DetailWindowX"] = 784.666748046875,
 			["LastInstanceName"] = "奥特兰克山谷",
-			["CurDataSet"] = "OverallData",
+			["CurDataSet"] = "LastFightData",
 			["MainWindowWidth"] = 278.111083984375,
 		},
 	},

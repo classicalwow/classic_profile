@@ -20,10 +20,10 @@ AtlasLootClassicDB = {
 					-6.666752815246582, -- [5]
 				},
 				["selected"] = {
-					nil, -- [1]
-					"MoltenCore", -- [2]
-					10, -- [3]
-					3, -- [4]
+					"AtlasLootClassic_PvP", -- [1]
+					"AlteracValley", -- [2]
+					nil, -- [3]
+					2, -- [4]
 					0, -- [5]
 				},
 			},

@@ -6,7 +6,7 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1641320249,
+				["lastUpdate"] = 1641405159,
 				["averageItemLvl"] = 62.05882352941177,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:21999:1503:::::::60:::::::::|h[英勇头盔]|h|r", -- [1]
