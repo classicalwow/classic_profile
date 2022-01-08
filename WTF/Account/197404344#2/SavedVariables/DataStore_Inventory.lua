@@ -6,8 +6,8 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1641496018,
-				["averageItemLvl"] = 62.76470588235294,
+				["lastUpdate"] = 1641582132,
+				["averageItemLvl"] = 59.05882352941177,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:21999:1503:::::::60:::::::::|h[英勇头盔]|h|r", -- [1]
 					"|cffa335ee|Hitem:18404::::::::60:::::::::|h[奥妮克希亚龙牙坠饰]|h|r", -- [2]
@@ -21,7 +21,7 @@ DataStore_InventoryDB = {
 					"|cffa335ee|Hitem:21998:927:::::::60:::::::::|h[英勇护手]|h|r", -- [10]
 					"|cffa335ee|Hitem:19325::::::::60:::::::::|h[胡里奥指环]|h|r", -- [11]
 					"|cffa335ee|Hitem:18821::::::::60:::::::::|h[迅击戒指]|h|r", -- [12]
-					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [13]
+					"|cff0070dd|Hitem:18854::::::::60:::::::::|h[联盟徽记]|h|r", -- [13]
 					"|cff0070dd|Hitem:11815::::::::60:::::::::|h[正义之手]|h|r", -- [14]
 					"|cff0070dd|Hitem:13397:849:::::::60:::::::::|h[石像鬼斗篷]|h|r", -- [15]
 					"|cff0070dd|Hitem:12940:1900:::::::60:::::::::|h[雷德的神圣控诉者]|h|r", -- [16]
@@ -37,7 +37,7 @@ DataStore_InventoryDB = {
 						["averageItemLvl"] = 3,
 					},
 					["阿阮"] = {
-						["averageItemLvl"] = 61,
+						["averageItemLvl"] = 62,
 					},
 					["哈宁"] = {
 						["averageItemLvl"] = 58,
@@ -46,11 +46,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["雪凉"] = {
-						["averageItemLvl"] = 41,
-					},
 					["奶不住快跑啊"] = {
 						["averageItemLvl"] = 17,
+					},
+					["雪凉"] = {
+						["averageItemLvl"] = 41,
 					},
 				},
 			},

@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0531,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 18718,
@@ -47,9 +45,9 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:13381::::::::60:::::::::|h[炮手长靴]|h|r",
 		},
 		[16] = {
-			["ID"] = 12940,
-			["Level"] = 63,
-			["Link"] = "|cff0070dd|Hitem:12940::::::::60:::::::::|h[雷德的神圣控诉者]|h|r",
+			["ID"] = 19323,
+			["Level"] = 65,
+			["Link"] = "|cffa335ee|Hitem:19323::::::::60:::::::::|h[无坚不摧之力]|h|r",
 		},
 		[9] = {
 			["ID"] = 21996,
@@ -57,19 +55,19 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:21996::::::::60:::::::::|h[英勇护腕]|h|r",
 		},
 		[18] = {
-			["ID"] = 16996,
-			["Level"] = 62,
-			["Link"] = "|cff0070dd|Hitem:16996::::::::60:::::::::|h[血木猎弓]|h|r",
+			["ID"] = 19107,
+			["Level"] = 63,
+			["Link"] = "|cff0070dd|Hitem:19107::::::::60:::::::::|h[觅血者]|h|r",
 		},
 		[10] = {
 			["ID"] = 14525,
 			["Level"] = 62,
 			["Link"] = "|cff0070dd|Hitem:14525::::::::60:::::::::|h[骨节护手]|h|r",
 		},
-		[17] = {
-			["ID"] = 12939,
-			["Level"] = 63,
-			["Link"] = "|cff0070dd|Hitem:12939::::::::60:::::::::|h[雷德的部族护卫者]|h|r",
+		[5] = {
+			["ID"] = 21997,
+			["Level"] = 60,
+			["Link"] = "|cffa335ee|Hitem:21997::::::::60:::::::::|h[英勇胸甲]|h|r",
 		},
 		[11] = {
 			["ID"] = 18821,
@@ -83,17 +81,19 @@ PawnOptions = {
 			["Link"] = "|cff0070dd|Hitem:13142::::::::60:::::::::|h[黑龙束带]|h|r",
 		},
 		[12] = {
-			["ID"] = 13098,
-			["Level"] = 63,
+			["ID"] = 19325,
+			["Level"] = 65,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cff0070dd|Hitem:13098::::::::60:::::::::|h[痛苦指环]|h|r",
+			["Link"] = "|cffa335ee|Hitem:19325::::::::60:::::::::|h[胡里奥指环]|h|r",
 		},
-		[5] = {
-			["ID"] = 21997,
-			["Level"] = 60,
-			["Link"] = "|cffa335ee|Hitem:21997::::::::60:::::::::|h[英勇胸甲]|h|r",
+		[17] = {
+			["ID"] = 12939,
+			["Level"] = 63,
+			["Link"] = "|cff0070dd|Hitem:12939::::::::60:::::::::|h[雷德的部族护卫者]|h|r",
 		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
