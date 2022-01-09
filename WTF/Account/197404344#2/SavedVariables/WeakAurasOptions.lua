@@ -4,9 +4,6 @@ WeakAurasOptionsSaved = {
 	["needsRebuild"] = false,
 	["version"] = "3.7.3",
 	["magnetAlign"] = true,
-	["savedSnippets"] = {
-	},
-	["spellCacheAchivements"] = true,
 	["spellCache"] = {
 		["制造塞雷布拉斯节杖"] = {
 			["spells"] = {
@@ -37553,7 +37550,7 @@ WeakAurasOptionsSaved = {
 		},
 		["自动射击"] = {
 			["spells"] = {
-				[75] = 135491,
+				[75] = 135536,
 				[1583] = 132369,
 			},
 		},
@@ -43984,7 +43981,7 @@ WeakAurasOptionsSaved = {
 				[18561] = 132222,
 				[16779] = 132222,
 				[17353] = 132222,
-				[5019] = 135491,
+				[5019] = 135536,
 			},
 		},
 		["辐射之云"] = {
@@ -47426,7 +47423,7 @@ WeakAurasOptionsSaved = {
 		["Shoot (TEST)"] = {
 			["spells"] = {
 				[3018] = 132222,
-				[19881] = 135491,
+				[19881] = 135536,
 			},
 		},
 		["Increase Fire Dam 17"] = {
@@ -62219,6 +62216,9 @@ WeakAurasOptionsSaved = {
 				[5404] = 136235,
 			},
 		},
+	},
+	["spellCacheAchivements"] = true,
+	["savedSnippets"] = {
 	},
 	["build"] = "41511",
 }
