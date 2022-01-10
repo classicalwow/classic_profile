@@ -2,10 +2,3735 @@
 RecountPerCharDB = {
 	["version"] = "1.3",
 	["combatants"] = {
+		["特变电工"] = {
+			["GUID"] = "Player-5458-02F6D2A3",
+			["TimeLast"] = {
+				["TimeHeal"] = 22644.293,
+				["OVERALL"] = 22836.289,
+				["DamageTaken"] = 22836.289,
+				["ActiveTime"] = 22646.293,
+				["RageGain"] = 22644.293,
+				["Overhealing"] = 22640.292,
+				["TimeDamage"] = 22646.293,
+				["HealingTaken"] = 22644.293,
+				["Healing"] = 22644.293,
+				["DOT_Time"] = 22642.293,
+				["Damage"] = 22646.293,
+			},
+			["LastAttackedBy"] = "雷首角鹰雄兽",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"HEAL", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"HEAL", -- [25]
+				"DAMAGE", -- [26]
+				"HEAL", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"HEAL", -- [34]
+				"DAMAGE", -- [35]
+				"HEAL", -- [36]
+				"DAMAGE", -- [37]
+				"HEAL", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"HEAL", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"HEAL", -- [45]
+				"DAMAGE", -- [46]
+				"DAMAGE", -- [47]
+				"DAMAGE", -- [48]
+				"DAMAGE", -- [49]
+				"DAMAGE", -- [50]
+			},
+			["TimeWindows"] = {
+				["TimeHeal"] = {
+					31.51, -- [1]
+				},
+				["Healing"] = {
+					639, -- [1]
+				},
+				["DamageTaken"] = {
+					1960, -- [1]
+				},
+				["RageGain"] = {
+					106, -- [1]
+				},
+				["Overhealing"] = {
+					245, -- [1]
+				},
+				["ActiveTime"] = {
+					123.04, -- [1]
+				},
+				["TimeDamage"] = {
+					91.53000000000003, -- [1]
+				},
+				["HealingTaken"] = {
+					639, -- [1]
+				},
+				["DOT_Time"] = {
+					36, -- [1]
+				},
+				["Damage"] = {
+					23291, -- [1]
+				},
+			},
+			["enClass"] = "WARRIOR",
+			["unit"] = "特变电工",
+			["level"] = 60,
+			["LastDamageAbility"] = "肉搏",
+			["LastFightIn"] = 9,
+			["LastHealTime"] = 22644.826,
+			["type"] = "Self",
+			["FightsSaved"] = 5,
+			["LastDamageTaken"] = 154,
+			["LastEventHealth"] = {
+				4489, -- [1]
+				4489, -- [2]
+				4335, -- [3]
+				4423, -- [4]
+				4354, -- [5]
+				4354, -- [6]
+				4354, -- [7]
+				4298, -- [8]
+				4298, -- [9]
+				4298, -- [10]
+				4298, -- [11]
+				4298, -- [12]
+				4298, -- [13]
+				4298, -- [14]
+				4298, -- [15]
+				4298, -- [16]
+				4298, -- [17]
+				4298, -- [18]
+				4298, -- [19]
+				4298, -- [20]
+				4298, -- [21]
+				4298, -- [22]
+				4318, -- [23]
+				4318, -- [24]
+				4318, -- [25]
+				4338, -- [26]
+				4338, -- [27]
+				4489, -- [28]
+				4489, -- [29]
+				4489, -- [30]
+				4489, -- [31]
+				4489, -- [32]
+				4489, -- [33]
+				4489, -- [34]
+				4489, -- [35]
+				4489, -- [36]
+				4489, -- [37]
+				4489, -- [38]
+				4489, -- [39]
+				4424, -- [40]
+				4424, -- [41]
+				4444, -- [42]
+				4444, -- [43]
+				4387, -- [44]
+				4387, -- [45]
+				4407, -- [46]
+				4407, -- [47]
+				4407, -- [48]
+				4351, -- [49]
+				4351, -- [50]
+			},
+			["Owner"] = false,
+			["LastEventHealthMax"] = {
+				4489, -- [1]
+				4489, -- [2]
+				4489, -- [3]
+				4489, -- [4]
+				4489, -- [5]
+				4489, -- [6]
+				4489, -- [7]
+				4489, -- [8]
+				4489, -- [9]
+				4489, -- [10]
+				4489, -- [11]
+				4489, -- [12]
+				4489, -- [13]
+				4489, -- [14]
+				4489, -- [15]
+				4489, -- [16]
+				4489, -- [17]
+				4489, -- [18]
+				4489, -- [19]
+				4489, -- [20]
+				4489, -- [21]
+				4489, -- [22]
+				4489, -- [23]
+				4489, -- [24]
+				4489, -- [25]
+				4489, -- [26]
+				4489, -- [27]
+				4489, -- [28]
+				4489, -- [29]
+				4489, -- [30]
+				4489, -- [31]
+				4489, -- [32]
+				4489, -- [33]
+				4489, -- [34]
+				4489, -- [35]
+				4489, -- [36]
+				4489, -- [37]
+				4489, -- [38]
+				4489, -- [39]
+				4489, -- [40]
+				4489, -- [41]
+				4489, -- [42]
+				4489, -- [43]
+				4489, -- [44]
+				4489, -- [45]
+				4489, -- [46]
+				4489, -- [47]
+				4489, -- [48]
+				4489, -- [49]
+				4489, -- [50]
+			},
+			["NextEventNum"] = 4,
+			["LastDamageTime"] = 22646.776,
+			["LastEvents"] = {
+				"雷首翼鹿 肉搏 特变电工 Hit -53 (Physical)", -- [1]
+				"雷首角鹰雄兽 肉搏 特变电工 Hit -154 (Physical)", -- [2]
+				"雷首角鹰雄兽 震击 特变电工 Resist (Nature)", -- [3]
+				"雷首翼鹿 肉搏 特变电工 Hit -69 (Physical)", -- [4]
+				"特变电工 肉搏 雷首翼鹿 Hit -201 (Physical)", -- [5]
+				"特变电工 肉搏 雷首翼鹿 Hit -85 (Physical)", -- [6]
+				"雷首翼鹿 肉搏 特变电工 Hit -56 (Physical)", -- [7]
+				"特变电工 肉搏 雷首翼鹿 Crit -179 (Physical)", -- [8]
+				"特变电工 肉搏 雷首翼鹿 Hit -200 (Physical)", -- [9]
+				"雷首翼鹿 肉搏 特变电工 Dodge (1)", -- [10]
+				"特变电工 肉搏 雷首翼鹿 Hit -93 (Physical)", -- [11]
+				"特变电工 肉搏 雷首翼鹿 Hit -232 (Physical)", -- [12]
+				"特变电工 旋风斩 雷首翼鹿 Hit -184 (Physical)", -- [13]
+				"特变电工 肉搏 雷首翼鹿 Hit -90 (Physical)", -- [14]
+				"特变电工 重伤 (伤害/跳) 雷首翼鹿 Tick -50 (Physical)", -- [15]
+				"雷首翼鹿 肉搏 特变电工 Dodge (1)", -- [16]
+				"特变电工 肉搏 雷首翼鹿 Crit -183 (Physical)", -- [17]
+				"雷首翼鹿 肉搏 特变电工 Dodge (1)", -- [18]
+				"特变电工 肉搏 雷首翼鹿 Crit -405 (Physical)", -- [19]
+				"特变电工 肉搏 雷首翼鹿 Hit -91 (Physical)", -- [20]
+				"特变电工 嗜血 雷首翼鹿 Hit -317 (Physical)", -- [21]
+				"特变电工 嗜血 特变电工 Hit +20", -- [22]
+				"雷首翼鹿 肉搏 特变电工 Miss (1)", -- [23]
+				"特变电工 肉搏 雷首翼鹿 Hit -94 (Physical)", -- [24]
+				"特变电工 嗜血 特变电工 Hit +20", -- [25]
+				"特变电工 肉搏 雷首翼鹿 Crit -446 (Physical)", -- [26]
+				"特变电工 嗜血 特变电工 Hit +20", -- [27]
+				"特变电工 拦截昏迷 雷首翼鹿 Hit -42 (Physical)", -- [28]
+				"特变电工 肉搏 雷首翼鹿 Hit -219 (Physical)", -- [29]
+				"特变电工 肉搏 雷首翼鹿 Hit -79 (Physical)", -- [30]
+				"特变电工 肉搏 雷首翼鹿 Hit -89 (Physical)", -- [31]
+				"特变电工 肉搏 雷首翼鹿 Crit -463 (Physical)", -- [32]
+				"特变电工 嗜血 雷首翼鹿 Hit -319 (Physical)", -- [33]
+				"特变电工 嗜血 特变电工 Hit +20 (20 过量治疗)", -- [34]
+				"特变电工 肉搏 雷首翼鹿 Hit -96 (Physical)", -- [35]
+				"特变电工 嗜血 特变电工 Hit +20 (20 过量治疗)", -- [36]
+				"特变电工 肉搏 雷首翼鹿 Hit -230 (Physical)", -- [37]
+				"特变电工 嗜血 特变电工 Hit +20 (20 过量治疗)", -- [38]
+				"雷首翼鹿 肉搏 特变电工 Hit -65 (Physical)", -- [39]
+				"特变电工 肉搏 (正义之手) 雷首翼鹿 Hit -86 (Physical)", -- [40]
+				"特变电工 嗜血 特变电工 Hit +20", -- [41]
+				"特变电工 重伤 (伤害/跳) 雷首翼鹿 Tick -50 (Physical)", -- [42]
+				"雷首翼鹿 肉搏 特变电工 Hit -57 (Physical)", -- [43]
+				"特变电工 肉搏 雷首翼鹿 Crit -194 (Physical)", -- [44]
+				"特变电工 嗜血 特变电工 Hit +20", -- [45]
+				"特变电工 肉搏 雷首翼鹿 Hit -218 (Physical)", -- [46]
+				"特变电工 旋风斩 雷首翼鹿 Hit -193 (Physical)", -- [47]
+				"雷首翼鹿 肉搏 特变电工 Hit -56 (Physical)", -- [48]
+				"特变电工 肉搏 雷首翼鹿 Hit -81 (Physical)", -- [49]
+				"特变电工 斩杀 雷首翼鹿 Crit -980 (Physical)", -- [50]
+			},
+			["Name"] = "特变电工",
+			["LastEventIncoming"] = {
+				true, -- [1]
+				true, -- [2]
+				true, -- [3]
+				true, -- [4]
+				false, -- [5]
+				false, -- [6]
+				true, -- [7]
+				false, -- [8]
+				false, -- [9]
+				true, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				true, -- [16]
+				false, -- [17]
+				true, -- [18]
+				false, -- [19]
+				false, -- [20]
+				false, -- [21]
+				true, -- [22]
+				true, -- [23]
+				false, -- [24]
+				true, -- [25]
+				false, -- [26]
+				true, -- [27]
+				false, -- [28]
+				false, -- [29]
+				false, -- [30]
+				false, -- [31]
+				false, -- [32]
+				false, -- [33]
+				true, -- [34]
+				false, -- [35]
+				true, -- [36]
+				false, -- [37]
+				true, -- [38]
+				true, -- [39]
+				false, -- [40]
+				true, -- [41]
+				false, -- [42]
+				true, -- [43]
+				false, -- [44]
+				true, -- [45]
+				false, -- [46]
+				false, -- [47]
+				true, -- [48]
+				false, -- [49]
+				false, -- [50]
+			},
+			["LastEventTimes"] = {
+				22688.179, -- [1]
+				22837.089, -- [2]
+				22841.456, -- [3]
+				22620.124, -- [4]
+				22620.774, -- [5]
+				22621.258, -- [6]
+				22622.124, -- [7]
+				22622.975, -- [8]
+				22623.441, -- [9]
+				22624.075, -- [10]
+				22624.358, -- [11]
+				22625.525, -- [12]
+				22625.708, -- [13]
+				22625.708, -- [14]
+				22626.041, -- [15]
+				22626.041, -- [16]
+				22627.442, -- [17]
+				22628.075, -- [18]
+				22628.592, -- [19]
+				22628.858, -- [20]
+				22628.858, -- [21]
+				22628.858, -- [22]
+				22630.158, -- [23]
+				22630.158, -- [24]
+				22630.158, -- [25]
+				22630.675, -- [26]
+				22630.675, -- [27]
+				22637.176, -- [28]
+				22637.675, -- [29]
+				22637.842, -- [30]
+				22639.176, -- [31]
+				22639.942, -- [32]
+				22640.126, -- [33]
+				22640.126, -- [34]
+				22641.209, -- [35]
+				22641.209, -- [36]
+				22641.209, -- [37]
+				22641.209, -- [38]
+				22641.209, -- [39]
+				22642.559, -- [40]
+				22642.559, -- [41]
+				22642.976, -- [42]
+				22643.226, -- [43]
+				22644.826, -- [44]
+				22644.826, -- [45]
+				22645.076, -- [46]
+				22645.243, -- [47]
+				22645.243, -- [48]
+				22646.159, -- [49]
+				22646.776, -- [50]
+			},
+			["Fights"] = {
+				["Fight5"] = {
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["雷首翼鹿"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 277,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 2,
+								},
+								["冲锋"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 17,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 277,
+						["Physical"] = 0,
+					},
+					["DOT_Time"] = 3,
+					["Damage"] = 2683,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 3.68,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 1589,
+						["Physical"] = 1094,
+					},
+					["PartialAbsorb"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 248,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 43,
+								},
+								["旋风斩"] = {
+									["count"] = 224,
+								},
+								["斩杀"] = {
+									["count"] = 579,
+								},
+								["肉搏"] = {
+									["count"] = 1589,
+								},
+							},
+							["amount"] = 2683,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 277,
+								},
+							},
+							["amount"] = 277,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 3,
+								},
+								["神圣力量"] = {
+									["count"] = 0.68,
+								},
+							},
+							["amount"] = 3.68,
+						},
+					},
+					["OverHeals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 10,
+									["count"] = 3,
+									["amount"] = 50,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 50,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 50,
+								},
+								["神圣力量"] = {
+									["count"] = 84,
+								},
+							},
+							["amount"] = 134,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 50,
+					["TimeSpent"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0.27,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0.33,
+								},
+								["旋风斩"] = {
+									["count"] = 0.62,
+								},
+								["斩杀"] = {
+									["count"] = 1.2,
+								},
+								["肉搏"] = {
+									["count"] = 6.659999999999999,
+								},
+							},
+							["amount"] = 9.08,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 3,
+								},
+								["神圣力量"] = {
+									["count"] = 0.68,
+								},
+							},
+							["amount"] = 3.68,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 10,
+									["count"] = 3,
+									["amount"] = 50,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 50,
+						},
+						["神圣力量"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 84,
+									["min"] = 84,
+									["count"] = 1,
+									["amount"] = 84,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 84,
+						},
+					},
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 50,
+								},
+								["神圣力量"] = {
+									["count"] = 84,
+								},
+							},
+							["amount"] = 134,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 12.76,
+					["Healing"] = 134,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 248,
+									["min"] = 248,
+									["count"] = 1,
+									["amount"] = 248,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 248,
+						},
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 43,
+									["min"] = 43,
+									["count"] = 1,
+									["amount"] = 43,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 43,
+						},
+						["旋风斩"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 224,
+									["min"] = 224,
+									["count"] = 1,
+									["amount"] = 224,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 224,
+						},
+						["斩杀"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 579,
+									["min"] = 579,
+									["count"] = 1,
+									["amount"] = 579,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 579,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 203,
+									["min"] = 154,
+									["count"] = 3,
+									["amount"] = 519,
+								},
+								["Hit"] = {
+									["max"] = 280,
+									["min"] = 84,
+									["count"] = 6,
+									["amount"] = 1070,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 1589,
+						},
+					},
+					["HealingTaken"] = 134,
+					["RageGain"] = 17,
+					["TimeDamage"] = 9.08,
+					["TimeDamaging"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0.27,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0.33,
+								},
+								["旋风斩"] = {
+									["count"] = 0.62,
+								},
+								["斩杀"] = {
+									["count"] = 1.2,
+								},
+								["肉搏"] = {
+									["count"] = 6.659999999999999,
+								},
+							},
+							["amount"] = 9.08,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight2"] = {
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["雷首翼鹿"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 53,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 0,
+								},
+								["冲锋"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 1,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 53,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 53,
+								},
+							},
+							["amount"] = 53,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["断筋"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["雷首翼鹿"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["断筋"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight3"] = {
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["雷首翼鹿"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 178,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 4,
+								},
+								["冲锋"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 9,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 6,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 178,
+					},
+					["DOT_Time"] = 3,
+					["Damage"] = 3339,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 3,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 1669,
+						["Physical"] = 1670,
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏 (正义之手)"] = {
+									["count"] = 86,
+								},
+								["旋风斩"] = {
+									["count"] = 193,
+								},
+								["嗜血"] = {
+									["count"] = 319,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 50,
+								},
+								["拦截昏迷"] = {
+									["count"] = 42,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["斩杀"] = {
+									["count"] = 980,
+								},
+								["肉搏"] = {
+									["count"] = 1669,
+								},
+							},
+							["amount"] = 3339,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 178,
+								},
+							},
+							["amount"] = 178,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 3,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["OverHeals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 60,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 60,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 40,
+								},
+							},
+							["amount"] = 40,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 60,
+					["TimeSpent"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏 (正义之手)"] = {
+									["count"] = 1.35,
+								},
+								["旋风斩"] = {
+									["count"] = 0.17,
+								},
+								["嗜血"] = {
+									["count"] = 0.18,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0.42,
+								},
+								["拦截昏迷"] = {
+									["count"] = 1.5,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["斩杀"] = {
+									["count"] = 0.62,
+								},
+								["肉搏"] = {
+									["count"] = 6.52,
+								},
+							},
+							["amount"] = 10.76,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 40,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 40,
+						},
+					},
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 40,
+								},
+							},
+							["amount"] = 40,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 13.76,
+					["Healing"] = 40,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["肉搏 (正义之手)"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 86,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 86,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 86,
+						},
+						["旋风斩"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 193,
+									["min"] = 193,
+									["count"] = 1,
+									["amount"] = 193,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 193,
+						},
+						["嗜血"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 319,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 319,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 319,
+						},
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 50,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 50,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 50,
+						},
+						["拦截昏迷"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 42,
+									["min"] = 42,
+									["count"] = 1,
+									["amount"] = 42,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 42,
+						},
+						["断筋"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["斩杀"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 980,
+									["min"] = 980,
+									["count"] = 1,
+									["amount"] = 980,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 980,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 463,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 657,
+								},
+								["Hit"] = {
+									["max"] = 230,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 1012,
+								},
+							},
+							["count"] = 9,
+							["amount"] = 1669,
+						},
+					},
+					["HealingTaken"] = 40,
+					["RageGain"] = 4,
+					["TimeDamage"] = 10.76,
+					["TimeDamaging"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏 (正义之手)"] = {
+									["count"] = 1.35,
+								},
+								["旋风斩"] = {
+									["count"] = 0.17,
+								},
+								["嗜血"] = {
+									["count"] = 0.18,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0.42,
+								},
+								["拦截昏迷"] = {
+									["count"] = 1.5,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["斩杀"] = {
+									["count"] = 0.62,
+								},
+								["肉搏"] = {
+									["count"] = 6.52,
+								},
+							},
+							["amount"] = 10.76,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 3.32,
+								},
+							},
+							["amount"] = 3.32,
+						},
+					},
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["雷首翼鹿"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["TimeSpent"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["旋风斩"] = {
+									["count"] = 0.18,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0.33,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 13.33,
+								},
+							},
+							["amount"] = 13.84,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 3.32,
+								},
+							},
+							["amount"] = 3.32,
+						},
+					},
+					["DamageTaken"] = 191,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 4,
+								},
+								["冲锋"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 7,
+						},
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 17.16,
+					["ElementTaken"] = {
+						["Melee"] = 191,
+					},
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["Damage"] = 3093,
+					["DOT_Time"] = 3,
+					["TimeHeal"] = 3.32,
+					["HealingTaken"] = 60,
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 60,
+								},
+							},
+							["amount"] = 60,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 60,
+								},
+							},
+							["amount"] = 60,
+						},
+					},
+					["Healing"] = 60,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 60,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 60,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Dodge"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["Attacks"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 317,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 317,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 317,
+						},
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 50,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 50,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 50,
+						},
+						["断筋"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["旋风斩"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 184,
+									["min"] = 184,
+									["count"] = 1,
+									["amount"] = 184,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 184,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 446,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 1213,
+								},
+								["Hit"] = {
+									["max"] = 232,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 1329,
+								},
+							},
+							["count"] = 14,
+							["amount"] = 2542,
+						},
+					},
+					["RageGain"] = 4,
+					["DamagedWho"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 317,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 50,
+								},
+								["断筋"] = {
+									["count"] = 0,
+								},
+								["旋风斩"] = {
+									["count"] = 184,
+								},
+								["肉搏"] = {
+									["count"] = 2542,
+								},
+							},
+							["amount"] = 3093,
+						},
+					},
+					["TimeDamage"] = 13.84,
+					["TimeDamaging"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["旋风斩"] = {
+									["count"] = 0.18,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 0.33,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 13.33,
+								},
+							},
+							["amount"] = 13.84,
+						},
+					},
+					["WhoDamaged"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 191,
+								},
+							},
+							["amount"] = 191,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 2542,
+						["Physical"] = 551,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 4,
+								},
+								["Hit"] = {
+									["count"] = 10,
+								},
+							},
+							["amount"] = 14,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 154,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 0,
+								},
+								["冲锋"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 154,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["震击"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 0,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雷首角鹰雄兽"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 154,
+								},
+							},
+							["amount"] = 154,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["震击"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 0,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["斩杀"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏 (正义之手)"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 0,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 154,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 0,
+								},
+								["冲锋"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 154,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Physical"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["震击"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 0,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雷首角鹰雄兽"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 154,
+								},
+							},
+							["amount"] = 154,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["震击"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 0,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["斩杀"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏 (正义之手)"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 0,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0,
+								},
+								["嗜血"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["TimeHealing"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 30.83,
+								},
+								["神圣力量"] = {
+									["count"] = 0.68,
+								},
+							},
+							["amount"] = 31.51,
+						},
+					},
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["雷首翼鹿"] = {
+									["count"] = 36,
+								},
+							},
+							["amount"] = 36,
+						},
+					},
+					["TimeSpent"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["拦截昏迷"] = {
+									["count"] = 1.5,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 2.85,
+								},
+								["嗜血"] = {
+									["count"] = 3.21,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 11.49,
+								},
+								["旋风斩"] = {
+									["count"] = 0.9700000000000001,
+								},
+								["断筋"] = {
+									["count"] = 1.57,
+								},
+								["斩杀"] = {
+									["count"] = 1.82,
+								},
+								["肉搏"] = {
+									["count"] = 61.77,
+								},
+							},
+							["amount"] = 85.18000000000004,
+						},
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 30.83,
+								},
+								["神圣力量"] = {
+									["count"] = 0.68,
+								},
+							},
+							["amount"] = 31.51,
+						},
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 1.5,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0.22,
+								},
+								["嗜血"] = {
+									["count"] = 0.55,
+								},
+								["肉搏"] = {
+									["count"] = 4.08,
+								},
+							},
+							["amount"] = 6.350000000000001,
+						},
+					},
+					["DamageTaken"] = 1960,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["怒不可遏"] = {
+									["count"] = 31,
+								},
+								["冲锋"] = {
+									["count"] = 75,
+								},
+							},
+							["amount"] = 106,
+						},
+					},
+					["PartialResist"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+						["震击"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 42,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 42,
+						},
+					},
+					["OverHeals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 10,
+									["count"] = 13,
+									["amount"] = 245,
+								},
+							},
+							["count"] = 13,
+							["amount"] = 245,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["震击"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 42,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 42,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 123.04,
+					["Overhealing"] = 245,
+					["ElementTaken"] = {
+						["Melee"] = 1898,
+						["Physical"] = 62,
+					},
+					["RageGained"] = {
+						["怒不可遏"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 31,
+								},
+							},
+							["amount"] = 31,
+						},
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 75,
+								},
+							},
+							["amount"] = 75,
+						},
+					},
+					["Damage"] = 23291,
+					["DOT_Time"] = 36,
+					["TimeHeal"] = 31.51,
+					["HealingTaken"] = 639,
+					["WhoHealed"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 555,
+								},
+								["神圣力量"] = {
+									["count"] = 84,
+								},
+							},
+							["amount"] = 639,
+						},
+					},
+					["HealedWho"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["嗜血"] = {
+									["count"] = 555,
+								},
+								["神圣力量"] = {
+									["count"] = 84,
+								},
+							},
+							["amount"] = 639,
+						},
+					},
+					["Healing"] = 639,
+					["Heals"] = {
+						["嗜血"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 20,
+									["min"] = 5,
+									["count"] = 29,
+									["amount"] = 555,
+								},
+							},
+							["count"] = 29,
+							["amount"] = 555,
+						},
+						["神圣力量"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 84,
+									["min"] = 84,
+									["count"] = 1,
+									["amount"] = 84,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 84,
+						},
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 27,
+								},
+								["Dodge"] = {
+									["count"] = 7,
+								},
+								["Miss"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Parry"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 42,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["Attacks"] = {
+						["拦截昏迷"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 42,
+									["min"] = 42,
+									["count"] = 1,
+									["amount"] = 42,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 42,
+						},
+						["旋风斩"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 224,
+									["min"] = 184,
+									["count"] = 3,
+									["amount"] = 601,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 601,
+						},
+						["嗜血"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 693,
+									["min"] = 693,
+									["count"] = 1,
+									["amount"] = 693,
+								},
+								["Hit"] = {
+									["max"] = 338,
+									["min"] = 248,
+									["count"] = 9,
+									["amount"] = 2529,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 3222,
+						},
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 50,
+									["min"] = 42,
+									["count"] = 12,
+									["amount"] = 564,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 564,
+						},
+						["肉搏 (正义之手)"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 99,
+									["min"] = 79,
+									["count"] = 3,
+									["amount"] = 264,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 264,
+						},
+						["断筋"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 65,
+									["min"] = 64,
+									["count"] = 3,
+									["amount"] = 193,
+								},
+								["Hit"] = {
+									["max"] = 30,
+									["min"] = 30,
+									["count"] = 2,
+									["amount"] = 60,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 253,
+						},
+						["斩杀"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 980,
+									["min"] = 980,
+									["count"] = 1,
+									["amount"] = 980,
+								},
+								["Hit"] = {
+									["max"] = 963,
+									["min"] = 579,
+									["count"] = 2,
+									["amount"] = 1542,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 2522,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 502,
+									["min"] = 139,
+									["count"] = 29,
+									["amount"] = 8217,
+								},
+								["Hit"] = {
+									["max"] = 280,
+									["min"] = 67,
+									["count"] = 52,
+									["amount"] = 7606,
+								},
+							},
+							["count"] = 81,
+							["amount"] = 15823,
+						},
+					},
+					["RageGain"] = 106,
+					["DamagedWho"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["拦截昏迷"] = {
+									["count"] = 42,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 165,
+								},
+								["嗜血"] = {
+									["count"] = 2884,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 564,
+								},
+								["旋风斩"] = {
+									["count"] = 601,
+								},
+								["断筋"] = {
+									["count"] = 253,
+								},
+								["斩杀"] = {
+									["count"] = 1559,
+								},
+								["肉搏"] = {
+									["count"] = 14301,
+								},
+							},
+							["amount"] = 20369,
+						},
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 963,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 99,
+								},
+								["嗜血"] = {
+									["count"] = 338,
+								},
+								["肉搏"] = {
+									["count"] = 1522,
+								},
+							},
+							["amount"] = 2922,
+						},
+					},
+					["TimeDamage"] = 91.53000000000003,
+					["TimeDamaging"] = {
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["拦截昏迷"] = {
+									["count"] = 1.5,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 2.85,
+								},
+								["嗜血"] = {
+									["count"] = 3.21,
+								},
+								["重伤 (伤害/跳)"] = {
+									["count"] = 11.49,
+								},
+								["旋风斩"] = {
+									["count"] = 0.9700000000000001,
+								},
+								["断筋"] = {
+									["count"] = 1.57,
+								},
+								["斩杀"] = {
+									["count"] = 1.82,
+								},
+								["肉搏"] = {
+									["count"] = 61.77,
+								},
+							},
+							["amount"] = 85.18000000000004,
+						},
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["斩杀"] = {
+									["count"] = 1.5,
+								},
+								["肉搏 (正义之手)"] = {
+									["count"] = 0.22,
+								},
+								["嗜血"] = {
+									["count"] = 0.55,
+								},
+								["肉搏"] = {
+									["count"] = 4.08,
+								},
+							},
+							["amount"] = 6.350000000000001,
+						},
+					},
+					["WhoDamaged"] = {
+						["雾翼游荡者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 95,
+								},
+							},
+							["amount"] = 95,
+						},
+						["雷首翼鹿"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 1649,
+								},
+							},
+							["amount"] = 1649,
+						},
+						["雷首角鹰雄兽"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 154,
+								},
+							},
+							["amount"] = 154,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 62,
+								},
+							},
+							["amount"] = 62,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 15823,
+						["Physical"] = 7468,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 29,
+								},
+								["Hit"] = {
+									["count"] = 52,
+								},
+							},
+							["amount"] = 81,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 12,
+								},
+								["Crit"] = {
+									["count"] = 5,
+								},
+								["Hit"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 37,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 21595.289,
+			["LastActive"] = 22841.289,
+		},
 	},
-	["FightNum"] = 0,
+	["FightNum"] = 10,
 	["CombatTimes"] = {
+		{
+			21595.289, -- [1]
+			21611.29, -- [2]
+			"18:24:04", -- [3]
+			"18:24:19", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [1]
+		{
+			21621.291, -- [1]
+			21637.292, -- [2]
+			"18:24:30", -- [3]
+			"18:24:45", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [2]
+		{
+			21642.292, -- [1]
+			21659.293, -- [2]
+			"18:24:50", -- [3]
+			"18:25:07", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [3]
+		{
+			21670.294, -- [1]
+			21678.295, -- [2]
+			"18:25:19", -- [3]
+			"18:25:26", -- [4]
+			"雾翼游荡者", -- [5]
+		}, -- [4]
+		{
+			22503.283, -- [1]
+			22521.284, -- [2]
+			"18:39:12", -- [3]
+			"18:39:29", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [5]
+		{
+			22573.288, -- [1]
+			22583.289, -- [2]
+			"18:40:21", -- [3]
+			"18:40:31", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [6]
+		{
+			22617.291, -- [1]
+			22631.292, -- [2]
+			"18:41:06", -- [3]
+			"18:41:19", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [7]
+		{
+			22636.292, -- [1]
+			22647.293, -- [2]
+			"18:41:25", -- [3]
+			"18:41:35", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [8]
+		{
+			22687.279, -- [1]
+			22703.28, -- [2]
+			"18:42:16", -- [3]
+			"18:42:31", -- [4]
+			"雷首翼鹿", -- [5]
+		}, -- [9]
+		{
+			22836.289, -- [1]
+			22851.29, -- [2]
+			"18:44:45", -- [3]
+			"18:44:59", -- [4]
+			"雷首角鹰雄兽", -- [5]
+		}, -- [10]
 	},
 	["FoughtWho"] = {
+		"雷首角鹰雄兽 18:44:45-18:44:59", -- [1]
+		"雷首翼鹿 18:42:16-18:42:31", -- [2]
+		"雷首翼鹿 18:41:25-18:41:35", -- [3]
+		"雷首翼鹿 18:41:06-18:41:19", -- [4]
+		"雷首翼鹿 18:40:21-18:40:31", -- [5]
 	},
 }
