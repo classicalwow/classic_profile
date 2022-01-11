@@ -6,8 +6,6 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1641753742,
-				["averageItemLvl"] = 58.9375,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:21999:1503:::::::60:::::::::|h[英勇头盔]|h|r", -- [1]
 					"|cffa335ee|Hitem:18404::::::::60:::::::::|h[奥妮克希亚龙牙坠饰]|h|r", -- [2]
@@ -28,6 +26,8 @@ DataStore_InventoryDB = {
 					nil, -- [17]
 					"|cff0070dd|Hitem:19107::::::::60:::::::::|h[觅血者]|h|r", -- [18]
 				},
+				["averageItemLvl"] = 58.9375,
+				["lastUpdate"] = 1641836363,
 			},
 		},
 		["Guilds"] = {
@@ -39,18 +39,15 @@ DataStore_InventoryDB = {
 					["巴托里"] = {
 						["averageItemLvl"] = 3,
 					},
-					["特变电工"] = {
-						["averageItemLvl"] = 62,
-					},
 				},
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["奶不住快跑啊"] = {
-						["averageItemLvl"] = 17,
-					},
 					["雪凉"] = {
 						["averageItemLvl"] = 41,
+					},
+					["奶不住快跑啊"] = {
+						["averageItemLvl"] = 17,
 					},
 				},
 			},
