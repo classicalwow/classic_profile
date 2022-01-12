@@ -7,12 +7,13 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -498.9999618530273,
-					["x"] = -430.5555419921875,
-					["w"] = 278.0000305175781,
+					["y"] = -497.8333282470703,
+					["x"] = -436.7218627929688,
+					["w"] = 269.0000305175781,
+					["h"] = 204.3333435058594,
 				},
 			},
-			["MainWindowHeight"] = 200.0003051757813,
+			["ClampToScreen"] = true,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -23,11 +24,14 @@ RecountDB = {
 					},
 				},
 			},
-			["DetailWindowY"] = -431.0000610351563,
-			["DetailWindowX"] = 781.666748046875,
-			["LastInstanceName"] = "奥特兰克山谷",
+			["DetailWindowY"] = -274.2221984863281,
+			["DetailWindowX"] = 822.2222900390625,
+			["LastInstanceName"] = "战歌峡谷",
 			["CurDataSet"] = "LastFightData",
+			["SegmentBosses"] = true,
+			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
+			["FrameStrata"] = "2-LOW",
 		},
 	},
 }
