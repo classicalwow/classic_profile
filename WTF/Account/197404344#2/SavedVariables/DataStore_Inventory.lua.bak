@@ -19,25 +19,25 @@ DataStore_InventoryDB = {
 					"|cffa335ee|Hitem:21998:927:::::::60:::::::::|h[英勇护手]|h|r", -- [10]
 					"|cffa335ee|Hitem:19325::::::::60:::::::::|h[胡里奥指环]|h|r", -- [11]
 					"|cffa335ee|Hitem:18821::::::::60:::::::::|h[迅击戒指]|h|r", -- [12]
-					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [13]
+					"|cff0070dd|Hitem:18854::::::::60:::::::::|h[联盟徽记]|h|r", -- [13]
 					"|cff0070dd|Hitem:11815::::::::60:::::::::|h[正义之手]|h|r", -- [14]
 					"|cff0070dd|Hitem:13397:849:::::::60:::::::::|h[石像鬼斗篷]|h|r", -- [15]
 					"|cffa335ee|Hitem:19323:37:::::::60:::::::::|h[无坚不摧之力]|h|r", -- [16]
 					nil, -- [17]
 					"|cff0070dd|Hitem:19107::::::::60:::::::::|h[觅血者]|h|r", -- [18]
 				},
-				["averageItemLvl"] = 62.875,
-				["lastUpdate"] = 1641924185,
+				["averageItemLvl"] = 58.9375,
+				["lastUpdate"] = 1642005966,
 			},
 		},
 		["Guilds"] = {
 			["Default.鱼人摩洛克.山河归一"] = {
 				["Members"] = {
-					["特变电工"] = {
-						["averageItemLvl"] = 58,
+					["夏虫不可语冰"] = {
+						["averageItemLvl"] = 61,
 					},
 					["阿阮"] = {
-						["averageItemLvl"] = 61,
+						["averageItemLvl"] = 32,
 					},
 					["伊甸星原"] = {
 						["averageItemLvl"] = 14,
@@ -49,11 +49,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["奶不住快跑啊"] = {
-						["averageItemLvl"] = 17,
-					},
 					["雪凉"] = {
 						["averageItemLvl"] = 41,
+					},
+					["奶不住快跑啊"] = {
+						["averageItemLvl"] = 17,
 					},
 				},
 			},
