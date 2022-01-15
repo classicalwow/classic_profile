@@ -34,10 +34,10 @@ X: 0
 Y: 0
 W: 300
 H: 336
-Frame: WIM3_msgFrame8
+Frame: WIM3_msgFrame4
 FrameLevel: 2
 Anchor: TOP
-X: -157
-Y: -206
+X: 1
+Y: -230
 W: 333
 H: 220
