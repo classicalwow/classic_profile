@@ -13,8 +13,8 @@ QuestAnnounceDB = {
 				},
 				["settings"] = {
 					["enable"] = true,
-					["debug"] = false,
 					["sound"] = true,
+					["debug"] = false,
 					["every"] = 1,
 				},
 				["announceIn"] = {

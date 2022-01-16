@@ -14,7 +14,7 @@ Prat-3.0_Libraries: disabled
 ItemRackOptions: enabled
 FriendGroups: disabled
 alaTalentEmu: disabled
-Immersion: enabled
+Immersion: disabled
 Altoholic_Agenda: enabled
 Altoholic_Characters: enabled
 Altoholic_Grids: enabled

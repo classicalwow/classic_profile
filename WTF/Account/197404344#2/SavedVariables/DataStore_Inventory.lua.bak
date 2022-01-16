@@ -27,7 +27,7 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:19107::::::::60:::::::::|h[觅血者]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 58.9375,
-				["lastUpdate"] = 1642099178,
+				["lastUpdate"] = 1642270232,
 			},
 		},
 		["Guilds"] = {
@@ -36,14 +36,14 @@ DataStore_InventoryDB = {
 					["夏虫不可语冰"] = {
 						["averageItemLvl"] = 61,
 					},
-					["阿阮"] = {
-						["averageItemLvl"] = 57,
-					},
-					["伊甸星原"] = {
-						["averageItemLvl"] = 14,
+					["特变电工"] = {
+						["averageItemLvl"] = 58,
 					},
 					["诗雨"] = {
 						["averageItemLvl"] = 61,
+					},
+					["爱你两世丶"] = {
+						["averageItemLvl"] = 3,
 					},
 					["巴托里"] = {
 						["averageItemLvl"] = 54,
