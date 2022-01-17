@@ -21,6 +21,11 @@ DataStore_CraftsDB = {
 						["MaxRank"] = 75,
 						["Rank"] = 54,
 					},
+					["骑术：马"] = {
+						["isSecondary"] = true,
+						["MaxRank"] = 300,
+						["Rank"] = 300,
+					},
 					["急救"] = {
 						["Categories"] = {
 							"消耗品", -- [1]
@@ -42,11 +47,6 @@ DataStore_CraftsDB = {
 							"0|材料", -- [12]
 							"4|6452", -- [13]
 						},
-						["MaxRank"] = 300,
-						["Rank"] = 300,
-					},
-					["骑术：马"] = {
-						["isSecondary"] = true,
 						["MaxRank"] = 300,
 						["Rank"] = 300,
 					},
@@ -243,7 +243,7 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "锻造",
-				["lastUpdate"] = 1642272402,
+				["lastUpdate"] = 1642355022,
 				["Prof1"] = "工程学",
 			},
 		},

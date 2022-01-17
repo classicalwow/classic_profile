@@ -32,8 +32,7 @@ VER 3 0000000001000006 "喊人" "132089"
 /script if(GetActionCooldown(63)==0) then C("压制");end /script if(UnitHealth("target")<20) then C("斩杀");end /施放 致死打击 /script if(IsActionInRange(63)==1)then C("旋风斩");end /script if(UnitMana("Player")>39) then C("英勇打击");end
 END
 VER 3 0000000001000009 "嗜血" "136012"
-/startattack
-/cast 嗜血
+w 
 END
 VER 3 000000000100000A "坐騎" "132231"
 /cast 迅捷紅色雙足飛龍
