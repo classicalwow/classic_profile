@@ -27,7 +27,7 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:19107::::::::60:::::::::|h[觅血者]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 58.9375,
-				["lastUpdate"] = 1642525380,
+				["lastUpdate"] = 1642613239,
 			},
 		},
 		["Guilds"] = {
@@ -35,9 +35,6 @@ DataStore_InventoryDB = {
 				["Members"] = {
 					["夏虫不可语冰"] = {
 						["averageItemLvl"] = 61,
-					},
-					["诗雨"] = {
-						["averageItemLvl"] = 59,
 					},
 					["巴托里"] = {
 						["averageItemLvl"] = 54,
@@ -52,11 +49,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["雪凉"] = {
-						["averageItemLvl"] = 41,
-					},
 					["奶不住快跑啊"] = {
 						["averageItemLvl"] = 17,
+					},
+					["雪凉"] = {
+						["averageItemLvl"] = 41,
 					},
 				},
 			},
