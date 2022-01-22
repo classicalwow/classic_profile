@@ -27,7 +27,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.2221984863281,
 			["DetailWindowX"] = 822.2222900390625,
-			["LastInstanceName"] = "奥特兰克山谷",
+			["LastInstanceName"] = "阿拉希盆地",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 200.0003051757813,

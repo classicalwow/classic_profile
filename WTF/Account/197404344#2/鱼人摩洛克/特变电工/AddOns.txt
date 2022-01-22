@@ -105,7 +105,7 @@ weizPVP: enabled
 WideQuestLog: enabled
 WideQuestLogLevels: enabled
 WIM: enabled
-AddOnSkins: enabled
+AddOnSkins: disabled
 ElvUI: enabled
 TalentEmu: enabled
 MeetingHorn: enabled
