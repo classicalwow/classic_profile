@@ -1,16 +1,6 @@
 
 ElvDB = {
 	["global"] = {
-		["nameplate"] = {
-			["filters"] = {
-				["ElvUI_NonTarget"] = {
-				},
-				["ElvUI_Target"] = {
-				},
-				["ElvUI_Boss"] = {
-				},
-			},
-		},
 		["unitframe"] = {
 			["AuraBarColors"] = {
 				[2825] = {
@@ -47,17 +37,31 @@ ElvDB = {
 				},
 			},
 		},
-	},
-	["DisabledAddOns"] = {
-	},
-	["profileKeys"] = {
-		["Dwac - 鱼人摩洛克"] = "Default",
-		["特变电工 - 鱼人摩洛克"] = "my profile",
+		["nameplates"] = {
+			["filters"] = {
+				["ElvUI_NonTarget"] = {
+				},
+				["ElvUI_Target"] = {
+				},
+				["ElvUI_Boss"] = {
+				},
+			},
+		},
 	},
 	["faction"] = {
 		["鱼人摩洛克"] = {
 			["特变电工"] = "Alliance",
 			["Dwac"] = "Alliance",
+		},
+	},
+	["profileKeys"] = {
+		["Dwac - 鱼人摩洛克"] = "Default",
+		["特变电工 - 鱼人摩洛克"] = "my profile",
+	},
+	["gold"] = {
+		["鱼人摩洛克"] = {
+			["特变电工"] = 22264709,
+			["Dwac"] = 199970,
 		},
 	},
 	["serverID"] = {
@@ -71,11 +75,7 @@ ElvDB = {
 			["Dwac"] = "WARRIOR",
 		},
 	},
-	["gold"] = {
-		["鱼人摩洛克"] = {
-			["特变电工"] = 22615220,
-			["Dwac"] = 199970,
-		},
+	["DisabledAddOns"] = {
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -136,11 +136,11 @@ ElvDB = {
 					["g"] = 0.61,
 					["b"] = 0.43,
 				},
-				["topPanel"] = true,
 				["bordercolor"] = {
 					["r"] = 0.34901960784314,
 					["b"] = 0.007843137254902,
 				},
+				["topPanel"] = true,
 				["afk"] = false,
 				["bottomPanel"] = false,
 				["fontSize"] = 15,
@@ -179,7 +179,7 @@ ElvDB = {
 				["throttleInterval"] = 0,
 				["panelSnapLeftID"] = 1,
 			},
-			["dbConverted"] = 1.57,
+			["dbConverted"] = 1.59,
 			["convertPages"] = true,
 			["tooltip"] = {
 				["healthBar"] = {
@@ -227,15 +227,15 @@ ElvDB = {
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,-1",
 				["ElvAB_9"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-40,277",
 				["BelowMinimapContainerMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-4,-236",
-				["QuestTimerFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
 				["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,373",
+				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
 				["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
 				["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
 				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,339,0",
 				["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,294",
 				["VehicleLeaveButton"] = "BOTTOM,UIParent,BOTTOM,-149,416",
 				["ReputationBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,484,4",
-				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
+				["QuestTimerFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
 				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
 				["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-273",
 				["ElvNP_PlayerMover"] = "TOP,UIParent,CENTER,0,-150",
@@ -314,15 +314,7 @@ ElvDB = {
 						},
 					},
 					["party"] = {
-						["buffs"] = {
-							["perrow"] = 3,
-						},
-						["groupBy"] = "GROUP",
-						["debuffs"] = {
-							["sizeOverride"] = 0,
-							["perrow"] = 3,
-							["attachTo"] = "HEALTH",
-						},
+						["verticalSpacing"] = 5,
 						["targetsGroup"] = {
 							["enable"] = true,
 						},
@@ -337,7 +329,9 @@ ElvDB = {
 							["text_format"] = "[namecolor][name:short]",
 						},
 						["height"] = 60,
-						["verticalSpacing"] = 5,
+						["buffs"] = {
+							["perrow"] = 3,
+						},
 						["horizontalSpacing"] = 3,
 						["rdebuffs"] = {
 							["enable"] = false,
@@ -351,11 +345,17 @@ ElvDB = {
 							["height"] = 15,
 						},
 						["width"] = 245,
+						["debuffs"] = {
+							["sizeOverride"] = 0,
+							["perrow"] = 3,
+							["attachTo"] = "HEALTH",
+						},
 						["health"] = {
 							["position"] = "BOTTOM",
 							["text_format"] = "[healthcolor][health:deficit:shortvalue]",
 							["yOffset"] = 2,
 						},
+						["groupBy"] = "GROUP",
 					},
 					["raid"] = {
 						["threatStyle"] = "NONE",
@@ -510,6 +510,7 @@ ElvDB = {
 					["hotkeyFontOutline"] = "OUTLINE",
 					["macrotext"] = true,
 				},
+				["keyDown"] = false,
 				["bar1"] = {
 					["hotkeyFont"] = "Expressway",
 					["macroFont"] = "Expressway",
@@ -539,6 +540,21 @@ ElvDB = {
 					["buttonsPerRow"] = 10,
 					["countFont"] = "Expressway",
 					["countFontOutline"] = "OUTLINE",
+				},
+				["bar6"] = {
+					["hotkeyFont"] = "Expressway",
+					["enabled"] = true,
+					["macroFont"] = "Expressway",
+					["macroTextPosition"] = "BOTTOMRIGHT",
+					["visibility"] = "[petbattle] hide; show",
+					["buttonSpacing"] = 1,
+					["macroFontOutline"] = "OUTLINE",
+					["countFont"] = "Expressway",
+					["buttonSize"] = 35,
+					["countFontOutline"] = "OUTLINE",
+					["hotkeyFontOutline"] = "OUTLINE",
+					["macrotext"] = true,
+					["backdrop"] = true,
 				},
 				["bar10"] = {
 					["hotkeyFont"] = "Expressway",
@@ -570,7 +586,6 @@ ElvDB = {
 					["macrotext"] = true,
 					["hotkeyFontOutline"] = "OUTLINE",
 				},
-				["keyDown"] = false,
 				["bar5"] = {
 					["hotkeyFontOutline"] = "OUTLINE",
 					["enabled"] = false,
@@ -589,21 +604,6 @@ ElvDB = {
 					["macrotext"] = true,
 				},
 				["lockActionBars"] = false,
-				["bar6"] = {
-					["hotkeyFont"] = "Expressway",
-					["enabled"] = true,
-					["macroFont"] = "Expressway",
-					["macroTextPosition"] = "BOTTOMRIGHT",
-					["visibility"] = "[petbattle] hide; show",
-					["buttonSpacing"] = 1,
-					["macroFontOutline"] = "OUTLINE",
-					["countFont"] = "Expressway",
-					["buttonSize"] = 35,
-					["countFontOutline"] = "OUTLINE",
-					["hotkeyFontOutline"] = "OUTLINE",
-					["macrotext"] = true,
-					["backdrop"] = true,
-				},
 				["cooldown"] = {
 					["fonts"] = {
 						["enable"] = true,
@@ -626,6 +626,9 @@ ElvDB = {
 				},
 			},
 			["nameplates"] = {
+				["clickThrough"] = {
+					["enemy"] = true,
+				},
 				["units"] = {
 					["ENEMY_NPC"] = {
 						["eliteIcon"] = {
@@ -671,9 +674,6 @@ ElvDB = {
 						["totems"] = true,
 					},
 				},
-				["clickThrough"] = {
-					["enemy"] = true,
-				},
 			},
 			["auras"] = {
 				["buffs"] = {
@@ -702,6 +702,11 @@ ElvPrivateDB = {
 			["install_complete"] = 1.57,
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+			["skins"] = {
+				["blizzard"] = {
+					["blizzardOptions"] = false,
+				},
+			},
 			["install_complete"] = 1.55,
 		},
 	},

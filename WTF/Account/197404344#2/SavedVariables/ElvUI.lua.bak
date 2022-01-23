@@ -4,23 +4,13 @@ ElvDB = {
 		["Dwac - 鱼人摩洛克"] = "Default",
 		["特变电工 - 鱼人摩洛克"] = "my profile",
 	},
-	["faction"] = {
+	["gold"] = {
 		["鱼人摩洛克"] = {
-			["Dwac"] = "Alliance",
-			["特变电工"] = "Alliance",
+			["Dwac"] = 199970,
+			["特变电工"] = 22318877,
 		},
 	},
 	["global"] = {
-		["nameplate"] = {
-			["filters"] = {
-				["ElvUI_NonTarget"] = {
-				},
-				["ElvUI_Target"] = {
-				},
-				["ElvUI_Boss"] = {
-				},
-			},
-		},
 		["unitframe"] = {
 			["AuraBarColors"] = {
 				[90355] = {
@@ -57,12 +47,18 @@ ElvDB = {
 				},
 			},
 		},
-	},
-	["gold"] = {
-		["鱼人摩洛克"] = {
-			["Dwac"] = 199970,
-			["特变电工"] = 23529675,
+		["nameplates"] = {
+			["filters"] = {
+				["ElvUI_NonTarget"] = {
+				},
+				["ElvUI_Target"] = {
+				},
+				["ElvUI_Boss"] = {
+				},
+			},
 		},
+	},
+	["DisabledAddOns"] = {
 	},
 	["serverID"] = {
 		[5458] = {
@@ -75,7 +71,11 @@ ElvDB = {
 			["特变电工"] = "WARRIOR",
 		},
 	},
-	["DisabledAddOns"] = {
+	["faction"] = {
+		["鱼人摩洛克"] = {
+			["Dwac"] = "Alliance",
+			["特变电工"] = "Alliance",
+		},
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -136,11 +136,11 @@ ElvDB = {
 					["g"] = 0.61,
 					["r"] = 0.78,
 				},
-				["topPanel"] = true,
 				["bordercolor"] = {
 					["b"] = 0.007843137254902,
 					["r"] = 0.34901960784314,
 				},
+				["topPanel"] = true,
 				["afk"] = false,
 				["bottomPanel"] = false,
 				["fontSize"] = 15,
@@ -185,7 +185,7 @@ ElvDB = {
 					["maxWraps"] = 2,
 				},
 			},
-			["dbConverted"] = 1.57,
+			["dbConverted"] = 1.59,
 			["convertPages"] = true,
 			["tooltip"] = {
 				["healthBar"] = {
@@ -233,15 +233,15 @@ ElvDB = {
 				["ElvAB_1"] = "BOTTOM,ElvUIParent,BOTTOM,0,-1",
 				["ElvAB_2"] = "TOP,ElvUIParent,TOP,-346,-309",
 				["BelowMinimapContainerMover"] = "TOPRIGHT,UIParent,TOPRIGHT,-4,-236",
-				["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,373",
 				["ElvAB_4"] = "BOTTOM,ElvUIParent,BOTTOM,0,38",
+				["QuestTimerFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
 				["ElvAB_5"] = "BOTTOMRIGHT,ElvUIParent,BOTTOMRIGHT,-4,294",
 				["AltPowerBarMover"] = "TOP,ElvUIParent,TOP,-1,-36",
 				["ElvAB_3"] = "BOTTOM,ElvUIParent,BOTTOM,339,0",
 				["ReputationBarMover"] = "BOTTOMLEFT,ElvUIParent,BOTTOMLEFT,484,4",
 				["VehicleLeaveButton"] = "BOTTOM,UIParent,BOTTOM,-149,416",
 				["AzeriteBarMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-3,-245",
-				["QuestTimerFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-135,-300",
+				["TalkingHeadFrameMover"] = "BOTTOM,ElvUIParent,BOTTOM,-1,373",
 				["ObjectiveFrameMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-163,-325",
 				["BNETMover"] = "TOPRIGHT,ElvUIParent,TOPRIGHT,-4,-273",
 				["VOICECHAT"] = "TOPLEFT,ElvUIParent,TOPLEFT,4,-150",
@@ -392,12 +392,6 @@ ElvDB = {
 						["buffs"] = {
 							["perrow"] = 3,
 						},
-						["groupBy"] = "GROUP",
-						["debuffs"] = {
-							["sizeOverride"] = 0,
-							["perrow"] = 3,
-							["attachTo"] = "HEALTH",
-						},
 						["targetsGroup"] = {
 							["enable"] = true,
 						},
@@ -426,11 +420,17 @@ ElvDB = {
 							["height"] = 15,
 						},
 						["width"] = 245,
+						["debuffs"] = {
+							["sizeOverride"] = 0,
+							["perrow"] = 3,
+							["attachTo"] = "HEALTH",
+						},
 						["health"] = {
 							["position"] = "BOTTOM",
 							["text_format"] = "[healthcolor][health:deficit:shortvalue]",
 							["yOffset"] = 2,
 						},
+						["groupBy"] = "GROUP",
 					},
 				},
 				["smoothbars"] = true,
@@ -516,6 +516,7 @@ ElvDB = {
 					["hotkeyFontOutline"] = "OUTLINE",
 					["macrotext"] = true,
 				},
+				["keyDown"] = false,
 				["bar1"] = {
 					["hotkeyFont"] = "Expressway",
 					["macroFont"] = "Expressway",
@@ -545,6 +546,21 @@ ElvDB = {
 					["buttonsPerRow"] = 10,
 					["countFont"] = "Expressway",
 					["countFontOutline"] = "OUTLINE",
+				},
+				["bar6"] = {
+					["hotkeyFont"] = "Expressway",
+					["enabled"] = true,
+					["macroFont"] = "Expressway",
+					["macroTextPosition"] = "BOTTOMRIGHT",
+					["visibility"] = "[petbattle] hide; show",
+					["buttonSpacing"] = 1,
+					["macroFontOutline"] = "OUTLINE",
+					["countFont"] = "Expressway",
+					["buttonSize"] = 35,
+					["countFontOutline"] = "OUTLINE",
+					["hotkeyFontOutline"] = "OUTLINE",
+					["macrotext"] = true,
+					["backdrop"] = true,
 				},
 				["bar10"] = {
 					["hotkeyFont"] = "Expressway",
@@ -576,7 +592,6 @@ ElvDB = {
 					["macrotext"] = true,
 					["hotkeyFontOutline"] = "OUTLINE",
 				},
-				["keyDown"] = false,
 				["bar5"] = {
 					["hotkeyFont"] = "Expressway",
 					["enabled"] = false,
@@ -595,21 +610,6 @@ ElvDB = {
 					["macrotext"] = true,
 				},
 				["lockActionBars"] = false,
-				["bar6"] = {
-					["hotkeyFont"] = "Expressway",
-					["enabled"] = true,
-					["macroFont"] = "Expressway",
-					["macroTextPosition"] = "BOTTOMRIGHT",
-					["visibility"] = "[petbattle] hide; show",
-					["buttonSpacing"] = 1,
-					["macroFontOutline"] = "OUTLINE",
-					["countFont"] = "Expressway",
-					["buttonSize"] = 35,
-					["countFontOutline"] = "OUTLINE",
-					["hotkeyFontOutline"] = "OUTLINE",
-					["macrotext"] = true,
-					["backdrop"] = true,
-				},
 				["cooldown"] = {
 					["fonts"] = {
 						["enable"] = true,
@@ -632,6 +632,9 @@ ElvDB = {
 				},
 			},
 			["nameplates"] = {
+				["clickThrough"] = {
+					["enemy"] = true,
+				},
 				["units"] = {
 					["ENEMY_NPC"] = {
 						["eliteIcon"] = {
@@ -677,9 +680,6 @@ ElvDB = {
 						["totems"] = true,
 					},
 				},
-				["clickThrough"] = {
-					["enemy"] = true,
-				},
 			},
 			["chat"] = {
 				["panelSnapRightID"] = 4,
@@ -702,6 +702,11 @@ ElvPrivateDB = {
 			["install_complete"] = 1.57,
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+			["skins"] = {
+				["blizzard"] = {
+					["blizzardOptions"] = false,
+				},
+			},
 			["install_complete"] = 1.55,
 		},
 	},

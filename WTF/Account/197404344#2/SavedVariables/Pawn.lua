@@ -7,18 +7,20 @@ PawnCommon = {
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
 	["ShowItemLevelUpgrades"] = false,
+	["IgnoreGemsWhileLeveling"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 				["特变电工-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
 			},
 			["Color"] = "c69b6d",
-			["LocalizedName"] = "战士: 狂怒",
+			["LocalizedName"] = "战士: Fury",
 			["ClassID"] = 1,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -29,10 +31,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":MAGE3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "3fc6ea",
-			["LocalizedName"] = "法师: 冰霜",
+			["LocalizedName"] = "法师: Frost",
 			["ClassID"] = 8,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -43,10 +46,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":WARLOCK2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "8787ed",
-			["LocalizedName"] = "术士: 恶魔学识",
+			["LocalizedName"] = "术士: Demonology",
 			["ClassID"] = 9,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -57,10 +61,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":MAGE1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "3fc6ea",
-			["LocalizedName"] = "法师: 奥术",
+			["LocalizedName"] = "法师: Arcane",
 			["ClassID"] = 8,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -71,10 +76,11 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":MAGE2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "3fc6ea",
-			["LocalizedName"] = "法师: 火焰",
+			["LocalizedName"] = "法师: Fire",
 			["ClassID"] = 8,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -85,10 +91,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":PALADIN2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "f48cba",
-			["LocalizedName"] = "圣骑士: 防护",
+			["LocalizedName"] = "圣骑士: Protection",
 			["ClassID"] = 2,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "TANK",
@@ -99,10 +106,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":HUNTER2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "aad372",
-			["LocalizedName"] = "猎人: 射击",
+			["LocalizedName"] = "猎人: Marksman",
 			["ClassID"] = 3,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -113,10 +121,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":PRIEST1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
-			["LocalizedName"] = "牧师: 戒律",
+			["LocalizedName"] = "牧师: Discipline",
 			["ClassID"] = 5,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
@@ -127,13 +136,14 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":WARRIOR3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 				["特变电工-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
 			},
 			["Color"] = "c69b6d",
-			["LocalizedName"] = "战士: 防护",
+			["LocalizedName"] = "战士: Protection",
 			["ClassID"] = 1,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "TANK",
@@ -144,10 +154,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":WARLOCK3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "8787ed",
-			["LocalizedName"] = "术士: 毁灭",
+			["LocalizedName"] = "术士: Destruction",
 			["ClassID"] = 9,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -158,10 +169,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":PRIEST3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
-			["LocalizedName"] = "牧师: 暗影",
+			["LocalizedName"] = "牧师: Shadow",
 			["ClassID"] = 5,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -172,10 +184,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":SHAMAN2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "0270dd",
-			["LocalizedName"] = "萨满祭司: 增强",
+			["LocalizedName"] = "萨满祭司: Enhancement",
 			["ClassID"] = 7,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -186,10 +199,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":HUNTER3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "aad372",
-			["LocalizedName"] = "猎人: 生存",
+			["LocalizedName"] = "猎人: Survival",
 			["ClassID"] = 3,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -200,10 +214,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":HUNTER1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "aad372",
-			["LocalizedName"] = "猎人: 野兽控制",
+			["LocalizedName"] = "猎人: Beast Mastery",
 			["ClassID"] = 3,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -214,13 +229,14 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":WARRIOR1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 				["特变电工-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
 			},
 			["Color"] = "c69b6d",
-			["LocalizedName"] = "战士: 武器",
+			["LocalizedName"] = "战士: Arms",
 			["ClassID"] = 1,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -231,10 +247,11 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":ROGUE1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "fff468",
-			["LocalizedName"] = "潜行者: 奇袭",
+			["LocalizedName"] = "潜行者: assassination",
 			["ClassID"] = 4,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -245,10 +262,11 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":SHAMAN3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "0270dd",
-			["LocalizedName"] = "萨满祭司: 恢复",
+			["LocalizedName"] = "萨满祭司: Restoration",
 			["ClassID"] = 7,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
@@ -259,10 +277,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":PALADIN1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "f48cba",
-			["LocalizedName"] = "圣骑士: 神圣",
+			["LocalizedName"] = "圣骑士: Holy",
 			["ClassID"] = 2,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
@@ -285,10 +304,11 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfb74e",
 		},
 		["\"Classic\":ROGUE3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "fff468",
-			["LocalizedName"] = "潜行者: 敏锐",
+			["LocalizedName"] = "潜行者: Subtlety",
 			["ClassID"] = 4,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -299,10 +319,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":ROGUE2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "fff468",
-			["LocalizedName"] = "潜行者: 战斗",
+			["LocalizedName"] = "潜行者: Combat",
 			["ClassID"] = 4,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -313,10 +334,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":WARLOCK1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "8787ed",
-			["LocalizedName"] = "术士: 痛苦",
+			["LocalizedName"] = "术士: Affliction",
 			["ClassID"] = 9,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -327,10 +349,11 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":DRUID4"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7c0a",
-			["LocalizedName"] = "德鲁伊: 恢复",
+			["LocalizedName"] = "德鲁伊: Restoration",
 			["ClassID"] = 11,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
@@ -341,10 +364,11 @@ PawnCommon = {
 			["SpecID"] = 4,
 		},
 		["\"Classic\":DRUID2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7c0a",
-			["LocalizedName"] = "德鲁伊: 野性 (伤害输出)",
+			["LocalizedName"] = "德鲁伊: Feral",
 			["ClassID"] = 11,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -355,10 +379,11 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 		["\"Classic\":DRUID3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7c0a",
-			["LocalizedName"] = "德鲁伊: 野性 (坦克)",
+			["LocalizedName"] = "德鲁伊: Guardian",
 			["ClassID"] = 11,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "TANK",
@@ -369,10 +394,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":DRUID1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ff7c0a",
-			["LocalizedName"] = "德鲁伊: 平衡",
+			["LocalizedName"] = "德鲁伊: Balance",
 			["ClassID"] = 11,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -383,10 +409,11 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":PALADIN3"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "f48cba",
-			["LocalizedName"] = "圣骑士: 惩戒",
+			["LocalizedName"] = "圣骑士: Retribution",
 			["ClassID"] = 2,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -397,10 +424,11 @@ PawnCommon = {
 			["SpecID"] = 3,
 		},
 		["\"Classic\":SHAMAN1"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "0270dd",
-			["LocalizedName"] = "萨满祭司: 元素",
+			["LocalizedName"] = "萨满祭司: Elemental",
 			["ClassID"] = 7,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
@@ -411,10 +439,11 @@ PawnCommon = {
 			["SpecID"] = 1,
 		},
 		["\"Classic\":PRIEST2"] = {
+			["IconTexturePath"] = "",
 			["PerCharacterOptions"] = {
 			},
 			["Color"] = "ffffff",
-			["LocalizedName"] = "牧师: 神圣",
+			["LocalizedName"] = "牧师: Holy",
 			["ClassID"] = 5,
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "HEALER",
@@ -427,10 +456,10 @@ PawnCommon = {
 	},
 	["ShowSocketingAdvisor"] = true,
 	["ShowSpecIcons"] = true,
-	["IgnoreGemsWhileLeveling"] = true,
+	["LastVersion"] = 2.0531,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0531,
 	["Digits"] = 1,
+	["ShownGettingStarted"] = true,
 }

@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Gothik", "DBM-Naxx", 4)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210127061542")
+mod:SetRevision("20220116041753")
 mod:SetCreatureID(16060)
 mod:SetEncounterID(1109)
 mod:SetModelID(16279)
@@ -163,7 +163,7 @@ function mod:OnCombatStart(delay)
 	table.wipe(mobCounts)
 
 	if self.Options.InfoFrame and not DBM.InfoFrame:IsShown() then
-		DBM.InfoFrame:SetHeader(DBM_CORE_L.ADDS)
+		DBM.InfoFrame:SetHeader(DBM_COMMON_L.ADDS)
 		DBM.InfoFrame:Show(8, "function", updateInfoFrame, false, false)
 		DBM.InfoFrame:SetColumns(1)
 	end

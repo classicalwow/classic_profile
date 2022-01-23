@@ -345,8 +345,11 @@ LoseControlDB = {
 		["target"] = {
 			["enabled"] = true,
 			["frameLevel"] = 0,
-			["alpha"] = 1,
 			["interruptBackgroundAlpha"] = 0.7,
+			["alpha"] = 1,
+			["interruptMiniIconsAlpha"] = 0.8,
+			["y"] = -361.8311157226563,
+			["x"] = 778.5420532226562,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
 					["friendly"] = true,
@@ -405,13 +408,14 @@ LoseControlDB = {
 					},
 				},
 			},
-			["anchor"] = "Blizzard",
+			["relativePoint"] = "TOPLEFT",
+			["anchor"] = "None",
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["interruptMiniIconsAlpha"] = 0.8,
+			["point"] = "TOPLEFT",
 			["size"] = 56,
 		},
 		["raid22"] = {
@@ -758,8 +762,11 @@ LoseControlDB = {
 		["player"] = {
 			["enabled"] = true,
 			["frameLevel"] = 0,
-			["alpha"] = 1,
 			["interruptBackgroundAlpha"] = 0.7,
+			["alpha"] = 1,
+			["interruptMiniIconsAlpha"] = 0.8,
+			["y"] = -384.8443908691406,
+			["x"] = 663.6000366210938,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
 					["friendly"] = true,
@@ -793,13 +800,14 @@ LoseControlDB = {
 					},
 				},
 			},
+			["relativePoint"] = "TOPLEFT",
 			["anchor"] = "None",
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["interruptMiniIconsAlpha"] = 0.8,
+			["point"] = "TOPLEFT",
 			["size"] = 36,
 		},
 		["raid19"] = {

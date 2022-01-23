@@ -345,8 +345,12 @@ LoseControlDB = {
 		["target"] = {
 			["enabled"] = true,
 			["frameLevel"] = 0,
-			["alpha"] = 1,
 			["size"] = 56,
+			["alpha"] = 1,
+			["point"] = "TOPLEFT",
+			["y"] = -361.8311157226563,
+			["x"] = 778.5420532226562,
+			["relativePoint"] = "TOPLEFT",
 			["categoriesEnabled"] = {
 				["interrupt"] = {
 					["friendly"] = true,
@@ -405,7 +409,7 @@ LoseControlDB = {
 					},
 				},
 			},
-			["anchor"] = "Blizzard",
+			["anchor"] = "None",
 			["interruptBackgroundVertexColor"] = {
 				["r"] = 1,
 				["g"] = 1,
@@ -758,8 +762,12 @@ LoseControlDB = {
 		["player"] = {
 			["enabled"] = true,
 			["frameLevel"] = 0,
-			["alpha"] = 1,
 			["size"] = 36,
+			["alpha"] = 1,
+			["point"] = "TOPLEFT",
+			["y"] = -384.8443908691406,
+			["x"] = 663.6000366210938,
+			["relativePoint"] = "TOPLEFT",
 			["categoriesEnabled"] = {
 				["interrupt"] = {
 					["friendly"] = true,
