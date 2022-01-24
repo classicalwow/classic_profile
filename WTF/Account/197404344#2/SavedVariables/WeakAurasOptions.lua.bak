@@ -2,8 +2,11 @@
 WeakAurasOptionsSaved = {
 	["locale"] = "zhCN",
 	["needsRebuild"] = false,
-	["version"] = "3.7.5",
+	["version"] = "3.7.6",
 	["magnetAlign"] = true,
+	["savedSnippets"] = {
+	},
+	["spellCacheAchivements"] = true,
 	["spellCache"] = {
 		["制造塞雷布拉斯节杖"] = {
 			["spells"] = {
@@ -62216,9 +62219,6 @@ WeakAurasOptionsSaved = {
 				[5404] = 136235,
 			},
 		},
-	},
-	["spellCacheAchivements"] = true,
-	["savedSnippets"] = {
 	},
 	["build"] = "41794",
 }

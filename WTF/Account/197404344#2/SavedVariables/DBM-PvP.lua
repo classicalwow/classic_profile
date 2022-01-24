@@ -5,6 +5,9 @@ DBMPvP_AllSavedVars = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
+			{
+				["Enabled"] = true,
+			}, -- [2]
 			[0] = {
 				["Enabled"] = true,
 			},
@@ -33,6 +36,28 @@ DBMPvP_AllSavedVars = {
 				["AutoSpirit"] = false,
 				["TimerStart"] = true,
 			}, -- [1]
+			{
+				["TimerRemaining"] = true,
+				["TimerFlagCVoice"] = 0,
+				["TimerStartTColor"] = 0,
+				["ShowBasesToWin"] = false,
+				["TimerFlagTColor"] = 0,
+				["HideBossEmoteFrame"] = false,
+				["TimerWinCVoice"] = 0,
+				["TimerWinTColor"] = 0,
+				["TimerCapCVoice"] = 0,
+				["ShowRelativeGameTime"] = true,
+				["TimerCap"] = true,
+				["TimerRemainingTColor"] = 0,
+				["TimerStartCVoice"] = 0,
+				["TimerRemainingCVoice"] = 0,
+				["TimerWin"] = true,
+				["Enabled"] = true,
+				["TimerCapTColor"] = 0,
+				["TimerFlag"] = true,
+				["AutoSpirit"] = false,
+				["TimerStart"] = true,
+			}, -- [2]
 			[0] = {
 				["TimerRemaining"] = true,
 				["TimerFlagCVoice"] = 0,
@@ -56,10 +81,14 @@ DBMPvP_AllSavedVars = {
 				["TimerStart"] = true,
 			},
 		},
+		["talent2"] = "WARRIOR2",
 		["z529"] = {
 			{
 				["Enabled"] = true,
 			}, -- [1]
+			{
+				["Enabled"] = true,
+			}, -- [2]
 			[0] = {
 				["Enabled"] = true,
 			},
@@ -72,6 +101,13 @@ DBMPvP_AllSavedVars = {
 				["AutoTurnIn"] = true,
 				["TimerBossCVoice"] = 0,
 			}, -- [1]
+			{
+				["Enabled"] = true,
+				["TimerBossTColor"] = 0,
+				["TimerBoss"] = true,
+				["AutoTurnIn"] = true,
+				["TimerBossCVoice"] = 0,
+			}, -- [2]
 			[0] = {
 				["Enabled"] = true,
 				["TimerBossTColor"] = 0,
