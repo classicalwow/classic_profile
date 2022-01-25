@@ -1,18 +1,29 @@
-# [3.7.6](https://github.com/WeakAuras/WeakAuras2/tree/3.7.6) (2022-01-17)
+# [3.7.7](https://github.com/WeakAuras/WeakAuras2/tree/3.7.7) (2022-01-23)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.5...3.7.6)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.6...3.7.7)
 
 ## Highlights
 
- Bug fixes 
+ - Bugfixes 
 
 ## Commits
 
-asakawa (1):
+InfusOnWoW (5):
 
-- remove the retail check on all incoming heal settings
+- Transmission: Check sender before decompression
+- Spell Changes: Also check for name/icon changes
+- Fix unnecessary calls to ApplyStateToRegion
+- Fix Modernize calling GetProperties lua error
+- Fix validate not actually moving conditions
 
-mrbuds (1):
+Stanzilla (2):
 
-- sanitize foreground/background subregions (#3427)
+- Update TOC for BCC Patch 2.5.3
+- Update WeakAurasModelPaths from wow.tools
+
+mrbuds (3):
+
+- remove boss unit for BBC
+- Disable WeakAurasModelPaths auto update
+- Allow unitId filtering on various events, fixes #3432 (#3433)
 

@@ -1,11 +1,12 @@
 local mod	= DBM:NewMod("Magmadar", "DBM-MC", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20220122233228")
 mod:SetCreatureID(11982)
 mod:SetEncounterID(664)
 mod:SetModelID(10193)
-mod:SetHotfixNoticeRev(20191205000000)--2019, 12, 05
+mod:SetHotfixNoticeRev(20220122000000)
+mod:SetMinSyncRevision(20220122000000)
 
 mod:RegisterCombat("combat")
 

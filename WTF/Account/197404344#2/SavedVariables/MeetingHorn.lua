@@ -5,6 +5,16 @@ MEETINGHORN_DB = {
 	},
 	["profiles"] = {
 		["特变电工 - 鱼人摩洛克"] = {
+			["goodleader"] = {
+				["cache"] = {
+					["熔火之心"] = {
+						["leaderGuid"] = "Player-5458-0318240B",
+						["timestamp"] = 1643042694,
+						["leader"] = "我的头发呢-鱼人摩洛克",
+						["raidName"] = "熔火之心",
+					},
+				},
+			},
 			["window"] = {
 				["databroker"] = {
 					["y"] = -20.3333740234375,

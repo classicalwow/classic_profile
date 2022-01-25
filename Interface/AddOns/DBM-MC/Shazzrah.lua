@@ -1,11 +1,12 @@
 local mod	= DBM:NewMod("Shazzrah", "DBM-MC", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20220122233228")
 mod:SetCreatureID(12264)
 mod:SetEncounterID(667)
 mod:SetModelID(13032)
-mod:SetHotfixNoticeRev(20191129000000)--2019, 11, 29
+mod:SetHotfixNoticeRev(20220122000000)
+mod:SetMinSyncRevision(20220122000000)
 
 mod:RegisterCombat("combat")
 

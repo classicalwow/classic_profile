@@ -1,11 +1,13 @@
 local mod	= DBM:NewMod("Lucifron", "DBM-MC", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20220122233228")
 mod:SetCreatureID(12118)--, 12119
 mod:SetEncounterID(663)
 mod:SetModelID(13031)
 mod:SetUsedIcons(1, 2, 3, 4)
+mod:SetHotfixNoticeRev(20220122000000)
+mod:SetMinSyncRevision(20220122000000)
 
 mod:RegisterCombat("combat")
 

@@ -1,12 +1,13 @@
 local mod	= DBM:NewMod("Geddon", "DBM-MC", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20211029181411")
+mod:SetRevision("20220122233228")
 mod:SetCreatureID(12056)
 mod:SetEncounterID(668)
 mod:SetModelID(12129)
 mod:SetUsedIcons(1, 2, 3)
-mod:SetHotfixNoticeRev(20191122000000)--2019, 11, 22
+mod:SetHotfixNoticeRev(20220122000000)
+mod:SetMinSyncRevision(20220122000000)
 
 mod:RegisterCombat("combat")
 

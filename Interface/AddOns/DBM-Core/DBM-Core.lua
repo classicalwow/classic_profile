@@ -66,17 +66,17 @@ local function showRealDate(curseDate)
 end
 
 DBM = {
-	Revision = parseCurseDate("20220118185328"),
+	Revision = parseCurseDate("20220122233430"),
 }
 -- The string that is shown as version
 if isRetail then
-	DBM.DisplayVersion = "9.1.25"
+	DBM.DisplayVersion = "9.1.26 alpha"
 	DBM.ReleaseRevision = releaseDate(2022, 1, 18) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 elseif isClassic then
-	DBM.DisplayVersion = "1.14.9"
-	DBM.ReleaseRevision = releaseDate(2022, 1, 18) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
+	DBM.DisplayVersion = "1.14.10"
+	DBM.ReleaseRevision = releaseDate(2022, 1, 22) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 elseif isBCC then
-	DBM.DisplayVersion = "2.5.24"
+	DBM.DisplayVersion = "2.5.25 alpha"
 	DBM.ReleaseRevision = releaseDate(2022, 1, 18) -- the date of the latest stable version that is available, optionally pass hours, minutes, and seconds for multiple releases in one day
 end
 DBM.HighestRelease = DBM.ReleaseRevision --Updated if newer version is detected, used by update nags to reflect critical fixes user is missing on boss pulls
@@ -2489,8 +2489,8 @@ function DBM:CheckNearby(range, targetname)
 end
 
 function DBM:IsTrivial(customLevel)
-	--if timewalking or chromie time, it's always non trivial content
-	if C_PlayerInfo.IsPlayerInChromieTime and C_PlayerInfo.IsPlayerInChromieTime() or difficultyIndex == 24 or difficultyIndex == 33 then
+	--if timewalking or chromie time or challenge modes. it's always non trivial content
+	if C_PlayerInfo.IsPlayerInChromieTime and C_PlayerInfo.IsPlayerInChromieTime() or difficultyIndex == 24 or difficultyIndex == 33 or difficultyIndex == 8 then
 		return false
 	end
 	--if custom level passed, we always hard check that level for trivial vs non trivial
@@ -6229,6 +6229,7 @@ function DBM:FlashClientIcon()
 end
 
 do
+	--Search Tags: iconto, toicon, raid icon, diamond, star, triangle
 	local iconStrings = {[1] = RAID_TARGET_1, [2] = RAID_TARGET_2, [3] = RAID_TARGET_3, [4] = RAID_TARGET_4, [5] = RAID_TARGET_5, [6] = RAID_TARGET_6, [7] = RAID_TARGET_7, [8] = RAID_TARGET_8,}
 	function DBM:IconNumToString(number)
 		return iconStrings[number] or number
@@ -6554,9 +6555,10 @@ end
 do
 	local isSeasonal
 	function bossModPrototype:IsSeasonal()
+		--Once set to true, we stop checking api an return cache
+		--But if not set true we keep checking api because the api (or buff) will return false if called too early and we don't want to cache that
 		if not isSeasonal then
-			--TODO, use C_Seasons.HasActiveSeason() once it's fixed/working
-			local IsClassicSeason = select(10, UnitAura("player", 1)) == 362859
+			local IsClassicSeason = C_Seasons and C_Seasons.HasActiveSeason()
 			if IsClassicSeason then
 				isSeasonal = true
 				DBM:Debug("Setting Classic seasonal to true")
