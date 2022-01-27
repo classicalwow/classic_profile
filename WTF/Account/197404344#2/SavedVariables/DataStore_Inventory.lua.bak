@@ -6,7 +6,7 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1643043774,
+				["lastUpdate"] = 1643130185,
 				["averageItemLvl"] = 63.11764705882353,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:12640:1506:::::::60:::::::::|h[狮心头盔]|h|r", -- [1]
@@ -39,21 +39,21 @@ DataStore_InventoryDB = {
 					["高里"] = {
 						["averageItemLvl"] = 63,
 					},
-					["巴托里"] = {
-						["averageItemLvl"] = 54,
-					},
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
+					},
+					["巴托里"] = {
+						["averageItemLvl"] = 54,
 					},
 				},
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["雪凉"] = {
-						["averageItemLvl"] = 41,
-					},
 					["奶不住快跑啊"] = {
 						["averageItemLvl"] = 17,
+					},
+					["雪凉"] = {
+						["averageItemLvl"] = 41,
 					},
 				},
 			},
