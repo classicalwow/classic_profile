@@ -199,10 +199,11 @@ _WithinDates = function(startDay, startMonth, endDay, endMonth)
     local date = (C_DateAndTime.GetTodaysDate or C_DateAndTime.GetCurrentCalendarTime)()
     local day = date.day or date.monthDay
     local month = date.month
-    if (month < startMonth) or -- Too early in the year
-        (month > endMonth) or -- Too late in the year
-        (month == startMonth and day < startDay) or -- Too early in the correct month
-        (month == endMonth and day > endDay) then -- Too late in the correct month
+    if (startMonth <= endMonth) -- Event start and end during same year
+        and ((month < startMonth) or (month > endMonth)) -- Too early or late in the year
+        or ((month < startMonth) and (month > endMonth)) -- Event span across year change
+        or (month == startMonth and day < startDay) -- Too early in the correct month
+        or (month == endMonth and day > endDay) then -- Too late in the correct month
         return false
     else
         return true
@@ -483,9 +484,9 @@ tinsert(QuestieEvent.eventQuests, {"Children's Week", 10942}) -- Children's Week
 tinsert(QuestieEvent.eventQuests, {"Children's Week", 10943}) -- Children's Week
 
 tinsert(QuestieEvent.eventQuests, {"Darkmoon Faire", 9249}) -- 40 Tickets - Schematic: Steam Tonk Controller
+tinsert(QuestieEvent.eventQuests, {"Darkmoon Faire", 10938}) -- Darkmoon Blessings Deck
 tinsert(QuestieEvent.eventQuests, {"Darkmoon Faire", 10939}) -- Darkmoon Storms Deck
 tinsert(QuestieEvent.eventQuests, {"Darkmoon Faire", 10940}) -- Darkmoon Furies Deck
-tinsert(QuestieEvent.eventQuests, {"Darkmoon Faire", 10941}) -- Darkmoon Lunacy Deck
 tinsert(QuestieEvent.eventQuests, {"Darkmoon Faire", 10941}) -- Darkmoon Lunacy Deck
 
 --tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11450}) -- Fire Training
@@ -586,6 +587,8 @@ tinsert(QuestieEvent.eventQuests, {"Hallow's End", 12409}) -- Candy Bucket
 --tinsert(QuestieEvent.eventQuests, {"Hallow's End", 12410}) -- Candy Bucket -- doesn't exist
 tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11392}) -- Call the Headless Horseman
 tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11401}) -- Call the Headless Horseman
+tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11403}) -- Free at Last!
+tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11242}) -- Free at Last!
 tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11404}) -- Call the Headless Horseman
 tinsert(QuestieEvent.eventQuests, {"Hallow's End", 11405}) -- Call the Headless Horseman
 
@@ -777,9 +780,10 @@ tinsert(QuestieEvent.eventQuests, {"Midsummer", 11933}) -- Stealing the Exodar's
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11935}) -- Stealing Silvermoon's Flame
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11954}) -- Striking Back (level 67)
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11955}) -- Ahune, the Frost Lord
+tinsert(QuestieEvent.eventQuests, {"Midsummer", 11972}) -- Shards of Ahune
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11964}) -- Incense for the Summer Scorchlings
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11966}) -- Incense for the Festival Scorchlings
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11970}) -- The Master of Summer Lore
 tinsert(QuestieEvent.eventQuests, {"Midsummer", 11971}) -- The Spinner of Summer Tales
 
-tinsert(QuestieEvent.eventQuests, {"Winter Veil", 11528}) -- A Winter Veil Gift
+tinsert(QuestieEvent.eventQuests, {"Winter Veil", 11528, "25/12", "2/1"}) -- A Winter Veil Gift

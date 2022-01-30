@@ -1,6 +1,6 @@
 ## Interface: 11401
 ## X-Min-Interface: 11302
-## Version: 1.14.10
+## Version: 1.14.11
 ## Title:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Azeroth (Classic)|r
 ## Title-deDE:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Azeroth (Classic)|r
 ## Title-esES:|cffffe00a<|r|cffff7d0aDBM|r|cffffe00a>|r |cff69ccf0Azeroth (Clásico)|r
@@ -49,6 +49,7 @@ localization.ru.lua
 localization.kr.lua
 localization.tw.lua
 localization.cn.lua
+
 KazzakClassic.lua
 
 Azuregos.lua

@@ -84,6 +84,10 @@ function QuestieTBCObjectFixes:Load()
         [187260] = {
             [objectKeys.spawns] = {[zoneIDs.FELWOOD]={{34.82,52.95}}}, -- TBC only Mailbox
         },
+        [187892] = {
+            [objectKeys.spawns] = {[zoneIDs.THE_SLAVE_PENS] = {{-1,-1}}},
+            [objectKeys.zoneID] = zoneIDs.THE_SLAVE_PENS,
+        },
         [187917] = {
             [objectKeys.name] = "Alliance Bonfire",
             [objectKeys.spawns] = {[zoneIDs.AZUREMYST_ISLE] = {{44.7,52.7}}},
@@ -594,6 +598,11 @@ function QuestieTBCObjectFixes:Load()
             [objectKeys.name] = "Spend a Talent Point",
             [objectKeys.spawns] = {[zoneIDs.STORMWIND_CITY]={{84,37}}},
             [objectKeys.zoneID] = zoneIDs.STORMWIND_CITY,
+        },
+        [400013] = {
+            [objectKeys.name] = "Wooden Figurine",
+            [objectKeys.spawns] = {[zoneIDs.ASHENVALE]={{26.6,22}}},
+            [objectKeys.zoneID] = zoneIDs.ASHENVALE,
         },
     }
 end
