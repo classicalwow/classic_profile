@@ -5,7 +5,7 @@ AltoholicDB = {
 	},
 	["global"] = {
 		["options"] = {
-			["UI.Mail.LastExpiryWarning"] = 1641122122,
+			["UI.Mail.LastExpiryWarning"] = 1643562488,
 			["Tabs.Grids.Default.鱼人摩洛克.Column1"] = "Default.鱼人摩洛克.特变电工",
 		},
 	},

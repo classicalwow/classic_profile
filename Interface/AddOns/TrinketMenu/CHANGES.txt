@@ -1,10 +1,16 @@
-lightweight tag 3a439bde4e83cfe288c9ce383bc545c0451da8de 9.0.4-Classic
+lightweight tag d9df987386998c9da58b6ebdb6a9cb3457d71a20 9.0.6-Classic
 Author:	Resike <resike@gmail.com>
-Date:	Sat Jan 29 05:14:27 2022 +0100
+Date:	Sat Jan 29 20:50:07 2022 +0100
 
-commit 3a439bde4e83cfe288c9ce383bc545c0451da8de
+commit d9df987386998c9da58b6ebdb6a9cb3457d71a20
 Author: Resike <resike@gmail.com>
-Date:   Sat Jan 29 05:14:27 2022 +0100
+Date:   Sat Jan 29 20:50:07 2022 +0100
 
     Classic TOC
+
+commit bafd1e6ce6c10256ca04f76d548fd4b0db2ddf85
+Author: Resike <resike@gmail.com>
+Date:   Sat Jan 29 20:49:19 2022 +0100
+
+    Ingore UIParent hidden state saves
 

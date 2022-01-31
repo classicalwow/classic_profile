@@ -90,7 +90,7 @@ AutoBarDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonElixirBattle"] = {
-					["arrangeOnUse"] = 13452,
+					["arrangeOnUse"] = 9206,
 				},
 				["AutoBarButtonBuff"] = {
 					["arrangeOnUse"] = 13457,

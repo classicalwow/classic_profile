@@ -243,7 +243,7 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "锻造",
-				["lastUpdate"] = 1643454051,
+				["lastUpdate"] = 1643538624,
 				["Prof1"] = "工程学",
 			},
 		},
