@@ -13,16 +13,16 @@ AtlasLootClassicDB = {
 			},
 			["GUI"] = {
 				["point"] = {
-					"TOPRIGHT", -- [1]
+					"LEFT", -- [1]
 					nil, -- [2]
-					"TOPRIGHT", -- [3]
-					-17.22249603271484, -- [4]
-					-117.1109771728516, -- [5]
+					"LEFT", -- [3]
+					301.3333435058594, -- [4]
+					-53.66676712036133, -- [5]
 				},
 				["selected"] = {
-					"AtlasLootClassic_Crafting", -- [1]
-					"Enchanting", -- [2]
-					nil, -- [3]
+					nil, -- [1]
+					"DireMaulNorth", -- [2]
+					12, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
