@@ -8,7 +8,6 @@ SET flaggedTutorials "v##M##$##&##'##8##)##*##+##(##;##E##:##1##7##,##J##K##/##
 SET actionedAdventureJournalEntries "v"
 SET profanityFilter "0"
 SET spamFilter "0"
-SET guildShowOffline "0"
 SET guildMemberNotify "0"
 SET lockActionBars "1"
 SET alwaysShowActionBars "1"

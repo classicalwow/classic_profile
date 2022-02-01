@@ -102,7 +102,7 @@ AutoBarDB = {
 					["arrangeOnUse"] = 3825,
 				},
 				["AutoBarButtonBuffWeapon1"] = {
-					["arrangeOnUse"] = 12404,
+					["arrangeOnUse"] = 18262,
 				},
 				["AutoBarButtonQuest"] = {
 					["arrangeOnUse"] = 20742,
