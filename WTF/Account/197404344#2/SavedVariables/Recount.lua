@@ -7,10 +7,10 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.9999389648438,
-					["x"] = -436.9998779296875,
+					["y"] = -495.9999008178711,
+					["x"] = -437,
 					["w"] = 269,
-					["h"] = 204.0000457763672,
+					["h"] = 204.0000152587891,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -27,7 +27,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.2221984863281,
 			["DetailWindowX"] = 822.2222900390625,
-			["LastInstanceName"] = "战歌峡谷",
+			["LastInstanceName"] = "阿拉希盆地",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
