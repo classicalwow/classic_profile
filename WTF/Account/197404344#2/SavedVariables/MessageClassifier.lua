@@ -4,65 +4,64 @@ MessageClassifierConfig = {
 	},
 	["defRulHideFromChatWindow"] = {
 	},
+	["minDupInterval"] = 0,
+	["enabled"] = true,
 	["classificationRules"] = {
 		{
-			["class"] = "MC",
 			["conditions"] = {
 				{
 					["value"] = "MC",
-					["field"] = "content",
 					["operator"] = "contain",
+					["field"] = "content",
 				}, -- [1]
 			},
+			["class"] = "MC",
 		}, -- [1]
 		{
+			["class"] = "黑龙",
 			["conditions"] = {
 				{
 					["value"] = "黑龙",
-					["operator"] = "contain",
 					["field"] = "content",
+					["operator"] = "contain",
 				}, -- [1]
 			},
-			["class"] = "黑龙",
 		}, -- [2]
 		{
+			["class"] = "战场",
 			["conditions"] = {
 				{
 					["value"] = "阿拉希",
-					["operator"] = "contain",
 					["field"] = "content",
+					["operator"] = "contain",
 				}, -- [1]
 				{
 					["value"] = "ALX",
-					["field"] = "content",
 					["operator"] = "contain",
+					["field"] = "content",
 				}, -- [2]
 				{
 					["value"] = "战歌",
-					["field"] = "content",
 					["operator"] = "contain",
+					["field"] = "content",
 				}, -- [3]
 				{
 					["value"] = "国家队",
-					["operator"] = "contain",
 					["field"] = "content",
+					["operator"] = "contain",
 				}, -- [4]
 			},
-			["class"] = "战场",
 		}, -- [3]
 		{
-			["enabled"] = false,
 			["conditions"] = {
 				{
-					["value"] = "xxx",
-					["field"] = "content",
+					["value"] = "强风",
+					["caseSensitive"] = false,
 					["operator"] = "contain",
+					["field"] = "content",
 				}, -- [1]
 			},
-			["tmp"] = true,
 			["class"] = "xxx/{author}",
 		}, -- [4]
 	},
-	["enabled"] = true,
-	["minDupInterval"] = 0,
 }

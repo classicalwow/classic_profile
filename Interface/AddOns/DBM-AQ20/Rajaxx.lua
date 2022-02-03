@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Rajaxx", "DBM-AQ20", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20200619203919")
+mod:SetRevision("20220131034020")
 mod:SetCreatureID(15341)
 mod:SetEncounterID(719)
 mod:SetModelID(15376)
@@ -73,9 +73,9 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)--some of these yells have line breaks th
 	end
 end
 
-function mod:OnSync(msg, count)
+function mod:OnSync(msg, count, sender)
 	if DBM:GetCurrentArea() ~= 509 then return end--Block syncs if not in the zone
-	if msg == "Wave" then
+	if msg == "Wave" and sender then
 		warnWave:Show(count)
 	end
 end
