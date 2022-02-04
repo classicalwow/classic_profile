@@ -8,9 +8,9 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -495.9999389648438,
-					["x"] = -436.9999694824219,
+					["x"] = -436.9998779296875,
 					["w"] = 269,
-					["h"] = 204.0000305175781,
+					["h"] = 204.0000457763672,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -27,7 +27,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.2221984863281,
 			["DetailWindowX"] = 822.2222900390625,
-			["LastInstanceName"] = "战歌峡谷",
+			["LastInstanceName"] = "奥特兰克山谷",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
