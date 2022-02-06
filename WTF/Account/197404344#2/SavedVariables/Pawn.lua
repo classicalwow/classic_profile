@@ -8,16 +8,11 @@ PawnCommon = {
 	["ShowValuesForUpgradesOnly"] = true,
 	["ShowItemLevelUpgrades"] = false,
 	["ShownGettingStarted"] = true,
-	["Debug"] = false,
+	["IgnoreGemsWhileLeveling"] = true,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
 	["Digits"] = 1,
 	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["LastVersion"] = 2.0532,
-	["ButtonPosition"] = 2,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
 			["PerCharacterOptions"] = {
@@ -433,5 +428,10 @@ PawnCommon = {
 			["UnenchantedColor"] = "bfbfbf",
 		},
 	},
-	["IgnoreGemsWhileLeveling"] = true,
+	["LastVersion"] = 2.0532,
+	["ButtonPosition"] = 2,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["ShowSpecIcons"] = true,
+	["Debug"] = false,
 }
