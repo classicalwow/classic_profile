@@ -1,0 +1,4 @@
+VER 3 0000000001000001 "攻击" "INV_MISC_QUESTIONMARK"
+#showtooltip 攻击
+/startattack
+END

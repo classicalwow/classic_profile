@@ -89,6 +89,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN2"] = {
 			["PerCharacterOptions"] = {
+				["Javascript-鱼人摩洛克"] = {
+					["Visible"] = true,
+				},
+				["顶级程序员-鱼人摩洛克"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["ClassID"] = 2,
@@ -263,6 +269,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN3"] = {
 			["PerCharacterOptions"] = {
+				["Javascript-鱼人摩洛克"] = {
+					["Visible"] = true,
+				},
+				["顶级程序员-鱼人摩洛克"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["ClassID"] = 2,
@@ -387,6 +399,12 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN1"] = {
 			["PerCharacterOptions"] = {
+				["Javascript-鱼人摩洛克"] = {
+					["Visible"] = true,
+				},
+				["顶级程序员-鱼人摩洛克"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["ClassID"] = 2,

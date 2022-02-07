@@ -1,0 +1,70 @@
+
+GuidelimeDataChar = {
+	["mainFrameHeight"] = 400,
+	["showUnavailableSteps"] = true,
+	["guideSkip"] = {
+		["Sage Guide 1-10 Dun Morogh"] = {
+		},
+		["Sage Guide - 中文由Qcat汉化 1-10 丹莫罗"] = {
+		},
+		["Sage Guide - 中文由Qcat汉化 10-12 洛克莫丹,黑海岸"] = {
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+		},
+		["Hakurai - by Shikushiku 1-12 Elwynn Forest"] = {
+		},
+		["Hakurai：由Shikushiku制作，中文翻译版 1-12 艾尔文森林"] = {
+		},
+		["TUGs 升级宝典，中文由Qcat汉化 1-9 矮人/侏儒"] = {
+			true, -- [1]
+			[57] = true,
+			[7] = true,
+			[59] = true,
+			[60] = true,
+			[68] = true,
+			[42] = true,
+			[11] = true,
+		},
+		["Hakurai：由Shikushiku制作，中文翻译版 12-14 洛克莫丹"] = {
+		},
+		["Class Quests- by Shikushiku 12-12 Paladin Class Quest"] = {
+		},
+	},
+	["completedSteps"] = {
+		true, -- [1]
+		true, -- [2]
+	},
+	["arrowY"] = -168.6661987304688,
+	["arrowRelative"] = "CENTER",
+	["mainFrameX"] = 0,
+	["mainFrameLocked"] = false,
+	["mainFrameWidth"] = 350,
+	["arrowLocked"] = false,
+	["editorFrameY"] = 0,
+	["showCompletedSteps"] = false,
+	["editorFrameX"] = 0,
+	["arrowSize"] = 64,
+	["mainFrameAlpha"] = 0.5,
+	["currentGuide"] = "Sage Guide - 中文由Qcat汉化 10-12 洛克莫丹,黑海岸",
+	["editorFrameRelative"] = "CENTER",
+	["arrowX"] = -3.3333580493927,
+	["mainFrameFontSize"] = 14,
+	["mainFrameShowing"] = true,
+	["version"] = "2.026",
+	["guideSize"] = {
+		["Sage Guide 1-10 Dun Morogh"] = 337,
+		["Sage Guide - 中文由Qcat汉化 1-10 丹莫罗"] = 351,
+		["Sage Guide - 中文由Qcat汉化 10-12 洛克莫丹,黑海岸"] = 265,
+		["Hakurai - by Shikushiku 1-12 Elwynn Forest"] = 231,
+		["Hakurai：由Shikushiku制作，中文翻译版 1-12 艾尔文森林"] = 231,
+		["TUGs 升级宝典，中文由Qcat汉化 1-9 矮人/侏儒"] = 78,
+		["Hakurai：由Shikushiku制作，中文翻译版 12-14 洛克莫丹"] = 70,
+		["Class Quests- by Shikushiku 12-12 Paladin Class Quest"] = 50,
+	},
+	["showArrow"] = true,
+	["mainFrameShowScrollBar"] = true,
+	["mainFrameY"] = 0,
+	["mainFrameRelative"] = "RIGHT",
+	["arrowAlpha"] = 0.8,
+}

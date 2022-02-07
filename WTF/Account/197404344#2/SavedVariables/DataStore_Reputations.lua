@@ -1,12 +1,14 @@
 
 DataStore_ReputationsDB = {
 	["profileKeys"] = {
+		["顶级程序员 - 鱼人摩洛克"] = "顶级程序员 - 鱼人摩洛克",
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
+		["Javascript - 鱼人摩洛克"] = "Javascript - 鱼人摩洛克",
 	},
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1644055818,
+				["lastUpdate"] = 1644141268,
 				["Factions"] = {
 					19521, -- [1]
 					nil, -- [2]
@@ -25,6 +27,24 @@ DataStore_ReputationsDB = {
 					[22] = 998,
 					[32] = 1728,
 					[19] = 25151,
+				},
+			},
+			["Default.鱼人摩洛克.顶级程序员"] = {
+				["lastUpdate"] = 1644135021,
+				["Factions"] = {
+					3100, -- [1]
+					nil, -- [2]
+					4000, -- [3]
+					3100, -- [4]
+				},
+			},
+			["Default.鱼人摩洛克.Javascript"] = {
+				["lastUpdate"] = 1644148795,
+				["Factions"] = {
+					3200, -- [1]
+					nil, -- [2]
+					7075, -- [3]
+					3200, -- [4]
 				},
 			},
 		},

@@ -1,0 +1,6598 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["Javascript"] = {
+			["GUID"] = "Player-5458-03381254",
+			["LastEventHealth"] = {
+				115, -- [1]
+				105, -- [2]
+				96, -- [3]
+				96, -- [4]
+				86, -- [5]
+				86, -- [6]
+				86, -- [7]
+				77, -- [8]
+				77, -- [9]
+				67, -- [10]
+				67, -- [11]
+				67, -- [12]
+				67, -- [13]
+				67, -- [14]
+				57, -- [15]
+				90, -- [16]
+				226, -- [17]
+				226, -- [18]
+				226, -- [19]
+				226, -- [20]
+				226, -- [21]
+				217, -- [22]
+				207, -- [23]
+				207, -- [24]
+				196, -- [25]
+				196, -- [26]
+				196, -- [27]
+				196, -- [28]
+				190, -- [29]
+				181, -- [30]
+				181, -- [31]
+				181, -- [32]
+				179, -- [33]
+				169, -- [34]
+				169, -- [35]
+				180, -- [36]
+				180, -- [37]
+				180, -- [38]
+				169, -- [39]
+				158, -- [40]
+				158, -- [41]
+				158, -- [42]
+				147, -- [43]
+				147, -- [44]
+				138, -- [45]
+				138, -- [46]
+				138, -- [47]
+				127, -- [48]
+				127, -- [49]
+				127, -- [50]
+			},
+			["LastAttackedBy"] = "霜鬃剥皮者",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"HEAL", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+				"DAMAGE", -- [46]
+				"DAMAGE", -- [47]
+				"DAMAGE", -- [48]
+				"DAMAGE", -- [49]
+				"DAMAGE", -- [50]
+			},
+			["TimeWindows"] = {
+				["TimeHeal"] = {
+					10.5, -- [1]
+				},
+				["Dispelled"] = {
+					3, -- [1]
+				},
+				["Dispels"] = {
+					3, -- [1]
+				},
+				["Healing"] = {
+					588, -- [1]
+				},
+				["DamageTaken"] = {
+					4035, -- [1]
+				},
+				["DeathCount"] = {
+					1, -- [1]
+				},
+				["Overhealing"] = {
+					11, -- [1]
+				},
+				["ActiveTime"] = {
+					609.6400000000002, -- [1]
+				},
+				["HealingTaken"] = {
+					588, -- [1]
+				},
+				["TimeDamage"] = {
+					599.1400000000001, -- [1]
+				},
+				["Damage"] = {
+					11032, -- [1]
+				},
+			},
+			["enClass"] = "PALADIN",
+			["unit"] = "Javascript",
+			["LastHealTime"] = 22296.842,
+			["DeathLogs"] = {
+				{
+					["MessageIncoming"] = {
+						true, -- [1]
+						true, -- [2]
+						true, -- [3]
+						true, -- [4]
+						true, -- [5]
+						true, -- [6]
+						true, -- [7]
+						true, -- [8]
+						true, -- [9]
+						true, -- [10]
+						true, -- [11]
+						true, -- [12]
+						true, -- [13]
+						true, -- [14]
+						true, -- [15]
+						true, -- [16]
+						true, -- [17]
+						true, -- [18]
+						true, -- [19]
+						true, -- [20]
+					},
+					["Messages"] = {
+						"霜鬃猎头者 投掷 Javascript Hit -10 (Physical)", -- [1]
+						"霜鬃巨魔 肉搏 Javascript Hit -10 (Physical)", -- [2]
+						"霜鬃猎头者 肉搏 Javascript Hit -12 (Physical)", -- [3]
+						"霜鬃猎头者 投掷 Javascript Hit -12 (Physical)", -- [4]
+						"霜鬃巨魔 肉搏 Javascript Hit -11 (Physical)", -- [5]
+						"霜鬃猎头者 肉搏 Javascript Hit -12 (Physical)", -- [6]
+						"霜鬃猎头者 投掷 Javascript Hit -13 (Physical)", -- [7]
+						"霜鬃巨魔 肉搏 Javascript Hit -12 (Physical)", -- [8]
+						"霜鬃雪行者 肉搏 Javascript Hit -11 (Physical)", -- [9]
+						"霜鬃猎头者 肉搏 Javascript Hit -14 (Physical)", -- [10]
+						"霜鬃猎头者 肉搏 Javascript Hit -13 (Physical)", -- [11]
+						"霜鬃巨魔 肉搏 Javascript Hit -11 (Physical)", -- [12]
+						"霜鬃雪行者 肉搏 Javascript Hit -11 (Physical)", -- [13]
+						"霜鬃猎头者 肉搏 Javascript Hit -13 (Physical)", -- [14]
+						"霜鬃猎头者 肉搏 Javascript Dodge (1)", -- [15]
+						"霜鬃巨魔 肉搏 Javascript Hit -11 (Physical)", -- [16]
+						"霜鬃雪行者 肉搏 Javascript Hit -11 (Physical)", -- [17]
+						"霜鬃猎头者 肉搏 Javascript Hit -12 (Physical)", -- [18]
+						"霜鬃猎头者 肉搏 Javascript Hit -14 (Physical)", -- [19]
+						"Javascript死亡。", -- [20]
+					},
+					["DeathAt"] = 20693.761,
+					["EventNum"] = {
+						0, -- [1]
+						0, -- [2]
+						0, -- [3]
+						0, -- [4]
+						0, -- [5]
+						0, -- [6]
+						0, -- [7]
+						0, -- [8]
+						0, -- [9]
+						0, -- [10]
+						0, -- [11]
+						0, -- [12]
+						0, -- [13]
+						0, -- [14]
+						0, -- [15]
+						0, -- [16]
+						0, -- [17]
+						0, -- [18]
+						0, -- [19]
+						0, -- [20]
+					},
+					["MessageTimes"] = {
+						-10.80099999999948, -- [1]
+						-9.700000000000728, -- [2]
+						-8.201000000000931, -- [3]
+						-8.083999999998923, -- [4]
+						-7.283999999999651, -- [5]
+						-6.200000000000728, -- [6]
+						-5.549999999999272, -- [7]
+						-5.266999999999825, -- [8]
+						-4.450000000000728, -- [9]
+						-4.200000000000728, -- [10]
+						-4.033999999999651, -- [11]
+						-3.167000000001281, -- [12]
+						-2.433000000000902, -- [13]
+						-2.183000000000902, -- [14]
+						-2.016999999999825, -- [15]
+						-1.217000000000553, -- [16]
+						-0.3999999999978172, -- [17]
+						-0.1670000000012806, -- [18]
+						0, -- [19]
+						0, -- [20]
+					},
+					["HealthMax"] = {
+						214, -- [1]
+						214, -- [2]
+						214, -- [3]
+						214, -- [4]
+						214, -- [5]
+						214, -- [6]
+						214, -- [7]
+						214, -- [8]
+						214, -- [9]
+						214, -- [10]
+						214, -- [11]
+						214, -- [12]
+						214, -- [13]
+						214, -- [14]
+						214, -- [15]
+						214, -- [16]
+						214, -- [17]
+						214, -- [18]
+						214, -- [19]
+						214, -- [20]
+					},
+					["Health"] = {
+						203, -- [1]
+						193, -- [2]
+						183, -- [3]
+						171, -- [4]
+						159, -- [5]
+						148, -- [6]
+						136, -- [7]
+						123, -- [8]
+						111, -- [9]
+						111, -- [10]
+						86, -- [11]
+						73, -- [12]
+						62, -- [13]
+						62, -- [14]
+						38, -- [15]
+						38, -- [16]
+						27, -- [17]
+						27, -- [18]
+						4, -- [19]
+						0, -- [20]
+					},
+					["KilledBy"] = "霜鬃猎头者",
+					["MessageType"] = {
+						"DAMAGE", -- [1]
+						"DAMAGE", -- [2]
+						"DAMAGE", -- [3]
+						"DAMAGE", -- [4]
+						"DAMAGE", -- [5]
+						"DAMAGE", -- [6]
+						"DAMAGE", -- [7]
+						"DAMAGE", -- [8]
+						"DAMAGE", -- [9]
+						"DAMAGE", -- [10]
+						"DAMAGE", -- [11]
+						"DAMAGE", -- [12]
+						"DAMAGE", -- [13]
+						"DAMAGE", -- [14]
+						"DAMAGE", -- [15]
+						"DAMAGE", -- [16]
+						"DAMAGE", -- [17]
+						"DAMAGE", -- [18]
+						"DAMAGE", -- [19]
+						"MISC", -- [20]
+					},
+				}, -- [1]
+			},
+			["level"] = 7,
+			["LastDamageAbility"] = "肉搏",
+			["LastFightIn"] = 59,
+			["type"] = "Self",
+			["FightsSaved"] = 5,
+			["LastEventHealthMax"] = {
+				232, -- [1]
+				232, -- [2]
+				232, -- [3]
+				232, -- [4]
+				232, -- [5]
+				232, -- [6]
+				232, -- [7]
+				232, -- [8]
+				232, -- [9]
+				232, -- [10]
+				232, -- [11]
+				232, -- [12]
+				232, -- [13]
+				232, -- [14]
+				232, -- [15]
+				232, -- [16]
+				232, -- [17]
+				232, -- [18]
+				232, -- [19]
+				232, -- [20]
+				232, -- [21]
+				232, -- [22]
+				232, -- [23]
+				232, -- [24]
+				232, -- [25]
+				232, -- [26]
+				232, -- [27]
+				232, -- [28]
+				232, -- [29]
+				232, -- [30]
+				232, -- [31]
+				232, -- [32]
+				232, -- [33]
+				232, -- [34]
+				232, -- [35]
+				232, -- [36]
+				232, -- [37]
+				232, -- [38]
+				232, -- [39]
+				232, -- [40]
+				232, -- [41]
+				232, -- [42]
+				232, -- [43]
+				232, -- [44]
+				232, -- [45]
+				232, -- [46]
+				232, -- [47]
+				232, -- [48]
+				232, -- [49]
+				232, -- [50]
+			},
+			["LastDamageTaken"] = 10,
+			["Owner"] = false,
+			["TimeLast"] = {
+				["TimeHeal"] = 22296.759,
+				["Dispelled"] = 21988.757,
+				["Dispels"] = 21988.757,
+				["OVERALL"] = 22367.764,
+				["DamageTaken"] = 22366.764,
+				["DeathCount"] = 20691.761,
+				["Overhealing"] = 21126.756,
+				["TimeDamage"] = 22367.764,
+				["HealingTaken"] = 22296.759,
+				["Healing"] = 22296.759,
+				["ActiveTime"] = 22367.764,
+				["Damage"] = 22367.764,
+			},
+			["NextEventNum"] = 3,
+			["LastDamageTime"] = 22367.914,
+			["LastEvents"] = {
+				"霜鬃剥皮者 肉搏 Javascript Hit -10 (Physical)", -- [1]
+				"Javascript 正义审判 霜鬃剥皮者 Crit -39 (Holy)", -- [2]
+				"Javascript 正义圣印 霜鬃猎头者 Hit -6 (Holy)", -- [3]
+				"霜鬃猎头者 肉搏 Javascript Hit -10 (Physical)", -- [4]
+				"Javascript 肉搏 霜鬃猎头者 Hit -20 (Physical)", -- [5]
+				"Javascript 正义圣印 霜鬃猎头者 Hit -7 (Holy)", -- [6]
+				"霜鬃猎头者 肉搏 Javascript Hit -9 (Physical)", -- [7]
+				"霜鬃猎头者 肉搏 Javascript Hit -10 (Physical)", -- [8]
+				"Javascript 肉搏 霜鬃猎头者 Miss (1)", -- [9]
+				"霜鬃猎头者 肉搏 Javascript Parry (1)", -- [10]
+				"Javascript 肉搏 霜鬃猎头者 Hit -20 (Physical)", -- [11]
+				"Javascript 正义圣印 霜鬃猎头者 Hit -7 (Holy)", -- [12]
+				"Javascript 正义审判 霜鬃猎头者 Hit -26 (Holy)", -- [13]
+				"霜鬃猎头者 肉搏 Javascript Hit -10 (Physical)", -- [14]
+				"Javascript 肉搏 霜鬃猎头者 Hit -19 (Physical)", -- [15]
+				"Javascript 圣光术 Javascript Hit +79", -- [16]
+				"Javascript 正义审判 霜鬃雪行者 Hit -26 (Holy)", -- [17]
+				"Javascript 肉搏 霜鬃雪行者 Hit -19 (Physical)", -- [18]
+				"Javascript 肉搏 霜鬃雪行者 Hit -18 (Physical)", -- [19]
+				"Javascript 正义圣印 霜鬃雪行者 Hit -6 (Holy)", -- [20]
+				"霜鬃雪行者 肉搏 Javascript Hit -9 (Physical)", -- [21]
+				"霜鬃雪行者 肉搏 Javascript Hit -10 (Physical)", -- [22]
+				"Javascript 肉搏 霜鬃雪行者 Dodge (1)", -- [23]
+				"霜鬃雪行者 肉搏 Javascript Hit -11 (Physical)", -- [24]
+				"Javascript 肉搏 霜鬃雪行者 Hit -21 (Physical)", -- [25]
+				"霜鬃雪行者 荆棘术 Javascript Hit -3 (Nature)", -- [26]
+				"Javascript 正义圣印 霜鬃雪行者 Hit -6 (Holy)", -- [27]
+				"霜鬃雪行者 荆棘术 Javascript Hit -3 (Nature)", -- [28]
+				"霜鬃雪行者 肉搏 Javascript Hit -9 (Physical)", -- [29]
+				"Javascript 正义审判 霜鬃雪行者 Hit -26 (Holy)", -- [30]
+				"Javascript 肉搏 霜鬃雪行者 Hit -23 (Physical)", -- [31]
+				"霜鬃雪行者 荆棘术 Javascript Hit -2 (Nature)", -- [32]
+				"霜鬃雪行者 肉搏 Javascript Hit -10 (Physical)", -- [33]
+				"Javascript 肉搏 霜鬃雪行者 Hit -24 (Physical)", -- [34]
+				"霜鬃雪行者 荆棘术 Javascript Hit -2 (Nature)", -- [35]
+				"Javascript 肉搏 霜鬃剥皮者 Crit -44 (Physical)", -- [36]
+				"Javascript 正义圣印 霜鬃剥皮者 Hit -6 (Holy)", -- [37]
+				"霜鬃剥皮者 肉搏 Javascript Hit -11 (Physical)", -- [38]
+				"霜鬃剥皮者 肉搏 Javascript Hit -11 (Physical)", -- [39]
+				"Javascript 正义审判 霜鬃剥皮者 Hit -26 (Holy)", -- [40]
+				"Javascript 肉搏 霜鬃剥皮者 Glancing -20 (Physical)", -- [41]
+				"霜鬃剥皮者 肉搏 Javascript Hit -11 (Physical)", -- [42]
+				"Javascript 肉搏 霜鬃剥皮者 Dodge (1)", -- [43]
+				"霜鬃剥皮者 肉搏 Javascript Hit -9 (Physical)", -- [44]
+				"Javascript 肉搏 霜鬃剥皮者 Hit -17 (Physical)", -- [45]
+				"Javascript 正义圣印 霜鬃剥皮者 Hit -6 (Holy)", -- [46]
+				"霜鬃剥皮者 肉搏 Javascript Hit -11 (Physical)", -- [47]
+				"霜鬃剥皮者 肉搏 Javascript Hit -12 (Physical)", -- [48]
+				"Javascript 肉搏 霜鬃剥皮者 Hit -21 (Physical)", -- [49]
+				"Javascript 正义圣印 霜鬃剥皮者 Hit -6 (Holy)", -- [50]
+			},
+			["Name"] = "Javascript",
+			["LastEventIncoming"] = {
+				true, -- [1]
+				false, -- [2]
+				false, -- [3]
+				true, -- [4]
+				false, -- [5]
+				false, -- [6]
+				true, -- [7]
+				true, -- [8]
+				false, -- [9]
+				true, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				true, -- [14]
+				false, -- [15]
+				true, -- [16]
+				false, -- [17]
+				false, -- [18]
+				false, -- [19]
+				false, -- [20]
+				true, -- [21]
+				true, -- [22]
+				false, -- [23]
+				true, -- [24]
+				false, -- [25]
+				true, -- [26]
+				false, -- [27]
+				true, -- [28]
+				true, -- [29]
+				false, -- [30]
+				false, -- [31]
+				true, -- [32]
+				true, -- [33]
+				false, -- [34]
+				true, -- [35]
+				false, -- [36]
+				false, -- [37]
+				true, -- [38]
+				true, -- [39]
+				false, -- [40]
+				false, -- [41]
+				true, -- [42]
+				false, -- [43]
+				true, -- [44]
+				false, -- [45]
+				false, -- [46]
+				true, -- [47]
+				true, -- [48]
+				false, -- [49]
+				false, -- [50]
+			},
+			["LastEventTimes"] = {
+				22367.548, -- [1]
+				22367.914, -- [2]
+				22302.043, -- [3]
+				22302.96, -- [4]
+				22304.66, -- [5]
+				22304.66, -- [6]
+				22304.96, -- [7]
+				22306.976, -- [8]
+				22307.26, -- [9]
+				22308.91, -- [10]
+				22309.51, -- [11]
+				22309.51, -- [12]
+				22310.643, -- [13]
+				22310.943, -- [14]
+				22312.11, -- [15]
+				22323.394, -- [16]
+				22337.629, -- [17]
+				22338.246, -- [18]
+				22340.846, -- [19]
+				22340.846, -- [20]
+				22341.229, -- [21]
+				22343.246, -- [22]
+				22343.446, -- [23]
+				22345.696, -- [24]
+				22346.063, -- [25]
+				22346.063, -- [26]
+				22346.063, -- [27]
+				22346.063, -- [28]
+				22347.629, -- [29]
+				22347.73, -- [30]
+				22348.663, -- [31]
+				22348.663, -- [32]
+				22349.713, -- [33]
+				22351.263, -- [34]
+				22351.263, -- [35]
+				22355.18, -- [36]
+				22355.18, -- [37]
+				22355.513, -- [38]
+				22357.514, -- [39]
+				22357.73, -- [40]
+				22357.73, -- [41]
+				22359.447, -- [42]
+				22360.38, -- [43]
+				22361.464, -- [44]
+				22362.997, -- [45]
+				22362.997, -- [46]
+				22363.481, -- [47]
+				22365.497, -- [48]
+				22365.497, -- [49]
+				22365.614, -- [50]
+			},
+			["Fights"] = {
+				["Fight5"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 45,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Immune"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Block"] = {
+									["count"] = 2,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 8,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 8,
+						["Melee"] = 37,
+						["Frost"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 183,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 97,
+						["Holy"] = 86,
+					},
+					["PartialAbsorb"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 34,
+								},
+								["正义审判"] = {
+									["count"] = 52,
+								},
+								["肉搏"] = {
+									["count"] = 97,
+								},
+							},
+							["amount"] = 183,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["投掷"] = {
+									["count"] = 8,
+								},
+								["肉搏"] = {
+									["count"] = 37,
+								},
+							},
+							["amount"] = 45,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["寒冰爪"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 6,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 10,
+					},
+					["TimeHealing"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.1,
+								},
+								["正义审判"] = {
+									["count"] = 1.82,
+								},
+								["肉搏"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 10.92,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["圣光术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoHealed"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 10.92,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 7,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 34,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 34,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 52,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 52,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 23,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 64,
+								},
+								["Miss"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 17,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 33,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 97,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 10.92,
+					["TimeDamaging"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.1,
+								},
+								["正义审判"] = {
+									["count"] = 1.82,
+								},
+								["肉搏"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 10.92,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight2"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 59,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 5,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Block"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Frost"] = 0,
+						["Melee"] = 49,
+						["Nature"] = 10,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 169,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 105,
+						["Holy"] = 64,
+					},
+					["PartialAbsorb"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电箭"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 12,
+								},
+								["正义审判"] = {
+									["count"] = 52,
+								},
+								["肉搏"] = {
+									["count"] = 105,
+								},
+							},
+							["amount"] = 169,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["闪电箭"] = {
+									["count"] = 0,
+								},
+								["闪电之盾"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["荆棘术"] = {
+									["count"] = 10,
+								},
+								["肉搏"] = {
+									["count"] = 49,
+								},
+							},
+							["amount"] = 59,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["投掷"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["寒冰爪"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电箭"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 5,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["TimeHealing"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+						["圣光术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 7.55,
+								},
+							},
+							["amount"] = 10.55,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["圣光术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoHealed"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 10.55,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 6,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 12,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 12,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 52,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 52,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 24,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 105,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 105,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 10.55,
+					["TimeDamaging"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 7.55,
+								},
+							},
+							["amount"] = 10.55,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["CurrentFightData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["TimeSpent"] = {
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DamageTaken"] = 0,
+					["PartialResist"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["PartialAbsorb"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 0,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Frost"] = 0,
+						["Melee"] = 0,
+						["Nature"] = 0,
+					},
+					["Damage"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Block"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamage"] = 0,
+					["WhoDamaged"] = {
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰须"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["荆棘术"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["投掷"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["寒冰爪"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 0,
+						["Holy"] = 0,
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamaging"] = {
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["Fight3"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 354,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 12,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Immune"] = {
+									["count"] = 6,
+								},
+								["Hit"] = {
+									["count"] = 26,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 39,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 17,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+								["Block"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 21,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Physical"] = 107,
+						["Frost"] = 0,
+						["Melee"] = 241,
+						["Nature"] = 6,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 516,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 4.5,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 359,
+						["Holy"] = 157,
+					},
+					["PartialAbsorb"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+						["闪电箭"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 12,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 39,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 39,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 7,
+								},
+								["正义审判"] = {
+									["count"] = 52,
+								},
+								["肉搏"] = {
+									["count"] = 89,
+								},
+							},
+							["amount"] = 148,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 20,
+								},
+								["正义审判"] = {
+									["count"] = 78,
+								},
+								["肉搏"] = {
+									["count"] = 270,
+								},
+							},
+							["amount"] = 368,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 16,
+								},
+								["荆棘术"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 22,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["闪电箭"] = {
+									["count"] = 0,
+								},
+								["闪电之盾"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["投掷"] = {
+									["count"] = 107,
+								},
+								["肉搏"] = {
+									["count"] = 225,
+								},
+							},
+							["amount"] = 332,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["寒冰爪"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 3,
+						},
+						["闪电箭"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 12,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 12,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 39,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 39,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 0,
+					},
+					["TimeHealing"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 4.5,
+								},
+							},
+							["amount"] = 4.5,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 258,
+								},
+							},
+							["amount"] = 258,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 4.5,
+								},
+							},
+							["amount"] = 4.5,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 1.72,
+								},
+								["肉搏"] = {
+									["count"] = 6.2,
+								},
+							},
+							["amount"] = 7.920000000000001,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 4.13,
+								},
+								["肉搏"] = {
+									["count"] = 22.7,
+								},
+							},
+							["amount"] = 26.83,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["圣光术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 90,
+									["min"] = 83,
+									["count"] = 3,
+									["amount"] = 258,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 258,
+						},
+					},
+					["WhoHealed"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 258,
+								},
+							},
+							["amount"] = 258,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 39.25000000000001,
+					["Healing"] = 258,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 7,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 27,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 27,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 130,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 130,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 24,
+									["min"] = 0,
+									["count"] = 17,
+									["amount"] = 359,
+								},
+								["Miss"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 21,
+							["amount"] = 359,
+						},
+					},
+					["HealingTaken"] = 258,
+					["RageGain"] = 0,
+					["TimeDamage"] = 34.75000000000001,
+					["TimeDamaging"] = {
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 1.72,
+								},
+								["肉搏"] = {
+									["count"] = 6.2,
+								},
+							},
+							["amount"] = 7.920000000000001,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 4.13,
+								},
+								["肉搏"] = {
+									["count"] = 22.7,
+								},
+							},
+							["amount"] = 26.83,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 29,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 7,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 6,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 29,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 190,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 130,
+						["Holy"] = 60,
+					},
+					["PartialAbsorb"] = {
+						["闪电箭"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 34,
+								},
+								["正义审判"] = {
+									["count"] = 26,
+								},
+								["肉搏"] = {
+									["count"] = 130,
+								},
+							},
+							["amount"] = 190,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["闪电箭"] = {
+									["count"] = 0,
+								},
+								["闪电之盾"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 29,
+								},
+							},
+							["amount"] = 29,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["闪电箭"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 5,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 5,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0.72,
+								},
+								["肉搏"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9.719999999999999,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 9.719999999999999,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 7,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 34,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 34,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 26,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 26,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 24,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 112,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 18,
+									["min"] = 18,
+									["count"] = 1,
+									["amount"] = 18,
+								},
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 130,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 9.719999999999999,
+					["TimeDamaging"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0.72,
+								},
+								["肉搏"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9.719999999999999,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 75,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 1,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 75,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 185,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 102,
+						["Holy"] = 83,
+					},
+					["PartialAbsorb"] = {
+						["闪电箭"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 18,
+								},
+								["正义审判"] = {
+									["count"] = 65,
+								},
+								["肉搏"] = {
+									["count"] = 102,
+								},
+							},
+							["amount"] = 185,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["闪电箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 75,
+								},
+							},
+							["amount"] = 75,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["闪电箭"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 7,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 5,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.12,
+								},
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 9.120000000000001,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 6,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 18,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 39,
+									["min"] = 39,
+									["count"] = 1,
+									["amount"] = 39,
+								},
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 26,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 65,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 20,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 20,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 17,
+									["min"] = 17,
+									["count"] = 1,
+									["amount"] = 17,
+								},
+								["Hit"] = {
+									["max"] = 21,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 21,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 44,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 44,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 102,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 9.120000000000001,
+					["TimeDamaging"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.12,
+								},
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["Fight1"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 75,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 7,
+								},
+							},
+							["amount"] = 7,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 1,
+								},
+								["Miss"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+								["Block"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+						["Melee"] = 75,
+						["Nature"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 185,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Melee"] = 102,
+						["Holy"] = 83,
+					},
+					["PartialAbsorb"] = {
+						["闪电箭"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 18,
+								},
+								["正义审判"] = {
+									["count"] = 65,
+								},
+								["肉搏"] = {
+									["count"] = 102,
+								},
+							},
+							["amount"] = 185,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["闪电箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 75,
+								},
+							},
+							["amount"] = 75,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["闪电箭"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 7,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 7,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+						["Melee"] = 5,
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.12,
+								},
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 9.120000000000001,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 6,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 18,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 18,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 39,
+									["min"] = 39,
+									["count"] = 1,
+									["amount"] = 39,
+								},
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 26,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 65,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 20,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 20,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 17,
+									["min"] = 17,
+									["count"] = 1,
+									["amount"] = 17,
+								},
+								["Hit"] = {
+									["max"] = 21,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 21,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Miss"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 44,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 44,
+								},
+								["Parry"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 102,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 9.120000000000001,
+					["TimeDamaging"] = {
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.12,
+								},
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0,
+								},
+								["正义审判"] = {
+									["count"] = 0,
+								},
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+				},
+				["OverallData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 59,
+					},
+					["TimeHealing"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 10.5,
+								},
+							},
+							["amount"] = 10.5,
+						},
+					},
+					["OverHeals"] = {
+						["圣光术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 11,
+									["min"] = 11,
+									["count"] = 1,
+									["amount"] = 11,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 11,
+						},
+					},
+					["TimeSpent"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 2.75,
+								},
+								["肉搏"] = {
+									["count"] = 6.17,
+								},
+							},
+							["amount"] = 8.92,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.2,
+								},
+								["正义审判"] = {
+									["count"] = 17.31,
+								},
+								["肉搏"] = {
+									["count"] = 44.89000000000001,
+								},
+							},
+							["amount"] = 62.40000000000001,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.12,
+								},
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.1,
+								},
+								["正义审判"] = {
+									["count"] = 11.45,
+								},
+								["肉搏"] = {
+									["count"] = 63.97,
+								},
+							},
+							["amount"] = 75.52000000000001,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 6,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.1,
+								},
+								["正义审判"] = {
+									["count"] = 10.8,
+								},
+								["肉搏"] = {
+									["count"] = 60.60000000000001,
+								},
+							},
+							["amount"] = 71.5,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.28,
+								},
+								["正义审判"] = {
+									["count"] = 15.8,
+								},
+								["肉搏"] = {
+									["count"] = 40.2,
+								},
+							},
+							["amount"] = 56.28,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 9.59,
+								},
+								["肉搏"] = {
+									["count"] = 25.65,
+								},
+							},
+							["amount"] = 35.24,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.3,
+								},
+								["正义审判"] = {
+									["count"] = 22.77,
+								},
+								["肉搏"] = {
+									["count"] = 49.25000000000001,
+								},
+							},
+							["amount"] = 72.32000000000001,
+						},
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 10.5,
+								},
+							},
+							["amount"] = 10.5,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 1.5,
+								},
+								["肉搏"] = {
+									["count"] = 3.1,
+								},
+							},
+							["amount"] = 4.6,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.4,
+								},
+								["正义审判"] = {
+									["count"] = 34.29,
+								},
+								["肉搏"] = {
+									["count"] = 162.55,
+								},
+							},
+							["amount"] = 197.24,
+						},
+					},
+					["DamageTaken"] = 4035,
+					["WhoDispelled"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["PartialResist"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 5,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 18,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 2,
+						},
+						["闪电箭"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 15,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 15,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 8,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 8,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 18,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 409,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 409,
+						},
+					},
+					["DeathCount"] = 1,
+					["PartialAbsorb"] = {
+						["寒冰爪"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 5,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 0,
+						},
+						["荆棘术"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 0,
+						},
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["闪电箭"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 15,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 15,
+							["amount"] = 0,
+						},
+						["闪电之盾"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 8,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 8,
+							["amount"] = 0,
+						},
+						["投掷"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 409,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 409,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 609.6400000000002,
+					["Dispelled"] = 3,
+					["ElementTaken"] = {
+						["Frost"] = 76,
+						["Physical"] = 242,
+						["Melee"] = 3295,
+						["Nature"] = 422,
+					},
+					["TimeDamaging"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 2.75,
+								},
+								["肉搏"] = {
+									["count"] = 6.17,
+								},
+							},
+							["amount"] = 8.92,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.2,
+								},
+								["正义审判"] = {
+									["count"] = 17.31,
+								},
+								["肉搏"] = {
+									["count"] = 44.89000000000001,
+								},
+							},
+							["amount"] = 62.40000000000001,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.12,
+								},
+								["正义审判"] = {
+									["count"] = 3,
+								},
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 9.120000000000001,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.1,
+								},
+								["正义审判"] = {
+									["count"] = 11.45,
+								},
+								["肉搏"] = {
+									["count"] = 63.97,
+								},
+							},
+							["amount"] = 75.52000000000001,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 6,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.1,
+								},
+								["正义审判"] = {
+									["count"] = 10.8,
+								},
+								["肉搏"] = {
+									["count"] = 60.60000000000001,
+								},
+							},
+							["amount"] = 71.5,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.28,
+								},
+								["正义审判"] = {
+									["count"] = 15.8,
+								},
+								["肉搏"] = {
+									["count"] = 40.2,
+								},
+							},
+							["amount"] = 56.28,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 9.59,
+								},
+								["肉搏"] = {
+									["count"] = 25.65,
+								},
+							},
+							["amount"] = 35.24,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.3,
+								},
+								["正义审判"] = {
+									["count"] = 22.77,
+								},
+								["肉搏"] = {
+									["count"] = 49.25000000000001,
+								},
+							},
+							["amount"] = 72.32000000000001,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义审判"] = {
+									["count"] = 1.5,
+								},
+								["肉搏"] = {
+									["count"] = 3.1,
+								},
+							},
+							["amount"] = 4.6,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 0.4,
+								},
+								["正义审判"] = {
+									["count"] = 34.29,
+								},
+								["肉搏"] = {
+									["count"] = 162.55,
+								},
+							},
+							["amount"] = 197.24,
+						},
+					},
+					["Damage"] = 11032,
+					["Overhealing"] = 11,
+					["TimeHeal"] = 10.5,
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 37,
+								},
+								["Dodge"] = {
+									["count"] = 9,
+								},
+								["Hit"] = {
+									["count"] = 250,
+								},
+								["Miss"] = {
+									["count"] = 20,
+								},
+								["Block"] = {
+									["count"] = 12,
+								},
+								["Crit"] = {
+									["count"] = 14,
+								},
+								["Parry"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 351,
+						},
+						["Holy"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 309,
+								},
+							},
+							["amount"] = 313,
+						},
+					},
+					["Dispels"] = 3,
+					["WhoHealed"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 588,
+								},
+							},
+							["amount"] = 588,
+						},
+					},
+					["Healing"] = 588,
+					["HealedWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["圣光术"] = {
+									["count"] = 588,
+								},
+							},
+							["amount"] = 588,
+						},
+					},
+					["Heals"] = {
+						["圣光术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 91,
+									["min"] = 67,
+									["count"] = 7,
+									["amount"] = 588,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 588,
+						},
+					},
+					["Attacks"] = {
+						["正义圣印"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 9,
+									["min"] = 6,
+									["count"] = 206,
+									["amount"] = 1480,
+								},
+							},
+							["count"] = 206,
+							["amount"] = 1480,
+						},
+						["正义审判"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 39,
+									["min"] = 38,
+									["count"] = 3,
+									["amount"] = 116,
+								},
+								["Hit"] = {
+									["max"] = 26,
+									["min"] = 25,
+									["count"] = 103,
+									["amount"] = 2657,
+								},
+							},
+							["count"] = 107,
+							["amount"] = 2773,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 24,
+									["min"] = 15,
+									["count"] = 37,
+									["amount"] = 731,
+								},
+								["Parry"] = {
+									["count"] = 9,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 29,
+									["min"] = 18,
+									["count"] = 238,
+									["amount"] = 5249,
+								},
+								["Miss"] = {
+									["count"] = 20,
+									["amount"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 9,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 52,
+									["min"] = 34,
+									["count"] = 14,
+									["amount"] = 596,
+								},
+								["Hit (被格挡)"] = {
+									["max"] = 21,
+									["min"] = 14,
+									["count"] = 12,
+									["amount"] = 203,
+								},
+							},
+							["count"] = 339,
+							["amount"] = 6779,
+						},
+					},
+					["HealingTaken"] = 588,
+					["DamagedWho"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 13,
+								},
+								["正义审判"] = {
+									["count"] = 51,
+								},
+								["肉搏"] = {
+									["count"] = 107,
+								},
+							},
+							["amount"] = 171,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 186,
+								},
+								["正义审判"] = {
+									["count"] = 387,
+								},
+								["肉搏"] = {
+									["count"] = 650,
+								},
+							},
+							["amount"] = 1223,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 18,
+								},
+								["正义审判"] = {
+									["count"] = 65,
+								},
+								["肉搏"] = {
+									["count"] = 102,
+								},
+							},
+							["amount"] = 185,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 148,
+								},
+								["正义审判"] = {
+									["count"] = 206,
+								},
+								["肉搏"] = {
+									["count"] = 970,
+								},
+							},
+							["amount"] = 1324,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 20,
+								},
+								["正义审判"] = {
+									["count"] = 26,
+								},
+								["肉搏"] = {
+									["count"] = 93,
+								},
+							},
+							["amount"] = 139,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 156,
+								},
+								["正义审判"] = {
+									["count"] = 284,
+								},
+								["肉搏"] = {
+									["count"] = 801,
+								},
+							},
+							["amount"] = 1241,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 153,
+								},
+								["正义审判"] = {
+									["count"] = 285,
+								},
+								["肉搏"] = {
+									["count"] = 654,
+								},
+							},
+							["amount"] = 1092,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 65,
+								},
+								["正义审判"] = {
+									["count"] = 208,
+								},
+								["肉搏"] = {
+									["count"] = 378,
+								},
+							},
+							["amount"] = 651,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 209,
+								},
+								["正义审判"] = {
+									["count"] = 425,
+								},
+								["肉搏"] = {
+									["count"] = 786,
+								},
+							},
+							["amount"] = 1420,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 14,
+								},
+								["正义审判"] = {
+									["count"] = 25,
+								},
+								["肉搏"] = {
+									["count"] = 100,
+								},
+							},
+							["amount"] = 139,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["正义圣印"] = {
+									["count"] = 498,
+								},
+								["正义审判"] = {
+									["count"] = 811,
+								},
+								["肉搏"] = {
+									["count"] = 2138,
+								},
+							},
+							["amount"] = 3447,
+						},
+					},
+					["TimeDamage"] = 599.1400000000001,
+					["WhoDamaged"] = {
+						["黑熊幼崽"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 33,
+						},
+						["老峭壁野猪"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 371,
+								},
+							},
+							["amount"] = 371,
+						},
+						["霜鬃剥皮者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 75,
+								},
+							},
+							["amount"] = 75,
+						},
+						["霜鬃先知"] = {
+							["Details"] = {
+								["闪电箭"] = {
+									["count"] = 318,
+								},
+								["闪电之盾"] = {
+									["count"] = 68,
+								},
+								["肉搏"] = {
+									["count"] = 200,
+								},
+							},
+							["amount"] = 586,
+						},
+						["雪狼"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 28,
+								},
+							},
+							["amount"] = 28,
+						},
+						["霜鬃猎头者"] = {
+							["Details"] = {
+								["投掷"] = {
+									["count"] = 168,
+								},
+								["肉搏"] = {
+									["count"] = 527,
+								},
+							},
+							["amount"] = 695,
+						},
+						["冰爪熊"] = {
+							["Details"] = {
+								["寒冰爪"] = {
+									["count"] = 76,
+								},
+								["肉搏"] = {
+									["count"] = 365,
+								},
+							},
+							["amount"] = 441,
+						},
+						["霜鬃雪行者"] = {
+							["Details"] = {
+								["荆棘术"] = {
+									["count"] = 36,
+								},
+								["肉搏"] = {
+									["count"] = 144,
+								},
+							},
+							["amount"] = 180,
+						},
+						["雪豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 418,
+								},
+							},
+							["amount"] = 418,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 74,
+								},
+							},
+							["amount"] = 74,
+						},
+						["麻疯侏儒"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 1037,
+								},
+							},
+							["amount"] = 1037,
+						},
+						["霜鬃巨魔"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 76,
+								},
+							},
+							["amount"] = 76,
+						},
+						["冰须"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 21,
+								},
+							},
+							["amount"] = 21,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 6779,
+						["Holy"] = 4253,
+					},
+					["ElementHitsTaken"] = {
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 5,
+								},
+							},
+							["amount"] = 5,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 20,
+								},
+							},
+							["amount"] = 20,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Immune"] = {
+									["count"] = 8,
+								},
+								["Hit"] = {
+									["count"] = 352,
+								},
+								["Dodge"] = {
+									["count"] = 14,
+								},
+								["Miss"] = {
+									["count"] = 18,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Parry"] = {
+									["count"] = 14,
+								},
+							},
+							["amount"] = 409,
+						},
+						["Nature"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 39,
+								},
+							},
+							["amount"] = 41,
+						},
+					},
+					["DispelledWho"] = {
+						["Javascript"] = {
+							["Details"] = {
+								["力量衰减 (纯净术)"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 19879.761,
+			["LastActive"] = 22367.764,
+		},
+	},
+	["FightNum"] = 60,
+	["CombatTimes"] = {
+		{
+			19879.761, -- [1]
+			19895.762, -- [2]
+			"17:57:04", -- [3]
+			"17:57:19", -- [4]
+			"冰须", -- [5]
+		}, -- [1]
+		{
+			19943.765, -- [1]
+			19956.766, -- [2]
+			"17:58:07", -- [3]
+			"17:58:20", -- [4]
+			"雪豹", -- [5]
+		}, -- [2]
+		{
+			20014.754, -- [1]
+			20026.755, -- [2]
+			"17:59:18", -- [3]
+			"17:59:30", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [3]
+		{
+			20030.755, -- [1]
+			20049.756, -- [2]
+			"17:59:34", -- [3]
+			"17:59:53", -- [4]
+			"冰爪熊", -- [5]
+		}, -- [4]
+		{
+			20055.756, -- [1]
+			20070.757, -- [2]
+			"17:59:59", -- [3]
+			"18:00:14", -- [4]
+			"冰爪熊", -- [5]
+		}, -- [5]
+		{
+			20090.759, -- [1]
+			20102.759, -- [2]
+			"18:00:34", -- [3]
+			"18:00:46", -- [4]
+			"雪豹", -- [5]
+		}, -- [6]
+		{
+			20107.759, -- [1]
+			20122.76, -- [2]
+			"18:00:52", -- [3]
+			"18:01:06", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [7]
+		{
+			20125.761, -- [1]
+			20141.761, -- [2]
+			"18:01:10", -- [3]
+			"18:01:25", -- [4]
+			"冰爪熊", -- [5]
+		}, -- [8]
+		{
+			20154.762, -- [1]
+			20166.763, -- [2]
+			"18:01:39", -- [3]
+			"18:01:50", -- [4]
+			"雪豹", -- [5]
+		}, -- [9]
+		{
+			20169.763, -- [1]
+			20187.764, -- [2]
+			"18:01:54", -- [3]
+			"18:02:11", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [10]
+		{
+			20194.764, -- [1]
+			20206.765, -- [2]
+			"18:02:19", -- [3]
+			"18:02:30", -- [4]
+			"雪豹", -- [5]
+		}, -- [11]
+		{
+			20214.766, -- [1]
+			20225.766, -- [2]
+			"18:02:38", -- [3]
+			"18:02:49", -- [4]
+			"雪豹", -- [5]
+		}, -- [12]
+		{
+			20235.767, -- [1]
+			20254.768, -- [2]
+			"18:03:00", -- [3]
+			"18:03:18", -- [4]
+			"冰爪熊", -- [5]
+		}, -- [13]
+		{
+			20257.768, -- [1]
+			20269.769, -- [2]
+			"18:03:22", -- [3]
+			"18:03:33", -- [4]
+			"雪豹", -- [5]
+		}, -- [14]
+		{
+			20288.77, -- [1]
+			20300.754, -- [2]
+			"18:03:52", -- [3]
+			"18:04:04", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [15]
+		{
+			20305.754, -- [1]
+			20320.755, -- [2]
+			"18:04:09", -- [3]
+			"18:04:24", -- [4]
+			"冰爪熊", -- [5]
+		}, -- [16]
+		{
+			20325.755, -- [1]
+			20346.757, -- [2]
+			"18:04:30", -- [3]
+			"18:04:50", -- [4]
+			"冰爪熊", -- [5]
+		}, -- [17]
+		{
+			20359.757, -- [1]
+			20374.758, -- [2]
+			"18:05:03", -- [3]
+			"18:05:18", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [18]
+		{
+			20379.759, -- [1]
+			20394.759, -- [2]
+			"18:05:23", -- [3]
+			"18:05:38", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [19]
+		{
+			20415.761, -- [1]
+			20427.761, -- [2]
+			"18:06:00", -- [3]
+			"18:06:11", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [20]
+		{
+			20447.763, -- [1]
+			20458.763, -- [2]
+			"18:06:31", -- [3]
+			"18:06:42", -- [4]
+			"老峭壁野猪", -- [5]
+		}, -- [21]
+		{
+			20460.763, -- [1]
+			20475.764, -- [2]
+			"18:06:45", -- [3]
+			"18:06:59", -- [4]
+			"雪豹", -- [5]
+		}, -- [22]
+		{
+			20481.764, -- [1]
+			20496.765, -- [2]
+			"18:07:05", -- [3]
+			"18:07:20", -- [4]
+			"雪豹", -- [5]
+		}, -- [23]
+		{
+			20617.757, -- [1]
+			20631.757, -- [2]
+			"18:09:21", -- [3]
+			"18:09:35", -- [4]
+			"雪豹", -- [5]
+		}, -- [24]
+		{
+			20675.76, -- [1]
+			20692.761, -- [2]
+			"18:10:19", -- [3]
+			"18:10:36", -- [4]
+			"霜鬃雪行者", -- [5]
+		}, -- [25]
+		{
+			21006.765, -- [1]
+			21033.767, -- [2]
+			"18:15:51", -- [3]
+			"18:16:17", -- [4]
+			"雪狼", -- [5]
+		}, -- [26]
+		{
+			21036.767, -- [1]
+			21049.768, -- [2]
+			"18:16:21", -- [3]
+			"18:16:33", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [27]
+		{
+			21066.769, -- [1]
+			21093.754, -- [2]
+			"18:16:51", -- [3]
+			"18:17:17", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [28]
+		{
+			21118.755, -- [1]
+			21164.758, -- [2]
+			"18:17:42", -- [3]
+			"18:18:28", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [29]
+		{
+			21187.759, -- [1]
+			21197.76, -- [2]
+			"18:18:51", -- [3]
+			"18:19:01", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [30]
+		{
+			21201.76, -- [1]
+			21212.761, -- [2]
+			"18:19:05", -- [3]
+			"18:19:16", -- [4]
+			"霜鬃雪行者", -- [5]
+		}, -- [31]
+		{
+			21216.761, -- [1]
+			21228.762, -- [2]
+			"18:19:20", -- [3]
+			"18:19:32", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [32]
+		{
+			21232.762, -- [1]
+			21248.763, -- [2]
+			"18:19:36", -- [3]
+			"18:19:52", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [33]
+		{
+			21254.763, -- [1]
+			21273.764, -- [2]
+			"18:19:59", -- [3]
+			"18:20:17", -- [4]
+			"霜鬃先知", -- [5]
+		}, -- [34]
+		{
+			21665.754, -- [1]
+			21677.755, -- [2]
+			"18:26:49", -- [3]
+			"18:27:01", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [35]
+		{
+			21681.755, -- [1]
+			21694.756, -- [2]
+			"18:27:06", -- [3]
+			"18:27:18", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [36]
+		{
+			21698.756, -- [1]
+			21710.757, -- [2]
+			"18:27:22", -- [3]
+			"18:27:34", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [37]
+		{
+			21713.757, -- [1]
+			21773.76, -- [2]
+			"18:27:37", -- [3]
+			"18:28:37", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [38]
+		{
+			21795.762, -- [1]
+			21806.762, -- [2]
+			"18:28:59", -- [3]
+			"18:29:10", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [39]
+		{
+			21811.763, -- [1]
+			21825.764, -- [2]
+			"18:29:16", -- [3]
+			"18:29:29", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [40]
+		{
+			21831.764, -- [1]
+			21851.765, -- [2]
+			"18:29:35", -- [3]
+			"18:29:55", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [41]
+		{
+			21852.765, -- [1]
+			21870.766, -- [2]
+			"18:29:57", -- [3]
+			"18:30:14", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [42]
+		{
+			21877.767, -- [1]
+			21898.768, -- [2]
+			"18:30:21", -- [3]
+			"18:30:42", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [43]
+		{
+			21917.769, -- [1]
+			21935.754, -- [2]
+			"18:31:01", -- [3]
+			"18:31:19", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [44]
+		{
+			21937.754, -- [1]
+			21956.755, -- [2]
+			"18:31:21", -- [3]
+			"18:31:40", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [45]
+		{
+			21959.755, -- [1]
+			21972.756, -- [2]
+			"18:31:44", -- [3]
+			"18:31:56", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [46]
+		{
+			21979.756, -- [1]
+			21993.757, -- [2]
+			"18:32:03", -- [3]
+			"18:32:17", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [47]
+		{
+			22005.758, -- [1]
+			22020.759, -- [2]
+			"18:32:29", -- [3]
+			"18:32:44", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [48]
+		{
+			22027.759, -- [1]
+			22044.76, -- [2]
+			"18:32:51", -- [3]
+			"18:33:08", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [49]
+		{
+			22047.76, -- [1]
+			22065.762, -- [2]
+			"18:33:12", -- [3]
+			"18:33:29", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [50]
+		{
+			22071.762, -- [1]
+			22082.763, -- [2]
+			"18:33:35", -- [3]
+			"18:33:46", -- [4]
+			"麻疯侏儒", -- [5]
+		}, -- [51]
+		{
+			22109.764, -- [1]
+			22122.765, -- [2]
+			"18:34:14", -- [3]
+			"18:34:26", -- [4]
+			"霜鬃雪行者", -- [5]
+		}, -- [52]
+		{
+			22125.765, -- [1]
+			22136.766, -- [2]
+			"18:34:30", -- [3]
+			"18:34:40", -- [4]
+			"霜鬃猎头者", -- [5]
+		}, -- [53]
+		{
+			22165.768, -- [1]
+			22173.768, -- [2]
+			"18:35:10", -- [3]
+			"18:35:17", -- [4]
+			"霜鬃巨魔", -- [5]
+		}, -- [54]
+		{
+			22176.768, -- [1]
+			22188.769, -- [2]
+			"18:35:20", -- [3]
+			"18:35:32", -- [4]
+			"霜鬃猎头者", -- [5]
+		}, -- [55]
+		{
+			22193.77, -- [1]
+			22208.754, -- [2]
+			"18:35:38", -- [3]
+			"18:35:52", -- [4]
+			"霜鬃猎头者", -- [5]
+		}, -- [56]
+		{
+			22214.754, -- [1]
+			22228.755, -- [2]
+			"18:35:58", -- [3]
+			"18:36:12", -- [4]
+			"霜鬃猎头者", -- [5]
+		}, -- [57]
+		{
+			22239.756, -- [1]
+			22313.76, -- [2]
+			"18:36:23", -- [3]
+			"18:37:37", -- [4]
+			"霜鬃猎头者", -- [5]
+		}, -- [58]
+		{
+			22336.762, -- [1]
+			22352.763, -- [2]
+			"18:38:01", -- [3]
+			"18:38:16", -- [4]
+			"霜鬃雪行者", -- [5]
+		}, -- [59]
+		{
+			22354.763, -- [1]
+			22368.764, -- [2]
+			"18:38:18", -- [3]
+			"18:38:32", -- [4]
+			"霜鬃剥皮者", -- [5]
+		}, -- [60]
+	},
+	["FoughtWho"] = {
+		"霜鬃剥皮者 18:38:18-18:38:32", -- [1]
+		"霜鬃雪行者 18:38:01-18:38:16", -- [2]
+		"霜鬃猎头者 18:36:23-18:37:37", -- [3]
+		"霜鬃猎头者 18:35:58-18:36:12", -- [4]
+		"霜鬃猎头者 18:35:38-18:35:52", -- [5]
+	},
+}

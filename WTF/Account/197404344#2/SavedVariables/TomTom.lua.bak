@@ -1,8 +1,10 @@
 
 TomTomDB = {
 	["profileKeys"] = {
-		["Dwac - 鱼人摩洛克"] = "Default",
+		["顶级程序员 - 鱼人摩洛克"] = "Default",
 		["特变电工 - 鱼人摩洛克"] = "Default",
+		["Dwac - 鱼人摩洛克"] = "Default",
+		["Javascript - 鱼人摩洛克"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,13 +32,19 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
-		["Dwac - 鱼人摩洛克"] = "Dwac - 鱼人摩洛克",
+		["顶级程序员 - 鱼人摩洛克"] = "顶级程序员 - 鱼人摩洛克",
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
+		["Dwac - 鱼人摩洛克"] = "Dwac - 鱼人摩洛克",
+		["Javascript - 鱼人摩洛克"] = "Javascript - 鱼人摩洛克",
 	},
 	["profiles"] = {
-		["Dwac - 鱼人摩洛克"] = {
+		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+		},
+		["Dwac - 鱼人摩洛克"] = {
+		},
+		["Javascript - 鱼人摩洛克"] = {
 		},
 	},
 }
