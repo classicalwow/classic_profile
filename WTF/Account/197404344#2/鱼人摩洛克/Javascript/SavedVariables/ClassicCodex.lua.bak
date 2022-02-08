@@ -17,9 +17,9 @@ CodexConfig = {
 		["callbacks"] = {
 			["distance"] = {
 			},
-			["world"] = {
-			},
 			["minimap"] = {
+			},
+			["world"] = {
 			},
 		},
 		["persistent"] = true,
@@ -30,21 +30,22 @@ CodexConfig = {
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["continentIcon"] = false,
-	["currentQuestGivers"] = true,
+	["minimapButton"] = true,
+	["autoTurnin"] = false,
 	["spawnMarkerSize"] = 15,
-	["showFestival"] = false,
+	["zoneMapIcon"] = true,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["colorBySpawn"] = true,
-	["zoneMapIcon"] = true,
+	["showFestival"] = false,
 	["miniMapIcon"] = true,
-	["autoTurnin"] = false,
-	["minimapButton"] = true,
+	["currentQuestGivers"] = true,
+	["continentIcon"] = false,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
 	[415] = true,
+	[419] = true,
 }
 CodexBrowserFavorites = {
 	["objects"] = {
@@ -57,4 +58,9 @@ CodexBrowserFavorites = {
 	},
 }
 CodexColors = {
+	["瓦加什"] = {
+		0.7176470588235294, -- [1]
+		0.05882352941176471, -- [2]
+		0.9529411764705882, -- [3]
+	},
 }

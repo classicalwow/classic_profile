@@ -12,8 +12,20 @@ DataStore_MailsDB = {
 				["lastVisitDate"] = "2022/02/06 16:22",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644148820,
-				["lastVisitDate"] = "2022/02/06 20:00",
+				["lastUpdate"] = 1644247188,
+				["Mails"] = {
+					{
+						["lastCheck"] = 1644247188,
+						["sender"] = "金井长者",
+						["subject"] = "",
+						["returned"] = false,
+						["money"] = 0,
+						["text"] = "感谢你来看望我，Javascript。我很高兴，因为我们还没有被遗忘。",
+						["icon"] = 134327,
+						["daysLeft"] = 29.00082206726074,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2022/02/07 23:19",
 			},
 		},
 	},

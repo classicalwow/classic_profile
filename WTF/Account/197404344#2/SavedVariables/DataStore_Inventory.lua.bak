@@ -8,7 +8,6 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1644141268,
 				["Inventory"] = {
 					"|cffffffff|Hitem:21999:1503:::::::60:::::::::|h[]|h|r", -- [1]
 					"|cffffffff|Hitem:18404::::::::60:::::::::|h[]|h|r", -- [2]
@@ -29,32 +28,32 @@ DataStore_InventoryDB = {
 					nil, -- [17]
 					"|cffffffff|Hitem:19107::::::::60:::::::::|h[]|h|r", -- [18]
 				},
+				["lastUpdate"] = 1644141268,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
-				["lastUpdate"] = 1644135021,
 				["Inventory"] = {
 					[8] = "|cffffffff|Hitem:43::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[]|h|r",
 					[7] = "|cffffffff|Hitem:6118::::::::1:::::::::|h[]|h|r",
 					[4] = "|cffffffff|Hitem:6117::::::::1:::::::::|h[]|h|r",
 				},
+				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644145785,
-				["averageItemLvl"] = 12.5,
+				["lastUpdate"] = 1644249051,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
-					"|cffffffff|Hitem:6117::::::::10:::::::::|h[侍从衬衣]|h|r", -- [4]
-					"|cff1eff00|Hitem:6195::::::::10:::::::::|h[打蜡的护甲]|h|r", -- [5]
-					"|cffffffff|Hitem:2393::::::::10:::::::::|h[轻型锁甲腰带]|h|r", -- [6]
-					"|cff1eff00|Hitem:2978::::::::10:::::::::|h[精兵护腿]|h|r", -- [7]
-					"|cffffffff|Hitem:2395::::::::10:::::::::|h[轻型锁甲靴]|h|r", -- [8]
-					"|cffffffff|Hitem:6177::::::::10:::::::::|h[铁铸护腕]|h|r", -- [9]
-					"|cff1eff00|Hitem:2980::::::::10:::::::::|h[精兵手套]|h|r", -- [10]
-					[16] = "|cff1eff00|Hitem:4564::::::672:506916992:10:::::::::|h[猛虎之尖刺木棒]|h|r",
-					[15] = "|cffffffff|Hitem:2905::::::::10:::::::::|h[羊毛披风]|h|r",
+					"|cffffffff|Hitem:6117::::::::14:::::::::|h[]|h|r", -- [4]
+					"|cffffffff|Hitem:6195::::::::14:::::::::|h[]|h|r", -- [5]
+					"|cffffffff|Hitem:2393::::::::14:::::::::|h[]|h|r", -- [6]
+					"|cffffffff|Hitem:2978::::::::14:::::::::|h[]|h|r", -- [7]
+					"|cffffffff|Hitem:6506::::::::14:::::::::|h[]|h|r", -- [8]
+					"|cffffffff|Hitem:6177::::::::14:::::::::|h[]|h|r", -- [9]
+					"|cffffffff|Hitem:2980::::::::14:::::::::|h[]|h|r", -- [10]
+					[16] = "|cffffffff|Hitem:3195::::::675:635866368:14:::::::::|h[]|h|r",
+					[15] = "|cffffffff|Hitem:4689::::::::14:::::::::|h[]|h|r",
 				},
 			},
 		},
@@ -64,8 +63,8 @@ DataStore_InventoryDB = {
 					["夏虫不可语冰"] = {
 						["averageItemLvl"] = 61,
 					},
-					["Dptic"] = {
-						["averageItemLvl"] = 24,
+					["高里"] = {
+						["averageItemLvl"] = 38,
 					},
 					["莉娜"] = {
 						["averageItemLvl"] = 62,
@@ -73,8 +72,8 @@ DataStore_InventoryDB = {
 					["影子丶"] = {
 						["averageItemLvl"] = 62,
 					},
-					["高里"] = {
-						["averageItemLvl"] = 38,
+					["Dptic"] = {
+						["averageItemLvl"] = 24,
 					},
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
@@ -89,11 +88,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["雪凉"] = {
-						["averageItemLvl"] = 41,
-					},
 					["奶不住快跑啊"] = {
 						["averageItemLvl"] = 17,
+					},
+					["雪凉"] = {
+						["averageItemLvl"] = 41,
 					},
 				},
 			},
