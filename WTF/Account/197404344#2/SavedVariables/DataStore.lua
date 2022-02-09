@@ -20,13 +20,14 @@ DataStoreDB = {
 		["Version"] = 1,
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["faction"] = "Alliance",
 				["guildName"] = "山河归一",
+				["faction"] = "Alliance",
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["faction"] = "Alliance",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
+				["guildName"] = "山河归一",
 				["faction"] = "Alliance",
 			},
 		},

@@ -15,13 +15,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1644247188,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1644247188,
 						["sender"] = "金井长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "感谢你来看望我，Javascript。我很高兴，因为我们还没有被遗忘。",
-						["lastCheck"] = 1644247188,
+						["icon"] = 134327,
 						["daysLeft"] = 29.00082206726074,
 					}, -- [1]
 				},

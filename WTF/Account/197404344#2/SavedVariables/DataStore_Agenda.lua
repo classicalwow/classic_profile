@@ -10,7 +10,6 @@ DataStore_AgendaDB = {
 			["Default.鱼人摩洛克.特变电工"] = {
 				["lastUpdate"] = 1644141269,
 				["DungeonIDs"] = {
-					["奥妮克希亚的巢穴 40人|12635837"] = "133531|1644141269|0|1",
 					["熔火之心 40人|12649079"] = "306331|1644141269|0|1",
 				},
 				["BossKills"] = {
@@ -35,7 +34,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644249100,
+				["lastUpdate"] = 1644331007,
 			},
 		},
 	},

@@ -20,8 +20,8 @@ DataStoreDB = {
 		["Version"] = 1,
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["guildName"] = "山河归一",
 				["faction"] = "Alliance",
+				["guildName"] = "山河归一",
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["faction"] = "Alliance",

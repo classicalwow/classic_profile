@@ -45,37 +45,6 @@ TomTomWaypointsM = {
 		["Dwac - 鱼人摩洛克"] = {
 		},
 		["Javascript - 鱼人摩洛克"] = {
-			[1439] = {
-				["1439:490953545.23227:298777506.11247:被抓住的狂暴蓟熊"] = {
-					1439, -- [1]
-					0.4909535452322739, -- [2]
-					0.2987775061124695, -- [3]
-					["arrivaldistance"] = 15,
-					["callbacks"] = {
-						["distance"] = {
-							[10] = nil --[[ skipped inline function ]],
-							[15] = nil --[[ skipped inline function ]],
-						},
-						["world"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
-						},
-						["minimap"] = {
-							["onclick"] = nil --[[ skipped inline function ]],
-							["tooltip_update"] = nil --[[ skipped inline function ]],
-							["tooltip_show"] = nil --[[ skipped inline function ]],
-						},
-					},
-					["persistent"] = true,
-					["minimap"] = true,
-					["cleardistance"] = 10,
-					["title"] = "被抓住的狂暴蓟熊",
-					["from"] = "?",
-					["crazy"] = true,
-					["world"] = true,
-				},
-			},
 		},
 	},
 }
