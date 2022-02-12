@@ -2,7 +2,7 @@ Guidelime.registerGuide(
 [[
 [N 25 - 27 溼地]
 [GA Alliance]
-[D 根据 Hakurai 的教学影片制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
+[D 根据 Hakurai 的教学视频制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
 请注意：学了采集就不要错过矿草，只要有经验，路过怪一律都杀掉，否则你可能会在下一步因为缺少经验而落后。见怪就杀，见草就拔！[OC]
 [G10.8,59.6Wetlands]接受[QA463]
 接受[QA288]

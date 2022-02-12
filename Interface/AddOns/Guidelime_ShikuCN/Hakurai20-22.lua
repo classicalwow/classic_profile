@@ -2,7 +2,7 @@ Guidelime.registerGuide(
 [[
 [N 20 - 22 黑海岸]
 [GA Alliance]
-[D 根据 Hakurai 的教学影片制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
+[D 根据 Hakurai 的教学视频制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
 请注意：学了采集就不要错过矿草，只要有经验，路过怪一律都杀掉，否则你可能会在下一步因为缺少经验而落后。见怪就杀，见草就拔！[OC]
 从这里开始，只有战士的职业任务可以和导航一起完成，其他职业看不到这些步骤；如果你不是战士但想做职业任务，只要暂停导航去做它就行了。[OC]
 [G37,81.4Stormwind City][T]学习职业技能[A Mage][OC]

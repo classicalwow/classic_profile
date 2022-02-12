@@ -2,7 +2,7 @@ Guidelime.registerGuide(
 [[
 [N 12 - 14 洛克莫丹]
 [GA Alliance]
-[D 根据 Hakurai 的教学影片制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
+[D 根据 Hakurai 的教学视频制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
 请注意：只要给经验，路途中遇到的怪一律都杀掉、一律都杀掉，因为很重要所以说两遍；否则你可能会在下一步因为缺少经验而落后！只要学了草药学，路过的草都要去拔；如果非常需要金币，就去学双采！[OC]
 Hakurai学了草药鍊金，所以不提示剥皮，但你如果缺G就学剥皮，没有双采很难凑足坐骑钱。[OC]
 坐地铁去铁炉堡。[OC]

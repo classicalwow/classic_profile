@@ -1,6 +1,6 @@
 ## Title: Guidelime_ShikuCN
 ## Author: shikushiku/Alexei
-## Version: 0.2-Beta
+## Version: 0.3-Beta
 ## Interface: 11302
 ## Dependencies: Guidelime
 ## Notes: Guides created by Shikushiku/Alexei on Fairbanks and translate to zhTW

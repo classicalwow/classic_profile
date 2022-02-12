@@ -2,7 +2,7 @@ Guidelime.registerGuide(
 [[
 [N 1-12 艾尔文森林]
 [GA Alliance]
-[D 根据 Hakurai 的教学影片制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
+[D 根据 Hakurai 的教学视频制作\\ https://twitch.tv/hakurai \\ 我们的公会正在招募成员！ \\ https://www.guilded.gg/KOABD]
 请注意：只要给经验，路途中遇到的怪一律都杀掉、一律都杀掉，因为很重要所以说两遍；否则你可能会在下一步因为缺少经验而落后！只要学了草药学，路过的草都要去拔；如果非常需要金币，就去学剥皮！[OC]
 [G48.2,42.8Elwynn Forest]接受[QA783]
 [G48.8,41.6]回报[QT783]
