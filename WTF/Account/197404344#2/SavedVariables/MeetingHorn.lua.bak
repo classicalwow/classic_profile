@@ -22,6 +22,16 @@ MEETINGHORN_DB = {
 					["scale"] = 1,
 				},
 			},
+			["goodleader"] = {
+				["cache"] = {
+					["黑翼之巢"] = {
+						["leader"] = "井星邦邦猎-鱼人摩洛克",
+						["timestamp"] = 1644650434,
+						["leaderGuid"] = "Player-5458-031298C0",
+						["raidName"] = "黑翼之巢",
+					},
+				},
+			},
 		},
 		["Javascript - 鱼人摩洛克"] = {
 		},

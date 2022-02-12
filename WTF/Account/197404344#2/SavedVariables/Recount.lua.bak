@@ -32,14 +32,12 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.9999389648438,
-					["x"] = -436.9998779296875,
+					["y"] = -497.110954284668,
+					["x"] = -439.2221984863281,
 					["w"] = 269,
-					["h"] = 204.0000457763672,
+					["h"] = 204.0000305175781,
 				},
 			},
-			["DetailWindowX"] = 822.2222900390625,
-			["LastInstanceName"] = "阿拉希盆地",
 			["FrameStrata"] = "2-LOW",
 			["ClampToScreen"] = true,
 			["Colors"] = {
@@ -53,10 +51,12 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -274.2221984863281,
+			["DetailWindowX"] = 822.2222900390625,
+			["LastInstanceName"] = "黑翼之巢",
+			["CurDataSet"] = "LastFightData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
-			["CurDataSet"] = "OverallData",
 		},
 		["Javascript - 鱼人摩洛克"] = {
 			["MainWindow"] = {
@@ -67,7 +67,6 @@ RecountDB = {
 					["h"] = 231,
 				},
 			},
-			["MainWindowHeight"] = 230.5555419921875,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -78,8 +77,9 @@ RecountDB = {
 					},
 				},
 			},
-			["CurDataSet"] = "OverallData",
+			["MainWindowHeight"] = 230.5555419921875,
 			["MainWindowWidth"] = 245.5556488037109,
+			["CurDataSet"] = "OverallData",
 		},
 	},
 }

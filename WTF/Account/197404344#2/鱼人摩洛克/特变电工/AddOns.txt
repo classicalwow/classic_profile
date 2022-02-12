@@ -139,3 +139,6 @@ ConsolePortUI_Menu: disabled
 ConsolePort: disabled
 RaidLedger: disabled
 ElvUI_CustomTags: disabled
+MRT: enabled
+ExRT: enabled
+honorspy: disabled

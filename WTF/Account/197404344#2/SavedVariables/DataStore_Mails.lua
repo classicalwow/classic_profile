@@ -8,8 +8,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1644135750,
-				["lastVisitDate"] = "2022/02/06 16:22",
+				["lastUpdate"] = 1644657223,
+				["lastVisitDate"] = "2022/02/12 17:13",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1644332141,
@@ -29,8 +29,8 @@ DataStore_MailsDB = {
 						["sender"] = "银脉长者",
 						["itemID"] = 21746,
 						["link"] = "|cffffffff|Hitem:21746::::::::15:::::::::|h[红包]|h|r",
-						["count"] = 1,
 						["lastCheck"] = 1644332141,
+						["count"] = 1,
 						["icon"] = 134268,
 						["daysLeft"] = 29.23553276062012,
 					}, -- [2]
@@ -49,8 +49,8 @@ DataStore_MailsDB = {
 						["sender"] = "铜须长者",
 						["itemID"] = 21746,
 						["link"] = "|cffffffff|Hitem:21746::::::::15:::::::::|h[红包]|h|r",
-						["count"] = 1,
 						["lastCheck"] = 1644332141,
+						["count"] = 1,
 						["icon"] = 134268,
 						["daysLeft"] = 29.26461791992188,
 					}, -- [4]
@@ -69,8 +69,8 @@ DataStore_MailsDB = {
 						["sender"] = "星纹长者",
 						["itemID"] = 21746,
 						["link"] = "|cffffffff|Hitem:21746::::::::15:::::::::|h[红包]|h|r",
-						["count"] = 1,
 						["lastCheck"] = 1644332141,
+						["count"] = 1,
 						["icon"] = 134268,
 						["daysLeft"] = 29.28996467590332,
 					}, -- [6]

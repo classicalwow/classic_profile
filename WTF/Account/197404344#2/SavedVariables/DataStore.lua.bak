@@ -28,6 +28,7 @@ DataStoreDB = {
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["faction"] = "Alliance",
+				["guildName"] = "山河归一",
 			},
 		},
 		["ShortToLongRealmNames"] = {

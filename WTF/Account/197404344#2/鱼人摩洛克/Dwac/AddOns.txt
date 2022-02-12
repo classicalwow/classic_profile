@@ -130,3 +130,5 @@ ConsolePortHelp: disabled
 ConsolePortLoader: disabled
 ConsolePortUI_Loot: disabled
 ConsolePortUI_Menu: disabled
+MRT: enabled
+ExRT: enabled

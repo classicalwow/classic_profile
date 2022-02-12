@@ -8,8 +8,8 @@ ClassicCodex-db-deDE: disabled
 ClassicCodex-db-esMX: disabled
 ClassicCodex-db-ruRU: disabled
 honorspy: disabled
-MRT: disabled
-ExRT: disabled
+MRT: enabled
+ExRT: enabled
 alaTalentEmu: disabled
 ElvUI_VisualAuraTimers: disabled
 ElvUI_ExtraActionBars: disabled

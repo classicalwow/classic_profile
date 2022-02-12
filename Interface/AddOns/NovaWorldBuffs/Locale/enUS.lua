@@ -823,3 +823,6 @@ L["terokkarMiddle10Desc"] = "Show a raid warning style msg in the middle of the 
 
 L["showShatWorldmapMarkersTitle"] = "Shattrath Worldmap";
 L["showShatWorldmapMarkersDesc"] = "Show dungeon daily markers on the Shattrath world map?";
+
+L["hideMinimapBuffTimersTitle"] = "Hide Minimap World Buff Timers";
+L["hideMinimapBuffTimersDesc"] = "Hide the world buffs when you hover over the minimap icon? You will only see the terokkar tower timers and dailies etc.";

@@ -1408,11 +1408,20 @@ function NWB:loadSpecificOptions()
 			set = "setDisableLogonAllLevels",
 			width = 1.5,
 		};
+		NWB.options.args["hideMinimapBuffTimers"] = {
+			type = "toggle",
+			name = L["hideMinimapBuffTimersTitle"],
+			desc = L["hideMinimapBuffTimersDesc"],
+			order = 25,
+			width = "double",
+			get = "getHideMinimapBuffTimers",
+			set = "setHideMinimapBuffTimers",
+		};
 		NWB.options.args["tbcNote"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcNoteText"],
 			fontSize = "medium",
-			order = 25,
+			order = 26,
 		};
 		NWB.options.args["showShatWorldmapMarkers"] = {
 			type = "toggle",
@@ -1651,6 +1660,7 @@ NWB.optionDefaults = {
 		terokkarMiddle10 = false,
 		wipeTerokkarData = true,
 		showShatWorldmapMarkers = true,
+		hideMinimapBuffTimers = false,
 		
 		--TBC options
 		disableSoundsAboveMaxBuffLevel = true,
@@ -1706,6 +1716,9 @@ function NWB:buildRealmFactionData()
 		dragon3 = 0,
 		dragon4 = 0,
 	};
+	--if (NWB.isTBC) then
+	--	defaults.terokTowersTime = 0;
+	--end
 	--Create realm and faction tables if they don't exist.
 	if (not self.db.global[NWB.realm]) then
 		self.db.global[NWB.realm] = {};
@@ -3382,6 +3395,14 @@ function NWB:getShowShatWorldmapMarkers(info)
 	return self.db.global.showShatWorldmapMarkers;
 end
 
+--Hide minimap buff timers.
+function NWB:setHideMinimapBuffTimers(info, value)
+	self.db.global.hideMinimapBuffTimers = value;
+end
+
+function NWB:getHideMinimapBuffTimers(info)
+	return self.db.global.hideMinimapBuffTimers;
+end
 --Bigwigs support.
 function NWB:setBigWigsSupport(info, value)
 	self.db.global.bigWigsSupport = value;
