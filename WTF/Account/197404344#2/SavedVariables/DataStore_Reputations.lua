@@ -8,7 +8,7 @@ DataStore_ReputationsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1644657662,
+				["lastUpdate"] = 1644738223,
 				["Factions"] = {
 					19521, -- [1]
 					nil, -- [2]
@@ -22,11 +22,11 @@ DataStore_ReputationsDB = {
 					[9] = 8954,
 					[18] = 6231,
 					[10] = 8030,
-					[19] = 25151,
+					[17] = 7795,
 					[11] = 42999,
 					[22] = 998,
 					[32] = 1728,
-					[17] = 7795,
+					[19] = 25151,
 				},
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
@@ -39,12 +39,12 @@ DataStore_ReputationsDB = {
 				},
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644333051,
+				["lastUpdate"] = 1644769948,
 				["Factions"] = {
-					4710, -- [1]
+					5422, -- [1]
 					nil, -- [2]
-					8302, -- [3]
-					3802, -- [4]
+					8527, -- [3]
+					4027, -- [4]
 				},
 			},
 		},

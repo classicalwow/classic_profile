@@ -2,16 +2,19 @@
 MBB_Exclude = {
 	"LibDBIcon10_Questie", -- [1]
 	"LibDBIcon10_weizPVP", -- [2]
+	"MessageClassifierBrowserIcon", -- [3]
+	"Lib_GPI_Minimap_LFGBulletinBoard", -- [4]
+	"Lib_GPI_Minimap_1", -- [5]
 }
 MBB_Options = {
 	["CollapseTimeout"] = 1,
-	["AltExpandDirection"] = 1,
+	["AltExpandDirection"] = 4,
 	["AttachToMinimap"] = 1,
-	["DetachedButtonPos"] = "CENTER",
+	["ExpandDirection"] = 1,
 	["MaxButtonsPerLine"] = 5,
 	["ButtonPos"] = {
-		-18, -- [1]
-		-100, -- [2]
+		-25.88776016235352, -- [1]
+		-73.377197265625, -- [2]
 	},
-	["ExpandDirection"] = 4,
+	["DetachedButtonPos"] = "TOPLEFT",
 }

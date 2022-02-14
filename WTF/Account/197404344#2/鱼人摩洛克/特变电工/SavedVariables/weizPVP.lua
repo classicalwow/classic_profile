@@ -6,6 +6,9 @@ weizPVPOptions = {
 	["profiles"] = {
 		["Default"] = {
 			["Options"] = {
+				["Window"] = {
+					["Collapsed"] = true,
+				},
 				["Frames"] = {
 					["Width"] = 231.5560607910156,
 					["Y"] = -171.3887329101563,

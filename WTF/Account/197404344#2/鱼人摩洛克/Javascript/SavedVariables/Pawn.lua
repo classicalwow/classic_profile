@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0532,
+	["LastPlayerFullName"] = "Javascript-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		[6] = {
 			["ID"] = 15399,
@@ -22,16 +24,6 @@ PawnOptions = {
 			["Level"] = 15,
 			["Link"] = "|cff1eff00|Hitem:2980::::::::10:::::::::|h[精兵手套]|h|r",
 		},
-		[8] = {
-			["ID"] = 6506,
-			["Level"] = 11,
-			["Link"] = "|cffffffff|Hitem:6506::::::::12:::::::::|h[步兵战靴]|h|r",
-		},
-		[9] = {
-			["ID"] = 6177,
-			["Level"] = 12,
-			["Link"] = "|cffffffff|Hitem:6177::::::::8:::::::::|h[铁铸护腕]|h|r",
-		},
 		[5] = {
 			["ID"] = 6195,
 			["Level"] = 15,
@@ -42,9 +34,17 @@ PawnOptions = {
 			["Level"] = 18,
 			["Link"] = "|cff1eff00|Hitem:3195::::::675:635866368:13:::::::::|h[猛虎之野人战斧]|h|r",
 		},
+		[9] = {
+			["ID"] = 6177,
+			["Level"] = 12,
+			["Link"] = "|cffffffff|Hitem:6177::::::::8:::::::::|h[铁铸护腕]|h|r",
+		},
+		[8] = {
+			["ID"] = 6506,
+			["Level"] = 11,
+			["Link"] = "|cffffffff|Hitem:6506::::::::12:::::::::|h[步兵战靴]|h|r",
+		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "Javascript-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

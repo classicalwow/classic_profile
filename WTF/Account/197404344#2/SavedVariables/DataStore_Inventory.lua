@@ -8,7 +8,7 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1644657662,
+				["lastUpdate"] = 1644738223,
 				["Inventory"] = {
 					"|cffffffff|Hitem:12640:1506:::::::60:::::::::|h[]|h|r", -- [1]
 					"|cffffffff|Hitem:18404::::::::60:::::::::|h[]|h|r", -- [2]
@@ -31,29 +31,30 @@ DataStore_InventoryDB = {
 				},
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
-				["lastUpdate"] = 1644135021,
 				["Inventory"] = {
 					[8] = "|cffffffff|Hitem:43::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[]|h|r",
 					[7] = "|cffffffff|Hitem:6118::::::::1:::::::::|h[]|h|r",
 					[4] = "|cffffffff|Hitem:6117::::::::1:::::::::|h[]|h|r",
 				},
+				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644331007,
+				["lastUpdate"] = 1644769948,
+				["averageItemLvl"] = 14.125,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
-					"|cffffffff|Hitem:6117::::::::15:::::::::|h[]|h|r", -- [4]
-					"|cffffffff|Hitem:6195::::::::15:::::::::|h[]|h|r", -- [5]
-					"|cffffffff|Hitem:15399::::::::15:::::::::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:2978::::::::15:::::::::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:6506::::::::15:::::::::|h[]|h|r", -- [8]
-					"|cffffffff|Hitem:6177::::::::15:::::::::|h[]|h|r", -- [9]
-					"|cffffffff|Hitem:2980::::::::15:::::::::|h[]|h|r", -- [10]
-					[16] = "|cffffffff|Hitem:3195::::::675:635866368:15:::::::::|h[]|h|r",
-					[15] = "|cffffffff|Hitem:4689::::::::15:::::::::|h[]|h|r",
+					"|cffffffff|Hitem:6117::::::::17:::::::::|h[侍从衬衣]|h|r", -- [4]
+					"|cff1eff00|Hitem:6195::::::::17:::::::::|h[打蜡的护甲]|h|r", -- [5]
+					"|cff1eff00|Hitem:15399::::::::17:::::::::|h[枯草腰带]|h|r", -- [6]
+					"|cff1eff00|Hitem:2978::::::::17:::::::::|h[精兵护腿]|h|r", -- [7]
+					"|cffffffff|Hitem:6506::::::::17:::::::::|h[步兵战靴]|h|r", -- [8]
+					"|cffffffff|Hitem:6177::::::::17:::::::::|h[铁铸护腕]|h|r", -- [9]
+					"|cff1eff00|Hitem:2980::::::::17:::::::::|h[精兵手套]|h|r", -- [10]
+					[16] = "|cff1eff00|Hitem:3195::::::675:635866368:17:::::::::|h[猛虎之野人战斧]|h|r",
+					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[狩猎披风]|h|r",
 				},
 			},
 		},
@@ -64,10 +65,10 @@ DataStore_InventoryDB = {
 						["averageItemLvl"] = 61,
 					},
 					["高里"] = {
-						["averageItemLvl"] = 64,
+						["averageItemLvl"] = 34,
 					},
-					["巴托里"] = {
-						["averageItemLvl"] = 54,
+					["爱你两世丶"] = {
+						["averageItemLvl"] = 3,
 					},
 					["影子丶"] = {
 						["averageItemLvl"] = 62,
@@ -75,24 +76,24 @@ DataStore_InventoryDB = {
 					["Dptic"] = {
 						["averageItemLvl"] = 24,
 					},
-					["爱你两世丶"] = {
-						["averageItemLvl"] = 3,
+					["巴托里"] = {
+						["averageItemLvl"] = 54,
 					},
 					["莉娜"] = {
 						["averageItemLvl"] = 62,
 					},
-					["哈宁"] = {
-						["averageItemLvl"] = 66,
+					["Javascript"] = {
+						["averageItemLvl"] = 14,
 					},
 				},
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["雪凉"] = {
-						["averageItemLvl"] = 41,
-					},
 					["奶不住快跑啊"] = {
 						["averageItemLvl"] = 17,
+					},
+					["雪凉"] = {
+						["averageItemLvl"] = 41,
 					},
 				},
 			},

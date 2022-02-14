@@ -1,0 +1,271 @@
+﻿<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/"> 
+	<Script file="Localization.lua"/>
+	<Script file="Dungeons.lua"/>
+	<Script file="Tags.lua" />
+	<Script file="LibGPIOptions.lua" />
+	<Script file="LibGPIMinimapButton.lua" />
+	<Script file="LibGPIToolBox.lua" />
+	<Script file="GroupBulletinBoard.lua"/>
+
+	<Frame name="GroupBulletinBoardFrame" parent="UIParent" hidden="true" movable="true" enableMouse="true" frameStrata="HIGH" resizable="true">
+		<Size><AbsDimension x="800" y="600"/></Size>
+		<Anchors>
+			<Anchor point="CENTER"/>
+			<Offset><AbsDimension x="300" y="0"/></Offset>
+		</Anchors>
+		
+		<Backdrop name="$parentBackdrop" bgFile="Interface\TutorialFrame\TutorialFrameBackground" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<EdgeSize>
+				<AbsValue val="16"/>
+			</EdgeSize>
+			<TileSize>
+				<AbsValue val="64"/>
+			</TileSize>
+			<BackgroundInsets>
+				<AbsInset left="5" right="5" top="5" bottom="5"/>
+			</BackgroundInsets>
+		</Backdrop>	
+		
+		<Layers>
+			<Layer level="BACKGROUND">
+			
+			
+				<FontString name="$parentTitle" inherits="GameFontNormal" text="Group Bulletin Board" maxLines="1" justifyH="LEFT" justifyV="TOP">
+					<Anchors>
+						<Anchor point="TOPLEFT">
+							<Offset>
+								<AbsDimension x="10" y="-10"/>
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT" relativePoint="TOPRIGHT">
+							<Offset>
+								<AbsDimension x="-10" y="-30"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+				</FontString>
+
+				<FontString name="$parentStatusText" inherits="GameFontNormalSmall" text="status - when you can read this, try /reload" maxLines="1" justifyH="LEFT" justifyV="BOTTOM">
+					<Color r="0.5" g="0.5" b="1.0"/>
+					<Anchors>
+						<Anchor point="BOTTOMLEFT">
+							<Offset>
+								<AbsDimension x="10" y="10"/>
+							</Offset>
+						</Anchor>
+						<Anchor point="BOTTOMRIGHT">
+							<Offset>
+								<AbsDimension x="-10" y="10"/>
+							</Offset>
+						</Anchor>
+					</Anchors>
+					
+				</FontString>	
+				
+			</Layer>
+		</Layers>
+
+		<Frames>			
+			<!-- default gui elements -->
+			<Button name="$parentCloseButton" inherits="UIPanelCloseButton">
+				<Anchors>
+					<Anchor point="TOPRIGHT" relativeTo="GroupBulletinBoardFrame" relativePoint="TOPRIGHT"/>
+				</Anchors>
+				<Scripts>
+					<OnClick>
+						GroupBulletinBoard_BtnClose()
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+			<Button name="$parentSettingsButton" inherits="UIPanelButtonTemplate">
+				<Anchors>
+					<Anchor point="RIGHT" relativeTo="$parentCloseButton" relativePoint="LEFT">
+						<Offset>
+							<AbsDimension x="4" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size><AbsDimension x="16" y="16"/></Size>
+				<NormalTexture file="Interface\AddOns\GroupBulletinBoard\settings.tga"/>
+				<PushedTexture file="Interface\AddOns\GroupBulletinBoard\settings.tga"/>
+				<Scripts>
+					<OnClick>
+						GroupBulletinBoard_BtnSettings()
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+			<Button name="$parentResizeGrip" inherits="UIPanelButtonTemplate">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="GroupBulletinBoardFrame"/>
+				</Anchors>
+				<Size><AbsDimension x="16" y="16"/></Size>
+				<NormalTexture file="Interface\AddOns\GroupBulletinBoard\ResizeGrip.tga"/>
+				<PushedTexture file="Interface\AddOns\GroupBulletinBoard\ResizeGrip.tga"/>
+				<Scripts>
+					<OnMouseDown>
+						GroupBulletinBoard_BtnStartSizeing()
+					</OnMouseDown>
+					<OnMouseUp>
+						GroupBulletinBoard_BtnStopSizeing()
+					</OnMouseUp>
+				</Scripts>
+			</Button>
+			
+			<!-- ShoutBox -->
+			
+			<Button name="$parentSelectChannel" inherits="UIPanelButtonTemplate" text="channel">
+				<Anchors>
+					<Anchor point="BOTTOMLEFT" relativePoint="BOTTOMLEFT" relativeTo="$parent" >
+						<Offset>
+							<AbsDimension x="10" y="22"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size><AbsDimension x="150" y="20" /></Size>
+				<Scripts>
+					<OnClick>
+						GroupBulletinBoard_BtnSelectChannel()
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+			<Button name="$parentStartStopShout" inherits="UIPanelButtonTemplate" text="shout">
+				<Anchors>
+					<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMRIGHT" relativeTo="$parent" >
+						<Offset>
+							<AbsDimension x="-10" y="22"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size><AbsDimension x="100" y="20" /></Size>
+				<Scripts>
+					<OnClick>
+						GroupBulletinBoard_BtnStartStopShout()
+					</OnClick>
+				</Scripts>
+			</Button>
+			
+			<EditBox name="$parentShoutMsg" letters="255" autoFocus="false" inherits="InputBoxTemplate">
+				<Anchors>
+					<Anchor point="TOPLEFT" relativePoint="TOPRIGHT" relativeTo="$parentSelectChannel" >
+						<Offset>
+							<AbsDimension x="8" y="0"/>
+						</Offset>
+					</Anchor>
+					<Anchor point="BOTTOMRIGHT" relativePoint="BOTTOMLEFT" relativeTo="$parentStartStopShout" >
+						<Offset>
+							<AbsDimension x="-4" y="0"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size><AbsDimension x="100" y="20"/></Size>
+				<Scripts>
+					<OnEditFocusGained>
+						GroupBulletinBoard_EditShoutMessage_GetFocus()
+					</OnEditFocusGained>
+					<OnEditFocusLost>
+						GroupBulletinBoard_EditShoutMessage_LostFocus()
+					</OnEditFocusLost>
+					<OnTextChanged>
+						GroupBulletinBoard_EditShoutMessage_Changed()
+					</OnTextChanged>
+				</Scripts>
+			</EditBox>
+			
+			<!--Scrollframe -->
+			<ScrollFrame name="GroupBulletinBoardFrame_ScrollFrame" inherits="UIPanelScrollFrameTemplate">
+				<Backdrop name="$parentBackdrop" bgFile="Interface\TutorialFrame\TutorialFrameBackground" tile="true">
+					<BackgroundInsets>
+						<AbsInset left="-3" right="-23" top="-3" bottom="-3"/>
+					</BackgroundInsets>
+				</Backdrop>	
+				<Anchors>
+					<Anchor point="TOPLEFT">
+						<Offset>
+							<AbsDimension x="10" y="-30"/>
+						</Offset>
+					</Anchor>
+				</Anchors>
+				<Size>
+					<AbsDimension x="100" y="100"/>
+				</Size>
+				<ScrollChild>
+					<Frame name="GroupBulletinBoardFrame_ScrollChildFrame">
+						<Size>
+							<AbsDimension x="100" y="100"/>
+						</Size>
+					</Frame>
+				</ScrollChild>
+			</ScrollFrame>
+
+		</Frames>
+		
+		<Scripts>
+			<OnUpdate> 
+				GroupBulletinBoard_OnUpdate()
+			</OnUpdate>
+			<OnSizeChanged>
+				GroupBulletinBoard_OnSizeChanged()
+			</OnSizeChanged>
+			<OnLoad>
+				GroupBulletinBoard_OnLoad()
+			</OnLoad>
+			<OnEvent>
+				GroupBulletinBoard_OnEvent(event, ...);
+			</OnEvent>
+			<OnDragStart>
+				GroupBulletinBoard_OnDragStart()
+			</OnDragStart>
+			<OnDragStop>
+				GroupBulletinBoard_OnDragStop()
+			</OnDragStop>
+		</Scripts>
+	</Frame>
+	
+	<Frame hidden="false" name="GroupBulletinBoard_TmpHeader" virtual="true">
+		<Layers>
+			<Layer level="ARTWORK">
+				<FontString name="$parent_name" text="samplename" inherits="GameFontNormal" maxLines="1" justifyH="LEFT" justifyV="BOTTOM"/>					
+			</Layer>
+		</Layers>
+	</Frame>
+	<Frame hidden="false" name="GroupBulletinBoard_TmpRequest" virtual="true">
+		<Layers>
+			<Layer level="ARTWORK">				
+				<Texture name="$parent_classIcon" file="Interface\GLUES\CHARACTERCREATE\UI-CHARACTERCREATE-CLASSES">
+					<Size x="13" y="13"/>
+				</Texture>
+				<FontString name="$parent_name" text="samplename" inherits="GameFontNormal" maxLines="1" justifyH="LEFT" justifyV="TOP">
+					<Size>
+						<AbsDimension x="100" y=""/>
+					</Size>
+					<color b="1" g="1" r="1" a="1"/>
+				</FontString>
+				<FontString name="$parent_message" text="samplemsg" inherits="GameFontNormal" maxLines="1" justifyH="LEFT" justifyV="TOP">
+					<color b="1" g="1" r="1" a="1"/>
+				</FontString>
+				<FontString name="$parent_time" text="samplename" inherits="GameFontNormal" maxLines="1" justifyH="RIGHT" justifyV="TOP">
+					<Size>
+						<AbsDimension x="75" y=""/>
+					</Size>
+					<color b="1" g="1" r="1" a="1"/>
+				</FontString>
+			</Layer>
+		</Layers>
+		<Scripts>
+			<OnMouseDown>
+				GroupBulletinBoard_ClickRequest(self)
+			</OnMouseDown>
+			<OnEnter>
+				GroupBulletinBoard_RequestShowTooltip(self)
+			</OnEnter>
+			<OnLeave>
+				GroupBulletinBoard_RequestHideTooltip(self)
+			</OnLeave>					
+		</Scripts>
+		
+	</Frame>	
+	
+</Ui>
