@@ -40,8 +40,6 @@ DataStore_InventoryDB = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644769948,
-				["averageItemLvl"] = 14.125,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -56,6 +54,8 @@ DataStore_InventoryDB = {
 					[16] = "|cff1eff00|Hitem:3195::::::675:635866368:17:::::::::|h[猛虎之野人战斧]|h|r",
 					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[狩猎披风]|h|r",
 				},
+				["averageItemLvl"] = 14.125,
+				["lastUpdate"] = 1644854064,
 			},
 		},
 		["Guilds"] = {
@@ -67,8 +67,8 @@ DataStore_InventoryDB = {
 					["高里"] = {
 						["averageItemLvl"] = 34,
 					},
-					["爱你两世丶"] = {
-						["averageItemLvl"] = 3,
+					["Javascript"] = {
+						["averageItemLvl"] = 14,
 					},
 					["影子丶"] = {
 						["averageItemLvl"] = 62,
@@ -76,14 +76,14 @@ DataStore_InventoryDB = {
 					["Dptic"] = {
 						["averageItemLvl"] = 24,
 					},
+					["爱你两世丶"] = {
+						["averageItemLvl"] = 3,
+					},
 					["巴托里"] = {
 						["averageItemLvl"] = 54,
 					},
 					["莉娜"] = {
 						["averageItemLvl"] = 62,
-					},
-					["Javascript"] = {
-						["averageItemLvl"] = 14,
 					},
 				},
 			},

@@ -79,7 +79,7 @@ GuidelimeDataChar = {
 	["currentGuide"] = "Hakurai：由Shikushiku制作，中文翻译版 16-20 西部荒野",
 	["version"] = "2.026",
 	["arrowX"] = -11.66668128967285,
-	["mainFrameFontSize"] = 14,
+	["mainFrameY"] = -109.4443893432617,
 	["mainFrameShowing"] = true,
 	["guideSize"] = {
 		["TUGs 升级宝典，中文由Qcat汉化 1-9 矮人/侏儒"] = 78,
@@ -96,7 +96,7 @@ GuidelimeDataChar = {
 	["editorFrameRelative"] = "CENTER",
 	["showArrow"] = true,
 	["mainFrameShowScrollBar"] = true,
-	["mainFrameY"] = -109.4443893432617,
+	["mainFrameFontSize"] = 14,
 	["mainFrameRelative"] = "RIGHT",
 	["arrowAlpha"] = 0.8,
 }

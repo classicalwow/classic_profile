@@ -1,0 +1,8 @@
+## Interface: 11305
+## Title: ClassicBlacklist
+## Authors: Joshpbarron - Hazedesunna
+## Version: 1.1.8
+## SavedVariables: firstLoadDone, autoSync
+## SavedVariablesPerCharacter: firstLoadDoneThisChar, ignoredReasons
+
+core.lua

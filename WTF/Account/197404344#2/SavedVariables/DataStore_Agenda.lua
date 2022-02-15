@@ -29,7 +29,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644771186,
+				["lastUpdate"] = 1644854065,
 			},
 		},
 	},

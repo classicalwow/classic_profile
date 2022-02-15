@@ -2,8 +2,8 @@ Version: 1
 Frame: Recount_MainWindow
 FrameLevel: 40
 Anchor: BOTTOM
-X: -423
-Y: -4
+X: -435
+Y: -22
 W: 246
 H: 231
 Frame: ColorPickerFrame
@@ -13,10 +13,3 @@ X: 0
 Y: 0
 W: 365
 H: 240
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 436
-Y: 188
-W: 389
-H: 319
