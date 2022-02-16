@@ -40,22 +40,21 @@ DataStore_InventoryDB = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
+				["lastUpdate"] = 1644934800,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
-					"|cffffffff|Hitem:6117::::::::17:::::::::|h[侍从衬衣]|h|r", -- [4]
-					"|cff1eff00|Hitem:6195::::::::17:::::::::|h[打蜡的护甲]|h|r", -- [5]
-					"|cff1eff00|Hitem:15399::::::::17:::::::::|h[枯草腰带]|h|r", -- [6]
-					"|cff1eff00|Hitem:2978::::::::17:::::::::|h[精兵护腿]|h|r", -- [7]
-					"|cffffffff|Hitem:6506::::::::17:::::::::|h[步兵战靴]|h|r", -- [8]
-					"|cffffffff|Hitem:6177::::::::17:::::::::|h[铁铸护腕]|h|r", -- [9]
-					"|cff1eff00|Hitem:2980::::::::17:::::::::|h[精兵手套]|h|r", -- [10]
-					[16] = "|cff1eff00|Hitem:3195::::::675:635866368:17:::::::::|h[猛虎之野人战斧]|h|r",
-					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[狩猎披风]|h|r",
+					"|cffffffff|Hitem:6117::::::::17:::::::::|h[]|h|r", -- [4]
+					"|cffffffff|Hitem:6195::::::::17:::::::::|h[]|h|r", -- [5]
+					"|cffffffff|Hitem:15399::::::::17:::::::::|h[]|h|r", -- [6]
+					"|cffffffff|Hitem:2978::::::::17:::::::::|h[]|h|r", -- [7]
+					"|cffffffff|Hitem:6506::::::::17:::::::::|h[]|h|r", -- [8]
+					"|cffffffff|Hitem:6177::::::::17:::::::::|h[]|h|r", -- [9]
+					"|cffffffff|Hitem:2980::::::::17:::::::::|h[]|h|r", -- [10]
+					[16] = "|cffffffff|Hitem:3195::::::675:635866368:17:::::::::|h[]|h|r",
+					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[]|h|r",
 				},
-				["averageItemLvl"] = 14.125,
-				["lastUpdate"] = 1644854064,
 			},
 		},
 		["Guilds"] = {
@@ -67,9 +66,6 @@ DataStore_InventoryDB = {
 					["高里"] = {
 						["averageItemLvl"] = 34,
 					},
-					["Javascript"] = {
-						["averageItemLvl"] = 14,
-					},
 					["影子丶"] = {
 						["averageItemLvl"] = 62,
 					},
@@ -79,11 +75,11 @@ DataStore_InventoryDB = {
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
 					},
-					["巴托里"] = {
-						["averageItemLvl"] = 54,
-					},
 					["莉娜"] = {
 						["averageItemLvl"] = 62,
+					},
+					["巴托里"] = {
+						["averageItemLvl"] = 54,
 					},
 				},
 			},

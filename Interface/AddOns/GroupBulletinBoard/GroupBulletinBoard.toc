@@ -1,0 +1,11 @@
+## Interface: 11302
+## Title: Group Bulletin Board
+## Notes: Sort LFG/MSG Messages
+## Version: 1.70
+## Author: GPI
+## DefaultState: enabled
+## SavedVariables: GroupBulletinBoardDB
+## SavedVariablesPerCharacter: GroupBulletinBoardDBChar
+GroupBulletinBoard.xml
+
+

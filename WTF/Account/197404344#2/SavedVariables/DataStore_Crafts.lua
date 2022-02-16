@@ -252,7 +252,7 @@ DataStore_CraftsDB = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644854064,
+				["lastUpdate"] = 1644934800,
 			},
 		},
 	},

@@ -1,0 +1,4 @@
+
+MyChatAlertLDBIconDB = {
+	["hide"] = false,
+}

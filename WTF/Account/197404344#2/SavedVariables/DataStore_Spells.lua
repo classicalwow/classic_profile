@@ -96,7 +96,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1644854064,
+				["lastUpdate"] = 1644934800,
 				["Spells"] = {
 					["防护"] = {
 						"1022|等级 1", -- [1]
