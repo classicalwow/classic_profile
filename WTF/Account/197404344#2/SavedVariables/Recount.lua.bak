@@ -53,10 +53,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -274.2221984863281,
-			["CurDataSet"] = "Fight1",
+			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
-			["SegmentBosses"] = true,
+			["CurDataSet"] = "Fight1",
 		},
 		["Javascript - 鱼人摩洛克"] = {
 			["MainWindow"] = {

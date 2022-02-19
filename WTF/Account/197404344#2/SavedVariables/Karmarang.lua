@@ -7,9 +7,9 @@ KARMA_DB_AUX = {
 	["NAME_BY_HASHTAG"] = {
 	},
 	["鱼人摩洛克"] = {
-		["RECENTPLAYERS"] = {
-		},
 		["HASHTAG_BY_NAME"] = {
+		},
+		["RECENTPLAYERS"] = {
 		},
 	},
 	["LASTSEEN"] = {

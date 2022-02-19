@@ -76,10 +76,10 @@ Details_DataStorage: enabled
 Details_Streamer: enabled
 Details_TinyThreat: enabled
 GTFO: enabled
-Guidelime: enabled
+Guidelime: disabled
 Guidelime_MarkyMark: enabled
 Guidelime_Sage: enabled
-Guidelime_ShikuCN: enabled
+Guidelime_ShikuCN: disabled
 Guidelime_ShikuTW: enabled
 ItemRack: enabled
 Leatrix_Maps: enabled
@@ -142,3 +142,9 @@ ElvUI_CustomTags: disabled
 MRT: enabled
 ExRT: enabled
 honorspy: disabled
+LoseControl: enabled
+Recount: enabled
+TrinketMenu: enabled
+ElvUI_PVPDT: enabled
+TradeSkillMaster: enabled
+EnhancedChatFilter: enabled

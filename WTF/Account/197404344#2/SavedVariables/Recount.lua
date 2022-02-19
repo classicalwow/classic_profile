@@ -38,10 +38,8 @@ RecountDB = {
 					["h"] = 204.0000457763672,
 				},
 			},
-			["DetailWindowX"] = 822.2222900390625,
-			["LastInstanceName"] = "黑翼之巢",
 			["FrameStrata"] = "2-LOW",
-			["ClampToScreen"] = true,
+			["SegmentBosses"] = true,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -53,10 +51,12 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -274.2221984863281,
-			["SegmentBosses"] = true,
+			["DetailWindowX"] = 822.2222900390625,
+			["LastInstanceName"] = "黑石塔",
+			["CurDataSet"] = "OverallData",
+			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
-			["CurDataSet"] = "Fight1",
 		},
 		["Javascript - 鱼人摩洛克"] = {
 			["MainWindow"] = {
@@ -67,7 +67,6 @@ RecountDB = {
 					["h"] = 231,
 				},
 			},
-			["MainWindowHeight"] = 230.5555419921875,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -78,8 +77,9 @@ RecountDB = {
 					},
 				},
 			},
-			["CurDataSet"] = "OverallData",
+			["MainWindowHeight"] = 230.5555419921875,
 			["MainWindowWidth"] = 245.5556488037109,
+			["CurDataSet"] = "OverallData",
 		},
 	},
 }
