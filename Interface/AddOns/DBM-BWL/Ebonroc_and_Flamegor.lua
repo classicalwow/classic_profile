@@ -2,7 +2,7 @@ if not DBM:IsSeasonal() then return end--If not SoM, these two bosses load separ
 local mod	= DBM:NewMod("EbonrocandFlamegor", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220208052442")
+mod:SetRevision("20220210235501")
 mod:SetCreatureID(14601, 11981)
 mod:SetEncounterID(614, 615, 2566)
 mod:SetModelID(6377)
@@ -142,6 +142,8 @@ do
 			end
 		end
 	end
+	mod.SPELL_AURA_APPLIED_DOSE = mod.SPELL_AURA_APPLIED
+
 	function mod:SPELL_AURA_REMOVED(args)--did not see ebon use any of these abilities
 		--if args.spellId == 23342 then
 		if args.spellName == Frenzy then

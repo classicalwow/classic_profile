@@ -2,20 +2,20 @@
 ecfDB = {
 	["enableDND"] = true,
 	["enableRepeat"] = false,
-	["repeatFilterGroup"] = true,
+	["addonQRF"] = true,
 	["addonRAF"] = false,
 	["enableMSF"] = false,
-	["addonQRF"] = true,
-	["blackWordList"] = {
-	},
+	["repeatFilterGroup"] = true,
+	["blackWordFilterGroup"] = false,
 	["lootQualityMin"] = 0,
-	["lesserBlackWordThreshold"] = 3,
+	["lootCurrencyFilterList"] = {
+	},
 	["enableAggressive"] = false,
 	["enableCFA"] = true,
 	["lootItemFilterList"] = {
 	},
-	["lootCurrencyFilterList"] = {
+	["lesserBlackWordThreshold"] = 3,
+	["blackWordList"] = {
 	},
-	["blackWordFilterGroup"] = false,
 	["advancedConfig"] = false,
 }

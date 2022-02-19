@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Nefarian-Classic", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220208052442")
+mod:SetRevision("20220215231530")
 mod:SetCreatureID(11583)
 mod:SetEncounterID(617)
 mod:SetModelID(11380)
@@ -160,7 +160,7 @@ function mod:CHAT_MSG_MONSTER_YELL(msg)
 end
 
 function mod:OnSync(msg, arg, sender)
-	if self:AntiSpam(5, msg) then
+	if sender and self:AntiSpam(5, msg) then
 		--Do nothing, this is just an antispam threshold for syncing
 	end
 	if msg == "Phase" and sender then

@@ -1,12 +1,12 @@
 # HonorSpy
 
-## [1.8.1](https://github.com/kakysha/HonorSpy/tree/1.8.1) (2022-02-09)
-[Full Changelog](https://github.com/kakysha/HonorSpy/compare/1.7.20...1.8.1) [Previous Releases](https://github.com/kakysha/HonorSpy/releases)
+## [1.8.3](https://github.com/kakysha/HonorSpy/tree/1.8.3) (2022-02-16)
+[Full Changelog](https://github.com/kakysha/HonorSpy/compare/1.8.1...1.8.3) [Previous Releases](https://github.com/kakysha/HonorSpy/releases)
 
-- Merge pull request #172 from teelolws/classic  
-    TOC Update for 1.14.2 + use other functions to avoid "inspecting onesself"  
-- Bugfix: estimated honor wasn't resetting for characters that only pvp'ed for a single day then didn't login until after weekly maintenance.  
-- Fixed bug causing character specific honor to reset incorrectly  
+- Merge pull request #173 from teelolws/classic  
+    Minor bugfix and an addon chat throttle  
 - Update honorspy.lua  
-- When checking the players own honor, use functions such as GetPVPSessionStats to avoid unnecessary calls to NotifyInspect  
-- TOC update: WoW Classic 1.14.2; Addon 1.8.1  
+- 1.8.2  
+- When getting an HK, now waits a second before checking if the players honor data has updated, as some of the PVP functions are still returning old numbers at this point.  
+    Fixes a bug: character gets 15 HKs but never saves itsself or broadcasts, because it still thinks it only has 14 HKs.  
+- Throttle player self-checks: only rebroadcast if something actually changed, or its been more than a minute.  
