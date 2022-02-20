@@ -8,6 +8,7 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
+				["lastUpdate"] = 1645348403,
 				["Inventory"] = {
 					"|cffffffff|Hitem:12640:1506:::::::60:::::::::|h[]|h|r", -- [1]
 					"|cffffffff|Hitem:18404::::::::60:::::::::|h[]|h|r", -- [2]
@@ -23,12 +24,11 @@ DataStore_InventoryDB = {
 					"|cffffffff|Hitem:19325::::::::60:::::::::|h[]|h|r", -- [12]
 					"|cffffffff|Hitem:13965::::::::60:::::::::|h[]|h|r", -- [13]
 					"|cffffffff|Hitem:11815::::::::60:::::::::|h[]|h|r", -- [14]
-					"|cffffffff|Hitem:15138::::::::60:::::::::|h[]|h|r", -- [15]
+					"|cffffffff|Hitem:13340:849:::::::60:::::::::|h[]|h|r", -- [15]
 					"|cffffffff|Hitem:12940:1900:::::::60:::::::::|h[]|h|r", -- [16]
 					"|cffffffff|Hitem:12939:1900:::::::60:::::::::|h[]|h|r", -- [17]
 					"|cffffffff|Hitem:18323:664:::::::60:::::::::|h[]|h|r", -- [18]
 				},
-				["lastUpdate"] = 1645291897,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["lastUpdate"] = 1644135021,
@@ -65,9 +65,6 @@ DataStore_InventoryDB = {
 					},
 					["高里"] = {
 						["averageItemLvl"] = 34,
-					},
-					["哈灵"] = {
-						["averageItemLvl"] = 60,
 					},
 					["影子丶"] = {
 						["averageItemLvl"] = 62,

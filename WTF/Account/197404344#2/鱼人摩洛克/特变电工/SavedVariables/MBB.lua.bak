@@ -7,6 +7,7 @@ MBB_Exclude = {
 	"LibDBIcon10_HonorSpy", -- [5]
 	"LibDBIcon10_MyChatAlert", -- [6]
 	"Lib_GPI_Minimap_1", -- [7]
+	"Puggle_MinimapButton", -- [8]
 }
 MBB_Options = {
 	["CollapseTimeout"] = 1,

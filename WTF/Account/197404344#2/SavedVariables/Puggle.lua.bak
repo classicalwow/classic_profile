@@ -1,0 +1,665 @@
+
+Puggle_minimapPos = -10.39254426449663
+Puggle_showMinimapButton = true
+Puggle_showMessageOnNewRequest = true
+Puggle_playSoundOnNewRequest = true
+Puggle_showLevelColorCoding = true
+Puggle_showOnlyRelevant = false
+Puggle_idleTimeout = 300
+Puggle_sortLatestFirst = true
+Puggle_dungeonTags = {
+	["STU"] = {
+		"stsm", -- [1]
+		"DK", -- [2]
+		"STSM", -- [3]
+	},
+	["AQ40"] = {
+		"temple", -- [1]
+		"aq40", -- [2]
+	},
+	["SCH"] = {
+		"TL", -- [1]
+		"通灵", -- [2]
+	},
+	["RFC"] = {
+		"怒焰", -- [1]
+		"NY", -- [2]
+		"怒焰裂谷", -- [3]
+		"怒焰峡谷", -- [4]
+	},
+	["MC"] = {
+		"molten", -- [1]
+		"core", -- [2]
+		"mc", -- [3]
+	},
+	["RFK"] = {
+		"剃刀沼泽", -- [1]
+		"剃刀", -- [2]
+	},
+	["SFK"] = {
+		"影牙", -- [1]
+		"YY", -- [2]
+	},
+	["AQ20"] = {
+		"ruins", -- [1]
+		"aq20", -- [2]
+	},
+	["BFD"] = {
+		"黑暗深渊", -- [1]
+	},
+	["WC"] = {
+		"哀嚎", -- [1]
+		"AH", -- [2]
+		"哀嚎洞穴", -- [3]
+	},
+	["VC"] = {
+		"SW", -- [1]
+		"SK", -- [2]
+		"死矿", -- [3]
+		"死亡矿井", -- [4]
+	},
+	["BWL"] = {
+		"blackwing", -- [1]
+		"lair", -- [2]
+		"bwl", -- [3]
+	},
+	["DMW"] = {
+		"厄运", -- [1]
+		"西", -- [2]
+	},
+	["LBRS"] = {
+		"黑下", -- [1]
+	},
+	["STK"] = {
+		"监狱", -- [1]
+		"JY", -- [2]
+	},
+	["NAX"] = {
+		"naxxramas", -- [1]
+		"nax", -- [2]
+		"naxx", -- [3]
+	},
+	["MAR"] = {
+		"玛拉顿", -- [1]
+		"mara", -- [2]
+		"MLD", -- [3]
+		"mld", -- [4]
+	},
+	["AB"] = {
+		"ab", -- [1]
+		"arathi", -- [2]
+		"basin", -- [3]
+	},
+	["UD2"] = {
+	},
+	["ULD"] = {
+		"奥达曼", -- [1]
+		"ADM", -- [2]
+		"adm", -- [3]
+	},
+	["DMN"] = {
+		"厄运", -- [1]
+		"北", -- [2]
+	},
+	["GNO"] = {
+		"矮子", -- [1]
+		"诺莫瑞根", -- [2]
+	},
+	["UD3"] = {
+	},
+	["ST"] = {
+		"st", -- [1]
+		"神庙", -- [2]
+	},
+	["SMA"] = {
+		"血色", -- [1]
+		"武器库", -- [2]
+		"兵器库", -- [3]
+	},
+	["MISC"] = {
+	},
+	["AV"] = {
+		"av", -- [1]
+		"alterac", -- [2]
+		"valley", -- [3]
+	},
+	["STL"] = {
+		"stsm", -- [1]
+		"血色区", -- [2]
+		"STSM", -- [3]
+	},
+	["SMG"] = {
+		"血色", -- [1]
+		"墓地", -- [2]
+	},
+	["WSG"] = {
+		"wsg", -- [1]
+		"warsong", -- [2]
+	},
+	["SMC"] = {
+		"血色", -- [1]
+		"教堂", -- [2]
+		"大教堂", -- [3]
+	},
+	["ZG"] = {
+		"zg", -- [1]
+		"gurub", -- [2]
+		"zul'gurub", -- [3]
+		"zulgurub", -- [4]
+	},
+	["DME"] = {
+		"厄运", -- [1]
+		"东", -- [2]
+	},
+	["SML"] = {
+		"血色", -- [1]
+		"图书馆", -- [2]
+	},
+	["ONY"] = {
+		"黑龙", -- [1]
+	},
+	["UBRS"] = {
+		"黑上", -- [1]
+	},
+	["UD1"] = {
+	},
+	["BRD"] = {
+		"黑石", -- [1]
+		"黑石深渊", -- [2]
+		"深渊", -- [3]
+	},
+	["RFD"] = {
+		"剃刀", -- [1]
+		"高地", -- [2]
+	},
+	["ZF"] = {
+		"zf", -- [1]
+		"zul", -- [2]
+		"ZF", -- [3]
+		"FLK", -- [4]
+		"祖尔", -- [5]
+		"祖尔法拉克", -- [6]
+	},
+}
+Puggle_dungeonNames = {
+	["STU"] = "斯坦索姆: DK区",
+	["AQ40"] = "安其拉神殿",
+	["SCH"] = "通灵学院",
+	["RFC"] = "怒焰裂谷",
+	["MC"] = "熔火之心",
+	["RFK"] = "剃刀沼泽",
+	["SFK"] = "影牙城堡",
+	["AQ20"] = "安琪拉废墟",
+	["BFD"] = "黑暗深渊",
+	["WC"] = "哀嚎洞穴",
+	["VC"] = "死亡矿井",
+	["BWL"] = "黑翼之巢",
+	["DMW"] = "厄运之槌: 西",
+	["LBRS"] = "黑石塔下层",
+	["STK"] = "监狱",
+	["NAX"] = "纳克萨玛斯",
+	["MAR"] = "玛拉顿",
+	["AB"] = "阿拉希盆地",
+	["UD2"] = "用户自定义 2",
+	["ULD"] = "奥达曼",
+	["DMN"] = "厄运之槌: 北",
+	["GNO"] = "诺莫瑞根",
+	["UD3"] = "用户自定义 3",
+	["ST"] = "沉没的神庙",
+	["SMA"] = "血色修道院: 武器库",
+	["MISC"] = "其他",
+	["AV"] = "奥特兰克山谷",
+	["STL"] = "斯坦索姆: 血色区",
+	["SMG"] = "血色修道院: 墓地",
+	["WSG"] = "战歌峡谷",
+	["SMC"] = "血色修道院: 大教堂",
+	["ZG"] = "祖尔格拉布",
+	["DME"] = "厄运之槌: 东",
+	["SML"] = "血色修道院: 图书馆",
+	["ONY"] = "奥妮克希亚巢穴",
+	["UBRS"] = "黑石塔上层",
+	["UD1"] = "用户自定义 1",
+	["BRD"] = "黑石深渊",
+	["RFD"] = "剃刀高地",
+	["ZF"] = "祖尔法拉克",
+}
+Puggle_searchTags = {
+	"来", -- [1]
+	"缺", -- [2]
+	"求组", -- [3]
+	"组", -- [4]
+	"来人", -- [5]
+	"来2个", -- [6]
+	"来3个", -- [7]
+	"1=4", -- [8]
+	"2=3", -- [9]
+	"3=2", -- [10]
+	"4=1", -- [11]
+	"任务队", -- [12]
+	"dps", -- [13]
+	"DPS", -- [14]
+	"治疗", -- [15]
+	"T", -- [16]
+	"q1", -- [17]
+	"q2", -- [18]
+	"q3", -- [19]
+	"密", -- [20]
+	"mc", -- [21]
+	"MC", -- [22]
+	"bwl", -- [23]
+	"BWL", -- [24]
+	"黑龙", -- [25]
+}
+Puggle_allowSendWho = true
+Puggle_pastGroups = {
+	[1645330742] = {
+		["party"] = {
+			{
+				["level"] = "NjA=",
+				["dur"] = 0,
+				["cmt"] = "",
+				["id"] = -1,
+				["star"] = "MA==",
+				["time"] = 1645330742,
+				["guild"] = "5bGx5rKz5b2S5LiA",
+			}, -- [1]
+			{
+				["level"] = "NjA=",
+				["dur"] = 137,
+				["star"] = "MA==",
+				["id"] = 3,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "",
+			}, -- [2]
+			{
+				["level"] = "NjA=",
+				["dur"] = 137,
+				["star"] = "MA==",
+				["id"] = 4,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "",
+			}, -- [3]
+			{
+				["level"] = "NjA=",
+				["dur"] = 137,
+				["star"] = "MA==",
+				["id"] = 5,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "",
+			}, -- [4]
+			{
+				["level"] = "NjA=",
+				["dur"] = 137,
+				["star"] = "MA==",
+				["id"] = 6,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6IuN56m55LmL5LiK",
+			}, -- [5]
+			{
+				["level"] = "NjA=",
+				["dur"] = 1447,
+				["star"] = "MA==",
+				["id"] = 7,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "",
+			}, -- [6]
+			{
+				["level"] = "NjA=",
+				["dur"] = 1447,
+				["star"] = "MA==",
+				["id"] = 8,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "",
+			}, -- [7]
+			{
+				["level"] = "NjA=",
+				["dur"] = 16199,
+				["star"] = "MA==",
+				["id"] = 9,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6IuN56m55LmL5LiK",
+			}, -- [8]
+			{
+				["level"] = "NjA=",
+				["dur"] = 16199,
+				["star"] = "MA==",
+				["id"] = 10,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6L+Z6YeM5pyJ5rC05p6c5Li2",
+			}, -- [9]
+			{
+				["level"] = "NjA=",
+				["dur"] = 1451,
+				["star"] = "MA==",
+				["id"] = 11,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6IuN56m55LmL5LiK",
+			}, -- [10]
+			{
+				["level"] = "NjA=",
+				["dur"] = 1448,
+				["star"] = "MA==",
+				["id"] = 12,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6aKo5LqR",
+			}, -- [11]
+			{
+				["level"] = "NjA=",
+				["dur"] = 15643,
+				["star"] = "MA==",
+				["id"] = 13,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6IuN56m55LmL5LiK",
+			}, -- [12]
+			{
+				["level"] = "NjA=",
+				["dur"] = 16199,
+				["star"] = "MA==",
+				["id"] = 14,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "",
+			}, -- [13]
+			{
+				["level"] = "NjA=",
+				["dur"] = 12690,
+				["star"] = "MA==",
+				["id"] = 15,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "6IuN56m55LmL5LiK",
+			}, -- [14]
+			{
+				["level"] = "NjA=",
+				["dur"] = 16199,
+				["star"] = "MA==",
+				["id"] = 16,
+				["cmt"] = "",
+				["time"] = 1645330742,
+				["guild"] = "5oiR55qE5pyL5Y+L5ZyI",
+			}, -- [15]
+		},
+		["dur"] = 16199,
+		["loc"] = "54aU54Gr5LmL5b+D",
+		["cmt"] = "",
+		["exported"] = false,
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	},
+	[1645347083] = {
+		["party"] = {
+			{
+				["dur"] = 937,
+				["guild"] = "山河归一",
+				["time"] = 1645347083,
+				["id"] = 17,
+				["star"] = 0,
+				["cmt"] = "",
+				["level"] = 60,
+			}, -- [1]
+			{
+				["dur"] = 937,
+				["guild"] = "苍穹之上",
+				["time"] = 1645347083,
+				["id"] = 18,
+				["cmt"] = "",
+				["star"] = 0,
+				["level"] = 60,
+			}, -- [2]
+			{
+				["dur"] = 937,
+				["guild"] = "",
+				["time"] = 1645347083,
+				["id"] = 19,
+				["cmt"] = "",
+				["star"] = 0,
+				["level"] = 60,
+			}, -- [3]
+			{
+				["dur"] = 937,
+				["guild"] = "",
+				["time"] = 1645347083,
+				["id"] = 20,
+				["cmt"] = "",
+				["star"] = 0,
+				["level"] = 60,
+			}, -- [4]
+			{
+				["dur"] = 937,
+				["guild"] = "我的朋友圈",
+				["time"] = 1645347083,
+				["id"] = 21,
+				["cmt"] = "",
+				["star"] = 0,
+				["level"] = 60,
+			}, -- [5]
+		},
+		["dur"] = 937,
+		["loc"] = "达纳苏斯",
+		["cmt"] = "",
+		["realm"] = "鱼人摩洛克",
+	},
+}
+Puggle_pastPlayers = {
+	{
+		["latestguild"] = "",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+		["gender"] = "Mg==",
+		["lateststar"] = "MA==",
+		["class"] = "V0FSUklPUg==",
+		["latesttime"] = 1645330678,
+		["race"] = "SHVtYW4=",
+		["latestfrom"] = "",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = true,
+		["name"] = "54m55Y+Y55S15bel",
+		["latestlevel"] = "MQ==",
+		["latestcmt"] = "",
+	}, -- [1]
+	{
+		["name"] = "5pyq55+l55uu5qCH",
+	}, -- [2]
+	{
+		["race"] = "R25vbWU=",
+		["player"] = false,
+		["name"] = "SG9seW1hc3Rlcg==",
+		["faction"] = "QWxsaWFuY2U=",
+		["class"] = "TUFHRQ==",
+		["gender"] = "Mg==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [3]
+	{
+		["race"] = "R25vbWU=",
+		["player"] = false,
+		["name"] = "5b+r5omL5rWq5ZOl",
+		["faction"] = "QWxsaWFuY2U=",
+		["class"] = "TUFHRQ==",
+		["gender"] = "Mg==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [4]
+	{
+		["race"] = "SHVtYW4=",
+		["player"] = false,
+		["name"] = "6I2j5aiB",
+		["faction"] = "QWxsaWFuY2U=",
+		["class"] = "TUFHRQ==",
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [5]
+	{
+		["latestguild"] = "6IuN56m55LmL5LiK",
+		["class"] = "TUFHRQ==",
+		["race"] = "R25vbWU=",
+		["name"] = "5ZWK5qKm5Zyw5ZOl",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mg==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [6]
+	{
+		["race"] = "SHVtYW4=",
+		["player"] = false,
+		["name"] = "5bC95o+95bCR5aWz5b+D",
+		["faction"] = "QWxsaWFuY2U=",
+		["class"] = "Uk9HVUU=",
+		["gender"] = "Mg==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [7]
+	{
+		["race"] = "SHVtYW4=",
+		["player"] = false,
+		["name"] = "5omL55i+5p2A5omL",
+		["faction"] = "QWxsaWFuY2U=",
+		["class"] = "Uk9HVUU=",
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [8]
+	{
+		["latestguild"] = "6IuN56m55LmL5LiK",
+		["class"] = "Uk9HVUU=",
+		["race"] = "SHVtYW4=",
+		["name"] = "5LiA6K+65YC+5Z+O",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [9]
+	{
+		["latestguild"] = "6L+Z6YeM5pyJ5rC05p6c5Li2",
+		["class"] = "Uk9HVUU=",
+		["race"] = "SHVtYW4=",
+		["name"] = "56We6K+06KaB5pyJ54yr",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [10]
+	{
+		["latestguild"] = "6IuN56m55LmL5LiK",
+		["class"] = "TUFHRQ==",
+		["race"] = "R25vbWU=",
+		["name"] = "5L6d54S25LiN5Y+Y",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [11]
+	{
+		["latestguild"] = "6aKo5LqR",
+		["class"] = "UFJJRVNU",
+		["race"] = "TmlnaHRFbGY=",
+		["name"] = "5Li25oKU5b+G",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [12]
+	{
+		["latestguild"] = "6IuN56m55LmL5LiK",
+		["class"] = "UFJJRVNU",
+		["race"] = "RHdhcmY=",
+		["name"] = "6LC35bCP6Zuo",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [13]
+	{
+		["race"] = "TmlnaHRFbGY=",
+		["player"] = false,
+		["name"] = "6YOt5b6357qy",
+		["faction"] = "QWxsaWFuY2U=",
+		["class"] = "SFVOVEVS",
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [14]
+	{
+		["latestguild"] = "6IuN56m55LmL5LiK",
+		["class"] = "UFJJRVNU",
+		["race"] = "SHVtYW4=",
+		["name"] = "5bCP5bCP5qW8",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mg==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [15]
+	{
+		["latestguild"] = "5oiR55qE5pyL5Y+L5ZyI",
+		["class"] = "V0FSUklPUg==",
+		["race"] = "TmlnaHRFbGY=",
+		["name"] = "6Zi/5oCq",
+		["faction"] = "QWxsaWFuY2U=",
+		["player"] = false,
+		["gender"] = "Mw==",
+		["latestlevel"] = "NjA=",
+		["realm"] = "6bG85Lq65pGp5rSb5YWL",
+	}, -- [16]
+	{
+		["race"] = "Human",
+		["name"] = "特变电工",
+		["faction"] = "Alliance",
+		["gender"] = 2,
+		["class"] = "WARRIOR",
+		["player"] = true,
+		["realm"] = "鱼人摩洛克",
+	}, -- [17]
+	{
+		["race"] = "NightElf",
+		["name"] = "郭德纲",
+		["faction"] = "Alliance",
+		["gender"] = 3,
+		["class"] = "HUNTER",
+		["player"] = false,
+		["realm"] = "鱼人摩洛克",
+	}, -- [18]
+	{
+		["race"] = "Human",
+		["name"] = "神说要有猫",
+		["faction"] = "Alliance",
+		["gender"] = 3,
+		["class"] = "ROGUE",
+		["player"] = false,
+		["realm"] = "鱼人摩洛克",
+	}, -- [19]
+	{
+		["race"] = "Human",
+		["name"] = "一诺倾城",
+		["faction"] = "Alliance",
+		["gender"] = 3,
+		["class"] = "ROGUE",
+		["player"] = false,
+		["realm"] = "鱼人摩洛克",
+	}, -- [20]
+	{
+		["race"] = "NightElf",
+		["name"] = "阿怪",
+		["faction"] = "Alliance",
+		["gender"] = 3,
+		["class"] = "WARRIOR",
+		["player"] = false,
+		["realm"] = "鱼人摩洛克",
+	}, -- [21]
+}

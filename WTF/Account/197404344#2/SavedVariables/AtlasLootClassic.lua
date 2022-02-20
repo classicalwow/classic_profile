@@ -13,7 +13,7 @@ AtlasLootClassicDB = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
 			["minimap"] = {
-				["minimapPos"] = 267.8934792918902,
+				["minimapPos"] = 253.5379267883272,
 			},
 			["GUI"] = {
 				["point"] = {
@@ -25,8 +25,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"Onyxia", -- [2]
-					nil, -- [3]
+					"MoltenCore", -- [2]
+					10, -- [3]
 					3, -- [4]
 					0, -- [5]
 				},
