@@ -1,59 +1,62 @@
 
-Puggle_minimapPos = -27.41821425328985
+Puggle_minimapPos = -56.65667710381797
 Puggle_showMinimapButton = true
 Puggle_showMessageOnNewRequest = true
 Puggle_playSoundOnNewRequest = true
 Puggle_showLevelColorCoding = true
 Puggle_showOnlyRelevant = false
 Puggle_idleTimeout = 300
-Puggle_sortLatestFirst = false
+Puggle_sortLatestFirst = true
 Puggle_dungeonTags = {
 	["STU"] = {
-		"stratUD", -- [1]
-		"undead", -- [2]
-		"ud", -- [3]
+		"stsm", -- [1]
+		"DK", -- [2]
+		"STSM", -- [3]
 	},
 	["AQ40"] = {
 		"temple", -- [1]
 		"aq40", -- [2]
 	},
 	["SCH"] = {
-		"scholomance", -- [1]
-		"scholo", -- [2]
+		"TL", -- [1]
+		"通灵", -- [2]
 	},
 	["RFC"] = {
-		"rfc", -- [1]
-		"ragefire", -- [2]
-		"chasm", -- [3]
+		"怒焰", -- [1]
+		"NY", -- [2]
+		"怒焰裂谷", -- [3]
+		"怒焰峡谷", -- [4]
 	},
 	["MC"] = {
-		"mc", -- [1]
+		"molten", -- [1]
+		"core", -- [2]
+		"mc", -- [3]
 	},
 	["RFK"] = {
-		"rfk", -- [1]
-		"kraul", -- [2]
+		"剃刀沼泽", -- [1]
+		"剃刀", -- [2]
 	},
 	["SFK"] = {
-		"sfk", -- [1]
-		"shadowfang", -- [2]
+		"影牙", -- [1]
+		"YY", -- [2]
 	},
 	["AQ20"] = {
 		"ruins", -- [1]
 		"aq20", -- [2]
 	},
 	["BFD"] = {
-		"bfd", -- [1]
-		"blackfathom", -- [2]
+		"黑暗深渊", -- [1]
 	},
 	["WC"] = {
-		"wc", -- [1]
-		"wailing", -- [2]
-		"caverns", -- [3]
+		"哀嚎", -- [1]
+		"AH", -- [2]
+		"哀嚎洞穴", -- [3]
 	},
 	["VC"] = {
-		"deadmines", -- [1]
-		"vc", -- [2]
-		"vancleef", -- [3]
+		"SW", -- [1]
+		"SK", -- [2]
+		"死矿", -- [3]
+		"死亡矿井", -- [4]
 	},
 	["BWL"] = {
 		"blackwing", -- [1]
@@ -61,20 +64,15 @@ Puggle_dungeonTags = {
 		"bwl", -- [3]
 	},
 	["DMW"] = {
-		"dmw", -- [1]
-		"west", -- [2]
-		"dm:w", -- [3]
+		"厄运", -- [1]
+		"西", -- [2]
 	},
 	["LBRS"] = {
-		"lower", -- [1]
-		"lbrs", -- [2]
-		"lrbs", -- [3]
+		"黑下", -- [1]
 	},
 	["STK"] = {
-		"stk", -- [1]
-		"stock", -- [2]
-		"stockade", -- [3]
-		"stockades", -- [4]
+		"监狱", -- [1]
+		"JY", -- [2]
 	},
 	["NAX"] = {
 		"naxxramas", -- [1]
@@ -82,10 +80,10 @@ Puggle_dungeonTags = {
 		"naxx", -- [3]
 	},
 	["MAR"] = {
-		"mar", -- [1]
+		"玛拉顿", -- [1]
 		"mara", -- [2]
-		"maraudon", -- [3]
-		"mauradon", -- [4]
+		"MLD", -- [3]
+		"mld", -- [4]
 	},
 	["AB"] = {
 		"ab", -- [1]
@@ -95,37 +93,28 @@ Puggle_dungeonTags = {
 	["UD2"] = {
 	},
 	["ULD"] = {
-		"uld", -- [1]
-		"ulda", -- [2]
-		"uldaman", -- [3]
+		"奥达曼", -- [1]
+		"ADM", -- [2]
+		"adm", -- [3]
 	},
 	["DMN"] = {
-		"dmn", -- [1]
-		"north", -- [2]
-		"tribute", -- [3]
-		"dm:n", -- [4]
+		"厄运", -- [1]
+		"北", -- [2]
 	},
 	["GNO"] = {
-		"gnomer", -- [1]
-		"gno", -- [2]
-		"gnomeregan", -- [3]
-		"gnomeragan", -- [4]
+		"矮子", -- [1]
+		"诺莫瑞根", -- [2]
 	},
 	["UD3"] = {
 	},
 	["ST"] = {
 		"st", -- [1]
-		"sunken", -- [2]
-		"Atal", -- [3]
+		"神庙", -- [2]
 	},
 	["SMA"] = {
-		"smarm", -- [1]
-		"sma", -- [2]
-		"arm", -- [3]
-		"armory", -- [4]
-		"herod", -- [5]
-		"armoury", -- [6]
-		"arms", -- [7]
+		"血色", -- [1]
+		"武器库", -- [2]
+		"兵器库", -- [3]
 	},
 	["MISC"] = {
 	},
@@ -134,48 +123,19 @@ Puggle_dungeonTags = {
 		"alterac", -- [2]
 		"valley", -- [3]
 	},
-	["ZF"] = {
-		"zf", -- [1]
-		"zul", -- [2]
-		"farrak", -- [3]
-		"zul'farrak", -- [4]
-		"zulfarrak", -- [5]
-		"zulfarak", -- [6]
-	},
-	["BRD"] = {
-		"brd", -- [1]
-		"lava run", -- [2]
-		"emperor", -- [3]
+	["UD1"] = {
 	},
 	["WSG"] = {
 		"wsg", -- [1]
 		"warsong", -- [2]
 	},
+	["SMG"] = {
+		"血色", -- [1]
+		"墓地", -- [2]
+	},
 	["RFD"] = {
-		"rfd", -- [1]
-		"downs", -- [2]
-	},
-	["UD1"] = {
-	},
-	["DME"] = {
-		"dme", -- [1]
-		"east", -- [2]
-		"puzilin", -- [3]
-		"dm:e", -- [4]
-	},
-	["UBRS"] = {
-		"upper", -- [1]
-		"ubrs", -- [2]
-		"urbs", -- [3]
-	},
-	["ONY"] = {
-		"黑龙", -- [1]
-	},
-	["SML"] = {
-		"smlib", -- [1]
-		"sml", -- [2]
-		"lib", -- [3]
-		"library", -- [4]
+		"剃刀", -- [1]
+		"高地", -- [2]
 	},
 	["ZG"] = {
 		"zg", -- [1]
@@ -183,106 +143,119 @@ Puggle_dungeonTags = {
 		"zul'gurub", -- [3]
 		"zulgurub", -- [4]
 	},
-	["SMC"] = {
-		"smcath", -- [1]
-		"smc", -- [2]
-		"cath", -- [3]
-		"cathedral", -- [4]
+	["DME"] = {
+		"厄运", -- [1]
+		"东", -- [2]
 	},
-	["SMG"] = {
-		"smgy", -- [1]
-		"smg", -- [2]
-		"gy", -- [3]
-		"graveyard", -- [4]
+	["SML"] = {
+		"血色", -- [1]
+		"图书馆", -- [2]
+	},
+	["ONY"] = {
+		"黑龙", -- [1]
+	},
+	["UBRS"] = {
+		"黑上", -- [1]
 	},
 	["STL"] = {
-		"stratlive", -- [1]
-		"live", -- [2]
-		"strat", -- [3]
+		"stsm", -- [1]
+		"血色区", -- [2]
+		"STSM", -- [3]
+	},
+	["SMC"] = {
+		"血色", -- [1]
+		"教堂", -- [2]
+		"大教堂", -- [3]
+	},
+	["BRD"] = {
+		"黑石", -- [1]
+		"黑石深渊", -- [2]
+		"深渊", -- [3]
+	},
+	["ZF"] = {
+		"zf", -- [1]
+		"zul", -- [2]
+		"ZF", -- [3]
+		"FLK", -- [4]
+		"祖尔", -- [5]
+		"祖尔法拉克", -- [6]
 	},
 }
 Puggle_dungeonNames = {
-	["STU"] = "Stratholme: Undead",
-	["AQ40"] = "Temple of Ahn'Qiraj",
-	["SCH"] = "Scholomance",
-	["RFC"] = "Ragefire Chasm",
-	["MC"] = "Molten Core",
-	["RFK"] = "Razorfen Kraul",
-	["SFK"] = "Shadowfang Keep",
-	["AQ20"] = "Ruins of Ahn'Qiraj",
-	["BFD"] = "Blackfathom Deeps",
-	["WC"] = "Wailing Caverns",
-	["VC"] = "The Deadmines",
-	["BWL"] = "Blackwing Lair",
-	["DMW"] = "Dire Maul: West",
-	["LBRS"] = "Lower Blackrock Spire",
-	["STK"] = "The Stockade",
-	["NAX"] = "Naxxramas",
-	["MAR"] = "Maraudon",
-	["AB"] = "Arathi Basin",
-	["UD2"] = "User Defined 2",
-	["ULD"] = "Uldaman",
-	["DMN"] = "Dire Maul: North",
-	["GNO"] = "Gnomeregan",
-	["UD3"] = "User Defined 3",
-	["ST"] = "The Sunken Temple",
-	["SMA"] = "Scarlet Monastery: Armory",
-	["MISC"] = "Miscellaneous",
-	["AV"] = "Alterac Valley",
-	["ZF"] = "Zul'Farrak",
-	["BRD"] = "Blackrock Depths",
-	["WSG"] = "Warsong Gulch",
-	["RFD"] = "Razorfen Downs",
-	["UD1"] = "User Defined 1",
-	["DME"] = "Dire Maul: East",
-	["UBRS"] = "Upper Blackrock Spire",
-	["ONY"] = "奥妮克希亚的巢穴",
-	["SML"] = "Scarlet Monastery: Library",
-	["ZG"] = "Zul'Gurub",
-	["SMC"] = "Scarlet Monastery: Cathedral",
-	["SMG"] = "Scarlet Monastery: Graveyard",
-	["STL"] = "Stratholme: Live",
+	["STU"] = "斯坦索姆: DK区",
+	["AQ40"] = "安其拉神殿",
+	["SCH"] = "通灵学院",
+	["RFC"] = "怒焰裂谷",
+	["MC"] = "熔火之心",
+	["RFK"] = "剃刀沼泽",
+	["SFK"] = "影牙城堡",
+	["AQ20"] = "安琪拉废墟",
+	["BFD"] = "黑暗深渊",
+	["WC"] = "哀嚎洞穴",
+	["VC"] = "死亡矿井",
+	["BWL"] = "黑翼之巢",
+	["DMW"] = "厄运之槌: 西",
+	["LBRS"] = "黑石塔下层",
+	["STK"] = "监狱",
+	["NAX"] = "纳克萨玛斯",
+	["MAR"] = "玛拉顿",
+	["AB"] = "阿拉希盆地",
+	["UD2"] = "用户自定义 2",
+	["ULD"] = "奥达曼",
+	["DMN"] = "厄运之槌: 北",
+	["GNO"] = "诺莫瑞根",
+	["UD3"] = "用户自定义 3",
+	["ST"] = "沉没的神庙",
+	["SMA"] = "血色修道院: 武器库",
+	["MISC"] = "其他",
+	["AV"] = "奥特兰克山谷",
+	["UD1"] = "用户自定义 1",
+	["WSG"] = "战歌峡谷",
+	["SMG"] = "血色修道院: 墓地",
+	["RFD"] = "剃刀高地",
+	["ZG"] = "祖尔格拉布",
+	["DME"] = "厄运之槌: 东",
+	["SML"] = "血色修道院: 图书馆",
+	["ONY"] = "奥妮克希亚巢穴",
+	["UBRS"] = "黑石塔上层",
+	["STL"] = "斯坦索姆: 血色区",
+	["SMC"] = "血色修道院: 大教堂",
+	["BRD"] = "黑石深渊",
+	["ZF"] = "祖尔法拉克",
 }
 Puggle_searchTags = {
-	"lfg", -- [1]
-	"lfm", -- [2]
-	"lf1m", -- [3]
-	"lf2m", -- [4]
-	"", -- [5]
-}
-Puggle_blacklistTags = {
-	"", -- [1]
+	"来", -- [1]
+	"缺", -- [2]
+	"求组", -- [3]
+	"组", -- [4]
+	"来人", -- [5]
+	"来2个", -- [6]
+	"来3个", -- [7]
+	"1=4", -- [8]
+	"2=3", -- [9]
+	"3=2", -- [10]
+	"4=1", -- [11]
+	"任务队", -- [12]
+	"dps", -- [13]
+	"DPS", -- [14]
+	"治疗", -- [15]
+	"T", -- [16]
+	"q1", -- [17]
+	"q2", -- [18]
+	"q3", -- [19]
+	"密", -- [20]
 }
 Puggle_allowSendWho = true
-Puggle_disableInInstance = true
 Puggle_pastGroups = {
 }
 Puggle_pastPlayers = {
 	{
-		["latestguild"] = "",
-		["latestfrom"] = "",
-		["class"] = "V0FSUklPUg==",
-		["latesttime"] = 1645265337,
-		["race"] = "RHdhcmY=",
-		["lateststar"] = "MA==",
+		["race"] = "Human",
+		["name"] = "特变电工",
+		["faction"] = "Alliance",
+		["gender"] = 2,
+		["class"] = "WARRIOR",
 		["player"] = true,
-		["name"] = "RHdhYw==",
-		["faction"] = "QWxsaWFuY2U=",
-		["realm"] = "6bG85Lq65pGp5rSb5YWL",
-		["gender"] = "Mw==",
-		["latestlevel"] = "MQ==",
-		["latestcmt"] = "",
+		["realm"] = "鱼人摩洛克",
 	}, -- [1]
-	{
-		["class"] = "V0FSUklPUg==",
-		["lateststar"] = "MA==",
-		["player"] = true,
-		["name"] = "54m55Y+Y55S15bel",
-		["faction"] = "QWxsaWFuY2U=",
-		["latestcmt"] = "",
-		["race"] = "SHVtYW4=",
-		["gender"] = "Mg==",
-		["realm"] = "6bG85Lq65pGp5rSb5YWL",
-	}, -- [2]
 }
-Puggle_encoded = true
