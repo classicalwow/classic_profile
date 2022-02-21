@@ -28,7 +28,7 @@ AutoBarClassic: disabled
 aux-addon: disabled
 BlizzMove: disabled
 BlizzMove_Debug: disabled
-BugSack: enabled
+BugSack: disabled
 ClassicCodex: disabled
 ClassicCodex-db-ruRU: disabled
 ClassicCodex-loader: disabled
