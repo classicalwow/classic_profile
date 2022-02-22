@@ -8,7 +8,7 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1645348403,
+				["lastUpdate"] = 1645454340,
 				["Inventory"] = {
 					"|cffffffff|Hitem:12640:1506:::::::60:::::::::|h[]|h|r", -- [1]
 					"|cffffffff|Hitem:18404::::::::60:::::::::|h[]|h|r", -- [2]
@@ -54,7 +54,7 @@ DataStore_InventoryDB = {
 					[16] = "|cffffffff|Hitem:3195::::::675:635866368:17:::::::::|h[]|h|r",
 					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1644934800,
+				["lastUpdate"] = 1645458891,
 			},
 		},
 		["Guilds"] = {
@@ -72,14 +72,14 @@ DataStore_InventoryDB = {
 					["Dptic"] = {
 						["averageItemLvl"] = 24,
 					},
-					["莉娜"] = {
-						["averageItemLvl"] = 62,
-					},
 					["巴托里"] = {
 						["averageItemLvl"] = 54,
 					},
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
+					},
+					["莉娜"] = {
+						["averageItemLvl"] = 62,
 					},
 				},
 			},

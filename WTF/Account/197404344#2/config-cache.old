@@ -1,4 +1,5 @@
 SET alwaysCompareItems "1"
+SET scriptErrors "1"
 SET instantQuestText "1"
 SET flaggedTutorials "v11##M##$##%##&##'##:##(##)##E##,##1##K##7##J##5##A##.##9##I##D##N##?##O##@##<##0##3##L##F##=##-##C##4##G##H##S##T##Q##P##>##U##V##/"
 SET actionedAdventureJournalEntries "v"

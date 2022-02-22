@@ -16,9 +16,9 @@ ignoredReasons = {
 	["蒋老爷"] = "None Specified",
 	["云间游"] = "None Specified",
 	["不归"] = "None Specified",
-	["九月誓约"] = "None Specified",
-	["月亮上的妲己"] = "None Specified",
 	["于小"] = "None Specified",
 	["奥古都斯"] = "None Specified",
+	["九月誓约"] = "None Specified",
+	["月亮上的妲己"] = "None Specified",
 	["沦洄德"] = "None Specified",
 }

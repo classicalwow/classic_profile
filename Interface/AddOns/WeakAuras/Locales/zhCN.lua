@@ -990,6 +990,8 @@ L["Summon"] = "召唤"
 L["Supports multiple entries, separated by commas"] = "支持多个条目，由英文逗号分隔"
 L[ [=[Supports multiple entries, separated by commas
 ]=] ] = "支持多个条目，由英文逗号分隔"
+--[[Translation missing --]]
+L["Supports multiple entries, separated by commas. Escape ',' with \\"] = "Supports multiple entries, separated by commas. Escape ',' with \\"
 L["Supports multiple entries, separated by commas. Group Zone IDs must be prefixed with 'g', e.g. g277."] = "支持多个条目，由英文逗号分隔。区域组ID必须以g开头，例如 g277。"
 L["Supremus"] = "苏普雷姆斯"
 L["Swing"] = "近战攻击"
