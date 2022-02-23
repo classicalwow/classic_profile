@@ -53,10 +53,10 @@ RecountDB = {
 				},
 			},
 			["DetailWindowY"] = -274.2221984863281,
-			["CurDataSet"] = "OverallData",
+			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
-			["ClampToScreen"] = true,
+			["CurDataSet"] = "OverallData",
 		},
 		["Javascript - 鱼人摩洛克"] = {
 			["MainWindow"] = {
