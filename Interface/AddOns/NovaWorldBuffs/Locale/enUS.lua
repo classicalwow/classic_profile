@@ -826,3 +826,6 @@ L["showShatWorldmapMarkersDesc"] = "Show dungeon daily markers on the Shattrath 
 
 L["hideMinimapBuffTimersTitle"] = "Hide Minimap World Buff Timers";
 L["hideMinimapBuffTimersDesc"] = "Hide the world buffs when you hover over the minimap icon? You will only see the terokkar tower timers and dailies etc.";
+
+L["guildTerok10Title"] = "Guild Chat Terokkar 10 Minutes";
+L["guildTerok10Desc"] = "Send a message to guild chat when there's 10 minutes left on terokkar towers?";

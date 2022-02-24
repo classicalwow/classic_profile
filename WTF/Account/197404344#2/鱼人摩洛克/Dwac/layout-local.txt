@@ -1,11 +1,4 @@
 Version: 1
-Frame: ColorPickerFrame
-FrameLevel: 1
-Anchor: CENTER
-X: 0
-Y: 0
-W: 365
-H: 200
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
 Anchor: RIGHT
@@ -13,3 +6,10 @@ X: -119
 Y: 18
 W: 498
 H: 413
+Frame: ColorPickerFrame
+FrameLevel: 1
+Anchor: CENTER
+X: 0
+Y: 0
+W: 365
+H: 200

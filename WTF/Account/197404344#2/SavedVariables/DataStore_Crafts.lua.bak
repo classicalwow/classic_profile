@@ -245,14 +245,29 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "锻造",
-				["lastUpdate"] = 1645454340,
+				["lastUpdate"] = 1645633927,
 				["Prof1"] = "工程学",
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1645458891,
+				["Professions"] = {
+					["急救"] = {
+						["Categories"] = {
+							"消耗品", -- [1]
+						},
+						["isSecondary"] = true,
+						["Crafts"] = {
+							"0|消耗品", -- [1]
+							"1|2581", -- [2]
+							"2|1251", -- [3]
+						},
+						["MaxRank"] = 150,
+						["Rank"] = 77,
+					},
+				},
+				["lastUpdate"] = 1645540892,
 			},
 		},
 	},

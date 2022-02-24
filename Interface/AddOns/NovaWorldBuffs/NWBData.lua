@@ -181,7 +181,7 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			NWB:doNpcWalkingMsg(type, layer, sender);
 		end
 	end
-	if (tonumber(remoteVersion) < 2.16) then
+	if (tonumber(remoteVersion) < 2.21) then
 		if (cmd == "requestData" and distribution == "GUILD") then
 			if (not NWB:getGuildDataStatus()) then
 				NWB:sendSettings("GUILD");
@@ -1361,7 +1361,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 											if (enableLogging) then
 												NWB:timerLog(k, v, layer, nil, nil, distribution);
 											end
-											--[[if (NWB.isDebug and (k == "terokTowers" or k == "terokTowersTime")) then
+											if (k == "terokTowers" or k == "terokTowersTime") then
 												---Only works for debug version for now, we enable sending the data with this update.
 												---And enable receiving the data with the next update after testing and more people are sending.
 												
@@ -1372,18 +1372,21 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 													if (not NWB.data.layers[layer].terokTowersTime) then
 														NWB.data.layers[layer].terokTowersTime = 0;
 													end
-													if (NWB.data.layers[layer][k] and v ~= 0 and vv.terokTowersTime ~= 0 and vv.terokTowersTime
+													if (NWB.data.layers[layer][k] and v ~= 0 and vv.terokTowersTime and vv.terokTowersTime ~= 0
 															and vv.terokTowersTime > NWB.data.layers[layer].terokTowersTime
 															and v > GetServerTime() and v < GetServerTime() + 21700
 															and v > NWB.data.layers[layer][k] - 1800) then
-														if (vv.terokFaction) then
-															NWB.data.layers[layer].terokFaction = vv.terokFaction;
+														if (vv.terokTowersTime > GetServerTime() - 21700
+																and vv.terokTowersTime < GetServerTime() + 21700) then
+															if (vv.terokFaction) then
+																NWB.data.layers[layer].terokFaction = vv.terokFaction;
+															end
+															NWB.data.layers[layer][k] = v;
+															NWB.data.layers[layer].terokTowersTime = vv.terokTowersTime;
 														end
-														NWB.data.layers[layer][k] = v;
-														NWB.data.layers[layer].terokTowersTime = vv.terokTowersTime;
 													end
-												end]]
-											if (k == "terokTowersTime") then
+												end
+											--if (k == "terokTowersTime") then
 												--First half of fix, doing nothing here until next update.
 											--Make sure the key exists, stop a lua error in old versions if we add a new timer type.
 											elseif (NWB.data.layers[layer][k] and v ~= 0 and v > NWB.data.layers[layer][k]
@@ -1492,7 +1495,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 							NWB.data[k] = 0;
 						end
 					end
-					--[[if (NWB.isDebug and (k == "terokTowers" or k == "terokTowersTime")) then
+					if (k == "terokTowers" or k == "terokTowersTime") then
 						---Only works for debug version for now, we enable sending the data with this update.
 						---And enable receiving the data with the next update after testing and more people are sending.
 						
@@ -1500,21 +1503,24 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 						--Tower cooldowns are unreliable and can drift +/- ~10mins.
 						--So we update if the time it was recorded at is newer even if the actual tower timer is older.
 						if (k ~= "terokTowersTime") then
-							if (not NWB.data.layers[layer].terokTowersTime) then
-								NWB.data.layers[layer].terokTowersTime = 0;
+							if (not NWB.data.terokTowersTime) then
+								NWB.data.terokTowersTime = 0;
 							end
-							if (NWB.data[k] and v ~= 0 and data.terokTowersTime ~= 0 and data.terokTowersTime
+							if (NWB.data[k] and v ~= 0 and data.terokTowersTime and data.terokTowersTime ~= 0
 									and data.terokTowersTime > NWB.data.terokTowersTime
 									and v > GetServerTime() and v < GetServerTime() + 21700
 									and v > NWB.data[k] - 1800) then
-								if (data.terokFaction) then
-									NWB.data.terokFaction = data.terokFaction;
+								if (data.terokTowersTime > GetServerTime() - 21700
+										and data.terokTowersTime < GetServerTime() + 21700) then
+									if (data.terokFaction) then
+										NWB.data.terokFaction = data.terokFaction;
+									end
+									NWB.data[k] = v;
+									NWB.data.terokTowersTime = data.terokTowersTime;
 								end
-								NWB.data[k] = v;
-								NWB.data.terokTowersTime = data.terokTowersTime;
 							end
-						end]]
-					if (k == "terokTowersTime") then
+						end
+					--if (k == "terokTowersTime") then
 					--Make sure the key exists, stop a lua error in old versions if we add a new timer type.
 					elseif (NWB.data[k] and v ~= 0 and v > NWB.data[k] and NWB:validateTimestamp(v, k) and k ~= "terokFaction"
 							and k ~= "tbcHD" and k ~= "tbcDD" and k ~= "tbcPD") then
@@ -3260,6 +3266,17 @@ f:SetScript('OnEvent', function(self, event, ...)
 			end
 			NWB:getTerokkarData();
 		end
+		--Widget 3112 is capture stage.
+		--[[if (NWB.isDebug and data and data.widgetID == 3112) then
+			local neutral = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3097);
+			local alliance = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3118);
+			local horde = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3119);
+			local captureAlliance = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3111);
+			local captureHorde = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3112);
+			if (captureAlliance.state == 1 and captureHorde.state == 1) then
+				NWB:debug("Capture started:", GetServerTime());
+			end
+		end]]
 	end
 end)
 
@@ -3366,7 +3383,7 @@ function NWB:getTerokkarData()
 	elseif (horde.state == 1 and child:IsShown() and child.widgetID == 3119) then
 		--Horde controlled.
 		controlType = 3;
-	end
+	end	
 	local hours, minutes;
 	if (controlType > 0) then
 		if (controlType == 1) then
@@ -3424,6 +3441,7 @@ function NWB:getTerokkarData()
 			end
 			timestamp = GetServerTime() + (hours * 3600) + (minutes * 60);
 		end
+		--timestamp = math.floor(timestamp + ((timestamp / 60) * 2.7));
 		if (timestamp > 0 and ((hours * 3600) + (minutes * 60)) < 22000) then
 			if (NWB.isLayered) then
 				local layer, layerNum;
@@ -3455,16 +3473,17 @@ function NWB:getTerokkarData()
 					--	diff = "+" .. diff;
 					--end
 					--NWB:debug(timestamp, NWB.data.layers[layer]["terokTowers"], timestamp - NWB.data.layers[layer]["terokTowers"])
-					if (timestamp - NWB.data.layers[layer]["terokTowers"] > 0) then
+					if (timestamp - NWB.data.layers[layer]["terokTowers"] > -1800) then
 						if (NWB:validateTerokkarRecord(NWB.data.layers[layer]["terokTowers"], timestamp, layer)) then
 							--NWB:debug("set terokkar timer layered", timestamp, diff);
 							local lastTimeLeft = 0;
 							local sendData;
-							if (NWB.data.layers[layer]["terokTowers"] - GetServerTime() < 0
-									and not firstTerokkarData and timestamp - GetServerTime() > 21500) then
+							if (NWB.data.layers[layer]["terokTowers"] - GetServerTime() > 0
+									and not firstTerokkarData and timestamp - GetServerTime() < 21500) then
 								sendData = true;
 							end
-							--NWB:debug("set terokkar timer layered2", timestamp, controlType);
+							--print(NWB.data.layers[layer]["terokTowers"] - GetServerTime(), firstTerokkarData, timestamp - GetServerTime())
+							--NWB:debug("set terokkar timer layered2", timestamp, controlType, GetServerTime());
 							NWB.data.layers[layer]["terokTowers"] = timestamp;
 							NWB.data.layers[layer]["terokTowersTime"] = GetServerTime();
 							NWB.data.layers[layer]["terokFaction"] = controlType;
@@ -3472,7 +3491,8 @@ function NWB:getTerokkarData()
 							if (timestamp - GetServerTime() > 900) then
 								NWB.data.layers[layer]["terokTowers10"] = true;
 							end
-							if (sendData and GetServerTime() - lastSendData > 900) then
+							if (sendData and GetServerTime() - lastSendData > 175) then
+								NWB:debug("sending terokkar");
 								lastSendData = GetServerTime();
 								NWB:sendData("YELL", nil, nil, true, true, "terokkar");
 								NWB:sendData("GUILD", nil, nil, true, true, "terokkar");
@@ -3504,11 +3524,11 @@ function NWB:getTerokkarData()
 			NWB:debug("too soon after capture");
 		end
 	end
-	firstTerokkarData = false;
+	firstTerokkarData = nil;
 end
 
 function NWB:wipeTerokkarData()
-	if (NWB.db.global.wipeTerokkarData) then
+	if (NWB.db.global.wipeTerokkarData3) then
 		for k, v in pairs(NWB.data.layers) do
 			NWB.data.layers[k].terokTowers = nil;
 			NWB.data.layers[k].terokTowersTime = nil
@@ -3517,7 +3537,7 @@ function NWB:wipeTerokkarData()
 		NWB.data.terokTowers = nil;
 		NWB.data.terokTowersTime = nil;
 		NWB.data.terokFaction = nil;
-		NWB.db.global.wipeTerokkarData = false;
+		NWB.db.global.wipeTerokkarData3 = false;
 	end
 end
 

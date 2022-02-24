@@ -1413,15 +1413,24 @@ function NWB:loadSpecificOptions()
 			name = L["hideMinimapBuffTimersTitle"],
 			desc = L["hideMinimapBuffTimersDesc"],
 			order = 25,
-			width = "double",
+			width = 1.5,
 			get = "getHideMinimapBuffTimers",
 			set = "setHideMinimapBuffTimers",
 		};
+		--[[NWB.options.args["guildTerok10"] = {
+			type = "toggle",
+			name = L["guildTerok10Title"],
+			desc = L["guildTerok10Desc"],
+			order = 26,
+			width = 1.5,
+			get = "getGuildTerok10",
+			set = "setGuildTerok10",
+		};]]
 		NWB.options.args["tbcNote"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcNoteText"],
 			fontSize = "medium",
-			order = 26,
+			order = 27,
 		};
 		NWB.options.args["showShatWorldmapMarkers"] = {
 			type = "toggle",
@@ -1658,7 +1667,7 @@ NWB.optionDefaults = {
 		guildL = true,
 		terokkarChat10 = true,
 		terokkarMiddle10 = false,
-		wipeTerokkarData = true,
+		wipeTerokkarData3 = true,
 		showShatWorldmapMarkers = true,
 		hideMinimapBuffTimers = false,
 		
@@ -1673,6 +1682,7 @@ NWB.optionDefaults = {
 		disableFlashAllLevels = false,
 		disableLogonAboveMaxBuffLevel = true,
 		disableLogonAllLevels = false,
+		guildTerok10 = 1,
 	},
 };
 
@@ -2345,6 +2355,24 @@ end
 
 function NWB:getDisableAllGuildMsgs(info)
 	if (self.db.global.disableAllGuildMsgs == 1) then
+		return true;
+	else
+		return false;
+	end
+end
+
+--Guild 10 minute Terokarr Towers warning.
+function NWB:setGuildTerok10(info, value)
+	if (value) then
+		self.db.global.guildTerok10 = 1;
+	else
+		self.db.global.guildTerok10 = 0;
+	end
+	NWB:sendSettings("GUILD");
+end
+
+function NWB:getGuildTerok10(info)
+	if (self.db.global.guildTerok10 == 1) then
 		return true;
 	else
 		return false;

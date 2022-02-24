@@ -2,12 +2,7 @@
 
 function GroupBulletinBoard_GetTags()
 	local searchTagsLoc ={
-		enGB = {"组队", "求组", "来人", "1=4", "2=3", "3=2", "4=1", "dps", 
-				"奶", "T", "坦克", "来个",
-				"来几个", "一起", "开组", "治疗", "奶" ,"来个T", "来个N", 	
-				"通刷", "lr", "fs", "qs", "ms" ,"xd", "zs", 				
-				"战士", "猎人", "法师", "骑士", "牧师", "盗贼", "dz", "sm", "萨满", "ss",
-				"术士", "任务", "jy", "jy任务","经验",					
+		enGB = {"来","组","一起","缺",					
 		},
 		deDE = {"suche", "suchen", "sucht", "such", "gruppe", "grp", "sfg", "sfm", "druide", "dudu", "jäger", "magier", 
 				"priester", "warri", "schurke", "schami", "schamane", "hexer", "hexenmeister", "hm", "krieger",
@@ -16,12 +11,7 @@ function GroupBulletinBoard_GetTags()
 		ruRU = {"лфг", "ищет", "ищу", "нид", "нужны", "лфм", "ищем", "ласт слот", "пати", "похилю", "схожу в",
 				"лф", "танк", "хил", "нужен", "дд", "рдд", "мдд"
 		},
-		zhCN = {"组队", "求组", "来人", "1=4", "2=3", "3=2", "4=1", "dps", 
-				"奶", "T", "坦克", "来个",
-				"来几个", "一起", "开组", "治疗", "奶" ,"来个T", "来个N", 	
-				"通刷", "lr", "fs", "qs", "ms" ,"xd", "zs", 				
-				"战士", "猎人", "法师", "骑士", "牧师", "盗贼", "dz", "sm", "萨满", "ss",
-				"术士", "任务", "jy", "jy任务","经验",				
+		zhCN = {			
 		},
 	}
 

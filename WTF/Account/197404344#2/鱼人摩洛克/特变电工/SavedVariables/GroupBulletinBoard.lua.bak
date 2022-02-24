@@ -22,7 +22,7 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonONY"] = true,
 	["FilterDungeonSTR"] = false,
 	["FilterDungeonWSG"] = false,
-	["FilterDungeonMC"] = true,
+	["FilterDungeonMC"] = false,
 	["FilterDungeonWC"] = false,
 	["FilterDungeonGNO"] = false,
 	["FilterDungeonRFC"] = false,
@@ -38,6 +38,6 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonZG"] = false,
 	["FilterDungeonAQ40"] = false,
 	["FilterDungeonNAX"] = false,
-	["FilterDungeonBWL"] = true,
+	["FilterDungeonBWL"] = false,
 	["FilterDungeonRFD"] = false,
 }

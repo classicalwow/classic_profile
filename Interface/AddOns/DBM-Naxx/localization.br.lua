@@ -212,7 +212,7 @@ L:SetMiscLocalization({
 L:SetOptionLocalization({
 	WarningChargeChanged	= "Exibir aviso especial quando sua polaridade mudar",
 	WarningChargeNotChanged	= "Exibir aviso especial quando sua polaridade não mudar",
-	ArrowsEnabled			= "Exibir setas (estratégia típica de dois grupos)",
+	AirowsEnabled			= "Exibir setas (estratégia típica de dois grupos)",
 	ArrowsRightLeft			= "Exibe as setas para a esquerda e direita (estratégia de quatro grupos; mostra a seta para a esquerda se a polaridade mudar, seta para a direita se não mudar)",
 	ArrowsInverse			= "Exibe as setas esquerda e direita reversas (estratégia de quatro grupos; mostra a seta para a direita se a polaridade mudar, a seta para a esquerda se não mudar)"
 })
@@ -331,8 +331,6 @@ L:SetOptionLocalization({
 	WarningLanded		= "Anunciar mudança de fase no solo",
 	TimerAir			= "Exibir cronômetro para mudança para fase de ar",
 	TimerLanding		= "Exibir cronômetro para mudança de fase no terra",
-	TimerIceBlast		= "Exibir cronômetro para $spell:28524",
-	WarningDeepBreath	= "Exibir aviso especial para $spell:28524",
 	WarningIceblock		= "Grite quando te afeta $spell:28522"
 })
 
@@ -344,14 +342,12 @@ L:SetMiscLocalization({
 L:SetWarningLocalization({
 	WarningAirPhaseSoon	= "Fase aérea em 10 s",
 	WarningAirPhaseNow	= "Fase aérea",
-	WarningLanded		= "Fase em terra",
-	WarningDeepBreath	= "Sopro Gélido"
+	WarningLanded		= "Fase em terra"
 })
 
 L:SetTimerLocalization({
 	TimerAir		= "Fase aérea",
-	TimerLanding	= "Fase em terra",
-	TimerIceBlast	= "Sopro Gélido"
+	TimerLanding	= "Fase em terra"
 })
 
 ----------------

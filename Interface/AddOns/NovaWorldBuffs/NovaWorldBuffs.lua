@@ -44,6 +44,7 @@ NWB.LDBIcon = LibStub("LibDBIcon-1.0");
 local version = GetAddOnMetadata("NovaWorldBuffs", "Version") or 9999;
 NWB.latestRemoteVersion = version;
 NWB.prefixColor = "|cFFFF6900";
+local terokOffset = 2.75;
 
 --Some notes on the change Blizzard just implemented to make layers share buffs.
 --The buff drop only works on both layers if each layer NPC is reset.
@@ -597,7 +598,9 @@ function NWB:ticker()
 				if (NWB.data.layers[layer]["terokTowers10"] and NWB.data.layers[layer]["terokTowers"]
 						and tonumber(NWB.data.layers[layer]["terokTowers"])) then
 					--This timer drifts 3 seconds forward per minute.
-					local endTime = NWB.data.layers[layer]["terokTowers"] + NWB:round((((NWB.data.layers[layer]["terokTowers"]  - GetServerTime()) / 60) * 3));
+					local endTime = NWB.data.layers[layer]["terokTowers"] + NWB:round((((NWB.data.layers[layer]["terokTowers"]  - GetServerTime()) / 60) * terokOffset));
+					endTime = math.floor(endTime);
+					--local endTime = NWB.data.layers[layer]["terokTowers"];
 					local secondsLeft = endTime - GetServerTime()
 					if (secondsLeft <= 600 and secondsLeft >= 599) then
 						NWB.data.layers[layer]["terokTowers10"] = nil;
@@ -613,7 +616,7 @@ function NWB:ticker()
 					if (secondsLeft < 0) then
 						NWB.data.layers[layer]["terokTowers"] = nil;
 						NWB.data.layers[layer]["terokFaction"] = nil;
-						NWB:debug("terrok timer ended on layer", layer);
+						--NWB:debug("terrok timer ended on layer", layer);
 					end
 				end
 				if (NWB.data.layers[layer][v .. "NpcDied"] and ((GetServerTime() - NWB.data.layers[layer][v .. "NpcDied"]) == npcRespawnTime
@@ -647,7 +650,9 @@ function NWB:ticker()
 			end
 			if (NWB.data["terokTowers10"] and NWB.data["terokTowers"]) then
 				--This timer drifts 3 seconds forward per minute.
-				local endTime = NWB.data["terokTowers"] + NWB:round((((NWB.data["terokTowers"]  - GetServerTime()) / 60) * 3));
+				local endTime = NWB.data["terokTowers"] + NWB:round((((NWB.data["terokTowers"]  - GetServerTime()) / 60) * terokOffset));
+				endTime = math.floor(endTime);
+				--local endTime = NWB.data["terokTowers"];
 				local secondsLeft = endTime - GetServerTime()
 				if (secondsLeft <= 600 and secondsLeft >= 599) then
 					NWB.data["terokTowers10"] = nil;
@@ -4742,7 +4747,9 @@ function NWB:updateMinimapButton(tooltip, usingPanel)
 								texture = "|TInterface\\worldstateframe\\neutraltower.blp:12:12:-2:0:32:32:1:18:1:18|t";
 							end
 							--Offset was 3 seconds per minute because of drift, trying 0 offset now as it may be fixed on Blizzards end.
-							local endTime = v.terokTowers + NWB:round((((v.terokTowers  - GetServerTime()) / 60) * 0));
+							local endTime = v.terokTowers + NWB:round((((v.terokTowers  - GetServerTime()) / 60) * terokOffset));
+							endTime = math.floor(endTime);
+							--local endTime = v.terokTowers
 							msg = msg .. texture .. L["terokkarTimer"] .. ": " .. NWB:getTimeString(endTime - GetServerTime(), true) .. ".";
 							if (NWB.db.global.showTimeStamp) then
 								local timeStamp = NWB:getTimeFormat(endTime);
@@ -4858,7 +4865,9 @@ function NWB:updateMinimapButton(tooltip, usingPanel)
 							texture = "|TInterface\\worldstateframe\\neutraltower.blp:12:12:-2:0:32:32:1:18:1:18|t";
 						end
 						--Offset was 3 seconds per minute because of drift, trying 0 offset now as it may be fixed on Blizzards end.
-						local endTime = NWB.data.terokTowers + NWB:round((((NWB.data.terokTowers  - GetServerTime()) / 60) * 0));
+						local endTime = NWB.data.terokTowers + NWB:round((((NWB.data.terokTowers  - GetServerTime()) / 60) * terokOffset));
+						endTime = math.floor(endTime);
+						--local endTime = NWB.data.terokTowers;
 						msg = msg .. texture .. L["terokkarTimer"] .. ": " .. NWB:getTimeString(endTime - GetServerTime(), true) .. ".";
 						if (NWB.db.global.showTimeStamp) then
 							local timeStamp = NWB:getTimeFormat(endTime);
@@ -9428,7 +9437,9 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 							--5387
 							texture = "|TInterface\\worldstateframe\\neutraltower.blp:12:12:-2:0:32:32:1:18:1:18|t";
 						end
-						local endTime = v.terokTowers + NWB:round((((v.terokTowers  - GetServerTime()) / 60) * 3));
+						local endTime = v.terokTowers + NWB:round((((v.terokTowers  - GetServerTime()) / 60) * terokOffset));
+						endTime = math.floor(endTime);
+						--local endTime = v.terokTowers;
 						msg = msg .. texture .. L["terokkarTimer"] .. ": " .. NWB:getTimeString(endTime - GetServerTime(), true) .. ".";
 						if (NWB.db.global.showTimeStamp) then
 							local timeStamp = NWB:getTimeFormat(endTime);
@@ -9561,7 +9572,9 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 								--5387
 								texture = "|TInterface\\worldstateframe\\neutraltower.blp:12:12:-2:0:32:32:1:18:1:18|t";
 							end
-							local endTime = v.terokTowers + NWB:round((((v.terokTowers  - GetServerTime()) / 60) * 3));
+							local endTime = v.terokTowers + NWB:round((((v.terokTowers  - GetServerTime()) / 60) * terokOffset));
+							endTime = math.floor(endTime);
+							--local endTime = v.terokTowers;
 							msg = msg .. texture .. L["terokkarTimer"] .. ": " .. NWB:getTimeString(endTime - GetServerTime(), true) .. ".";
 							if (NWB.db.global.showTimeStamp) then
 								local timeStamp = NWB:getTimeFormat(endTime);
@@ -9681,7 +9694,9 @@ function NWB:recalclayerFrame(isLogon, copyPaste)
 						--5387
 						texture = "|TInterface\\worldstateframe\\neutraltower.blp:12:12:-2:0:32:32:1:18:1:18|t";
 					end
-					local endTime = NWB.data.terokTowers + NWB:round((((NWB.data.terokTowers  - GetServerTime()) / 60) * 3));
+					local endTime = NWB.data.terokTowers + NWB:round((((NWB.data.terokTowers  - GetServerTime()) / 60) * terokOffset));
+					endTime = math.floor(endTime);
+					--local endTime = NWB.data.terokTowers;
 					msg = msg .. texture .. L["terokkarTimer"] .. ": " .. NWB:getTimeString(endTime - GetServerTime(), true) .. ".";
 					if (NWB.db.global.showTimeStamp) then
 						local timeStamp = NWB:getTimeFormat(endTime);

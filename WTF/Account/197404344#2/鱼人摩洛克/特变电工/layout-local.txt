@@ -36,8 +36,8 @@ W: 560
 H: 346
 Frame: GroupBulletinBoardFrame
 FrameLevel: 1
-Anchor: RIGHT
-X: -235
-Y: -69
-W: 592
-H: 479
+Anchor: LEFT
+X: 0
+Y: -160
+W: 484
+H: 427

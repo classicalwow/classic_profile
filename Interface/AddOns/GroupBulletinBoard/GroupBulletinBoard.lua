@@ -717,7 +717,7 @@ GBB_GetDungeons = function(msg)
     local hasrun = true
     local runDungeon = ""
 
-	-- DEFAULT_CHAT_FRAME:AddMessage('tagList:'..table.tostring(tagList))
+	-- DEFAULT_CHAT_FRAME:AddMessage('searchList:'..table.tostring(searchList))
 
     for ip, p in pairs(parts) do
 
@@ -730,9 +730,18 @@ GBB_GetDungeons = function(msg)
 		for k, v in pairs(tagList) do
 
 			if(string.match(p,k)) then
-				x = v
-				isGood = true
-				break
+                local matchSearch = false
+                for k1,v1 in pairs(searchList) do
+                    if(string.match(p,k1)) then
+                        matchSearch = true
+                    end
+                end
+                if(matchSearch == true) then
+                    x = v
+				    isGood = true
+                    break    
+                end
+				
 			end
 			
 		end
@@ -1014,7 +1023,7 @@ GBB_CreateTagListLOC = function(loc)
     end
 
     for id, tag in pairs(searchTagsLoc[loc]) do
-        tagList[tag] = GBB_TAGSEARCH
+        searchList[tag] = true
     end
 
     for dungeon, tags in pairs(dungeonTagsLoc[loc]) do
@@ -1026,6 +1035,7 @@ end
 
 GBB_CreateTagList = function()
     tagList = {}
+    searchList = {}
     if GroupBulletinBoardDB.TagsEnglish then
         GBB_CreateTagListLOC("enGB")
     end

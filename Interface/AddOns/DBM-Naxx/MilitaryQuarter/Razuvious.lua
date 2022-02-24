@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Razuvious", "DBM-Naxx", 4)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20220221015134")
 mod:SetCreatureID(16061)
 mod:SetEncounterID(1113)
 mod:SetModelID(16582)
@@ -18,7 +18,7 @@ ability.id = 29107 and type = "cast"
 --]]
 local warnShoutNow		= mod:NewSpellAnnounce(29107, 1)
 local warnShoutSoon		= mod:NewSoonAnnounce(29107, 3)
-local warnShieldWall	= mod:NewAnnounce("WarningShieldWallSoon", 3, 29061)
+local warnShieldWall	= mod:NewAnnounce("WarningShieldWallSoon", 3, 29061, nil, nil, nil, 29061)
 
 local timerShout		= mod:NewCDTimer(25.8, 29107, nil, nil, nil, 2)-- 25.87-25.96 in classic, 16 in wrath
 local timerTaunt		= mod:NewCDTimer(60, 29060, nil, nil, nil, 5, nil, DBM_COMMON_L.TANK_ICON)

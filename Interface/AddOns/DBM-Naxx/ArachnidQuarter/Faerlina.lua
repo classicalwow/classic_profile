@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Faerlina", "DBM-Naxx", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210214203725")
+mod:SetRevision("20220221015134")
 mod:SetCreatureID(15953)
 mod:SetEncounterID(1110)
 mod:SetModelID(15940)
@@ -28,7 +28,7 @@ mod.vb.enraged = false
 
 function mod:OnCombatStart(delay)
 	timerEnrage:Start(-delay)
-	warnEnrageSoon:Schedule(55 - delay)
+	warnEnrageSoon:Schedule(51 - delay)
 	self.vb.enraged = false
 end
 

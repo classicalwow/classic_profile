@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Kel'Thuzad", "DBM-Naxx", 5)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20220221015134")
 mod:SetCreatureID(15990)
 mod:SetEncounterID(1114)
 --mod:SetModelID(15945)--Doesn't work at all, doesn't even render.
@@ -31,10 +31,10 @@ local warnChainsTargets		= mod:NewTargetNoFilterAnnounce(28410, 4)
 
 local specwarnP2Soon		= mod:NewSpecialWarning("specwarnP2Soon")
 local specWarnManaBomb		= mod:NewSpecialWarningMoveAway(27819, nil, nil, nil, 1, 2)
+local yellManaBomb			= mod:NewShortYell(27819)
 local specWarnBlast			= mod:NewSpecialWarningTarget(27808, "Healer", nil, nil, 1, 2)
 local specWarnFissureYou	= mod:NewSpecialWarningYou(27810, nil, nil, nil, 3, 2)
 local specWarnFissureClose	= mod:NewSpecialWarningClose(27810, nil, nil, nil, 2, 2)
-local yellManaBomb			= mod:NewShortYell(27819)
 local yellFissure			= mod:NewYell(27810)
 
 --Fissure timer is 13-30 or something pretty wide, so no timer

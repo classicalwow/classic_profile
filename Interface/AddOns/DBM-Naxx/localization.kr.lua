@@ -210,7 +210,7 @@ L:SetMiscLocalization({
 L:SetOptionLocalization({
 	WarningChargeChanged	= "극성이 바뀔때 특수 알림 보기",
 	WarningChargeNotChanged	= "극성이 바뀌지 않으면 특수 알림 보기",
-	ArrowsEnabled			= "$spell:28089 동안 화살표 보기",
+	AirowsEnabled			= "$spell:28089 동안 화살표 보기",
 	TwoCamp					= "화살표 보기 (일반 \"2점\" 택틱)",
 	ArrowsRightLeft			= "\"4점\" 택틱 왼쪽/오른쪽 화살표 보기 (극성이 바뀌면 왼쪽 화살표가 나오고 바뀌지 않으면 오른쪽이 나옴)",
 	ArrowsInverse			= "역 \"4점\" 택틱 (극성이 바뀌면 오른쪽 화살표가 나오고 바뀌지 않으면 왼쪽이 나옴)"
@@ -330,9 +330,7 @@ L:SetOptionLocalization({
 	WarningAirPhaseNow		= "비행 단계 알림 보기",
 	WarningLanded			= "지상 단계 알림 보기",
 	TimerAir				= "비행 단계 타이머 바 보기",
-	TimerLanding			= "착지 중 타이머 바 보기",
-	TimerIceBlast			= "냉기 숨결 타이머 바 보기",
-	WarningDeepBreath		= "냉기 숨결 특수 알림 보기"
+	TimerLanding			= "착지 중 타이머 바 보기"
 })
 
 L:SetMiscLocalization({
@@ -342,14 +340,12 @@ L:SetMiscLocalization({
 L:SetWarningLocalization({
 	WarningAirPhaseSoon		= "비행 단계 10초 전",
 	WarningAirPhaseNow		= "비행 단계",
-	WarningLanded			= "사피론 내려옴",
-	WarningDeepBreath		= "냉기 숨결"
+	WarningLanded			= "사피론 내려옴"
 })
 
 L:SetTimerLocalization({
 	TimerAir				= "비행 단계",
-	TimerLanding			= "착지 중",
-	TimerIceBlast			= "냉기 숨결"
+	TimerLanding			= "착지 중"
 })
 
 ------------------
