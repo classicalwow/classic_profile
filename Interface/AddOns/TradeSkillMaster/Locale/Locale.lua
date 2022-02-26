@@ -18073,7 +18073,7 @@ L["Bags"] = "背包"
 L["Banking"] = "銀行業務"
 L["Banks"] = "銀行"
 L["Base Group"] = "基本群組"
-L["Base Item"] = "基礎項目"
+L["Base Item"] = "基本物品"
 --[[Translation missing --]]
 L["BBG 14-Day Price"] = "BBG 14-Day Price"
 --[[Translation missing --]]
@@ -18506,8 +18506,7 @@ L["Exit"] = "離開"
 L["Expand / Collapse All Groups"] = "展開 / 摺疊所有群組"
 L["Expenses"] = "費用"
 L["EXPENSES"] = "費用"
---[[Translation missing --]]
-L["Experience earned: %d"] = "Experience earned: %d"
+L["Experience earned: %d"] = "獲得經驗: %d"
 L["Expirations"] = "到期"
 L["Expired"] = "到期"
 L["Expired Auctions"] = "到期拍賣"
@@ -18742,8 +18741,7 @@ L["It looks like you're trying to reference an old global price source which no 
 L["Item"] = "物品"
 --[[Translation missing --]]
 L["Item Class"] = "Item Class"
---[[Translation missing --]]
-L["Item Level"] = "Item Level"
+L["Item Level"] = "物品等級"
 --[[Translation missing --]]
 L["Item Level Range"] = "Item Level Range"
 L["Item links may only be used as parameters to price sources."] = "物品鏈接只能作為價格源的參數。"
@@ -19222,8 +19220,7 @@ L["Quickly mail all excess disenchantable items to a character"] = "Quickly mail
 L["Quickly mail all excess gold (limited to a certain amount) to a character"] = "Quickly mail all excess gold (limited to a certain amount) to a character"
 --[[Translation missing --]]
 L["Raid Warning"] = "Raid Warning"
---[[Translation missing --]]
-L["Rank %d"] = "Rank %d"
+L["Rank %d"] = "等級 %d"
 --[[Translation missing --]]
 L["Read More"] = "Read More"
 --[[Translation missing --]]
@@ -19589,8 +19586,7 @@ L["SOURCE %d"] = "SOURCE %d"
 L["Sources"] = "來源"
 --[[Translation missing --]]
 L["Sources to include for restock"] = "Sources to include for restock"
---[[Translation missing --]]
-L["Specific Item"] = "Specific Item"
+L["Specific Item"] = "指定物品"
 L["Stack"] = "堆疊"
 L["Stack / Quantity"] = "堆疊 / 數量"
 --[[Translation missing --]]

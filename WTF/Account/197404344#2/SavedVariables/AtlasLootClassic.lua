@@ -12,9 +12,6 @@ AtlasLootClassicDB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
-			["minimap"] = {
-				["minimapPos"] = 253.5379267883272,
-			},
 			["GUI"] = {
 				["point"] = {
 					nil, -- [1]
@@ -30,6 +27,9 @@ AtlasLootClassicDB = {
 					3, -- [4]
 					0, -- [5]
 				},
+			},
+			["minimap"] = {
+				["minimapPos"] = 253.5379267883272,
 			},
 		},
 		["Javascript - 鱼人摩洛克"] = {

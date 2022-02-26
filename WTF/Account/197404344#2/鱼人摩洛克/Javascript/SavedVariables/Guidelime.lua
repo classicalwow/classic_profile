@@ -9,9 +9,9 @@ GuidelimeDataChar = {
 			[7] = true,
 			[59] = true,
 			[60] = true,
-			[11] = true,
-			[42] = true,
 			[68] = true,
+			[42] = true,
+			[11] = true,
 		},
 		["Class Quests- by Shikushiku 12-12 Paladin Class Quest"] = {
 		},
@@ -43,24 +43,31 @@ GuidelimeDataChar = {
 		},
 		["Hakurai：由Shikushiku制作，中文翻译版 12-14 洛克莫丹"] = {
 		},
-		["Hakurai：由Shikushiku制作，中文翻译版 16-20 西部荒野"] = {
-			[3] = true,
-			[6] = true,
-			[4] = true,
-			[5] = true,
-		},
 		["Hakurai - by Shikushiku 中文由Qcat汉化 14-16 黑海岸"] = {
 			[33] = true,
 			[7] = true,
 			[14] = true,
 			[29] = true,
 			[30] = true,
-			[70] = true,
-			[67] = true,
-			[65] = true,
-			[57] = true,
-			[12] = true,
 			[77] = true,
+			[67] = true,
+			[57] = true,
+			[65] = true,
+			[12] = true,
+			[70] = true,
+		},
+		["Hakurai：由Shikushiku制作，中文翻译版 16-20 西部荒野"] = {
+			nil, -- [1]
+			nil, -- [2]
+			true, -- [3]
+			true, -- [4]
+			true, -- [5]
+			true, -- [6]
+			nil, -- [7]
+			true, -- [8]
+			[18] = true,
+			[19] = true,
+			[17] = true,
 		},
 		["Hakurai：由Shikushiku制作，中文翻译版 1-12 艾尔文森林"] = {
 		},
@@ -68,8 +75,10 @@ GuidelimeDataChar = {
 	["completedSteps"] = {
 		true, -- [1]
 		true, -- [2]
+		[10] = true,
+		[24] = true,
 	},
-	["arrowY"] = -82.55506896972656,
+	["arrowY"] = -88.66622161865234,
 	["arrowRelative"] = "CENTER",
 	["mainFrameX"] = -47.77740478515625,
 	["mainFrameLocked"] = false,
@@ -77,16 +86,14 @@ GuidelimeDataChar = {
 	["arrowLocked"] = false,
 	["editorFrameY"] = 0,
 	["showCompletedSteps"] = false,
-	["arrowAlpha"] = 0.8,
+	["editorFrameX"] = 0,
 	["arrowSize"] = 64,
 	["mainFrameAlpha"] = 0.5,
 	["currentGuide"] = "Hakurai：由Shikushiku制作，中文翻译版 16-20 西部荒野",
+	["version"] = "2.026",
+	["arrowX"] = -5.00003719329834,
 	["mainFrameFontSize"] = 14,
-	["arrowX"] = -11.66668128967285,
-	["mainFrameY"] = -109.4443893432617,
-	["mainFrameShowScrollBar"] = true,
-	["showArrow"] = true,
-	["editorFrameRelative"] = "CENTER",
+	["mainFrameShowing"] = true,
 	["guideSize"] = {
 		["TUGs 升级宝典，中文由Qcat汉化 1-9 矮人/侏儒"] = 78,
 		["Class Quests- by Shikushiku 12-12 Paladin Class Quest"] = 50,
@@ -95,12 +102,14 @@ GuidelimeDataChar = {
 		["Sage Guide - 中文由Qcat汉化 10-12 洛克莫丹,黑海岸"] = 265,
 		["Hakurai - by Shikushiku 1-12 Elwynn Forest"] = 231,
 		["Hakurai：由Shikushiku制作，中文翻译版 12-14 洛克莫丹"] = 70,
-		["Hakurai：由Shikushiku制作，中文翻译版 16-20 西部荒野"] = 176,
 		["Hakurai - by Shikushiku 中文由Qcat汉化 14-16 黑海岸"] = 80,
+		["Hakurai：由Shikushiku制作，中文翻译版 16-20 西部荒野"] = 176,
 		["Hakurai：由Shikushiku制作，中文翻译版 1-12 艾尔文森林"] = 231,
 	},
-	["mainFrameShowing"] = true,
-	["version"] = "2.026",
+	["editorFrameRelative"] = "CENTER",
+	["showArrow"] = true,
+	["mainFrameShowScrollBar"] = true,
+	["mainFrameY"] = -109.4443893432617,
 	["mainFrameRelative"] = "RIGHT",
-	["editorFrameX"] = 0,
+	["arrowAlpha"] = 0.8,
 }

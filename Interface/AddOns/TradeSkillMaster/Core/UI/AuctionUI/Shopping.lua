@@ -1849,9 +1849,13 @@ function private.FSMCreate()
 		cancelFuture = nil,
 	}
 
-	Event.Register("CHAT_MSG_SYSTEM", private.FSMMessageEventHandler)
-	Event.Register("UI_ERROR_MESSAGE", private.FSMMessageEventHandler)
-	if not TSM.IsWowClassic() then
+	if TSM.IsWowClassic() then
+		Event.Register("CHAT_MSG_SYSTEM", private.FSMMessageEventHandler)
+		Event.Register("UI_ERROR_MESSAGE", private.FSMMessageEventHandler)
+	else
+		Event.Register("AUCTION_HOUSE_SHOW_NOTIFICATION", private.FSMMessageEventHandler)
+		Event.Register("AUCTION_HOUSE_SHOW_FORMATTED_NOTIFICATION", private.FSMMessageEventHandler)
+		Event.Register("AUCTION_HOUSE_SHOW_ERROR", private.FSMMessageErrorEventHandler)
 		Event.Register("COMMODITY_PURCHASE_SUCCEEDED", private.FSMBuyoutSuccess)
 	end
 	Event.Register("AUCTION_HOUSE_CLOSED", function()
@@ -2370,7 +2374,7 @@ function private.FSMCreate()
 				if isPaused then
 					progressText = L["Scan Paused"].." | "..progressText
 				end
-				context.progress = context.numConfirmed / context.numFound
+				context.progress = context.numConfirmed / (context.numFound > 0 and context.numFound or 1)
 				context.progressText = progressText
 				context.progressPaused = false
 				context.postDisabled = not canPost
@@ -2409,14 +2413,27 @@ function private.FSMCreate()
 				if not context.findAuction then
 					return
 				end
-				local _, rawLink = context.findAuction:GetLinks()
-				if msg == LE_GAME_ERR_AUCTION_HIGHER_BID or msg == LE_GAME_ERR_ITEM_NOT_FOUND or msg == LE_GAME_ERR_AUCTION_BID_OWN or msg == LE_GAME_ERR_NOT_ENOUGH_MONEY or msg == LE_GAME_ERR_ITEM_MAX_COUNT then
-					-- failed to buy an auction
-					return "ST_CONFIRMING_BUY", false
-				elseif msg == format(ERR_AUCTION_WON_S, ItemInfo.GetName(rawLink)) or (context.numBid > 0 and msg == ERR_AUCTION_BID_PLACED) then
-					-- bought an auction
-					return "ST_CONFIRMING_BUY", true
+				if TSM.IsWowClassic() then
+					local _, rawLink = context.findAuction:GetLinks()
+					if msg == LE_GAME_ERR_AUCTION_HIGHER_BID or msg == LE_GAME_ERR_ITEM_NOT_FOUND or msg == LE_GAME_ERR_AUCTION_BID_OWN or msg == LE_GAME_ERR_NOT_ENOUGH_MONEY or msg == LE_GAME_ERR_ITEM_MAX_COUNT then
+						-- failed to buy an auction
+						return "ST_CONFIRMING_BUY", false
+					elseif msg == format(ERR_AUCTION_WON_S, ItemInfo.GetName(rawLink)) or (context.numBid > 0 and msg == ERR_AUCTION_BID_PLACED) then
+						-- bought an auction
+						return "ST_CONFIRMING_BUY", true
+					end
+				else
+					if msg == Enum.AuctionHouseNotification.AuctionWon or (context.numBid > 0 and msg == Enum.AuctionHouseNotification.BidPlaced) then
+						-- bought an auction
+						return "ST_CONFIRMING_BUY", true
+					end
 				end
+			end)
+			:AddEvent("EV_ERROR_MSG", function(context, msg)
+				if not context.findAuction then
+					return
+				end
+				return "ST_CONFIRMING_BUY", false
 			end)
 			:AddEvent("EV_BUYOUT_SUCCESS", function(context)
 				if not context.findAuction then
@@ -2614,6 +2631,12 @@ end
 function private.FSMMessageEventHandler(_, msg)
 	private.fsm:SetLoggingEnabled(false)
 	private.fsm:ProcessEvent("EV_MSG", msg)
+	private.fsm:SetLoggingEnabled(true)
+end
+
+function private.FSMMessageErrorEventHandler(_, msg)
+	private.fsm:SetLoggingEnabled(false)
+	private.fsm:ProcessEvent("EV_ERROR_MSG", msg)
 	private.fsm:SetLoggingEnabled(true)
 end
 

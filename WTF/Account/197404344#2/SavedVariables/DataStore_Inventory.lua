@@ -29,7 +29,7 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:18323:664:::::::60:::::::::|h[萨特强弓]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 63.11764705882353,
-				["lastUpdate"] = 1645635314,
+				["lastUpdate"] = 1645711995,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["Inventory"] = {
@@ -41,15 +41,15 @@ DataStore_InventoryDB = {
 				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
-				["lastUpdate"] = 1645540965,
-				["averageItemLvl"] = 14.5,
+				["lastUpdate"] = 1645712563,
+				["averageItemLvl"] = 15.5,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
 					nil, -- [3]
 					"|cffffffff|Hitem:6117::::::::17:::::::::|h[侍从衬衣]|h|r", -- [4]
 					"|cff1eff00|Hitem:6195::::::::17:::::::::|h[打蜡的护甲]|h|r", -- [5]
-					"|cff1eff00|Hitem:15399::::::::17:::::::::|h[枯草腰带]|h|r", -- [6]
+					"|cff1eff00|Hitem:14746::::::::17:::::::::|h[笨重腰带]|h|r", -- [6]
 					"|cff1eff00|Hitem:2978::::::::17:::::::::|h[精兵护腿]|h|r", -- [7]
 					"|cffffffff|Hitem:6506::::::::17:::::::::|h[步兵战靴]|h|r", -- [8]
 					"|cffffffff|Hitem:6177::::::::17:::::::::|h[铁铸护腕]|h|r", -- [9]
@@ -71,23 +71,20 @@ DataStore_InventoryDB = {
 					["高里"] = {
 						["averageItemLvl"] = 34,
 					},
-					["爱你两世丶"] = {
-						["averageItemLvl"] = 3,
+					["莉娜"] = {
+						["averageItemLvl"] = 62,
 					},
 					["影子丶"] = {
 						["averageItemLvl"] = 62,
 					},
-					["Javascript"] = {
-						["averageItemLvl"] = 14,
+					["Dptic"] = {
+						["averageItemLvl"] = 24,
 					},
-					["莉娜"] = {
-						["averageItemLvl"] = 62,
+					["爱你两世丶"] = {
+						["averageItemLvl"] = 3,
 					},
 					["巴托里"] = {
 						["averageItemLvl"] = 54,
-					},
-					["Dptic"] = {
-						["averageItemLvl"] = 24,
 					},
 				},
 			},
