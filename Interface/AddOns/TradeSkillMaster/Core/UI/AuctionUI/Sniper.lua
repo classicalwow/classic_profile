@@ -692,16 +692,19 @@ function private.FSMCreate()
 				if TSM.IsWowClassic() then
 					local _, rawLink = context.findAuction:GetLinks()
 					if msg == LE_GAME_ERR_AUCTION_HIGHER_BID or msg == LE_GAME_ERR_ITEM_NOT_FOUND or msg == LE_GAME_ERR_AUCTION_BID_OWN or msg == LE_GAME_ERR_NOT_ENOUGH_MONEY or msg == LE_GAME_ERR_ITEM_MAX_COUNT then
-						-- failed to buy an auction
-						return "ST_CONFIRMING_BUY", false
-					elseif msg == format(ERR_AUCTION_WON_S, ItemInfo.GetName(rawLink)) or (context.numBid > 0 and msg == ERR_AUCTION_BID_PLACED) then
+						-- failed to bid/buy an auction
+						return "ST_CONFIRMING_BID_BUY", false
+					elseif context.searchContext:IsBidScan() and msg == ERR_AUCTION_BID_PLACED then
+						-- bid on an auction
+						return "ST_CONFIRMING_BID_BUY", true
+					elseif context.searchContext:IsBuyoutScan() and msg == format(ERR_AUCTION_WON_S, ItemInfo.GetName(rawLink)) then
 						-- bought an auction
-						return "ST_CONFIRMING_BUY", true
+						return "ST_CONFIRMING_BID_BUY", true
 					end
 				else
 					if msg == Enum.AuctionHouseNotification.AuctionWon or (context.numBid > 0 and msg == Enum.AuctionHouseNotification.BidPlaced) then
 						-- bought an auction
-						return "ST_CONFIRMING_BUY", true
+						return "ST_CONFIRMING_BID_BUY", true
 					end
 				end
 			end)
@@ -709,7 +712,7 @@ function private.FSMCreate()
 				if not context.findAuction then
 					return
 				end
-				return "ST_CONFIRMING_BUY", false
+				return "ST_CONFIRMING_BID_BUY", false
 			end)
 			:AddEvent("EV_BUYOUT_SUCCESS", function(context)
 				return "ST_CONFIRMING_BID_BUY", true

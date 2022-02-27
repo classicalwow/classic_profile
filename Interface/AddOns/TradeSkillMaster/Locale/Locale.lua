@@ -17297,8 +17297,7 @@ L["Search Operations"] = "搜索操作"
 L["Search Patterns"] = "搜索模式"
 --[[Translation missing --]]
 L["Search Results"] = "Search Results"
---[[Translation missing --]]
-L["Search the auction house"] = "Search the auction house"
+L["Search the auction house"] = "搜索拍卖行"
 L["Search Vendor"] = "搜索NPC"
 --[[Translation missing --]]
 L["Select / Deselect All Groups"] = "Select / Deselect All Groups"

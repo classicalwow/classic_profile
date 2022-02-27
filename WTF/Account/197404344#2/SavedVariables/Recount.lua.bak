@@ -39,7 +39,7 @@ RecountDB = {
 				},
 			},
 			["FrameStrata"] = "2-LOW",
-			["ClampToScreen"] = true,
+			["SegmentBosses"] = true,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -52,9 +52,9 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.2221984863281,
 			["DetailWindowX"] = 822.2223510742188,
-			["LastInstanceName"] = "熔火之心",
+			["LastInstanceName"] = "奥妮克希亚的巢穴",
 			["CurDataSet"] = "OverallData",
-			["SegmentBosses"] = true,
+			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
 		},

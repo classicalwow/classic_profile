@@ -2399,7 +2399,7 @@ function private.FSMCreate()
 			:AddTransition("ST_CANCELING")
 			:AddTransition("ST_PLACING_BUY")
 			:AddTransition("ST_PLACING_BID")
-			:AddTransition("ST_CONFIRMING_BUY")
+			:AddTransition("ST_CONFIRMING_BID_BUY")
 			:AddTransition("ST_RESULTS")
 			:AddTransition("ST_INIT")
 			:AddEventTransition("EV_AUCTION_SELECTION_CHANGED", "ST_BUYING")
@@ -2417,15 +2417,15 @@ function private.FSMCreate()
 					local _, rawLink = context.findAuction:GetLinks()
 					if msg == LE_GAME_ERR_AUCTION_HIGHER_BID or msg == LE_GAME_ERR_ITEM_NOT_FOUND or msg == LE_GAME_ERR_AUCTION_BID_OWN or msg == LE_GAME_ERR_NOT_ENOUGH_MONEY or msg == LE_GAME_ERR_ITEM_MAX_COUNT then
 						-- failed to buy an auction
-						return "ST_CONFIRMING_BUY", false
+						return "ST_CONFIRMING_BID_BUY", false
 					elseif msg == format(ERR_AUCTION_WON_S, ItemInfo.GetName(rawLink)) or (context.numBid > 0 and msg == ERR_AUCTION_BID_PLACED) then
 						-- bought an auction
-						return "ST_CONFIRMING_BUY", true
+						return "ST_CONFIRMING_BID_BUY", true
 					end
 				else
 					if msg == Enum.AuctionHouseNotification.AuctionWon or (context.numBid > 0 and msg == Enum.AuctionHouseNotification.BidPlaced) then
 						-- bought an auction
-						return "ST_CONFIRMING_BUY", true
+						return "ST_CONFIRMING_BID_BUY", true
 					end
 				end
 			end)
@@ -2433,13 +2433,13 @@ function private.FSMCreate()
 				if not context.findAuction then
 					return
 				end
-				return "ST_CONFIRMING_BUY", false
+				return "ST_CONFIRMING_BID_BUY", false
 			end)
 			:AddEvent("EV_BUYOUT_SUCCESS", function(context)
 				if not context.findAuction then
 					return
 				end
-				return "ST_CONFIRMING_BUY", true
+				return "ST_CONFIRMING_BID_BUY", true
 			end)
 			:AddEvent("EV_POST_BUTTON_CLICK", function(context)
 				wipe(context.postContextTemp)
@@ -2548,7 +2548,7 @@ function private.FSMCreate()
 			end)
 			:AddTransition("ST_BUYING")
 		)
-		:AddState(FSM.NewState("ST_CONFIRMING_BUY")
+		:AddState(FSM.NewState("ST_CONFIRMING_BID_BUY")
 			:SetOnEnter(function(context, success)
 				if not success then
 					local _, rawLink = context.findAuction:GetLinks()
