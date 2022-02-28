@@ -8,20 +8,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1645862705,
-				["Mails"] = {
-					{
-						["link"] = "|cffffffff|Hitem:3486::::::::60:::::::::|h[重砂轮]|h|r",
-						["sender"] = "Dwac",
-						["itemID"] = 3486,
-						["returned"] = true,
-						["icon"] = 135245,
-						["count"] = 14,
-						["lastCheck"] = 1645862705,
-						["daysLeft"] = 28.62384223937988,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2022/02/26 16:05",
+				["lastUpdate"] = 1645948908,
+				["lastVisitDate"] = "2022/02/27 16:01",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540439,
