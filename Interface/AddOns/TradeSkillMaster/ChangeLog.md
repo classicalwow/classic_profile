@@ -1,5 +1,6 @@
-## v4.11.20 Changes
+## v4.11.22 Changes
 
-* Fix issues with sniper
+* [Retail] Removed auction created and canceled notifications
+* [Retail] Bonus ID updates
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

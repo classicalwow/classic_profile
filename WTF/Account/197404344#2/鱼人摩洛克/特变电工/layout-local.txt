@@ -34,13 +34,6 @@ X: -175
 Y: 8
 W: 768
 H: 447
-Frame: GroupBulletinBoardFrame
-FrameLevel: 1
-Anchor: LEFT
-X: -2
-Y: -202
-W: 407
-H: 340
 Frame: MeetingHornMainPanel
 FrameLevel: 1
 Anchor: CENTER
@@ -55,3 +48,10 @@ X: 30
 Y: 152
 W: 560
 H: 346
+Frame: GroupBulletinBoardFrame
+FrameLevel: 1
+Anchor: LEFT
+X: -2
+Y: -202
+W: 407
+H: 340
