@@ -8,8 +8,8 @@ NameplateAurasAceDB = {
 			["HidePlayerBlizzardFrame"] = true,
 			["DBVersion"] = 19,
 			["IconAnchor"] = 3,
-			["DefaultSpellsLastSetImported"] = 2,
 			["InterruptsGlowType"] = 1,
+			["DefaultSpellsLastSetImported"] = 2,
 			["CustomSpells2"] = {
 				{
 					["enabledState"] = 2,

@@ -1,0 +1,2 @@
+
+BestInSlotClassicGlobalDB = nil

@@ -195,7 +195,6 @@ ItemRackUser = {
 	["EnablePerSetQueues"] = "OFF",
 	["EnableEvents"] = "ON",
 	["ItemsUsed"] = {
-		["18854"] = 30,
 	},
 	["Events"] = {
 		["Enabled"] = {

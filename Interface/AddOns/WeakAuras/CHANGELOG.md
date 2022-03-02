@@ -1,28 +1,18 @@
-# [3.7.11](https://github.com/WeakAuras/WeakAuras2/tree/3.7.11) (2022-02-22)
+# [3.7.12](https://github.com/WeakAuras/WeakAuras2/tree/3.7.12) (2022-02-23)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.10...3.7.11)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/3.7.11...3.7.12)
 
 ## Highlights
 
- - Bug fixes
-- Enable Autocast Glow for Classic/BCC 
+ - Workaround for spellcache constant table overflow 
 
 ## Commits
 
-InfusOnWoW (3):
+InfusOnWoW (1):
 
-- BCC: Correctly disabled Glaives and enable Thrown Weapons
-- BCC: Correctly disable Goblins
-- Fix Order of Subelements in Dynamic Groups
+- Make spellcache take up less constants
 
-Stanzilla (1):
+mrbuds (1):
 
-- Update TOC for 9.2.0 and 1.14.2
-
-mrbuds (4):
-
-- enable autocast glow for bcc & som
-- clear scripts on import/export frame fixes #3496
-- restore hastepercent to previous state on retail
-- Faction Reputation trigger: support friendship standing
+- fix unpackaged copy of weakauras not working on 9.2 WOW_PROJECT_MAINLINE value changed from 5 to 1 in 9.2
 
