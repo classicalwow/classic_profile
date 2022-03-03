@@ -1,6 +1,5 @@
-## v4.11.22 Changes
+## v4.11.23 Changes
 
-* [Retail] Removed auction created and canceled notifications
-* [Retail] Bonus ID updates
+* [Retail] Bonus ID related fixes
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)
