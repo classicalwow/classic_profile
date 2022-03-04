@@ -8,7 +8,7 @@ DataStore_ReputationsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1646235792,
+				["lastUpdate"] = 1646323253,
 				["Factions"] = {
 					19521, -- [1]
 					nil, -- [2]
