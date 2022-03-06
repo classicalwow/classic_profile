@@ -33,9 +33,9 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -498.0000076293945,
-					["x"] = -439.2221984863281,
+					["x"] = -440.6669006347656,
 					["w"] = 269,
-					["h"] = 204.0000457763672,
+					["h"] = 204.0000305175781,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "战歌峡谷",
+			["LastInstanceName"] = "黑翼之巢",
 			["CurDataSet"] = "OverallData",
 			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,

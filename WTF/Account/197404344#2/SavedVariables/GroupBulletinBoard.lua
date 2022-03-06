@@ -55,8 +55,8 @@ GroupBulletinBoardDB = {
 		["msgNbRequest"] = "",
 	},
 	["EscapeQuit"] = false,
-	["OrderNewTop"] = true,
 	["NotifyChat"] = true,
+	["OrderNewTop"] = true,
 	["ColorByClass"] = true,
 	["Custom"] = {
 		["DM2"] = "",
@@ -104,7 +104,7 @@ GroupBulletinBoardDB = {
 	["widthTimes"] = 80.71605682373047,
 	["ShowTotalTime"] = false,
 	["OnDebug"] = false,
-	["TagsCustom"] = true,
+	["EnableShoutBox"] = true,
 	["NotifySound"] = true,
 	["ColorOnLevel"] = true,
 	["ShowClassIcon"] = true,
@@ -150,7 +150,7 @@ GroupBulletinBoardDB = {
 		["ZG"] = "",
 		["ZF"] = "",
 	},
-	["EnableShoutBox"] = true,
+	["TagsCustom"] = true,
 	["Height"] = 340,
 	["TimeOut"] = 150,
 	["MinimapButton"] = {

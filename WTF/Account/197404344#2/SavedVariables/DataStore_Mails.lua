@@ -8,8 +8,40 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1646322866,
-				["lastVisitDate"] = "2022/03/03 23:54",
+				["lastUpdate"] = 1646553899,
+				["Mails"] = {
+					{
+						["returned"] = false,
+						["sender"] = "联盟拍卖行",
+						["itemID"] = 12431,
+						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
+						["count"] = 16,
+						["lastCheck"] = 1646553899,
+						["icon"] = 135227,
+						["daysLeft"] = 27.32626152038574,
+					}, -- [1]
+					{
+						["returned"] = false,
+						["sender"] = "联盟拍卖行",
+						["itemID"] = 12431,
+						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
+						["count"] = 18,
+						["lastCheck"] = 1646553899,
+						["icon"] = 135227,
+						["daysLeft"] = 27.32626152038574,
+					}, -- [2]
+					{
+						["returned"] = false,
+						["sender"] = "联盟拍卖行",
+						["itemID"] = 12431,
+						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
+						["count"] = 7,
+						["lastCheck"] = 1646553899,
+						["icon"] = 135227,
+						["daysLeft"] = 27.32627296447754,
+					}, -- [3]
+				},
+				["lastVisitDate"] = "2022/03/06 16:04",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540439,

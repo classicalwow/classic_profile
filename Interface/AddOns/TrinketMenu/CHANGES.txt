@@ -1,16 +1,16 @@
-lightweight tag d9df987386998c9da58b6ebdb6a9cb3457d71a20 9.0.6-Classic
+lightweight tag 0fab3dd7b42640b96fe8937265587baf02e8b036 9.0.7-Classic
 Author:	Resike <resike@gmail.com>
-Date:	Sat Jan 29 20:50:07 2022 +0100
+Date:	Sat Mar 5 22:52:39 2022 +0100
 
-commit d9df987386998c9da58b6ebdb6a9cb3457d71a20
+commit 0fab3dd7b42640b96fe8937265587baf02e8b036
 Author: Resike <resike@gmail.com>
-Date:   Sat Jan 29 20:50:07 2022 +0100
+Date:   Sat Mar 5 22:52:39 2022 +0100
 
     Classic TOC
 
-commit bafd1e6ce6c10256ca04f76d548fd4b0db2ddf85
+commit 199f426d061fada836620c18a3308a6a88caa730
 Author: Resike <resike@gmail.com>
-Date:   Sat Jan 29 20:49:19 2022 +0100
+Date:   Sat Mar 5 22:52:10 2022 +0100
 
-    Ingore UIParent hidden state saves
+    Fix visibility issues and add "/trinket clear" command
 

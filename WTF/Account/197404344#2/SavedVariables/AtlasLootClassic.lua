@@ -26,7 +26,7 @@ AtlasLootClassicDB = {
 				["selected"] = {
 					nil, -- [1]
 					"BlackwingLair", -- [2]
-					7, -- [3]
+					nil, -- [3]
 					3, -- [4]
 					0, -- [5]
 				},
