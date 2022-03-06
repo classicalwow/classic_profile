@@ -6,9 +6,9 @@ MythicDungeonToolsDB = {
 	["global"] = {
 		["dataCollectionGUID"] = {
 		},
-		["dataCollection"] = {
-		},
 		["dataCollectionCC"] = {
+		},
+		["dataCollection"] = {
 		},
 	},
 }

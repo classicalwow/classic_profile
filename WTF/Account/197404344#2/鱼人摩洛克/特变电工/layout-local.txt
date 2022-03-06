@@ -27,6 +27,13 @@ X: -258
 Y: 59
 W: 920
 H: 600
+Frame: aux_frame
+FrameLevel: 1
+Anchor: CENTER
+X: -175
+Y: 8
+W: 768
+H: 447
 Frame: MeetingHornMainPanel
 FrameLevel: 1
 Anchor: RIGHT
@@ -48,10 +55,3 @@ X: 0
 Y: -172
 W: 407
 H: 340
-Frame: aux_frame
-FrameLevel: 1
-Anchor: CENTER
-X: -175
-Y: 8
-W: 768
-H: 447

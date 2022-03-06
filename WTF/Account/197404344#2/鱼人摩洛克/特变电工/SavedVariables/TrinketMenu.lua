@@ -9,16 +9,16 @@ TrinketMenuPerOptions = {
 	["ItemsUsed"] = {
 		["18634"] = 0,
 		["13965"] = 0,
-		["10720"] = 0,
 		["17904"] = 0,
+		["10720"] = 0,
 		["18854"] = 0,
 	},
 	["Hidden"] = {
 	},
-	["MenuDock"] = "BOTTOMLEFT",
+	["MenuScale"] = 1,
 	["MainDock"] = "BOTTOMRIGHT",
 	["YPos"] = 231.6661376953125,
-	["MenuScale"] = 1,
+	["MenuDock"] = "BOTTOMLEFT",
 	["MenuOrient"] = "VERTICAL",
 }
 TrinketMenuQueue = {
