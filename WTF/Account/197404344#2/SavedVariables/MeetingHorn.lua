@@ -9,10 +9,14 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
-			["cache"] = {
-				["cooldown"] = {
-					["start"] = 1640267414,
-					["duration"] = 50,
+			["goodleader"] = {
+				["cache"] = {
+					["奥妮克希亚的巢穴"] = {
+						["leaderGuid"] = "Player-5458-02F5DAC3",
+						["timestamp"] = 1646588387,
+						["leader"] = "夜魅将至-鱼人摩洛克",
+						["raidName"] = "奥妮克希亚的巢穴",
+					},
 				},
 			},
 			["window"] = {
@@ -20,6 +24,12 @@ MEETINGHORN_DB = {
 					["y"] = -20.3333740234375,
 					["x"] = 194.2217407226563,
 					["scale"] = 1,
+				},
+			},
+			["cache"] = {
+				["cooldown"] = {
+					["start"] = 1640267414,
+					["duration"] = 50,
 				},
 			},
 		},

@@ -15,8 +15,8 @@ DataStore_MailsDB = {
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 12431,
 						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
-						["count"] = 16,
 						["lastCheck"] = 1646553899,
+						["count"] = 16,
 						["icon"] = 135227,
 						["daysLeft"] = 27.32626152038574,
 					}, -- [1]
@@ -25,8 +25,8 @@ DataStore_MailsDB = {
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 12431,
 						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
-						["count"] = 18,
 						["lastCheck"] = 1646553899,
+						["count"] = 18,
 						["icon"] = 135227,
 						["daysLeft"] = 27.32626152038574,
 					}, -- [2]
@@ -35,8 +35,8 @@ DataStore_MailsDB = {
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 12431,
 						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
-						["count"] = 7,
 						["lastCheck"] = 1646553899,
+						["count"] = 7,
 						["icon"] = 135227,
 						["daysLeft"] = 27.32627296447754,
 					}, -- [3]

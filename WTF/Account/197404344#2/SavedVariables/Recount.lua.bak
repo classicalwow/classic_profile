@@ -32,10 +32,10 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -497.9999923706055,
-					["x"] = -440.6669311523438,
+					["y"] = -498.0000076293945,
+					["x"] = -440.6669006347656,
 					["w"] = 269,
-					["h"] = 204.0000152587891,
+					["h"] = 204.0000457763672,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "黑翼之巢",
+			["LastInstanceName"] = "奥妮克希亚的巢穴",
 			["CurDataSet"] = "OverallData",
 			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
