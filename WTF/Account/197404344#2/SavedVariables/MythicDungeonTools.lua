@@ -6,8 +6,10 @@ MythicDungeonToolsDB = {
 	["global"] = {
 		["dataCollectionGUID"] = {
 		},
+		["nonFullscreenScale"] = 1,
 		["dataCollectionCC"] = {
 		},
+		["version"] = 376,
 		["dataCollection"] = {
 		},
 	},

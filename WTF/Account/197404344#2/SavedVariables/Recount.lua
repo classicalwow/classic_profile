@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "奥妮克希亚的巢穴",
+			["LastInstanceName"] = "奥特兰克山谷",
 			["CurDataSet"] = "LastFightData",
 			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
