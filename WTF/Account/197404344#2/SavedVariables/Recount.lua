@@ -32,10 +32,10 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -498.0000076293945,
-					["x"] = -440.6669006347656,
-					["w"] = 269,
-					["h"] = 204.0000457763672,
+					["y"] = -495.7777099609375,
+					["x"] = -428.2222900390625,
+					["w"] = 268.9999694824219,
+					["h"] = 204.0000152587891,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -53,7 +53,7 @@ RecountDB = {
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
 			["LastInstanceName"] = "奥特兰克山谷",
-			["CurDataSet"] = "LastFightData",
+			["CurDataSet"] = "OverallData",
 			["ClampToScreen"] = true,
 			["MainWindowHeight"] = 200.0003051757813,
 			["MainWindowWidth"] = 278.111083984375,
