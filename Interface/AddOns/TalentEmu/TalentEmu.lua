@@ -69,7 +69,6 @@ function NS:MergeGlobal(DB)
 	DB._GlobalAssign = _GlobalAssign;
 end
 
-local curPhase = 1;
 ----------------------------------------------------------------------------------------------------upvalue
 	----------------------------------------------------------------------------------------------------LUA
 	local hooksecurefunc = hooksecurefunc;
@@ -3059,19 +3058,19 @@ NS:BuildEnv("emu");
 						end
 					end
 				end
-				if data[2] > 0 then
+				if data[3] > 0 then
 					local str;
-					if data[2] > 10000 then
-						local c = data[2] % 100;
-						local s = (data[2] % 10000 - c) / 100;
-						local g = (data[2] - s) / 10000;
+					if data[3] >= 10000 then
+						local c = data[3] % 100;
+						local s = (data[3] % 10000 - c) / 100;
+						local g = (data[3] - s) / 10000;
 						str = format("|cffffbf00%d|r|TInterface\\MoneyFrame\\UI-GoldIcon:12:12:0:0|t|cffffffff%02d|r|TInterface\\MoneyFrame\\UI-SilverIcon:12:12:0:0|t|cffffaf7f%02d|r|TInterface\\MoneyFrame\\UI-CopperIcon:12:12:0:0|t", g, s, c);
-					elseif data[2] > 100 then
-						local c = data[2] % 100;
-						local s = (data[2] % 10000 - c) / 100;
+					elseif data[3] >= 100 then
+						local c = data[3] % 100;
+						local s = (data[3] % 10000 - c) / 100;
 						str = format("|cffffffff%d|r|TInterface\\MoneyFrame\\UI-SilverIcon:12:12:0:0|t|cffffaf7f%02d|r|TInterface\\MoneyFrame\\UI-CopperIcon:12:12:0:0|t", s, c);
 					else
-						str = format("|cffffaf7f%d|r|TInterface\\MoneyFrame\\UI-CopperIcon:12:12:0:0|t", data[2]);
+						str = format("|cffffaf7f%d|r|TInterface\\MoneyFrame\\UI-CopperIcon:12:12:0:0|t", data[3]);
 					end
 					GameTooltip:AddDoubleLine(L.TrainCost, str, 1, 1, 1, 1, 1, 1);
 				end
@@ -6747,7 +6746,7 @@ do	-- initialize
 					end
 				end
 				for i = #v, 1, -1 do
-					if v[i][4] and v[i][4] > curPhase then
+					if v[i][4] and v[i][4] > NS.CUR_PHASE then
 						tremove(v, i);
 					end
 				end
@@ -7018,8 +7017,10 @@ do	-- initialize
 	});
 	function NS.PLAYER_ENTERING_WORLD()
 		_EventHandler:UnregEvent("PLAYER_ENTERING_WORLD");
+		if not NS.initializeddb then
+			NS.ADDON_LOADED(ADDON);
+		end
 		if not NS.initialized then
-			modify_saved_var();
 			SET.supreme = not not __ala_meta__.supreme[__ala_meta__.CPlayerTAG];
 			SET.credible = not not select(2, GetAddOnInfo('\33\33\33\49\54\51\85\73\33\33\33'));
 			if SET.supreme then
@@ -7030,6 +7031,16 @@ do	-- initialize
 		end
 	end
 	_EventHandler:RegEvent("PLAYER_ENTERING_WORLD");
+	function NS.ADDON_LOADED(addon)
+		if addon == ADDON then
+			_EventHandler:UnregEvent("ADDON_LOADED");
+			if not NS.initializeddb then
+				NS.initializeddb = true;
+				modify_saved_var();
+			end
+		end
+	end
+	_EventHandler:RegEvent("ADDON_LOADED");
 end
 
 do	-- SLASH and _G

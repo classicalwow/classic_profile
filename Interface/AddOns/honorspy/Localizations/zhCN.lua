@@ -29,6 +29,11 @@ L["Player %s not found in table"] = "玩家%s未在表单里"
 
 L["Pool Booster Count"] = true
 L["Number of characters to add to Pool"] = true
+L["Spread the poolboost count over the week"] = true
+L["As final pool boost should be only achieved at the end of the week"] = true
+L['Poolsize'] = true
+L['Set the number of boosted character in the pool'] = true
+L['Number of booster character in the pool'] = true
 
 L["Report"] = "报告"
 L["Report for player"] = "报告玩家"

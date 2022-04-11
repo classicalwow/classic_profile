@@ -1,10 +1,10 @@
--- $Id: Atlas_Transportation-deDE.lua 125 2021-05-22 14:07:10Z arithmandar $
+-- $Id: Atlas_Transportation-deDE.lua 131 2022-02-02 17:23:30Z arithmandar $
 --[[
 
 	Atlas, a World of Warcraft instance map browser
 	Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 	Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-	Copyright 2011 ~ 2021 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
+	Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
 
 	This file is part of Atlas.
 
@@ -35,6 +35,8 @@ L["Blue"] = "Blau"
 L["Boat to Echo Isles, Durotar"] = "Schiff nach Echo Inseln, Durotar"
 L["Boat to Stormwind City"] = "Schiff nach Sturmwind Stadt"
 L["Camp Taurajo"] = "Camp Taurajo"
+--[[Translation missing --]]
+--[[ L["Change will take effect after next login; or type '/reload' command to reload addon"] = ""--]] 
 L["Class Order Halls"] = "Klassenordenshallen"
 L["Class Specific Only"] = "Nur klassenspezifische"
 L["Climbing Rope"] = "Kletterseil"
@@ -49,13 +51,12 @@ L["Great Eagle"] = "Großer Adler"
 L["Green"] = "Grün"
 L["Gryphon"] = "Greif"
 L["Gryphon Master"] = "Greifenmeister"
---[[Translation missing --]]
---[[ L["Honored with Sha'tari Skyguard"] = ""--]] 
+L["Honored with Sha'tari Skyguard"] = "Wohlwollend mit Himmelswache der Sha'tari"
 L["Hunter Only"] = "Nur für Jäger"
 L["Illidari Gateway"] = "Illidaritor"
 L["Jump to Skyhold"] = "Zur Himmelsfeste springen"
 L["Legend"] = "Legende"
-L["Nutral"] = " Nutral"
+L["Nutral"] = " Neutral"
 L["Only available after winning the PvP battle"] = "Nur nach Sieg in der PvP-Schlacht verfügbar"
 L["Orange"] = "Orange"
 L["Orb of Translocation"] = "Translokationskugel"
@@ -73,9 +74,13 @@ L["Require to complete \"Meet the Scout\" quest line first."] = "Erfordert den A
 L["Requires Eagle Ally Advancement"] = "Erfordert den Ordensaufstieg Adlerverbündeter"
 L["Requires honored faction with Sha'tari Skyguard"] = "Benötigt wohlwollenden Ruf bei Himmelswache der Sha'tari"
 L["Requires Teleportation Nexus Advancement"] = "Erfordert den Ordensaufstieg Teleportationsnexus"
+--[[Translation missing --]]
+--[[ L["Return to Zuldazar"] = ""--]] 
 L["Seahorse"] = "Seepferdchen"
 L["Shado-Pan Rope"] = "Seil der Shado-Pan"
 L["Ship / Zeppelin sailing path to destination"] = "Schiffs- / Zeppelinpfad zum Ziel"
+--[[Translation missing --]]
+--[[ L["Show %s's transportation maps"] = ""--]] 
 L["South of the path along Lake Elune'ara"] = "Südlich des Elune'ara Seewegs"
 L["Special transportation"] = "Spezielle Beförderungsroute"
 L["Talua <Eagle Keeper>"] = "Talua <Adlerhüterin>"

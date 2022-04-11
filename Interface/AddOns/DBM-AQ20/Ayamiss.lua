@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Ayamiss", "DBM-AQ20", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20210614195601")
+mod:SetRevision("20220330215720")
 mod:SetCreatureID(15369)
 mod:SetEncounterID(722)
 mod:SetModelID(15431)
@@ -44,7 +44,7 @@ do
 end
 
 function mod:UNIT_HEALTH(uId)
-	if self.vb.phase < 2 and self:GetUnitCreatureId(uId) == 15369 and UnitHealth(uId) / UnitHealthMax(uId) <= 0.70 then
+	if self.vb.phase < 2 and self:GetUnitCreatureId(uId) == 15369 and UnitHealthMax(uId) and UnitHealthMax(uId) > 0 and UnitHealth(uId) / UnitHealthMax(uId) <= 0.70 then
 		self:SetStage(2)
 		warnPhase2:Show()
 	end

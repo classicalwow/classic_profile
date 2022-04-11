@@ -1,12 +1,99 @@
-$Id: ChangeLog.txt 125 2021-05-22 14:07:10Z arithmandar $
+$Id: ChangeLog.txt 169 2022-04-10 08:45:47Z arithmandar $
 Atlas, a World of Warcraft instance map browser
 Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-Copyright 2011 ~ 2020 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
+Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
 
 ==============
 = Change Log =
 ==============
+
+v1.50.10 (Apr. 10, 2022)
+------------------------
+- Added horde's taxi nodes in Kul Tiras introduced with Horde War Campaign
+  - Stonefist Watch
+  - Wolf's Den
+  - Windfall Cavern
+  - Hillcrest Pasture
+  - Stonetusk Watch
+  - Mudfisher Cove
+  - Swiftwind Post
+
+v1.50.09 (Apr. 05, 2022)
+------------------------
+- Added Horde's taxi node - Swiftwind Post in Drustvar
+
+v1.50.08 (Mar. 29, 2022)
+------------------------
+- Added cosmos maps for Classic and BCC
+- Updated Horde East Map in Classic
+
+v1.50.07 (Mar. 23, 2022)
+------------------------
+- Correction on config's expression
+
+v1.50.06 (Mar. 23, 2022)
+------------------------
+- BCC ToC update to support WoW 2.5.4
+
+v1.50.05 (Mar. 20, 2022)
+------------------------
+- Horde Kul Tiras map update
+
+v1.50.04 (Mar. 19, 2022)
+------------------------
+- Added option toggling for Transportation maps, allowing you to show only your faction's taxi maps, or show all factions' maps.
+- Horde Zandalar map update
+
+v1.50.03 (Mar. 3, 2022)
+------------------------
+- Fixed version info
+
+v1.50.02 (Mar. 2, 2022)
+------------------------
+- Fine-tuned taxi noeds in Northrend
+
+v1.50.01 (Mar. 1, 2022)
+------------------------
+- Maps revamp: Northrend
+
+v1.50.00 (Feb. 23, 2022)
+------------------------
+- Toc update to support WoW 9.2.0
+
+v1.49.07 (Feb. 20, 2022)
+------------------------
+- Added tzxi nodes' coordinates for Ardenweald, Bastion, Maldraxxus, Revendrethmaps
+- Correct the taxi node name in Maldraxxus and added missing node of Renounced Bastille
+- Branch data file into 3, each for specific WoW version.
+
+v1.49.06 (Feb. 13, 2022)
+------------------------
+- Updated Classic and BCC maps to add ship and Zeppelin's sailing path
+
+v1.49.05 (Feb. 12, 2022)
+------------------------
+- Added BCC's Eastern Kingdoms and Kalimdor mpas
+
+v1.49.04 (Feb. 9, 2022)
+------------------------
+- Support multiple ToC
+- BCC ToC update to support WoW 2.5.3
+- Classic ToC update to support WoW 1.14.2
+- Fixed zone name issues in Classic Era and BCC that Tanaris Desert should be "Tanaris" only
+
+v1.49.03 (Feb. 3, 2022)
+------------------------
+- ToC update to support WoW 9.1.5
+
+v1.49.02 (Jul. 01, 2021)
+------------------------
+- Added Shadowlands' taxi maps: Ardenweald, Bastion, Maldraxxus, Revendreth
+
+v1.49.01 (Jun. 30, 2021)
+------------------------
+- ToC update to support WoW 9.1.0
+- Added Nazjatar which was missing from BfA
 
 v1.49.00 (May 22, 2021)
 ------------------------

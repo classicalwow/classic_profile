@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("CThun", "DBM-AQ40", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220131034020")
+mod:SetRevision("20220330215924")
 mod:SetCreatureID(15589, 15727)
 mod:SetEncounterID(717)
 mod:SetHotfixNoticeRev(20200823000000)--2020, 8, 23
@@ -73,7 +73,7 @@ do
 				--Also, process their target information for tentacles
 				local targetuId = uId.."target"
 				local guid = UnitGUID(targetuId)
-				if guid and (mod:GetCIDFromGUID(guid) == 15802) and not diedTentacles[guid] then--Targetting Flesh Tentacle
+				if guid and (mod:GetCIDFromGUID(guid) == 15802) and not diedTentacles[guid] and UnitHealthMax(targetuId) and UnitHealthMax(targetuId) > 0 then--Targetting Flesh Tentacle
 					fleshTentacles[guid] = math.floor(UnitHealth(targetuId) / UnitHealthMax(targetuId) * 100)
 				end
 			end

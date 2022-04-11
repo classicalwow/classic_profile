@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Huhuran", "DBM-AQ40", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20220330215720")
 mod:SetCreatureID(15509)
 mod:SetEncounterID(714)
 mod:SetModelID(15739)
@@ -134,7 +134,7 @@ do
 end
 
 function mod:UNIT_HEALTH(uId)
-	if UnitHealth(uId) / UnitHealthMax(uId) <= 0.38 and self:GetUnitCreatureId(uId) == 15509 and not self.vb.prewarn_berserk then
+	if UnitHealthMax(uId) and UnitHealthMax(uId) > 0 and UnitHealth(uId) / UnitHealthMax(uId) <= 0.38 and self:GetUnitCreatureId(uId) == 15509 and not self.vb.prewarn_berserk then
 		warnBerserkSoon:Show()
 		self.vb.prewarn_berserk = true
 	end

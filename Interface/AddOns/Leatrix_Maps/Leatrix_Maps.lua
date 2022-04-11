@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.14.32 (2nd March 2022)
+	-- 	Leatrix Maps 1.14.37 (6th April 2022)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList = {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.14.32"
+	LeaMapsLC["AddonVer"] = "1.14.37"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -1581,7 +1581,6 @@
 					{"FlightH", 4.0, 44.8, L["Kargath"] .. ", " .. L["Badlands"], nil, tHTex, nil, nil},
 					{"Spirit", 56.7, 23.7, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Spirit", 8.4, 55.3, L["Spirit Healer"], nil, spTex, nil, nil},
-					{"Spirit", 56.7, 73.3, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 51.1, 14.8, L["Loch Modan"], nil, arTex, nil, nil, nil, nil, nil, 0.8, 1432},
 					{"Arrow", 5.3, 61.1, L["Searing Gorge"], nil, arTex, nil, nil, nil, nil, nil, 1.5, 1427},
 				},
@@ -1937,7 +1936,6 @@
 				--[[Winterspring]] [1452] = {
 					{"FlightA", 62.3, 36.6, L["Everlook"] .. ", " .. L["Winterspring"], nil, tATex, nil, nil},
 					{"FlightH", 60.5, 36.3, L["Everlook"] .. ", " .. L["Winterspring"], nil, tHTex, nil, nil},
-					{"Spirit", 29.0, 43.0, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Spirit", 61.5, 35.4, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Spirit", 62.7, 61.3, L["Spirit Healer"], nil, spTex, nil, nil},
 					{"Arrow", 27.9, 34.5, L["Felwood"], L["Timbermaw Hold"], arTex, nil, nil, nil, nil, nil, 0.7, 1448},
@@ -3369,6 +3367,11 @@
 				wipe(LeaMapsDB)
 				LeaMapsLC["NoSaveSettings"] = true
 				ReloadUI()
+			elseif str == "nosave" then
+				-- Prevent Leatrix Maps from overwriting LeaMapsDB at next logout
+				LeaMapsLC.EventFrame:UnregisterEvent("PLAYER_LOGOUT")
+				LeaMapsLC:Print("Leatrix Maps will not overwrite LeaMapsDB at next logout.")
+				return
 			elseif str == "setmap" then
 				-- Set map to map ID
 				arg1 = tonumber(arg1)
@@ -3532,6 +3535,7 @@
 
 	-- Create event frame
 	local eFrame = CreateFrame("FRAME")
+	LeaMapsLC.EventFrame = eFrame -- Used with nosave command
 	eFrame:RegisterEvent("ADDON_LOADED")
 	eFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
 	eFrame:RegisterEvent("PLAYER_LOGOUT")

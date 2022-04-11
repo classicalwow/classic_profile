@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Skeram", "DBM-AQ40", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20201225041541")
+mod:SetRevision("20220330223318")
 mod:SetCreatureID(15263)
 mod:SetEncounterID(709)
 mod:SetModelID(15345)
@@ -12,18 +12,26 @@ mod:RegisterCombat("combat")
 mod:RegisterEventsInCombat(
 	"SPELL_AURA_APPLIED 785",
 	"SPELL_AURA_REMOVED 785",
-	"SPELL_CAST_SUCCESS 20449 4801 8195",
+	"SPELL_CAST_SUCCESS 20449 4801 8195 25565 370066",
 	"SPELL_SUMMON 747",
 	"UNIT_HEALTH mouseover target"
 )
 
 --TODO, special warning optimizing?
+--[[
+ability.id = 785 or (ability.id = 25565 or ability.id = 370066 or ability.id = 4801 or ability.id = 20449 or ability.id = 8195) and type = "cast"
+--]]
 local warnMindControl	= mod:NewTargetNoFilterAnnounce(785, 4)
 local warnTeleport		= mod:NewSpellAnnounce(20449, 3)
 local warnSummon		= mod:NewSpellAnnounce(747, 3)
 local warnSummonSoon	= mod:NewSoonAnnounce(747, 2)
+local warnMadness		= mod:NewTargetNoFilterAnnounce(370066, 3)
+
+local specWarnMadness	= mod:NewSpecialWarningMoveAway(370066, nil, nil, nil, 1, 2)
+local yellMadness		= mod:NewYell(370066)
 
 local timerMindControl	= mod:NewBuffActiveTimer(20, 785, nil, nil, nil, 3)
+local timerMadnessCD	= mod:NewCDTimer(8, 785, nil, nil, nil, 3)
 
 mod:AddSetIconOption("SetIconOnMC", 785, true, false, {4, 5, 6, 7, 8})
 
@@ -72,11 +80,23 @@ do
 end
 
 do
-	local Teleport = DBM:GetSpellInfo(4801)
+	local Teleport, clearAll, Madness = DBM:GetSpellInfo(4801), DBM:GetSpellInfo(25565), DBM:GetSpellInfo(370066)
 	function mod:SPELL_CAST_SUCCESS(args)
 		--if args:IsSpellID(20449, 4801, 8195) and self:AntiSpam() then
-		if args.spellName == Teleport and args:IsSrcTypeHostile() and self:AntiSpam(3, 1) then
+		if (args.spellName == Teleport or args.spellName == clearAll) and args:IsSrcTypeHostile() and self:AntiSpam(3, 1) then
 			warnTeleport:Show()
+			if self:IsSeasonal() then
+				timerMadnessCD:Start(10)
+			end
+		elseif args.spellName == Madness then
+			if args:IsPlayer() then
+				specWarnMadness:Show()
+				specWarnMadness:Play("runout")
+				yellMadness:Yell()
+			else
+				warnMadness:Show(args.destName)
+			end
+			timerMadnessCD:Start(8)
 		end
 	end
 end
@@ -92,7 +112,7 @@ do
 end
 
 function mod:UNIT_HEALTH(uId)
-	if self:GetUnitCreatureId(uId) == 15263 then
+	if self:GetUnitCreatureId(uId) == 15263 and UnitHealthMax(uId) and UnitHealthMax(uId) > 0 then
 		local percent = UnitHealth(uId) / UnitHealthMax(uId) * 100
 		if percent <= 81 and percent >= 77 and self.vb.splitCount < 1 then
 			warnSummonSoon:Show()

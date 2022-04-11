@@ -1,12 +1,13 @@
 HonorSpy = LibStub("AceAddon-3.0"):NewAddon("HonorSpy", "AceConsole-3.0", "AceHook-3.0", "AceEvent-3.0", "AceComm-3.0", "AceSerializer-3.0")
 
 local L = LibStub("AceLocale-3.0"):GetLocale("HonorSpy", true)
+local libDeflate = LibStub("LibDeflate")
 
 local addonName = GetAddOnMetadata("HonorSpy", "Title");
-local commPrefix = addonName .. "4";
+local commPrefix = addonName .. "7";
 
 local paused = false; -- pause all inspections when user opens inspect frame
-local playerName = UnitName("player");
+local playerName = HonorSpyUtils:getFullUnitName("player");
 local callback = nil
 local nameToTest = nil
 local startRemovingFakes = false
@@ -18,57 +19,137 @@ local addingPlayer = false;
 local muteTimer = C_Timer.NewTimer(1,function () end)
 local lastPlayer
 
-function HonorSpy:OnInitialize()
-	self.db = LibStub("AceDB-3.0"):New("HonorSpyDB", {
-		factionrealm = {
-			currentStandings = {},
-			last_reset = 0,
-			minimapButton = {hide = false},
-			estHonorCol = {show = false},
-			actualCommPrefix = "",
-			fakePlayers = {},
-			goodPlayers = {},
-			poolBoost = 0,
-			isSom = false,
-			som_Checked = false,
-            connectedRealms = {},
-		},
-		char = {
-			today_kills = {},
-			estimated_honor = 0,
-			original_honor = 0,
-			last_reset = 0,
-		}
-	}, true)
-	
-	som_realm = C_Seasons.HasActiveSeason();
-	
-	if (not self.db.factionrealm.som_Checked) then
-		self.db.factionrealm.isSom = som_realm;
-		self.db.factionrealm.som_Checked = true;
-	end
-	
-	self:SecureHook("InspectUnit");
-	self:SecureHook("UnitPopup_ShowMenu");
-
-	self:RegisterEvent("PLAYER_TARGET_CHANGED");
-	self:RegisterEvent("UPDATE_MOUSEOVER_UNIT");
-	self:RegisterEvent("INSPECT_HONOR_UPDATE");
-	self:RegisterEvent("CHAT_MSG_COMBAT_HONOR_GAIN", CHAT_MSG_COMBAT_HONOR_GAIN_EVENT);
-	ChatFrame_AddMessageEventFilter("CHAT_MSG_COMBAT_HONOR_GAIN", CHAT_MSG_COMBAT_HONOR_GAIN_FILTER);
-	self:RegisterComm(commPrefix, "OnCommReceive")
-	self:RegisterEvent("PLAYER_DEAD");
-	ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", FAKE_PLAYERS_FILTER);
-
-	DrawMinimapIcon();
-	HS_wait(5, function() HonorSpy:CheckNeedReset() end)
-	HonorSpyGUI:PrepareGUI()
-	PrintWelcomeMsg();
-	DBHealthCheck()
-end
-
 local inspectedPlayers = {}; -- stores last_checked time of all players met
 local inspectedPlayerName = nil; -- name of currently inspected player
+
+local function isFakePlayer(playerName)
+	if (HonorSpy.db.factionrealm.fakePlayers[playerName]) then
+		return true
+	end
+	return false
+end
+
+local function class_exist(className)
+	if className == "WARRIOR" or 
+	className == "PRIEST" or
+	className == "SHAMAN" or
+	className == "WARLOCK" or
+	className == "MAGE" or
+	className == "ROGUE" or
+	className == "HUNTER" or
+	className == "PALADIN" or
+	className == "DRUID" then
+		return true
+	end
+	return false
+end
+
+-- Adds Hexadecimal string length as prefix to check on receiving end
+local function prefixMessage(message)
+	return string.format("%04x", #message) .. message
+end
+
+-- Splits the original message and it's length prefix
+local function splitPrefixAndMessage(prefixedMessage)
+	return string.sub(prefixedMessage, 1, 4), string.sub(prefixedMessage, 5)
+end
+
+-- prefix, compress and encode message for comms
+local function prepareMessageForComms(message)
+	message = prefixMessage(message)
+	message = libDeflate:CompressZlib(message)
+	message = libDeflate:EncodeForWoWAddonChannel(message)
+
+	return message
+end
+
+-- Uncompress the message and checks if it's length match the prefix value
+-- Returns nil if the message is corrupted
+local function decodeDecompressAndCheckMessage(message, decodeAndDecompress)
+	if (decodeAndDecompress) then
+		message = libDeflate:DecodeForWoWAddonChannel(message)
+		if (nil == message) then return end
+		message = libDeflate:DecompressZlib(message)
+		if (nil == message) then return end
+	end
+
+	-- Manually check the length of the original message
+	local prefix, originalMessage = splitPrefixAndMessage(message)
+	if (tonumber("0x" .. prefix) ~= #originalMessage) then return end
+
+	return originalMessage
+end
+
+local function playerIsValid(player)
+	if (not player.last_checked or type(player.last_checked) ~= "number" or player.last_checked < HonorSpy.db.char.last_reset
+		or player.last_checked > GetServerTime()
+		or not player.thisWeekHonor or type(player.thisWeekHonor) ~= "number" or player.thisWeekHonor == 0
+		or not player.lastWeekHonor or type(player.lastWeekHonor) ~= "number"
+		or not player.standing or type(player.standing) ~= "number"
+		or not player.RP or type(player.RP) ~= "number"
+		or not player.rankProgress or type(player.rankProgress) ~= "number"
+		or not player.rank or type(player.rank) ~= "number"
+		or not player.class or not class_exist(player.class)
+		) then
+		return false
+	end
+	return true
+end
+
+local function store_player(playerName, player)
+	if (
+		player == nil or
+		playerName == nil or
+		not playerName:find("-") or
+		playerName:gsub("%-", "", 1):find("[%d%p%s%c%z]") or
+		isFakePlayer(playerName) or
+		not playerIsValid(player)
+	) then
+		return
+	end
+	
+	if(addingPlayer) then
+		C_Timer.After(0.1,function() store_player(playerName, player); end)
+	else
+		addingPlayer = true
+		
+		local player = table.copy(player);
+		local localPlayer = HonorSpy.db.factionrealm.currentStandings[playerName];
+				
+		if (localPlayer == nil or localPlayer.last_checked < player.last_checked) then
+			HonorSpy.db.factionrealm.currentStandings[playerName] = player;
+			if (not checkingPlayers and (time() - last_test >= 300)) then
+				HonorSpy:TestNextFakePlayer();
+			else
+				if(not HonorSpy.db.factionrealm.goodPlayers[playerName] and not HonorSpy.db.factionrealm.fakePlayers[playerName]) then
+					HonorSpy:TestNextFakePlayer();
+				end
+			end
+			addingPlayer = false;
+		else
+			addingPlayer = false;
+		end
+	end
+end
+
+local function broadcast(originalMessage, skip_yell)
+
+	local encodedMessage = prepareMessageForComms(originalMessage)
+	if (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance()) then
+		HonorSpy:SendCommMessage(commPrefix, encodedMessage, "INSTANCE_CHAT");
+	elseif (IsInRaid()) then
+		HonorSpy:SendCommMessage(commPrefix, encodedMessage, "RAID");
+	end
+	if (GetGuildInfo("player") ~= nil) then
+		HonorSpy:SendCommMessage(commPrefix, encodedMessage, "GUILD");
+	end
+
+	if (not skip_yell) then
+		-- No compression / encoding for yells
+		local prefixedMessage = prefixMessage(originalMessage)
+		HonorSpy:SendCommMessage(commPrefix, prefixedMessage, "YELL");
+	end
+end
 
 local function processInspect(player, name, todayHK, thisweekHK, thisWeekHonor, lastWeekHonor, standing, rankProgress)
     if (thisweekHK < 15) and (todayHK >= 15) then
@@ -105,9 +186,13 @@ end
 local lastPlayerTodayHK, lastPlayerEstHonor, lastPlayerThisweekHK, lastPlayerThisWeekHonor, lastPlayerLastWeekHonor, lastPlayerStanding, lastPlayerRankProgress, lastPlayerChecked
 
 local function StartInspecting(unitID)
-	local name, realm = UnitName(unitID);
-    
-    if unitID == "player" then
+
+	local _, realm = GetUnitName(unitID, true);
+	local name = HonorSpyUtils:getFullUnitName(unitID)
+	if (name == nil or not UnitPlayerControlled(unitID) or UnitName(unitID) == UNKNOWNOBJECT) then return end
+	if (realm == nil) then realm = HonorSpyUtils:getRealmFromFullUnitName(name) end
+
+	if unitID == "player" then
         -- Instead of waiting for an inspect of self, we can use GetPVPSessionStats and GetPVPThisWeekStats
         local player = HonorSpy.db.factionrealm.currentStandings[name] or {last_checked = 0, unitID = "player", rank = select(2, GetPVPRankInfo(UnitPVPRank("player"))), class = select(2, UnitClass("player")),}
 	    if (player == nil) then return end
@@ -135,7 +220,6 @@ local function StartInspecting(unitID)
         end
        
         if realm and realm ~= "" and realm ~= GetRealmName() then
-            name = name.."-"..realm -- target on a connected realm
             HonorSpy.db.factionrealm.connectedRealms[realm] = true
         end
         if (name ~= inspectedPlayerName) then -- changed target, clear currently inspected player
@@ -173,6 +257,7 @@ function HonorSpy:INSPECT_HONOR_UPDATE()
 	if (inspectedPlayerName == nil or paused or not HasInspectHonorData()) then
 		return;
 	end
+
 	local player = self.db.factionrealm.currentStandings[inspectedPlayerName] or inspectedPlayers[inspectedPlayerName];
 	if (player == nil) then return end
 	if (player.class == nil) then player.class = "nil" end
@@ -199,6 +284,19 @@ function HonorSpy:INSPECT_HONOR_UPDATE()
 	end
 end
 
+local realmCache = {}
+local function COMBAT_LOG_EVENT_UNFILTERED_EVENT(e)
+    if not UnitIsPVP("player") then return end
+    
+    local _, _, _, _, _, _, _, destGUID = CombatLogGetCurrentEventInfo()
+    if destGUID == nil or destGUID == "" or destGUID == " " then return end
+    
+    local _, _, _, _, _, name, realm = GetPlayerInfoByGUID(destGUID)
+    if not name then return end
+    
+    realmCache[name] = realm
+end
+
 -- parse message
 -- COMBATLOG_HONORGAIN = "%s dies, honorable kill Rank: %s (Estimated Honor Points: %d)";
 -- COMBATLOG_HONORAWARD = "You have been awarded %d honor points.";
@@ -209,6 +307,11 @@ local function parseHonorMessage(msg)
 	honor_gain_pattern = string.gsub(honor_gain_pattern, "(%%d)", "(%%d+)")
     local victim, rank, est_honor = msg:match(honor_gain_pattern)
     if (victim) then
+        if not victim:find("-") then
+            if realmCache[victim] and realmCache[victim] ~= "" and realmCache[victim] ~= GetRealmName() then
+                victim = victim.."-"..realmCache[victim]
+            end
+        end
     	est_honor = math.max(0, math.floor(est_honor * (1-0.10*((HonorSpy.db.char.today_kills[victim] or 1)-1)) + 0.5))
     end
 
@@ -218,7 +321,7 @@ local function parseHonorMessage(msg)
 end
 
 -- this is called before filter
-function CHAT_MSG_COMBAT_HONOR_GAIN_EVENT(e, msg)
+local function CHAT_MSG_COMBAT_HONOR_GAIN_EVENT(e, msg)
 	local victim, _, awarded_honor = parseHonorMessage(msg)
     if victim then
         HonorSpy.db.char.today_kills[victim] = (HonorSpy.db.char.today_kills[victim] or 0) + 1
@@ -230,12 +333,12 @@ function CHAT_MSG_COMBAT_HONOR_GAIN_EVENT(e, msg)
 end
 
 -- this is called after eventg	ww
-function CHAT_MSG_COMBAT_HONOR_GAIN_FILTER(_s, e, msg, ...)
+local function CHAT_MSG_COMBAT_HONOR_GAIN_FILTER(_s, e, msg, ...)
 	local victim, est_honor, awarded_honor = parseHonorMessage(msg)
+	C_Timer.After(1, HonorSpy.CheckNeedReset) -- At this point, GetPVPSessionStats() hasn't always yet updated with the new HK
 	if (not victim) then
 		return
 	end
-    C_Timer.After(1, HonorSpy.CheckNeedReset) -- At this point, GetPVPSessionStats() hasn't always yet updated with the new HK
 	return false, format("%s kills: %d, honor: |cff00FF96%d", msg, HonorSpy.db.char.today_kills[victim] or 0, est_honor), ...
 end
 
@@ -296,7 +399,18 @@ local options = {
 			desc = L['Report specific player standings'],
 			usage = L['player_name'],
 			get = false,
-			set = function(info, playerName) HonorSpy:Report(playerName) end
+			set = function(info, playerName) HonorSpy:Report(HonorSpyUtils:getCompleteName(playerName)) end
+		},
+		pool = {
+			type = 'input',
+			name = L['Poolsize'],
+			desc = L['Set the number of boosted character in the pool'],
+			usage = L['Number of booster character in the pool'],
+			pattern = "%d",
+			get = false,
+			set = function(info, count)
+				HonorSpy.db.factionrealm.poolBoost = tonumber(count)
+			end
 		},
 	}
 }
@@ -305,17 +419,55 @@ LibStub("AceConfig-3.0"):RegisterOptionsTable("HonorSpy", options, {"honorspy", 
 function HonorSpy:BuildStandingsTable(sort_by)
 	local t = { }
 	for playerName, player in pairs(HonorSpy.db.factionrealm.currentStandings) do
-		table.insert(t, {playerName, player.class, player.thisWeekHonor or 0, player.estHonor or "", player.lastWeekHonor or 0, player.standing or 0, player.RP or 0, player.rank or 0, player.last_checked or 0})
+		table.insert(t, {playerName, player.class, tonumber(player.thisWeekHonor) or 0, tonumber(player.estHonor), tonumber(player.lastWeekHonor) or 0, tonumber(player.standing) or 0, player.RP or 0, player.rank or 0, player.last_checked or 0})
 	end
 	
-	local sort_column = 3; -- ThisWeekHonor
+	local sort_column = 3; -- KnownHonor
 	if (sort_by == L["EstHonor"]) then sort_column = 4; end
     if (sort_by == L["ThisWeekHonor"]) then sort_column = -1; end
-	if (sort_by == L["Standing"]) then sort_column = 5; end
-	if (sort_by == L["Rank"]) then sort_column = 7; end
+	if (sort_by == L["LstWkHonor"]) then sort_column = 5; end
+	if (sort_by == L["Standing"]) then sort_column = 6; end
+	if (sort_by == L["Rank"]) then sort_column = 8; end
+    if (sort_by == L["Name"]) then sort_column = 1; end
 	local sort_func = function(a,b)
-		if sort_column == 4 then return math.max(a[3],tonumber(a[4]) or 0) > math.max(b[3],tonumber(b[4]) or 0) end
-        if sort_column == -1 then return (a[3] + (tonumber(a[4]) or 0)) > (b[3] + (tonumber(b[4]) or 0)) end
+		local a3 = a[3] or 0
+		local a4 = a[4] or 0
+		local b3 = b[3] or 0
+		local b4 = b[4] or 0
+        if sort_column == 1 then return a[1] < b[1] end
+		if sort_column == 4 then
+            local c = a4-a3
+            if c < 0 then c = 0 end
+            local d = b4-b3
+            if d < 0 then d = 0 end
+            return c > d 
+        end
+        if sort_column == -1 then
+            local c = a4-a3
+            if c < 0 then
+                c = a3
+            else
+                c = a4
+            end
+            local d = b4-b3
+            if d < 0 then
+                d = b3
+            else
+                d = b4
+            end
+            return c > d
+        end
+        if sort_column == 5 then
+            if a[5] == b[5] then
+                return a[6] < b[6]
+            end
+        end
+        if sort_column == 6 then
+            if a[6] == 0 or b[6] == 0 then
+                return a[5] > b[5]
+            end
+            return a[6] < b[6]
+        end
 		return a[sort_column] > b[sort_column]
 	end
 	table.sort(t, sort_func)
@@ -324,15 +476,20 @@ function HonorSpy:BuildStandingsTable(sort_by)
 end
 
 -- REPORT
-function HonorSpy:GetPoolBoostForToday() -- estimates pool boost to the date (as final pool boost should be only achieved at the end of the week)
-	return  math.floor((GetServerTime() - HonorSpy.db.char.last_reset) / (7*24*60*60) * (HonorSpy.db.factionrealm.poolBoost or 0)+.5)
+function HonorSpy:GetPoolBoostCount()
+	-- estimates pool boost to the date (as final pool boost should be only achieved at the end of the week)
+	if (HonorSpy.db.factionrealm.spreadPoolBoostOverWeek) then
+		return  math.floor((GetServerTime() - HonorSpy.db.char.last_reset) / (7*24*60*60) * (HonorSpy.db.factionrealm.poolBoost or 0)+.5)
+	end
+
+	return HonorSpy.db.factionrealm.poolBoost
 end
 
 function HonorSpy:GetBrackets(pool_size)
 			  -- 1   2       3      4	  5		 6		7	   8		9	 10		11		12		13	14
 	local brk =  {1, 0.845, 0.697, 0.566, 0.436, 0.327, 0.228, 0.159, 0.100, 0.060, 0.035, 0.020, 0.008, 0.003} -- brackets percentage
 	
-	pool_size = pool_size + HonorSpy:GetPoolBoostForToday()
+	pool_size = pool_size + HonorSpy:GetPoolBoostCount()
 
 	if (not pool_size) then
 		return brk
@@ -347,16 +504,14 @@ function HonorSpy:Estimate(playerOfInterest)
 	if (not playerOfInterest) then
 		playerOfInterest = playerName
 	end
-	playerOfInterest = string.utf8upper(string.utf8sub(playerOfInterest, 1, 1))..string.utf8lower(string.utf8sub(playerOfInterest, 2))
 
-	
 	local standing = -1;
 	local t = HonorSpy:BuildStandingsTable(L["ThisWeekHonor"])
 	local pool_size = #t;
 	local curHonor = 0;
 	local rp_factor = 1000;
 	local decay_factor = 0.8;
-	
+
 	for i = 1, pool_size do
 		if (playerOfInterest == t[i][1]) then
 			standing = i
@@ -386,7 +541,10 @@ function HonorSpy:Estimate(playerOfInterest)
 		end
 		bracket = i;
 	end
-	local btm_break_point_honor = math.max(t[brk[bracket]][3], tonumber(t[brk[bracket]][4]) or 0)
+
+	local bracketEnd = brk[bracket]
+	if (brk[bracket] > #t) then bracketEnd = #t end	
+	local btm_break_point_honor = math.max(t[bracketEnd][3], tonumber(t[bracketEnd][4]) or 0)
 	local top_break_point_honor = 0
 	if brk[bracket + 1] and t[brk[bracket + 1]] then -- do we even have next bracket?
 		top_break_point_honor = math.max(t[brk[bracket + 1]][3], tonumber(t[brk[bracket + 1]][4]) or 0)
@@ -431,8 +589,7 @@ function HonorSpy:Report(playerOfInterest, skipUpdate)
 	if (playerOfInterest == playerName) then
 		HonorSpy:UpdatePlayerData() -- will update for next time, this report gonna be for old data
 	end
-	playerOfInterest = string.utf8upper(string.utf8sub(playerOfInterest, 1, 1))..string.utf8lower(string.utf8sub(playerOfInterest, 2))
-	
+
 	local pool_size, standing, bracket, RP, EstRP, Rank, Progress, EstRank, EstProgress = HonorSpy:Estimate(playerOfInterest)
 	if (not standing) then
 		self:Print(format(L["Player %s not found in table"], playerOfInterest));
@@ -453,106 +610,25 @@ function table.copy(t)
   return setmetatable(u, getmetatable(t))
 end
 
-function class_exist(className)
-	if className == "WARRIOR" or 
-	className == "PRIEST" or
-	className == "SHAMAN" or
-	className == "WARLOCK" or
-	className == "MAGE" or
-	className == "ROGUE" or
-	className == "HUNTER" or
-	className == "PALADIN" or
-	className == "DRUID" then
-		return true
-	end
-	return false
-end
+function HonorSpy:OnCommReceive(prefix, commMessage, distribution, sender)
+	local sendersRealm = HonorSpyUtils:getRealmFromFullUnitName(sender)
 
-function playerIsValid(player)
-	if (not player.last_checked or type(player.last_checked) ~= "number"-- or player.last_checked < HonorSpy.db.char.last_reset + 24*60*60
-		or player.last_checked > GetServerTime()
-		or not player.thisWeekHonor or type(player.thisWeekHonor) ~= "number" or player.thisWeekHonor == 0
-		or not player.lastWeekHonor or type(player.lastWeekHonor) ~= "number"
-		or not player.standing or type(player.standing) ~= "number"
-		or not player.RP or type(player.RP) ~= "number"
-		or not player.rankProgress or type(player.rankProgress) ~= "number"
-		or not player.rank or type(player.rank) ~= "number"
-		or not player.class or not class_exist(player.class)
-		) then
-		return false
-	end
-	return true
-end
+	-- Do not process messages from the players himself
+	if (HonorSpyUtils:getCompleteName(sender) == playerName) then return end
 
-function isFakePlayer(playerName)
-	if (HonorSpy.db.factionrealm.fakePlayers[playerName]) then
-		return true
+	if (distribution ~= "GUILD" and sendersRealm and HonorSpy.db.factionrealm.connectedRealms[sendersRealm] == nil) then
+		return -- discard any message from players not from the same realm or connected realms (connected on ERA only)
 	end
-	return false
-end
 
-function store_player(playerName, player)
-	if (player == nil or playerName == nil or playerName:gsub("%-","",1):find("[%d%p%s%c%z]") or isFakePlayer(playerName) or not playerIsValid(player)) then return end
-	
-	if(addingPlayer) then
-		C_Timer.After(0.1,function() store_player(playerName, player); end)
-	else
-		addingPlayer = true
-		
-		local player = table.copy(player);
-		local localPlayer = HonorSpy.db.factionrealm.currentStandings[playerName];
-				
-		if (localPlayer == nil or localPlayer.last_checked < player.last_checked) then
-			HonorSpy.db.factionrealm.currentStandings[playerName] = player;
-			if (not checkingPlayers and (time() - last_test >= 300)) then
-				HonorSpy:TestNextFakePlayer();
-			else
-				if(not HonorSpy.db.factionrealm.goodPlayers[playerName] and not HonorSpy.db.factionrealm.fakePlayers[playerName]) then
-					HonorSpy:TestNextFakePlayer();
-				end
-			end
-			addingPlayer = false;
-		else
-			addingPlayer = false;
-		end
-	end
-end
+	-- Decompress message, reject if corrupted. No decode/decompress for yells
+	local originalMessage = decodeDecompressAndCheckMessage(commMessage, distribution ~= "YELL")
+	if (nil == originalMessage) then return end
 
-function HonorSpy:OnCommReceive(prefix, message, distribution, sender)
-    local connectedRealm = false
-    local _, _, _, sendersRealm = sender:find("(%a+)%-(%a+)")
-    if sendersRealm then
-        if HonorSpy.db.factionrealm.connectedRealms[sendersRealm] then
-            connectedRealm = true
-        else
-            return -- discard any message from players not from the same realm or connected realms (connected on CERA only)
-        end
-    end
-    
-	local ok, playerName, player = self:Deserialize(message);
+	local ok, playerName, player = self:Deserialize(originalMessage);
 	if (not ok) then
 		return;
 	end
-    
-    -- If a player on a connected realm sends this player data, the realms will be all wrong
-    if connectedRealm then
-        if sendersRealm == "" then return end
-        if playerName:find("%-") then 
-            local _, _, name, realm = playerName:find("(%a+)%-(%a+)")
-            if not realm or realm == "" or not name or name == "" then return end
-            if realm == GetRealmName() then
-                -- Example here: Player is from Arugal, message is from Felstriker, about a character on Arugal
-                -- Lets just remove the bit about Arugal
-                playerName = name
-                -- If the realm name does not match: Player is from Arugal, message is from Felstriker, about a character on Yojamba
-                -- In this case just allow it as is
-            end
-        else
-            -- Example here: Player is from Arugal, message is from Felstriker, about a character on Felstriker
-            -- Add "-Felstriker" to the name
-            playerName = playerName.."-"..sendersRealm
-        end
-    end
+
 	if (playerName == "filtered_players") then
 		for playerName, player in pairs(player) do
 			store_player(playerName, player);
@@ -562,46 +638,43 @@ function HonorSpy:OnCommReceive(prefix, message, distribution, sender)
 	store_player(playerName, player);
 end
 
-function broadcast(msg, skip_yell)
-	if (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance()) then
-		HonorSpy:SendCommMessage(commPrefix, msg, "INSTANCE_CHAT");
-	elseif (IsInRaid()) then
-		HonorSpy:SendCommMessage(commPrefix, msg, "RAID");
-	end
-	if (GetGuildInfo("player") ~= nil) then
-		HonorSpy:SendCommMessage(commPrefix, msg, "GUILD");
-	end
-	if (not skip_yell) then
-		HonorSpy:SendCommMessage(commPrefix, msg, "YELL");
-	end
-end
-
 -- Broadcast on death
 local last_send_time = 0;
 function HonorSpy:PLAYER_DEAD()
+	HonorSpy:broadcastPlayers(true)
+end
+
+function HonorSpy:broadcastPlayers(skipYell)
 	local filtered_players, count = {}, 0;
-	if (time() - last_send_time < 10*60) then return end;
+	if (time() - last_send_time < 15*60) then return end;
 	last_send_time = time();
 
 	for playerName, player in pairs(self.db.factionrealm.currentStandings) do
 		filtered_players[playerName] = player;
 		count = count + 1;
 		if (count == 10) then
-			broadcast(self:Serialize("filtered_players", filtered_players), true)
+			broadcast(self:Serialize("filtered_players", filtered_players), skipYell)
 			filtered_players, count = {}, 0;
 		end
 	end
 	if (count > 0) then
-		broadcast(self:Serialize("filtered_players", filtered_players), true)
+		broadcast(self:Serialize("filtered_players", filtered_players), skipYell)
 	end
 end
 
-function FAKE_PLAYERS_FILTER(_s, e, msg, ...)
+local function FAKE_PLAYERS_FILTER(_s, e, msg, ...)
 	-- not found, fake
 	if (msg == ERR_FRIEND_NOT_FOUND) then
 		if (not nameToTest) then
 			return true
 		end
+
+		-- We added a same server friend, but want to store it with the name-server format
+		local name, realm = strsplit('-', nameToTest)
+		if (realm == nil) then
+			nameToTest = name .. '-' .. GetRealmName()
+		end
+
 		HonorSpy.db.factionrealm.currentStandings[nameToTest] = nil
 		HonorSpy.db.factionrealm.fakePlayers[nameToTest] = true
 		HonorSpy.db.factionrealm.goodPlayers[nameToTest] = nil
@@ -617,9 +690,11 @@ function FAKE_PLAYERS_FILTER(_s, e, msg, ...)
     end
 	
     if (friend) then
+		-- We added a same server friend, but want to store it with the name-server format
+		local friendFullName = HonorSpyUtils:getCompleteName(friend)
 		--HonorSpy:Print("Player '" .. friend .. "' is a valid player")
-    	HonorSpy.db.factionrealm.goodPlayers[friend] = true
-    	HonorSpy.db.factionrealm.fakePlayers[friend] = nil
+    	HonorSpy.db.factionrealm.goodPlayers[friendFullName] = true
+    	HonorSpy.db.factionrealm.fakePlayers[friendFullName] = nil
 		
     	if (friend == nameToTest) then
 			local f = C_FriendList.GetFriendInfo(friend)
@@ -633,7 +708,8 @@ function FAKE_PLAYERS_FILTER(_s, e, msg, ...)
     end
 	
 	friend = msg:match(ERR_FRIEND_ONLINE_PATTERN)
-	if (friend) then		
+	if (friend) then
+		local friendFullName = HonorSpyUtils:getCompleteName(friend)
 		local f = C_FriendList.GetFriendInfo(friend)
 		if(nameToTest and not f) then
 			if (nameToTest == friend) then
@@ -641,8 +717,8 @@ function FAKE_PLAYERS_FILTER(_s, e, msg, ...)
 			end
 		else
 			if (f and (friend == nameToTest or f.notes == "HonorSpy testing")) then
-				HonorSpy.db.factionrealm.goodPlayers[friend] = true
-				HonorSpy.db.factionrealm.fakePlayers[friend] = nil
+				HonorSpy.db.factionrealm.goodPlayers[friendFullName] = true
+				HonorSpy.db.factionrealm.fakePlayers[friendFullName] = nil
 				return true;
 			end
 		end
@@ -682,7 +758,14 @@ function HonorSpy:TestNextFakePlayer()
 	last_test = time()
 	
 	for playerName, player in pairs(HonorSpy.db.factionrealm.currentStandings) do
-		if (not HonorSpy.db.factionrealm.fakePlayers[playerName] and not HonorSpy.db.factionrealm.goodPlayers[playerName] and playerName ~= UnitName("player")) then
+		if (not HonorSpy.db.factionrealm.fakePlayers[playerName] and not HonorSpy.db.factionrealm.goodPlayers[playerName] and playerName ~= HonorSpyUtils:getFullUnitName("player")) then
+
+			-- We strip the server suffix for same server friend testing
+			local name, realm = strsplit("-", playerName)
+			if (realm == GetRealmName()) then
+				playerName = name
+			end
+
 			nameToTest = playerName
 			break
 		end
@@ -708,7 +791,7 @@ function HonorSpy:Purge()
 	HonorSpy:Print(L["All data was purged"]);
 end
 
-function getResetTime()
+local function getResetTime()
 	local currentUnixTime = GetServerTime()
 	local regionId = GetCurrentRegion()
 	local resetDay = 3 -- wed
@@ -799,7 +882,7 @@ function HonorSpy:CheckNeedReset(skipUpdate)
 end
 
 -- Minimap icon
-function DrawMinimapIcon()
+local function DrawMinimapIcon()
 	LibStub("LibDBIcon-1.0"):Register("HonorSpy", LibStub("LibDataBroker-1.1"):NewDataObject("HonorSpy",
 	{
 		type = "data source",
@@ -809,7 +892,7 @@ function DrawMinimapIcon()
 			if (button == "RightButton") then
 				HonorSpy:Report()
 			elseif (button == "MiddleButton") then
-				HonorSpy:Report(UnitIsPlayer("target") and UnitName("target") or nil)
+				HonorSpy:Report(UnitIsPlayer("target") and HonorSpyUtils:getFullUnitName("target") or nil)
 			else 
 				HonorSpy:CheckNeedReset()
 				HonorSpyGUI:Toggle()
@@ -825,36 +908,19 @@ function DrawMinimapIcon()
 	}), HonorSpy.db.factionrealm.minimapButton);
 end
 
-function PrintWelcomeMsg()
+local function PrintWelcomeMsg()
 	local realm = GetRealmName()
 	local faction = UnitFactionGroup("player")
 	local msg = format("|cffAAAAAAversion: %s, bugs & features: github.com/kakysha/honorspy|r\n|cff209f9b", GetAddOnMetadata(addonName, "Version"))
 	if (realm == "Earthshaker" and faction == "Horde") then
-		msg = msg .. format("You are lucky enough to play with HonorSpy author on one |cffFFFFFF%s |cff209f9brealm! Feel free to mail me (|cff8787edKakysha|cff209f9b) a supportive %s  tip or kind word!", realm, GetCoinTextureString(50000))
+		msg = msg .. format("You are lucky enough to play with an HonorSpy author on |cffFFFFFF%s |cff209f9brealm! Feel free to mail me (|cff8787edKakysha|cff209f9b) a supportive %s  tip or kind word!", realm, GetCoinTextureString(50000))
 	end
 	HonorSpy:Print(msg .. "|r")
 end
 
-function DBHealthCheck()
-	for playerName, player in pairs(HonorSpy.db.factionrealm.currentStandings) do
-		if (not playerIsValid(player)) then
-			HonorSpy.db.factionrealm.currentStandings[playerName] = nil
-			HonorSpy:Print("removed bad table row", playerName)
-		end
-	end
-
-	if (HonorSpy.db.factionrealm.actualCommPrefix ~= commPrefix) then
-		HonorSpy:Purge()
-		HonorSpy.db.factionrealm.actualCommPrefix = commPrefix
-	end
-
-	HonorSpy:removeTestedFriends()
-	HS_wait(5, function() startRemovingFakes = true; HonorSpy:TestNextFakePlayer(); end)
-end
-
 local waitTable = {};
 local waitFrame = nil;
-function HS_wait(delay, func, ...)
+local function HS_wait(delay, func, ...)
   if(type(delay)~="number" or type(func)~="function") then
 	return false;
   end
@@ -880,4 +946,125 @@ function HS_wait(delay, func, ...)
   end
   tinsert(waitTable,{delay,func,{...}});
   return true;
+end
+
+local function DBHealthCheck()
+	for playerName, player in pairs(HonorSpy.db.factionrealm.currentStandings) do
+		if (not playerIsValid(player)) then
+			HonorSpy.db.factionrealm.currentStandings[playerName] = nil
+			HonorSpy:Print("removed bad table row", playerName)
+		end
+	end
+
+	if (HonorSpy.db.factionrealm.actualCommPrefix ~= commPrefix) then
+		HonorSpy:Purge()
+		HonorSpy.db.factionrealm.actualCommPrefix = commPrefix
+	end
+
+	HonorSpy:removeTestedFriends()
+	HS_wait(5, function() startRemovingFakes = true; HonorSpy:TestNextFakePlayer(); end)
+end
+
+function HonorSpy:CombineConnectedRealms()
+    local currentRealm = GetRealmName()
+    local connectedRealms = HonorSpy.db.factionrealm.connectedRealms -- {["Felstriker"] = true, ["Yojamba"] = true,}
+    local currentfactionrealm = HonorSpyDB.factionrealm[UnitFactionGroup("player").." - "..currentRealm].currentStandings
+    
+    for connectedRealm in pairs(connectedRealms) do
+        if HonorSpyDB.factionrealm[UnitFactionGroup("player").." - "..connectedRealm] then
+            local connectedfactionrealm = HonorSpyDB.factionrealm[UnitFactionGroup("player").." - "..connectedRealm].currentStandings
+        
+            for namerealm, data in pairs(connectedfactionrealm) do
+                if namerealm:find("%-") then 
+                    local _, _, name, realm = namerealm:find("(%a+)%-(%a+)")
+                    if not realm or realm == "" or not name or name == "" then print("error 1") return end
+                    if realm == currentRealm then
+                        -- Example here: Player is from Arugal, message is from Felstriker, about a character on Arugal
+                        -- Lets just remove the bit about Arugal
+                        namerealm = name
+                        -- If the realm name does not match: Player is from Arugal, message is from Felstriker, about a character on Yojamba
+                        -- In this case just allow it as is
+                    end
+                else
+                    -- Example here: Player is from Arugal, message is from Felstriker, about a character on Felstriker
+                    -- Add "-Felstriker" to the name
+                    namerealm = namerealm.."-"..connectedRealm
+                end
+                
+                local exists = false
+                for namerealm2, data2 in pairs(currentfactionrealm) do
+                    if namerealm == namerealm2 then
+                        if data.last_checked < data2.last_checked then
+                            currentfactionrealm[namerealm] = data2
+                        end
+                        exists = true
+                        break
+                    end
+                end
+                
+                if not exists then
+                    currentfactionrealm[namerealm] = data
+                end
+            end
+        end
+    end
+end
+
+function HonorSpy:OnInitialize()
+	self.db = LibStub("AceDB-3.0"):New("HonorSpyDB", {
+		factionrealm = {
+			currentStandings = {},
+			last_reset = 0,
+			minimapButton = {hide = false},
+			estHonorCol = {show = false},
+            estTodayHonorCol = {show = false},
+			actualCommPrefix = "",
+			fakePlayers = {},
+			goodPlayers = {},
+			poolBoost = 0,
+			spreadPoolBoostOverWeek = true,
+			isSom = false,
+			som_Checked = false,
+            connectedRealms = {},
+		},
+		char = {
+			today_kills = {},
+			estimated_honor = 0,
+			original_honor = 0,
+			last_reset = 0,
+		}
+	}, true)
+	
+	som_realm = C_Seasons.HasActiveSeason();
+	
+	if (not self.db.factionrealm.som_Checked) then
+		self.db.factionrealm.isSom = som_realm;
+		self.db.factionrealm.som_Checked = true;
+	end
+	
+	self:SecureHook("InspectUnit");
+	self:SecureHook("UnitPopup_ShowMenu");
+
+	self:RegisterEvent("PLAYER_TARGET_CHANGED");
+	self:RegisterEvent("UPDATE_MOUSEOVER_UNIT");
+	self:RegisterEvent("INSPECT_HONOR_UPDATE");
+	self:RegisterEvent("CHAT_MSG_COMBAT_HONOR_GAIN", CHAT_MSG_COMBAT_HONOR_GAIN_EVENT);
+    self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED", COMBAT_LOG_EVENT_UNFILTERED_EVENT);
+	ChatFrame_AddMessageEventFilter("CHAT_MSG_COMBAT_HONOR_GAIN", CHAT_MSG_COMBAT_HONOR_GAIN_FILTER);
+	self:RegisterComm(commPrefix, "OnCommReceive")
+	self:RegisterEvent("PLAYER_DEAD");
+	ChatFrame_AddMessageEventFilter("CHAT_MSG_SYSTEM", FAKE_PLAYERS_FILTER);
+
+	DrawMinimapIcon();
+	HS_wait(5, function() HonorSpy:CheckNeedReset() end)
+	HonorSpyGUI:PrepareGUI()
+	PrintWelcomeMsg();
+	DBHealthCheck()
+
+	C_Timer.NewTicker(60*60, function()
+		-- Do not broadcast if player is busy to not interfere with more important addon comms
+		if(not IsInInstance() and not InCombatLockdown()) then
+			HonorSpy:broadcastPlayers(true)
+		end
+	end)
 end
