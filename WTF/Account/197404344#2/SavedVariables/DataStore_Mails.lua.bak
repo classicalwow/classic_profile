@@ -8,20 +8,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1646665125,
-				["Mails"] = {
-					{
-						["returned"] = false,
-						["sender"] = "联盟拍卖行",
-						["itemID"] = 12431,
-						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
-						["lastCheck"] = 1646665125,
-						["count"] = 16,
-						["icon"] = 135227,
-						["daysLeft"] = 26.03896903991699,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2022/03/07 22:58",
+				["lastUpdate"] = 1650085773,
+				["lastVisitDate"] = "2022/04/16 13:09",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540439,

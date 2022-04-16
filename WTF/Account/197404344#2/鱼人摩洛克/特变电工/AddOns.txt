@@ -158,3 +158,4 @@ Guides: enabled
 SaySapped: enabled
 DBM-PvP: enabled
 DBM-VPVEM: enabled
+kExtraBossFrames: disabled

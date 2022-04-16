@@ -1,10 +1,19 @@
 # <DBM> Azeroth (Classic)
 
-## [1.14.18](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.14.18) (2022-04-04)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.14.17...1.14.18) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
+## [1.14.19](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.14.19) (2022-04-12)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.14.18...1.14.19) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
 
-- prep new tags to get some core fixes out  
-- Fix a bug where having voice pack meant no DBM\_Announce callback would fire on special announcements (annoucements didn't have issue). This bug has existed since always but only got noticed because VEM was recently added as built in and on by default.  
-- Update koKR (#94) Co-authored-by: Adam <MysticalOS@users.noreply.github.com>  
-- New Timers Table Util, to handle nil's on dc/reload  
-- bump alpha revisions  
+- fixed bug that caused tbc to flag every update as a new patch update (thus causing force update to run every update since patch 2.5.4. It's not intended behavior for the force to run every update, just for major patches. Also prep for new tags  
+- fix lua error when calling \"whereami\" command in a zone that has no map  
+- Peel back some of debug spam  
+- Remove this useless variable  
+- Add in some core debug  
+- note it so it doesn't happen again  
+- Fixed a logic regression that caused all regular announces to have no sounds unless they had voice pack sounds. apparently only one user out of hundreds f thousands noticed this in 3 weeks. 🤷‍♂️  
+- Fix something that slipped through last  
+- bump alpha  
+- prep new tbc tag for the ZA fix  
+- bump alpha  
+- prep new retail tag  
+- Add another DC failsafe to extremely niche situations  
+- Bump alphas  

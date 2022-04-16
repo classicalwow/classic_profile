@@ -1,8 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.0532,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
-	["AutoSelectScales"] = false,
+	["LastVersion"] = 2.0537,
 	["ItemLevels"] = {
 		{
 			["ID"] = 19372,
@@ -66,16 +64,16 @@ PawnOptions = {
 			["Level"] = 69,
 			["Link"] = "|cffa335ee|Hitem:19143::::::::60:::::::::|h[烈焰守卫护手]|h|r",
 		},
-		[17] = {
-			["ID"] = 12939,
-			["Level"] = 63,
-			["Link"] = "|cff0070dd|Hitem:12939::::::::60:::::::::|h[雷德的部族护卫者]|h|r",
+		[5] = {
+			["ID"] = 21997,
+			["Level"] = 60,
+			["Link"] = "|cffa335ee|Hitem:21997::::::::60:::::::::|h[英勇胸甲]|h|r",
 		},
 		[11] = {
-			["ID"] = 18821,
-			["Level"] = 67,
+			["ID"] = 19384,
+			["Level"] = 83,
 			["AlsoFitsIn"] = 12,
-			["Link"] = "|cffa335ee|Hitem:18821::::::::60:::::::::|h[迅击戒指]|h|r",
+			["Link"] = "|cffa335ee|Hitem:19384::::::::60:::::::::|h[屠龙大师之戒]|h|r",
 		},
 		[6] = {
 			["ID"] = 19137,
@@ -83,17 +81,20 @@ PawnOptions = {
 			["Link"] = "|cffa335ee|Hitem:19137::::::::60:::::::::|h[冲击束带]|h|r",
 		},
 		[12] = {
-			["ID"] = 19325,
-			["Level"] = 65,
+			["ID"] = 18821,
+			["Level"] = 67,
 			["AlsoFitsIn"] = 11,
-			["Link"] = "|cffa335ee|Hitem:19325::::::::60:::::::::|h[胡里奥指环]|h|r",
+			["Link"] = "|cffa335ee|Hitem:18821::::::::60:::::::::|h[迅击戒指]|h|r",
 		},
-		[5] = {
-			["ID"] = 21997,
-			["Level"] = 60,
-			["Link"] = "|cffa335ee|Hitem:21997::::::::60:::::::::|h[英勇胸甲]|h|r",
+		[17] = {
+			["ID"] = 18832,
+			["Level"] = 70,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:18832::::::::60:::::::::|h[残忍利刃]|h|r",
 		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

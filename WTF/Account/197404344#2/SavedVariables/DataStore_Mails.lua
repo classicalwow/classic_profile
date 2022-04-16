@@ -8,52 +8,40 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1646665125,
-				["Mails"] = {
-					{
-						["returned"] = false,
-						["sender"] = "联盟拍卖行",
-						["itemID"] = 12431,
-						["link"] = "|cffffffff|Hitem:12431::::::::60:::::::::|h[寒水魂精]|h|r",
-						["lastCheck"] = 1646665125,
-						["count"] = 16,
-						["icon"] = 135227,
-						["daysLeft"] = 26.03896903991699,
-					}, -- [1]
-				},
-				["lastVisitDate"] = "2022/03/07 22:58",
+				["lastUpdate"] = 1650093061,
+				["lastVisitDate"] = "2022/04/16 15:11",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540439,
 				["Mails"] = {
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1645540439,
 						["sender"] = "银脉长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "感谢你来看望我，Javascript。我很高兴，因为我们还没有被遗忘。",
-						["lastCheck"] = 1645540439,
+						["icon"] = 134327,
 						["daysLeft"] = 15.25062465667725,
 					}, -- [1]
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1645540439,
 						["sender"] = "铜须长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "感谢你来看望我，Javascript。我很高兴，因为我们还没有被遗忘。",
-						["lastCheck"] = 1645540439,
+						["icon"] = 134327,
 						["daysLeft"] = 15.27971076965332,
 					}, -- [2]
 					{
-						["icon"] = 134327,
+						["lastCheck"] = 1645540439,
 						["sender"] = "星纹长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "这件小小的礼物不会给你答案，但也许它可以让你感到快乐。",
-						["lastCheck"] = 1645540439,
+						["icon"] = 134327,
 						["daysLeft"] = 15.30505752563477,
 					}, -- [3]
 				},

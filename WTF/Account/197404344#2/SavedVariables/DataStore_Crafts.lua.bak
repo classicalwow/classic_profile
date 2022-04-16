@@ -241,11 +241,11 @@ DataStore_CraftsDB = {
 							"4|2862", -- [71]
 						},
 						["MaxRank"] = 225,
-						["Rank"] = 200,
+						["Rank"] = 209,
 					},
 				},
 				["Prof2"] = "锻造",
-				["lastUpdate"] = 1646673145,
+				["lastUpdate"] = 1650086226,
 				["Prof1"] = "工程学",
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
