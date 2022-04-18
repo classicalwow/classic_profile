@@ -32,14 +32,14 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.4999618530273,
-					["x"] = -432.1666870117188,
-					["w"] = 260.666748046875,
-					["h"] = 208.9999847412109,
+					["y"] = -495.4999771118164,
+					["x"] = -432.0001220703125,
+					["w"] = 261,
+					["h"] = 209,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
-			["SegmentBosses"] = true,
+			["ClampToScreen"] = true,
 			["Colors"] = {
 				["Bar"] = {
 					["Bar Text"] = {
@@ -52,11 +52,11 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "黑翼之巢",
+			["LastInstanceName"] = "熔火之心",
 			["CurDataSet"] = "OverallData",
-			["ClampToScreen"] = true,
-			["MainWindowWidth"] = 260.6666870117188,
+			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 208.9999847412109,
+			["MainWindowWidth"] = 260.6666870117188,
 		},
 		["Javascript - 鱼人摩洛克"] = {
 			["MainWindow"] = {

@@ -8,8 +8,20 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1650093061,
-				["lastVisitDate"] = "2022/04/16 15:11",
+				["lastUpdate"] = 1650182473,
+				["Mails"] = {
+					{
+						["returned"] = false,
+						["sender"] = "联盟拍卖行",
+						["itemID"] = 13446,
+						["link"] = "|cffffffff|Hitem:13446::::::::60:::::::::|h[特效治疗药水]|h|r",
+						["count"] = 5,
+						["lastCheck"] = 1650182473,
+						["icon"] = 134834,
+						["daysLeft"] = 29.99957084655762,
+					}, -- [1]
+				},
+				["lastVisitDate"] = "2022/04/17 16:01",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540439,
