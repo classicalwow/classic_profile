@@ -9,6 +9,16 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+			["goodleader"] = {
+				["cache"] = {
+					["祖尔格拉布"] = {
+						["leaderGuid"] = "Player-5458-0359779F",
+						["timestamp"] = 1650298403,
+						["leader"] = "大佬来了-鱼人摩洛克",
+						["raidName"] = "祖尔格拉布",
+					},
+				},
+			},
 			["window"] = {
 				["databroker"] = {
 					["y"] = -20.3333740234375,

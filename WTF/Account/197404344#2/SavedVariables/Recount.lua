@@ -32,9 +32,9 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.4999771118164,
+					["y"] = -495.5,
 					["x"] = -432.0001220703125,
-					["w"] = 261,
+					["w"] = 261.0000305175781,
 					["h"] = 209,
 				},
 			},
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "熔火之心",
+			["LastInstanceName"] = "祖尔格拉布",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 208.9999847412109,

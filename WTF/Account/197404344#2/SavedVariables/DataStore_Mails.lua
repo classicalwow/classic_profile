@@ -11,13 +11,13 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1650182473,
 				["Mails"] = {
 					{
-						["returned"] = false,
+						["link"] = "|cffffffff|Hitem:13446::::::::60:::::::::|h[特效治疗药水]|h|r",
 						["sender"] = "联盟拍卖行",
 						["itemID"] = 13446,
-						["link"] = "|cffffffff|Hitem:13446::::::::60:::::::::|h[特效治疗药水]|h|r",
+						["returned"] = false,
+						["icon"] = 134834,
 						["count"] = 5,
 						["lastCheck"] = 1650182473,
-						["icon"] = 134834,
 						["daysLeft"] = 29.99957084655762,
 					}, -- [1]
 				},
@@ -27,33 +27,33 @@ DataStore_MailsDB = {
 				["lastUpdate"] = 1645540439,
 				["Mails"] = {
 					{
-						["lastCheck"] = 1645540439,
+						["icon"] = 134327,
 						["sender"] = "银脉长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "感谢你来看望我，Javascript。我很高兴，因为我们还没有被遗忘。",
-						["icon"] = 134327,
+						["lastCheck"] = 1645540439,
 						["daysLeft"] = 15.25062465667725,
 					}, -- [1]
 					{
-						["lastCheck"] = 1645540439,
+						["icon"] = 134327,
 						["sender"] = "铜须长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "感谢你来看望我，Javascript。我很高兴，因为我们还没有被遗忘。",
-						["icon"] = 134327,
+						["lastCheck"] = 1645540439,
 						["daysLeft"] = 15.27971076965332,
 					}, -- [2]
 					{
-						["lastCheck"] = 1645540439,
+						["icon"] = 134327,
 						["sender"] = "星纹长者",
 						["subject"] = "",
 						["returned"] = false,
 						["money"] = 0,
 						["text"] = "这件小小的礼物不会给你答案，但也许它可以让你感到快乐。",
-						["icon"] = 134327,
+						["lastCheck"] = 1645540439,
 						["daysLeft"] = 15.30505752563477,
 					}, -- [3]
 				},
