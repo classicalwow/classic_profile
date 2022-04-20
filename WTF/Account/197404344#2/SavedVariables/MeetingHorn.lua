@@ -9,14 +9,10 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
-			["goodleader"] = {
-				["cache"] = {
-					["祖尔格拉布"] = {
-						["leaderGuid"] = "Player-5458-0359779F",
-						["timestamp"] = 1650298403,
-						["leader"] = "大佬来了-鱼人摩洛克",
-						["raidName"] = "祖尔格拉布",
-					},
+			["cache"] = {
+				["cooldown"] = {
+					["start"] = 1640267414,
+					["duration"] = 50,
 				},
 			},
 			["window"] = {
@@ -26,10 +22,20 @@ MEETINGHORN_DB = {
 					["scale"] = 1,
 				},
 			},
-			["cache"] = {
-				["cooldown"] = {
-					["start"] = 1640267414,
-					["duration"] = 50,
+			["goodleader"] = {
+				["cache"] = {
+					["祖尔格拉布"] = {
+						["leader"] = "大佬来了-鱼人摩洛克",
+						["timestamp"] = 1650298403,
+						["leaderGuid"] = "Player-5458-0359779F",
+						["raidName"] = "祖尔格拉布",
+					},
+					["奥妮克希亚的巢穴"] = {
+						["leaderGuid"] = "Player-5458-03538A5B",
+						["timestamp"] = 1650382842,
+						["leader"] = "楠神-鱼人摩洛克",
+						["raidName"] = "奥妮克希亚的巢穴",
+					},
 				},
 			},
 		},
