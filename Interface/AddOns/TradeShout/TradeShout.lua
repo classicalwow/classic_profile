@@ -64,45 +64,67 @@ end
 
 -- 메세지 실제 출력
 local function TS_PrintImpl(msg)
-  -- 거래알림 사용시
-  -- 01.Raid 선택시
-  if (TradeShoutOptions.Raid == true) then
+    -- 거래알림 사용시
+    
+    -- 01.Raid / Warning 선택시
+    if UnitInRaid("player") ~= nil then --내가 공대면 공대창 (상대가 공대인지는 고려X)
+        local playerName = UnitName("player")
+        local playerRank = 0
+        for i = 1, MAX_RAID_MEMBERS do
+            local name, rank = GetRaidRosterInfo(i)
+            if name == playerName then
+                playerRank = rank
+                break 
+            end
+        end
+        
+        --내가 (부)공대장이고 warning 켜져 있을시
+        if playerRank ~= 0 and TradeShoutOptions.Warning == true then
+            SendChatMessage(msg, "Warning")
+        --(부)공대장은 아니지만 warning 켜져 있거나, raid 켜져 있으면
+        elseif TradeShoutOptions.Warning == true or TradeShoutOptions.Raid == true then
+            SendChatMessage(msg, "RAID")
+        end
 
-    if (GetNumGroupMembers() > 5) then --5명 초과면 공대
-        SendChatMessage(msg, "RAID")
-    elseif (GetNumSubgroupMembers() > 0) then --5명 이하인데 나 말고 파티원이 0명 초과면 파티
-        SendChatMessage(msg, "PARTY")
-    end
-
-  -- 02.PARTY 선택시 (Raid 선택시에는 PARTY Skip)
-  elseif (TradeShoutOptions.Party == true) then
-
-    if (GetNumSubgroupMembers() > 0) then
-        SendChatMessage(msg, "PARTY")
-    end
-  end
-
-  -- 03.귓말 알림
-  if (TradeShoutOptions.Whisper == true) then
-    SendChatMessage(msg, "WHISPER", nil, ls_targetName);
-  end
-  
-  -- 04.자신만 볼수 있게 알림 (무조건)
-  ChatFrame1:AddMessage(msg, 1.0, 1.0, 0.0);
-  
-  -- 물빵이나 생석 받으면 감사 (무조건)
-  if string.find(msg, "거래 완료") then
-    for i = 1, 6 do
-        if (targetItems[i]) then
-            if string.find(targetItems[i].name, "생명석") or string.find(targetItems[i].name, "창조된") then
-                if ls_targetName ~= nil then
-                    DoEmote("THANK", ls_targetName)
-                    break
-                end
-             end
+    -- 02.PARTY 선택시 (Raid 선택시에는 PARTY Skip)
+    elseif UnitInParty("player") ~= nil then
+        if TradeShoutOptions.Party == true then
+            SendChatMessage(msg, "PARTY")
         end
     end
-  end
+
+    -- 03.귓말 알림
+    if TradeShoutOptions.Whisper == true then
+        SendChatMessage(msg, "WHISPER", nil, ls_targetName);
+    end
+
+    -- 04.자신만 볼수 있게 알림 (무조건)
+    ChatFrame1:AddMessage(msg, 1.0, 1.0, 0.0);
+
+    -- 물빵이나 생석 받으면 감사
+    if TradeShoutOptions.Thank == true then
+        if string.find(msg, "거래 완료") or string.find(msg, "Trade completed") then
+            for i = 1, 6 do
+                if targetItems[i] then
+                    if 
+                    string.find(targetItems[i].name, "생명석") or 
+                    string.find(targetItems[i].name, "창조된") or
+                    string.find(targetItems[i].name, "Healthstone") or 
+                    string.find(targetItems[i].name, "Conjured") then
+                        if ls_targetName ~= nil then
+                            DoEmote("THANK", ls_targetName)
+                            break
+                        end
+                    end
+                end
+            end
+        end
+    end
+    
+    if TradeShoutOptions.Say == true then
+        SendChatMessage(msg, "SAY")
+    end
+    
 end
 
 local function TS_Print(msg)
@@ -114,7 +136,7 @@ local function TS_Print(msg)
   local ls_SendMsg = prefix..msg
 
   --메세지가 너무 길면, 쪼개서 TS_PrintImpl 함수 반복 호출
-  local st = splitByChunk(ls_SendMsg, 200)
+  local st = splitByChunk(ls_SendMsg, 240)
   for i, split in ipairs(st) do
      --print(i, split)
      TS_PrintImpl(split)
@@ -152,21 +174,39 @@ local function formatMoney(str)
   end
 
   local money_string = ""
-  
-  if ll_gold ~= nil and ll_gold ~= 0 then
-    money_string = money_string..ll_gold.."골 "
-  end
-  
-  if ll_silver ~= nil and ll_silver ~= 0 then
-    money_string = money_string..ll_silver.."실 "
-  end
-  
-  if ll_copper ~= nil and ll_copper ~=0 then
-    money_string = money_string..ll_copper.."코 "
-  end
-  
-  if string.sub(money_string, -1) == " " then
-    money_string = string.sub(money_string, 1, -2)
+
+  if GetLocale() == "koKR" then
+      if ll_gold ~= nil and ll_gold ~= 0 then
+        money_string = money_string..ll_gold.."골 "
+      end
+      
+      if ll_silver ~= nil and ll_silver ~= 0 then
+        money_string = money_string..ll_silver.."실 "
+      end
+      
+      if ll_copper ~= nil and ll_copper ~=0 then
+        money_string = money_string..ll_copper.."코 "
+      end
+      
+      if string.sub(money_string, -1) == " " then
+        money_string = string.sub(money_string, 1, -2)
+      end
+  else
+      if ll_gold ~= nil and ll_gold ~= 0 then
+        money_string = money_string..ll_gold.."Gold "
+      end
+      
+      if ll_silver ~= nil and ll_silver ~= 0 then
+        money_string = money_string..ll_silver.."Silv "
+      end
+      
+      if ll_copper ~= nil and ll_copper ~=0 then
+        money_string = money_string..ll_copper.."Copp "
+      end
+      
+      if string.sub(money_string, -1) == " " then
+        money_string = string.sub(money_string, 1, -2)
+      end
   end
   
   if money_string == "" then
@@ -225,7 +265,11 @@ local function TS_GetTradeList(msg, items, enchant)
   end
   
   if(count > 0) then
-    ls_text = msg..string.gsub(" %d 개", "%%d", count)
+    if GetLocale() == "koKR" then
+        ls_text = msg..string.gsub(" %d 개", "%%d", count)
+    else
+        ls_text = msg..string.gsub(" %d items", "%%d", count)
+    end
   end
   
   for i = 1, 6 do
@@ -263,6 +307,7 @@ local function load(self)
   -- slash command
   SLASH_TRADESHOUT1 = "/거래알림"
   SLASH_TRADESHOUT2 = "/ts"
+  SLASH_TRADESHOUT3 = "/ㅅㄴ"
 
   self:RegisterEvent("VARIABLES_LOADED");
   self:RegisterEvent("TRADE_SHOW");
@@ -307,23 +352,40 @@ function TradeShout_OnEvent(self, event, ...)
 
 		local ll_len = string.len(ls_tag)
 		local ll_start = ll_len - 2
-
-		if string.sub(ls_tag,ll_start) == "112" then
-		  ls_reason = GetUnitName('player',true).." 님이 취소했습니다";
-		elseif string.sub(ls_tag,ll_start) == "312" then
-		  ls_reason = "거래 대상과 멀어짐";
-		elseif string.sub(ls_tag,ll_start) == "211" then
-		  ls_reason = ls_targetName.." 님이 취소했습니다";
-		elseif string.sub(ls_tag,ll_start) == "132" then
-		  ls_reason = "당신이 UI를 숨김";
-		end
+        
+        if GetLocale() == "koKR" then
+            if string.sub(ls_tag,ll_start) == "112" then
+              ls_reason = GetUnitName('player',true).." 님이 취소했습니다";
+            elseif string.sub(ls_tag,ll_start) == "312" then
+              ls_reason = "거래 상대와 멀어짐";
+            elseif string.sub(ls_tag,ll_start) == "211" then
+              ls_reason = ls_targetName.." 님이 취소했습니다";
+            elseif string.sub(ls_tag,ll_start) == "132" then
+              ls_reason = "거래창 UI가 숨겨짐";
+            end
+        else
+            if string.sub(ls_tag,ll_start) == "112" then
+              ls_reason = GetUnitName('player',true).." <- cancelled trade";
+            elseif string.sub(ls_tag,ll_start) == "312" then
+              ls_reason = "Traget is too far away";
+            elseif string.sub(ls_tag,ll_start) == "211" then
+              ls_reason = ls_targetName.." <- cancelled trade";
+            elseif string.sub(ls_tag,ll_start) == "132" then
+              ls_reason = "Trade UI is hidden";
+            end
+        end
 
 		local ls_target = ""
 		local ls_player = ""
 		ls_TradeItem = ""
 
-		ls_target = TS_GetTradeList("받은 물품", targetItems, targetItems[7]);
-		ls_player = TS_GetTradeList("보낸 물품", playerItems, playerItems[7]);
+        if GetLocale() == "koKR" then
+            ls_target = TS_GetTradeList("받은 물품", targetItems, targetItems[7]);
+            ls_player = TS_GetTradeList("보낸 물품", playerItems, playerItems[7]);
+        else
+            ls_target = TS_GetTradeList("Received", targetItems, targetItems[7]);
+            ls_player = TS_GetTradeList("Gave", playerItems, playerItems[7]);
+        end
 
 		if (string.len(ls_target) > 1) and (string.len(ls_player) > 1) then
 		  ls_TradeItem = ls_target.." & "..ls_player
@@ -345,12 +407,21 @@ function TradeShout_OnEvent(self, event, ...)
 			ls_msg = ls_TradeItem;
 		  end
 		end
+        
+        if GetLocale() == "koKR" then
+            if (errorName=="ERR_TRADE_CANCELLED") then
+              ls_msg = "거래 취소 <"..ls_reason..">"
+            else
+              ls_msg = "거래 완료 ("..ls_msg..")"
+            end
+        else
+            if (errorName=="ERR_TRADE_CANCELLED") then
+              ls_msg = "Trade cancelled <"..ls_reason..">"
+            else
+              ls_msg = "Trade completed ("..ls_msg..")"
+            end       
+        end
 
-		if (errorName=="ERR_TRADE_CANCELLED") then
-		  ls_msg = "거래 취소 <"..ls_reason..">"
-		else
-		  ls_msg = "거래 완료 ("..ls_msg..")"
-		end
 		TS_Print(ls_msg)
 	end
 
@@ -366,11 +437,25 @@ function TradeShout_OnEvent(self, event, ...)
       localizedClass = UnitClass("npc")
       guildName = GetGuildInfo("npc")
       
-      identityString = level.."레벨 "..localizedClass
-      if (guildName) then
-        identityString = identityString.." <"..guildName.."> 길드"
+      identityString = ""
+      if GetLocale() == "koKR" then
+          identityString = level.."레벨 "..localizedClass
+          if (guildName) then
+            identityString = identityString.." <"..guildName.."> 길드"
+          end
+      else
+          identityString = "Lv. "..level.." "..localizedClass
+          if (guildName) then
+            identityString = identityString.." <"..guildName.."> Guild"
+          end       
       end
-      ChatFrame1:AddMessage("TradeShout: "..ls_targetName.." 님과 거래 시작 ("..identityString..")", 1.0, 1.0, 0.0);
+
+      if GetLocale() == "koKR" then
+        ChatFrame1:AddMessage("TradeShout: "..ls_targetName.." 님과 거래 시작 ("..identityString..")", 1.0, 1.0, 0.0);
+      else
+        ChatFrame1:AddMessage("TradeShout: "..ls_targetName.." started trade with ("..identityString..")", 1.0, 1.0, 0.0);         
+      end
+      
     elseif (event =="TRADE_REQUEST") then
       ChatFrame1:AddMessage("TradeShout: TRADE_REQUEST"..arg1, 1.0, 1.0, 0.0);
     end
@@ -385,15 +470,28 @@ function TradeShout_OnEvent(self, event, ...)
 
     TS_UpdateMoney();
 
-    if (ll_playerMoney ~= "없음") and (ll_targetMoney ~= "없음") then
-      ls_money = "준 돈 : "..ll_playerMoney.." ▶ 받은 돈 : "..ll_targetMoney
-    elseif (ll_playerMoney ~= "없음") then
-      ls_money = "준 돈 : "..ll_playerMoney
-    elseif (ll_targetMoney ~= "없음") then
-      ls_money = "받은 돈 : "..ll_targetMoney
+    if GetLocale() == "koKR" then
+        if (ll_playerMoney ~= "없음") and (ll_targetMoney ~= "없음") then
+          ls_money = "준 돈 : "..ll_playerMoney.." ▶ 받은 돈 : "..ll_targetMoney
+        elseif (ll_playerMoney ~= "없음") then
+          ls_money = "준 돈 : "..ll_playerMoney
+        elseif (ll_targetMoney ~= "없음") then
+          ls_money = "받은 돈 : "..ll_targetMoney
+        else
+          ls_money = "";
+        end    
     else
-      ls_money = "";
+        if (ll_playerMoney ~= "없음") and (ll_targetMoney ~= "없음") then
+          ls_money = "Received Money : "..ll_playerMoney.." ▶ Gave Money : "..ll_targetMoney
+        elseif (ll_playerMoney ~= "없음") then
+          ls_money = "Gave Money : "..ll_playerMoney
+        elseif (ll_targetMoney ~= "없음") then
+          ls_money = "Received Money : "..ll_targetMoney
+        else
+          ls_money = "";
+        end           
     end
+  
   end
 
 end

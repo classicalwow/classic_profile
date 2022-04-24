@@ -65,7 +65,7 @@
         <Anchors>
           <Anchor point="TOPLEFT">
             <Offset>
-              <AbsDimension x="20" y="-55" />
+              <AbsDimension x="20" y="-40" />
             </Offset>
           </Anchor>
         </Anchors>
@@ -78,7 +78,7 @@
               relativeTo="$parentWhisper"
               relativePoint="BOTTOMLEFT">
             <Offset>
-              <AbsDimension x="0" y="-20" />
+              <AbsDimension x="0" y="-4" />
             </Offset>
           </Anchor>
         </Anchors>
@@ -91,18 +91,60 @@
               relativeTo="$parentParty"
               relativePoint="BOTTOMLEFT">
             <Offset>
-              <AbsDimension x="0" y="-20" />
+              <AbsDimension x="0" y="-4" />
+            </Offset>
+          </Anchor>
+        </Anchors>
+      </CheckButton>
+      
+      <CheckButton name="$parentWarning"
+          inherits="TradeShoutCheckButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT"
+              relativeTo="$parentRaid"
+              relativePoint="BOTTOMLEFT">
+            <Offset>
+              <AbsDimension x="0" y="-4" />
+            </Offset>
+          </Anchor>
+        </Anchors>
+      </CheckButton>
+      
+      <CheckButton name="$parentSay"
+          inherits="TradeShoutCheckButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT"
+              relativeTo="$parentWarning"
+              relativePoint="BOTTOMLEFT">
+            <Offset>
+              <AbsDimension x="0" y="-4" />
+            </Offset>
+          </Anchor>
+        </Anchors>
+      </CheckButton>
+      
+      <CheckButton name="$parentThank"
+          inherits="TradeShoutCheckButtonTemplate">
+        <Anchors>
+          <Anchor point="TOPLEFT"
+              relativeTo="$parentSay"
+              relativePoint="BOTTOMLEFT">
+            <Offset>
+              <AbsDimension x="0" y="-4" />
             </Offset>
           </Anchor>
         </Anchors>
       </CheckButton>
 
       <Button name="$parentReset"
-          inherits="OptionsButtonTemplate" text="설정 초기화">
+          inherits="OptionsButtonTemplate" text="설정 초기화 (Default Settings)">
+        <Size>
+            <AbsDimension x="180" y="21" />
+        </Size>
         <Anchors>
           <Anchor point="BOTTOMLEFT">
             <Offset>
-              <AbsDimension x="16" y="45"/>
+              <AbsDimension x="16" y="20"/>
             </Offset>
           </Anchor>
         </Anchors>
@@ -117,11 +159,11 @@
       </Button>
 
       <Button name="$parentClose"
-          inherits="OptionsButtonTemplate" text="확인">
+          inherits="OptionsButtonTemplate" text="확인 (Confirm)">
         <Anchors>
           <Anchor point="BOTTOMRIGHT">
             <Offset>
-              <AbsDimension x="-16" y="45"/>
+              <AbsDimension x="-16" y="20"/>
             </Offset>
           </Anchor>
         </Anchors>

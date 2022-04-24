@@ -83,7 +83,9 @@ end
 local function playerIsValid(player)
 	if (not player.last_checked or type(player.last_checked) ~= "number" or player.last_checked < HonorSpy.db.char.last_reset
 		or player.last_checked > GetServerTime()
-		or not player.thisWeekHonor or type(player.thisWeekHonor) ~= "number" or player.thisWeekHonor == 0
+		or not player.thisWeekHonor or type(player.thisWeekHonor) ~= "number" or player.thisWeekHonor < 0
+		-- Avoids storing players that were not reset properly by blizzard in the first 12h after the weekly reset
+		or (player.last_checked < HonorSpy.db.char.last_reset + 12 * 60 * 60 and player.thisWeekHonor > 1)
 		or not player.lastWeekHonor or type(player.lastWeekHonor) ~= "number"
 		or not player.standing or type(player.standing) ~= "number"
 		or not player.RP or type(player.RP) ~= "number"
@@ -416,33 +418,44 @@ local options = {
 }
 LibStub("AceConfig-3.0"):RegisterOptionsTable("HonorSpy", options, {"honorspy", "hs"})
 
-function HonorSpy:BuildStandingsTable(sort_by)
+-- See GUI.lua for sort_column possible values
+function HonorSpy:BuildStandingsTable(sort_column)
 	local t = { }
 	for playerName, player in pairs(HonorSpy.db.factionrealm.currentStandings) do
-		table.insert(t, {playerName, player.class, tonumber(player.thisWeekHonor) or 0, tonumber(player.estHonor), tonumber(player.lastWeekHonor) or 0, tonumber(player.standing) or 0, player.RP or 0, player.rank or 0, player.last_checked or 0})
+		table.insert(
+			t,
+			{
+				playerName,
+				player.class,
+				tonumber(player.thisWeekHonor) or 0,
+				tonumber(player.estHonor) or "",
+				tonumber(player.lastWeekHonor) or 0,
+				tonumber(player.standing) or 0,
+				player.RP or 0,
+				player.rank or 0,
+				player.last_checked or 0
+			}
+		)
 	end
-	
-	local sort_column = 3; -- KnownHonor
-	if (sort_by == L["EstHonor"]) then sort_column = 4; end
-    if (sort_by == L["ThisWeekHonor"]) then sort_column = -1; end
-	if (sort_by == L["LstWkHonor"]) then sort_column = 5; end
-	if (sort_by == L["Standing"]) then sort_column = 6; end
-	if (sort_by == L["Rank"]) then sort_column = 8; end
-    if (sort_by == L["Name"]) then sort_column = 1; end
+
+	if (nil == sort_column) then
+		sort_column = HonorSpy.sortColumns.honor;
+	end
+
 	local sort_func = function(a,b)
 		local a3 = a[3] or 0
-		local a4 = a[4] or 0
+		local a4 = tonumber(a[4]) or 0
 		local b3 = b[3] or 0
-		local b4 = b[4] or 0
-        if sort_column == 1 then return a[1] < b[1] end
-		if sort_column == 4 then
+		local b4 = tonumber(b[4]) or 0
+        if sort_column == HonorSpy.sortColumns.name then return a[1] < b[1] end
+		if sort_column == HonorSpy.sortColumns.estimatedTodayHonor then
             local c = a4-a3
             if c < 0 then c = 0 end
             local d = b4-b3
             if d < 0 then d = 0 end
             return c > d 
         end
-        if sort_column == -1 then
+        if sort_column == HonorSpy.sortColumns.estimatedWeekHonor then
             local c = a4-a3
             if c < 0 then
                 c = a3
@@ -457,12 +470,12 @@ function HonorSpy:BuildStandingsTable(sort_by)
             end
             return c > d
         end
-        if sort_column == 5 then
+        if sort_column == HonorSpy.sortColumns.lastWeekHonor then
             if a[5] == b[5] then
                 return a[6] < b[6]
             end
         end
-        if sort_column == 6 then
+        if sort_column == HonorSpy.sortColumns.standing then
             if a[6] == 0 or b[6] == 0 then
                 return a[5] > b[5]
             end
@@ -506,7 +519,7 @@ function HonorSpy:Estimate(playerOfInterest)
 	end
 
 	local standing = -1;
-	local t = HonorSpy:BuildStandingsTable(L["ThisWeekHonor"])
+	local t = HonorSpy:BuildStandingsTable(HonorSpy.sortColumns.estimatedWeekHonor)
 	local pool_size = #t;
 	local curHonor = 0;
 	local rp_factor = 1000;
