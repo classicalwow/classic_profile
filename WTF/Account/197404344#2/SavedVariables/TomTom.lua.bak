@@ -41,6 +41,39 @@ TomTomWaypointsM = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+			[1446] = {
+				["1446:634229828.85086:505867970.66015:找到诺兹多姆的子嗣。"] = {
+					1446, -- [1]
+					0.6342298288508558, -- [2]
+					0.5058679706601467, -- [3]
+					["arrivaldistance"] = 15,
+					["crazy"] = true,
+					["persistent"] = true,
+					["desc"] = "找到诺兹多姆的子嗣。",
+					["silent"] = true,
+					["cleardistance"] = 10,
+					["title"] = "找到诺兹多姆的子嗣。",
+					["from"] = "?",
+					["callbacks"] = {
+						["distance"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+					},
+					["minimap"] = true,
+					["world"] = true,
+				},
+			},
 		},
 		["Dwac - 鱼人摩洛克"] = {
 		},

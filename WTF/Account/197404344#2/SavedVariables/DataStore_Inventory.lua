@@ -8,8 +8,6 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1650708008,
-				["averageItemLvl"] = 70,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:19372:2583:::::::60:::::::::|h[无尽怒气头盔]|h|r", -- [1]
 					"|cffa335ee|Hitem:18404::::::::60:::::::::|h[奥妮克希亚龙牙坠饰]|h|r", -- [2]
@@ -30,17 +28,20 @@ DataStore_InventoryDB = {
 					nil, -- [17]
 					"|cffa335ee|Hitem:19350:664:::::::60:::::::::|h[击心者]|h|r", -- [18]
 				},
+				["averageItemLvl"] = 70,
+				["lastUpdate"] = 1650810002,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
+				["lastUpdate"] = 1644135021,
 				["Inventory"] = {
 					[8] = "|cffffffff|Hitem:43::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[]|h|r",
 					[7] = "|cffffffff|Hitem:6118::::::::1:::::::::|h[]|h|r",
 					[4] = "|cffffffff|Hitem:6117::::::::1:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
+				["lastUpdate"] = 1645858908,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -55,7 +56,6 @@ DataStore_InventoryDB = {
 					[16] = "|cffffffff|Hitem:3193::::::678:31308416:17:::::::::|h[]|h|r",
 					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1645858908,
 			},
 		},
 		["Guilds"] = {
@@ -80,11 +80,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["奶不住快跑啊"] = {
-						["averageItemLvl"] = 17,
-					},
 					["雪凉"] = {
 						["averageItemLvl"] = 41,
+					},
+					["奶不住快跑啊"] = {
+						["averageItemLvl"] = 17,
 					},
 				},
 			},

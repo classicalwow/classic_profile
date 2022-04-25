@@ -10035,7 +10035,7 @@ function NWB:setCurrentLayerText(unit)
 			--end
 			if (((NWB.faction == "Alliance" and zone == 1453 and NWB.stormwindCreatures[tonumber(npcID)])
 					or (NWB.faction == "Horde" and zone == 1454 and NWB.orgrimmarCreatures[tonumber(npcID)]))
-					and (GetServerTime() - NWB.lastJoinedGroup) > 300
+					and (GetServerTime() - NWB.lastJoinedGroup) > 600
 					and (GetServerTime() - NWB.lastZoneChange) > 30
 					) then
 					--and NWB.lastCurrentZoneID ~= tonumber(zoneID)) then
@@ -10240,6 +10240,11 @@ function NWB:mapCurrentLayer(unit)
 	if ((NWB.faction == "Horde" and npcID == "68") or
 			(NWB.faction == "Alliance" and npcID == "3296")) then
 		--Guards outside opposite factions city can record the wrong mapid if targeting before you enter.
+		return;
+	end
+	--Seeing if this fixes a bug with incorrect layer mapping.
+	if (NWB.lastJoinedGroup > 0) then
+		--Never map new zones if group has been joined.
 		return;
 	end
 	if (NWB.data.layers[NWB.lastKnownLayerMapID]) then
@@ -10549,10 +10554,10 @@ function NWB:resetLayerData()
 		NWB.data.tbcPDT = nil;
 		NWB.db.global.resetDailyData = false;
 	end
-	if (NWB.db.global.resetLayers5) then
+	if (NWB.db.global.resetLayers6) then
 		NWB:debug("resetting layer data");
 		NWB.data.layers = {};
-		NWB.db.global.resetLayers5 = false;
+		NWB.db.global.resetLayers6 = false;
 	end
 end
 

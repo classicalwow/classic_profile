@@ -181,7 +181,7 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			NWB:doNpcWalkingMsg(type, layer, sender);
 		end
 	end
-	if (tonumber(remoteVersion) < 2.23) then
+	if (tonumber(remoteVersion) < 2.25) then
 		if (cmd == "requestData" and distribution == "GUILD") then
 			if (not NWB:getGuildDataStatus()) then
 				NWB:sendSettings("GUILD");
@@ -404,7 +404,7 @@ function NWB:sendL(l, type)
 		return;
 	end
 	if (NWB.db.global.guildL) then
-		NWB:debug("sending layer", l, type);
+		--NWB:debug("sending layer", l, type);
 		NWB:sendComm("GUILD", "l " .. version .. "-" .. l .. " " .. self.k());
 	end
 end
@@ -1246,7 +1246,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 		data.nefYell2 = nil;
 		data.nefSource = nil;
 	end
-	local hasNewData, newFlowerData;
+	local hasNewData, newFlowerData, hasNewTerok;
 	--Insert our layered data here.
 	if (NWB.isLayered and data.layers and self.j(elapsed) and (NWB.isClassic or distribution == "GUILD" or time > 50)) then
 		--There's a lot of ugly shit in this function trying to quick fix timer bugs for this layered stuff...
@@ -1390,6 +1390,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 																hasNewData = true;
 																lastHasNewData = GetServerTime();
 															end
+															hasNewTerok = true;
 															--NWB:debug("New terok timer from:", sender, v, vv.terokTowersTime);
 														end
 													end
@@ -1527,6 +1528,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 										hasNewData = true;
 										lastHasNewData = GetServerTime();
 									end
+									hasNewTerok = true;
 								end
 							end
 						end
@@ -1620,7 +1622,7 @@ function NWB:receivedData(dataReceived, sender, distribution, elapsed)
 			end
 		end
 	end
-	if (hasNewData) then
+	if (hasNewData or hasNewTerok) then
 		NWB:timerCleanup();
 	end
 	--If we get newer data from someone outside the guild then share it with the guild.
@@ -3280,7 +3282,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			NWB:getTerokkarData();
 		end
 		--Widget 3112 is capture stage.
-		if (NWB.isDebug and data and data.widgetID == 3112) then
+		--[[if (NWB.isDebug and data and data.widgetID == 3112) then
 			local neutral = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3097);
 			local alliance = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3118);
 			local horde = C_UIWidgetManager.GetIconAndTextWidgetVisualizationInfo(3119);
@@ -3289,7 +3291,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 			if (captureAlliance.state == 1 and captureHorde.state == 1) then
 				NWB:debug("Capture started:", GetServerTime());
 			end
-		end
+		end]]
 	elseif (event == "AREA_POIS_UPDATED") then
 		if (UnitOnTaxi("player")) then
 			lastZone = nil;
