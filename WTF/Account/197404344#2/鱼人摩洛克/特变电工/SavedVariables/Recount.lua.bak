@@ -2,9 +2,829 @@
 RecountPerCharDB = {
 	["version"] = "1.3",
 	["combatants"] = {
+		["特变电工"] = {
+			["GUID"] = "Player-5458-02F6D2A3",
+			["TimeLast"] = {
+				["RageGain"] = 1864.166,
+				["DOT_Time"] = 1876.166,
+				["ActiveTime"] = 1876.166,
+				["TimeDamage"] = 1876.166,
+				["OVERALL"] = 1881.166,
+				["DamageTaken"] = 1881.166,
+				["Damage"] = 1876.166,
+			},
+			["LastAttackedBy"] = "裂盾步兵",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+			},
+			["TimeWindows"] = {
+				["RageGain"] = {
+					15, -- [1]
+				},
+				["ActiveTime"] = {
+					9.07, -- [1]
+				},
+				["DOT_Time"] = {
+					12, -- [1]
+				},
+				["TimeDamage"] = {
+					9.07, -- [1]
+				},
+				["DamageTaken"] = {
+					772, -- [1]
+				},
+				["Damage"] = {
+					1192, -- [1]
+				},
+			},
+			["enClass"] = "WARRIOR",
+			["unit"] = "特变电工",
+			["level"] = 60,
+			["LastDamageAbility"] = "肉搏",
+			["LastFightIn"] = 0,
+			["type"] = "Self",
+			["LastDamageTaken"] = 146,
+			["LastEventHealth"] = {
+				5249, -- [1]
+				5249, -- [2]
+				5249, -- [3]
+				5249, -- [4]
+				5043, -- [5]
+				5043, -- [6]
+				5043, -- [7]
+				5043, -- [8]
+				4836, -- [9]
+				4766, -- [10]
+				4685, -- [11]
+				4685, -- [12]
+				4685, -- [13]
+				4685, -- [14]
+				4623, -- [15]
+				4623, -- [16]
+			},
+			["Owner"] = false,
+			["LastEventHealthMax"] = {
+				5249, -- [1]
+				5249, -- [2]
+				5249, -- [3]
+				5249, -- [4]
+				5249, -- [5]
+				5249, -- [6]
+				5249, -- [7]
+				5249, -- [8]
+				5249, -- [9]
+				5249, -- [10]
+				5249, -- [11]
+				5249, -- [12]
+				5249, -- [13]
+				5249, -- [14]
+				5249, -- [15]
+				5249, -- [16]
+			},
+			["NextEventNum"] = 17,
+			["LastDamageTime"] = 1876.983,
+			["LastEvents"] = {
+				"特变电工 断筋 裂盾哨兵 Crit -63 (Physical)", -- [1]
+				"特变电工 肉搏 裂盾哨兵 Hit -363 (Physical)", -- [2]
+				"特变电工 拦截昏迷 裂盾哨兵 Hit -41 (Physical)", -- [3]
+				"裂盾哨兵 肉搏 特变电工 Hit -206 (Physical)", -- [4]
+				"特变电工 肉搏 裂盾哨兵 Hit -362 (Physical)", -- [5]
+				"特变电工 断筋 裂盾哨兵 Hit -28 (Physical)", -- [6]
+				"特变电工 重伤 (伤害/跳) 裂盾哨兵 Tick -84 (Physical)", -- [7]
+				"裂盾哨兵 肉搏 特变电工 Hit -207 (Physical)", -- [8]
+				"裂盾哨兵 射击 特变电工 Hit -70 (Physical)", -- [9]
+				"裂盾哨兵 射击 特变电工 Hit -81 (Physical)", -- [10]
+				"特变电工 重伤 (伤害/跳) 裂盾哨兵 Tick -83 (Physical)", -- [11]
+				"裂盾哨兵 射击 特变电工 Miss (Physical)", -- [12]
+				"特变电工 重伤 (伤害/跳) 裂盾哨兵 Tick -84 (Physical)", -- [13]
+				"裂盾哨兵 射击 特变电工 Hit -62 (Physical)", -- [14]
+				"特变电工 重伤 (伤害/跳) 裂盾哨兵 Tick -84 (Physical)", -- [15]
+				"裂盾步兵 肉搏 特变电工 Hit -146 (Physical)", -- [16]
+			},
+			["Name"] = "特变电工",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				true, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				true, -- [8]
+				true, -- [9]
+				true, -- [10]
+				false, -- [11]
+				true, -- [12]
+				false, -- [13]
+				true, -- [14]
+				false, -- [15]
+				true, -- [16]
+			},
+			["LastEventTimes"] = {
+				1864.932, -- [1]
+				1865.032, -- [2]
+				1866.232, -- [3]
+				1867.416, -- [4]
+				1867.649, -- [5]
+				1867.999, -- [6]
+				1867.999, -- [7]
+				1869.399, -- [8]
+				1870.016, -- [9]
+				1870.55, -- [10]
+				1870.983, -- [11]
+				1871.316, -- [12]
+				1873.933, -- [13]
+				1874.783, -- [14]
+				1876.983, -- [15]
+				1881.671, -- [16]
+			},
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["裂盾哨兵"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 12,
+						},
+					},
+					["TimeSpent"] = {
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 4.5,
+								},
+								["断筋"] = {
+									["count"] = 1.85,
+								},
+								["拦截昏迷"] = {
+									["count"] = 1.2,
+								},
+								["肉搏"] = {
+									["count"] = 1.52,
+								},
+							},
+							["amount"] = 9.07,
+						},
+					},
+					["DamageTaken"] = 772,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["冲锋"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["PartialResist"] = {
+						["射击"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 3,
+						},
+					},
+					["PartialAbsorb"] = {
+						["射击"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 9.07,
+					["ElementTaken"] = {
+						["Melee"] = 559,
+						["Physical"] = 213,
+					},
+					["RageGained"] = {
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["Damage"] = 1192,
+					["DOT_Time"] = 12,
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["Attacks"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 84,
+									["min"] = 83,
+									["count"] = 4,
+									["amount"] = 335,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 335,
+						},
+						["断筋"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 63,
+									["min"] = 63,
+									["count"] = 1,
+									["amount"] = 63,
+								},
+								["Hit"] = {
+									["max"] = 28,
+									["min"] = 28,
+									["count"] = 1,
+									["amount"] = 28,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 91,
+						},
+						["拦截昏迷"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 41,
+									["min"] = 41,
+									["count"] = 1,
+									["amount"] = 41,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 41,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 363,
+									["min"] = 362,
+									["count"] = 2,
+									["amount"] = 725,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 725,
+						},
+					},
+					["RageGain"] = 15,
+					["DamagedWho"] = {
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 335,
+								},
+								["断筋"] = {
+									["count"] = 91,
+								},
+								["拦截昏迷"] = {
+									["count"] = 41,
+								},
+								["肉搏"] = {
+									["count"] = 725,
+								},
+							},
+							["amount"] = 1192,
+						},
+					},
+					["TimeDamage"] = 9.07,
+					["TimeDamaging"] = {
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 4.5,
+								},
+								["断筋"] = {
+									["count"] = 1.85,
+								},
+								["拦截昏迷"] = {
+									["count"] = 1.2,
+								},
+								["肉搏"] = {
+									["count"] = 1.52,
+								},
+							},
+							["amount"] = 9.07,
+						},
+					},
+					["WhoDamaged"] = {
+						["裂盾步兵"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 146,
+								},
+							},
+							["amount"] = 146,
+						},
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["射击"] = {
+									["count"] = 213,
+								},
+								["肉搏"] = {
+									["count"] = 413,
+								},
+							},
+							["amount"] = 626,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 725,
+						["Physical"] = 467,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["DOTs"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["裂盾哨兵"] = {
+									["count"] = 12,
+								},
+							},
+							["amount"] = 12,
+						},
+					},
+					["TimeSpent"] = {
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 4.5,
+								},
+								["断筋"] = {
+									["count"] = 1.85,
+								},
+								["拦截昏迷"] = {
+									["count"] = 1.2,
+								},
+								["肉搏"] = {
+									["count"] = 1.52,
+								},
+							},
+							["amount"] = 9.07,
+						},
+					},
+					["DamageTaken"] = 772,
+					["RageGainedFrom"] = {
+						["特变电工"] = {
+							["Details"] = {
+								["冲锋"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["PartialResist"] = {
+						["射击"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 3,
+						},
+					},
+					["PartialAbsorb"] = {
+						["射击"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 9.07,
+					["ElementTaken"] = {
+						["Melee"] = 559,
+						["Physical"] = 213,
+					},
+					["RageGained"] = {
+						["冲锋"] = {
+							["Details"] = {
+								["特变电工"] = {
+									["count"] = 15,
+								},
+							},
+							["amount"] = 15,
+						},
+					},
+					["Damage"] = 1192,
+					["DOT_Time"] = 12,
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["Attacks"] = {
+						["重伤 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 84,
+									["min"] = 83,
+									["count"] = 4,
+									["amount"] = 335,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 335,
+						},
+						["断筋"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 63,
+									["min"] = 63,
+									["count"] = 1,
+									["amount"] = 63,
+								},
+								["Hit"] = {
+									["max"] = 28,
+									["min"] = 28,
+									["count"] = 1,
+									["amount"] = 28,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 91,
+						},
+						["拦截昏迷"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 41,
+									["min"] = 41,
+									["count"] = 1,
+									["amount"] = 41,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 41,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 363,
+									["min"] = 362,
+									["count"] = 2,
+									["amount"] = 725,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 725,
+						},
+					},
+					["RageGain"] = 15,
+					["DamagedWho"] = {
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 335,
+								},
+								["断筋"] = {
+									["count"] = 91,
+								},
+								["拦截昏迷"] = {
+									["count"] = 41,
+								},
+								["肉搏"] = {
+									["count"] = 725,
+								},
+							},
+							["amount"] = 1192,
+						},
+					},
+					["TimeDamage"] = 9.07,
+					["TimeDamaging"] = {
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["重伤 (伤害/跳)"] = {
+									["count"] = 4.5,
+								},
+								["断筋"] = {
+									["count"] = 1.85,
+								},
+								["拦截昏迷"] = {
+									["count"] = 1.2,
+								},
+								["肉搏"] = {
+									["count"] = 1.52,
+								},
+							},
+							["amount"] = 9.07,
+						},
+					},
+					["WhoDamaged"] = {
+						["裂盾步兵"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 146,
+								},
+							},
+							["amount"] = 146,
+						},
+						["裂盾哨兵"] = {
+							["Details"] = {
+								["射击"] = {
+									["count"] = 213,
+								},
+								["肉搏"] = {
+									["count"] = 413,
+								},
+							},
+							["amount"] = 626,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 725,
+						["Physical"] = 467,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Tick"] = {
+									["count"] = 4,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 7,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 1881.166,
+			["LastActive"] = 1881.166,
+		},
 	},
-	["FightNum"] = 0,
+	["FightNum"] = 1,
 	["CombatTimes"] = {
+		{
+			1864.166, -- [1]
+			1887.167, -- [2]
+			"13:04:13", -- [3]
+			"13:04:35", -- [4]
+			"裂盾哨兵", -- [5]
+		}, -- [1]
 	},
 	["FoughtWho"] = {
 	},

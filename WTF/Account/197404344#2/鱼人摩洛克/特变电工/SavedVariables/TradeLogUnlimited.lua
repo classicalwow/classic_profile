@@ -243,6 +243,215 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "希利苏斯",
 	}, -- [9]
+	{
+		["targetMoney"] = 33150000,
+		["playerMoney"] = 0,
+		["id"] = 10,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "喵喵灬猫猫",
+		["when"] = "2022-04-30 15:02:28",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [10]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6630000,
+		["id"] = 11,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "且听雨落丶",
+		["when"] = "2022-04-30 15:02:40",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [11]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6630000,
+		["id"] = 12,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "达摩会偷袭",
+		["when"] = "2022-04-30 15:02:47",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [12]
+	{
+		["targetMoney"] = 2000000,
+		["playerMoney"] = 0,
+		["id"] = 13,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "看不见的风丶",
+		["when"] = "2022-04-30 15:02:54",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [13]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6630000,
+		["id"] = 14,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "松露",
+		["when"] = "2022-04-30 15:03:13",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [14]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6630000,
+		["id"] = 15,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "苹果核",
+		["when"] = "2022-04-30 15:03:33",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [15]
+	{
+		["targetMoney"] = 3150000,
+		["playerMoney"] = 0,
+		["id"] = 16,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "苦苦冲锋",
+		["when"] = "2022-04-30 16:12:43",
+		["where"] = "奥妮克希亚的巢穴",
+		["result"] = "complete",
+	}, -- [16]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 630000,
+		["id"] = 17,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "面汤",
+		["when"] = "2022-04-30 16:12:53",
+		["where"] = "奥妮克希亚的巢穴",
+		["result"] = "complete",
+	}, -- [17]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 630000,
+		["id"] = 18,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "静琉璃",
+		["when"] = "2022-04-30 16:13:11",
+		["where"] = "奥妮克希亚的巢穴",
+		["result"] = "complete",
+	}, -- [18]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 630000,
+		["id"] = 19,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "阿怪",
+		["when"] = "2022-04-30 16:13:21",
+		["where"] = "奥妮克希亚的巢穴",
+		["result"] = "complete",
+	}, -- [19]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 630000,
+		["id"] = 20,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "贤斌珐师",
+		["when"] = "2022-04-30 16:13:30",
+		["where"] = "奥妮克希亚的巢穴",
+		["result"] = "complete",
+	}, -- [20]
 }
-TradeLogUnlimited_Announce_Checked = false
-TradeLogUnlimited_AnnounceChannel = "WHISPER"
+TradeLogUnlimited_Announce_Checked = true
+TradeLogUnlimited_AnnounceChannel = "RAID"
