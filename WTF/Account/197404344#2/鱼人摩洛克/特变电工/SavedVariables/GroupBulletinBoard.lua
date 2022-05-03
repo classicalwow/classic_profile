@@ -39,5 +39,5 @@ GroupBulletinBoardDBChar = {
 	["FilterDungeonSMC"] = false,
 	["FilterDungeonDME"] = false,
 	["FilterDungeonGNO"] = false,
-	["FilterDungeonMC"] = true,
+	["FilterDungeonMC"] = false,
 }

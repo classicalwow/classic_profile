@@ -8,7 +8,7 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1651420632,
+				["lastUpdate"] = 1651508236,
 				["averageItemLvl"] = 69.3529411764706,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:12640:1506:::::::60:::::::::|h[狮心头盔]|h|r", -- [1]
@@ -63,6 +63,9 @@ DataStore_InventoryDB = {
 				["Members"] = {
 					["夏虫不可语冰"] = {
 						["averageItemLvl"] = 61,
+					},
+					["特变电工"] = {
+						["averageItemLvl"] = 70,
 					},
 					["影子丶"] = {
 						["averageItemLvl"] = 62,

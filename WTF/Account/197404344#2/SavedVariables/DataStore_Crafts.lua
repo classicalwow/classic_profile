@@ -245,7 +245,7 @@ DataStore_CraftsDB = {
 					},
 				},
 				["Prof2"] = "锻造",
-				["lastUpdate"] = 1651420632,
+				["lastUpdate"] = 1651508236,
 				["Prof1"] = "工程学",
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {

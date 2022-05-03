@@ -452,6 +452,109 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "奥妮克希亚的巢穴",
 	}, -- [20]
+	{
+		["targetMoney"] = 1310000,
+		["playerMoney"] = 0,
+		["id"] = 21,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "老婆大人最美",
+		["when"] = "2022-05-01 23:56:59",
+		["result"] = "complete",
+		["where"] = "祖尔格拉布",
+	}, -- [21]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 22,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["tCount"] = 120,
+				["isUsable"] = true,
+				["texture"] = 134029,
+			}, -- [1]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["isUsable"] = true,
+				["texture"] = 134029,
+			}, -- [2]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["isUsable"] = true,
+				["texture"] = 134029,
+			}, -- [3]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["isUsable"] = true,
+				["texture"] = 134029,
+			}, -- [4]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["isUsable"] = true,
+				["texture"] = 134029,
+			}, -- [5]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["isUsable"] = true,
+				["texture"] = 134029,
+			}, -- [6]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_SHOW", -- [4]
+			"TRADE_CLOSED", -- [5]
+			"TRADE_CLOSED", -- [6]
+		},
+		["who"] = "联盟小红手",
+		["when"] = "2022-05-02 18:17:34",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [22]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 23,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "联盟小红手",
+		["when"] = "2022-05-02 18:18:00",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [23]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

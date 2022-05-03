@@ -200,10 +200,10 @@ AutoBarDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonElixirBattle"] = {
-					["arrangeOnUse"] = 12820,
+					["arrangeOnUse"] = 13452,
 				},
 				["AutoBarButtonBuff"] = {
-					["arrangeOnUse"] = 13452,
+					["arrangeOnUse"] = 12451,
 				},
 				["AutoBarButtonCrafting"] = {
 					["arrangeOnUse"] = "急救",
@@ -355,14 +355,14 @@ AutoBarDB = {
 				["defaultButtonIndex"] = 18,
 			},
 			["AutoBarButtonTrinket2"] = {
-				["enabled"] = true,
+				["barKey"] = "AutoBarClassBarBasic",
 				["targeted"] = 14,
 				["buttonKey"] = "AutoBarButtonTrinket2",
-				["square_popups"] = true,
-				["buttonClass"] = "AutoBarButtonTrinket2",
-				["barKey"] = "AutoBarClassBarBasic",
-				["equipped"] = 14,
 				["defaultButtonIndex"] = 27,
+				["buttonClass"] = "AutoBarButtonTrinket2",
+				["enabled"] = true,
+				["equipped"] = 14,
+				["square_popups"] = true,
 			},
 			["AutoBarButtonBuffWeapon1"] = {
 				["barKey"] = "AutoBarClassBarBasic",
@@ -518,14 +518,14 @@ AutoBarDB = {
 				["defaultButtonIndex"] = 1,
 			},
 			["AutoBarButtonFood"] = {
-				["enabled"] = true,
+				["disableConjure"] = false,
 				["include_combo_basic"] = true,
 				["buttonKey"] = "AutoBarButtonFood",
-				["square_popups"] = true,
-				["buttonClass"] = "AutoBarButtonFood",
-				["disableConjure"] = false,
 				["defaultButtonIndex"] = 15,
+				["buttonClass"] = "AutoBarButtonFood",
+				["enabled"] = true,
 				["barKey"] = "AutoBarClassBarBasic",
+				["square_popups"] = true,
 			},
 			["AutoBarButtonWaterBuff"] = {
 				["barKey"] = "AutoBarClassBarBasic",
@@ -600,14 +600,14 @@ AutoBarDB = {
 				["only_favourite_hearth"] = false,
 			},
 			["AutoBarButtonTrinket1"] = {
-				["enabled"] = true,
+				["barKey"] = "AutoBarClassBarBasic",
 				["targeted"] = 13,
 				["buttonKey"] = "AutoBarButtonTrinket1",
-				["square_popups"] = true,
-				["buttonClass"] = "AutoBarButtonTrinket1",
-				["barKey"] = "AutoBarClassBarBasic",
-				["equipped"] = 13,
 				["defaultButtonIndex"] = 26,
+				["buttonClass"] = "AutoBarButtonTrinket1",
+				["enabled"] = true,
+				["equipped"] = 13,
+				["square_popups"] = true,
 			},
 			["AutoBarButtonDrums"] = {
 				["barKey"] = "AutoBarClassBarBasic",

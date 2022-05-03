@@ -468,9 +468,174 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "老婆大人最美",
 		["when"] = "2022-05-01 23:56:59",
-		["where"] = "祖尔格拉布",
 		["result"] = "complete",
+		["where"] = "祖尔格拉布",
 	}, -- [21]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 22,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["tCount"] = 120,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["texture"] = 134029,
+			}, -- [1]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["texture"] = 134029,
+			}, -- [2]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["texture"] = 134029,
+			}, -- [3]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["texture"] = 134029,
+			}, -- [4]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["texture"] = 134029,
+			}, -- [5]
+			{
+				["name"] = "魔法肉桂面包",
+				["numItems"] = 20,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:22895::::::::60:::::::::|h[魔法肉桂面包]|h|r",
+				["texture"] = 134029,
+			}, -- [6]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_SHOW", -- [4]
+			"TRADE_CLOSED", -- [5]
+			"TRADE_CLOSED", -- [6]
+		},
+		["who"] = "联盟小红手",
+		["when"] = "2022-05-02 18:17:34",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [22]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 23,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "联盟小红手",
+		["when"] = "2022-05-02 18:18:00",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [23]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 24,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["itemLink"] = "|cffffffff|Hitem:3829::::::::60:::::::::|h[冰霜之油]|h|r",
+				["name"] = "冰霜之油",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["texture"] = 134800,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "保卫萝卜",
+		["when"] = "2022-05-02 20:25:07",
+		["where"] = "斯坦索姆",
+		["result"] = "complete",
+	}, -- [24]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 25,
+		["playerItems"] = {
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["who"] = "皮离",
+		["when"] = "2022-05-02 22:04:28",
+		["where"] = "熔火之心",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [25]
+	{
+		["targetMoney"] = 500000,
+		["playerMoney"] = 0,
+		["id"] = 26,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "风涧骑",
+		["when"] = "2022-05-03 00:27:17",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [26]
+	{
+		["targetMoney"] = 2380000,
+		["playerMoney"] = 0,
+		["id"] = 27,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Shadanz",
+		["when"] = "2022-05-03 00:28:30",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [27]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"
