@@ -6,8 +6,8 @@ WeakAurasOptionsSaved = {
 	["locale"] = "zhCN",
 	["needsRebuild"] = false,
 	["version"] = "3.7.16",
-	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
+	["spellCacheStrings"] = true,
 	["spellCache"] = {
 		["制造塞雷布拉斯节杖"] = {
 			["spells"] = "21939=136235",
@@ -90,11 +90,14 @@ WeakAurasOptionsSaved = {
 		["设计图：免伤锁甲"] = {
 			["spells"] = "16762=136235",
 		},
-		["Teleport to Darnassus - Event"] = {
-			["spells"] = "9268=136235",
+		["Major Heal Self (TEST)"] = {
+			["spells"] = "24=136235",
 		},
 		["Increased Shadow Resist 17"] = {
 			["spells"] = "14680=136235",
+		},
+		["Create Hive'Regal Rubbing DND"] = {
+			["spells"] = "24807=136235",
 		},
 		["公式：附魔武器 - 力量"] = {
 			["spells"] = "23805=136235",
@@ -123,6 +126,9 @@ WeakAurasOptionsSaved = {
 		["阿兰提尔的愤怒"] = {
 			["spells"] = "9733=132369",
 		},
+		["Zul'Gurub Talisman PAL R2 DND"] = {
+			["spells"] = "24008=136235",
+		},
 		["瘟疫波"] = {
 			["spells"] = "30243=135805",
 		},
@@ -143,6 +149,9 @@ WeakAurasOptionsSaved = {
 		},
 		["拔出步枪"] = {
 			["spells"] = "16756=132222",
+		},
+		["Crystal Prison Dummy DND"] = {
+			["spells"] = "23019=136235",
 		},
 		["召唤铁趾格雷兹的灵魂"] = {
 			["spells"] = "4985=135955",
@@ -213,8 +222,8 @@ WeakAurasOptionsSaved = {
 		["Drakonid Spawner"] = {
 			["spells"] = "22652=136235,22653=136235",
 		},
-		["闪电波"] = {
-			["spells"] = "24819=136015",
+		["Copy of Pattern: Stormcloth Shoulders"] = {
+			["spells"] = "12149=136235",
 		},
 		["超维度幽灵显形器"] = {
 			["spells"] = "27616=135974",
@@ -267,6 +276,9 @@ WeakAurasOptionsSaved = {
 		["部落阿拉希盆地"] = {
 			["spells"] = "24181=136235",
 		},
+		["Draconic For Dummies 4 DND"] = {
+			["spells"] = "25765=136235",
+		},
 		["变形！"] = {
 			["spells"] = "23359=135989",
 		},
@@ -282,6 +294,9 @@ WeakAurasOptionsSaved = {
 		["猎人护甲充能"] = {
 			["spells"] = "27785=136235,27786=136039",
 		},
+		["Sam's Test Aura"] = {
+			["spells"] = "26659=136235",
+		},
 		["食尸"] = {
 			["spells"] = "20577=132278,20578=132278",
 		},
@@ -290,6 +305,9 @@ WeakAurasOptionsSaved = {
 		},
 		["祈福"] = {
 			["spells"] = "20101=135863,20102=135863,20103=135863,20104=135863,20105=135863,23236=135967",
+		},
+		["Swim Speed (TEST)"] = {
+			["spells"] = "13=136235",
 		},
 		["图样：山地腰带"] = {
 			["spells"] = "3802=136235",
@@ -318,8 +336,8 @@ WeakAurasOptionsSaved = {
 		["变形术"] = {
 			["spells"] = "118=136071,1168=136071,1192=135996,1219=136071,12824=136071,12825=136071,12826=136071,12827=136071,12828=136071,12829=136071,13323=136071,14621=136071,15534=136071,27760=136071,28271=132199,28272=135997,29124=136071,29848=136071",
 		},
-		["血怒者的挽歌"] = {
-			["spells"] = "23964=135845",
+		["Pet Upgrade III (NYI)"] = {
+			["spells"] = "1524=136235",
 		},
 		["奥术抗性"] = {
 			["spells"] = "20592=136116,24493=136096,24495=136096,24497=136096,24500=136096,24501=136096,24508=136096,24509=136096,24510=136096,24519=136096,24520=136096,24521=136096,24522=136096,27540=135998,28770=135995",
@@ -335,6 +353,12 @@ WeakAurasOptionsSaved = {
 		},
 		["显灵结束"] = {
 			["spells"] = "21965=136235",
+		},
+		["Conjure Vipore's Beacon DND"] = {
+			["spells"] = "21734=136235,21735=136235",
+		},
+		["[PH] Teleport to Balthule"] = {
+			["spells"] = "6484=136235",
 		},
 		["拉格纳罗斯的赐福"] = {
 			["spells"] = "7891=135805",
@@ -546,6 +570,9 @@ WeakAurasOptionsSaved = {
 		["强效秘法杖"] = {
 			["spells"] = "14810=135469,14812=135913",
 		},
+		["Frostwolf Aura DND"] = {
+			["spells"] = "21827=136235",
+		},
 		["附魔武器 - 初级屠兽"] = {
 			["spells"] = "7786=135913",
 		},
@@ -563,6 +590,9 @@ WeakAurasOptionsSaved = {
 		},
 		["侏儒作战小鸡"] = {
 			["spells"] = "12906=136235,12917=136235,23133=135996",
+		},
+		["Test Power Bonus (Cat)"] = {
+			["spells"] = "24218=136235",
 		},
 		["手工皮带"] = {
 			["spells"] = "3753=136235,3782=136021",
@@ -621,6 +651,9 @@ WeakAurasOptionsSaved = {
 		["阿拉希盆地浓缩军粮"] = {
 			["spells"] = "24411=134062",
 		},
+		["Copy of Hallow's End Candy"] = {
+			["spells"] = "26387=134015",
+		},
 		["食谱：烤狮排"] = {
 			["spells"] = "3402=136235",
 		},
@@ -639,6 +672,9 @@ WeakAurasOptionsSaved = {
 		["Increase Fire Dam 57"] = {
 			["spells"] = "26405=136235",
 		},
+		["Summon Duke Earth, Trigger"] = {
+			["spells"] = "24771=136235",
+		},
 		["召唤蓝鳞蛇"] = {
 			["spells"] = "10715=132311",
 		},
@@ -653,6 +689,9 @@ WeakAurasOptionsSaved = {
 		},
 		["遗弃技能：双手剑"] = {
 			["spells"] = "7047=135327",
+		},
+		["QAEnchant Gloves +20 Fire Damage"] = {
+			["spells"] = "27109=135913",
 		},
 		["熊怪医疗包"] = {
 			["spells"] = "20631=133644",
@@ -680,6 +719,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Summon Lava Burst A"] = {
 			["spells"] = "21886=136235",
+		},
+		["Poltergeist Despawn Schedule (DND)"] = {
+			["spells"] = "18383=136235",
 		},
 		["狂暴"] = {
 			["spells"] = "43=132277,20554=135727,23270=135727,23301=135727,23303=135727,23397=136129,23505=136012,24378=136012,26068=132117,26296=135727,26297=135727,26615=132117,26635=135727,26662=136224,27680=136224,28498=136224",
@@ -711,6 +753,9 @@ WeakAurasOptionsSaved = {
 		["配方：化石合剂"] = {
 			["spells"] = "17641=136235",
 		},
+		["TEST 100 STR DND"] = {
+			["spells"] = "24653=136235",
+		},
 		["Tag: Clear"] = {
 			["spells"] = "20410=132156",
 		},
@@ -719,6 +764,9 @@ WeakAurasOptionsSaved = {
 		},
 		["阿娜莎之弓"] = {
 			["spells"] = "19767=132222",
+		},
+		["(DND) Summon Crystal Minion, Skeleton"] = {
+			["spells"] = "28177=136235",
 		},
 		["组合"] = {
 			["spells"] = "22990=136164",
@@ -741,8 +789,8 @@ WeakAurasOptionsSaved = {
 		["dmg9"] = {
 			["spells"] = "27255=136115",
 		},
-		["强效水下呼吸药剂"] = {
-			["spells"] = "22808=136235,22809=136021",
+		["Create House (TEST)"] = {
+			["spells"] = "6757=132281",
 		},
 		["天灾打击"] = {
 			["spells"] = "28265=135990",
@@ -807,11 +855,20 @@ WeakAurasOptionsSaved = {
 		["寒冬之刃"] = {
 			["spells"] = "21913=136192",
 		},
+		["QAEnchant Gloves +7 Strength"] = {
+			["spells"] = "22104=135913",
+		},
+		["Signet Ring of the Bronze Dragonflight CASTER R3 DND"] = {
+			["spells"] = "25923=136235",
+		},
 		["Increase Healing 24"] = {
 			["spells"] = "9315=136235,23796=136235",
 		},
 		["迪菲亚之塔 I"] = {
 			["spells"] = "9772=136168",
+		},
+		["Summon Royal Air, Trigger"] = {
+			["spells"] = "24791=136235",
 		},
 		["初级治疗药水"] = {
 			["spells"] = "2330=136235",
@@ -830,6 +887,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increase Fire Dam 9"] = {
 			["spells"] = "9294=136235",
+		},
+		["Summon Duke Water, Trigger"] = {
+			["spells"] = "24773=136235",
 		},
 		["公式：次级法力之油"] = {
 			["spells"] = "25135=136235",
@@ -918,6 +978,9 @@ WeakAurasOptionsSaved = {
 		["巫纹头巾"] = {
 			["spells"] = "18450=132149",
 		},
+		["Sillithus Flag Capture Test (DND)"] = {
+			["spells"] = "29530=136235",
+		},
 		["传送：安威玛尔"] = {
 			["spells"] = "1936=136235",
 		},
@@ -954,8 +1017,8 @@ WeakAurasOptionsSaved = {
 		["Increased Stamina 04"] = {
 			["spells"] = "7502=136235",
 		},
-		["附魔护腕 - 次级力量"] = {
-			["spells"] = "13536=135913",
+		["Reflect Magic (TEST)"] = {
+			["spells"] = "112=136235",
 		},
 		["Rotate -360"] = {
 			["spells"] = "26136=136235",
@@ -1001,6 +1064,9 @@ WeakAurasOptionsSaved = {
 		},
 		["闪金镇传送门"] = {
 			["spells"] = "27=136235",
+		},
+		["Punctured Voodoo Doll ROG DND"] = {
+			["spells"] = "24281=136235",
 		},
 		["Cluster Rocket, GREEN BIG - SW"] = {
 			["spells"] = "26494=136235",
@@ -1055,6 +1121,9 @@ WeakAurasOptionsSaved = {
 		},
 		["召唤火元素"] = {
 			["spells"] = "8985=135819",
+		},
+		["Create Zul'Gurub Talisman SHM R1 DND"] = {
+			["spells"] = "24067=136235",
 		},
 		["附魔手套 - 高级草药学"] = {
 			["spells"] = "13868=135913",
@@ -1146,8 +1215,8 @@ WeakAurasOptionsSaved = {
 		["原始蝙蝠皮外套"] = {
 			["spells"] = "24121=136235",
 		},
-		["dmg10"] = {
-			["spells"] = "27258=136115",
+		["TESTT"] = {
+			["spells"] = "18801=136235",
 		},
 		["红色骷髅战马"] = {
 			["spells"] = "22722=132264",
@@ -1263,11 +1332,11 @@ WeakAurasOptionsSaved = {
 		["幽影突袭"] = {
 			["spells"] = "9806=136033",
 		},
-		["力量的证明"] = {
-			["spells"] = "24148=136235,24149=136235",
+		["Create Zul'Gurub Talisman HUN R2 DND"] = {
+			["spells"] = "24077=136235",
 		},
-		["Increased Fire Resist 35"] = {
-			["spells"] = "14615=136235",
+		["Aura Leech (PT)"] = {
+			["spells"] = "2969=136235",
 		},
 		["免疫定身/缠绕/昏迷"] = {
 			["spells"] = "5579=135894",
@@ -1290,6 +1359,9 @@ WeakAurasOptionsSaved = {
 		["火焰节美酒"] = {
 			["spells"] = "29220=135818,29221=135818",
 		},
+		["Summon Confessor's Belt DND"] = {
+			["spells"] = "28945=136235",
+		},
 		["Increased Strength 42"] = {
 			["spells"] = "14960=136235",
 		},
@@ -1311,6 +1383,9 @@ WeakAurasOptionsSaved = {
 		["激活净化器"] = {
 			["spells"] = "7344=135996,18805=136235,23064=136235,27677=136235",
 		},
+		["Naxxramas Entry Teleport DND"] = {
+			["spells"] = "29295=136235",
+		},
 		["激流堡死亡"] = {
 			["spells"] = "8894=132151",
 		},
@@ -1325,6 +1400,9 @@ WeakAurasOptionsSaved = {
 		},
 		["鲜花"] = {
 			["spells"] = "27569=135926",
+		},
+		["Mount Speed+ DND"] = {
+			["spells"] = "27879=136235",
 		},
 		["沙赫拉姆的祝福"] = {
 			["spells"] = "16599=135928",
@@ -1388,6 +1466,12 @@ WeakAurasOptionsSaved = {
 		},
 		["释放乌米的雪人"] = {
 			["spells"] = "17166=136235",
+		},
+		["Knockdown /Stun (TEST)"] = {
+			["spells"] = "5165=132154",
+		},
+		["Fix Ritual Candle (DND)"] = {
+			["spells"] = "23062=136235",
 		},
 		["隐蔽"] = {
 			["spells"] = "4079=136047",
@@ -1566,6 +1650,9 @@ WeakAurasOptionsSaved = {
 		["熊被陷阱捕获"] = {
 			["spells"] = "9439=136235",
 		},
+		["Lady Prestor Despawns DND"] = {
+			["spells"] = "20466=135990",
+		},
 		["熊怪形态"] = {
 			["spells"] = "6405=134297",
 		},
@@ -1584,14 +1671,17 @@ WeakAurasOptionsSaved = {
 		["堕落心灵"] = {
 			["spells"] = "29184=136122,29185=136140,29194=136140,29195=136122,29196=136140,29197=136122,29198=136140,29199=136122,29201=136140",
 		},
-		["净化逃脱"] = {
-			["spells"] = "23582=132331,23583=132331",
+		["Armor Debuff (TEST)"] = {
+			["spells"] = "9234=132341",
 		},
 		["Increased Nature Resist 45"] = {
 			["spells"] = "14988=136235",
 		},
 		["Increase Fire Dam 69"] = {
 			["spells"] = "26701=136235",
+		},
+		["Language Titan (NYI)"] = {
+			["spells"] = "816=136235",
 		},
 		["暗影之门"] = {
 			["spells"] = "17863=136192,17939=136192,17943=136192,17944=136192,17946=136192,17948=136192,17950=136192,28383=135759,28384=135805",
@@ -1698,6 +1788,9 @@ WeakAurasOptionsSaved = {
 		["射击头部 IV"] = {
 			["spells"] = "3006=132153",
 		},
+		["Teleport to Twin Emps Effect DND"] = {
+			["spells"] = "29181=136235",
+		},
 		["北极外套"] = {
 			["spells"] = "28219=136235,28254=136021",
 		},
@@ -1748,6 +1841,9 @@ WeakAurasOptionsSaved = {
 		},
 		["附魔双手武器 - 次级智力"] = {
 			["spells"] = "7793=135913",
+		},
+		["Healing Touch (TEST)"] = {
+			["spells"] = "49=135928",
 		},
 		["精神提高"] = {
 			["spells"] = "18193=134335",
@@ -1821,6 +1917,9 @@ WeakAurasOptionsSaved = {
 		["黑暗之靴"] = {
 			["spells"] = "8778=132149",
 		},
+		["Summon Drape of Unyielding Strength DND"] = {
+			["spells"] = "29036=136235",
+		},
 		["星爆"] = {
 			["spells"] = "5334=135815",
 		},
@@ -1884,8 +1983,11 @@ WeakAurasOptionsSaved = {
 		["致命毒素 II"] = {
 			["spells"] = "11471=132290",
 		},
-		["蓟皮之肤"] = {
-			["spells"] = "6813=132156",
+		["QAEnchant Gloves +30 Healing"] = {
+			["spells"] = "27111=135913",
+		},
+		["Lend Pet (NYI)"] = {
+			["spells"] = "1825=132164",
 		},
 		["召唤地狱破坏者"] = {
 			["spells"] = "23056=136235",
@@ -2109,6 +2211,9 @@ WeakAurasOptionsSaved = {
 		["变形爆炸"] = {
 			["spells"] = "6345=136235",
 		},
+		["Archaedas Awaken Visual (DND)"] = {
+			["spells"] = "10347=136025",
+		},
 		["费尔根之链"] = {
 			["spells"] = "28111=136235",
 		},
@@ -2124,8 +2229,14 @@ WeakAurasOptionsSaved = {
 		["铁皮手雷"] = {
 			["spells"] = "3962=136235,4018=136235,4068=135826",
 		},
+		["Copy of Piercing Screech"] = {
+			["spells"] = "26378=136230",
+		},
 		["速效毒药 VI"] = {
 			["spells"] = "11337=132273,11340=132273,11343=132273",
+		},
+		["Tame Pet (TEST)"] = {
+			["spells"] = "2650=136235",
 		},
 		["配方：自然防护药水"] = {
 			["spells"] = "7264=136235",
@@ -2168,6 +2279,9 @@ WeakAurasOptionsSaved = {
 		},
 		["结构图：寒冰偏斜器"] = {
 			["spells"] = "17436=136235",
+		},
+		["Sprint (TEST)"] = {
+			["spells"] = "47=136235",
 		},
 		["图样：红龙鳞片胸甲"] = {
 			["spells"] = "19166=136235",
@@ -2235,6 +2349,9 @@ WeakAurasOptionsSaved = {
 		["Attack Power 14"] = {
 			["spells"] = "9142=136235",
 		},
+		["Signet Ring of the Bronze Dragonflight CASTER R4 DND"] = {
+			["spells"] = "25924=136235",
+		},
 		["恐慌"] = {
 			["spells"] = "19408=136147",
 		},
@@ -2253,8 +2370,8 @@ WeakAurasOptionsSaved = {
 		["初级锻造"] = {
 			["spells"] = "2020=136241",
 		},
-		["俯冲"] = {
-			["spells"] = "23145=136126,23146=136126,23147=136126,23148=136126,23149=136126,23150=136126",
+		["Bind Self (TEST)"] = {
+			["spells"] = "26=136235",
 		},
 		["Increase Fire Dam 27"] = {
 			["spells"] = "17880=136235",
@@ -2267,6 +2384,9 @@ WeakAurasOptionsSaved = {
 		},
 		["重置传送"] = {
 			["spells"] = "23407=136235",
+		},
+		["Test Eng Haste"] = {
+			["spells"] = "23674=136235",
 		},
 		["瓦塔拉克饰品的上瓣"] = {
 			["spells"] = "27739=136235",
@@ -2400,6 +2520,9 @@ WeakAurasOptionsSaved = {
 		["游荡瘟疫"] = {
 			["spells"] = "3436=136127,3439=136127,8247=136133",
 		},
+		["Create Zul'Gurub Talisman SHM R3 DND"] = {
+			["spells"] = "24069=136235",
+		},
 		["秘银机械幼龙"] = {
 			["spells"] = "12624=134153,12749=134153,23050=136235,23075=134153",
 		},
@@ -2469,14 +2592,20 @@ WeakAurasOptionsSaved = {
 		["强化宁静"] = {
 			["spells"] = "17123=136107,17124=136107",
 		},
-		["结构图：血藤护目镜"] = {
-			["spells"] = "24358=134153",
+		["Spirit Particles (red, super big) (DND)"] = {
+			["spells"] = "31951=135864",
+		},
+		["QAEnchant Gloves +5 Mining"] = {
+			["spells"] = "8375=136235",
 		},
 		["食人魔力量药剂"] = {
 			["spells"] = "3188=136235",
 		},
 		["刺骨"] = {
 			["spells"] = "2098=132292,6712=132292,6760=132292,6761=132292,6762=132292,6763=132292,6764=132292,6765=132292,8623=132292,8624=132292,8625=132292,8626=132292,11299=132292,11300=132292,11301=132292,11302=132292,15691=132292,15692=132292,27611=132292,31016=132292,31017=132292",
+		},
+		["Copy of Simple Teleport"] = {
+			["spells"] = "16807=135994",
 		},
 		["自然之赐"] = {
 			["spells"] = "16880=136062,16886=136062",
@@ -2486,6 +2615,9 @@ WeakAurasOptionsSaved = {
 		},
 		["塞纳里奥的好感"] = {
 			["spells"] = "30754=136086",
+		},
+		["[PH] Teleport to Orgrimmar"] = {
+			["spells"] = "4996=136235",
 		},
 		["睡眠"] = {
 			["spells"] = "24664=136090",
@@ -2514,6 +2646,9 @@ WeakAurasOptionsSaved = {
 		["匕首打击 III"] = {
 			["spells"] = "2633=132223",
 		},
+		["Mount Speed++ DND"] = {
+			["spells"] = "27881=136235",
+		},
 		["星火术"] = {
 			["spells"] = "2912=135753,2914=135753,8949=135753,8950=135753,8951=135753,8952=135753,8953=135753,8954=135753,9875=135753,9876=135753,9877=135753,9878=135753,21668=135753,25298=135753,25408=135753,25971=132282",
 		},
@@ -2538,6 +2673,9 @@ WeakAurasOptionsSaved = {
 		["奥术爆炸"] = {
 			["spells"] = "23722=135753",
 		},
+		["Copy of Improved Mana/Health Totems"] = {
+			["spells"] = "24436=136235",
+		},
 		["Receive Reward AND Quest Object, Common, Stormwind"] = {
 			["spells"] = "27509=136235",
 		},
@@ -2552,6 +2690,9 @@ WeakAurasOptionsSaved = {
 		},
 		["吸引狂暴者"] = {
 			["spells"] = "20544=136235",
+		},
+		["(DND) Belnistrasz Idol Shutdown Visual"] = {
+			["spells"] = "12774=136235",
 		},
 		["治疗之泉图腾"] = {
 			["spells"] = "5394=135127,5396=135127,6375=135127,6377=135127,6383=135127,6384=135127,10462=135127,10463=135127,10464=135127,10465=135127",
@@ -2667,6 +2808,9 @@ WeakAurasOptionsSaved = {
 		["喝下初级药水"] = {
 			["spells"] = "3368=135915",
 		},
+		["Copy of Shadow Bolt"] = {
+			["spells"] = "23305=136235",
+		},
 		["紫色丝质衬衣"] = {
 			["spells"] = "3872=132149",
 		},
@@ -2681,6 +2825,9 @@ WeakAurasOptionsSaved = {
 		},
 		["高级草药学"] = {
 			["spells"] = "3571=136246,13839=136235",
+		},
+		["Summon Templar Water, Trigger"] = {
+			["spells"] = "24761=136235",
 		},
 		["光芒（黄色）"] = {
 			["spells"] = "22580=135741",
@@ -2955,8 +3102,8 @@ WeakAurasOptionsSaved = {
 		["召唤扎拉雏虫"] = {
 			["spells"] = "1881=136235",
 		},
-		["Kill Summoner, Summon Boss"] = {
-			["spells"] = "28250=136235",
+		["Alterac Ram Aura DND"] = {
+			["spells"] = "21863=136235",
 		},
 		["月爪枭兽的灵魂"] = {
 			["spells"] = "18986=136235",
@@ -2988,8 +3135,8 @@ WeakAurasOptionsSaved = {
 		["转化：水转死灵"] = {
 			["spells"] = "17564=134459",
 		},
-		["Alterac Valley Mark of Honor (Loser)"] = {
-			["spells"] = "24954=136235",
+		["Scorch Talent Test (PT)"] = {
+			["spells"] = "12379=136235",
 		},
 		["诱导幻象"] = {
 			["spells"] = "4981=136168",
@@ -3006,6 +3153,9 @@ WeakAurasOptionsSaved = {
 		["Attack Power 16"] = {
 			["spells"] = "9329=136235",
 		},
+		["Exzhal Calls Circle of Binding DND"] = {
+			["spells"] = "23949=136235",
+		},
 		["Create Replacement Lord Valthalak's Brazier of Beckoning"] = {
 			["spells"] = "27566=136235",
 		},
@@ -3015,8 +3165,8 @@ WeakAurasOptionsSaved = {
 		["迅捷黄色机械陆行鸟"] = {
 			["spells"] = "23222=132247",
 		},
-		["召回"] = {
-			["spells"] = "22563=136235,22564=136235",
+		["Undead Slayer (OLD)"] = {
+			["spells"] = "4723=136142,4730=136142",
 		},
 		["Rocket, PURPLE BIG"] = {
 			["spells"] = "26353=136235",
@@ -3044,6 +3194,9 @@ WeakAurasOptionsSaved = {
 		},
 		["召唤绿龙宝宝"] = {
 			["spells"] = "10698=132311",
+		},
+		["MHTest01"] = {
+			["spells"] = "5202=132350",
 		},
 		["坚固的磨刀石"] = {
 			["spells"] = "9918=136192,9924=136235",
@@ -3162,6 +3315,9 @@ WeakAurasOptionsSaved = {
 		["野性侵略"] = {
 			["spells"] = "16858=132121,16859=132121,16860=132121,16861=132121,16862=132121",
 		},
+		["Copy of Master Angler"] = {
+			["spells"] = "24346=132288",
+		},
 		["奥术掌握"] = {
 			["spells"] = "16734=136183,16735=136183,16736=136183,16737=136183,16738=136183",
 		},
@@ -3179,6 +3335,9 @@ WeakAurasOptionsSaved = {
 		},
 		["图样：红色毛纺靴"] = {
 			["spells"] = "3896=136235",
+		},
+		["[PH] Summon Minion (trap: ghoul/skeleton))"] = {
+			["spells"] = "28187=136235",
 		},
 		["外交"] = {
 			["spells"] = "20599=134328",
@@ -3249,6 +3408,9 @@ WeakAurasOptionsSaved = {
 		["回春药水"] = {
 			["spells"] = "2370=136235,2597=136235,2599=136235,2600=136235,22729=134827",
 		},
+		["Really Long bow shot (TEST)"] = {
+			["spells"] = "61=136235",
+		},
 		["图腾掌握"] = {
 			["spells"] = "16189=136069",
 		},
@@ -3258,8 +3420,14 @@ WeakAurasOptionsSaved = {
 		["疾速奔跑"] = {
 			["spells"] = "4105=132319,4766=132319,6017=132319",
 		},
-		["魔化共鸣水晶"] = {
-			["spells"] = "20513=136235",
+		["TEST - DBUCKLER"] = {
+			["spells"] = "10654=135999",
+		},
+		["Copy of Give Friendship Bracelet"] = {
+			["spells"] = "28180=136235",
+		},
+		["Word of Recall (OLD)"] = {
+			["spells"] = "1=136235",
 		},
 		["丝质绷带"] = {
 			["spells"] = "7928=136192,7930=136192",
@@ -3279,14 +3447,17 @@ WeakAurasOptionsSaved = {
 		["奥术飞弹 +1"] = {
 			["spells"] = "21228=136235",
 		},
+		["Summon Demoniac's Bracers DND"] = {
+			["spells"] = "28958=136235",
+		},
 		["君王板甲腰带"] = {
 			["spells"] = "16647=136192",
 		},
 		["埃根的冲击器效果"] = {
 			["spells"] = "17372=136235",
 		},
-		["Frostwolf Reputation +5"] = {
-			["spells"] = "21647=136235",
+		["TEST Heal Self"] = {
+			["spells"] = "15068=135913",
 		},
 		["Initialize Images"] = {
 			["spells"] = "794=136235",
@@ -3399,6 +3570,9 @@ WeakAurasOptionsSaved = {
 		["失控"] = {
 			["spells"] = "7184=132281",
 		},
+		["QAEnchant Gloves - Riding Skill"] = {
+			["spells"] = "30190=135913",
+		},
 		["附魔手套 - 草药学"] = {
 			["spells"] = "13617=135913",
 		},
@@ -3474,6 +3648,9 @@ WeakAurasOptionsSaved = {
 		["月布护腿"] = {
 			["spells"] = "18440=132149",
 		},
+		["Eye of Yesmur (PT)"] = {
+			["spells"] = "6272=136235",
+		},
 		["宠物升级 III"] = {
 			["spells"] = "1590=136235",
 		},
@@ -3489,11 +3666,17 @@ WeakAurasOptionsSaved = {
 		["Increased Stamina 31"] = {
 			["spells"] = "14478=136235",
 		},
+		["Anachronos Quest Credit DND"] = {
+			["spells"] = "25201=136235",
+		},
 		["Tree Form (Passive)"] = {
 			["spells"] = "3122=136064",
 		},
 		["午餐效果"] = {
 			["spells"] = "27651=136235",
+		},
+		["Summon Madcap's Mantle DND"] = {
+			["spells"] = "28937=136235",
 		},
 		["解除次级诅咒"] = {
 			["spells"] = "475=136082,1176=136082",
@@ -3585,6 +3768,9 @@ WeakAurasOptionsSaved = {
 		["Increased Parry 2"] = {
 			["spells"] = "13667=136235",
 		},
+		["Signet Ring of the Bronze Dragonflight DPS R3 DND"] = {
+			["spells"] = "25929=136235",
+		},
 		["夜色长靴"] = {
 			["spells"] = "10558=136235,10559=136021",
 		},
@@ -3615,6 +3801,9 @@ WeakAurasOptionsSaved = {
 		["死亡之触"] = {
 			["spells"] = "5=136235,3108=136230",
 		},
+		["Summon Royal Earth, Trigger"] = {
+			["spells"] = "24792=136235",
+		},
 		["召唤格里什幼虫"] = {
 			["spells"] = "14206=136092",
 		},
@@ -3635,6 +3824,12 @@ WeakAurasOptionsSaved = {
 		},
 		["提里奥给伊森利恩传话"] = {
 			["spells"] = "18973=136235",
+		},
+		["Staghelm Shatters Hammer DND"] = {
+			["spells"] = "25182=136235",
+		},
+		["Get Gosssip, Test"] = {
+			["spells"] = "26683=136235",
 		},
 		["冷木斧"] = {
 			["spells"] = "16965=136192",
@@ -3984,8 +4179,14 @@ WeakAurasOptionsSaved = {
 		["龟壳"] = {
 			["spells"] = "77=136235",
 		},
+		["Copy of Enchant Weapon - Unholy Weapon"] = {
+			["spells"] = "27098=135913,27100=135913",
+		},
 		["制造暴风城烈焰"] = {
 			["spells"] = "29101=136235",
+		},
+		["Create Zul'Gurub Talisman WLK R2 DND"] = {
+			["spells"] = "24045=136235",
 		},
 		["辐光头饰"] = {
 			["spells"] = "16659=136192",
@@ -4020,6 +4221,9 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 72"] = {
 			["spells"] = "21454=136235",
 		},
+		["Summon Vindicator's Armguards  DND"] = {
+			["spells"] = "28908=136235",
+		},
 		["寒冰风暴 II"] = {
 			["spells"] = "1233=136235",
 		},
@@ -4049,6 +4253,9 @@ WeakAurasOptionsSaved = {
 		},
 		["野性守护"] = {
 			["spells"] = "20043=136074,20044=136074,20190=136074,20191=136074",
+		},
+		["Teleport to Final Chamber Effect DND"] = {
+			["spells"] = "29190=136235",
 		},
 		["迟钝术"] = {
 			["spells"] = "474=136159,1171=136159,5917=136159",
@@ -4119,6 +4326,9 @@ WeakAurasOptionsSaved = {
 		["永望镇传送"] = {
 			["spells"] = "23442=135826",
 		},
+		["Spell Deflection (NYI)"] = {
+			["spells"] = "110=136235",
+		},
 		["附魔披风 - 潜行"] = {
 			["spells"] = "25083=135913",
 		},
@@ -4130,6 +4340,9 @@ WeakAurasOptionsSaved = {
 		},
 		["白银万能钥匙"] = {
 			["spells"] = "19646=136235,19666=136192,19670=136235",
+		},
+		["Copy of Summon Peddlefeet"] = {
+			["spells"] = "28960=132311",
 		},
 		["附魔靴子 - 强效敏捷"] = {
 			["spells"] = "20023=135913",
@@ -4160,6 +4373,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Summon Son of Flame E"] = {
 			["spells"] = "21113=135819",
+		},
+		["Summon Freethinker's Belt DND"] = {
+			["spells"] = "28919=136235",
 		},
 		["斩首"] = {
 			["spells"] = "24241=132155,25669=136235",
@@ -4236,6 +4452,9 @@ WeakAurasOptionsSaved = {
 		["设计图：君王板甲护肩"] = {
 			["spells"] = "16675=136235",
 		},
+		["Signet Ring of the Bronze Dragonflight TANK R5 DND"] = {
+			["spells"] = "25936=136235",
+		},
 		["热情"] = {
 			["spells"] = "806=136224",
 		},
@@ -4248,14 +4467,17 @@ WeakAurasOptionsSaved = {
 		["预谋"] = {
 			["spells"] = "14183=136183",
 		},
-		["精确"] = {
-			["spells"] = "13705=132222,13832=132222,13843=132222,13844=132222,13845=132222,20189=132282,20192=132282,20193=132282",
+		["Deprecated BKP \"Impact\" Shot"] = {
+			["spells"] = "3964=136235",
 		},
 		["Increased Intellect 45"] = {
 			["spells"] = "14945=136235",
 		},
 		["灵魂燃烧 II"] = {
 			["spells"] = "1322=135805",
+		},
+		["Signet Ring of the Bronze Dragonflight TANK R1 DND"] = {
+			["spells"] = "25932=136235",
 		},
 		["Increase Healing 238"] = {
 			["spells"] = "28805=136235",
@@ -4275,6 +4497,9 @@ WeakAurasOptionsSaved = {
 		["扫尾攻击"] = {
 			["spells"] = "25654=132109",
 		},
+		["Lava Trap 3"] = {
+			["spells"] = "17676=136235",
+		},
 		["Increased Armor 250"] = {
 			["spells"] = "15687=136235",
 		},
@@ -4283,6 +4508,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increased Stamina 37"] = {
 			["spells"] = "14484=136235",
+		},
+		["Mercutio Horse Dummy DND"] = {
+			["spells"] = "20001=136235",
 		},
 		["图样：黑皮手套"] = {
 			["spells"] = "9155=136235",
@@ -4440,6 +4668,9 @@ WeakAurasOptionsSaved = {
 		["强化奴役恶魔"] = {
 			["spells"] = "18821=136154,18822=136154,18823=136154,18824=136154,18825=136154",
 		},
+		["Test Black Diamond AGAIN"] = {
+			["spells"] = "27058=136192",
+		},
 		["硬化蝎壳战靴"] = {
 			["spells"] = "10554=136235",
 		},
@@ -4521,6 +4752,9 @@ WeakAurasOptionsSaved = {
 		["Increased Intellect 42"] = {
 			["spells"] = "14942=136235",
 		},
+		["NefTest"] = {
+			["spells"] = "22971=136235",
+		},
 		["Pester Effect"] = {
 			["spells"] = "4243=136128",
 		},
@@ -4530,8 +4764,8 @@ WeakAurasOptionsSaved = {
 		["夜色虫"] = {
 			["spells"] = "8088=136245",
 		},
-		["Increased Fire Resist 40"] = {
-			["spells"] = "14620=136235",
+		["Major Pet Upgrade III (NYI)"] = {
+			["spells"] = "1527=136235",
 		},
 		["水栖形态（被动）"] = {
 			["spells"] = "5421=132112",
@@ -4701,6 +4935,9 @@ WeakAurasOptionsSaved = {
 		["Increased Spirit 08"] = {
 			["spells"] = "9109=136235",
 		},
+		["Glowy (iCoke Promotion)"] = {
+			["spells"] = "29042=135741",
+		},
 		["Create Upperdeck Hippogryph Hatchling"] = {
 			["spells"] = "30188=136235",
 		},
@@ -4758,14 +4995,17 @@ WeakAurasOptionsSaved = {
 		["治疗波"] = {
 			["spells"] = "331=136052,332=136052,538=136235,547=136052,565=136235,913=136052,914=136235,939=136052,959=136052,1326=136052,1327=136052,1354=136052,1355=136052,1356=136052,8005=136052,8006=136052,10395=136052,10396=136052,10397=136052,10398=136052,11986=136052,12491=136052,12492=136052,15982=136052,25357=136052,25402=136052,25964=136043,26097=136052",
 		},
-		["光明圣印"] = {
-			["spells"] = "20165=135917,20167=135917,20333=135917,20334=135917,20340=135917,20347=135917,20348=135917,20349=135917,20455=135917,20456=135917,20457=135917,20458=135917",
+		["Language Draconic (NYI)"] = {
+			["spells"] = "814=136235",
 		},
 		["图样：雷织长靴"] = {
 			["spells"] = "12150=136235",
 		},
 		["月牙斧"] = {
 			["spells"] = "3500=136192",
+		},
+		["Feed Pet Effect (Quest Test)"] = {
+			["spells"] = "23355=132165",
 		},
 		["迪菲亚潜行者伪装"] = {
 			["spells"] = "5169=132288,5269=136189",
@@ -4842,6 +5082,9 @@ WeakAurasOptionsSaved = {
 		["结构图：便携式青铜迫击炮"] = {
 			["spells"] = "4032=136235",
 		},
+		["Summon Royal Fire, Trigger"] = {
+			["spells"] = "24787=136235",
+		},
 		["冲撞痛击"] = {
 			["spells"] = "2442=132326",
 		},
@@ -4859,6 +5102,9 @@ WeakAurasOptionsSaved = {
 		},
 		["变形术：鸡"] = {
 			["spells"] = "28284=135996",
+		},
+		["Charm (TEST)"] = {
+			["spells"] = "260=136235",
 		},
 		["艾博希尔成长"] = {
 			["spells"] = "16048=135819,16049=132154",
@@ -4914,6 +5160,9 @@ WeakAurasOptionsSaved = {
 		["黑色战狼"] = {
 			["spells"] = "22724=132224",
 		},
+		["Self Visual - Sleep Until Cancelled  (DND)"] = {
+			["spells"] = "6606=136168",
+		},
 		["Increased Spirit 13"] = {
 			["spells"] = "9262=136235",
 		},
@@ -4935,8 +5184,8 @@ WeakAurasOptionsSaved = {
 		["火焰法杖 V"] = {
 			["spells"] = "1922=132325,1927=132325",
 		},
-		["Increase Nature Dam 8"] = {
-			["spells"] = "9410=136235,9411=136235",
+		["Trigger Test (PT)"] = {
+			["spells"] = "5103=136235",
 		},
 		["活力自由行动"] = {
 			["spells"] = "24364=134718",
@@ -4982,6 +5231,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Teleport Ouro Trigger"] = {
 			["spells"] = "26285=136235",
+		},
+		["QAEnchant Bracer +7 Intellect"] = {
+			["spells"] = "22054=135913",
 		},
 		["Create Upperdeck Turtle Mount"] = {
 			["spells"] = "30193=136235",
@@ -5066,6 +5318,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Decrease Mana Cost - Shadow"] = {
 			["spells"] = "17912=136235,17916=136235",
+		},
+		["Punctured Voodoo Doll MAG DND"] = {
+			["spells"] = "24282=136235",
 		},
 		["刮取"] = {
 			["spells"] = "13630=136235",
@@ -5175,6 +5430,9 @@ WeakAurasOptionsSaved = {
 		["强化破甲攻击"] = {
 			["spells"] = "12308=132363,12810=132363,12811=132363,23561=136235",
 		},
+		["Lady Prestor Transforms DND"] = {
+			["spells"] = "20409=136235",
+		},
 		["雷织手套"] = {
 			["spells"] = "12063=132149",
 		},
@@ -5204,6 +5462,9 @@ WeakAurasOptionsSaved = {
 		},
 		["树皮术"] = {
 			["spells"] = "20655=136063,22812=136097,22826=136097",
+		},
+		["Summon Blade of Vaulted Secrets DND"] = {
+			["spells"] = "29015=136235",
 		},
 		["图样：灰布外衣"] = {
 			["spells"] = "18478=136235",
@@ -5328,6 +5589,9 @@ WeakAurasOptionsSaved = {
 		["能量护盾 500"] = {
 			["spells"] = "20705=135940",
 		},
+		["Test Strike W35"] = {
+			["spells"] = "23850=132355",
+		},
 		["图勒之怒"] = {
 			["spells"] = "3387=136224",
 		},
@@ -5340,8 +5604,8 @@ WeakAurasOptionsSaved = {
 		["Flight Visual State"] = {
 			["spells"] = "7923=132150",
 		},
-		["Increase Spell Dam 150"] = {
-			["spells"] = "28141=136235",
+		["Fear (NYI)"] = {
+			["spells"] = "16=136183",
 		},
 		["召唤蜘蛛"] = {
 			["spells"] = "7912=136113",
@@ -5357,6 +5621,9 @@ WeakAurasOptionsSaved = {
 		},
 		["召唤黑色王蛇"] = {
 			["spells"] = "10714=132311",
+		},
+		["Create Chapter 1 DND"] = {
+			["spells"] = "22208=136235",
 		},
 		["制造魔法翡翠"] = {
 			["spells"] = "3552=134105,3553=134105",
@@ -5385,6 +5652,9 @@ WeakAurasOptionsSaved = {
 		["强效火焰石效果"] = {
 			["spells"] = "17940=135821",
 		},
+		["QAEnchant Gloves +20 Frost Damage"] = {
+			["spells"] = "27108=135913",
+		},
 		["精制重弹丸"] = {
 			["spells"] = "3930=136235,3993=136235",
 		},
@@ -5397,8 +5667,8 @@ WeakAurasOptionsSaved = {
 		["昏迷炸弹"] = {
 			["spells"] = "16497=135826",
 		},
-		["图样：野性之皮"] = {
-			["spells"] = "22933=136235",
+		["Hot Foot (TEST)"] = {
+			["spells"] = "12=136235",
 		},
 		["熔岩爆发"] = {
 			["spells"] = "21908=136235",
@@ -5415,6 +5685,9 @@ WeakAurasOptionsSaved = {
 		["Invis Placing Bear Trap"] = {
 			["spells"] = "9478=136235",
 		},
+		["[PH] Summon Minion parent (ghost/skeleton)"] = {
+			["spells"] = "28184=136235",
+		},
 		["雷织长靴"] = {
 			["spells"] = "12090=132149",
 		},
@@ -5426,6 +5699,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Cancel Mouth Spawns"] = {
 			["spells"] = "29500=136235",
+		},
+		["Copy of Corruption"] = {
+			["spells"] = "28309=136208",
 		},
 		["增强钝器 IV"] = {
 			["spells"] = "9903=136235",
@@ -5439,6 +5715,9 @@ WeakAurasOptionsSaved = {
 		["狂热之刃效果"] = {
 			["spells"] = "5263=135805",
 		},
+		["Stoneclaw Totem Passive TEST"] = {
+			["spells"] = "23792=136097",
+		},
 		["血藤护目镜"] = {
 			["spells"] = "24356=136235",
 		},
@@ -5450,6 +5729,9 @@ WeakAurasOptionsSaved = {
 		},
 		["焚烧"] = {
 			["spells"] = "23308=136130,23309=136130",
+		},
+		["[PH] Teleport to Auberdine"] = {
+			["spells"] = "6349=136235",
 		},
 		["土灵皮护肩"] = {
 			["spells"] = "9147=136235",
@@ -5471,6 +5753,9 @@ WeakAurasOptionsSaved = {
 		},
 		["冰链术"] = {
 			["spells"] = "113=135834,485=136235,512=135834,520=136235,1175=135834,1208=135834,22744=135834,22745=135834",
+		},
+		["Summon Royal, Trigger"] = {
+			["spells"] = "24785=136235",
 		},
 		["鳄鱼肉排"] = {
 			["spells"] = "3370=136192",
@@ -5502,6 +5787,9 @@ WeakAurasOptionsSaved = {
 		["Increase Holy Dam 14"] = {
 			["spells"] = "21512=136235",
 		},
+		["ImmuneSleep (JEFFTEST)"] = {
+			["spells"] = "5306=135844",
+		},
 		["狂战士之道"] = {
 			["spells"] = "8616=136235",
 		},
@@ -5516,6 +5804,9 @@ WeakAurasOptionsSaved = {
 		},
 		["邪恶狂热 III"] = {
 			["spells"] = "1388=132089",
+		},
+		["Copy of Great Heal"] = {
+			["spells"] = "28305=135915",
 		},
 		["特雷莱恩冰触术"] = {
 			["spells"] = "4320=136230",
@@ -5553,6 +5844,9 @@ WeakAurasOptionsSaved = {
 		["哨塔增益"] = {
 			["spells"] = "23467=132381",
 		},
+		["Conjure Furis Felsteed DUMMY DND"] = {
+			["spells"] = "21338=136235",
+		},
 		["奥术光辉"] = {
 			["spells"] = "23028=135869,23030=135932",
 		},
@@ -5580,8 +5874,14 @@ WeakAurasOptionsSaved = {
 		["肢解"] = {
 			["spells"] = "96=132090",
 		},
+		["Giant Slayer (OLD)"] = {
+			["spells"] = "4705=132154,4706=132154,4712=132154,4713=132154",
+		},
 		["黑色龙鳞胸甲"] = {
 			["spells"] = "19085=136235",
+		},
+		["Summon Jarien and Sothos DND"] = {
+			["spells"] = "27191=136235",
 		},
 		["阿塔莱食尸"] = {
 			["spells"] = "12134=132122",
@@ -5616,6 +5916,9 @@ WeakAurasOptionsSaved = {
 		["摧毁土灵卫兵"] = {
 			["spells"] = "10604=136025",
 		},
+		["Self Visual - Stun 10s (DND)"] = {
+			["spells"] = "6844=136168",
+		},
 		["图样：奇美拉护腿"] = {
 			["spells"] = "19189=136235",
 		},
@@ -5627,6 +5930,9 @@ WeakAurasOptionsSaved = {
 		},
 		["熔火恶魔布包"] = {
 			["spells"] = "26087=132149",
+		},
+		["Food (TEST)"] = {
+			["spells"] = "7291=134062",
 		},
 		["匕首强化"] = {
 			["spells"] = "5585=132321,5586=132321,5587=132321,5594=132223,5595=132223,5596=132223",
@@ -5655,11 +5961,14 @@ WeakAurasOptionsSaved = {
 		["设计图：风暴护手"] = {
 			["spells"] = "16692=136235",
 		},
-		["飞行路线"] = {
-			["spells"] = "27998=136235,28001=136235,29931=136235,29934=136235,29994=136235",
+		["QAEnchant Cloak +15 Fire Resistance"] = {
+			["spells"] = "27118=135913",
 		},
 		["设计图：黎明使者护肩"] = {
 			["spells"] = "16686=136235",
+		},
+		["Summon Vindicator's Belt  DND"] = {
+			["spells"] = "28886=136235",
 		},
 		["精神鞭笞"] = {
 			["spells"] = "7378=136208,15407=136208,16568=136208,17165=136208,17311=136208,17312=136208,17313=136208,17314=136208,17316=136208,17317=136208,17318=136208,18807=136208,18808=136208,22919=136208,23953=136208,26044=136208,26143=136208,28310=136208,29407=136208",
@@ -5763,11 +6072,17 @@ WeakAurasOptionsSaved = {
 		["打开笼子"] = {
 			["spells"] = "11792=136235",
 		},
+		["Sam's Test Spell #2"] = {
+			["spells"] = "27802=136235",
+		},
 		["强化邪恶攻击"] = {
 			["spells"] = "13732=136189,13863=136189",
 		},
 		["木喉之智"] = {
 			["spells"] = "23662=132149",
+		},
+		["Zul'Gurub Talisman PAL R1 DND"] = {
+			["spells"] = "24007=136235",
 		},
 		["阿鲁高的礼物"] = {
 			["spells"] = "7124=136130",
@@ -5846,6 +6161,9 @@ WeakAurasOptionsSaved = {
 		},
 		["棕色骸骨军马"] = {
 			["spells"] = "17464=132264",
+		},
+		["Swimming (NYI)"] = {
+			["spells"] = "831=136235",
 		},
 		["风之优雅图腾"] = {
 			["spells"] = "8835=136046,8837=136046,10627=136046,10628=136046,25359=136046,25401=136046,25966=132282",
@@ -6096,8 +6414,8 @@ WeakAurasOptionsSaved = {
 		["Increased Nature Resist 16"] = {
 			["spells"] = "14637=136235",
 		},
-		["传导"] = {
-			["spells"] = "16039=136116,16109=136116,16110=136116,16111=136116,16112=136116",
+		["Fast Cast (NYI)"] = {
+			["spells"] = "450=136235",
 		},
 		["符文冥河腰带"] = {
 			["spells"] = "24902=132149",
@@ -6119,6 +6437,9 @@ WeakAurasOptionsSaved = {
 		},
 		["设计图：君王板甲腰带"] = {
 			["spells"] = "16676=136235",
+		},
+		["Summon Cloak of the Gathering Storm DND"] = {
+			["spells"] = "29028=136235",
 		},
 		["自走炸弹效果"] = {
 			["spells"] = "11504=135826",
@@ -6201,8 +6522,8 @@ WeakAurasOptionsSaved = {
 		["沙赫拉姆之力"] = {
 			["spells"] = "16600=136116",
 		},
-		["秘银杆"] = {
-			["spells"] = "11454=136235,12909=136235",
+		["Tracking (TEST)"] = {
+			["spells"] = "2361=136235",
 		},
 		["入睡 II"] = {
 			["spells"] = "1418=136090",
@@ -6270,8 +6591,14 @@ WeakAurasOptionsSaved = {
 		["Increased Hit Chance 1"] = {
 			["spells"] = "15464=136235",
 		},
+		["Durability Damage (PT)"] = {
+			["spells"] = "16722=136235",
+		},
 		["被破坏的蒸汽车"] = {
 			["spells"] = "27771=136235",
+		},
+		["Fix Ritual Bell (DND)"] = {
+			["spells"] = "23058=136235",
 		},
 		["心灵之火"] = {
 			["spells"] = "588=135926,602=135926,609=136235,624=136235,1006=135926,1007=136235,1252=135926,1253=135926,1254=135926,7128=135926,7129=136235,7130=135926,10951=135926,10952=135926,11025=135926,11026=135926",
@@ -6309,6 +6636,9 @@ WeakAurasOptionsSaved = {
 		["调整态度"] = {
 			["spells"] = "8352=132995",
 		},
+		["Copy of Visions of the Past"] = {
+			["spells"] = "23197=135974",
+		},
 		["Holiday - Lunar Teleport Cap: Orgrimmar"] = {
 			["spells"] = "26414=135758",
 		},
@@ -6317,6 +6647,9 @@ WeakAurasOptionsSaved = {
 		},
 		["血袭"] = {
 			["spells"] = "9007=132142,9824=132142,9826=132142",
+		},
+		["Summon Terky"] = {
+			["spells"] = "28487=132311",
 		},
 		["强化法力护盾"] = {
 			["spells"] = "11252=136153,12605=136153",
@@ -6353,6 +6686,9 @@ WeakAurasOptionsSaved = {
 		},
 		["维希度斯尖啸"] = {
 			["spells"] = "25893=136006,27934=136006",
+		},
+		["Copy of Poison Bolt Volley"] = {
+			["spells"] = "29169=136016",
 		},
 		["附魔靴子 - 次级耐力"] = {
 			["spells"] = "13644=135913,13645=135913",
@@ -6441,6 +6777,9 @@ WeakAurasOptionsSaved = {
 		["召唤孤儿"] = {
 			["spells"] = "23012=132311,23013=132311",
 		},
+		["Test Enchant Weapon Flame"] = {
+			["spells"] = "19927=135913",
+		},
 		["Undead Slayer 15"] = {
 			["spells"] = "20606=136142",
 		},
@@ -6495,6 +6834,9 @@ WeakAurasOptionsSaved = {
 		["设计图：霜虎之刃"] = {
 			["spells"] = "3529=136235",
 		},
+		["QAEnchant Cloak +7 Fire Resistance"] = {
+			["spells"] = "19932=135913",
+		},
 		["神圣集中"] = {
 			["spells"] = "5927=135824,5928=135824,5929=135824,5935=135913,5936=135913,5937=135913",
 		},
@@ -6524,6 +6866,9 @@ WeakAurasOptionsSaved = {
 		},
 		["召唤巨眼触须"] = {
 			["spells"] = "26766=136235,26767=136235,26768=136235",
+		},
+		["Major Pet Upgrade II (NYI)"] = {
+			["spells"] = "1526=136235",
 		},
 		["强化挫志怒吼"] = {
 			["spells"] = "12324=132366,12876=132366,12877=132366,12878=132366,12879=132366",
@@ -6608,6 +6953,9 @@ WeakAurasOptionsSaved = {
 		},
 		["鬼纹外衣"] = {
 			["spells"] = "18416=132149",
+		},
+		["Testing Totem Dummy"] = {
+			["spells"] = "22050=135825",
 		},
 		["Rat Aggro Clear"] = {
 			["spells"] = "18959=136197,18967=136197",
@@ -6744,8 +7092,8 @@ WeakAurasOptionsSaved = {
 		["横扫"] = {
 			["spells"] = "26103=136104",
 		},
-		["干扰群居龙蛋"] = {
-			["spells"] = "15746=136235",
+		["Zone Recall (OLD)"] = {
+			["spells"] = "50=136235",
 		},
 		["食谱：洛恩塔姆薯块"] = {
 			["spells"] = "22762=136235",
@@ -6776,6 +7124,9 @@ WeakAurasOptionsSaved = {
 		},
 		["邪恶皮甲短裤"] = {
 			["spells"] = "19083=136235",
+		},
+		["Frostwolf Muzzle Effect DND"] = {
+			["spells"] = "21795=136235",
 		},
 		["Increased Shadow Resist 16"] = {
 			["spells"] = "14679=136235",
@@ -6819,6 +7170,9 @@ WeakAurasOptionsSaved = {
 		["Hate to Zero"] = {
 			["spells"] = "25592=136190,26569=136235,26637=136235,29526=136190",
 		},
+		["Summon Poley"] = {
+			["spells"] = "28505=132311",
+		},
 		["Test Maul"] = {
 			["spells"] = "24042=132136",
 		},
@@ -6827,6 +7181,9 @@ WeakAurasOptionsSaved = {
 		},
 		["机械幼龙"] = {
 			["spells"] = "3969=136235,4024=132836,4073=132836,23051=136235,23076=134153",
+		},
+		["Draconic For Dummies 5 DND"] = {
+			["spells"] = "25764=136235",
 		},
 		["制造遗物包裹"] = {
 			["spells"] = "18987=136235,18988=136235",
@@ -6861,8 +7218,8 @@ WeakAurasOptionsSaved = {
 		["图样：塞纳留斯之袋"] = {
 			["spells"] = "27730=136235",
 		},
-		["音素爆破"] = {
-			["spells"] = "8281=136222",
+		["Dragon Slayer (OLD)"] = {
+			["spells"] = "4667=132323,4668=132323,4675=132323,4676=132323",
 		},
 		["祝福之魂"] = {
 			["spells"] = "21744=135913",
@@ -6924,17 +7281,26 @@ WeakAurasOptionsSaved = {
 		["高速青铜齿轮"] = {
 			["spells"] = "3942=136235,4005=136235",
 		},
+		["QAEnchant Weapon Healing Power"] = {
+			["spells"] = "23144=135913",
+		},
 		["卓越法力之油"] = {
 			["spells"] = "25123=136235,25130=135913",
 		},
 		["图样：绿色丝质包"] = {
 			["spells"] = "6694=136235",
 		},
+		["Blue Dragon Immunity (PT)"] = {
+			["spells"] = "18747=136235",
+		},
 		["快速回避"] = {
 			["spells"] = "5426=136047",
 		},
 		["召唤地狱火仆从"] = {
 			["spells"] = "12740=136219",
+		},
+		["Precious Transform to Felhound DND"] = {
+			["spells"] = "23200=136235",
 		},
 		["火焰抗性"] = {
 			["spells"] = "541=136235,1599=136075,2868=135824,4057=135806,4547=136075,4551=136075,4552=136075,4553=136075,4554=136075,4555=136075,4556=136075,4557=136075,4601=136075,4602=136075,4603=136075,4604=136075,4605=136075,4606=136075,4607=136075,8185=135832,10534=135832,10535=135832,23992=135806,24439=135806,24440=135806,24441=135806,24442=135806,24444=135806,24445=135806,24463=135806,24464=135806,24468=135806,24470=135806,24472=135806,27533=135806,28765=135806",
@@ -6978,6 +7344,9 @@ WeakAurasOptionsSaved = {
 		["公式：附魔盾牌 - 超强精神"] = {
 			["spells"] = "20074=136235",
 		},
+		["Test Critical Bonus"] = {
+			["spells"] = "24219=136235",
+		},
 		["巫师之油"] = {
 			["spells"] = "25121=136235,25128=135913",
 		},
@@ -7016,6 +7385,9 @@ WeakAurasOptionsSaved = {
 		},
 		["增强钝器 II"] = {
 			["spells"] = "3113=136235",
+		},
+		["Summon Templar, Trigger"] = {
+			["spells"] = "24745=136235",
 		},
 		["Brood of Nozdormu Factoin +1000"] = {
 			["spells"] = "25992=136235",
@@ -7125,8 +7497,14 @@ WeakAurasOptionsSaved = {
 		["五月柱效果"] = {
 			["spells"] = "29127=136235",
 		},
+		["Conjure Ichman's Beacon DND"] = {
+			["spells"] = "21731=136235",
+		},
 		["Burning Felguard Spawn"] = {
 			["spells"] = "16074=135805",
+		},
+		["Conjure Frostwolf Rank 1 Insignia DND"] = {
+			["spells"] = "22108=136235",
 		},
 		["强效属性"] = {
 			["spells"] = "19988=136235",
@@ -7215,6 +7593,9 @@ WeakAurasOptionsSaved = {
 		["骨镰护腕"] = {
 			["spells"] = "28088=132273",
 		},
+		["(OLD) Magic Focus"] = {
+			["spells"] = "2916=136013,4810=136013",
+		},
 		["红色骸骨军马"] = {
 			["spells"] = "17462=132264",
 		},
@@ -7248,8 +7629,8 @@ WeakAurasOptionsSaved = {
 		["蛮皮外衣"] = {
 			["spells"] = "10544=136235,23627=136021",
 		},
-		["果断一击"] = {
-			["spells"] = "6559=132340,6563=132340",
+		["Damage Immunity Test"] = {
+			["spells"] = "1302=136235",
 		},
 		["自然的平衡"] = {
 			["spells"] = "5414=136235",
@@ -7298,6 +7679,9 @@ WeakAurasOptionsSaved = {
 		},
 		["大师级炼金术"] = {
 			["spells"] = "11612=136240",
+		},
+		["Summon Augur's Belt DND"] = {
+			["spells"] = "28923=136235",
 		},
 		["图样：蛮皮护肩"] = {
 			["spells"] = "10530=136235",
@@ -7377,8 +7761,8 @@ WeakAurasOptionsSaved = {
 		["召唤白色小鸡"] = {
 			["spells"] = "10687=132311",
 		},
-		["召唤棕色陆行鸟"] = {
-			["spells"] = "10800=132253",
+		["Language Old Tongue (NYI)"] = {
+			["spells"] = "817=136235",
 		},
 		["Staff Strike II (Disabled)"] = {
 			["spells"] = "748=132325",
@@ -7391,6 +7775,9 @@ WeakAurasOptionsSaved = {
 		},
 		["蛛丝便鞋"] = {
 			["spells"] = "3856=132149",
+		},
+		["Test Rip"] = {
+			["spells"] = "24238=132152",
 		},
 		["提高区域"] = {
 			["spells"] = "23549=136235",
@@ -7500,8 +7887,8 @@ WeakAurasOptionsSaved = {
 		["神圣冲击"] = {
 			["spells"] = "2512=132326,2513=132326,2514=132326,2515=132326,2516=132326,23269=135903",
 		},
-		["复活节惊骇"] = {
-			["spells"] = "25022=135842,25023=135842",
+		["GM Only ON"] = {
+			["spells"] = "18139=136235",
 		},
 		["坐骑速度"] = {
 			["spells"] = "13587=134010",
@@ -7557,6 +7944,9 @@ WeakAurasOptionsSaved = {
 		["附魔双手武器 - 初级冲击"] = {
 			["spells"] = "7745=135913,7746=135913",
 		},
+		["Copy of Blink"] = {
+			["spells"] = "29207=135736",
+		},
 		["Despawn Spectral Combatants"] = {
 			["spells"] = "17678=136235",
 		},
@@ -7581,11 +7971,17 @@ WeakAurasOptionsSaved = {
 		["Increased Agility 04"] = {
 			["spells"] = "7490=136235",
 		},
+		["Summon Drape of Vaulted Secrets DND"] = {
+			["spells"] = "29016=136235",
+		},
 		["隐藏"] = {
 			["spells"] = "6920=132320",
 		},
 		["强效小鬼"] = {
 			["spells"] = "1946=136172",
+		},
+		["[PH] Teleport to Undercity"] = {
+			["spells"] = "5000=136235",
 		},
 		["Attack Power 92"] = {
 			["spells"] = "15832=136235",
@@ -7686,6 +8082,9 @@ WeakAurasOptionsSaved = {
 		["狼头之盔"] = {
 			["spells"] = "10621=136235,10629=136021,17768=136235",
 		},
+		["Beast Slayer (OLD)"] = {
+			["spells"] = "4637=136095,4644=136095",
+		},
 		["毒性吐息"] = {
 			["spells"] = "24818=136169",
 		},
@@ -7709,6 +8108,9 @@ WeakAurasOptionsSaved = {
 		},
 		["狂怒光环"] = {
 			["spells"] = "7069=136146",
+		},
+		["Red Dragon Transform DND"] = {
+			["spells"] = "25106=136235",
 		},
 		["大篝火伤害"] = {
 			["spells"] = "23485=135805",
@@ -7787,6 +8189,9 @@ WeakAurasOptionsSaved = {
 		},
 		["吞咽灵魂"] = {
 			["spells"] = "18759=136235,18761=136235",
+		},
+		["Magic Missile (TEST)"] = {
+			["spells"] = "58=136235",
 		},
 		["Increased Agility 13"] = {
 			["spells"] = "9258=136235",
@@ -7923,6 +8328,9 @@ WeakAurasOptionsSaved = {
 		["Increase Shadow Dam 32"] = {
 			["spells"] = "18028=136235",
 		},
+		["Copy of Well Fed"] = {
+			["spells"] = "24798=136000",
+		},
 		["召唤口齿触须"] = {
 			["spells"] = "26236=136235,26237=136235,26332=136235",
 		},
@@ -7944,8 +8352,8 @@ WeakAurasOptionsSaved = {
 		["达纳苏斯声望"] = {
 			["spells"] = "24650=136235",
 		},
-		["治疗之触回馈"] = {
-			["spells"] = "28847=136052",
+		["Normal bow shot (TEST)"] = {
+			["spells"] = "59=136235",
 		},
 		["制造优美的信件"] = {
 			["spells"] = "21100=136235",
@@ -7959,8 +8367,8 @@ WeakAurasOptionsSaved = {
 		["雏龙之语：蓝色"] = {
 			["spells"] = "22285=136010,22290=136010,22559=136010",
 		},
-		["Increased Intellect 21"] = {
-			["spells"] = "14411=136235",
+		["Debuff Holy Resist (TEST)"] = {
+			["spells"] = "3719=136235",
 		},
 		["Summon Type B Periodic (20 sec)"] = {
 			["spells"] = "29394=136235",
@@ -8040,6 +8448,9 @@ WeakAurasOptionsSaved = {
 		["鬼纹手套"] = {
 			["spells"] = "18413=132149",
 		},
+		["Leech (TEST)"] = {
+			["spells"] = "15=136235",
+		},
 		["Increased Agility 35"] = {
 			["spells"] = "14399=136235",
 		},
@@ -8055,8 +8466,8 @@ WeakAurasOptionsSaved = {
 		["奥宁的伪装"] = {
 			["spells"] = "9572=136047",
 		},
-		["召唤青色陆行鸟"] = {
-			["spells"] = "10804=132253",
+		["QAEnchant Cloak +10 Shadow Resistance"] = {
+			["spells"] = "6476=136235",
 		},
 		["Increase Healing 110"] = {
 			["spells"] = "26690=136235",
@@ -8069,6 +8480,9 @@ WeakAurasOptionsSaved = {
 		},
 		["无畏突袭 III"] = {
 			["spells"] = "2454=132316",
+		},
+		["Distract (TEST)"] = {
+			["spells"] = "5260=136235",
 		},
 		["召唤血箭"] = {
 			["spells"] = "18262=132140",
@@ -8198,6 +8612,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increase Nature Dam 31"] = {
 			["spells"] = "18006=136235",
+		},
+		["Elemental Slayer (OLD)"] = {
+			["spells"] = "4687=135861,4688=135861,4694=135861,4695=135861",
 		},
 		["鞭根块茎"] = {
 			["spells"] = "15700=136235",
@@ -8361,6 +8778,9 @@ WeakAurasOptionsSaved = {
 		["力量衰减"] = {
 			["spells"] = "6951=135914,13528=136006",
 		},
+		["Defensive State (DND)"] = {
+			["spells"] = "5301=132110,13358=132110,16092=132110",
+		},
 		["抽取灵魂"] = {
 			["spells"] = "24811=136219",
 		},
@@ -8472,8 +8892,8 @@ WeakAurasOptionsSaved = {
 		["科多兽皮包"] = {
 			["spells"] = "5244=136235",
 		},
-		["跳跃"] = {
-			["spells"] = "28683=132572",
+		["Punctured Voodoo Doll PRT DND"] = {
+			["spells"] = "24284=136235",
 		},
 		["Create Minion Trap: Ghoul/Skeleton"] = {
 			["spells"] = "28194=136235",
@@ -8511,6 +8931,9 @@ WeakAurasOptionsSaved = {
 		["Increase Healing 92"] = {
 			["spells"] = "23593=136235",
 		},
+		["Summon Illusionist's BP DND"] = {
+			["spells"] = "28949=136235",
+		},
 		["召唤神圣坐骑"] = {
 			["spells"] = "31726=136103",
 		},
@@ -8529,6 +8952,9 @@ WeakAurasOptionsSaved = {
 		["召唤顽石流放者"] = {
 			["spells"] = "4931=136192",
 		},
+		["Lordaeron's Blessing Effect (DND)"] = {
+			["spells"] = "31906=136235",
+		},
 		["Increased Shadow Resist 26"] = {
 			["spells"] = "14689=136235",
 		},
@@ -8538,8 +8964,14 @@ WeakAurasOptionsSaved = {
 		["召唤蓝色其拉作战坦克"] = {
 			["spells"] = "25953=134398",
 		},
+		["Demonic Frenzy Cleanse DND"] = {
+			["spells"] = "23258=136235",
+		},
 		["附魔护腕 - 强效智力"] = {
 			["spells"] = "20008=135913",
+		},
+		["Create Zul'Gurub Talisman WAR R3 DND"] = {
+			["spells"] = "24000=136235",
 		},
 		["火焰之盾效果 IV"] = {
 			["spells"] = "3055=135817",
@@ -8694,6 +9126,15 @@ WeakAurasOptionsSaved = {
 		["Increased Fire Resist 19"] = {
 			["spells"] = "14599=136235",
 		},
+		["Copy of Improved Concentration Aura"] = {
+			["spells"] = "27736=135933",
+		},
+		["Charm+ (TEST)"] = {
+			["spells"] = "7033=136235",
+		},
+		["Self Visual - Sleep Until Cancelled (DND)"] = {
+			["spells"] = "14915=136168,16093=136168",
+		},
 		["精神法杖 V"] = {
 			["spells"] = "2716=132325",
 		},
@@ -8721,8 +9162,8 @@ WeakAurasOptionsSaved = {
 		["拦截昏迷"] = {
 			["spells"] = "20253=135860,20614=135860,20615=135860",
 		},
-		["恢复生命"] = {
-			["spells"] = "18956=134335,18957=134335",
+		["Gemology - Copper (DND)"] = {
+			["spells"] = "12681=134118",
 		},
 		["召唤脆弱的骷髅"] = {
 			["spells"] = "16531=136187",
@@ -8826,8 +9267,14 @@ WeakAurasOptionsSaved = {
 		["Walk of Fire Trigger (DNC)"] = {
 			["spells"] = "269=136235",
 		},
+		["Copy of Aura of the Blue Dragon"] = {
+			["spells"] = "27521=136208",
+		},
 		["昏迷打击"] = {
 			["spells"] = "5703=132326",
+		},
+		["Rimblat Grows Flower DND"] = {
+			["spells"] = "27824=136235",
 		},
 		["Increase Spell Dam 19"] = {
 			["spells"] = "18054=136235,18055=136235",
@@ -8850,8 +9297,11 @@ WeakAurasOptionsSaved = {
 		["荣誉点数+41"] = {
 			["spells"] = "31416=136235",
 		},
-		["Nefarian Tunnel Selection (L3)"] = {
-			["spells"] = "23346=136235",
+		["Backstab (TEST)"] = {
+			["spells"] = "8627=132090",
+		},
+		["[PH] Teleport to Booty Bay"] = {
+			["spells"] = "4997=136235",
 		},
 		["神圣之怒"] = {
 			["spells"] = "18530=135971,18531=135971,18533=135971,18534=135971,18535=135971,28883=136208",
@@ -8964,6 +9414,12 @@ WeakAurasOptionsSaved = {
 		["重型护甲片"] = {
 			["spells"] = "3780=136235,3781=136021",
 		},
+		["Eye of Kilrogg Passive (DND)"] = {
+			["spells"] = "2585=136160",
+		},
+		["Zaetar's Release (DND)"] = {
+			["spells"] = "21896=136100",
+		},
 		["附魔护腕 - 次级精神"] = {
 			["spells"] = "7859=135913",
 		},
@@ -9000,6 +9456,9 @@ WeakAurasOptionsSaved = {
 		["火焰披风"] = {
 			["spells"] = "18364=135806,18374=136235,18422=132149",
 		},
+		["Test NPC Resurrection"] = {
+			["spells"] = "21074=135955",
+		},
 		["腐化敏捷"] = {
 			["spells"] = "6817=135914",
 		},
@@ -9018,8 +9477,8 @@ WeakAurasOptionsSaved = {
 		["防护神圣结界"] = {
 			["spells"] = "936=136235,6231=136120",
 		},
-		["风暴掌握"] = {
-			["spells"] = "29005=136075",
+		["QAEnchant Cloak +3 Agility"] = {
+			["spells"] = "3231=136235",
 		},
 		["阿迦玛甘的敏捷"] = {
 			["spells"] = "17013=136114",
@@ -9093,6 +9552,9 @@ WeakAurasOptionsSaved = {
 		["魔爆术"] = {
 			["spells"] = "1449=136116,1467=136116,8437=136116,8438=136116,8439=136116,8440=136116,8441=136116,8442=136116,9433=136116,10201=136116,10202=136116,10203=136116,10204=136116,11975=136116,13745=136116,15253=136116,15453=136116,19712=136116,21073=136116,22271=136116,22460=136116,22938=136116,23413=136129,25679=136116,26192=136116,26643=136116,27989=136116,28450=136116,30096=136116",
 		},
+		["Create Hive'Ashi Rubbing DND"] = {
+			["spells"] = "24806=136235",
+		},
 		["Guardian of Icecrown Passive"] = {
 			["spells"] = "29897=136235",
 		},
@@ -9150,6 +9612,9 @@ WeakAurasOptionsSaved = {
 		["简易的裙子"] = {
 			["spells"] = "8465=132149,8466=136021",
 		},
+		["[PH] Buttress Activator"] = {
+			["spells"] = "28086=136235",
+		},
 		["Spore Tree Trigger"] = {
 			["spells"] = "21733=136235",
 		},
@@ -9158,6 +9623,9 @@ WeakAurasOptionsSaved = {
 		},
 		["粗制砂轮"] = {
 			["spells"] = "3326=136192,3344=136235",
+		},
+		["Quest - Kodo Fade Out (DND)"] = {
+			["spells"] = "22969=136235",
 		},
 		["弩强化"] = {
 			["spells"] = "5970=132222,5971=132222,5972=132222,5980=132329,5982=132329,5983=132329",
@@ -9198,14 +9666,17 @@ WeakAurasOptionsSaved = {
 		["结构图：精确瞄准镜"] = {
 			["spells"] = "17437=136235",
 		},
-		["奥术箭"] = {
-			["spells"] = "13748=135753,13901=135753,15124=135753,15230=135753,15254=135753,15451=135753,15979=135753,20720=135753,20829=135753,25055=135753",
+		["Debuff Nature (TEST)"] = {
+			["spells"] = "3023=136235",
 		},
 		["隐迹鬼魂"] = {
 			["spells"] = "4986=136047",
 		},
 		["Increased Shadow Resist 11"] = {
 			["spells"] = "14674=136235",
+		},
+		["Summon Hammer of the Gathering Storm DND"] = {
+			["spells"] = "29027=136235",
 		},
 		["惩罚光环"] = {
 			["spells"] = "7294=135873,7296=135873,8990=135873,10298=135873,10299=135873,10300=135873,10301=135873,10302=135873,10303=135873,10304=135873,10305=135873,13008=135873",
@@ -9227,6 +9698,9 @@ WeakAurasOptionsSaved = {
 		},
 		["高图斯的命令"] = {
 			["spells"] = "16548=136235",
+		},
+		["Naxxramas Entry Flag Effect DND"] = {
+			["spells"] = "29294=136235",
 		},
 		["友好轰炸"] = {
 			["spells"] = "21879=136235",
@@ -9264,8 +9738,8 @@ WeakAurasOptionsSaved = {
 		["图腾能量"] = {
 			["spells"] = "28818=136235",
 		},
-		["Increase Shadow Dam 72"] = {
-			["spells"] = "26737=136235",
+		["Enter the Light DND"] = {
+			["spells"] = "23107=136235",
 		},
 		["远程武器专精"] = {
 			["spells"] = "19507=135615,19508=135615,19509=135615,19510=135615,19511=135615",
@@ -9318,6 +9792,9 @@ WeakAurasOptionsSaved = {
 		["Increase Healing 58"] = {
 			["spells"] = "18040=136235",
 		},
+		["Test Enemy Crit Bonus - 10%"] = {
+			["spells"] = "25848=136101",
+		},
 		["黑色龙鳞护肩"] = {
 			["spells"] = "19094=136235",
 		},
@@ -9362,6 +9839,9 @@ WeakAurasOptionsSaved = {
 		},
 		["公式：附魔护腕 - 超强耐力"] = {
 			["spells"] = "20086=136235",
+		},
+		["Copy of Summon Duke"] = {
+			["spells"] = "24783=136235",
 		},
 		["结构图：闪光雷"] = {
 			["spells"] = "8244=136235",
@@ -9501,6 +9981,9 @@ WeakAurasOptionsSaved = {
 		["Attack Power 06"] = {
 			["spells"] = "9138=136235",
 		},
+		["Copy of Moonfire"] = {
+			["spells"] = "26386=136096",
+		},
 		["图样：灰布短裤"] = {
 			["spells"] = "18508=136235",
 		},
@@ -9515,6 +9998,9 @@ WeakAurasOptionsSaved = {
 		},
 		["魔暴龙皮护腿"] = {
 			["spells"] = "19097=136235",
+		},
+		["Wyatt Test"] = {
+			["spells"] = "514=136235,11593=136235,12565=136163,28601=136235,28605=136235",
 		},
 		["Undead Slayer 100"] = {
 			["spells"] = "28893=135923",
@@ -9551,6 +10037,9 @@ WeakAurasOptionsSaved = {
 		},
 		["蛮力药剂"] = {
 			["spells"] = "17537=134820,17557=136235",
+		},
+		["Zul'Gurub Talisman PAL R4 DND"] = {
+			["spells"] = "24010=136235",
 		},
 		["深度沉睡"] = {
 			["spells"] = "12890=136135",
@@ -9648,8 +10137,8 @@ WeakAurasOptionsSaved = {
 		["召唤玩家"] = {
 			["spells"] = "20279=136235,20311=136235,20477=136235,21150=136235,21727=136235,22951=136235,24776=136235,25104=136235,26229=136235,26446=136235",
 		},
-		["Increased Pet Crit +2%"] = {
-			["spells"] = "27042=136095,27043=136095",
+		["Stoneclaw Totem Effect TEST"] = {
+			["spells"] = "23790=136097",
 		},
 		["绘制上古雕文"] = {
 			["spells"] = "24815=136235",
@@ -9659,6 +10148,9 @@ WeakAurasOptionsSaved = {
 		},
 		["重砂轮"] = {
 			["spells"] = "3337=136192,3348=136235",
+		},
+		["Script Test"] = {
+			["spells"] = "5581=136006",
 		},
 		["软泥喷射"] = {
 			["spells"] = "28157=136235",
@@ -9714,8 +10206,8 @@ WeakAurasOptionsSaved = {
 		["强化旋风斩"] = {
 			["spells"] = "24431=136235",
 		},
-		["枪械射击"] = {
-			["spells"] = "7918=132222",
+		["Immune Effect (TEST)"] = {
+			["spells"] = "3017=136235",
 		},
 		["黑皮腰带"] = {
 			["spells"] = "3766=136235,3792=136021",
@@ -10008,6 +10500,9 @@ WeakAurasOptionsSaved = {
 		["Increased Shadow Resist 36"] = {
 			["spells"] = "14698=136235",
 		},
+		["Time Stop Visual DND"] = {
+			["spells"] = "25171=136235",
+		},
 		["Increased Nature Resist 43"] = {
 			["spells"] = "14986=136235",
 		},
@@ -10131,6 +10626,9 @@ WeakAurasOptionsSaved = {
 		["Increase Frost Dam 15"] = {
 			["spells"] = "17891=136235",
 		},
+		["Summon Sickle of Unyielding Strength DND"] = {
+			["spells"] = "29034=136235,29037=136235",
+		},
 		["周期性暗影风暴"] = {
 			["spells"] = "2148=136163",
 		},
@@ -10232,6 +10730,9 @@ WeakAurasOptionsSaved = {
 		},
 		["制造阿拉希资源箱"] = {
 			["spells"] = "24017=136235",
+		},
+		["Alterac Ram Collar DND"] = {
+			["spells"] = "21866=136235",
 		},
 		["铁炉堡友谊礼品包"] = {
 			["spells"] = "27665=134140",
@@ -10371,6 +10872,9 @@ WeakAurasOptionsSaved = {
 		["Increased Intellect 33"] = {
 			["spells"] = "14423=136235",
 		},
+		["Summon Tamed (TEST)"] = {
+			["spells"] = "2654=136235",
+		},
 		["Choose Camp Type"] = {
 			["spells"] = "28201=136235",
 		},
@@ -10379,6 +10883,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increased Arcane Resist 08"] = {
 			["spells"] = "14710=136235",
+		},
+		["Crystal Prison Conjure DND"] = {
+			["spells"] = "23022=136235",
 		},
 		["便携式青铜迫击炮"] = {
 			["spells"] = "3960=136235",
@@ -10413,8 +10920,8 @@ WeakAurasOptionsSaved = {
 		["奥术冥想"] = {
 			["spells"] = "18462=136208,18463=136208,18464=136208",
 		},
-		["风怒武器"] = {
-			["spells"] = "8232=136018,8233=136018,8234=136018,8235=136018,8236=136018,8237=136018,10484=136018,10486=136018,10488=136018,16361=136018,16362=136018,16363=136018",
+		["Interrupt (PT)"] = {
+			["spells"] = "5133=136235",
 		},
 		["断筋怒气减少"] = {
 			["spells"] = "22778=132316",
@@ -10536,8 +11043,8 @@ WeakAurasOptionsSaved = {
 		["无坚不摧之力"] = {
 			["spells"] = "23699=136235",
 		},
-		["设计图：重型木喉腰带"] = {
-			["spells"] = "23630=136235",
+		["Conjure Scrying Scope (Alliance) DND"] = {
+			["spells"] = "21542=136235",
 		},
 		["Increased Fire Resist 18"] = {
 			["spells"] = "14598=136235",
@@ -10641,6 +11148,9 @@ WeakAurasOptionsSaved = {
 		["安格弗的剑"] = {
 			["spells"] = "15602=132275",
 		},
+		["Conjure Jeztor's Beacon DND"] = {
+			["spells"] = "21368=136235",
+		},
 		["Flametongue Totem Passive"] = {
 			["spells"] = "8229=136040,8251=136040,10524=136040,16388=136040",
 		},
@@ -10665,14 +11175,23 @@ WeakAurasOptionsSaved = {
 		["闪避削砍 II"] = {
 			["spells"] = "1818=132223",
 		},
+		["Create Hunter Epic Staff DND"] = {
+			["spells"] = "24872=136235",
+		},
 		["Guard Slip'kik Trigger"] = {
 			["spells"] = "31770=136235",
+		},
+		["SPELLDEFENSE (DND)"] = {
+			["spells"] = "522=136235",
 		},
 		["Increase Shadow Dam 27"] = {
 			["spells"] = "18022=136235",
 		},
 		["蝰蛇钉刺"] = {
 			["spells"] = "2898=132157,3034=132157,14279=132157,14280=132157,14350=132157,14351=132157",
+		},
+		["QAEnchant Boots +7 Agility"] = {
+			["spells"] = "22101=135913",
 		},
 		["神圣怒火"] = {
 			["spells"] = "23979=136208",
@@ -10718,6 +11237,9 @@ WeakAurasOptionsSaved = {
 		},
 		["致伤毒药 II"] = {
 			["spells"] = "13228=134197",
+		},
+		["QAEnchant Cloak +15 Nature Resistance"] = {
+			["spells"] = "27119=135913",
 		},
 		["配方：怯逃药水"] = {
 			["spells"] = "6623=136235",
@@ -10884,6 +11406,9 @@ WeakAurasOptionsSaved = {
 		["疯狂的守财奴卡波尔"] = {
 			["spells"] = "5220=136129",
 		},
+		["Syndicate Tracker (MURP) DND"] = {
+			["spells"] = "21391=136235,21397=135736",
+		},
 		["强效敏捷"] = {
 			["spells"] = "11333=134873,11334=134873,13823=136235",
 		},
@@ -10947,6 +11472,9 @@ WeakAurasOptionsSaved = {
 		["Minion Spawner, Buttress"] = {
 			["spells"] = "27888=136235",
 		},
+		["Create Zul'Gurub Talisman WAR R1 DND"] = {
+			["spells"] = "23998=136235",
+		},
 		["设计图：黑铁头盔"] = {
 			["spells"] = "23656=136235",
 		},
@@ -10979,6 +11507,9 @@ WeakAurasOptionsSaved = {
 		},
 		["熔岩喷吐"] = {
 			["spells"] = "19449=135817,19450=135821",
+		},
+		["QAEnchant Bracer +24 Healing"] = {
+			["spells"] = "27116=135913",
 		},
 		["强化闪现术"] = {
 			["spells"] = "11262=136090,12604=136090",
@@ -11028,8 +11559,8 @@ WeakAurasOptionsSaved = {
 		["邪恶诅咒"] = {
 			["spells"] = "20006=136138",
 		},
-		["召唤奥罗甲虫"] = {
-			["spells"] = "26060=136235",
+		["Heal Self (TEST)"] = {
+			["spells"] = "18=136235",
 		},
 		["震耳嗓音"] = {
 			["spells"] = "12321=136075,12835=136075,12836=136075,12837=136075,12838=136075",
@@ -11070,6 +11601,9 @@ WeakAurasOptionsSaved = {
 		["召唤白猫"] = {
 			["spells"] = "10679=132311",
 		},
+		["UNUSED Quest - Create Empowered Mojo Bundle"] = {
+			["spells"] = "24263=136235",
+		},
 		["生命收割"] = {
 			["spells"] = "3243=136188",
 		},
@@ -11093,6 +11627,9 @@ WeakAurasOptionsSaved = {
 		},
 		["设计图：辐光手套"] = {
 			["spells"] = "16683=136235",
+		},
+		["Alterac Ram Collar Effect DND"] = {
+			["spells"] = "21867=136235",
 		},
 		["漂亮的蓝衬衣"] = {
 			["spells"] = "7892=132149",
@@ -11127,8 +11664,8 @@ WeakAurasOptionsSaved = {
 		["初级生命"] = {
 			["spells"] = "7419=136235",
 		},
-		["巫妖之击"] = {
-			["spells"] = "28873=136130",
+		["Zero Mana/Full Health DND"] = {
+			["spells"] = "23777=136235",
 		},
 		["血之狂热"] = {
 			["spells"] = "16487=136218,16488=136218,16489=136218,16490=136218,16491=136218,16492=136218",
@@ -11202,6 +11739,9 @@ WeakAurasOptionsSaved = {
 		["Increase Healing 36"] = {
 			["spells"] = "18031=136235",
 		},
+		["Copy of Shoot"] = {
+			["spells"] = "28317=132222",
+		},
 		["碎石穴居怪伪装"] = {
 			["spells"] = "5265=132288",
 		},
@@ -11223,11 +11763,17 @@ WeakAurasOptionsSaved = {
 		["图样：黑皮护肩"] = {
 			["spells"] = "3803=136235",
 		},
+		["Create Zul'Gurub Talisman WAR R2 DND"] = {
+			["spells"] = "23999=136235",
+		},
 		["Corrupted Strength Passive"] = {
 			["spells"] = "6821=136006",
 		},
 		["暴怒药水"] = {
 			["spells"] = "6618=136235",
+		},
+		["Aura Overlap TEST 2"] = {
+			["spells"] = "464=136235",
 		},
 		["血魂胸甲"] = {
 			["spells"] = "24136=136192",
@@ -11237,6 +11783,9 @@ WeakAurasOptionsSaved = {
 		},
 		["召唤小队机器人"] = {
 			["spells"] = "7975=136074",
+		},
+		["Drop Pillow DND"] = {
+			["spells"] = "23408=136235",
 		},
 		["Holiday Breath of Fire, Effect (NPC)"] = {
 			["spells"] = "29403=135818",
@@ -11249,6 +11798,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increased Armor 90"] = {
 			["spells"] = "9768=136235",
+		},
+		["Summon Band of Vaulted Secrets DND"] = {
+			["spells"] = "29017=136235",
 		},
 		["Ras Frostwhisper Visual Dummy"] = {
 			["spells"] = "17190=136235",
@@ -11276,6 +11828,9 @@ WeakAurasOptionsSaved = {
 		},
 		["召唤乌洛克"] = {
 			["spells"] = "16473=136235",
+		},
+		["OLDFrost Trap Effect"] = {
+			["spells"] = "14207=135840",
 		},
 		["必然的厄运"] = {
 			["spells"] = "29204=136179",
@@ -11364,6 +11919,9 @@ WeakAurasOptionsSaved = {
 		["设计图：秘银细剑"] = {
 			["spells"] = "10006=136235",
 		},
+		["Conjure Scourge Footsoldier DND"] = {
+			["spells"] = "23118=136235",
+		},
 		["毒之克星"] = {
 			["spells"] = "6354=136235",
 		},
@@ -11445,11 +12003,11 @@ WeakAurasOptionsSaved = {
 		["Despawn Base"] = {
 			["spells"] = "26594=135830",
 		},
-		["瓦塔拉克饰品的左瓣"] = {
-			["spells"] = "27146=136235",
+		["优质皮外套"] = {
+			["spells"] = "3761=136235,3788=136021",
 		},
-		["Undead Slayer 60"] = {
-			["spells"] = "28870=136142",
+		["Summon Templar Air, Trigger"] = {
+			["spells"] = "24757=136235",
 		},
 		["锯齿利刃"] = {
 			["spells"] = "14171=135315,14172=135315,14173=135315",
@@ -11475,8 +12033,14 @@ WeakAurasOptionsSaved = {
 		["Increased Agility 17"] = {
 			["spells"] = "14369=136235",
 		},
+		["QAEnchant Bracer +4 Mana\\5"] = {
+			["spells"] = "27115=135913",
+		},
 		["附魔胸甲 - 超强生命"] = {
 			["spells"] = "13858=135913,13861=135913",
+		},
+		["Poltergeist Periodic (DND)"] = {
+			["spells"] = "18349=136235",
 		},
 		["邪恶护甲"] = {
 			["spells"] = "1378=136225",
@@ -11523,6 +12087,9 @@ WeakAurasOptionsSaved = {
 		["地狱野猪"] = {
 			["spells"] = "12896=135817",
 		},
+		["QAEnchant Cloak +70 Armor"] = {
+			["spells"] = "22092=135913",
+		},
 		["驱奴者之杖"] = {
 			["spells"] = "17494=136013",
 		},
@@ -11540,6 +12107,9 @@ WeakAurasOptionsSaved = {
 		},
 		["坚固的平衡石"] = {
 			["spells"] = "9921=136192,9925=136235",
+		},
+		["Summon Isalien DND"] = {
+			["spells"] = "27190=136235",
 		},
 		["配方：怒气药水"] = {
 			["spells"] = "6621=136235",
@@ -11579,6 +12149,9 @@ WeakAurasOptionsSaved = {
 		},
 		["死亡缠绕伤害提高"] = {
 			["spells"] = "28541=136145",
+		},
+		["Summon Demoniac's Mantle DND"] = {
+			["spells"] = "28956=136235",
 		},
 		["Increased Intellect 20"] = {
 			["spells"] = "14410=136235",
@@ -11658,6 +12231,9 @@ WeakAurasOptionsSaved = {
 		["Holiday - Lunar Teleport Cap: Darnassus"] = {
 			["spells"] = "26409=135758",
 		},
+		["Summon Ring of the Gathering Storm DND"] = {
+			["spells"] = "29030=136235",
+		},
 		["龙灵采集器900型"] = {
 			["spells"] = "16007=136235",
 		},
@@ -11706,8 +12282,8 @@ WeakAurasOptionsSaved = {
 		["图样：虚空法袍"] = {
 			["spells"] = "18537=136235",
 		},
-		["附魔披风 - 次级火焰抗性"] = {
-			["spells"] = "7861=135913,7862=135913",
+		["Self Visual - Sleep 30s (DND)"] = {
+			["spells"] = "6431=136168",
 		},
 		["召唤土狼"] = {
 			["spells"] = "8276=132143",
@@ -11750,6 +12326,12 @@ WeakAurasOptionsSaved = {
 		},
 		["设计图：黑铁护肩"] = {
 			["spells"] = "15302=136235",
+		},
+		["Snowball Visual Test"] = {
+			["spells"] = "25995=132387",
+		},
+		["Sapphiron DND"] = {
+			["spells"] = "29250=136235",
 		},
 		["心灵碎裂"] = {
 			["spells"] = "25774=136025",
@@ -11839,7 +12421,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "13692=132278",
 		},
 		["Trigger Flight Path"] = {
-			["spells"] = "30059=136235",
+			["spells"] = "30058=136235,30059=136235",
 		},
 		["恶魔皮肤"] = {
 			["spells"] = "687=136185,696=136185,722=136235,1383=136185,20798=136185",
@@ -11876,6 +12458,9 @@ WeakAurasOptionsSaved = {
 		},
 		["刺穿关节"] = {
 			["spells"] = "6580=132109,6581=132109,6582=136231,6583=132368",
+		},
+		["Copy of Tail Sweep"] = {
+			["spells"] = "25653=134307",
 		},
 		["Hate to 90%"] = {
 			["spells"] = "19195=136190",
@@ -11916,8 +12501,8 @@ WeakAurasOptionsSaved = {
 		["快跑！"] = {
 			["spells"] = "8225=136183",
 		},
-		["珍珠披风"] = {
-			["spells"] = "6521=132149,6522=136021",
+		["Bear Form (PT) (NYI)"] = {
+			["spells"] = "2882=132276",
 		},
 		["灵魂支配"] = {
 			["spells"] = "16053=136206",
@@ -11955,8 +12540,8 @@ WeakAurasOptionsSaved = {
 		["召唤祖尔法拉克僵尸"] = {
 			["spells"] = "10247=136235,10747=136235",
 		},
-		["激活"] = {
-			["spells"] = "29166=136048,29167=136048",
+		["Polymorph (TEST)"] = {
+			["spells"] = "5254=136071",
 		},
 		["被遗忘者的意志"] = {
 			["spells"] = "7744=136187",
@@ -11987,6 +12572,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Despawn Buffet"] = {
 			["spells"] = "29336=136235",
+		},
+		["Summon Band of Unending Life DND"] = {
+			["spells"] = "29011=136235",
 		},
 		["棕山羊"] = {
 			["spells"] = "6899=132248",
@@ -12024,6 +12612,9 @@ WeakAurasOptionsSaved = {
 		["血瓣花除草器"] = {
 			["spells"] = "14806=136235",
 		},
+		["OLDSoul Link Effect"] = {
+			["spells"] = "18814=136160",
+		},
 		["Muglash Waiting"] = {
 			["spells"] = "20861=136235",
 		},
@@ -12050,6 +12641,9 @@ WeakAurasOptionsSaved = {
 		},
 		["次级火焰石攻击"] = {
 			["spells"] = "17809=132386",
+		},
+		["Summon Predator's Mantle DND"] = {
+			["spells"] = "28921=136235",
 		},
 		["变异爆炸"] = {
 			["spells"] = "28206=136235",
@@ -12101,6 +12695,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increase Healing 134"] = {
 			["spells"] = "29369=136235",
+		},
+		["Summon Predator's Bracers DND"] = {
+			["spells"] = "28930=136235",
 		},
 		["春节的财富！"] = {
 			["spells"] = "26522=134280",
@@ -12168,6 +12765,9 @@ WeakAurasOptionsSaved = {
 		["灰布披风"] = {
 			["spells"] = "18418=132149",
 		},
+		["Frog Self (TEST)"] = {
+			["spells"] = "25199=136203",
+		},
 		["Silence Trigger"] = {
 			["spells"] = "27561=136208",
 		},
@@ -12210,8 +12810,8 @@ WeakAurasOptionsSaved = {
 		["食谱：夜鳞鱼汤"] = {
 			["spells"] = "18255=136235",
 		},
-		["净化臭气弹"] = {
-			["spells"] = "24973=136235",
+		["QAEnchant Gloves +7 Agility"] = {
+			["spells"] = "22105=135913",
 		},
 		["Attack Power 42"] = {
 			["spells"] = "15809=136235",
@@ -12270,6 +12870,9 @@ WeakAurasOptionsSaved = {
 		["活动假人"] = {
 			["spells"] = "3932=136235,3995=136235,4071=136172",
 		},
+		["QAEnchant Chest +100 Health"] = {
+			["spells"] = "22089=135913",
+		},
 		["Increased Arcane Resist 24"] = {
 			["spells"] = "14726=136235",
 		},
@@ -12312,8 +12915,11 @@ WeakAurasOptionsSaved = {
 		["预言的光环"] = {
 			["spells"] = "24158=136235,24167=136235",
 		},
-		["恢复持续时间延长"] = {
-			["spells"] = "26171=136081",
+		["Copy of Increased Mana Regen"] = {
+			["spells"] = "23211=136235",
+		},
+		["原始蝙蝠皮护腕"] = {
+			["spells"] = "24123=136235",
 		},
 		["蛛网"] = {
 			["spells"] = "745=132149,4167=132149,4782=132149,4783=132149,4785=132149,6026=132149,6027=132149,6028=132149,12023=132149,28991=132149",
@@ -12390,6 +12996,9 @@ WeakAurasOptionsSaved = {
 		["Increase Frost Dam 20"] = {
 			["spells"] = "17896=136235",
 		},
+		["Punctured Voodoo Doll DRU DND"] = {
+			["spells"] = "24279=136235",
+		},
 		["强效治疗"] = {
 			["spells"] = "28306=135915",
 		},
@@ -12441,8 +13050,14 @@ WeakAurasOptionsSaved = {
 		["迟钝术 III"] = {
 			["spells"] = "867=136159,1227=136159",
 		},
+		["(DND) Summon Crystal Minion, Skeleton Uncommon"] = {
+			["spells"] = "28291=136235",
+		},
 		["图样：血藤长靴"] = {
 			["spells"] = "24096=136235",
+		},
+		["[PH] Teleport to Felwood"] = {
+			["spells"] = "6483=136235",
 		},
 		["传送：暴风城"] = {
 			["spells"] = "665=135763,3561=135763",
@@ -12558,8 +13173,8 @@ WeakAurasOptionsSaved = {
 		["狂暴之怒效果"] = {
 			["spells"] = "23690=136235,23691=136235",
 		},
-		["绿色科多兽"] = {
-			["spells"] = "18991=132244",
+		["FIRESTAFF (DND)"] = {
+			["spells"] = "2110=135807",
 		},
 		["精神水晶"] = {
 			["spells"] = "15231=134088",
@@ -12606,6 +13221,9 @@ WeakAurasOptionsSaved = {
 		["疾病喷吐"] = {
 			["spells"] = "17745=136134",
 		},
+		["Conjure Ryson's Beacon (Horde) DND"] = {
+			["spells"] = "21464=136235",
+		},
 		["变形射线"] = {
 			["spells"] = "6965=136048",
 		},
@@ -12618,8 +13236,8 @@ WeakAurasOptionsSaved = {
 		["守护之刺"] = {
 			["spells"] = "29637=135934,29655=135990",
 		},
-		["苦痛光环"] = {
-			["spells"] = "28413=136139",
+		["Create Zul'Gurub Talisman PRT R2 DND"] = {
+			["spells"] = "24013=136235",
 		},
 		["残杀"] = {
 			["spells"] = "28374=136235,28375=136235",
@@ -12693,6 +13311,9 @@ WeakAurasOptionsSaved = {
 		["灵魂撕裂"] = {
 			["spells"] = "3405=136222,16243=136048,22743=136048",
 		},
+		["Signet Ring of the Bronze Dragonflight CASTER R5 DND"] = {
+			["spells"] = "25925=136235",
+		},
 		["秘银杆设计图"] = {
 			["spells"] = "12895=136235",
 		},
@@ -12741,8 +13362,8 @@ WeakAurasOptionsSaved = {
 		["嫩狼肉排"] = {
 			["spells"] = "22480=136192",
 		},
-		["彩带之舞"] = {
-			["spells"] = "29175=135270",
+		["QAEnchant Cloak +1% Dodge"] = {
+			["spells"] = "27122=135913",
 		},
 		["闪现术"] = {
 			["spells"] = "517=136235,894=136235,1953=135736,5499=135736,14514=135736,21655=135736,28391=135736,28401=135736,29208=135736,29209=135736,29210=135736,29211=135736",
@@ -12750,20 +13371,26 @@ WeakAurasOptionsSaved = {
 		["平静自身"] = {
 			["spells"] = "19951=135954",
 		},
+		["Language Thalassian (NYI)"] = {
+			["spells"] = "813=136235",
+		},
 		["开启"] = {
 			["spells"] = "24390=136235,24391=136235,26868=136235",
 		},
 		["阿克鲁比的开锁"] = {
 			["spells"] = "6421=136058",
 		},
-		["图样：熔火腰带"] = {
-			["spells"] = "23718=136235",
+		["Helcular's Spawn"] = {
+			["spells"] = "3390=136235",
 		},
 		["Corrupted Stamina Passive"] = {
 			["spells"] = "6822=136006,23245=136006",
 		},
 		["Increased Arcane Resist 16"] = {
 			["spells"] = "14718=136235",
+		},
+		["The Breaking Left Blade DND"] = {
+			["spells"] = "22991=136164",
 		},
 		["补充法力 I"] = {
 			["spells"] = "9252=134134",
@@ -12855,8 +13482,8 @@ WeakAurasOptionsSaved = {
 		["特效生命"] = {
 			["spells"] = "19990=136235",
 		},
-		["水晶润喉片"] = {
-			["spells"] = "30018=136235,30047=136192",
+		["Disenchant (PT)"] = {
+			["spells"] = "10694=136235",
 		},
 		["Nefarian Tunnel Selection (R5)"] = {
 			["spells"] = "23353=136235",
@@ -12870,11 +13497,17 @@ WeakAurasOptionsSaved = {
 		["食谱：鳄鱼煎排"] = {
 			["spells"] = "6534=136235",
 		},
+		["Create iCoke Prize Voucher"] = {
+			["spells"] = "23975=136235,28532=136235",
+		},
 		["污染"] = {
 			["spells"] = "27177=136160,27178=136160,27183=136160,27192=136160,27193=136160,27194=136160,27195=136160,27196=136160,27197=136160,27198=136160,27199=136160,27200=136160",
 		},
 		["大鱼片"] = {
 			["spells"] = "18246=136192",
+		},
+		["Melodious Rapture Visual (DND)"] = {
+			["spells"] = "21051=136235",
 		},
 		["Perm. Illusion Succubus"] = {
 			["spells"] = "8315=132311",
@@ -12891,8 +13524,8 @@ WeakAurasOptionsSaved = {
 		["Increase Frost Dam 132"] = {
 			["spells"] = "24666=136235",
 		},
-		["图样：北极护腕"] = {
-			["spells"] = "28230=136235",
+		["磁性锁链"] = {
+			["spells"] = "28108=136235",
 		},
 		["Item +MANA/FR Leg R2"] = {
 			["spells"] = "15408=136235",
@@ -12954,6 +13587,9 @@ WeakAurasOptionsSaved = {
 		["Camp Type: Ghost/Ghoul"] = {
 			["spells"] = "28198=136235",
 		},
+		["QAEnchant Gloves +1% Haste"] = {
+			["spells"] = "22106=135913",
+		},
 		["石化武器"] = {
 			["spells"] = "8017=136086,8018=136086,8019=136086,8020=136086,8021=136086,8022=136086,10399=136086,10401=136086,10402=136086,16314=136086,16315=136086,16316=136086,16317=136086,16318=136086",
 		},
@@ -12978,8 +13614,8 @@ WeakAurasOptionsSaved = {
 		["黑暗引导"] = {
 			["spells"] = "21157=136121",
 		},
-		["配方：泰坦合剂"] = {
-			["spells"] = "17642=136235",
+		["Resistance (OLD)"] = {
+			["spells"] = "2381=136101",
 		},
 		["狼头之盔怒气"] = {
 			["spells"] = "29941=136009",
@@ -13011,11 +13647,17 @@ WeakAurasOptionsSaved = {
 		["Undo Crowd Control Rogue"] = {
 			["spells"] = "22891=136235",
 		},
+		["QAEnchant Shield +2% Block Chance"] = {
+			["spells"] = "27117=135913",
+		},
 		["食谱：彩鳍鱼"] = {
 			["spells"] = "7830=136235",
 		},
 		["阿克鲁比的传送"] = {
 			["spells"] = "6422=135826,15742=135826",
+		},
+		["Demon Slayer (OLD)"] = {
+			["spells"] = "4651=136172,4652=136172,4659=136172,4660=136172",
 		},
 		["林栖者护肩"] = {
 			["spells"] = "28482=132149",
@@ -13028,6 +13670,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Cluster Rocket, WHITE - D"] = {
 			["spells"] = "26317=136235",
+		},
+		["Pickpocket (PT)"] = {
+			["spells"] = "5967=136235",
 		},
 		["香辣狼肉"] = {
 			["spells"] = "2539=136192,2559=136021",
@@ -13046,6 +13691,9 @@ WeakAurasOptionsSaved = {
 		},
 		["爆竹"] = {
 			["spells"] = "25465=136235,25822=135805",
+		},
+		["Vipore Cat Form DND"] = {
+			["spells"] = "21653=136235",
 		},
 		["超级水晶"] = {
 			["spells"] = "25186=136235",
@@ -13092,8 +13740,8 @@ WeakAurasOptionsSaved = {
 		["设计图：黑手"] = {
 			["spells"] = "23651=136235",
 		},
-		["设计图：厚重黑曜石胸甲"] = {
-			["spells"] = "27593=136235",
+		["Conjure Mulverick's Beacon DND"] = {
+			["spells"] = "21372=136235",
 		},
 		["破甲虚弱"] = {
 			["spells"] = "7140=132109,23577=132212,23578=132212",
@@ -13103,6 +13751,9 @@ WeakAurasOptionsSaved = {
 		},
 		["制造召唤节杖：火"] = {
 			["spells"] = "24895=136235",
+		},
+		["Copy of Cleave"] = {
+			["spells"] = "28437=132338",
 		},
 		["白魂头盔"] = {
 			["spells"] = "16724=136192",
@@ -13233,8 +13884,8 @@ WeakAurasOptionsSaved = {
 		["Mass Smelt Copper OLD"] = {
 			["spells"] = "8296=136235,8298=136235",
 		},
-		["堕落恐惧"] = {
-			["spells"] = "27780=135923",
+		["Summon Dreadsteed Spirit (DND)"] = {
+			["spells"] = "23159=136235",
 		},
 		["Increased Stun Resist 01"] = {
 			["spells"] = "21351=136235",
@@ -13320,14 +13971,17 @@ WeakAurasOptionsSaved = {
 		["风怒图腾效果"] = {
 			["spells"] = "8514=136114,10607=136114,10611=136114",
 		},
-		["枪械专精"] = {
-			["spells"] = "5626=134537,5630=134537,5631=134537,5632=134537,5633=134537,5634=134537,5635=134537,5636=134537,5637=134537,5638=134537,5639=134537,5640=134537,5641=134537,5642=134537,5643=134537,5650=132222,5651=132222,5652=132222,5653=132222,5654=132222,5655=132222,5656=132222,5657=132222,5658=132222,5659=132222,5660=132222,5661=132222,5662=132222,5663=132222,5664=132222,20595=134537",
+		["Test - Warrior 40"] = {
+			["spells"] = "5205=136235",
 		},
 		["图样：重型蝎壳外衣"] = {
 			["spells"] = "19158=136235",
 		},
 		["死亡契约"] = {
 			["spells"] = "17471=136146,17472=136146,17698=136146",
+		},
+		["Editor test spell 2"] = {
+			["spells"] = "448=136235",
 		},
 		["Increased Strength 41"] = {
 			["spells"] = "14959=136235",
@@ -13364,6 +14018,9 @@ WeakAurasOptionsSaved = {
 		},
 		["库尔塔兹印记"] = {
 			["spells"] = "28832=136172",
+		},
+		["Signet Ring of the Bronze Dragonflight TANK R2 DND"] = {
+			["spells"] = "25933=136235",
 		},
 		["结构图：地精暗雷"] = {
 			["spells"] = "4034=136235",
@@ -13425,6 +14082,9 @@ WeakAurasOptionsSaved = {
 		["斯卡尔德"] = {
 			["spells"] = "17276=135807",
 		},
+		["Tower Capture (DND)"] = {
+			["spells"] = "31929=136153",
+		},
 		["多彩黎明衬肩"] = {
 			["spells"] = "22599=136235",
 		},
@@ -13452,6 +14112,9 @@ WeakAurasOptionsSaved = {
 		["附魔手套 - 采矿"] = {
 			["spells"] = "13612=135913",
 		},
+		["Create Chapter 2 DND"] = {
+			["spells"] = "22209=136235",
+		},
 		["Uber Heal Over Time"] = {
 			["spells"] = "1908=135923",
 		},
@@ -13464,6 +14127,9 @@ WeakAurasOptionsSaved = {
 		["召唤法师"] = {
 			["spells"] = "3658=136075",
 		},
+		["Aura Overlap TEST 1"] = {
+			["spells"] = "463=135955",
+		},
 		["驯服雪豹"] = {
 			["spells"] = "19676=132164,19687=132164",
 		},
@@ -13472,6 +14138,9 @@ WeakAurasOptionsSaved = {
 		},
 		["野人护腕"] = {
 			["spells"] = "23399=136235",
+		},
+		["Summon Signet of the Unseen Path DND"] = {
+			["spells"] = "29014=136235",
 		},
 		["初级活力药水"] = {
 			["spells"] = "2332=136235,2340=136021",
@@ -13532,6 +14201,9 @@ WeakAurasOptionsSaved = {
 		},
 		["设置速度"] = {
 			["spells"] = "28432=136235",
+		},
+		["Copy of Heart of the Wild Bear Effect"] = {
+			["spells"] = "25141=135879",
 		},
 		["燃烧之魂"] = {
 			["spells"] = "11083=135805,12351=135805",
@@ -13599,6 +14271,9 @@ WeakAurasOptionsSaved = {
 		["图样：优质皮靴"] = {
 			["spells"] = "2173=136235",
 		},
+		["Sillithus Flag Drop (DND)"] = {
+			["spells"] = "29533=132486",
+		},
 		["消毒术"] = {
 			["spells"] = "526=136067,536=136067,550=136067,569=136067,1315=136067,1316=136067,3212=136235,8946=136067,8947=136067",
 		},
@@ -13620,6 +14295,9 @@ WeakAurasOptionsSaved = {
 		["冰霜吐息"] = {
 			["spells"] = "28524=136235,29318=136235,30101=136235",
 		},
+		["Deprecated Solid Shot"] = {
+			["spells"] = "3921=136235",
+		},
 		["图样：白色强盗面罩"] = {
 			["spells"] = "12137=136235",
 		},
@@ -13629,8 +14307,14 @@ WeakAurasOptionsSaved = {
 		["Increase Holy Dam 18"] = {
 			["spells"] = "21516=136235",
 		},
+		["Poltergeist Periodic Schedule (DND)"] = {
+			["spells"] = "18348=136235",
+		},
 		["精神衰弱 II"] = {
 			["spells"] = "509=136175,1203=136175",
+		},
+		["Create Stormpike Assault Order (DND)"] = {
+			["spells"] = "21398=136235",
 		},
 		["毁灭"] = {
 			["spells"] = "3242=132152,3446=132152,6785=132141,6786=132141,6787=132141,6790=132141,8391=132152,9866=132141,9867=132141,9868=132141,9869=132141,17959=136207,18131=135813,18132=135813,24213=132152,24333=132152",
@@ -13884,6 +14568,9 @@ WeakAurasOptionsSaved = {
 		["召唤美冠鹦鹉"] = {
 			["spells"] = "10681=132311",
 		},
+		["[PH] Teleport to Ratchet"] = {
+			["spells"] = "4999=136235",
+		},
 		["防护自然"] = {
 			["spells"] = "7250=136094,7251=136094,7252=136094,7253=136094,7254=136094,16893=136094,17546=136094",
 		},
@@ -13911,6 +14598,9 @@ WeakAurasOptionsSaved = {
 		["附魔手套 - 暗影能量"] = {
 			["spells"] = "25073=135913",
 		},
+		["Idol of Neptulon DND"] = {
+			["spells"] = "25600=136235",
+		},
 		["巨型铁锤"] = {
 			["spells"] = "3297=136192",
 		},
@@ -13929,8 +14619,8 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 67"] = {
 			["spells"] = "21452=136235",
 		},
-		["黑色作战机械陆行鸟"] = {
-			["spells"] = "22719=132247",
+		["Test Enchant Fire Weapon"] = {
+			["spells"] = "14847=135913",
 		},
 		["神圣宝珠"] = {
 			["spells"] = "24865=134123",
@@ -13946,6 +14636,9 @@ WeakAurasOptionsSaved = {
 		},
 		["命令之吼"] = {
 			["spells"] = "22440=135995",
+		},
+		["Charge (TEST)"] = {
+			["spells"] = "5696=132368",
 		},
 		["粗制火药粉"] = {
 			["spells"] = "3929=136235,3992=136235",
@@ -13974,8 +14667,14 @@ WeakAurasOptionsSaved = {
 		["仿真机械蛙"] = {
 			["spells"] = "19793=136235",
 		},
+		["Copy of Increase Reputation"] = {
+			["spells"] = "27642=136235",
+		},
 		["闪电打击"] = {
 			["spells"] = "16614=135990",
+		},
+		["TEST - JESSE"] = {
+			["spells"] = "8356=135805",
 		},
 		["Ysida Freed - Argent Dawn Reputation"] = {
 			["spells"] = "27773=136235",
@@ -14015,6 +14714,9 @@ WeakAurasOptionsSaved = {
 		},
 		["北极护腕"] = {
 			["spells"] = "28221=136235,28256=136021",
+		},
+		["Lava Trap 4"] = {
+			["spells"] = "17677=136235",
 		},
 		["Cluster Rocket, GREEN - D"] = {
 			["spells"] = "26309=136235",
@@ -14136,6 +14838,9 @@ WeakAurasOptionsSaved = {
 		["发射导弹"] = {
 			["spells"] = "25031=132385",
 		},
+		["EXOTIC2H (DND)"] = {
+			["spells"] = "263=136235",
+		},
 		["Increase Frost Dam 23"] = {
 			["spells"] = "17899=136235",
 		},
@@ -14148,8 +14853,8 @@ WeakAurasOptionsSaved = {
 		["糖果还是恶作剧"] = {
 			["spells"] = "24755=134015",
 		},
-		["Emberseer Object Visual"] = {
-			["spells"] = "16532=136130",
+		["Gemology - Mithril (DND)"] = {
+			["spells"] = "12690=134118",
 		},
 		["Increased Stamina 24"] = {
 			["spells"] = "14471=136235",
@@ -14205,6 +14910,9 @@ WeakAurasOptionsSaved = {
 		["制造召唤纹章：水"] = {
 			["spells"] = "24888=136235",
 		},
+		["Copy of Disease Cloud"] = {
+			["spells"] = "28356=136006,28357=136006",
+		},
 		["圣诞版指挥官沃恩"] = {
 			["spells"] = "26215=135849",
 		},
@@ -14256,8 +14964,8 @@ WeakAurasOptionsSaved = {
 		["硬化蝎壳头盔"] = {
 			["spells"] = "10570=136235",
 		},
-		["冰川手套"] = {
-			["spells"] = "28205=132149,28261=136021",
+		["Infernal Conjure Dummy DND"] = {
+			["spells"] = "23053=136235",
 		},
 		["喝下麦酒"] = {
 			["spells"] = "8554=132792",
@@ -14277,8 +14985,8 @@ WeakAurasOptionsSaved = {
 		["秘银盾刺"] = {
 			["spells"] = "9781=136235,9782=136235,9939=136192",
 		},
-		["制造召唤徽记：土"] = {
-			["spells"] = "24891=136235",
+		["Create Zul'Gurub Talisman PRT R1 DND"] = {
+			["spells"] = "24012=136235",
 		},
 		["Horde Alterac Valley"] = {
 			["spells"] = "24642=136235,24645=136235,24652=136235",
@@ -14286,11 +14994,14 @@ WeakAurasOptionsSaved = {
 		["黑暗符文"] = {
 			["spells"] = "27869=134417",
 		},
+		["Conjure Scrying Scope (Horde) DND"] = {
+			["spells"] = "21541=136235",
+		},
 		["Increase Spell Dam 85"] = {
 			["spells"] = "28687=136235",
 		},
 		["攻击"] = {
-			["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=133481,7389=132150,8386=136235,10435=135825,10436=135825,15037=135825,22048=135825",
+			["spells"] = "3606=135825,6350=135825,6351=135825,6352=135825,6603=135360,7389=132150,8386=136235,10435=135825,10436=135825,15037=135825,22048=135825",
 		},
 		["速效毒素"] = {
 			["spells"] = "6650=134799,6651=134743",
@@ -14333,6 +15044,9 @@ WeakAurasOptionsSaved = {
 		},
 		["巨兽之王"] = {
 			["spells"] = "21929=136063,21932=136095",
+		},
+		["QAEnchant Chest +100 Mana"] = {
+			["spells"] = "22090=135913",
 		},
 		["Increased Critical 3"] = {
 			["spells"] = "7599=136235",
@@ -14451,6 +15165,9 @@ WeakAurasOptionsSaved = {
 		["Communique Timer, camp"] = {
 			["spells"] = "28346=136235",
 		},
+		["Copy of Portal: Undercity"] = {
+			["spells"] = "28146=135751",
+		},
 		["生命分流"] = {
 			["spells"] = "1454=136126,1455=136126,1456=136126,1476=136126,1477=136126,1478=136126,3095=135932,3096=135932,3097=135932,4090=136123,11687=136126,11688=136126,11689=136126,11690=136126,11691=136126,11692=136126,31818=135960",
 		},
@@ -14565,6 +15282,9 @@ WeakAurasOptionsSaved = {
 		["光明之泉回复"] = {
 			["spells"] = "7001=135980,27873=135980,27874=135980",
 		},
+		["QAEnchant Boots +8% Speed"] = {
+			["spells"] = "26019=136235",
+		},
 		["Increased Strength 18"] = {
 			["spells"] = "14490=136235",
 		},
@@ -14676,6 +15396,9 @@ WeakAurasOptionsSaved = {
 		["Spell Penetration 13"] = {
 			["spells"] = "28680=136235",
 		},
+		["QAEnchant Weapon +5 Damage"] = {
+			["spells"] = "22095=135913",
+		},
 		["解除所有效果"] = {
 			["spells"] = "12844=135920",
 		},
@@ -14748,8 +15471,14 @@ WeakAurasOptionsSaved = {
 		["制造彩色穿孔卡片"] = {
 			["spells"] = "11545=136235",
 		},
+		["[PH] Teleport to Menethil Harbor"] = {
+			["spells"] = "6348=136235",
+		},
 		["Increased Nature Resist 36"] = {
 			["spells"] = "14658=136235",
+		},
+		["Summon Darrowshire Poltergeist (DND)"] = {
+			["spells"] = "17694=136183",
 		},
 		["Ranshalla Despawn"] = {
 			["spells"] = "18954=136235",
@@ -14817,6 +15546,12 @@ WeakAurasOptionsSaved = {
 		["准备开炮"] = {
 			["spells"] = "24730=136235,24743=136235,24754=136235,24831=136235,24832=136235",
 		},
+		["Create Zul'Gurub Talisman ROG R3 DND"] = {
+			["spells"] = "24074=136235",
+		},
+		["Summon Freethinker's  BP DND"] = {
+			["spells"] = "28909=136235",
+		},
 		["梦幻龙鳞胸甲"] = {
 			["spells"] = "24703=136235",
 		},
@@ -14825,6 +15560,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Increase Fire Dam 28"] = {
 			["spells"] = "17881=136235",
+		},
+		["Sillithus Flag Click (DND)"] = {
+			["spells"] = "29518=136235",
 		},
 		["法术穿透"] = {
 			["spells"] = "25717=136235,25718=136235,25766=136235",
@@ -14892,6 +15630,9 @@ WeakAurasOptionsSaved = {
 		["制造黎明印记"] = {
 			["spells"] = "28320=134500",
 		},
+		["Add Moogly Radius (PT)"] = {
+			["spells"] = "12256=136235",
+		},
 		["盾击 - 沉默"] = {
 			["spells"] = "18498=132357",
 		},
@@ -14931,8 +15672,8 @@ WeakAurasOptionsSaved = {
 		["暗影亲和"] = {
 			["spells"] = "15272=136205,15318=136205,15320=136205",
 		},
-		["Despawn Worms"] = {
-			["spells"] = "26618=136235",
+		["附魔护腕 - 超强耐力"] = {
+			["spells"] = "20011=135913",
 		},
 		["Increase Fire Dam 19"] = {
 			["spells"] = "17871=136235",
@@ -14991,6 +15732,9 @@ WeakAurasOptionsSaved = {
 		["高级采矿"] = {
 			["spells"] = "3568=136248,13838=136235",
 		},
+		["QAEnchant 2H Weapom +25 Agility"] = {
+			["spells"] = "30229=135913",
+		},
 		["召唤助手"] = {
 			["spells"] = "26533=132311,26534=132311,26536=132311,26537=132311,26541=132311,29316=136235",
 		},
@@ -15039,6 +15783,9 @@ WeakAurasOptionsSaved = {
 		["设计图：闪耀轻剑"] = {
 			["spells"] = "17024=136235",
 		},
+		["Recipe: TEST"] = {
+			["spells"] = "25663=136235",
+		},
 		["寒鳞胸甲"] = {
 			["spells"] = "28222=136235,28257=136021",
 		},
@@ -15075,6 +15822,9 @@ WeakAurasOptionsSaved = {
 		["Increased Frost Resist 17"] = {
 			["spells"] = "14557=136235",
 		},
+		["Cyclone Visual Spawn (DND)"] = {
+			["spells"] = "8609=136022",
+		},
 		["图样：礼服夹克"] = {
 			["spells"] = "12186=136235",
 		},
@@ -15087,8 +15837,8 @@ WeakAurasOptionsSaved = {
 		["Communique - summon another target"] = {
 			["spells"] = "24601=136235",
 		},
-		["Cluster Rocket, PURPLE BIG - SE"] = {
-			["spells"] = "26498=136235",
+		["Jeff Dummy 2"] = {
+			["spells"] = "4505=135926",
 		},
 		["Ouro Submerge Trigger"] = {
 			["spells"] = "26104=136235",
@@ -15195,6 +15945,9 @@ WeakAurasOptionsSaved = {
 		["Increase Fire Dam 17"] = {
 			["spells"] = "13830=136235,23482=136235",
 		},
+		["Zul'Gurub Talisman PAL R3 DND"] = {
+			["spells"] = "24009=136235",
+		},
 		["打开酒吧的门"] = {
 			["spells"] = "15276=136235",
 		},
@@ -15249,6 +16002,9 @@ WeakAurasOptionsSaved = {
 		["Increase Healing 8"] = {
 			["spells"] = "7678=136235",
 		},
+		["Monty Bashes Rats (DND)"] = {
+			["spells"] = "21052=136235",
+		},
 		["献祭丝囊"] = {
 			["spells"] = "10459=136235",
 		},
@@ -15258,20 +16014,32 @@ WeakAurasOptionsSaved = {
 		["绿色机械陆行鸟"] = {
 			["spells"] = "15780=132247,17453=132247",
 		},
+		["(TXT) ToWoW - Tower Kill Credit (DND)"] = {
+			["spells"] = "32061=136235",
+		},
 		["诱惑"] = {
 			["spells"] = "6358=136175,6359=136175,20407=136175",
 		},
 		["召唤机械雪人"] = {
 			["spells"] = "19363=132189",
 		},
+		["Mana Shield (PT)"] = {
+			["spells"] = "8373=136235",
+		},
 		["黎明符文"] = {
 			["spells"] = "24198=133440",
+		},
+		["公式：附魔披风 - 狡诈"] = {
+			["spells"] = "25096=136235",
 		},
 		["BM ON"] = {
 			["spells"] = "24676=132096",
 		},
 		["狙击瞄准镜"] = {
 			["spells"] = "12460=136235,12620=136235",
+		},
+		["QATest +1000 Spell Dmg"] = {
+			["spells"] = "31750=136235",
 		},
 		["Dmg Shield2"] = {
 			["spells"] = "26666=136104",
@@ -15282,6 +16050,9 @@ WeakAurasOptionsSaved = {
 		["制造铁炉堡烈焰"] = {
 			["spells"] = "29102=136235",
 		},
+		["隐形追踪"] = {
+			["spells"] = "27933=136235",
+		},
 		["兰莎尔拉等待"] = {
 			["spells"] = "18953=136235",
 		},
@@ -15290,6 +16061,9 @@ WeakAurasOptionsSaved = {
 		},
 		["热疫"] = {
 			["spells"] = "8600=136066,16186=136066",
+		},
+		["Tower Capture Test (DND)"] = {
+			["spells"] = "30882=136153",
 		},
 		["辣椒蟹肉"] = {
 			["spells"] = "15915=136192,15918=136021",
@@ -15300,6 +16074,21 @@ WeakAurasOptionsSaved = {
 		["超级守护"] = {
 			["spells"] = "24416=136116",
 		},
+		["Copy of Increase Spell Dam 23"] = {
+			["spells"] = "30776=136235",
+		},
+		["Bleed Spice, Create cluster W (DND)"] = {
+			["spells"] = "30685=136235",
+		},
+		["Bleed Spice, Create cluster E (DND)"] = {
+			["spells"] = "30684=136235",
+		},
+		["Bleed Spice, Create cluster N (DND)"] = {
+			["spells"] = "30677=136235",
+		},
+		["漂亮的红衬衣"] = {
+			["spells"] = "3866=132149,3890=136021",
+		},
 		["克苏恩的低语"] = {
 			["spells"] = "26195=136206,26197=136206,26198=136206,26258=136206,26259=136206",
 		},
@@ -15309,11 +16098,32 @@ WeakAurasOptionsSaved = {
 		["联盟"] = {
 			["spells"] = "81748=132486",
 		},
+		["Bleed Spice, Create (DND)"] = {
+			["spells"] = "30227=136235",
+		},
+		["QAEnchant Gloves +5 Fishing"] = {
+			["spells"] = "30187=135913",
+		},
+		["QAEnchant Weapon - Fiery Weapon"] = {
+			["spells"] = "30183=135913",
+		},
+		["Copy of Rocket, PURPLE"] = {
+			["spells"] = "30163=136235",
+		},
 		["Stun Forever"] = {
 			["spells"] = "23775=132310",
 		},
+		["水晶润喉片"] = {
+			["spells"] = "30018=136235,30047=136192",
+		},
+		["Conjure Stormpike Rank 1 Insignia DND"] = {
+			["spells"] = "22114=136235",
+		},
 		["公式：附魔武器 - 寒冬之力"] = {
 			["spells"] = "21933=136235",
+		},
+		["Chess Move (DND)"] = {
+			["spells"] = "30012=132337",
 		},
 		["枭兽形态"] = {
 			["spells"] = "24858=136036",
@@ -15321,11 +16131,20 @@ WeakAurasOptionsSaved = {
 		["Increase Shadow Dam 63"] = {
 			["spells"] = "26733=136235",
 		},
+		["Copy of Fear"] = {
+			["spells"] = "30001=136183",
+		},
+		["Bleed Spice, Missile (DND)"] = {
+			["spells"] = "29945=136235",
+		},
 		["超级隐形"] = {
 			["spells"] = "24235=135994",
 		},
 		["敲击"] = {
 			["spells"] = "15248=132090,15617=132090",
+		},
+		["寒冰皇冠守护者"] = {
+			["spells"] = "29898=136235,29899=136235",
 		},
 		["Summon Lava Burst E"] = {
 			["spells"] = "21903=136235",
@@ -15336,8 +16155,23 @@ WeakAurasOptionsSaved = {
 		["图样：塞纳里奥草药包"] = {
 			["spells"] = "27729=136235",
 		},
+		["剧痛鞭笞"] = {
+			["spells"] = "7814=136136,7815=136136,7816=136136,7876=136136,7877=136136,7878=136136,11778=136136,11779=136136,11780=136136,11781=136136,11782=136136,11783=136136,15968=136136,15969=136136,20398=136136,20399=136136,20400=136136,20401=136136,20402=136136,21987=136136",
+		},
+		["辐射之箭"] = {
+			["spells"] = "9771=136133",
+		},
+		["Damage Bonfire (DND)"] = {
+			["spells"] = "29831=136235",
+		},
 		["放电"] = {
 			["spells"] = "29150=135934,29151=135990",
+		},
+		["Self Stun (DND)"] = {
+			["spells"] = "29826=136168",
+		},
+		["增强钝器 V"] = {
+			["spells"] = "16622=136235",
 		},
 		["清洁"] = {
 			["spells"] = "28787=136235,28788=135930",
@@ -15345,11 +16179,26 @@ WeakAurasOptionsSaved = {
 		["召唤治愈的塞雷布拉斯之藤"] = {
 			["spells"] = "21883=136235",
 		},
+		["Test RPole Periodic"] = {
+			["spells"] = "29715=136235",
+		},
+		["Test Ribbon Pole Channel Trigger"] = {
+			["spells"] = "29710=135270",
+		},
+		["Test Ribbon Pole Channel"] = {
+			["spells"] = "29705=135270,29726=135270,29727=135270",
+		},
 		["地精无线电"] = {
 			["spells"] = "12722=136235,12775=136235",
 		},
 		["痴呆诅咒"] = {
 			["spells"] = "1010=136174,1292=136174",
+		},
+		["TEST Scorch"] = {
+			["spells"] = "29515=135827",
+		},
+		["Copy of Dark Desire"] = {
+			["spells"] = "29331=135460",
 		},
 		["普罗德摩尔的防护"] = {
 			["spells"] = "7120=135880",
@@ -15360,6 +16209,9 @@ WeakAurasOptionsSaved = {
 		["Creature Cooldown (5 sec)"] = {
 			["spells"] = "29430=136235",
 		},
+		["朱莉叶的祝福"] = {
+			["spells"] = "8348=135953",
+		},
 		["奇美拉外衣"] = {
 			["spells"] = "19081=136235",
 		},
@@ -15369,14 +16221,44 @@ WeakAurasOptionsSaved = {
 		["反射力场"] = {
 			["spells"] = "10831=135849",
 		},
+		["Naxxramas Entry Flag Trigger  DND"] = {
+			["spells"] = "29296=136235",
+		},
+		["Copy of Summon Skeletons"] = {
+			["spells"] = "29264=136235",
+		},
 		["龟壳手套"] = {
 			["spells"] = "10509=136235",
+		},
+		["Copy of Vanish"] = {
+			["spells"] = "29215=132331",
+		},
+		["彩带之舞"] = {
+			["spells"] = "29175=135270",
 		},
 		["附魔护腕 - 超强力量"] = {
 			["spells"] = "20010=135913",
 		},
+		["激活"] = {
+			["spells"] = "29166=136048,29167=136048",
+		},
+		["Increase Fire Dam 11"] = {
+			["spells"] = "9296=136235",
+		},
 		["Genesis Rebirth Bonus"] = {
 			["spells"] = "26106=136235",
+		},
+		["Increased Critical 2 Spells"] = {
+			["spells"] = "29159=136235",
+		},
+		["Create iCoke Giftbox Voucher"] = {
+			["spells"] = "29156=136235",
+		},
+		["Refreshing Red Apple"] = {
+			["spells"] = "29055=133975",
+		},
+		["Tasty Summer Treat"] = {
+			["spells"] = "29041=133984",
 		},
 		["法力燃烧链"] = {
 			["spells"] = "8211=136170",
@@ -15384,8 +16266,14 @@ WeakAurasOptionsSaved = {
 		["符文布短裤"] = {
 			["spells"] = "18438=132149",
 		},
+		["Summon Ring of Unspoken Names DND"] = {
+			["spells"] = "29033=136235",
+		},
 		["奔尼斯特拉兹假人"] = {
 			["spells"] = "12728=136235",
+		},
+		["Summon Shroud of Unspoken Names DND"] = {
+			["spells"] = "29032=136235",
 		},
 		["欢乐宠物"] = {
 			["spells"] = "24716=132161,24722=132161",
@@ -15393,11 +16281,29 @@ WeakAurasOptionsSaved = {
 		["强效秘法精华"] = {
 			["spells"] = "13632=136192",
 		},
+		["Summon Kris of Unspoken Names DND"] = {
+			["spells"] = "29031=136235",
+		},
+		["Fizzy Energy Drink"] = {
+			["spells"] = "29029=132489,29038=133949,29039=132800,29040=132489",
+		},
+		["Summon Band of Veiled Shadows DND"] = {
+			["spells"] = "29026=136235",
+		},
+		["Summon Cloak of Veiled Shadows DND"] = {
+			["spells"] = "29025=136235",
+		},
 		["召唤腐食甲虫"] = {
 			["spells"] = "17169=136128",
 		},
+		["Summon Dagger of Veiled Shadows DND"] = {
+			["spells"] = "29024=136235",
+		},
 		["配方：神圣防护药水"] = {
 			["spells"] = "7260=136235",
+		},
+		["Summon Ring of Infinite Wisdom DND"] = {
+			["spells"] = "29023=136235",
 		},
 		["图样：符文布头带"] = {
 			["spells"] = "18516=136235",
@@ -15405,8 +16311,14 @@ WeakAurasOptionsSaved = {
 		["Increase Arcane Dam 12"] = {
 			["spells"] = "13604=136235",
 		},
+		["Summon Shroud of Infinite Wisdom DND"] = {
+			["spells"] = "29022=136235",
+		},
 		["猛兽攻击"] = {
 			["spells"] = "16972=132185,16974=132185,16975=132185",
+		},
+		["Summon Gavel of Infinite Wisdom DND"] = {
+			["spells"] = "29021=136235",
 		},
 		["治疗拉格纳罗斯"] = {
 			["spells"] = "19952=135827",
@@ -15432,11 +16344,32 @@ WeakAurasOptionsSaved = {
 		["Helcular's Puppets Passive"] = {
 			["spells"] = "4951=136163",
 		},
-		["河爪死亡"] = {
-			["spells"] = "8655=132151",
+		["Summon Ring of Eternal Justice DND"] = {
+			["spells"] = "29020=136235",
+		},
+		["Summon Cape of Eternal Justice DND"] = {
+			["spells"] = "29019=136235",
+		},
+		["Summon Blade of Eternal Justice DND"] = {
+			["spells"] = "29018=136235",
+		},
+		["易伤"] = {
+			["spells"] = "4166=135860,4769=135860,6021=135860",
+		},
+		["Eagle Eye (PT)"] = {
+			["spells"] = "6145=132150",
+		},
+		["Summon Scythe of the Unseen Path DND"] = {
+			["spells"] = "29012=136235",
 		},
 		["召唤寒冰之王亚门纳尔"] = {
 			["spells"] = "24628=136121",
+		},
+		["秘银破片炸弹"] = {
+			["spells"] = "12421=135826,12603=136235,12638=136235",
+		},
+		["Summon Mace of Unending Life DND"] = {
+			["spells"] = "29009=136235",
 		},
 		["地狱火罩"] = {
 			["spells"] = "7739=135826",
@@ -15444,8 +16377,50 @@ WeakAurasOptionsSaved = {
 		["迅捷褐色马"] = {
 			["spells"] = "23227=132261",
 		},
+		["Bubbly Refreshment"] = {
+			["spells"] = "29006=132799",
+		},
+		["风暴掌握"] = {
+			["spells"] = "29005=136075",
+		},
+		["Transform to Dancer"] = {
+			["spells"] = "29004=136235",
+		},
+		["Transformed"] = {
+			["spells"] = "29001=135468,29002=135468,29003=135468",
+		},
+		["检查重置"] = {
+			["spells"] = "26255=136235,26256=136235,26257=136235",
+		},
+		["Summon Demoniac's BP DND"] = {
+			["spells"] = "28954=136235",
+		},
+		["Summon Illusionist's Bracers DND"] = {
+			["spells"] = "28952=136235",
+		},
+		["致密炸药"] = {
+			["spells"] = "23070=136235",
+		},
+		["Summon Confessor's Bracers DND"] = {
+			["spells"] = "28946=136235",
+		},
+		["Summon Confessor's Mantle DND"] = {
+			["spells"] = "28943=136235",
+		},
+		["Summon Haruspex's Bracers DND"] = {
+			["spells"] = "28942=136235",
+		},
+		["Summon Haruspex's Belt DND"] = {
+			["spells"] = "28941=136235",
+		},
 		["白马"] = {
 			["spells"] = "468=132261,16083=132261",
+		},
+		["Summon Haruspex's BP DND"] = {
+			["spells"] = "28940=136235",
+		},
+		["Windsor's Inspiration Effect DND"] = {
+			["spells"] = "20275=136225",
 		},
 		["传送：树人"] = {
 			["spells"] = "447=136235",
@@ -15453,8 +16428,20 @@ WeakAurasOptionsSaved = {
 		["次级巫师袍"] = {
 			["spells"] = "6690=132149,6691=136021",
 		},
+		["Summon Madcap's BP DND"] = {
+			["spells"] = "28935=136235",
+		},
+		["Summon Predator's Belt DND"] = {
+			["spells"] = "28929=136235",
+		},
+		["New Magic Missile (Test)"] = {
+			["spells"] = "142=136235",
+		},
 		["召唤战斗野猪"] = {
 			["spells"] = "8274=135997",
+		},
+		["Summon Augur's Bracers DND"] = {
+			["spells"] = "28926=136235",
 		},
 		["黑色龙鳞战靴"] = {
 			["spells"] = "20855=136235",
@@ -15468,17 +16455,41 @@ WeakAurasOptionsSaved = {
 		["致命武器"] = {
 			["spells"] = "22756=136235",
 		},
+		["灵魂夺取"] = {
+			["spells"] = "17048=136235",
+		},
+		["Copy of Garrote"] = {
+			["spells"] = "28911=132297",
+		},
 		["强力净化器"] = {
 			["spells"] = "23079=136235",
 		},
 		["迅捷祖利安猛虎"] = {
 			["spells"] = "24252=132242",
 		},
+		["Copy of Undead Slayer 108"] = {
+			["spells"] = "28888=135923",
+		},
 		["Dragondog Breath Selection (L1)"] = {
 			["spells"] = "23317=136235",
 		},
+		["Summon Vindicator's BP DND"] = {
+			["spells"] = "28885=136235",
+		},
+		["巫妖之击"] = {
+			["spells"] = "28873=136130",
+		},
 		["Viscidus Explode Trigger"] = {
 			["spells"] = "25938=136006",
+		},
+		["Undead Slayer 60"] = {
+			["spells"] = "28870=136142",
+		},
+		["治疗之触回馈"] = {
+			["spells"] = "28847=136052",
+		},
+		["Mograine Cometh DND"] = {
+			["spells"] = "28688=136235",
 		},
 		["设计图：元素磨刀石"] = {
 			["spells"] = "22758=136235",
@@ -15486,20 +16497,71 @@ WeakAurasOptionsSaved = {
 		["设计图：野人铁手套"] = {
 			["spells"] = "10020=136235",
 		},
+		["跳跃"] = {
+			["spells"] = "28683=132572",
+		},
+		["清除蛛网裹体"] = {
+			["spells"] = "28628=136235,28629=136235",
+		},
 		["爆破弹药"] = {
 			["spells"] = "6441=136235,6442=136235",
+		},
+		["Test Curse of Agony"] = {
+			["spells"] = "28608=136139",
 		},
 		["图腾集中"] = {
 			["spells"] = "16173=136057,16222=136057,16223=136057,16224=136057,16225=136057",
 		},
+		["Summon Type D Periodic"] = {
+			["spells"] = "28453=136235",
+		},
+		["苦痛光环"] = {
+			["spells"] = "28413=136139",
+		},
+		["Zap Necropolis"] = {
+			["spells"] = "28386=136235",
+		},
+		["Reaper of Souls DND"] = {
+			["spells"] = "28355=136235",
+		},
 		["分裂"] = {
 			["spells"] = "19569=136192,19570=136192",
+		},
+		["修理塔瓦斯德的项链"] = {
+			["spells"] = "9795=135954",
+		},
+		["Tent Prot (DND)"] = {
+			["spells"] = "28316=136235",
+		},
+		["Copy of Healing Wave"] = {
+			["spells"] = "28304=136052",
+		},
+		["精制秘银短裤"] = {
+			["spells"] = "9945=136192",
+		},
+		["水果芳香"] = {
+			["spells"] = "27721=135458",
 		},
 		["Block Value 15"] = {
 			["spells"] = "23203=136235",
 		},
+		["Create Handbook DND"] = {
+			["spells"] = "28287=136235",
+		},
 		["高级急救"] = {
 			["spells"] = "7925=135966,19903=135966",
+		},
+		["Kill Summoner, Summon Boss"] = {
+			["spells"] = "28250=136235",
+		},
+		["图样：北极护腕"] = {
+			["spells"] = "28230=136235",
+		},
+		["(DND) Summon Crystal Minion, finder"] = {
+			["spells"] = "28227=136235",
+		},
+		["冰川手套"] = {
+			["spells"] = "28205=132149,28261=136021",
 		},
 		["迅捷白色机械陆行鸟"] = {
 			["spells"] = "23223=132247",
@@ -15510,6 +16572,9 @@ WeakAurasOptionsSaved = {
 		["高级毛纺披风"] = {
 			["spells"] = "3844=132149",
 		},
+		["[PH] Summon Minion (trap: ghost/skeleton))"] = {
+			["spells"] = "28186=136235",
+		},
 		["雷暴护肩"] = {
 			["spells"] = "19090=136235",
 		},
@@ -15518,6 +16583,12 @@ WeakAurasOptionsSaved = {
 		},
 		["费尔库拉的召唤"] = {
 			["spells"] = "10867=136235",
+		},
+		["[PH] Summon Minion parent (ghoul/skeleton)"] = {
+			["spells"] = "28185=136235",
+		},
+		["[PH] Summon Minion parent (ghost/ghoul)"] = {
+			["spells"] = "28183=136235",
 		},
 		["超强敏捷"] = {
 			["spells"] = "19989=136235",
@@ -15558,6 +16629,18 @@ WeakAurasOptionsSaved = {
 		["Increase Healing 280"] = {
 			["spells"] = "28151=136235",
 		},
+		["(DND) Summon Crystal Minion, Ghoul"] = {
+			["spells"] = "28179=136235",
+		},
+		["(DND) Summon Crystal Minion, Ghost"] = {
+			["spells"] = "28175=136235",
+		},
+		["Atiesh Priest Damage/Healing"] = {
+			["spells"] = "28155=136235",
+		},
+		["Copy of Increase Healing 187"] = {
+			["spells"] = "28150=136235",
+		},
 		["心灵震爆"] = {
 			["spells"] = "8092=136224,8093=136224,8102=136224,8103=136224,8104=136224,8105=136224,8106=136224,8107=136224,8108=136224,8109=136224,8110=136224,8111=136224,10945=136224,10946=136224,10947=136224,10948=136224,10949=136224,10950=136224,13860=136224,15587=136224,17194=136224,17287=136224,20830=136224,26048=136224",
 		},
@@ -15576,11 +16659,38 @@ WeakAurasOptionsSaved = {
 		["光芒护腿"] = {
 			["spells"] = "23667=132149",
 		},
+		["Signet Ring of the Bronze Dragonflight DPS R1 DND"] = {
+			["spells"] = "25927=136235",
+		},
 		["野性之皮"] = {
 			["spells"] = "22927=136235",
 		},
 		["召唤眼球触须"] = {
 			["spells"] = "26144=136235,26145=136235,26146=136235,26147=136235,26148=136235,26149=136235,26150=136235,26151=136235,26152=136235,26769=136235",
+		},
+		["Increase Spell Dam 150"] = {
+			["spells"] = "28141=136235",
+		},
+		["附魔武器 - 治疗能量"] = {
+			["spells"] = "22750=135913",
+		},
+		["[PH] Crystal Corpse Despawn"] = {
+			["spells"] = "28020=136235",
+		},
+		["[PH] Crystal Corpse Timer"] = {
+			["spells"] = "28018=136235",
+		},
+		["飞行路线"] = {
+			["spells"] = "27998=136235,28001=136235,29931=136235,29934=136235,29994=136235",
+		},
+		["[PH] Get Token"] = {
+			["spells"] = "27922=136235",
+		},
+		["雕花皮质披风"] = {
+			["spells"] = "2162=136235,2178=136021",
+		},
+		["Mount Speed+++ DND"] = {
+			["spells"] = "27882=136235",
 		},
 		["强化渐隐术"] = {
 			["spells"] = "15274=135994,15311=135994",
@@ -15594,11 +16704,20 @@ WeakAurasOptionsSaved = {
 		["厚重战斧"] = {
 			["spells"] = "3294=136192,3300=136235",
 		},
+		["Nefarian Tunnel Selection (R2)"] = {
+			["spells"] = "23350=136235",
+		},
+		["[PH] Kill Summoner Buff"] = {
+			["spells"] = "27852=136235",
+		},
 		["克雷格的烈酒"] = {
 			["spells"] = "22790=132792",
 		},
 		["暗影圣印"] = {
 			["spells"] = "1893=135968",
+		},
+		["[PH] Cystal Bazooka"] = {
+			["spells"] = "27849=136235",
 		},
 		["影皮手套"] = {
 			["spells"] = "22711=136235",
@@ -15606,17 +16725,38 @@ WeakAurasOptionsSaved = {
 		["制造热情药水（新）"] = {
 			["spells"] = "4960=136168",
 		},
+		["堕落恐惧"] = {
+			["spells"] = "27780=135923",
+		},
+		["Copy of War Stomp"] = {
+			["spells"] = "27757=132091",
+		},
+		["瓦塔拉克饰品的右瓣"] = {
+			["spells"] = "27738=136235",
+		},
+		["Copy of Create Ironforge Case of Homebrew"] = {
+			["spells"] = "27707=136235",
+		},
 		["Increase Arcane Dam 2"] = {
 			["spells"] = "13591=136235",
 		},
 		["法力回复和治疗提高"] = {
 			["spells"] = "25116=136235",
 		},
+		["Copy of Create Stormwind Sack of Homemade Bread"] = {
+			["spells"] = "27705=136235",
+		},
 		["魔法反射"] = {
 			["spells"] = "20223=135849,20619=135849",
 		},
 		["Decrease Mana Cost - Arcane"] = {
 			["spells"] = "17915=136235",
+		},
+		["制造暴风城忠诚誓言"] = {
+			["spells"] = "27702=136235",
+		},
+		["Love is in the Air Test"] = {
+			["spells"] = "27654=135453",
 		},
 		["匕首"] = {
 			["spells"] = "1180=132321,15988=132321",
@@ -15633,23 +16773,65 @@ WeakAurasOptionsSaved = {
 		["图样：黑丝衬衣"] = {
 			["spells"] = "7898=136235",
 		},
-		["Doomcaller Reduced Shadow Bolt Cost"] = {
-			["spells"] = "26117=136235",
+		["设计图：厚重黑曜石胸甲"] = {
+			["spells"] = "27593=136235",
+		},
+		["QAEnchant Bracer +9 Spirit"] = {
+			["spells"] = "22053=135913",
+		},
+		["Dirk's Rememberin' Poison Effect DND"] = {
+			["spells"] = "27583=136116",
 		},
 		["破坏主动式负载平衡器"] = {
 			["spells"] = "13727=136235",
 		},
+		["配方：自由行动药剂"] = {
+			["spells"] = "6625=136235",
+		},
+		["Receive Reward AND Quest Object, Common, Thunder Bluff"] = {
+			["spells"] = "27511=136235",
+		},
+		["Copy of Summon Party Bot"] = {
+			["spells"] = "27429=136074",
+		},
+		["Instill Lord Valthalak's Spirit DND"] = {
+			["spells"] = "27360=136235",
+		},
 		["Attack Power Ranged 58"] = {
 			["spells"] = "21449=136235",
+		},
+		["Summon Kormok DND"] = {
+			["spells"] = "27201=136235",
+		},
+		["dmg10"] = {
+			["spells"] = "27258=136115",
+		},
+		["QADebug Instant Cast"] = {
+			["spells"] = "27204=132369",
 		},
 		["光芒护腕"] = {
 			["spells"] = "22759=132149",
 		},
+		["Summon Various DND"] = {
+			["spells"] = "27203=136235",
+		},
+		["Summon Lord Valthalak DND"] = {
+			["spells"] = "27202=136235",
+		},
 		["召唤贝尔加的产物"] = {
 			["spells"] = "13895=135819",
 		},
+		["图样：巫毒面具"] = {
+			["spells"] = "10532=136235",
+		},
+		["瓦塔拉克饰品的左瓣"] = {
+			["spells"] = "27146=136235",
+		},
 		["轻便冬季长靴"] = {
 			["spells"] = "2157=136235",
+		},
+		["QAEnchant Cloak -2% Threat"] = {
+			["spells"] = "27121=135913",
 		},
 		["图样：亮布短裤"] = {
 			["spells"] = "18512=136235",
@@ -15660,17 +16842,35 @@ WeakAurasOptionsSaved = {
 		["无望"] = {
 			["spells"] = "29125=132366",
 		},
+		["Tag: Green Glow"] = {
+			["spells"] = "20371=136006",
+		},
 		["Increase Frost Dam 60"] = {
 			["spells"] = "26719=136235",
 		},
+		["Create Zul'Gurub Talisman WLK R1 DND"] = {
+			["spells"] = "24044=136235",
+		},
+		["QAEnchant Gloves +5 Skinning"] = {
+			["spells"] = "27114=135913",
+		},
 		["Cluster Rocket, YELLOW BIG - D"] = {
 			["spells"] = "26511=136235",
+		},
+		["QAEnchant Gloves +2% Threat"] = {
+			["spells"] = "27113=135913",
+		},
+		["开启符文"] = {
+			["spells"] = "3407=136235",
 		},
 		["空符咒包"] = {
 			["spells"] = "16197=136235",
 		},
 		["A-Mid Trigger"] = {
 			["spells"] = "23932=136235",
+		},
+		["QAEnchant Gloves +20 Shadow Damage"] = {
+			["spells"] = "27110=135913",
 		},
 		["劫掠之藤"] = {
 			["spells"] = "14112=132338",
@@ -15681,8 +16881,23 @@ WeakAurasOptionsSaved = {
 		["野猪冲撞"] = {
 			["spells"] = "3385=136231",
 		},
+		["QAEnchant Chest +4 Stats"] = {
+			["spells"] = "27107=135913",
+		},
+		["双手斧入门"] = {
+			["spells"] = "4414=132316,4415=132316,4416=132316,4417=132316,4424=132316,5469=132316",
+		},
+		["QAEnchant Weapon Lifestealing"] = {
+			["spells"] = "27104=135913",
+		},
+		["QAEnchant Weapon Unholy"] = {
+			["spells"] = "27102=135913",
+		},
 		["暗影形态"] = {
 			["spells"] = "15473=136200,16592=136221,22917=136221",
+		},
+		["QAEnchant Weapon +15 Strength"] = {
+			["spells"] = "27093=135913",
 		},
 		["Attack Power Ranged 60"] = {
 			["spells"] = "21013=136235",
@@ -15690,17 +16905,47 @@ WeakAurasOptionsSaved = {
 		["图样：重型蝎壳护肩"] = {
 			["spells"] = "19218=136235",
 		},
+		["致命射击"] = {
+			["spells"] = "1544=132169,1545=132169",
+		},
+		["Increased Pet Crit +2%"] = {
+			["spells"] = "27042=136095,27043=136095",
+		},
 		["召唤失落的护符"] = {
 			["spells"] = "20693=136235",
+		},
+		["Sword Specialization (OLD)"] = {
+			["spells"] = "27035=135328",
+		},
+		["Amorous Timer, Standard Test"] = {
+			["spells"] = "26870=134338",
+		},
+		["Increase Healing 187"] = {
+			["spells"] = "26814=136235",
+		},
+		["召唤传送门"] = {
+			["spells"] = "7741=136235,16136=135759,16139=135759",
 		},
 		["结构图：精致手工火枪"] = {
 			["spells"] = "17433=136235",
 		},
+		["QAEnchant Shield +8 Frost Resistance"] = {
+			["spells"] = "22099=135913",
+		},
 		["Attack Power 86"] = {
 			["spells"] = "15829=136235",
 		},
+		["QAEnchant Weapon +15 Agility"] = {
+			["spells"] = "26792=135913",
+		},
 		["Attack Power - Feral (+140)"] = {
 			["spells"] = "26153=136235",
+		},
+		["QAEnchant Weapon +20 Spirit"] = {
+			["spells"] = "26743=135913",
+		},
+		["Increase Shadow Dam 72"] = {
+			["spells"] = "26737=136235",
 		},
 		["制造情人糖"] = {
 			["spells"] = "26668=136235,26670=136235,26671=136235,26672=136235,26673=136235,26674=136235,26675=136235,26676=136235,26678=136235",
@@ -15708,38 +16953,89 @@ WeakAurasOptionsSaved = {
 		["传送：夜色镇"] = {
 			["spells"] = "445=136235",
 		},
+		["Horde Flag Capture Test"] = {
+			["spells"] = "23388=136235",
+		},
 		["枪械强化"] = {
 			["spells"] = "4921=134538,4922=132222,4923=134538,4924=134538,4925=132222,4926=132222",
 		},
 		["心脏爆炸"] = {
 			["spells"] = "27676=135830",
 		},
+		["卡扎克的印记"] = {
+			["spells"] = "21056=136121,21058=136121",
+		},
+		["Copy of Mortal Strike"] = {
+			["spells"] = "26652=132355",
+		},
+		["Despawn Worms"] = {
+			["spells"] = "26618=136235",
+		},
+		["Cluster Rocket, PURPLE BIG - SE"] = {
+			["spells"] = "26498=136235",
+		},
 		["多重射击伤害提高"] = {
 			["spells"] = "28539=132218",
+		},
+		["结构图：大型绿色烟花束"] = {
+			["spells"] = "26439=134153",
 		},
 		["烈焰冲击"] = {
 			["spells"] = "7101=135826,30091=135826",
 		},
+		["Rocket, GREEN BIG"] = {
+			["spells"] = "26352=136235",
+		},
+		["黄色烟花束"] = {
+			["spells"] = "26329=136235",
+		},
 		["巨型喷泉"] = {
 			["spells"] = "22421=135861",
+		},
+		["冬季狂欢者 - 亡灵女性"] = {
+			["spells"] = "26253=135849",
+		},
+		["恢复持续时间延长"] = {
+			["spells"] = "26171=136081",
 		},
 		["Increased Frost Resist 01"] = {
 			["spells"] = "14541=136235",
 		},
+		["Copy of Increase Nature Dam 50"] = {
+			["spells"] = "26120=136235",
+		},
 		["穿刺射击"] = {
 			["spells"] = "6685=132312",
+		},
+		["SWORDSPECIAL (DND)"] = {
+			["spells"] = "19=132109",
 		},
 		["Receive Reward AND Quest Object, Ironforge Guard"] = {
 			["spells"] = "27244=136235",
 		},
+		["Doomcaller Reduced Shadow Bolt Cost"] = {
+			["spells"] = "26117=136235",
+		},
 		["图样：红色节庆长裙"] = {
 			["spells"] = "26411=136235",
+		},
+		["大师级防具锻造"] = {
+			["spells"] = "9790=136241",
+		},
+		["召唤奥罗甲虫"] = {
+			["spells"] = "26060=136235",
 		},
 		["Ahn'Qiraj Reward Buff (Melee - 60)"] = {
 			["spells"] = "25796=134969",
 		},
+		["Viscidus Slowed More"] = {
+			["spells"] = "26036=136006",
+		},
 		["Shield Generator"] = {
 			["spells"] = "27759=134430",
+		},
+		["QAEnchant Gloves +5 Herbalism"] = {
+			["spells"] = "26020=136235",
 		},
 		["自然的慷慨"] = {
 			["spells"] = "27781=135923,27782=133439,27783=133439,27784=133439,27798=133439",
@@ -15747,11 +17043,14 @@ WeakAurasOptionsSaved = {
 		["Increased Agility 25"] = {
 			["spells"] = "14389=136235",
 		},
-		["图样：迅行护腕"] = {
-			["spells"] = "22931=136235",
+		["神秘杂烩"] = {
+			["spells"] = "15865=136192",
 		},
 		["吉兹洛克的假人效果"] = {
 			["spells"] = "21837=136235",
+		},
+		["强化审判"] = {
+			["spells"] = "25956=135959,25957=135959",
 		},
 		["Mid Alliance"] = {
 			["spells"] = "23945=136235",
@@ -15765,14 +17064,38 @@ WeakAurasOptionsSaved = {
 		["侏儒赛车摄像头"] = {
 			["spells"] = "6955=136235",
 		},
+		["灵魂之锤"] = {
+			["spells"] = "23488=136235",
+		},
 		["冰冻之眼"] = {
 			["spells"] = "1139=135842",
+		},
+		["召唤地狱猎犬"] = {
+			["spells"] = "691=136217,8176=136217,8712=136220,8717=136221",
+		},
+		["Signet Ring of the Bronze Dragonflight DPS R5 DND"] = {
+			["spells"] = "25931=136235",
+		},
+		["Signet Ring of the Bronze Dragonflight DPS R4 DND"] = {
+			["spells"] = "25930=136235",
 		},
 		["图样：优质皮手套"] = {
 			["spells"] = "2175=136235",
 		},
 		["召唤液体火焰"] = {
 			["spells"] = "23971=135818",
+		},
+		["设计图：辐光胸甲"] = {
+			["spells"] = "16677=136235",
+		},
+		["扰乱之痛"] = {
+			["spells"] = "3603=132278",
+		},
+		["慢性剧痛毒药"] = {
+			["spells"] = "2840=134743,2846=134743",
+		},
+		["Copy of Summon Skeletal Servant"] = {
+			["spells"] = "25862=136187",
 		},
 		["慢性折磨毒药"] = {
 			["spells"] = "2841=134743,2847=134743",
@@ -15783,26 +17106,80 @@ WeakAurasOptionsSaved = {
 		["Make Player Summon Boss"] = {
 			["spells"] = "31313=136235",
 		},
+		["Call Scepter DND"] = {
+			["spells"] = "25861=136235",
+		},
+		["Eranikus Night Elf DND"] = {
+			["spells"] = "25846=136235",
+		},
 		["次级隐形药水"] = {
 			["spells"] = "3448=136235,3459=136021",
+		},
+		["Despawn Swarmers"] = {
+			["spells"] = "25842=136235",
+		},
+		["恐惧尖啸"] = {
+			["spells"] = "25815=136184",
 		},
 		["Increase Arcane Dam 23"] = {
 			["spells"] = "17837=136235",
 		},
+		["梦魇生物"] = {
+			["spells"] = "25806=136206",
+		},
+		["Summon Arcanite Buoy DND"] = {
+			["spells"] = "25785=136235",
+		},
+		["Summon Narain's Special Bag DND"] = {
+			["spells"] = "25784=136235",
+		},
 		["荆棘光环"] = {
 			["spells"] = "7966=136104,8148=136104",
+		},
+		["Draconic For Dummies 7 DND"] = {
+			["spells"] = "25763=136235",
 		},
 		["寻风者之泪"] = {
 			["spells"] = "23011=135990",
 		},
+		["Copy of Judgement of Light"] = {
+			["spells"] = "25751=135917",
+		},
 		["黑狼"] = {
 			["spells"] = "578=132224",
+		},
+		["Player Lost Eau d' Mixilpixil DND"] = {
+			["spells"] = "22943=136235",
+		},
+		["Copy of Nightfin Soup"] = {
+			["spells"] = "25662=136192",
+		},
+		["Copy of Deadly Poison IV"] = {
+			["spells"] = "25348=132290",
 		},
 		["Poison Cleansing Totem Passive"] = {
 			["spells"] = "8167=136070",
 		},
+		["附魔护腕 - 治疗能力"] = {
+			["spells"] = "23802=135913",
+		},
+		["Fiery Death DND"] = {
+			["spells"] = "25170=136235",
+		},
+		["驯服夜刃捕食者"] = {
+			["spells"] = "19685=132164,19699=132164",
+		},
+		["Teleport to Molten Core DND"] = {
+			["spells"] = "25139=136235",
+		},
 		["毒性喷射"] = {
 			["spells"] = "30043=136016",
+		},
+		["Bronze Dragon Transform DND"] = {
+			["spells"] = "25108=136235",
+		},
+		["Blue Dragon Transform DND"] = {
+			["spells"] = "25107=136235",
 		},
 		["新近包扎"] = {
 			["spells"] = "11196=133678",
@@ -15816,20 +17193,62 @@ WeakAurasOptionsSaved = {
 		["强化圣光术"] = {
 			["spells"] = "24457=136235",
 		},
+		["Green Dragon Transform DND"] = {
+			["spells"] = "25105=136235",
+		},
+		["抗性 - 强效自然抗性"] = {
+			["spells"] = "25069=136235",
+		},
+		["复活节惊骇"] = {
+			["spells"] = "25022=135842,25023=135842",
+		},
+		["Create Item Visual (DND)"] = {
+			["spells"] = "16633=136210",
+		},
 		["Increased Fire Resist 24"] = {
 			["spells"] = "14604=136235",
 		},
-		["Summon Type D Periodic"] = {
-			["spells"] = "28453=136235",
+		["净化臭气弹"] = {
+			["spells"] = "24973=136235",
+		},
+		["Alterac Valley Mark of Honor (Loser)"] = {
+			["spells"] = "24954=136235",
+		},
+		["DIRGE TEST"] = {
+			["spells"] = "25664=136192",
 		},
 		["放置给蛮锤部族的警告"] = {
 			["spells"] = "23514=136235",
+		},
+		["Arathi Basin Mark of Honor (Loser)"] = {
+			["spells"] = "24952=136235",
+		},
+		["Increased Fire Resist 29"] = {
+			["spells"] = "14609=136235",
 		},
 		["召唤邮差马龙"] = {
 			["spells"] = "24627=136121",
 		},
 		["设计图：黑色卫士"] = {
 			["spells"] = "23654=136235",
+		},
+		["制造召唤徽记：土"] = {
+			["spells"] = "24891=136235",
+		},
+		["Create Hunter Epic Bow DND"] = {
+			["spells"] = "24873=136235",
+		},
+		["闪电波"] = {
+			["spells"] = "24819=136015",
+		},
+		["Create Hive'Zora Rubbing DND"] = {
+			["spells"] = "24805=136235",
+		},
+		["系统震荡"] = {
+			["spells"] = "23774=136133",
+		},
+		["Summon Duke Air, Trigger"] = {
+			["spells"] = "24769=136235",
 		},
 		["恶魔能量"] = {
 			["spells"] = "18792=136184",
@@ -15849,6 +17268,12 @@ WeakAurasOptionsSaved = {
 		["Demonic Immolation Passive"] = {
 			["spells"] = "4525=135826",
 		},
+		["暗影传送"] = {
+			["spells"] = "7136=136121,7586=136121,7587=136121",
+		},
+		["Summon Templar Earth, Trigger"] = {
+			["spells"] = "24759=136235",
+		},
 		["节日控火者 - 矮人男性"] = {
 			["spells"] = "29245=135849",
 		},
@@ -15857,6 +17282,9 @@ WeakAurasOptionsSaved = {
 		},
 		["相位鞭笞者（自然）"] = {
 			["spells"] = "22353=136104",
+		},
+		["强化火焰冲击"] = {
+			["spells"] = "11078=135807,11080=135807,12342=135807",
 		},
 		["Self Stun - 15 seconds"] = {
 			["spells"] = "14821=136168",
@@ -15873,23 +17301,56 @@ WeakAurasOptionsSaved = {
 		["Undercity Reputation"] = {
 			["spells"] = "26164=136235",
 		},
+		["魔法之翼"] = {
+			["spells"] = "24742=135992",
+		},
 		["血魂护手"] = {
 			["spells"] = "24138=136192",
+		},
+		["Lost Badge Agent of Nozdormu DND"] = {
+			["spells"] = "24727=136235",
 		},
 		["星辰腰带"] = {
 			["spells"] = "3864=132149",
 		},
+		["Hakkar Power"] = {
+			["spells"] = "24692=136235",
+		},
 		["异种蝎群"] = {
 			["spells"] = "6589=136122,10722=136122",
+		},
+		["GY Mid Horde"] = {
+			["spells"] = "24679=136235",
+		},
+		["结构图：血藤护目镜"] = {
+			["spells"] = "24358=134153",
 		},
 		["图样：林栖者护肩"] = {
 			["spells"] = "28485=136235",
 		},
+		["Punctured Voodoo Doll WLK DND"] = {
+			["spells"] = "24290=136235",
+		},
 		["Increased Hit Chance 10"] = {
 			["spells"] = "18066=136235",
 		},
+		["Punctured Voodoo Doll WAR DND"] = {
+			["spells"] = "24289=136235",
+		},
 		["Summon Type D"] = {
 			["spells"] = "28454=136235",
+		},
+		["Punctured Voodoo Doll SHM DND"] = {
+			["spells"] = "24288=136235",
+		},
+		["Punctured Voodoo Doll PAL DND"] = {
+			["spells"] = "24285=136235",
+		},
+		["Primal Blessing Trigger DND"] = {
+			["spells"] = "24256=132175",
+		},
+		["厚魔纹绷带"] = {
+			["spells"] = "10841=136192,10843=136192",
 		},
 		["赞达拉魔精徽记"] = {
 			["spells"] = "24421=136235",
@@ -15900,8 +17361,14 @@ WeakAurasOptionsSaved = {
 		["Initialize Twin"] = {
 			["spells"] = "26603=136235",
 		},
+		["Teleport to Blackwing Lair DND"] = {
+			["spells"] = "23460=136235",
+		},
 		["设计图：秘银杆"] = {
 			["spells"] = "12894=136235",
+		},
+		["Servant of Hakkar DND"] = {
+			["spells"] = "24184=136206",
 		},
 		["公式：附魔护腕 - 初级力量"] = {
 			["spells"] = "7783=136235",
@@ -15909,8 +17376,17 @@ WeakAurasOptionsSaved = {
 		["冰川披风"] = {
 			["spells"] = "28208=132149,28263=136021",
 		},
+		["力量的证明"] = {
+			["spells"] = "24148=136235,24149=136235",
+		},
+		["Create Zul'Gurub Talisman HUN R4 DND"] = {
+			["spells"] = "24079=136235",
+		},
 		["召唤钩状触须"] = {
 			["spells"] = "26140=136235,26397=136235,26398=136235",
+		},
+		["Create Zul'Gurub Talisman HUN R3 DND"] = {
+			["spells"] = "24078=136235",
 		},
 		["绿色毛纺包"] = {
 			["spells"] = "3758=136235",
@@ -15918,8 +17394,17 @@ WeakAurasOptionsSaved = {
 		["痛击"] = {
 			["spells"] = "3391=132152,3417=132152,8876=132152,12787=132152,21919=132350",
 		},
+		["Create Zul'Gurub Talisman HUN R1 DND"] = {
+			["spells"] = "24076=136235",
+		},
 		["Permanent Lung Juice Cocktail"] = {
 			["spells"] = "30164=136075",
+		},
+		["Create Zul'Gurub Talisman ROG R4 DND"] = {
+			["spells"] = "24075=136235",
+		},
+		["Create Zul'Gurub Talisman SHM R4 DND"] = {
+			["spells"] = "24070=136235",
 		},
 		["火屑弹幕"] = {
 			["spells"] = "19641=135808",
@@ -15927,20 +17412,71 @@ WeakAurasOptionsSaved = {
 		["超级煎蛋卷"] = {
 			["spells"] = "15933=136192,15934=136021",
 		},
+		["Create Zul'Gurub Talisman SHM R2 DND"] = {
+			["spells"] = "24068=136235",
+		},
+		["Create Zul'Gurub Talisman DRU R4 DND"] = {
+			["spells"] = "24060=136235",
+		},
 		["精制秘银手套"] = {
 			["spells"] = "9950=136192",
+		},
+		["Create Zul'Gurub Talisman DRU R3 DND"] = {
+			["spells"] = "24059=136235",
+		},
+		["Create Zul'Gurub Talisman DRU R2 DND"] = {
+			["spells"] = "24056=136235",
+		},
+		["Create Zul'Gurub Talisman DRU R1 DND"] = {
+			["spells"] = "24055=136235",
+		},
+		["Create Zul'Gurub Talisman WLK R4 DND"] = {
+			["spells"] = "24047=136235",
+		},
+		["Increased Intellect 08"] = {
+			["spells"] = "9104=136235",
 		},
 		["Increase Arcane Dam 25"] = {
 			["spells"] = "17840=136235",
 		},
+		["Create Zul'Gurub Talisman MAG R4 DND"] = {
+			["spells"] = "24041=136235",
+		},
+		["Create Zul'Gurub Talisman MAG R3 DND"] = {
+			["spells"] = "24040=136235",
+		},
 		["军旗"] = {
 			["spells"] = "22996=132483,22998=132483,23005=132484,23006=132484,23033=132483,23034=132483,23035=132484,23036=132484,23538=132484,23539=132483,23574=132483,23576=132484",
+		},
+		["Create Zul'Gurub Talisman MAG R2 DND"] = {
+			["spells"] = "24039=136235",
 		},
 		["启发"] = {
 			["spells"] = "20210=135913,20212=135913,20213=135913,20214=135913,20215=135913,20272=135913",
 		},
+		["Create Zul'Gurub Talisman MAG R1 DND"] = {
+			["spells"] = "24038=136235",
+		},
+		["Create Zul'Gurub Talisman PRT R4 DND"] = {
+			["spells"] = "24015=136235",
+		},
+		["Create Zul'Gurub Talisman PRT R3 DND"] = {
+			["spells"] = "24014=136235",
+		},
+		["Create Zul'Gurub Talisman WAR R4 DND"] = {
+			["spells"] = "24001=136235",
+		},
+		["血怒者的挽歌"] = {
+			["spells"] = "23964=135845",
+		},
+		["铁钥匙"] = {
+			["spells"] = "6471=136192,6473=136235",
+		},
 		["Increased Spirit 18"] = {
 			["spells"] = "14437=136235",
+		},
+		["Exzhal Searches for Wild Gods DND"] = {
+			["spells"] = "23950=136235",
 		},
 		["超强力量"] = {
 			["spells"] = "19984=136235",
@@ -15948,8 +17484,32 @@ WeakAurasOptionsSaved = {
 		["扰乱射击"] = {
 			["spells"] = "14274=135736,14346=135736,15629=135736,15630=135736,15631=135736,15632=135736,15637=135736,15638=135736,15639=135736,15640=135736,20736=135736,20738=135736",
 		},
+		["Test Strike W50"] = {
+			["spells"] = "23848=132355",
+		},
+		["Stoneclaw Totem TEST"] = {
+			["spells"] = "23789=136097",
+		},
+		["Resurgence DND"] = {
+			["spells"] = "23779=136235",
+		},
+		["图样：熔火腰带"] = {
+			["spells"] = "23718=136235",
+		},
+		["蓟皮血族"] = {
+			["spells"] = "16499=136235",
+		},
+		["设计图：重型木喉腰带"] = {
+			["spells"] = "23630=136235",
+		},
+		["追踪巨人"] = {
+			["spells"] = "5121=132328,5130=132323,19882=132275,20158=132275",
+		},
 		["大师级烹饪"] = {
 			["spells"] = "18261=133971,19887=133971",
+		},
+		["净化逃脱"] = {
+			["spells"] = "23582=132331,23583=132331",
 		},
 		["Holiday - Lunar Teleport: Undercity"] = {
 			["spells"] = "26456=135758",
@@ -15957,14 +17517,32 @@ WeakAurasOptionsSaved = {
 		["静电喷射"] = {
 			["spells"] = "20542=136014",
 		},
+		["召唤绿色小神龙"] = {
+			["spells"] = "23531=132311",
+		},
+		["Copy of Ferocious Bite"] = {
+			["spells"] = "24248=132127",
+		},
+		["Alliance Flag Capture Test"] = {
+			["spells"] = "23387=136235",
+		},
 		["Increased Arcane Resist 38"] = {
 			["spells"] = "14740=136235",
 		},
 		["召唤布劳缪克丝之魂"] = {
 			["spells"] = "28931=136235",
 		},
+		["Feed Pet (Quest Test)"] = {
+			["spells"] = "23354=132165",
+		},
 		["制造尼姆布亚的长矛"] = {
 			["spells"] = "18887=136235",
+		},
+		["Nefarian Tunnel Selection (L3)"] = {
+			["spells"] = "23346=136235",
+		},
+		["trans2"] = {
+			["spells"] = "23332=136235",
 		},
 		["Attack Power 24"] = {
 			["spells"] = "14027=136235",
@@ -15975,6 +17553,9 @@ WeakAurasOptionsSaved = {
 		["Block Value 21"] = {
 			["spells"] = "28112=136235",
 		},
+		["点燃躯体"] = {
+			["spells"] = "23315=135805,23316=135805",
+		},
 		["Veknis Guardian Call"] = {
 			["spells"] = "25998=136235",
 		},
@@ -15983,6 +17564,9 @@ WeakAurasOptionsSaved = {
 		},
 		["Holiday - Breath of Fire Aura (NPC)"] = {
 			["spells"] = "29402=136235",
+		},
+		["迅捷蓝色迅猛龙"] = {
+			["spells"] = "23241=132253",
 		},
 		["灵魂治疗引导"] = {
 			["spells"] = "22011=135955",
@@ -15993,8 +17577,23 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 82"] = {
 			["spells"] = "21458=136235",
 		},
+		["迅捷霜刃豹"] = {
+			["spells"] = "23221=132267",
+		},
+		["Hunter Epic Anti-Cheat DND"] = {
+			["spells"] = "23201=136235",
+		},
 		["暴风雄狮号角"] = {
 			["spells"] = "18946=134229,20847=136235",
+		},
+		["Summon Pirate Booty (DND)"] = {
+			["spells"] = "23176=132281",
+		},
+		["驯服树林潜伏者"] = {
+			["spells"] = "19684=132164,19693=132164",
+		},
+		["俯冲"] = {
+			["spells"] = "23145=136126,23146=136126,23147=136126,23148=136126,23149=136126,23150=136126",
 		},
 		["Nefarian Tunnel Selection (L4)"] = {
 			["spells"] = "23347=136235",
@@ -16002,17 +17601,71 @@ WeakAurasOptionsSaved = {
 		["夜色短裤"] = {
 			["spells"] = "10548=136235,10549=136021",
 		},
+		["Increased All Resist 01"] = {
+			["spells"] = "18672=136235",
+		},
+		["Activate Bomb 02B"] = {
+			["spells"] = "11797=136235",
+		},
+		["QAEnchant Weapon Crusader"] = {
+			["spells"] = "23141=135913",
+		},
 		["塞格的黑暗塔罗牌：力量"] = {
 			["spells"] = "23735=134334",
+		},
+		["Priest Event Despawner DND"] = {
+			["spells"] = "23137=136235",
+		},
+		["Copy of Schematic: EZ-Thro Dynamite II"] = {
+			["spells"] = "23087=134153",
+		},
+		["战斗咆哮"] = {
+			["spells"] = "6507=132277",
+		},
+		["Summon Mob Spawn Circle (DND)"] = {
+			["spells"] = "23057=136235",
+		},
+		["Sam's Test Spell"] = {
+			["spells"] = "23685=136235",
 		},
 		["召唤深苔幼蛛"] = {
 			["spells"] = "6629=136074",
 		},
+		["Recipe: DIRGE TEST LEARN"] = {
+			["spells"] = "25666=136235",
+		},
+		["Player Lost Apple DND"] = {
+			["spells"] = "22942=136235",
+		},
 		["地面震击"] = {
 			["spells"] = "26194=136026",
 		},
+		["Player Lost Shackles DND"] = {
+			["spells"] = "22941=136235",
+		},
+		["图样：野性之皮"] = {
+			["spells"] = "22933=136235",
+		},
+		["图样：迅行护腕"] = {
+			["spells"] = "22931=136235",
+		},
+		["Heated Blade DND"] = {
+			["spells"] = "22904=135824",
+		},
 		["Holiday - Lunar Teleport: Darnassus"] = {
 			["spells"] = "26450=135758",
+		},
+		["召唤虚无行者"] = {
+			["spells"] = "22876=136160",
+		},
+		["Barkskin Effect (DND)"] = {
+			["spells"] = "22839=136097",
+		},
+		["强效水下呼吸药剂"] = {
+			["spells"] = "22808=136235,22809=136021",
+		},
+		["黑色作战机械陆行鸟"] = {
+			["spells"] = "22719=132247",
 		},
 		["召唤阿斯特兰纳哨兵"] = {
 			["spells"] = "11803=136235",
@@ -16020,14 +17673,41 @@ WeakAurasOptionsSaved = {
 		["Pagle's Point Cast - Create Splash and Quake"] = {
 			["spells"] = "24593=132932",
 		},
+		["Test Charge"] = {
+			["spells"] = "22690=136235",
+		},
+		["Defense TEST"] = {
+			["spells"] = "22685=136235",
+		},
 		["强化猛击"] = {
 			["spells"] = "12330=132340,12862=132340,20497=132340,20498=132340,20499=132340",
+		},
+		["召回"] = {
+			["spells"] = "22563=136235,22564=136235",
 		},
 		["挑衅"] = {
 			["spells"] = "12303=132347,12788=132347,12789=132347,12791=132347,12792=132347",
 		},
+		["PvP Herald Alpha Transform (DND)"] = {
+			["spells"] = "22483=136235",
+		},
 		["强化圣光闪现治疗"] = {
 			["spells"] = "28851=136052,28853=135962",
+		},
+		["Divine Intervention (NEWTEST)"] = {
+			["spells"] = "22270=136106",
+		},
+		["Create Chapter 4 DND"] = {
+			["spells"] = "22211=136235",
+		},
+		["Create Chapter 3 DND"] = {
+			["spells"] = "22210=136235",
+		},
+		["Summon Drakefire Amulet DND"] = {
+			["spells"] = "22207=136235",
+		},
+		["Summon Flare Gun DND"] = {
+			["spells"] = "22190=136235",
 		},
 		["Demon Slaying 78"] = {
 			["spells"] = "18087=136172",
@@ -16035,11 +17715,17 @@ WeakAurasOptionsSaved = {
 		["Amorous Timer, Standard"] = {
 			["spells"] = "27742=134338",
 		},
+		["Conjure Stormpike Rank 6 Insignia DND"] = {
+			["spells"] = "22119=136235",
+		},
 		["削弱"] = {
 			["spells"] = "11963=136138",
 		},
 		["制造暴风城卡片集合"] = {
 			["spells"] = "27701=136235",
+		},
+		["Conjure Stormpike Rank 5 Insignia DND"] = {
+			["spells"] = "22118=136235",
 		},
 		["Twin Suicide"] = {
 			["spells"] = "26628=136235",
@@ -16047,11 +17733,20 @@ WeakAurasOptionsSaved = {
 		["Plague Wave Effect 3"] = {
 			["spells"] = "30118=135805",
 		},
+		["Conjure Stormpike Rank 4 Insignia DND"] = {
+			["spells"] = "22117=136235",
+		},
 		["开阔思维"] = {
 			["spells"] = "20591=132864",
 		},
+		["Conjure Stormpike Rank 3 Insignia DND"] = {
+			["spells"] = "22116=136235",
+		},
 		["夜鳞鱼汤"] = {
 			["spells"] = "18243=136192",
+		},
+		["Conjure Stormpike Rank 2 Insignia DND"] = {
+			["spells"] = "22115=136235",
 		},
 		["黑鳍蘑菇"] = {
 			["spells"] = "9462=136100,9463=136100",
@@ -16059,14 +17754,47 @@ WeakAurasOptionsSaved = {
 		["守护披风"] = {
 			["spells"] = "7153=136235",
 		},
+		["Conjure Frostwolf Rank 6 Insignia DND"] = {
+			["spells"] = "22113=136235",
+		},
 		["骷髅装束"] = {
 			["spells"] = "24723=132288,24724=136235",
 		},
 		["火焰引导"] = {
 			["spells"] = "21389=135805,21392=135805",
 		},
+		["Conjure Frostwolf Rank 5 Insignia DND"] = {
+			["spells"] = "22112=136235",
+		},
+		["Conjure Frostwolf Rank 4 Insignia DND"] = {
+			["spells"] = "22111=136235",
+		},
+		["Conjure Frostwolf Rank 3 Insignia DND"] = {
+			["spells"] = "22110=136235",
+		},
+		["Conjure Frostwolf Rank 2 Insignia DND"] = {
+			["spells"] = "22109=136235",
+		},
+		["QAEnchant Boots +5 Spirit"] = {
+			["spells"] = "22102=135913",
+		},
+		["QAEnchant Shield +9 Spirit"] = {
+			["spells"] = "22100=135913",
+		},
+		["QAEnchant Shield +7 Stamina"] = {
+			["spells"] = "22098=135913",
+		},
+		["QAEnchant 2H Weapon +9 Damage"] = {
+			["spells"] = "22094=135913",
+		},
 		["醉酒"] = {
 			["spells"] = "10255=136018,25947=135975",
+		},
+		["QAEnchant Cloak +5 Resistances"] = {
+			["spells"] = "22091=135913",
+		},
+		["QAEnchant Bracer +9 Strength"] = {
+			["spells"] = "22051=135913",
 		},
 		["Stormwind Reputation"] = {
 			["spells"] = "26161=136235",
@@ -16083,35 +17811,98 @@ WeakAurasOptionsSaved = {
 		["相位鞭笞者（火焰）"] = {
 			["spells"] = "22352=136104",
 		},
+		["Testing Totem"] = {
+			["spells"] = "22047=135825",
+		},
 		["卡德加开锁术"] = {
 			["spells"] = "491=134239,493=136235,857=134240,858=136235,10165=134246,10166=134248",
+		},
+		["Evasion TEST"] = {
+			["spells"] = "21878=136205",
 		},
 		["Increased Armor 200 Dreadmist"] = {
 			["spells"] = "29090=136235",
 		},
+		["抵抗火焰 II"] = {
+			["spells"] = "2869=135824",
+		},
+		["Frostwolf Muzzle DND"] = {
+			["spells"] = "21794=136235",
+		},
 		["匕首技能提高"] = {
 			["spells"] = "7534=136235,7573=136235,7574=136235,7576=136235,7578=136235,14051=136235,15717=136235,15776=136235,15777=136235,15778=136235,15948=136235,15949=136235,15950=136235,15951=136235,15952=136235,15953=136235,15954=136235,15955=136235",
+		},
+		["Conjure Slidore's Beacon DND"] = {
+			["spells"] = "21732=136235",
+		},
+		["设计图：玉蛇刀"] = {
+			["spells"] = "3526=136235",
 		},
 		["唤醒地灵宝库守卫"] = {
 			["spells"] = "10258=136025",
 		},
+		["Frostwolf Reputation +5"] = {
+			["spells"] = "21647=136235",
+		},
+		["Conjure Ryson's Beacon (Alliance) DND"] = {
+			["spells"] = "21465=136235",
+		},
 		["重新锁定目标"] = {
 			["spells"] = "27678=136235",
+		},
+		["Conjure Guse's Beacon DND"] = {
+			["spells"] = "21356=136235",
+		},
+		["霜纹短裤"] = {
+			["spells"] = "18424=132149",
+		},
+		["Conjure Lokholar the Usurper DND"] = {
+			["spells"] = "21287=136235",
+		},
+		["Conjure Altar of Summoning Effect DND"] = {
+			["spells"] = "21268=136235",
 		},
 		["旋风斩"] = {
 			["spells"] = "1680=132369,1685=132369,8989=132369,9632=132369,9633=132369,13736=132369,17207=132369,24236=132369,26038=132369,26083=132369,26084=132369,28333=132369,28334=132369,28335=132369,29851=132369,29852=132369",
 		},
+		["脊骨收割者"] = {
+			["spells"] = "21185=135934,21186=135920",
+		},
+		["Rogue Passive (DND)"] = {
+			["spells"] = "21184=132320",
+		},
+		["设计图：致命的青铜短剑"] = {
+			["spells"] = "3302=136235",
+		},
 		["劣质铜外衣"] = {
 			["spells"] = "12260=136192",
 		},
+		["Charm Tolerance (DND)"] = {
+			["spells"] = "20785=135995",
+		},
+		["Test Mod Water Breathing (PT)"] = {
+			["spells"] = "20624=136235",
+		},
+		["Windsor's Inspriation DND"] = {
+			["spells"] = "20273=136225",
+		},
 		["REUSE ME"] = {
 			["spells"] = "6962=132092",
+		},
+		["Ruul Snowhoof Shapechange (DND)"] = {
+			["spells"] = "20514=136235",
+		},
+		["魔化共鸣水晶"] = {
+			["spells"] = "20513=136235",
 		},
 		["护甲锻造师"] = {
 			["spells"] = "9788=132739",
 		},
 		["血牙"] = {
 			["spells"] = "23580=136168,23581=136168",
+		},
+		["TEST AVATAR FORM"] = {
+			["spells"] = "20510=136235",
 		},
 		["闪电掌握"] = {
 			["spells"] = "16578=135990,16579=135990,16580=135990,16581=135990,16582=135990",
@@ -16131,11 +17922,17 @@ WeakAurasOptionsSaved = {
 		["重型蝎壳护腿"] = {
 			["spells"] = "19075=136235",
 		},
+		["TEST AVATAR"] = {
+			["spells"] = "20509=135923",
+		},
 		["变形"] = {
 			["spells"] = "7671=136235,16794=132311,28533=136172",
 		},
 		["秘银马刺"] = {
 			["spells"] = "7215=136235,9783=136235,9964=136192",
+		},
+		["Tamed Pet Passive (DND)"] = {
+			["spells"] = "7000=132184,8875=132252,17206=132182,17208=132183,17209=132200,17210=132185,17211=132186,17212=132187,17214=132189,17215=132190,17216=132192,17217=132193,17218=132195,17219=132196,17220=132198,17221=132199,17222=132202,17223=132203,18727=136221,18728=136218,18729=136220,18730=136217,18735=136221,18736=136220,18737=136218,18738=136217,18739=136217,18740=136218,18741=136220,18742=136221,19007=136217,19432=136219,19433=136172,19580=132252,19581=132252,19582=132252,19589=132252,19591=132252,20782=132252,20784=132252",
 		},
 		["熄灭"] = {
 			["spells"] = "6805=136235,24264=136235",
@@ -16146,6 +17943,18 @@ WeakAurasOptionsSaved = {
 		["月布长靴"] = {
 			["spells"] = "19435=132149,19437=136021",
 		},
+		["Windsor Reading Tablets DND"] = {
+			["spells"] = "20358=136235",
+		},
+		["Summon Madcap's Bracers DND"] = {
+			["spells"] = "28939=136235",
+		},
+		["光明圣印"] = {
+			["spells"] = "20165=135917,20167=135917,20333=135917,20334=135917,20340=135917,20347=135917,20348=135917,20349=135917,20455=135917,20456=135917,20457=135917,20458=135917",
+		},
+		["追踪隐藏生物"] = {
+			["spells"] = "19885=132320,20159=132320",
+		},
 		["光芒（红色）"] = {
 			["spells"] = "22518=135741",
 		},
@@ -16155,11 +17964,35 @@ WeakAurasOptionsSaved = {
 		["侦测次级隐形"] = {
 			["spells"] = "132=136153,2971=136153,3099=136235,6512=136153",
 		},
+		["结构图：奥术炸弹"] = {
+			["spells"] = "19867=134153",
+		},
+		["MHTest03"] = {
+			["spells"] = "19362=135913",
+		},
+		["图样：符文皮甲短裤"] = {
+			["spells"] = "19211=136235",
+		},
+		["诱捕"] = {
+			["spells"] = "19184=136100,19185=136100,19387=136100,19388=136100,19389=136100,19390=136100",
+		},
+		["MHTest02"] = {
+			["spells"] = "19108=132350",
+		},
 		["突然攻击"] = {
 			["spells"] = "8151=132092",
 		},
+		["MHTest01 Effect"] = {
+			["spells"] = "19105=132350",
+		},
+		["绿色科多兽"] = {
+			["spells"] = "18991=132244",
+		},
 		["坑道蝎毒"] = {
 			["spells"] = "14120=136007",
+		},
+		["恢复生命"] = {
+			["spells"] = "18956=134335,18957=134335",
 		},
 		["魔杖"] = {
 			["spells"] = "5009=132317",
@@ -16182,17 +18015,38 @@ WeakAurasOptionsSaved = {
 		["顶点颜色：浅蓝"] = {
 			["spells"] = "23116=136235",
 		},
+		["Poltergeist Despawn (DND)"] = {
+			["spells"] = "18380=136235",
+		},
 		["清除占据"] = {
 			["spells"] = "23776=136235",
 		},
 		["Increased Intellect 29"] = {
 			["spells"] = "14419=136235",
 		},
+		["TEST Arcane Concentration"] = {
+			["spells"] = "18189=136170",
+		},
+		["Lava Trap 1"] = {
+			["spells"] = "17675=136235",
+		},
+		["配方：泰坦合剂"] = {
+			["spells"] = "17642=136235",
+		},
+		["Onyxia Trans"] = {
+			["spells"] = "17136=136235",
+		},
+		["Emberseer Object Visual"] = {
+			["spells"] = "16532=136130",
+		},
 		["Permanent R.O.I.D.S."] = {
 			["spells"] = "30178=136075",
 		},
 		["深红丝质腰带"] = {
 			["spells"] = "8772=132149,8773=136021",
+		},
+		["Destroy Totems (PT)"] = {
+			["spells"] = "16529=136235",
 		},
 		["冬季狂欢者 - 地精女性"] = {
 			["spells"] = "26243=135849",
@@ -16206,8 +18060,14 @@ WeakAurasOptionsSaved = {
 		["强力治疗术"] = {
 			["spells"] = "24208=135915",
 		},
+		["图样：守护腰带"] = {
+			["spells"] = "3806=136235",
+		},
 		["反转变形"] = {
 			["spells"] = "4058=136235",
+		},
+		["Summon Vessel of Rebirth DND"] = {
+			["spells"] = "22958=136235",
 		},
 		["进入战场"] = {
 			["spells"] = "26489=132091",
@@ -16215,8 +18075,38 @@ WeakAurasOptionsSaved = {
 		["大法师之袍"] = {
 			["spells"] = "18457=132149",
 		},
+		["传导"] = {
+			["spells"] = "16039=136116,16109=136116,16110=136116,16111=136116,16112=136116",
+		},
+		["干扰群居龙蛋"] = {
+			["spells"] = "15746=136235",
+		},
+		["强效魔法杖"] = {
+			["spells"] = "14807=135144,14808=135913",
+		},
+		["火焰头盔"] = {
+			["spells"] = "10632=136235,10633=136021",
+		},
+		["Increased Fire Resist 40"] = {
+			["spells"] = "14620=136235",
+		},
+		["Increased Fire Resist 35"] = {
+			["spells"] = "14615=136235",
+		},
 		["结构图：大型绿色烟花"] = {
 			["spells"] = "26433=134153",
+		},
+		["Increased Intellect 21"] = {
+			["spells"] = "14411=136235",
+		},
+		["NPC PORT TEST"] = {
+			["spells"] = "13954=136235",
+		},
+		["奥术箭"] = {
+			["spells"] = "13748=135753,13901=135753,15124=135753,15230=135753,15254=135753,15451=135753,15979=135753,20720=135753,20829=135753,25055=135753",
+		},
+		["精确"] = {
+			["spells"] = "13705=132222,13832=132222,13843=132222,13844=132222,13845=132222,20189=132282,20192=132282,20193=132282",
 		},
 		["充电防护"] = {
 			["spells"] = "30082=136235",
@@ -16227,14 +18117,56 @@ WeakAurasOptionsSaved = {
 		["鱼人鳞片胸甲"] = {
 			["spells"] = "6703=136235",
 		},
+		["Increase Arcane Dam 9"] = {
+			["spells"] = "13601=136235",
+		},
+		["附魔护腕 - 次级力量"] = {
+			["spells"] = "13536=135913",
+		},
+		["Gemology - Iron (DND)"] = {
+			["spells"] = "12689=134118",
+		},
 		["硬化蝎壳护肩"] = {
 			["spells"] = "10564=136235",
+		},
+		["Evil God Counterspell"] = {
+			["spells"] = "12458=136235",
+		},
+		["Atal'ai Altar Light Visual (DND)"] = {
+			["spells"] = "12348=136235",
+		},
+		["召唤塞尔萨玛巡山人"] = {
+			["spells"] = "11823=136235",
 		},
 		["冷木诅咒"] = {
 			["spells"] = "16871=136160",
 		},
+		["秘银杆"] = {
+			["spells"] = "11454=136235,12909=136235",
+		},
+		["强化奥术飞弹"] = {
+			["spells"] = "11237=136096,12463=136096,12464=136096,16769=136096,16770=136096",
+		},
+		["召唤青色陆行鸟"] = {
+			["spells"] = "10804=132253",
+		},
 		["单手斧"] = {
 			["spells"] = "196=132392,15984=132392",
+		},
+		["召唤棕色陆行鸟"] = {
+			["spells"] = "10800=132253",
+		},
+		["图样：舒适的皮帽"] = {
+			["spells"] = "10492=136235",
+		},
+		["Increase Nature Dam 8"] = {
+			["spells"] = "9410=136235,9411=136235",
+		},
+		["Teleport to Darnassus - Event"] = {
+			["spells"] = "9268=136235",
+		},
+		["Echoes of Lordaeron UNUSED"] = {
+			["spells"] = "8878=132486",
 		},
 		["诅咒增幅"] = {
 			["spells"] = "18288=136132",
@@ -16242,17 +18174,41 @@ WeakAurasOptionsSaved = {
 		["伤害反射护盾"] = {
 			["spells"] = "21075=136121",
 		},
+		["Stealth (TEST)"] = {
+			["spells"] = "8874=132320",
+		},
+		["河爪死亡"] = {
+			["spells"] = "8655=132151",
+		},
+		["音素爆破"] = {
+			["spells"] = "8281=136222",
+		},
+		["风怒武器"] = {
+			["spells"] = "8232=136018,8233=136018,8234=136018,8235=136018,8236=136018,8237=136018,10484=136018,10486=136018,10488=136018,16361=136018,16362=136018,16363=136018",
+		},
 		["Increased Damage - Beast 06"] = {
 			["spells"] = "7592=136235",
 		},
 		["流星"] = {
 			["spells"] = "24340=135808,26558=135808,28884=135808",
 		},
+		["枪械射击"] = {
+			["spells"] = "7918=132222",
+		},
 		["昏迷1秒，1%"] = {
 			["spells"] = "20884=133477",
 		},
 		["修正补丁"] = {
 			["spells"] = "10860=136192",
+		},
+		["附魔披风 - 次级火焰抗性"] = {
+			["spells"] = "7861=135913,7862=135913",
+		},
+		["GGOODMANTEST"] = {
+			["spells"] = "7585=136235",
+		},
+		["召唤被奴役的座狼"] = {
+			["spells"] = "7488=136130",
 		},
 		["Increase Arcane Dam 5"] = {
 			["spells"] = "13595=136235",
@@ -16262,6 +18218,9 @@ WeakAurasOptionsSaved = {
 		},
 		["头重脚轻"] = {
 			["spells"] = "25788=132938",
+		},
+		["Healing Aura (TEST)"] = {
+			["spells"] = "7331=135917",
 		},
 		["Increased Frost Resist 39"] = {
 			["spells"] = "14578=136235",
@@ -16281,6 +18240,12 @@ WeakAurasOptionsSaved = {
 		["强化献祭"] = {
 			["spells"] = "17815=135817,17833=135817,17834=135817,17835=135817,17836=135817",
 		},
+		["迅捷反射 III"] = {
+			["spells"] = "6433=132223",
+		},
+		["Growl of Fortitude Proc"] = {
+			["spells"] = "6923=132091",
+		},
 		["瑟银火枪"] = {
 			["spells"] = "19792=136235",
 		},
@@ -16293,8 +18258,17 @@ WeakAurasOptionsSaved = {
 		["Increase Shadow Dam 61"] = {
 			["spells"] = "26732=136235",
 		},
+		["蓟皮之肤"] = {
+			["spells"] = "6813=132156",
+		},
+		["果断一击"] = {
+			["spells"] = "6559=132340,6563=132340",
+		},
 		["Cluster Rocket, YELLOW - N"] = {
 			["spells"] = "26322=136235",
+		},
+		["珍珠披风"] = {
+			["spells"] = "6521=132149,6522=136021",
 		},
 		["定身攻击"] = {
 			["spells"] = "2923=132152",
@@ -16305,14 +18279,32 @@ WeakAurasOptionsSaved = {
 		["Windfury Totem Passive"] = {
 			["spells"] = "8515=136114,10609=136114,10612=136114",
 		},
+		["杂烩蚌肉"] = {
+			["spells"] = "6501=134712",
+		},
 		["Disturb Minion Trap, small"] = {
 			["spells"] = "27885=136235",
+		},
+		["枪械专精"] = {
+			["spells"] = "5626=134537,5630=134537,5631=134537,5632=134537,5633=134537,5634=134537,5635=134537,5636=134537,5637=134537,5638=134537,5639=134537,5640=134537,5641=134537,5642=134537,5643=134537,5650=132222,5651=132222,5652=132222,5653=132222,5654=132222,5655=132222,5656=132222,5657=132222,5658=132222,5659=132222,5660=132222,5661=132222,5662=132222,5663=132222,5664=132222,20595=134537",
+		},
+		["MACESTAFFSPECIAL (DND)"] = {
+			["spells"] = "3440=132325",
+		},
+		["Shoot (TEST)"] = {
+			["spells"] = "3018=132222,19881=135497",
+		},
+		["Freeze III PROC"] = {
+			["spells"] = "2647=135860",
+		},
+		["Pet Upgrade (NYI)"] = {
+			["spells"] = "1522=136235",
 		},
 		["增益"] = {
 			["spells"] = "31817=136101",
 		},
-		["Trigger Sandworm Mortar"] = {
-			["spells"] = "31562=136235",
+		["Self Stun - 1 second, no visual"] = {
+			["spells"] = "31248=136168",
 		},
 		["黎明印记"] = {
 			["spells"] = "30089=134500",
@@ -16323,17 +18315,17 @@ WeakAurasOptionsSaved = {
 		["装满迪诺的瓶子"] = {
 			["spells"] = "9052=136235",
 		},
-		["荣誉点数+25"] = {
-			["spells"] = "31415=136235",
+		["Permanent Swiftness of Zanza"] = {
+			["spells"] = "30338=134811",
 		},
-		["效率"] = {
-			["spells"] = "19416=135865,19417=135865,19418=135865,19419=135865,19420=135865",
+		["Beast Slaying 39"] = {
+			["spells"] = "18109=136235",
 		},
 		["设计图：重型木喉长靴"] = {
 			["spells"] = "23631=136235",
 		},
-		["香料迫击炮"] = {
-			["spells"] = "31364=135808",
+		["Create Upperdeck Tabard #3"] = {
+			["spells"] = "30185=136235",
 		},
 		["Permanent Gizzard Gum"] = {
 			["spells"] = "30177=136075",
@@ -16344,23 +18336,23 @@ WeakAurasOptionsSaved = {
 		["刺骨寒冰"] = {
 			["spells"] = "11151=135845,12952=135845,12953=135845,12954=135845,12957=135845",
 		},
-		["Increased Arcane Resist 28"] = {
-			["spells"] = "14730=136235",
+		["致伤毒药"] = {
+			["spells"] = "13218=134197,13219=134197,13220=134197,13221=134197,13222=134197,13223=134197,13224=134197,13225=134197,13226=134197,13227=134197,13231=134197,13232=134197,13233=134197",
 		},
-		["地狱犬召唤"] = {
-			["spells"] = "30797=136203",
+		["火焰弹"] = {
+			["spells"] = "29635=135934,29647=135990",
 		},
-		["魅魔召唤"] = {
-			["spells"] = "30795=136203",
+		["Summon Type A Periodic (2 sec)"] = {
+			["spells"] = "29392=136235",
 		},
-		["Increase Spell Dam 23 - Devout"] = {
-			["spells"] = "30779=136235",
+		["Holiday Breath of Fire, Effect"] = {
+			["spells"] = "29387=135818",
 		},
-		["Attack Power 40 - Lightforge"] = {
-			["spells"] = "30775=136235",
+		["萨菲隆死亡"] = {
+			["spells"] = "29357=136235",
 		},
-		["未变形英雄"] = {
-			["spells"] = "25100=136235",
+		["Create Zul'Gurub Talisman WLK R3 DND"] = {
+			["spells"] = "24046=136235",
 		},
 		["智慧燃烧"] = {
 			["spells"] = "1483=135932,1484=135932",
@@ -16377,17 +18369,17 @@ WeakAurasOptionsSaved = {
 		["制造帕米拉的洋娃娃"] = {
 			["spells"] = "17133=136235",
 		},
-		["Permanent Spirit of Zanza"] = {
-			["spells"] = "30336=134810",
+		["Merithra's Wake Visual DND"] = {
+			["spells"] = "25172=136235",
 		},
 		["强化精灵之火"] = {
 			["spells"] = "24479=136235",
 		},
-		["斧类武器掌握"] = {
-			["spells"] = "4289=132316,4290=132316,4291=132316,4292=132316",
+		["召唤小鱼人（白色）"] = {
+			["spells"] = "24988=134300",
 		},
-		["Create Upperdeck Tiger Cub"] = {
-			["spells"] = "30186=136235",
+		["牛皮糖"] = {
+			["spells"] = "29334=135267",
 		},
 		["变形免疫"] = {
 			["spells"] = "29183=136235",
@@ -16395,8 +18387,8 @@ WeakAurasOptionsSaved = {
 		["Land Mine Periodic"] = {
 			["spells"] = "27999=135805",
 		},
-		["Create Upperdeck Tabard #2"] = {
-			["spells"] = "30182=136235",
+		["使用彩带棒"] = {
+			["spells"] = "29172=135270",
 		},
 		["设计图：君王板甲头盔"] = {
 			["spells"] = "16690=136235",
@@ -16413,41 +18405,41 @@ WeakAurasOptionsSaved = {
 		["制造奥格瑞玛烈焰"] = {
 			["spells"] = "29130=136235",
 		},
-		["AB Effect 001"] = {
-			["spells"] = "28442=135331",
+		["制造裂隙"] = {
+			["spells"] = "9079=136235",
 		},
-		["Despawn Boss Adds"] = {
-			["spells"] = "30134=136235",
+		["制作牛皮糖"] = {
+			["spells"] = "29116=136235",
 		},
 		["咬手"] = {
 			["spells"] = "5376=136168,5377=136168,5383=132316,6038=132316",
 		},
-		["强迫咆哮"] = {
-			["spells"] = "30121=132091",
+		["Plague Slime (Black)"] = {
+			["spells"] = "28987=136121",
 		},
 		["隐秘通途之兽"] = {
 			["spells"] = "29233=132133",
 		},
-		["结构图：奥术炸弹"] = {
-			["spells"] = "19867=134153",
+		["Test Combo"] = {
+			["spells"] = "6747=136235",
 		},
 		["Increase Shadow Dam 18"] = {
 			["spells"] = "18011=136235,18012=136235",
 		},
-		["次级黎明印记"] = {
-			["spells"] = "30088=134499",
+		["衰落之眼"] = {
+			["spells"] = "28862=135994",
 		},
 		["元素武器"] = {
 			["spells"] = "16266=135814,29079=135814,29080=135814",
 		},
-		["毒气"] = {
-			["spells"] = "30075=136006",
+		["闪电伤害提高"] = {
+			["spells"] = "28857=136052",
 		},
-		["冷酷突袭"] = {
-			["spells"] = "29874=136235",
+		["熔解之语"] = {
+			["spells"] = "28800=136235",
 		},
-		["夺取希利苏斯军旗"] = {
-			["spells"] = "29785=136235",
+		["Increase Spell Dam 51"] = {
+			["spells"] = "28767=136235",
 		},
 		["横扫重锤"] = {
 			["spells"] = "17196=136016",
@@ -16473,20 +18465,20 @@ WeakAurasOptionsSaved = {
 		["Emberseer Bonus Damage"] = {
 			["spells"] = "16534=135805",
 		},
-		["中级烹饪"] = {
-			["spells"] = "3412=133971",
+		["Despawn Chained Spirits"] = {
+			["spells"] = "24342=136235",
 		},
-		["召唤地穴卫士"] = {
-			["spells"] = "29508=136235",
+		["Quest - Prepare Field Duty Papers"] = {
+			["spells"] = "28745=136235",
 		},
-		["Flesh Ripper Aggro"] = {
-			["spells"] = "29498=136235",
+		["健忘"] = {
+			["spells"] = "28737=132270",
 		},
-		["图样：符文布外套"] = {
-			["spells"] = "18477=136235",
+		["Increased Stamina 40"] = {
+			["spells"] = "14487=136235",
 		},
-		["天灾的力量"] = {
-			["spells"] = "29467=136235,29468=136235",
+		[" Attack Power - Feral (+305)"] = {
+			["spells"] = "28717=136235",
 		},
 		["挖掘陷阱"] = {
 			["spells"] = "6538=136025,6539=136025,6540=136025",
@@ -16494,8 +18486,8 @@ WeakAurasOptionsSaved = {
 		["召唤孢子"] = {
 			["spells"] = "29234=136235",
 		},
-		["闪光炸弹"] = {
-			["spells"] = "29419=136142",
+		["铁藤腰带"] = {
+			["spells"] = "28463=136192",
 		},
 		["ToWoW - Sillithus PvP Flag"] = {
 			["spells"] = "30176=136235",
@@ -16527,23 +18519,23 @@ WeakAurasOptionsSaved = {
 		["蘑菇花"] = {
 			["spells"] = "29232=136112",
 		},
-		["次级虚空精华"] = {
-			["spells"] = "13740=136192",
+		["夜色外套"] = {
+			["spells"] = "10499=136235,10500=136021",
 		},
 		["赞扎之魂"] = {
 			["spells"] = "24382=134810",
 		},
-		["CooldownAll"] = {
-			["spells"] = "29313=136235",
+		["费尔根初始化"] = {
+			["spells"] = "28138=136235",
 		},
-		["节日控火者 - 牛头人女性"] = {
-			["spells"] = "29244=135849",
+		["Thadius Lightning Visual"] = {
+			["spells"] = "28136=135824",
 		},
-		["治疗之道"] = {
-			["spells"] = "29202=136044,29203=136044,29205=136044,29206=136044",
+		["Zap Crystal, Summon Zapper"] = {
+			["spells"] = "28031=136235",
 		},
-		["强化武器图腾"] = {
-			["spells"] = "29192=135792,29193=135792",
+		["奥术遮罩"] = {
+			["spells"] = "28006=136235",
 		},
 		["强化拦截"] = {
 			["spells"] = "20504=132307,20505=132307",
@@ -16557,8 +18549,8 @@ WeakAurasOptionsSaved = {
 		["死亡环绕"] = {
 			["spells"] = "27978=132331",
 		},
-		["五月柱"] = {
-			["spells"] = "29134=136223,29160=136223",
+		["Copy of Mana Surge"] = {
+			["spells"] = "31466=136222",
 		},
 		["Summon Son of Flame G"] = {
 			["spells"] = "21115=135819",
@@ -16569,8 +18561,8 @@ WeakAurasOptionsSaved = {
 		["设计图：黑色赦免者"] = {
 			["spells"] = "23640=136235",
 		},
-		["制造雷霆崖烈焰"] = {
-			["spells"] = "29132=136235",
+		["召唤鬼灵学徒"] = {
+			["spells"] = "27921=136235",
 		},
 		["Minion Spawner, small"] = {
 			["spells"] = "27887=136235",
@@ -16584,14 +18576,14 @@ WeakAurasOptionsSaved = {
 		["强化震击伤害"] = {
 			["spells"] = "27859=136052",
 		},
-		["Summon Corpse Scarabs (5)"] = {
-			["spells"] = "29105=136235",
+		["快速治疗之触施放"] = {
+			["spells"] = "27846=136052",
 		},
-		["阿努布雷坎光环"] = {
-			["spells"] = "29103=136235,29104=136235",
+		["图腾"] = {
+			["spells"] = "27763=136097",
 		},
-		["Increased Armor 200 Magister"] = {
-			["spells"] = "29091=136235",
+		["甜蜜惊喜"] = {
+			["spells"] = "27722=135459",
 		},
 		["昏迷重击 II"] = {
 			["spells"] = "2508=132326",
@@ -16599,8 +18591,8 @@ WeakAurasOptionsSaved = {
 		["白骨之盾"] = {
 			["spells"] = "27688=136127",
 		},
-		["召唤库尔塔兹之魂"] = {
-			["spells"] = "28932=136235",
+		["绿铁护肩"] = {
+			["spells"] = "3504=136192",
 		},
 		["掉落黑曜石"] = {
 			["spells"] = "27627=136235,27628=136235,27629=136235,27630=136235,27631=136235",
@@ -16611,11 +18603,11 @@ WeakAurasOptionsSaved = {
 		["火焰石效果"] = {
 			["spells"] = "17936=135821",
 		},
-		["Reduced Maul and Swipe Cost"] = {
-			["spells"] = "28855=136052",
+		["设计图：重型黑曜石腰带"] = {
+			["spells"] = "27591=136235",
 		},
-		["寒冰皇冠守护者"] = {
-			["spells"] = "29898=136235,29899=136235",
+		["Disarm (TEST)"] = {
+			["spells"] = "5259=136235",
 		},
 		["Increased Dodge 4"] = {
 			["spells"] = "13672=136235",
@@ -16626,14 +18618,14 @@ WeakAurasOptionsSaved = {
 		["银色黎明"] = {
 			["spells"] = "17350=135893,17351=135893",
 		},
-		["逃脱死亡"] = {
-			["spells"] = "28845=136235,28846=136119",
+		["厚重黑曜石胸甲"] = {
+			["spells"] = "27587=136192",
 		},
-		["Increased Frost Resist 16"] = {
-			["spells"] = "14556=136235",
+		["赞吉尔之触"] = {
+			["spells"] = "9810=136235,9991=136230",
 		},
-		["布劳缪克丝印记"] = {
-			["spells"] = "28833=135900",
+		["德尔克的毒药"] = {
+			["spells"] = "27582=136116",
 		},
 		["滑皮鲭鱼"] = {
 			["spells"] = "7752=136192",
@@ -16644,14 +18636,14 @@ WeakAurasOptionsSaved = {
 		["Lava Bomb Despawn"] = {
 			["spells"] = "19436=136235",
 		},
-		["图腾之力"] = {
-			["spells"] = "28823=136235,28824=135977,28825=135922,28826=135892,28827=135995",
+		["黑曜石护甲"] = {
+			["spells"] = "27539=136235",
 		},
 		["伏击"] = {
 			["spells"] = "8676=132282,8678=132282,8724=132282,8725=132282,8727=132282,8728=132282,11267=132282,11268=132282,11269=132282,11270=132282,11271=132282,11272=132282,24337=132282",
 		},
-		["冲动能量"] = {
-			["spells"] = "28812=136235,28813=136039",
+		["Receive Quest Object, Common, Darnassus"] = {
+			["spells"] = "27519=136235",
 		},
 		["Receive Reward AND Quest Object, Common, Ironforge"] = {
 			["spells"] = "27503=136235",
@@ -16662,23 +18654,23 @@ WeakAurasOptionsSaved = {
 		["克尔苏加德锁链"] = {
 			["spells"] = "28408=132507,28409=132507,28410=132507",
 		},
-		["寻找草药"] = {
-			["spells"] = "2383=133939,8387=134183,8390=134183",
+		["呀啊啊啊啊"] = {
+			["spells"] = "8221=132288,8222=132288",
 		},
-		["Stun Self + Immune"] = {
-			["spells"] = "28782=136235",
+		["Test Black Diamond"] = {
+			["spells"] = "27057=136192",
 		},
-		["屠龙者的纹章"] = {
-			["spells"] = "28777=135441",
+		["Increased Pet Health +3%"] = {
+			["spells"] = "27038=136095,27039=136095",
 		},
 		["Despawn InCombat Trigger"] = {
 			["spells"] = "26838=136235",
 		},
-		["清除蛛网裹体"] = {
-			["spells"] = "28628=136235,28629=136235",
+		["MHTest02 Effect"] = {
+			["spells"] = "19109=132350",
 		},
-		["移位"] = {
-			["spells"] = "28761=136235,28762=135894",
+		["Increase Arcane Dam 60"] = {
+			["spells"] = "26707=136235",
 		},
 		["Revall"] = {
 			["spells"] = "26687=135955",
@@ -16686,8 +18678,8 @@ WeakAurasOptionsSaved = {
 		["召唤污林图腾篮"] = {
 			["spells"] = "20818=136235",
 		},
-		["利爪祝福"] = {
-			["spells"] = "28750=135879",
+		["Buru Egg Trigger Effect"] = {
+			["spells"] = "26646=136235",
 		},
 		["信念外衣"] = {
 			["spells"] = "18456=132149",
@@ -16710,17 +18702,17 @@ WeakAurasOptionsSaved = {
 		["Increased All Resist 14"] = {
 			["spells"] = "18685=136235",
 		},
-		["炮击术 II"] = {
-			["spells"] = "3015=132153,3016=132153",
+		["Mana Burn Area"] = {
+			["spells"] = "26626=136235",
 		},
-		["邪恶之眼"] = {
-			["spells"] = "3233=136129",
+		["食谱：美味小鱼"] = {
+			["spells"] = "7756=136235",
 		},
 		["灵魂腐蚀"] = {
 			["spells"] = "25805=136159",
 		},
-		["召唤飞毛腿"] = {
-			["spells"] = "28738=132311",
+		["Cluster Rocket, RED BIG - SW"] = {
+			["spells"] = "26504=136235",
 		},
 		["虫群卫士徽章"] = {
 			["spells"] = "26480=133573",
@@ -16728,14 +18720,14 @@ WeakAurasOptionsSaved = {
 		["生命胸甲"] = {
 			["spells"] = "19095=136235",
 		},
-		["Increase Healing 178"] = {
-			["spells"] = "28736=136235",
+		["生命虹吸"] = {
+			["spells"] = "18265=136188,18879=136188,18880=136188,18881=136188,18927=136188,18928=136188,18929=136188",
 		},
 		["精神法杖"] = {
 			["spells"] = "2708=132325",
 		},
-		["重拳先生践踏"] = {
-			["spells"] = "6432=132368",
+		["毒性喷溅"] = {
+			["spells"] = "7951=136016,19452=136016",
 		},
 		["Tag: Sleep"] = {
 			["spells"] = "20373=132156",
@@ -16743,11 +18735,11 @@ WeakAurasOptionsSaved = {
 		["结构图：大型蓝色烟花束"] = {
 			["spells"] = "26438=134153",
 		},
-		["收割灵魂"] = {
-			["spells"] = "28679=136137",
+		["结构图：红色烟花束"] = {
+			["spells"] = "26437=134153",
 		},
-		["召唤裹体蛛网"] = {
-			["spells"] = "28627=136235",
+		["结构图：小型蓝色烟花"] = {
+			["spells"] = "26429=134153",
 		},
 		["Increased Critical 4"] = {
 			["spells"] = "7600=136235",
@@ -16755,8 +18747,8 @@ WeakAurasOptionsSaved = {
 		["Undead Slayer 75"] = {
 			["spells"] = "17457=136142",
 		},
-		["奥术充沛"] = {
-			["spells"] = "28574=135733",
+		["Holiday - Lunar Teleport Cap: Thunderbluff"] = {
+			["spells"] = "26412=135758",
 		},
 		["被动定身"] = {
 			["spells"] = "17507=136235",
@@ -16770,11 +18762,11 @@ WeakAurasOptionsSaved = {
 		["黑色战豹"] = {
 			["spells"] = "22723=132225",
 		},
-		["荆木长靴"] = {
-			["spells"] = "28473=136235",
+		["Rocket, YELLOW BIG"] = {
+			["spells"] = "26356=136235",
 		},
-		["变形术：猪"] = {
-			["spells"] = "28285=135997",
+		["Increase Holy Dam 3"] = {
+			["spells"] = "21501=136235",
 		},
 		["Increased Arcane Resist 31"] = {
 			["spells"] = "14733=136235",
@@ -16782,8 +18774,8 @@ WeakAurasOptionsSaved = {
 		["制造铁炉堡忠诚誓言"] = {
 			["spells"] = "27704=136235",
 		},
-		["设计图：铁藤胸甲"] = {
-			["spells"] = "28464=136235",
+		["Rocket, BLUE BIG"] = {
+			["spells"] = "26351=136235",
 		},
 		["攻击祭坛"] = {
 			["spells"] = "20037=136235",
@@ -16794,8 +18786,8 @@ WeakAurasOptionsSaved = {
 		["Rocket, YELLOW"] = {
 			["spells"] = "26349=136235",
 		},
-		["Despawn Wave Mobs"] = {
-			["spells"] = "28452=136235",
+		["Rocket, RED"] = {
+			["spells"] = "26347=136235",
 		},
 		["大型红色烟花"] = {
 			["spells"] = "26336=136235,26422=136235",
@@ -16815,8 +18807,8 @@ WeakAurasOptionsSaved = {
 		["Increased Intellect 26"] = {
 			["spells"] = "14416=136235",
 		},
-		["Summon Type B Periodic (30 sec)"] = {
-			["spells"] = "28426=136235",
+		["图样：雷暴手套"] = {
+			["spells"] = "26280=136235",
 		},
 		["Increased Dodge 8"] = {
 			["spells"] = "18062=136235",
@@ -16824,32 +18816,32 @@ WeakAurasOptionsSaved = {
 		["Judgement of Wisdom Intermediate"] = {
 			["spells"] = "1826=132140",
 		},
-		["将军的咆哮"] = {
-			["spells"] = "28418=136087,28419=136087,28420=136087",
+		["点心"] = {
+			["spells"] = "26263=134056",
 		},
-		["Summon Type C Trigger"] = {
-			["spells"] = "28417=136235",
+		["冬季狂欢者 - 牛头人女性"] = {
+			["spells"] = "26249=135849",
 		},
-		["灰烬使者的召唤"] = {
-			["spells"] = "28414=136235",
+		["Transform C'Thun -> Phase 2"] = {
+			["spells"] = "26232=136235",
 		},
 		["Increase Spell Dam 95"] = {
 			["spells"] = "28693=136235",
 		},
-		["变形回火"] = {
-			["spells"] = "28406=136071",
+		["Despawner, self"] = {
+			["spells"] = "28091=136235",
 		},
 		["召唤燃烧地狱犬"] = {
 			["spells"] = "16002=135805",
 		},
-		["召唤绿色小神龙"] = {
-			["spells"] = "23531=132311",
+		["Player Lost Hinot's OilDND"] = {
+			["spells"] = "22944=136235",
 		},
 		["Cluster Rocket, WHITE BIG - N"] = {
 			["spells"] = "26507=136235",
 		},
-		["声望 - 藏宝海湾 +500"] = {
-			["spells"] = "28393=136235",
+		["退出胃囊"] = {
+			["spells"] = "26221=136235,26224=136235,26230=136235",
 		},
 		["跳跃目标"] = {
 			["spells"] = "6545=136235",
@@ -16866,8 +18858,8 @@ WeakAurasOptionsSaved = {
 		["图样：木喉之智"] = {
 			["spells"] = "23668=136235",
 		},
-		["瓦斯"] = {
-			["spells"] = "28369=136006",
+		["Teleport Giant Hook Tentacle"] = {
+			["spells"] = "26191=136235",
 		},
 		["献祭陷阱"] = {
 			["spells"] = "13795=135813,13799=135813,14302=135813,14303=135813,14304=135813,14305=135813,14364=135813,14365=135813,14366=135813,14367=135813,22910=135813",
@@ -16875,14 +18867,14 @@ WeakAurasOptionsSaved = {
 		["奥术冲击"] = {
 			["spells"] = "10833=136146,16067=135807,18091=135807,20883=135807,22893=136146,22920=136146,22940=136146,24857=136146",
 		},
-		["Communique, Proxy-to-Relay"] = {
-			["spells"] = "28366=136235",
+		["Battlegear of Unyielding Strength Intercept Bonus"] = {
+			["spells"] = "26111=136235",
 		},
 		["Conqueror Shout Bonus"] = {
 			["spells"] = "26109=136235",
 		},
-		["烈焰震击者的复仇"] = {
-			["spells"] = "28323=135903",
+		["图样：熔火恶魔布包"] = {
+			["spells"] = "26091=136235",
 		},
 		["附魔盾牌 - 冰霜抗性"] = {
 			["spells"] = "13933=135913",
@@ -16896,38 +18888,38 @@ WeakAurasOptionsSaved = {
 		["萨菲隆的龙翼打击"] = {
 			["spells"] = "29327=136235,29328=136235",
 		},
-		["腐液之云"] = {
-			["spells"] = "28322=136133",
+		["图样：恶魔布包"] = {
+			["spells"] = "26089=136235",
 		},
-		["奥玛里恩的秘密"] = {
-			["spells"] = "28288=136235",
+		["图样：灵魂袋"] = {
+			["spells"] = "26088=136235",
 		},
-		["荆木头盔"] = {
-			["spells"] = "28472=136235",
+		["甲壳护盾"] = {
+			["spells"] = "26064=132199,26065=132199",
 		},
 		["偏斜雕文"] = {
 			["spells"] = "28773=135443",
 		},
-		["图样：奇美拉外衣"] = {
-			["spells"] = "19201=136235",
+		["强化暗影箭"] = {
+			["spells"] = "17793=136197,17796=136197,17801=136197,17802=136197,17803=136197",
 		},
-		["牵引射线"] = {
-			["spells"] = "28266=136235",
+		["召唤奥罗"] = {
+			["spells"] = "26061=136235,26642=136235",
 		},
-		["Increase Spell Dam 46"] = {
-			["spells"] = "28264=136235",
+		["召唤奥罗土堆"] = {
+			["spells"] = "26058=136235,26617=136235",
 		},
-		["暗影集中"] = {
-			["spells"] = "15260=136126,15327=136126,15328=136126,15329=136126,15330=136126",
+		["匍匐"] = {
+			["spells"] = "7267=136235",
 		},
-		["制造召唤徽记：火"] = {
-			["spells"] = "24889=136235",
+		["铜质大锤"] = {
+			["spells"] = "7408=136192,7409=136235",
 		},
 		["冰霜射击"] = {
 			["spells"] = "6984=135989,6985=135989,6986=135989,6987=135989,12551=135989,18802=135989",
 		},
-		["寒鳞护手"] = {
-			["spells"] = "28223=136235,28258=136021",
+		["安静的机械雪人"] = {
+			["spells"] = "26011=136235,26012=136235",
 		},
 		["附魔武器 - 力量"] = {
 			["spells"] = "23799=135913",
@@ -16938,8 +18930,8 @@ WeakAurasOptionsSaved = {
 		["斩杀"] = {
 			["spells"] = "5283=135358,5308=135358,6176=135358,6177=135358,7160=132090,20647=135358,20658=135358,20660=135358,20661=135358,20662=135358,20703=135358,20704=135358,26651=135724",
 		},
-		["Aqual Quintessence - Dowse Molten Core Rune"] = {
-			["spells"] = "21358=136235",
+		["Sleep Visual DND"] = {
+			["spells"] = "25148=132156",
 		},
 		["召唤棕色蟒蛇"] = {
 			["spells"] = "10716=132311",
@@ -16947,14 +18939,14 @@ WeakAurasOptionsSaved = {
 		["Viscidus Frost Weakness"] = {
 			["spells"] = "25926=136006",
 		},
-		["图样：冰川手套"] = {
-			["spells"] = "28212=136235",
+		["强效拯救祝福"] = {
+			["spells"] = "25895=135910,25939=135910",
 		},
-		["结构图：大型红色烟花束"] = {
-			["spells"] = "26440=134153",
+		["Sillithus Flag, Alliance, and speed limit (DND)"] = {
+			["spells"] = "29894=132486",
 		},
-		["优越"] = {
-			["spells"] = "28200=134123,28204=135990",
+		["Hive'Zara Swarmers Swarm"] = {
+			["spells"] = "25844=136235",
 		},
 		["强化暴风雪"] = {
 			["spells"] = "11185=135857,12487=135857,12488=135857",
@@ -16965,8 +18957,8 @@ WeakAurasOptionsSaved = {
 		["奥金斧"] = {
 			["spells"] = "16994=136192",
 		},
-		["Create Minion Trap: Ghost/Ghoul"] = {
-			["spells"] = "28195=136235",
+		["Copy of Bind"] = {
+			["spells"] = "24098=135926",
 		},
 		["毒性光环"] = {
 			["spells"] = "29865=136016",
@@ -17001,11 +18993,11 @@ WeakAurasOptionsSaved = {
 		["Increased Nature Resist 37"] = {
 			["spells"] = "14659=136235",
 		},
-		["电弧打击"] = {
-			["spells"] = "28168=132338",
+		["Hive'Zara Swarmer Loop 1"] = {
+			["spells"] = "25833=136235",
 		},
-		["暗影戒卫"] = {
-			["spells"] = "28165=136235,28166=136235",
+		["恐惧光环"] = {
+			["spells"] = "25820=136184,26641=136163,28313=136184,28315=136163",
 		},
 		["石肤术"] = {
 			["spells"] = "5810=132154,8072=136098,8156=136098,8157=136098,10403=136098,10404=136098,10405=136098,28995=136031,29154=136235",
@@ -17013,14 +19005,14 @@ WeakAurasOptionsSaved = {
 		["拉格纳罗斯之手"] = {
 			["spells"] = "19780=135807",
 		},
-		["守护者的力量"] = {
-			["spells"] = "28142=136057,28143=136057,28144=136057,28145=136057",
+		["腐烂光环"] = {
+			["spells"] = "25818=136064,25819=136064",
 		},
 		["设计图：乌木刀"] = {
 			["spells"] = "10014=136235",
 		},
-		["Stalagg Passive"] = {
-			["spells"] = "28139=136235",
+		["秘法分离"] = {
+			["spells"] = "25767=136208,25768=135990",
 		},
 		["弧光扳手"] = {
 			["spells"] = "7430=136235,7431=136235",
@@ -17046,8 +19038,8 @@ WeakAurasOptionsSaved = {
 		["传送门：奥格瑞玛"] = {
 			["spells"] = "11417=135744,11423=135744",
 		},
-		["正义之火"] = {
-			["spells"] = "28881=135814,28882=135880",
+		["龙鳞护手"] = {
+			["spells"] = "10619=136235,10620=136021",
 		},
 		["图样：洞察束带"] = {
 			["spells"] = "22929=136235",
@@ -17061,23 +19053,23 @@ WeakAurasOptionsSaved = {
 		["超级雪球"] = {
 			["spells"] = "25686=132387,25687=132387",
 		},
-		["毒性蒸汽"] = {
-			["spells"] = "25786=132099",
+		["腐肉大餐"] = {
+			["spells"] = "15863=136192",
 		},
-		["Despawn Sothos's Corpse"] = {
-			["spells"] = "28117=136235",
+		["次级龙语（语言）"] = {
+			["spells"] = "25674=136235",
 		},
 		["强化亚麻斗篷"] = {
 			["spells"] = "2397=132149,2419=136021",
 		},
-		["Stalagg Tesla Passive"] = {
-			["spells"] = "28097=136235",
+		["兰莎尔拉 - 致盲枭兽"] = {
+			["spells"] = "18994=136235",
 		},
-		["BRD Kill Credit Trigger"] = {
-			["spells"] = "28082=136235",
+		["ClearAll"] = {
+			["spells"] = "25565=136235,28471=136235",
 		},
-		["正能量补充"] = {
-			["spells"] = "28062=135769",
+		["致命毒药 V"] = {
+			["spells"] = "25347=132290,25349=132290,25351=132290",
 		},
 		["恢复法力"] = {
 			["spells"] = "436=136235,437=136235,438=136235,2023=136235,11903=136235,17530=136235,17531=136235,21395=136235,21396=136235",
@@ -17085,14 +19077,14 @@ WeakAurasOptionsSaved = {
 		["Increase Holy Dam 46"] = {
 			["spells"] = "21530=136235",
 		},
-		["Zap Crystal Corpse"] = {
-			["spells"] = "28056=136235",
+		["望远"] = {
+			["spells"] = "25247=132327",
 		},
 		["生命护腿"] = {
 			["spells"] = "19078=136235",
 		},
-		["微光酒"] = {
-			["spells"] = "29236=136235",
+		["Attack Power Ranged 7"] = {
+			["spells"] = "21428=136235",
 		},
 		["投掷黑铁啤酒"] = {
 			["spells"] = "14814=136235",
@@ -17106,8 +19098,8 @@ WeakAurasOptionsSaved = {
 		["强化血性狂暴"] = {
 			["spells"] = "12301=132277,12818=132277",
 		},
-		["野蛮冲撞"] = {
-			["spells"] = "16940=132114,16941=132114",
+		["\"Plucky\" Resumes Chicken Form"] = {
+			["spells"] = "9220=132276",
 		},
 		["包围之风"] = {
 			["spells"] = "6728=136018,15535=136018,23103=136018,25189=136018",
@@ -17124,8 +19116,8 @@ WeakAurasOptionsSaved = {
 		["附魔护腕 - 次级智力"] = {
 			["spells"] = "13622=135913,13623=135913",
 		},
-		["向左传送"] = {
-			["spells"] = "28025=136235",
+		["公式：初级法力之油"] = {
+			["spells"] = "25133=136235",
 		},
 		["配方：巨人药剂"] = {
 			["spells"] = "11509=136235",
@@ -17142,8 +19134,8 @@ WeakAurasOptionsSaved = {
 		["附魔手套 - 治疗能量"] = {
 			["spells"] = "25079=135913",
 		},
-		["抗性 - 强效自然抗性"] = {
-			["spells"] = "25069=136235",
+		["QAEnchant Boots +7 Stamina"] = {
+			["spells"] = "22103=135913",
 		},
 		["光明美味朗姆酒"] = {
 			["spells"] = "25037=132795",
@@ -17151,8 +19143,8 @@ WeakAurasOptionsSaved = {
 		["黑铁炸弹"] = {
 			["spells"] = "19784=135826,19799=136235",
 		},
-		["Choose Random Skull Pile"] = {
-			["spells"] = "27896=136235,27930=136235,27938=136235",
+		["破坏之魂"] = {
+			["spells"] = "25002=135824",
 		},
 		["图样：巫毒长袍"] = {
 			["spells"] = "10522=136235",
@@ -17166,11 +19158,11 @@ WeakAurasOptionsSaved = {
 		["召唤水浪幼崽"] = {
 			["spells"] = "22714=135836",
 		},
-		["Kill Summoner, who will Summon Boss"] = {
-			["spells"] = "27894=136235",
+		["Create Warsong Mark of Honor (Loser)"] = {
+			["spells"] = "24950=136235",
 		},
-		["疾病猛击"] = {
-			["spells"] = "27891=136022",
+		["制造召唤节杖：土"] = {
+			["spells"] = "24897=136235",
 		},
 		["制造召唤徽记：气"] = {
 			["spells"] = "24890=136235",
@@ -17184,11 +19176,11 @@ WeakAurasOptionsSaved = {
 		["青铜巨剑"] = {
 			["spells"] = "9986=136192,9989=136235",
 		},
-		["强化吸血鬼的拥抱"] = {
-			["spells"] = "27839=136165,27840=136165",
+		["Feline Swiftness Passive 1a"] = {
+			["spells"] = "24867=132115",
 		},
-		["狂野风暴"] = {
-			["spells"] = "27774=136235,27775=136014",
+		["制造BlizzCon奖券"] = {
+			["spells"] = "24863=136235",
 		},
 		["红色陷阱焰火"] = {
 			["spells"] = "11352=136235",
@@ -17199,11 +19191,11 @@ WeakAurasOptionsSaved = {
 		["食腐虫"] = {
 			["spells"] = "9092=134335",
 		},
-		["制造挑衅之旗"] = {
-			["spells"] = "27755=136235",
+		["蝙蝠装束"] = {
+			["spells"] = "24732=132288,24733=136235",
 		},
-		["硝石加速"] = {
-			["spells"] = "27746=134797",
+		["千刃"] = {
+			["spells"] = "24649=132373,24767=132373",
 		},
 		["北极手套"] = {
 			["spells"] = "28220=136235,28255=136021",
@@ -17211,8 +19203,8 @@ WeakAurasOptionsSaved = {
 		["克尔苏加德导能效果"] = {
 			["spells"] = "29422=136235",
 		},
-		["铁纹作战套装"] = {
-			["spells"] = "27733=135933",
+		["Alliance Warsong CTF Flag"] = {
+			["spells"] = "24639=136235",
 		},
 		["兴奋毒剂"] = {
 			["spells"] = "24596=132103",
@@ -17220,20 +19212,20 @@ WeakAurasOptionsSaved = {
 		["强化月火术"] = {
 			["spells"] = "16821=136096,16822=136096,16823=136096,16824=136096,16825=136096,28854=136096",
 		},
-		["水果芳香"] = {
-			["spells"] = "27721=135458",
+		["脆弱护甲"] = {
+			["spells"] = "24574=136235,24575=136162,24590=136162,29284=136076",
 		},
 		["软泥射击"] = {
 			["spells"] = "28318=136007",
 		},
-		["快乐奶油"] = {
-			["spells"] = "27720=135457",
+		["敏捷治疗之触"] = {
+			["spells"] = "24542=136077",
 		},
 		["召唤波利"] = {
 			["spells"] = "9998=136074",
 		},
-		["制造幽暗城忠诚誓言"] = {
-			["spells"] = "27719=136235",
+		["能量爆发"] = {
+			["spells"] = "24532=135871",
 		},
 		["召唤鬼灵瑞文戴尔"] = {
 			["spells"] = "27939=136235",
@@ -17241,14 +19233,14 @@ WeakAurasOptionsSaved = {
 		["白骨熔化"] = {
 			["spells"] = "17445=136187",
 		},
-		["制造暴风城面包袋"] = {
-			["spells"] = "27700=136235",
+		["吸血"] = {
+			["spells"] = "24437=132278,28831=136235,28839=135930",
 		},
 		["附魔武器 - 屠魔"] = {
 			["spells"] = "13915=135913",
 		},
-		["召唤白骨法师"] = {
-			["spells"] = "27695=136187,27696=136187,27697=136187,27698=136187,27699=136187",
+		["鳄鱼炖肉"] = {
+			["spells"] = "24418=136192",
 		},
 		["蓝色科多兽"] = {
 			["spells"] = "18992=132244",
@@ -17256,17 +19248,17 @@ WeakAurasOptionsSaved = {
 		["机敏射击"] = {
 			["spells"] = "1996=132153",
 		},
-		["Teleport to Razelikh (GROUP)"] = {
-			["spells"] = "27686=136235,27694=136235",
+		["金色猎豹"] = {
+			["spells"] = "16060=132242",
 		},
 		["投射"] = {
 			["spells"] = "7765=136235",
 		},
-		["制造部落礼品包"] = {
-			["spells"] = "27668=136235",
+		["饮水"] = {
+			["spells"] = "24355=132794,29007=132794",
 		},
-		["召唤亚雷恩的灵魂"] = {
-			["spells"] = "27643=136235",
+		["酸性血液虹吸"] = {
+			["spells"] = "24323=136006",
 		},
 		["黑色战驹"] = {
 			["spells"] = "22717=132251",
@@ -17277,11 +19269,11 @@ WeakAurasOptionsSaved = {
 		["威慑凝视"] = {
 			["spells"] = "24314=136129",
 		},
-		["Dungeon Set 2.0 Ghosts"] = {
-			["spells"] = "27614=136235",
+		["Vanish Visual"] = {
+			["spells"] = "24222=136235",
 		},
-		["设计图：黑曜石锁甲"] = {
-			["spells"] = "27596=136235",
+		["Heart of Hakkar - Molthor chucks the heart"] = {
+			["spells"] = "24214=136235",
 		},
 		["Hellfire Cast Visual"] = {
 			["spells"] = "24207=136235",
@@ -17298,8 +19290,8 @@ WeakAurasOptionsSaved = {
 		["Receive Quest Object, Common, Orgrimmar"] = {
 			["spells"] = "27523=136235",
 		},
-		["野餐"] = {
-			["spells"] = "27573=136235,27575=134062",
+		["哈卡的意志"] = {
+			["spells"] = "24178=136206",
 		},
 		["匕首掌握"] = {
 			["spells"] = "4297=132321,4298=132321,4299=132321,4300=132321",
@@ -17307,8 +19299,8 @@ WeakAurasOptionsSaved = {
 		["草藤缠绕"] = {
 			["spells"] = "24170=136100",
 		},
-		["木喉防御者"] = {
-			["spells"] = "26066=132183",
+		["撒网器"] = {
+			["spells"] = "13099=132149,13119=132149,13120=132149,13138=132149,13139=132149,16566=132149",
 		},
 		["Increased Nature Resist 26"] = {
 			["spells"] = "14648=136235",
@@ -17319,41 +19311,41 @@ WeakAurasOptionsSaved = {
 		["奥术潜能"] = {
 			["spells"] = "24544=135753",
 		},
-		["Spell Damage Reduction"] = {
-			["spells"] = "27518=136235",
+		["魔法的视域"] = {
+			["spells"] = "24156=136235,24164=136235",
 		},
-		["Receive Reward AND Quest Object, Common, Thunder Bluff"] = {
-			["spells"] = "27511=136235",
+		["大师级制皮"] = {
+			["spells"] = "10663=133611",
 		},
 		["初级震颤"] = {
 			["spells"] = "10455=136025",
 		},
-		["宝石皮带"] = {
-			["spells"] = "3778=136235,3798=136021",
+		["Summon Type B"] = {
+			["spells"] = "28422=136235",
 		},
 		["解散机械雪人"] = {
 			["spells"] = "17163=136235",
 		},
-		["Receive Quest Object, Orgrimmar Guard"] = {
-			["spells"] = "27507=136235",
+		["图样：血虎护肩"] = {
+			["spells"] = "24130=136235",
 		},
 		["毒箭之雨"] = {
 			["spells"] = "24099=136016,25991=136016,28796=136016",
 		},
-		["灵质提纯器"] = {
-			["spells"] = "27420=135990,27433=136074",
+		["召唤玛尔里的爪牙"] = {
+			["spells"] = "24081=136235",
 		},
 		["Receive Quest Object, Common, Ironforge"] = {
 			["spells"] = "27520=136235",
 		},
-		["暗影之怒"] = {
-			["spells"] = "27286=136208",
+		["困惑"] = {
+			["spells"] = "24057=136122",
 		},
-		["召唤鬼灵刺客"] = {
-			["spells"] = "27249=136129",
+		["神圣法杖 III"] = {
+			["spells"] = "2694=132325",
 		},
-		["Receive Reward AND Quest Object, Stormwind Guard"] = {
-			["spells"] = "27242=136235",
+		["宁神毒药"] = {
+			["spells"] = "24002=132105,24003=132105",
 		},
 		["投掷燃烧瓶"] = {
 			["spells"] = "23968=136235,23969=136235,23970=135821",
@@ -17370,11 +19362,11 @@ WeakAurasOptionsSaved = {
 		["水晶尘"] = {
 			["spells"] = "29519=135867",
 		},
-		["无尽生命符记"] = {
-			["spells"] = "26976=132115",
+		["神智受难"] = {
+			["spells"] = "23773=136133",
 		},
-		["Cancel Heartbroken, Create Bracelet"] = {
-			["spells"] = "26921=136235",
+		["塞格的黑暗塔罗牌：智力"] = {
+			["spells"] = "23766=134334",
 		},
 		["制造伊瑟拉巨龙军团的誓言石"] = {
 			["spells"] = "12578=136235",
@@ -17382,20 +19374,20 @@ WeakAurasOptionsSaved = {
 		["图样：黑色龙鳞战靴"] = {
 			["spells"] = "20857=136235",
 		},
-		["Cluster Rocket, RED - D"] = {
-			["spells"] = "26305=136235",
+		["食谱：神秘杂烩"] = {
+			["spells"] = "15866=136235",
 		},
-		["Increase Frost Dam 70"] = {
-			["spells"] = "26726=136235",
+		["梦纹手套"] = {
+			["spells"] = "12067=132149,12111=136021",
 		},
-		["Increase Shadow Dam 70"] = {
-			["spells"] = "26736=136235",
+		["塞格的黑暗塔罗牌：精神"] = {
+			["spells"] = "23738=134334",
 		},
-		["设计图：符文之刃"] = {
-			["spells"] = "17025=136235",
+		["暗纹短裤"] = {
+			["spells"] = "12052=132149,12103=136021",
 		},
-		["毒性之血"] = {
-			["spells"] = "26744=132274",
+		["Block Value 19"] = {
+			["spells"] = "23731=136235",
 		},
 		["制造超维度幽灵显形器"] = {
 			["spells"] = "27754=136235",
@@ -17412,17 +19404,17 @@ WeakAurasOptionsSaved = {
 		["枯萎之触"] = {
 			["spells"] = "11441=136188,11442=136134,12947=136188",
 		},
-		["Increase Frost Dam 59"] = {
-			["spells"] = "26718=136235",
+		["奥特兰克魔法点心"] = {
+			["spells"] = "23692=134062",
 		},
-		["Increase Arcane Dam 67"] = {
-			["spells"] = "26712=136235",
+		["图样：银色护肩"] = {
+			["spells"] = "23671=136235",
 		},
 		["设计图：兽人护腿"] = {
 			["spells"] = "9958=136235",
 		},
-		["Increase Arcane Dam 66"] = {
-			["spells"] = "26711=136235",
+		["Complete Alterac Valley quest"] = {
+			["spells"] = "23658=136235",
 		},
 		["黑暗"] = {
 			["spells"] = "15259=136223,15307=136223,15308=136223,15309=136223,15310=136223",
@@ -17433,11 +19425,11 @@ WeakAurasOptionsSaved = {
 		["女妖尖叫"] = {
 			["spells"] = "16838=136164",
 		},
-		["Increase Fire Dam 72"] = {
-			["spells"] = "26703=136235",
+		["规避"] = {
+			["spells"] = "23647=132353",
 		},
-		["Increase Fire Dam 60"] = {
-			["spells"] = "26695=136235",
+		["设计图：黑色怒火"] = {
+			["spells"] = "23641=136235",
 		},
 		["设计图：黎明手套"] = {
 			["spells"] = "23635=136235",
@@ -17445,14 +19437,14 @@ WeakAurasOptionsSaved = {
 		["Activate Bomb 06"] = {
 			["spells"] = "11527=136235",
 		},
-		["疗毒"] = {
-			["spells"] = "26677=134811",
+		["重型木喉长靴"] = {
+			["spells"] = "23629=136192",
 		},
 		["秘银短裤"] = {
 			["spells"] = "9933=136192",
 		},
-		["符文皮甲"] = {
-			["spells"] = "19102=136235",
+		["Increased Armor 100"] = {
+			["spells"] = "15666=136235",
 		},
 		["惩戒之盾"] = {
 			["spells"] = "17495=134965,17496=134965",
@@ -17466,20 +19458,20 @@ WeakAurasOptionsSaved = {
 		["狂野变形"] = {
 			["spells"] = "23603=136071",
 		},
-		["Summon Ouro Scarabs Periodic"] = {
-			["spells"] = "26619=136235",
+		["Increase Shadow Dam 64"] = {
+			["spells"] = "23594=136235",
 		},
 		["洛欧塞布之影"] = {
 			["spells"] = "28778=135443",
 		},
-		["落星术"] = {
-			["spells"] = "26540=135753",
+		["提高爆击自然法术"] = {
+			["spells"] = "23570=136235",
 		},
-		["召唤扎拉幼虫"] = {
-			["spells"] = "26538=136235,26539=136235",
+		["加基森传送器失败"] = {
+			["spells"] = "23446=132862",
 		},
-		["大型紫色烟花束"] = {
-			["spells"] = "26516=136235",
+		["堕落火焰新星图腾"] = {
+			["spells"] = "23419=135824",
 		},
 		["Increased Intellect 25"] = {
 			["spells"] = "14415=136235",
@@ -17490,8 +19482,8 @@ WeakAurasOptionsSaved = {
 		["图样：巫纹长袍"] = {
 			["spells"] = "18518=136235",
 		},
-		["Cluster Rocket, YELLOW BIG - U"] = {
-			["spells"] = "26515=136235",
+		["枕头大战"] = {
+			["spells"] = "23416=132337",
 		},
 		["战斗怒吼"] = {
 			["spells"] = "5242=132333,5243=132333,6192=132333,6193=132333,6543=132333,6673=132333,6674=132333,9128=132333,11549=132333,11550=132333,11551=132333,11552=132333,11553=132333,24438=132333,25101=132333,25289=132333,25356=132333,25959=132333,26043=132333,26099=132333,27578=132333",
@@ -17499,56 +19491,56 @@ WeakAurasOptionsSaved = {
 		["设计图：黑暗符文头盔"] = {
 			["spells"] = "24916=136235",
 		},
-		["Cluster Rocket, YELLOW BIG - SW"] = {
-			["spells"] = "26514=136235",
+		["野性魔法"] = {
+			["spells"] = "23410=136129",
 		},
 		["夺取部落军旗"] = {
 			["spells"] = "23390=136235",
 		},
-		["Cluster Rocket, WHITE BIG - SE"] = {
-			["spells"] = "26508=136235",
+		["Trigger Trap2"] = {
+			["spells"] = "23360=136235",
 		},
-		["Nefarian Tunnel Selection (R2)"] = {
-			["spells"] = "23350=136235",
+		["Copy of Wandering Plague"] = {
+			["spells"] = "27857=136127",
 		},
-		["Cluster Rocket, RED BIG - N"] = {
-			["spells"] = "26502=136235",
+		["Nefarian Tunnel Selection (L2)"] = {
+			["spells"] = "23345=136235",
 		},
-		["Cluster Rocket, RED BIG - D"] = {
-			["spells"] = "26501=136235",
+		["Dragondog Breath Selection (L5)"] = {
+			["spells"] = "23321=136235",
 		},
-		["点燃躯体"] = {
-			["spells"] = "23315=135805,23316=135805",
+		["QAEnchant Bracer +9 Stamina"] = {
+			["spells"] = "22052=135913",
 		},
 		["Spawn - Red Lightning"] = {
 			["spells"] = "24240=136115",
 		},
-		["Increase Healing 143"] = {
-			["spells"] = "26461=136235",
+		["恶魔之咒"] = {
+			["spells"] = "23298=136221",
 		},
-		["Holiday - Lunar Teleport: Orgrimmar"] = {
-			["spells"] = "26453=135758",
+		["Increase Healing 106"] = {
+			["spells"] = "23264=136235,26225=136235",
 		},
-		["Holiday - Teleport: Moonglade (self)"] = {
-			["spells"] = "26451=135758",
+		["混乱钉刺"] = {
+			["spells"] = "23260=136014",
 		},
-		["怯懦"] = {
-			["spells"] = "8224=132092,15709=132092",
+		["结构图：比兹尼克247x128精确瞄准镜"] = {
+			["spells"] = "22794=136235",
 		},
-		["烟花发射器"] = {
-			["spells"] = "26442=136235",
+		["迅捷灰狼"] = {
+			["spells"] = "23252=132266",
 		},
 		["Beast Slaying 105"] = {
 			["spells"] = "15689=136235",
 		},
-		["图样：盖亚的拥抱"] = {
-			["spells"] = "28211=136235",
+		["迅捷橙色迅猛龙"] = {
+			["spells"] = "23243=132253",
 		},
 		["拯救公主"] = {
 			["spells"] = "15660=136235",
 		},
-		["结构图：大型绿色烟花束"] = {
-			["spells"] = "26439=134153",
+		["伦鲁迪洛尔"] = {
+			["spells"] = "23193=136235",
 		},
 		["重型蝎壳腰带"] = {
 			["spells"] = "19070=136235",
@@ -17562,14 +19554,14 @@ WeakAurasOptionsSaved = {
 		["龙血之痛：青铜"] = {
 			["spells"] = "23170=134156",
 		},
-		["结构图：绿色烟花束"] = {
-			["spells"] = "26436=134153",
+		["Ritual Bell Aura"] = {
+			["spells"] = "23117=136195",
 		},
 		["火舌图腾"] = {
 			["spells"] = "8227=136040,8231=136040,8249=136040,8252=136040,10526=136040,10528=136040,16387=136040,16394=136040",
 		},
-		["酸液喷涌"] = {
-			["spells"] = "26419=136007",
+		["抵抗全部"] = {
+			["spells"] = "18114=136116",
 		},
 		["农夫变形"] = {
 			["spells"] = "18142=136235",
@@ -17577,20 +19569,20 @@ WeakAurasOptionsSaved = {
 		["公式：附魔武器 - 十字军"] = {
 			["spells"] = "20087=136235",
 		},
-		["致密炸药"] = {
-			["spells"] = "23070=136235",
+		["Summon Illusionist's Mantle DND"] = {
+			["spells"] = "28951=136235",
 		},
-		["Increase Spell Dam 72"] = {
-			["spells"] = "26395=136235",
+		["Immolate Cast Time Reduction"] = {
+			["spells"] = "23047=135817",
 		},
-		["黑丝衬衣"] = {
-			["spells"] = "3870=132149,3892=136021",
+		["强烈"] = {
+			["spells"] = "18135=135819,18136=135819",
 		},
-		["驱除魔法"] = {
-			["spells"] = "776=136006,791=136235,1437=136006",
+		["新生"] = {
+			["spells"] = "23863=135934,23864=135990",
 		},
-		["ClearAllo"] = {
-			["spells"] = "26368=136235",
+		["Psychic Scream Duration Increase"] = {
+			["spells"] = "23044=136184",
 		},
 		["沼精之怒"] = {
 			["spells"] = "5665=136101",
@@ -17598,14 +19590,14 @@ WeakAurasOptionsSaved = {
 		["水晶禁锢"] = {
 			["spells"] = "23020=134075",
 		},
-		["召唤虚无行者"] = {
-			["spells"] = "22876=136160",
+		["Create Frostwolf Assault Order (DND)"] = {
+			["spells"] = "21654=136235",
 		},
 		["召唤劫掠者"] = {
 			["spells"] = "22860=132091",
 		},
-		["Despawn Kaldorei Elite"] = {
-			["spells"] = "26340=136235",
+		["芬古斯的狂暴"] = {
+			["spells"] = "22817=136109",
 		},
 		["Increased Frost Resist 35"] = {
 			["spells"] = "14574=136235",
@@ -17619,8 +19611,8 @@ WeakAurasOptionsSaved = {
 		["自然专精"] = {
 			["spells"] = "4848=136063,4849=136063,4850=136063,4851=136063,4852=136063,4853=136063,4854=136063,4855=136063,4856=136063,4857=136063,4858=136063,4859=136063,4860=136063,4861=136063,4862=136063,4863=136063,5820=136063,5821=136063,5823=136063,5824=136063",
 		},
-		["Increase Frost Dam 63"] = {
-			["spells"] = "26721=136235",
+		["图样：符文皮甲腰带"] = {
+			["spells"] = "19188=136235",
 		},
 		["Increased Root Resist 01"] = {
 			["spells"] = "22767=136235",
@@ -17634,20 +19626,20 @@ WeakAurasOptionsSaved = {
 		["Cluster Rocket, RED - U"] = {
 			["spells"] = "26360=136235",
 		},
-		["大型紫色烟花"] = {
-			["spells"] = "26335=136235",
+		["超级收缩射线"] = {
+			["spells"] = "22742=135989",
 		},
 		["灵魂分流"] = {
 			["spells"] = "16430=136169,24619=136169",
 		},
-		["大型蓝色烟花"] = {
-			["spells"] = "26333=136235,26420=136235",
+		["定身攻击 II"] = {
+			["spells"] = "2927=132152",
 		},
-		["白色烟花束"] = {
-			["spells"] = "26328=136235",
+		["光芒（橙色）"] = {
+			["spells"] = "22579=135741",
 		},
-		["红色烟花束"] = {
-			["spells"] = "26327=136235,26425=136235",
+		["剧烈痛楚"] = {
+			["spells"] = "22478=136207",
 		},
 		["归还联盟军旗"] = {
 			["spells"] = "23385=136235",
@@ -17658,32 +19650,32 @@ WeakAurasOptionsSaved = {
 		["复活节糖果"] = {
 			["spells"] = "24924=134015,24925=132094,24926=133148,24927=136184,24930=136235",
 		},
-		["Cluster Rocket, YELLOW - SW"] = {
-			["spells"] = "26324=136235",
+		["召唤白色猫头鹰"] = {
+			["spells"] = "10708=132311",
 		},
 		["CHECKMEOUT"] = {
 			["spells"] = "22147=136235",
 		},
-		["Cluster Rocket, PURPLE - SE"] = {
-			["spells"] = "26315=136235",
+		["野蛮突袭"] = {
+			["spells"] = "91=132316,1666=132316",
 		},
-		["Cluster Rocket, RED - N"] = {
-			["spells"] = "26306=136235",
+		["图样：冬天爷爷的手套"] = {
+			["spells"] = "21944=136235",
 		},
 		["礼服短裤"] = {
 			["spells"] = "12089=132149,12130=136021",
 		},
-		["Increase Healing 187"] = {
-			["spells"] = "26814=136235",
+		["雪王9000型"] = {
+			["spells"] = "21935=132387,21940=136235",
 		},
-		["Cluster Rocket, BLUE - D"] = {
-			["spells"] = "26301=136235",
+		["假人轰炸"] = {
+			["spells"] = "21912=136235",
 		},
 		["传授召唤虚空行者"] = {
 			["spells"] = "11520=136221",
 		},
-		["制造烟花束发射器"] = {
-			["spells"] = "26299=133861",
+		["Summon Lava Burst H"] = {
+			["spells"] = "21906=136235",
 		},
 		["紫色蘑菇疾病"] = {
 			["spells"] = "10136=132154",
@@ -17697,32 +19689,32 @@ WeakAurasOptionsSaved = {
 		["强化智慧祝福"] = {
 			["spells"] = "20244=135970,20245=135970",
 		},
-		["制造烟花发射器"] = {
-			["spells"] = "26298=134538",
+		["周期性击退"] = {
+			["spells"] = "21737=132330",
 		},
-		["小型白色烟花"] = {
-			["spells"] = "26294=136235",
+		["强化"] = {
+			["spells"] = "21540=136235",
 		},
-		["小型蓝色烟花"] = {
-			["spells"] = "26291=136235,26416=136235",
+		["Increase Holy Dam 58"] = {
+			["spells"] = "21536=136235",
 		},
 		["Increase Holy Dam 30"] = {
 			["spells"] = "21522=136235",
 		},
-		["恐惧谷的怨灵 #3"] = {
-			["spells"] = "23253=136235",
+		["Increase Healing 14"] = {
+			["spells"] = "7681=136235",
 		},
-		["强效火力药剂"] = {
-			["spells"] = "26277=136235",
+		["(Old) Magic Focus"] = {
+			["spells"] = "4811=136013",
 		},
 		["Increase Holy Dam 24"] = {
 			["spells"] = "21519=136235",
 		},
-		["检查重置"] = {
-			["spells"] = "26255=136235,26256=136235,26257=136235",
+		["Increase Holy Dam 12"] = {
+			["spells"] = "21510=136235",
 		},
-		["冬季狂欢者 - 亡灵女性"] = {
-			["spells"] = "26253=135849",
+		["Increase Holy Dam 6"] = {
+			["spells"] = "21504=136235",
 		},
 		["Attack Power Ranged 84"] = {
 			["spells"] = "21459=136235",
@@ -17730,14 +19722,14 @@ WeakAurasOptionsSaved = {
 		["安抚龙类"] = {
 			["spells"] = "19872=136046",
 		},
-		["冬季狂欢者 - 人类女性"] = {
-			["spells"] = "26240=135849",
+		["霜刃外套"] = {
+			["spells"] = "19104=136235",
 		},
 		["Player Released Thistle Bear"] = {
 			["spells"] = "17085=136235",
 		},
-		["Cthun Vulnerable"] = {
-			["spells"] = "26235=136235",
+		["Attack Power Ranged 36"] = {
+			["spells"] = "21440=136235",
 		},
 		["Attack Power Ranged 10"] = {
 			["spells"] = "21429=136235",
@@ -17745,11 +19737,11 @@ WeakAurasOptionsSaved = {
 		["图样：深红丝质披风"] = {
 			["spells"] = "8790=136235",
 		},
-		["Increase Healing 121"] = {
-			["spells"] = "26228=136235",
+		["Attack Power Ranged 2"] = {
+			["spells"] = "21426=136235",
 		},
-		["灰布手套"] = {
-			["spells"] = "18412=132149",
+		["雷松的全视之眼"] = {
+			["spells"] = "21403=132089,21546=136152,21554=136152",
 		},
 		["草药烘蛋"] = {
 			["spells"] = "8604=136192",
@@ -17757,14 +19749,14 @@ WeakAurasOptionsSaved = {
 		["啤酒烤猪排"] = {
 			["spells"] = "2795=136192",
 		},
-		["符文冥河护腿"] = {
-			["spells"] = "24901=132149",
+		["风暴战斧"] = {
+			["spells"] = "18797=132350",
 		},
 		["碧蓝护肩"] = {
 			["spells"] = "8795=132149",
 		},
-		["设计图：月牙斧"] = {
-			["spells"] = "3530=136235",
+		["Increased Strength 19"] = {
+			["spells"] = "14491=136235",
 		},
 		["岩浆喷溅"] = {
 			["spells"] = "23378=135817,23379=135817",
@@ -17787,14 +19779,14 @@ WeakAurasOptionsSaved = {
 		["激励"] = {
 			["spells"] = "21086=136146",
 		},
-		["制造冬青树"] = {
-			["spells"] = "26207=136235",
+		["灵魂膨胀"] = {
+			["spells"] = "21307=136235",
 		},
-		["Quest - Self Drain Mana"] = {
-			["spells"] = "25157=136235",
+		["急速冷却"] = {
+			["spells"] = "12472=135865",
 		},
-		["Spell Penetration 150 Fire Resist"] = {
-			["spells"] = "26203=136235",
+		["聪颖过人"] = {
+			["spells"] = "4204=132150,4205=132150,4206=132150,4207=132150,4208=132150,4210=132150,4211=132150,4212=132150,4213=136101,4214=136101,4215=136101,4216=136101,4217=136101,4218=136101,4219=136101,4220=136101,5069=132150,5070=132150,5071=132150,5072=132150,5073=132150,5074=132150,5075=132150,5076=136101,5077=136101,5078=136101,5079=136101,5080=136101,5081=136101,5082=136101",
 		},
 		["胸闷"] = {
 			["spells"] = "6945=136119",
@@ -17817,11 +19809,11 @@ WeakAurasOptionsSaved = {
 		["召唤地狱战马"] = {
 			["spells"] = "1710=136103,5784=136103",
 		},
-		["Unseen Path Pet Bonus"] = {
-			["spells"] = "26176=136235",
+		["萨弗隆战锤"] = {
+			["spells"] = "21161=136192,21164=136235",
 		},
-		["Increase Spell Dam 59"] = {
-			["spells"] = "26155=136235",
+		["奥术真空"] = {
+			["spells"] = "21147=135743",
 		},
 		["收集白蚁"] = {
 			["spells"] = "20274=136235",
@@ -17829,14 +19821,14 @@ WeakAurasOptionsSaved = {
 		["灰烬使者"] = {
 			["spells"] = "28282=135331",
 		},
-		["Enigma Blizzard Bonus"] = {
-			["spells"] = "26127=136235",
+		["Summon Son of Flame B"] = {
+			["spells"] = "21110=135819",
 		},
 		["Increased All Resist 04"] = {
 			["spells"] = "18675=136235",
 		},
-		["Alliance Reputation"] = {
-			["spells"] = "26126=132486",
+		["召唤瑟莱德丝碎片"] = {
+			["spells"] = "21057=135849,21809=135849",
 		},
 		["自然之友"] = {
 			["spells"] = "20988=136095,21925=136095,21926=136095,21927=136095,21928=136095,21938=136095",
@@ -17850,14 +19842,14 @@ WeakAurasOptionsSaved = {
 		["庇护治疗"] = {
 			["spells"] = "23781=136235",
 		},
-		["疯狂之眼"] = {
-			["spells"] = "26108=136175",
+		["吸血光环"] = {
+			["spells"] = "20809=136231,20810=136231",
 		},
 		["冬季狂欢者 - 矮人女性"] = {
 			["spells"] = "26242=135849",
 		},
-		["Dirt Mound Passive"] = {
-			["spells"] = "26092=136235",
+		["Increase Shadow Dam 60"] = {
+			["spells"] = "26731=136235",
 		},
 		["灵魂石复活"] = {
 			["spells"] = "20707=136210,20762=136210,20763=136210,20764=136210,20765=136210",
@@ -17877,8 +19869,8 @@ WeakAurasOptionsSaved = {
 		["Emote - SpellCastDirected"] = {
 			["spells"] = "20718=136235",
 		},
-		["Receive Quest Object, Common, Stormwind"] = {
-			["spells"] = "27525=136235",
+		["剧烈爆发"] = {
+			["spells"] = "20483=135830",
 		},
 		["雷霆啤酒"] = {
 			["spells"] = "5257=132792",
@@ -17886,11 +19878,11 @@ WeakAurasOptionsSaved = {
 		["Tag: Arrow"] = {
 			["spells"] = "20374=132212",
 		},
-		["强效庇护祝福"] = {
-			["spells"] = "25899=135911,25951=135911",
+		["Increased Shadow Resist 18"] = {
+			["spells"] = "14681=136235",
 		},
-		["Tag: Green Glow"] = {
-			["spells"] = "20371=136006",
+		["QAEnchant Cloak +8 Stealth"] = {
+			["spells"] = "27120=135913",
 		},
 		["智慧审判"] = {
 			["spells"] = "20186=135960,20268=135960,20352=135960,20353=135960,20354=135960,20355=135960,25757=135917,25758=135917",
@@ -17898,11 +19890,11 @@ WeakAurasOptionsSaved = {
 		["强化十字军圣印"] = {
 			["spells"] = "20335=135924,20336=135924,20337=135924,28852=136052",
 		},
-		["Pop Dirt Mounds"] = {
-			["spells"] = "26057=136235",
+		["治疗之光"] = {
+			["spells"] = "20237=135920,20238=135920,20239=135920",
 		},
-		["致命剧毒"] = {
-			["spells"] = "26053=136016",
+		["王者祝福"] = {
+			["spells"] = "20217=135995",
 		},
 		["凶猛撕咬"] = {
 			["spells"] = "22568=132127,22569=132127,22827=132127,22828=132127,22829=132127,22830=132127,22831=132127,22832=132127,27557=132127,31018=132127",
@@ -17910,11 +19902,11 @@ WeakAurasOptionsSaved = {
 		["土灵卫士被摧毁"] = {
 			["spells"] = "10666=136025",
 		},
-		["Increased Nature Resist 06"] = {
-			["spells"] = "14631=136235",
+		["钩网"] = {
+			["spells"] = "13608=132149,14030=132149,15609=132149",
 		},
-		["Viscidus Slowed More"] = {
-			["spells"] = "26036=136006",
+		["召唤奥妮克希亚幼崽"] = {
+			["spells"] = "20171=136235,20172=136235",
 		},
 		["嚎叫之怒"] = {
 			["spells"] = "7481=132091,7483=132091,7484=132091",
@@ -17922,11 +19914,11 @@ WeakAurasOptionsSaved = {
 		["公式：附魔武器 - 邪恶"] = {
 			["spells"] = "20083=136235",
 		},
-		["召唤安静的机械雪人"] = {
-			["spells"] = "26010=132311",
+		["公式：附魔武器 - 冰寒"] = {
+			["spells"] = "20075=136235",
 		},
-		["Crypt Scarab Suicide Passive"] = {
-			["spells"] = "16423=136190",
+		["食谱：刺须鲶鱼"] = {
+			["spells"] = "7760=136235",
 		},
 		["图样：信念外衣"] = {
 			["spells"] = "18532=136235",
@@ -17940,17 +19932,17 @@ WeakAurasOptionsSaved = {
 		["设计图：血魂护肩"] = {
 			["spells"] = "24143=136235",
 		},
-		["Viscidus Suicide Trigger"] = {
-			["spells"] = "26003=136006",
+		["次级不灭精华"] = {
+			["spells"] = "20040=136192",
 		},
-		["拍摄"] = {
-			["spells"] = "28129=136235",
+		["配方：魔血药水"] = {
+			["spells"] = "24369=136235",
 		},
-		["Increased Critical 2 Spells"] = {
-			["spells"] = "29159=136235",
+		["Damage 100 (TEST)"] = {
+			["spells"] = "2653=136235",
 		},
-		["雪球云雾"] = {
-			["spells"] = "26000=136235",
+		["附魔胸甲 - 极效法力"] = {
+			["spells"] = "20028=135913",
 		},
 		["图样：巫毒短裤"] = {
 			["spells"] = "10561=136235",
@@ -17958,35 +19950,35 @@ WeakAurasOptionsSaved = {
 		["Increase Shadow Dam 66"] = {
 			["spells"] = "26734=136235",
 		},
-		["公式：附魔护腕 - 次级偏斜"] = {
-			["spells"] = "13647=136235",
+		["附魔手套 - 强效力量"] = {
+			["spells"] = "20013=135913",
 		},
 		["放置维波里的信号灯"] = {
 			["spells"] = "21730=136235",
 		},
-		["Healing Ward V Passive"] = {
-			["spells"] = "4972=136222,11901=136222",
+		["Increase Ice Dam 20"] = {
+			["spells"] = "25066=136235",
 		},
-		["Increased Intellect 19"] = {
-			["spells"] = "14409=136235",
+		["Debuff Fire Resist (TEST)"] = {
+			["spells"] = "739=136235",
 		},
 		["结构图：完美的奥金步枪"] = {
 			["spells"] = "19868=134153",
 		},
-		["大地之优雅"] = {
-			["spells"] = "25892=132270",
+		["歼灭"] = {
+			["spells"] = "19811=135810",
 		},
 		["风暴召唤者之怒"] = {
 			["spells"] = "26121=136096",
 		},
-		["召唤黑色其拉作战坦克"] = {
-			["spells"] = "25863=134399,26655=134399,26656=134399,31700=134399",
+		["瑟银零件"] = {
+			["spells"] = "19791=136235",
 		},
 		["迪菲亚之塔 III"] = {
 			["spells"] = "9779=135812",
 		},
-		["使用节日酒杯"] = {
-			["spells"] = "25851=132792",
+		["召唤暴怒的角鹰兽"] = {
+			["spells"] = "14329=136235",
 		},
 		["符文奥金棒"] = {
 			["spells"] = "20051=135471",
@@ -17997,11 +19989,11 @@ WeakAurasOptionsSaved = {
 		["暗影掌握"] = {
 			["spells"] = "18271=136195,18272=136195,18273=136195,18274=136195,18275=136195",
 		},
-		["召唤鲨鱼宝宝"] = {
-			["spells"] = "25849=132311",
+		["强化荆棘时效"] = {
+			["spells"] = "21972=136235",
 		},
-		["制造亚什虫巢侦察报告"] = {
-			["spells"] = "25845=136235",
+		["绿色皮护腕"] = {
+			["spells"] = "3776=136235,3797=136021",
 		},
 		["支配"] = {
 			["spells"] = "17405=136206",
@@ -18039,38 +20031,38 @@ WeakAurasOptionsSaved = {
 		["神秘孤独"] = {
 			["spells"] = "26132=135845",
 		},
-		["恐惧尖啸"] = {
-			["spells"] = "25815=136184",
+		["图样：战熊热裤"] = {
+			["spells"] = "19200=136235",
 		},
 		["枭兽形态（被动）"] = {
 			["spells"] = "24905=136036",
 		},
-		["梦魇生物"] = {
-			["spells"] = "25806=136206",
+		["图样：蓝色龙鳞胸甲"] = {
+			["spells"] = "19193=136235",
 		},
-		["黑标美味朗姆酒"] = {
-			["spells"] = "25804=132791",
+		["符文皮甲短裤"] = {
+			["spells"] = "19091=136235",
 		},
-		["Ahn'Qiraj Reward Buff (Caster - 40)"] = {
-			["spells"] = "25798=134969",
+		["铁羽胸甲"] = {
+			["spells"] = "19086=136235",
 		},
-		["召唤亚尔基的血脉"] = {
-			["spells"] = "25789=134321",
+		["魔暴龙皮手套"] = {
+			["spells"] = "19084=136235",
 		},
 		["Increased Spell Hit Chance 2"] = {
 			["spells"] = "23729=136235",
 		},
-		["浸魔胸甲 - 吸收"] = {
-			["spells"] = "7856=135913",
+		["被占据"] = {
+			["spells"] = "17246=136122,18347=136122",
 		},
-		["澎湃"] = {
-			["spells"] = "25787=132337",
+		["雷暴"] = {
+			["spells"] = "19079=136235",
 		},
-		["制造召唤者护盾"] = {
-			["spells"] = "28132=136235",
+		["毛皮护甲片"] = {
+			["spells"] = "19058=136235,19148=136021",
 		},
-		["佯攻"] = {
-			["spells"] = "1966=132294,6734=132294,6768=132294,6769=132294,8637=132294,8638=132294,11303=132294,11304=132294,25302=132294,25413=132294,25976=132282",
+		["先祖知识"] = {
+			["spells"] = "17485=136162,17486=136162,17487=136162,17488=136162,17489=136162",
 		},
 		["秘银火枪"] = {
 			["spells"] = "12595=136235,12635=136235",
@@ -18081,8 +20073,8 @@ WeakAurasOptionsSaved = {
 		["Summon Type A Periodic (1 sec)"] = {
 			["spells"] = "29409=136235",
 		},
-		["维维尔的意志"] = {
-			["spells"] = "25773=135727",
+		["绿龙鳞片胸甲"] = {
+			["spells"] = "19050=136235",
 		},
 		["附魔武器 - 十字军"] = {
 			["spells"] = "20034=135913",
@@ -18099,8 +20091,8 @@ WeakAurasOptionsSaved = {
 		["打开白蚁桶"] = {
 			["spells"] = "18952=136235",
 		},
-		["神圣法杖 V"] = {
-			["spells"] = "2696=132325",
+		["脓疮之疹"] = {
+			["spells"] = "15848=136066",
 		},
 		["月布长袍"] = {
 			["spells"] = "22902=132149",
@@ -18111,8 +20103,8 @@ WeakAurasOptionsSaved = {
 		["Dire Maul Trap - Summon"] = {
 			["spells"] = "22803=136208",
 		},
-		["魔法点心"] = {
-			["spells"] = "25697=134062",
+		["Spirit Particles (green)"] = {
+			["spells"] = "18951=135864",
 		},
 		["Quest - Temporal Parasite Summon #3"] = {
 			["spells"] = "16631=136235",
@@ -18132,17 +20124,17 @@ WeakAurasOptionsSaved = {
 		["耶克里克变形"] = {
 			["spells"] = "23966=132288",
 		},
-		["食谱：迪尔格的超美味奇美拉肉片"] = {
-			["spells"] = "25658=136235",
+		["Increased All Resist 05"] = {
+			["spells"] = "18676=136235",
 		},
 		["泰莉欧娜幻象"] = {
 			["spells"] = "11048=132288",
 		},
-		["英勇打击"] = {
-			["spells"] = "78=132282,284=132282,285=132282,1605=132282,1606=132282,1607=132282,1608=132282,1610=132282,1611=132282,6158=132282,11564=132282,11565=132282,11566=132282,11567=132282,11570=132282,11571=132282,25286=132282,25354=132282,25710=132282,25712=132282,25958=132282",
+		["群体治疗"] = {
+			["spells"] = "25839=135913",
 		},
-		["Hakkar Power"] = {
-			["spells"] = "24692=136235",
+		["Increase Nature Dam 23"] = {
+			["spells"] = "17996=136235",
 		},
 		["Complete Arathi Basin quest, 4 bases"] = {
 			["spells"] = "24061=136235",
@@ -18165,8 +20157,8 @@ WeakAurasOptionsSaved = {
 		["预知"] = {
 			["spells"] = "12297=136056,12750=136056,12751=136056,12752=136056,12753=136056,16254=136056,16271=136056,16272=136056,16273=136056,16274=136056,20096=135994,20097=135994,20098=135994,20099=135994,20100=135994",
 		},
-		["吞噬"] = {
-			["spells"] = "25371=136020,25373=136020,25374=136020,25378=136224,25410=136020,25769=136235,25775=136235,26193=136123,26196=136020",
+		["末日仪式效果"] = {
+			["spells"] = "18541=135741",
 		},
 		["冰冻术 II"] = {
 			["spells"] = "2133=135852",
@@ -18186,17 +20178,17 @@ WeakAurasOptionsSaved = {
 		["Increased Fire Resist 10"] = {
 			["spells"] = "14590=136235",
 		},
-		["钉刺突击"] = {
-			["spells"] = "25190=132337,25191=132337",
+		["图样：恶魔布护肩"] = {
+			["spells"] = "18527=136235",
 		},
 		["结构图：红色焰火"] = {
 			["spells"] = "23083=134153",
 		},
-		["暗影虚弱"] = {
-			["spells"] = "25183=134399",
+		["灵魂燃烧"] = {
+			["spells"] = "1321=135805,19393=135827",
 		},
-		["冰霜之墓"] = {
-			["spells"] = "25168=136235",
+		["图样：月布护肩"] = {
+			["spells"] = "18521=136235",
 		},
 		["移处诅咒"] = {
 			["spells"] = "30281=135952",
@@ -18204,14 +20196,14 @@ WeakAurasOptionsSaved = {
 		["龙翼攻击"] = {
 			["spells"] = "18500=134316",
 		},
-		["Spell Penetration 150 Frost Resist"] = {
-			["spells"] = "26204=136235",
+		["图样：霜纹手套"] = {
+			["spells"] = "18481=136235",
 		},
 		["虚空法袍"] = {
 			["spells"] = "18458=132149",
 		},
-		["Night Elf Lunar Festival Vendor"] = {
-			["spells"] = "26384=135849",
+		["烧尽"] = {
+			["spells"] = "18459=135813,18460=135813,19396=135813,19397=135813",
 		},
 		["符文布护肩"] = {
 			["spells"] = "18449=132149",
@@ -18219,20 +20211,20 @@ WeakAurasOptionsSaved = {
 		["Curse of the Bleakheart Proc"] = {
 			["spells"] = "6947=136130",
 		},
-		["卓越巫师之油"] = {
-			["spells"] = "25122=136235,25129=135913",
+		["堕落风怒图腾"] = {
+			["spells"] = "23423=136114",
 		},
-		["Bleed Spice, Check"] = {
-			["spells"] = "30660=136235",
+		["符文布手套"] = {
+			["spells"] = "18417=132149",
 		},
 		["设计图：黎明束带"] = {
 			["spells"] = "23634=136235",
 		},
-		["公式：附魔披风 - 狡诈"] = {
-			["spells"] = "25096=136235",
+		["鬼纹腰带"] = {
+			["spells"] = "18410=132149",
 		},
-		["驯鹿之尘效果"] = {
-			["spells"] = "25952=136235",
+		["热疫疲惫"] = {
+			["spells"] = "22752=136106",
 		},
 		["体面的白衬衣"] = {
 			["spells"] = "3871=132149,3893=136021",
@@ -18243,8 +20235,8 @@ WeakAurasOptionsSaved = {
 		["黑暗契约"] = {
 			["spells"] = "18220=136141,18937=136141,18938=136141,18939=136141,18940=136141",
 		},
-		["附魔披风 - 强效自然抗性"] = {
-			["spells"] = "25082=135913",
+		["强化吸取灵魂"] = {
+			["spells"] = "18213=136163,18372=136163",
 		},
 		["Kirtonos Gargoyle Passive"] = {
 			["spells"] = "18116=134950",
@@ -18252,11 +20244,11 @@ WeakAurasOptionsSaved = {
 		["Increased Parry 5"] = {
 			["spells"] = "18063=136235",
 		},
-		["Dmg Shield"] = {
-			["spells"] = "25059=136104",
+		["公正圣印"] = {
+			["spells"] = "20164=135971,20462=135971",
 		},
-		["自然印记"] = {
-			["spells"] = "25040=136094,25041=136094,25042=136094",
+		["Increase Shadow Dam 24"] = {
+			["spells"] = "18018=136235,18019=136235",
 		},
 		["Increased Spell Penetration 6"] = {
 			["spells"] = "27516=136235",
@@ -18267,14 +20259,14 @@ WeakAurasOptionsSaved = {
 		["Increase Nature Dam 24"] = {
 			["spells"] = "17997=136235,17998=136235",
 		},
-		["远古治疗"] = {
-			["spells"] = "24998=136042",
+		["Increased Intellect 27"] = {
+			["spells"] = "14417=136235",
 		},
 		["Self Stun - (Visual only)"] = {
 			["spells"] = "18970=136168",
 		},
-		["荣誉点数+2388"] = {
-			["spells"] = "24966=132486",
+		["Decrease Mana Cost - Nature"] = {
+			["spells"] = "17913=136235",
 		},
 		["颅骨烙印"] = {
 			["spells"] = "17484=136160",
@@ -18285,14 +20277,14 @@ WeakAurasOptionsSaved = {
 		["造水术"] = {
 			["spells"] = "3696=135824,5504=132793,5505=132794,5506=132816,5507=132793,5565=132794,5566=132816,6127=132797,6128=132797,6635=135824,6638=135824,6639=135824,10138=132796,10139=132798,10140=132805,10141=132796,10142=132798,10143=132805",
 		},
-		["Holiday - Teleport: Moonglade"] = {
-			["spells"] = "26448=135758",
+		["Increase Fire Dam 31"] = {
+			["spells"] = "17886=136235",
 		},
-		["厌恶"] = {
-			["spells"] = "24919=136006",
+		["Increase Fire Dam 21"] = {
+			["spells"] = "17873=136235,23483=136235",
 		},
-		["臭气陷阱"] = {
-			["spells"] = "24918=136006",
+		["工头的毒药"] = {
+			["spells"] = "6531=136016",
 		},
 		["重击"] = {
 			["spells"] = "5211=132114,5212=132114,6798=132114,6799=132114,8983=132114,8984=132114,24189=132965,25515=132340",
@@ -18300,38 +20292,38 @@ WeakAurasOptionsSaved = {
 		["摧毁幽灵磁铁箱"] = {
 			["spells"] = "19571=136235",
 		},
-		["设计图：黑暗符文胸甲"] = {
-			["spells"] = "24917=136235",
+		["Increase Arcane Dam 15"] = {
+			["spells"] = "17823=136235",
 		},
-		["设计图：黑暗符文护手"] = {
-			["spells"] = "24915=136235",
+		["Increase Arcane Dam 14"] = {
+			["spells"] = "17822=136235",
 		},
-		["黑暗符文护手"] = {
-			["spells"] = "24912=136192",
+		["衣着新潮"] = {
+			["spells"] = "17816=136235",
 		},
 		["手工皮短裤"] = {
 			["spells"] = "2153=136235,2338=136021",
 		},
-		["食谱：烤鼠尾鱼"] = {
-			["spells"] = "25705=136235",
+		["制造徽章"] = {
+			["spells"] = "17777=136235",
 		},
-		["Increase Spell Dam 68"] = {
-			["spells"] = "26227=136235",
+		["奥金棒"] = {
+			["spells"] = "20201=136192,20202=136235",
 		},
 		["骑乘乌龟"] = {
 			["spells"] = "30174=132199",
 		},
-		["Thorns Dmg +4"] = {
-			["spells"] = "20889=136051",
+		["精神指引"] = {
+			["spells"] = "14901=135977,15028=135977,15029=135977,15030=135977,15031=135977",
 		},
-		["野性之心熊效果"] = {
-			["spells"] = "24899=135879",
-		},
-		["狼头之盔能量"] = {
-			["spells"] = "17770=135998,29940=135998",
+		["扩散"] = {
+			["spells"] = "17772=136235,17774=136235",
 		},
 		["制造召唤节杖：气"] = {
 			["spells"] = "24896=136235",
+		},
+		["召唤屈服的灵魂"] = {
+			["spells"] = "19096=136235",
 		},
 		["割裂"] = {
 			["spells"] = "1943=132302,6736=132302,8639=132302,8640=132302,8641=132302,8642=132302,11273=132302,11274=132302,11275=132302,11276=132302,11277=132302,11278=132302,14874=132302,14903=132302,15583=132302",
@@ -18339,8 +20331,8 @@ WeakAurasOptionsSaved = {
 		["劣质青铜胸甲"] = {
 			["spells"] = "2670=136192,2750=136235",
 		},
-		["霜刃豹幼崽死亡"] = {
-			["spells"] = "15782=132151",
+		["吞噬暗影"] = {
+			["spells"] = "17715=136163,17716=136163,17767=136121,17776=136121,17850=136121,17851=136121,17852=136121,17853=136121,17854=136121,17855=136121,17856=136121,17857=136121,17859=136121,17860=136121,20387=136121,20388=136121,20389=136121,20390=136121,20391=136121,20392=136121",
 		},
 		["极地冰狼"] = {
 			["spells"] = "16081=132266",
@@ -18348,8 +20340,8 @@ WeakAurasOptionsSaved = {
 		["召唤水中护卫"] = {
 			["spells"] = "8372=135864",
 		},
-		["AE Charm"] = {
-			["spells"] = "28225=136235",
+		["转化：点火成土"] = {
+			["spells"] = "17560=134459",
 		},
 		["吵闹的观众交谈"] = {
 			["spells"] = "8654=136235",
@@ -18357,8 +20349,8 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 86"] = {
 			["spells"] = "21460=136235",
 		},
-		["解除徽记"] = {
-			["spells"] = "22027=136235",
+		["超时"] = {
+			["spells"] = "17691=136222",
 		},
 		["伺机而动"] = {
 			["spells"] = "14057=132366,14072=132366,14073=132366,14074=132366,14075=132366",
@@ -18366,17 +20358,17 @@ WeakAurasOptionsSaved = {
 		["Plague Slime (Red)"] = {
 			["spells"] = "28990=135824",
 		},
-		["超时"] = {
-			["spells"] = "17691=136222",
-		},
 		["制造召唤纹章：土"] = {
 			["spells"] = "24887=136235",
+		},
+		["火焰之光"] = {
+			["spells"] = "17667=136235",
 		},
 		["撕咬"] = {
 			["spells"] = "17253=132278,17254=132278,17255=132278,17256=132278,17257=132278,17258=132278,17259=132278,17260=132278,17261=132278,17262=132278,17263=132278,17264=132278,17265=132278,17266=132278,17267=132278,17268=132278",
 		},
-		["地精火箭燃油"] = {
-			["spells"] = "11456=136235,11490=136021",
+		["影像投射"] = {
+			["spells"] = "17651=136164,17652=136164",
 		},
 		["补充法力"] = {
 			["spells"] = "5405=134134,10052=134134,10057=134134,10058=134134,18385=134134",
@@ -18384,29 +20376,29 @@ WeakAurasOptionsSaved = {
 		["温诺希斯变形"] = {
 			["spells"] = "23849=136077",
 		},
-		["多重抗性合剂"] = {
-			["spells"] = "17638=136235",
-		},
 		["Generic"] = {
 			["spells"] = "2382=136235,9125=134955",
 		},
 		["Feline Swiftness Passive 2a"] = {
 			["spells"] = "24864=132115",
 		},
+		["烹制甜点"] = {
+			["spells"] = "5174=135915",
+		},
 		["图样：重型蝎壳腰带"] = {
 			["spells"] = "19186=136235",
-		},
-		["配方：点气成火"] = {
-			["spells"] = "17588=136235",
 		},
 		["图样：沙行者胸甲"] = {
 			["spells"] = "24862=136235",
 		},
-		["图样：飞火胸甲"] = {
-			["spells"] = "24859=136235",
+		["配方：先知药剂"] = {
+			["spells"] = "17585=136235",
 		},
-		["特效活力药水"] = {
-			["spells"] = "22732=136235",
+		["强效冰霜防护药水"] = {
+			["spells"] = "17575=136235",
+		},
+		["召唤仆人"] = {
+			["spells"] = "18307=136221,18308=136221",
 		},
 		["Attack Power 28"] = {
 			["spells"] = "9335=136235",
@@ -18414,32 +20406,32 @@ WeakAurasOptionsSaved = {
 		["制造开锁器"] = {
 			["spells"] = "1186=136058",
 		},
-		["图样：飞火护腕"] = {
-			["spells"] = "24855=136235",
-		},
-		["十字军之锤"] = {
-			["spells"] = "17286=135963",
+		["烈焰之环"] = {
+			["spells"] = "17447=135824",
 		},
 		["沙行者护手"] = {
 			["spells"] = "24850=136235",
 		},
-		["神圣乱舞 IV"] = {
-			["spells"] = "1902=132330",
+		["烟鬼的打火器"] = {
+			["spells"] = "17283=135818",
 		},
-		["打碎灵魂宝石"] = {
-			["spells"] = "24828=134076",
+		["Cluster Rocket, GREEN - U"] = {
+			["spells"] = "26358=136235",
 		},
-		["渗漏之雾"] = {
-			["spells"] = "24813=136006,24814=136006",
+		["召唤红衣火枪手"] = {
+			["spells"] = "17279=136075",
+		},
+		["强化心灵震爆"] = {
+			["spells"] = "15273=136224,15312=136224,15313=136224,15314=136224,15316=136224",
 		},
 		["公式：次级巫师之油"] = {
 			["spells"] = "25134=136235",
 		},
-		["深渊惩罚"] = {
-			["spells"] = "24803=136235",
+		["暗影射击"] = {
+			["spells"] = "17171=132329,18649=132329,29632=135934,29641=135990",
 		},
-		["Summon Royal"] = {
-			["spells"] = "24786=136235,24788=136235,24789=136235,24790=136235",
+		["设计图：奥金圣剑"] = {
+			["spells"] = "17032=136235",
 		},
 		["收集祝福之水"] = {
 			["spells"] = "15491=136235",
@@ -18447,14 +20439,14 @@ WeakAurasOptionsSaved = {
 		["诱惑之吻"] = {
 			["spells"] = "23205=135736",
 		},
-		["小精灵装束"] = {
-			["spells"] = "24740=132288,24741=136235",
+		["设计图：泰坦之锤"] = {
+			["spells"] = "17031=136235",
 		},
 		["本能一瞥"] = {
 			["spells"] = "5583=132156",
 		},
-		["Increase Shadow Dam 57"] = {
-			["spells"] = "26729=136235",
+		["Buru Transform"] = {
+			["spells"] = "24721=136129",
 		},
 		["Attack All (Summoned Only) Trigger"] = {
 			["spells"] = "29509=136235",
@@ -18462,62 +20454,47 @@ WeakAurasOptionsSaved = {
 		["刺耳怒吼"] = {
 			["spells"] = "10576=132117,12323=136147,23600=136147",
 		},
-		["Buru Transform"] = {
-			["spells"] = "24721=136129",
-		},
-		["插旗子"] = {
-			["spells"] = "16989=136235",
+		["设计图：瑟银巨剑"] = {
+			["spells"] = "17017=136235",
 		},
 		["投掷臭气弹"] = {
 			["spells"] = "24706=133748",
 		},
+		["符文布绷带"] = {
+			["spells"] = "18629=136192,18631=133681",
+		},
 		["召唤灰色陆行鸟"] = {
 			["spells"] = "10801=132253",
 		},
-		["图样：梦境龙鳞胸甲"] = {
-			["spells"] = "24704=136235",
+		["瑟银巨剑"] = {
+			["spells"] = "16960=136192",
 		},
-		["召唤小鱼人"] = {
-			["spells"] = "24696=132311,24939=134169,25018=132311",
+		["野性本能"] = {
+			["spells"] = "16947=132089,16948=132089,16949=132089,16950=132089,16951=132089",
 		},
-		["丢掉武器"] = {
-			["spells"] = "25655=132343",
+		["韧化皮手套"] = {
+			["spells"] = "3770=136235,3794=136021",
 		},
 		["守护腕甲"] = {
 			["spells"] = "3777=136235",
 		},
-		["次级巫师之油"] = {
-			["spells"] = "25119=136235,25126=135913",
+		["暗色湖蘑菇"] = {
+			["spells"] = "8138=135914",
 		},
-		["娅尔罗的守护"] = {
-			["spells"] = "24690=132331",
+		["先祖的复仇"] = {
+			["spells"] = "16939=135131",
 		},
 		["召唤范迪姆的幻象"] = {
 			["spells"] = "20671=135736",
 		},
-		["温诺希斯的守护"] = {
-			["spells"] = "24688=136016",
+		["缠绕之藤"] = {
+			["spells"] = "8142=136025,22924=136025",
 		},
-		["GY Mid Alliance"] = {
-			["spells"] = "24678=136235",
+		["星火昏迷"] = {
+			["spells"] = "16922=135753",
 		},
-		["绿色龙鳞护手"] = {
-			["spells"] = "24655=136235,24657=136021",
-		},
-		["月光"] = {
-			["spells"] = "16845=136087,16846=136087,16847=136087,26392=135926",
-		},
-		["恶魔布袍"] = {
-			["spells"] = "18451=132149",
-		},
-		["召唤炮手威利"] = {
-			["spells"] = "24626=136121",
-		},
-		["恶魔布短裤"] = {
-			["spells"] = "18419=132149",
-		},
-		["驯兽教程"] = {
-			["spells"] = "23356=132164",
+		["强效奥法药剂"] = {
+			["spells"] = "16889=134827,17539=134805,17573=136235",
 		},
 		["纳格的卷尺"] = {
 			["spells"] = "24610=135865",
@@ -18525,14 +20502,29 @@ WeakAurasOptionsSaved = {
 		["Increase Spell Dam 22"] = {
 			["spells"] = "13881=136235,17493=136235,22747=136235",
 		},
-		["设计图：瑟银头盔"] = {
-			["spells"] = "16682=136235",
+		["设计图：白魂头盔"] = {
+			["spells"] = "16747=136235",
 		},
-		["自然护甲"] = {
-			["spells"] = "24545=136094,24547=136094,24548=136094,24549=136094,24550=136094,24551=136094,24552=136094,24553=136094,24554=136094,24555=136094,24556=136094,24557=136094,24558=136094,24559=136094,24560=136094,24561=136094,24562=136094,24563=136094,24565=136094,24566=136094,24567=136094,24568=136094,24569=136094,24570=136094,24629=136094,24630=136094,24631=136094,24632=136094,24633=136094,24634=136094",
+		["恶魔布短裤"] = {
+			["spells"] = "18419=132149",
+		},
+		["驯兽教程"] = {
+			["spells"] = "23356=132164",
+		},
+		["设计图：炽热板甲护手"] = {
+			["spells"] = "16687=136235",
 		},
 		["初级制皮"] = {
 			["spells"] = "2155=133611",
+		},
+		["虚弱诅咒"] = {
+			["spells"] = "702=136138,729=136235,1031=136235,1108=136138,1109=136235,1393=136138,1394=136138,4089=136157,6205=136138,6206=136138,7646=136138,7647=136138,8552=136138,11707=136138,11708=136138,11709=136138,11710=136138,11980=136138,12493=136138,12741=136138,17227=136138,18267=136138,21007=136138",
+		},
+		["瑟银长靴"] = {
+			["spells"] = "16652=136192",
+		},
+		["溺死"] = {
+			["spells"] = "16555=135861,16563=135861",
 		},
 		["火烤甜面包"] = {
 			["spells"] = "29332=133964",
@@ -18540,38 +20532,38 @@ WeakAurasOptionsSaved = {
 		["召唤秘银幼龙"] = {
 			["spells"] = "12736=132281",
 		},
-		["虚弱诅咒"] = {
-			["spells"] = "702=136138,729=136235,1031=136235,1108=136138,1109=136235,1393=136138,1394=136138,4089=136157,6205=136138,6206=136138,7646=136138,7647=136138,8552=136138,11707=136138,11708=136138,11709=136138,11710=136138,11980=136138,12493=136138,12741=136138,17227=136138,18267=136138,21007=136138",
+		["强化愤怒/星火术"] = {
+			["spells"] = "24433=136235",
 		},
-		["召唤破碎的死尸"] = {
-			["spells"] = "16324=136187",
+		["神入之石"] = {
+			["spells"] = "9930=136025",
 		},
-		["能量护盾"] = {
-			["spells"] = "24499=136014",
+		["沙赫拉姆之拳"] = {
+			["spells"] = "16601=132369",
 		},
-		["熔炼金锭"] = {
-			["spells"] = "3308=136235,3315=136235",
+		["Summon Gordunni chest (COBALT)"] = {
+			["spells"] = "11756=136235",
 		},
 		["暗影爆发"] = {
 			["spells"] = "28447=136121",
 		},
-		["溺死"] = {
-			["spells"] = "16555=135861,16563=135861",
-		},
-		["强化愤怒/星火术"] = {
-			["spells"] = "24433=136235",
-		},
-		["强化火焰之雨/地狱烈焰"] = {
-			["spells"] = "24430=136235",
-		},
 		["毒皮毒药"] = {
 			["spells"] = "14108=132273,14792=136016,14795=132290",
 		},
-		["消音"] = {
-			["spells"] = "24402=132182",
+		["毒性箭"] = {
+			["spells"] = "16554=136016",
 		},
-		["设计图：黑铁长靴"] = {
-			["spells"] = "24400=136235",
+		["基尔图诺斯变形"] = {
+			["spells"] = "16467=136122",
+		},
+		["混乱之火"] = {
+			["spells"] = "24389=134085",
+		},
+		["软泥"] = {
+			["spells"] = "16456=136006,28801=132108",
+		},
+		["Charm (Possess)"] = {
+			["spells"] = "530=135994",
 		},
 		["召唤黄纹兔"] = {
 			["spells"] = "10711=132311",
@@ -18582,14 +20574,14 @@ WeakAurasOptionsSaved = {
 		["灰布长袍"] = {
 			["spells"] = "12069=132149,12112=136021",
 		},
-		["混乱之火"] = {
-			["spells"] = "24389=134085",
+		["急奔"] = {
+			["spells"] = "1151=132120,1850=132120,9821=132120,9822=132120",
 		},
-		["脑部损伤"] = {
-			["spells"] = "24388=132155",
+		["地穴甲虫自杀"] = {
+			["spells"] = "16424=136118",
 		},
-		["遗弃技能：弓"] = {
-			["spells"] = "7043=135490",
+		["多彩混乱"] = {
+			["spells"] = "16337=135753",
 		},
 		["合并第二卷"] = {
 			["spells"] = "23232=136235",
@@ -18603,14 +20595,14 @@ WeakAurasOptionsSaved = {
 		["冰霜黎明衬肩"] = {
 			["spells"] = "22594=136235",
 		},
-		["配方：特效巨魔之血药水"] = {
-			["spells"] = "24373=136235",
+		["魔火"] = {
+			["spells"] = "24530=135807",
 		},
-		["魂能之力"] = {
-			["spells"] = "16323=134313",
+		["魔暴龙之怒"] = {
+			["spells"] = "24352=132193",
 		},
-		["回复"] = {
-			["spells"] = "24361=134859",
+		["QAEnchant Weapon Icy Chill"] = {
+			["spells"] = "23142=135913",
 		},
 		["合并坠饰"] = {
 			["spells"] = "19720=136235",
@@ -18624,14 +20616,14 @@ WeakAurasOptionsSaved = {
 		["迅捷棕山羊"] = {
 			["spells"] = "23238=132248",
 		},
-		["黑龙之焰"] = {
-			["spells"] = "16054=135824",
+		["血液虹吸"] = {
+			["spells"] = "24322=136168,24324=136168",
 		},
 		["古神之力"] = {
 			["spells"] = "4539=136188",
 		},
-		["Demon Slaying 30"] = {
-			["spells"] = "20858=136172",
+		["Increase Nature Dam 29"] = {
+			["spells"] = "18003=136235,18004=136235",
 		},
 		["阿迦玛甘的智慧"] = {
 			["spells"] = "7764=135736",
@@ -18639,11 +20631,11 @@ WeakAurasOptionsSaved = {
 		["幻象隐形"] = {
 			["spells"] = "26604=135994",
 		},
-		["魔暴龙之怒"] = {
-			["spells"] = "24352=132193",
+		["艾博希尔成型"] = {
+			["spells"] = "16047=135805",
 		},
-		["制造蓝色穿孔卡片"] = {
-			["spells"] = "11525=136235",
+		["弓技能提高"] = {
+			["spells"] = "7535=136235,7568=136235,7569=136235,7570=136235,7571=136235,7572=136235,15947=136235,17369=136235,17818=136235",
 		},
 		["跳跳虫"] = {
 			["spells"] = "19226=134295,19227=134295",
@@ -18654,14 +20646,14 @@ WeakAurasOptionsSaved = {
 		["Increased Dodge 2"] = {
 			["spells"] = "13670=136235",
 		},
-		["融合软泥怪"] = {
-			["spells"] = "16032=134743",
+		["召唤金度之影"] = {
+			["spells"] = "24308=136235",
 		},
-		["血液虹吸"] = {
-			["spells"] = "24322=136168,24324=136168",
+		["昏睡药水"] = {
+			["spells"] = "15833=136235,15834=136021",
 		},
-		["Attack Power 90"] = {
-			["spells"] = "15831=136235",
+		["Quest - Troll Hero Summon Visual"] = {
+			["spells"] = "24258=136235",
 		},
 		["冬季狂欢者 - 暗夜精灵男性"] = {
 			["spells"] = "26246=135849",
@@ -18669,11 +20661,11 @@ WeakAurasOptionsSaved = {
 		["Increased Spirit 36"] = {
 			["spells"] = "14457=136235",
 		},
-		["召唤金度之影"] = {
-			["spells"] = "24308=136235",
+		["公式：浓烟山脉之心"] = {
+			["spells"] = "15597=136235",
 		},
-		["法术锁定"] = {
-			["spells"] = "24259=136174",
+		["Increased Armor 120"] = {
+			["spells"] = "15508=136235",
 		},
 		["Increased Spirit 04"] = {
 			["spells"] = "7498=136235",
@@ -18684,38 +20676,17 @@ WeakAurasOptionsSaved = {
 		["配方：抗魔药水"] = {
 			["spells"] = "11503=136235",
 		},
-		["Quest - Troll Hero Summon Visual"] = {
-			["spells"] = "24258=136235",
+		["Increased Hit Chance 3"] = {
+			["spells"] = "15466=136235",
 		},
-		["毒蛇嘶鸣"] = {
-			["spells"] = "24254=136235",
-		},
-		["Item +STR/FR Leg R2"] = {
-			["spells"] = "15440=136235",
-		},
-		["加兹兰卡猛击"] = {
-			["spells"] = "24326=132111",
-		},
-		["强化心灵尖啸"] = {
-			["spells"] = "15392=136184,15448=136184,15450=136184",
-		},
-		["制造夜龙之息"] = {
-			["spells"] = "15344=136235",
-		},
-		["设计图：黑铁粉碎者"] = {
-			["spells"] = "15297=136235",
-		},
-		["Creature Cooldown (10 sec)"] = {
-			["spells"] = "29429=136235",
-		},
-		["断筋"] = {
-			["spells"] = "1715=132316,1716=132316,7372=132316,7373=132316,7374=132316,7375=132316,9080=132316,26141=132316,26211=132316,27584=132316",
+		["防护秘药"] = {
+			["spells"] = "22846=136235,22847=136235",
 		},
 		["Increase Spell Dam 47"] = {
 			["spells"] = "24196=136235",
 		},
-		["Increase Nature Dam 11"] = {
-			["spells"] = "9359=136235",
+		["加兹兰卡猛击"] = {
+			["spells"] = "24326=132111",
 		},
 		["破甲水晶"] = {
 			["spells"] = "15235=134074",
@@ -18726,26 +20697,47 @@ WeakAurasOptionsSaved = {
 		["Increased Frost Resist 43"] = {
 			["spells"] = "14979=136235",
 		},
-		["Increased Arcane Resist 45"] = {
-			["spells"] = "14969=136235",
+		["Creature Cooldown (10 sec)"] = {
+			["spells"] = "29429=136235",
+		},
+		["断筋"] = {
+			["spells"] = "1715=132316,1716=132316,7372=132316,7373=132316,7374=132316,7375=132316,9080=132316,26141=132316,26211=132316,27584=132316",
+		},
+		["Increased Arcane Resist 04"] = {
+			["spells"] = "14706=136235",
+		},
+		["Increase Nature Dam 11"] = {
+			["spells"] = "9359=136235",
 		},
 		["Increased Arcane Resist 42"] = {
 			["spells"] = "14966=136235",
 		},
-		["Increased Stamina 45"] = {
-			["spells"] = "14957=136235",
-		},
-		["瘟疫之云"] = {
-			["spells"] = "3256=136127,12001=136127,12002=136133,15728=136127,29350=132099,30122=132099",
+		["机械修补包"] = {
+			["spells"] = "15057=132997",
 		},
 		["烈焰之怒"] = {
 			["spells"] = "16559=135818,16560=135826",
 		},
-		["Increased Spirit 41"] = {
-			["spells"] = "14947=136235",
-		},
 		["设计图：黑暗之魂胸甲"] = {
 			["spells"] = "24145=136235",
+		},
+		["冰甲术"] = {
+			["spells"] = "506=136235,844=136235,1214=135835,1228=135835,7302=135843,7320=135843,10219=135843,10220=135843,10221=135835,10222=135835",
+		},
+		["图样：血虎胸甲"] = {
+			["spells"] = "24129=136235",
+		},
+		["瘟疫之云"] = {
+			["spells"] = "3256=136127,12001=136127,12002=136133,15728=136127,29350=132099,30122=132099",
+		},
+		["图样：原始蝙蝠皮外套"] = {
+			["spells"] = "24126=136235",
+		},
+		["血虎胸甲"] = {
+			["spells"] = "24124=136235",
+		},
+		["Increased Intellect 46"] = {
+			["spells"] = "14946=136235",
 		},
 		["Beast Slaying 30"] = {
 			["spells"] = "14565=136235",
@@ -18756,11 +20748,11 @@ WeakAurasOptionsSaved = {
 		["雷鸣猛击"] = {
 			["spells"] = "16255=132325,16302=132325,16303=132325,16304=132325,16305=132325",
 		},
-		["冰甲术"] = {
-			["spells"] = "506=136235,844=136235,1214=135835,1228=135835,7302=135843,7320=135843,10219=135843,10220=135843,10221=135835,10222=135835",
+		["腐蚀之毒"] = {
+			["spells"] = "24111=136016",
 		},
-		["图样：血虎胸甲"] = {
-			["spells"] = "24129=136235",
+		["神圣专精"] = {
+			["spells"] = "14889=135967,15008=135967,15009=135967,15010=135967,15011=135967",
 		},
 		["装填爆炸"] = {
 			["spells"] = "13239=135805",
@@ -18771,59 +20763,59 @@ WeakAurasOptionsSaved = {
 		["图样：雷暴护肩"] = {
 			["spells"] = "19210=136235",
 		},
-		["图样：原始蝙蝠皮外套"] = {
-			["spells"] = "24126=136235",
+		["Word of Mass Recall (OLD)"] = {
+			["spells"] = "3=136235",
 		},
-		["血虎胸甲"] = {
-			["spells"] = "24124=136235",
+		["Untalent Visual Effect"] = {
+			["spells"] = "14867=135736",
 		},
 		["Cluster Rocket, BLUE BIG - SE"] = {
 			["spells"] = "26485=136235",
 		},
-		["原始蝙蝠皮手套"] = {
-			["spells"] = "24122=136235",
+		["专注施法"] = {
+			["spells"] = "14743=135736,27828=135736,29063=135736",
 		},
-		["腐蚀之毒"] = {
-			["spells"] = "24111=136016",
+		["Permanent Area Damage 50k"] = {
+			["spells"] = "30879=136195",
 		},
 		["烧烤巨蚌"] = {
 			["spells"] = "7213=136192",
 		},
-		["强化奥术飞弹"] = {
-			["spells"] = "11237=136096,12463=136096,12464=136096,16769=136096,16770=136096",
+		["[PH] Teleport to Grom'Gol"] = {
+			["spells"] = "4998=136235",
 		},
-		["恼人孢子"] = {
-			["spells"] = "22786=136006,22787=136006",
+		["Increased Arcane Resist 12"] = {
+			["spells"] = "14714=136235",
 		},
-		["乌瑟尔的矮人祭品"] = {
-			["spells"] = "24107=136235",
+		["多彩变形"] = {
+			["spells"] = "23174=136172,23175=136235,23177=136235",
 		},
 		["格罗姆的牛头人祭品"] = {
 			["spells"] = "24102=136235",
 		},
-		["召唤猩猩"] = {
-			["spells"] = "7909=132091",
+		["Add Fire Dam - Weap 06"] = {
+			["spells"] = "7722=136235",
 		},
-		["Increased Arcane Resist 02"] = {
-			["spells"] = "14704=136235",
+		["Increased Nature Resist 05"] = {
+			["spells"] = "14626=136235",
 		},
 		["Get Gossip, Female"] = {
 			["spells"] = "26685=136235",
 		},
-		["Transform Visual"] = {
-			["spells"] = "24085=136235",
+		["Increased Shadow Resist 38"] = {
+			["spells"] = "14700=136235",
 		},
-		["Increased Shadow Resist 06"] = {
-			["spells"] = "14669=136235",
+		["心灵疲惫"] = {
+			["spells"] = "23958=136222",
 		},
-		["冰霜"] = {
-			["spells"] = "18977=135849",
+		["Increased Fire Resist 16"] = {
+			["spells"] = "14596=136235",
 		},
-		["召唤巫毒之魂"] = {
-			["spells"] = "24052=136235",
+		["Increased Nature Resist 32"] = {
+			["spells"] = "14654=136235",
 		},
-		["Increased Nature Resist 05"] = {
-			["spells"] = "14626=136235",
+		["盾牌反射"] = {
+			["spells"] = "23920=134951,23921=134951",
 		},
 		["Increase Nature Dam 19"] = {
 			["spells"] = "17993=136235",
@@ -18831,29 +20823,29 @@ WeakAurasOptionsSaved = {
 		["全部免疫"] = {
 			["spells"] = "29230=136120",
 		},
-		["Increased Nature Resist 02"] = {
-			["spells"] = "14623=136235",
+		["音爆"] = {
+			["spells"] = "23918=136222",
 		},
-		["灭龙"] = {
-			["spells"] = "23967=132355",
+		["Increased Fire Resist 26"] = {
+			["spells"] = "14606=136235",
 		},
 		["制造凝固腐质"] = {
 			["spells"] = "19029=136235",
 		},
-		["结构图：绿色焰火"] = {
-			["spells"] = "23085=134153",
+		["次级奥术融合"] = {
+			["spells"] = "15340=136235,15389=136235,15391=136235,15394=136235,15397=136235,15400=136235,15402=136235,15404=136235,15406=136235",
 		},
-		["心灵疲惫"] = {
-			["spells"] = "23958=136222",
+		["Increased Fire Resist 21"] = {
+			["spells"] = "14601=136235",
 		},
 		["Summon Worm Target"] = {
 			["spells"] = "29937=136235",
 		},
-		["Increased Fire Resist 16"] = {
-			["spells"] = "14596=136235",
+		["公式：附魔武器 - 强效智力"] = {
+			["spells"] = "23810=136235",
 		},
-		["H-Mid Trigger"] = {
-			["spells"] = "23935=136235",
+		["Increased Frost Resist 22"] = {
+			["spells"] = "14561=136235",
 		},
 		["召唤玛格拉姆劫掠者"] = {
 			["spells"] = "18166=136187",
@@ -18873,17 +20865,17 @@ WeakAurasOptionsSaved = {
 		["雷织头带"] = {
 			["spells"] = "12083=132149",
 		},
-		["盾牌反射"] = {
-			["spells"] = "23920=134951,23921=134951",
+		["Increased Frost Resist 04"] = {
+			["spells"] = "14545=136235",
 		},
 		["惩击"] = {
 			["spells"] = "585=135924,591=135924,598=135924,984=135924,1004=135924,1275=135924,1276=135924,1300=135924,1301=135924,6060=135924,6062=135924,10933=135924,10934=135924,10935=135924,10936=135924",
 		},
-		["音爆"] = {
-			["spells"] = "23918=136222",
+		["弹出斯尼德"] = {
+			["spells"] = "5141=135805",
 		},
-		["殉难"] = {
-			["spells"] = "14531=136107,14774=136107",
+		["特效抗毒药剂"] = {
+			["spells"] = "23787=136192",
 		},
 		["真银圣剑"] = {
 			["spells"] = "10015=136192,10016=136235",
@@ -18891,8 +20883,8 @@ WeakAurasOptionsSaved = {
 		["传送自身"] = {
 			["spells"] = "30211=136235",
 		},
-		["Copy of Summon Snowman"] = {
-			["spells"] = "26532=132311",
+		["Stance Rage (+5 Off)"] = {
+			["spells"] = "6593=132091",
 		},
 		["哈卡之心放逐"] = {
 			["spells"] = "24203=136235",
@@ -18903,41 +20895,41 @@ WeakAurasOptionsSaved = {
 		["黑色魔纹外衣"] = {
 			["spells"] = "12048=132149,12100=136021",
 		},
-		["毒云"] = {
-			["spells"] = "23861=136064,24840=136064,25198=136064",
+		["Increased Strength 24"] = {
+			["spells"] = "14496=136235",
 		},
 		["双武器专精"] = {
 			["spells"] = "13715=132147,13848=132147,13849=132147,13851=132147,13852=132147,23584=132147,23585=132147,23586=132147,23587=132147,23588=132147,30816=132147,30818=132147,30819=132147,30820=132147,30821=132147",
 		},
-		["防护元素图腾光环"] = {
-			["spells"] = "8263=136069",
+		["高级钓鱼"] = {
+			["spells"] = "7736=136245,19889=136245",
 		},
-		["公式：附魔武器 - 强效智力"] = {
-			["spells"] = "23810=136235",
+		["Increased Strength 22"] = {
+			["spells"] = "14494=136235",
 		},
-		["公式：附魔武器 - 强效精神"] = {
-			["spells"] = "23809=136235",
+		["Increased Stamina 19"] = {
+			["spells"] = "14466=136235",
 		},
 		["召唤暴怒的地狱蝙蝠"] = {
 			["spells"] = "14252=136235",
 		},
-		["附魔武器 - 强效智力"] = {
-			["spells"] = "23804=135913",
+		["Increased Spirit 33"] = {
+			["spells"] = "14455=136235",
 		},
-		["Increased Spirit 19"] = {
-			["spells"] = "14438=136235",
+		["贝尔加的烈焰精华"] = {
+			["spells"] = "13982=136235",
 		},
-		["特效抗毒药剂"] = {
-			["spells"] = "23787=136192",
+		["Increased Intellect 16"] = {
+			["spells"] = "14406=136235",
 		},
 		["装满紫水晶瓶"] = {
 			["spells"] = "22562=136235",
 		},
-		["系统震荡"] = {
-			["spells"] = "23774=136133",
+		["Increased Agility 37"] = {
+			["spells"] = "14401=136235",
 		},
-		["Anubisath Guardian Targeted"] = {
-			["spells"] = "14291=136235",
+		["恶魔学识大师"] = {
+			["spells"] = "23759=136203,23760=136203,23761=136203,23762=136203,23784=136203,23785=136203,23822=136203,23823=136203,23824=136203,23825=136203,23826=136203,23827=136203,23828=136203,23829=136203,23830=136203,23831=136203,23832=136203,23833=136203,23834=136203,23835=136203,23836=136203,23837=136203,23838=136203,23839=136203,23840=136203,23841=136203,23842=136203,23843=136203,23844=136203",
 		},
 		["Beast Slaying 27"] = {
 			["spells"] = "14198=136235",
@@ -18951,44 +20943,14 @@ WeakAurasOptionsSaved = {
 		["遗弃技能：枪械"] = {
 			["spells"] = "7044=135610",
 		},
-		["塞格的游乐场增益"] = {
-			["spells"] = "23770=136232",
+		["密谋"] = {
+			["spells"] = "14158=136147,14159=136147",
 		},
 		["图样：绿龙鳞片护腿"] = {
 			["spells"] = "19170=136235",
 		},
-		["塞格的黑暗塔罗牌：护甲"] = {
-			["spells"] = "23767=134334",
-		},
-		["贝尔加的烈焰精华"] = {
-			["spells"] = "13982=136235",
-		},
-		["欺诈高手"] = {
-			["spells"] = "13958=136129,13970=136129,13971=136129,13972=136129,13973=136129",
-		},
-		["次级格挡"] = {
-			["spells"] = "13690=136235",
-		},
-		["附魔护腕 - 力量"] = {
-			["spells"] = "13661=135913,13662=135913",
-		},
-		["恶魔学识大师"] = {
-			["spells"] = "23759=136203,23760=136203,23761=136203,23762=136203,23784=136203,23785=136203,23822=136203,23823=136203,23824=136203,23825=136203,23826=136203,23827=136203,23828=136203,23829=136203,23830=136203,23831=136203,23832=136203,23833=136203,23834=136203,23835=136203,23836=136203,23837=136203,23838=136203,23839=136203,23840=136203,23841=136203,23842=136203,23843=136203,23844=136203",
-		},
-		["龙语"] = {
-			["spells"] = "23758=136036",
-		},
-		["强化脚踢"] = {
-			["spells"] = "13754=132219,13867=132219,24434=136235",
-		},
-		["冲动"] = {
-			["spells"] = "13750=136206",
-		},
-		["轻型黑曜石腰带"] = {
-			["spells"] = "27588=136192",
-		},
-		["黎明使者护肩"] = {
-			["spells"] = "16660=136192",
+		["米布隆的诱饵"] = {
+			["spells"] = "14008=134006",
 		},
 		["Increase Spell Dam 84"] = {
 			["spells"] = "23728=136235",
@@ -18996,23 +20958,53 @@ WeakAurasOptionsSaved = {
 		["图样：熔火犬皮腰带"] = {
 			["spells"] = "23717=136235",
 		},
+		["dmg4"] = {
+			["spells"] = "11821=136115",
+		},
+		["附魔护腕 - 力量"] = {
+			["spells"] = "13661=135913,13662=135913",
+		},
+		["附魔靴子 - 敏捷"] = {
+			["spells"] = "13935=135913,13936=135913",
+		},
+		["公主召唤传送门"] = {
+			["spells"] = "13912=135743",
+		},
+		["Attack Power Ranged 70"] = {
+			["spells"] = "21453=136235",
+		},
+		["机枪"] = {
+			["spells"] = "23675=134538,23676=134538,25032=132384",
+		},
+		["轻型黑曜石腰带"] = {
+			["spells"] = "27588=136192",
+		},
+		["黎明使者护肩"] = {
+			["spells"] = "16660=136192",
+		},
+		["毒性射击"] = {
+			["spells"] = "8275=132273,8806=132273",
+		},
+		["耐久"] = {
+			["spells"] = "13742=136205,13872=136205,20550=136112",
+		},
 		["说服者"] = {
 			["spells"] = "27830=136192",
 		},
 		["空空如也的节日酒杯"] = {
 			["spells"] = "25853=136235",
 		},
-		["拳套专精"] = {
-			["spells"] = "13707=132938,13966=132938,13967=132938,13968=132938,13969=132938",
+		["Copy of Electrostatic Charge"] = {
+			["spells"] = "23306=136235",
 		},
 		["火焰虚弱"] = {
 			["spells"] = "25177=134396",
 		},
-		["蓝龙光环"] = {
-			["spells"] = "23684=134155,23688=136208",
+		["强效生命"] = {
+			["spells"] = "13639=136235",
 		},
-		["侦测恶魔药剂"] = {
-			["spells"] = "11478=136235,11501=136021",
+		["银色护肩"] = {
+			["spells"] = "23665=132149",
 		},
 		["图样：深红丝质护肩"] = {
 			["spells"] = "8794=136235",
@@ -19020,26 +21012,26 @@ WeakAurasOptionsSaved = {
 		["Dagger Strike (Disabled)"] = {
 			["spells"] = "2627=132223",
 		},
-		["Attack Power Ranged 70"] = {
-			["spells"] = "21453=136235",
+		["毁坏之痛"] = {
+			["spells"] = "13619=136139",
 		},
 		["Summon Lava Burst B"] = {
 			["spells"] = "21900=136235",
 		},
-		["机枪"] = {
-			["spells"] = "23675=134538,23676=134538,25032=132384",
+		["Wracking Pains Proc"] = {
+			["spells"] = "13616=136139,23771=136139",
 		},
 		["精神法杖 IV"] = {
 			["spells"] = "2715=132325",
 		},
-		["附魔双手武器 - 次级冲击"] = {
-			["spells"] = "13529=135913,13531=135913",
+		["黑色卫士"] = {
+			["spells"] = "23652=136192",
 		},
-		["图样：木喉衬肩"] = {
-			["spells"] = "23669=136235",
+		["强效星界精华"] = {
+			["spells"] = "13497=136192",
 		},
-		["原始蝙蝠皮护腕"] = {
-			["spells"] = "24123=136235",
+		["哀嚎之刃"] = {
+			["spells"] = "13490=132117",
 		},
 		["还击"] = {
 			["spells"] = "5237=132354,6569=132354,14251=132336",
@@ -19050,26 +21042,26 @@ WeakAurasOptionsSaved = {
 		["厚重护甲片"] = {
 			["spells"] = "10487=136235,10655=136021",
 		},
-		["乌瑟尔的侏儒祭品"] = {
-			["spells"] = "24106=136235",
+		["恐惧风暴"] = {
+			["spells"] = "13488=135902",
 		},
 		["战栗图腾"] = {
 			["spells"] = "8143=136108,8144=136108",
 		},
-		["银色护肩"] = {
-			["spells"] = "23665=132149",
+		["附魔盾牌 - 初级耐力"] = {
+			["spells"] = "13378=135913,13392=135913",
 		},
 		["配方：强力坚韧药剂"] = {
 			["spells"] = "3455=136235",
 		},
-		["Despawn Warsong Flag"] = {
-			["spells"] = "23659=136235",
+		["次级耐力"] = {
+			["spells"] = "13369=136235",
 		},
-		["野兽守护"] = {
-			["spells"] = "13161=132252,13162=132252",
+		["结构图：秘银机械幼龙"] = {
+			["spells"] = "12653=134153",
 		},
-		["黑色卫士"] = {
-			["spells"] = "23652=136192",
+		["狂暴冲锋"] = {
+			["spells"] = "16636=132337,19471=132337,22886=132337,26561=132337",
 		},
 		["回响"] = {
 			["spells"] = "16040=135850,16113=135850,16114=135850,16115=135850,16116=135850",
@@ -19080,26 +21072,26 @@ WeakAurasOptionsSaved = {
 		["恶魔布护肩"] = {
 			["spells"] = "18453=132149",
 		},
-		["召唤拉瑟莱克"] = {
-			["spells"] = "13143=136235",
+		["不牢固的扳机"] = {
+			["spells"] = "12591=136235,12633=136235",
 		},
-		["战歌峡谷野战军粮"] = {
-			["spells"] = "23542=134062",
+		["斑点霜刃豹"] = {
+			["spells"] = "10789=132267",
 		},
 		["结构图：大型蓝色烟花"] = {
 			["spells"] = "26432=134153",
 		},
-		["沙漏"] = {
-			["spells"] = "23645=135744",
+		["侏儒护目镜"] = {
+			["spells"] = "12897=136235,12910=136235",
 		},
-		["Demon Slaying 18"] = {
-			["spells"] = "12822=136172",
+		["降低宁静冷却时间"] = {
+			["spells"] = "23556=136235",
 		},
-		["大地粉碎"] = {
-			["spells"] = "12734=135906",
+		["战歌峡谷浓缩军粮"] = {
+			["spells"] = "23540=134062",
 		},
-		["结构图：秘银机械幼龙"] = {
-			["spells"] = "12653=134153",
+		["联盟战歌夺旗胜利"] = {
+			["spells"] = "23524=136235",
 		},
 		["召唤巨钩触须"] = {
 			["spells"] = "26213=136235,26216=136235,26217=136235",
@@ -19110,14 +21102,14 @@ WeakAurasOptionsSaved = {
 		["狂乱效果"] = {
 			["spells"] = "19615=134296",
 		},
-		["Reduce Threat"] = {
-			["spells"] = "23604=132270",
+		["高速秘银弹头"] = {
+			["spells"] = "12596=136235,12636=136235",
 		},
 		["Increased Spirit 39"] = {
 			["spells"] = "14460=136235",
 		},
-		["不牢固的扳机"] = {
-			["spells"] = "12591=136235,12633=136235",
+		["红色魔纹护肩"] = {
+			["spells"] = "12078=132149",
 		},
 		["制造恶魔药膏"] = {
 			["spells"] = "15247=136026",
@@ -19131,35 +21123,35 @@ WeakAurasOptionsSaved = {
 		["转化：元素火焰"] = {
 			["spells"] = "25146=135805",
 		},
-		["斑点霜刃豹"] = {
-			["spells"] = "10789=132267",
+		["Increased Shadow Resist 22"] = {
+			["spells"] = "14685=136235",
 		},
 		["强效怒气药水"] = {
 			["spells"] = "17527=136235,17552=136235",
 		},
-		["秘银破片炸弹"] = {
-			["spells"] = "12421=135826,12603=136235,12638=136235",
+		["传送器故障"] = {
+			["spells"] = "23444=135899,23447=135899,23449=135818,23456=135899,23457=135899",
 		},
-		["强化佯攻"] = {
-			["spells"] = "23558=136235",
+		["黑衣拉索里克"] = {
+			["spells"] = "12332=132331",
 		},
-		["降低宁静冷却时间"] = {
-			["spells"] = "23556=136235",
+		["Attack Power Ranged 38"] = {
+			["spells"] = "21441=136235",
 		},
-		["侏儒缩小射线"] = {
-			["spells"] = "12899=136235,12911=136235",
+		["不灭信仰"] = {
+			["spells"] = "9453=135984,25836=135984",
 		},
 		["Increased Shadow Resist 09"] = {
 			["spells"] = "14672=136235",
 		},
-		["战歌峡谷浓缩军粮"] = {
-			["spells"] = "23540=134062",
+		["强化压制"] = {
+			["spells"] = "12290=135275,12963=135275",
 		},
 		["传授次级龙语"] = {
 			["spells"] = "25673=136235",
 		},
-		["联盟战歌夺旗胜利"] = {
-			["spells"] = "23524=136235",
+		["双手武器专精"] = {
+			["spells"] = "12163=132400,12711=132400,12712=132400,12713=132400,12714=132400,20111=133041,20112=133041,20113=133041",
 		},
 		["图样：漂亮的蓝衬衣"] = {
 			["spells"] = "7894=136235",
@@ -19170,14 +21162,14 @@ WeakAurasOptionsSaved = {
 		["稻草人的祈祷"] = {
 			["spells"] = "24705=135462",
 		},
-		["安全传送器 - 加基森"] = {
-			["spells"] = "23489=136235",
+		["消失净化"] = {
+			["spells"] = "18461=132331",
 		},
 		["投掷石块"] = {
 			["spells"] = "4164=132153,4775=132153,4776=132153,6013=136231,6014=136231",
 		},
-		["红色魔纹护肩"] = {
-			["spells"] = "12078=132149",
+		["堕落图腾"] = {
+			["spells"] = "23424=136129,23425=136129",
 		},
 		["Increased Strength 26"] = {
 			["spells"] = "14498=136235",
@@ -19191,8 +21183,8 @@ WeakAurasOptionsSaved = {
 		["Increased Armor 400"] = {
 			["spells"] = "17617=136235",
 		},
-		["Increased Shadow Resist 22"] = {
-			["spells"] = "14685=136235",
+		["黑色魔纹护肩"] = {
+			["spells"] = "12074=132149,12117=136021",
 		},
 		["奴隶吸取"] = {
 			["spells"] = "8809=136130",
@@ -19209,20 +21201,20 @@ WeakAurasOptionsSaved = {
 		["地狱之火"] = {
 			["spells"] = "24826=135818",
 		},
-		["传送器故障"] = {
-			["spells"] = "23444=135899,23447=135899,23449=135818,23456=135899,23457=135899",
+		["Hate to 75%"] = {
+			["spells"] = "26886=136190",
 		},
-		["提高暗影爆击法术"] = {
-			["spells"] = "23440=136235,23443=136235",
+		["黑色魔纹之靴"] = {
+			["spells"] = "12073=132149,12116=136021",
 		},
-		["召唤鹰喙钳嘴龟"] = {
-			["spells"] = "23432=132311",
+		["图样：蓝色亚麻外衣"] = {
+			["spells"] = "7632=136235",
 		},
-		["召唤硬皮钳嘴龟"] = {
-			["spells"] = "23431=132311",
+		["强效耐力"] = {
+			["spells"] = "13827=136235,24636=136112",
 		},
-		["配方：强效昏睡药水"] = {
-			["spells"] = "24370=136235",
+		["强化佯攻"] = {
+			["spells"] = "23558=136235",
 		},
 		["Taelan's Suffering Effect"] = {
 			["spells"] = "18811=136133",
@@ -19236,23 +21228,23 @@ WeakAurasOptionsSaved = {
 		["强化假死"] = {
 			["spells"] = "19286=132293,19287=132293,24432=136235",
 		},
-		["捕捉角鹰兽"] = {
-			["spells"] = "11887=136235",
+		["联盟重置传送"] = {
+			["spells"] = "23405=136235",
 		},
-		["驱邪术"] = {
-			["spells"] = "559=136235,879=135903,931=136235,3690=135932,5613=135903,5614=135903,5615=135903,5616=135903,5617=135903,10312=135903,10313=135903,10314=135903,10315=135903,10316=135903,10317=135903,17147=135903,17149=135903",
+		["遗弃技能：火焰"] = {
+			["spells"] = "7049=135805",
 		},
-		["堕落图腾"] = {
-			["spells"] = "23424=136129,23425=136129",
+		["制造初级灵魂石"] = {
+			["spells"] = "693=136210,1377=136210",
 		},
 		["Increased Arcane Resist 40"] = {
 			["spells"] = "14742=136235",
 		},
-		["月布外衣"] = {
-			["spells"] = "18447=132149",
+		["图样：碧蓝丝质披风"] = {
+			["spells"] = "8787=136235",
 		},
-		["苏萨斯"] = {
-			["spells"] = "11658=136145",
+		["原野疾驰"] = {
+			["spells"] = "12566=132091,12567=132091,12568=132091,12821=132368",
 		},
 		["扩大"] = {
 			["spells"] = "5003=136235",
@@ -19260,14 +21252,14 @@ WeakAurasOptionsSaved = {
 		["迅捷绿色迅猛龙"] = {
 			["spells"] = "23242=132253",
 		},
-		["窒息"] = {
-			["spells"] = "23417=134343",
+		["召唤禁锢之魂"] = {
+			["spells"] = "24343=136235",
 		},
-		["图样：寒鳞护手"] = {
-			["spells"] = "28232=136235",
+		["手工皮披风"] = {
+			["spells"] = "9058=136235",
 		},
-		["Activate Bomb 03"] = {
-			["spells"] = "11523=136235",
+		["Summon Drakonid Corpse Trigger"] = {
+			["spells"] = "23363=136235",
 		},
 		["裂隙标记"] = {
 			["spells"] = "9614=136006",
@@ -19278,17 +21270,17 @@ WeakAurasOptionsSaved = {
 		["移形披风"] = {
 			["spells"] = "22928=136235",
 		},
-		["暴风城友谊礼品包"] = {
-			["spells"] = "27664=134142",
+		["超强治疗药水"] = {
+			["spells"] = "11457=136235,11491=136021",
 		},
 		["公式：附魔双手武器 - 敏捷"] = {
 			["spells"] = "27838=136235",
 		},
-		["疾病射击"] = {
-			["spells"] = "11397=136127",
+		["游泳速度"] = {
+			["spells"] = "7840=134754,8747=136235",
 		},
-		["联盟重置传送"] = {
-			["spells"] = "23405=136235",
+		["侦测亡灵"] = {
+			["spells"] = "11389=134179",
 		},
 		["强化祝福"] = {
 			["spells"] = "24460=136235",
@@ -19302,8 +21294,8 @@ WeakAurasOptionsSaved = {
 		["守护手套"] = {
 			["spells"] = "7156=136235,7157=136021",
 		},
-		["堕落治疗"] = {
-			["spells"] = "23401=136129,23402=136152",
+		["Increased Arcane Resist 17"] = {
+			["spells"] = "14719=136235",
 		},
 		["Majordomo Teleport Visual"] = {
 			["spells"] = "19484=135736",
@@ -19311,14 +21303,14 @@ WeakAurasOptionsSaved = {
 		["Perm. Illusion DeathKnight"] = {
 			["spells"] = "17400=132311",
 		},
-		["原野疾驰"] = {
-			["spells"] = "12566=132091,12567=132091,12568=132091,12821=132368",
+		["召唤白鳞蛇"] = {
+			["spells"] = "10713=132311",
 		},
 		["Rocket, WHITE"] = {
 			["spells"] = "26348=136235",
 		},
-		["归还部落军旗"] = {
-			["spells"] = "23386=136235",
+		["祖穆拉恩结界"] = {
+			["spells"] = "11086=136232,11088=136157",
 		},
 		["血领主光环"] = {
 			["spells"] = "24344=136235,24345=136235,29035=136235",
@@ -19326,14 +21318,14 @@ WeakAurasOptionsSaved = {
 		["Increased Fire Resist 06"] = {
 			["spells"] = "14586=136235",
 		},
-		["Summon Drakonid Corpse Trigger"] = {
-			["spells"] = "23363=136235",
+		["抓住武器"] = {
+			["spells"] = "10851=132343",
 		},
-		["复活死去的龙类"] = {
-			["spells"] = "23361=136235",
+		["粗制磨刀石"] = {
+			["spells"] = "2665=136192,2746=136235",
 		},
-		["游泳速度"] = {
-			["spells"] = "7840=134754,8747=136235",
+		["Increased Hunter Pet Damage"] = {
+			["spells"] = "22854=132091",
 		},
 		["传送：闪金镇"] = {
 			["spells"] = "31=136235",
@@ -19341,23 +21333,23 @@ WeakAurasOptionsSaved = {
 		["连珠火球"] = {
 			["spells"] = "11988=135812,11989=135812,15243=135812,15285=135812,16250=135812,17203=135812,22425=135812",
 		},
-		["灵魂震击"] = {
-			["spells"] = "10794=136140",
+		["穿刺之伤"] = {
+			["spells"] = "23299=136067",
 		},
 		["简易亚麻短裤"] = {
 			["spells"] = "12044=132149,12118=136021",
 		},
-		["Receive Quest Object, Undercity Guard"] = {
-			["spells"] = "27515=136235",
+		["奥术强化"] = {
+			["spells"] = "12042=136048",
 		},
-		["召唤白鳞蛇"] = {
-			["spells"] = "10713=132311",
+		["图样：夜色披风"] = {
+			["spells"] = "10664=136235",
 		},
 		["召唤祖利安徘徊者"] = {
 			["spells"] = "24246=136235,24247=136235",
 		},
-		["trans2"] = {
-			["spells"] = "23332=136235",
+		["灼烧之焰"] = {
+			["spells"] = "19366=135830",
 		},
 		["Increased Stamina 44"] = {
 			["spells"] = "14956=136235",
@@ -19365,8 +21357,8 @@ WeakAurasOptionsSaved = {
 		["抗性 - 火焰"] = {
 			["spells"] = "13652=136235",
 		},
-		["召唤棕色猫头鹰"] = {
-			["spells"] = "10707=132311",
+		["暗影镰刀"] = {
+			["spells"] = "23278=136235",
 		},
 		["制造雷霆崖忠诚誓言"] = {
 			["spells"] = "27716=136235",
@@ -19374,20 +21366,20 @@ WeakAurasOptionsSaved = {
 		["公式：附魔武器 - 超强冲击"] = {
 			["spells"] = "20082=136235",
 		},
-		["粘稠沥青"] = {
-			["spells"] = "14178=132343,14180=132343",
+		["免疫恐惧/变形/缠绕"] = {
+			["spells"] = "23274=135894",
 		},
 		["邪恶之寒"] = {
 			["spells"] = "6873=135864",
 		},
-		["Increased Hunter Pet Damage"] = {
-			["spells"] = "22854=132091",
+		["召唤农场小鸡"] = {
+			["spells"] = "10686=132311,13548=132311",
 		},
 		["dmg7"] = {
 			["spells"] = "19901=136115",
 		},
-		["穿刺之伤"] = {
-			["spells"] = "23299=136067",
+		["图样：重型蝎壳护腿"] = {
+			["spells"] = "19191=136235",
 		},
 		["冰霜反射器"] = {
 			["spells"] = "23131=135850",
@@ -19395,26 +21387,26 @@ WeakAurasOptionsSaved = {
 		["迅捷灰山羊"] = {
 			["spells"] = "23239=132248",
 		},
-		["图样：夜色披风"] = {
-			["spells"] = "10664=136235",
+		["赞吉尔之触治愈"] = {
+			["spells"] = "9999=136230,10723=136230",
 		},
 		["Summon Type A Trigger"] = {
 			["spells"] = "28415=136235",
 		},
-		["残废扫击"] = {
-			["spells"] = "23279=136039",
+		["元素制皮"] = {
+			["spells"] = "10658=135830,10659=136247",
 		},
 		["山地腰带"] = {
 			["spells"] = "3767=136235",
 		},
-		["暗影镰刀"] = {
-			["spells"] = "23278=136235",
+		["Copy of Release Rageclaw"] = {
+			["spells"] = "14804=136235",
 		},
-		["免疫恐惧/变形/缠绕"] = {
-			["spells"] = "23274=135894",
+		["辐射之云"] = {
+			["spells"] = "10341=136133",
 		},
-		["强效光明祝福"] = {
-			["spells"] = "25890=135909,25948=135909",
+		["粘液瘟疫"] = {
+			["spells"] = "14130=135914",
 		},
 		["侏儒语"] = {
 			["spells"] = "7340=136235",
@@ -19428,11 +21420,11 @@ WeakAurasOptionsSaved = {
 		["迅猛龙的狡诈"] = {
 			["spells"] = "4153=134295,4318=136063",
 		},
-		["制造次级黎明印记"] = {
-			["spells"] = "28319=134499",
+		["高级宝石学"] = {
+			["spells"] = "12687=134139,12688=134139",
 		},
-		["唤醒地灵守护者"] = {
-			["spells"] = "10252=136025",
+		["迅捷白山羊"] = {
+			["spells"] = "23240=132248",
 		},
 		["沙虫横扫"] = {
 			["spells"] = "30732=134307",
@@ -19452,8 +21444,8 @@ WeakAurasOptionsSaved = {
 		["蜜饯馅饼"] = {
 			["spells"] = "29335=133952",
 		},
-		["召唤达克雷尔的堕落战马"] = {
-			["spells"] = "23261=136235",
+		["鼠之新星"] = {
+			["spells"] = "10018=133946",
 		},
 		["光明祝福"] = {
 			["spells"] = "19977=135943,19978=135943,19979=135943,19995=135943,19996=135943,19997=135943,26650=135943",
@@ -19461,8 +21453,8 @@ WeakAurasOptionsSaved = {
 		["愤怒"] = {
 			["spells"] = "3737=136235,5176=136006,5177=136006,5178=136006,5179=136006,5180=136006,5181=136006,5182=136006,5183=136006,5184=136006,5289=136235,5290=136235,5291=136235,5292=136235,6780=136006,6781=136006,6806=136006,8905=136006,8906=136006,9739=136048,9911=136006,9912=136006,17144=136048,18104=136048,20698=136048,21667=136048,21807=136048",
 		},
-		["赞吉尔之触治愈"] = {
-			["spells"] = "9999=136230,10723=136230",
+		["Increased Frost Resist 11"] = {
+			["spells"] = "14551=136235",
 		},
 		["dmg11"] = {
 			["spells"] = "27261=136115",
@@ -19470,26 +21462,26 @@ WeakAurasOptionsSaved = {
 		["烤野猪肉"] = {
 			["spells"] = "2540=136192",
 		},
-		["重型秘银头盔"] = {
-			["spells"] = "9970=136192",
+		["迅捷白马"] = {
+			["spells"] = "23228=132261",
 		},
 		["血管破裂"] = {
 			["spells"] = "10265=136168",
 		},
-		["孢子树"] = {
-			["spells"] = "21548=136006,21709=136006",
+		["Heal Visual (DND)"] = {
+			["spells"] = "8596=135915",
 		},
-		["迅捷森林狼"] = {
-			["spells"] = "23251=132266",
+		["秘银鳞片护肩"] = {
+			["spells"] = "9966=136192",
 		},
-		["红色魔纹包"] = {
-			["spells"] = "12079=132149,12123=136021",
+		["迅捷晨刃豹"] = {
+			["spells"] = "23220=132242",
 		},
-		["迅捷白山羊"] = {
-			["spells"] = "23240=132248",
+		["打磨利刃 IV"] = {
+			["spells"] = "9900=136235",
 		},
-		["冰霜易伤"] = {
-			["spells"] = "10868=135849",
+		["Copy of Block Value 24"] = {
+			["spells"] = "28331=136235",
 		},
 		["Thadius Spawn"] = {
 			["spells"] = "28160=136235",
@@ -19497,38 +21489,38 @@ WeakAurasOptionsSaved = {
 		["强化虚空行者"] = {
 			["spells"] = "18705=136221,18706=136221,18707=136221",
 		},
-		["Increased Frost Resist 11"] = {
-			["spells"] = "14551=136235",
+		["幽魂外形"] = {
+			["spells"] = "9617=135864,22650=135864",
 		},
-		["迅捷白马"] = {
-			["spells"] = "23228=132261",
+		["墨汁喷射"] = {
+			["spells"] = "9612=136090",
 		},
-		["迅捷霜刃豹"] = {
-			["spells"] = "23221=132267",
+		["SHOWLABEL Only ON"] = {
+			["spells"] = "2765=135893",
 		},
-		["Increase Fire Dam 7"] = {
-			["spells"] = "9399=136235",
+		["龙血之痛：绿"] = {
+			["spells"] = "23169=134157",
 		},
 		["煮熟的光滑大鱼"] = {
 			["spells"] = "18239=136192",
 		},
-		["迅捷晨刃豹"] = {
-			["spells"] = "23220=132242",
+		["Increase Spell Dam 6"] = {
+			["spells"] = "9342=136235,9417=136235",
 		},
-		["潜行侦测"] = {
-			["spells"] = "23217=132150",
+		["绝望祷言"] = {
+			["spells"] = "13908=135954,19236=135954,19238=135954,19240=135954,19241=135954,19242=135954,19243=135954,19338=135954,19339=135954,19340=135954,19341=135954,19342=135954,19343=135954,19344=135954",
 		},
-		["Increase Spell Dam 57"] = {
-			["spells"] = "23213=136235",
+		["钢铁意志"] = {
+			["spells"] = "12300=135995,12959=135995,12960=135995,12961=135995,12962=135995",
 		},
-		["Increased Spirit 14"] = {
-			["spells"] = "9263=136235",
+		["龙血之痛：黑"] = {
+			["spells"] = "23154=134154",
 		},
-		["迅捷之靴"] = {
-			["spells"] = "9208=136235",
+		["沙斯拉尔之门"] = {
+			["spells"] = "23138=135743,23139=135743",
 		},
-		["暗色皮护腿"] = {
-			["spells"] = "9195=136235",
+		["暗影反射器"] = {
+			["spells"] = "23132=136121",
 		},
 		["召唤赫尔库拉之犬"] = {
 			["spells"] = "4950=136163",
@@ -19539,47 +21531,47 @@ WeakAurasOptionsSaved = {
 		["Increased All Resist 20"] = {
 			["spells"] = "18691=136235",
 		},
-		["龙血之痛：绿"] = {
-			["spells"] = "23169=134157",
+		["Increased Spirit 09"] = {
+			["spells"] = "9110=136235",
 		},
-		["侵扰"] = {
-			["spells"] = "23162=132175,23163=132175,23164=132175,23165=132175,23166=132175,23167=132175",
+		["Increased Agility 12"] = {
+			["spells"] = "9102=136235",
 		},
 		["放置剧毒粮草"] = {
 			["spells"] = "6620=132620",
 		},
-		["Summon Corpse Scarabs (10)"] = {
-			["spells"] = "28864=136235,28961=136235",
+		["dmg5"] = {
+			["spells"] = "18389=136115",
 		},
 		["浸魔胸甲 - 次级吸收"] = {
 			["spells"] = "7449=135913",
 		},
-		["教授召唤恐惧战马"] = {
-			["spells"] = "23160=136103",
+		["轻巧的皮手套"] = {
+			["spells"] = "9074=136235,9075=136021",
 		},
-		["龙血之痛：黑"] = {
-			["spells"] = "23154=134154",
+		["Increased Spirit 30"] = {
+			["spells"] = "14452=136235",
 		},
-		["沙斯拉尔之门"] = {
-			["spells"] = "23138=135743,23139=135743",
+		["Attack Power 20"] = {
+			["spells"] = "9331=136235",
 		},
 		["Increased Fire Resist 41"] = {
 			["spells"] = "14971=136235",
 		},
-		["暗影反射器"] = {
-			["spells"] = "23132=136121",
+		["皱褶皮短裤"] = {
+			["spells"] = "9064=136235",
 		},
-		["深红丝质外衣"] = {
-			["spells"] = "8791=132149,8807=136021",
+		["结构图：蓝色焰火"] = {
+			["spells"] = "23084=134153",
 		},
 		["Blink Cooldown Reduction"] = {
 			["spells"] = "23025=135736",
 		},
-		["结构图：快速暗影反射器"] = {
-			["spells"] = "23094=134153",
+		["黑暗之手"] = {
+			["spells"] = "8780=132149",
 		},
-		["结构图：真银变压器"] = {
-			["spells"] = "23088=134153",
+		["转化秘银"] = {
+			["spells"] = "11480=133234,11494=136021",
 		},
 		["狂乱"] = {
 			["spells"] = "19451=132117,19621=134296,19622=134296,19623=134296,19624=134296,19625=134296,19812=132117,21340=136146,22428=132117",
@@ -19590,8 +21582,8 @@ WeakAurasOptionsSaved = {
 		["绿铁头盔"] = {
 			["spells"] = "3502=136192,3522=136235",
 		},
-		["结构图：简易投掷炸弹 II"] = {
-			["spells"] = "23086=134153",
+		["图样：凤凰手套"] = {
+			["spells"] = "3905=136235",
 		},
 		["召唤丹加洛克士兵"] = {
 			["spells"] = "21988=136235",
@@ -19602,8 +21594,8 @@ WeakAurasOptionsSaved = {
 		["相位变换"] = {
 			["spells"] = "4511=136164,4630=136164,8611=136164,8612=136164,20329=136164",
 		},
-		["熏熊肉"] = {
-			["spells"] = "8607=136192",
+		["投掷岩石"] = {
+			["spells"] = "23065=132384",
 		},
 		["绿塔"] = {
 			["spells"] = "17154=136104,18097=136235",
@@ -19620,11 +21612,11 @@ WeakAurasOptionsSaved = {
 		["瑟银弹"] = {
 			["spells"] = "19800=136235",
 		},
-		["附魔盾牌 - 超强精神"] = {
-			["spells"] = "20016=135913",
+		["迅捷之风"] = {
+			["spells"] = "8385=136022",
 		},
-		["Gift of the Gathering Storm Chain Lightning Bonus"] = {
-			["spells"] = "26123=136235",
+		["海盗装束"] = {
+			["spells"] = "24708=132288,24709=132288,24717=136235",
 		},
 		["Increased Critical 5"] = {
 			["spells"] = "9405=136235",
@@ -19632,80 +21624,80 @@ WeakAurasOptionsSaved = {
 		["Holiday - Midsummer, Remove Bonfire"] = {
 			["spells"] = "28861=136235",
 		},
-		["结构图：蓝色焰火"] = {
-			["spells"] = "23084=134153",
+		["灼热武器"] = {
+			["spells"] = "13897=136235",
 		},
 		["召唤黄猫"] = {
 			["spells"] = "10674=132311",
 		},
-		["图样：蛇鳞腰带"] = {
-			["spells"] = "7958=136235",
+		["Test Sapper Charge"] = {
+			["spells"] = "29324=135826",
 		},
 		["黑铁板甲"] = {
 			["spells"] = "15296=136192",
 		},
-		["真银变压器"] = {
-			["spells"] = "23071=136235",
-		},
-		["钓鱼技能 +75"] = {
-			["spells"] = "8084=136245",
-		},
-		["货车爆炸"] = {
-			["spells"] = "6636=135826",
-		},
-		["投掷岩石"] = {
-			["spells"] = "23065=132384",
-		},
-		["次级智力"] = {
-			["spells"] = "2376=134721,3165=134721,3166=134721,13363=136235",
-		},
-		["Summon Party Bot - summon effect"] = {
-			["spells"] = "7976=136235",
-		},
-		["格罗姆的亡灵祭品"] = {
-			["spells"] = "24103=136235",
-		},
-		["召唤咒逐"] = {
-			["spells"] = "23041=136235",
-		},
-		["召唤熊猫宝宝"] = {
-			["spells"] = "26972=132311",
-		},
-		["Mana Shield Absorb Increase"] = {
-			["spells"] = "23037=136153",
+		["变异鱼大餐"] = {
+			["spells"] = "8213=133889",
 		},
 		["取消占据"] = {
 			["spells"] = "23031=136235",
 		},
-		["召唤传送门"] = {
-			["spells"] = "7741=136235,16136=135759,16139=135759",
+		["货车爆炸"] = {
+			["spells"] = "6636=135826",
 		},
-		["黑山羊"] = {
-			["spells"] = "6896=132248,17461=132248",
+		["闪电吐息"] = {
+			["spells"] = "15797=136048,17157=136048,20535=136048,20536=136048,20543=136048,20627=136048,20630=136048,24844=136048,24845=136048,25008=136048,25009=136048,25010=136048,25011=136048,25012=136048,25013=136048,25014=136048,25015=136048,25016=136048,25017=136048",
 		},
 		["使用龙珠"] = {
 			["spells"] = "23018=135743",
 		},
+		["图样：移形披风"] = {
+			["spells"] = "22934=136235",
+		},
+		["格罗姆的亡灵祭品"] = {
+			["spells"] = "24103=136235",
+		},
+		["局部毒药"] = {
+			["spells"] = "7947=136016",
+		},
+		["召唤熊猫宝宝"] = {
+			["spells"] = "26972=132311",
+		},
+		["自然免疫"] = {
+			["spells"] = "7941=136094",
+		},
+		["钓鱼技能 +15"] = {
+			["spells"] = "7825=136245",
+		},
+		["Undo Crowd Control"] = {
+			["spells"] = "22890=136235",
+		},
+		["黑山羊"] = {
+			["spells"] = "6896=132248,17461=132248",
+		},
+		["比索的药水"] = {
+			["spells"] = "7669=135899",
+		},
 		["法术反制"] = {
 			["spells"] = "1053=136235,2139=135856,3576=135856,15122=135856,19715=135856,20537=135856,20788=135856,29443=135856",
 		},
-		["图样：移形披风"] = {
-			["spells"] = "22934=136235",
+		["Increased Damage - Beast 04"] = {
+			["spells"] = "7591=136235",
 		},
 		["Damage vs. Guards"] = {
 			["spells"] = "28364=136235",
 		},
-		["猫鼬长靴"] = {
-			["spells"] = "22922=136235",
+		["枪械技能提高"] = {
+			["spells"] = "7536=136235,7579=136235,7580=136235,7581=136235,7582=136235,7583=136235,7584=136235",
 		},
 		["死亡之愿"] = {
 			["spells"] = "12328=136146",
 		},
-		["刺杀奥妮克希亚"] = {
-			["spells"] = "22906=136235",
+		["Increased Stamina 03"] = {
+			["spells"] = "7479=136235",
 		},
-		["Stone Skin Passive"] = {
-			["spells"] = "5811=132154",
+		["召唤石头巢穴"] = {
+			["spells"] = "26287=136235",
 		},
 		["喂养萨瑞鲁斯效果"] = {
 			["spells"] = "6497=135864",
@@ -19719,14 +21711,14 @@ WeakAurasOptionsSaved = {
 		["迅捷棕狼"] = {
 			["spells"] = "23250=132224",
 		},
-		["躯体转换"] = {
-			["spells"] = "22900=136192,22901=136192",
+		["迅捷治愈"] = {
+			["spells"] = "18562=134914",
 		},
-		["Undo Crowd Control"] = {
-			["spells"] = "22890=136235",
+		["治疗兄弟"] = {
+			["spells"] = "7393=136042",
 		},
-		["Cho'Rush Random"] = {
-			["spells"] = "22879=136235",
+		["CreatureSpecial"] = {
+			["spells"] = "7155=136235",
 		},
 		["制造魔法红宝石"] = {
 			["spells"] = "10054=134128,10056=134128",
@@ -19737,23 +21729,23 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 41"] = {
 			["spells"] = "21442=136235",
 		},
-		["潮湿毛巾"] = {
-			["spells"] = "7108=135920",
+		["斯里基克的机智"] = {
+			["spells"] = "22820=135930",
 		},
 		["附魔胸甲 - 状态"] = {
 			["spells"] = "13941=135913,13942=135913",
 		},
-		["图样：地狱火手套"] = {
-			["spells"] = "22873=136235",
+		["简易传送小组"] = {
+			["spells"] = "7078=135994,7143=135994",
 		},
-		["恶魔布手套"] = {
-			["spells"] = "22867=132149",
+		["重拳猛击"] = {
+			["spells"] = "6435=132939",
 		},
 		["召唤驯鹿"] = {
 			["spells"] = "26528=132311,26529=132311,26530=132311",
 		},
-		["地精摄像头连接"] = {
-			["spells"] = "7023=136235",
+		["水晶沉睡"] = {
+			["spells"] = "3636=136090",
 		},
 		["Pamela's Doll Trap"] = {
 			["spells"] = "17132=136235",
@@ -19773,11 +21765,11 @@ WeakAurasOptionsSaved = {
 		["荆棘术"] = {
 			["spells"] = "467=136104,782=136104,786=136235,795=136235,1075=136104,1076=136235,1420=136104,1421=136104,1422=136104,8914=136104,8915=136104,9756=136104,9757=136104,9910=136104,10343=136104,15438=136051,16877=136104,21335=136104,21337=136104,22128=136104,22351=136104,22696=136104",
 		},
-		["Block Value 23"] = {
-			["spells"] = "22852=136235",
+		["Knockdown Proc"] = {
+			["spells"] = "6961=132154,7095=132154",
 		},
-		["制造萨纳瑞恩的希望"] = {
-			["spells"] = "22837=136235",
+		["克拉兹克的药物"] = {
+			["spells"] = "6903=134374",
 		},
 		["青山羊"] = {
 			["spells"] = "6897=132248",
@@ -19785,8 +21777,8 @@ WeakAurasOptionsSaved = {
 		["图样：火山护肩"] = {
 			["spells"] = "19219=136235",
 		},
-		["斯里基克的机智"] = {
-			["spells"] = "22820=135930",
+		["巨石之力"] = {
+			["spells"] = "6864=132154,12731=132154",
 		},
 		["死亡显现"] = {
 			["spells"] = "3109=136195",
@@ -19794,8 +21786,8 @@ WeakAurasOptionsSaved = {
 		["恐惧抗性 4"] = {
 			["spells"] = "24351=134179",
 		},
-		["Test Finishing"] = {
-			["spells"] = "6748=136235",
+		["配方：特效活力药水"] = {
+			["spells"] = "22733=136235",
 		},
 		["烈焰弹"] = {
 			["spells"] = "29625=135934,29639=135990",
@@ -19806,8 +21798,8 @@ WeakAurasOptionsSaved = {
 		["水银护盾"] = {
 			["spells"] = "26463=136235,26464=136162,26465=136162",
 		},
-		["窒息孢子"] = {
-			["spells"] = "22802=136006",
+		["盐湖赛车中速"] = {
+			["spells"] = "6602=134063",
 		},
 		["强化刺骨"] = {
 			["spells"] = "14162=132292,14163=132292,14164=132292",
@@ -19815,50 +21807,50 @@ WeakAurasOptionsSaved = {
 		["Increased Strength 13"] = {
 			["spells"] = "9266=136235",
 		},
-		["水晶沉睡"] = {
-			["spells"] = "3636=136090",
+		["硬化外皮"] = {
+			["spells"] = "22693=136018",
 		},
 		["Increased Intellect 10"] = {
 			["spells"] = "9106=136235",
 		},
-		["洛恩塔姆薯块"] = {
-			["spells"] = "22761=136192",
+		["Attack Power 30"] = {
+			["spells"] = "9336=136235",
 		},
-		["霜狼之怒"] = {
-			["spells"] = "22751=136087",
+		["Conjure Milton (DND)"] = {
+			["spells"] = "21078=136235",
 		},
 		["嗜血"] = {
 			["spells"] = "23880=136012,23881=136012,23885=136012,23886=136012,23887=136012,23888=136012,23889=136012,23890=136012,23891=136012,23892=136012,23893=136012,23894=136012,23898=136012,23899=136012,23900=136012,23951=136012,24185=136012,27689=136012",
 		},
-		["驱毒术"] = {
-			["spells"] = "2893=136068,2897=136068,14253=136068",
+		["8% speed bonus"] = {
+			["spells"] = "22587=136235",
 		},
-		["配方：特效活力药水"] = {
-			["spells"] = "22733=136235",
+		["Activate Bomb B"] = {
+			["spells"] = "11795=135990",
 		},
-		["Apo Mekhanes Theos"] = {
-			["spells"] = "22694=136235",
+		["永生力量"] = {
+			["spells"] = "537=136235,567=136235,1318=136109,1319=136109,1320=136109,1365=136109",
 		},
-		["硬化外皮"] = {
-			["spells"] = "22693=136018",
+		["公式：附魔靴子 - 初级敏捷"] = {
+			["spells"] = "7868=136235",
 		},
-		["图样：符文皮甲短裤"] = {
-			["spells"] = "19211=136235",
+		["金棒"] = {
+			["spells"] = "14379=136192,14381=136235",
 		},
 		["图样：冬夜法袍"] = {
 			["spells"] = "18509=136235",
 		},
-		["暗灰狼形态"] = {
-			["spells"] = "22660=136095",
+		["制造强效法术石"] = {
+			["spells"] = "17727=134131,17732=134131",
 		},
-		["Spawn Drakonid"] = {
-			["spells"] = "22659=136235",
+		["设计图：符文板甲护肩"] = {
+			["spells"] = "16695=136235",
 		},
-		["8% speed bonus"] = {
-			["spells"] = "22587=136235",
+		["Receive Quest Object, Stormwind Guard"] = {
+			["spells"] = "27510=136235",
 		},
-		["设计图：灼热金剑"] = {
-			["spells"] = "15975=136235",
+		["Increase Holy Dam 5"] = {
+			["spells"] = "21503=136235",
 		},
 		["符文布头带"] = {
 			["spells"] = "18444=132149",
@@ -19866,56 +21858,56 @@ WeakAurasOptionsSaved = {
 		["暗影玷污"] = {
 			["spells"] = "23179=132288",
 		},
-		["光芒（紫色）"] = {
-			["spells"] = "22581=135741",
+		["Increased Intellect 36"] = {
+			["spells"] = "14426=136235",
 		},
-		["灵魂爆炸"] = {
-			["spells"] = "10828=136168",
-		},
-		["附魔武器 - 烈焰"] = {
-			["spells"] = "13898=135913",
-		},
-		["反人海战咒语"] = {
-			["spells"] = "22573=136235",
-		},
-		["制造血瓣花除草器"] = {
-			["spells"] = "22565=136235",
-		},
-		["Increase Shadow Dam 15"] = {
-			["spells"] = "18008=136235",
-		},
-		["配方：强效火焰防护药水"] = {
-			["spells"] = "17600=136235",
-		},
-		["Summon RaidMageArcaneFR"] = {
-			["spells"] = "22459=132317",
-		},
-		["治疗之环"] = {
-			["spells"] = "22458=135880,23544=135943",
+		["Elune's Blessing (quest credit)"] = {
+			["spells"] = "26394=136235",
 		},
 		["燃烧之焰"] = {
 			["spells"] = "22441=136235,22442=135805",
 		},
-		["红色亚麻衬衣"] = {
-			["spells"] = "2392=132149,2414=136021",
+		["Increase Spell Dam 20"] = {
+			["spells"] = "14799=136235,18056=136235",
 		},
-		["Agro Drones"] = {
-			["spells"] = "25152=136235",
+		["INVIS Only ON"] = {
+			["spells"] = "2763=132320",
 		},
-		["召唤暴怒的地狱卫士"] = {
-			["spells"] = "22392=135805",
-		},
-		["冰冻术"] = {
-			["spells"] = "2132=135852,5276=135852,9454=136090,16350=135852,18763=135852,18798=135852,18799=136235",
+		["Beast Slaying 132"] = {
+			["spells"] = "17324=136235",
 		},
 		["恶魔之门"] = {
 			["spells"] = "22372=135759,22391=135805",
 		},
+		["宁静之风图腾"] = {
+			["spells"] = "25908=136013,25910=136013",
+		},
+		["Increased Strength 10"] = {
+			["spells"] = "9121=136235",
+		},
+		["设计图：巨型瑟银战斧"] = {
+			["spells"] = "17022=136235",
+		},
+		["腐化智力"] = {
+			["spells"] = "6818=135914",
+		},
+		["捕捉地狱火之魂"] = {
+			["spells"] = "16628=136163",
+		},
+		["Increase Nature Dam 1"] = {
+			["spells"] = "7690=136235",
+		},
+		["冰冻术"] = {
+			["spells"] = "2132=135852,5276=135852,9454=136090,16350=135852,18763=135852,18798=135852,18799=136235",
+		},
+		["控制机械"] = {
+			["spells"] = "8345=132997",
+		},
 		["Sludge Passive"] = {
 			["spells"] = "3512=136188",
 		},
-		["鱼人鳍汤"] = {
-			["spells"] = "3372=136192",
+		["蛰伏"] = {
+			["spells"] = "1864=136187,1865=136187",
 		},
 		["准备就绪"] = {
 			["spells"] = "23989=136090",
@@ -19935,71 +21927,71 @@ WeakAurasOptionsSaved = {
 		["闪电反射"] = {
 			["spells"] = "4778=132110,4779=132110,4780=132110,4781=132110,5682=132110,5683=132110,5684=132110,5685=132110,5686=132110,5687=132110,5688=132110,5689=132110,5690=132110,5691=132110,5692=132110,5693=132110,13712=136047,13788=136047,13789=136047,13790=136047,13791=136047,19168=136047,19180=136047,19181=136047,24296=136047,24297=136047",
 		},
-		["雏龙之语"] = {
-			["spells"] = "22282=136010",
-		},
-		["神秘杂烩"] = {
-			["spells"] = "15865=136192",
-		},
-		["复活龙类"] = {
-			["spells"] = "23362=136235",
-		},
-		["蓝色棱柱"] = {
-			["spells"] = "22203=136208",
-		},
-		["爆炸水晶"] = {
-			["spells"] = "15239=134116",
-		},
-		["马杜克的诅咒"] = {
-			["spells"] = "17692=136235",
-		},
-		["法术能量护目镜超级版"] = {
-			["spells"] = "12615=136235",
-		},
-		["战斗光环"] = {
-			["spells"] = "21129=135968,21174=135968",
-		},
-		["水下毒气"] = {
-			["spells"] = "19727=136184",
-		},
-		["Firework Effect, Lunar Festival Minion"] = {
-			["spells"] = "25495=136168",
-		},
-		["显现灵魂"] = {
-			["spells"] = "21960=136232",
-		},
-		["蛰伏"] = {
-			["spells"] = "1864=136187,1865=136187",
-		},
-		["Increased Arcane Resist 07"] = {
-			["spells"] = "14709=136235",
+		["炽热之地"] = {
+			["spells"] = "22191=135805,22192=135805,22193=135805,22194=135805,22195=135805,22196=135805,22197=135805,22198=135805,22199=135805,22200=135805,22201=135805,22202=135805",
 		},
 		["Increased Armor 150"] = {
 			["spells"] = "15693=136235",
 		},
-		["寒冬之力"] = {
-			["spells"] = "21930=136235",
+		["复活龙类"] = {
+			["spells"] = "23362=136235",
 		},
-		["配方：冰霜之力药剂"] = {
-			["spells"] = "21924=136235",
+		["桑德的召唤"] = {
+			["spells"] = "11024=135864",
 		},
 		["作战持久"] = {
 			["spells"] = "12310=136009,17427=136009,17428=136009,17429=136009",
 		},
-		["野性戒卫"] = {
-			["spells"] = "28161=136235,28162=136235",
+		["献祭之油"] = {
+			["spells"] = "11451=136235,11486=136021",
 		},
-		["羽落术"] = {
-			["spells"] = "3141=136235,10729=136235",
+		["法术能量护目镜超级版"] = {
+			["spells"] = "12615=136235",
 		},
-		["虚空行者"] = {
-			["spells"] = "5108=136221",
+		["神圣破甲"] = {
+			["spells"] = "9176=136139",
+		},
+		["铸斧大师"] = {
+			["spells"] = "17041=132396,17043=136241",
+		},
+		["Firework Effect, Lunar Festival Minion"] = {
+			["spells"] = "25495=136168",
+		},
+		["活化烈焰"] = {
+			["spells"] = "5113=135817",
 		},
 		["Increase Shadow Dam 29"] = {
 			["spells"] = "18024=136235,18025=136235",
 		},
-		["Summon Lava Burst D"] = {
-			["spells"] = "21902=136235",
+		["设计图：血爪"] = {
+			["spells"] = "17029=136235",
+		},
+		["强化治疗链"] = {
+			["spells"] = "21899=136235,30872=136042",
+		},
+		["精制实心弹丸"] = {
+			["spells"] = "3947=136235,4008=136235",
+		},
+		["豹群守护"] = {
+			["spells"] = "13159=132267,13160=132267",
+		},
+		["野性赐福"] = {
+			["spells"] = "21849=136078,21850=136078,21851=136235,21852=136235",
+		},
+		["设计图：炽热链甲护肩"] = {
+			["spells"] = "20879=136235",
+		},
+		["雷矛声望 +2"] = {
+			["spells"] = "21829=136235",
+		},
+		["怀旧"] = {
+			["spells"] = "6199=136168",
+		},
+		["孢子树"] = {
+			["spells"] = "21548=136006,21709=136006",
+		},
+		["召唤小软泥怪"] = {
+			["spells"] = "12018=136006,12250=136006",
 		},
 		["Oracle Healing Bonus"] = {
 			["spells"] = "26169=136235",
@@ -20010,11 +22002,11 @@ WeakAurasOptionsSaved = {
 		["水晶尘奖励"] = {
 			["spells"] = "31247=136235",
 		},
-		["强化治疗链"] = {
-			["spells"] = "21899=136235,30872=136042",
+		["公式：附魔披风 - 初级防护"] = {
+			["spells"] = "7772=136235",
 		},
-		["术士恐惧"] = {
-			["spells"] = "21897=136235,21898=136183",
+		["劣质青铜护腿"] = {
+			["spells"] = "2668=136192,2749=136235",
 		},
 		["杂色马"] = {
 			["spells"] = "472=132261",
@@ -20034,8 +22026,8 @@ WeakAurasOptionsSaved = {
 		["Communique Timer, Necropolis"] = {
 			["spells"] = "28395=136235",
 		},
-		["Increased Totem Radius"] = {
-			["spells"] = "21895=136235",
+		["Pet Upgrade II (NYI)"] = {
+			["spells"] = "1523=136235",
 		},
 		["配方：强效石盾药水"] = {
 			["spells"] = "17596=136235",
@@ -20049,17 +22041,17 @@ WeakAurasOptionsSaved = {
 		["图样：符文冥河长靴"] = {
 			["spells"] = "24911=136235",
 		},
-		["野性赐福"] = {
-			["spells"] = "21849=136078,21850=136078,21851=136235,21852=136235",
+		["Thorns Dmg +1"] = {
+			["spells"] = "20888=136051",
 		},
 		["链状治疗波"] = {
 			["spells"] = "23573=136042",
 		},
-		["雷矛声望 +2"] = {
-			["spells"] = "21829=136235",
+		["炽热链甲束带"] = {
+			["spells"] = "20872=136192",
 		},
-		["召唤碎片"] = {
-			["spells"] = "21808=136025",
+		["飞火护腕"] = {
+			["spells"] = "24846=136235",
 		},
 		["Mid Trigger"] = {
 			["spells"] = "23936=136235",
@@ -20067,11 +22059,11 @@ WeakAurasOptionsSaved = {
 		["Doomcaller Immolate Bonus"] = {
 			["spells"] = "26116=136235",
 		},
-		["制造达图尔的魔棒"] = {
-			["spells"] = "22227=136235",
+		["公式：附魔胸甲 - 极效法力"] = {
+			["spells"] = "20077=136235",
 		},
-		["扭曲宁静"] = {
-			["spells"] = "21793=136107",
+		["Increased Dodge 1"] = {
+			["spells"] = "13669=136235",
 		},
 		["强化灼热之痛"] = {
 			["spells"] = "17927=135827,17929=135827,17930=135827,17931=135827,17932=135827",
@@ -20082,20 +22074,20 @@ WeakAurasOptionsSaved = {
 		["闪电攻击"] = {
 			["spells"] = "23686=135934,23687=135990",
 		},
-		["驯服可怕的杂斑野猪"] = {
-			["spells"] = "19681=132164,19694=132164",
+		["灵体形态"] = {
+			["spells"] = "842=136235,3559=136235,5390=136077,5392=136077",
 		},
 		["蘑菇重生"] = {
 			["spells"] = "18764=135953",
 		},
-		["冰斧智慧"] = {
-			["spells"] = "21736=132089",
+		["附魔胸甲 - 初级法力"] = {
+			["spells"] = "7443=135913",
 		},
-		["熔化护甲"] = {
-			["spells"] = "19631=135817",
+		["Increase Arcane Dam 27"] = {
+			["spells"] = "17842=136235",
 		},
-		["建筑物大火"] = {
-			["spells"] = "21650=135805",
+		["绿色迅猛龙"] = {
+			["spells"] = "8395=132253",
 		},
 		["图样：蛮皮披风"] = {
 			["spells"] = "10575=136235",
@@ -20103,8 +22095,8 @@ WeakAurasOptionsSaved = {
 		["心碎"] = {
 			["spells"] = "26898=135767",
 		},
-		["伐木机高温喷射"] = {
-			["spells"] = "21559=135818",
+		["练习锁"] = {
+			["spells"] = "8334=136235,8336=136235",
 		},
 		["伤害吸收"] = {
 			["spells"] = "23991=135893,25746=135893,25747=135893,25750=135893",
@@ -20112,14 +22104,14 @@ WeakAurasOptionsSaved = {
 		["大脑冻结"] = {
 			["spells"] = "9178=135842",
 		},
-		["孢子之云"] = {
-			["spells"] = "21547=136021,22948=136021",
+		["隐形"] = {
+			["spells"] = "23452=132866",
 		},
 		["Despawn Ossirian Crystal"] = {
 			["spells"] = "25193=136235",
 		},
-		["制造伐木机"] = {
-			["spells"] = "21544=134063,21565=134063",
+		["PX-238 Winter Wondervolt TRAP"] = {
+			["spells"] = "26275=136235",
 		},
 		["丢下武器"] = {
 			["spells"] = "25057=132343",
@@ -20139,11 +22131,11 @@ WeakAurasOptionsSaved = {
 		["狂暴怒火"] = {
 			["spells"] = "16791=136224,16792=136224",
 		},
-		["恢复能量"] = {
-			["spells"] = "9512=136235",
+		["召唤精龙宝宝"] = {
+			["spells"] = "15067=132311",
 		},
-		["灵体形态"] = {
-			["spells"] = "842=136235,3559=136235,5390=136077,5392=136077",
+		["Increase Holy Dam 26"] = {
+			["spells"] = "21520=136235",
 		},
 		["召唤金翼鹦鹉"] = {
 			["spells"] = "10684=132311",
@@ -20151,29 +22143,29 @@ WeakAurasOptionsSaved = {
 		["恶作剧"] = {
 			["spells"] = "24714=136235,24750=136235,24753=132118",
 		},
-		["Increase Holy Dam 44"] = {
-			["spells"] = "21529=136235",
+		["燃烧刺激"] = {
+			["spells"] = "18173=132937,23478=132937,23619=132937,23620=132937,23644=132937,24701=132937",
 		},
 		["燃烧"] = {
 			["spells"] = "11129=135824,16805=135818,16806=135818,17962=135807,18930=135807,18931=135807,18932=135807,18933=135807,18934=135807,18935=135807,19428=135818,23023=135818,28682=135824",
 		},
-		["Increase Holy Dam 38"] = {
-			["spells"] = "21526=136235",
+		["铜质护腕"] = {
+			["spells"] = "2663=136192",
 		},
-		["召唤效果"] = {
-			["spells"] = "8677=136119",
+		["图样：暗色长靴"] = {
+			["spells"] = "9218=136235",
 		},
 		["Item +MANA/FR Leg R3"] = {
 			["spells"] = "15488=136235",
 		},
-		["Increase Holy Dam 32"] = {
-			["spells"] = "21523=136235",
+		["坚韧低吼"] = {
+			["spells"] = "4148=132091,4715=132091,5994=136231",
 		},
-		["Increase Arcane Dam 19"] = {
-			["spells"] = "17828=136235",
+		["防护火焰"] = {
+			["spells"] = "7230=135806,7231=135806,7232=135806,7233=135806,7234=135806,12561=135806,16894=135806,17543=135806,18942=135806",
 		},
-		["召唤精龙宝宝"] = {
-			["spells"] = "15067=132311",
+		["Attack Power Ranged 50"] = {
+			["spells"] = "21446=136235",
 		},
 		["虚空领域"] = {
 			["spells"] = "28863=135857",
@@ -20181,8 +22173,8 @@ WeakAurasOptionsSaved = {
 		["贝壳陷阱"] = {
 			["spells"] = "17679=136235",
 		},
-		["Increase Holy Dam 26"] = {
-			["spells"] = "21520=136235",
+		["超级能量合剂"] = {
+			["spells"] = "17637=136235",
 		},
 		["强效魔法精华"] = {
 			["spells"] = "13361=136192",
@@ -20193,8 +22185,8 @@ WeakAurasOptionsSaved = {
 		["Heal Brethren"] = {
 			["spells"] = "26565=135913",
 		},
-		["赞达拉力量徽记"] = {
-			["spells"] = "24422=136235",
+		["钢质机械陆行鸟"] = {
+			["spells"] = "15781=132247",
 		},
 		["召唤上古力量"] = {
 			["spells"] = "25167=136235",
@@ -20202,14 +22194,14 @@ WeakAurasOptionsSaved = {
 		["驯服硬甲蝎"] = {
 			["spells"] = "19683=132164,19697=132164",
 		},
-		["Portal Effect: Undercity"] = {
-			["spells"] = "17611=135766",
+		["投掷泥浆"] = {
+			["spells"] = "3650=136090",
 		},
-		["残废术"] = {
-			["spells"] = "89=136135,727=136235,1391=136135,11443=136135,12552=136135,18381=136138,20812=136135,29212=136135",
+		["Increased All Resist 10"] = {
+			["spells"] = "18681=136235",
 		},
-		["Item +AGI Leg R1"] = {
-			["spells"] = "15401=136235",
+		["Increase Shadow Dam 56"] = {
+			["spells"] = "26728=136235",
 		},
 		["野猪之皮"] = {
 			["spells"] = "16610=136104",
@@ -20217,56 +22209,29 @@ WeakAurasOptionsSaved = {
 		["Increased Frost Resist 42"] = {
 			["spells"] = "14978=136235",
 		},
-		["区域燃烧"] = {
-			["spells"] = "8000=135826",
-		},
-		["黑色魔纹手套"] = {
-			["spells"] = "12053=132149,12104=136021",
-		},
-		["Portal Effect: Ironforge"] = {
-			["spells"] = "17607=135743",
-		},
-		["防护火焰"] = {
-			["spells"] = "7230=135806,7231=135806,7232=135806,7233=135806,7234=135806,12561=135806,16894=135806,17543=135806,18942=135806",
-		},
-		["Attack Power Ranged 50"] = {
-			["spells"] = "21446=136235",
-		},
-		["割裂伤口"] = {
-			["spells"] = "10370=132155",
-		},
-		["Attack Power Ranged 43"] = {
-			["spells"] = "21443=136235",
-		},
-		["横扫攻击"] = {
-			["spells"] = "12292=132306,12723=132306,18765=132306,26654=132306",
-		},
-		["投掷泥浆"] = {
-			["spells"] = "3650=136090",
-		},
-		["Increase Shadow Dam 56"] = {
-			["spells"] = "26728=136235",
-		},
 		["设计图：铜质符文胸甲"] = {
 			["spells"] = "2760=136235",
 		},
 		["Attack Power 48"] = {
 			["spells"] = "9333=136235",
 		},
-		["孵卵"] = {
-			["spells"] = "23851=136235,24083=136164",
+		["Portal Effect: Ironforge"] = {
+			["spells"] = "17607=135743",
 		},
 		["放置杰斯托的信号灯"] = {
 			["spells"] = "21370=136235",
 		},
-		["诺格弗格药剂"] = {
-			["spells"] = "16589=136235,16591=136187,16593=135992,16595=136162",
+		["纳迦雕像法术"] = {
+			["spells"] = "19473=136235",
 		},
-		["Atiesh Priest Damage/Healing"] = {
-			["spells"] = "28155=136235",
+		["割裂伤口"] = {
+			["spells"] = "10370=132155",
 		},
-		["扰乱之痛"] = {
-			["spells"] = "3603=132278",
+		["Increase Healing 12"] = {
+			["spells"] = "7680=136235",
+		},
+		["精制秘银头盔"] = {
+			["spells"] = "9980=136192",
 		},
 		["Increased Agility 28"] = {
 			["spells"] = "14392=136235",
@@ -20280,6 +22245,33 @@ WeakAurasOptionsSaved = {
 		["炸弹攻击"] = {
 			["spells"] = "21188=135826",
 		},
+		["孵卵"] = {
+			["spells"] = "23851=136235,24083=136164",
+		},
+		["Major Pet Upgrade (NYI)"] = {
+			["spells"] = "1525=136235",
+		},
+		["惩击恶魔"] = {
+			["spells"] = "13907=135920",
+		},
+		["Rejuvenation (OLD)"] = {
+			["spells"] = "2598=136235",
+		},
+		["震地者"] = {
+			["spells"] = "21152=133477",
+		},
+		["强力爆盐炸弹"] = {
+			["spells"] = "23008=136235,23080=136235",
+		},
+		["食谱：蛋奶酒"] = {
+			["spells"] = "21146=136235",
+		},
+		["蛆虫粘液"] = {
+			["spells"] = "16449=136134",
+		},
+		["大师级急救"] = {
+			["spells"] = "10847=135966,19902=135966",
+		},
 		["制造块茎"] = {
 			["spells"] = "6900=133748",
 		},
@@ -20289,8 +22281,8 @@ WeakAurasOptionsSaved = {
 		["雕花皮手套"] = {
 			["spells"] = "3756=136235,3784=136021",
 		},
-		["狮鹫悬浮"] = {
-			["spells"] = "21173=136235",
+		["火焰风暴"] = {
+			["spells"] = "13899=135826",
 		},
 		["Plague Wave Controller (Fast)"] = {
 			["spells"] = "30114=135805",
@@ -20310,26 +22302,26 @@ WeakAurasOptionsSaved = {
 		["荣誉点数+69"] = {
 			["spells"] = "31417=136235",
 		},
-		["惩击恶魔"] = {
-			["spells"] = "13907=135920",
+		["Summon Son of Flame H"] = {
+			["spells"] = "21116=135819",
 		},
-		["震地者"] = {
-			["spells"] = "21152=133477",
+		["跳跃闪电"] = {
+			["spells"] = "9654=136048",
 		},
 		["抗寒图腾"] = {
 			["spells"] = "8181=135866,8183=135866,10478=135866,10479=135866,10480=135866,10481=135866",
 		},
-		["强力爆盐炸弹"] = {
-			["spells"] = "23008=136235,23080=136235",
+		["强效火焰防护药水"] = {
+			["spells"] = "17574=136235",
 		},
-		["法术免疫"] = {
-			["spells"] = "6356=136217,6357=136217",
+		["Attack Power Ranged 5"] = {
+			["spells"] = "21427=136235",
 		},
-		["食谱：蛋奶酒"] = {
-			["spells"] = "21146=136235",
+		["飓风"] = {
+			["spells"] = "16914=136018,16915=136018,17401=136018,17402=136018,17406=136018,24922=136018,27530=136018",
 		},
-		["食谱：小姜饼"] = {
-			["spells"] = "21145=136235",
+		["火焰之盾效果 II"] = {
+			["spells"] = "3053=135817",
 		},
 		["蜘蛛肉肠"] = {
 			["spells"] = "21175=136192,21176=136021",
@@ -20337,29 +22329,29 @@ WeakAurasOptionsSaved = {
 		["缴械"] = {
 			["spells"] = "676=132343,1646=132343,6713=132343,8379=132343,11879=132343,13534=132343,15752=132343,22691=132343,27581=132343",
 		},
-		["姜饼"] = {
-			["spells"] = "21143=136192",
+		["溶解护甲"] = {
+			["spells"] = "13013=136007",
 		},
 		["Increase Frost Dam 28"] = {
 			["spells"] = "17906=136235",
 		},
-		["龙鳞制皮"] = {
-			["spells"] = "10656=134305,10657=136247",
+		["疯狂突进"] = {
+			["spells"] = "30112=132182",
 		},
-		["Summon Son of Flame H"] = {
-			["spells"] = "21116=135819",
+		["阿克蒙德的诅咒"] = {
+			["spells"] = "625=136235,1291=136137",
 		},
 		["极限治疗"] = {
 			["spells"] = "23329=135805",
 		},
-		["Summon Son of Flame F"] = {
-			["spells"] = "21114=135819",
+		["灼热图腾"] = {
+			["spells"] = "2075=135825,3599=135825,6363=135825,6364=135825,6365=135825,6379=135825,6380=135825,6381=135825,10437=135825,10438=135825,10439=135825,10440=135825",
 		},
-		["强效火焰防护药水"] = {
-			["spells"] = "17574=136235",
+		["Hive'Zara Swarmer Teleport"] = {
+			["spells"] = "25709=136235,25825=136235,25826=136235,25827=136235,25828=136235",
 		},
-		["野兽套牌"] = {
-			["spells"] = "23677=136235",
+		["火花"] = {
+			["spells"] = "21027=136048",
 		},
 		["Create Korea Invitational Prize"] = {
 			["spells"] = "26974=136235",
@@ -20370,17 +22362,17 @@ WeakAurasOptionsSaved = {
 		["Increase Shadow Dam 25"] = {
 			["spells"] = "18020=136235",
 		},
-		["法力风暴"] = {
-			["spells"] = "21097=135857",
+		["深红丝质护肩"] = {
+			["spells"] = "8793=132149",
 		},
-		["勇士"] = {
-			["spells"] = "21090=136172",
+		["英雄"] = {
+			["spells"] = "23682=135953,23689=135953",
 		},
 		["地狱火效果"] = {
 			["spells"] = "22703=135860",
 		},
-		["毒害之云"] = {
-			["spells"] = "21070=136006",
+		["玻璃放大镜"] = {
+			["spells"] = "17529=136235",
 		},
 		["图特卡什的诅咒"] = {
 			["spells"] = "12255=136020",
@@ -20394,29 +22386,29 @@ WeakAurasOptionsSaved = {
 		["设计图：君王板甲护腿"] = {
 			["spells"] = "16752=136235",
 		},
-		["驱散射击 III"] = {
-			["spells"] = "1990=132153",
-		},
-		["卡扎克的印记"] = {
-			["spells"] = "21056=136121,21058=136121",
-		},
-		["音乐催眠"] = {
-			["spells"] = "21050=136235",
-		},
-		["火花"] = {
-			["spells"] = "21027=136048",
-		},
-		["Increased Offhand Damage 10"] = {
-			["spells"] = "21012=136235",
-		},
-		["暗言术：默"] = {
-			["spells"] = "1193=135975,1223=135975",
-		},
-		["传授精制秘银战靴"] = {
-			["spells"] = "11204=136235",
-		},
 		["皮革"] = {
 			["spells"] = "9077=132724",
+		},
+		["冰霜防护药水"] = {
+			["spells"] = "7258=136235",
+		},
+		["暗影匕首 IV"] = {
+			["spells"] = "2725=132223",
+		},
+		["法杖打击 IV"] = {
+			["spells"] = "1931=132325",
+		},
+		["青色迅猛龙"] = {
+			["spells"] = "10796=132253",
+		},
+		["鸦爪妖术"] = {
+			["spells"] = "7655=136129,7656=136129,7657=136129",
+		},
+		["黑铁护腿"] = {
+			["spells"] = "20876=136192",
+		},
+		["法术打断"] = {
+			["spells"] = "5239=132091,5241=132091",
 		},
 		["翼龙钉刺"] = {
 			["spells"] = "19386=135125,20940=135125,20941=135125,24131=135125,24132=135125,24133=135125,24134=135125,24135=135125,24335=135125,24336=135125,26180=135125,26233=135125,26748=135125",
@@ -20424,8 +22416,8 @@ WeakAurasOptionsSaved = {
 		["Item +STA/FR Leg R2"] = {
 			["spells"] = "15442=136235",
 		},
-		["Giantstalker A"] = {
-			["spells"] = "20987=136095",
+		["黑铁护肩"] = {
+			["spells"] = "15295=136192,17711=136235",
 		},
 		["治疗之舌 II"] = {
 			["spells"] = "4221=135915",
@@ -20436,35 +22428,35 @@ WeakAurasOptionsSaved = {
 		["迅捷棕色科多兽"] = {
 			["spells"] = "23249=132245",
 		},
-		["永生灵魂"] = {
-			["spells"] = "20939=136235",
+		["设计图：秘银马刺"] = {
+			["spells"] = "9965=136235",
 		},
-		["野性之心豹效果"] = {
-			["spells"] = "24900=135879",
+		["狂怒撕咬"] = {
+			["spells"] = "4101=136224,4731=136224,5993=136231",
 		},
-		["火焰新星图腾"] = {
-			["spells"] = "1535=135824,8086=135824,8498=135824,8499=135824,8500=135824,8501=135824,11314=135824,11315=135824,11316=135824,11317=135824,27623=135824",
+		["炖龙虾"] = {
+			["spells"] = "18245=136192",
 		},
-		["Summon Ouro Trigger"] = {
-			["spells"] = "26284=136235",
+		["变形效果"] = {
+			["spells"] = "9033=136006",
 		},
-		["Thorns Dmg +3"] = {
-			["spells"] = "20886=136051",
+		["毒蝎样本"] = {
+			["spells"] = "11761=136235",
 		},
 		["瘟疫心灵"] = {
 			["spells"] = "3429=136127",
 		},
-		["鸦爪妖术"] = {
-			["spells"] = "7655=136129,7656=136129,7657=136129",
+		["斯坦索姆圣水"] = {
+			["spells"] = "17291=136235",
 		},
-		["黑铁护腿"] = {
-			["spells"] = "20876=136192",
+		["黑色迅猛龙"] = {
+			["spells"] = "10798=132253",
 		},
 		["硬铁短剑"] = {
 			["spells"] = "3492=136192,3517=136235",
 		},
-		["炽热火焰"] = {
-			["spells"] = "6297=135826",
+		["学习凶猛撕咬"] = {
+			["spells"] = "31020=132127",
 		},
 		["掷斧"] = {
 			["spells"] = "16075=132399",
@@ -20472,8 +22464,8 @@ WeakAurasOptionsSaved = {
 		["Increased Nature Resist 19"] = {
 			["spells"] = "14640=136235",
 		},
-		["原始本能"] = {
-			["spells"] = "24353=132193",
+		["巨型黑色锤"] = {
+			["spells"] = "10001=136192,10002=136235",
 		},
 		["Increase Spell Dam Undead 48"] = {
 			["spells"] = "24197=136235",
@@ -20484,29 +22476,29 @@ WeakAurasOptionsSaved = {
 		["驱毒术效果"] = {
 			["spells"] = "3137=136068",
 		},
-		["图样：熔铸头盔"] = {
-			["spells"] = "20856=136235",
+		["炮火"] = {
+			["spells"] = "17278=135805,17501=135810",
 		},
 		["先知之刃"] = {
 			["spells"] = "27832=136192",
 		},
-		["雪球"] = {
-			["spells"] = "21167=132387,21343=132387,25677=132387",
+		["毒气炸弹"] = {
+			["spells"] = "8901=133581,8902=133581",
 		},
-		["光芒手套"] = {
-			["spells"] = "20849=132149",
+		["颅骨爆裂"] = {
+			["spells"] = "3551=135860,15621=135860",
 		},
 		["绿色毛纺外衣"] = {
 			["spells"] = "2399=136235,2421=136021",
 		},
-		["公式：附魔护腕 - 强效耐力"] = {
-			["spells"] = "13946=136235",
+		["Ritual of Doom Sacrifice"] = {
+			["spells"] = "20625=135741",
 		},
-		["摧毁卡拉恩的旗子"] = {
-			["spells"] = "20783=136235,20786=136235",
+		["唤醒夺魂者"] = {
+			["spells"] = "12346=136235",
 		},
-		["次级智慧"] = {
-			["spells"] = "7768=136235",
+		["精灵之魂"] = {
+			["spells"] = "20585=136116",
 		},
 		["强效昏睡药水"] = {
 			["spells"] = "24366=136235",
@@ -20514,44 +22506,44 @@ WeakAurasOptionsSaved = {
 		["隐秘行动"] = {
 			["spells"] = "6151=132320,6153=132320,6155=132320,6156=132320,6157=132320,6163=132320,6165=132320,6166=132320,6167=132320,6169=132320,7104=132320,7203=132320,7204=132320,7205=132320,7206=132320,7207=132320,7208=132320,7209=132320,7210=132320,7939=132320,8218=132320,11013=132320,22766=132320",
 		},
-		["制造强效灵魂石"] = {
-			["spells"] = "20756=136210,20768=136210",
+		["强化割裂"] = {
+			["spells"] = "21880=132302",
 		},
-		["暗影潜行"] = {
-			["spells"] = "5916=132320",
+		["暗影圣印 II"] = {
+			["spells"] = "1894=135968",
 		},
 		["敏捷"] = {
 			["spells"] = "3159=134873,3160=134873,8115=135879,8116=135879,8117=135879,11328=134873,11330=134873,12174=135879,13365=136235",
 		},
-		["梦游"] = {
-			["spells"] = "20668=136152",
+		["Increased Frost Resist 40"] = {
+			["spells"] = "14579=136235",
 		},
-		["重皮"] = {
-			["spells"] = "20649=136235,20652=136021",
+		["暗影抗性"] = {
+			["spells"] = "1189=136075,4084=135865,4550=136075,4572=136075,4573=136075,4574=136075,4575=136075,4576=136075,4577=136075,4578=136075,4622=136075,4623=136075,4624=136075,4625=136075,4626=136075,4627=136075,4628=136075,20579=136152,24488=136121,24490=136121,24505=136121,24506=136121,24507=136121,24514=136121,24515=136121,24516=136121,24518=136121,24526=136121,24527=136121,24528=136121,27535=136185,28769=136121",
 		},
 		["女妖之嚎"] = {
 			["spells"] = "17639=136183",
 		},
-		["青铜钉锤"] = {
-			["spells"] = "2740=136192,2757=136235",
+		["Firesworn Eruption Trigger"] = {
+			["spells"] = "20482=136235",
 		},
-		["Ritual of Doom Sacrifice"] = {
-			["spells"] = "20625=135741",
+		["设计图：炽热链甲束带"] = {
+			["spells"] = "20878=136235",
 		},
 		["邪恶皮甲"] = {
 			["spells"] = "19098=136235",
 		},
-		["断风者"] = {
-			["spells"] = "20586=136022",
+		["熔化矿石"] = {
+			["spells"] = "5159=135826",
 		},
-		["精灵之魂"] = {
-			["spells"] = "20585=136116",
+		["挖掘石柱"] = {
+			["spells"] = "4982=136235",
 		},
 		["杀人蜂！"] = {
 			["spells"] = "24265=136067",
 		},
-		["拉格纳罗斯显现"] = {
-			["spells"] = "20568=135819",
+		["侏儒隐形装置"] = {
+			["spells"] = "3971=136235,4025=136235",
 		},
 		["打开"] = {
 			["spells"] = "3365=136235,3366=136235,6247=136235,6249=136235,6477=136235,6478=136235,6658=136235,6802=136235,8917=136235,21248=136235,21288=136235,21651=136235",
@@ -20559,8 +22551,8 @@ WeakAurasOptionsSaved = {
 		["光芒长袍"] = {
 			["spells"] = "23666=132149",
 		},
-		["坚韧圣印"] = {
-			["spells"] = "1885=135968",
+		["农夫伪装"] = {
+			["spells"] = "5668=132288",
 		},
 		["救赎"] = {
 			["spells"] = "574=136235,7328=135955,7329=135955,10322=135955,10323=135955,10324=135955,10325=135955,20772=135955,20773=135955,20774=135955,20775=135955",
@@ -20571,8 +22563,8 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 65"] = {
 			["spells"] = "21451=136235",
 		},
-		["暗影圣印 II"] = {
-			["spells"] = "1894=135968",
+		["反对者"] = {
+			["spells"] = "15641=135873,15642=135873",
 		},
 		["召唤恶心的软泥怪"] = {
 			["spells"] = "25162=132311",
@@ -20586,77 +22578,77 @@ WeakAurasOptionsSaved = {
 		["Increased Frost Resist 21"] = {
 			["spells"] = "14560=136235",
 		},
-		["共鸣水晶"] = {
-			["spells"] = "20492=135996",
+		["Rocket, GREEN"] = {
+			["spells"] = "26345=136235",
 		},
-		["野性印记"] = {
-			["spells"] = "1126=136078,5231=136078,5232=136078,5233=136078,5234=136078,5235=136078,5285=136235,5286=136235,5287=136235,5310=136235,6756=136078,6782=136078,8907=136078,8908=136078,9884=136078,9885=136078,9886=136078,9887=136078,16878=136078,24752=136078",
-		},
-		["破坏工具"] = {
-			["spells"] = "4954=136168",
-		},
-		["地精爆炸盒"] = {
-			["spells"] = "12720=136235,12773=136235",
-		},
-		["Firesworn Eruption Trigger"] = {
-			["spells"] = "20482=136235",
-		},
-		["Increased Stamina 17"] = {
-			["spells"] = "14464=136235",
-		},
-		["神圣震击"] = {
-			["spells"] = "20473=135972,20929=135972,20930=135972,20958=135972,20960=135972,25902=135972,25903=135972,25911=135972,25912=135972,25913=135972,25914=135972",
-		},
-		["设计图：瑟银护腿"] = {
-			["spells"] = "16693=136235",
-		},
-		["Increased All Resist 01"] = {
-			["spells"] = "18672=136235",
-		},
-		["醉酒的车队员工"] = {
-			["spells"] = "20436=136235",
-		},
-		["震荡猛击"] = {
-			["spells"] = "12809=132325,22427=132325",
-		},
-		["反对者"] = {
-			["spells"] = "15641=135873,15642=135873",
-		},
-		["野兽狂暴 II"] = {
-			["spells"] = "3138=132091",
-		},
-		["Increase Frost Dam 1"] = {
-			["spells"] = "7697=136235",
+		["释放小鬼"] = {
+			["spells"] = "23180=136235",
 		},
 		["拦截"] = {
 			["spells"] = "20252=132307,20611=132307,20616=132307,20617=132307,20621=132307,20622=132307,27577=132307,27826=132307",
 		},
-		["传送到艾萨拉之塔"] = {
-			["spells"] = "12509=136011,12510=136022",
+		["地精爆炸盒"] = {
+			["spells"] = "12720=136235,12773=136235",
 		},
-		["圣洁光环"] = {
-			["spells"] = "20218=135934",
+		["污浊嚎叫"] = {
+			["spells"] = "3424=136188",
+		},
+		["食谱：鱼人鳍汤"] = {
+			["spells"] = "3381=136235",
+		},
+		["吸血毒药"] = {
+			["spells"] = "3358=136067,8382=136067",
+		},
+		["设计图：瑟银护腿"] = {
+			["spells"] = "16693=136235",
+		},
+		["Alterac Ram Aura Dummy Dispel DND"] = {
+			["spells"] = "21864=136152,22838=136152",
+		},
+		["Increased All Resist 07"] = {
+			["spells"] = "18678=136235",
+		},
+		["Raid Buff Fire"] = {
+			["spells"] = "20173=136235",
+		},
+		["公式：附魔双手武器 - 极效智力"] = {
+			["spells"] = "20084=136235",
+		},
+		["野兽狂暴 II"] = {
+			["spells"] = "3138=132091",
+		},
+		["Increased Agility 44"] = {
+			["spells"] = "14938=136235",
+		},
+		["匕首打击 IV"] = {
+			["spells"] = "2634=132223",
+		},
+		["Dagger Strike III (Disabled)"] = {
+			["spells"] = "2629=132223",
+		},
+		["寒冰屏障"] = {
+			["spells"] = "11958=135841,27619=135841",
 		},
 		["扎拉虫巢催化"] = {
 			["spells"] = "25187=132104",
 		},
-		["淡黄色衬衣"] = {
-			["spells"] = "3869=132149,3891=136021",
+		["破坏物品"] = {
+			["spells"] = "7437=136137",
 		},
 		["骷髅马"] = {
 			["spells"] = "29059=132264",
 		},
-		["强化拯救祝福"] = {
-			["spells"] = "20194=135967,20195=135967",
+		["杂味炖肉"] = {
+			["spells"] = "2543=136192",
 		},
-		["守护者的宠爱"] = {
-			["spells"] = "20174=135964,20175=135964",
+		["装满瓶子"] = {
+			["spells"] = "5512=136235",
 		},
 		["Increased Frost Resist 46"] = {
 			["spells"] = "14982=136235",
 		},
-		["Raid Buff Fire"] = {
-			["spells"] = "20173=136235",
+		["绿色护目镜"] = {
+			["spells"] = "3956=136235,4014=136235",
 		},
 		["烈焰喷射"] = {
 			["spells"] = "10733=135805",
@@ -20664,8 +22656,8 @@ WeakAurasOptionsSaved = {
 		["传送门：卡拉赞"] = {
 			["spells"] = "28147=135766,28148=135751",
 		},
-		["魔纹包"] = {
-			["spells"] = "12065=132149,12110=136021",
+		["强效抗性"] = {
+			["spells"] = "19992=136235",
 		},
 		["Increased Stamina 26"] = {
 			["spells"] = "14473=136235",
@@ -20676,8 +22668,8 @@ WeakAurasOptionsSaved = {
 		["M73破片手榴弹"] = {
 			["spells"] = "13808=135826",
 		},
-		["Increase Healing 54"] = {
-			["spells"] = "18038=136235",
+		["萃取智慧"] = {
+			["spells"] = "17627=134877",
 		},
 		["dmg6"] = {
 			["spells"] = "18390=136115",
@@ -20685,17 +22677,17 @@ WeakAurasOptionsSaved = {
 		["强化疲劳诅咒"] = {
 			["spells"] = "18310=136162,18311=136162,18312=136162,18313=136162",
 		},
-		["公式：附魔双手武器 - 极效智力"] = {
-			["spells"] = "20084=136235",
+		["配方：次级石盾药水"] = {
+			["spells"] = "4943=136235",
 		},
-		["Increased Agility 44"] = {
-			["spells"] = "14938=136235",
+		["食谱：辣椒蟹肉"] = {
+			["spells"] = "19949=136235",
 		},
-		["寒冰咆哮"] = {
-			["spells"] = "3143=135848",
+		["图样：巫毒披风"] = {
+			["spells"] = "10563=136235",
 		},
-		["公式：附魔披风 - 超强防御"] = {
-			["spells"] = "20076=136235",
+		["次级星界精华"] = {
+			["spells"] = "13498=136192",
 		},
 		["附魔武器 - 攻击"] = {
 			["spells"] = "13693=135913,13694=135913",
@@ -20703,17 +22695,17 @@ WeakAurasOptionsSaved = {
 		["远古之怒"] = {
 			["spells"] = "10667=136101,10670=136101",
 		},
-		["Dagger Strike III (Disabled)"] = {
-			["spells"] = "2629=132223",
+		["结构图：黑铁步枪"] = {
+			["spells"] = "19860=134153",
 		},
-		["公式：附魔靴子 - 精神"] = {
-			["spells"] = "20072=136235",
+		["召唤碎腭"] = {
+			["spells"] = "19561=136235",
 		},
-		["耐普图隆的守护"] = {
-			["spells"] = "21332=136235",
+		["图样：粉色魔纹衬衣"] = {
+			["spells"] = "12173=136235",
 		},
-		["破坏物品"] = {
-			["spells"] = "7437=136137",
+		["Fire Nova Visual"] = {
+			["spells"] = "19823=135824",
 		},
 		["召唤报警机器人"] = {
 			["spells"] = "23004=133002",
@@ -20721,14 +22713,14 @@ WeakAurasOptionsSaved = {
 		["执着"] = {
 			["spells"] = "14816=135907",
 		},
-		["迅捷药水"] = {
-			["spells"] = "2335=136235",
+		["斧类武器入门"] = {
+			["spells"] = "4307=132316,4308=132316,4309=132316,4310=132316,4311=132316,4313=132316",
 		},
-		["灵魂燃烧 V"] = {
-			["spells"] = "1362=135805",
+		["制造惩戒火炬"] = {
+			["spells"] = "19797=136235",
 		},
-		["Intellect 15"] = {
-			["spells"] = "20002=136235",
+		["岗哨图腾"] = {
+			["spells"] = "6495=136082,6496=136082",
 		},
 		["活性法力"] = {
 			["spells"] = "21334=136235,21959=135932",
@@ -20736,83 +22728,23 @@ WeakAurasOptionsSaved = {
 		["影肤术"] = {
 			["spells"] = "409=136235,2358=136047",
 		},
-		["强效抗性"] = {
-			["spells"] = "19992=136235",
-		},
-		["投掷辛迪加炸弹"] = {
-			["spells"] = "3720=136173",
-		},
-		["食谱：辣椒蟹肉"] = {
-			["spells"] = "19949=136235",
-		},
-		["费尔根磁力效果"] = {
-			["spells"] = "28110=136235",
-		},
-		["火焰抗性光环"] = {
-			["spells"] = "19891=135824,19894=135824,19899=135824,19900=135824,19908=135824,19909=135824",
-		},
-		["自然延伸"] = {
-			["spells"] = "16819=136065,16820=136065",
-		},
-		["熔炼源质"] = {
-			["spells"] = "22967=136235,22968=135814",
-		},
-		["公式：附魔武器 - 屠魔"] = {
-			["spells"] = "13916=136235",
-		},
-		["结构图：高级技师护目镜"] = {
-			["spells"] = "19865=134153",
-		},
-		["强化虔诚光环"] = {
-			["spells"] = "20138=135893,20139=135893,20140=135893,20141=135893,20142=135893",
-		},
-		["钉刺冲锋"] = {
-			["spells"] = "26080=132337,26081=132337,26082=132337",
-		},
-		["结构图：黑铁步枪"] = {
-			["spells"] = "19860=134153",
-		},
-		["挥击"] = {
-			["spells"] = "769=134296,779=134296,780=134296,1432=134296,1433=134296,3139=134296,9754=134296,9755=134296,9908=134296,9909=134296,27554=134296",
-		},
-		["Ahn'Qiraj Reward Buff (Trigger - 20)"] = {
-			["spells"] = "25800=134969",
-		},
-		["完美的奥金步枪"] = {
-			["spells"] = "19833=136235",
-		},
-		["Fire Nova Visual"] = {
-			["spells"] = "19823=135824",
-		},
-		["割碎"] = {
-			["spells"] = "19820=132122,22570=132134,22571=132134,22689=132122",
-		},
-		["斧类武器入门"] = {
-			["spells"] = "4307=132316,4308=132316,4309=132316,4310=132316,4311=132316,4313=132316",
-		},
-		["强化切割"] = {
-			["spells"] = "14165=132306,14166=132306,14167=132306",
-		},
-		["娅尔罗的印记"] = {
-			["spells"] = "24210=132212,24211=132212",
-		},
-		["制造惩戒火炬"] = {
-			["spells"] = "19797=136235",
-		},
-		["冰冻术 III"] = {
-			["spells"] = "2134=135856",
-		},
-		["黑暗打击"] = {
-			["spells"] = "19777=132325,22574=132325",
+		["魔杖强化"] = {
+			["spells"] = "6094=135464,6097=135464,6098=135464,6100=135464,6111=135464,6112=135464",
 		},
 		["召唤拉格纳罗斯"] = {
 			["spells"] = "19774=135819",
 		},
-		["元素火焰"] = {
-			["spells"] = "19773=135808,20563=135814,20564=135814",
+		["绿铁护腕"] = {
+			["spells"] = "3501=136192,3521=136235",
 		},
-		["神圣干涉"] = {
-			["spells"] = "19752=136106,19753=136106,19754=136106",
+		["破釜沉舟"] = {
+			["spells"] = "12975=135871,12976=135871",
+		},
+		["复活术"] = {
+			["spells"] = "2006=135955,2010=135955,2013=135955,2016=135955,3215=136235,3216=136235,7330=136235,10880=135955,10881=135955,10882=135955,10883=135955,20770=135955,20771=135955",
+		},
+		["自然延伸"] = {
+			["spells"] = "16819=136065,16820=136065",
 		},
 		["狮王之力药剂"] = {
 			["spells"] = "2329=136235",
@@ -20820,29 +22752,89 @@ WeakAurasOptionsSaved = {
 		["力量祝福"] = {
 			["spells"] = "19740=135906,19741=135906,19834=135906,19835=135906,19836=135906,19837=135906,19838=135906,19839=135906,19840=135906,19841=135906,19842=135906,19843=135906,25291=135906,25399=135906,25962=135906",
 		},
-		["图样：生命护腿"] = {
-			["spells"] = "19197=136235",
+		["Ahn'Qiraj Reward Buff (Trigger - 40)"] = {
+			["spells"] = "25802=134969",
 		},
-		["设计图：玉蛇刀"] = {
-			["spells"] = "3526=136235",
+		["强化虔诚光环"] = {
+			["spells"] = "20138=135893,20139=135893,20140=135893,20141=135893,20142=135893",
 		},
-		["Agro Drones Effect"] = {
-			["spells"] = "25153=136235",
+		["钉刺冲锋"] = {
+			["spells"] = "26080=132337,26081=132337,26082=132337",
+		},
+		["Increase Healing 64"] = {
+			["spells"] = "18043=136235",
+		},
+		["治疗之舌"] = {
+			["spells"] = "4209=135915,4807=135915,4808=135915,6031=135915,6032=135915,8595=135915",
+		},
+		["Ahn'Qiraj Reward Buff (Trigger - 20)"] = {
+			["spells"] = "25800=134969",
+		},
+		["Remove Trick or Treat"] = {
+			["spells"] = "24982=136235",
+		},
+		["附魔蓝玛瑙"] = {
+			["spells"] = "4319=136235",
+		},
+		["公式：附魔披风 - 抵抗次级暗影"] = {
+			["spells"] = "13525=136235",
+		},
+		["召唤地元素"] = {
+			["spells"] = "19704=136025",
+		},
+		["强化切割"] = {
+			["spells"] = "14165=132306,14166=132306,14167=132306",
+		},
+		["Intellect IX"] = {
+			["spells"] = "16888=134721",
+		},
+		["暗影法杖 III"] = {
+			["spells"] = "2734=132325",
+		},
+		["Peasant Event Anti-Cheat DND"] = {
+			["spells"] = "23156=136235",
+		},
+		["Graveyard Teleport Test"] = {
+			["spells"] = "24253=136235",
+		},
+		["Test Grow"] = {
+			["spells"] = "18209=136235",
+		},
+		["冰柱"] = {
+			["spells"] = "11131=135846",
+		},
+		["公式：附魔护腕 - 次级力量"] = {
+			["spells"] = "13537=136235",
+		},
+		["Despawn Caster"] = {
+			["spells"] = "19614=136235",
+		},
+		["食谱：猪肝馅饼"] = {
+			["spells"] = "2553=136235",
+		},
+		["火焰 III"] = {
+			["spells"] = "1982=132153",
+		},
+		["腐坏之血效果"] = {
+			["spells"] = "19479=136168,19652=136168,19653=136168,19654=136168",
+		},
+		["召唤大师"] = {
+			["spells"] = "18709=136164,18710=136164",
 		},
 		["瘟疫效果"] = {
 			["spells"] = "19594=136140,26557=136140",
 		},
-		["抗性光环"] = {
-			["spells"] = "19726=135865",
+		["快速冰霜防护结界"] = {
+			["spells"] = "4980=135824",
 		},
-		["沙斯拉尔的诅咒"] = {
-			["spells"] = "19713=136121",
+		["SHOWLABEL Only OFF"] = {
+			["spells"] = "456=136069",
 		},
-		["Hate to 50%"] = {
-			["spells"] = "19707=136190",
+		["赤脊山炖肉"] = {
+			["spells"] = "2547=136192",
 		},
-		["召唤地元素"] = {
-			["spells"] = "19704=136025",
+		["召唤烈焰流放者"] = {
+			["spells"] = "4929=136192",
 		},
 		["石像鬼打击"] = {
 			["spells"] = "16564=136197,16997=136197",
@@ -20850,26 +22842,26 @@ WeakAurasOptionsSaved = {
 		["Increased Frost Resist 19"] = {
 			["spells"] = "14558=136235",
 		},
-		["杂烩蚌肉"] = {
-			["spells"] = "6501=134712",
+		["飞虎护目镜"] = {
+			["spells"] = "3934=136235,3997=136235",
 		},
-		["驯服树林潜伏者"] = {
-			["spells"] = "19684=132164,19693=132164",
+		["装水"] = {
+			["spells"] = "4976=136235,6609=136235,6610=136235,6611=136235,6803=136235,9582=136235,16073=136235,16077=136235,18397=136235",
 		},
-		["召唤虚空行者"] = {
-			["spells"] = "697=136221,1385=136221,7728=136221,9221=136221,9222=136221,12746=136221,15092=136221,15093=136221,15094=136221,23501=136221,25112=136221",
+		["知识试炼"] = {
+			["spells"] = "6766=136022",
 		},
-		["食谱：蝎肉大餐"] = {
-			["spells"] = "6424=136235",
+		["图样：黑色龙鳞胸甲"] = {
+			["spells"] = "19205=136235",
 		},
 		["昏迷冲击"] = {
 			["spells"] = "5648=135860,5649=135860",
 		},
-		["黄金万能钥匙"] = {
-			["spells"] = "19649=136235,19667=136192,19671=136235",
+		["炖陆行鸟"] = {
+			["spells"] = "6416=136192",
 		},
-		["召唤诺克赛恩产物"] = {
-			["spells"] = "21707=136006,21708=136006",
+		["盘蛇净化"] = {
+			["spells"] = "6270=136168",
 		},
 		["召唤跳跳虫"] = {
 			["spells"] = "17709=132311",
@@ -20883,32 +22875,32 @@ WeakAurasOptionsSaved = {
 		["Increase Shadow Dam 31"] = {
 			["spells"] = "18027=136235",
 		},
-		["制造暴风城忠诚誓言"] = {
-			["spells"] = "27702=136235",
+		["Create Zul'Gurub Talisman ROG R2 DND"] = {
+			["spells"] = "24073=136235",
 		},
-		["召唤烈焰"] = {
-			["spells"] = "19629=135826",
+		["黑暗回复"] = {
+			["spells"] = "7106=132179",
 		},
-		["Despawn Caster"] = {
-			["spells"] = "19614=136235",
+		["Summon Thelrin DND"] = {
+			["spells"] = "27517=136235",
 		},
 		["收集群居龙蛋"] = {
 			["spells"] = "15958=136235",
 		},
-		["灵魂联结"] = {
-			["spells"] = "19578=132121,19579=132121,20895=132121,20917=132121,20926=132121,24529=132121",
+		["自然赐福"] = {
+			["spells"] = "17104=136074,24943=136074,24944=136074,24945=136074,24946=136074",
 		},
-		["慢性毒菌"] = {
-			["spells"] = "6278=136134,18289=135914",
+		["Attack Power - Feral (+280)"] = {
+			["spells"] = "24697=136235",
 		},
-		["腐坏之血效果"] = {
-			["spells"] = "19479=136168,19652=136168,19653=136168,19654=136168",
+		["制造初级治疗石"] = {
+			["spells"] = "6201=135230,6203=135230,23517=135230,23518=135230,23519=135230",
 		},
-		["瞄准射击"] = {
-			["spells"] = "19434=135130,20900=135130,20901=135130,20902=135130,20903=135130,20904=135130,20931=135130,20932=135130,20933=135130,20934=135130,20935=135130,27632=135130",
+		["GM Only OFF"] = {
+			["spells"] = "1509=132349",
 		},
-		["永久定身"] = {
-			["spells"] = "31366=136235",
+		["重平衡石"] = {
+			["spells"] = "3117=136192,3119=136235",
 		},
 		["Moss Covered Feet Proc"] = {
 			["spells"] = "6871=136052",
@@ -20916,14 +22908,14 @@ WeakAurasOptionsSaved = {
 		["暗影法杖 V"] = {
 			["spells"] = "2736=132325",
 		},
-		["杀戮本能"] = {
-			["spells"] = "19370=135881,19371=135881,19373=135881",
+		["Summon Angry Programmer"] = {
+			["spells"] = "897=136235",
 		},
 		["蛋奶酒"] = {
 			["spells"] = "21144=136192,21149=134062",
 		},
-		["烟鬼的炸药"] = {
-			["spells"] = "19237=136235",
+		["女妖诅咒"] = {
+			["spells"] = "5884=136020,16867=136020,17105=136020",
 		},
 		["致死打击"] = {
 			["spells"] = "9347=132355,12294=132355,13737=132355,15708=132355,16856=132355,17547=132355,19643=132355,21551=132355,21552=132355,21553=132355,21555=132355,21557=132355,21558=132355,24573=132355,27580=132355",
@@ -20937,68 +22929,68 @@ WeakAurasOptionsSaved = {
 		["符文真银棒"] = {
 			["spells"] = "13702=135148,13703=135913",
 		},
-		["飞虎护目镜"] = {
-			["spells"] = "3934=136235,3997=136235",
-		},
-		["冰霜强化"] = {
-			["spells"] = "5866=135859,5869=135859,5870=135859,5871=135859,5880=135859,5885=135859,5886=135859,5887=135859,21920=134714",
-		},
-		["图样：黑色龙鳞胸甲"] = {
-			["spells"] = "19205=136235",
-		},
-		["变形术：奶牛"] = {
-			["spells"] = "28270=136072",
-		},
-		["瓦希塔帕恩的决心"] = {
-			["spells"] = "5324=136075",
-		},
-		["图样：奥妮克希亚鳞片披风"] = {
-			["spells"] = "19213=136235",
-		},
-		["防御状态"] = {
-			["spells"] = "5302=132110",
-		},
-		["诱捕"] = {
-			["spells"] = "19184=136100,19185=136100,19387=136100,19388=136100,19389=136100,19390=136100",
-		},
-		["Cluster Rocket, PURPLE BIG - U"] = {
-			["spells"] = "26500=136235",
-		},
-		["Attack Power - Feral (+280)"] = {
-			["spells"] = "24697=136235",
-		},
-		["图样：战熊背心"] = {
-			["spells"] = "19178=136235",
-		},
-		["Communique, Relay-to-Camp"] = {
-			["spells"] = "28326=136235",
-		},
-		["半效治疗效果"] = {
-			["spells"] = "24206=136235",
-		},
-		["设计图：黑铁板甲"] = {
-			["spells"] = "15299=136235",
-		},
-		["天神下凡"] = {
-			["spells"] = "19135=132275,24646=132097",
-		},
-		["Summon Lava Burst I"] = {
-			["spells"] = "21907=136235",
-		},
-		["Increase Shadow Dam 59"] = {
-			["spells"] = "26730=136235",
-		},
-		["Receive Object of Affection"] = {
-			["spells"] = "26665=136235",
-		},
-		["风暴烈酒"] = {
-			["spells"] = "5020=132800",
+		["熔炼源质"] = {
+			["spells"] = "22967=136235,22968=135814",
 		},
 		["吸取大地能量"] = {
 			["spells"] = "4970=136025",
 		},
-		["瓦塔拉克饰品的右瓣"] = {
-			["spells"] = "27738=136235",
+		["召唤亚奎门塔斯"] = {
+			["spells"] = "13978=136235",
+		},
+		["消隐"] = {
+			["spells"] = "5543=136047,6408=136047",
+		},
+		["配方：褪色的治疗药水"] = {
+			["spells"] = "4509=136235",
+		},
+		["图样：奥妮克希亚鳞片披风"] = {
+			["spells"] = "19213=136235",
+		},
+		["拱壁陷阱"] = {
+			["spells"] = "28054=136235",
+		},
+		["反魔法"] = {
+			["spells"] = "1399=136120",
+		},
+		["绿色丝质护肩"] = {
+			["spells"] = "8774=132149,8775=136021",
+		},
+		["火焰抗性光环"] = {
+			["spells"] = "19891=135824,19894=135824,19899=135824,19900=135824,19908=135824,19909=135824",
+		},
+		["召唤激流堡民兵"] = {
+			["spells"] = "5250=136235",
+		},
+		["附魔盾牌 - 精神"] = {
+			["spells"] = "13659=135913,13660=135913",
+		},
+		["半效治疗效果"] = {
+			["spells"] = "24206=136235",
+		},
+		["Increase Spell Dam 16"] = {
+			["spells"] = "9345=136235,17367=136235,18050=136235,25110=136235",
+		},
+		["击倒"] = {
+			["spells"] = "5164=132154,5951=132154,11428=132154,13360=132154,15753=132154,16790=132154,18812=132154,19128=132154,20276=132154,22592=132154",
+		},
+		["Summon Lava Burst I"] = {
+			["spells"] = "21907=136235",
+		},
+		["公式：附魔武器 - 屠魔"] = {
+			["spells"] = "13916=136235",
+		},
+		["法师视界"] = {
+			["spells"] = "3659=136235",
+		},
+		["兰莎尔拉的祭坛陷阱"] = {
+			["spells"] = "18993=136235",
+		},
+		["Increased All Resist 08"] = {
+			["spells"] = "18679=136235",
+		},
+		["Test Stab R50"] = {
+			["spells"] = "23959=132090",
 		},
 		["重压打击"] = {
 			["spells"] = "26613=132340",
@@ -21006,29 +22998,29 @@ WeakAurasOptionsSaved = {
 		["Plague Wave Effect 1"] = {
 			["spells"] = "30116=135805",
 		},
-		["星界传送"] = {
-			["spells"] = "556=136010,577=136235,1352=136010",
+		["灰色科多兽"] = {
+			["spells"] = "18989=132243",
 		},
 		["韧化皮甲"] = {
 			["spells"] = "2166=136235,2180=136021",
 		},
-		["符文皮甲头环"] = {
-			["spells"] = "19082=136235",
+		["亡灵杀手"] = {
+			["spells"] = "4714=136142,4716=136142,4717=136142,4718=136142,4719=136142,4720=136142,4721=136142,4722=136142,4724=136142,4725=136142,4726=136142,4727=136142,4728=136142,4729=136142",
 		},
-		["配方：褪色的治疗药水"] = {
-			["spells"] = "4509=136235",
+		["召唤冰图腾"] = {
+			["spells"] = "18975=135844",
 		},
-		["拱壁陷阱"] = {
-			["spells"] = "28054=136235",
+		["灭龙"] = {
+			["spells"] = "23967=132355",
 		},
-		["解散野兽"] = {
-			["spells"] = "2641=136095",
+		["小型爆盐炸弹"] = {
+			["spells"] = "3933=136235,4056=136235",
 		},
 		["阿拉基的护符匣"] = {
 			["spells"] = "18661=136235",
 		},
-		["霜刃护腿"] = {
-			["spells"] = "19074=136235",
+		["暗影法杖 II"] = {
+			["spells"] = "2733=132325",
 		},
 		["Emblems of Veiled Shadows Slice and Dice Bonus"] = {
 			["spells"] = "26114=136235",
@@ -21048,11 +23040,11 @@ WeakAurasOptionsSaved = {
 		["召唤绿色其拉作战坦克"] = {
 			["spells"] = "26056=134397",
 		},
-		["火山护腿"] = {
-			["spells"] = "19059=136235",
+		["双手斧掌握"] = {
+			["spells"] = "4398=132316,4399=132316,4400=132316,4401=132316",
 		},
-		["收集异种蝎卵"] = {
-			["spells"] = "5166=136235",
+		["熟化轻毛皮"] = {
+			["spells"] = "3816=136235,3821=136021",
 		},
 		["火力药剂"] = {
 			["spells"] = "7845=136235,7846=136021",
@@ -21060,17 +23052,17 @@ WeakAurasOptionsSaved = {
 		["Increased Agility 16"] = {
 			["spells"] = "14330=136235",
 		},
-		["Raid Buffs"] = {
-			["spells"] = "16872=136235",
+		["恶魔牺牲"] = {
+			["spells"] = "18788=136184",
 		},
-		["蛛网 II"] = {
-			["spells"] = "4168=132149",
+		["Increased All Resist 18"] = {
+			["spells"] = "18689=136235",
 		},
-		["兰莎尔拉的祭坛陷阱"] = {
-			["spells"] = "18993=136235",
+		["Tree Form (Passive) 2"] = {
+			["spells"] = "5420=136062",
 		},
-		["Increased All Resist 08"] = {
-			["spells"] = "18679=136235",
+		["一把螺栓"] = {
+			["spells"] = "3922=136235,3984=136235",
 		},
 		["Despawner, other"] = {
 			["spells"] = "28349=136235",
@@ -21084,14 +23076,14 @@ WeakAurasOptionsSaved = {
 		["Increase Holy Dam 4"] = {
 			["spells"] = "21502=136235",
 		},
-		["灰色科多兽"] = {
-			["spells"] = "18989=132243",
+		["青铜钥匙"] = {
+			["spells"] = "6470=136192,6472=136235",
 		},
-		["狂怒之嚎"] = {
-			["spells"] = "3149=136101,24597=132203,24599=132203,24603=132203,24604=132203,24605=132203,24607=132203,24608=132203,24609=132203",
+		["Boss Fight Reset 1"] = {
+			["spells"] = "29536=136235",
 		},
-		["召唤冰图腾"] = {
-			["spells"] = "18975=135844",
+		["奈塔拉什的哀嚎"] = {
+			["spells"] = "3485=136183",
 		},
 		["制造哈卡之心爆炸"] = {
 			["spells"] = "24215=136235",
@@ -21099,11 +23091,11 @@ WeakAurasOptionsSaved = {
 		["猫鼬药剂"] = {
 			["spells"] = "17538=134812,17571=136235",
 		},
-		["小型爆盐炸弹"] = {
-			["spells"] = "3933=136235,4056=136235",
+		["纳拉克西斯之网"] = {
+			["spells"] = "3542=136100",
 		},
-		["士气突增"] = {
-			["spells"] = "1740=136235",
+		["图样：宝石皮带"] = {
+			["spells"] = "18668=136235",
 		},
 		["造食术"] = {
 			["spells"] = "587=133952,597=133951,608=136235,619=136235,990=133968,991=136235,1249=133952,1250=133951,1251=133968,6129=133950,6130=133950,6641=136235,8736=133951,10144=133964,10145=133989,10146=133964,10147=133989,28612=134029,28613=136235",
@@ -21111,14 +23103,14 @@ WeakAurasOptionsSaved = {
 		["高级毛纺手套"] = {
 			["spells"] = "3843=132149,3879=136021",
 		},
-		["强化毛纺护肩"] = {
-			["spells"] = "3849=132149",
+		["图样：淡黄色衬衣"] = {
+			["spells"] = "18664=136235",
 		},
-		["熟化轻毛皮"] = {
-			["spells"] = "3816=136235,3821=136021",
+		["Target Dummy - Event 001"] = {
+			["spells"] = "18634=136172",
 		},
-		["恶魔牺牲"] = {
-			["spells"] = "18788=136184",
+		["青铜管"] = {
+			["spells"] = "3938=136235,4000=136235",
 		},
 		["雷霆碰撞"] = {
 			["spells"] = "25599=136105",
@@ -21126,62 +23118,62 @@ WeakAurasOptionsSaved = {
 		["召唤阿努比萨斯虫群卫士"] = {
 			["spells"] = "17430=136235",
 		},
-		["调和的徽记"] = {
-			["spells"] = "24151=136235,24160=136235",
+		["Increased Stamina 35"] = {
+			["spells"] = "14482=136235",
 		},
-		["Increased All Resist 18"] = {
-			["spells"] = "18689=136235",
+		["畏缩"] = {
+			["spells"] = "1742=132118,1747=132118,1748=132118,1749=132118,1750=132118,1751=132118,1753=132118,1754=132118,1755=132118,1756=132118,8998=132118,8999=132118,9000=132118,9001=132118,9892=132118,9893=132118,16697=132118,16698=132118",
 		},
 		["PX-238冬幕欢乐制造器"] = {
 			["spells"] = "26157=135849,26272=135849,26273=135849,26274=135849",
 		},
-		["重铸"] = {
-			["spells"] = "10260=136168",
+		["激活防御"] = {
+			["spells"] = "4239=136235",
 		},
 		["附魔双手武器 - 敏捷"] = {
 			["spells"] = "27837=135913",
 		},
-		["利斧乱舞"] = {
-			["spells"] = "24018=132397,24019=132397,24020=132397,24071=132397",
+		["割碎"] = {
+			["spells"] = "19820=132122,22570=132134,22571=132134,22689=132122",
 		},
-		["自然虚弱"] = {
-			["spells"] = "25180=134397",
+		["Increase Frost Dam 7"] = {
+			["spells"] = "9402=136235",
 		},
-		["碎石"] = {
-			["spells"] = "3671=136025,3672=136025,3673=136025",
+		["黑皮护肩"] = {
+			["spells"] = "3769=136235",
 		},
-		["Boss Fight Reset 1"] = {
-			["spells"] = "29536=136235",
+		["配方：冰霜之力药剂"] = {
+			["spells"] = "21924=136235",
 		},
-		["Increased All Resist 03"] = {
-			["spells"] = "18674=136235",
+		["山狗肉排"] = {
+			["spells"] = "2541=136192,2561=136021",
 		},
 		["Glob Speed"] = {
 			["spells"] = "26633=136235,26634=136235",
 		},
-		["纳拉克西斯之网"] = {
-			["spells"] = "3542=136100",
+		["图样：无底包"] = {
+			["spells"] = "18529=136235",
 		},
 		["部落重置传送"] = {
 			["spells"] = "23406=136235",
 		},
-		["图样：宝石皮带"] = {
-			["spells"] = "18668=136235",
+		["召唤淤泥怪"] = {
+			["spells"] = "3527=136133",
 		},
-		["图样：淡黄色衬衣"] = {
-			["spells"] = "18664=136235",
+		["召唤树懒"] = {
+			["spells"] = "3499=136133",
 		},
 		["精神祷言"] = {
 			["spells"] = "27681=135946,27682=136235,27845=135946",
 		},
-		["Target Dummy - Event 001"] = {
-			["spells"] = "18634=136172",
+		["猛击"] = {
+			["spells"] = "1464=132340,1482=132340,8820=132340,8821=132340,11430=132357,11604=132340,11605=132340,11606=132340,11607=132340",
 		},
-		["虚弱疾病"] = {
-			["spells"] = "18633=136118",
+		["焚化"] = {
+			["spells"] = "6234=136235",
 		},
-		["狂暴怒气"] = {
-			["spells"] = "3490=136224",
+		["铜质链甲外衣"] = {
+			["spells"] = "3321=136192",
 		},
 		["黑马"] = {
 			["spells"] = "470=132251",
@@ -21189,41 +23181,41 @@ WeakAurasOptionsSaved = {
 		["爆炸射击"] = {
 			["spells"] = "6997=135812,7896=135808,15495=135808",
 		},
-		["Imbue Cloak - Minor Resistance"] = {
-			["spells"] = "7439=135913",
+		["配方：暗影防护药水"] = {
+			["spells"] = "7261=136235",
 		},
 		["法力之矛"] = {
 			["spells"] = "8358=135915",
 		},
-		["心灵之力"] = {
-			["spells"] = "18551=136031,18552=136031,18553=136031,18554=136031,18555=136031",
+		["脚踢"] = {
+			["spells"] = "1766=132219,1767=132219,1768=132219,1769=132219,1771=132219,1772=132219,1773=132219,1774=132219,1775=132219,3467=132219,11978=132219,15610=132219,15614=132219,27613=132219,27814=132219",
 		},
-		["黑皮护肩"] = {
-			["spells"] = "3769=136235",
+		["手工皮靴"] = {
+			["spells"] = "2149=136235",
 		},
 		["图样：礼服衬衣"] = {
 			["spells"] = "12183=136235",
 		},
-		["Cluster Rocket, BLUE BIG - D"] = {
-			["spells"] = "26483=136235",
+		["敲打祖尔法拉克铜锣"] = {
+			["spells"] = "11434=136235",
 		},
 		["亮布长袍"] = {
 			["spells"] = "18414=132149",
 		},
-		["图样：无底包"] = {
-			["spells"] = "18529=136235",
+		["水栖形态"] = {
+			["spells"] = "1066=132112,1446=132112",
 		},
-		["鳄鱼浓汤"] = {
-			["spells"] = "3373=136192",
+		["天灾的坚韧"] = {
+			["spells"] = "29480=136235,29481=136235",
 		},
-		["长程射击 II"] = {
-			["spells"] = "1536=132222",
+		["抚慰"] = {
+			["spells"] = "10730=132311",
 		},
-		["图样：巫纹头巾"] = {
-			["spells"] = "18524=136235",
+		["碎裂黑曜石盾牌"] = {
+			["spells"] = "27586=136192",
 		},
-		["图样：符文布护肩"] = {
-			["spells"] = "18522=136235",
+		["震荡波"] = {
+			["spells"] = "1698=132369,1702=132369,25425=136105",
 		},
 		["大地之力"] = {
 			["spells"] = "8076=136023,8162=136023,8163=136023,10441=136023,25362=136023",
@@ -21234,8 +23226,8 @@ WeakAurasOptionsSaved = {
 		["Immolate Visual Passive"] = {
 			["spells"] = "16003=135817",
 		},
-		["铜质链甲外衣"] = {
-			["spells"] = "3321=136192",
+		["疯狂饥饿"] = {
+			["spells"] = "3151=132278",
 		},
 		["Disturb Minion Trap, Buttress"] = {
 			["spells"] = "27886=136235",
@@ -21246,29 +23238,29 @@ WeakAurasOptionsSaved = {
 		["攻击命令"] = {
 			["spells"] = "25471=132212,25473=136235",
 		},
-		["图样：恶魔布帽"] = {
-			["spells"] = "18515=136235",
+		["破胆猛击"] = {
+			["spells"] = "1794=136235,1799=136235",
 		},
 		["石鳞鱼油"] = {
 			["spells"] = "17551=136235,17581=136021",
 		},
-		["手工皮靴"] = {
-			["spells"] = "2149=136235",
+		["火焰之盾效果"] = {
+			["spells"] = "3052=135817",
 		},
 		["冰冻陷阱效果"] = {
 			["spells"] = "3355=135834,14308=135834,14309=135834",
 		},
-		["黄色烟花束"] = {
-			["spells"] = "26329=136235",
+		["亮布短裤"] = {
+			["spells"] = "18439=132149",
 		},
-		["图样：鬼纹腰带"] = {
-			["spells"] = "18480=136235",
+		["亚麻绷带"] = {
+			["spells"] = "3275=136192",
 		},
 		["闪电之云"] = {
 			["spells"] = "24683=136014,25033=136014,26550=136014",
 		},
-		["天灾的坚韧"] = {
-			["spells"] = "29480=136235,29481=136235",
+		["图勒的诅咒"] = {
+			["spells"] = "3237=136203",
 		},
 		["Increase Fire Dam 64"] = {
 			["spells"] = "26698=136235",
@@ -21276,8 +23268,8 @@ WeakAurasOptionsSaved = {
 		["Increase Nature Dam 10"] = {
 			["spells"] = "9358=136235",
 		},
-		["抚慰"] = {
-			["spells"] = "10730=132311",
+		["Sol M"] = {
+			["spells"] = "3205=135859",
 		},
 		["简易投掷炸弹逆火"] = {
 			["spells"] = "8332=135826",
@@ -21285,44 +23277,44 @@ WeakAurasOptionsSaved = {
 		["Attack Power 82"] = {
 			["spells"] = "15827=136235",
 		},
-		["图样：霜纹外套"] = {
-			["spells"] = "18472=136235",
+		["配方：次级敏捷药剂"] = {
+			["spells"] = "3187=136235",
 		},
-		["图样：红色魔纹手套"] = {
-			["spells"] = "12143=136235",
+		["食谱：熏熊肉"] = {
+			["spells"] = "8608=136235",
 		},
-		["无敌"] = {
-			["spells"] = "3169=135896,16621=135915",
+		["附魔胸甲 - 生命"] = {
+			["spells"] = "7857=135913,7858=135913",
 		},
 		["高级亚麻手套"] = {
 			["spells"] = "3840=132149,3876=136021",
 		},
-		["疯狂饥饿"] = {
-			["spells"] = "3151=132278",
+		["食谱：煮熟的光滑大鱼"] = {
+			["spells"] = "18251=136235",
 		},
 		["联盟奥特兰克山谷"] = {
 			["spells"] = "23527=136235,23534=136235,23535=136235,23536=136235",
 		},
-		["月布护肩"] = {
-			["spells"] = "18448=132149",
+		["统御光环"] = {
+			["spells"] = "25516=132484",
 		},
-		["火焰之盾效果"] = {
-			["spells"] = "3052=135817",
+		["黑爪之触"] = {
+			["spells"] = "2596=136235",
 		},
-		["亮布短裤"] = {
-			["spells"] = "18439=132149",
+		["再生圣歌"] = {
+			["spells"] = "1336=136069",
 		},
 		["图样：林栖者头冠"] = {
 			["spells"] = "28484=136235",
 		},
-		["Dummy Trigger 2"] = {
-			["spells"] = "18433=136235",
+		["血之狂暴"] = {
+			["spells"] = "16952=132152,16953=132152,16954=132152",
 		},
 		["次级属性"] = {
 			["spells"] = "13625=136235",
 		},
-		["青铜框架"] = {
-			["spells"] = "3953=136235,4012=136235",
+		["敏捷提高"] = {
+			["spells"] = "18192=132953",
 		},
 		["Thekal Trigger"] = {
 			["spells"] = "24172=136235",
@@ -21330,38 +23322,38 @@ WeakAurasOptionsSaved = {
 		["Dragondog Breath Selection (R3)"] = {
 			["spells"] = "23324=136235",
 		},
-		["Arcane Shot Mana Reduction"] = {
-			["spells"] = "23157=132218",
+		["模糊术 II"] = {
+			["spells"] = "1199=136047",
 		},
-		["符文布披风"] = {
-			["spells"] = "18409=132149",
+		["反神圣"] = {
+			["spells"] = "2950=135824",
 		},
-		["魔法之翼"] = {
-			["spells"] = "24742=135992",
+		["Create Zul'Gurub Talisman ROG R1 DND"] = {
+			["spells"] = "24072=136235",
 		},
 		["图样：灰色毛纺长袍"] = {
 			["spells"] = "2411=136235",
 		},
-		["符文布卷"] = {
-			["spells"] = "18401=132149,18470=136021",
+		["护甲 +8"] = {
+			["spells"] = "2831=136235",
 		},
 		["TWEEP"] = {
 			["spells"] = "11481=135826",
 		},
-		["奥妮克希亚"] = {
-			["spells"] = "18387=136235",
+		["虚弱灵魂"] = {
+			["spells"] = "6788=135871",
 		},
 		["迟钝毒药"] = {
 			["spells"] = "25810=136066",
 		},
-		["附魔胸甲 - 生命"] = {
-			["spells"] = "7857=135913,7858=135913",
+		["寒霜圣印"] = {
+			["spells"] = "2810=135968",
 		},
-		["食谱：煮熟的光滑大鱼"] = {
-			["spells"] = "18251=136235",
+		["精神法杖 III"] = {
+			["spells"] = "2714=132325",
 		},
-		["烤鱿鱼"] = {
-			["spells"] = "18240=136192",
+		["驱散血牙"] = {
+			["spells"] = "6240=136116",
 		},
 		["狂暴命令"] = {
 			["spells"] = "3136=132277",
@@ -21369,44 +23361,44 @@ WeakAurasOptionsSaved = {
 		["Attack Power 64"] = {
 			["spells"] = "15817=136235",
 		},
-		["黑爪之触"] = {
-			["spells"] = "2596=136235",
+		["Increase Nature Dam 25"] = {
+			["spells"] = "17999=136235",
 		},
-		["强击光环"] = {
-			["spells"] = "1563=132329,19506=132329,20905=132329,20906=132329,20938=132329",
+		["scaler test"] = {
+			["spells"] = "23618=135805",
 		},
-		["法力回复"] = {
-			["spells"] = "18194=136053,24363=134825",
+		["Windsor Death DND"] = {
+			["spells"] = "20465=136235",
 		},
-		["召唤青铜龙宝宝"] = {
-			["spells"] = "10699=132311",
+		["全力一击 III"] = {
+			["spells"] = "1708=132316,1712=132316",
 		},
-		["敏捷提高"] = {
-			["spells"] = "18192=132953",
+		["脆炸蜥蜴尾"] = {
+			["spells"] = "6418=136192",
 		},
-		["兽人语"] = {
-			["spells"] = "669=136235",
+		["冬季狂欢者 - 兽人男性"] = {
+			["spells"] = "26248=135849",
 		},
 		["重创"] = {
 			["spells"] = "10373=132090,16411=132090,18206=132090,21140=132090",
 		},
-		["Increased Nature Resist 33"] = {
-			["spells"] = "14655=136235",
+		["召唤毒蛇"] = {
+			["spells"] = "7949=136084",
 		},
-		["模糊术 II"] = {
-			["spells"] = "1199=136047",
+		["Increase Frost Dam 27"] = {
+			["spells"] = "17905=136235",
 		},
-		["Beast Slaying 72"] = {
-			["spells"] = "18076=136235",
+		["野蛮突袭 IV"] = {
+			["spells"] = "1664=132316,1669=132316",
 		},
-		["Increased Armor 160"] = {
-			["spells"] = "18069=136235",
+		["暗纹面罩"] = {
+			["spells"] = "12086=132149,12128=136021",
 		},
-		["加速术 II"] = {
-			["spells"] = "839=136047,1212=136047",
+		["Increase Fire Dam 26"] = {
+			["spells"] = "17879=136235",
 		},
-		["Attack Power 200"] = {
-			["spells"] = "18060=136235",
+		["瘤背复仇"] = {
+			["spells"] = "5628=136224",
 		},
 		["Camp Receives Communique"] = {
 			["spells"] = "28449=136235",
@@ -21417,17 +23409,17 @@ WeakAurasOptionsSaved = {
 		["伪装术"] = {
 			["spells"] = "5170=132288,5670=132288,5671=132288",
 		},
-		["次级敏捷"] = {
-			["spells"] = "2374=134873,3157=134873,3158=134873,13364=136235",
+		["Ragnaros Submerge Visual"] = {
+			["spells"] = "20567=135830",
 		},
 		["魔杖专精"] = {
 			["spells"] = "6057=135463,6085=135463,6089=135463,6090=135463,6091=135463,6092=135463,6093=135463,6101=135463,6102=135463,6103=135463,6104=135463,6105=135463,6106=135463,6107=135463,6108=135463,6109=135463,6113=135463,14524=135463,14525=135463,14526=135463,14527=135463,14528=135463",
 		},
-		["无力冲锋"] = {
-			["spells"] = "1906=132122",
+		["Increase Fire Dam 20"] = {
+			["spells"] = "17872=136235,25065=136235",
 		},
-		["Increased Intellect 02"] = {
-			["spells"] = "7469=136235",
+		["Increase Fire Dam 14"] = {
+			["spells"] = "17866=136235,23481=136235",
 		},
 		["设计图：黑铁护手"] = {
 			["spells"] = "23657=136235",
@@ -21435,8 +23427,8 @@ WeakAurasOptionsSaved = {
 		["钢质武器链"] = {
 			["spells"] = "7224=136192",
 		},
-		["图样：邪恶皮甲头环"] = {
-			["spells"] = "19187=136235",
+		["Increase Arcane Dam 26"] = {
+			["spells"] = "17841=136235",
 		},
 		["Increased Stamina 20"] = {
 			["spells"] = "14467=136235",
@@ -21444,14 +23436,14 @@ WeakAurasOptionsSaved = {
 		["Twin Teleport Visual"] = {
 			["spells"] = "26638=135736",
 		},
-		["Nef Trans"] = {
-			["spells"] = "22538=136235",
+		["灰色毛纺长袍"] = {
+			["spells"] = "2403=136235",
 		},
-		["致命射击"] = {
-			["spells"] = "1544=132169,1545=132169",
+		["树形"] = {
+			["spells"] = "775=136064,1434=136064,22688=136095",
 		},
-		["Increase Nature Dam 25"] = {
-			["spells"] = "17999=136235",
+		["Create Warsong Mark of Honor (WInner)"] = {
+			["spells"] = "24951=136235",
 		},
 		["Summon Type B Trigger"] = {
 			["spells"] = "28416=136235",
@@ -21471,17 +23463,17 @@ WeakAurasOptionsSaved = {
 		["公式：附魔手套 - 冰霜能量"] = {
 			["spells"] = "25089=136235",
 		},
-		["Freeze III PROC"] = {
-			["spells"] = "2647=135860",
+		["沉默射击"] = {
+			["spells"] = "2004=135975",
 		},
 		["单手锤"] = {
 			["spells"] = "198=133476,15986=133476",
 		},
-		["追踪巨人"] = {
-			["spells"] = "5121=132328,5130=132323,19882=132275,20158=132275",
+		["恶魔专注"] = {
+			["spells"] = "17783=136157,17784=136157,17785=136157,17786=136157,17787=136157",
 		},
-		["暗影冥思"] = {
-			["spells"] = "17941=136223",
+		["Increased Agility 27"] = {
+			["spells"] = "14391=136235",
 		},
 		["Increased Shadow Resist 23"] = {
 			["spells"] = "14686=136235",
@@ -21492,53 +23484,53 @@ WeakAurasOptionsSaved = {
 		["辐光腰带"] = {
 			["spells"] = "16645=136192",
 		},
-		["圣言术：力"] = {
-			["spells"] = "1246=135882,1247=135882,1248=135882,2769=135882",
+		["精制望远镜"] = {
+			["spells"] = "6458=136235,6459=136235",
 		},
-		["强化野兽之眼"] = {
-			["spells"] = "19557=132150,19558=132150",
+		["黑豹"] = {
+			["spells"] = "10787=132225",
 		},
-		["Increase Frost Dam 27"] = {
-			["spells"] = "17905=136235",
+		["纠缠"] = {
+			["spells"] = "720=136113,731=136113,1121=136113,22994=136100",
 		},
-		["Increase Frost Dam 26"] = {
-			["spells"] = "17903=136235",
+		["设计图：觅心者"] = {
+			["spells"] = "17037=136235",
 		},
-		["Increase Frost Dam 25"] = {
-			["spells"] = "17902=136235",
+		["刺骨尖啸"] = {
+			["spells"] = "16576=136230",
 		},
-		["孢子爆发"] = {
-			["spells"] = "5100=136142",
+		["石拳"] = {
+			["spells"] = "4955=132154,21951=135932",
 		},
 		["奇美拉长靴"] = {
 			["spells"] = "19063=136235",
 		},
-		["Increase Fire Dam 26"] = {
-			["spells"] = "17879=136235",
+		["法术石"] = {
+			["spells"] = "128=134131",
 		},
 		["100%格挡"] = {
 			["spells"] = "10021=132110",
 		},
-		["覆体之网"] = {
-			["spells"] = "4962=136022",
+		["时间之步"] = {
+			["spells"] = "111=136235",
 		},
 		["虚空行者召唤"] = {
 			["spells"] = "30796=136203",
 		},
-		["Increase Fire Dam 20"] = {
-			["spells"] = "17872=136235,25065=136235",
+		["毒蛇形态"] = {
+			["spells"] = "8041=132276",
 		},
-		["Increase Fire Dam 14"] = {
-			["spells"] = "17866=136235,23481=136235",
+		["开锁"] = {
+			["spells"] = "1804=136058,1809=136058,1810=136058,6460=136058,6461=136058,6463=136058,6480=136058,6481=136058,6482=136058,6527=136235,9133=134237,10738=136235",
 		},
-		["Increase Arcane Dam 26"] = {
-			["spells"] = "17841=136235",
+		["Signet Ring of the Bronze Dragonflight CASTER R1 DND"] = {
+			["spells"] = "25921=136235",
 		},
 		["Quest - Heart of Hakkar, Ritual Cast Visual"] = {
 			["spells"] = "24217=136235",
 		},
-		["黑铁矮人伪装"] = {
-			["spells"] = "5268=132288,5273=136189",
+		["Decreased Destruction Threat"] = {
+			["spells"] = "23555=136235",
 		},
 		["黎明先锋"] = {
 			["spells"] = "17045=136235",
@@ -21552,38 +23544,38 @@ WeakAurasOptionsSaved = {
 		["Force Target - Kick with impact"] = {
 			["spells"] = "18145=136168",
 		},
-		["制造艾露恩之石"] = {
-			["spells"] = "26265=136235",
+		["配方：多重抗性合剂"] = {
+			["spells"] = "17645=136235",
 		},
-		["公式：附魔武器 - 超强打击"] = {
-			["spells"] = "20085=136235",
+		["附魔双手武器 - 强效冲击"] = {
+			["spells"] = "13937=135913,13938=135913",
 		},
-		["初级敏捷药剂"] = {
-			["spells"] = "3230=136235",
+		["驯服大型峭壁野猪"] = {
+			["spells"] = "19674=132164,19677=132164",
 		},
 		["熔岩怪迷惑"] = {
 			["spells"] = "20507=136235",
 		},
-		["树形"] = {
-			["spells"] = "775=136064,1434=136064,22688=136095",
+		["配方：侦测次级隐形药剂"] = {
+			["spells"] = "3457=136235",
 		},
-		["Increase Nature Dam 17"] = {
-			["spells"] = "17819=136235",
+		["火焰圣印 II"] = {
+			["spells"] = "1896=135968",
 		},
 		["诺达希尔的祝福"] = {
 			["spells"] = "23108=135972",
 		},
-		["钉刺突击准备"] = {
-			["spells"] = "24150=132337",
+		["安图苏尔的治疗波"] = {
+			["spells"] = "11895=135916",
 		},
-		["沉默射击"] = {
-			["spells"] = "2004=135975",
+		["Reputation - Caer Darrow"] = {
+			["spells"] = "17621=136235,17681=136235",
 		},
-		["恶魔专注"] = {
-			["spells"] = "17783=136157,17784=136157,17785=136157,17786=136157,17787=136157",
+		["无畏突袭"] = {
+			["spells"] = "2452=132316",
 		},
-		["GY Mid Horde"] = {
-			["spells"] = "24679=136235",
+		["Conjure Ryson's All Seeing Eye DND"] = {
+			["spells"] = "21545=136235",
 		},
 		["探寻"] = {
 			["spells"] = "11758=136235",
@@ -21591,8 +23583,8 @@ WeakAurasOptionsSaved = {
 		["火焰突变"] = {
 			["spells"] = "16785=135903",
 		},
-		["毒云之箭"] = {
-			["spells"] = "26601=136016",
+		["锁甲"] = {
+			["spells"] = "8737=132627,8738=132627",
 		},
 		["狂怒"] = {
 			["spells"] = "1640=132091,5228=132126,5229=132126,8269=136224,8599=136224,12317=136224,12686=136224,12795=136224,12880=136224,13045=136224,13046=136224,13047=136224,13048=136224,14201=136224,14202=136224,14203=136224,14204=136224,15061=136224,15097=136224,15716=136224,18501=136224,19516=132333,19953=136224,25503=132126",
@@ -21600,8 +23592,8 @@ WeakAurasOptionsSaved = {
 		["Summon Type C Periodic (20 sec)"] = {
 			["spells"] = "29401=136235",
 		},
-		["骑术：豹"] = {
-			["spells"] = "828=136103,6745=136103",
+		["变形英雄"] = {
+			["spells"] = "25098=136235",
 		},
 		["铜质符文短裤"] = {
 			["spells"] = "3324=136192,3343=136235",
@@ -21612,11 +23604,11 @@ WeakAurasOptionsSaved = {
 		["宠物伤害+3%"] = {
 			["spells"] = "27205=136095,27206=136095",
 		},
-		["精制望远镜"] = {
-			["spells"] = "6458=136235,6459=136235",
+		["配方：土转生命"] = {
+			["spells"] = "17595=136235",
 		},
-		["力量圣印"] = {
-			["spells"] = "626=136235,653=136235,662=136235",
+		["配方：点火成土"] = {
+			["spells"] = "17589=136235",
 		},
 		["Shade Visual"] = {
 			["spells"] = "24313=136123",
@@ -21624,44 +23616,44 @@ WeakAurasOptionsSaved = {
 		["设计图：破冰护腕"] = {
 			["spells"] = "28249=136235",
 		},
-		["野猪之魂"] = {
-			["spells"] = "10668=136075,10671=136075",
+		["配方：语言药剂"] = {
+			["spells"] = "2365=136235",
 		},
-		["祛病图腾"] = {
-			["spells"] = "8170=136019,8173=136019",
+		["配方：超强防御药剂"] = {
+			["spells"] = "17584=136235",
 		},
 		["Attack Power Ranged 46"] = {
 			["spells"] = "21444=136235",
 		},
-		["Increased Fire Resist 46"] = {
-			["spells"] = "14976=136235",
+		["特效法力药水"] = {
+			["spells"] = "17580=136235",
 		},
-		["召唤萨菲隆的龙翼打击"] = {
-			["spells"] = "29329=136235",
+		["召唤梦境裂隙"] = {
+			["spells"] = "25813=136235",
 		},
-		["石拳"] = {
-			["spells"] = "4955=132154,21951=135932",
+		["净化药水"] = {
+			["spells"] = "17572=136235",
 		},
 		["Virulent Poison Proc"] = {
 			["spells"] = "12254=136188,16428=136188,21645=136188,22413=136188",
 		},
-		["Shade Form Visual"] = {
-			["spells"] = "17673=136121",
+		["静电屏障"] = {
+			["spells"] = "11841=136051",
 		},
-		["拉姆斯登的闪电钉"] = {
-			["spells"] = "17668=135990,17669=135990",
+		["Test Strike R50"] = {
+			["spells"] = "23960=136189",
 		},
-		["Increase Nature Dam 30"] = {
-			["spells"] = "18005=136235",
+		["大型爆盐炸弹逆火"] = {
+			["spells"] = "8510=135805",
 		},
-		["时间之步"] = {
-			["spells"] = "111=136235",
+		["超强防御药剂"] = {
+			["spells"] = "17554=136235",
 		},
 		["全效治疗"] = {
 			["spells"] = "25840=136235",
 		},
-		["图样：黑色丝质背包"] = {
-			["spells"] = "6696=136235",
+		["强效石盾"] = {
+			["spells"] = "17540=134849",
 		},
 		["食谱：掘地鼠炖肉"] = {
 			["spells"] = "6428=136235",
@@ -21672,23 +23664,23 @@ WeakAurasOptionsSaved = {
 		["Increased Agility 43"] = {
 			["spells"] = "14937=136235",
 		},
-		["Create Onyxia Spawner"] = {
-			["spells"] = "17647=133748",
+		["公式：附魔盾牌 - 次级防护"] = {
+			["spells"] = "13465=136235",
 		},
-		["丝质头带"] = {
-			["spells"] = "8762=132149,8763=136021",
+		["挫志咆哮"] = {
+			["spells"] = "99=132121,1735=132121,1736=132121,1737=132121,9490=132121,9491=132121,9747=132121,9748=132121,9898=132121,9899=132121,10968=132121,15727=132121,15971=132121,20753=132121,27551=132121",
 		},
 		["静止力场"] = {
 			["spells"] = "18147=136115,18148=136115,28135=136215",
 		},
-		["配方：多重抗性合剂"] = {
-			["spells"] = "17645=136235",
+		["亡灵语"] = {
+			["spells"] = "17737=136235",
 		},
 		["制造治疗石"] = {
 			["spells"] = "1049=136235,5699=135230,5700=135230,23813=135230,23814=135230,23815=135230,28023=135230",
 		},
-		["驯服大型峭壁野猪"] = {
-			["spells"] = "19674=132164,19677=132164",
+		["投掷泥土"] = {
+			["spells"] = "6530=136090",
 		},
 		["Create Eternal Quintessence"] = {
 			["spells"] = "28439=136235",
@@ -21696,14 +23688,14 @@ WeakAurasOptionsSaved = {
 		["冰霜之力药剂"] = {
 			["spells"] = "21923=136235",
 		},
-		["配方：侦测次级隐形药剂"] = {
-			["spells"] = "3457=136235",
+		["Increased Agility 05"] = {
+			["spells"] = "7491=136235",
 		},
-		["野性"] = {
-			["spells"] = "5515=132369",
+		["Increased Frost Resist 20"] = {
+			["spells"] = "14559=136235",
 		},
-		["多彩抗性"] = {
-			["spells"] = "17629=134828",
+		["Increased Nature Resist 41"] = {
+			["spells"] = "14984=136235",
 		},
 		["舒适的皮帽"] = {
 			["spells"] = "10490=136235",
@@ -21711,29 +23703,29 @@ WeakAurasOptionsSaved = {
 		["奥妮克希亚鳞片胸甲"] = {
 			["spells"] = "19106=136235",
 		},
-		["Reputation - Caer Darrow"] = {
-			["spells"] = "17621=136235,17681=136235",
+		["强力巨魔之血药水"] = {
+			["spells"] = "3176=136235,3185=136021",
 		},
 		["戈多克食人魔装"] = {
 			["spells"] = "22736=132288,22737=132288,22813=132149,22814=136021,22815=136235,22816=136021",
 		},
-		["尸爆"] = {
-			["spells"] = "17616=136133",
+		["熔炼青铜"] = {
+			["spells"] = "2659=136235,3314=136235",
 		},
 		["心灵占卜"] = {
 			["spells"] = "15050=135954",
 		},
-		["渐隐术"] = {
-			["spells"] = "586=135994,1265=135994,9578=135994,9579=135994,9580=135994,9581=135994,9592=135994,9593=135994,10941=135994,10942=135994,10943=135994,10944=135994,12685=135994,20672=136047",
+		["野葡萄药水"] = {
+			["spells"] = "11387=136235,11458=136235",
 		},
-		["变形英雄"] = {
-			["spells"] = "25098=136235",
+		["Spirit Spawn-in"] = {
+			["spells"] = "17321=136235",
 		},
-		["配方：土转生命"] = {
-			["spells"] = "17595=136235",
+		["简易的黑裙子"] = {
+			["spells"] = "12077=132149,12122=136021",
 		},
-		["配方：点火成土"] = {
-			["spells"] = "17589=136235",
+		["投掷"] = {
+			["spells"] = "2567=135426,2764=132324,10277=132324,15607=132324,15795=132324,15997=135426,16000=132324,19785=132324,22887=132324",
 		},
 		["Razorfen Downs Idom Rool Camera Shake"] = {
 			["spells"] = "12816=136235",
@@ -21741,29 +23733,29 @@ WeakAurasOptionsSaved = {
 		["公式：附魔披风 - 强效火焰防护"] = {
 			["spells"] = "25093=136235",
 		},
-		["配方：语言药剂"] = {
-			["spells"] = "2365=136235",
+		["恶性毒药"] = {
+			["spells"] = "12251=136016,16427=136016,16513=132293,16514=132293,16515=132293,16719=132293,16720=132293,22412=136016",
 		},
 		["补充营养"] = {
 			["spells"] = "25690=133906,25691=133907,25692=133906,25693=133907,25701=133906,25703=133906,25887=133907,25889=133907",
 		},
-		["强力黎明印记"] = {
-			["spells"] = "30090=134501",
+		["Increase Spell Dam 15"] = {
+			["spells"] = "14798=136235",
 		},
 		["疾病爆发"] = {
 			["spells"] = "17689=136006,17690=136006",
 		},
-		["暗影强化"] = {
-			["spells"] = "5896=136135,5898=136135,5899=136135,5900=136135,5907=136188,5910=136188,5911=136188,5912=136188,11474=134826",
+		["骑术：羊"] = {
+			["spells"] = "826=136103,6744=136103",
 		},
-		["配方：超强防御药剂"] = {
-			["spells"] = "17584=136235",
+		["消失"] = {
+			["spells"] = "1856=132331,1857=132331,1858=132331,1859=132331,11327=132331,11329=132331,14093=132331,24223=132331,24228=132331,24229=132331,24230=132331,24231=132331,24232=132331,24233=132331,24699=132331,24700=135743,27617=132331",
 		},
-		["特效法力药水"] = {
-			["spells"] = "17580=136235",
+		["基赫纳斯的诅咒"] = {
+			["spells"] = "19716=136160",
 		},
-		["召唤梦境裂隙"] = {
-			["spells"] = "25813=136235",
+		["Raid Buffs"] = {
+			["spells"] = "16872=136235",
 		},
 		["烈焰尖刺"] = {
 			["spells"] = "6725=135826,8814=135826",
@@ -21771,197 +23763,83 @@ WeakAurasOptionsSaved = {
 		["Flametongue Weapon Proc"] = {
 			["spells"] = "8026=135814,8028=135814,8029=135814,10445=135814,16343=135814,16344=135814",
 		},
-		["Summon Gordunni chest (JUNK)"] = {
-			["spells"] = "19394=136235",
+		["复活亡灵甲虫"] = {
+			["spells"] = "17235=136132",
 		},
-		["净化药水"] = {
-			["spells"] = "17572=136235",
+		["黑皮外套"] = {
+			["spells"] = "2169=136235",
 		},
-		["召唤红鹦鹉"] = {
-			["spells"] = "17567=132311",
+		["防护暗影结界"] = {
+			["spells"] = "535=136235,6229=136121,6232=136121,11739=136121,11740=136121,11741=136121,11742=136121,28610=136121,28611=136235",
 		},
 		["安全传送器：加基森"] = {
 			["spells"] = "23491=136235",
 		},
-		["转化：转土成水"] = {
-			["spells"] = "17561=134459",
+		["自杀"] = {
+			["spells"] = "7=136168,8327=136168,8328=136168,8329=136168,13167=136168,18184=136168,26002=136168,26627=136168,27791=136168,27965=136168,28012=136168,28748=136235",
 		},
-		["超强防御药剂"] = {
-			["spells"] = "17554=136235",
+		["Increased Stamina 34"] = {
+			["spells"] = "14481=136235",
 		},
-		["强效石盾"] = {
-			["spells"] = "17540=134849",
+		["强力姿态 II"] = {
+			["spells"] = "2473=132109",
 		},
 		["暗言术：拙"] = {
 			["spells"] = "614=136235,999=136235,1281=136159,1282=136159",
 		},
-		["相位淡出"] = {
-			["spells"] = "3648=136047",
+		["波利吃下大饼干"] = {
+			["spells"] = "9976=132331",
 		},
 		["Attack Power Ranged 74"] = {
 			["spells"] = "21455=136235",
 		},
-		["血藤长靴"] = {
-			["spells"] = "24093=132149",
+		["森林的召唤"] = {
+			["spells"] = "6537=136107",
 		},
-		["Beast Slaying 48"] = {
-			["spells"] = "17482=136235",
+		["Attack Power Ranged 26"] = {
+			["spells"] = "21436=136235",
 		},
-		["霜山羊"] = {
-			["spells"] = "17460=132248",
-		},
-		["Increased Agility 05"] = {
-			["spells"] = "7491=136235",
-		},
-		["死亡遮罩"] = {
-			["spells"] = "10848=132331",
-		},
-		["图样：迅猛龙皮腰带"] = {
-			["spells"] = "17403=136235",
-		},
-		["强化致盲"] = {
-			["spells"] = "24469=136235",
-		},
-		["水晶蜘蛛之牙"] = {
-			["spells"] = "17331=136113",
-		},
-		["高速切砍"] = {
-			["spells"] = "24192=132152",
-		},
-		["暗影延伸"] = {
-			["spells"] = "17322=136130,17323=136130,17325=136130",
-		},
-		["Spirit Spawn-in"] = {
-			["spells"] = "17321=136235",
-		},
-		["震爆"] = {
-			["spells"] = "26458=136039",
-		},
-		["巴纳扎尔变形"] = {
-			["spells"] = "17288=136129",
-		},
-		["Increased Agility 34"] = {
-			["spells"] = "14398=136235",
-		},
-		["妖术"] = {
-			["spells"] = "11641=136071,16097=136071,16707=136071,16708=136071,16709=136071,17172=136071,18503=135996,22566=136071,24053=136071",
-		},
-		["ALT -N Trigger"] = {
-			["spells"] = "23937=136235",
-		},
-		["恶性毒药"] = {
-			["spells"] = "12251=136016,16427=136016,16513=132293,16514=132293,16515=132293,16719=132293,16720=132293,22412=136016",
-		},
-		["骑术：羊"] = {
-			["spells"] = "826=136103,6744=136103",
-		},
-		["设计图：蓝光斧"] = {
-			["spells"] = "9996=136235",
-		},
-		["测试恶臭颅骨"] = {
-			["spells"] = "17271=136235",
-		},
-		["变鸡"] = {
-			["spells"] = "3245=136235,3246=135996",
-		},
-		["Force Self - Bow"] = {
-			["spells"] = "25716=136168",
-		},
-		["中级宝石学"] = {
-			["spells"] = "12680=134139,12683=134139",
-		},
-		["复活亡灵甲虫"] = {
-			["spells"] = "17235=136132",
-		},
-		["反击风暴"] = {
-			["spells"] = "20230=132336,20240=132336,20724=132336,22857=132336,22858=132336",
-		},
-		["手工皮外衣"] = {
-			["spells"] = "7126=136235",
-		},
-		["英雄的召唤"] = {
-			["spells"] = "17200=136235",
-		},
-		["金鳞护手"] = {
-			["spells"] = "11643=136192",
-		},
-		["虔诚护甲提高"] = {
-			["spells"] = "27850=136052",
-		},
-		["防护暗影"] = {
-			["spells"] = "976=136121,977=136235,1279=136121,1280=136121,7235=136185,7241=136185,7242=136185,7243=136185,7244=136185,10957=136121,10958=136121,10959=136121,16874=136121,16891=136185,17548=136185",
-		},
-		["设计图：野人铁靴"] = {
-			["spells"] = "9819=136235",
-		},
-		["遗弃技能：防御"] = {
-			["spells"] = "7048=134950",
-		},
-		["棕色科多兽"] = {
-			["spells"] = "18990=132245",
-		},
-		["机敏射击 III"] = {
-			["spells"] = "1998=132153",
-		},
-		["哈尔琳的意志"] = {
-			["spells"] = "17168=135744",
-		},
-		["Hakkar Power Down"] = {
-			["spells"] = "24693=136235",
-		},
-		["蓝龙军团"] = {
-			["spells"] = "17167=136235",
-		},
-		["Distract Move"] = {
-			["spells"] = "15051=136235,15056=136235",
-		},
-		["波利吃下大饼干"] = {
-			["spells"] = "9976=132331",
-		},
-		["灵魂夺取"] = {
-			["spells"] = "17048=136235",
-		},
-		["Attack Power %"] = {
-			["spells"] = "9199=133951",
-		},
-		["设计图：精工风暴战锤"] = {
-			["spells"] = "17035=136235",
-		},
-		["Summon Duke Random"] = {
-			["spells"] = "24763=136235",
-		},
-		["奥术爆裂"] = {
-			["spells"] = "568=136116",
-		},
-		["Increase Nature Dam 12"] = {
-			["spells"] = "9360=136235",
+		["Increase Nature Dam 2"] = {
+			["spells"] = "7691=136235",
 		},
 		["侦测魔法"] = {
 			["spells"] = "2855=135899,2858=135899",
 		},
-		["驱散射击"] = {
-			["spells"] = "1988=132153,19503=132153,23601=132153",
+		["死亡遮罩"] = {
+			["spells"] = "10848=132331",
 		},
-		["魔法粮草"] = {
-			["spells"] = "23304=136235",
+		["恐吓野兽"] = {
+			["spells"] = "1513=132118,1567=132118,14326=132118,14327=132118,14445=132118,14446=132118",
 		},
-		["设计图：黎明之刃"] = {
-			["spells"] = "17021=136235",
+		["强化致盲"] = {
+			["spells"] = "24469=136235",
 		},
-		["希斯耐特吸血术"] = {
-			["spells"] = "5219=136163",
+		["洞穴麦酒"] = {
+			["spells"] = "5021=132796",
 		},
-		["放置火炬"] = {
-			["spells"] = "17016=136235",
+		["高速切砍"] = {
+			["spells"] = "24192=132152",
 		},
-		["辐光护腿"] = {
-			["spells"] = "16725=136192",
+		["精致手工火枪"] = {
+			["spells"] = "3939=136235,4002=136235",
+		},
+		["灵魂链接"] = {
+			["spells"] = "19028=136160,25228=136160",
+		},
+		["震爆"] = {
+			["spells"] = "26458=136039",
+		},
+		["Super Food (TEST)"] = {
+			["spells"] = "22=136235",
+		},
+		["Increased Agility 34"] = {
+			["spells"] = "14398=136235",
 		},
 		["符文之刃"] = {
 			["spells"] = "16980=136192",
 		},
-		["驯鹿"] = {
-			["spells"] = "21936=132387,25675=134400,25858=133749,25859=133749",
+		["ALT -N Trigger"] = {
+			["spells"] = "23937=136235",
 		},
 		["魔化战锤"] = {
 			["spells"] = "16973=136192",
@@ -21972,11 +23850,125 @@ WeakAurasOptionsSaved = {
 		["致命毒药 II"] = {
 			["spells"] = "2819=132290,2824=132290,2837=132290",
 		},
-		["Mid Horde"] = {
-			["spells"] = "23946=136235",
+		["亚麻腰带"] = {
+			["spells"] = "8776=132149,8777=136021",
 		},
-		["火焰之花"] = {
-			["spells"] = "19636=135818,19637=135808",
+		["设计图：镀银青铜护肩"] = {
+			["spells"] = "3351=136235",
+		},
+		["Force Self - Bow"] = {
+			["spells"] = "25716=136168",
+		},
+		["中级宝石学"] = {
+			["spells"] = "12680=134139,12683=134139",
+		},
+		["奥金机械幼龙"] = {
+			["spells"] = "19804=134153,23052=136235,23074=134153",
+		},
+		["反击风暴"] = {
+			["spells"] = "20230=132336,20240=132336,20724=132336,22857=132336,22858=132336",
+		},
+		["手工皮外衣"] = {
+			["spells"] = "7126=136235",
+		},
+		["腐蚀酸液吐息"] = {
+			["spells"] = "16359=136007,20667=136007",
+		},
+		["金鳞护手"] = {
+			["spells"] = "11643=136192",
+		},
+		["恐惧术 II"] = {
+			["spells"] = "1398=136183",
+		},
+		["暗淡幻象"] = {
+			["spells"] = "5514=136159",
+		},
+		["结构图：简易投掷炸弹"] = {
+			["spells"] = "8341=136235",
+		},
+		["遗弃技能：防御"] = {
+			["spells"] = "7048=134950",
+		},
+		["棕色科多兽"] = {
+			["spells"] = "18990=132245",
+		},
+		["机敏射击 III"] = {
+			["spells"] = "1998=132153",
+		},
+		["巫毒面具"] = {
+			["spells"] = "10531=136235",
+		},
+		["Hakkar Power Down"] = {
+			["spells"] = "24693=136235",
+		},
+		["Thekal Transform"] = {
+			["spells"] = "24169=132288",
+		},
+		["吉兹洛克的假人嘲讽"] = {
+			["spells"] = "21861=132333",
+		},
+		["安静自杀（冰霜）"] = {
+			["spells"] = "13520=136168",
+		},
+		["血牙的图腾"] = {
+			["spells"] = "6239=132277",
+		},
+		["Attack Power %"] = {
+			["spells"] = "9199=133951",
+		},
+		["优质皮靴"] = {
+			["spells"] = "2158=136235",
+		},
+		["Summon Duke Random"] = {
+			["spells"] = "24763=136235",
+		},
+		["奥术爆裂"] = {
+			["spells"] = "568=136116",
+		},
+		["设计图：镀银青铜护腿"] = {
+			["spells"] = "12261=136235",
+		},
+		["迫击炮射击"] = {
+			["spells"] = "16786=132222",
+		},
+		["冰霜外形属性"] = {
+			["spells"] = "7742=135835",
+		},
+		["厚丝质绷带"] = {
+			["spells"] = "7929=136192,7931=136192",
+		},
+		["Increased Agility 18"] = {
+			["spells"] = "14371=136235",
+		},
+		["复仇"] = {
+			["spells"] = "6572=132353,6573=132353,6574=132353,6575=132353,7379=132353,7380=132353,8602=136224,11600=132353,11601=132353,11602=132353,11603=132353,12170=132353,16909=136075,16910=136075,16911=136075,16912=136075,16913=136075,19130=132353,20049=132275,20050=132275,20052=132275,20053=132275,20054=132275,20055=132275,20056=132275,20057=132275,20058=132275,20059=132275,25164=136224,25288=132353,25355=132353,25790=136224,25960=132353,26331=136224,27650=136224,28844=136235",
+		},
+		["制造强效治疗石"] = {
+			["spells"] = "657=136235,5702=135230,11729=135230,23816=135230,23817=135230,23818=135230",
+		},
+		["野兽之爪"] = {
+			["spells"] = "479=136078,1179=136078",
+		},
+		["圣言术：盾"] = {
+			["spells"] = "651=136235,3064=135932,3082=135915,3083=135915,3084=135915,3748=135915",
+		},
+		["驯鹿"] = {
+			["spells"] = "21936=132387,25675=134400,25858=133749,25859=133749",
+		},
+		["劣质磨刀石"] = {
+			["spells"] = "2660=136192",
+		},
+		["图样：邪恶皮甲头环"] = {
+			["spells"] = "19187=136235",
+		},
+		["免伤锁甲"] = {
+			["spells"] = "16746=136192",
+		},
+		["Increased Intellect 02"] = {
+			["spells"] = "7469=136235",
+		},
+		["盐湖赛车低速"] = {
+			["spells"] = "6601=134063",
 		},
 		["火焰冲击"] = {
 			["spells"] = "2136=135807,2137=135807,2138=135807,2141=135807,2142=135807,2143=135807,3073=135807,3074=135856,3075=135856,8412=135807,8413=135807,8414=135807,8415=135807,10197=135807,10198=135807,10199=135807,10200=135807,13339=135807,13340=135807,13341=135807,13342=135807,13374=135807,14145=135807,15573=135817,15574=135807,16144=135807,20623=135807,20679=135807,20795=135807,20832=135807,25028=135807,29633=135934,29644=135990",
@@ -21984,50 +23976,50 @@ WeakAurasOptionsSaved = {
 		["Increased Nature Resist 42"] = {
 			["spells"] = "14985=136235",
 		},
-		["速度"] = {
-			["spells"] = "2379=132219,14530=132307,17498=132307,22863=132307",
+		["[PH] Teleport to Theramore"] = {
+			["spells"] = "6719=136235",
 		},
-		["锤类武器强化"] = {
-			["spells"] = "5545=132325,5546=132325,5547=132325,5555=132325,5556=132325,5557=132325",
+		["起飞"] = {
+			["spells"] = "16716=135819,16717=135819",
 		},
 		["荆棘幼崽"] = {
 			["spells"] = "22781=136104",
 		},
-		["Zap Crystal"] = {
-			["spells"] = "28032=136235",
+		["萨瑞鲁斯的元素生物"] = {
+			["spells"] = "6490=136187",
 		},
-		["暗淡幻象"] = {
-			["spells"] = "5514=136159",
+		["基恩洛的熊形态"] = {
+			["spells"] = "4948=132276",
 		},
 		["拦截冷却时间减少"] = {
 			["spells"] = "22738=132307",
 		},
-		["Cluster Rocket, WHITE BIG - U"] = {
-			["spells"] = "26510=136235",
+		["召唤白色钳嘴龟"] = {
+			["spells"] = "23428=132311",
 		},
-		["护甲粉碎"] = {
-			["spells"] = "16928=132403",
+		["食谱：炒科多肉"] = {
+			["spells"] = "6425=136235",
 		},
-		["射击头部 II"] = {
-			["spells"] = "2001=132153",
+		["设计图：魔铸胸甲"] = {
+			["spells"] = "16684=136235",
 		},
-		["勇士之力"] = {
-			["spells"] = "16916=135940",
+		["矛"] = {
+			["spells"] = "3386=132271,15990=132271",
 		},
-		["金鳞战靴"] = {
-			["spells"] = "3515=136192",
+		["设计图：君王板甲护腕"] = {
+			["spells"] = "16678=136235",
 		},
 		["奇美拉手套"] = {
 			["spells"] = "19053=136235",
 		},
-		["全速"] = {
-			["spells"] = "1557=132347",
+		["鲁特维尔的召唤"] = {
+			["spells"] = "5001=135824",
 		},
 		["鬼魅灵魂"] = {
 			["spells"] = "7057=136123",
 		},
-		["漂亮的绿衬衣"] = {
-			["spells"] = "7893=132149",
+		["君王板甲护肩"] = {
+			["spells"] = "16646=136192",
 		},
 		["Increase Holy Dam 40"] = {
 			["spells"] = "21527=136235",
@@ -22041,56 +24033,56 @@ WeakAurasOptionsSaved = {
 		["火焰法杖 IV"] = {
 			["spells"] = "1921=132325,1926=132325",
 		},
-		["吸血一击"] = {
-			["spells"] = "16793=136130",
+		["图样：暗色皮护腿"] = {
+			["spells"] = "9215=136235",
 		},
-		["设计图：镀银青铜护腿"] = {
-			["spells"] = "12261=136235",
+		["劣质砂轮"] = {
+			["spells"] = "3320=136192,3341=136235",
 		},
 		["火球连射"] = {
 			["spells"] = "23512=135812",
 		},
-		["迫击炮射击"] = {
-			["spells"] = "16786=132222",
+		["占卜沉思"] = {
+			["spells"] = "5017=136235",
 		},
 		["召唤绿翼鹦鹉"] = {
 			["spells"] = "10683=132311",
 		},
-		["冰霜外形属性"] = {
-			["spells"] = "7742=135835",
+		["双手锤专精"] = {
+			["spells"] = "4472=132325,4473=132325,4474=132325,4475=132325,4476=132325,4477=132325,4478=132325,4479=132325,4480=132325,4481=132325,4482=132325,4483=132325,4484=132325,4485=132325,4486=132325,4487=132325,5348=132325,5349=132325,5350=132325,5351=132325,5352=132325,5353=132325,5354=132325,5533=132325,5534=132325,5535=132325,5536=132325,5537=132325,5538=132325,5539=132325",
 		},
-		["设计图：魔化瑟银胸甲"] = {
-			["spells"] = "16761=136235",
+		["双手斧"] = {
+			["spells"] = "197=132395,15985=132395",
 		},
-		["肾击"] = {
-			["spells"] = "408=132298,6735=132298,8643=132298,8644=132298,27615=132298",
+		["制造哈卡之心召唤法阵"] = {
+			["spells"] = "24602=136235",
 		},
 		["召唤雷霆崖卫兵"] = {
 			["spells"] = "11633=136235",
 		},
-		["复仇"] = {
-			["spells"] = "6572=132353,6573=132353,6574=132353,6575=132353,7379=132353,7380=132353,8602=136224,11600=132353,11601=132353,11602=132353,11603=132353,12170=132353,16909=136075,16910=136075,16911=136075,16912=136075,16913=136075,19130=132353,20049=132275,20050=132275,20052=132275,20053=132275,20054=132275,20055=132275,20056=132275,20057=132275,20058=132275,20059=132275,25164=136224,25288=132353,25355=132353,25790=136224,25960=132353,26331=136224,27650=136224,28844=136235",
+		["设计图：黑暗符文胸甲"] = {
+			["spells"] = "24917=136235",
 		},
 		["Undead Slayer 30"] = {
 			["spells"] = "18074=136142",
 		},
-		["极寒延伸"] = {
-			["spells"] = "16757=136141,16758=136141",
+		["公式：附魔手套 - 强效敏捷"] = {
+			["spells"] = "20071=136235",
 		},
-		["野兽之爪"] = {
-			["spells"] = "479=136078,1179=136078",
+		["封闭时空裂隙"] = {
+			["spells"] = "16613=136235",
 		},
-		["设计图：要塞护手"] = {
-			["spells"] = "16755=136235",
+		["食谱：炖陆行鸟"] = {
+			["spells"] = "6427=136235",
 		},
-		["英雄神力"] = {
-			["spells"] = "1013=136101,2692=136101,4116=136101,4117=136101,4118=136101,4119=136101,4120=136101,4121=136101,4122=136101,4123=136101,4124=136101,4125=136101,4126=136101,4127=136101,4128=136101,4129=136101,5027=136101,5028=136101,5029=136101,5030=136101,5034=136101,5035=136101,5036=136101,5037=136101",
+		["酋长的祝福"] = {
+			["spells"] = "16609=135759",
 		},
 		["Sarilus's Elementals Passive"] = {
 			["spells"] = "6488=136187",
 		},
-		["免伤锁甲"] = {
-			["spells"] = "16746=136192",
+		["召唤暴怒的双足飞龙"] = {
+			["spells"] = "14307=136235",
 		},
 		["情人节"] = {
 			["spells"] = "26663=133749,26923=133749,26924=133749,27541=133749,27547=133749,27548=133749,27549=133749,27550=133749",
@@ -22098,53 +24090,53 @@ WeakAurasOptionsSaved = {
 		["管理者传送"] = {
 			["spells"] = "19527=135736",
 		},
-		["起飞"] = {
-			["spells"] = "16716=135819,16717=135819",
+		["埋葬塞缪尔的遗体"] = {
+			["spells"] = "20364=136235",
 		},
-		["皮普的急智"] = {
-			["spells"] = "16710=136235",
+		["治疗"] = {
+			["spells"] = "2147=136085,22167=135915,22883=135915,24947=135915",
 		},
 		["煽动敌意"] = {
 			["spells"] = "8354=132270",
 		},
-		["基恩洛的熊形态"] = {
-			["spells"] = "4948=132276",
+		["致伤射击 IV"] = {
+			["spells"] = "1560=132323",
 		},
-		["刺耳尖啸"] = {
-			["spells"] = "26379=136147",
+		["附魔武器 - 生命偷取"] = {
+			["spells"] = "20032=135913",
 		},
-		["强化审判"] = {
-			["spells"] = "25956=135959,25957=135959",
+		["奥术元素"] = {
+			["spells"] = "22697=136235",
 		},
-		["设计图：辐光长靴"] = {
-			["spells"] = "16685=136235",
+		["彩虹之锤"] = {
+			["spells"] = "6518=136192",
 		},
-		["设计图：魔铸胸甲"] = {
-			["spells"] = "16684=136235",
+		["Signet Ring of the Bronze Dragonflight TANK R4 DND"] = {
+			["spells"] = "25935=136235",
 		},
 		["廉价德鲁伊变形"] = {
 			["spells"] = "21873=135916",
 		},
-		["Increase Spell Dam 11"] = {
-			["spells"] = "14248=136235,14254=136235,15714=136235",
+		["Attack Power 60"] = {
+			["spells"] = "14052=136235",
 		},
 		["君王板甲护腿"] = {
 			["spells"] = "16730=136192",
 		},
-		["恒金渔线"] = {
-			["spells"] = "24302=136235",
+		["冰冻"] = {
+			["spells"] = "6136=135843,7321=135843,12484=135857,12485=135857,12486=135857,15850=135836,16927=135864,18101=135843,20005=135864,21098=135852,27867=136235,27868=135852",
 		},
 		["鉴定种类"] = {
 			["spells"] = "6741=135990",
 		},
-		["设计图：君王板甲护腕"] = {
-			["spells"] = "16678=136235",
+		["快速嗜血"] = {
+			["spells"] = "3229=136012",
 		},
 		["雏龙之语：青铜"] = {
 			["spells"] = "22286=136010,22291=136022,22311=136022,22642=136010",
 		},
-		["鲁特维尔的召唤"] = {
-			["spells"] = "5001=135824",
+		["杀死乌洛克的爪牙"] = {
+			["spells"] = "16452=136235",
 		},
 		["埃其亚基的恩赐"] = {
 			["spells"] = "5320=136075",
@@ -22152,53 +24144,53 @@ WeakAurasOptionsSaved = {
 		["毒液喷吐"] = {
 			["spells"] = "6917=136016,15664=136016,16552=136016,16866=136016,17158=136016,23862=136016,25497=136016",
 		},
-		["君王板甲护肩"] = {
-			["spells"] = "16646=136192",
+		["救赎之魂"] = {
+			["spells"] = "20711=132864,27792=136235,27795=136235,27827=135913",
 		},
 		["Increase Arcane Dam 24"] = {
 			["spells"] = "17838=136235,17839=136235",
 		},
-		["致密磨刀石"] = {
-			["spells"] = "16641=136192,16669=136235",
+		["初级治疗石"] = {
+			["spells"] = "6262=135230,23468=135230,23469=135230",
 		},
-		["Increase Reputation"] = {
-			["spells"] = "24226=136235",
+		["青铜框架"] = {
+			["spells"] = "3953=136235,4012=136235",
 		},
-		["Increased Fire Resist 07"] = {
-			["spells"] = "14587=136235",
+		["Arcane Shot Mana Reduction"] = {
+			["spells"] = "23157=132218",
 		},
 		["野蛮突袭 II"] = {
 			["spells"] = "302=132316,1667=132316",
 		},
-		["捕捉地狱犬之魂"] = {
-			["spells"] = "16627=136163",
+		["腐蚀毒药"] = {
+			["spells"] = "3396=136016,13526=136016",
 		},
-		["增强钝器 V"] = {
-			["spells"] = "16622=136235",
+		["斯塔文的诅咒"] = {
+			["spells"] = "3105=136203,13524=136203",
 		},
-		["狮心"] = {
-			["spells"] = "16617=134966",
+		["炼金术"] = {
+			["spells"] = "2259=136240,3101=136240,3464=136240,11611=136240",
 		},
-		["封闭时空裂隙"] = {
-			["spells"] = "16613=136235",
+		["制造幽暗城卡片集合"] = {
+			["spells"] = "27718=136235",
 		},
 		["召唤不散的怨灵"] = {
 			["spells"] = "7067=136122",
 		},
-		["魔铸胸甲"] = {
-			["spells"] = "16611=136123,16667=136192",
+		["强化宠物"] = {
+			["spells"] = "22647=136146",
 		},
-		["酋长的祝福"] = {
-			["spells"] = "16609=135759",
+		["软泥痢疾"] = {
+			["spells"] = "16461=135914",
 		},
-		["恶魔之叉"] = {
-			["spells"] = "16603=136169",
+		["骑术：狼"] = {
+			["spells"] = "825=136103,6746=136103",
 		},
-		["青铜匕首"] = {
-			["spells"] = "3491=136192,3516=136235",
+		["强击光环"] = {
+			["spells"] = "1563=132329,19506=132329,20905=132329,20906=132329,20938=132329",
 		},
-		["撕扯"] = {
-			["spells"] = "1079=132152,1445=132152,9492=132152,9493=132152,9494=132152,9495=132152,9752=132152,9753=132152,9894=132152,9895=132152,9896=132152,9897=132152",
+		["Proc Self Invulnerability"] = {
+			["spells"] = "16620=136235",
 		},
 		["放置戈泰什的头颅"] = {
 			["spells"] = "13484=136235",
@@ -22206,8 +24198,8 @@ WeakAurasOptionsSaved = {
 		["附魔护腕 - 强效力量"] = {
 			["spells"] = "13939=135913,13940=135913",
 		},
-		["致伤射击 IV"] = {
-			["spells"] = "1560=132323",
+		["衰弱之触"] = {
+			["spells"] = "16333=136157",
 		},
 		["Increased Nature Resist 13"] = {
 			["spells"] = "14634=136235",
@@ -22218,11 +24210,11 @@ WeakAurasOptionsSaved = {
 		["暗纹手套"] = {
 			["spells"] = "12071=132149,12114=136021",
 		},
-		["安全降落"] = {
-			["spells"] = "1860=132914,1862=132914,18443=136235,24350=132916",
+		["Summon Mor Grayhoof DND"] = {
+			["spells"] = "27184=136235",
 		},
-		["熔炼"] = {
-			["spells"] = "2656=135811",
+		["巨型铁斧"] = {
+			["spells"] = "3498=136192,3520=136235",
 		},
 		["设计图：秘银鳞片护腕"] = {
 			["spells"] = "9938=136235",
@@ -22236,14 +24228,14 @@ WeakAurasOptionsSaved = {
 		["棕色亚麻长袍"] = {
 			["spells"] = "7623=136235,7626=136021",
 		},
-		["食尸鬼瘟疫"] = {
-			["spells"] = "16458=135914",
+		["设计图：彩虹之锤"] = {
+			["spells"] = "6519=136235",
 		},
 		["显形卷轴"] = {
 			["spells"] = "9095=135994",
 		},
-		["Increased Spirit 17"] = {
-			["spells"] = "14436=136235",
+		["强化闪电之盾"] = {
+			["spells"] = "16261=136051,16290=136051,16291=136051",
 		},
 		["自我定身"] = {
 			["spells"] = "20548=136235,23973=136235",
@@ -22251,38 +24243,38 @@ WeakAurasOptionsSaved = {
 		["Attack Power Ranged 79"] = {
 			["spells"] = "21457=136235",
 		},
-		["Attack Power 60"] = {
-			["spells"] = "14052=136235",
+		["无力冲锋"] = {
+			["spells"] = "1906=132122",
 		},
-		["冰冻"] = {
-			["spells"] = "6136=135843,7321=135843,12484=135857,12485=135857,12486=135857,15850=135836,16927=135864,18101=135843,20005=135864,21098=135852,27867=136235,27868=135852",
+		["守护图腾"] = {
+			["spells"] = "16258=136098,16293=136098",
 		},
-		["熔岩"] = {
-			["spells"] = "16455=135805",
+		["Attack Power 68"] = {
+			["spells"] = "15819=136235",
 		},
-		["杀死乌洛克的爪牙"] = {
-			["spells"] = "16452=136235",
+		["致命毒药"] = {
+			["spells"] = "2818=132290,2823=132290,2835=132290,2843=132290,2844=132290,3583=136067,10022=136016,11360=132290,11361=132290,13582=136016,21787=136016,21788=136016,25412=132290,25974=132282",
 		},
-		["定罪之槌"] = {
-			["spells"] = "16451=132507",
+		["死亡的拥抱"] = {
+			["spells"] = "24153=136235,24161=136235",
 		},
 		["浸魔胸甲 - 次级精神"] = {
 			["spells"] = "7853=135913,7854=135913",
 		},
-		["蜥蜴之皮"] = {
-			["spells"] = "10351=134314",
+		["Editor Test Spell"] = {
+			["spells"] = "68=136235",
 		},
 		["自然抗性"] = {
 			["spells"] = "823=136120,848=136235,1331=136062,2119=136085,4081=135865,4548=136085,4558=136085,4559=136085,4560=136085,4561=136085,4562=136085,4563=136085,4564=136085,4608=136085,4609=136085,4610=136085,4611=136085,4612=136085,4613=136085,4614=136085,10596=136061,10598=136061,10599=136061,20551=136094,20583=136094,24492=136085,24494=136085,24502=136085,24503=136085,24504=136085,24511=136085,24512=136085,24513=136085,24517=136085,24523=136085,24524=136085,24525=136085,27538=136051,28768=136061",
 		},
-		["Rocket, BLUE"] = {
-			["spells"] = "26344=136235",
+		["熔炼瑟银"] = {
+			["spells"] = "16153=136235,16154=136235",
 		},
-		["Rotate 360"] = {
-			["spells"] = "26009=136235",
+		["Increase Nature Dam 26"] = {
+			["spells"] = "18000=136235",
 		},
-		["多彩防护：冰霜"] = {
-			["spells"] = "16392=134563",
+		["石之赐福"] = {
+			["spells"] = "16470=132154",
 		},
 		["安图苏尔的拯救"] = {
 			["spells"] = "11890=136235",
@@ -22290,29 +24282,29 @@ WeakAurasOptionsSaved = {
 		["艾露恩祷言"] = {
 			["spells"] = "25841=135955",
 		},
-		["老鼠"] = {
-			["spells"] = "16371=136235",
+		["配方：抗毒药剂"] = {
+			["spells"] = "3182=136235",
 		},
-		["Rend Calls For Buff"] = {
-			["spells"] = "16364=136235,16365=136235",
+		["厚绒线绷带"] = {
+			["spells"] = "3278=136192,3283=136192",
 		},
-		["制造玛艾里的容器"] = {
-			["spells"] = "16351=136235",
+		["食尸鬼形态"] = {
+			["spells"] = "3287=136224",
 		},
 		["图样：邪恶皮甲护手"] = {
 			["spells"] = "19156=136235",
 		},
-		["绿铁锁甲"] = {
-			["spells"] = "3508=136192,3525=136235",
+		["自然亲和"] = {
+			["spells"] = "4792=136085,4793=136077,4794=136085,4795=136077,5819=136085,5822=136085,5825=136077,5826=136077",
 		},
 		["破冰护腕"] = {
 			["spells"] = "28244=136192,28252=136235",
 		},
-		["Arathi Basin Mark of Honor (Loser)"] = {
-			["spells"] = "24952=136235",
+		["孢子爆发"] = {
+			["spells"] = "5100=136142",
 		},
-		["Proc Self Invulnerability"] = {
-			["spells"] = "16620=136235",
+		["强健灵魂"] = {
+			["spells"] = "8068=135932",
 		},
 		["Item +INT/FR Leg R2"] = {
 			["spells"] = "15447=136235",
@@ -22326,8 +24318,8 @@ WeakAurasOptionsSaved = {
 		["水泡"] = {
 			["spells"] = "7383=135864",
 		},
-		["衰弱之触"] = {
-			["spells"] = "16333=136157",
+		["Rancid Ooze Effect"] = {
+			["spells"] = "3339=136133",
 		},
 		["Implements of Unspoken Names Pet Bonus"] = {
 			["spells"] = "26118=136235",
@@ -22335,8 +24327,8 @@ WeakAurasOptionsSaved = {
 		["巨型瑟银战斧"] = {
 			["spells"] = "16971=136192",
 		},
-		["图样：巫毒面具"] = {
-			["spells"] = "10532=136235",
+		["艾博希尔变形"] = {
+			["spells"] = "16052=135819",
 		},
 		["毛纺包"] = {
 			["spells"] = "3757=136235,3785=136021",
@@ -22347,80 +24339,80 @@ WeakAurasOptionsSaved = {
 		["法力值"] = {
 			["spells"] = "13606=136235",
 		},
-		["巨型铁斧"] = {
-			["spells"] = "3498=136192,3520=136235",
+		["比修消失"] = {
+			["spells"] = "15993=136235",
 		},
-		["附魔武器 - 敏捷"] = {
-			["spells"] = "23800=135913",
+		["制造艾露恩之石"] = {
+			["spells"] = "26265=136235",
 		},
-		["强化闪电之盾"] = {
-			["spells"] = "16261=136051,16290=136051,16291=136051",
+		["熔炼钢锭"] = {
+			["spells"] = "3569=136235,3596=136235",
 		},
-		["守护图腾"] = {
-			["spells"] = "16258=136098,16293=136098",
+		["图样：守护之甲"] = {
+			["spells"] = "3805=136235",
 		},
 		["火锥术"] = {
 			["spells"] = "19630=135831",
 		},
-		["自然指引"] = {
-			["spells"] = "16180=135860,16196=135860,16198=135860",
+		["Corrupted Saber Visual (DND)"] = {
+			["spells"] = "16510=136235",
 		},
-		["先祖治疗"] = {
-			["spells"] = "16176=136109,16235=136109,16240=136109",
+		["Bleed Spice, Missile cluster (DND)"] = {
+			["spells"] = "30676=136235",
 		},
-		["强化意志"] = {
-			["spells"] = "16171=132333",
+		["结构图：夜视步枪"] = {
+			["spells"] = "4030=136235",
 		},
-		["熔炼瑟银"] = {
-			["spells"] = "16153=136235,16154=136235",
+		["Summon Cloak of the Unseen Path DND"] = {
+			["spells"] = "29013=136235",
 		},
-		["死尸虫"] = {
-			["spells"] = "16142=136188,16143=136134",
+		["Attack Power - Feral (+420)"] = {
+			["spells"] = "28154=136235",
 		},
 		["Increase Nature Dam 27"] = {
 			["spells"] = "18001=136235",
 		},
-		["Stasis Test"] = {
-			["spells"] = "4321=136235",
+		["Increase Shadow Dam 28"] = {
+			["spells"] = "18023=136235",
 		},
-		["结晶"] = {
-			["spells"] = "16104=136222",
+		["Copy of Enchant Weapon - Superior Striking"] = {
+			["spells"] = "27106=135913",
 		},
-		["侦查形态"] = {
-			["spells"] = "3033=132311",
+		["强化治疗祷言重击"] = {
+			["spells"] = "23550=136235",
 		},
 		["霜纹手套"] = {
 			["spells"] = "18411=132149",
 		},
-		["净化并放置食物"] = {
-			["spells"] = "16072=133748",
+		["Area Death (TEST)"] = {
+			["spells"] = "265=136195",
 		},
-		["伊森哈德扫击"] = {
-			["spells"] = "22639=132152",
+		["召唤萨菲隆的龙翼打击"] = {
+			["spells"] = "29329=136235",
 		},
 		["Increased Strength 11"] = {
 			["spells"] = "9122=136235",
 		},
-		["自然亲和"] = {
-			["spells"] = "4792=136085,4793=136077,4794=136085,4795=136077,5819=136085,5822=136085,5825=136077,5826=136077",
+		["Increased Strength 34"] = {
+			["spells"] = "14506=136235",
 		},
-		["大地震颤"] = {
-			["spells"] = "6524=136025",
+		["血之契印"] = {
+			["spells"] = "6307=136124,7804=136124,7805=136124,7871=136124,7872=136124,7873=136124,11766=136124,11767=136124,11768=136124,11769=136124,20318=136124,20319=136124,20320=136124,20321=136124,20397=136124",
 		},
-		["艾博希尔变形"] = {
-			["spells"] = "16052=135819",
+		["病弱"] = {
+			["spells"] = "14535=136066",
 		},
-		["传送器抵达"] = {
-			["spells"] = "23448=135894,23450=136152",
+		["Item +INT/SPI Leg R3"] = {
+			["spells"] = "15489=136235",
 		},
 		["图样：荆木长靴"] = {
 			["spells"] = "28476=136235",
 		},
-		["丝绸小包"] = {
-			["spells"] = "3813=136235,3814=136021",
+		["邪恶光环"] = {
+			["spells"] = "17466=136225,17467=136225,17625=133076,27987=136225,27988=136225,28340=136225,28341=136225",
 		},
-		["Increased Nature Resist 12"] = {
-			["spells"] = "14633=136235",
+		["蛛网爆炸"] = {
+			["spells"] = "15474=132149,16469=132149",
 		},
 		["公式：附魔手套 - 超强敏捷"] = {
 			["spells"] = "25092=136235",
@@ -22431,26 +24423,26 @@ WeakAurasOptionsSaved = {
 		["困兽之爪"] = {
 			["spells"] = "12538=132152,15608=132152,16553=132152,17470=132152",
 		},
-		["比修消失"] = {
-			["spells"] = "15993=136235",
+		["Increased Damage - Beast 08"] = {
+			["spells"] = "7593=136235",
 		},
-		["Increased Strength 33"] = {
-			["spells"] = "14505=136235",
+		["Increase Shadow Dam 5"] = {
+			["spells"] = "7710=136235",
 		},
 		["致命创伤"] = {
 			["spells"] = "4240=132109,4241=132109,4735=132109,5950=136231",
 		},
-		["追踪野兽"] = {
-			["spells"] = "1494=132328,1547=132328,5119=132328,5125=132323,10227=132328",
+		["Increase Nature Dam 9"] = {
+			["spells"] = "9357=136235",
 		},
-		["初级防御药剂"] = {
-			["spells"] = "7183=136235",
+		["Item +INT Leg R1"] = {
+			["spells"] = "15403=136235",
 		},
-		["召唤朋友"] = {
-			["spells"] = "16457=132161",
+		["回响咆哮"] = {
+			["spells"] = "10967=132366",
 		},
-		["Attack Power 80"] = {
-			["spells"] = "15826=136235",
+		["碎石怪伪装"] = {
+			["spells"] = "5270=136189",
 		},
 		["远古豹"] = {
 			["spells"] = "16058=132242",
@@ -22464,23 +24456,23 @@ WeakAurasOptionsSaved = {
 		["冰冻龙蛋"] = {
 			["spells"] = "15748=136235",
 		},
-		["Attack Power 46"] = {
-			["spells"] = "15811=136235",
+		["炽热魔符"] = {
+			["spells"] = "6295=135826",
 		},
-		["召唤黑手恐法师"] = {
-			["spells"] = "15794=136075",
+		["牺牲圣印"] = {
+			["spells"] = "611=136235,13903=135966",
 		},
-		["Increase Frost Dam 8"] = {
-			["spells"] = "9403=136235,9404=136235",
+		["喝下疾病药水"] = {
+			["spells"] = "6355=134799",
 		},
-		["Increased Fire Resist 32"] = {
-			["spells"] = "14612=136235",
+		["暗影强化"] = {
+			["spells"] = "5896=136135,5898=136135,5899=136135,5900=136135,5907=136188,5910=136188,5911=136188,5912=136188,11474=134826",
 		},
 		["漂浮术"] = {
 			["spells"] = "1706=135928,3745=136235,6492=135928",
 		},
-		["Rocky Ground Impact"] = {
-			["spells"] = "26271=136235",
+		["召唤艾斯卡达尔"] = {
+			["spells"] = "22649=134176",
 		},
 		["上古绝望"] = {
 			["spells"] = "19369=136175",
@@ -22488,62 +24480,62 @@ WeakAurasOptionsSaved = {
 		["召唤灰烬"] = {
 			["spells"] = "10869=135805",
 		},
-		["Increase Shadow Dam 28"] = {
-			["spells"] = "18023=136235",
+		["Summon Gordunni chest (JUNK)"] = {
+			["spells"] = "19394=136235",
 		},
-		["设计图：月钢宽剑"] = {
-			["spells"] = "15756=136235",
+		["Immolate Cumulative (TEST)"] = {
+			["spells"] = "7288=135817",
 		},
-		["召唤腐化猫"] = {
-			["spells"] = "15648=132311",
+		["召唤蓝蛙"] = {
+			["spells"] = "10701=132311",
 		},
 		["结构图：法术能量护目镜超级改良版"] = {
 			["spells"] = "19849=134153",
 		},
-		["Increased Strength 34"] = {
-			["spells"] = "14506=136235",
+		["设计图：黑铁斩碎者"] = {
+			["spells"] = "15298=136235",
 		},
 		["Submerge Visual"] = {
 			["spells"] = "26234=135830,28819=135830",
 		},
-		["Quest - Polymorph Impact"] = {
-			["spells"] = "24180=136235",
+		["平衡光与影"] = {
+			["spells"] = "23151=136235",
 		},
-		["拳套"] = {
-			["spells"] = "15590=132938,15992=132938",
+		["放置幽灵磁铁"] = {
+			["spells"] = "19588=136235",
 		},
-		["淤血"] = {
-			["spells"] = "4102=136231,4733=136231,5150=136231",
+		["联合收割机组件"] = {
+			["spells"] = "3963=136235,4019=136235",
 		},
 		["百万伏特"] = {
 			["spells"] = "11082=136015",
 		},
-		["Item +INT/SPI Leg R3"] = {
-			["spells"] = "15489=136235",
+		["附魔披风 - 初级抗性"] = {
+			["spells"] = "7441=135913,7454=135913",
 		},
 		["猎豹形态"] = {
 			["spells"] = "499=132115,768=132115,5759=132115,27545=132276",
 		},
-		["蛛网爆炸"] = {
-			["spells"] = "15474=132149,16469=132149",
+		["昏阙"] = {
+			["spells"] = "15268=136160,15269=136160,15323=136160,15324=136160,15325=136160,15326=136160",
 		},
-		["Item +AC/FR Leg R3"] = {
-			["spells"] = "15462=136235",
+		["Increased Agility 30"] = {
+			["spells"] = "14394=136235",
 		},
-		["Increase Nature Dam 9"] = {
-			["spells"] = "9357=136235",
+		["Increased Spirit 01"] = {
+			["spells"] = "7474=136235",
 		},
-		["猛虎之怒"] = {
-			["spells"] = "5217=132242,5218=132242,6793=132242,6794=132242,9845=132242,9846=132242,9847=132242,9848=132242",
+		["暗影易伤"] = {
+			["spells"] = "15258=136123,17794=136197,17797=136197,17798=136197,17799=136197,17800=136197",
 		},
-		["Item +INT Leg R1"] = {
-			["spells"] = "15403=136235",
+		["强化剧痛鞭笞"] = {
+			["spells"] = "18128=136136,18129=136136",
 		},
 		["打开圣甲虫箱"] = {
 			["spells"] = "26587=136235",
 		},
-		["庇护祝福"] = {
-			["spells"] = "20911=136051,20912=136051,20913=136051,20914=136051,20948=136051,20949=136051,20950=136051,20951=136051",
+		["制造水晶塔使用手册"] = {
+			["spells"] = "15211=136235",
 		},
 		["迫击炮：重载"] = {
 			["spells"] = "13240=136235",
@@ -22551,23 +24543,23 @@ WeakAurasOptionsSaved = {
 		["风之优雅"] = {
 			["spells"] = "8836=136046,10626=136046,25360=136046",
 		},
-		["多彩防护：火焰"] = {
-			["spells"] = "16373=134563",
+		["Increased Strength 29"] = {
+			["spells"] = "14501=136235",
 		},
 		["Choose Random Powers"] = {
 			["spells"] = "9135=136235,26553=136235",
 		},
-		["Block Value 18"] = {
-			["spells"] = "22912=136235",
+		["召唤裂隙行者"] = {
+			["spells"] = "9615=136121",
 		},
-		["Increased Armor 130"] = {
-			["spells"] = "15367=136235",
+		["召唤奥伯丁哨兵"] = {
+			["spells"] = "11804=136235",
 		},
 		["意志之力"] = {
 			["spells"] = "15594=136235,15595=133276,18544=136092,18547=136092,18548=136092,18549=136092,18550=136092",
 		},
-		["图样：霜纹长袍"] = {
-			["spells"] = "18473=136235",
+		["使用诱引激素"] = {
+			["spells"] = "15119=133748",
 		},
 		["Communique, Camp-to-Relay"] = {
 			["spells"] = "28281=136235",
@@ -22578,11 +24570,11 @@ WeakAurasOptionsSaved = {
 		["耐久训练"] = {
 			["spells"] = "19583=136080,19584=136080,19585=136080,19586=136080,19587=136080",
 		},
-		["娜玛拉消失"] = {
-			["spells"] = "15341=136235",
+		["冬季狂欢者 - 人类男性"] = {
+			["spells"] = "26239=135849",
 		},
-		["魔法抑制"] = {
-			["spells"] = "604=136006,1266=136006,5305=136235,8450=136006,8451=136006,8452=136006,8453=136006,10173=136006,10174=136006,10175=136006,10176=136006",
+		["神圣逃脱"] = {
+			["spells"] = "789=136235",
 		},
 		["Increased Strength 35"] = {
 			["spells"] = "14507=136235",
@@ -22590,8 +24582,8 @@ WeakAurasOptionsSaved = {
 		["蛮皮战靴"] = {
 			["spells"] = "10566=136235,23621=136021",
 		},
-		["图样：铁羽护肩"] = {
-			["spells"] = "19172=136235",
+		["图样：龟壳手套"] = {
+			["spells"] = "10510=136235",
 		},
 		["强化治疗祷言"] = {
 			["spells"] = "14911=135943,15018=135943,15019=135943,21339=136235",
@@ -22599,23 +24591,23 @@ WeakAurasOptionsSaved = {
 		["强化自然之握"] = {
 			["spells"] = "17245=136063,17247=136063,17248=136063,17249=136063",
 		},
-		["处斩"] = {
-			["spells"] = "24316=132350",
+		["防护暗影"] = {
+			["spells"] = "976=136121,977=136235,1279=136121,1280=136121,7235=136185,7241=136185,7242=136185,7243=136185,7244=136185,10957=136121,10958=136121,10959=136121,16874=136121,16891=136185,17548=136185",
 		},
 		["灵魂之火"] = {
 			["spells"] = "1571=135808,6353=135808,17924=135808,18160=135808",
 		},
-		["设计图：黑铁斩碎者"] = {
-			["spells"] = "15298=136235",
+		["Attack Power 76"] = {
+			["spells"] = "15824=136235",
 		},
-		["古雷曼格的信任"] = {
-			["spells"] = "20553=132164,20556=132164",
+		["伐木机高温喷射"] = {
+			["spells"] = "21559=135818",
 		},
-		["联合收割机组件"] = {
-			["spells"] = "3963=136235,4019=136235",
+		["Increased Shadow Resist 43"] = {
+			["spells"] = "14992=136235",
 		},
-		["黑铁斩碎者"] = {
-			["spells"] = "15294=136192",
+		["精制秘银胸甲"] = {
+			["spells"] = "9972=136192",
 		},
 		["Increased Frost Resist 27"] = {
 			["spells"] = "14566=136235",
@@ -22626,29 +24618,29 @@ WeakAurasOptionsSaved = {
 		["埃博诺克之影"] = {
 			["spells"] = "23340=136160,23394=136160",
 		},
-		["昏阙"] = {
-			["spells"] = "15268=136160,15269=136160,15323=136160,15324=136160,15325=136160,15326=136160",
+		["腐化耐力"] = {
+			["spells"] = "6819=135914,23244=135914",
 		},
-		["秘仪灵魂 II"] = {
-			["spells"] = "1450=135932,1468=135932",
+		["鞭笞"] = {
+			["spells"] = "6607=132109,25852=132109",
 		},
-		["Increased Spirit 01"] = {
-			["spells"] = "7474=136235",
+		["Increase Nature Dam 12"] = {
+			["spells"] = "9360=136235",
 		},
 		["心灵专注"] = {
 			["spells"] = "14751=135863,30864=136056,30865=136056,30866=136056",
 		},
-		["爆炸"] = {
-			["spells"] = "5255=136133,7670=135805,12158=135805,12159=135805,13259=135805,20038=136235,20476=135826,25099=135805,25698=135826,25699=135826,26059=135826,27745=134538,28433=135826",
+		["结构图：强力爆盐炸弹"] = {
+			["spells"] = "23092=134153",
 		},
-		["暗影易伤"] = {
-			["spells"] = "15258=136123,17794=136197,17797=136197,17798=136197,17799=136197,17800=136197",
+		["召唤伊莉莎的卫兵"] = {
+			["spells"] = "3107=136142",
 		},
-		["轻皮"] = {
-			["spells"] = "2881=136235",
+		["Increase Fire Dam 6"] = {
+			["spells"] = "7689=136235",
 		},
-		["制造水晶塔使用手册"] = {
-			["spells"] = "15211=136235",
+		["放置斯里多尔的信号灯"] = {
+			["spells"] = "21729=136235",
 		},
 		["Increased Frost Resist 06"] = {
 			["spells"] = "14543=136235",
@@ -22659,62 +24651,62 @@ WeakAurasOptionsSaved = {
 		["黑暗之矛"] = {
 			["spells"] = "16987=136192",
 		},
-		["温德索尔狂暴"] = {
-			["spells"] = "15167=132277",
+		["Increased Agility 06"] = {
+			["spells"] = "7492=136235",
 		},
 		["正义光环 III"] = {
 			["spells"] = "1907=135960",
 		},
-		["使用诱引激素"] = {
-			["spells"] = "15119=133748",
+		["设计图：精制秘银护肩"] = {
+			["spells"] = "9953=136235",
 		},
-		["制造PX83型密码机"] = {
-			["spells"] = "15066=133748",
+		["熔岩之雨"] = {
+			["spells"] = "25150=136235",
 		},
-		["强化刺骨/割裂"] = {
-			["spells"] = "24471=136235",
+		["公式：符文奥金棒"] = {
+			["spells"] = "20078=135913",
 		},
-		["急速施法"] = {
-			["spells"] = "8215=132369",
+		["暗影箭失效"] = {
+			["spells"] = "14871=136197",
 		},
 		["Summon Son of Flame D"] = {
 			["spells"] = "21112=135819",
 		},
-		["Increased Shadow Resist 45"] = {
-			["spells"] = "14994=136235",
+		["锤类武器专精"] = {
+			["spells"] = "4366=132325,4367=132325,4368=132325,4369=132325,4370=132325,4371=132325,4372=132325,4373=132325,4374=132325,4375=132325,4376=132325,4377=132325,4378=132325,4379=132325,4380=132325,4381=132325,5548=132325,5549=132325,5550=132325,5551=132325,5552=132325,5553=132325,5554=132325,5558=132325,5559=132325,5560=132325,5561=132325,5562=132325,5563=132325,5564=132325,12284=133476,12701=133476,12702=133476,12703=133476,12704=133476,13709=133476,13800=133476,13801=133476,13802=133476,13803=133476,20864=133042",
 		},
-		["Increased Shadow Resist 43"] = {
-			["spells"] = "14992=136235",
+		["深红丝质手套"] = {
+			["spells"] = "8804=132149,8805=136021",
 		},
 		["狙击"] = {
 			["spells"] = "1985=132212,7030=132212,7031=132212,7032=132212,12198=132222",
 		},
-		["Complete Arathi Basin quest, 5 bases"] = {
-			["spells"] = "24064=136235",
+		["Razorfen Downs Idol Room Spawn B"] = {
+			["spells"] = "14802=136235",
 		},
-		["虚空行者守卫"] = {
-			["spells"] = "5252=136221",
+		["Razorfen Downs Idol Room Spawn C"] = {
+			["spells"] = "14801=136235",
 		},
 		["召唤骑士"] = {
 			["spells"] = "28008=136235,28009=136235",
 		},
-		["Increased Arcane Resist 44"] = {
-			["spells"] = "14968=136235",
+		["Increased Frost Resist 41"] = {
+			["spells"] = "14977=136235",
 		},
-		["寒冰护体"] = {
-			["spells"] = "2890=135988,11426=135988,13031=135988,13032=135988,13033=135988,13037=135988,13038=135988,13039=135988",
+		["强化真言术：盾"] = {
+			["spells"] = "14748=135940,14768=135940,14769=135940,24191=136235",
 		},
-		["鞭笞"] = {
-			["spells"] = "6607=132109,25852=132109",
+		["公式：附魔靴子 - 强效耐力"] = {
+			["spells"] = "20067=136235",
 		},
-		["烤迅猛龙肉"] = {
-			["spells"] = "15855=136192",
+		["法术集中"] = {
+			["spells"] = "12854=136121",
 		},
-		["Increase Fire Dam 6"] = {
-			["spells"] = "7689=136235",
+		["漂亮的绿衬衣"] = {
+			["spells"] = "7893=132149",
 		},
-		["图样：霜刃护腿"] = {
-			["spells"] = "19190=136235",
+		["减速软泥"] = {
+			["spells"] = "16050=136091",
 		},
 		["Increased Stamina 42"] = {
 			["spells"] = "14954=136235",
@@ -22728,32 +24720,32 @@ WeakAurasOptionsSaved = {
 		["Dragonstalker B"] = {
 			["spells"] = "21966=136095",
 		},
-		["幽魂之狼"] = {
-			["spells"] = "519=136235,2645=136095,3691=136235,5387=136095,5389=136095",
+		["白色强盗面罩"] = {
+			["spells"] = "12059=132149",
 		},
-		["Increased Intellect 43"] = {
-			["spells"] = "14943=136235",
+		["召唤宠物"] = {
+			["spells"] = "883=132161,23498=132161,27639=136235",
 		},
-		["坚韧药剂"] = {
-			["spells"] = "3178=136021,3450=136235",
+		["Increased Arcane Resist 03"] = {
+			["spells"] = "14705=136235",
 		},
-		["侏儒通用遥控器"] = {
-			["spells"] = "9269=136235",
+		["近战入门"] = {
+			["spells"] = "4433=132109,4434=132109,4435=132109,4437=132109,4438=132109,4439=132109",
 		},
-		["暗影箭失效"] = {
-			["spells"] = "14871=136197",
+		["Increased Stamina 14"] = {
+			["spells"] = "9265=136235",
 		},
-		["醉酒昏迷"] = {
-			["spells"] = "14869=132791,14870=132791",
+		["初始形态：火"] = {
+			["spells"] = "4933=136160",
 		},
 		["食谱：赤脊山炖肉"] = {
 			["spells"] = "2556=136235",
 		},
-		["次级秘法魔杖"] = {
-			["spells"] = "14809=135139,14811=135913",
+		["火焰圣印"] = {
+			["spells"] = "1895=135968",
 		},
-		["次级吸收"] = {
-			["spells"] = "7446=136235,7447=136235",
+		["Increased Shadow Resist 29"] = {
+			["spells"] = "14692=136235",
 		},
 		["图样：亮布披风"] = {
 			["spells"] = "18494=136235",
@@ -22761,44 +24753,44 @@ WeakAurasOptionsSaved = {
 		["召唤机械哨兵"] = {
 			["spells"] = "11819=136235",
 		},
-		["骷髅矿工爆炸"] = {
-			["spells"] = "6469=135826",
+		["Increased Shadow Resist 10"] = {
+			["spells"] = "14673=136235",
 		},
 		["弓射击"] = {
 			["spells"] = "2480=132222",
 		},
-		["Razorfen Downs Idol Room Spawn B"] = {
-			["spells"] = "14802=136235",
+		["设计图：精制秘银胸甲"] = {
+			["spells"] = "9973=136235",
 		},
-		["Razorfen Downs Idol Room Spawn C"] = {
-			["spells"] = "14801=136235",
+		["诅咒之刃"] = {
+			["spells"] = "5271=136020",
 		},
-		["酸息术"] = {
-			["spells"] = "12533=136007,12884=136007,12891=136007",
+		["魔纹包"] = {
+			["spells"] = "12065=132149,12110=136021",
 		},
-		["强化真言术：盾"] = {
-			["spells"] = "14748=135940,14768=135940,14769=135940,24191=136235",
+		["生命封印"] = {
+			["spells"] = "9172=136235",
 		},
 		["Increased Strength 06"] = {
 			["spells"] = "7508=136235",
 		},
-		["公式：附魔靴子 - 强效耐力"] = {
-			["spells"] = "20067=136235",
+		["恒金渔线"] = {
+			["spells"] = "24302=136235",
 		},
-		["图样：霜刃手套"] = {
-			["spells"] = "19207=136235",
+		["Increased Nature Resist 08"] = {
+			["spells"] = "14628=136235",
 		},
-		["法术集中"] = {
-			["spells"] = "12854=136121",
+		["丝瓜"] = {
+			["spells"] = "23595=136235",
 		},
-		["减速软泥"] = {
-			["spells"] = "16050=136091",
+		["拉姆斯登的闪电钉"] = {
+			["spells"] = "17668=135990,17669=135990",
 		},
-		["白色强盗面罩"] = {
-			["spells"] = "12059=132149",
+		["Save Ouro Health"] = {
+			["spells"] = "26076=136235",
 		},
-		["Increased Arcane Resist 06"] = {
-			["spells"] = "14708=136235",
+		["召唤雷霆之击"] = {
+			["spells"] = "21180=136235",
 		},
 		["恶魔之击"] = {
 			["spells"] = "16551=132090",
@@ -22809,11 +24801,11 @@ WeakAurasOptionsSaved = {
 		["食谱：石鳞鳕鱼"] = {
 			["spells"] = "7831=136235",
 		},
-		["Increased Arcane Resist 03"] = {
-			["spells"] = "14705=136235",
+		["次级火焰石效果"] = {
+			["spells"] = "1054=135821",
 		},
-		["香料冲击波"] = {
-			["spells"] = "31363=132965",
+		["血红之怒"] = {
+			["spells"] = "16843=135818,16844=135818",
 		},
 		["Increase Spell Dam 23 - Dreadmist"] = {
 			["spells"] = "30778=136235",
@@ -22821,53 +24813,53 @@ WeakAurasOptionsSaved = {
 		["宠物石"] = {
 			["spells"] = "17469=135240",
 		},
-		["水下诱鱼器"] = {
-			["spells"] = "8089=134335,9271=136235,9272=136235",
+		["Advanced Target Dummy - Event 003"] = {
+			["spells"] = "19723=136172",
 		},
-		["斧类武器投掷"] = {
-			["spells"] = "6466=132395",
+		["Increased Fire Resist 30"] = {
+			["spells"] = "14610=136235",
 		},
 		["Increased Damage - Beast 14"] = {
 			["spells"] = "7596=136235",
 		},
-		["强化愤怒"] = {
-			["spells"] = "16814=136006,16815=136006,16816=136006,16817=136006,16818=136006",
+		["防护火焰结界"] = {
+			["spells"] = "543=135806,874=136235,1035=135806,8457=135806,8458=135806,8459=135806,8460=135806,10223=135806,10224=135806,10225=135806,10226=135806,15041=135806",
 		},
-		["Weak Poison Proc"] = {
-			["spells"] = "6752=136188",
+		["碧蓝丝质披风"] = {
+			["spells"] = "8786=132149",
 		},
-		["Increased Shadow Resist 29"] = {
-			["spells"] = "14692=136235",
+		["炸药"] = {
+			["spells"] = "8800=135826",
 		},
-		["Increased Shadow Resist 10"] = {
-			["spells"] = "14673=136235",
+		["Summon Duke Fire, Trigger"] = {
+			["spells"] = "24766=136235",
 		},
 		["放置坠饰"] = {
 			["spells"] = "8001=136235",
 		},
-		["毒蛇钉刺"] = {
-			["spells"] = "1978=132204,2003=132204,13549=132204,13550=132204,13551=132204,13552=132204,13553=132204,13554=132204,13555=132204,13556=132204,13557=132204,13558=132204,13559=132204,13560=132204,13561=132204,13562=132204,25295=132204,25405=132204,25968=132282",
+		["召唤小鬼"] = {
+			["spells"] = "688=136218,1366=136218,11939=136218,23503=136218",
 		},
 		["喝水"] = {
 			["spells"] = "430=132794,431=132794,432=132794,1133=132794,1135=132794,1137=132794,10250=132805,14823=136168,22734=132805,25696=132794,26261=132794,26402=132794,26473=132794,26475=132794",
 		},
-		["追猎者之盟"] = {
-			["spells"] = "28756=136095,28757=136095,28758=132127",
+		["火焰箭，DoT强化"] = {
+			["spells"] = "21230=136235",
 		},
-		["Increase Fire Dam 8"] = {
-			["spells"] = "9400=136235,9401=136235",
+		["Increased Spirit 17"] = {
+			["spells"] = "14436=136235",
 		},
-		["趣味炸弹"] = {
-			["spells"] = "20547=132863",
+		["Increased Fire Resist 14"] = {
+			["spells"] = "14594=136235",
 		},
-		["酸性喷射"] = {
-			["spells"] = "26050=136016",
+		["符文板甲战靴"] = {
+			["spells"] = "16665=136192",
 		},
-		["Increased Nature Resist 08"] = {
-			["spells"] = "14628=136235",
+		["自然抗性图腾"] = {
+			["spells"] = "10595=136061,10597=136061,10600=136061,10601=136061,10602=136061,10603=136061",
 		},
-		["丝瓜"] = {
-			["spells"] = "23595=136235",
+		["Increased Frost Resist 34"] = {
+			["spells"] = "14573=136235",
 		},
 		["堕落"] = {
 			["spells"] = "23439=136129",
@@ -22875,8 +24867,8 @@ WeakAurasOptionsSaved = {
 		["Increased Block 7"] = {
 			["spells"] = "21490=136235,21491=136235,21492=136235,21493=136235",
 		},
-		["Save Ouro Health"] = {
-			["spells"] = "26076=136235",
+		["Rocket, BLUE"] = {
+			["spells"] = "26344=136235",
 		},
 		["雏龙之语：绿色"] = {
 			["spells"] = "22288=136010,22289=136010,22561=136010",
@@ -22887,23 +24879,23 @@ WeakAurasOptionsSaved = {
 		["设计图：秘银符文战锤"] = {
 			["spells"] = "10010=136235",
 		},
-		["异种蝎群召唤"] = {
-			["spells"] = "6677=136122",
+		["水上行走"] = {
+			["spells"] = "546=135863,562=136235,1338=135863,11319=134776",
 		},
-		["Increased Fire Resist 33"] = {
-			["spells"] = "14613=136235",
+		["全力一击 IV"] = {
+			["spells"] = "1709=132316,1713=132316",
 		},
-		["Advanced Target Dummy - Event 003"] = {
-			["spells"] = "19723=136172",
+		["混乱集中"] = {
+			["spells"] = "22418=135824",
 		},
-		["Increased Fire Resist 30"] = {
-			["spells"] = "14610=136235",
+		["熟化中毛皮"] = {
+			["spells"] = "3817=136235,3819=136021",
 		},
-		["图样：多彩护手"] = {
-			["spells"] = "23716=136235",
+		["雏龙之语：红色"] = {
+			["spells"] = "22283=136010,22284=135805,22558=135805",
 		},
-		["Increased Fire Resist 29"] = {
-			["spells"] = "14609=136235",
+		["召唤幻象"] = {
+			["spells"] = "747=136235,17773=136122",
 		},
 		["Ouro Submerge Visual"] = {
 			["spells"] = "26063=135830",
@@ -22914,77 +24906,20 @@ WeakAurasOptionsSaved = {
 		["Hive'Zara Larva Aggro Effect"] = {
 			["spells"] = "25724=136235",
 		},
-		["Increased Fire Resist 28"] = {
-			["spells"] = "14608=136235",
+		["巫毒"] = {
+			["spells"] = "17009=136121",
 		},
 		["暗影迷雾"] = {
 			["spells"] = "7068=136160,17820=136160,22687=136160,23224=136160",
 		},
-		["作战鸣叫"] = {
-			["spells"] = "23060=133707",
+		["遗弃技能：暗影"] = {
+			["spells"] = "7053=136123",
 		},
 		["Summon Duke,Trigger"] = {
 			["spells"] = "24762=136235",
 		},
-		["Increased Fire Resist 22"] = {
-			["spells"] = "14602=136235",
-		},
-		["召唤小鬼"] = {
-			["spells"] = "688=136218,1366=136218,11939=136218,23503=136218",
-		},
-		["火焰箭，DoT强化"] = {
-			["spells"] = "21230=136235",
-		},
-		["Increased Fire Resist 14"] = {
-			["spells"] = "14594=136235",
-		},
-		["死灵之毒"] = {
-			["spells"] = "28776=132105",
-		},
-		["Increased Fire Resist 04"] = {
-			["spells"] = "14584=136235",
-		},
-		["Increased Frost Resist 38"] = {
-			["spells"] = "14577=136235",
-		},
-		["倒光酒桶"] = {
-			["spells"] = "25864=136235",
-		},
-		["Increased Frost Resist 34"] = {
-			["spells"] = "14573=136235",
-		},
-		["水上行走"] = {
-			["spells"] = "546=135863,562=136235,1338=135863,11319=134776",
-		},
-		["莫格莱尼印记"] = {
-			["spells"] = "28834=136192",
-		},
-		["Increased Frost Resist 05"] = {
-			["spells"] = "14546=136235",
-		},
-		["冰霜箭"] = {
-			["spells"] = "24942=135846,28478=135846,28479=135846,29501=135934,29502=135990",
-		},
-		["爆炸虫"] = {
-			["spells"] = "804=135805",
-		},
-		["暗影箭雨"] = {
-			["spells"] = "9081=136197,14887=136197,15245=136197,17228=136197,20741=136197,21341=136197,22665=136197,22878=136197,25586=136197,27382=136197,27383=136197,27646=136197,27831=136197,28407=136197,28448=136197,28599=136197",
-		},
-		["设计图：君王板甲战靴"] = {
-			["spells"] = "16688=136235",
-		},
-		["宠物升级 II"] = {
-			["spells"] = "1589=136235",
-		},
-		["沸腾瘟疫"] = {
-			["spells"] = "23072=136127",
-		},
-		["遗弃技能：暗影"] = {
-			["spells"] = "7053=136123",
-		},
-		["致伤毒药 IV"] = {
-			["spells"] = "13230=134197",
+		["Increased Strength 28"] = {
+			["spells"] = "14500=136235",
 		},
 		["六魔包"] = {
 			["spells"] = "14537=136129",
@@ -22992,8 +24927,65 @@ WeakAurasOptionsSaved = {
 		["分离"] = {
 			["spells"] = "14533=135990",
 		},
-		["野人背心"] = {
-			["spells"] = "6661=136235,6662=136021",
+		["Party Fever Effect"] = {
+			["spells"] = "6759=136142",
+		},
+		["死灵之毒"] = {
+			["spells"] = "28776=132105",
+		},
+		["盾刺"] = {
+			["spells"] = "12099=132381,12782=132381",
+		},
+		["百合根"] = {
+			["spells"] = "18832=136235",
+		},
+		["倒光酒桶"] = {
+			["spells"] = "25864=136235",
+		},
+		["飓风术"] = {
+			["spells"] = "5197=136018,5199=136018",
+		},
+		["践踏"] = {
+			["spells"] = "4282=132368,4283=132368,4767=132368,5568=136063,6019=132368,12612=132939,15550=136063,25056=132091,27993=132368",
+		},
+		["设计图：铜质宝石手套"] = {
+			["spells"] = "3350=136235",
+		},
+		["Increased Arcane Resist 20"] = {
+			["spells"] = "14722=136235",
+		},
+		["Increased Arcane Resist 01"] = {
+			["spells"] = "14664=136235",
+		},
+		["爆炸虫"] = {
+			["spells"] = "804=135805",
+		},
+		["Increased Stamina 25"] = {
+			["spells"] = "14472=136235",
+		},
+		["设计图：君王板甲战靴"] = {
+			["spells"] = "16688=136235",
+		},
+		["宠物升级 II"] = {
+			["spells"] = "1589=136235",
+		},
+		["传送器抵达"] = {
+			["spells"] = "23448=135894,23450=136152",
+		},
+		["Increased Nature Resist 12"] = {
+			["spells"] = "14633=136235",
+		},
+		["地狱火"] = {
+			["spells"] = "1122=136219,1413=136219,19695=135818,19698=135818,20799=136235,22699=135860,24670=136219",
+		},
+		["附魔盾牌 - 强效精神"] = {
+			["spells"] = "13905=135913,13906=135913",
+		},
+		["Increased 1H Sword"] = {
+			["spells"] = "7520=136235,7523=136235,7525=136235,7527=136235,14121=136235,15763=136235,15764=136235,15765=136235,15896=136235,15897=136235,15898=136235,15899=136235,15900=136235,15901=136235,15902=136235,15903=136235,15904=136235,15905=136235,18061=136235",
+		},
+		["设计图：符文板甲护腿"] = {
+			["spells"] = "16754=136235",
 		},
 		["冲撞痛击 II"] = {
 			["spells"] = "2443=132326",
@@ -23004,38 +24996,38 @@ WeakAurasOptionsSaved = {
 		["仇恨"] = {
 			["spells"] = "20226=136235,22701=136235,22764=136235,22765=136235",
 		},
-		["慢性毒药"] = {
-			["spells"] = "14532=136067",
+		["熊形态"] = {
+			["spells"] = "5487=132276,5488=132276,7090=132276,18309=132276,19030=132276,19179=132276,27543=132276",
 		},
-		["召唤螃蟹"] = {
-			["spells"] = "7907=133708",
+		["Increased Spirit 40"] = {
+			["spells"] = "14461=136235",
 		},
-		["土灵印记"] = {
-			["spells"] = "24884=136057",
+		["奥术气泡"] = {
+			["spells"] = "9438=135896",
 		},
-		["穿刺"] = {
-			["spells"] = "15860=132324,16001=132324,16493=132312,16494=132312,24049=132324,26025=132155,26548=132324,28783=132090",
+		["专注光环"] = {
+			["spells"] = "19746=135933,19747=135933",
 		},
-		["屠魔药剂"] = {
-			["spells"] = "11406=135957,11477=136235",
+		["召唤赤环蛇"] = {
+			["spells"] = "10719=132311",
 		},
-		["践踏"] = {
-			["spells"] = "4282=132368,4283=132368,4767=132368,5568=136063,6019=132368,12612=132939,15550=136063,25056=132091,27993=132368",
+		["召唤暴怒的狮鹫"] = {
+			["spells"] = "14313=136235",
 		},
-		["Increased Frost Resist 23"] = {
-			["spells"] = "14562=136235",
+		["强化火焰图腾"] = {
+			["spells"] = "16086=135824,16544=135824",
 		},
-		["Increased Strength 17"] = {
-			["spells"] = "14489=136235",
+		["Summon Corpse Scarabs Delay"] = {
+			["spells"] = "28992=136235,28994=136235",
 		},
-		["召唤睡梦守卫的幻象"] = {
-			["spells"] = "15114=136222",
+		["图样：野人腰带"] = {
+			["spells"] = "3808=136235",
 		},
-		["Increased Stamina 25"] = {
-			["spells"] = "14472=136235",
+		["制造热情药水"] = {
+			["spells"] = "898=136235",
 		},
-		["Increased Stamina 23"] = {
-			["spells"] = "14470=136235",
+		["Knockback 500 Triggers"] = {
+			["spells"] = "13541=136235,13566=136235",
 		},
 		["召唤活火"] = {
 			["spells"] = "5110=135805",
@@ -23043,11 +25035,11 @@ WeakAurasOptionsSaved = {
 		["高级炼金术"] = {
 			["spells"] = "3465=136240",
 		},
-		["Increased Stamina 21"] = {
-			["spells"] = "14468=136235",
+		["Minion Spawn-in"] = {
+			["spells"] = "28234=136235",
 		},
-		["力场崩溃"] = {
-			["spells"] = "13235=136135",
+		["猛虎之怒"] = {
+			["spells"] = "5217=132242,5218=132242,6793=132242,6794=132242,9845=132242,9846=132242,9847=132242,9848=132242",
 		},
 		["图样：符文皮甲护腕"] = {
 			["spells"] = "19175=136235",
@@ -23058,8 +25050,8 @@ WeakAurasOptionsSaved = {
 		["暗角诅咒"] = {
 			["spells"] = "6922=136020",
 		},
-		["图样：硬化蝎壳胸甲"] = {
-			["spells"] = "10527=136235",
+		["凿击"] = {
+			["spells"] = "1776=132155,1777=132155,1780=132155,1781=132155,8629=132155,8630=132155,11285=132155,11286=132155,11287=132155,11288=132155,12540=132155,13579=132155,24698=132155,28456=132155",
 		},
 		["吉安娜的签名"] = {
 			["spells"] = "23122=136235",
@@ -23073,14 +25065,14 @@ WeakAurasOptionsSaved = {
 		["强化毒药"] = {
 			["spells"] = "14113=132273,14114=132273,14115=132273,14116=132273,14117=132273,21881=132273",
 		},
-		["抵抗沉默"] = {
-			["spells"] = "18985=136225,19786=136235,26208=136235",
+		["击退"] = {
+			["spells"] = "10101=132939,11130=132939,18670=132939,18813=132939,18945=132939,19633=132939,20686=132939,23382=132939,26027=132219,28405=132219,28438=132219,30056=132219",
 		},
 		["佐拉黄蜂"] = {
 			["spells"] = "19459=136006",
 		},
-		["Quest - Temporal Parasite Summon #2"] = {
-			["spells"] = "16630=136235",
+		["公式：附魔双手武器 - 次级精神"] = {
+			["spells"] = "13393=136235",
 		},
 		["图样：邪恶皮甲腰带"] = {
 			["spells"] = "19212=136235",
@@ -23088,77 +25080,77 @@ WeakAurasOptionsSaved = {
 		["传送到斯坦索姆"] = {
 			["spells"] = "31605=136235",
 		},
-		["Increased Spirit 40"] = {
-			["spells"] = "14461=136235",
+		["Increased Fire Resist 34"] = {
+			["spells"] = "14614=136235",
 		},
 		["Increase Frost Dam 12"] = {
 			["spells"] = "9307=136235",
 		},
-		["雷霆召唤"] = {
-			["spells"] = "16041=136014,16117=136014,16118=136014,16119=136014,16120=136014",
+		["图样：绿色丝甲"] = {
+			["spells"] = "8785=136235",
 		},
 		["召唤灵魂"] = {
 			["spells"] = "3217=136235,3218=136235",
 		},
-		["召唤暴怒的狮鹫"] = {
-			["spells"] = "14313=136235",
+		["生命回复"] = {
+			["spells"] = "18222=135917",
 		},
-		["强化火焰图腾"] = {
-			["spells"] = "16086=135824,16544=135824",
+		["Increased Agility 21"] = {
+			["spells"] = "14385=136235",
 		},
-		["Increased Spirit 16"] = {
-			["spells"] = "14435=136235",
+		["Increased Shadow Resist 34"] = {
+			["spells"] = "14703=136235",
 		},
 		["配方：强效自然防护药水"] = {
 			["spells"] = "17602=136235",
 		},
-		["高涨士气"] = {
-			["spells"] = "10767=136053",
+		["浓烟山脉之心"] = {
+			["spells"] = "15596=134084",
 		},
-		["Increased Intellect 39"] = {
-			["spells"] = "14429=136235",
+		["铜质双刃刀"] = {
+			["spells"] = "9983=136192,9984=136235",
 		},
-		["Increased Intellect 34"] = {
-			["spells"] = "14424=136235",
+		["破胆猛击 IV"] = {
+			["spells"] = "1797=136235,1802=136235",
 		},
-		["Increased Intellect 31"] = {
-			["spells"] = "14421=136235",
+		["Increase Holy Dam 22"] = {
+			["spells"] = "21518=136235",
 		},
-		["Despawn Tentacles"] = {
-			["spells"] = "26399=136235",
+		["鲜血通道"] = {
+			["spells"] = "24617=136168",
 		},
-		["设计图：魔化瑟银头盔"] = {
-			["spells"] = "16759=136235",
+		["白色迅猛龙"] = {
+			["spells"] = "10795=132253,17450=132253",
 		},
 		["召唤恐惧战马"] = {
 			["spells"] = "23161=132238",
 		},
-		["公式：附魔双手武器 - 次级精神"] = {
-			["spells"] = "13393=136235",
+		["Increase Shadow Dam 69"] = {
+			["spells"] = "23265=136235",
 		},
 		["强化剥皮"] = {
 			["spells"] = "24591=135342",
 		},
-		["Increased Agility 32"] = {
-			["spells"] = "14396=136235",
+		["Increased Agility 09"] = {
+			["spells"] = "9099=136235",
 		},
 		["Demon Slaying 99"] = {
 			["spells"] = "18212=136172",
 		},
-		["传送：灯塔"] = {
-			["spells"] = "444=136235",
+		["萨弗拉斯之眼"] = {
+			["spells"] = "21160=136192",
 		},
-		["图样：绿色丝甲"] = {
-			["spells"] = "8785=136235",
+		["Complete Arathi Basin quest, 5 bases"] = {
+			["spells"] = "24064=136235",
 		},
-		["Pagle's Point Cast - Create Mudskunk Lure"] = {
-			["spells"] = "24325=132932",
+		["图样：生命护肩"] = {
+			["spells"] = "19171=136235",
 		},
-		["精灵之火（野性）"] = {
-			["spells"] = "3739=136033,16857=136033,17390=136033,17391=136033,17392=136033,17396=136033,17397=136033",
+		["召唤花羽鹦鹉"] = {
+			["spells"] = "10682=132311",
 		},
-		["蛮皮护腿"] = {
-			["spells"] = "10572=136235,23625=136021",
+		["寒冰护体"] = {
+			["spells"] = "2890=135988,11426=135988,13031=135988,13032=135988,13033=135988,13037=135988,13038=135988,13039=135988",
 		},
 		["龙类悬浮"] = {
 			["spells"] = "18430=136235",
@@ -23166,8 +25158,8 @@ WeakAurasOptionsSaved = {
 		["Cluster Rocket, RED BIG - SE"] = {
 			["spells"] = "26503=136235",
 		},
-		["Increased Agility 21"] = {
-			["spells"] = "14385=136235",
+		["占据"] = {
+			["spells"] = "17244=136129,17250=136235,19832=136222,23014=136222,23307=136129",
 		},
 		["刺破护甲"] = {
 			["spells"] = "11791=132109,17315=132109",
@@ -23175,35 +25167,35 @@ WeakAurasOptionsSaved = {
 		["强化毒蝎钉刺"] = {
 			["spells"] = "19486=132169,19491=132169,19493=132169,19494=132169",
 		},
-		["浸魔披风 - 次级防护"] = {
-			["spells"] = "7865=135913,7866=135913",
+		["冰霜冲击"] = {
+			["spells"] = "14105=135846,16407=135846,18085=135846,18092=135846,18204=135846,18276=135846,18398=135846,19260=135846,20869=135846,27808=135840,29879=135840",
 		},
-		["鬼魅攻击"] = {
-			["spells"] = "14278=136136",
+		["图样：绿色幼龙护腕"] = {
+			["spells"] = "9217=136235",
 		},
-		["强效自然防护药水"] = {
-			["spells"] = "17576=136235",
+		["幽魂之狼"] = {
+			["spells"] = "519=136235,2645=136095,3691=136235,5387=136095,5389=136095",
 		},
-		["标记"] = {
-			["spells"] = "14209=136235,14210=136235,14227=136235,28836=136235",
+		["Increased Fire Resist 43"] = {
+			["spells"] = "14973=136235",
 		},
 		["图样：原始蝙蝠皮护腕"] = {
 			["spells"] = "24128=136235",
 		},
-		["Increased Rejuvenation Duration"] = {
-			["spells"] = "21871=136081",
+		["Increased Frost Resist 30"] = {
+			["spells"] = "14569=136235",
 		},
 		["侦测相思病"] = {
 			["spells"] = "26802=133884",
 		},
-		["科琳水晶爆炸"] = {
-			["spells"] = "14208=136235",
+		["绿铁护手"] = {
+			["spells"] = "3336=136192",
 		},
-		["冷血"] = {
-			["spells"] = "14177=135988",
+		["强化撕裂"] = {
+			["spells"] = "12286=132155,12658=132155,12659=132155,21831=132155",
 		},
-		["白色迅猛龙"] = {
-			["spells"] = "10795=132253,17450=132253",
+		["图样：原始蝙蝠皮手套"] = {
+			["spells"] = "24127=136235",
 		},
 		["秘银细剑"] = {
 			["spells"] = "10005=136192",
@@ -23211,35 +25203,35 @@ WeakAurasOptionsSaved = {
 		["拯救圣印"] = {
 			["spells"] = "1039=136235",
 		},
-		["Increase Shadow Dam 69"] = {
-			["spells"] = "23265=136235",
+		["软底亚麻靴"] = {
+			["spells"] = "3845=132149,3880=136021",
 		},
 		["Razorfen Downs Idol Room Spawn End Boss"] = {
 			["spells"] = "12949=136235",
 		},
-		["魔化瑟银头盔"] = {
-			["spells"] = "16742=136192",
+		["骷髅矿工爆炸"] = {
+			["spells"] = "6469=135826",
 		},
 		["温暖之焰"] = {
 			["spells"] = "23040=135805",
 		},
-		["Bloodpetal Poison Proc"] = {
-			["spells"] = "14111=136188",
+		["Increase Spell Dam 17"] = {
+			["spells"] = "18052=136235",
 		},
-		["冰霜冲击"] = {
-			["spells"] = "14105=135846,16407=135846,18085=135846,18092=135846,18204=135846,18276=135846,18398=135846,19260=135846,20869=135846,27808=135840,29879=135840",
+		["Feral Move Speed Increase"] = {
+			["spells"] = "23218=136095",
 		},
-		["Demon Slaying 117"] = {
-			["spells"] = "14098=136172",
+		["Attack Power 62"] = {
+			["spells"] = "15816=136235",
 		},
-		["Increased Frost Resist 13"] = {
-			["spells"] = "14554=136235",
+		["图样：霜刃手套"] = {
+			["spells"] = "19207=136235",
 		},
-		["强化伏击"] = {
-			["spells"] = "14079=132282,14080=132282,14081=132282",
+		["Increased Shadow Resist 01"] = {
+			["spells"] = "14663=136235",
 		},
-		["Increase Spell Dam 14"] = {
-			["spells"] = "14054=136235",
+		["Jeff Dummy 1"] = {
+			["spells"] = "4504=135926",
 		},
 		["图样：熔岩犬皮靴"] = {
 			["spells"] = "20852=136235",
@@ -23247,50 +25239,14 @@ WeakAurasOptionsSaved = {
 		["召唤沙怒奴隶"] = {
 			["spells"] = "11904=136235",
 		},
-		["任务自杀"] = {
-			["spells"] = "14050=136168",
-		},
-		["软底亚麻靴"] = {
-			["spells"] = "3845=132149,3880=136021",
-		},
-		["野性幽魂"] = {
-			["spells"] = "555=136095,1350=136095",
-		},
-		["简易的褶裙"] = {
-			["spells"] = "12046=132149,12120=136021",
-		},
-		["图样：蓝色龙鳞护肩"] = {
-			["spells"] = "19209=136235",
-		},
-		["水流喷射"] = {
-			["spells"] = "13586=135836,21790=135836",
-		},
-		["地狱烈焰 II"] = {
-			["spells"] = "1124=135826,1402=135826",
-		},
-		["附魔手套 - 骑乘"] = {
-			["spells"] = "13947=135913",
-		},
-		["轰击软泥"] = {
-			["spells"] = "28280=136235",
-		},
-		["生命偷取"] = {
-			["spells"] = "20004=136235",
-		},
-		["蓝色亚麻衬衣"] = {
-			["spells"] = "2394=132149,2416=136021",
-		},
-		["结构图：瑟银零件"] = {
-			["spells"] = "19846=134153",
-		},
-		["酸液吐息"] = {
-			["spells"] = "24839=136007",
-		},
-		["图样：巫术师兜帽"] = {
-			["spells"] = "18665=136235",
+		["追踪人型生物"] = {
+			["spells"] = "5225=132328,5226=132328,10236=132089,10237=132089,19883=135942,20160=135942",
 		},
 		["Increased Arcane Resist 30"] = {
 			["spells"] = "14732=136235",
+		},
+		["野性幽魂"] = {
+			["spells"] = "555=136095,1350=136095",
 		},
 		["公式：附魔护腕 - 偏斜"] = {
 			["spells"] = "13932=136235",
@@ -23298,26 +25254,62 @@ WeakAurasOptionsSaved = {
 		["深红丝质长袍"] = {
 			["spells"] = "8802=132149",
 		},
-		["大师级附魔"] = {
-			["spells"] = "13921=136244",
+		["水流喷射"] = {
+			["spells"] = "13586=135836,21790=135836",
+		},
+		["地狱烈焰 II"] = {
+			["spells"] = "1124=135826,1402=135826",
+		},
+		["冲锋"] = {
+			["spells"] = "100=132337,1738=132337,6178=132337,6180=132337,7370=132184,7371=132184,11578=132337,11579=132337,20508=132337,22120=132337,22911=132337,24023=132337,24193=132337,24315=132337,24408=132337,25821=132337,26177=132184,26178=132184,26179=132184,26184=132184,26185=132184,26186=132184,26201=132184,26202=132184,27685=132184,28343=132184",
+		},
+		["轰击软泥"] = {
+			["spells"] = "28280=136235",
+		},
+		["生命偷取"] = {
+			["spells"] = "20004=136235",
 		},
 		["复生"] = {
 			["spells"] = "20484=136080,20485=136080,20608=136080,20613=136080,20739=136080,20742=136080,20744=136080,20745=136080,20747=136080,20748=136080,20749=136080,20750=136080,21169=136080,27740=136080",
 		},
-		["A-Mid Alliance"] = {
-			["spells"] = "23934=136235",
-		},
-		["制造先知之水"] = {
-			["spells"] = "5026=136168",
-		},
 		["附魔手套 - 力量"] = {
 			["spells"] = "13887=135913,13888=135913",
+		},
+		["酸液吐息"] = {
+			["spells"] = "24839=136007",
+		},
+		["毒蛇钉刺"] = {
+			["spells"] = "1978=132204,2003=132204,13549=132204,13550=132204,13551=132204,13552=132204,13553=132204,13554=132204,13555=132204,13556=132204,13557=132204,13558=132204,13559=132204,13560=132204,13561=132204,13562=132204,25295=132204,25405=132204,25968=132282",
+		},
+		["追猎者之盟"] = {
+			["spells"] = "28756=136095,28757=136095,28758=132127",
+		},
+		["机关枪"] = {
+			["spells"] = "10346=132222,15249=132222",
+		},
+		["鬼魅攻击"] = {
+			["spells"] = "14278=136136",
+		},
+		["神圣强化"] = {
+			["spells"] = "5923=135938,5924=135938,5925=135938,5926=135938,25829=135938",
+		},
+		["附魔护腕 - 强效精神"] = {
+			["spells"] = "13846=135913",
+		},
+		["屠夫吸取"] = {
+			["spells"] = "7485=136208,7486=136208",
+		},
+		["坚定意志"] = {
+			["spells"] = "14522=135995,14788=135995,14789=135995,14790=135995,14791=135995",
+		},
+		["配方：强效冰霜防护药水"] = {
+			["spells"] = "17601=136235",
 		},
 		["Block Value 02"] = {
 			["spells"] = "21539=136235",
 		},
-		["寒冬"] = {
-			["spells"] = "22662=136066",
+		["图样：恶魔布靴"] = {
+			["spells"] = "18510=136235",
 		},
 		["设计图：铁质盾刺"] = {
 			["spells"] = "7226=136235",
@@ -23325,32 +25317,14 @@ WeakAurasOptionsSaved = {
 		["Activate Bomb 01B"] = {
 			["spells"] = "11796=136235",
 		},
-		["公式：附魔披风 - 次级敏捷"] = {
-			["spells"] = "13883=136235",
+		["召唤熔岩怪"] = {
+			["spells"] = "20506=135819",
 		},
-		["剑刃乱舞"] = {
-			["spells"] = "13877=132350,22482=132306",
+		["急速冲锋"] = {
+			["spells"] = "6268=132368,8260=132368",
 		},
-		["附魔护腕 - 强效精神"] = {
-			["spells"] = "13846=135913",
-		},
-		["食谱：瘦狼排"] = {
-			["spells"] = "15854=136235",
-		},
-		["火焰伤害"] = {
-			["spells"] = "7902=135805",
-		},
-		["食谱：热狼排"] = {
-			["spells"] = "15858=136235",
-		},
-		["Increased All Resist 09"] = {
-			["spells"] = "18680=136235",
-		},
-		["强化暗言术：痛"] = {
-			["spells"] = "15275=136207,15317=136207",
-		},
-		["设计图：辐光胸甲"] = {
-			["spells"] = "16677=136235",
+		["闪电护盾"] = {
+			["spells"] = "23551=136051,23552=136051,27635=136048",
 		},
 		["仲夏腊肠"] = {
 			["spells"] = "29333=134009",
@@ -23361,26 +25335,44 @@ WeakAurasOptionsSaved = {
 		["AOD"] = {
 			["spells"] = "13716=136195",
 		},
+		["设计图：秘银鳞片护肩"] = {
+			["spells"] = "9967=136235",
+		},
+		["强化暗言术：痛"] = {
+			["spells"] = "15275=136207,15317=136207",
+		},
 		["治疗石"] = {
 			["spells"] = "5720=135230,23472=135230,23473=135230",
 		},
-		["宠物恢复"] = {
-			["spells"] = "6328=132156,6329=132156,6330=132156,6331=132156,6332=132156,6333=132156,6334=132156,6335=132156,6336=132156,6337=132156,6338=132156,6339=132156,6340=132156,6341=132156,6342=132156",
+		["灼热之痛"] = {
+			["spells"] = "2945=135827,5676=135827,17919=135827,17920=135827,17921=135827,17922=135827,17923=135827,18154=135827,18155=135827,18156=135827,18157=135827,18158=135827",
 		},
-		["Increased Block 1"] = {
-			["spells"] = "13674=136235,21466=136235,21467=136235,21468=136235,21469=136235,21470=136235",
+		["Increase Holy Dam 17"] = {
+			["spells"] = "21515=136235",
+		},
+		["烟雾弹"] = {
+			["spells"] = "7964=132156,8817=136047",
+		},
+		["附魔披风 - 防御"] = {
+			["spells"] = "13635=135913,13636=135913",
+		},
+		["Increased Arcane Resist 14"] = {
+			["spells"] = "14716=136235",
+		},
+		["图样：红色魔纹护肩"] = {
+			["spells"] = "12146=136235",
 		},
 		["发条式同步协调陀螺仪"] = {
 			["spells"] = "3961=136235,4017=136235",
 		},
-		["附魔护腕 - 次级偏斜"] = {
-			["spells"] = "13646=135913",
+		["水下呼吸药剂"] = {
+			["spells"] = "7179=136235,7180=136021",
 		},
-		["黎明手套"] = {
-			["spells"] = "23633=136192",
+		["[PH] Summon Minion (trap: ghost/ghoul))"] = {
+			["spells"] = "27883=136235",
 		},
-		["Increase Shadow Dam 30"] = {
-			["spells"] = "18026=136235",
+		["Increased All Resist 13"] = {
+			["spells"] = "18684=136235",
 		},
 		["神圣顺劈"] = {
 			["spells"] = "18819=132338",
@@ -23391,29 +25383,29 @@ WeakAurasOptionsSaved = {
 		["法杖"] = {
 			["spells"] = "227=135145,15989=135145",
 		},
-		["附魔披风 - 防御"] = {
-			["spells"] = "13635=135913,13636=135913",
+		["Cluster Rocket, GREEN BIG - SE"] = {
+			["spells"] = "26493=136235",
 		},
-		["次级秘法精华"] = {
-			["spells"] = "13633=136192",
+		["Summon Lava Burst F"] = {
+			["spells"] = "21904=136235",
 		},
-		["恐惧嚎叫"] = {
-			["spells"] = "5484=136147,5486=136147,17928=136147,18169=136147",
+		["派出战斗者"] = {
+			["spells"] = "8645=136235",
 		},
 		["强化奥术智慧"] = {
 			["spells"] = "21088=135753,24489=136235",
 		},
-		["冰冻新星"] = {
-			["spells"] = "18099=135848",
+		["部队通过"] = {
+			["spells"] = "19749=136235",
 		},
 		["法术反制 - 沉默"] = {
 			["spells"] = "18469=135856",
 		},
-		["Increased All Resist 13"] = {
-			["spells"] = "18684=136235",
+		["艾莫莉丝光环"] = {
+			["spells"] = "24906=136235",
 		},
-		["Increase Arcane Dam 9"] = {
-			["spells"] = "13601=136235",
+		["Increase Spell Dam 43"] = {
+			["spells"] = "17280=136235",
 		},
 		["自然之力"] = {
 			["spells"] = "6913=136036,21962=136036,21963=136036,21964=136036",
@@ -23421,65 +25413,65 @@ WeakAurasOptionsSaved = {
 		["召唤普通猫"] = {
 			["spells"] = "15647=132599",
 		},
-		["Increase Arcane Dam 4"] = {
-			["spells"] = "13594=136235",
-		},
-		["派出战斗者"] = {
-			["spells"] = "8645=136235",
-		},
-		["霜鬃之力"] = {
-			["spells"] = "6957=136109",
-		},
-		["沙拉姆"] = {
-			["spells"] = "16604=135994,16606=135994",
-		},
-		["Summon Midsummer Bonfire Bunnies"] = {
-			["spells"] = "28784=136235",
-		},
-		["部队通过"] = {
-			["spells"] = "19749=136235",
-		},
-		["艾莫莉丝光环"] = {
-			["spells"] = "24906=136235",
-		},
-		["致伤"] = {
-			["spells"] = "13486=132155,14126=132155,16405=132155,16433=132155,16549=132155,17407=132155,18090=132155,18107=132155,21961=132155",
-		},
-		["传说奥术融合"] = {
-			["spells"] = "15463=136235,15490=136235",
-		},
-		["附魔披风 - 初级敏捷"] = {
-			["spells"] = "13419=135913",
+		["Tag: Bubbles"] = {
+			["spells"] = "22429=132212,22431=132212",
 		},
 		["持久耐力"] = {
 			["spells"] = "4187=136112,4188=136112,4189=136112,4190=136112,4191=136112,4192=136112,4193=136112,4194=136112,4195=136112,4196=136112,4197=136112,4198=136112,4199=136112,4200=136112,4201=136112,4202=136112,5041=136112,5042=136112,5048=136112,5049=136112",
 		},
+		["霜鬃之力"] = {
+			["spells"] = "6957=136109",
+		},
 		["召唤地狱火"] = {
 			["spells"] = "23426=136219,23427=136129",
 		},
-		["裂颅"] = {
-			["spells"] = "3148=132325,9791=132325,16172=132325",
+		["Summon Midsummer Bonfire Bunnies"] = {
+			["spells"] = "28784=136235",
 		},
 		["分解"] = {
 			["spells"] = "13262=135952",
 		},
-		["创造占卜之碗"] = {
-			["spells"] = "5809=133748,9489=133748",
-		},
 		["熔炼秘银"] = {
 			["spells"] = "10097=136235,10099=136235",
 		},
-		["神圣打击"] = {
-			["spells"] = "13953=132325,17143=132325,17284=132325",
+		["冰冻术 IV"] = {
+			["spells"] = "2135=135856",
 		},
-		["召唤黑纹灰猫"] = {
-			["spells"] = "10675=132311",
+		["传说奥术融合"] = {
+			["spells"] = "15463=136235,15490=136235",
+		},
+		["法力充沛"] = {
+			["spells"] = "4263=136101,4264=136101,4265=136101,4266=136101,4267=136101,4268=136101,4269=136101,4270=136101,4271=136101,4272=136101,4273=136101,4274=136101,4275=136101,4276=136101,4277=136101,4278=136101",
+		},
+		["龙之召唤"] = {
+			["spells"] = "13049=136221",
+		},
+		["辉煌之光"] = {
+			["spells"] = "24498=135934",
+		},
+		["裂颅"] = {
+			["spells"] = "3148=132325,9791=132325,16172=132325",
+		},
+		["法杖打击 II"] = {
+			["spells"] = "1929=132325",
+		},
+		["采集海潮之池样本#3"] = {
+			["spells"] = "12806=136235",
+		},
+		["制造叶基亚的卷轴"] = {
+			["spells"] = "12998=136235",
+		},
+		["魔石大师"] = {
+			["spells"] = "18757=136210,18758=136210",
+		},
+		["红色亚麻长袍"] = {
+			["spells"] = "2389=132149",
 		},
 		["双线毛纺护肩"] = {
 			["spells"] = "3848=132149,3881=136021",
 		},
-		["龙之召唤"] = {
-			["spells"] = "13049=136221",
+		["假死"] = {
+			["spells"] = "5384=132293,5385=132293",
 		},
 		["公式：卓越法力之油"] = {
 			["spells"] = "25138=136235",
@@ -23493,17 +25485,17 @@ WeakAurasOptionsSaved = {
 		["白色冒险者衬衣"] = {
 			["spells"] = "8483=132149,8490=136021",
 		},
-		["辉煌之光"] = {
-			["spells"] = "24498=135934",
+		["召唤尖啸者的灵魂"] = {
+			["spells"] = "12699=136235",
 		},
 		["徒手"] = {
 			["spells"] = "203=132154",
 		},
-		["食肉术"] = {
-			["spells"] = "3393=136231,3394=136231",
+		["大师级宝石学"] = {
+			["spells"] = "12691=134139,12692=134139",
 		},
-		["风歌夜曲"] = {
-			["spells"] = "15366=135934",
+		["Increased Hit Chance 4"] = {
+			["spells"] = "15467=136235",
 		},
 		["蛛网喷射"] = {
 			["spells"] = "29484=136113",
@@ -23514,29 +25506,29 @@ WeakAurasOptionsSaved = {
 		["Add Fire Dam - Weap 14"] = {
 			["spells"] = "7726=136235",
 		},
-		["采集海潮之池样本#3"] = {
-			["spells"] = "12806=136235",
+		["沙行者护腕"] = {
+			["spells"] = "24849=136235",
 		},
-		["制造叶基亚的卷轴"] = {
-			["spells"] = "12998=136235",
+		["绿色透镜"] = {
+			["spells"] = "12622=136235,12644=136235",
 		},
 		["召唤海盗财宝"] = {
 			["spells"] = "11462=136235",
 		},
-		["魔石大师"] = {
-			["spells"] = "18757=136210,18758=136210",
+		["Increase Frost Dam 69"] = {
+			["spells"] = "26725=136235",
 		},
-		["阿弗拉沙碎片"] = {
-			["spells"] = "12732=136077",
+		["传送门：幽暗城"] = {
+			["spells"] = "11418=135751,11425=135751",
 		},
 		["变异鱼"] = {
 			["spells"] = "8063=133889",
 		},
-		["地精施工头盔"] = {
-			["spells"] = "12718=136235,12770=136235",
+		["Create Thorium Brotherhood Contract DND"] = {
+			["spells"] = "23059=136235",
 		},
-		["召唤尖啸者的灵魂"] = {
-			["spells"] = "12699=136235",
+		["心智统御"] = {
+			["spells"] = "25772=136172",
 		},
 		["兽人护腿"] = {
 			["spells"] = "9957=136192",
@@ -23544,32 +25536,32 @@ WeakAurasOptionsSaved = {
 		["Anubisath Guardian AOE"] = {
 			["spells"] = "9173=136235",
 		},
-		["Zap Necropolis"] = {
-			["spells"] = "28386=136235",
+		["Increased Fire Resist 02"] = {
+			["spells"] = "14582=136235",
 		},
-		["大师级宝石学"] = {
-			["spells"] = "12691=134139,12692=134139",
+		["强效力量祝福"] = {
+			["spells"] = "25782=135908,25915=135908,25916=135908,25917=135908",
 		},
-		["Increased Hit Chance 4"] = {
-			["spells"] = "15467=136235",
+		["地精起搏器"] = {
+			["spells"] = "9273=136235",
 		},
 		["Increase Nature Dam 6"] = {
 			["spells"] = "7696=136235",
 		},
-		["结构图：增亮护目镜"] = {
-			["spells"] = "12645=136235",
+		["召唤海龟"] = {
+			["spells"] = "7915=134061",
 		},
 		["虹吸生命"] = {
 			["spells"] = "18652=136082,18653=136082,18654=136082",
 		},
-		["绿色透镜"] = {
-			["spells"] = "12622=136235,12644=136235",
+		["Activate Bomb A"] = {
+			["spells"] = "11511=135990",
 		},
 		["喝下治疗药水"] = {
 			["spells"] = "15503=135915,15504=135915",
 		},
-		["Cluster Rocket, RED - SE"] = {
-			["spells"] = "26307=136235",
+		["自律"] = {
+			["spells"] = "25771=135952",
 		},
 		["打开法阵"] = {
 			["spells"] = "28278=136235",
@@ -23589,38 +25581,38 @@ WeakAurasOptionsSaved = {
 		["尖牙撕咬"] = {
 			["spells"] = "19771=132155",
 		},
-		["猫眼药剂"] = {
-			["spells"] = "12609=136235,12610=136021",
+		["惬意小火"] = {
+			["spells"] = "7353=135805,7358=135805",
 		},
 		["图样：银色长靴"] = {
 			["spells"] = "23670=136235",
 		},
-		["猫眼超级护目镜"] = {
-			["spells"] = "12607=136235",
+		["宁静"] = {
+			["spells"] = "740=136107,792=136235,1439=136107,8918=136107,8920=136107,9862=136107,9863=136107,9864=136107,9865=136107,21791=136107,25817=136107",
 		},
-		["魔石头盔"] = {
-			["spells"] = "9084=136245",
+		["拆毁者攻击"] = {
+			["spells"] = "12347=136235",
 		},
 		["真银胸甲"] = {
 			["spells"] = "9974=136192,9978=136235",
 		},
-		["强化坚韧"] = {
-			["spells"] = "21093=135753",
+		["火焰宝珠"] = {
+			["spells"] = "16982=135812",
 		},
-		["秘银管"] = {
-			["spells"] = "12589=136235,12632=136235",
+		["术士导魔"] = {
+			["spells"] = "8675=136121",
 		},
-		["设计图：绿铁护肩"] = {
-			["spells"] = "3531=136235",
+		["往日的尖啸"] = {
+			["spells"] = "7074=136164",
 		},
-		["地精起搏器"] = {
-			["spells"] = "9273=136235",
+		["瑟银护腕"] = {
+			["spells"] = "16644=136192",
 		},
-		["敏捷 VIII"] = {
-			["spells"] = "16885=134873",
+		["火焰吐息"] = {
+			["spells"] = "12257=135818,12278=135818,29388=135818",
 		},
-		["伊兰尼库斯隐形"] = {
-			["spells"] = "12495=135994",
+		["雷霆震裂"] = {
+			["spells"] = "8150=136105",
 		},
 		["致密炸药粉"] = {
 			["spells"] = "19788=136235,19844=136235",
@@ -23631,17 +25623,17 @@ WeakAurasOptionsSaved = {
 		["Increase Healing 30"] = {
 			["spells"] = "9318=136235,17371=136235,25067=136235",
 		},
-		["迦玛兰的妖术"] = {
-			["spells"] = "12479=136232,12480=136121,12483=136232",
+		["辐射之毒"] = {
+			["spells"] = "11638=136133",
 		},
-		["生命石治疗"] = {
-			["spells"] = "17712=135230",
+		["小型黄色烟花"] = {
+			["spells"] = "26295=136235",
 		},
-		["拆毁者攻击"] = {
-			["spells"] = "12347=136235",
+		["月光酒"] = {
+			["spells"] = "26389=132796",
 		},
-		["火焰宝珠"] = {
-			["spells"] = "16982=135812",
+		["召唤埃其亚基"] = {
+			["spells"] = "12189=136168",
 		},
 		["Increased Frost Resist 28"] = {
 			["spells"] = "14567=136235",
@@ -23649,65 +25641,65 @@ WeakAurasOptionsSaved = {
 		["无畏冲锋"] = {
 			["spells"] = "13327=136010,22641=136010,22646=136010",
 		},
-		["Attack Power 100"] = {
-			["spells"] = "28735=136235",
-		},
-		["Kodo Bones Trap"] = {
-			["spells"] = "17960=136235",
-		},
-		["结构图：瑟银弹"] = {
-			["spells"] = "19862=134153",
-		},
-		["往日的尖啸"] = {
-			["spells"] = "7074=136164",
-		},
-		["镀银青铜护腿"] = {
-			["spells"] = "12259=136192",
-		},
-		["火焰吐息"] = {
-			["spells"] = "12257=135818,12278=135818,29388=135818",
-		},
-		["初级耐力"] = {
-			["spells"] = "7455=136235",
-		},
-		["Polymorph Heal Effect"] = {
-			["spells"] = "12939=136071",
-		},
-		["附魔武器 - 寒冬之力"] = {
-			["spells"] = "21931=135913",
-		},
-		["小型黄色烟花"] = {
-			["spells"] = "26295=136235",
-		},
-		["感染之刺"] = {
-			["spells"] = "12245=136127,12246=136127",
-		},
-		["召唤埃其亚基"] = {
-			["spells"] = "12189=136168",
-		},
 		["侏儒摄像头连接"] = {
 			["spells"] = "6974=136235",
 		},
-		["重伤"] = {
-			["spells"] = "12162=132090,12721=132090,12834=132090,12849=132090,12850=132090,12867=132090,12868=132090,23256=132090,25646=132109,28467=132109",
-		},
-		["召唤僵尸"] = {
-			["spells"] = "16590=136187,29681=136235,29682=136235",
-		},
-		["Rocket, GREEN BIG"] = {
-			["spells"] = "26352=136235",
+		["召唤咕唧"] = {
+			["spells"] = "27241=132311",
 		},
 		["强化顺劈斩"] = {
 			["spells"] = "12329=132338,12950=132338,20496=132338",
 		},
+		["提高法术爆击率"] = {
+			["spells"] = "30440=136235,30441=136235",
+		},
+		["召唤古树之魂"] = {
+			["spells"] = "15033=136235",
+		},
+		["Increase Spell Dam 56"] = {
+			["spells"] = "23732=136235",
+		},
+		["Increase Shadow Dam 30"] = {
+			["spells"] = "18026=136235",
+		},
+		["Polymorph Heal Effect"] = {
+			["spells"] = "12939=136071",
+		},
+		["大地践踏"] = {
+			["spells"] = "19364=132368",
+		},
+		["原始狂怒"] = {
+			["spells"] = "16958=132278,16959=132278,16961=132278",
+		},
+		["腐化力量"] = {
+			["spells"] = "6816=135914",
+		},
+		["QAEnchant Gloves +15 Agility"] = {
+			["spells"] = "27112=135913",
+		},
+		["召唤小老鼠"] = {
+			["spells"] = "28740=132311",
+		},
+		["Signet Ring of the Bronze Dragonflight TANK R3 DND"] = {
+			["spells"] = "25934=136235",
+		},
+		["Increased Stamina 05"] = {
+			["spells"] = "7503=136235",
+		},
+		["Conjure Peasant DND"] = {
+			["spells"] = "23119=136235,23121=136235",
+		},
+		["沙拉姆"] = {
+			["spells"] = "16604=135994,16606=135994",
+		},
 		["制造特效灵魂石"] = {
 			["spells"] = "20757=136210,20769=136210",
 		},
-		["图样：雷织头带"] = {
-			["spells"] = "12147=136235",
+		["净化消耗降低"] = {
+			["spells"] = "27847=136052",
 		},
-		["爆炸陷阱"] = {
-			["spells"] = "13813=135826,13814=135826,14316=135826,14317=135826,14372=135826,14373=135826",
+		["灵魂的安抚"] = {
+			["spells"] = "24159=136235,24168=136235",
 		},
 		["Increased Armor 200 Shadowcraft"] = {
 			["spells"] = "29096=136235",
@@ -23721,26 +25713,26 @@ WeakAurasOptionsSaved = {
 		["黑铁地雷"] = {
 			["spells"] = "11802=136172",
 		},
-		["图样：红色魔纹外衣"] = {
-			["spells"] = "12136=136235",
+		["自由祝福"] = {
+			["spells"] = "1044=135968,1909=135968",
 		},
-		["设计图：金鳞胸甲"] = {
-			["spells"] = "3534=136235",
+		["法术能量护目镜超级改良版"] = {
+			["spells"] = "19794=136235",
 		},
 		["Summon Ribbon Pole Critter"] = {
 			["spells"] = "29708=136235",
 		},
-		["礼服夹克"] = {
-			["spells"] = "12093=132149,12135=136021",
+		["[PH] Summon Buttress"] = {
+			["spells"] = "28024=136235",
 		},
-		["图样：沙行者护手"] = {
-			["spells"] = "24861=136235",
+		["创造占卜之碗"] = {
+			["spells"] = "5809=133748,9489=133748",
 		},
-		["粉色魔纹衬衣"] = {
-			["spells"] = "12080=132149,12124=136021",
+		["黑女巫的拥抱"] = {
+			["spells"] = "28732=135736,28797=135736",
 		},
-		["召唤小老鼠"] = {
-			["spells"] = "28740=132311",
+		["携网卫士"] = {
+			["spells"] = "11920=132149",
 		},
 		["部族制皮"] = {
 			["spells"] = "10660=136069,10661=136247",
@@ -23754,29 +25746,29 @@ WeakAurasOptionsSaved = {
 		["刺穿护甲"] = {
 			["spells"] = "6016=136231,12097=136231",
 		},
-		["紫色魔纹衬衣"] = {
-			["spells"] = "12075=132149,12133=136021",
+		["梦游者"] = {
+			["spells"] = "28743=135900",
 		},
 		["软泥爆发"] = {
 			["spells"] = "30109=136007",
 		},
-		["吸引裂隙怒灵"] = {
-			["spells"] = "9012=136235",
+		["陷地图腾"] = {
+			["spells"] = "8376=136064,8378=136064",
 		},
-		["召唤冰霜亡魂"] = {
-			["spells"] = "12642=136221,12670=136187,12671=136187",
+		["风歌夜曲"] = {
+			["spells"] = "15366=135934",
 		},
-		["灵魂的安抚"] = {
-			["spells"] = "24159=136235,24168=136235",
+		["Increased Nature Resist 09"] = {
+			["spells"] = "14629=136235",
 		},
 		["Force Target - Kick"] = {
 			["spells"] = "17744=136168",
 		},
-		["红色魔纹短裤"] = {
-			["spells"] = "12060=132149",
+		["Increase Spell Dam 126"] = {
+			["spells"] = "28792=136235",
 		},
-		["Growl of Fortitude Proc"] = {
-			["spells"] = "6923=132091",
+		["Long bow shot (TEST)"] = {
+			["spells"] = "60=136235",
 		},
 		["阿塔莱骷髅图腾"] = {
 			["spells"] = "12506=136187,12507=136187",
@@ -23793,8 +25785,8 @@ WeakAurasOptionsSaved = {
 		["符文布靴"] = {
 			["spells"] = "18423=132149",
 		},
-		["巨槌诅咒"] = {
-			["spells"] = "11960=136020,11961=136020",
+		["蓝色罩衫"] = {
+			["spells"] = "7639=132149",
 		},
 		["召唤暗影法师"] = {
 			["spells"] = "12258=136187",
@@ -23802,14 +25794,14 @@ WeakAurasOptionsSaved = {
 		["含毒之刺"] = {
 			["spells"] = "7357=136077,15656=136077",
 		},
-		["修理英雄之剑"] = {
-			["spells"] = "11923=136192",
+		["黎明束腰"] = {
+			["spells"] = "23632=136192",
 		},
-		["携网卫士"] = {
-			["spells"] = "11920=132149",
+		["银色黎明委任徽章"] = {
+			["spells"] = "17670=133440",
 		},
-		["安图苏尔的爪牙"] = {
-			["spells"] = "11894=136235",
+		["艾奎尼克斯法杖充能"] = {
+			["spells"] = "11537=136235",
 		},
 		["强化破胆怒吼"] = {
 			["spells"] = "19870=132154,19871=132154,24456=136235",
@@ -23823,32 +25815,32 @@ WeakAurasOptionsSaved = {
 		["Increased Frost Resist 03"] = {
 			["spells"] = "14544=136235",
 		},
-		["陷地图腾"] = {
-			["spells"] = "8376=136064,8378=136064",
+		["蜥蜴采样"] = {
+			["spells"] = "11759=136235",
 		},
-		["Increased Nature Resist 09"] = {
-			["spells"] = "14629=136235",
+		["Increase Fire Dam 63"] = {
+			["spells"] = "26697=136235",
 		},
-		["Debug Frost Spell"] = {
-			["spells"] = "29607=135846",
+		["召唤奥格瑞玛步兵"] = {
+			["spells"] = "11632=136235",
 		},
-		["捕捉树人"] = {
-			["spells"] = "11877=136235,11885=136235",
+		["秘银重斧"] = {
+			["spells"] = "9993=136192,9994=136235",
 		},
-		["召唤塞尔萨玛巡山人"] = {
-			["spells"] = "11823=136235",
+		["洛丹伦的祝福"] = {
+			["spells"] = "30238=135946",
 		},
 		["狂热"] = {
 			["spells"] = "8191=135926",
 		},
-		["剧痛鞭笞"] = {
-			["spells"] = "7814=136136,7815=136136,7816=136136,7876=136136,7877=136136,7878=136136,11778=136136,11779=136136,11780=136136,11781=136136,11782=136136,11783=136136,15968=136136,15969=136136,20398=136136,20399=136136,20400=136136,20401=136136,20402=136136,21987=136136",
+		["强化坚韧"] = {
+			["spells"] = "21093=135753",
 		},
-		["Activate Bomb 04B"] = {
-			["spells"] = "11799=136235",
+		["图样：蛮皮外衣"] = {
+			["spells"] = "10545=136235",
 		},
-		["蜥蜴采样"] = {
-			["spells"] = "11759=136235",
+		["图样：紫色魔纹衬衣"] = {
+			["spells"] = "12172=136235",
 		},
 		["Remove Amorous"] = {
 			["spells"] = "26879=136235",
@@ -23859,26 +25851,26 @@ WeakAurasOptionsSaved = {
 		["侏儒洗脑帽"] = {
 			["spells"] = "12907=136235,12918=136235,13180=135995,13181=135995",
 		},
-		["冰霜速冻"] = {
-			["spells"] = "16803=135848",
+		["Attack Power 54"] = {
+			["spells"] = "15813=136235",
 		},
 		["初级力量"] = {
 			["spells"] = "7780=136235",
 		},
-		["召唤天灾控制器"] = {
-			["spells"] = "28092=136235",
+		["拳击"] = {
+			["spells"] = "6552=132938,6553=132938,6554=132938,6556=132938,12555=132938,13491=132938,15615=132938,19639=132938,19640=132938",
 		},
-		["Increase Fire Dam 63"] = {
-			["spells"] = "26697=136235",
+		["食谱：丛林大杂烩"] = {
+			["spells"] = "15862=136235",
 		},
-		["召唤奥格瑞玛步兵"] = {
-			["spells"] = "11632=136235",
+		["兴奋"] = {
+			["spells"] = "5934=132147",
 		},
 		["召唤枯木血虫"] = {
 			["spells"] = "11018=136168",
 		},
-		["加莫里塔摄像"] = {
-			["spells"] = "11610=136235",
+		["锐利武器 +5"] = {
+			["spells"] = "6516=132223",
 		},
 		["Increased Shadow Resist 08"] = {
 			["spells"] = "14671=136235",
@@ -23886,14 +25878,14 @@ WeakAurasOptionsSaved = {
 		["冬夜法袍"] = {
 			["spells"] = "18436=132149",
 		},
-		["Increased Critical Holy Spells"] = {
-			["spells"] = "24426=136235",
+		["Attack Power 100"] = {
+			["spells"] = "28735=136235",
 		},
-		["蓝色焰火"] = {
-			["spells"] = "11540=136235,23067=136235",
+		["耐力提高"] = {
+			["spells"] = "18191=132584,25661=132584",
 		},
-		["图样：红色亚麻外衣"] = {
-			["spells"] = "7631=136235",
+		["结构图：瑟银弹"] = {
+			["spells"] = "19862=134153",
 		},
 		["召唤黑斑白猫"] = {
 			["spells"] = "10678=132311",
@@ -23907,8 +25899,8 @@ WeakAurasOptionsSaved = {
 		["污浊之魂"] = {
 			["spells"] = "16567=136203",
 		},
-		["拳击"] = {
-			["spells"] = "6552=132938,6553=132938,6554=132938,6556=132938,12555=132938,13491=132938,15615=132938,19639=132938,19640=132938",
+		["Tag: Red Glow"] = {
+			["spells"] = "20370=135824",
 		},
 		["强化吸取法力"] = {
 			["spells"] = "17864=136208,18393=136208",
@@ -23916,65 +25908,53 @@ WeakAurasOptionsSaved = {
 		["Increased Arcane Resist 33"] = {
 			["spells"] = "14735=136235",
 		},
-		["栗色马"] = {
-			["spells"] = "6648=132261",
+		["点铁成金"] = {
+			["spells"] = "11479=133217,11493=136021",
 		},
 		["提高防御"] = {
 			["spells"] = "24774=136235,24775=136235",
 		},
-		["制造黄色穿孔卡片"] = {
-			["spells"] = "11512=136235",
+		["暗棕狼"] = {
+			["spells"] = "6654=132224",
 		},
-		["配方：阿尔萨斯的礼物"] = {
-			["spells"] = "11507=136235",
+		["毒性传染"] = {
+			["spells"] = "6672=136235",
 		},
 		["麻痹毒药 II"] = {
 			["spells"] = "8692=136066,8693=136066,8694=136066",
 		},
-		["克隆"] = {
-			["spells"] = "7952=136123,14146=136123,27890=136123",
+		["爆炸陷阱"] = {
+			["spells"] = "13813=135826,13814=135826,14316=135826,14317=135826,14372=135826,14373=135826",
 		},
 		["Increase Frost Dam 19"] = {
 			["spells"] = "17895=136235",
 		},
-		["Tag: Red Glow"] = {
-			["spells"] = "20370=135824",
+		["耻辱印记"] = {
+			["spells"] = "6767=136122",
 		},
 		["破冰护手"] = {
 			["spells"] = "28243=136192,28253=136235",
 		},
-		["点铁成金"] = {
-			["spells"] = "11479=133217,11493=136021",
+		["强化冰锥术"] = {
+			["spells"] = "11190=135852,12489=135852,12490=135852",
 		},
-		["致命毒素 III"] = {
-			["spells"] = "11470=132290",
+		["苔藓覆盖的脚"] = {
+			["spells"] = "6870=136052",
 		},
-		["强效敏捷药剂"] = {
-			["spells"] = "11467=136235,11498=136021",
-		},
-		["深海护手"] = {
-			["spells"] = "10630=136235,10631=136021",
-		},
-		["水下行走药剂"] = {
-			["spells"] = "11447=136235,11482=136021",
-		},
-		["合并地图碎片"] = {
-			["spells"] = "11438=136235",
-		},
-		["火焰箭 III"] = {
-			["spells"] = "1084=135810,1372=135810",
-		},
-		["优质皮裤"] = {
-			["spells"] = "7133=136235",
+		["Increased Frost Resist 14"] = {
+			["spells"] = "14553=136235",
 		},
 		["收割蜂群"] = {
 			["spells"] = "7277=135899",
 		},
-		["致命毒药 IV"] = {
-			["spells"] = "11354=132290,11356=132290,11358=132290",
+		["Increased Arcane Resist 09"] = {
+			["spells"] = "14711=136235",
 		},
-		["挥砍"] = {
-			["spells"] = "7342=132338,11837=132338,25814=132338",
+		["毒性唾液"] = {
+			["spells"] = "7125=136016",
+		},
+		["塞纳里奥草药包"] = {
+			["spells"] = "27724=132149",
 		},
 		["奥术精妙"] = {
 			["spells"] = "11210=135894,12592=135894",
@@ -23982,59 +25962,71 @@ WeakAurasOptionsSaved = {
 		["传授精制秘银胸甲"] = {
 			["spells"] = "11205=136235",
 		},
-		["Increased 2H Axe"] = {
-			["spells"] = "7549=136235,7550=136235,7552=136235,7554=136235,14817=136235,15766=136235,15767=136235,15768=136235,15907=136235,15909=136235,15912=136235,15913=136235,15914=136235,15916=136235,15917=136235,15919=136235,15920=136235,15921=136235",
-		},
-		["Nefarian Tunnel Selection (R3)"] = {
-			["spells"] = "23351=136235",
+		["僵尸形态"] = {
+			["spells"] = "7293=136224",
 		},
 		["祝福之砧"] = {
 			["spells"] = "11147=136235",
 		},
-		["强化烈焰风暴"] = {
-			["spells"] = "11108=135826,12349=135826,12350=135826,24491=136235",
+		["Imbue Chest - Absorb"] = {
+			["spells"] = "7855=135913",
 		},
-		["烈焰投掷"] = {
-			["spells"] = "11100=135815,12353=135815",
-		},
-		["Ward of Zum'rah Passive"] = {
-			["spells"] = "11087=136157",
+		["dmg"] = {
+			["spells"] = "7482=136115",
 		},
 		["颅骨之锚"] = {
 			["spells"] = "27915=136235,27931=136235,27937=136235",
 		},
-		["Increase Frost Dam 6"] = {
-			["spells"] = "7703=136235",
+		["Nefarian Tunnel Selection (R3)"] = {
+			["spells"] = "23351=136235",
 		},
-		["强化火焰冲击"] = {
-			["spells"] = "11078=135807,11080=135807,12342=135807",
+		["Holiday - Lunar Teleport: Ironforge"] = {
+			["spells"] = "26452=135758",
 		},
-		["Knockback 500"] = {
-			["spells"] = "11027=136235",
+		["Increased Critical 1"] = {
+			["spells"] = "7597=136235,9132=132222",
 		},
-		["学识爆发"] = {
-			["spells"] = "15646=133282",
+		["图样：大师长袍"] = {
+			["spells"] = "7644=136235",
 		},
-		["召唤哈扎里寄生虫"] = {
-			["spells"] = "11023=136168",
+		["Increase Nature Dam 4"] = {
+			["spells"] = "7694=136235",
 		},
-		["霜虎之刃"] = {
-			["spells"] = "3497=136192",
+		["召唤天灾控制器"] = {
+			["spells"] = "28092=136235",
 		},
 		["锐刺鞭笞者之根"] = {
 			["spells"] = "21955=134187",
 		},
-		["烈性酒精"] = {
-			["spells"] = "11009=132796",
+		["中级钓鱼"] = {
+			["spells"] = "7734=136245",
 		},
-		["图样：寒鳞护腕"] = {
-			["spells"] = "28233=136235",
+		["公式：附魔靴子 - 次级耐力"] = {
+			["spells"] = "7864=136235",
+		},
+		["学识爆发"] = {
+			["spells"] = "15646=133282",
+		},
+		["附魔护腕 - 精神"] = {
+			["spells"] = "13642=135913,13643=135913",
+		},
+		["霜虎之刃"] = {
+			["spells"] = "3497=136192",
+		},
+		["格罗姆的巨魔祭品"] = {
+			["spells"] = "24101=136235",
+		},
+		["召唤迅猛龙"] = {
+			["spells"] = "7910=133723",
+		},
+		["Increased Armor 20"] = {
+			["spells"] = "9761=136235",
 		},
 		["强化复仇"] = {
 			["spells"] = "12797=132353,12799=132353,12800=132353",
 		},
-		["召唤血色骑兵"] = {
-			["spells"] = "19722=136235",
+		["大型软浆怪（蓝）"] = {
+			["spells"] = "7944=135835",
 		},
 		["Increase Shadow Dam 6"] = {
 			["spells"] = "7709=136235",
@@ -24042,14 +26034,14 @@ WeakAurasOptionsSaved = {
 		["Armor IV"] = {
 			["spells"] = "16887=134866",
 		},
-		["低度酒精"] = {
-			["spells"] = "11007=132796",
+		["野性回复"] = {
+			["spells"] = "7948=136081,9616=136081",
 		},
 		["配方：梦境药剂"] = {
 			["spells"] = "11508=136235",
 		},
-		["骑术：机械陆行鸟"] = {
-			["spells"] = "10907=136103,10908=136103",
+		["召唤变异蹒跚者"] = {
+			["spells"] = "7970=136121",
 		},
 		["Increased Agility 19"] = {
 			["spells"] = "14383=136235",
@@ -24060,8 +26052,8 @@ WeakAurasOptionsSaved = {
 		["Disturb Rookery Egg (FAST)"] = {
 			["spells"] = "16556=136235",
 		},
-		["召唤燃烧仆从"] = {
-			["spells"] = "10870=135805",
+		["灵魂凋零"] = {
+			["spells"] = "8016=135914",
 		},
 		["配方：活力行动药水"] = {
 			["spells"] = "24372=136235",
@@ -24072,26 +26064,26 @@ WeakAurasOptionsSaved = {
 		["院长之杖"] = {
 			["spells"] = "18264=136232",
 		},
-		["拉瑟莱克之泪 II"] = {
-			["spells"] = "10866=136235",
+		["寒冷之锥"] = {
+			["spells"] = "30095=135852",
 		},
-		["制造探水棒"] = {
-			["spells"] = "10859=133748",
+		["长嘴泥鳅"] = {
+			["spells"] = "7753=136192",
 		},
 		["Increased Fire Resist 20"] = {
 			["spells"] = "14600=136235",
 		},
-		["召唤复制虫"] = {
-			["spells"] = "10858=136122",
+		["冰封攻击"] = {
+			["spells"] = "8034=135847,8037=135847,10458=135847,16352=135847,16353=135847",
 		},
-		["断线"] = {
-			["spells"] = "10856=132995",
+		["德鲁伊的睡眠"] = {
+			["spells"] = "8040=136090",
 		},
-		["派对时间！"] = {
-			["spells"] = "8067=136142",
+		["幽灵之舞"] = {
+			["spells"] = "10807=136168",
 		},
-		["群体清除"] = {
-			["spells"] = "10832=135894",
+		["地狱烈焰 III"] = {
+			["spells"] = "2951=135826,2952=135826",
 		},
 		["Increased Fire Resist 39"] = {
 			["spells"] = "14619=136235",
@@ -24102,14 +26094,14 @@ WeakAurasOptionsSaved = {
 		["制造装满的封灵箱"] = {
 			["spells"] = "9010=136235",
 		},
-		["魔化瑟银胸甲"] = {
-			["spells"] = "16745=136192",
+		["Quest - Blow Pirate Ship"] = {
+			["spells"] = "11440=136235",
 		},
 		["致命刺痛"] = {
 			["spells"] = "7938=132090,16495=132090,20539=132090",
 		},
-		["熔岩吐息"] = {
-			["spells"] = "19272=135831,21333=135831",
+		["r-h"] = {
+			["spells"] = "22805=136235,22806=136235",
 		},
 		["强化盾墙"] = {
 			["spells"] = "12312=132362,12803=132362",
@@ -24117,23 +26109,23 @@ WeakAurasOptionsSaved = {
 		["异型杀戮"] = {
 			["spells"] = "16426=136235",
 		},
-		["Mechano-Frostwalker Revert Passive"] = {
-			["spells"] = "10830=135846",
+		["Grounding Totem Passive"] = {
+			["spells"] = "8179=136039",
 		},
-		["沙迪维尔斯恶魔包"] = {
-			["spells"] = "25791=136235",
+		["Fire Damage Bonus"] = {
+			["spells"] = "7843=136235",
 		},
 		["黑色雏龙披风"] = {
 			["spells"] = "9070=136235,9071=136235",
 		},
-		["幽灵之舞"] = {
-			["spells"] = "10807=136168",
+		["精神错乱"] = {
+			["spells"] = "8219=132288,8220=132288",
 		},
-		["荣誉点数+228"] = {
-			["spells"] = "24963=136235",
+		["躲闪奖励"] = {
+			["spells"] = "8273=136047",
 		},
-		["Giantstalker B"] = {
-			["spells"] = "21937=136095",
+		["敌意平息"] = {
+			["spells"] = "8353=132270",
 		},
 		["大型软浆怪（黑）"] = {
 			["spells"] = "7946=136121",
@@ -24141,53 +26133,53 @@ WeakAurasOptionsSaved = {
 		["Living Flame Passive"] = {
 			["spells"] = "5111=135805",
 		},
-		["黑纹虎"] = {
-			["spells"] = "10790=132242",
+		["防护元素图腾"] = {
+			["spells"] = "8262=136069",
 		},
-		["白色毛绒裙"] = {
-			["spells"] = "8467=132149,8468=136021",
+		["紫色魔纹衬衣"] = {
+			["spells"] = "12075=132149,12133=136021",
 		},
-		["灵魂破碎"] = {
-			["spells"] = "10771=135805",
-		},
-		["躲闪奖励"] = {
-			["spells"] = "8273=136047",
-		},
-		["淹没"] = {
-			["spells"] = "22420=136148",
-		},
-		["敌意平息"] = {
-			["spells"] = "8353=132270",
-		},
-		["沙漠风暴"] = {
-			["spells"] = "25160=136022",
-		},
-		["陷地"] = {
-			["spells"] = "8377=136064",
-		},
-		["召唤黑色猫头鹰"] = {
-			["spells"] = "10706=132311",
-		},
-		["强力顺劈"] = {
-			["spells"] = "8255=132338",
+		["召唤加布林"] = {
+			["spells"] = "23811=132311",
 		},
 		["倒钩"] = {
 			["spells"] = "8393=136104,9464=136104",
 		},
-		["召唤拉扎什诱捕者"] = {
-			["spells"] = "24598=132099",
+		["淹没"] = {
+			["spells"] = "22420=136148",
 		},
 		["召唤精灵龙宝宝"] = {
 			["spells"] = "10700=132311",
 		},
+		["沙漠风暴"] = {
+			["spells"] = "25160=136022",
+		},
 		["召唤红龙宝宝"] = {
 			["spells"] = "10697=132311",
 		},
-		["召唤蓝龙宝宝"] = {
-			["spells"] = "10696=132311",
+		["纯水"] = {
+			["spells"] = "8384=135864",
+		},
+		["强力顺劈"] = {
+			["spells"] = "8255=132338",
 		},
 		["速效毒药"] = {
 			["spells"] = "8679=132273,8680=132273,8681=132273,8700=132273,8701=132273,8810=132273,11344=132273,11345=132273,11346=132273,28428=136016",
+		},
+		["召唤拉扎什诱捕者"] = {
+			["spells"] = "24598=132099",
+		},
+		["水下鱼珠"] = {
+			["spells"] = "8532=134440",
+		},
+		["中级剥皮"] = {
+			["spells"] = "8619=134366",
+		},
+		["魔法协调"] = {
+			["spells"] = "11247=136006,12606=136006",
+		},
+		["图样：黑暗之靴"] = {
+			["spells"] = "8779=136235",
 		},
 		["图样：雷织外衣"] = {
 			["spells"] = "12145=136235",
@@ -24198,32 +26190,32 @@ WeakAurasOptionsSaved = {
 		["寒冰戒卫"] = {
 			["spells"] = "28163=136235,28164=136235",
 		},
-		["蒸汽车控制器"] = {
-			["spells"] = "28327=136235",
+		["元素防护"] = {
+			["spells"] = "10618=135880,28996=136094,28997=136094,28998=136094",
 		},
-		["碧蓝丝质头巾"] = {
-			["spells"] = "8760=132149,8761=136021",
+		["硬化蝎壳护腿"] = {
+			["spells"] = "10568=136235",
 		},
 		["配方：特效法力药水"] = {
 			["spells"] = "17606=136235",
 		},
-		["被囚禁的艾博希尔"] = {
-			["spells"] = "15282=136121",
+		["召唤守卫"] = {
+			["spells"] = "7356=136235",
 		},
-		["附魔双手武器 - 冲击"] = {
-			["spells"] = "13695=135913,13696=135913",
+		["荣誉点数+228"] = {
+			["spells"] = "24963=136235",
 		},
-		["闪电"] = {
-			["spells"] = "18979=135934,18980=135990,28127=136049",
+		["龟壳护腿"] = {
+			["spells"] = "10556=136235,10557=136021",
 		},
-		["图样：黑暗之靴"] = {
-			["spells"] = "8779=136235",
+		["图样：硬化蝎壳手套"] = {
+			["spells"] = "10543=136235",
 		},
-		["元素防护"] = {
-			["spells"] = "10618=135880,28996=136094,28997=136094,28998=136094",
+		["火舌攻击"] = {
+			["spells"] = "10444=135814,16368=136040,29469=135814,29470=135814",
 		},
-		["超强精神"] = {
-			["spells"] = "19986=136235",
+		["加卡尔的翻译"] = {
+			["spells"] = "9744=135954",
 		},
 		["挂啦！"] = {
 			["spells"] = "12218=136235",
@@ -24231,62 +26223,62 @@ WeakAurasOptionsSaved = {
 		["中级锻造"] = {
 			["spells"] = "2021=136241",
 		},
-		["地震术 III"] = {
-			["spells"] = "2879=136025",
+		["清毒图腾"] = {
+			["spells"] = "8166=136070,8169=136070",
 		},
-		["硬化蝎壳护腿"] = {
-			["spells"] = "10568=136235",
+		["信念手套"] = {
+			["spells"] = "8782=132149",
 		},
-		["龟壳护腿"] = {
-			["spells"] = "10556=136235,10557=136021",
+		["过载"] = {
+			["spells"] = "18546=133002",
 		},
 		["传授召唤地狱战马"] = {
 			["spells"] = "5785=136103",
 		},
-		["图样：硬化蝎壳手套"] = {
-			["spells"] = "10543=136235",
+		["装死"] = {
+			["spells"] = "5224=132151,19822=136119",
 		},
-		["熟化厚毛皮"] = {
-			["spells"] = "10482=136235,10485=136021",
+		["属性"] = {
+			["spells"] = "13824=136235",
 		},
 		["初级格挡"] = {
 			["spells"] = "13462=136235",
 		},
-		["石化武器（被动）"] = {
-			["spells"] = "10400=136086,15567=136086,15568=136086,15569=136086,16311=136086,16312=136086,16313=136086",
+		["图样：碧蓝护肩"] = {
+			["spells"] = "8796=136235",
 		},
-		["Increased Stamina 15"] = {
-			["spells"] = "14462=136235",
-		},
-		["圣诞版炮手威利"] = {
-			["spells"] = "26209=135849",
-		},
-		["发射火箭"] = {
-			["spells"] = "25030=132385",
-		},
-		["Create Crystal"] = {
-			["spells"] = "28344=136235",
-		},
-		["Stone Dwarf Awaken Visual"] = {
-			["spells"] = "10254=136025",
-		},
-		["雷织外衣"] = {
-			["spells"] = "12068=132149",
-		},
-		["Cluster Rocket, BLUE - SW"] = {
-			["spells"] = "26303=136235",
-		},
-		["Activate Bomb 05B"] = {
-			["spells"] = "11800=136235",
-		},
-		["红色雏龙手套"] = {
-			["spells"] = "9072=136235",
+		["图样：土灵丝质腰带"] = {
+			["spells"] = "8798=136235",
 		},
 		["盾牌"] = {
 			["spells"] = "9116=134950",
 		},
-		["图样：优质皮裤"] = {
-			["spells"] = "7134=136235",
+		["蒸汽车控制器"] = {
+			["spells"] = "28327=136235",
+		},
+		["Create Crystal"] = {
+			["spells"] = "28344=136235",
+		},
+		["折断胫骨"] = {
+			["spells"] = "8854=136235,8855=136235,8856=136235",
+		},
+		["闪电"] = {
+			["spells"] = "18979=135934,18980=135990,28127=136049",
+		},
+		["晕眩"] = {
+			["spells"] = "9992=136222",
+		},
+		["Activate Bomb 05B"] = {
+			["spells"] = "11800=136235",
+		},
+		["重型土灵手套"] = {
+			["spells"] = "9149=136235",
+		},
+		["释放温娜的猫"] = {
+			["spells"] = "16502=132311",
+		},
+		["Mechano-Frostwalker Revert Passive"] = {
+			["spells"] = "10830=135846",
 		},
 		["夜幕"] = {
 			["spells"] = "18094=136223,18095=136223,23653=136192",
@@ -24297,20 +26289,20 @@ WeakAurasOptionsSaved = {
 		["维克尼斯催化"] = {
 			["spells"] = "26078=132104",
 		},
-		["晕眩"] = {
-			["spells"] = "9992=136222",
-		},
-		["重型土灵手套"] = {
-			["spells"] = "9149=136235",
-		},
-		["释放温娜的猫"] = {
-			["spells"] = "16502=132311",
-		},
-		["重皮弹药包"] = {
-			["spells"] = "9194=136235,9210=136021",
+		["破碎岭食人魔死亡"] = {
+			["spells"] = "9144=132151",
 		},
 		["滋补药剂"] = {
 			["spells"] = "11452=136235,11522=136021",
+		},
+		["圣诞版炮手威利"] = {
+			["spells"] = "26209=135849",
+		},
+		["食谱：菊花茶"] = {
+			["spells"] = "9514=136235",
+		},
+		["Cluster Rocket, BLUE - SW"] = {
+			["spells"] = "26303=136235",
 		},
 		["充电网"] = {
 			["spells"] = "11820=132149,11825=136115",
@@ -24318,8 +26310,8 @@ WeakAurasOptionsSaved = {
 		["Increased Intellect 24"] = {
 			["spells"] = "14414=136235",
 		},
-		["设计图：巨型铁锤"] = {
-			["spells"] = "3303=136235",
+		["Increase Nature Dam 32"] = {
+			["spells"] = "18007=136235",
 		},
 		["Increase Frost Dam 10"] = {
 			["spells"] = "9305=136235",
@@ -24333,17 +26325,17 @@ WeakAurasOptionsSaved = {
 		["图样：月布手套"] = {
 			["spells"] = "22874=136235",
 		},
-		["食谱：菊花茶"] = {
-			["spells"] = "9514=136235",
+		["Bind Sight (PT)"] = {
+			["spells"] = "6277=136235",
 		},
-		["附魔护腕 - 超强耐力"] = {
-			["spells"] = "20011=135913",
+		["Increased Strength 14"] = {
+			["spells"] = "9267=136235",
 		},
-		["设计图：精制秘银手套"] = {
-			["spells"] = "9951=136235",
+		["Increase Fire Dam 10"] = {
+			["spells"] = "9295=136235,23480=136235",
 		},
-		["精制秘银短裤"] = {
-			["spells"] = "9945=136192",
+		["Copy of Frostbolt"] = {
+			["spells"] = "29163=135846",
 		},
 		["图样：火山胸甲"] = {
 			["spells"] = "19192=136235",
@@ -24354,35 +26346,35 @@ WeakAurasOptionsSaved = {
 		["法杖专精"] = {
 			["spells"] = "4488=135145,4489=135145,4490=135145,4491=135145,4492=135145,4493=135145,4494=135145,4495=135145,4496=135145,4497=135145,4498=135145,4499=135145,4500=135145,4501=135145,4502=135145,4503=135145",
 		},
-		["强流"] = {
-			["spells"] = "29171=136235",
+		["随机装束"] = {
+			["spells"] = "24720=136235",
 		},
 		["制造达纳苏斯卡片集合"] = {
 			["spells"] = "27709=136235",
 		},
-		["秘银鳞片手套"] = {
-			["spells"] = "9942=136192",
+		["Increase Frost Dam 13"] = {
+			["spells"] = "9308=136235,17889=136235",
 		},
-		["钢质头盔"] = {
-			["spells"] = "9935=136192,9936=136235",
+		["Increase Healing 26"] = {
+			["spells"] = "9316=136235",
 		},
-		["Prismatic Drakonid Spawner"] = {
-			["spells"] = "22679=136235",
-		},
-		["Increase Healing 28"] = {
-			["spells"] = "9317=136235",
+		["制造法力宝石"] = {
+			["spells"] = "3724=136235",
 		},
 		["召唤林蛙"] = {
 			["spells"] = "10703=132311",
 		},
+		["Attack Power 26"] = {
+			["spells"] = "9334=136235",
+		},
 		["Item +SPI/FR Leg R2"] = {
 			["spells"] = "15456=136235",
 		},
-		["设计图：野人铁盔"] = {
-			["spells"] = "9815=136235",
+		["Activate Bomb 06B"] = {
+			["spells"] = "11801=136235",
 		},
-		["设计图：钢质武器链"] = {
-			["spells"] = "7228=136235",
+		["Increase Healing 20"] = {
+			["spells"] = "9408=136235",
 		},
 		["强效虚空精华"] = {
 			["spells"] = "13739=136192",
@@ -24390,20 +26382,20 @@ WeakAurasOptionsSaved = {
 		["暗影大法师变形"] = {
 			["spells"] = "4063=136230",
 		},
-		["Increase Shadow Dam 8"] = {
-			["spells"] = "9413=136235,9414=136235",
+		["Jandice Drops Journal DND"] = {
+			["spells"] = "26096=136235",
 		},
 		["光芒（黑色）"] = {
 			["spells"] = "22578=135741",
 		},
-		["大师级防具锻造"] = {
-			["spells"] = "9790=136241",
+		["魔法药水"] = {
+			["spells"] = "9587=136047",
 		},
-		["Increased Armor 10"] = {
-			["spells"] = "9760=136235",
+		["Increase Arcane Dam 63"] = {
+			["spells"] = "26709=136235",
 		},
-		["Delete Me"] = {
-			["spells"] = "9743=134938",
+		["Mount Speed Buff DND"] = {
+			["spells"] = "21353=135831",
 		},
 		["瓦拉塔兹之触"] = {
 			["spells"] = "16319=136235",
@@ -24411,62 +26403,62 @@ WeakAurasOptionsSaved = {
 		["Increase Fire Dam 2"] = {
 			["spells"] = "7684=136235",
 		},
-		["强化心灵之火"] = {
-			["spells"] = "14747=135926,14770=135926,14771=135926",
+		["次级秘法魔杖"] = {
+			["spells"] = "14809=135139,14811=135913",
 		},
 		["Dragondog Breath Selection (R1)"] = {
 			["spells"] = "23322=136235",
 		},
-		["霜纹短裤"] = {
-			["spells"] = "18424=132149",
+		["强化心灵之火"] = {
+			["spells"] = "14747=135926,14770=135926,14771=135926",
 		},
-		["Increase Arcane Dam 63"] = {
-			["spells"] = "26709=136235",
+		["Delete Me"] = {
+			["spells"] = "9743=134938",
 		},
-		["魔法药水"] = {
-			["spells"] = "9587=136047",
+		["Increased Armor 10"] = {
+			["spells"] = "9760=136235",
 		},
 		["灼热冲击"] = {
 			["spells"] = "16454=135807",
 		},
-		["Increase Healing 20"] = {
-			["spells"] = "9408=136235",
+		["Increase Shadow Dam 8"] = {
+			["spells"] = "9413=136235,9414=136235",
 		},
-		["Activate Bomb 06B"] = {
-			["spells"] = "11801=136235",
+		["设计图：钢质武器链"] = {
+			["spells"] = "7228=136235",
 		},
-		["Attack Power 26"] = {
-			["spells"] = "9334=136235",
+		["设计图：野人铁盔"] = {
+			["spells"] = "9815=136235",
 		},
 		["银色复仇者"] = {
 			["spells"] = "17352=135990",
 		},
-		["制造法力宝石"] = {
-			["spells"] = "3724=136235",
+		["Increase Healing 28"] = {
+			["spells"] = "9317=136235",
 		},
-		["Increase Healing 26"] = {
-			["spells"] = "9316=136235",
+		["Prismatic Drakonid Spawner"] = {
+			["spells"] = "22679=136235",
 		},
-		["Increase Frost Dam 13"] = {
-			["spells"] = "9308=136235,17889=136235",
+		["钢质头盔"] = {
+			["spells"] = "9935=136192,9936=136235",
 		},
-		["随机装束"] = {
-			["spells"] = "24720=136235",
+		["强流"] = {
+			["spells"] = "29171=136235",
 		},
-		["Increase Fire Dam 11"] = {
-			["spells"] = "9296=136235",
+		["秘银鳞片手套"] = {
+			["spells"] = "9942=136192",
 		},
-		["Increase Fire Dam 10"] = {
-			["spells"] = "9295=136235,23480=136235",
+		["(DND) Summon Crystal Minion, Ghost Uncommon"] = {
+			["spells"] = "28290=136235",
 		},
-		["Increased Strength 14"] = {
-			["spells"] = "9267=136235",
+		["设计图：精制秘银手套"] = {
+			["spells"] = "9951=136235",
 		},
 		["Attack All (Summoned Only) Effect"] = {
 			["spells"] = "29510=136235",
 		},
-		["Increase Nature Dam 32"] = {
-			["spells"] = "18007=136235",
+		["设计图：巨型铁锤"] = {
+			["spells"] = "3303=136235",
 		},
 		["暗纹之靴"] = {
 			["spells"] = "12082=132149,12126=136021",
@@ -24474,8 +26466,8 @@ WeakAurasOptionsSaved = {
 		["寒冰偏斜器"] = {
 			["spells"] = "3957=136235,4015=136235,23077=136235",
 		},
-		["破碎岭食人魔死亡"] = {
-			["spells"] = "9144=132151",
+		["重皮弹药包"] = {
+			["spells"] = "9194=136235,9210=136021",
 		},
 		["Gouge Cooldown Reduction"] = {
 			["spells"] = "23048=132155",
@@ -24486,38 +26478,38 @@ WeakAurasOptionsSaved = {
 		["厄运诅咒效果"] = {
 			["spells"] = "18662=136122",
 		},
-		["折断胫骨"] = {
-			["spells"] = "8854=136235,8855=136235,8856=136235",
+		["图样：优质皮裤"] = {
+			["spells"] = "7134=136235",
 		},
 		["召唤石棱流放者"] = {
 			["spells"] = "4937=136022,10388=136022",
 		},
-		["图样：土灵丝质腰带"] = {
-			["spells"] = "8798=136235",
+		["红色雏龙手套"] = {
+			["spells"] = "9072=136235",
 		},
-		["图样：碧蓝护肩"] = {
-			["spells"] = "8796=136235",
+		["雷织外衣"] = {
+			["spells"] = "12068=132149",
 		},
-		["属性"] = {
-			["spells"] = "13824=136235",
+		["Stone Dwarf Awaken Visual"] = {
+			["spells"] = "10254=136025",
 		},
-		["装死"] = {
-			["spells"] = "5224=132151,19822=136119",
+		["发射火箭"] = {
+			["spells"] = "25030=132385",
 		},
-		["过载"] = {
-			["spells"] = "18546=133002",
+		["Increased Stamina 15"] = {
+			["spells"] = "14462=136235",
 		},
-		["信念手套"] = {
-			["spells"] = "8782=132149",
+		["石化武器（被动）"] = {
+			["spells"] = "10400=136086,15567=136086,15568=136086,15569=136086,16311=136086,16312=136086,16313=136086",
 		},
-		["清毒图腾"] = {
-			["spells"] = "8166=136070,8169=136070",
+		["地震术 III"] = {
+			["spells"] = "2879=136025",
 		},
-		["加卡尔的翻译"] = {
-			["spells"] = "9744=135954",
+		["超强精神"] = {
+			["spells"] = "19986=136235",
 		},
-		["火舌攻击"] = {
-			["spells"] = "10444=135814,16368=136040,29469=135814,29470=135814",
+		["熟化厚毛皮"] = {
+			["spells"] = "10482=136235,10485=136021",
 		},
 		["清算"] = {
 			["spells"] = "18118=135805,18119=135805,18120=135805,18121=135805,18122=135805,18123=135805,20177=135882,20178=135882,20179=135882,20180=135882,20181=135882,20182=135882",
@@ -24525,8 +26517,8 @@ WeakAurasOptionsSaved = {
 		["通用语"] = {
 			["spells"] = "668=136235",
 		},
-		["召唤守卫"] = {
-			["spells"] = "7356=136235",
+		["强化烈焰风暴"] = {
+			["spells"] = "11108=135826,12349=135826,12350=135826,24491=136235",
 		},
 		["火焰法杖"] = {
 			["spells"] = "749=132325,1923=132325",
@@ -24537,20 +26529,20 @@ WeakAurasOptionsSaved = {
 		["Fix Ritual Node (DND)"] = {
 			["spells"] = "23061=136235",
 		},
-		["魔法协调"] = {
-			["spells"] = "11247=136006,12606=136006",
+		["附魔双手武器 - 冲击"] = {
+			["spells"] = "13695=135913,13696=135913",
 		},
-		["中级剥皮"] = {
-			["spells"] = "8619=134366",
+		["被囚禁的艾博希尔"] = {
+			["spells"] = "15282=136121",
 		},
-		["水下鱼珠"] = {
-			["spells"] = "8532=134440",
+		["碧蓝丝质头巾"] = {
+			["spells"] = "8760=132149,8761=136021",
 		},
 		["慢性痛苦毒药"] = {
 			["spells"] = "2838=134743,2845=134743",
 		},
-		["纯水"] = {
-			["spells"] = "8384=135864",
+		["召唤蓝龙宝宝"] = {
+			["spells"] = "10696=132311",
 		},
 		["法术掌握手套"] = {
 			["spells"] = "18454=132149",
@@ -24561,11 +26553,11 @@ WeakAurasOptionsSaved = {
 		["与动物交谈"] = {
 			["spells"] = "6238=132163",
 		},
-		["召唤加布林"] = {
-			["spells"] = "23811=132311",
+		["召唤黑色猫头鹰"] = {
+			["spells"] = "10706=132311",
 		},
-		["防护元素图腾"] = {
-			["spells"] = "8262=136069",
+		["陷地"] = {
+			["spells"] = "8377=136064",
 		},
 		["自然引导"] = {
 			["spells"] = "13236=136041",
@@ -24573,98 +26565,98 @@ WeakAurasOptionsSaved = {
 		["Increased Strength 16"] = {
 			["spells"] = "14488=136235",
 		},
-		["精神错乱"] = {
-			["spells"] = "8219=132288,8220=132288",
+		["灵魂破碎"] = {
+			["spells"] = "10771=135805",
 		},
-		["Fire Damage Bonus"] = {
-			["spells"] = "7843=136235",
+		["沙迪维尔斯恶魔包"] = {
+			["spells"] = "25791=136235",
 		},
-		["Grounding Totem Passive"] = {
-			["spells"] = "8179=136039",
+		["白色毛绒裙"] = {
+			["spells"] = "8467=132149,8468=136021",
 		},
-		["r-h"] = {
-			["spells"] = "22805=136235,22806=136235",
+		["黑纹虎"] = {
+			["spells"] = "10790=132242",
 		},
-		["Quest - Blow Pirate Ship"] = {
-			["spells"] = "11440=136235",
+		["暗影潜行"] = {
+			["spells"] = "5916=132320",
 		},
-		["地狱烈焰 III"] = {
-			["spells"] = "2951=135826,2952=135826",
+		["Giantstalker B"] = {
+			["spells"] = "21937=136095",
 		},
 		["制造召唤节杖：水"] = {
 			["spells"] = "24898=136235",
 		},
-		["德鲁伊的睡眠"] = {
-			["spells"] = "8040=136090",
+		["熔岩吐息"] = {
+			["spells"] = "19272=135831,21333=135831",
 		},
-		["冰封攻击"] = {
-			["spells"] = "8034=135847,8037=135847,10458=135847,16352=135847,16353=135847",
+		["魔化瑟银胸甲"] = {
+			["spells"] = "16745=136192",
 		},
-		["长嘴泥鳅"] = {
-			["spells"] = "7753=136192",
+		["群体清除"] = {
+			["spells"] = "10832=135894",
 		},
-		["寒冷之锥"] = {
-			["spells"] = "30095=135852",
+		["派对时间！"] = {
+			["spells"] = "8067=136142",
 		},
-		["灵魂凋零"] = {
-			["spells"] = "8016=135914",
+		["断线"] = {
+			["spells"] = "10856=132995",
 		},
-		["召唤变异蹒跚者"] = {
-			["spells"] = "7970=136121",
+		["召唤复制虫"] = {
+			["spells"] = "10858=136122",
 		},
-		["野性回复"] = {
-			["spells"] = "7948=136081,9616=136081",
+		["制造探水棒"] = {
+			["spells"] = "10859=133748",
 		},
-		["大型软浆怪（蓝）"] = {
-			["spells"] = "7944=135835",
+		["拉瑟莱克之泪 II"] = {
+			["spells"] = "10866=136235",
 		},
-		["Increased Armor 20"] = {
-			["spells"] = "9761=136235",
+		["图样：寒鳞护腕"] = {
+			["spells"] = "28233=136235",
 		},
-		["召唤迅猛龙"] = {
-			["spells"] = "7910=133723",
+		["召唤燃烧仆从"] = {
+			["spells"] = "10870=135805",
 		},
-		["格罗姆的巨魔祭品"] = {
-			["spells"] = "24101=136235",
+		["骑术：机械陆行鸟"] = {
+			["spells"] = "10907=136103,10908=136103",
 		},
-		["附魔护腕 - 精神"] = {
-			["spells"] = "13642=135913,13643=135913",
+		["低度酒精"] = {
+			["spells"] = "11007=132796",
 		},
-		["公式：附魔靴子 - 次级耐力"] = {
-			["spells"] = "7864=136235",
+		["召唤血色骑兵"] = {
+			["spells"] = "19722=136235",
 		},
-		["中级钓鱼"] = {
-			["spells"] = "7734=136245",
+		["烈性酒精"] = {
+			["spells"] = "11009=132796",
 		},
 		["金度的欺骗"] = {
 			["spells"] = "24306=136224",
 		},
-		["Increase Nature Dam 4"] = {
-			["spells"] = "7694=136235",
+		["召唤哈扎里寄生虫"] = {
+			["spells"] = "11023=136168",
 		},
-		["图样：大师长袍"] = {
-			["spells"] = "7644=136235",
+		["Knockback 500"] = {
+			["spells"] = "11027=136235",
 		},
-		["Increased Critical 1"] = {
-			["spells"] = "7597=136235,9132=132222",
+		["Summon Templar Fire, Trigger"] = {
+			["spells"] = "24747=136235",
 		},
-		["Holiday - Lunar Teleport: Ironforge"] = {
-			["spells"] = "26452=135758",
+		["Increase Frost Dam 6"] = {
+			["spells"] = "7703=136235",
 		},
 		["酸性箭雨"] = {
 			["spells"] = "29325=136007",
 		},
-		["dmg"] = {
-			["spells"] = "7482=136115",
+		["Ward of Zum'rah Passive"] = {
+			["spells"] = "11087=136157",
 		},
-		["Imbue Chest - Absorb"] = {
-			["spells"] = "7855=135913",
+		["烈焰投掷"] = {
+			["spells"] = "11100=135815,12353=135815",
 		},
 		["公式：附魔护腕 - 强效智力"] = {
 			["spells"] = "20065=136235",
 		},
-		["僵尸形态"] = {
-			["spells"] = "7293=136224",
+		["Increased 2H Axe"] = {
+			["spells"] = "7549=136235,7550=136235,7552=136235,7554=136235,14817=136235,15766=136235,15767=136235,15768=136235,15907=136235,15909=136235,15912=136235,15913=136235,15914=136235,15916=136235,15917=136235,15919=136235,15920=136235,15921=136235",
 		},
 		["Flame Attack Visual Effect"] = {
 			["spells"] = "15651=135809",
@@ -24672,35 +26664,35 @@ WeakAurasOptionsSaved = {
 		["吸取生命"] = {
 			["spells"] = "689=136169,699=136169,709=136169,714=136235,725=136235,736=136235,1367=136169,1368=136169,1369=136169,7651=136169,7652=136169,7653=136235,11699=136169,11700=136169,11701=136169,11702=136169,12693=136169,16375=136169,16414=136169,16608=136169,17173=136169,17238=136169,17620=136169,18084=136169,18557=136169,18815=136235,18817=136169,20743=136169,21170=136169,24300=136169,24435=136169,24585=136169,24618=136169,26693=136169,27994=136169,29155=136169",
 		},
-		["塞纳里奥草药包"] = {
-			["spells"] = "27724=132149",
+		["火焰箭 III"] = {
+			["spells"] = "1084=135810,1372=135810",
 		},
-		["毒性唾液"] = {
-			["spells"] = "7125=136016",
+		["挥砍"] = {
+			["spells"] = "7342=132338,11837=132338,25814=132338",
 		},
-		["Increased Arcane Resist 09"] = {
-			["spells"] = "14711=136235",
+		["致命毒药 IV"] = {
+			["spells"] = "11354=132290,11356=132290,11358=132290",
 		},
 		["潜行者护甲充能"] = {
 			["spells"] = "27787=136235,27788=136039",
 		},
-		["Increased Frost Resist 14"] = {
-			["spells"] = "14553=136235",
+		["优质皮裤"] = {
+			["spells"] = "7133=136235",
 		},
-		["苔藓覆盖的脚"] = {
-			["spells"] = "6870=136052",
+		["合并地图碎片"] = {
+			["spells"] = "11438=136235",
 		},
-		["强化冰锥术"] = {
-			["spells"] = "11190=135852,12489=135852,12490=135852",
+		["水下行走药剂"] = {
+			["spells"] = "11447=136235,11482=136021",
 		},
-		["耻辱印记"] = {
-			["spells"] = "6767=136122",
+		["深海护手"] = {
+			["spells"] = "10630=136235,10631=136021",
 		},
-		["毒性传染"] = {
-			["spells"] = "6672=136235",
+		["强效敏捷药剂"] = {
+			["spells"] = "11467=136235,11498=136021",
 		},
-		["暗棕狼"] = {
-			["spells"] = "6654=132224",
+		["致命毒素 III"] = {
+			["spells"] = "11470=132290",
 		},
 		["荣誉点数+82"] = {
 			["spells"] = "24961=136235",
@@ -24708,35 +26700,35 @@ WeakAurasOptionsSaved = {
 		["Despawn Shades of Taerar"] = {
 			["spells"] = "24886=136235",
 		},
-		["耐力提高"] = {
-			["spells"] = "18191=132584,25661=132584",
+		["克隆"] = {
+			["spells"] = "7952=136123,14146=136123,27890=136123",
 		},
-		["锐利武器 +5"] = {
-			["spells"] = "6516=132223",
+		["配方：阿尔萨斯的礼物"] = {
+			["spells"] = "11507=136235",
 		},
-		["兴奋"] = {
-			["spells"] = "5934=132147",
+		["制造黄色穿孔卡片"] = {
+			["spells"] = "11512=136235",
 		},
-		["食谱：丛林大杂烩"] = {
-			["spells"] = "15862=136235",
+		["栗色马"] = {
+			["spells"] = "6648=132261",
 		},
 		["召唤幽暗城亡灵卫兵"] = {
 			["spells"] = "11636=136235",
 		},
-		["Attack Power 54"] = {
-			["spells"] = "15813=136235",
+		["冰霜速冻"] = {
+			["spells"] = "16803=135848",
 		},
-		["图样：紫色魔纹衬衣"] = {
-			["spells"] = "12172=136235",
+		["图样：红色亚麻外衣"] = {
+			["spells"] = "7631=136235",
 		},
-		["图样：蛮皮外衣"] = {
-			["spells"] = "10545=136235",
+		["蓝色焰火"] = {
+			["spells"] = "11540=136235,23067=136235",
 		},
-		["洛丹伦的祝福"] = {
-			["spells"] = "30238=135946",
+		["Increased Critical Holy Spells"] = {
+			["spells"] = "24426=136235",
 		},
-		["秘银重斧"] = {
-			["spells"] = "9993=136192,9994=136235",
+		["加莫里塔摄像"] = {
+			["spells"] = "11610=136235",
 		},
 		["附魔护腕 - 次级耐力"] = {
 			["spells"] = "13501=135913,13502=135913",
@@ -24747,20 +26739,20 @@ WeakAurasOptionsSaved = {
 		["木喉之力"] = {
 			["spells"] = "23703=136235",
 		},
-		["艾奎尼克斯法杖充能"] = {
-			["spells"] = "11537=136235",
+		["Activate Bomb 04B"] = {
+			["spells"] = "11799=136235",
 		},
-		["银色黎明委任徽章"] = {
-			["spells"] = "17670=133440",
+		["Sillithus Flag, Horde, and speed limit (DND)"] = {
+			["spells"] = "29895=132486",
 		},
-		["黎明束腰"] = {
-			["spells"] = "23632=136192",
+		["Evade (OLD)"] = {
+			["spells"] = "5944=132110,5948=132110",
 		},
-		["蓝色罩衫"] = {
-			["spells"] = "7639=132149",
+		["捕捉树人"] = {
+			["spells"] = "11877=136235,11885=136235",
 		},
-		["Increase Spell Dam 126"] = {
-			["spells"] = "28792=136235",
+		["Debug Frost Spell"] = {
+			["spells"] = "29607=135846",
 		},
 		["相位潜行"] = {
 			["spells"] = "6634=132320,6718=132320",
@@ -24768,65 +26760,65 @@ WeakAurasOptionsSaved = {
 		["野兽之爪 II"] = {
 			["spells"] = "1849=136078,3134=136078",
 		},
-		["梦游者"] = {
-			["spells"] = "28743=135900",
+		["安图苏尔的爪牙"] = {
+			["spells"] = "11894=136235",
 		},
 		["装满娜玛拉的瓶子"] = {
 			["spells"] = "14929=136235",
 		},
-		["黑女巫的拥抱"] = {
-			["spells"] = "28732=135736,28797=135736",
+		["修理英雄之剑"] = {
+			["spells"] = "11923=136192",
 		},
-		["附魔武器 - 治疗能量"] = {
-			["spells"] = "22750=135913",
+		["巨槌诅咒"] = {
+			["spells"] = "11960=136020,11961=136020",
 		},
-		["法术能量护目镜超级改良版"] = {
-			["spells"] = "19794=136235",
+		["设计图：金鳞胸甲"] = {
+			["spells"] = "3534=136235",
 		},
-		["自由祝福"] = {
-			["spells"] = "1044=135968,1909=135968",
+		["红色魔纹短裤"] = {
+			["spells"] = "12060=132149",
 		},
 		["智慧药剂"] = {
 			["spells"] = "3171=136235,3179=136021",
 		},
-		["净化消耗降低"] = {
-			["spells"] = "27847=136052",
+		["召唤冰霜亡魂"] = {
+			["spells"] = "12642=136221,12670=136187,12671=136187",
 		},
-		["Increased Stamina 05"] = {
-			["spells"] = "7503=136235",
+		["召唤僵尸"] = {
+			["spells"] = "16590=136187,29681=136235,29682=136235",
 		},
-		["召唤地狱猎犬"] = {
-			["spells"] = "691=136217,8176=136217,8712=136220,8717=136221",
+		["吸引裂隙怒灵"] = {
+			["spells"] = "9012=136235",
 		},
 		["恢复水晶"] = {
 			["spells"] = "15229=134095",
 		},
-		["开启符文"] = {
-			["spells"] = "3407=136235",
+		["粉色魔纹衬衣"] = {
+			["spells"] = "12080=132149,12124=136021",
 		},
-		["腐化力量"] = {
-			["spells"] = "6816=135914",
+		["图样：沙行者护手"] = {
+			["spells"] = "24861=136235",
 		},
-		["原始狂怒"] = {
-			["spells"] = "16958=132278,16959=132278,16961=132278",
+		["熔炼"] = {
+			["spells"] = "2656=135811",
 		},
-		["大地践踏"] = {
-			["spells"] = "19364=132368",
+		["神圣震击"] = {
+			["spells"] = "20473=135972,20929=135972,20930=135972,20958=135972,20960=135972,25902=135972,25903=135972,25911=135972,25912=135972,25913=135972,25914=135972",
 		},
-		["Increase Spell Dam 56"] = {
-			["spells"] = "23732=136235",
+		["礼服夹克"] = {
+			["spells"] = "12093=132149,12135=136021",
 		},
-		["召唤古树之魂"] = {
-			["spells"] = "15033=136235",
+		["图样：红色魔纹外衣"] = {
+			["spells"] = "12136=136235",
 		},
-		["提高法术爆击率"] = {
-			["spells"] = "30440=136235,30441=136235",
+		["图样：雷织头带"] = {
+			["spells"] = "12147=136235",
 		},
 		["设计图：狮心头盔"] = {
 			["spells"] = "16751=136235",
 		},
-		["召唤咕唧"] = {
-			["spells"] = "27241=132311",
+		["重伤"] = {
+			["spells"] = "12162=132090,12721=132090,12834=132090,12849=132090,12850=132090,12867=132090,12868=132090,23256=132090,25646=132109,28467=132109",
 		},
 		["Receive Reward AND Quest Object, Common, Orgrimmar"] = {
 			["spells"] = "27505=136235",
@@ -24834,29 +26826,29 @@ WeakAurasOptionsSaved = {
 		["幽魂甲"] = {
 			["spells"] = "560=136235,902=136235,935=136094,1312=136094,1313=136094,1314=136094,2865=136094",
 		},
-		["月光酒"] = {
-			["spells"] = "26389=132796",
+		["感染之刺"] = {
+			["spells"] = "12245=136127,12246=136127",
 		},
 		["致密炸弹"] = {
 			["spells"] = "23063=135826,23095=136235",
 		},
-		["辐射之毒"] = {
-			["spells"] = "11638=136133",
+		["附魔武器 - 寒冬之力"] = {
+			["spells"] = "21931=135913",
 		},
-		["雷霆震裂"] = {
-			["spells"] = "8150=136105",
+		["初级耐力"] = {
+			["spells"] = "7455=136235",
 		},
 		["治疗祷言"] = {
 			["spells"] = "596=135943,618=136235,996=135943,997=136235,1287=135943,1288=135943,2049=135943,10960=135943,10961=135943,10962=135943,13857=135943,15585=135943,25316=135943,25353=135943,25985=132282",
 		},
-		["瑟银护腕"] = {
-			["spells"] = "16644=136192",
+		["镀银青铜护腿"] = {
+			["spells"] = "12259=136192",
 		},
 		["制造法师的宝珠"] = {
 			["spells"] = "9156=136235",
 		},
-		["术士导魔"] = {
-			["spells"] = "8675=136121",
+		["Kodo Bones Trap"] = {
+			["spells"] = "17960=136235",
 		},
 		["亚麻靴"] = {
 			["spells"] = "2386=132149,2967=136021",
@@ -24864,47 +26856,47 @@ WeakAurasOptionsSaved = {
 		["寒冷"] = {
 			["spells"] = "28534=136235,28547=135857",
 		},
-		["宁静"] = {
-			["spells"] = "740=136107,792=136235,1439=136107,8918=136107,8920=136107,9862=136107,9863=136107,9864=136107,9865=136107,21791=136107,25817=136107",
+		["生命石治疗"] = {
+			["spells"] = "17712=135230",
 		},
-		["惬意小火"] = {
-			["spells"] = "7353=135805,7358=135805",
+		["迦玛兰的妖术"] = {
+			["spells"] = "12479=136232,12480=136121,12483=136232",
 		},
-		["自律"] = {
-			["spells"] = "25771=135952",
+		["Cluster Rocket, RED - SE"] = {
+			["spells"] = "26307=136235",
 		},
-		["Activate Bomb A"] = {
-			["spells"] = "11511=135990",
+		["伊兰尼库斯隐形"] = {
+			["spells"] = "12495=135994",
 		},
-		["召唤海龟"] = {
-			["spells"] = "7915=134061",
+		["敏捷 VIII"] = {
+			["spells"] = "16885=134873",
 		},
 		["愚人之盟"] = {
 			["spells"] = "23504=136235",
 		},
-		["强效力量祝福"] = {
-			["spells"] = "25782=135908,25915=135908,25916=135908,25917=135908",
+		["设计图：绿铁护肩"] = {
+			["spells"] = "3531=136235",
 		},
-		["Increased Fire Resist 02"] = {
-			["spells"] = "14582=136235",
+		["Combo PROC Test"] = {
+			["spells"] = "26376=132278",
 		},
-		["心智统御"] = {
-			["spells"] = "25772=136172",
+		["秘银管"] = {
+			["spells"] = "12589=136235,12632=136235",
 		},
-		["战斗咆哮"] = {
-			["spells"] = "6507=132277",
+		["魔石头盔"] = {
+			["spells"] = "9084=136245",
 		},
-		["传送门：幽暗城"] = {
-			["spells"] = "11418=135751,11425=135751",
+		["猫眼超级护目镜"] = {
+			["spells"] = "12607=136235",
 		},
-		["Increase Frost Dam 69"] = {
-			["spells"] = "26725=136235",
+		["猫眼药剂"] = {
+			["spells"] = "12609=136235,12610=136021",
 		},
 		["疾病"] = {
 			["spells"] = "17739=136128",
 		},
-		["沙行者护腕"] = {
-			["spells"] = "24849=136235",
+		["结构图：增亮护目镜"] = {
+			["spells"] = "12645=136235",
 		},
 		["Attack Power Ranged 48"] = {
 			["spells"] = "21445=136235",
@@ -24915,11 +26907,11 @@ WeakAurasOptionsSaved = {
 		["火焰奥术反射"] = {
 			["spells"] = "13022=135736",
 		},
-		["假死"] = {
-			["spells"] = "5384=132293,5385=132293",
+		["地精施工头盔"] = {
+			["spells"] = "12718=136235,12770=136235",
 		},
-		["红色亚麻长袍"] = {
-			["spells"] = "2389=132149",
+		["阿弗拉沙碎片"] = {
+			["spells"] = "12732=136077",
 		},
 		["召唤熊猫"] = {
 			["spells"] = "17707=132311",
@@ -24930,8 +26922,8 @@ WeakAurasOptionsSaved = {
 		["自爆法力"] = {
 			["spells"] = "27819=136116",
 		},
-		["法杖打击 II"] = {
-			["spells"] = "1929=132325",
+		["食肉术"] = {
+			["spells"] = "3393=136231,3394=136231",
 		},
 		["灵魂释放"] = {
 			["spells"] = "17370=136235",
@@ -24939,11 +26931,11 @@ WeakAurasOptionsSaved = {
 		["配方：食人魔力量药剂"] = {
 			["spells"] = "3189=136235",
 		},
-		["法力充沛"] = {
-			["spells"] = "4263=136101,4264=136101,4265=136101,4266=136101,4267=136101,4268=136101,4269=136101,4270=136101,4271=136101,4272=136101,4273=136101,4274=136101,4275=136101,4276=136101,4277=136101,4278=136101",
+		["召唤黑纹灰猫"] = {
+			["spells"] = "10675=132311",
 		},
-		["冰冻术 IV"] = {
-			["spells"] = "2135=135856",
+		["神圣打击"] = {
+			["spells"] = "13953=132325,17143=132325,17284=132325",
 		},
 		["秘银螺旋弹"] = {
 			["spells"] = "12621=136235,12643=136235",
@@ -24957,11 +26949,11 @@ WeakAurasOptionsSaved = {
 		["Receive Reward AND Quest Object, Common, Darnassus"] = {
 			["spells"] = "26901=136235",
 		},
-		["Tag: Bubbles"] = {
-			["spells"] = "22429=132212,22431=132212",
+		["附魔披风 - 初级敏捷"] = {
+			["spells"] = "13419=135913",
 		},
-		["Increase Spell Dam 43"] = {
-			["spells"] = "17280=136235",
+		["致伤"] = {
+			["spells"] = "13486=132155,14126=132155,16405=132155,16433=132155,16549=132155,17407=132155,18090=132155,18107=132155,21961=132155",
 		},
 		["致密平衡石"] = {
 			["spells"] = "16640=136192,16670=136235",
@@ -24972,44 +26964,44 @@ WeakAurasOptionsSaved = {
 		["伤害车辆"] = {
 			["spells"] = "7084=135805",
 		},
-		["Summon Lava Burst F"] = {
-			["spells"] = "21904=136235",
+		["Increase Arcane Dam 4"] = {
+			["spells"] = "13594=136235",
 		},
-		["Cluster Rocket, GREEN BIG - SE"] = {
-			["spells"] = "26493=136235",
+		["EXOTIC1H (DND)"] = {
+			["spells"] = "262=136235",
 		},
 		["硬壳"] = {
 			["spells"] = "4107=132110,4108=132110,4109=132110,4111=132110,4112=136235,4113=136235,4114=136235,4115=136235,4742=132110,4743=132110,4744=132110,4745=132110,6001=136231,6002=136231,6003=136231,6004=136231",
 		},
-		["雕花皮质披风"] = {
-			["spells"] = "2162=136235,2178=136021",
+		["冰冻新星"] = {
+			["spells"] = "18099=135848",
 		},
-		["水下呼吸药剂"] = {
-			["spells"] = "7179=136235,7180=136021",
+		["恐惧嚎叫"] = {
+			["spells"] = "5484=136147,5486=136147,17928=136147,18169=136147",
 		},
-		["图样：红色魔纹护肩"] = {
-			["spells"] = "12146=136235",
+		["次级秘法精华"] = {
+			["spells"] = "13633=136192",
 		},
-		["Increased Arcane Resist 14"] = {
-			["spells"] = "14716=136235",
+		["宠物恢复"] = {
+			["spells"] = "6328=132156,6329=132156,6330=132156,6331=132156,6332=132156,6333=132156,6334=132156,6335=132156,6336=132156,6337=132156,6338=132156,6339=132156,6340=132156,6341=132156,6342=132156",
 		},
 		["Increase Healing 70"] = {
 			["spells"] = "18046=136235",
 		},
-		["烟雾弹"] = {
-			["spells"] = "7964=132156,8817=136047",
+		["黎明手套"] = {
+			["spells"] = "23633=136192",
 		},
-		["Increase Holy Dam 17"] = {
-			["spells"] = "21515=136235",
+		["附魔护腕 - 次级偏斜"] = {
+			["spells"] = "13646=135913",
 		},
-		["灼热之痛"] = {
-			["spells"] = "2945=135827,5676=135827,17919=135827,17920=135827,17921=135827,17922=135827,17923=135827,18154=135827,18155=135827,18156=135827,18157=135827,18158=135827",
+		["Increased Block 1"] = {
+			["spells"] = "13674=136235,21466=136235,21467=136235,21468=136235,21469=136235,21470=136235",
 		},
 		["公式：附魔武器 - 次级屠兽"] = {
 			["spells"] = "13654=136235",
 		},
-		["设计图：秘银鳞片护肩"] = {
-			["spells"] = "9967=136235",
+		["Increased All Resist 09"] = {
+			["spells"] = "18680=136235",
 		},
 		["H-Mid Alliance"] = {
 			["spells"] = "23943=136235",
@@ -25020,35 +27012,35 @@ WeakAurasOptionsSaved = {
 		["召唤梦魇幻象"] = {
 			["spells"] = "24681=135824,24728=135824,24729=135824",
 		},
-		["闪电护盾"] = {
-			["spells"] = "23551=136051,23552=136051,27635=136048",
+		["Signet Ring of the Bronze Dragonflight DPS R2 DND"] = {
+			["spells"] = "25928=136235",
 		},
-		["急速冲锋"] = {
-			["spells"] = "6268=132368,8260=132368",
+		["食谱：热狼排"] = {
+			["spells"] = "15858=136235",
 		},
-		["召唤熔岩怪"] = {
-			["spells"] = "20506=135819",
+		["火焰伤害"] = {
+			["spells"] = "7902=135805",
 		},
-		["图样：恶魔布靴"] = {
-			["spells"] = "18510=136235",
+		["寒冬"] = {
+			["spells"] = "22662=136066",
 		},
-		["配方：强效冰霜防护药水"] = {
-			["spells"] = "17601=136235",
+		["食谱：瘦狼排"] = {
+			["spells"] = "15854=136235",
 		},
-		["坚定意志"] = {
-			["spells"] = "14522=135995,14788=135995,14789=135995,14790=135995,14791=135995",
+		["制造先知之水"] = {
+			["spells"] = "5026=136168",
 		},
-		["屠夫吸取"] = {
-			["spells"] = "7485=136208,7486=136208",
+		["A-Mid Alliance"] = {
+			["spells"] = "23934=136235",
 		},
 		["Random Weapon Proc Fire Effect 12"] = {
 			["spells"] = "7718=136197",
 		},
-		["神圣强化"] = {
-			["spells"] = "5923=135938,5924=135938,5925=135938,5926=135938,25829=135938",
+		["剑刃乱舞"] = {
+			["spells"] = "13877=132350,22482=132306",
 		},
-		["机关枪"] = {
-			["spells"] = "10346=132222,15249=132222",
+		["公式：附魔披风 - 次级敏捷"] = {
+			["spells"] = "13883=136235",
 		},
 		["图样：绿色节日衬衣"] = {
 			["spells"] = "21946=136235",
@@ -25056,8 +27048,8 @@ WeakAurasOptionsSaved = {
 		["Smite's Dual Wield Passive"] = {
 			["spells"] = "6440=132330",
 		},
-		["冲锋"] = {
-			["spells"] = "100=132337,1738=132337,6178=132337,6180=132337,7370=132184,7371=132184,11578=132337,11579=132337,20508=132337,22120=132337,22911=132337,24023=132337,24193=132337,24315=132337,24408=132337,25821=132337,26177=132184,26178=132184,26179=132184,26184=132184,26185=132184,26186=132184,26201=132184,26202=132184,27685=132184,28343=132184",
+		["大师级附魔"] = {
+			["spells"] = "13921=136244",
 		},
 		["Increased Strength 38"] = {
 			["spells"] = "14510=136235",
@@ -25068,62 +27060,62 @@ WeakAurasOptionsSaved = {
 		["Create Crystal Corpse"] = {
 			["spells"] = "27895=136235",
 		},
-		["追踪人型生物"] = {
-			["spells"] = "5225=132328,5226=132328,10236=132089,10237=132089,19883=135942,20160=135942",
+		["图样：巫术师兜帽"] = {
+			["spells"] = "18665=136235",
 		},
-		["Test Combo"] = {
-			["spells"] = "6747=136235",
+		["结构图：瑟银零件"] = {
+			["spells"] = "19846=134153",
 		},
-		["Increased Shadow Resist 01"] = {
-			["spells"] = "14663=136235",
+		["蓝色亚麻衬衣"] = {
+			["spells"] = "2394=132149,2416=136021",
 		},
-		["Attack Power 62"] = {
-			["spells"] = "15816=136235",
+		["附魔手套 - 骑乘"] = {
+			["spells"] = "13947=135913",
 		},
-		["Feral Move Speed Increase"] = {
-			["spells"] = "23218=136095",
+		["图样：蓝色龙鳞护肩"] = {
+			["spells"] = "19209=136235",
 		},
-		["Increase Spell Dam 17"] = {
-			["spells"] = "18052=136235",
+		["简易的褶裙"] = {
+			["spells"] = "12046=132149,12120=136021",
 		},
 		["冻结动画"] = {
 			["spells"] = "16245=136235",
 		},
-		["图样：原始蝙蝠皮手套"] = {
-			["spells"] = "24127=136235",
+		["任务自杀"] = {
+			["spells"] = "14050=136168",
 		},
-		["强化撕裂"] = {
-			["spells"] = "12286=132155,12658=132155,12659=132155,21831=132155",
+		["Increase Spell Dam 14"] = {
+			["spells"] = "14054=136235",
 		},
-		["绿铁护手"] = {
-			["spells"] = "3336=136192",
+		["强化伏击"] = {
+			["spells"] = "14079=132282,14080=132282,14081=132282",
 		},
-		["Increased Frost Resist 30"] = {
-			["spells"] = "14569=136235",
+		["Increased Rejuvenation Duration"] = {
+			["spells"] = "21871=136081",
 		},
-		["Increased Fire Resist 43"] = {
-			["spells"] = "14973=136235",
+		["Increased Frost Resist 13"] = {
+			["spells"] = "14554=136235",
 		},
-		["图样：绿色幼龙护腕"] = {
-			["spells"] = "9217=136235",
+		["Demon Slaying 117"] = {
+			["spells"] = "14098=136172",
 		},
 		["rfo"] = {
 			["spells"] = "22068=136147",
 		},
-		["占据"] = {
-			["spells"] = "17244=136129,17250=136235,19832=136222,23014=136222,23307=136129",
+		["Bloodpetal Poison Proc"] = {
+			["spells"] = "14111=136188",
 		},
-		["召唤花羽鹦鹉"] = {
-			["spells"] = "10682=132311",
+		["精灵之火（野性）"] = {
+			["spells"] = "3739=136033,16857=136033,17390=136033,17391=136033,17392=136033,17396=136033,17397=136033",
 		},
-		["图样：生命护肩"] = {
-			["spells"] = "19171=136235",
+		["Pagle's Point Cast - Create Mudskunk Lure"] = {
+			["spells"] = "24325=132932",
 		},
-		["萨弗拉斯之眼"] = {
-			["spells"] = "21160=136192",
+		["传送：灯塔"] = {
+			["spells"] = "444=136235",
 		},
-		["Increased Agility 09"] = {
-			["spells"] = "9099=136235",
+		["魔化瑟银头盔"] = {
+			["spells"] = "16742=136192",
 		},
 		["设计图：黑暗之魂护肩"] = {
 			["spells"] = "24147=136235",
@@ -25131,59 +27123,59 @@ WeakAurasOptionsSaved = {
 		["沙赫拉姆烈焰"] = {
 			["spells"] = "16596=135826",
 		},
-		["鲜血通道"] = {
-			["spells"] = "24617=136168",
+		["Despawn Tentacles"] = {
+			["spells"] = "26399=136235",
 		},
-		["Increase Holy Dam 22"] = {
-			["spells"] = "21518=136235",
+		["冷血"] = {
+			["spells"] = "14177=135988",
 		},
-		["破胆猛击 IV"] = {
-			["spells"] = "1797=136235,1802=136235",
+		["科琳水晶爆炸"] = {
+			["spells"] = "14208=136235",
 		},
-		["铜质双刃刀"] = {
-			["spells"] = "9983=136192,9984=136235",
+		["标记"] = {
+			["spells"] = "14209=136235,14210=136235,14227=136235,28836=136235",
 		},
-		["浓烟山脉之心"] = {
-			["spells"] = "15596=134084",
+		["强效自然防护药水"] = {
+			["spells"] = "17576=136235",
 		},
-		["Increased Shadow Resist 34"] = {
-			["spells"] = "14703=136235",
+		["浸魔披风 - 次级防护"] = {
+			["spells"] = "7865=135913,7866=135913",
 		},
 		["大型白色烟花束"] = {
 			["spells"] = "26518=136235",
 		},
-		["生命回复"] = {
-			["spells"] = "18222=135917",
+		["蛮皮护腿"] = {
+			["spells"] = "10572=136235,23625=136021",
 		},
 		["虚空行走"] = {
 			["spells"] = "31599=136163",
 		},
-		["Increased Fire Resist 34"] = {
-			["spells"] = "14614=136235",
+		["Increased Agility 32"] = {
+			["spells"] = "14396=136235",
 		},
 		["黑暗深渊的祝福"] = {
 			["spells"] = "8733=135850",
 		},
-		["击退"] = {
-			["spells"] = "10101=132939,11130=132939,18670=132939,18813=132939,18945=132939,19633=132939,20686=132939,23382=132939,26027=132219,28405=132219,28438=132219,30056=132219",
+		["抵抗沉默"] = {
+			["spells"] = "18985=136225,19786=136235,26208=136235",
 		},
-		["凿击"] = {
-			["spells"] = "1776=132155,1777=132155,1780=132155,1781=132155,8629=132155,8630=132155,11285=132155,11286=132155,11287=132155,11288=132155,12540=132155,13579=132155,24698=132155,28456=132155",
+		["设计图：魔化瑟银头盔"] = {
+			["spells"] = "16759=136235",
 		},
-		["Minion Spawn-in"] = {
-			["spells"] = "28234=136235",
+		["Increased Intellect 31"] = {
+			["spells"] = "14421=136235",
 		},
-		["Knockback 500 Triggers"] = {
-			["spells"] = "13541=136235,13566=136235",
+		["Increased Intellect 34"] = {
+			["spells"] = "14424=136235",
 		},
-		["制造热情药水"] = {
-			["spells"] = "898=136235",
+		["Increased Intellect 39"] = {
+			["spells"] = "14429=136235",
 		},
-		["图样：野人腰带"] = {
-			["spells"] = "3808=136235",
+		["高涨士气"] = {
+			["spells"] = "10767=136053",
 		},
-		["Summon Corpse Scarabs Delay"] = {
-			["spells"] = "28992=136235,28994=136235",
+		["Increased Spirit 16"] = {
+			["spells"] = "14435=136235",
 		},
 		["无荣誉目标"] = {
 			["spells"] = "2479=135994",
@@ -25191,59 +27183,59 @@ WeakAurasOptionsSaved = {
 		["遗弃技能：锤"] = {
 			["spells"] = "7041=133479",
 		},
-		["召唤赤环蛇"] = {
-			["spells"] = "10719=132311",
+		["屠魔药剂"] = {
+			["spells"] = "11406=135957,11477=136235",
 		},
-		["专注光环"] = {
-			["spells"] = "19746=135933,19747=135933",
+		["雷霆召唤"] = {
+			["spells"] = "16041=136014,16117=136014,16118=136014,16119=136014,16120=136014",
 		},
-		["奥术气泡"] = {
-			["spells"] = "9438=135896",
+		["土灵印记"] = {
+			["spells"] = "24884=136057",
 		},
 		["Increased Frost Resist 10"] = {
 			["spells"] = "14550=136235",
 		},
-		["熊形态"] = {
-			["spells"] = "5487=132276,5488=132276,7090=132276,18309=132276,19030=132276,19179=132276,27543=132276",
+		["Quest - Temporal Parasite Summon #2"] = {
+			["spells"] = "16630=136235",
 		},
-		["设计图：符文板甲护腿"] = {
-			["spells"] = "16754=136235",
+		["图样：硬化蝎壳胸甲"] = {
+			["spells"] = "10527=136235",
 		},
-		["Increased 1H Sword"] = {
-			["spells"] = "7520=136235,7523=136235,7525=136235,7527=136235,14121=136235,15763=136235,15764=136235,15765=136235,15896=136235,15897=136235,15898=136235,15899=136235,15900=136235,15901=136235,15902=136235,15903=136235,15904=136235,15905=136235,18061=136235",
+		["力场崩溃"] = {
+			["spells"] = "13235=136135",
 		},
-		["附魔盾牌 - 强效精神"] = {
-			["spells"] = "13905=135913,13906=135913",
+		["Increased Stamina 21"] = {
+			["spells"] = "14468=136235",
 		},
-		["地狱火"] = {
-			["spells"] = "1122=136219,1413=136219,19695=135818,19698=135818,20799=136235,22699=135860,24670=136219",
+		["Increased Stamina 23"] = {
+			["spells"] = "14470=136235",
 		},
 		["Increased Agility 45"] = {
 			["spells"] = "14939=136235",
 		},
-		["Increased Arcane Resist 01"] = {
-			["spells"] = "14664=136235",
+		["召唤睡梦守卫的幻象"] = {
+			["spells"] = "15114=136222",
 		},
-		["Increased Arcane Resist 20"] = {
-			["spells"] = "14722=136235",
+		["Increased Strength 17"] = {
+			["spells"] = "14489=136235",
 		},
-		["设计图：铜质宝石手套"] = {
-			["spells"] = "3350=136235",
+		["Increased Frost Resist 23"] = {
+			["spells"] = "14562=136235",
 		},
 		["Increase Shadow Dam 3"] = {
 			["spells"] = "7706=136235,7707=136235",
 		},
-		["飓风术"] = {
-			["spells"] = "5197=136018,5199=136018",
+		["穿刺"] = {
+			["spells"] = "15860=132324,16001=132324,16493=132312,16494=132312,24049=132324,26025=132155,26548=132324,28783=132090",
 		},
-		["百合根"] = {
-			["spells"] = "18832=136235",
+		["召唤螃蟹"] = {
+			["spells"] = "7907=133708",
 		},
-		["盾刺"] = {
-			["spells"] = "12099=132381,12782=132381",
+		["慢性毒药"] = {
+			["spells"] = "14532=136067",
 		},
-		["Party Fever Effect"] = {
-			["spells"] = "6759=136142",
+		["野人背心"] = {
+			["spells"] = "6661=136235,6662=136021",
 		},
 		["野兽狂暴 III"] = {
 			["spells"] = "3630=132091",
@@ -25251,29 +27243,29 @@ WeakAurasOptionsSaved = {
 		["Cluster Rocket, GREEN - SW"] = {
 			["spells"] = "26312=136235",
 		},
-		["Increased Strength 28"] = {
-			["spells"] = "14500=136235",
+		["致伤毒药 IV"] = {
+			["spells"] = "13230=134197",
 		},
 		["铜质链甲战靴"] = {
 			["spells"] = "3319=136192,3340=136235",
 		},
-		["巫毒"] = {
-			["spells"] = "17009=136121",
+		["沸腾瘟疫"] = {
+			["spells"] = "23072=136127",
 		},
-		["召唤幻象"] = {
-			["spells"] = "747=136235,17773=136122",
+		["暗影箭雨"] = {
+			["spells"] = "9081=136197,14887=136197,15245=136197,17228=136197,20741=136197,21341=136197,22665=136197,22878=136197,25586=136197,27382=136197,27383=136197,27646=136197,27831=136197,28407=136197,28448=136197,28599=136197",
 		},
-		["雏龙之语：红色"] = {
-			["spells"] = "22283=136010,22284=135805,22558=135805",
+		["图样：多彩护手"] = {
+			["spells"] = "23716=136235",
 		},
-		["熟化中毛皮"] = {
-			["spells"] = "3817=136235,3819=136021",
+		["冰霜箭"] = {
+			["spells"] = "24942=135846,28478=135846,28479=135846,29501=135934,29502=135990",
 		},
-		["混乱集中"] = {
-			["spells"] = "22418=135824",
+		["Increased Frost Resist 05"] = {
+			["spells"] = "14546=136235",
 		},
-		["全力一击 IV"] = {
-			["spells"] = "1709=132316,1713=132316",
+		["莫格莱尼印记"] = {
+			["spells"] = "28834=136192",
 		},
 		["受伤"] = {
 			["spells"] = "22269=136115",
@@ -25281,11 +27273,11 @@ WeakAurasOptionsSaved = {
 		["Increased 1H Axe"] = {
 			["spells"] = "7538=136235,7540=136235,13500=136235,14048=136235,15758=136235,15759=136235,15871=136235,15873=136235,15874=136235,15875=136235,15877=136235,15879=136235,15880=136235,15881=136235,15882=136235,15883=136235,15884=136235,15885=136235",
 		},
-		["自然抗性图腾"] = {
-			["spells"] = "10595=136061,10597=136061,10600=136061,10601=136061,10602=136061,10603=136061",
+		["Increased Frost Resist 38"] = {
+			["spells"] = "14577=136235",
 		},
-		["符文板甲战靴"] = {
-			["spells"] = "16665=136192",
+		["Increased Fire Resist 04"] = {
+			["spells"] = "14584=136235",
 		},
 		["设计图：精制秘银短裤"] = {
 			["spells"] = "9946=136235",
@@ -25296,17 +27288,17 @@ WeakAurasOptionsSaved = {
 		["鹰隼飞翔"] = {
 			["spells"] = "4104=136107,4736=136107,5996=136231",
 		},
-		["暗影传送"] = {
-			["spells"] = "7136=136121,7586=136121,7587=136121",
+		["Increased Fire Resist 22"] = {
+			["spells"] = "14602=136235",
 		},
-		["炸药"] = {
-			["spells"] = "8800=135826",
+		["作战鸣叫"] = {
+			["spells"] = "23060=133707",
 		},
-		["碧蓝丝质披风"] = {
-			["spells"] = "8786=132149",
+		["Increased Fire Resist 28"] = {
+			["spells"] = "14608=136235",
 		},
-		["防护火焰结界"] = {
-			["spells"] = "543=135806,874=136235,1035=135806,8457=135806,8458=135806,8459=135806,8460=135806,10223=135806,10224=135806,10225=135806,10226=135806,15041=135806",
+		["Defensive State 2 (DND)"] = {
+			["spells"] = "24949=132110",
 		},
 		["公式：附魔手套 - 高级草药学"] = {
 			["spells"] = "13869=136235",
@@ -25314,14 +27306,14 @@ WeakAurasOptionsSaved = {
 		["怒不可遏"] = {
 			["spells"] = "12322=136097,12964=136097,12999=136097,13000=136097,13001=136097,13002=136097",
 		},
-		["血红之怒"] = {
-			["spells"] = "16843=135818,16844=135818",
+		["香料冲击波"] = {
+			["spells"] = "31363=132965",
 		},
-		["次级火焰石效果"] = {
-			["spells"] = "1054=135821",
+		["Increased Fire Resist 33"] = {
+			["spells"] = "14613=136235",
 		},
-		["召唤雷霆之击"] = {
-			["spells"] = "21180=136235",
+		["异种蝎群召唤"] = {
+			["spells"] = "6677=136122",
 		},
 		["强效水下呼吸"] = {
 			["spells"] = "22807=135859",
@@ -25332,14 +27324,14 @@ WeakAurasOptionsSaved = {
 		["武器平衡锤"] = {
 			["spells"] = "7217=136235,7218=136235",
 		},
-		["生命封印"] = {
-			["spells"] = "9172=136235",
+		["酸性喷射"] = {
+			["spells"] = "26050=136016",
 		},
-		["诅咒之刃"] = {
-			["spells"] = "5271=136020",
+		["趣味炸弹"] = {
+			["spells"] = "20547=132863",
 		},
-		["设计图：精制秘银胸甲"] = {
-			["spells"] = "9973=136235",
+		["Increase Fire Dam 8"] = {
+			["spells"] = "9400=136235,9401=136235",
 		},
 		["Increased Fire Resist 44"] = {
 			["spells"] = "14974=136235",
@@ -25347,23 +27339,23 @@ WeakAurasOptionsSaved = {
 		["宁静之风"] = {
 			["spells"] = "25909=136013",
 		},
-		["火焰圣印"] = {
-			["spells"] = "1895=135968",
+		["Weak Poison Proc"] = {
+			["spells"] = "6752=136188",
 		},
-		["初始形态：火"] = {
-			["spells"] = "4933=136160",
+		["强化愤怒"] = {
+			["spells"] = "16814=136006,16815=136006,16816=136006,16817=136006,16818=136006",
 		},
-		["Increased Stamina 14"] = {
-			["spells"] = "9265=136235",
+		["斧类武器投掷"] = {
+			["spells"] = "6466=132395",
 		},
-		["近战入门"] = {
-			["spells"] = "4433=132109,4434=132109,4435=132109,4437=132109,4438=132109,4439=132109",
+		["水下诱鱼器"] = {
+			["spells"] = "8089=134335,9271=136235,9272=136235",
 		},
 		["强化冰霜新星"] = {
 			["spells"] = "11165=135840,12475=135840",
 		},
-		["召唤宠物"] = {
-			["spells"] = "883=132161,23498=132161,27639=136235",
+		["Increased Arcane Resist 06"] = {
+			["spells"] = "14708=136235",
 		},
 		["火焰法杖 II"] = {
 			["spells"] = "753=132325,1924=132325",
@@ -25380,8 +27372,8 @@ WeakAurasOptionsSaved = {
 		["铁炉堡胸甲"] = {
 			["spells"] = "8367=136192,8370=136235",
 		},
-		["Increased Frost Resist 41"] = {
-			["spells"] = "14977=136235",
+		["酸息术"] = {
+			["spells"] = "12533=136007,12884=136007,12891=136007",
 		},
 		["召唤鸡蛋"] = {
 			["spells"] = "13563=132833",
@@ -25389,80 +27381,80 @@ WeakAurasOptionsSaved = {
 		["蛮力狂扫"] = {
 			["spells"] = "4520=132369",
 		},
-		["深红丝质手套"] = {
-			["spells"] = "8804=132149,8805=136021",
+		["次级吸收"] = {
+			["spells"] = "7446=136235,7447=136235",
 		},
-		["锤类武器专精"] = {
-			["spells"] = "4366=132325,4367=132325,4368=132325,4369=132325,4370=132325,4371=132325,4372=132325,4373=132325,4374=132325,4375=132325,4376=132325,4377=132325,4378=132325,4379=132325,4380=132325,4381=132325,5548=132325,5549=132325,5550=132325,5551=132325,5552=132325,5553=132325,5554=132325,5558=132325,5559=132325,5560=132325,5561=132325,5562=132325,5563=132325,5564=132325,12284=133476,12701=133476,12702=133476,12703=133476,12704=133476,13709=133476,13800=133476,13801=133476,13802=133476,13803=133476,20864=133042",
+		["醉酒昏迷"] = {
+			["spells"] = "14869=132791,14870=132791",
 		},
 		["法杖掌握"] = {
 			["spells"] = "4410=135145,4411=135145,4412=135145,4413=135145",
 		},
-		["公式：符文奥金棒"] = {
-			["spells"] = "20078=135913",
+		["强化刺骨/割裂"] = {
+			["spells"] = "24471=136235",
 		},
-		["熔岩之雨"] = {
-			["spells"] = "25150=136235",
+		["侏儒通用遥控器"] = {
+			["spells"] = "9269=136235",
 		},
-		["设计图：精制秘银护肩"] = {
-			["spells"] = "9953=136235",
+		["坚韧药剂"] = {
+			["spells"] = "3178=136021,3450=136235",
 		},
-		["Increased Agility 06"] = {
-			["spells"] = "7492=136235",
+		["Increased Intellect 43"] = {
+			["spells"] = "14943=136235",
 		},
-		["放置斯里多尔的信号灯"] = {
-			["spells"] = "21729=136235",
+		["图样：霜刃护腿"] = {
+			["spells"] = "19190=136235",
 		},
 		["合并第一卷"] = {
 			["spells"] = "23231=136235",
 		},
-		["召唤伊莉莎的卫兵"] = {
-			["spells"] = "3107=136142",
+		["烤迅猛龙肉"] = {
+			["spells"] = "15855=136192",
 		},
-		["结构图：强力爆盐炸弹"] = {
-			["spells"] = "23092=134153",
+		["爆炸"] = {
+			["spells"] = "5255=136133,7670=135805,12158=135805,12159=135805,13259=135805,20038=136235,20476=135826,25099=135805,25698=135826,25699=135826,26059=135826,27745=134538,28433=135826",
 		},
 		["Increase Healing 46"] = {
 			["spells"] = "18035=136235",
 		},
-		["腐化耐力"] = {
-			["spells"] = "6819=135914,23244=135914",
+		["Increased Arcane Resist 44"] = {
+			["spells"] = "14968=136235",
 		},
-		["精制秘银胸甲"] = {
-			["spells"] = "9972=136192",
+		["虚空行者守卫"] = {
+			["spells"] = "5252=136221",
 		},
 		["制造命令法杖"] = {
 			["spells"] = "15539=136058",
 		},
-		["Attack Power 76"] = {
-			["spells"] = "15824=136235",
+		["Increased Shadow Resist 45"] = {
+			["spells"] = "14994=136235",
 		},
-		["图样：龟壳手套"] = {
-			["spells"] = "10510=136235",
+		["急速施法"] = {
+			["spells"] = "8215=132369",
 		},
-		["神圣逃脱"] = {
-			["spells"] = "789=136235",
+		["魔法抑制"] = {
+			["spells"] = "604=136006,1266=136006,5305=136235,8450=136006,8451=136006,8452=136006,8453=136006,10173=136006,10174=136006,10175=136006,10176=136006",
 		},
-		["冬季狂欢者 - 人类男性"] = {
-			["spells"] = "26239=135849",
+		["制造PX83型密码机"] = {
+			["spells"] = "15066=133748",
 		},
 		["假人法术"] = {
 			["spells"] = "18282=136235",
 		},
-		["召唤奥伯丁哨兵"] = {
-			["spells"] = "11804=136235",
+		["温德索尔狂暴"] = {
+			["spells"] = "15167=132277",
 		},
-		["召唤裂隙行者"] = {
-			["spells"] = "9615=136121",
+		["Block Value 18"] = {
+			["spells"] = "22912=136235",
 		},
-		["Increased Strength 29"] = {
-			["spells"] = "14501=136235",
+		["多彩防护：火焰"] = {
+			["spells"] = "16373=134563",
 		},
 		["纳拉雷克斯醒来"] = {
 			["spells"] = "6271=136107,8136=136107",
 		},
-		["强化剧痛鞭笞"] = {
-			["spells"] = "18128=136136,18129=136136",
+		["轻皮"] = {
+			["spells"] = "2881=136235",
 		},
 		["鼓舞"] = {
 			["spells"] = "8065=135913,28816=136235,28817=135930",
@@ -25470,50 +27462,50 @@ WeakAurasOptionsSaved = {
 		["绿色皮甲"] = {
 			["spells"] = "3772=136235,3796=136021",
 		},
-		["Increased Agility 30"] = {
-			["spells"] = "14394=136235",
+		["秘仪灵魂 II"] = {
+			["spells"] = "1450=135932,1468=135932",
 		},
 		["庇护"] = {
 			["spells"] = "2351=135926,2355=136047,22850=135824,23780=135880",
 		},
-		["附魔披风 - 初级抗性"] = {
-			["spells"] = "7441=135913,7454=135913",
+		["黑铁斩碎者"] = {
+			["spells"] = "15294=136192",
 		},
 		["公式：附魔披风 - 强效抗性"] = {
 			["spells"] = "20068=136235",
 		},
-		["放置幽灵磁铁"] = {
-			["spells"] = "19588=136235",
+		["古雷曼格的信任"] = {
+			["spells"] = "20553=132164,20556=132164",
 		},
-		["平衡光与影"] = {
-			["spells"] = "23151=136235",
+		["Quest - Polymorph Impact"] = {
+			["spells"] = "24180=136235",
 		},
 		["冬狼"] = {
 			["spells"] = "581=132266",
 		},
-		["召唤蓝蛙"] = {
-			["spells"] = "10701=132311",
+		["处斩"] = {
+			["spells"] = "24316=132350",
 		},
-		["迅捷反射 III"] = {
-			["spells"] = "6433=132223",
+		["图样：铁羽护肩"] = {
+			["spells"] = "19172=136235",
 		},
-		["召唤艾斯卡达尔"] = {
-			["spells"] = "22649=134176",
+		["Rocky Ground Impact"] = {
+			["spells"] = "26271=136235",
 		},
-		["喝下疾病药水"] = {
-			["spells"] = "6355=134799",
+		["娜玛拉消失"] = {
+			["spells"] = "15341=136235",
 		},
-		["牺牲圣印"] = {
-			["spells"] = "611=136235,13903=135966",
+		["图样：霜纹长袍"] = {
+			["spells"] = "18473=136235",
 		},
-		["炽热魔符"] = {
-			["spells"] = "6295=135826",
+		["Increased Armor 130"] = {
+			["spells"] = "15367=136235",
 		},
-		["碎石怪伪装"] = {
-			["spells"] = "5270=136189",
+		["庇护祝福"] = {
+			["spells"] = "20911=136051,20912=136051,20913=136051,20914=136051,20948=136051,20949=136051,20950=136051,20951=136051",
 		},
-		["回响咆哮"] = {
-			["spells"] = "10967=132366",
+		["召唤朋友"] = {
+			["spells"] = "16457=132161",
 		},
 		["图样：北极外套"] = {
 			["spells"] = "28228=136235",
@@ -25521,62 +27513,62 @@ WeakAurasOptionsSaved = {
 		["配方：超强巨魔之血药水"] = {
 			["spells"] = "3456=136235",
 		},
-		["Increase Shadow Dam 5"] = {
-			["spells"] = "7710=136235",
+		["Increased Strength 33"] = {
+			["spells"] = "14505=136235",
 		},
-		["Increased Damage - Beast 08"] = {
-			["spells"] = "7593=136235",
+		["Item +AC/FR Leg R3"] = {
+			["spells"] = "15462=136235",
 		},
 		["附魔靴子 - 初级速度"] = {
 			["spells"] = "13890=135913,13891=135913",
 		},
-		["邪恶光环"] = {
-			["spells"] = "17466=136225,17467=136225,17625=133076,27987=136225,27988=136225,28340=136225,28341=136225",
+		["丝绸小包"] = {
+			["spells"] = "3813=136235,3814=136021",
 		},
 		["爱情的重击"] = {
 			["spells"] = "27572=132382",
 		},
-		["病弱"] = {
-			["spells"] = "14535=136066",
+		["淤血"] = {
+			["spells"] = "4102=136231,4733=136231,5150=136231",
 		},
-		["血之契印"] = {
-			["spells"] = "6307=136124,7804=136124,7805=136124,7871=136124,7872=136124,7873=136124,11766=136124,11767=136124,11768=136124,11769=136124,20318=136124,20319=136124,20320=136124,20321=136124,20397=136124",
+		["拳套"] = {
+			["spells"] = "15590=132938,15992=132938",
 		},
 		["Summon Type A"] = {
 			["spells"] = "28421=136235",
 		},
-		["金棒"] = {
-			["spells"] = "14379=136192,14381=136235",
+		["召唤腐化猫"] = {
+			["spells"] = "15648=132311",
 		},
-		["强化治疗祷言重击"] = {
-			["spells"] = "23550=136235",
+		["侦查形态"] = {
+			["spells"] = "3033=132311",
 		},
-		["双手斧入门"] = {
-			["spells"] = "4414=132316,4415=132316,4416=132316,4417=132316,4424=132316,5469=132316",
+		["设计图：月钢宽剑"] = {
+			["spells"] = "15756=136235",
 		},
 		["卑鄙"] = {
 			["spells"] = "14082=136220,14083=136220",
 		},
-		["Attack Power - Feral (+420)"] = {
-			["spells"] = "28154=136235",
+		["Increased Fire Resist 32"] = {
+			["spells"] = "14612=136235",
 		},
-		["易伤"] = {
-			["spells"] = "4166=135860,4769=135860,6021=135860",
+		["Increase Frost Dam 8"] = {
+			["spells"] = "9403=136235,9404=136235",
 		},
-		["结构图：夜视步枪"] = {
-			["spells"] = "4030=136235",
+		["召唤黑手恐法师"] = {
+			["spells"] = "15794=136075",
 		},
-		["漂亮的红衬衣"] = {
-			["spells"] = "3866=132149,3890=136021",
+		["Attack Power 46"] = {
+			["spells"] = "15811=136235",
 		},
-		["图样：守护腰带"] = {
-			["spells"] = "3806=136235",
+		["Attack Power 80"] = {
+			["spells"] = "15826=136235",
 		},
-		["图样：守护之甲"] = {
-			["spells"] = "3805=136235",
+		["初级防御药剂"] = {
+			["spells"] = "7183=136235",
 		},
-		["熔炼钢锭"] = {
-			["spells"] = "3569=136235,3596=136235",
+		["追踪野兽"] = {
+			["spells"] = "1494=132328,1547=132328,5119=132328,5125=132323,10227=132328",
 		},
 		["图样：邪恶皮甲"] = {
 			["spells"] = "19217=136235",
@@ -25584,41 +27576,41 @@ WeakAurasOptionsSaved = {
 		["Gnomeregan Reputation"] = {
 			["spells"] = "26159=136235",
 		},
-		["Rancid Ooze Effect"] = {
-			["spells"] = "3339=136133",
+		["大地震颤"] = {
+			["spells"] = "6524=136025",
 		},
-		["强健灵魂"] = {
-			["spells"] = "8068=135932",
+		["强化脚踢"] = {
+			["spells"] = "13754=132219,13867=132219,24434=136235",
 		},
 		["阿塔莱毒药"] = {
 			["spells"] = "18949=136067",
 		},
-		["食尸鬼形态"] = {
-			["spells"] = "3287=136224",
+		["伊森哈德扫击"] = {
+			["spells"] = "22639=132152",
 		},
-		["厚绒线绷带"] = {
-			["spells"] = "3278=136192,3283=136192",
+		["净化并放置食物"] = {
+			["spells"] = "16072=133748",
 		},
-		["配方：抗毒药剂"] = {
-			["spells"] = "3182=136235",
+		["结晶"] = {
+			["spells"] = "16104=136222",
 		},
-		["石之赐福"] = {
-			["spells"] = "16470=132154",
+		["Stasis Test"] = {
+			["spells"] = "4321=136235",
 		},
-		["Increase Nature Dam 26"] = {
-			["spells"] = "18000=136235",
+		["死尸虫"] = {
+			["spells"] = "16142=136188,16143=136134",
 		},
 		["Increased Spirit 31"] = {
 			["spells"] = "14453=136235",
 		},
-		["死亡的拥抱"] = {
-			["spells"] = "24153=136235,24161=136235",
+		["强化意志"] = {
+			["spells"] = "16171=132333",
 		},
-		["致命毒药"] = {
-			["spells"] = "2818=132290,2823=132290,2835=132290,2843=132290,2844=132290,3583=136067,10022=136016,11360=132290,11361=132290,13582=136016,21787=136016,21788=136016,25412=132290,25974=132282",
+		["先祖治疗"] = {
+			["spells"] = "16176=136109,16235=136109,16240=136109",
 		},
-		["Attack Power 68"] = {
-			["spells"] = "15819=136235",
+		["自然指引"] = {
+			["spells"] = "16180=135860,16196=135860,16198=135860",
 		},
 		["Increase Spell Dam 64"] = {
 			["spells"] = "23730=136235",
@@ -25626,8 +27618,8 @@ WeakAurasOptionsSaved = {
 		["真银护手"] = {
 			["spells"] = "9954=136192,9955=136235",
 		},
-		["设计图：彩虹之锤"] = {
-			["spells"] = "6519=136235",
+		["附魔武器 - 敏捷"] = {
+			["spells"] = "23800=135913",
 		},
 		["Create Replacement Kormok's Brazier of Beckoning"] = {
 			["spells"] = "27562=136235",
@@ -25641,38 +27633,38 @@ WeakAurasOptionsSaved = {
 		["图样：大法师腰带"] = {
 			["spells"] = "22871=136235",
 		},
-		["骑术：狼"] = {
-			["spells"] = "825=136103,6746=136103",
+		["Conjure Dull Flat Elven Blade DND"] = {
+			["spells"] = "22925=136235",
 		},
-		["软泥痢疾"] = {
-			["spells"] = "16461=135914",
+		["绿铁锁甲"] = {
+			["spells"] = "3508=136192,3525=136235",
 		},
-		["强化宠物"] = {
-			["spells"] = "22647=136146",
+		["制造玛艾里的容器"] = {
+			["spells"] = "16351=136235",
 		},
-		["制造幽暗城卡片集合"] = {
-			["spells"] = "27718=136235",
+		["Rend Calls For Buff"] = {
+			["spells"] = "16364=136235,16365=136235",
 		},
-		["炼金术"] = {
-			["spells"] = "2259=136240,3101=136240,3464=136240,11611=136240",
+		["老鼠"] = {
+			["spells"] = "16371=136235",
 		},
-		["斯塔文的诅咒"] = {
-			["spells"] = "3105=136203,13524=136203",
+		["多彩防护：冰霜"] = {
+			["spells"] = "16392=134563",
 		},
-		["腐蚀毒药"] = {
-			["spells"] = "3396=136016,13526=136016",
+		["Rotate 360"] = {
+			["spells"] = "26009=136235",
 		},
-		["初级治疗石"] = {
-			["spells"] = "6262=135230,23468=135230,23469=135230",
+		["蜥蜴之皮"] = {
+			["spells"] = "10351=134314",
 		},
-		["救赎之魂"] = {
-			["spells"] = "20711=132864,27792=136235,27795=136235,27827=135913",
+		["定罪之槌"] = {
+			["spells"] = "16451=132507",
 		},
 		["撕碎"] = {
 			["spells"] = "3252=132152,5221=136231,5222=136231,6800=136231,6801=136231,8992=136231,8993=136231,9829=136231,9830=136231,9831=136231,9832=136231,27555=132122",
 		},
-		["快速嗜血"] = {
-			["spells"] = "3229=136012",
+		["熔岩"] = {
+			["spells"] = "16455=135805",
 		},
 		["破碎一击"] = {
 			["spells"] = "22572=132298",
@@ -25680,56 +27672,56 @@ WeakAurasOptionsSaved = {
 		["召唤红色小神龙"] = {
 			["spells"] = "23530=132311",
 		},
-		["灵魂之锤"] = {
-			["spells"] = "23488=136235",
+		["食尸鬼瘟疫"] = {
+			["spells"] = "16458=135914",
 		},
-		["彩虹之锤"] = {
-			["spells"] = "6518=136192",
+		["安全降落"] = {
+			["spells"] = "1860=132914,1862=132914,18443=136235,24350=132916",
 		},
-		["附魔武器 - 生命偷取"] = {
-			["spells"] = "20032=135913",
+		["刺耳尖啸"] = {
+			["spells"] = "26379=136147",
 		},
 		["Judgement of Light Intermediate"] = {
 			["spells"] = "5373=135924",
 		},
-		["治疗"] = {
-			["spells"] = "2147=136085,22167=135915,22883=135915,24947=135915",
+		["撕扯"] = {
+			["spells"] = "1079=132152,1445=132152,9492=132152,9493=132152,9494=132152,9495=132152,9752=132152,9753=132152,9894=132152,9895=132152,9896=132152,9897=132152",
 		},
-		["埋葬塞缪尔的遗体"] = {
-			["spells"] = "20364=136235",
+		["青铜匕首"] = {
+			["spells"] = "3491=136192,3516=136235",
 		},
-		["召唤暴怒的双足飞龙"] = {
-			["spells"] = "14307=136235",
+		["恶魔之叉"] = {
+			["spells"] = "16603=136169",
 		},
 		["打开密箱"] = {
 			["spells"] = "14125=136235",
 		},
-		["食谱：炖陆行鸟"] = {
-			["spells"] = "6427=136235",
+		["魔铸胸甲"] = {
+			["spells"] = "16611=136123,16667=136192",
 		},
 		["制造火炬"] = {
 			["spells"] = "1172=136058",
 		},
-		["公式：附魔手套 - 强效敏捷"] = {
-			["spells"] = "20071=136235",
+		["狮心"] = {
+			["spells"] = "16617=134966",
 		},
-		["制造哈卡之心召唤法阵"] = {
-			["spells"] = "24602=136235",
+		["肾击"] = {
+			["spells"] = "408=132298,6735=132298,8643=132298,8644=132298,27615=132298",
 		},
-		["双手斧"] = {
-			["spells"] = "197=132395,15985=132395",
+		["Copy of Self Stun - 30 seconds"] = {
+			["spells"] = "29825=136168",
 		},
-		["双手锤专精"] = {
-			["spells"] = "4472=132325,4473=132325,4474=132325,4475=132325,4476=132325,4477=132325,4478=132325,4479=132325,4480=132325,4481=132325,4482=132325,4483=132325,4484=132325,4485=132325,4486=132325,4487=132325,5348=132325,5349=132325,5350=132325,5351=132325,5352=132325,5353=132325,5354=132325,5533=132325,5534=132325,5535=132325,5536=132325,5537=132325,5538=132325,5539=132325",
+		["捕捉地狱犬之魂"] = {
+			["spells"] = "16627=136163",
 		},
-		["占卜沉思"] = {
-			["spells"] = "5017=136235",
+		["Increased Fire Resist 07"] = {
+			["spells"] = "14587=136235",
 		},
-		["劣质砂轮"] = {
-			["spells"] = "3320=136192,3341=136235",
+		["Increase Reputation"] = {
+			["spells"] = "24226=136235",
 		},
-		["图样：暗色皮护腿"] = {
-			["spells"] = "9215=136235",
+		["致密磨刀石"] = {
+			["spells"] = "16641=136192,16669=136235",
 		},
 		["强化猎人印记"] = {
 			["spells"] = "19421=132212,19422=132212,19423=132212,19424=132212,19425=132212",
@@ -25740,23 +27732,23 @@ WeakAurasOptionsSaved = {
 		["灵魂偷取效果"] = {
 			["spells"] = "2690=132325",
 		},
-		["矛"] = {
-			["spells"] = "3386=132271,15990=132271",
+		["Increase Spell Dam 11"] = {
+			["spells"] = "14248=136235,14254=136235,15714=136235",
 		},
 		["火核狙击步枪"] = {
 			["spells"] = "22795=136235",
 		},
-		["食谱：炒科多肉"] = {
-			["spells"] = "6425=136235",
+		["设计图：辐光长靴"] = {
+			["spells"] = "16685=136235",
 		},
-		["召唤白色钳嘴龟"] = {
-			["spells"] = "23428=132311",
+		["Cluster Rocket, WHITE BIG - U"] = {
+			["spells"] = "26510=136235",
 		},
 		["附魔手套 - 超强敏捷"] = {
 			["spells"] = "25080=135913",
 		},
-		["萨瑞鲁斯的元素生物"] = {
-			["spells"] = "6490=136187",
+		["皮普的急智"] = {
+			["spells"] = "16710=136235",
 		},
 		["治疗大师"] = {
 			["spells"] = "14904=135917,15024=135917,15025=135917,15026=135917,15027=135917,21561=135806",
@@ -25764,32 +27756,32 @@ WeakAurasOptionsSaved = {
 		["冬季狂欢者 - 暗夜精灵女性"] = {
 			["spells"] = "26245=135849",
 		},
-		["盐湖赛车低速"] = {
-			["spells"] = "6601=134063",
+		["火焰之花"] = {
+			["spells"] = "19636=135818,19637=135808",
 		},
 		["召唤库尔森奴隶"] = {
 			["spells"] = "8813=135736",
 		},
-		["劣质磨刀石"] = {
-			["spells"] = "2660=136192",
+		["英雄神力"] = {
+			["spells"] = "1013=136101,2692=136101,4116=136101,4117=136101,4118=136101,4119=136101,4120=136101,4121=136101,4122=136101,4123=136101,4124=136101,4125=136101,4126=136101,4127=136101,4128=136101,4129=136101,5027=136101,5028=136101,5029=136101,5030=136101,5034=136101,5035=136101,5036=136101,5037=136101",
 		},
-		["圣言术：盾"] = {
-			["spells"] = "651=136235,3064=135932,3082=135915,3083=135915,3084=135915,3748=135915",
+		["设计图：要塞护手"] = {
+			["spells"] = "16755=136235",
 		},
 		["迪迪尔印记"] = {
 			["spells"] = "28114=132212,28115=132212",
 		},
-		["制造强效治疗石"] = {
-			["spells"] = "657=136235,5702=135230,11729=135230,23816=135230,23817=135230,23818=135230",
+		["极寒延伸"] = {
+			["spells"] = "16757=136141,16758=136141",
 		},
 		["侏儒微调器"] = {
 			["spells"] = "12590=136235,12631=136235",
 		},
-		["Increased Agility 18"] = {
-			["spells"] = "14371=136235",
+		["设计图：魔化瑟银胸甲"] = {
+			["spells"] = "16761=136235",
 		},
-		["厚丝质绷带"] = {
-			["spells"] = "7929=136192,7931=136192",
+		["魔法粮草"] = {
+			["spells"] = "23304=136235",
 		},
 		["Increased Spirit 32"] = {
 			["spells"] = "14454=136235",
@@ -25800,44 +27792,44 @@ WeakAurasOptionsSaved = {
 		["Increased Nature Resist 18"] = {
 			["spells"] = "14639=136235",
 		},
-		["优质皮靴"] = {
-			["spells"] = "2158=136235",
+		["吸血一击"] = {
+			["spells"] = "16793=136130",
 		},
-		["血牙的图腾"] = {
-			["spells"] = "6239=132277",
+		["全速"] = {
+			["spells"] = "1557=132347",
 		},
-		["安静自杀（冰霜）"] = {
-			["spells"] = "13520=136168",
+		["金鳞战靴"] = {
+			["spells"] = "3515=136192",
 		},
-		["吉兹洛克的假人嘲讽"] = {
-			["spells"] = "21861=132333",
+		["勇士之力"] = {
+			["spells"] = "16916=135940",
 		},
-		["Thekal Transform"] = {
-			["spells"] = "24169=132288",
+		["射击头部 II"] = {
+			["spells"] = "2001=132153",
 		},
-		["巫毒面具"] = {
-			["spells"] = "10531=136235",
+		["护甲粉碎"] = {
+			["spells"] = "16928=132403",
 		},
-		["结构图：简易投掷炸弹"] = {
-			["spells"] = "8341=136235",
+		["设计图：野人铁靴"] = {
+			["spells"] = "9819=136235",
 		},
 		["强化嘲讽"] = {
 			["spells"] = "12302=136080,12765=136080",
 		},
-		["恐惧术 II"] = {
-			["spells"] = "1398=136183",
+		["Zap Crystal"] = {
+			["spells"] = "28032=136235",
 		},
-		["腐蚀酸液吐息"] = {
-			["spells"] = "16359=136007,20667=136007",
+		["锤类武器强化"] = {
+			["spells"] = "5545=132325,5546=132325,5547=132325,5555=132325,5556=132325,5557=132325",
 		},
-		["奥金机械幼龙"] = {
-			["spells"] = "19804=134153,23052=136235,23074=134153",
+		["速度"] = {
+			["spells"] = "2379=132219,14530=132307,17498=132307,22863=132307",
 		},
-		["设计图：镀银青铜护肩"] = {
-			["spells"] = "3351=136235",
+		["变鸡"] = {
+			["spells"] = "3245=136235,3246=135996",
 		},
-		["亚麻腰带"] = {
-			["spells"] = "8776=132149,8777=136021",
+		["Mid Horde"] = {
+			["spells"] = "23946=136235",
 		},
 		["附魔靴子 - 初级敏捷"] = {
 			["spells"] = "7867=135913",
@@ -25851,107 +27843,107 @@ WeakAurasOptionsSaved = {
 		["枭兽光环"] = {
 			["spells"] = "24907=136057",
 		},
-		["迅捷蓝色迅猛龙"] = {
-			["spells"] = "23241=132253",
+		["辐光护腿"] = {
+			["spells"] = "16725=136192",
 		},
-		["灵魂链接"] = {
-			["spells"] = "19028=136160,25228=136160",
+		["放置火炬"] = {
+			["spells"] = "17016=136235",
 		},
-		["精致手工火枪"] = {
-			["spells"] = "3939=136235,4002=136235",
+		["希斯耐特吸血术"] = {
+			["spells"] = "5219=136163",
 		},
-		["洞穴麦酒"] = {
-			["spells"] = "5021=132796",
+		["设计图：黎明之刃"] = {
+			["spells"] = "17021=136235",
 		},
-		["恐吓野兽"] = {
-			["spells"] = "1513=132118,1567=132118,14326=132118,14327=132118,14445=132118,14446=132118",
+		["驱散射击"] = {
+			["spells"] = "1988=132153,19503=132153,23601=132153",
 		},
 		["召唤希洛塔姆"] = {
 			["spells"] = "16796=136235",
 		},
-		["Increase Nature Dam 2"] = {
-			["spells"] = "7691=136235",
+		["设计图：精工风暴战锤"] = {
+			["spells"] = "17035=136235",
 		},
-		["Attack Power Ranged 26"] = {
-			["spells"] = "21436=136235",
+		["Summon Freethinker's Bracers DND"] = {
+			["spells"] = "28920=136235",
 		},
-		["森林的召唤"] = {
-			["spells"] = "6537=136107",
+		["血藤长靴"] = {
+			["spells"] = "24093=132149",
 		},
 		["图样：恶魔布手套"] = {
 			["spells"] = "22872=136235",
 		},
-		["强力姿态 II"] = {
-			["spells"] = "2473=132109",
+		["Distract Move"] = {
+			["spells"] = "15051=136235,15056=136235",
 		},
-		["Increased Stamina 34"] = {
-			["spells"] = "14481=136235",
+		["蓝龙军团"] = {
+			["spells"] = "17167=136235",
 		},
-		["自杀"] = {
-			["spells"] = "7=136168,8327=136168,8328=136168,8329=136168,13167=136168,18184=136168,26002=136168,26627=136168,27791=136168,27965=136168,28012=136168,28748=136235",
+		["哈尔琳的意志"] = {
+			["spells"] = "17168=135744",
 		},
-		["防护暗影结界"] = {
-			["spells"] = "535=136235,6229=136121,6232=136121,11739=136121,11740=136121,11741=136121,11742=136121,28610=136121,28611=136235",
+		["虔诚护甲提高"] = {
+			["spells"] = "27850=136052",
 		},
-		["黑皮外套"] = {
-			["spells"] = "2169=136235",
+		["英雄的召唤"] = {
+			["spells"] = "17200=136235",
 		},
 		["选择能量"] = {
 			["spells"] = "5610=136011",
 		},
-		["基赫纳斯的诅咒"] = {
-			["spells"] = "19716=136160",
+		["测试恶臭颅骨"] = {
+			["spells"] = "17271=136235",
 		},
-		["消失"] = {
-			["spells"] = "1856=132331,1857=132331,1858=132331,1859=132331,11327=132331,11329=132331,14093=132331,24223=132331,24228=132331,24229=132331,24230=132331,24231=132331,24232=132331,24233=132331,24699=132331,24700=135743,27617=132331",
+		["设计图：蓝光斧"] = {
+			["spells"] = "9996=136235",
 		},
 		["调整"] = {
 			["spells"] = "13983=136056,14070=136056,14071=136056,15250=136159",
 		},
-		["Increase Spell Dam 15"] = {
-			["spells"] = "14798=136235",
+		["强力黎明印记"] = {
+			["spells"] = "30090=134501",
 		},
 		["熊之拥抱"] = {
 			["spells"] = "5214=132111",
 		},
-		["投掷"] = {
-			["spells"] = "2567=135426,2764=132324,10277=132324,15607=132324,15795=132324,15997=135426,16000=132324,19785=132324,22887=132324",
+		["妖术"] = {
+			["spells"] = "11641=136071,16097=136071,16707=136071,16708=136071,16709=136071,17172=136071,18503=135996,22566=136071,24053=136071",
 		},
-		["简易的黑裙子"] = {
-			["spells"] = "12077=132149,12122=136021",
+		["巴纳扎尔变形"] = {
+			["spells"] = "17288=136129",
 		},
 		["节日祝酒"] = {
 			["spells"] = "26074=136235",
 		},
-		["野葡萄药水"] = {
-			["spells"] = "11387=136235,11458=136235",
+		["渐隐术"] = {
+			["spells"] = "586=135994,1265=135994,9578=135994,9579=135994,9580=135994,9581=135994,9592=135994,9593=135994,10941=135994,10942=135994,10943=135994,10944=135994,12685=135994,20672=136047",
 		},
-		["熔炼青铜"] = {
-			["spells"] = "2659=136235,3314=136235",
+		["暗影延伸"] = {
+			["spells"] = "17322=136130,17323=136130,17325=136130",
 		},
-		["强力巨魔之血药水"] = {
-			["spells"] = "3176=136235,3185=136021",
+		["水晶蜘蛛之牙"] = {
+			["spells"] = "17331=136113",
 		},
-		["Increased Nature Resist 41"] = {
-			["spells"] = "14984=136235",
+		["图样：迅猛龙皮腰带"] = {
+			["spells"] = "17403=136235",
 		},
-		["Increased Frost Resist 20"] = {
-			["spells"] = "14559=136235",
+		["野性"] = {
+			["spells"] = "5515=132369",
 		},
 		["酸液冲击"] = {
 			["spells"] = "24993=136235",
 		},
-		["投掷泥土"] = {
-			["spells"] = "6530=136090",
+		["制造夜龙之息"] = {
+			["spells"] = "15344=136235",
 		},
-		["亡灵语"] = {
-			["spells"] = "17737=136235",
+		["霜山羊"] = {
+			["spells"] = "17460=132248",
 		},
-		["挫志咆哮"] = {
-			["spells"] = "99=132121,1735=132121,1736=132121,1737=132121,9490=132121,9491=132121,9747=132121,9748=132121,9898=132121,9899=132121,10968=132121,15727=132121,15971=132121,20753=132121,27551=132121",
+		["Beast Slaying 48"] = {
+			["spells"] = "17482=136235",
 		},
-		["公式：附魔盾牌 - 次级防护"] = {
-			["spells"] = "13465=136235",
+		["相位淡出"] = {
+			["spells"] = "3648=136047",
 		},
 		["吞食猎物"] = {
 			["spells"] = "4142=132278,4143=132278,4768=132278,6020=132278",
@@ -25959,17 +27951,17 @@ WeakAurasOptionsSaved = {
 		["护甲 +16"] = {
 			["spells"] = "2832=136235",
 		},
-		["大型爆盐炸弹逆火"] = {
-			["spells"] = "8510=135805",
+		["Increase Nature Dam 30"] = {
+			["spells"] = "18005=136235",
 		},
-		["铁钥匙"] = {
-			["spells"] = "6471=136192,6473=136235",
+		["转化：转土成水"] = {
+			["spells"] = "17561=134459",
 		},
-		["静电屏障"] = {
-			["spells"] = "11841=136051",
+		["召唤红鹦鹉"] = {
+			["spells"] = "17567=132311",
 		},
-		["召唤被奴役的座狼"] = {
-			["spells"] = "7488=136130",
+		["Nalpak (TEST)"] = {
+			["spells"] = "6954=136235",
 		},
 		["Distract Test"] = {
 			["spells"] = "15054=132289,15055=132289",
@@ -25992,20 +27984,20 @@ WeakAurasOptionsSaved = {
 		["灵猴守护"] = {
 			["spells"] = "13163=132159,13164=132159",
 		},
-		["锁甲"] = {
-			["spells"] = "8737=132627,8738=132627",
+		["毒云之箭"] = {
+			["spells"] = "26601=136016",
 		},
-		["无畏突袭"] = {
-			["spells"] = "2452=132316",
+		["尸爆"] = {
+			["spells"] = "17616=136133",
 		},
 		["祖利安切割"] = {
 			["spells"] = "24251=136235",
 		},
-		["安图苏尔的治疗波"] = {
-			["spells"] = "11895=135916",
+		["钉刺突击准备"] = {
+			["spells"] = "24150=132337",
 		},
-		["火焰圣印 II"] = {
-			["spells"] = "1896=135968",
+		["多彩抗性"] = {
+			["spells"] = "17629=134828",
 		},
 		["提高声望"] = {
 			["spells"] = "17047=136235,27290=136235",
@@ -26013,50 +28005,50 @@ WeakAurasOptionsSaved = {
 		["唤醒公主"] = {
 			["spells"] = "15658=136235",
 		},
-		["附魔双手武器 - 强效冲击"] = {
-			["spells"] = "13937=135913,13938=135913",
+		["公式：附魔武器 - 超强打击"] = {
+			["spells"] = "20085=136235",
 		},
 		["挑战者眩晕"] = {
 			["spells"] = "8672=136175",
 		},
-		["Decreased Destruction Threat"] = {
-			["spells"] = "23555=136235",
+		["黑铁矮人伪装"] = {
+			["spells"] = "5268=132288,5273=136189",
 		},
-		["慢性剧痛毒药"] = {
-			["spells"] = "2840=134743,2846=134743",
+		["丝质头带"] = {
+			["spells"] = "8762=132149,8763=136021",
 		},
-		["开锁"] = {
-			["spells"] = "1804=136058,1809=136058,1810=136058,6460=136058,6461=136058,6463=136058,6480=136058,6481=136058,6482=136058,6527=136235,9133=134237,10738=136235",
+		["Create Onyxia Spawner"] = {
+			["spells"] = "17647=133748",
 		},
-		["毒蛇形态"] = {
-			["spells"] = "8041=132276",
+		["图样：黑色丝质背包"] = {
+			["spells"] = "6696=136235",
 		},
 		["Increase Fire Dam 12"] = {
 			["spells"] = "9297=136235",
 		},
-		["法术石"] = {
-			["spells"] = "128=134131",
+		["Shade Form Visual"] = {
+			["spells"] = "17673=136121",
 		},
 		["巨熊形态"] = {
 			["spells"] = "9634=132276,11594=132276",
 		},
-		["刺骨尖啸"] = {
-			["spells"] = "16576=136230",
+		["Increased Fire Resist 46"] = {
+			["spells"] = "14976=136235",
 		},
-		["设计图：觅心者"] = {
-			["spells"] = "17037=136235",
+		["祛病图腾"] = {
+			["spells"] = "8170=136019,8173=136019",
 		},
-		["纠缠"] = {
-			["spells"] = "720=136113,731=136113,1121=136113,22994=136100",
+		["野猪之魂"] = {
+			["spells"] = "10668=136075,10671=136075",
 		},
-		["黑豹"] = {
-			["spells"] = "10787=132225",
+		["力量圣印"] = {
+			["spells"] = "626=136235,653=136235,662=136235",
 		},
 		["蛛网 III"] = {
 			["spells"] = "4169=132149",
 		},
-		["Increased Agility 27"] = {
-			["spells"] = "14391=136235",
+		["骑术：豹"] = {
+			["spells"] = "828=136103,6745=136103",
 		},
 		["Avenger Judgment Bonus"] = {
 			["spells"] = "26130=136011",
@@ -26064,14 +28056,14 @@ WeakAurasOptionsSaved = {
 		["Increased Stamina 10"] = {
 			["spells"] = "9117=136235",
 		},
-		["Create Warsong Mark of Honor (WInner)"] = {
-			["spells"] = "24951=136235",
+		["Increase Nature Dam 17"] = {
+			["spells"] = "17819=136235",
 		},
 		["强效法力"] = {
 			["spells"] = "13664=136235",
 		},
-		["灰色毛纺长袍"] = {
-			["spells"] = "2403=136235",
+		["初级敏捷药剂"] = {
+			["spells"] = "3230=136235",
 		},
 		["初级属性"] = {
 			["spells"] = "13624=136235",
@@ -26082,38 +28074,38 @@ WeakAurasOptionsSaved = {
 		["Arugal spawn-in spell"] = {
 			["spells"] = "10418=136235",
 		},
-		["Ragnaros Submerge Visual"] = {
-			["spells"] = "20567=135830",
+		["次级敏捷"] = {
+			["spells"] = "2374=134873,3157=134873,3158=134873,13364=136235",
 		},
-		["瘤背复仇"] = {
-			["spells"] = "5628=136224",
+		["覆体之网"] = {
+			["spells"] = "4962=136022",
 		},
 		["绿色毛纺长袍"] = {
 			["spells"] = "7636=136235",
 		},
-		["暗纹面罩"] = {
-			["spells"] = "12086=132149,12128=136021",
+		["Increase Frost Dam 25"] = {
+			["spells"] = "17902=136235",
 		},
-		["野蛮突袭 IV"] = {
-			["spells"] = "1664=132316,1669=132316",
+		["Increase Frost Dam 26"] = {
+			["spells"] = "17903=136235",
 		},
 		["治疗专注"] = {
 			["spells"] = "14913=135918,15012=135918,16181=136043,16230=136043,16232=136043,16233=136043,16234=136043",
 		},
-		["召唤毒蛇"] = {
-			["spells"] = "7949=136084",
+		["Increased Nature Resist 33"] = {
+			["spells"] = "14655=136235",
 		},
-		["冬季狂欢者 - 兽人男性"] = {
-			["spells"] = "26248=135849",
+		["兽人语"] = {
+			["spells"] = "669=136235",
 		},
-		["脆炸蜥蜴尾"] = {
-			["spells"] = "6418=136192",
+		["强化野兽之眼"] = {
+			["spells"] = "19557=132150,19558=132150",
 		},
-		["全力一击 III"] = {
-			["spells"] = "1708=132316,1712=132316",
+		["圣言术：力"] = {
+			["spells"] = "1246=135882,1247=135882,1248=135882,2769=135882",
 		},
-		["奥术元素"] = {
-			["spells"] = "22697=136235",
+		["暗影冥思"] = {
+			["spells"] = "17941=136223",
 		},
 		["圣物"] = {
 			["spells"] = "27762=133743",
@@ -26121,23 +28113,23 @@ WeakAurasOptionsSaved = {
 		["Increased Aura Radii"] = {
 			["spells"] = "23565=136235",
 		},
-		["驱散血牙"] = {
-			["spells"] = "6240=136116",
+		["Test Black Diamond Debug"] = {
+			["spells"] = "27059=136192",
 		},
-		["精神法杖 III"] = {
-			["spells"] = "2714=132325",
+		["Nef Trans"] = {
+			["spells"] = "22538=136235",
 		},
-		["寒霜圣印"] = {
-			["spells"] = "2810=135968",
+		["Attack Power 200"] = {
+			["spells"] = "18060=136235",
 		},
-		["虚弱灵魂"] = {
-			["spells"] = "6788=135871",
+		["加速术 II"] = {
+			["spells"] = "839=136047,1212=136047",
 		},
-		["护甲 +8"] = {
-			["spells"] = "2831=136235",
+		["Increased Armor 160"] = {
+			["spells"] = "18069=136235",
 		},
-		["反神圣"] = {
-			["spells"] = "2950=135824",
+		["Beast Slaying 72"] = {
+			["spells"] = "18076=136235",
 		},
 		["部落战歌夺旗胜利"] = {
 			["spells"] = "23526=136235",
@@ -26145,17 +28137,17 @@ WeakAurasOptionsSaved = {
 		["配方：强效奥法药剂"] = {
 			["spells"] = "17599=136235",
 		},
-		["血之狂暴"] = {
-			["spells"] = "16952=132152,16953=132152,16954=132152",
+		["召唤青铜龙宝宝"] = {
+			["spells"] = "10699=132311",
 		},
-		["再生圣歌"] = {
-			["spells"] = "1336=136069",
+		["法力回复"] = {
+			["spells"] = "18194=136053,24363=134825",
 		},
 		["Viscidus Slowed"] = {
 			["spells"] = "26034=136006",
 		},
-		["统御光环"] = {
-			["spells"] = "25516=132484",
+		["烤鱿鱼"] = {
+			["spells"] = "18240=136192",
 		},
 		["图样：魔化符文布包"] = {
 			["spells"] = "27727=136235",
@@ -26163,20 +28155,20 @@ WeakAurasOptionsSaved = {
 		["啄眼"] = {
 			["spells"] = "4150=132156,4317=132156,4737=132156,5997=136231",
 		},
-		["食谱：熏熊肉"] = {
-			["spells"] = "8608=136235",
+		["图样：红色魔纹手套"] = {
+			["spells"] = "12143=136235",
 		},
-		["配方：次级敏捷药剂"] = {
-			["spells"] = "3187=136235",
+		["奥妮克希亚"] = {
+			["spells"] = "18387=136235",
 		},
-		["Sol M"] = {
-			["spells"] = "3205=135859",
+		["符文布卷"] = {
+			["spells"] = "18401=132149,18470=136021",
 		},
-		["图勒的诅咒"] = {
-			["spells"] = "3237=136203",
+		["符文布披风"] = {
+			["spells"] = "18409=132149",
 		},
-		["亚麻绷带"] = {
-			["spells"] = "3275=136192",
+		["Dummy Trigger 2"] = {
+			["spells"] = "18433=136235",
 		},
 		["蓝色亚麻长袍"] = {
 			["spells"] = "7633=132149",
@@ -26184,17 +28176,17 @@ WeakAurasOptionsSaved = {
 		["集结部队"] = {
 			["spells"] = "1741=136235",
 		},
-		["破胆猛击"] = {
-			["spells"] = "1794=136235,1799=136235",
+		["月布护肩"] = {
+			["spells"] = "18448=132149",
 		},
 		["邪恶混浊"] = {
 			["spells"] = "16472=136067",
 		},
-		["震荡波"] = {
-			["spells"] = "1698=132369,1702=132369,25425=136105",
+		["无敌"] = {
+			["spells"] = "3169=135896,16621=135915",
 		},
-		["碎裂黑曜石盾牌"] = {
-			["spells"] = "27586=136192",
+		["图样：霜纹外套"] = {
+			["spells"] = "18472=136235",
 		},
 		["劣质火枪"] = {
 			["spells"] = "3925=136235,3987=136235",
@@ -26202,59 +28194,59 @@ WeakAurasOptionsSaved = {
 		["定身攻击 IV"] = {
 			["spells"] = "2929=132152",
 		},
-		["水栖形态"] = {
-			["spells"] = "1066=132112,1446=132112",
+		["图样：鬼纹腰带"] = {
+			["spells"] = "18480=136235",
 		},
-		["敲打祖尔法拉克铜锣"] = {
-			["spells"] = "11434=136235",
+		["Increased Spirit 41"] = {
+			["spells"] = "14947=136235",
 		},
 		["冬季狂欢者 - 亡灵男性"] = {
 			["spells"] = "26254=135849",
 		},
-		["脚踢"] = {
-			["spells"] = "1766=132219,1767=132219,1768=132219,1769=132219,1771=132219,1772=132219,1773=132219,1774=132219,1775=132219,3467=132219,11978=132219,15610=132219,15614=132219,27613=132219,27814=132219",
+		["图样：恶魔布帽"] = {
+			["spells"] = "18515=136235",
 		},
-		["配方：暗影防护药水"] = {
-			["spells"] = "7261=136235",
+		["Imbue Cloak - Minor Resistance"] = {
+			["spells"] = "7439=135913",
 		},
 		["污染光环"] = {
 			["spells"] = "17695=136225,17697=136163",
 		},
-		["焚化"] = {
-			["spells"] = "6234=136235",
+		["图样：符文布护肩"] = {
+			["spells"] = "18522=136235",
 		},
-		["猛击"] = {
-			["spells"] = "1464=132340,1482=132340,8820=132340,8821=132340,11430=132357,11604=132340,11605=132340,11606=132340,11607=132340",
+		["图样：巫纹头巾"] = {
+			["spells"] = "18524=136235",
 		},
-		["召唤树懒"] = {
-			["spells"] = "3499=136133",
+		["长程射击 II"] = {
+			["spells"] = "1536=132222",
 		},
-		["召唤淤泥怪"] = {
-			["spells"] = "3527=136133",
+		["鳄鱼浓汤"] = {
+			["spells"] = "3373=136192",
 		},
 		["Increased Intellect 14"] = {
 			["spells"] = "9261=136235",
 		},
-		["山狗肉排"] = {
-			["spells"] = "2541=136192,2561=136021",
+		["Cluster Rocket, BLUE BIG - D"] = {
+			["spells"] = "26483=136235",
 		},
 		["超强智力"] = {
 			["spells"] = "19987=136235",
 		},
-		["Increase Frost Dam 7"] = {
-			["spells"] = "9402=136235",
+		["自然虚弱"] = {
+			["spells"] = "25180=134397",
 		},
-		["激活防御"] = {
-			["spells"] = "4239=136235",
+		["心灵之力"] = {
+			["spells"] = "18551=136031,18552=136031,18553=136031,18554=136031,18555=136031",
 		},
-		["畏缩"] = {
-			["spells"] = "1742=132118,1747=132118,1748=132118,1749=132118,1750=132118,1751=132118,1753=132118,1754=132118,1755=132118,1756=132118,8998=132118,8999=132118,9000=132118,9001=132118,9892=132118,9893=132118,16697=132118,16698=132118",
+		["狂暴怒气"] = {
+			["spells"] = "3490=136224",
 		},
-		["Increased Stamina 35"] = {
-			["spells"] = "14482=136235",
+		["调和的徽记"] = {
+			["spells"] = "24151=136235,24160=136235",
 		},
-		["青铜管"] = {
-			["spells"] = "3938=136235,4000=136235",
+		["虚弱疾病"] = {
+			["spells"] = "18633=136118",
 		},
 		["充能奥术箭"] = {
 			["spells"] = "16570=135753",
@@ -26268,20 +28260,20 @@ WeakAurasOptionsSaved = {
 		["特殊饮料"] = {
 			["spells"] = "16712=135999",
 		},
-		["奈塔拉什的哀嚎"] = {
-			["spells"] = "3485=136183",
+		["Increased All Resist 03"] = {
+			["spells"] = "18674=136235",
 		},
 		["放置艾克曼的信号灯"] = {
 			["spells"] = "21728=136235",
 		},
-		["青铜钥匙"] = {
-			["spells"] = "6470=136192,6472=136235",
+		["碎石"] = {
+			["spells"] = "3671=136025,3672=136025,3673=136025",
 		},
-		["一把螺栓"] = {
-			["spells"] = "3922=136235,3984=136235",
+		["利斧乱舞"] = {
+			["spells"] = "24018=132397,24019=132397,24020=132397,24071=132397",
 		},
-		["Tree Form (Passive) 2"] = {
-			["spells"] = "5420=136062",
+		["重铸"] = {
+			["spells"] = "10260=136168",
 		},
 		["稳固"] = {
 			["spells"] = "19290=132219,19294=132219,24283=132219",
@@ -26292,11 +28284,11 @@ WeakAurasOptionsSaved = {
 		["熔炼银锭"] = {
 			["spells"] = "2658=136235,3317=136235",
 		},
-		["双手斧掌握"] = {
-			["spells"] = "4398=132316,4399=132316,4400=132316,4401=132316",
+		["强化毛纺护肩"] = {
+			["spells"] = "3849=132149",
 		},
-		["暗影法杖 II"] = {
-			["spells"] = "2733=132325",
+		["士气突增"] = {
+			["spells"] = "1740=136235",
 		},
 		["梦境药剂"] = {
 			["spells"] = "11468=136235",
@@ -26304,8 +28296,8 @@ WeakAurasOptionsSaved = {
 		["Beast Slaying 60"] = {
 			["spells"] = "18207=136235",
 		},
-		["亡灵杀手"] = {
-			["spells"] = "4714=136142,4716=136142,4717=136142,4718=136142,4719=136142,4720=136142,4721=136142,4722=136142,4724=136142,4725=136142,4726=136142,4727=136142,4728=136142,4729=136142",
+		["狂怒之嚎"] = {
+			["spells"] = "3149=136101,24597=132203,24599=132203,24603=132203,24604=132203,24605=132203,24607=132203,24608=132203,24609=132203",
 		},
 		["小型红色烟花"] = {
 			["spells"] = "26286=136235,26418=136235",
@@ -26316,26 +28308,26 @@ WeakAurasOptionsSaved = {
 		["石肤图腾"] = {
 			["spells"] = "8071=136098,8073=136098,8154=136098,8155=136098,8158=136098,8159=136098,10406=136098,10407=136098,10408=136098,10409=136098,10410=136098,10411=136098",
 		},
-		["法师视界"] = {
-			["spells"] = "3659=136235",
+		["蛛网 II"] = {
+			["spells"] = "4168=132149",
 		},
-		["击倒"] = {
-			["spells"] = "5164=132154,5951=132154,11428=132154,13360=132154,15753=132154,16790=132154,18812=132154,19128=132154,20276=132154,22592=132154",
+		["收集异种蝎卵"] = {
+			["spells"] = "5166=136235",
 		},
-		["Increase Spell Dam 16"] = {
-			["spells"] = "9345=136235,17367=136235,18050=136235,25110=136235",
+		["设计图：黑铁板甲"] = {
+			["spells"] = "15299=136235",
 		},
-		["附魔盾牌 - 精神"] = {
-			["spells"] = "13659=135913,13660=135913",
+		["Communique, Relay-to-Camp"] = {
+			["spells"] = "28326=136235",
 		},
-		["召唤激流堡民兵"] = {
-			["spells"] = "5250=136235",
+		["火山护腿"] = {
+			["spells"] = "19059=136235",
 		},
-		["绿色丝质护肩"] = {
-			["spells"] = "8774=132149,8775=136021",
+		["霜刃护腿"] = {
+			["spells"] = "19074=136235",
 		},
-		["反魔法"] = {
-			["spells"] = "1399=136120",
+		["解散野兽"] = {
+			["spells"] = "2641=136095",
 		},
 		["Tag: Red Skulls"] = {
 			["spells"] = "20368=135819",
@@ -26343,128 +28335,128 @@ WeakAurasOptionsSaved = {
 		["召唤虎皮猫"] = {
 			["spells"] = "10676=132311",
 		},
-		["消隐"] = {
-			["spells"] = "5543=136047,6408=136047",
+		["符文皮甲头环"] = {
+			["spells"] = "19082=136235",
 		},
-		["召唤亚奎门塔斯"] = {
-			["spells"] = "13978=136235",
+		["星界传送"] = {
+			["spells"] = "556=136010,577=136235,1352=136010",
 		},
 		["Portal Effect: Darnassus"] = {
 			["spells"] = "17608=135741",
 		},
-		["女妖诅咒"] = {
-			["spells"] = "5884=136020,16867=136020,17105=136020",
+		["风暴烈酒"] = {
+			["spells"] = "5020=132800",
 		},
-		["Summon Angry Programmer"] = {
-			["spells"] = "897=136235",
+		["Receive Object of Affection"] = {
+			["spells"] = "26665=136235",
 		},
-		["重平衡石"] = {
-			["spells"] = "3117=136192,3119=136235",
+		["Increase Shadow Dam 59"] = {
+			["spells"] = "26730=136235",
 		},
-		["GM Only OFF"] = {
-			["spells"] = "1509=132349",
+		["天神下凡"] = {
+			["spells"] = "19135=132275,24646=132097",
 		},
-		["制造初级治疗石"] = {
-			["spells"] = "6201=135230,6203=135230,23517=135230,23518=135230,23519=135230",
+		["图样：战熊背心"] = {
+			["spells"] = "19178=136235",
 		},
 		["召唤黑尾白猫"] = {
 			["spells"] = "10677=132311",
 		},
-		["自然赐福"] = {
-			["spells"] = "17104=136074,24943=136074,24944=136074,24945=136074,24946=136074",
+		["Cluster Rocket, PURPLE BIG - U"] = {
+			["spells"] = "26500=136235",
 		},
-		["配方：自由行动药剂"] = {
-			["spells"] = "6625=136235",
+		["Terror (TEST)"] = {
+			["spells"] = "692=136122",
 		},
-		["黑暗回复"] = {
-			["spells"] = "7106=132179",
+		["防御状态"] = {
+			["spells"] = "5302=132110",
 		},
-		["盘蛇净化"] = {
-			["spells"] = "6270=136168",
+		["瓦希塔帕恩的决心"] = {
+			["spells"] = "5324=136075",
 		},
-		["炖陆行鸟"] = {
-			["spells"] = "6416=136192",
+		["变形术：奶牛"] = {
+			["spells"] = "28270=136072",
 		},
 		["粗制平衡石"] = {
 			["spells"] = "3116=136192,3118=136235",
 		},
-		["知识试炼"] = {
-			["spells"] = "6766=136022",
+		["召唤虚空行者"] = {
+			["spells"] = "697=136221,1385=136221,7728=136221,9221=136221,9222=136221,12746=136221,15092=136221,15093=136221,15094=136221,23501=136221,25112=136221",
 		},
-		["装水"] = {
-			["spells"] = "4976=136235,6609=136235,6610=136235,6611=136235,6803=136235,9582=136235,16073=136235,16077=136235,18397=136235",
+		["冰霜强化"] = {
+			["spells"] = "5866=135859,5869=135859,5870=135859,5871=135859,5880=135859,5885=135859,5886=135859,5887=135859,21920=134714",
 		},
 		["武器脱手"] = {
 			["spells"] = "23365=132343",
 		},
-		["召唤烈焰流放者"] = {
-			["spells"] = "4929=136192",
+		["烟鬼的炸药"] = {
+			["spells"] = "19237=136235",
 		},
-		["赤脊山炖肉"] = {
-			["spells"] = "2547=136192",
+		["杀戮本能"] = {
+			["spells"] = "19370=135881,19371=135881,19373=135881",
 		},
-		["SHOWLABEL Only OFF"] = {
-			["spells"] = "456=136069",
+		["永久定身"] = {
+			["spells"] = "31366=136235",
 		},
-		["快速冰霜防护结界"] = {
-			["spells"] = "4980=135824",
+		["瞄准射击"] = {
+			["spells"] = "19434=135130,20900=135130,20901=135130,20902=135130,20903=135130,20904=135130,20931=135130,20932=135130,20933=135130,20934=135130,20935=135130,27632=135130",
 		},
-		["召唤大师"] = {
-			["spells"] = "18709=136164,18710=136164",
+		["Agro Drones Effect"] = {
+			["spells"] = "25153=136235",
 		},
 		["召唤林精"] = {
 			["spells"] = "5666=136074",
 		},
-		["火焰 III"] = {
-			["spells"] = "1982=132153",
+		["慢性毒菌"] = {
+			["spells"] = "6278=136134,18289=135914",
 		},
-		["食谱：猪肝馅饼"] = {
-			["spells"] = "2553=136235",
+		["灵魂联结"] = {
+			["spells"] = "19578=132121,19579=132121,20895=132121,20917=132121,20926=132121,24529=132121",
 		},
 		["硬化蝎壳手套"] = {
 			["spells"] = "10542=136235",
 		},
-		["公式：附魔护腕 - 次级力量"] = {
-			["spells"] = "13537=136235",
+		["召唤烈焰"] = {
+			["spells"] = "19629=135826",
 		},
-		["冰柱"] = {
-			["spells"] = "11131=135846",
+		["召唤诺克赛恩产物"] = {
+			["spells"] = "21707=136006,21708=136006",
 		},
-		["Test Grow"] = {
-			["spells"] = "18209=136235",
+		["黄金万能钥匙"] = {
+			["spells"] = "19649=136235,19667=136192,19671=136235",
 		},
-		["厚魔纹绷带"] = {
-			["spells"] = "10841=136192,10843=136192",
+		["食谱：蝎肉大餐"] = {
+			["spells"] = "6424=136235",
 		},
 		["正义圣印"] = {
 			["spells"] = "864=136235,3093=135932,3094=135932,20154=132325,20287=132325,20288=132325,20289=132325,20290=132325,20291=132325,20292=132325,20293=132325,20437=132325,20438=132325,20439=132325,20440=132325,20441=132325,20442=132325,20443=132325,21084=132325,21085=132325,25713=132325,25735=132325,25736=132325,25737=132325,25738=132325,25739=132325,25740=132325,25741=132325,25742=132325",
 		},
-		["暗影法杖 III"] = {
-			["spells"] = "2734=132325",
+		["Evade (DND)"] = {
+			["spells"] = "108=136235",
 		},
-		["Intellect IX"] = {
-			["spells"] = "16888=134721",
+		["娅尔罗的印记"] = {
+			["spells"] = "24210=132212,24211=132212",
 		},
 		["Increased Intellect 28"] = {
 			["spells"] = "14418=136235",
 		},
-		["公式：附魔披风 - 抵抗次级暗影"] = {
-			["spells"] = "13525=136235",
+		["Hate to 50%"] = {
+			["spells"] = "19707=136190",
 		},
-		["附魔蓝玛瑙"] = {
-			["spells"] = "4319=136235",
+		["沙斯拉尔的诅咒"] = {
+			["spells"] = "19713=136121",
 		},
-		["Remove Trick or Treat"] = {
-			["spells"] = "24982=136235",
+		["抗性光环"] = {
+			["spells"] = "19726=135865",
 		},
-		["治疗之舌"] = {
-			["spells"] = "4209=135915,4807=135915,4808=135915,6031=135915,6032=135915,8595=135915",
+		["挥击"] = {
+			["spells"] = "769=134296,779=134296,780=134296,1432=134296,1433=134296,3139=134296,9754=134296,9755=134296,9908=134296,9909=134296,27554=134296",
 		},
-		["Increase Healing 64"] = {
-			["spells"] = "18043=136235",
+		["Ivus Teleport Visual DND"] = {
+			["spells"] = "21649=136235",
 		},
-		["Ahn'Qiraj Reward Buff (Trigger - 40)"] = {
-			["spells"] = "25802=134969",
+		["图样：生命护腿"] = {
+			["spells"] = "19197=136235",
 		},
 		["Form of the Moonstalker (no invis)"] = {
 			["spells"] = "10849=132156",
@@ -26472,23 +28464,23 @@ WeakAurasOptionsSaved = {
 		["复活虚弱"] = {
 			["spells"] = "15007=136147",
 		},
-		["复活术"] = {
-			["spells"] = "2006=135955,2010=135955,2013=135955,2016=135955,3215=136235,3216=136235,7330=136235,10880=135955,10881=135955,10882=135955,10883=135955,20770=135955,20771=135955",
+		["神圣干涉"] = {
+			["spells"] = "19752=136106,19753=136106,19754=136106",
 		},
-		["破釜沉舟"] = {
-			["spells"] = "12975=135871,12976=135871",
+		["费尔根磁力效果"] = {
+			["spells"] = "28110=136235",
 		},
-		["绿铁护腕"] = {
-			["spells"] = "3501=136192,3521=136235",
+		["元素火焰"] = {
+			["spells"] = "19773=135808,20563=135814,20564=135814",
 		},
 		["迟钝术 II"] = {
 			["spells"] = "507=136159,1201=136159",
 		},
-		["魔杖强化"] = {
-			["spells"] = "6094=135464,6097=135464,6098=135464,6100=135464,6111=135464,6112=135464",
+		["黑暗打击"] = {
+			["spells"] = "19777=132325,22574=132325",
 		},
-		["岗哨图腾"] = {
-			["spells"] = "6495=136082,6496=136082",
+		["冰冻术 III"] = {
+			["spells"] = "2134=135856",
 		},
 		["Increased Shadow Resist 28"] = {
 			["spells"] = "14691=136235",
@@ -26499,53 +28491,53 @@ WeakAurasOptionsSaved = {
 		["Cancel Creeping Plague"] = {
 			["spells"] = "27027=136235",
 		},
-		["图样：粉色魔纹衬衣"] = {
-			["spells"] = "12173=136235",
+		["耐普图隆的守护"] = {
+			["spells"] = "21332=136235",
 		},
-		["召唤碎腭"] = {
-			["spells"] = "19561=136235",
+		["完美的奥金步枪"] = {
+			["spells"] = "19833=136235",
 		},
 		["强化光明审判"] = {
 			["spells"] = "23564=136235",
 		},
-		["次级星界精华"] = {
-			["spells"] = "13498=136192",
+		["结构图：高级技师护目镜"] = {
+			["spells"] = "19865=134153",
 		},
-		["图样：巫毒披风"] = {
-			["spells"] = "10563=136235",
+		["寒冰咆哮"] = {
+			["spells"] = "3143=135848",
 		},
 		["设计图：金鳞战靴"] = {
 			["spells"] = "3536=136235",
 		},
-		["配方：次级石盾药水"] = {
-			["spells"] = "4943=136235",
+		["投掷辛迪加炸弹"] = {
+			["spells"] = "3720=136173",
 		},
-		["萃取智慧"] = {
-			["spells"] = "17627=134877",
+		["Increase Healing 54"] = {
+			["spells"] = "18038=136235",
 		},
 		["保护祝福"] = {
 			["spells"] = "1022=135964,1911=135964,5599=135964,5600=135964,10278=135964,10279=135964",
 		},
-		["绿色护目镜"] = {
-			["spells"] = "3956=136235,4014=136235",
+		["Intellect 15"] = {
+			["spells"] = "20002=136235",
 		},
-		["装满瓶子"] = {
-			["spells"] = "5512=136235",
+		["灵魂燃烧 V"] = {
+			["spells"] = "1362=135805",
 		},
-		["杂味炖肉"] = {
-			["spells"] = "2543=136192",
+		["迅捷药水"] = {
+			["spells"] = "2335=136235",
 		},
 		["传送到藏宝海湾"] = {
 			["spells"] = "11409=136235",
 		},
-		["寒冰屏障"] = {
-			["spells"] = "11958=135841,27619=135841",
+		["公式：附魔靴子 - 精神"] = {
+			["spells"] = "20072=136235",
 		},
 		["水煮阳鳞鲑鱼"] = {
 			["spells"] = "18244=136192",
 		},
-		["匕首打击 IV"] = {
-			["spells"] = "2634=132223",
+		["公式：附魔披风 - 超强防御"] = {
+			["spells"] = "20076=136235",
 		},
 		["回家"] = {
 			["spells"] = "13461=136235",
@@ -26556,113 +28548,113 @@ WeakAurasOptionsSaved = {
 		["闪电箭"] = {
 			["spells"] = "403=136048,529=136048,531=136235,548=136048,566=136235,915=136048,943=136048,944=136235,1324=136048,1325=136048,1357=136048,1358=136048,3089=136235,6041=136048,6043=136048,8246=136048,9532=136048,10391=136048,10392=136048,10393=136048,10394=136048,12167=136048,13482=136048,13527=136048,14109=136048,14119=136048,15207=136048,15208=136048,15209=136048,15210=136048,15234=136048,15801=136048,16782=136048,18081=136048,18089=136048,19874=136048,20295=136048,20802=136048,20805=136048,20824=136048,22414=136048,23592=136048,26098=136048",
 		},
-		["Increased All Resist 07"] = {
-			["spells"] = "18678=136235",
+		["守护者的宠爱"] = {
+			["spells"] = "20174=135964,20175=135964",
 		},
-		["抵抗火焰 II"] = {
-			["spells"] = "2869=135824",
+		["强化拯救祝福"] = {
+			["spells"] = "20194=135967,20195=135967",
 		},
-		["吸血毒药"] = {
-			["spells"] = "3358=136067,8382=136067",
+		["淡黄色衬衣"] = {
+			["spells"] = "3869=132149,3891=136021",
 		},
-		["食谱：鱼人鳍汤"] = {
-			["spells"] = "3381=136235",
+		["圣洁光环"] = {
+			["spells"] = "20218=135934",
 		},
-		["污浊嚎叫"] = {
-			["spells"] = "3424=136188",
+		["传送到艾萨拉之塔"] = {
+			["spells"] = "12509=136011,12510=136022",
 		},
 		["冰霜印记"] = {
 			["spells"] = "23182=135834,23183=135834,23184=135834",
 		},
-		["释放小鬼"] = {
-			["spells"] = "23180=136235",
+		["野性印记"] = {
+			["spells"] = "1126=136078,5231=136078,5232=136078,5233=136078,5234=136078,5235=136078,5285=136235,5286=136235,5287=136235,5310=136235,6756=136078,6782=136078,8907=136078,8908=136078,9884=136078,9885=136078,9886=136078,9887=136078,16878=136078,24752=136078",
 		},
-		["Rocket, GREEN"] = {
-			["spells"] = "26345=136235",
+		["Increase Frost Dam 1"] = {
+			["spells"] = "7697=136235",
 		},
 		["复仇昏迷"] = {
 			["spells"] = "12798=132353",
 		},
-		["农夫伪装"] = {
-			["spells"] = "5668=132288",
+		["坚韧圣印"] = {
+			["spells"] = "1885=135968",
 		},
-		["侏儒隐形装置"] = {
-			["spells"] = "3971=136235,4025=136235",
+		["震荡猛击"] = {
+			["spells"] = "12809=132325,22427=132325",
 		},
-		["挖掘石柱"] = {
-			["spells"] = "4982=136235",
+		["醉酒的车队员工"] = {
+			["spells"] = "20436=136235",
 		},
-		["熔化矿石"] = {
-			["spells"] = "5159=135826",
+		["QAEnchant Weapon Spell Power"] = {
+			["spells"] = "23143=135913",
 		},
-		["设计图：炽热链甲束带"] = {
-			["spells"] = "20878=136235",
+		["Increased Stamina 17"] = {
+			["spells"] = "14464=136235",
 		},
 		["治疗之赐"] = {
 			["spells"] = "29187=136041,29189=136041,29191=136041",
 		},
-		["暗影抗性"] = {
-			["spells"] = "1189=136075,4084=135865,4550=136075,4572=136075,4573=136075,4574=136075,4575=136075,4576=136075,4577=136075,4578=136075,4622=136075,4623=136075,4624=136075,4625=136075,4626=136075,4627=136075,4628=136075,20579=136152,24488=136121,24490=136121,24505=136121,24506=136121,24507=136121,24514=136121,24515=136121,24516=136121,24518=136121,24526=136121,24527=136121,24528=136121,27535=136185,28769=136121",
+		["破坏工具"] = {
+			["spells"] = "4954=136168",
 		},
-		["Increased Frost Resist 40"] = {
-			["spells"] = "14579=136235",
+		["共鸣水晶"] = {
+			["spells"] = "20492=135996",
 		},
 		["Jubling Cooldown"] = {
 			["spells"] = "23852=136235,23853=136235",
 		},
-		["强化割裂"] = {
-			["spells"] = "21880=132302",
+		["拉格纳罗斯显现"] = {
+			["spells"] = "20568=135819",
 		},
 		["红色亚麻包"] = {
 			["spells"] = "6686=136235",
 		},
-		["唤醒夺魂者"] = {
-			["spells"] = "12346=136235",
+		["断风者"] = {
+			["spells"] = "20586=136022",
 		},
 		["鬼魅幻影"] = {
 			["spells"] = "16336=136123",
 		},
-		["颅骨爆裂"] = {
-			["spells"] = "3551=135860,15621=135860",
+		["青铜钉锤"] = {
+			["spells"] = "2740=136192,2757=136235",
 		},
-		["毒气炸弹"] = {
-			["spells"] = "8901=133581,8902=133581",
+		["雪球"] = {
+			["spells"] = "21167=132387,21343=132387,25677=132387",
 		},
-		["炮火"] = {
-			["spells"] = "17278=135805,17501=135810",
+		["重皮"] = {
+			["spells"] = "20649=136235,20652=136021",
 		},
-		["巨型黑色锤"] = {
-			["spells"] = "10001=136192,10002=136235",
+		["梦游"] = {
+			["spells"] = "20668=136152",
 		},
-		["学习凶猛撕咬"] = {
-			["spells"] = "31020=132127",
+		["炽热火焰"] = {
+			["spells"] = "6297=135826",
 		},
-		["黑色迅猛龙"] = {
-			["spells"] = "10798=132253",
+		["制造强效灵魂石"] = {
+			["spells"] = "20756=136210,20768=136210",
 		},
-		["斯坦索姆圣水"] = {
-			["spells"] = "17291=136235",
+		["次级智慧"] = {
+			["spells"] = "7768=136235",
 		},
-		["毒蝎样本"] = {
-			["spells"] = "11761=136235",
+		["摧毁卡拉恩的旗子"] = {
+			["spells"] = "20783=136235,20786=136235",
 		},
-		["变形效果"] = {
-			["spells"] = "9033=136006",
+		["Summon Ouro Trigger"] = {
+			["spells"] = "26284=136235",
 		},
-		["炖龙虾"] = {
-			["spells"] = "18245=136192",
+		["火焰新星图腾"] = {
+			["spells"] = "1535=135824,8086=135824,8498=135824,8499=135824,8500=135824,8501=135824,11314=135824,11315=135824,11316=135824,11317=135824,27623=135824",
 		},
-		["狂怒撕咬"] = {
-			["spells"] = "4101=136224,4731=136224,5993=136231",
+		["公式：附魔护腕 - 强效耐力"] = {
+			["spells"] = "13946=136235",
 		},
-		["设计图：秘银马刺"] = {
-			["spells"] = "9965=136235",
+		["光芒手套"] = {
+			["spells"] = "20849=132149",
 		},
-		["黑铁护肩"] = {
-			["spells"] = "15295=136192,17711=136235",
+		["图样：熔铸头盔"] = {
+			["spells"] = "20856=136235",
 		},
-		["法术打断"] = {
-			["spells"] = "5239=132091,5241=132091",
+		["原始本能"] = {
+			["spells"] = "24353=132193",
 		},
 		["制造灵质提纯器"] = {
 			["spells"] = "27752=136235",
@@ -26670,74 +28662,74 @@ WeakAurasOptionsSaved = {
 		["Increase Holy Dam 42"] = {
 			["spells"] = "21528=136235",
 		},
-		["青色迅猛龙"] = {
-			["spells"] = "10796=132253",
+		["Thorns Dmg +3"] = {
+			["spells"] = "20886=136051",
 		},
-		["法杖打击 IV"] = {
-			["spells"] = "1931=132325",
+		["野性之心豹效果"] = {
+			["spells"] = "24900=135879",
 		},
-		["暗影匕首 IV"] = {
-			["spells"] = "2725=132223",
+		["永生灵魂"] = {
+			["spells"] = "20939=136235",
 		},
-		["冰霜防护药水"] = {
-			["spells"] = "7258=136235",
+		["Giantstalker A"] = {
+			["spells"] = "20987=136095",
 		},
 		["召唤灰烬元素"] = {
 			["spells"] = "29305=132608",
 		},
-		["玻璃放大镜"] = {
-			["spells"] = "17529=136235",
+		["传授精制秘银战靴"] = {
+			["spells"] = "11204=136235",
 		},
-		["英雄"] = {
-			["spells"] = "23682=135953,23689=135953",
+		["暗言术：默"] = {
+			["spells"] = "1193=135975,1223=135975",
 		},
-		["深红丝质护肩"] = {
-			["spells"] = "8793=132149",
+		["Increased Offhand Damage 10"] = {
+			["spells"] = "21012=136235",
 		},
 		["黑皮短裤"] = {
 			["spells"] = "7135=136235,7146=136021",
 		},
-		["Hive'Zara Swarmer Teleport"] = {
-			["spells"] = "25709=136235,25825=136235,25826=136235,25827=136235,25828=136235",
+		["音乐催眠"] = {
+			["spells"] = "21050=136235",
 		},
-		["灼热图腾"] = {
-			["spells"] = "2075=135825,3599=135825,6363=135825,6364=135825,6365=135825,6379=135825,6380=135825,6381=135825,10437=135825,10438=135825,10439=135825,10440=135825",
+		["Copy of Sweeping Strikes"] = {
+			["spells"] = "26653=132306",
 		},
-		["阿克蒙德的诅咒"] = {
-			["spells"] = "625=136235,1291=136137",
+		["驱散射击 III"] = {
+			["spells"] = "1990=132153",
 		},
-		["疯狂突进"] = {
-			["spells"] = "30112=132182",
+		["毒害之云"] = {
+			["spells"] = "21070=136006",
 		},
-		["溶解护甲"] = {
-			["spells"] = "13013=136007",
+		["勇士"] = {
+			["spells"] = "21090=136172",
 		},
-		["火焰之盾效果 II"] = {
-			["spells"] = "3053=135817",
+		["法力风暴"] = {
+			["spells"] = "21097=135857",
 		},
-		["飓风"] = {
-			["spells"] = "16914=136018,16915=136018,17401=136018,17402=136018,17406=136018,24922=136018,27530=136018",
+		["野兽套牌"] = {
+			["spells"] = "23677=136235",
 		},
-		["Attack Power Ranged 5"] = {
-			["spells"] = "21427=136235",
+		["法术免疫"] = {
+			["spells"] = "6356=136217,6357=136217",
 		},
 		["定身攻击 III"] = {
 			["spells"] = "2928=132152",
 		},
-		["跳跃闪电"] = {
-			["spells"] = "9654=136048",
+		["Summon Son of Flame F"] = {
+			["spells"] = "21114=135819",
 		},
 		["Increased Shadow Resist 13"] = {
 			["spells"] = "14676=136235",
 		},
-		["火焰风暴"] = {
-			["spells"] = "13899=135826",
+		["龙鳞制皮"] = {
+			["spells"] = "10656=134305,10657=136247",
 		},
-		["大师级急救"] = {
-			["spells"] = "10847=135966,19902=135966",
+		["姜饼"] = {
+			["spells"] = "21143=136192",
 		},
-		["蛆虫粘液"] = {
-			["spells"] = "16449=136134",
+		["食谱：小姜饼"] = {
+			["spells"] = "21145=136235",
 		},
 		["审判强击"] = {
 			["spells"] = "21882=135880,21889=136235",
@@ -26754,8 +28746,8 @@ WeakAurasOptionsSaved = {
 		["牛头人语"] = {
 			["spells"] = "670=136235",
 		},
-		["Helcular's Spawn"] = {
-			["spells"] = "3390=136235",
+		["狮鹫悬浮"] = {
+			["spells"] = "21173=136235",
 		},
 		["瓦拉塔兹龙形"] = {
 			["spells"] = "16421=135990",
@@ -26769,14 +28761,14 @@ WeakAurasOptionsSaved = {
 		["熔火犬皮腰带"] = {
 			["spells"] = "23709=136235",
 		},
-		["精制秘银头盔"] = {
-			["spells"] = "9980=136192",
+		["横扫攻击"] = {
+			["spells"] = "12292=132306,12723=132306,18765=132306,26654=132306",
 		},
-		["Increase Healing 12"] = {
-			["spells"] = "7680=136235",
+		["Signet Ring of the Bronze Dragonflight CASTER R2 DND"] = {
+			["spells"] = "25922=136235",
 		},
-		["纳迦雕像法术"] = {
-			["spells"] = "19473=136235",
+		["诺格弗格药剂"] = {
+			["spells"] = "16589=136235,16591=136187,16593=135992,16595=136162",
 		},
 		["复活节光环"] = {
 			["spells"] = "24702=135864",
@@ -26790,17 +28782,17 @@ WeakAurasOptionsSaved = {
 		["配方：隐形药水"] = {
 			["spells"] = "11506=136235",
 		},
-		["Increased All Resist 10"] = {
-			["spells"] = "18681=136235",
+		["残废术"] = {
+			["spells"] = "89=136135,727=136235,1391=136135,11443=136135,12552=136135,18381=136138,20812=136135,29212=136135",
 		},
 		["设计图：符文胸甲"] = {
 			["spells"] = "16753=136235",
 		},
-		["钢质机械陆行鸟"] = {
-			["spells"] = "15781=132247",
+		["赞达拉力量徽记"] = {
+			["spells"] = "24422=136235",
 		},
-		["超级能量合剂"] = {
-			["spells"] = "17637=136235",
+		["Attack Power Ranged 43"] = {
+			["spells"] = "21443=136235",
 		},
 		["黑箭"] = {
 			["spells"] = "3674=132323,3675=132323,14296=132323,14363=132323,20733=132323,20734=132323",
@@ -26808,17 +28800,17 @@ WeakAurasOptionsSaved = {
 		["黑色龙鳞护腿"] = {
 			["spells"] = "19107=136235",
 		},
-		["坚韧低吼"] = {
-			["spells"] = "4148=132091,4715=132091,5994=136231",
+		["黑色魔纹手套"] = {
+			["spells"] = "12053=132149,12104=136021",
 		},
-		["图样：暗色长靴"] = {
-			["spells"] = "9218=136235",
+		["区域燃烧"] = {
+			["spells"] = "8000=135826",
 		},
-		["铜质护腕"] = {
-			["spells"] = "2663=136192",
+		["Item +AGI Leg R1"] = {
+			["spells"] = "15401=136235",
 		},
-		["燃烧刺激"] = {
-			["spells"] = "18173=132937,23478=132937,23619=132937,23620=132937,23644=132937,24701=132937",
+		["Portal Effect: Undercity"] = {
+			["spells"] = "17611=135766",
 		},
 		["召唤法力恶魔"] = {
 			["spells"] = "25681=135757,25682=135757,25683=135757,25684=135757",
@@ -26826,245 +28818,245 @@ WeakAurasOptionsSaved = {
 		["周期性法力燃烧"] = {
 			["spells"] = "812=136170",
 		},
-		["PX-238 Winter Wondervolt TRAP"] = {
-			["spells"] = "26275=136235",
+		["Increase Arcane Dam 19"] = {
+			["spells"] = "17828=136235",
 		},
-		["隐形"] = {
-			["spells"] = "23452=132866",
+		["Increase Holy Dam 32"] = {
+			["spells"] = "21523=136235",
 		},
-		["练习锁"] = {
-			["spells"] = "8334=136235,8336=136235",
+		["召唤效果"] = {
+			["spells"] = "8677=136119",
 		},
-		["绿色迅猛龙"] = {
-			["spells"] = "8395=132253",
+		["Increase Holy Dam 38"] = {
+			["spells"] = "21526=136235",
 		},
-		["Increase Arcane Dam 27"] = {
-			["spells"] = "17842=136235",
+		["熔化护甲"] = {
+			["spells"] = "19631=135817",
 		},
-		["附魔胸甲 - 初级法力"] = {
-			["spells"] = "7443=135913",
+		["Increase Holy Dam 44"] = {
+			["spells"] = "21529=136235",
 		},
 		["毒性充能"] = {
 			["spells"] = "28431=136016",
 		},
-		["Increased Dodge 1"] = {
-			["spells"] = "13669=136235",
+		["恢复能量"] = {
+			["spells"] = "9512=136235",
 		},
-		["公式：附魔胸甲 - 极效法力"] = {
-			["spells"] = "20077=136235",
+		["制造伐木机"] = {
+			["spells"] = "21544=134063,21565=134063",
 		},
-		["飞火护腕"] = {
-			["spells"] = "24846=136235",
+		["孢子之云"] = {
+			["spells"] = "21547=136021,22948=136021",
 		},
-		["炽热链甲束带"] = {
-			["spells"] = "20872=136192",
+		["建筑物大火"] = {
+			["spells"] = "21650=135805",
 		},
-		["Thorns Dmg +1"] = {
-			["spells"] = "20888=136051",
+		["冰斧智慧"] = {
+			["spells"] = "21736=132089",
 		},
-		["优质皮外套"] = {
-			["spells"] = "3761=136235,3788=136021",
+		["驯服可怕的杂斑野猪"] = {
+			["spells"] = "19681=132164,19694=132164",
 		},
-		["劣质青铜护腿"] = {
-			["spells"] = "2668=136192,2749=136235",
+		["扭曲宁静"] = {
+			["spells"] = "21793=136107",
 		},
-		["公式：附魔披风 - 初级防护"] = {
-			["spells"] = "7772=136235",
+		["制造达图尔的魔棒"] = {
+			["spells"] = "22227=136235",
 		},
-		["召唤小软泥怪"] = {
-			["spells"] = "12018=136006,12250=136006",
+		["召唤碎片"] = {
+			["spells"] = "21808=136025",
 		},
-		["怀旧"] = {
-			["spells"] = "6199=136168",
+		["虚空行者"] = {
+			["spells"] = "5108=136221",
 		},
 		["强效法力药水"] = {
 			["spells"] = "11448=136235,11488=136021",
 		},
-		["设计图：炽热链甲护肩"] = {
-			["spells"] = "20879=136235",
+		["野性戒卫"] = {
+			["spells"] = "28161=136235,28162=136235",
 		},
 		["Super Invis"] = {
 			["spells"] = "8149=135994,26222=135994",
 		},
-		["豹群守护"] = {
-			["spells"] = "13159=132267,13160=132267",
+		["Increased Totem Radius"] = {
+			["spells"] = "21895=136235",
 		},
-		["精制实心弹丸"] = {
-			["spells"] = "3947=136235,4008=136235",
+		["术士恐惧"] = {
+			["spells"] = "21897=136235,21898=136183",
 		},
 		["图样：紫色丝质衬衣"] = {
 			["spells"] = "6701=136235",
 		},
-		["设计图：血爪"] = {
-			["spells"] = "17029=136235",
+		["Summon Lava Burst D"] = {
+			["spells"] = "21902=136235",
 		},
 		["地缚图腾"] = {
 			["spells"] = "2076=136102,2484=136102,15786=136102",
 		},
-		["活化烈焰"] = {
-			["spells"] = "5113=135817",
+		["羽落术"] = {
+			["spells"] = "3141=136235,10729=136235",
 		},
-		["铸斧大师"] = {
-			["spells"] = "17041=132396,17043=136241",
+		["水下毒气"] = {
+			["spells"] = "19727=136184",
 		},
-		["神圣破甲"] = {
-			["spells"] = "9176=136139",
+		["战斗光环"] = {
+			["spells"] = "21129=135968,21174=135968",
 		},
-		["献祭之油"] = {
-			["spells"] = "11451=136235,11486=136021",
+		["马杜克的诅咒"] = {
+			["spells"] = "17692=136235",
 		},
 		["蛛丝之靴"] = {
 			["spells"] = "3855=132149,3886=136021",
 		},
-		["桑德的召唤"] = {
-			["spells"] = "11024=135864",
+		["寒冬之力"] = {
+			["spells"] = "21930=136235",
 		},
 		["Test Strike"] = {
 			["spells"] = "24393=132355",
 		},
-		["炽热之地"] = {
-			["spells"] = "22191=135805,22192=135805,22193=135805,22194=135805,22195=135805,22196=135805,22197=135805,22198=135805,22199=135805,22200=135805,22201=135805,22202=135805",
+		["Increased Arcane Resist 07"] = {
+			["spells"] = "14709=136235",
 		},
 		["公式：附魔手套 - 采矿"] = {
 			["spells"] = "13613=136235",
 		},
-		["控制机械"] = {
-			["spells"] = "8345=132997",
+		["显现灵魂"] = {
+			["spells"] = "21960=136232",
 		},
-		["Increase Nature Dam 1"] = {
-			["spells"] = "7690=136235",
+		["爆炸水晶"] = {
+			["spells"] = "15239=134116",
 		},
-		["捕捉地狱火之魂"] = {
-			["spells"] = "16628=136163",
+		["蓝色棱柱"] = {
+			["spells"] = "22203=136208",
 		},
-		["腐化智力"] = {
-			["spells"] = "6818=135914",
+		["红色亚麻衬衣"] = {
+			["spells"] = "2392=132149,2414=136021",
 		},
-		["设计图：巨型瑟银战斧"] = {
-			["spells"] = "17022=136235",
+		["LeCraft Test Spell"] = {
+			["spells"] = "6560=135933",
 		},
-		["Increased Strength 10"] = {
-			["spells"] = "9121=136235",
+		["雏龙之语"] = {
+			["spells"] = "22282=136010",
 		},
-		["宁静之风图腾"] = {
-			["spells"] = "25908=136013,25910=136013",
+		["鱼人鳍汤"] = {
+			["spells"] = "3372=136192",
 		},
 		["冰霜陷阱"] = {
 			["spells"] = "13809=135840,13811=135848",
 		},
-		["Beast Slaying 132"] = {
-			["spells"] = "17324=136235",
+		["Increase Shadow Dam 15"] = {
+			["spells"] = "18008=136235",
 		},
-		["INVIS Only ON"] = {
-			["spells"] = "2763=132320",
+		["召唤暴怒的地狱卫士"] = {
+			["spells"] = "22392=135805",
 		},
-		["Increase Spell Dam 20"] = {
-			["spells"] = "14799=136235,18056=136235",
+		["Agro Drones"] = {
+			["spells"] = "25152=136235",
 		},
 		["强效防御药剂"] = {
 			["spells"] = "11450=136235,11484=136021",
 		},
-		["Elune's Blessing (quest credit)"] = {
-			["spells"] = "26394=136235",
+		["治疗之环"] = {
+			["spells"] = "22458=135880,23544=135943",
 		},
-		["Increased Intellect 36"] = {
-			["spells"] = "14426=136235",
+		["Summon RaidMageArcaneFR"] = {
+			["spells"] = "22459=132317",
 		},
-		["Increase Holy Dam 5"] = {
-			["spells"] = "21503=136235",
+		["配方：强效火焰防护药水"] = {
+			["spells"] = "17600=136235",
 		},
-		["Receive Quest Object, Stormwind Guard"] = {
-			["spells"] = "27510=136235",
+		["制造血瓣花除草器"] = {
+			["spells"] = "22565=136235",
 		},
-		["设计图：符文板甲护肩"] = {
-			["spells"] = "16695=136235",
+		["反人海战咒语"] = {
+			["spells"] = "22573=136235",
 		},
-		["制造强效法术石"] = {
-			["spells"] = "17727=134131,17732=134131",
+		["附魔武器 - 烈焰"] = {
+			["spells"] = "13898=135913",
 		},
-		["公式：附魔靴子 - 初级敏捷"] = {
-			["spells"] = "7868=136235",
+		["灵魂爆炸"] = {
+			["spells"] = "10828=136168",
 		},
-		["永生力量"] = {
-			["spells"] = "537=136235,567=136235,1318=136109,1319=136109,1320=136109,1365=136109",
+		["光芒（紫色）"] = {
+			["spells"] = "22581=135741",
 		},
-		["Activate Bomb B"] = {
-			["spells"] = "11795=135990",
+		["设计图：灼热金剑"] = {
+			["spells"] = "15975=136235",
 		},
 		["图样：影皮手套"] = {
 			["spells"] = "22712=136235",
 		},
-		["设计图：致命的青铜短剑"] = {
-			["spells"] = "3302=136235",
+		["Spawn Drakonid"] = {
+			["spells"] = "22659=136235",
 		},
-		["Attack Power 30"] = {
-			["spells"] = "9336=136235",
+		["暗灰狼形态"] = {
+			["spells"] = "22660=136095",
 		},
 		["落雷之云"] = {
 			["spells"] = "6535=136014,8293=136014,19513=136014,22946=136014,23105=136014",
 		},
-		["盐湖赛车中速"] = {
-			["spells"] = "6602=134063",
+		["Apo Mekhanes Theos"] = {
+			["spells"] = "22694=136235",
 		},
 		["Force Reactive Disk Visual"] = {
 			["spells"] = "22848=132996",
 		},
-		["巨石之力"] = {
-			["spells"] = "6864=132154,12731=132154",
+		["驱毒术"] = {
+			["spells"] = "2893=136068,2897=136068,14253=136068",
 		},
-		["克拉兹克的药物"] = {
-			["spells"] = "6903=134374",
+		["霜狼之怒"] = {
+			["spells"] = "22751=136087",
 		},
-		["Knockdown Proc"] = {
-			["spells"] = "6961=132154,7095=132154",
+		["洛恩塔姆薯块"] = {
+			["spells"] = "22761=136192",
 		},
 		["电能草莓"] = {
 			["spells"] = "9056=135990",
 		},
-		["重拳猛击"] = {
-			["spells"] = "6435=132939",
+		["窒息孢子"] = {
+			["spells"] = "22802=136006",
 		},
-		["简易传送小组"] = {
-			["spells"] = "7078=135994,7143=135994",
+		["Test Finishing"] = {
+			["spells"] = "6748=136235",
 		},
 		["拱壁导能"] = {
 			["spells"] = "28078=136235",
 		},
-		["CreatureSpecial"] = {
-			["spells"] = "7155=136235",
+		["制造萨纳瑞恩的希望"] = {
+			["spells"] = "22837=136235",
 		},
-		["治疗兄弟"] = {
-			["spells"] = "7393=136042",
+		["Block Value 23"] = {
+			["spells"] = "22852=136235",
 		},
-		["迅捷治愈"] = {
-			["spells"] = "18562=134914",
+		["地精摄像头连接"] = {
+			["spells"] = "7023=136235",
 		},
-		["召唤石头巢穴"] = {
-			["spells"] = "26287=136235",
+		["Stone Skin Passive"] = {
+			["spells"] = "5811=132154",
 		},
-		["Increased Stamina 03"] = {
-			["spells"] = "7479=136235",
+		["恶魔布手套"] = {
+			["spells"] = "22867=132149",
 		},
-		["枪械技能提高"] = {
-			["spells"] = "7536=136235,7579=136235,7580=136235,7581=136235,7582=136235,7583=136235,7584=136235",
+		["图样：地狱火手套"] = {
+			["spells"] = "22873=136235",
 		},
-		["Increased Damage - Beast 04"] = {
-			["spells"] = "7591=136235",
+		["潮湿毛巾"] = {
+			["spells"] = "7108=135920",
 		},
-		["比索的药水"] = {
-			["spells"] = "7669=135899",
+		["Cho'Rush Random"] = {
+			["spells"] = "22879=136235",
 		},
 		["图样：重型蝎壳护手"] = {
 			["spells"] = "19174=136235",
 		},
-		["钓鱼技能 +15"] = {
-			["spells"] = "7825=136245",
+		["躯体转换"] = {
+			["spells"] = "22900=136192,22901=136192",
 		},
-		["自然免疫"] = {
-			["spells"] = "7941=136094",
+		["刺杀奥妮克希亚"] = {
+			["spells"] = "22906=136235",
 		},
-		["局部毒药"] = {
-			["spells"] = "7947=136016",
+		["猫鼬长靴"] = {
+			["spells"] = "22922=136235",
 		},
 		["节能施法"] = {
 			["spells"] = "12536=136170,16246=136170,16870=136170",
@@ -27072,62 +29064,62 @@ WeakAurasOptionsSaved = {
 		["寒冰新星"] = {
 			["spells"] = "22519=135848",
 		},
-		["闪电吐息"] = {
-			["spells"] = "15797=136048,17157=136048,20535=136048,20536=136048,20543=136048,20627=136048,20630=136048,24844=136048,24845=136048,25008=136048,25009=136048,25010=136048,25011=136048,25012=136048,25013=136048,25014=136048,25015=136048,25016=136048,25017=136048",
+		["QAEnchant Weapon +22 Intellect"] = {
+			["spells"] = "26793=135913",
 		},
 		["Increased Spirit 34"] = {
 			["spells"] = "14456=136235",
 		},
-		["变异鱼大餐"] = {
-			["spells"] = "8213=133889",
+		["Mana Shield Absorb Increase"] = {
+			["spells"] = "23037=136153",
 		},
-		["朱莉叶的祝福"] = {
-			["spells"] = "8348=135953",
+		["召唤咒逐"] = {
+			["spells"] = "23041=136235",
 		},
-		["灼热武器"] = {
-			["spells"] = "13897=136235",
+		["Summon Party Bot - summon effect"] = {
+			["spells"] = "7976=136235",
 		},
-		["海盗装束"] = {
-			["spells"] = "24708=132288,24709=132288,24717=136235",
+		["Gift of the Gathering Storm Chain Lightning Bonus"] = {
+			["spells"] = "26123=136235",
 		},
-		["迅捷之风"] = {
-			["spells"] = "8385=136022",
+		["次级智力"] = {
+			["spells"] = "2376=134721,3165=134721,3166=134721,13363=136235",
 		},
 		["法杖打击 III"] = {
 			["spells"] = "1930=132325",
 		},
-		["图样：凤凰手套"] = {
-			["spells"] = "3905=136235",
+		["钓鱼技能 +75"] = {
+			["spells"] = "8084=136245",
 		},
-		["转化秘银"] = {
-			["spells"] = "11480=133234,11494=136021",
+		["真银变压器"] = {
+			["spells"] = "23071=136235",
 		},
-		["黑暗之手"] = {
-			["spells"] = "8780=132149",
+		["图样：蛇鳞腰带"] = {
+			["spells"] = "7958=136235",
 		},
 		["吸血鬼的拥抱"] = {
 			["spells"] = "15286=136230,15290=136230",
 		},
-		["皱褶皮短裤"] = {
-			["spells"] = "9064=136235",
+		["附魔盾牌 - 超强精神"] = {
+			["spells"] = "20016=135913",
 		},
-		["Attack Power 20"] = {
-			["spells"] = "9331=136235",
+		["熏熊肉"] = {
+			["spells"] = "8607=136192",
 		},
-		["Increased Spirit 30"] = {
-			["spells"] = "14452=136235",
+		["结构图：简易投掷炸弹 II"] = {
+			["spells"] = "23086=134153",
 		},
-		["轻巧的皮手套"] = {
-			["spells"] = "9074=136235,9075=136021",
+		["结构图：真银变压器"] = {
+			["spells"] = "23088=134153",
 		},
-		["dmg5"] = {
-			["spells"] = "18389=136115",
+		["召唤炮手威利"] = {
+			["spells"] = "24626=136121",
 		},
-		["Increased Agility 12"] = {
-			["spells"] = "9102=136235",
+		["结构图：快速暗影反射器"] = {
+			["spells"] = "23094=134153",
 		},
-		["Increased Spirit 09"] = {
-			["spells"] = "9110=136235",
+		["深红丝质外衣"] = {
+			["spells"] = "8791=132149,8807=136021",
 		},
 		["Regeneration IV"] = {
 			["spells"] = "16890=134859",
@@ -27138,38 +29130,38 @@ WeakAurasOptionsSaved = {
 		["图样：符文皮甲护肩"] = {
 			["spells"] = "19221=136235",
 		},
-		["钢铁意志"] = {
-			["spells"] = "12300=135995,12959=135995,12960=135995,12961=135995,12962=135995",
+		["教授召唤恐惧战马"] = {
+			["spells"] = "23160=136103",
 		},
-		["绝望祷言"] = {
-			["spells"] = "13908=135954,19236=135954,19238=135954,19240=135954,19241=135954,19242=135954,19243=135954,19338=135954,19339=135954,19340=135954,19341=135954,19342=135954,19343=135954,19344=135954",
+		["Summon Corpse Scarabs (10)"] = {
+			["spells"] = "28864=136235,28961=136235",
 		},
-		["Increase Spell Dam 6"] = {
-			["spells"] = "9342=136235,9417=136235",
+		["侵扰"] = {
+			["spells"] = "23162=132175,23163=132175,23164=132175,23165=132175,23166=132175,23167=132175",
 		},
 		["精制秘银护肩"] = {
 			["spells"] = "9952=136192",
 		},
-		["SHOWLABEL Only ON"] = {
-			["spells"] = "2765=135893",
+		["暗色皮护腿"] = {
+			["spells"] = "9195=136235",
 		},
-		["墨汁喷射"] = {
-			["spells"] = "9612=136090",
+		["迅捷之靴"] = {
+			["spells"] = "9208=136235",
 		},
-		["幽魂外形"] = {
-			["spells"] = "9617=135864,22650=135864",
+		["Increased Spirit 14"] = {
+			["spells"] = "9263=136235",
 		},
-		["修理塔瓦斯德的项链"] = {
-			["spells"] = "9795=135954",
+		["Increase Spell Dam 57"] = {
+			["spells"] = "23213=136235",
 		},
-		["打磨利刃 IV"] = {
-			["spells"] = "9900=136235",
+		["潜行侦测"] = {
+			["spells"] = "23217=132150",
 		},
 		["Thorns Dmg +2"] = {
 			["spells"] = "20887=136051",
 		},
-		["秘银鳞片护肩"] = {
-			["spells"] = "9966=136192",
+		["Increase Fire Dam 7"] = {
+			["spells"] = "9399=136235",
 		},
 		["Increased Stamina 22"] = {
 			["spells"] = "14469=136235",
@@ -27180,35 +29172,35 @@ WeakAurasOptionsSaved = {
 		["结构图：猫眼超级护目镜"] = {
 			["spells"] = "12647=136235",
 		},
-		["鼠之新星"] = {
-			["spells"] = "10018=133946",
+		["冰霜易伤"] = {
+			["spells"] = "10868=135849",
 		},
 		["部落奥特兰克山谷"] = {
 			["spells"] = "23528=136235,23529=136235,23532=136235,23533=136235",
 		},
-		["高级宝石学"] = {
-			["spells"] = "12687=134139,12688=134139",
+		["制造次级黎明印记"] = {
+			["spells"] = "28319=134499",
 		},
-		["粘液瘟疫"] = {
-			["spells"] = "14130=135914",
+		["强效光明祝福"] = {
+			["spells"] = "25890=135909,25948=135909",
 		},
-		["辐射之云"] = {
-			["spells"] = "10341=136133",
+		["红色魔纹包"] = {
+			["spells"] = "12079=132149,12123=136021",
 		},
-		["火焰头盔"] = {
-			["spells"] = "10632=136235,10633=136021",
+		["迅捷森林狼"] = {
+			["spells"] = "23251=132266",
 		},
-		["元素制皮"] = {
-			["spells"] = "10658=135830,10659=136247",
+		["重型秘银头盔"] = {
+			["spells"] = "9970=136192",
 		},
 		["能量涌动"] = {
 			["spells"] = "28134=136215",
 		},
-		["图样：重型蝎壳护腿"] = {
-			["spells"] = "19191=136235",
+		["召唤达克雷尔的堕落战马"] = {
+			["spells"] = "23261=136235",
 		},
-		["召唤农场小鸡"] = {
-			["spells"] = "10686=132311,13548=132311",
+		["唤醒地灵守护者"] = {
+			["spells"] = "10252=136025",
 		},
 		["制造特效火焰石"] = {
 			["spells"] = "17953=132386,18171=132386",
@@ -27216,14 +29208,14 @@ WeakAurasOptionsSaved = {
 		["次级抗性 - 暗影"] = {
 			["spells"] = "13523=136235",
 		},
-		["灼烧之焰"] = {
-			["spells"] = "19366=135830",
+		["残废扫击"] = {
+			["spells"] = "23279=136039",
 		},
 		["强化治疗宠物"] = {
 			["spells"] = "19572=132179,19573=132179,23560=136235,24406=132179",
 		},
-		["奥术强化"] = {
-			["spells"] = "12042=136048",
+		["温诺希斯的守护"] = {
+			["spells"] = "24688=136016",
 		},
 		["强化圣疗术"] = {
 			["spells"] = "20234=135928,20235=135928",
@@ -27231,89 +29223,89 @@ WeakAurasOptionsSaved = {
 		["草药学"] = {
 			["spells"] = "9134=136246,13614=136235",
 		},
-		["粗制磨刀石"] = {
-			["spells"] = "2665=136192,2746=136235",
+		["粘稠沥青"] = {
+			["spells"] = "14178=132343,14180=132343",
 		},
-		["抓住武器"] = {
-			["spells"] = "10851=132343",
+		["召唤棕色猫头鹰"] = {
+			["spells"] = "10707=132311",
 		},
-		["祖穆拉恩结界"] = {
-			["spells"] = "11086=136232,11088=136157",
+		["Gemology - Tin (DND)"] = {
+			["spells"] = "12682=134118",
 		},
 		["奥术射击"] = {
 			["spells"] = "3044=132218,3048=132218,14281=132218,14282=132218,14283=132218,14284=132218,14285=132218,14286=132218,14287=132218,14352=132218,14353=132218,14354=132218,14355=132218,14356=132218,14357=132218,14358=132218",
 		},
-		["Increased Arcane Resist 17"] = {
-			["spells"] = "14719=136235",
+		["Receive Quest Object, Undercity Guard"] = {
+			["spells"] = "27515=136235",
 		},
-		["侦测亡灵"] = {
-			["spells"] = "11389=134179",
+		["灵魂震击"] = {
+			["spells"] = "10794=136140",
 		},
 		["Night Elf Harbinger"] = {
 			["spells"] = "26383=135849",
 		},
-		["超强治疗药水"] = {
-			["spells"] = "11457=136235,11491=136021",
+		["复活死去的龙类"] = {
+			["spells"] = "23361=136235",
 		},
 		["彩带棒"] = {
 			["spells"] = "29173=136235",
 		},
-		["手工皮披风"] = {
-			["spells"] = "9058=136235",
+		["图样：寒鳞护手"] = {
+			["spells"] = "28232=136235",
 		},
-		["召唤禁锢之魂"] = {
-			["spells"] = "24343=136235",
+		["归还部落军旗"] = {
+			["spells"] = "23386=136235",
 		},
 		["转化：土转生命"] = {
 			["spells"] = "17566=134459",
 		},
-		["图样：碧蓝丝质披风"] = {
-			["spells"] = "8787=136235",
+		["月布外衣"] = {
+			["spells"] = "18447=132149",
 		},
-		["制造初级灵魂石"] = {
-			["spells"] = "693=136210,1377=136210",
+		["堕落治疗"] = {
+			["spells"] = "23401=136129,23402=136152",
 		},
-		["遗弃技能：火焰"] = {
-			["spells"] = "7049=135805",
+		["驱邪术"] = {
+			["spells"] = "559=136235,879=135903,931=136235,3690=135932,5613=135903,5614=135903,5615=135903,5616=135903,5617=135903,10312=135903,10313=135903,10314=135903,10315=135903,10316=135903,10317=135903,17147=135903,17149=135903",
 		},
 		["传授召唤魅魔"] = {
 			["spells"] = "11519=136220",
 		},
-		["强效耐力"] = {
-			["spells"] = "13827=136235,24636=136112",
+		["疾病射击"] = {
+			["spells"] = "11397=136127",
 		},
-		["图样：蓝色亚麻外衣"] = {
-			["spells"] = "7632=136235",
+		["暴风城友谊礼品包"] = {
+			["spells"] = "27664=134142",
 		},
-		["黑色魔纹之靴"] = {
-			["spells"] = "12073=132149,12116=136021",
+		["Activate Bomb 03"] = {
+			["spells"] = "11523=136235",
 		},
-		["Hate to 75%"] = {
-			["spells"] = "26886=136190",
+		["窒息"] = {
+			["spells"] = "23417=134343",
 		},
-		["黑色魔纹护肩"] = {
-			["spells"] = "12074=132149,12117=136021",
+		["苏萨斯"] = {
+			["spells"] = "11658=136145",
 		},
 		["灵魂击碎者"] = {
 			["spells"] = "17506=136163",
 		},
-		["消失净化"] = {
-			["spells"] = "18461=132331",
+		["捕捉角鹰兽"] = {
+			["spells"] = "11887=136235",
 		},
-		["双手武器专精"] = {
-			["spells"] = "12163=132400,12711=132400,12712=132400,12713=132400,12714=132400,20111=133041,20112=133041,20113=133041",
+		["配方：强效昏睡药水"] = {
+			["spells"] = "24370=136235",
 		},
-		["强化压制"] = {
-			["spells"] = "12290=135275,12963=135275",
+		["召唤硬皮钳嘴龟"] = {
+			["spells"] = "23431=132311",
 		},
-		["不灭信仰"] = {
-			["spells"] = "9453=135984,25836=135984",
+		["侏儒缩小射线"] = {
+			["spells"] = "12899=136235,12911=136235",
 		},
-		["Attack Power Ranged 38"] = {
-			["spells"] = "21441=136235",
+		["召唤鹰喙钳嘴龟"] = {
+			["spells"] = "23432=132311",
 		},
-		["黑衣拉索里克"] = {
-			["spells"] = "12332=132331",
+		["提高暗影爆击法术"] = {
+			["spells"] = "23440=136235,23443=136235",
 		},
 		["雷矛的拯救"] = {
 			["spells"] = "23693=136087",
@@ -27324,8 +29316,8 @@ WeakAurasOptionsSaved = {
 		["法术爆裂"] = {
 			["spells"] = "25906=136208,25907=135990",
 		},
-		["高速秘银弹头"] = {
-			["spells"] = "12596=136235,12636=136235",
+		["安全传送器 - 加基森"] = {
+			["spells"] = "23489=136235",
 		},
 		["亮闪闪的钢匕首"] = {
 			["spells"] = "15972=136192,15974=136235",
@@ -27336,8 +29328,8 @@ WeakAurasOptionsSaved = {
 		["雷松的猫头鹰"] = {
 			["spells"] = "21171=132172,21425=132172",
 		},
-		["侏儒护目镜"] = {
-			["spells"] = "12897=136235,12910=136235",
+		["Summon Cloak of Unending Life DND"] = {
+			["spells"] = "29010=136235",
 		},
 		["Force Target - Bow"] = {
 			["spells"] = "6655=136168",
@@ -27345,50 +29337,50 @@ WeakAurasOptionsSaved = {
 		["熏香"] = {
 			["spells"] = "26682=135447",
 		},
-		["狂暴冲锋"] = {
-			["spells"] = "16636=132337,19471=132337,22886=132337,26561=132337",
+		["Reduce Threat"] = {
+			["spells"] = "23604=132270",
 		},
 		["无穷力量"] = {
 			["spells"] = "29288=136076",
 		},
-		["次级耐力"] = {
-			["spells"] = "13369=136235",
+		["大地粉碎"] = {
+			["spells"] = "12734=135906",
 		},
-		["附魔盾牌 - 初级耐力"] = {
-			["spells"] = "13378=135913,13392=135913",
+		["Demon Slaying 18"] = {
+			["spells"] = "12822=136172",
 		},
-		["恐惧风暴"] = {
-			["spells"] = "13488=135902",
+		["沙漏"] = {
+			["spells"] = "23645=135744",
 		},
-		["哀嚎之刃"] = {
-			["spells"] = "13490=132117",
+		["战歌峡谷野战军粮"] = {
+			["spells"] = "23542=134062",
 		},
-		["强效星界精华"] = {
-			["spells"] = "13497=136192",
+		["召唤拉瑟莱克"] = {
+			["spells"] = "13143=136235",
 		},
 		["强化生命通道"] = {
 			["spells"] = "18703=136168,18704=136168",
 		},
-		["Wracking Pains Proc"] = {
-			["spells"] = "13616=136139,23771=136139",
+		["野兽守护"] = {
+			["spells"] = "13161=132252,13162=132252",
 		},
-		["毁坏之痛"] = {
-			["spells"] = "13619=136139",
+		["Despawn Warsong Flag"] = {
+			["spells"] = "23659=136235",
 		},
 		["初级法力药水"] = {
 			["spells"] = "2331=136235,2339=136021",
 		},
-		["强效生命"] = {
-			["spells"] = "13639=136235",
+		["乌瑟尔的侏儒祭品"] = {
+			["spells"] = "24106=136235",
 		},
 		["附魔靴子 - 初级耐力"] = {
 			["spells"] = "7863=135913,13391=135913",
 		},
-		["耐久"] = {
-			["spells"] = "13742=136205,13872=136205,20550=136112",
+		["图样：木喉衬肩"] = {
+			["spells"] = "23669=136235",
 		},
-		["毒性射击"] = {
-			["spells"] = "8275=132273,8806=132273",
+		["附魔双手武器 - 次级冲击"] = {
+			["spells"] = "13529=135913,13531=135913",
 		},
 		["光芒（蓝色）"] = {
 			["spells"] = "22576=135741",
@@ -27396,14 +29388,14 @@ WeakAurasOptionsSaved = {
 		["强效治疗药水"] = {
 			["spells"] = "7181=136235,7182=136021",
 		},
-		["公主召唤传送门"] = {
-			["spells"] = "13912=135743",
+		["侦测恶魔药剂"] = {
+			["spells"] = "11478=136235,11501=136021",
 		},
-		["附魔靴子 - 敏捷"] = {
-			["spells"] = "13935=135913,13936=135913",
+		["蓝龙光环"] = {
+			["spells"] = "23684=134155,23688=136208",
 		},
-		["dmg4"] = {
-			["spells"] = "11821=136115",
+		["拳套专精"] = {
+			["spells"] = "13707=132938,13966=132938,13967=132938,13968=132938,13969=132938",
 		},
 		["闪电震爆"] = {
 			["spells"] = "8598=136048",
@@ -27411,65 +29403,65 @@ WeakAurasOptionsSaved = {
 		["Increased Armor 200 Wildheart"] = {
 			["spells"] = "29097=136235",
 		},
-		["米布隆的诱饵"] = {
-			["spells"] = "14008=134006",
+		["冲动"] = {
+			["spells"] = "13750=136206",
 		},
-		["密谋"] = {
-			["spells"] = "14158=136147,14159=136147",
+		["龙语"] = {
+			["spells"] = "23758=136036",
 		},
 		["地精火箭头盔"] = {
 			["spells"] = "12758=136235,12780=136235,13821=135805",
 		},
-		["Increased Agility 37"] = {
-			["spells"] = "14401=136235",
+		["次级格挡"] = {
+			["spells"] = "13690=136235",
 		},
-		["Increased Intellect 16"] = {
-			["spells"] = "14406=136235",
+		["欺诈高手"] = {
+			["spells"] = "13958=136129,13970=136129,13971=136129,13972=136129,13973=136129",
 		},
 		["暂停"] = {
 			["spells"] = "7950=132149",
 		},
-		["Increased Spirit 33"] = {
-			["spells"] = "14455=136235",
+		["塞格的黑暗塔罗牌：护甲"] = {
+			["spells"] = "23767=134334",
 		},
-		["Increased Stamina 19"] = {
-			["spells"] = "14466=136235",
+		["塞格的游乐场增益"] = {
+			["spells"] = "23770=136232",
 		},
-		["Increased Strength 22"] = {
-			["spells"] = "14494=136235",
+		["Anubisath Guardian Targeted"] = {
+			["spells"] = "14291=136235",
 		},
-		["高级钓鱼"] = {
-			["spells"] = "7736=136245,19889=136245",
+		["防护元素图腾光环"] = {
+			["spells"] = "8263=136069",
 		},
-		["Increased Strength 24"] = {
-			["spells"] = "14496=136235",
+		["Summon Royal Water, Trigger"] = {
+			["spells"] = "24793=136235",
 		},
-		["Stance Rage (+5 Off)"] = {
-			["spells"] = "6593=132091",
+		["Copy of Summon Snowman"] = {
+			["spells"] = "26531=132311,26532=132311",
 		},
 		["Increase Spell Dam 18"] = {
 			["spells"] = "14055=136235,18053=136235",
 		},
-		["弹出斯尼德"] = {
-			["spells"] = "5141=135805",
+		["Increased Spirit 19"] = {
+			["spells"] = "14438=136235",
 		},
-		["Increased Frost Resist 04"] = {
-			["spells"] = "14545=136235",
+		["附魔武器 - 强效智力"] = {
+			["spells"] = "23804=135913",
 		},
-		["Increased Frost Resist 22"] = {
-			["spells"] = "14561=136235",
+		["公式：附魔武器 - 强效精神"] = {
+			["spells"] = "23809=136235",
 		},
 		["图样：绿色毛纺长袍"] = {
 			["spells"] = "7637=136235",
 		},
-		["Increased Fire Resist 21"] = {
-			["spells"] = "14601=136235",
+		["毒云"] = {
+			["spells"] = "23861=136064,24840=136064,25198=136064",
 		},
-		["次级奥术融合"] = {
-			["spells"] = "15340=136235,15389=136235,15391=136235,15394=136235,15397=136235,15400=136235,15402=136235,15404=136235,15406=136235",
+		["结构图：绿色焰火"] = {
+			["spells"] = "23085=134153",
 		},
-		["Increased Fire Resist 26"] = {
-			["spells"] = "14606=136235",
+		["殉难"] = {
+			["spells"] = "14531=136107,14774=136107",
 		},
 		["汹涌"] = {
 			["spells"] = "19196=132337",
@@ -27477,8 +29469,8 @@ WeakAurasOptionsSaved = {
 		["Receive Reward AND Quest Object, Orgrimmar Guard"] = {
 			["spells"] = "27247=136235",
 		},
-		["Increased Nature Resist 32"] = {
-			["spells"] = "14654=136235",
+		["H-Mid Trigger"] = {
+			["spells"] = "23935=136235",
 		},
 		["极性转化"] = {
 			["spells"] = "28089=136048",
@@ -27486,41 +29478,41 @@ WeakAurasOptionsSaved = {
 		["鲜血分流"] = {
 			["spells"] = "28470=136168",
 		},
-		["Increased Shadow Resist 38"] = {
-			["spells"] = "14700=136235",
+		["Increased Nature Resist 02"] = {
+			["spells"] = "14623=136235",
 		},
 		["提高神圣爆击"] = {
 			["spells"] = "23435=135967",
 		},
-		["Add Fire Dam - Weap 06"] = {
-			["spells"] = "7722=136235",
+		["召唤猩猩"] = {
+			["spells"] = "7909=132091",
 		},
-		["多彩变形"] = {
-			["spells"] = "23174=136172,23175=136235,23177=136235",
+		["召唤巫毒之魂"] = {
+			["spells"] = "24052=136235",
 		},
-		["Increased Arcane Resist 12"] = {
-			["spells"] = "14714=136235",
+		["冰霜"] = {
+			["spells"] = "18977=135849",
 		},
-		["Permanent Area Damage 50k"] = {
-			["spells"] = "30879=136195",
+		["Increased Shadow Resist 06"] = {
+			["spells"] = "14669=136235",
 		},
-		["专注施法"] = {
-			["spells"] = "14743=135736,27828=135736,29063=135736",
+		["Transform Visual"] = {
+			["spells"] = "24085=136235",
 		},
-		["Untalent Visual Effect"] = {
-			["spells"] = "14867=135736",
+		["Increased Arcane Resist 02"] = {
+			["spells"] = "14704=136235",
 		},
-		["强效魔法杖"] = {
-			["spells"] = "14807=135144,14808=135913",
+		["乌瑟尔的矮人祭品"] = {
+			["spells"] = "24107=136235",
 		},
-		["神圣专精"] = {
-			["spells"] = "14889=135967,15008=135967,15009=135967,15010=135967,15011=135967",
+		["恼人孢子"] = {
+			["spells"] = "22786=136006,22787=136006",
 		},
 		["熔炼铜锭"] = {
 			["spells"] = "2657=136235",
 		},
-		["Increased Intellect 46"] = {
-			["spells"] = "14946=136235",
+		["原始蝙蝠皮手套"] = {
+			["spells"] = "24122=136235",
 		},
 		["出生"] = {
 			["spells"] = "7398=136235,20480=136235,26047=136235,26062=136235,26262=136235,26586=136235",
@@ -27540,14 +29532,14 @@ WeakAurasOptionsSaved = {
 		["手工皮护腕"] = {
 			["spells"] = "9059=136235",
 		},
-		["机械修补包"] = {
-			["spells"] = "15057=132997",
+		["Increased Stamina 45"] = {
+			["spells"] = "14957=136235",
 		},
 		["设计图：魔法战锤"] = {
 			["spells"] = "17023=136235",
 		},
-		["Increased Arcane Resist 04"] = {
-			["spells"] = "14706=136235",
+		["Increased Arcane Resist 45"] = {
+			["spells"] = "14969=136235",
 		},
 		["深红丝质马裤"] = {
 			["spells"] = "8799=132149,8801=136021",
@@ -27561,83 +29553,83 @@ WeakAurasOptionsSaved = {
 		["制造贱民的指引"] = {
 			["spells"] = "21979=136235",
 		},
-		["防护秘药"] = {
-			["spells"] = "22846=136235,22847=136235",
+		["设计图：黑铁粉碎者"] = {
+			["spells"] = "15297=136235",
 		},
-		["Increased Hit Chance 3"] = {
-			["spells"] = "15466=136235",
+		["强化心灵尖啸"] = {
+			["spells"] = "15392=136184,15448=136184,15450=136184",
 		},
-		["Increased Armor 120"] = {
-			["spells"] = "15508=136235",
+		["Item +STR/FR Leg R2"] = {
+			["spells"] = "15440=136235",
 		},
-		["公式：浓烟山脉之心"] = {
-			["spells"] = "15597=136235",
+		["毒蛇嘶鸣"] = {
+			["spells"] = "24254=136235",
 		},
 		["Summon Type B Periodic (25 sec)"] = {
 			["spells"] = "29393=136235",
 		},
-		["昏睡药水"] = {
-			["spells"] = "15833=136235,15834=136021",
+		["法术锁定"] = {
+			["spells"] = "24259=136174",
 		},
 		["瓦拉塔兹的神圣之触"] = {
 			["spells"] = "16332=136235",
 		},
-		["弓技能提高"] = {
-			["spells"] = "7535=136235,7568=136235,7569=136235,7570=136235,7571=136235,7572=136235,15947=136235,17369=136235,17818=136235",
+		["制造蓝色穿孔卡片"] = {
+			["spells"] = "11525=136235",
 		},
-		["艾博希尔成型"] = {
-			["spells"] = "16047=135805",
+		["Attack Power 90"] = {
+			["spells"] = "15831=136235",
 		},
-		["Increase Nature Dam 29"] = {
-			["spells"] = "18003=136235,18004=136235",
+		["Demon Slaying 30"] = {
+			["spells"] = "20858=136172",
 		},
 		["毒药瓶"] = {
 			["spells"] = "7365=136016,22335=136016",
 		},
-		["Activate Bomb 02B"] = {
-			["spells"] = "11797=136235",
+		["融合软泥怪"] = {
+			["spells"] = "16032=134743",
 		},
 		["上古恐慌"] = {
 			["spells"] = "19365=136140",
 		},
-		["魔火"] = {
-			["spells"] = "24530=135807",
+		["黑龙之焰"] = {
+			["spells"] = "16054=135824",
 		},
-		["多彩混乱"] = {
-			["spells"] = "16337=135753",
+		["回复"] = {
+			["spells"] = "24361=134859",
 		},
-		["地穴甲虫自杀"] = {
-			["spells"] = "16424=136118",
+		["魂能之力"] = {
+			["spells"] = "16323=134313",
 		},
-		["急奔"] = {
-			["spells"] = "1151=132120,1850=132120,9821=132120,9822=132120",
+		["配方：特效巨魔之血药水"] = {
+			["spells"] = "24373=136235",
 		},
-		["Charm (Possess)"] = {
-			["spells"] = "530=135994",
+		["遗弃技能：弓"] = {
+			["spells"] = "7043=135490",
 		},
-		["软泥"] = {
-			["spells"] = "16456=136006,28801=132108",
+		["脑部损伤"] = {
+			["spells"] = "24388=132155",
 		},
 		["附魔披风 - 狡诈"] = {
 			["spells"] = "25084=135913",
 		},
-		["基尔图诺斯变形"] = {
-			["spells"] = "16467=136122",
+		["设计图：黑铁长靴"] = {
+			["spells"] = "24400=136235",
 		},
-		["毒性箭"] = {
-			["spells"] = "16554=136016",
+		["消音"] = {
+			["spells"] = "24402=132182",
 		},
 		["仪式蜡烛光环"] = {
 			["spells"] = "23226=135805",
 		},
-		["Summon Gordunni chest (COBALT)"] = {
-			["spells"] = "11756=136235",
+		["熔炼金锭"] = {
+			["spells"] = "3308=136235,3315=136235",
 		},
-		["沙赫拉姆之拳"] = {
-			["spells"] = "16601=132369",
+		["强化火焰之雨/地狱烈焰"] = {
+			["spells"] = "24430=136235",
 		},
-		["神入之石"] = {
-			["spells"] = "9930=136025",
+		["召唤破碎的死尸"] = {
+			["spells"] = "16324=136187",
 		},
 		["制造幽暗城浪漫诗集"] = {
 			["spells"] = "27717=136235",
@@ -27645,8 +29637,8 @@ WeakAurasOptionsSaved = {
 		["点燃"] = {
 			["spells"] = "3261=135805,11119=135818,11120=135818,12654=135818,12846=135818,12847=135818,12848=135818",
 		},
-		["瑟银长靴"] = {
-			["spells"] = "16652=136192",
+		["能量护盾"] = {
+			["spells"] = "24499=136014",
 		},
 		["图样：猫鼬长靴"] = {
 			["spells"] = "22930=136235",
@@ -27654,11 +29646,11 @@ WeakAurasOptionsSaved = {
 		["Increased Shadow Resist 41"] = {
 			["spells"] = "14990=136235",
 		},
-		["设计图：炽热板甲护手"] = {
-			["spells"] = "16687=136235",
+		["自然护甲"] = {
+			["spells"] = "24545=136094,24547=136094,24548=136094,24549=136094,24550=136094,24551=136094,24552=136094,24553=136094,24554=136094,24555=136094,24556=136094,24557=136094,24558=136094,24559=136094,24560=136094,24561=136094,24562=136094,24563=136094,24565=136094,24566=136094,24567=136094,24568=136094,24569=136094,24570=136094,24629=136094,24630=136094,24631=136094,24632=136094,24633=136094,24634=136094",
 		},
-		["设计图：白魂头盔"] = {
-			["spells"] = "16747=136235",
+		["设计图：瑟银头盔"] = {
+			["spells"] = "16682=136235",
 		},
 		["粗制瞄准镜"] = {
 			["spells"] = "3974=136235,3977=136235,3988=136235",
@@ -27666,83 +29658,83 @@ WeakAurasOptionsSaved = {
 		["食谱：烤熊排"] = {
 			["spells"] = "3401=136235",
 		},
-		["强效奥法药剂"] = {
-			["spells"] = "16889=134827,17539=134805,17573=136235",
+		["恶魔布袍"] = {
+			["spells"] = "18451=132149",
 		},
-		["星火昏迷"] = {
-			["spells"] = "16922=135753",
+		["月光"] = {
+			["spells"] = "16845=136087,16846=136087,16847=136087,26392=135926",
 		},
-		["缠绕之藤"] = {
-			["spells"] = "8142=136025,22924=136025",
+		["绿色龙鳞护手"] = {
+			["spells"] = "24655=136235,24657=136021",
 		},
-		["先祖的复仇"] = {
-			["spells"] = "16939=135131",
+		["GY Mid Alliance"] = {
+			["spells"] = "24678=136235",
 		},
-		["暗色湖蘑菇"] = {
-			["spells"] = "8138=135914",
+		["次级巫师之油"] = {
+			["spells"] = "25119=136235,25126=135913",
 		},
-		["韧化皮手套"] = {
-			["spells"] = "3770=136235,3794=136021",
+		["娅尔罗的守护"] = {
+			["spells"] = "24690=132331",
 		},
-		["野性本能"] = {
-			["spells"] = "16947=132089,16948=132089,16949=132089,16950=132089,16951=132089",
+		["丢掉武器"] = {
+			["spells"] = "25655=132343",
 		},
-		["瑟银巨剑"] = {
-			["spells"] = "16960=136192",
+		["召唤小鱼人"] = {
+			["spells"] = "24696=132311,24939=134169,25018=132311",
 		},
-		["符文布绷带"] = {
-			["spells"] = "18629=136192,18631=133681",
+		["图样：梦境龙鳞胸甲"] = {
+			["spells"] = "24704=136235",
 		},
 		["空的重瓶子"] = {
 			["spells"] = "11637=136235",
 		},
-		["设计图：瑟银巨剑"] = {
-			["spells"] = "17017=136235",
+		["插旗子"] = {
+			["spells"] = "16989=136235",
 		},
 		["致伤射击 V"] = {
 			["spells"] = "1561=132323",
 		},
-		["设计图：泰坦之锤"] = {
-			["spells"] = "17031=136235",
+		["Increase Shadow Dam 57"] = {
+			["spells"] = "26729=136235",
 		},
-		["设计图：奥金圣剑"] = {
-			["spells"] = "17032=136235",
+		["小精灵装束"] = {
+			["spells"] = "24740=132288,24741=136235",
 		},
-		["暗影射击"] = {
-			["spells"] = "17171=132329,18649=132329,29632=135934,29641=135990",
+		["Summon Royal"] = {
+			["spells"] = "24786=136235,24788=136235,24789=136235,24790=136235",
 		},
-		["强化心灵震爆"] = {
-			["spells"] = "15273=136224,15312=136224,15313=136224,15314=136224,15316=136224",
+		["深渊惩罚"] = {
+			["spells"] = "24803=136235",
 		},
-		["召唤红衣火枪手"] = {
-			["spells"] = "17279=136075",
+		["渗漏之雾"] = {
+			["spells"] = "24813=136006,24814=136006",
 		},
-		["Cluster Rocket, GREEN - U"] = {
-			["spells"] = "26358=136235",
+		["神圣乱舞 IV"] = {
+			["spells"] = "1902=132330",
 		},
-		["烟鬼的打火器"] = {
-			["spells"] = "17283=135818",
+		["打碎灵魂宝石"] = {
+			["spells"] = "24828=134076",
 		},
 		["Enraged Felguard Spawn"] = {
 			["spells"] = "22393=135805",
 		},
-		["烈焰之环"] = {
-			["spells"] = "17447=135824",
+		["十字军之锤"] = {
+			["spells"] = "17286=135963",
 		},
-		["召唤仆人"] = {
-			["spells"] = "18307=136221,18308=136221",
+		["图样：飞火护腕"] = {
+			["spells"] = "24855=136235",
 		},
-		["强效冰霜防护药水"] = {
-			["spells"] = "17575=136235",
+		["特效活力药水"] = {
+			["spells"] = "22732=136235",
 		},
-		["配方：先知药剂"] = {
-			["spells"] = "17585=136235",
+		["图样：飞火胸甲"] = {
+			["spells"] = "24859=136235",
 		},
 		["Increase Fire Dam 61"] = {
 			["spells"] = "26696=136235",
 		},
-		["烹制甜点"] = {
-			["spells"] = "5174=135915",
+		["配方：点气成火"] = {
+			["spells"] = "17588=136235",
 		},
 		["冰冻之爪"] = {
 			["spells"] = "17010=135836,17011=135853",
@@ -27750,11 +29742,11 @@ WeakAurasOptionsSaved = {
 		["强化雷霆一击"] = {
 			["spells"] = "12287=132326,12665=132326,12666=132326",
 		},
-		["影像投射"] = {
-			["spells"] = "17651=136164,17652=136164",
+		["多重抗性合剂"] = {
+			["spells"] = "17638=136235",
 		},
-		["火焰之光"] = {
-			["spells"] = "17667=136235",
+		["地精火箭燃油"] = {
+			["spells"] = "11456=136235,11490=136021",
 		},
 		["图样：深红丝质长袍"] = {
 			["spells"] = "8803=136235",
@@ -27762,56 +29754,56 @@ WeakAurasOptionsSaved = {
 		["Increased Stamina 13"] = {
 			["spells"] = "9264=136235",
 		},
-		["转化：点火成土"] = {
-			["spells"] = "17560=134459",
+		["AE Charm"] = {
+			["spells"] = "28225=136235",
 		},
-		["吞噬暗影"] = {
-			["spells"] = "17715=136163,17716=136163,17767=136121,17776=136121,17850=136121,17851=136121,17852=136121,17853=136121,17854=136121,17855=136121,17856=136121,17857=136121,17859=136121,17860=136121,20387=136121,20388=136121,20389=136121,20390=136121,20391=136121,20392=136121",
+		["解除徽记"] = {
+			["spells"] = "22027=136235",
 		},
-		["召唤屈服的灵魂"] = {
-			["spells"] = "19096=136235",
+		["霜刃豹幼崽死亡"] = {
+			["spells"] = "15782=132151",
 		},
 		["地精迫击炮"] = {
 			["spells"] = "12716=136235,12768=136235,13237=135826,13238=135826",
 		},
-		["扩散"] = {
-			["spells"] = "17772=136235,17774=136235",
+		["狼头之盔能量"] = {
+			["spells"] = "17770=135998,29940=135998",
 		},
-		["精神指引"] = {
-			["spells"] = "14901=135977,15028=135977,15029=135977,15030=135977,15031=135977",
+		["Thorns Dmg +4"] = {
+			["spells"] = "20889=136051",
 		},
-		["奥金棒"] = {
-			["spells"] = "20201=136192,20202=136235",
+		["野性之心熊效果"] = {
+			["spells"] = "24899=135879",
 		},
-		["制造徽章"] = {
-			["spells"] = "17777=136235",
+		["Increase Spell Dam 68"] = {
+			["spells"] = "26227=136235",
 		},
-		["衣着新潮"] = {
-			["spells"] = "17816=136235",
+		["食谱：烤鼠尾鱼"] = {
+			["spells"] = "25705=136235",
 		},
-		["Increase Arcane Dam 14"] = {
-			["spells"] = "17822=136235",
+		["黑暗符文护手"] = {
+			["spells"] = "24912=136192",
 		},
-		["Increase Arcane Dam 15"] = {
-			["spells"] = "17823=136235",
+		["设计图：黑暗符文护手"] = {
+			["spells"] = "24915=136235",
 		},
-		["工头的毒药"] = {
-			["spells"] = "6531=136016",
+		["臭气陷阱"] = {
+			["spells"] = "24918=136006",
 		},
-		["Increase Fire Dam 21"] = {
-			["spells"] = "17873=136235,23483=136235",
+		["厌恶"] = {
+			["spells"] = "24919=136006",
 		},
-		["Increase Fire Dam 31"] = {
-			["spells"] = "17886=136235",
+		["Holiday - Teleport: Moonglade"] = {
+			["spells"] = "26448=135758",
 		},
 		["狮心头盔"] = {
 			["spells"] = "16729=136192",
 		},
-		["Decrease Mana Cost - Nature"] = {
-			["spells"] = "17913=136235",
+		["荣誉点数+2388"] = {
+			["spells"] = "24966=132486",
 		},
-		["Increased Intellect 27"] = {
-			["spells"] = "14417=136235",
+		["远古治疗"] = {
+			["spells"] = "24998=136042",
 		},
 		["轻皮箭袋"] = {
 			["spells"] = "9060=136235,9061=136021",
@@ -27819,11 +29811,11 @@ WeakAurasOptionsSaved = {
 		["猪肉干"] = {
 			["spells"] = "2546=136192,2563=136021",
 		},
-		["Increase Shadow Dam 24"] = {
-			["spells"] = "18018=136235,18019=136235",
+		["自然印记"] = {
+			["spells"] = "25040=136094,25041=136094,25042=136094",
 		},
-		["公正圣印"] = {
-			["spells"] = "20164=135971,20462=135971",
+		["Dmg Shield"] = {
+			["spells"] = "25059=136104",
 		},
 		["图样：黎明皮靴"] = {
 			["spells"] = "23712=136235",
@@ -27831,47 +29823,47 @@ WeakAurasOptionsSaved = {
 		["强化防护火焰结界"] = {
 			["spells"] = "11094=135806,13043=135806",
 		},
-		["强化吸取灵魂"] = {
-			["spells"] = "18213=136163,18372=136163",
+		["附魔披风 - 强效自然抗性"] = {
+			["spells"] = "25082=135913",
 		},
-		["图样：舒适的皮帽"] = {
-			["spells"] = "10492=136235",
+		["Self Visual - Sleep 90s (DND)"] = {
+			["spells"] = "10263=136168",
 		},
-		["热疫疲惫"] = {
-			["spells"] = "22752=136106",
+		["驯鹿之尘效果"] = {
+			["spells"] = "25952=136235",
 		},
-		["鬼纹腰带"] = {
-			["spells"] = "18410=132149",
+		["Spirit Particles, super big (DND)"] = {
+			["spells"] = "31954=135864",
 		},
-		["符文布手套"] = {
-			["spells"] = "18417=132149",
+		["Bleed Spice, Check"] = {
+			["spells"] = "30660=136235",
 		},
-		["堕落风怒图腾"] = {
-			["spells"] = "23423=136114",
+		["卓越巫师之油"] = {
+			["spells"] = "25122=136235,25129=135913",
 		},
 		["Attack Power Ranged 62"] = {
 			["spells"] = "21450=136235",
 		},
-		["烧尽"] = {
-			["spells"] = "18459=135813,18460=135813,19396=135813,19397=135813",
+		["Night Elf Lunar Festival Vendor"] = {
+			["spells"] = "26384=135849",
 		},
 		["烈焰震击"] = {
 			["spells"] = "8050=135813,8051=135813,8052=135813,8053=135813,8054=135813,8055=135813,10447=135813,10448=135813,10449=135813,10450=135813,13729=135813,15039=135813,15096=135813,15616=135813,16804=135813,22423=135813,23038=135813,29228=135813,29229=135813",
 		},
-		["图样：霜纹手套"] = {
-			["spells"] = "18481=136235",
+		["Spell Penetration 150 Frost Resist"] = {
+			["spells"] = "26204=136235",
 		},
 		["Spawn Bile Sludge"] = {
 			["spells"] = "27889=136118",
 		},
-		["图样：月布护肩"] = {
-			["spells"] = "18521=136235",
+		["冰霜之墓"] = {
+			["spells"] = "25168=136235",
 		},
-		["灵魂燃烧"] = {
-			["spells"] = "1321=135805,19393=135827",
+		["暗影虚弱"] = {
+			["spells"] = "25183=134399",
 		},
-		["图样：恶魔布护肩"] = {
-			["spells"] = "18527=136235",
+		["钉刺突击"] = {
+			["spells"] = "25190=132337,25191=132337",
 		},
 		["荆棘"] = {
 			["spells"] = "25640=136104,25777=136104",
@@ -27879,8 +29871,8 @@ WeakAurasOptionsSaved = {
 		["食谱：卡多雷蜘蛛烤肉"] = {
 			["spells"] = "6423=136235",
 		},
-		["末日仪式效果"] = {
-			["spells"] = "18541=135741",
+		["吞噬"] = {
+			["spells"] = "25371=136020,25373=136020,25374=136020,25378=136224,25410=136020,25769=136235,25775=136235,26193=136123,26196=136020",
 		},
 		["Dragondog Breath Selection (L2)"] = {
 			["spells"] = "23318=136235",
@@ -27888,14 +29880,14 @@ WeakAurasOptionsSaved = {
 		["焚烧被毁坏的死尸"] = {
 			["spells"] = "16146=135817",
 		},
-		["Increase Nature Dam 23"] = {
-			["spells"] = "17996=136235",
+		["Testing Totem Passive"] = {
+			["spells"] = "22049=135825",
 		},
-		["群体治疗"] = {
-			["spells"] = "25839=135913",
+		["英勇打击"] = {
+			["spells"] = "78=132282,284=132282,285=132282,1605=132282,1606=132282,1607=132282,1608=132282,1610=132282,1611=132282,6158=132282,11564=132282,11565=132282,11566=132282,11567=132282,11570=132282,11571=132282,25286=132282,25354=132282,25710=132282,25712=132282,25958=132282",
 		},
-		["Increased All Resist 05"] = {
-			["spells"] = "18676=136235",
+		["食谱：迪尔格的超美味奇美拉肉片"] = {
+			["spells"] = "25658=136235",
 		},
 		["狂暴之怒"] = {
 			["spells"] = "18499=136009,18556=136009",
@@ -27903,11 +29895,11 @@ WeakAurasOptionsSaved = {
 		["熟化重毛皮"] = {
 			["spells"] = "3818=136235,3820=136021",
 		},
-		["Spirit Particles (green)"] = {
-			["spells"] = "18951=135864",
+		["魔法点心"] = {
+			["spells"] = "25697=134062",
 		},
-		["脓疮之疹"] = {
-			["spells"] = "15848=136066",
+		["神圣法杖 V"] = {
+			["spells"] = "2696=132325",
 		},
 		["食谱：烤鲑鱼"] = {
 			["spells"] = "18259=136235",
@@ -27918,38 +29910,38 @@ WeakAurasOptionsSaved = {
 		["神圣乱舞 III"] = {
 			["spells"] = "1904=132330",
 		},
-		["绿龙鳞片胸甲"] = {
-			["spells"] = "19050=136235",
+		["维维尔的意志"] = {
+			["spells"] = "25773=135727",
 		},
-		["先祖知识"] = {
-			["spells"] = "17485=136162,17486=136162,17487=136162,17488=136162,17489=136162",
+		["佯攻"] = {
+			["spells"] = "1966=132294,6734=132294,6768=132294,6769=132294,8637=132294,8638=132294,11303=132294,11304=132294,25302=132294,25413=132294,25976=132282",
 		},
-		["毛皮护甲片"] = {
-			["spells"] = "19058=136235,19148=136021",
+		["制造召唤者护盾"] = {
+			["spells"] = "28132=136235",
 		},
-		["雷暴"] = {
-			["spells"] = "19079=136235",
+		["澎湃"] = {
+			["spells"] = "25787=132337",
 		},
-		["被占据"] = {
-			["spells"] = "17246=136122,18347=136122",
+		["浸魔胸甲 - 吸收"] = {
+			["spells"] = "7856=135913",
 		},
-		["魔暴龙皮手套"] = {
-			["spells"] = "19084=136235",
+		["召唤亚尔基的血脉"] = {
+			["spells"] = "25789=134321",
 		},
-		["铁羽胸甲"] = {
-			["spells"] = "19086=136235",
+		["Ahn'Qiraj Reward Buff (Caster - 40)"] = {
+			["spells"] = "25798=134969",
 		},
-		["符文皮甲短裤"] = {
-			["spells"] = "19091=136235",
+		["黑标美味朗姆酒"] = {
+			["spells"] = "25804=132791",
 		},
-		["图样：蓝色龙鳞胸甲"] = {
-			["spells"] = "19193=136235",
+		["Test Pet Passive"] = {
+			["spells"] = "24401=136235",
 		},
-		["图样：战熊热裤"] = {
-			["spells"] = "19200=136235",
+		["Morale Boost (NYI)"] = {
+			["spells"] = "1739=136235",
 		},
-		["蓟皮血族"] = {
-			["spells"] = "16499=136235",
+		["Far Sight (PT)"] = {
+			["spells"] = "6115=136235",
 		},
 		["初级烹饪"] = {
 			["spells"] = "2551=133971",
@@ -27966,65 +29958,65 @@ WeakAurasOptionsSaved = {
 		["炽热链甲护肩"] = {
 			["spells"] = "20873=136192",
 		},
-		["绿色皮护腕"] = {
-			["spells"] = "3776=136235,3797=136021",
+		["制造亚什虫巢侦察报告"] = {
+			["spells"] = "25845=136235",
 		},
-		["强化荆棘时效"] = {
-			["spells"] = "21972=136235",
+		["召唤鲨鱼宝宝"] = {
+			["spells"] = "25849=132311",
 		},
-		["召唤暴怒的角鹰兽"] = {
-			["spells"] = "14329=136235",
+		["使用节日酒杯"] = {
+			["spells"] = "25851=132792",
 		},
-		["瑟银零件"] = {
-			["spells"] = "19791=136235",
+		["召唤黑色其拉作战坦克"] = {
+			["spells"] = "25863=134399,26655=134399,26656=134399,31700=134399",
 		},
-		["歼灭"] = {
-			["spells"] = "19811=135810",
+		["大地之优雅"] = {
+			["spells"] = "25892=132270",
 		},
 		["Demon Slaying 45"] = {
 			["spells"] = "14097=136172",
 		},
-		["追踪隐藏生物"] = {
-			["spells"] = "19885=132320,20159=132320",
+		["Increased Intellect 19"] = {
+			["spells"] = "14409=136235",
 		},
-		["Increase Ice Dam 20"] = {
-			["spells"] = "25066=136235",
+		["Healing Ward V Passive"] = {
+			["spells"] = "4972=136222,11901=136222",
 		},
 		["设计图：先知之刃"] = {
 			["spells"] = "27834=136235",
 		},
-		["附魔手套 - 强效力量"] = {
-			["spells"] = "20013=135913",
+		["公式：附魔护腕 - 次级偏斜"] = {
+			["spells"] = "13647=136235",
 		},
-		["附魔胸甲 - 极效法力"] = {
-			["spells"] = "20028=135913",
+		["雪球云雾"] = {
+			["spells"] = "26000=136235",
 		},
-		["配方：魔血药水"] = {
-			["spells"] = "24369=136235",
+		["拍摄"] = {
+			["spells"] = "28129=136235",
 		},
-		["次级不灭精华"] = {
-			["spells"] = "20040=136192",
+		["Viscidus Suicide Trigger"] = {
+			["spells"] = "26003=136006",
 		},
-		["食谱：刺须鲶鱼"] = {
-			["spells"] = "7760=136235",
+		["Crypt Scarab Suicide Passive"] = {
+			["spells"] = "16423=136190",
 		},
-		["公式：附魔武器 - 冰寒"] = {
-			["spells"] = "20075=136235",
+		["召唤安静的机械雪人"] = {
+			["spells"] = "26010=132311",
 		},
 		["Summon Templar Random"] = {
 			["spells"] = "24734=136235",
 		},
-		["召唤奥妮克希亚幼崽"] = {
-			["spells"] = "20171=136235,20172=136235",
+		["Combat Swap (DND)"] = {
+			["spells"] = "6119=136235,6123=136235",
 		},
-		["钩网"] = {
-			["spells"] = "13608=132149,14030=132149,15609=132149",
+		["Increased Nature Resist 06"] = {
+			["spells"] = "14631=136235",
 		},
-		["王者祝福"] = {
-			["spells"] = "20217=135995",
+		["致命剧毒"] = {
+			["spells"] = "26053=136016",
 		},
-		["治疗之光"] = {
-			["spells"] = "20237=135920,20238=135920,20239=135920",
+		["Pop Dirt Mounds"] = {
+			["spells"] = "26057=136235",
 		},
 		["天堂祝福"] = {
 			["spells"] = "18787=135906",
@@ -28032,14 +30024,14 @@ WeakAurasOptionsSaved = {
 		["魔杖掌握"] = {
 			["spells"] = "6095=135140,6096=135140,6099=135140,6110=135140",
 		},
-		["Increased Shadow Resist 18"] = {
-			["spells"] = "14681=136235",
+		["强效庇护祝福"] = {
+			["spells"] = "25899=135911,25951=135911",
 		},
 		["瘟疫使者之怒"] = {
 			["spells"] = "29214=136121",
 		},
-		["剧烈爆发"] = {
-			["spells"] = "20483=135830",
+		["Receive Quest Object, Common, Stormwind"] = {
+			["spells"] = "27525=136235",
 		},
 		["aedm"] = {
 			["spells"] = "30758=136235",
@@ -28050,11 +30042,11 @@ WeakAurasOptionsSaved = {
 		["元素掌握"] = {
 			["spells"] = "16166=136115",
 		},
-		["Increase Shadow Dam 60"] = {
-			["spells"] = "26731=136235",
+		["Dirt Mound Passive"] = {
+			["spells"] = "26092=136235",
 		},
-		["吸血光环"] = {
-			["spells"] = "20809=136231,20810=136231",
+		["疯狂之眼"] = {
+			["spells"] = "26108=136175",
 		},
 		["制作黎明符文"] = {
 			["spells"] = "24201=136235",
@@ -28062,29 +30054,29 @@ WeakAurasOptionsSaved = {
 		["图样：强化毛纺护肩"] = {
 			["spells"] = "3897=136235",
 		},
-		["召唤瑟莱德丝碎片"] = {
-			["spells"] = "21057=135849,21809=135849",
+		["Alliance Reputation"] = {
+			["spells"] = "26126=132486",
 		},
-		["Summon Son of Flame B"] = {
-			["spells"] = "21110=135819",
+		["Enigma Blizzard Bonus"] = {
+			["spells"] = "26127=136235",
 		},
-		["奥术真空"] = {
-			["spells"] = "21147=135743",
+		["Increase Spell Dam 59"] = {
+			["spells"] = "26155=136235",
 		},
-		["萨弗隆战锤"] = {
-			["spells"] = "21161=136192,21164=136235",
+		["Unseen Path Pet Bonus"] = {
+			["spells"] = "26176=136235",
 		},
 		["Demon Slaying 36"] = {
 			["spells"] = "12823=136172",
 		},
-		["聪颖过人"] = {
-			["spells"] = "4204=132150,4205=132150,4206=132150,4207=132150,4208=132150,4210=132150,4211=132150,4212=132150,4213=136101,4214=136101,4215=136101,4216=136101,4217=136101,4218=136101,4219=136101,4220=136101,5069=132150,5070=132150,5071=132150,5072=132150,5073=132150,5074=132150,5075=132150,5076=136101,5077=136101,5078=136101,5079=136101,5080=136101,5081=136101,5082=136101",
+		["Spell Penetration 150 Fire Resist"] = {
+			["spells"] = "26203=136235",
 		},
-		["急速冷却"] = {
-			["spells"] = "12472=135865",
+		["Quest - Self Drain Mana"] = {
+			["spells"] = "25157=136235",
 		},
-		["灵魂膨胀"] = {
-			["spells"] = "21307=136235",
+		["制造冬青树"] = {
+			["spells"] = "26207=136235",
 		},
 		["天选印记"] = {
 			["spells"] = "21969=133441",
@@ -28095,98 +30087,98 @@ WeakAurasOptionsSaved = {
 		["地精暗雷"] = {
 			["spells"] = "3968=136235,4100=136172,10837=136172,21688=136172",
 		},
-		["Increased Strength 19"] = {
-			["spells"] = "14491=136235",
+		["设计图：月牙斧"] = {
+			["spells"] = "3530=136235",
 		},
-		["风暴战斧"] = {
-			["spells"] = "18797=132350",
+		["符文冥河护腿"] = {
+			["spells"] = "24901=132149",
 		},
-		["雷松的全视之眼"] = {
-			["spells"] = "21403=132089,21546=136152,21554=136152",
+		["灰布手套"] = {
+			["spells"] = "18412=132149",
 		},
-		["Attack Power Ranged 2"] = {
-			["spells"] = "21426=136235",
+		["Increase Healing 121"] = {
+			["spells"] = "26228=136235",
 		},
 		["召唤激流堡民兵效果"] = {
 			["spells"] = "5251=136235",
 		},
-		["Attack Power Ranged 36"] = {
-			["spells"] = "21440=136235",
+		["Cthun Vulnerable"] = {
+			["spells"] = "26235=136235",
 		},
-		["霜刃外套"] = {
-			["spells"] = "19104=136235",
+		["冬季狂欢者 - 人类女性"] = {
+			["spells"] = "26240=135849",
 		},
 		["传送：铁炉堡"] = {
 			["spells"] = "3562=135757,3581=135757,27597=136235",
 		},
-		["Increase Holy Dam 6"] = {
-			["spells"] = "21504=136235",
+		["Opening - No Text"] = {
+			["spells"] = "22810=136235",
 		},
-		["Increase Holy Dam 12"] = {
-			["spells"] = "21510=136235",
+		["Summon Augur's BP DND"] = {
+			["spells"] = "28959=136235",
 		},
 		["灼烧之息"] = {
 			["spells"] = "5010=135826",
 		},
-		["磁性锁链"] = {
-			["spells"] = "28108=136235",
+		["强效火力药剂"] = {
+			["spells"] = "26277=136235",
 		},
-		["Increase Healing 14"] = {
-			["spells"] = "7681=136235",
+		["恐惧谷的怨灵 #3"] = {
+			["spells"] = "23253=136235",
 		},
 		["公式：附魔披风 - 潜行"] = {
 			["spells"] = "25095=136235",
 		},
-		["Increase Holy Dam 58"] = {
-			["spells"] = "21536=136235",
+		["小型蓝色烟花"] = {
+			["spells"] = "26291=136235,26416=136235",
 		},
-		["强化"] = {
-			["spells"] = "21540=136235",
+		["小型白色烟花"] = {
+			["spells"] = "26294=136235",
 		},
-		["周期性击退"] = {
-			["spells"] = "21737=132330",
+		["制造烟花发射器"] = {
+			["spells"] = "26298=134538",
 		},
-		["Summon Lava Burst H"] = {
-			["spells"] = "21906=136235",
+		["制造烟花束发射器"] = {
+			["spells"] = "26299=133861",
 		},
-		["假人轰炸"] = {
-			["spells"] = "21912=136235",
+		["Cluster Rocket, BLUE - D"] = {
+			["spells"] = "26301=136235",
 		},
-		["雪王9000型"] = {
-			["spells"] = "21935=132387,21940=136235",
+		["Windsor Dismisses Horse DND"] = {
+			["spells"] = "20000=136235",
 		},
-		["图样：冬天爷爷的手套"] = {
-			["spells"] = "21944=136235",
+		["Cluster Rocket, RED - N"] = {
+			["spells"] = "26306=136235",
 		},
-		["野蛮突袭"] = {
-			["spells"] = "91=132316,1666=132316",
+		["Cluster Rocket, PURPLE - SE"] = {
+			["spells"] = "26315=136235",
 		},
 		["克尔苏加德导能"] = {
 			["spells"] = "29423=136235",
 		},
-		["召唤白色猫头鹰"] = {
-			["spells"] = "10708=132311",
+		["Cluster Rocket, YELLOW - SW"] = {
+			["spells"] = "26324=136235",
 		},
-		["剧烈痛楚"] = {
-			["spells"] = "22478=136207",
+		["红色烟花束"] = {
+			["spells"] = "26327=136235,26425=136235",
 		},
-		["光芒（橙色）"] = {
-			["spells"] = "22579=135741",
+		["白色烟花束"] = {
+			["spells"] = "26328=136235",
 		},
-		["定身攻击 II"] = {
-			["spells"] = "2927=132152",
+		["大型蓝色烟花"] = {
+			["spells"] = "26333=136235,26420=136235",
 		},
-		["超级收缩射线"] = {
-			["spells"] = "22742=135989",
+		["大型紫色烟花"] = {
+			["spells"] = "26335=136235",
 		},
 		["熔岩图腾"] = {
 			["spells"] = "8187=135826,8189=135826,8190=135826,10579=135826,10580=135826,10581=135826,10585=135826,10586=135826,10587=135826,10588=135826,10589=135826,10590=135826",
 		},
-		["图样：符文皮甲腰带"] = {
-			["spells"] = "19188=136235",
+		["Increase Frost Dam 63"] = {
+			["spells"] = "26721=136235",
 		},
-		["芬古斯的狂暴"] = {
-			["spells"] = "22817=136109",
+		["Despawn Kaldorei Elite"] = {
+			["spells"] = "26340=136235",
 		},
 		["防御姿态"] = {
 			["spells"] = "71=132341,1612=132341,7164=132341",
@@ -28200,29 +30192,29 @@ WeakAurasOptionsSaved = {
 		["Holiday - Lunar Teleport Cap: Stormwind"] = {
 			["spells"] = "26406=135758",
 		},
-		["Psychic Scream Duration Increase"] = {
-			["spells"] = "23044=136184",
+		["ClearAllo"] = {
+			["spells"] = "26368=136235",
 		},
-		["新生"] = {
-			["spells"] = "23863=135934,23864=135990",
+		["驱除魔法"] = {
+			["spells"] = "776=136006,791=136235,1437=136006",
 		},
-		["强烈"] = {
-			["spells"] = "18135=135819,18136=135819",
+		["黑丝衬衣"] = {
+			["spells"] = "3870=132149,3892=136021",
 		},
-		["Immolate Cast Time Reduction"] = {
-			["spells"] = "23047=135817",
+		["Increase Spell Dam 72"] = {
+			["spells"] = "26395=136235",
 		},
 		["抗性防护"] = {
 			["spells"] = "28764=136235",
 		},
-		["抵抗全部"] = {
-			["spells"] = "18114=136116",
+		["酸液喷涌"] = {
+			["spells"] = "26419=136007",
 		},
 		["Muculent Fever Proc"] = {
 			["spells"] = "14133=136188",
 		},
-		["Ritual Bell Aura"] = {
-			["spells"] = "23117=136195",
+		["结构图：绿色烟花束"] = {
+			["spells"] = "26436=134153",
 		},
 		["红色毛纺靴"] = {
 			["spells"] = "3847=132149",
@@ -28230,119 +30222,119 @@ WeakAurasOptionsSaved = {
 		["结构图：火焰偏斜器"] = {
 			["spells"] = "4029=136235",
 		},
-		["伦鲁迪洛尔"] = {
-			["spells"] = "23193=136235",
+		["Punctured Voodoo Doll HUN DND"] = {
+			["spells"] = "24280=136235",
 		},
 		["图样：符文布短裤"] = {
 			["spells"] = "18511=136235",
 		},
-		["迅捷橙色迅猛龙"] = {
-			["spells"] = "23243=132253",
+		["图样：盖亚的拥抱"] = {
+			["spells"] = "28211=136235",
 		},
-		["迅捷灰狼"] = {
-			["spells"] = "23252=132266",
+		["烟花发射器"] = {
+			["spells"] = "26442=136235",
 		},
-		["结构图：比兹尼克247x128精确瞄准镜"] = {
-			["spells"] = "22794=136235",
+		["怯懦"] = {
+			["spells"] = "8224=132092,15709=132092",
 		},
-		["混乱钉刺"] = {
-			["spells"] = "23260=136014",
+		["Holiday - Teleport: Moonglade (self)"] = {
+			["spells"] = "26451=135758",
 		},
-		["Increase Healing 106"] = {
-			["spells"] = "23264=136235,26225=136235",
+		["Holiday - Lunar Teleport: Orgrimmar"] = {
+			["spells"] = "26453=135758",
 		},
-		["恶魔之咒"] = {
-			["spells"] = "23298=136221",
+		["Increase Healing 143"] = {
+			["spells"] = "26461=136235",
 		},
 		["异种爬行者的卵"] = {
 			["spells"] = "6587=136006",
 		},
-		["Dragondog Breath Selection (L5)"] = {
-			["spells"] = "23321=136235",
+		["Cluster Rocket, RED BIG - D"] = {
+			["spells"] = "26501=136235",
 		},
-		["Nefarian Tunnel Selection (L2)"] = {
-			["spells"] = "23345=136235",
+		["Cluster Rocket, RED BIG - N"] = {
+			["spells"] = "26502=136235",
 		},
 		["碎铁金锤"] = {
 			["spells"] = "3495=136192",
 		},
-		["Trigger Trap2"] = {
-			["spells"] = "23360=136235",
+		["Cluster Rocket, WHITE BIG - SE"] = {
+			["spells"] = "26508=136235",
 		},
 		["暗影匕首 V"] = {
 			["spells"] = "2726=132223",
 		},
-		["野性魔法"] = {
-			["spells"] = "23410=136129",
+		["Cluster Rocket, YELLOW BIG - SW"] = {
+			["spells"] = "26514=136235",
 		},
-		["枕头大战"] = {
-			["spells"] = "23416=132337",
+		["Cluster Rocket, YELLOW BIG - U"] = {
+			["spells"] = "26515=136235",
 		},
-		["堕落火焰新星图腾"] = {
-			["spells"] = "23419=135824",
+		["大型紫色烟花束"] = {
+			["spells"] = "26516=136235",
 		},
-		["加基森传送器失败"] = {
-			["spells"] = "23446=132862",
+		["召唤扎拉幼虫"] = {
+			["spells"] = "26538=136235,26539=136235",
 		},
-		["提高爆击自然法术"] = {
-			["spells"] = "23570=136235",
+		["落星术"] = {
+			["spells"] = "26540=135753",
 		},
-		["Increase Shadow Dam 64"] = {
-			["spells"] = "23594=136235",
+		["Summon Ouro Scarabs Periodic"] = {
+			["spells"] = "26619=136235",
 		},
 		["魔息术"] = {
 			["spells"] = "3733=136081,5697=136148,5698=136148",
 		},
-		["Increased Armor 100"] = {
-			["spells"] = "15666=136235",
+		["符文皮甲"] = {
+			["spells"] = "19102=136235",
 		},
-		["重型木喉长靴"] = {
-			["spells"] = "23629=136192",
+		["疗毒"] = {
+			["spells"] = "26677=134811",
 		},
 		["Increased Spirit 26"] = {
 			["spells"] = "14448=136235",
 		},
-		["设计图：黑色怒火"] = {
-			["spells"] = "23641=136235",
+		["Increase Fire Dam 60"] = {
+			["spells"] = "26695=136235",
 		},
-		["规避"] = {
-			["spells"] = "23647=132353",
+		["Increase Fire Dam 72"] = {
+			["spells"] = "26703=136235",
 		},
 		["中伤之盾"] = {
 			["spells"] = "3284=136173",
 		},
-		["Complete Alterac Valley quest"] = {
-			["spells"] = "23658=136235",
+		["Increase Arcane Dam 66"] = {
+			["spells"] = "26711=136235",
 		},
-		["图样：银色护肩"] = {
-			["spells"] = "23671=136235",
+		["Increase Arcane Dam 67"] = {
+			["spells"] = "26712=136235",
 		},
-		["奥特兰克魔法点心"] = {
-			["spells"] = "23692=134062",
+		["Increase Frost Dam 59"] = {
+			["spells"] = "26718=136235",
 		},
-		["Block Value 19"] = {
-			["spells"] = "23731=136235",
+		["毒性之血"] = {
+			["spells"] = "26744=132274",
 		},
-		["暗纹短裤"] = {
-			["spells"] = "12052=132149,12103=136021",
+		["设计图：符文之刃"] = {
+			["spells"] = "17025=136235",
 		},
-		["塞格的黑暗塔罗牌：精神"] = {
-			["spells"] = "23738=134334",
+		["Increase Shadow Dam 70"] = {
+			["spells"] = "26736=136235",
 		},
-		["梦纹手套"] = {
-			["spells"] = "12067=132149,12111=136021",
+		["Increase Frost Dam 70"] = {
+			["spells"] = "26726=136235",
 		},
-		["食谱：神秘杂烩"] = {
-			["spells"] = "15866=136235",
+		["Cluster Rocket, RED - D"] = {
+			["spells"] = "26305=136235",
 		},
 		["召唤小精灵"] = {
 			["spells"] = "10721=132311",
 		},
-		["塞格的黑暗塔罗牌：智力"] = {
-			["spells"] = "23766=134334",
+		["Cancel Heartbroken, Create Bracelet"] = {
+			["spells"] = "26921=136235",
 		},
-		["神智受难"] = {
-			["spells"] = "23773=136133",
+		["无尽生命符记"] = {
+			["spells"] = "26976=132115",
 		},
 		["Cluster Rocket, WHITE - N"] = {
 			["spells"] = "26318=136235",
@@ -28353,47 +30345,47 @@ WeakAurasOptionsSaved = {
 		["奴役恶魔"] = {
 			["spells"] = "1098=136154,7665=136154,11725=136154,11726=136154,11727=136154,11728=136154,20882=136154",
 		},
-		["宁神毒药"] = {
-			["spells"] = "24002=132105,24003=132105",
+		["Receive Reward AND Quest Object, Stormwind Guard"] = {
+			["spells"] = "27242=136235",
 		},
-		["神圣法杖 III"] = {
-			["spells"] = "2694=132325",
+		["召唤鬼灵刺客"] = {
+			["spells"] = "27249=136129",
 		},
-		["困惑"] = {
-			["spells"] = "24057=136122",
+		["暗影之怒"] = {
+			["spells"] = "27286=136208",
 		},
-		["召唤玛尔里的爪牙"] = {
-			["spells"] = "24081=136235",
+		["灵质提纯器"] = {
+			["spells"] = "27420=135990,27433=136074",
 		},
 		["Item - Purify"] = {
 			["spells"] = "14129=135907,14134=135949",
 		},
-		["图样：血虎护肩"] = {
-			["spells"] = "24130=136235",
+		["Receive Quest Object, Orgrimmar Guard"] = {
+			["spells"] = "27507=136235",
 		},
-		["Summon Type B"] = {
-			["spells"] = "28422=136235",
+		["宝石皮带"] = {
+			["spells"] = "3778=136235,3798=136021",
 		},
-		["大师级制皮"] = {
-			["spells"] = "10663=133611",
+		["KJORDAN (TEST)"] = {
+			["spells"] = "2766=136235",
 		},
-		["魔法的视域"] = {
-			["spells"] = "24156=136235,24164=136235",
+		["Spell Damage Reduction"] = {
+			["spells"] = "27518=136235",
 		},
 		["Reduced Reincarnation Cooldown"] = {
 			["spells"] = "27797=136235",
 		},
-		["撒网器"] = {
-			["spells"] = "13099=132149,13119=132149,13120=132149,13138=132149,13139=132149,16566=132149",
+		["木喉防御者"] = {
+			["spells"] = "26066=132183",
 		},
 		["血色复活"] = {
 			["spells"] = "9232=135955,9235=135955",
 		},
-		["哈卡的意志"] = {
-			["spells"] = "24178=136206",
+		["野餐"] = {
+			["spells"] = "27573=136235,27575=134062",
 		},
-		["脊骨收割者"] = {
-			["spells"] = "21185=135934,21186=135920",
+		["Dire Wolf (TEST)"] = {
+			["spells"] = "3362=136172",
 		},
 		["Poison Proc"] = {
 			["spells"] = "3616=136188,7276=136188,11919=136188,11959=136188,13299=136188",
@@ -28404,62 +30396,62 @@ WeakAurasOptionsSaved = {
 		["瑟里耶克印记"] = {
 			["spells"] = "28835=136137",
 		},
-		["Heart of Hakkar - Molthor chucks the heart"] = {
-			["spells"] = "24214=136235",
+		["设计图：黑曜石锁甲"] = {
+			["spells"] = "27596=136235",
 		},
-		["Vanish Visual"] = {
-			["spells"] = "24222=136235",
+		["Dungeon Set 2.0 Ghosts"] = {
+			["spells"] = "27614=136235",
 		},
 		["炼金石"] = {
 			["spells"] = "17619=134334,17632=136235,21399=136235,21400=136235",
 		},
-		["酸性血液虹吸"] = {
-			["spells"] = "24323=136006",
+		["召唤亚雷恩的灵魂"] = {
+			["spells"] = "27643=136235",
 		},
-		["饮水"] = {
-			["spells"] = "24355=132794,29007=132794",
+		["制造部落礼品包"] = {
+			["spells"] = "27668=136235",
 		},
-		["金色猎豹"] = {
-			["spells"] = "16060=132242",
+		["Teleport to Razelikh (GROUP)"] = {
+			["spells"] = "27686=136235,27694=136235",
 		},
 		["绿色皮带"] = {
 			["spells"] = "3774=136235,3795=136021",
 		},
-		["鳄鱼炖肉"] = {
-			["spells"] = "24418=136192",
+		["召唤白骨法师"] = {
+			["spells"] = "27695=136187,27696=136187,27697=136187,27698=136187,27699=136187",
 		},
-		["吸血"] = {
-			["spells"] = "24437=132278,28831=136235,28839=135930",
+		["制造暴风城面包袋"] = {
+			["spells"] = "27700=136235",
 		},
-		["能量爆发"] = {
-			["spells"] = "24532=135871",
+		["制造幽暗城忠诚誓言"] = {
+			["spells"] = "27719=136235",
 		},
-		["敏捷治疗之触"] = {
-			["spells"] = "24542=136077",
+		["快乐奶油"] = {
+			["spells"] = "27720=135457",
 		},
-		["脆弱护甲"] = {
-			["spells"] = "24574=136235,24575=136162,24590=136162,29284=136076",
+		["(DND) Summon Crystal Minion, Ghoul Uncommon"] = {
+			["spells"] = "28289=136235",
 		},
 		["安德麦蚌肉杂烩"] = {
 			["spells"] = "20626=136192",
 		},
-		["Alliance Warsong CTF Flag"] = {
-			["spells"] = "24639=136235",
+		["铁纹作战套装"] = {
+			["spells"] = "27733=135933",
 		},
-		["千刃"] = {
-			["spells"] = "24649=132373,24767=132373",
+		["硝石加速"] = {
+			["spells"] = "27746=134797",
 		},
-		["蝙蝠装束"] = {
-			["spells"] = "24732=132288,24733=136235",
+		["制造挑衅之旗"] = {
+			["spells"] = "27755=136235",
 		},
 		["Add Lightning Dam - Weap 03"] = {
 			["spells"] = "16615=136235",
 		},
-		["制造BlizzCon奖券"] = {
-			["spells"] = "24863=136235",
+		["狂野风暴"] = {
+			["spells"] = "27774=136235,27775=136014",
 		},
-		["Feline Swiftness Passive 1a"] = {
-			["spells"] = "24867=132115",
+		["强化吸血鬼的拥抱"] = {
+			["spells"] = "27839=136165,27840=136165",
 		},
 		["强化惩罚光环"] = {
 			["spells"] = "20091=135873,20092=135873",
@@ -28470,14 +30462,14 @@ WeakAurasOptionsSaved = {
 		["召唤哼哼先生"] = {
 			["spells"] = "28739=132311",
 		},
-		["制造召唤节杖：土"] = {
-			["spells"] = "24897=136235",
+		["疾病猛击"] = {
+			["spells"] = "27891=136022",
 		},
-		["Create Warsong Mark of Honor (Loser)"] = {
-			["spells"] = "24950=136235",
+		["Kill Summoner, who will Summon Boss"] = {
+			["spells"] = "27894=136235",
 		},
-		["破坏之魂"] = {
-			["spells"] = "25002=135824",
+		["Choose Random Skull Pile"] = {
+			["spells"] = "27896=136235,27930=136235,27938=136235",
 		},
 		["绿色引导"] = {
 			["spells"] = "13540=136120",
@@ -28494,137 +30486,137 @@ WeakAurasOptionsSaved = {
 		["Summon Type A Periodic (3 sec)"] = {
 			["spells"] = "28425=136235",
 		},
-		["公式：初级法力之油"] = {
-			["spells"] = "25133=136235",
+		["向左传送"] = {
+			["spells"] = "28025=136235",
 		},
 		["洛恩塔姆之魂"] = {
 			["spells"] = "22735=134011",
 		},
-		["\"Plucky\" Resumes Chicken Form"] = {
-			["spells"] = "9220=132276",
+		["野蛮冲撞"] = {
+			["spells"] = "16940=132114,16941=132114",
 		},
-		["Attack Power Ranged 7"] = {
-			["spells"] = "21428=136235",
+		["微光酒"] = {
+			["spells"] = "29236=136235",
 		},
-		["望远"] = {
-			["spells"] = "25247=132327",
+		["Zap Crystal Corpse"] = {
+			["spells"] = "28056=136235",
 		},
-		["致命毒药 V"] = {
-			["spells"] = "25347=132290,25349=132290,25351=132290",
+		["正能量补充"] = {
+			["spells"] = "28062=135769",
 		},
-		["ClearAll"] = {
-			["spells"] = "25565=136235,28471=136235",
+		["BRD Kill Credit Trigger"] = {
+			["spells"] = "28082=136235",
 		},
-		["兰莎尔拉 - 致盲枭兽"] = {
-			["spells"] = "18994=136235",
+		["Stalagg Tesla Passive"] = {
+			["spells"] = "28097=136235",
 		},
-		["次级龙语（语言）"] = {
-			["spells"] = "25674=136235",
+		["Despawn Sothos's Corpse"] = {
+			["spells"] = "28117=136235",
 		},
-		["腐肉大餐"] = {
-			["spells"] = "15863=136192",
+		["毒性蒸汽"] = {
+			["spells"] = "25786=132099",
 		},
 		["敏捷 +15"] = {
 			["spells"] = "23794=136235",
 		},
-		["龙鳞护手"] = {
-			["spells"] = "10619=136235,10620=136021",
+		["正义之火"] = {
+			["spells"] = "28881=135814,28882=135880",
 		},
 		["结构图：超低温寒冰偏斜器"] = {
 			["spells"] = "23089=134153",
 		},
-		["秘法分离"] = {
-			["spells"] = "25767=136208,25768=135990",
+		["Stalagg Passive"] = {
+			["spells"] = "28139=136235",
 		},
-		["腐烂光环"] = {
-			["spells"] = "25818=136064,25819=136064",
+		["守护者的力量"] = {
+			["spells"] = "28142=136057,28143=136057,28144=136057,28145=136057",
 		},
-		["恐惧光环"] = {
-			["spells"] = "25820=136184,26641=136163,28313=136184,28315=136163",
+		["暗影戒卫"] = {
+			["spells"] = "28165=136235,28166=136235",
 		},
-		["Hive'Zara Swarmer Loop 1"] = {
-			["spells"] = "25833=136235",
+		["电弧打击"] = {
+			["spells"] = "28168=132338",
 		},
 		["Increase Spell Dam 12"] = {
 			["spells"] = "14047=136235,15715=136235",
 		},
-		["Despawn Swarmers"] = {
-			["spells"] = "25842=136235",
+		["Create Minion Trap: Ghost/Ghoul"] = {
+			["spells"] = "28195=136235",
 		},
-		["Hive'Zara Swarmers Swarm"] = {
-			["spells"] = "25844=136235",
+		["优越"] = {
+			["spells"] = "28200=134123,28204=135990",
 		},
-		["辐射之箭"] = {
-			["spells"] = "9771=136133",
+		["结构图：大型红色烟花束"] = {
+			["spells"] = "26440=134153",
 		},
-		["强效拯救祝福"] = {
-			["spells"] = "25895=135910,25939=135910",
+		["图样：冰川手套"] = {
+			["spells"] = "28212=136235",
 		},
 		["制造灵魂碎片"] = {
 			["spells"] = "24827=136235",
 		},
-		["驯服夜刃捕食者"] = {
-			["spells"] = "19685=132164,19699=132164",
+		["Aqual Quintessence - Dowse Molten Core Rune"] = {
+			["spells"] = "21358=136235",
 		},
-		["安静的机械雪人"] = {
-			["spells"] = "26011=136235,26012=136235",
+		["寒鳞护手"] = {
+			["spells"] = "28223=136235,28258=136021",
 		},
-		["铜质大锤"] = {
-			["spells"] = "7408=136192,7409=136235",
+		["制造召唤徽记：火"] = {
+			["spells"] = "24889=136235",
 		},
-		["匍匐"] = {
-			["spells"] = "7267=136235",
+		["暗影集中"] = {
+			["spells"] = "15260=136126,15327=136126,15328=136126,15329=136126,15330=136126",
 		},
-		["召唤奥罗土堆"] = {
-			["spells"] = "26058=136235,26617=136235",
+		["Increase Spell Dam 46"] = {
+			["spells"] = "28264=136235",
 		},
-		["召唤奥罗"] = {
-			["spells"] = "26061=136235,26642=136235",
+		["牵引射线"] = {
+			["spells"] = "28266=136235",
 		},
-		["强化暗影箭"] = {
-			["spells"] = "17793=136197,17796=136197,17801=136197,17802=136197,17803=136197",
+		["图样：奇美拉外衣"] = {
+			["spells"] = "19201=136235",
 		},
-		["甲壳护盾"] = {
-			["spells"] = "26064=132199,26065=132199",
+		["荆木头盔"] = {
+			["spells"] = "28472=136235",
 		},
-		["图样：灵魂袋"] = {
-			["spells"] = "26088=136235",
+		["奥玛里恩的秘密"] = {
+			["spells"] = "28288=136235",
 		},
-		["图样：恶魔布包"] = {
-			["spells"] = "26089=136235",
+		["腐液之云"] = {
+			["spells"] = "28322=136133",
 		},
-		["图样：熔火恶魔布包"] = {
-			["spells"] = "26091=136235",
+		["烈焰震击者的复仇"] = {
+			["spells"] = "28323=135903",
 		},
 		["脚踢 - 沉默"] = {
 			["spells"] = "18425=132219",
 		},
-		["Battlegear of Unyielding Strength Intercept Bonus"] = {
-			["spells"] = "26111=136235",
+		["Communique, Proxy-to-Relay"] = {
+			["spells"] = "28366=136235",
 		},
-		["Teleport Giant Hook Tentacle"] = {
-			["spells"] = "26191=136235",
+		["瓦斯"] = {
+			["spells"] = "28369=136006",
 		},
 		["双手斧和锤"] = {
 			["spells"] = "16269=132401",
 		},
-		["退出胃囊"] = {
-			["spells"] = "26221=136235,26224=136235,26230=136235",
+		["声望 - 藏宝海湾 +500"] = {
+			["spells"] = "28393=136235",
 		},
-		["Despawner, self"] = {
-			["spells"] = "28091=136235",
+		["变形回火"] = {
+			["spells"] = "28406=136071",
 		},
-		["Transform C'Thun -> Phase 2"] = {
-			["spells"] = "26232=136235",
+		["灰烬使者的召唤"] = {
+			["spells"] = "28414=136235",
 		},
-		["冬季狂欢者 - 牛头人女性"] = {
-			["spells"] = "26249=135849",
+		["Summon Type C Trigger"] = {
+			["spells"] = "28417=136235",
 		},
-		["点心"] = {
-			["spells"] = "26263=134056",
+		["将军的咆哮"] = {
+			["spells"] = "28418=136087,28419=136087,28420=136087",
 		},
-		["图样：雷暴手套"] = {
-			["spells"] = "26280=136235",
+		["Summon Type B Periodic (30 sec)"] = {
+			["spells"] = "28426=136235",
 		},
 		["放置未淬火的剑"] = {
 			["spells"] = "22905=136235",
@@ -28632,95 +30624,95 @@ WeakAurasOptionsSaved = {
 		["命运"] = {
 			["spells"] = "17152=136101",
 		},
-		["Rocket, RED"] = {
-			["spells"] = "26347=136235",
+		["Despawn Wave Mobs"] = {
+			["spells"] = "28452=136235",
 		},
 		["Despawn Tent Port"] = {
 			["spells"] = "26404=136235",
 		},
-		["Rocket, BLUE BIG"] = {
-			["spells"] = "26351=136235",
+		["设计图：铁藤胸甲"] = {
+			["spells"] = "28464=136235",
 		},
-		["Increase Holy Dam 3"] = {
-			["spells"] = "21501=136235",
+		["变形术：猪"] = {
+			["spells"] = "28285=135997",
 		},
-		["Rocket, YELLOW BIG"] = {
-			["spells"] = "26356=136235",
+		["荆木长靴"] = {
+			["spells"] = "28473=136235",
 		},
-		["Holiday - Lunar Teleport Cap: Thunderbluff"] = {
-			["spells"] = "26412=135758",
+		["奥术充沛"] = {
+			["spells"] = "28574=135733",
 		},
-		["结构图：小型蓝色烟花"] = {
-			["spells"] = "26429=134153",
+		["召唤裹体蛛网"] = {
+			["spells"] = "28627=136235",
 		},
-		["结构图：红色烟花束"] = {
-			["spells"] = "26437=134153",
+		["收割灵魂"] = {
+			["spells"] = "28679=136137",
 		},
 		["清算圣印"] = {
 			["spells"] = "3694=136121,3695=135824,15277=135971,15346=135971",
 		},
-		["毒性喷溅"] = {
-			["spells"] = "7951=136016,19452=136016",
+		["重拳先生践踏"] = {
+			["spells"] = "6432=132368",
 		},
-		["生命虹吸"] = {
-			["spells"] = "18265=136188,18879=136188,18880=136188,18881=136188,18927=136188,18928=136188,18929=136188",
+		["Increase Healing 178"] = {
+			["spells"] = "28736=136235",
 		},
 		["潜行者工具架召唤"] = {
 			["spells"] = "9949=136058",
 		},
-		["Cluster Rocket, RED BIG - SW"] = {
-			["spells"] = "26504=136235",
+		["召唤飞毛腿"] = {
+			["spells"] = "28738=132311",
 		},
-		["食谱：美味小鱼"] = {
-			["spells"] = "7756=136235",
+		["邪恶之眼"] = {
+			["spells"] = "3233=136129",
 		},
-		["Mana Burn Area"] = {
-			["spells"] = "26626=136235",
+		["炮击术 II"] = {
+			["spells"] = "3015=132153,3016=132153",
 		},
 		["懒惰结界"] = {
 			["spells"] = "3827=136232",
 		},
-		["Buru Egg Trigger Effect"] = {
-			["spells"] = "26646=136235",
+		["利爪祝福"] = {
+			["spells"] = "28750=135879",
 		},
 		["Communique Trigger"] = {
 			["spells"] = "28345=136235",
 		},
-		["Increase Arcane Dam 60"] = {
-			["spells"] = "26707=136235",
+		["移位"] = {
+			["spells"] = "28761=136235,28762=135894",
 		},
 		["Ritual of Doom Tag Effect"] = {
 			["spells"] = "20493=135741",
 		},
-		["Increased Pet Health +3%"] = {
-			["spells"] = "27038=136095,27039=136095",
+		["屠龙者的纹章"] = {
+			["spells"] = "28777=135441",
 		},
-		["Test Black Diamond"] = {
-			["spells"] = "27057=136192",
+		["Stun Self + Immune"] = {
+			["spells"] = "28782=136235",
 		},
-		["呀啊啊啊啊"] = {
-			["spells"] = "8221=132288,8222=132288",
+		["寻找草药"] = {
+			["spells"] = "2383=133939,8387=134183,8390=134183",
 		},
 		["召唤群居雏龙"] = {
 			["spells"] = "15745=136235",
 		},
-		["Receive Quest Object, Common, Darnassus"] = {
-			["spells"] = "27519=136235",
+		["冲动能量"] = {
+			["spells"] = "28812=136235,28813=136039",
 		},
-		["黑曜石护甲"] = {
-			["spells"] = "27539=136235",
+		["图腾之力"] = {
+			["spells"] = "28823=136235,28824=135977,28825=135922,28826=135892,28827=135995",
 		},
-		["德尔克的毒药"] = {
-			["spells"] = "27582=136116",
+		["布劳缪克丝印记"] = {
+			["spells"] = "28833=135900",
 		},
-		["赞吉尔之触"] = {
-			["spells"] = "9810=136235,9991=136230",
+		["Increased Frost Resist 16"] = {
+			["spells"] = "14556=136235",
 		},
-		["厚重黑曜石胸甲"] = {
-			["spells"] = "27587=136192",
+		["逃脱死亡"] = {
+			["spells"] = "28845=136235,28846=136119",
 		},
-		["设计图：重型黑曜石腰带"] = {
-			["spells"] = "27591=136235",
+		["Reduced Maul and Swipe Cost"] = {
+			["spells"] = "28855=136052",
 		},
 		["制造铁炉堡酒桶"] = {
 			["spells"] = "27706=136235",
@@ -28728,20 +30720,20 @@ WeakAurasOptionsSaved = {
 		["Increased Spirit 45"] = {
 			["spells"] = "14951=136235",
 		},
-		["绿铁护肩"] = {
-			["spells"] = "3504=136192",
+		["召唤库尔塔兹之魂"] = {
+			["spells"] = "28932=136235",
 		},
 		["黑色丝质背包"] = {
 			["spells"] = "6695=136235",
 		},
-		["甜蜜惊喜"] = {
-			["spells"] = "27722=135459",
+		["Increased Armor 200 Magister"] = {
+			["spells"] = "29091=136235",
 		},
-		["图腾"] = {
-			["spells"] = "27763=136097",
+		["阿努布雷坎光环"] = {
+			["spells"] = "29103=136235,29104=136235",
 		},
-		["快速治疗之触施放"] = {
-			["spells"] = "27846=136052",
+		["Summon Corpse Scarabs (5)"] = {
+			["spells"] = "29105=136235",
 		},
 		["熔岩之盾"] = {
 			["spells"] = "21857=135817,21858=135817",
@@ -28749,11 +30741,11 @@ WeakAurasOptionsSaved = {
 		["力量漩涡"] = {
 			["spells"] = "17499=136101",
 		},
-		["召唤鬼灵学徒"] = {
-			["spells"] = "27921=136235",
+		["制造雷霆崖烈焰"] = {
+			["spells"] = "29132=136235",
 		},
-		["隐形追踪"] = {
-			["spells"] = "27933=136235",
+		["五月柱"] = {
+			["spells"] = "29134=136223,29160=136223",
 		},
 		["背刺"] = {
 			["spells"] = "53=132090,2589=132090,2590=132090,2591=132090,2592=132090,2593=132090,2594=132090,2595=132090,7159=132090,8721=132090,8723=132090,11279=132090,11280=132090,11281=132090,11282=132090,11283=132090,11284=132090,15582=132090,15657=132090,22416=132090,25300=132090,25411=132090,25973=132282",
@@ -28761,20 +30753,20 @@ WeakAurasOptionsSaved = {
 		["庇护 III"] = {
 			["spells"] = "2354=135926,2357=136047",
 		},
-		["奥术遮罩"] = {
-			["spells"] = "28006=136235",
+		["强化武器图腾"] = {
+			["spells"] = "29192=135792,29193=135792",
 		},
-		["Zap Crystal, Summon Zapper"] = {
-			["spells"] = "28031=136235",
+		["治疗之道"] = {
+			["spells"] = "29202=136044,29203=136044,29205=136044,29206=136044",
 		},
-		["Thadius Lightning Visual"] = {
-			["spells"] = "28136=135824",
+		["节日控火者 - 牛头人女性"] = {
+			["spells"] = "29244=135849",
 		},
-		["费尔根初始化"] = {
-			["spells"] = "28138=136235",
+		["CooldownAll"] = {
+			["spells"] = "29313=136235",
 		},
-		["夜色外套"] = {
-			["spells"] = "10499=136235,10500=136021",
+		["次级虚空精华"] = {
+			["spells"] = "13740=136192",
 		},
 		["dmg8"] = {
 			["spells"] = "26667=136115,27254=136115",
@@ -28794,105 +30786,105 @@ WeakAurasOptionsSaved = {
 		["Infinite Wisdom Shadow Word: Pain Bonus"] = {
 			["spells"] = "26172=136081",
 		},
-		["铁藤腰带"] = {
-			["spells"] = "28463=136192",
+		["闪光炸弹"] = {
+			["spells"] = "29419=136142",
 		},
-		[" Attack Power - Feral (+305)"] = {
-			["spells"] = "28717=136235",
+		["天灾的力量"] = {
+			["spells"] = "29467=136235,29468=136235",
 		},
-		["Increased Stamina 40"] = {
-			["spells"] = "14487=136235",
+		["图样：符文布外套"] = {
+			["spells"] = "18477=136235",
 		},
-		["健忘"] = {
-			["spells"] = "28737=132270",
+		["Flesh Ripper Aggro"] = {
+			["spells"] = "29498=136235",
 		},
-		["Quest - Prepare Field Duty Papers"] = {
-			["spells"] = "28745=136235",
+		["召唤地穴卫士"] = {
+			["spells"] = "29508=136235",
 		},
-		["Despawn Chained Spirits"] = {
-			["spells"] = "24342=136235",
+		["中级烹饪"] = {
+			["spells"] = "3412=133971",
 		},
 		["Increase Frost Dam 2"] = {
 			["spells"] = "7698=136235",
 		},
-		["Increase Spell Dam 51"] = {
-			["spells"] = "28767=136235",
+		["夺取希利苏斯军旗"] = {
+			["spells"] = "29785=136235",
 		},
-		["熔解之语"] = {
-			["spells"] = "28800=136235",
+		["冷酷突袭"] = {
+			["spells"] = "29874=136235",
 		},
-		["闪电伤害提高"] = {
-			["spells"] = "28857=136052",
+		["毒气"] = {
+			["spells"] = "30075=136006",
 		},
-		["衰落之眼"] = {
-			["spells"] = "28862=135994",
+		["次级黎明印记"] = {
+			["spells"] = "30088=134499",
 		},
-		["Plague Slime (Black)"] = {
-			["spells"] = "28987=136121",
+		["强迫咆哮"] = {
+			["spells"] = "30121=132091",
 		},
-		["制作牛皮糖"] = {
-			["spells"] = "29116=136235",
+		["Despawn Boss Adds"] = {
+			["spells"] = "30134=136235",
 		},
-		["制造裂隙"] = {
-			["spells"] = "9079=136235",
+		["AB Effect 001"] = {
+			["spells"] = "28442=135331",
 		},
 		["击倒冲击"] = {
 			["spells"] = "18396=136222",
 		},
-		["使用彩带棒"] = {
-			["spells"] = "29172=135270",
+		["Create Upperdeck Tabard #2"] = {
+			["spells"] = "30182=136235",
 		},
 		["Increased Arcane Resist 21"] = {
 			["spells"] = "14723=136235",
 		},
-		["牛皮糖"] = {
-			["spells"] = "29334=135267",
+		["Create Upperdeck Tiger Cub"] = {
+			["spells"] = "30186=136235",
 		},
-		["召唤小鱼人（白色）"] = {
-			["spells"] = "24988=134300",
+		["斧类武器掌握"] = {
+			["spells"] = "4289=132316,4290=132316,4291=132316,4292=132316",
 		},
-		["附魔护腕 - 治疗能力"] = {
-			["spells"] = "23802=135913",
+		["Permanent Spirit of Zanza"] = {
+			["spells"] = "30336=134810",
 		},
 		["大地破裂"] = {
 			["spells"] = "26100=136025,26101=136025,26139=136025,26478=136025",
 		},
-		["Increased Intellect 08"] = {
-			["spells"] = "9104=136235",
+		["未变形英雄"] = {
+			["spells"] = "25100=136235",
 		},
-		["萨菲隆死亡"] = {
-			["spells"] = "29357=136235",
+		["Attack Power 40 - Lightforge"] = {
+			["spells"] = "30775=136235",
 		},
-		["Holiday Breath of Fire, Effect"] = {
-			["spells"] = "29387=135818",
+		["Increase Spell Dam 23 - Devout"] = {
+			["spells"] = "30779=136235",
 		},
-		["Summon Type A Periodic (2 sec)"] = {
-			["spells"] = "29392=136235",
+		["魅魔召唤"] = {
+			["spells"] = "30795=136203",
 		},
-		["火焰弹"] = {
-			["spells"] = "29635=135934,29647=135990",
+		["地狱犬召唤"] = {
+			["spells"] = "30797=136203",
 		},
-		["致伤毒药"] = {
-			["spells"] = "13218=134197,13219=134197,13220=134197,13221=134197,13222=134197,13223=134197,13224=134197,13225=134197,13226=134197,13227=134197,13231=134197,13232=134197,13233=134197",
+		["Increased Arcane Resist 28"] = {
+			["spells"] = "14730=136235",
 		},
 		["召唤莫高雷卫士"] = {
 			["spells"] = "11645=136235",
 		},
-		["Create Upperdeck Tabard #3"] = {
-			["spells"] = "30185=136235",
+		["香料迫击炮"] = {
+			["spells"] = "31364=135808",
 		},
-		["Beast Slaying 39"] = {
-			["spells"] = "18109=136235",
+		["效率"] = {
+			["spells"] = "19416=135865,19417=135865,19418=135865,19419=135865,19420=135865",
 		},
-		["Permanent Swiftness of Zanza"] = {
-			["spells"] = "30338=134811",
+		["荣誉点数+25"] = {
+			["spells"] = "31415=136235",
 		},
-		["Self Stun - 1 second, no visual"] = {
-			["spells"] = "31248=136168",
+		["Trigger Sandworm Mortar"] = {
+			["spells"] = "31562=136235",
 		},
 		["加兹班水形态"] = {
 			["spells"] = "5404=136235",
 		},
 	},
-	["build"] = "43154",
+	["build"] = "43401",
 }
