@@ -682,6 +682,52 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "希利苏斯",
 	}, -- [29]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 500000,
+		["id"] = 30,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["itemLink"] = "|cffa335ee|Hitem:18813::::::::60:::::::::|h[禁锢之戒]|h|r",
+				["name"] = "禁锢之戒",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["texture"] = 133355,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "谦益",
+		["when"] = "2022-05-04 17:15:26",
+		["where"] = "奥妮克希亚的巢穴",
+		["result"] = "complete",
+	}, -- [30]
+	{
+		["targetMoney"] = 950000,
+		["playerMoney"] = 0,
+		["id"] = 31,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Muninn",
+		["when"] = "2022-05-04 17:22:27",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [31]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

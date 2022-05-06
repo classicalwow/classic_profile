@@ -8,40 +8,8 @@ DataStore_MailsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1651575614,
-				["Mails"] = {
-					{
-						["link"] = "|cff1eff00|Hitem:15779::::::::60:::::::::|h[图样：霜刃外套]|h|r",
-						["sender"] = "联盟拍卖行",
-						["itemID"] = 15779,
-						["returned"] = false,
-						["icon"] = 134942,
-						["count"] = 1,
-						["lastCheck"] = 1651575614,
-						["daysLeft"] = 29.42032432556152,
-					}, -- [1]
-					{
-						["link"] = "|cffffffff|Hitem:10307::::::::60:::::::::|h[耐力卷轴 IV]|h|r",
-						["sender"] = "联盟拍卖行",
-						["itemID"] = 10307,
-						["returned"] = false,
-						["icon"] = 134943,
-						["count"] = 1,
-						["lastCheck"] = 1651575614,
-						["daysLeft"] = 29.42038154602051,
-					}, -- [2]
-					{
-						["link"] = "|cffffffff|Hitem:13446::::::::60:::::::::|h[特效治疗药水]|h|r",
-						["sender"] = "联盟拍卖行",
-						["itemID"] = 13446,
-						["returned"] = false,
-						["icon"] = 134834,
-						["count"] = 5,
-						["lastCheck"] = 1651575614,
-						["daysLeft"] = 29.99984931945801,
-					}, -- [3]
-				},
-				["lastVisitDate"] = "2022/05/03 19:00",
+				["lastUpdate"] = 1651656304,
+				["lastVisitDate"] = "2022/05/04 17:25",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540439,

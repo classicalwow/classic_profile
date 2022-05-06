@@ -652,8 +652,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "罗封山鬼王",
 		["when"] = "2022-05-03 19:00:31",
-		["where"] = "希利苏斯",
 		["result"] = "complete",
+		["where"] = "希利苏斯",
 	}, -- [28]
 	{
 		["targetMoney"] = 0,
@@ -663,10 +663,10 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["targetItems"] = {
 			{
-				["itemLink"] = "|cffffffff|Hitem:4390::::::::60:::::::::|h[铁皮手雷]|h|r",
 				["name"] = "铁皮手雷",
 				["numItems"] = 7,
 				["tCount"] = 7,
+				["itemLink"] = "|cffffffff|Hitem:4390::::::::60:::::::::|h[铁皮手雷]|h|r",
 				["isUsable"] = true,
 				["texture"] = 133716,
 			}, -- [1]
@@ -679,8 +679,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "大岛优美",
 		["when"] = "2022-05-03 19:28:16",
-		["where"] = "希利苏斯",
 		["result"] = "complete",
+		["where"] = "希利苏斯",
 	}, -- [29]
 }
 TradeLogUnlimited_Announce_Checked = true

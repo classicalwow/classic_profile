@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "熔火之心",
+			["LastInstanceName"] = "奥妮克希亚的巢穴",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 208.9999847412109,
