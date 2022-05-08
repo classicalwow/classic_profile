@@ -181,7 +181,7 @@ function NWB:OnCommReceived(commPrefix, string, distribution, sender)
 			NWB:doNpcWalkingMsg(type, layer, sender);
 		end
 	end
-	if (tonumber(remoteVersion) < 2.25) then
+	if (tonumber(remoteVersion) < 2.26) then
 		if (cmd == "requestData" and distribution == "GUILD") then
 			if (not NWB:getGuildDataStatus()) then
 				NWB:sendSettings("GUILD");
@@ -278,7 +278,7 @@ local enableLogging = true;
 local includeTimerLog = true;
 local logRendOnly = true;
 local logLayeredServersOnly = true;
-function NWB:sendData(distribution, target, prio, noLayerMap, noLogs, type)
+function NWB:sendData(distribution, target, prio, noLayerMap, noLogs, type, forceLayerMap)
 	--if (NWB.isDebug) then
 	--	return;
 	--end
@@ -291,7 +291,7 @@ function NWB:sendData(distribution, target, prio, noLayerMap, noLogs, type)
 	end
 	local data;
 	if (NWB.isLayered) then
-		data = NWB:createDataLayered(distribution, noLayerMap, noLogs, type);
+		data = NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLayerMap);
 	else
 		data = NWB:createData(distribution, noLogs);
 	end
@@ -664,7 +664,7 @@ end
 local lastSendLayerMap = {};
 local lastSendLayerMapID = {};
 --local firstLayeredYell = true;
-function NWB:createDataLayered(distribution, noLayerMap, noLogs, type)
+function NWB:createDataLayered(distribution, noLayerMap, noLogs, type, forceLayerMap)
 	local data = {};
 	if ((UnitInBattleground("player") or NWB:isInArena()) and distribution ~= "GUILD") then
 		return data;
@@ -830,8 +830,8 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type)
 			data.layers[layer].hellfireRep = v.hellfireRep;
 			foundTimer = true;
 		end]]
-		if ((sendLayerMap and foundTimer) or not lastSendLayerMapID[layer]
-				or (lastSendLayerMapID[layer] and GetServerTime() - lastSendLayerMapID[layer] > 3600)) then
+		if (forceLayerMap or ((sendLayerMap and foundTimer) or not lastSendLayerMapID[layer]
+				or (lastSendLayerMapID[layer] and GetServerTime() - lastSendLayerMapID[layer] > 3600))) then
 			if (NWB.data.layers[layer].layerMap and next(NWB.data.layers[layer].layerMap)) then
 				--NWB:debug("sending layermap", layer);
 				lastSendLayerMap[distribution] = GetServerTime();
@@ -847,7 +847,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type)
 					count = count + 1;
 				end
 				--Incase anything goes wrong with arenas or other new zones etc in TBC, don't send large number of layer id's.
-				if (count < 60) then
+				if (count < 70) then
 					--NWB:debug("sending layer map data", distribution);
 					data.layers[layer].layerMap = NWB.data.layers[layer].layerMap;
 				end
@@ -926,7 +926,7 @@ function NWB:createDataLayered(distribution, noLayerMap, noLogs, type)
 		data.tbcPD = NWB.data.tbcPD;
 		data.tbcPDT = NWB.data.tbcPDT;
 	end
-	if (distribution == "GUILD") then
+	if (distribution == "GUILD" and not forceLayerMap) then
 		--Include settings with timer data for guild.
 		local settings = NWB:createSettings(distribution);
 		local me = UnitName("player") .. "-" .. GetNormalizedRealmName();
@@ -3615,8 +3615,8 @@ function NWB:updateTerokkarMarkers(type, layer)
 		end
 		local timeString = L["noTimer"];
 		if (NWB.data.layers[layer] and _G[type .. layer .. "NWBTerokkarMap"] and time > 0) then
-	    	timeString = NWB:getTimeString(time, true, "short") .. " (" .. NWB:getTimeFormat(NWB.data.layers[layer]["terokTowers"]) .. ")";
-	    	local timeStamp = NWB:getTimeFormat(NWB.data.layers[layer]["terokTowers"]);
+			local endTime = NWB:getTerokEndTime(NWB.data.layers[layer].terokTowers, NWB.data.layers[layer].terokTowersTime);
+	    	timeString = NWB:getTimeString(endTime - GetServerTime(), true, "short") .. " (" .. NWB:getTimeFormat(endTime) .. ")";
 	    	if (NWB.data.layers[layer]["terokFaction"] == 2) then
 	    		_G[type .. layer .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\alliancetower.blp");
 	    	elseif (NWB.data.layers[layer]["terokFaction"] == 3) then
@@ -3642,8 +3642,8 @@ function NWB:updateTerokkarMarkers(type, layer)
 			time = 0;
 		end
 		if (NWB.data["terokTowers"] and _G[type .. "NWBTerokkarMap"] and time > 0) then
-	    	timeString = NWB:getTimeString(time, true, "short") .. " (" .. NWB:getTimeFormat(NWB.data["terokTowers"]) .. ")";
-	    	local timeStamp = NWB:getTimeFormat(NWB.data["terokTowers"]);
+			local endTime = NWB:getTerokEndTime(NWB.data.terokTowers, NWB.data.terokTowersTime);
+	    	timeString = NWB:getTimeString(endTime - GetServerTime(), true, "short") .. " (" .. NWB:getTimeFormat(endTime) .. ")";
 	    	if (NWB.data["terokFaction"] == 2) then
 	    		_G[type .. "NWBTerokkarMap"].texture:SetTexture("Interface\\worldstateframe\\alliancetower.blp");
 	    	elseif (NWB.data["terokFaction"] == 3) then

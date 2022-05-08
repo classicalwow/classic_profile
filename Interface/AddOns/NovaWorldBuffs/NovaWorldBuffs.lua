@@ -6941,24 +6941,12 @@ local staticDmfDates = {};
 function NWB:setDmfDates()
 	if (NWB.isTBC or NWB.realmsTBC) then
 		staticDmfDates = {
-			--[[[1] = { --Manually started DMF by Blizzard for prepatch.
-				day = 21,
-				month = 5,
-				year = 2021,
-				zone = "Mulgore",
-			},
-			[2] = { --July 30th setup, August 1st start 2021.
-				day = 30,
-				month = 7,
-				year = 2021,
-				zone = "Mulgore",
-			},
-			[3] = { --October 29th setup, October 31st start 2021.
+			[1] = { --Manually started DMF by Blizzard for prepatch.
 				day = 29,
-				month = 10,
-				year = 2021,
-				zone = "Elwynn Forest",
-			},]]
+				month = 4,
+				year = 2022,
+				zone = "Outlands",
+			},
 		}
 	else
 		staticDmfDates = {
@@ -9090,7 +9078,7 @@ function NWB:createNewLayer(zoneID, GUID, isFromNpc)
 			--Create a copy instead of refrence and ignore timestamp.
 			for k, v in pairs(NWB.data.layerMapBackups[zoneID]) do
 				--Ignore created timestamp, it's not needed in the layermap, only in the backup.
-				if (k ~= "created") then
+				if (k ~= "created" and v ~= 1952) then
 					NWB.data.layers[zoneID].layerMap[k] = v;
 				end
 			end
@@ -9875,6 +9863,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		NWB:mapCurrentLayer("mouseover");
 	elseif (event == "GROUP_JOINED") then
 		NWB.lastKnownLayerMapID = 0;
+		NWB.lastKnownLayerMapID_Mapping = 0;
 		NWB.currentZoneID = 0;
 		--Block a new zoneid from being set for longer than the team join block is if it's the same zoneid they got earlier.
 		--IE not changed layer yet after joining group because of layer swap cooldown.
@@ -9906,6 +9895,7 @@ f:SetScript('OnEvent', function(self, event, ...)
 		logonEnteringWorld = GetServerTime();
 		if (IsInGroup()) then
 			NWB.lastKnownLayerMapID = 0;
+			NWB.lastKnownLayerMapID_Mapping = 0;
 			NWB.currentZoneID = 0;
 			--NWB.lastJoinedGroup = GetServerTime();
 		end
@@ -9967,6 +9957,7 @@ end
 NWB.lastKnownLayer = 0;
 NWB.lastKnownLayerID = 0;
 NWB.lastKnownLayerMapID = 0;
+NWB.lastKnownLayerMapID_Mapping = 0; --More strict layerMapID, can only be set in capitals and zones with timers can only be mapped by this.
 NWB.lastKnownLayerMapIDBackup = 0; --Only used for songflowers if logging on in a group.
 NWB.lastKnownLayerMapIDBackupValidFor = 120; --How long after logon this can be valid for.
 NWB.currentZoneID = 0;
@@ -10027,7 +10018,7 @@ function NWB:setCurrentLayerText(unit)
 			NWB:recalcMinimapLayerFrame();
 			--Update layer created time any time we target a NPC on this layer in capital city.
 			--To help layers persist better overnight but not after server restarts.
-			--But only if the layer has had a valid timer previously.
+			--But only if the player has had a valid timer previously.
 			--This may create problems with false layers being shared around if a layer is created by some not valid city NPC.
 			--Will see how this goes, I need layers to be shared without timers, hotfixes lately have broken world buff NPCs.
 			--if (v.rendTimer > 0 or v.onyTimer > 0 or v.nefTimer > 0) then
@@ -10045,14 +10036,24 @@ function NWB:setCurrentLayerText(unit)
 				--So when you join a group you can't get another valid zoneID from the same layer and then phase over after it bringing the wrong zoneID with you.
 				NWB.lastCurrentZoneID = tonumber(zoneID);
 				NWB.data.layers[k].lastSeenNPC = GetServerTime();
+				NWB.lastKnownLayerMapID_Mapping = tonumber(zoneID);
 			end
 			return;
 		end
 	end
-	if (((NWB.faction == "Alliance" and zone == 1453 and NWB.stormwindCreatures[tonumber(npcID)])
+	--[[if (((NWB.faction == "Alliance" and zone == 1453 and NWB.stormwindCreatures[tonumber(npcID)])
 			or (NWB.faction == "Horde" and zone == 1454 and NWB.orgrimmarCreatures[tonumber(npcID)]))
 			and tonumber(zoneID) and not NWB.data.layers[tonumber(zoneID)]) then
 		NWB:createNewLayer(tonumber(zoneID), GUID, true);
+	end]]
+	if (((NWB.faction == "Alliance" and zone == 1453 and NWB.stormwindCreatures[tonumber(npcID)])
+			or (NWB.faction == "Horde" and zone == 1454 and NWB.orgrimmarCreatures[tonumber(npcID)]))
+			and tonumber(zoneID)) then
+		if (not NWB.data.layers[tonumber(zoneID)]) then
+			NWB:createNewLayer(tonumber(zoneID), GUID, true);
+		end
+		--This can only be set while in a capital and is used for mapping zones with timers like terokkar.
+		NWB.lastKnownLayerMapID_Mapping = tonumber(zoneID);
 	end
 	--I was going to let it create layers from layermap backups out in the world when timers aren't dropped for a while.
 	--Needs more thought though how to handle old layermap data after server restarts.
@@ -10279,9 +10280,21 @@ function NWB:mapCurrentLayer(unit)
 			end
 			if (NWB.layerMapWhitelist[zone] and NWB:validateZoneID(zoneID, NWB.lastKnownLayerMapID, zone)) then
 				--If zone is not mapped yet since server restart then add it.
-				NWB:debug("mapped new zone to layer id", NWB.lastKnownLayerMapID, "zoneid:", zoneID, "zone:", zone);
-				NWB.data.layers[NWB.lastKnownLayerMapID].layerMap[zoneID] = zone;
-				NWB:sendData("GUILD");
+				if (zone == 1952) then
+					--1952 Terokkar.
+					if (NWB.lastKnownLayerMapID_Mapping > 0) then
+						--Only map zones with timers if we have gotten our current layer from a capital city.
+						NWB:debug("mapped new timer zone to layer id", NWB.lastKnownLayerMapID_Mapping, "zoneid:", zoneID, "zone:", zone);
+						NWB.data.layers[NWB.lastKnownLayerMapID_Mapping].layerMap[zoneID] = zone;
+						NWB:sendData("GUILD", nil, nil, nil, true, nil, true);
+						NWB:sendData("YELL", nil, nil, nil, true, nil, true);
+					end
+				else
+					NWB:debug("mapped new zone to layer id", NWB.lastKnownLayerMapID, "zoneid:", zoneID, "zone:", zone);
+					NWB.data.layers[NWB.lastKnownLayerMapID].layerMap[zoneID] = zone;
+					NWB:sendData("GUILD", nil, nil, nil, true, nil, true);
+					NWB:sendData("YELL", nil, nil, nil, true, nil, true);
+				end
 			end
 		else
 			--NWB:debug("zoneid already known");
@@ -10554,10 +10567,11 @@ function NWB:resetLayerData()
 		NWB.data.tbcPDT = nil;
 		NWB.db.global.resetDailyData = false;
 	end
-	if (NWB.db.global.resetLayers6) then
+	if (NWB.db.global.resetLayers7) then
 		NWB:debug("resetting layer data");
 		NWB.data.layers = {};
-		NWB.db.global.resetLayers6 = false;
+		NWB.data.layerMapBackups = {};
+		NWB.db.global.resetLayers7 = false;
 	end
 end
 
