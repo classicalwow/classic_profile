@@ -1,19 +1,19 @@
 
 BestInSlotClassicDB = {
 	["loglevel"] = "INFO",
-	["minimap"] = {
-		["minimapPos"] = 175,
-		["hide"] = false,
+	["filter"] = {
+		["twohands"] = false,
+		["pvprank"] = 18,
+		["soulboundBis"] = false,
+		["raid"] = true,
+		["worldboss"] = true,
+		["pvp"] = false,
 	},
 	["options"] = {
 		["bistooltip"] = true,
 	},
-	["filter"] = {
-		["twohands"] = false,
-		["pvprank"] = 18,
-		["soulboundBis"] = true,
-		["raid"] = true,
-		["worldboss"] = true,
-		["pvp"] = true,
+	["minimap"] = {
+		["minimapPos"] = 175,
+		["hide"] = false,
 	},
 }
