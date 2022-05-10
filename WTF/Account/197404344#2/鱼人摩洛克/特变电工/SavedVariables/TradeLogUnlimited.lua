@@ -784,9 +784,9 @@ TradeLogUnlimited_TradesHistory = {
 		["targetItems"] = {
 		},
 		["player"] = "特变电工",
+		["where"] = "铁炉堡",
 		["who"] = "花海丶",
 		["when"] = "2022-05-08 23:49:33",
-		["where"] = "铁炉堡",
 		["result"] = "cancelled",
 		["toofar"] = "no",
 	}, -- [34]
@@ -806,9 +806,28 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "四时雨",
 		["when"] = "2022-05-08 23:54:49",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [35]
+	{
+		["targetMoney"] = 830000,
+		["playerMoney"] = 0,
+		["id"] = 36,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "莽丶夫",
+		["when"] = "2022-05-09 23:43:50",
 		["where"] = "铁炉堡",
 		["result"] = "complete",
-	}, -- [35]
+	}, -- [36]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

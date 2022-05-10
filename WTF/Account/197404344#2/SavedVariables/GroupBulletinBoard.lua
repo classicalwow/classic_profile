@@ -1,7 +1,7 @@
 
 GroupBulletinBoardDB = {
 	["TagsGerman"] = true,
-	["Y"] = 836.5554809570312,
+	["Y"] = 834.7777709960938,
 	["TagsEnglish"] = true,
 	["TagsRussian"] = true,
 	["MinimapButton"] = {
@@ -9,9 +9,9 @@ GroupBulletinBoardDB = {
 		["position"] = 177.4178770295291,
 	},
 	["TimeOut"] = 150,
-	["NotifyChat"] = true,
+	["OrderNewTop"] = true,
 	["EscapeQuit"] = false,
-	["TagsCustom"] = true,
+	["EnableShoutBox"] = true,
 	["CustomLocales"] = {
 		["EditCustom_Search"] = "",
 		["CboxEscapeQuit"] = "",
@@ -100,10 +100,10 @@ GroupBulletinBoardDB = {
 		["RFD"] = "",
 		["ZF"] = "",
 	},
-	["X"] = 41.0000114440918,
+	["X"] = 0.9999702572822571,
 	["ShowTotalTime"] = false,
 	["OnDebug"] = false,
-	["EnableShoutBox"] = true,
+	["TagsCustom"] = true,
 	["NotifySound"] = true,
 	["ColorOnLevel"] = true,
 	["ShowClassIcon"] = true,
@@ -153,7 +153,7 @@ GroupBulletinBoardDB = {
 		["UBRS"] = "",
 		["ZF"] = "",
 	},
-	["OrderNewTop"] = true,
+	["NotifyChat"] = true,
 	["Height"] = 340,
 	["widthNames"] = 106.6666717529297,
 	["RemoveRaidSymbols"] = true,

@@ -11,9 +11,9 @@ BestInSlotClassicDB = {
 	["filter"] = {
 		["twohands"] = false,
 		["pvprank"] = 18,
-		["soulboundBis"] = true,
+		["soulboundBis"] = false,
 		["raid"] = true,
 		["worldboss"] = true,
-		["pvp"] = true,
+		["pvp"] = false,
 	},
 }
