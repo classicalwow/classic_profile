@@ -7,11 +7,11 @@ PawnCommon = {
 	["ShowRelicUpgrades"] = false,
 	["ShowValuesForUpgradesOnly"] = true,
 	["ShowItemLevelUpgrades"] = false,
-	["ShownGettingStarted"] = true,
+	["IgnoreGemsWhileLeveling"] = true,
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
-	["Digits"] = 1,
+	["ShowSpecIcons"] = true,
 	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
@@ -89,10 +89,10 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN2"] = {
 			["PerCharacterOptions"] = {
-				["Javascript-鱼人摩洛克"] = {
+				["顶级程序员-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
-				["顶级程序员-鱼人摩洛克"] = {
+				["Javascript-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
 			},
@@ -239,19 +239,19 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "947451",
 		},
-		["\"Classic\":SHAMAN1"] = {
+		["\"Classic\":ROGUE1"] = {
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "0270dd",
-			["ClassID"] = 7,
-			["LocalizedName"] = "萨满祭司: 元素",
+			["Color"] = "fff468",
+			["ClassID"] = 4,
+			["LocalizedName"] = "潜行者: 奇袭",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
 			["SpecID"] = 1,
-			["UnenchantedColor"] = "0154a5",
+			["UnenchantedColor"] = "bfb74e",
 		},
 		["\"Classic\":SHAMAN3"] = {
 			["PerCharacterOptions"] = {
@@ -267,65 +267,65 @@ PawnCommon = {
 			["SpecID"] = 3,
 			["UnenchantedColor"] = "0154a5",
 		},
-		["\"Classic\":PALADIN3"] = {
+		["\"Classic\":PALADIN1"] = {
 			["PerCharacterOptions"] = {
-				["Javascript-鱼人摩洛克"] = {
+				["顶级程序员-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
-				["顶级程序员-鱼人摩洛克"] = {
+				["Javascript-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
 			},
 			["Color"] = "f48cba",
 			["ClassID"] = 2,
-			["LocalizedName"] = "圣骑士: 惩戒",
+			["LocalizedName"] = "圣骑士: 神圣",
+			["DoNotShow1HUpgrades"] = false,
+			["Role"] = "HEALER",
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = false,
+			["Provider"] = "Classic",
+			["SpecID"] = 1,
+			["UnenchantedColor"] = "b7698b",
+		},
+		["\"Classic\":ROGUE"] = {
+			["Color"] = "fff468",
+			["LocalizedName"] = "潜行者: 副手",
+			["PerCharacterOptions"] = {
+			},
+			["DoNotShow1HUpgrades"] = false,
+			["ClassID"] = 4,
+			["DoNotShow2HUpgrades"] = false,
+			["UpgradesFollowSpecialization"] = false,
+			["Provider"] = "Classic",
+			["UnenchantedColor"] = "bfb74e",
+		},
+		["\"Classic\":ROGUE3"] = {
+			["PerCharacterOptions"] = {
+			},
+			["Color"] = "fff468",
+			["ClassID"] = 4,
+			["LocalizedName"] = "潜行者: 敏锐",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
 			["SpecID"] = 3,
-			["UnenchantedColor"] = "b7698b",
-		},
-		["\"Classic\":ROGUE"] = {
-			["Color"] = "fff468",
-			["ClassID"] = 4,
-			["PerCharacterOptions"] = {
-			},
-			["DoNotShow1HUpgrades"] = false,
-			["LocalizedName"] = "潜行者: 副手",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = false,
-			["Provider"] = "Classic",
 			["UnenchantedColor"] = "bfb74e",
 		},
-		["\"Classic\":DRUID3"] = {
+		["\"Classic\":ROGUE2"] = {
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "ff7c0a",
-			["ClassID"] = 11,
-			["LocalizedName"] = "德鲁伊: 野性 (坦克)",
-			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "TANK",
-			["DoNotShow2HUpgrades"] = false,
-			["UpgradesFollowSpecialization"] = false,
-			["Provider"] = "Classic",
-			["SpecID"] = 3,
-			["UnenchantedColor"] = "bf5d07",
-		},
-		["\"Classic\":DRUID2"] = {
-			["PerCharacterOptions"] = {
-			},
-			["Color"] = "ff7c0a",
-			["ClassID"] = 11,
-			["LocalizedName"] = "德鲁伊: 野性 (伤害输出)",
+			["Color"] = "fff468",
+			["ClassID"] = 4,
+			["LocalizedName"] = "潜行者: 战斗",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "bf5d07",
+			["UnenchantedColor"] = "bfb74e",
 		},
 		["\"Classic\":WARLOCK1"] = {
 			["PerCharacterOptions"] = {
@@ -355,33 +355,33 @@ PawnCommon = {
 			["SpecID"] = 4,
 			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"Classic\":ROGUE2"] = {
+		["\"Classic\":DRUID2"] = {
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "fff468",
-			["ClassID"] = 4,
-			["LocalizedName"] = "潜行者: 战斗",
+			["Color"] = "ff7c0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "德鲁伊: 野性 (伤害输出)",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
 			["SpecID"] = 2,
-			["UnenchantedColor"] = "bfb74e",
+			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"Classic\":ROGUE3"] = {
+		["\"Classic\":DRUID3"] = {
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "fff468",
-			["ClassID"] = 4,
-			["LocalizedName"] = "潜行者: 敏锐",
+			["Color"] = "ff7c0a",
+			["ClassID"] = 11,
+			["LocalizedName"] = "德鲁伊: 野性 (坦克)",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "DAMAGER",
+			["Role"] = "TANK",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
 			["SpecID"] = 3,
-			["UnenchantedColor"] = "bfb74e",
+			["UnenchantedColor"] = "bf5d07",
 		},
 		["\"Classic\":DRUID1"] = {
 			["PerCharacterOptions"] = {
@@ -397,39 +397,39 @@ PawnCommon = {
 			["SpecID"] = 1,
 			["UnenchantedColor"] = "bf5d07",
 		},
-		["\"Classic\":PALADIN1"] = {
+		["\"Classic\":PALADIN3"] = {
 			["PerCharacterOptions"] = {
-				["Javascript-鱼人摩洛克"] = {
+				["顶级程序员-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
-				["顶级程序员-鱼人摩洛克"] = {
+				["Javascript-鱼人摩洛克"] = {
 					["Visible"] = true,
 				},
 			},
 			["Color"] = "f48cba",
 			["ClassID"] = 2,
-			["LocalizedName"] = "圣骑士: 神圣",
+			["LocalizedName"] = "圣骑士: 惩戒",
 			["DoNotShow1HUpgrades"] = false,
-			["Role"] = "HEALER",
+			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
-			["SpecID"] = 1,
+			["SpecID"] = 3,
 			["UnenchantedColor"] = "b7698b",
 		},
-		["\"Classic\":ROGUE1"] = {
+		["\"Classic\":SHAMAN1"] = {
 			["PerCharacterOptions"] = {
 			},
-			["Color"] = "fff468",
-			["ClassID"] = 4,
-			["LocalizedName"] = "潜行者: 奇袭",
+			["Color"] = "0270dd",
+			["ClassID"] = 7,
+			["LocalizedName"] = "萨满祭司: 元素",
 			["DoNotShow1HUpgrades"] = false,
 			["Role"] = "DAMAGER",
 			["DoNotShow2HUpgrades"] = false,
 			["UpgradesFollowSpecialization"] = false,
 			["Provider"] = "Classic",
 			["SpecID"] = 1,
-			["UnenchantedColor"] = "bfb74e",
+			["UnenchantedColor"] = "0154a5",
 		},
 		["\"Classic\":PRIEST2"] = {
 			["PerCharacterOptions"] = {
@@ -450,6 +450,6 @@ PawnCommon = {
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["IgnoreGemsWhileLeveling"] = true,
+	["Digits"] = 1,
+	["ShownGettingStarted"] = true,
 }
