@@ -32,10 +32,10 @@ RecountDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["MainWindow"] = {
 				["Position"] = {
-					["y"] = -495.5001068115234,
-					["x"] = -432.0002136230469,
-					["w"] = 261.0000305175781,
-					["h"] = 209,
+					["y"] = -480.5000991821289,
+					["x"] = -445.6113891601563,
+					["w"] = 250.4443359375,
+					["h"] = 238.9998016357422,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -52,11 +52,11 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "奥妮克希亚的巢穴",
-			["CurDataSet"] = "OverallData",
+			["LastInstanceName"] = "熔火之心",
+			["CurDataSet"] = "CurrentFightData",
 			["SegmentBosses"] = true,
-			["MainWindowHeight"] = 208.9999847412109,
-			["MainWindowWidth"] = 260.6666870117188,
+			["MainWindowHeight"] = 238.9998016357422,
+			["MainWindowWidth"] = 250.4443359375,
 		},
 		["Javascript - 鱼人摩洛克"] = {
 			["MainWindow"] = {

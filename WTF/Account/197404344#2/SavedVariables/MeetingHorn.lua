@@ -9,6 +9,16 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
+			["goodleader"] = {
+				["cache"] = {
+					["熔火之心"] = {
+						["leaderGuid"] = "Player-5458-0354F515",
+						["timestamp"] = 1652294563,
+						["leader"] = "愿圣光照懵你-鱼人摩洛克",
+						["raidName"] = "熔火之心",
+					},
+				},
+			},
 			["window"] = {
 				["databroker"] = {
 					["y"] = -20.3333740234375,
