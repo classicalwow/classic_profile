@@ -33,7 +33,7 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -480.5000839233398,
-					["x"] = -445.6114196777344,
+					["x"] = -445.6113891601563,
 					["w"] = 250.4443359375,
 					["h"] = 238.9998016357422,
 				},
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "阿拉希盆地",
+			["LastInstanceName"] = "战歌峡谷",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 238.9998016357422,
