@@ -1,0 +1,1056 @@
+
+aux = {
+	["account"] = {
+		["ignore_owner"] = true,
+		["scale"] = 1,
+		["items"] = {
+			[131] = "Deprecated Orc Acolyte's Belt#|cffffffff|Hitem:131::::::::1:::::::::|h[Deprecated Orc Acolyte's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#133693#1",
+			[139] = "打斗者短裤#|cff9d9d9d|Hitem:139::::::::1:::::::::|h[打斗者短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[37] = "破损的斧头#|cffffffff|Hitem:37::::::::1:::::::::|h[破损的斧头]|h|r#1#2#1#武器#单手斧#INVTYPE_WEAPONMAINHAND#1#132402#7",
+			[39] = "新兵短裤#|cff9d9d9d|Hitem:39::::::::1:::::::::|h[新兵短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[41] = "OLDRecruit's Belt#|cffffffff|Hitem:41::::::::1:::::::::|h[OLDRecruit's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[2449] = "地根草#|cffffffff|Hitem:2449::::::::1:::::::::|h[地根草]|h|r#1#5#0#商品#商品##20#134187#20",
+			[45] = "侍从衬衣#|cffffffff|Hitem:45::::::::1:::::::::|h[侍从衬衣]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[47] = "潜行者之鞋#|cffffffff|Hitem:47::::::::1:::::::::|h[潜行者之鞋]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132539#1",
+			[49] = "潜行者衬衣#|cffffffff|Hitem:49::::::::1:::::::::|h[潜行者衬衣]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135009#1",
+			[51] = "见习牧师之靴#|cffffffff|Hitem:51::::::::1:::::::::|h[见习牧师之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132538#1",
+			[53] = "见习牧师衬衣#|cffffffff|Hitem:53::::::::1:::::::::|h[见习牧师衬衣]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[55] = "学徒之靴#|cffffffff|Hitem:55::::::::1:::::::::|h[学徒之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132543#1",
+			[18663] = "耶维尔的瓶子#|cffffffff|Hitem:18663::::::::1:::::::::|h[耶维尔的瓶子]|h|r#1#1#0#任务#任务##1#134514#0",
+			[2453] = "跌打草#|cffffffff|Hitem:2453::::::::1:::::::::|h[跌打草]|h|r#1#20#0#商品#商品##20#134181#25",
+			[2581] = "厚亚麻绷带#|cffffffff|Hitem:2581::::::::1:::::::::|h[厚亚麻绷带]|h|r#1#1#0#消耗品#消耗品##20#133688#20",
+			[14344] = "大块魔光碎片#|cff0070dd|Hitem:14344::::::::1:::::::::|h[大块魔光碎片]|h|r#3#55#0#商品#商品##20#132873#0",
+			[19703] = "枯木硬币#|cff1eff00|Hitem:19703::::::::1:::::::::|h[枯木硬币]|h|r#2#1#0#任务#任务##250#133797#0",
+			[3858] = "秘银矿石#|cffffffff|Hitem:3858::::::::1:::::::::|h[秘银矿石]|h|r#1#40#0#商品#商品##10#134576#250",
+			[22524] = "十字军徽记#|cff1eff00|Hitem:22524::::::::1:::::::::|h[十字军徽记]|h|r#2#1#0#其它#垃圾##250#134503#0",
+			[90] = "OLDDwarven Initiate's Belt#|cffffffff|Hitem:90::::::::1:::::::::|h[OLDDwarven Initiate's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[94] = "Deprecated Dwarven Novice's Belt#|cffffffff|Hitem:94::::::::1:::::::::|h[Deprecated Dwarven Novice's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[98] = "Deprecated Dwarven Squire's Belt#|cffffffff|Hitem:98::::::::1:::::::::|h[Deprecated Dwarven Squire's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[102] = "Deprecated Dwarven Recruit's Belt#|cffffffff|Hitem:102::::::::1:::::::::|h[Deprecated Dwarven Recruit's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[17193] = "萨弗隆战锤#|cffa335ee|Hitem:17193::::::::1:::::::::|h[萨弗隆战锤]|h|r#4#67#60#武器#双手锤#INVTYPE_2HWEAPON#1#133066#122311",
+			[11563] = "精神水晶#|cffffffff|Hitem:11563::::::::1:::::::::|h[精神水晶]|h|r#1#55#0#任务#任务##20#134088#1000",
+			[118] = "初级治疗药水#|cffffffff|Hitem:118::::::::1:::::::::|h[初级治疗药水]|h|r#1#5#1#消耗品#消耗品##5#134829#5",
+			[11567] = "尖刺水晶#|cffffffff|Hitem:11567::::::::1:::::::::|h[尖刺水晶]|h|r#1#55#0#任务#任务##20#134134#1000",
+			[6948] = "炉石#|cffffffff|Hitem:6948::::::::1:::::::::|h[炉石]|h|r#1#1#0#其它#垃圾##1#134414#0",
+			[132] = "Deprecated Orc Acolyte's Boots#|cffffffff|Hitem:132::::::::1:::::::::|h[Deprecated Orc Acolyte's Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132536#1",
+			[140] = "打斗者之靴#|cffffffff|Hitem:140::::::::1:::::::::|h[打斗者之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132538#1",
+			[148] = "皱褶捕兽者衬衣#|cffffffff|Hitem:148::::::::1:::::::::|h[皱褶捕兽者衬衣]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[156] = "Deprecated Tauren Recruit's Pants#|cff9d9d9d|Hitem:156::::::::1:::::::::|h[Deprecated Tauren Recruit's Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[3357] = "活根草#|cffffffff|Hitem:3357::::::::1:::::::::|h[活根草]|h|r#1#30#0#商品#商品##20#134413#75",
+			[3358] = "卡德加的胡须#|cffffffff|Hitem:3358::::::::1:::::::::|h[卡德加的胡须]|h|r#1#37#0#商品#商品##20#134188#175",
+			[6450] = "丝质绷带#|cffffffff|Hitem:6450::::::::1:::::::::|h[丝质绷带]|h|r#1#1#0#消耗品#消耗品##20#133671#200",
+			[17771] = "源质锭#|cffff8000|Hitem:17771::::::::1:::::::::|h[源质锭]|h|r#5#60#0#商品#商品##10#133235#100000",
+			[19815] = "打孔的巫毒人偶#|cff1eff00|Hitem:19815::::::::1:::::::::|h[打孔的巫毒人偶]|h|r#2#1#0#其它#垃圾##1#134231#0",
+			[8545] = "厚魔纹绷带#|cffffffff|Hitem:8545::::::::1:::::::::|h[厚魔纹绷带]|h|r#1#1#0#消耗品#消耗品##20#133690#600",
+			[7734] = "六魔包#|cff0070dd|Hitem:7734::::::::1:::::::::|h[六魔包]|h|r#3#51#46#护甲#其它#INVTYPE_TRINKET#1#133622#15495",
+			[16203] = "强效不灭精华#|cff1eff00|Hitem:16203::::::::1:::::::::|h[强效不灭精华]|h|r#2#55#0#商品#商品##10#132864#0",
+			[18329] = "急速秘药#|cff1eff00|Hitem:18329::::::::1:::::::::|h[急速秘药]|h|r#2#50#0#任务#任务##1#134072#0",
+			[18333] = "专注圣典#|cff1eff00|Hitem:18333::::::::1:::::::::|h[专注圣典]|h|r#2#50#50#配方#书籍##1#133736#0",
+			[133] = "Deprecated Orc Acolyte's Shirt#|cffffffff|Hitem:133::::::::1:::::::::|h[Deprecated Orc Acolyte's Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135009#1",
+			[141] = "OLDBrawler's Belt#|cffffffff|Hitem:141::::::::1:::::::::|h[OLDBrawler's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132491#1",
+			[1180] = "耐力卷轴#|cffffffff|Hitem:1180::::::::1:::::::::|h[耐力卷轴]|h|r#1#15#5#消耗品#消耗品##5#134943#37",
+			[157] = "Deprecated Tauren Recruit's Shirt#|cffffffff|Hitem:157::::::::1:::::::::|h[Deprecated Tauren Recruit's Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[11135] = "强效秘法精华#|cff1eff00|Hitem:11135::::::::1:::::::::|h[强效秘法精华]|h|r#2#35#0#商品#商品##10#132868#0",
+			[11137] = "幻象之尘#|cffffffff|Hitem:11137::::::::1:::::::::|h[幻象之尘]|h|r#1#35#0#商品#商品##20#132859#0",
+			[11139] = "大块闪光碎片#|cff0070dd|Hitem:11139::::::::1:::::::::|h[大块闪光碎片]|h|r#3#35#0#商品#商品##20#132878#0",
+			[237] = "硬皮短裤#|cffffffff|Hitem:237::::::::1:::::::::|h[硬皮短裤]|h|r#1#22#17#护甲#皮甲#INVTYPE_LEGS#1#134586#561",
+			[12938] = "英雄之血#|cffffffff|Hitem:12938::::::::1:::::::::|h[英雄之血]|h|r#1#60#0#任务#任务##20#134813#0",
+			[10645] = "侏儒死亡射线#|cffffffff|Hitem:10645::::::::1:::::::::|h[侏儒死亡射线]|h|r#1#48#0#商品#装置#INVTYPE_TRINKET#1#133002#750",
+			[19700] = "哈卡莱硬币#|cff1eff00|Hitem:19700::::::::1:::::::::|h[哈卡莱硬币]|h|r#2#1#0#任务#任务##250#133792#0",
+			[19704] = "沙怒硬币#|cff1eff00|Hitem:19704::::::::1:::::::::|h[沙怒硬币]|h|r#2#1#0#任务#任务##250#133798#0",
+			[79] = "矮人布质短裤#|cffffffff|Hitem:79::::::::1:::::::::|h[矮人布质短裤]|h|r#1#5#0#护甲#布甲#INVTYPE_LEGS#1#134589#10",
+			[87] = "Deprecated Old Boots#|cffffffff|Hitem:87::::::::1:::::::::|h[Deprecated Old Boots]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[2362] = "用旧的木盾#|cff9d9d9d|Hitem:2362::::::::1:::::::::|h[用旧的木盾]|h|r#0#1#1#护甲#盾牌#INVTYPE_SHIELD#1#134955#1",
+			[95] = "Deprecated Dwarven Novice's Boots#|cffffffff|Hitem:95::::::::1:::::::::|h[Deprecated Dwarven Novice's Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[99] = "Deprecated Dwarven Squire's Boots#|cffffffff|Hitem:99::::::::1:::::::::|h[Deprecated Dwarven Squire's Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[11175] = "强效虚空精华#|cff1eff00|Hitem:11175::::::::1:::::::::|h[强效虚空精华]|h|r#2#45#0#商品#商品##10#132870#0",
+			[11177] = "小块强光碎片#|cff0070dd|Hitem:11177::::::::1:::::::::|h[小块强光碎片]|h|r#3#40#0#商品#商品##20#132884#0",
+			[115] = "Deprecated Dwarven Apprentice Belt#|cffffffff|Hitem:115::::::::1:::::::::|h[Deprecated Dwarven Apprentice Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[119] = "Deprecated Rogue's Vest#|cffffffff|Hitem:119::::::::1:::::::::|h[Deprecated Rogue's Vest]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[123] = "Deprecated Orc Apprentice Shirt#|cffffffff|Hitem:123::::::::1:::::::::|h[Deprecated Orc Apprentice Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[1251] = "亚麻绷带#|cffffffff|Hitem:1251::::::::1:::::::::|h[亚麻绷带]|h|r#1#1#0#消耗品#消耗品##20#133685#10",
+			[134] = "Deprecated Stiff Leather Shirt#|cffffffff|Hitem:134::::::::1:::::::::|h[Deprecated Stiff Leather Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[17728] = "白鳄长靴#|cff0070dd|Hitem:17728::::::::1:::::::::|h[白鳄长靴]|h|r#3#53#48#护甲#皮甲#INVTYPE_FEET#1#132539#12458",
+			[10938] = "次级魔法精华#|cff1eff00|Hitem:10938::::::::1:::::::::|h[次级魔法精华]|h|r#2#10#0#商品#商品##10#132867#0",
+			[10940] = "奇异之尘#|cffffffff|Hitem:10940::::::::1:::::::::|h[奇异之尘]|h|r#1#10#0#商品#商品##20#132858#0",
+			[11197] = "黑暗守护者钥匙#|cffffffff|Hitem:11197::::::::1:::::::::|h[黑暗守护者钥匙]|h|r#1#1#0#消耗品#消耗品##1#134245#0",
+			[182] = "加瑞克的头颅#|cffffffff|Hitem:182::::::::1:::::::::|h[加瑞克的头颅]|h|r#1#1#0#任务#任务##1#134166#0",
+			[239] = "硬皮手套#|cffffffff|Hitem:239::::::::1:::::::::|h[硬皮手套]|h|r#1#22#17#护甲#皮甲#INVTYPE_HAND#1#132955#282",
+			[238] = "硬皮战靴#|cffffffff|Hitem:238::::::::1:::::::::|h[硬皮战靴]|h|r#1#22#17#护甲#皮甲#INVTYPE_FEET#1#132537#422",
+			[236] = "硬皮甲#|cffffffff|Hitem:236::::::::1:::::::::|h[硬皮甲]|h|r#1#22#17#护甲#皮甲#INVTYPE_CHEST#1#132725#559",
+			[11134] = "次级秘法精华#|cff1eff00|Hitem:11134::::::::1:::::::::|h[次级秘法精华]|h|r#2#30#0#商品#商品##10#132869#0",
+			[209] = "肮脏的皮裤#|cffffffff|Hitem:209::::::::1:::::::::|h[肮脏的皮裤]|h|r#1#5#1#护甲#皮甲#INVTYPE_LEGS#1#134706#12",
+			[203] = "厚布手套#|cffffffff|Hitem:203::::::::1:::::::::|h[厚布手套]|h|r#1#22#17#护甲#布甲#INVTYPE_HAND#1#132955#229",
+			[14530] = "厚符文布绷带#|cffffffff|Hitem:14530::::::::1:::::::::|h[厚符文布绷带]|h|r#1#58#0#消耗品#消耗品##20#133682#1000",
+			[19705] = "碎颅硬币#|cff1eff00|Hitem:19705::::::::1:::::::::|h[碎颅硬币]|h|r#2#1#0#任务#任务##250#133795#0",
+			[3012] = "敏捷卷轴#|cffffffff|Hitem:3012::::::::1:::::::::|h[敏捷卷轴]|h|r#1#20#10#消耗品#消耗品##5#134938#50",
+			[91] = "OLDDwarven Initiate's Pants#|cff9d9d9d|Hitem:91::::::::1:::::::::|h[OLDDwarven Initiate's Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[12753] = "暗影之皮#|cff1eff00|Hitem:12753::::::::1:::::::::|h[暗影之皮]|h|r#2#1#0#任务#任务##10#134430#0",
+			[200] = "厚布外衣#|cffffffff|Hitem:200::::::::1:::::::::|h[厚布外衣]|h|r#1#22#17#护甲#布甲#INVTYPE_CHEST#1#135006#454",
+			[11737] = "贪婪圣典#|cff1eff00|Hitem:11737::::::::1:::::::::|h[贪婪圣典]|h|r#2#50#50#配方#书籍##1#133742#0",
+			[8424] = "砂囊口香糖#|cffffffff|Hitem:8424::::::::1:::::::::|h[砂囊口香糖]|h|r#1#1#0#消耗品#消耗品##1#133986#0",
+			[195] = "破布战靴#|cffffffff|Hitem:195::::::::1:::::::::|h[破布战靴]|h|r#1#5#1#护甲#布甲#INVTYPE_FEET#1#132539#7",
+			[10978] = "小块微光碎片#|cff0070dd|Hitem:10978::::::::1:::::::::|h[小块微光碎片]|h|r#3#20#0#商品#商品##20#132877#0",
+			[19699] = "拉扎什硬币#|cff1eff00|Hitem:19699::::::::1:::::::::|h[拉扎什硬币]|h|r#2#1#0#任务#任务##250#133793#0",
+			[18330] = "专注秘药#|cff1eff00|Hitem:18330::::::::1:::::::::|h[专注秘药]|h|r#2#50#0#任务#任务##1#134072#0",
+			[18334] = "防护圣典#|cff1eff00|Hitem:18334::::::::1:::::::::|h[防护圣典]|h|r#2#50#50#配方#书籍##1#133743#0",
+			[11751] = "燃烧精华#|cffffffff|Hitem:11751::::::::1:::::::::|h[燃烧精华]|h|r#1#1#0#任务#任务##5#135819#0",
+			[11753] = "卡加尔之眼#|cffffffff|Hitem:11753::::::::1:::::::::|h[卡加尔之眼]|h|r#1#1#0#任务#任务##1#136155#0",
+			[193] = "破布外衣#|cffffffff|Hitem:193::::::::1:::::::::|h[破布外衣]|h|r#1#5#1#护甲#布甲#INVTYPE_CHEST#1#135022#9",
+			[143] = "Monster - Shield, Stormwind Guard#|cff9d9d9d|Hitem:143::::::::1:::::::::|h[Monster - Shield, Stormwind Guard]|h|r#0#1#1#护甲#盾牌#INVTYPE_SHIELD#1#134951#1",
+			[13289] = "埃根的冲击器#|cffffffff|Hitem:13289::::::::1:::::::::|h[埃根的冲击器]|h|r#1#1#0#任务#任务#INVTYPE_RANGEDRIGHT#1#135614#0",
+			[3530] = "绒线绷带#|cffffffff|Hitem:3530::::::::1:::::::::|h[绒线绷带]|h|r#1#1#0#消耗品#消耗品##20#133684#28",
+			[10998] = "次级星界精华#|cff1eff00|Hitem:10998::::::::1:::::::::|h[次级星界精华]|h|r#2#20#0#商品#商品##10#132863#0",
+			[3531] = "厚绒线绷带#|cffffffff|Hitem:3531::::::::1:::::::::|h[厚绒线绷带]|h|r#1#1#0#消耗品#消耗品##20#133687#57",
+			[38] = "新兵衬衣#|cffffffff|Hitem:38::::::::1:::::::::|h[新兵衬衣]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135009#1",
+			[40] = "新兵之靴#|cffffffff|Hitem:40::::::::1:::::::::|h[新兵之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132540#1",
+			[42] = "OLDSquire's Belt#|cffffffff|Hitem:42::::::::1:::::::::|h[OLDSquire's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[44] = "侍从短裤#|cff9d9d9d|Hitem:44::::::::1:::::::::|h[侍从短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[46] = "OLDFootpad's Belt#|cffffffff|Hitem:46::::::::1:::::::::|h[OLDFootpad's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132495#1",
+			[48] = "潜行者短裤#|cff9d9d9d|Hitem:48::::::::1:::::::::|h[潜行者短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[18904] = "索尔宾的超级压缩器#|cffffffff|Hitem:18904::::::::1:::::::::|h[索尔宾的超级压缩器]|h|r#1#1#0#任务#任务##1#133003#0",
+			[22733] = "埃提耶什的法杖顶部#|cffff8000|Hitem:22733::::::::1:::::::::|h[埃提耶什的法杖顶部]|h|r#5#1#0#任务#任务##1#133573#0",
+			[54] = "OLDNovice's Belt#|cffffffff|Hitem:54::::::::1:::::::::|h[OLDNovice's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[2771] = "锡矿石#|cffffffff|Hitem:2771::::::::1:::::::::|h[锡矿石]|h|r#1#20#0#商品#商品##10#134579#25",
+			[58] = "OLDAcolyte's Belt#|cffffffff|Hitem:58::::::::1:::::::::|h[OLDAcolyte's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132492#1",
+			[2772] = "铁矿石#|cffffffff|Hitem:2772::::::::1:::::::::|h[铁矿石]|h|r#1#30#0#商品#商品##10#134572#150",
+			[159] = "清凉的泉水#|cffffffff|Hitem:159::::::::1:::::::::|h[清凉的泉水]|h|r#1#5#1#消耗品#消耗品##20#132794#1",
+			[14343] = "小块魔光碎片#|cff0070dd|Hitem:14343::::::::1:::::::::|h[小块魔光碎片]|h|r#3#50#0#商品#商品##20#132874#0",
+			[19701] = "古拉巴什硬币#|cff1eff00|Hitem:19701::::::::1:::::::::|h[古拉巴什硬币]|h|r#2#1#0#任务#任务##250#133790#0",
+			[20725] = "连结水晶#|cffa335ee|Hitem:20725::::::::1:::::::::|h[连结水晶]|h|r#4#60#0#商品#商品##20#132880#0",
+			[155] = "Deprecated Tauren Recruit's Belt#|cffffffff|Hitem:155::::::::1:::::::::|h[Deprecated Tauren Recruit's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[2775] = "银矿石#|cff1eff00|Hitem:2775::::::::1:::::::::|h[银矿石]|h|r#2#10#0#商品#商品##10#135242#75",
+			[154] = "粗糙的衬肩#|cffffffff|Hitem:154::::::::1:::::::::|h[粗糙的衬肩]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#133766#1",
+			[2776] = "金矿石#|cff1eff00|Hitem:2776::::::::1:::::::::|h[金矿石]|h|r#2#25#0#商品#商品##10#134566#500",
+			[1711] = "耐力卷轴 II#|cffffffff|Hitem:1711::::::::1:::::::::|h[耐力卷轴 II]|h|r#1#30#20#消耗品#消耗品##5#134943#75",
+			[153] = "粗糙的褶裙#|cff9d9d9d|Hitem:153::::::::1:::::::::|h[粗糙的褶裙]|h|r#0#1#1#护甲#皮甲#INVTYPE_LEGS#1#134582#1",
+			[100] = "Deprecated Dwarven Squire's Pants#|cff9d9d9d|Hitem:100::::::::1:::::::::|h[Deprecated Dwarven Squire's Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[104] = "Deprecated Sturdy Brown Pants#|cff9d9d9d|Hitem:104::::::::1:::::::::|h[Deprecated Sturdy Brown Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[1712] = "精神卷轴 II#|cffffffff|Hitem:1712::::::::1:::::::::|h[精神卷轴 II]|h|r#1#25#15#消耗品#消耗品##5#134937#62",
+			[150] = "Deprecated Tauren Apprentice Pants#|cff9d9d9d|Hitem:150::::::::1:::::::::|h[Deprecated Tauren Apprentice Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[11564] = "防御水晶#|cffffffff|Hitem:11564::::::::1:::::::::|h[防御水晶]|h|r#1#55#0#任务#任务##20#134129#1000",
+			[120] = "刺客短裤#|cff9d9d9d|Hitem:120::::::::1:::::::::|h[刺客短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[124] = "Deprecated Orc Apprentice Pants#|cff9d9d9d|Hitem:124::::::::1:::::::::|h[Deprecated Orc Apprentice Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[128] = "Deprecated Tauren Trapper's Pants#|cff9d9d9d|Hitem:128::::::::1:::::::::|h[Deprecated Tauren Trapper's Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[136] = "Deprecated Old Leather Boots#|cffffffff|Hitem:136::::::::1:::::::::|h[Deprecated Old Leather Boots]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[151] = "Deprecated Tauren Apprentice Shirt#|cffffffff|Hitem:151::::::::1:::::::::|h[Deprecated Tauren Apprentice Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[152] = "OLDPrimitive Leather Belt#|cffffffff|Hitem:152::::::::1:::::::::|h[OLDPrimitive Leather Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[149] = "Deprecated Tauren Apprentice Belt#|cffffffff|Hitem:149::::::::1:::::::::|h[Deprecated Tauren Apprentice Belt]|h|r#1#1#0#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[147] = "皱褶捕兽者短裤#|cff9d9d9d|Hitem:147::::::::1:::::::::|h[皱褶捕兽者短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[146] = "OLDRugged Trapper's Belt#|cffffffff|Hitem:146::::::::1:::::::::|h[OLDRugged Trapper's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[184] = "Deprecated Small Brown Pouch#|cffffffff|Hitem:184::::::::1:::::::::|h[Deprecated Small Brown Pouch]|h|r#1#5#0#容器#容器#INVTYPE_BAG#1#133622#125",
+			[35] = "弯曲的法杖#|cffffffff|Hitem:35::::::::1:::::::::|h[弯曲的法杖]|h|r#1#2#1#武器#法杖#INVTYPE_2HWEAPON#1#135145#9",
+			[11078] = "遗物宝箱钥匙#|cffffffff|Hitem:11078::::::::1:::::::::|h[遗物宝箱钥匙]|h|r#1#1#0#钥匙#钥匙##20#134237#0",
+			[59] = "侍僧鞋#|cffffffff|Hitem:59::::::::1:::::::::|h[侍僧鞋]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[11082] = "强效星界精华#|cff1eff00|Hitem:11082::::::::1:::::::::|h[强效星界精华]|h|r#2#25#0#商品#商品##10#132862#0",
+			[11084] = "大块微光碎片#|cff0070dd|Hitem:11084::::::::1:::::::::|h[大块微光碎片]|h|r#3#25#0#商品#商品##20#132876#0",
+			[135] = "Deprecated Stiff Leather Pants#|cff9d9d9d|Hitem:135::::::::1:::::::::|h[Deprecated Stiff Leather Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[50] = "OLDInitiate's Belt#|cffffffff|Hitem:50::::::::1:::::::::|h[OLDInitiate's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[57] = "侍僧长袍#|cff9d9d9d|Hitem:57::::::::1:::::::::|h[侍僧长袍]|h|r#0#1#1#护甲#布甲#INVTYPE_ROBE#1#132665#1",
+			[127] = "捕兽者衬衣#|cffffffff|Hitem:127::::::::1:::::::::|h[捕兽者衬衣]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135011#1",
+			[8544] = "魔纹绷带#|cffffffff|Hitem:8544::::::::1:::::::::|h[魔纹绷带]|h|r#1#1#0#消耗品#消耗品##20#133689#400",
+			[126] = "Deprecated Orc Apprentice Belt#|cffffffff|Hitem:126::::::::1:::::::::|h[Deprecated Orc Apprentice Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[125] = "Deprecated Orc Apprentice Boots#|cffffffff|Hitem:125::::::::1:::::::::|h[Deprecated Orc Apprentice Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[122] = "OLDThug Belt#|cffffffff|Hitem:122::::::::1:::::::::|h[OLDThug Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[16202] = "次级不灭精华#|cff1eff00|Hitem:16202::::::::1:::::::::|h[次级不灭精华]|h|r#2#50#0#商品#商品##10#132865#0",
+			[16204] = "幻影之尘#|cffffffff|Hitem:16204::::::::1:::::::::|h[幻影之尘]|h|r#1#55#0#商品#商品##20#132856#0",
+			[121] = "刺客之靴#|cffffffff|Hitem:121::::::::1:::::::::|h[刺客之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132539#1",
+			[52] = "见习牧师短裤#|cff9d9d9d|Hitem:52::::::::1:::::::::|h[见习牧师短裤]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[18331] = "防护秘药#|cff1eff00|Hitem:18331::::::::1:::::::::|h[防护秘药]|h|r#2#50#0#任务#任务##1#134072#0",
+			[18335] = "原始黑钻石#|cff0070dd|Hitem:18335::::::::1:::::::::|h[原始黑钻石]|h|r#3#0#0#其它#垃圾##20#134072#0",
+			[114] = "Deprecated Dwarven Apprentice Boots#|cffffffff|Hitem:114::::::::1:::::::::|h[Deprecated Dwarven Apprentice Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[56] = "学徒长袍#|cff9d9d9d|Hitem:56::::::::1:::::::::|h[学徒长袍]|h|r#0#1#1#护甲#布甲#INVTYPE_ROBE#1#132664#1",
+			[105] = "Deprecated Dwarven Recruit's Shirt#|cffffffff|Hitem:105::::::::1:::::::::|h[Deprecated Dwarven Recruit's Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[103] = "Deprecated Dwarven Recruit's Boots#|cffffffff|Hitem:103::::::::1:::::::::|h[Deprecated Dwarven Recruit's Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[101] = "Deprecated Dwarven Squire's Shirt#|cffffffff|Hitem:101::::::::1:::::::::|h[Deprecated Dwarven Squire's Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[129] = "皱褶捕兽者之靴#|cffffffff|Hitem:129::::::::1:::::::::|h[皱褶捕兽者之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132540#1",
+			[137] = "OLDNeophyte's Belt#|cffffffff|Hitem:137::::::::1:::::::::|h[OLDNeophyte's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[92] = "OLDDwarven Initiate's Boots#|cffffffff|Hitem:92::::::::1:::::::::|h[OLDDwarven Initiate's Boots]|h|r#1#1#1#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[10620] = "瑟银矿石#|cffffffff|Hitem:10620::::::::1:::::::::|h[瑟银矿石]|h|r#1#40#0#商品#商品##10#134578#250",
+			[3819] = "冬刺草#|cffffffff|Hitem:3819::::::::1:::::::::|h[冬刺草]|h|r#1#39#0#商品#商品##20#133940#100",
+			[8839] = "盲目草#|cffffffff|Hitem:8839::::::::1:::::::::|h[盲目草]|h|r#1#47#0#商品#商品##20#134195#375",
+			[2290] = "智力卷轴 II#|cffffffff|Hitem:2290::::::::1:::::::::|h[智力卷轴 II]|h|r#1#30#20#消耗品#消耗品##5#134937#75",
+			[11138] = "小块闪光碎片#|cff0070dd|Hitem:11138::::::::1:::::::::|h[小块闪光碎片]|h|r#3#30#0#商品#商品##20#132879#0",
+			[22726] = "埃提耶什的碎片#|cffff8000|Hitem:22726::::::::1:::::::::|h[埃提耶什的碎片]|h|r#5#60#60#其它#垃圾##40#134888#0",
+			[201] = "厚布短裤#|cffffffff|Hitem:201::::::::1:::::::::|h[厚布短裤]|h|r#1#22#17#护甲#布甲#INVTYPE_LEGS#1#134592#455",
+			[22734] = "埃提耶什的杖柄末端#|cffff8000|Hitem:22734::::::::1:::::::::|h[埃提耶什的杖柄末端]|h|r#5#1#0#任务#任务##1#134909#0",
+			[60] = "夹层外衣#|cffffffff|Hitem:60::::::::1:::::::::|h[夹层外衣]|h|r#1#5#0#护甲#皮甲#INVTYPE_CHEST#1#132724#12",
+			[88] = "Deprecated Old Pants#|cff9d9d9d|Hitem:88::::::::1:::::::::|h[Deprecated Old Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[86] = "Deprecated Old Belt#|cffffffff|Hitem:86::::::::1:::::::::|h[Deprecated Old Belt]|h|r#1#1#0#护甲#其它#INVTYPE_WAIST#1#132493#1",
+			[85] = "肮脏的皮外衣#|cffffffff|Hitem:85::::::::1:::::::::|h[肮脏的皮外衣]|h|r#1#5#1#护甲#皮甲#INVTYPE_CHEST#1#135011#12",
+			[80] = "柔软的毛边鞋#|cffffffff|Hitem:80::::::::1:::::::::|h[柔软的毛边鞋]|h|r#1#5#0#护甲#布甲#INVTYPE_FEET#1#132543#7",
+			[19698] = "祖利安硬币#|cff1eff00|Hitem:19698::::::::1:::::::::|h[祖利安硬币]|h|r#2#1#0#任务#任务##250#133606#0",
+			[19702] = "邪枝硬币#|cff1eff00|Hitem:19702::::::::1:::::::::|h[邪枝硬币]|h|r#2#1#0#任务#任务##250#133796#0",
+			[19706] = "血顶硬币#|cff1eff00|Hitem:19706::::::::1:::::::::|h[血顶硬币]|h|r#2#1#0#任务#任务##250#133794#0",
+			[77] = "Deprecated Outfitter Cloth Armor#|cffffffff|Hitem:77::::::::1:::::::::|h[Deprecated Outfitter Cloth Armor]|h|r#1#4#0#护甲#布甲#INVTYPE_CHEST#1#135006#6",
+			[61] = "矮人皮质短裤#|cffffffff|Hitem:61::::::::1:::::::::|h[矮人皮质短裤]|h|r#1#5#0#护甲#皮甲#INVTYPE_LEGS#1#134706#12",
+			[8149] = "巫毒咒符#|cffffffff|Hitem:8149::::::::1:::::::::|h[巫毒咒符]|h|r#1#1#0#任务#任务##1#132502#0",
+			[89] = "OLDThick Trapper's Shirt#|cffffffff|Hitem:89::::::::1:::::::::|h[OLDThick Trapper's Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135011#1",
+			[93] = "OLDDwarven Initiate's Shirt#|cffffffff|Hitem:93::::::::1:::::::::|h[OLDDwarven Initiate's Shirt]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#135005#1",
+			[97] = "Deprecated Dwarven Novice's Robe#|cff9d9d9d|Hitem:97::::::::1:::::::::|h[Deprecated Dwarven Novice's Robe]|h|r#0#1#1#护甲#布甲#INVTYPE_ROBE#1#132662#1",
+			[11174] = "次级虚空精华#|cff1eff00|Hitem:11174::::::::1:::::::::|h[次级虚空精华]|h|r#2#40#0#商品#商品##10#132871#0",
+			[11176] = "梦境之尘#|cffffffff|Hitem:11176::::::::1:::::::::|h[梦境之尘]|h|r#1#45#0#商品#商品##20#132855#0",
+			[11178] = "大块强光碎片#|cff0070dd|Hitem:11178::::::::1:::::::::|h[大块强光碎片]|h|r#3#45#0#商品#商品##20#132883#0",
+			[113] = "Deprecated Dwarven Apprentice Pants#|cff9d9d9d|Hitem:113::::::::1:::::::::|h[Deprecated Dwarven Apprentice Pants]|h|r#0#1#1#护甲#布甲#INVTYPE_LEGS#1#134582#1",
+			[117] = "硬肉干#|cffffffff|Hitem:117::::::::1:::::::::|h[硬肉干]|h|r#1#5#1#消耗品#消耗品##20#133972#1",
+			[17204] = "萨弗拉斯之眼#|cffff8000|Hitem:17204::::::::1:::::::::|h[萨弗拉斯之眼]|h|r#5#60#0#商品#商品##1#134124#200000",
+			[11951] = "鞭根块茎#|cffffffff|Hitem:11951::::::::1:::::::::|h[鞭根块茎]|h|r#1#55#45#消耗品#消耗品##20#134011#0",
+			[130] = "Deprecated Tauren Trapper's Belt#|cffffffff|Hitem:130::::::::1:::::::::|h[Deprecated Tauren Trapper's Belt]|h|r#1#1#1#护甲#其它#INVTYPE_WAIST#1#132494#1",
+			[138] = "Deprecated War Harness#|cffffffff|Hitem:138::::::::1:::::::::|h[Deprecated War Harness]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#132719#1",
+			[835] = "大绳网#|cffffffff|Hitem:835::::::::1:::::::::|h[大绳网]|h|r#1#12#2#消耗品#消耗品##1#134325#23",
+			[10939] = "强效魔法精华#|cff1eff00|Hitem:10939::::::::1:::::::::|h[强效魔法精华]|h|r#2#15#0#商品#商品##10#132866#0",
+			[11952] = "夜龙之息#|cffffffff|Hitem:11952::::::::1:::::::::|h[夜龙之息]|h|r#1#55#45#消耗品#消耗品##20#134001#0",
+			[19017] = "火焰之王的精华#|cffff8000|Hitem:19017::::::::1:::::::::|h[火焰之王的精华]|h|r#5#1#0#任务#任务##1#135826#0",
+			[7911] = "真银矿石#|cff1eff00|Hitem:7911::::::::1:::::::::|h[真银矿石]|h|r#2#40#0#商品#商品##10#134580#500",
+			[22637] = "原始哈卡莱神像#|cff0070dd|Hitem:22637::::::::1:::::::::|h[原始哈卡莱神像]|h|r#3#60#58#其它#垃圾##1#135723#0",
+			[194] = "破布短裤#|cffffffff|Hitem:194::::::::1:::::::::|h[破布短裤]|h|r#1#5#1#护甲#布甲#INVTYPE_LEGS#1#134592#9",
+			[202] = "厚布鞋#|cffffffff|Hitem:202::::::::1:::::::::|h[厚布鞋]|h|r#1#22#17#护甲#布甲#INVTYPE_FEET#1#132539#342",
+			[210] = "肮脏的皮靴#|cffffffff|Hitem:210::::::::1:::::::::|h[肮脏的皮靴]|h|r#1#5#1#护甲#皮甲#INVTYPE_FEET#1#132540#9",
+			[36] = "用旧的钉锤#|cffffffff|Hitem:36::::::::1:::::::::|h[用旧的钉锤]|h|r#1#2#1#武器#单手锤#INVTYPE_WEAPONMAINHAND#1#133478#7",
+			[43] = "侍从之靴#|cffffffff|Hitem:43::::::::1:::::::::|h[侍从之靴]|h|r#1#1#0#护甲#其它#INVTYPE_FEET#1#132535#1",
+			[14529] = "符文布绷带#|cffffffff|Hitem:14529::::::::1:::::::::|h[符文布绷带]|h|r#1#52#0#消耗品#消耗品##20#133681#500",
+			[8411] = "肺片鸡尾酒#|cffffffff|Hitem:8411::::::::1:::::::::|h[肺片鸡尾酒]|h|r#1#1#0#消耗品#消耗品##1#132799#0",
+			[1478] = "保护卷轴 II#|cffffffff|Hitem:1478::::::::1:::::::::|h[保护卷轴 II]|h|r#1#25#15#消耗品#消耗品##5#134943#62",
+			[6125] = "争斗者甲胄#|cffffffff|Hitem:6125::::::::1:::::::::|h[争斗者甲胄]|h|r#1#1#0#护甲#其它#INVTYPE_BODY#1#132719#1",
+			[11732] = "沉思圣典#|cff1eff00|Hitem:11732::::::::1:::::::::|h[沉思圣典]|h|r#2#50#50#配方#书籍##1#133738#0",
+			[11734] = "坚韧圣典#|cff1eff00|Hitem:11734::::::::1:::::::::|h[坚韧圣典]|h|r#2#50#50#配方#书籍##1#133739#0",
+			[11736] = "恢复圣典#|cff1eff00|Hitem:11736::::::::1:::::::::|h[恢复圣典]|h|r#2#50#50#配方#书籍##1#133737#0",
+			[11083] = "灵魂之尘#|cffffffff|Hitem:11083::::::::1:::::::::|h[灵魂之尘]|h|r#1#25#0#商品#商品##20#132857#0",
+			[21519] = "槲寄生#|cffffffff|Hitem:21519::::::::1:::::::::|h[槲寄生]|h|r#1#1#0#其它#垃圾##20#134189#0",
+			[17626] = "霜狼口套#|cffffffff|Hitem:17626::::::::1:::::::::|h[霜狼口套]|h|r#1#1#0#任务#任务##1#133565#0",
+			[6451] = "厚丝质绷带#|cffffffff|Hitem:6451::::::::1:::::::::|h[厚丝质绷带]|h|r#1#1#0#消耗品#消耗品##20#133672#400",
+			[19858] = "赞达拉荣誉勋章#|cff1eff00|Hitem:19858::::::::1:::::::::|h[赞达拉荣誉勋章]|h|r#2#1#0#任务#任务##250#133791#0",
+			[18332] = "急速圣典#|cff1eff00|Hitem:18332::::::::1:::::::::|h[急速圣典]|h|r#2#50#50#配方#书籍##1#133734#0",
+			[4604] = "森林蘑菇#|cffffffff|Hitem:4604::::::::1:::::::::|h[森林蘑菇]|h|r#1#5#1#消耗品#消耗品##20#134534#1",
+			[11752] = "被折磨者的血液#|cffffffff|Hitem:11752::::::::1:::::::::|h[被折磨者的血液]|h|r#1#0#0#任务#任务##5#134849#0",
+			[11754] = "黑钻石#|cff1eff00|Hitem:11754::::::::1:::::::::|h[黑钻石]|h|r#2#0#0#其它#垃圾##20#134071#0",
+			[25] = "破损的短剑#|cffffffff|Hitem:25::::::::1:::::::::|h[破损的短剑]|h|r#1#2#1#武器#单手剑#INVTYPE_WEAPONMAINHAND#1#135274#7",
+			[18563] = "逐风者禁锢之颅#|cffff8000|Hitem:18563::::::::1:::::::::|h[逐风者禁锢之颅]|h|r#5#70#0#其它#垃圾##1#135988#0",
+			[11733] = "体质圣典#|cff1eff00|Hitem:11733::::::::1:::::::::|h[体质圣典]|h|r#2#50#50#配方#书籍##1#133733#0",
+		},
+		["merchant_buy"] = {
+		},
+		["crafting_cost"] = true,
+		["post_duration"] = 2,
+		["auctionable_items"] = {
+			"哈卡莱硬币", -- [1]
+			"急速圣典", -- [2]
+			"遗物宝箱钥匙", -- [3]
+			"古拉巴什硬币", -- [4]
+			"沙怒硬币", -- [5]
+			"碎颅硬币", -- [6]
+			"恢复圣典", -- [7]
+			"坚韧圣典", -- [8]
+			"黑暗守护者钥匙", -- [9]
+			"沉思圣典", -- [10]
+			"枯木硬币", -- [11]
+			"祖利安硬币", -- [12]
+			"邪枝硬币", -- [13]
+			"体质圣典", -- [14]
+			"萨弗隆战锤", -- [15]
+			"专注圣典", -- [16]
+			"贪婪圣典", -- [17]
+			"血顶硬币", -- [18]
+			"拉扎什硬币", -- [19]
+			"防护圣典", -- [20]
+			"黑钻石", -- [21]
+			"大块魔光碎片", -- [22]
+			"原始黑钻石", -- [23]
+			"打孔的巫毒人偶", -- [24]
+			"源质锭", -- [25]
+			"打斗者短裤", -- [26]
+			"次级秘法精华", -- [27]
+			"争斗者甲胄", -- [28]
+			"森林蘑菇", -- [29]
+			"锡矿石", -- [30]
+			"打斗者之靴", -- [31]
+			"真银矿石", -- [32]
+			"用旧的木盾", -- [33]
+			"金矿石", -- [34]
+			"卡德加的胡须", -- [35]
+			"小块魔光碎片", -- [36]
+			"破损的短剑", -- [37]
+			"次级星界精华", -- [38]
+			"亚麻绷带", -- [39]
+			"敏捷卷轴", -- [40]
+			"耐力卷轴 ii", -- [41]
+			"厚绒线绷带", -- [42]
+			"耐力卷轴", -- [43]
+			"六魔包", -- [44]
+			"厚符文布绷带", -- [45]
+			"霜狼口套", -- [46]
+			"次级不灭精华", -- [47]
+			"厚魔纹绷带", -- [48]
+			"符文布绷带", -- [49]
+			"绒线绷带", -- [50]
+			"智力卷轴 ii", -- [51]
+			"厚亚麻绷带", -- [52]
+			"丝质绷带", -- [53]
+			"魔纹绷带", -- [54]
+			"保护卷轴 ii", -- [55]
+			"厚丝质绷带", -- [56]
+			"精神卷轴 ii", -- [57]
+			"灵魂之尘", -- [58]
+			"次级虚空精华", -- [59]
+			"次级魔法精华", -- [60]
+			"银矿石", -- [61]
+			"盲目草", -- [62]
+			"活根草", -- [63]
+			"铁矿石", -- [64]
+			"强效星界精华", -- [65]
+			"梦境之尘", -- [66]
+			"小块闪光碎片", -- [67]
+			"大块强光碎片", -- [68]
+			"地根草", -- [69]
+			"秘银矿石", -- [70]
+			"强效秘法精华", -- [71]
+			"跌打草", -- [72]
+			"幻影之尘", -- [73]
+			"小块微光碎片", -- [74]
+			"大块闪光碎片", -- [75]
+			"冬刺草", -- [76]
+			"瑟银矿石", -- [77]
+			"大块微光碎片", -- [78]
+			"连结水晶", -- [79]
+			"奇异之尘", -- [80]
+			"小块强光碎片", -- [81]
+			"强效不灭精华", -- [82]
+			"强效虚空精华", -- [83]
+			"强效魔法精华", -- [84]
+			"幻象之尘", -- [85]
+			"弯曲的法杖", -- [86]
+			"用旧的钉锤", -- [87]
+			"破损的斧头", -- [88]
+			"新兵衬衣", -- [89]
+			"新兵短裤", -- [90]
+			"新兵之靴", -- [91]
+			"oldrecruit's belt", -- [92]
+			"oldsquire's belt", -- [93]
+			"侍从之靴", -- [94]
+			"侍从短裤", -- [95]
+			"侍从衬衣", -- [96]
+			"oldfootpad's belt", -- [97]
+			"潜行者之鞋", -- [98]
+			"潜行者短裤", -- [99]
+			"潜行者衬衣", -- [100]
+			"oldinitiate's belt", -- [101]
+			"见习牧师之靴", -- [102]
+			"见习牧师短裤", -- [103]
+			"见习牧师衬衣", -- [104]
+			"oldnovice's belt", -- [105]
+			"学徒之靴", -- [106]
+			"学徒长袍", -- [107]
+			"侍僧长袍", -- [108]
+			"oldacolyte's belt", -- [109]
+			"侍僧鞋", -- [110]
+			"deprecated outfitter cloth armor", -- [111]
+			"肮脏的皮外衣", -- [112]
+			"deprecated old belt", -- [113]
+			"deprecated old boots", -- [114]
+			"deprecated old pants", -- [115]
+			"oldthick trapper's shirt", -- [116]
+			"olddwarven initiate's belt", -- [117]
+			"olddwarven initiate's pants", -- [118]
+			"olddwarven initiate's boots", -- [119]
+			"olddwarven initiate's shirt", -- [120]
+			"deprecated dwarven novice's belt", -- [121]
+			"deprecated dwarven novice's boots", -- [122]
+			"deprecated dwarven novice's robe", -- [123]
+			"deprecated dwarven squire's belt", -- [124]
+			"deprecated dwarven squire's boots", -- [125]
+			"deprecated dwarven squire's pants", -- [126]
+			"deprecated dwarven squire's shirt", -- [127]
+			"deprecated dwarven recruit's belt", -- [128]
+			"deprecated dwarven recruit's boots", -- [129]
+			"deprecated sturdy brown pants", -- [130]
+			"deprecated dwarven recruit's shirt", -- [131]
+			"deprecated dwarven apprentice pants", -- [132]
+			"deprecated dwarven apprentice boots", -- [133]
+			"deprecated dwarven apprentice belt", -- [134]
+			"硬肉干", -- [135]
+			"初级治疗药水", -- [136]
+			"deprecated rogue's vest", -- [137]
+			"刺客短裤", -- [138]
+			"刺客之靴", -- [139]
+			"oldthug belt", -- [140]
+			"deprecated orc apprentice shirt", -- [141]
+			"deprecated orc apprentice pants", -- [142]
+			"deprecated orc apprentice boots", -- [143]
+			"deprecated orc apprentice belt", -- [144]
+			"捕兽者衬衣", -- [145]
+			"deprecated tauren trapper's pants", -- [146]
+			"皱褶捕兽者之靴", -- [147]
+			"deprecated tauren trapper's belt", -- [148]
+			"deprecated orc acolyte's belt", -- [149]
+			"deprecated orc acolyte's boots", -- [150]
+			"deprecated orc acolyte's shirt", -- [151]
+			"deprecated stiff leather shirt", -- [152]
+			"deprecated stiff leather pants", -- [153]
+			"deprecated old leather boots", -- [154]
+			"oldneophyte's belt", -- [155]
+			"deprecated war harness", -- [156]
+			"oldbrawler's belt", -- [157]
+			"monster - shield, stormwind guard", -- [158]
+			"oldrugged trapper's belt", -- [159]
+			"皱褶捕兽者短裤", -- [160]
+			"皱褶捕兽者衬衣", -- [161]
+			"deprecated tauren apprentice belt", -- [162]
+			"deprecated tauren apprentice pants", -- [163]
+			"deprecated tauren apprentice shirt", -- [164]
+			"oldprimitive leather belt", -- [165]
+			"粗糙的褶裙", -- [166]
+			"粗糙的衬肩", -- [167]
+			"deprecated tauren recruit's belt", -- [168]
+			"deprecated tauren recruit's pants", -- [169]
+			"deprecated tauren recruit's shirt", -- [170]
+			"清凉的泉水", -- [171]
+			"deprecated small brown pouch", -- [172]
+			"破布外衣", -- [173]
+			"破布短裤", -- [174]
+			"破布战靴", -- [175]
+			"厚布外衣", -- [176]
+			"厚布短裤", -- [177]
+			"厚布鞋", -- [178]
+			"厚布手套", -- [179]
+			"肮脏的皮裤", -- [180]
+			"肮脏的皮靴", -- [181]
+			"硬皮甲", -- [182]
+			"硬皮短裤", -- [183]
+			"硬皮战靴", -- [184]
+			"硬皮手套", -- [185]
+		},
+		["unused_item_ids"] = {
+			true, -- [1]
+			true, -- [2]
+			true, -- [3]
+			true, -- [4]
+			true, -- [5]
+			true, -- [6]
+			true, -- [7]
+			true, -- [8]
+			true, -- [9]
+			true, -- [10]
+			true, -- [11]
+			true, -- [12]
+			true, -- [13]
+			true, -- [14]
+			true, -- [15]
+			true, -- [16]
+			true, -- [17]
+			true, -- [18]
+			true, -- [19]
+			true, -- [20]
+			true, -- [21]
+			true, -- [22]
+			true, -- [23]
+			true, -- [24]
+			nil, -- [25]
+			true, -- [26]
+			true, -- [27]
+			true, -- [28]
+			true, -- [29]
+			true, -- [30]
+			true, -- [31]
+			true, -- [32]
+			true, -- [33]
+			true, -- [34]
+			nil, -- [35]
+			nil, -- [36]
+			nil, -- [37]
+			nil, -- [38]
+			nil, -- [39]
+			nil, -- [40]
+			nil, -- [41]
+			nil, -- [42]
+			nil, -- [43]
+			nil, -- [44]
+			nil, -- [45]
+			nil, -- [46]
+			nil, -- [47]
+			nil, -- [48]
+			nil, -- [49]
+			nil, -- [50]
+			nil, -- [51]
+			nil, -- [52]
+			nil, -- [53]
+			nil, -- [54]
+			nil, -- [55]
+			nil, -- [56]
+			nil, -- [57]
+			nil, -- [58]
+			nil, -- [59]
+			nil, -- [60]
+			nil, -- [61]
+			true, -- [62]
+			true, -- [63]
+			true, -- [64]
+			true, -- [65]
+			true, -- [66]
+			true, -- [67]
+			true, -- [68]
+			true, -- [69]
+			true, -- [70]
+			true, -- [71]
+			true, -- [72]
+			true, -- [73]
+			true, -- [74]
+			true, -- [75]
+			true, -- [76]
+			nil, -- [77]
+			true, -- [78]
+			nil, -- [79]
+			nil, -- [80]
+			true, -- [81]
+			true, -- [82]
+			true, -- [83]
+			true, -- [84]
+			[158] = true,
+			[190] = true,
+			[222] = true,
+			[254] = true,
+			[111650] = true,
+			[28767] = true,
+			[108297] = true,
+			[108329] = true,
+			[191] = true,
+			[35625] = true,
+			[255] = true,
+			[74252] = true,
+			[111651] = true,
+			[96] = true,
+			[112] = true,
+			[52185] = true,
+			[160] = true,
+			[192] = true,
+			[36903] = true,
+			[109991] = true,
+			[111652] = true,
+			[257] = true,
+			[21885] = true,
+			[23426] = true,
+			[108299] = true,
+			[42732] = true,
+			[161] = true,
+			[225] = true,
+			[22452] = true,
+			[37702] = true,
+			[111589] = true,
+			[108300] = true,
+			[162] = true,
+			[22572] = true,
+			[260] = true,
+			[32321] = true,
+			[261] = true,
+			[108301] = true,
+			[160711] = true,
+			[108365] = true,
+			[52985] = true,
+			[35627] = true,
+			[262] = true,
+			[37703] = true,
+			[108302] = true,
+			[164] = true,
+			[196] = true,
+			[228] = true,
+			[264] = true,
+			[111656] = true,
+			[265] = true,
+			[21886] = true,
+			[23427] = true,
+			[108303] = true,
+			[140786] = true,
+			[165] = true,
+			[197] = true,
+			[229] = true,
+			[41265] = true,
+			[37704] = true,
+			[34191] = true,
+			[21990] = true,
+			[95497] = true,
+			[108304] = true,
+			[108336] = true,
+			[166] = true,
+			[198] = true,
+			[22573] = true,
+			[268] = true,
+			[41058] = true,
+			[111658] = true,
+			[269] = true,
+			[108305] = true,
+			[152543] = true,
+			[167] = true,
+			[199] = true,
+			[231] = true,
+			[270] = true,
+			[37705] = true,
+			[111595] = true,
+			[152544] = true,
+			[108306] = true,
+			[152545] = true,
+			[168] = true,
+			[232] = true,
+			[34368] = true,
+			[174327] = true,
+			[94222] = true,
+			[152546] = true,
+			[109137] = true,
+			[111245] = true,
+			[97512] = true,
+			[108307] = true,
+			[152547] = true,
+			[169] = true,
+			[52988] = true,
+			[22446] = true,
+			[32698] = true,
+			[152548] = true,
+			[109138] = true,
+			[21991] = true,
+			[108308] = true,
+			[36860] = true,
+			[170] = true,
+			[22574] = true,
+			[168646] = true,
+			[111662] = true,
+			[109139] = true,
+			[108309] = true,
+			[72092] = true,
+			[235] = true,
+			[111663] = true,
+			[109140] = true,
+			[34721] = true,
+			[52718] = true,
+			[204] = true,
+			[36909] = true,
+			[111664] = true,
+			[109141] = true,
+			[32092] = true,
+			[173] = true,
+			[205] = true,
+			[22447] = true,
+			[53038] = true,
+			[111601] = true,
+			[111665] = true,
+			[109142] = true,
+			[34722] = true,
+			[142] = true,
+			[52719] = true,
+			[206] = true,
+			[36910] = true,
+			[111666] = true,
+			[109143] = true,
+			[34052] = true,
+			[175] = true,
+			[207] = true,
+			[24268] = true,
+			[111667] = true,
+			[109144] = true,
+			[144] = true,
+			[52720] = true,
+			[208] = true,
+			[240] = true,
+			[116139] = true,
+			[111668] = true,
+			[145] = true,
+			[177] = true,
+			[241] = true,
+			[22456] = true,
+			[90175] = true,
+			[111669] = true,
+			[17953] = true,
+			[178] = true,
+			[36912] = true,
+			[111670] = true,
+			[179] = true,
+			[211] = true,
+			[243] = true,
+			[37727] = true,
+			[24269] = true,
+			[111671] = true,
+			[31463] = true,
+			[22792] = true,
+			[108350] = true,
+			[180] = true,
+			[212] = true,
+			[32825] = true,
+			[113588] = true,
+			[111672] = true,
+			[108319] = true,
+			[34055] = true,
+			[181] = true,
+			[213] = true,
+			[245] = true,
+			[22457] = true,
+			[111673] = true,
+			[107] = true,
+			[97621] = true,
+			[214] = true,
+			[22577] = true,
+			[136605] = true,
+			[109119] = true,
+			[34471] = true,
+			[34056] = true,
+			[183] = true,
+			[215] = true,
+			[247] = true,
+			[111675] = true,
+			[271] = true,
+			[272] = true,
+			[267] = true,
+			[133925] = true,
+			[266] = true,
+			[108] = true,
+			[108322] = true,
+			[263] = true,
+			[259] = true,
+			[216] = true,
+			[248] = true,
+			[258] = true,
+			[256] = true,
+			[253] = true,
+			[109624] = true,
+			[111676] = true,
+			[250] = true,
+			[152549] = true,
+			[234] = true,
+			[246] = true,
+			[23424] = true,
+			[244] = true,
+			[242] = true,
+			[233] = true,
+			[185] = true,
+			[35622] = true,
+			[249] = true,
+			[230] = true,
+			[227] = true,
+			[226] = true,
+			[224] = true,
+			[223] = true,
+			[221] = true,
+			[219] = true,
+			[174328] = true,
+			[163] = true,
+			[171] = true,
+			[109] = true,
+			[74637] = true,
+			[52721] = true,
+			[186] = true,
+			[218] = true,
+			[22578] = true,
+			[74247] = true,
+			[72235] = true,
+			[41509] = true,
+			[108294] = true,
+			[35278] = true,
+			[108326] = true,
+			[217] = true,
+			[174] = true,
+			[34053] = true,
+			[33278] = true,
+			[108325] = true,
+			[106] = true,
+			[187] = true,
+			[35623] = true,
+			[251] = true,
+			[111674] = true,
+			[22576] = true,
+			[172] = true,
+			[108391] = true,
+			[109124] = true,
+			[37701] = true,
+			[33119] = true,
+			[111659] = true,
+			[109625] = true,
+			[110] = true,
+			[52183] = true,
+			[61323] = true,
+			[188] = true,
+			[220] = true,
+			[252] = true,
+			[115502] = true,
+			[46954] = true,
+			[108296] = true,
+			[111] = true,
+			[109125] = true,
+			[115504] = true,
+			[108298] = true,
+			[21884] = true,
+			[156930] = true,
+			[23425] = true,
+			[108295] = true,
+			[35624] = true,
+			[63427] = true,
+			[189] = true,
+			[33069] = true,
+			[22451] = true,
+			[37700] = true,
+			[108362] = true,
+			[23836] = true,
+			[129055] = true,
+			[176] = true,
+			[116] = true,
+			[108353] = true,
+			[37887] = true,
+			[75208] = true,
+			[168302] = true,
+			[22575] = true,
+		},
+		["item_ids"] = {
+			["用旧的钉锤"] = 36,
+			["oldsquire's belt"] = 42,
+			["大块闪光碎片"] = 11139,
+			["deprecated old pants"] = 88,
+			["deprecated dwarven apprentice belt"] = 115,
+			["破损的斧头"] = 37,
+			["专注秘药"] = 18330,
+			["敏捷卷轴"] = 3012,
+			["血顶硬币"] = 19706,
+			["deprecated orc apprentice belt"] = 126,
+			["六魔包"] = 7734,
+			["活根草"] = 3357,
+			["次级星界精华"] = 10998,
+			["萨弗拉斯之眼"] = 17204,
+			["硬皮战靴"] = 238,
+			["deprecated tauren apprentice pants"] = 150,
+			["侍从之靴"] = 43,
+			["十字军徽记"] = 22524,
+			["侍僧长袍"] = 57,
+			["幻影之尘"] = 16204,
+			["deprecated old belt"] = 86,
+			["强效虚空精华"] = 11175,
+			["原始哈卡莱神像"] = 22637,
+			["幻象之尘"] = 11137,
+			["埃提耶什的法杖顶部"] = 22733,
+			["防护圣典"] = 18334,
+			["卡德加的胡须"] = 3358,
+			["新兵短裤"] = 39,
+			["耶维尔的瓶子"] = 18663,
+			["埃提耶什的碎片"] = 22726,
+			["秘银矿石"] = 3858,
+			["deprecated dwarven novice's boots"] = 95,
+			["deprecated tauren recruit's shirt"] = 157,
+			["绒线绷带"] = 3530,
+			["deprecated dwarven squire's boots"] = 99,
+			["硬皮短裤"] = 237,
+			["破损的短剑"] = 25,
+			["坚韧圣典"] = 11734,
+			["粗糙的褶裙"] = 153,
+			["deprecated dwarven apprentice pants"] = 113,
+			["次级秘法精华"] = 11134,
+			["连结水晶"] = 20725,
+			["原始黑钻石"] = 18335,
+			["oldfootpad's belt"] = 46,
+			["olddwarven initiate's shirt"] = 93,
+			["打斗者之靴"] = 140,
+			["硬皮手套"] = 239,
+			["被折磨者的血液"] = 11752,
+			["肮脏的皮靴"] = 210,
+			["肮脏的皮裤"] = 209,
+			["皱褶捕兽者衬衣"] = 148,
+			["deprecated old leather boots"] = 136,
+			["厚布鞋"] = 202,
+			["跌打草"] = 2453,
+			["厚布短裤"] = 201,
+			["沉思圣典"] = 11732,
+			["deprecated orc apprentice shirt"] = 123,
+			["deprecated small brown pouch"] = 184,
+			["矮人皮质短裤"] = 61,
+			["防护秘药"] = 18331,
+			["破布战靴"] = 195,
+			["矮人布质短裤"] = 79,
+			["deprecated sturdy brown pants"] = 104,
+			["巫毒咒符"] = 8149,
+			["古拉巴什硬币"] = 19701,
+			["破布外衣"] = 193,
+			["加瑞克的头颅"] = 182,
+			["新兵之靴"] = 40,
+			["体质圣典"] = 11733,
+			["清凉的泉水"] = 159,
+			["大块强光碎片"] = 11178,
+			["厚绒线绷带"] = 3531,
+			["deprecated dwarven squire's shirt"] = 101,
+			["肺片鸡尾酒"] = 8411,
+			["夜龙之息"] = 11952,
+			["deprecated dwarven squire's pants"] = 100,
+			["厚亚麻绷带"] = 2581,
+			["打斗者短裤"] = 139,
+			["砂囊口香糖"] = 8424,
+			["deprecated tauren recruit's belt"] = 155,
+			["哈卡莱硬币"] = 19700,
+			["粗糙的衬肩"] = 154,
+			["deprecated orc apprentice boots"] = 125,
+			["deprecated tauren apprentice shirt"] = 151,
+			["deprecated tauren apprentice belt"] = 149,
+			["侍从衬衣"] = 45,
+			["厚布手套"] = 203,
+			["oldneophyte's belt"] = 137,
+			["刺客短裤"] = 120,
+			["olddwarven initiate's pants"] = 91,
+			["oldrugged trapper's belt"] = 146,
+			["锡矿石"] = 2771,
+			["瑟银矿石"] = 10620,
+			["燃烧精华"] = 11751,
+			["智力卷轴 ii"] = 2290,
+			["源质锭"] = 17771,
+			["新兵衬衣"] = 38,
+			["monster - shield, stormwind guard"] = 143,
+			["厚符文布绷带"] = 14530,
+			["地根草"] = 2449,
+			["deprecated war harness"] = 138,
+			["deprecated stiff leather pants"] = 135,
+			["deprecated stiff leather shirt"] = 134,
+			["deprecated orc acolyte's shirt"] = 133,
+			["拉扎什硬币"] = 19699,
+			["卡加尔之眼"] = 11753,
+			["大块微光碎片"] = 11084,
+			["索尔宾的超级压缩器"] = 18904,
+			["deprecated orc acolyte's boots"] = 132,
+			["萨弗隆战锤"] = 17193,
+			["逐风者禁锢之颅"] = 18563,
+			["小块闪光碎片"] = 11138,
+			["刺客之靴"] = 121,
+			["防御水晶"] = 11564,
+			["符文布绷带"] = 14529,
+			["银矿石"] = 2775,
+			["deprecated orc acolyte's belt"] = 131,
+			["deprecated tauren trapper's belt"] = 130,
+			["皱褶捕兽者之靴"] = 129,
+			["精神卷轴 ii"] = 1712,
+			["黑暗守护者钥匙"] = 11197,
+			["deprecated tauren trapper's pants"] = 128,
+			["捕兽者衬衣"] = 127,
+			["贪婪圣典"] = 11737,
+			["oldprimitive leather belt"] = 152,
+			["小块强光碎片"] = 11177,
+			["炉石"] = 6948,
+			["小块微光碎片"] = 10978,
+			["oldthug belt"] = 122,
+			["恢复圣典"] = 11736,
+			["槲寄生"] = 21519,
+			["皱褶捕兽者短裤"] = 147,
+			["硬皮甲"] = 236,
+			["冬刺草"] = 3819,
+			["初级治疗药水"] = 118,
+			["急速秘药"] = 18329,
+			["强效魔法精华"] = 10939,
+			["deprecated dwarven apprentice boots"] = 114,
+			["硬肉干"] = 117,
+			["霜狼口套"] = 17626,
+			["deprecated dwarven recruit's shirt"] = 105,
+			["破布短裤"] = 194,
+			["鞭根块茎"] = 11951,
+			["遗物宝箱钥匙"] = 11078,
+			["次级魔法精华"] = 10938,
+			["deprecated dwarven novice's belt"] = 94,
+			["deprecated dwarven squire's belt"] = 98,
+			["次级不灭精华"] = 16202,
+			["潜行者衬衣"] = 49,
+			["枯木硬币"] = 19703,
+			["暗影之皮"] = 12753,
+			["侍僧鞋"] = 59,
+			["deprecated dwarven recruit's belt"] = 102,
+			["耐力卷轴 ii"] = 1711,
+			["见习牧师之靴"] = 51,
+			["丝质绷带"] = 6450,
+			["oldinitiate's belt"] = 50,
+			["olddwarven initiate's boots"] = 92,
+			["灵魂之尘"] = 11083,
+			["oldacolyte's belt"] = 58,
+			["olddwarven initiate's belt"] = 90,
+			["急速圣典"] = 18332,
+			["deprecated old boots"] = 87,
+			["梦境之尘"] = 11176,
+			["埃提耶什的杖柄末端"] = 22734,
+			["肮脏的皮外衣"] = 85,
+			["保护卷轴 ii"] = 1478,
+			["柔软的毛边鞋"] = 80,
+			["deprecated outfitter cloth armor"] = 77,
+			["厚布外衣"] = 200,
+			["夹层外衣"] = 60,
+			["学徒长袍"] = 56,
+			["白鳄长靴"] = 17728,
+			["学徒之靴"] = 55,
+			["oldnovice's belt"] = 54,
+			["见习牧师衬衣"] = 53,
+			["碎颅硬币"] = 19705,
+			["专注圣典"] = 18333,
+			["潜行者短裤"] = 48,
+			["火焰之王的精华"] = 19017,
+			["赞达拉荣誉勋章"] = 19858,
+			["侍从短裤"] = 44,
+			["弯曲的法杖"] = 35,
+			["次级虚空精华"] = 11174,
+			["oldrecruit's belt"] = 41,
+			["黑钻石"] = 11754,
+			["oldbrawler's belt"] = 141,
+			["大块魔光碎片"] = 14344,
+			["潜行者之鞋"] = 47,
+			["邪枝硬币"] = 19702,
+			["金矿石"] = 2776,
+			["争斗者甲胄"] = 6125,
+			["打孔的巫毒人偶"] = 19815,
+			["精神水晶"] = 11563,
+			["祖利安硬币"] = 19698,
+			["强效不灭精华"] = 16203,
+			["见习牧师短裤"] = 52,
+			["魔纹绷带"] = 8544,
+			["森林蘑菇"] = 4604,
+			["小块魔光碎片"] = 14343,
+			["deprecated orc apprentice pants"] = 124,
+			["奇异之尘"] = 10940,
+			["用旧的木盾"] = 2362,
+			["厚丝质绷带"] = 6451,
+			["尖刺水晶"] = 11567,
+			["强效星界精华"] = 11082,
+			["耐力卷轴"] = 1180,
+			["厚魔纹绷带"] = 8545,
+			["盲目草"] = 8839,
+			["deprecated dwarven novice's robe"] = 97,
+			["沙怒硬币"] = 19704,
+			["deprecated tauren recruit's pants"] = 156,
+			["亚麻绷带"] = 1251,
+			["deprecated dwarven recruit's boots"] = 103,
+			["铁矿石"] = 2772,
+			["埃根的冲击器"] = 13289,
+			["大绳网"] = 835,
+			["侏儒死亡射线"] = 10645,
+			["强效秘法精华"] = 11135,
+			["oldthick trapper's shirt"] = 89,
+			["deprecated rogue's vest"] = 119,
+			["英雄之血"] = 12938,
+			["真银矿石"] = 7911,
+		},
+		["action_shortcuts"] = false,
+	},
+	["character"] = {
+		["鱼人摩洛克|气不气菜鸡"] = {
+			["tooltip"] = {
+				["merchant_buy"] = false,
+				["merchant_sell"] = true,
+				["money_icons"] = false,
+				["value"] = true,
+				["disenchant_distribution"] = false,
+				["disenchant_value"] = false,
+				["daily"] = false,
+			},
+		},
+	},
+	["realm"] = {
+		["鱼人摩洛克"] = {
+			["characters"] = {
+				["气不气菜鸡"] = 13987.058,
+			},
+			["favorite_searches"] = {
+			},
+			["recent_searches"] = {
+			},
+		},
+	},
+	["faction"] = {
+		["鱼人摩洛克|Horde"] = {
+			["post"] = {
+			},
+			["history"] = {
+			},
+		},
+	},
+}

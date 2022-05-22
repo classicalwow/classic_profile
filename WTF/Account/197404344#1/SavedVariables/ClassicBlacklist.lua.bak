@@ -1,0 +1,3 @@
+
+firstLoadDone = true
+autoSync = false

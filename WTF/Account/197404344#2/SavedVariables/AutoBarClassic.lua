@@ -15,7 +15,7 @@ AutoBarDB = {
 					["enabled"] = true,
 					["columns"] = 10,
 					["WARRIOR"] = true,
-					["alpha"] = 1,
+					["frameStrata"] = "LOW",
 					["buttonWidth"] = 36,
 					["buttonKeys"] = {
 						"AutoBarButtonShields", -- [1]
@@ -31,7 +31,7 @@ AutoBarDB = {
 					["popupDirection"] = "1",
 					["padding"] = 0,
 					["dockShiftX"] = 0,
-					["frameStrata"] = "LOW",
+					["alpha"] = 1,
 				},
 			},
 			["buttonList"] = {
@@ -200,19 +200,19 @@ AutoBarDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonElixirBattle"] = {
-					["arrangeOnUse"] = 9206,
+					["arrangeOnUse"] = 13452,
 				},
 				["AutoBarButtonBuff"] = {
 					["arrangeOnUse"] = 13457,
 				},
 				["AutoBarButtonCrafting"] = {
-					["arrangeOnUse"] = "工程学",
+					["arrangeOnUse"] = "急救",
 				},
 				["AutoBarButtonElixirGuardian"] = {
 					["arrangeOnUse"] = 3825,
 				},
 				["AutoBarButtonBuffWeapon1"] = {
-					["arrangeOnUse"] = 12404,
+					["arrangeOnUse"] = 18262,
 				},
 				["AutoBarButtonQuest"] = {
 					["arrangeOnUse"] = 20742,
@@ -276,11 +276,11 @@ AutoBarDB = {
 				["columns"] = 16,
 				["posY"] = 119.6714817001339,
 				["enabled"] = true,
-				["frameStrata"] = "LOW",
 				["alpha"] = 1,
-				["PRIEST"] = true,
-				["buttonHeight"] = 36,
+				["frameStrata"] = "LOW",
 				["buttonWidth"] = 36,
+				["buttonHeight"] = 36,
+				["PRIEST"] = true,
 				["WARLOCK"] = true,
 				["DEMONHUNTER"] = true,
 				["PALADIN"] = true,
@@ -319,11 +319,11 @@ AutoBarDB = {
 				["columns"] = 9,
 				["MAGE"] = true,
 				["posY"] = 360,
-				["PRIEST"] = true,
-				["alpha"] = 1,
 				["buttonWidth"] = 36,
-				["HUNTER"] = true,
 				["frameStrata"] = "LOW",
+				["PRIEST"] = true,
+				["HUNTER"] = true,
+				["alpha"] = 1,
 				["WARLOCK"] = true,
 				["DEMONHUNTER"] = true,
 				["ROGUE"] = true,

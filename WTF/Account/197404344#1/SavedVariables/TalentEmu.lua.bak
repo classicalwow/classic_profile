@@ -1,0 +1,40 @@
+
+TalentEmuSV = {
+	["_GlobalRef"] = {
+		["emu"] = {
+			["GameFontHighlight"] = 1,
+			["LibStub"] = 3,
+			["EnableAddOn"] = 1,
+			["LoadAddOn"] = 1,
+			["ALASCR"] = 1,
+			["UISpecialFrames"] = 1,
+			["ChatFrame_AddMessageEventFilter"] = 1,
+			["alaPopup"] = 12,
+			["TargetFrame"] = 1,
+			["GetAddOnInfo"] = 3,
+			["SaveAddOns"] = 1,
+			["DisableAddOn"] = 1,
+			["IsAddOnLoaded"] = 1,
+			["SlashCmdList"] = 1,
+			["alaTalentEmuSV"] = 1,
+			["StaticPopupDialogs"] = 1,
+		},
+	},
+	["set"] = {
+		["credible"] = false,
+		["minimapPos"] = 185,
+		["supreme"] = false,
+	},
+	["var"] = {
+		["Player-5458-038C1E78"] = "910",
+		["savedTalent"] = {
+		},
+	},
+	["_version"] = 220117,
+	["__upgraded"] = true,
+	["_GlobalAssign"] = {
+		["emu"] = {
+			["alaTalentEmuSV"] = 1,
+		},
+	},
+}

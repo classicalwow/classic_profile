@@ -1,0 +1,110 @@
+
+ElvDB = {
+	["gold"] = {
+		["鱼人摩洛克"] = {
+			["气不气菜鸡"] = 0,
+		},
+	},
+	["faction"] = {
+		["鱼人摩洛克"] = {
+			["气不气菜鸡"] = "Horde",
+		},
+	},
+	["global"] = {
+		["unitframe"] = {
+			["AuraBarColors"] = {
+				[32182] = {
+					["color"] = {
+						["b"] = 0.1,
+						["g"] = 0.57,
+						["r"] = 0.98,
+					},
+					["enable"] = true,
+				},
+				[80353] = {
+					["color"] = {
+						["b"] = 0.1,
+						["g"] = 0.57,
+						["r"] = 0.98,
+					},
+					["enable"] = true,
+				},
+				[2825] = {
+					["color"] = {
+						["b"] = 0.1,
+						["g"] = 0.57,
+						["r"] = 0.98,
+					},
+					["enable"] = true,
+				},
+				[90355] = {
+					["color"] = {
+						["b"] = 0.1,
+						["g"] = 0.57,
+						["r"] = 0.98,
+					},
+					["enable"] = true,
+				},
+			},
+		},
+		["nameplates"] = {
+			["filters"] = {
+				["ElvUI_NonTarget"] = {
+				},
+				["ElvUI_Target"] = {
+				},
+				["ElvUI_Boss"] = {
+				},
+			},
+		},
+	},
+	["DisabledAddOns"] = {
+	},
+	["serverID"] = {
+		[5458] = {
+			["鱼人摩洛克"] = true,
+		},
+	},
+	["class"] = {
+		["鱼人摩洛克"] = {
+			["气不气菜鸡"] = "WARRIOR",
+		},
+	},
+	["profileKeys"] = {
+		["气不气菜鸡 - 鱼人摩洛克"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["convertPages"] = true,
+			["dbConverted"] = 1.71,
+			["actionbar"] = {
+				["bar6"] = {
+					["enabled"] = true,
+					["buttonsPerRow"] = 6,
+					["buttons"] = 6,
+				},
+				["microbar"] = {
+					["buttons"] = 7,
+				},
+				["bar5"] = {
+					["enabled"] = false,
+					["buttonsPerRow"] = 12,
+					["buttons"] = 12,
+				},
+			},
+			["chat"] = {
+				["panelSnapLeftID"] = 1,
+			},
+		},
+	},
+}
+ElvPrivateDB = {
+	["profileKeys"] = {
+		["气不气菜鸡 - 鱼人摩洛克"] = "气不气菜鸡 - 鱼人摩洛克",
+	},
+	["profiles"] = {
+		["气不气菜鸡 - 鱼人摩洛克"] = {
+			["install_complete"] = 1.71,
+		},
+	},
+}

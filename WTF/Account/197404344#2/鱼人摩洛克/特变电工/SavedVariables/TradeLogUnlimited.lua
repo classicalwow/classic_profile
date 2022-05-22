@@ -1165,6 +1165,166 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "铁炉堡",
 	}, -- [49]
+	{
+		["targetMoney"] = 10000,
+		["playerMoney"] = 0,
+		["id"] = 50,
+		["playerItems"] = {
+			{
+				["name"] = "自由行动药剂",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["itemLink"] = "|cffffffff|Hitem:5634::::::::60:::::::::|h[自由行动药剂]|h|r",
+				["texture"] = 134715,
+			}, -- [1]
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "窃爱",
+		["when"] = "2022-05-21 13:47:53",
+		["result"] = "complete",
+		["where"] = "黑翼之巢",
+	}, -- [50]
+	{
+		["targetMoney"] = 34150000,
+		["playerMoney"] = 0,
+		["id"] = 51,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_CLOSED", -- [1]
+			"TRADE_SHOW", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_CLOSED", -- [4]
+		},
+		["who"] = "Whitegods",
+		["when"] = "2022-05-21 15:35:07",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [51]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6830000,
+		["id"] = 52,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "贤斌珐师",
+		["when"] = "2022-05-21 15:35:25",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [52]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6830000,
+		["id"] = 53,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "离你十一步",
+		["when"] = "2022-05-21 15:35:35",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [53]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6830000,
+		["id"] = 54,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "芜湖小司马",
+		["when"] = "2022-05-21 15:35:53",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [54]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 6830000,
+		["id"] = 55,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "依咕比咕",
+		["when"] = "2022-05-21 15:36:01",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [55]
+	{
+		["targetMoney"] = 2000000,
+		["playerMoney"] = 0,
+		["id"] = 56,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "苦苦变形",
+		["when"] = "2022-05-21 15:36:45",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [56]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 57,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "皮皮怪",
+		["when"] = "2022-05-21 15:38:59",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [57]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

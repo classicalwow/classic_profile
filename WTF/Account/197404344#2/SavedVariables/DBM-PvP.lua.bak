@@ -34,7 +34,6 @@ DBMPvP_AllSavedVars = {
 				["TimerStart"] = true,
 			}, -- [1]
 			{
-				["TimerRemaining"] = true,
 				["TimerFlagCVoice"] = 0,
 				["TimerStartTColor"] = 0,
 				["ShowBasesToWin"] = false,
@@ -47,11 +46,9 @@ DBMPvP_AllSavedVars = {
 				["TimerCap"] = true,
 				["TimerFlag"] = true,
 				["TimerStartCVoice"] = 0,
-				["TimerRemainingCVoice"] = 0,
 				["TimerWin"] = true,
 				["Enabled"] = true,
 				["TimerCapTColor"] = 0,
-				["TimerRemainingTColor"] = 0,
 				["AutoSpirit"] = false,
 				["TimerStart"] = true,
 			}, -- [2]

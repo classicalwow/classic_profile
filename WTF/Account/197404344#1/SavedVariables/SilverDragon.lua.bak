@@ -1,0 +1,29 @@
+
+SilverDragon3DB = {
+	["namespaces"] = {
+		["ClickTarget"] = {
+		},
+		["Marker"] = {
+		},
+		["LDB"] = {
+		},
+		["Sync"] = {
+		},
+		["Macro"] = {
+		},
+		["Tooltip"] = {
+		},
+		["Announce"] = {
+		},
+		["Scan_Targets"] = {
+		},
+	},
+	["profileKeys"] = {
+		["气不气菜鸡 - 鱼人摩洛克"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}
+SilverDragon2DB = nil

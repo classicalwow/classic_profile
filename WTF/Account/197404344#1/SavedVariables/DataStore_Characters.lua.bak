@@ -1,0 +1,34 @@
+
+DataStore_CharactersDB = {
+	["profileKeys"] = {
+		["气不气菜鸡 - 鱼人摩洛克"] = "气不气菜鸡 - 鱼人摩洛克",
+	},
+	["global"] = {
+		["Characters"] = {
+			["Default.鱼人摩洛克.气不气菜鸡"] = {
+				["XPMax"] = 400,
+				["played"] = 1,
+				["playedThisLevel"] = 1,
+				["isResting"] = false,
+				["lastUpdate"] = 1653123251,
+				["class"] = "战士",
+				["race"] = "亡灵",
+				["level"] = 1,
+				["XP"] = 0,
+				["subZone"] = "灰影墓穴",
+				["RestXP"] = 0,
+				["zone"] = "提瑞斯法林地",
+				["money"] = 0,
+				["gender"] = 2,
+				["classID"] = 1,
+				["bindLocation"] = "灰影墓穴",
+				["name"] = "气不气菜鸡",
+				["faction"] = "Horde",
+				["englishRace"] = "Scourge",
+				["localizedFaction"] = "部落",
+				["lastLogoutTimestamp"] = 1653123251,
+				["englishClass"] = "WARRIOR",
+			},
+		},
+	},
+}
