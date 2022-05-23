@@ -2,6 +2,7 @@
 TomTomDB = {
 	["profileKeys"] = {
 		["气不气菜鸡 - 鱼人摩洛克"] = "Default",
+		["气不气菜鸡 - 黑龙费尔默"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,9 +31,12 @@ TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
 		["气不气菜鸡 - 鱼人摩洛克"] = "气不气菜鸡 - 鱼人摩洛克",
+		["气不气菜鸡 - 黑龙费尔默"] = "气不气菜鸡 - 黑龙费尔默",
 	},
 	["profiles"] = {
 		["气不气菜鸡 - 鱼人摩洛克"] = {
+		},
+		["气不气菜鸡 - 黑龙费尔默"] = {
 		},
 	},
 }

@@ -6,7 +6,7 @@ DataStore_TalentsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.气不气菜鸡"] = {
-				["lastUpdate"] = 1653123215,
+				["lastUpdate"] = 1653123784,
 				["Class"] = "WARRIOR",
 			},
 		},

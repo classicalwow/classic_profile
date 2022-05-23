@@ -8,7 +8,6 @@ NWBdatabase = {
 		["convertSettings"] = false,
 		["resetDailyData"] = false,
 		["resetLayers9"] = false,
-		["lo"] = 1653123251,
 		["鱼人摩洛克"] = {
 			["Horde"] = {
 				["flower2"] = 0,
@@ -24,13 +23,9 @@ NWBdatabase = {
 				["onyYell"] = 0,
 				["tuber3"] = 0,
 				["tuber5"] = 0,
-				["layers"] = {
-				},
 				["onyTimer"] = 0,
 				["zanYell2"] = 0,
 				["dragon4"] = 0,
-				["layerMapBackups"] = {
-				},
 				["tuber6"] = 0,
 				["nefYell"] = 0,
 				["myChars"] = {
@@ -50,19 +45,21 @@ NWBdatabase = {
 						["localizedClass"] = "战士",
 						["playerName"] = "气不气菜鸡",
 						["gender"] = "Male",
-						["savedInstances"] = {
-						},
-						["rendCount"] = 0,
-						["freeBagSlots"] = 18,
+						["pvpFlag"] = false,
+						["zanCount"] = 0,
 						["guildRankName"] = "No guild rank",
-						["totalBagSlots"] = 20,
-						["faction"] = "Horde",
 						["nefCount"] = 0,
+						["totalBagSlots"] = 20,
+						["freeBagSlots"] = 18,
+						["faction"] = "Horde",
 						["buffs"] = {
 						},
-						["zanCount"] = 0,
-						["pvpFlag"] = false,
+						["rendCount"] = 0,
+						["savedInstances"] = {
+						},
 					},
+				},
+				["layersDisabled"] = {
 				},
 				["rendTimer"] = 0,
 				["dragon1"] = 0,
@@ -70,26 +67,29 @@ NWBdatabase = {
 				["onyNpcDied"] = 0,
 				["nefNpcDied"] = 0,
 				["flower8"] = 0,
-				["onyYell2"] = 0,
-				["flower4"] = 0,
-				["nefYell2"] = 0,
-				["flower9"] = 0,
-				["flower10"] = 0,
-				["flower5"] = 0,
-				["tuber1"] = 0,
-				["dragon2"] = 0,
-				["dragon3"] = 0,
 				["flower1"] = 0,
+				["layerMapBackups"] = {
+				},
+				["dragon3"] = 0,
+				["nefYell2"] = 0,
+				["dragon2"] = 0,
+				["tuber1"] = 0,
+				["flower5"] = 0,
+				["flower10"] = 0,
+				["flower9"] = 0,
+				["flower4"] = 0,
+				["onyYell2"] = 0,
 				["zanYell"] = 0,
 				["dmfBuffSettings"] = {
 				},
-				["layersDisabled"] = {
+				["layers"] = {
 				},
 			},
 		},
-		["wipeTerokkarData4"] = false,
+		["lo"] = 1653124244,
 		["resetLayerMaps"] = false,
-		["lt"] = 1653123201,
+		["wipeTerokkarData4"] = false,
+		["lt"] = 1653123774,
 		["resetSongflowers"] = false,
 	},
 }
