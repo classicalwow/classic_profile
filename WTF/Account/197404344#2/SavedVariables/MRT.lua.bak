@@ -307,8 +307,8 @@ VMRT = {
 			["蒸籽蛋"] = 0,
 			["一个人流浪-逐风者"] = 0,
 			["飞翔的趴趴熊"] = 0,
-			["憨憨的欧巴-火妖鲁西弗隆"] = 0,
 			["胖胖的德-逐风者"] = 0,
+			["憨憨的欧巴-火妖鲁西弗隆"] = 0,
 			["Romanx"] = 0,
 			["八月有雨"] = 0,
 			["嗷嗷跑"] = 0,
@@ -608,10 +608,10 @@ VMRT = {
 		["ReadyCheckFrameOnlyRL"] = true,
 		["BuffsCheck"] = true,
 		["ReadyCheckFrame"] = true,
-		["ReadyCheckTop"] = 920.277587890625,
+		["ReadyCheckFrameTimerFade"] = 4,
 		["WeaponEnch"] = {
 		},
 		["ReadyCheckLeft"] = 1094.999633789063,
-		["ReadyCheckFrameTimerFade"] = 4,
+		["ReadyCheckTop"] = 920.277587890625,
 	},
 }

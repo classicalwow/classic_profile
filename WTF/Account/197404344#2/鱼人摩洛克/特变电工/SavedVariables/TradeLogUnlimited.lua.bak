@@ -1403,8 +1403,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "静琉璃",
 		["when"] = "2022-05-25 00:30:00",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [59]
 }
 TradeLogUnlimited_Announce_Checked = true
