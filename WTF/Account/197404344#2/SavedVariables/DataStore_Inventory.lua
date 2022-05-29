@@ -8,8 +8,8 @@ DataStore_InventoryDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1653571175,
-				["averageItemLvl"] = 70.75,
+				["lastUpdate"] = 1653725492,
+				["averageItemLvl"] = 69.625,
 				["Inventory"] = {
 					"|cffa335ee|Hitem:19372:2583:::::::60:::::::::|h[无尽怒气头盔]|h|r", -- [1]
 					"|cffa335ee|Hitem:18404::::::::60:::::::::|h[奥妮克希亚龙牙坠饰]|h|r", -- [2]
@@ -23,8 +23,8 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:23286:927:::::::60:::::::::|h[骑士中尉的板甲护手]|h|r", -- [10]
 					"|cffa335ee|Hitem:19325::::::::60:::::::::|h[胡里奥指环]|h|r", -- [11]
 					"|cffa335ee|Hitem:18821::::::::60:::::::::|h[迅击戒指]|h|r", -- [12]
-					"|cffa335ee|Hitem:19341::::::::60:::::::::|h[生命宝石]|h|r", -- [13]
-					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [14]
+					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [13]
+					"|cff0070dd|Hitem:11815::::::::60:::::::::|h[正义之手]|h|r", -- [14]
 					"|cffa335ee|Hitem:19398:849:::::::60:::::::::|h[火喉披风]|h|r", -- [15]
 					"|cffa335ee|Hitem:19364:37:::::::60:::::::::|h[阿什坎迪，兄弟会之剑]|h|r", -- [16]
 					nil, -- [17]
@@ -32,15 +32,16 @@ DataStore_InventoryDB = {
 				},
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
+				["lastUpdate"] = 1644135021,
 				["Inventory"] = {
 					[8] = "|cffffffff|Hitem:43::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[]|h|r",
 					[7] = "|cffffffff|Hitem:6118::::::::1:::::::::|h[]|h|r",
 					[4] = "|cffffffff|Hitem:6117::::::::1:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
+				["lastUpdate"] = 1645858908,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -55,7 +56,6 @@ DataStore_InventoryDB = {
 					[16] = "|cffffffff|Hitem:3193::::::678:31308416:17:::::::::|h[]|h|r",
 					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1645858908,
 			},
 		},
 		["Guilds"] = {
@@ -80,11 +80,11 @@ DataStore_InventoryDB = {
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["奶不住快跑啊"] = {
-						["averageItemLvl"] = 17,
-					},
 					["雪凉"] = {
 						["averageItemLvl"] = 41,
+					},
+					["奶不住快跑啊"] = {
+						["averageItemLvl"] = 17,
 					},
 				},
 			},
