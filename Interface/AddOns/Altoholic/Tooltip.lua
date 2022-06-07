@@ -492,6 +492,7 @@ local function OnItemRefTooltipShow(tooltip, ...)
 	ItemRefTooltip:Show()
 end
 
+
 local function OnItemRefTooltipSetItem(tooltip, ...)
 	if (not isTooltipDone) and tooltip then
 		local _, link = tooltip:GetItem()
@@ -546,6 +547,15 @@ function addon:InitTooltip()
 			function(self, recipeID, reagentIndex)
 				if recipeID and reagentIndex then
 					storedLink = C_TradeSkillUI.GetRecipeReagentItemLink(recipeID, reagentIndex)
+				end
+			end,
+			nil
+		},
+		-- Required for enchanting
+		SetCraftItem = {
+			function(self, craftIndex, reagentIndex)
+				if craftIndex and reagentIndex then
+					storedLink = GetCraftReagentItemLink(craftIndex, reagentIndex)
 				end
 			end,
 			nil

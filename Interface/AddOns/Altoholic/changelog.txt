@@ -1,6 +1,14 @@
 Altoholic Classic Changelog (dates in dd/mm/yyyy)
 ============================
 
+1.14.003 (05/06/2022)
+
+- Fixed item count not being visible in the tooltip for enchanting reagents.
+
+1.14.002 (23/11/2021)
+
+- Fixed the tooltip backdrop issue.
+(for reference: changed 2x BackdropTemplate to TooltipBackdropTemplate in Altoholic\Templates\DropDownMenu.xml)
 
 1.14.001 (03/10/2021)
 

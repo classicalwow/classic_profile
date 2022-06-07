@@ -498,10 +498,12 @@ end
 
 function addon:GetIDFromLink(link)
 	if link then
-		local linktype, id = string.match(link, "|H([^:]+):(%d+)")
-		if id then
-			return tonumber(id)
-		end
+		return tonumber(link:match("item:(%d+)"))
+		
+		-- local linktype, id = string.match(link, "|H([^:]+):(%d+)")
+		-- if id then
+			-- return tonumber(id)
+		-- end
 	end
 end
 

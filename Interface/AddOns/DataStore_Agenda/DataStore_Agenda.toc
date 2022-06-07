@@ -1,8 +1,8 @@
-## Interface: 11400
+## Interface: 11403
 ## Title: DataStore_Agenda
 ## Notes: Stores information about a character's friends, calendar, notes, etc..
 ## Author: Thaoky (EU-Marécages de Zangar)
-## Version: r30
+## Version: 1.14.003
 ## Dependencies: DataStore
 ## OptionalDeps: Ace3
 ## SavedVariables: DataStore_AgendaDB

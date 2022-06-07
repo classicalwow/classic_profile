@@ -17,9 +17,9 @@ CodexConfig = {
 		["callbacks"] = {
 			["distance"] = {
 			},
-			["world"] = {
-			},
 			["minimap"] = {
+			},
+			["world"] = {
 			},
 		},
 		["persistent"] = true,
@@ -30,17 +30,17 @@ CodexConfig = {
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["minimapButton"] = true,
-	["autoTurnin"] = false,
+	["continentIcon"] = false,
+	["currentQuestGivers"] = true,
 	["spawnMarkerSize"] = 15,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["miniMapIcon"] = true,
-	["currentQuestGivers"] = true,
-	["continentIcon"] = false,
+	["autoTurnin"] = false,
+	["minimapButton"] = true,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
@@ -51,9 +51,9 @@ CodexHiddenQuests = {
 	[344] = true,
 	[1267] = true,
 	[151] = true,
-	[968] = true,
-	[741] = true,
 	[64] = true,
+	[741] = true,
+	[968] = true,
 }
 CodexBrowserFavorites = {
 	["objects"] = {
@@ -86,10 +86,10 @@ CodexColors = {
 		0.4666666666666667, -- [2]
 		0.2549019607843137, -- [3]
 	},
-	["雷矛山羊骑兵指挥官"] = {
-		0.8745098039215686, -- [1]
-		0.02745098039215686, -- [2]
-		0.6470588235294118, -- [3]
+	["空军指挥官艾克曼"] = {
+		0.3058823529411765, -- [1]
+		0.9764705882352941, -- [2]
+		0.7607843137254902, -- [3]
 	},
 	["地狱野猪"] = {
 		0.207843137254902, -- [1]
@@ -101,9 +101,9 @@ CodexColors = {
 		0.5568627450980392, -- [2]
 		0.1490196078431373, -- [3]
 	},
-	["空军指挥官艾克曼"] = {
-		0.3058823529411765, -- [1]
-		0.9764705882352941, -- [2]
-		0.7607843137254902, -- [3]
+	["雷矛山羊骑兵指挥官"] = {
+		0.8745098039215686, -- [1]
+		0.02745098039215686, -- [2]
+		0.6470588235294118, -- [3]
 	},
 }
