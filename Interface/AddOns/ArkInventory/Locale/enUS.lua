@@ -1,4 +1,4 @@
-local L = LibStub( "AceLocale-3.0" ):NewLocale( "ArkInventory", "enUS", true, false )
+﻿local L = LibStub( "AceLocale-3.0" ):NewLocale( "ArkInventory", "enUS", true, false )
 if not L then return end
 
 -- post updated translations at http://groups.google.com/group/wow-arkinventory (modify this file and include as an attachment)
@@ -96,6 +96,7 @@ if not L then return end
 	L["CATEGORY_CONSUMABLE_SCROLL"] = "Scroll"
 	L["CATEGORY_CONSUMABLE_CHAMPION_EQUIPMENT"] = "Champion Equipment"
 	L["CATEGORY_CONSUMABLE_POWER_SYSTEM_OLD"] = "Power Systems (Old)"
+	L["CATEGORY_CONSUMABLE_ABILITIES_AND_ACTIONS"] = "Abilities and Actions"
 	
 	
 --	bag names - used to name the empty slots in the status frame (and LDB)
@@ -576,7 +577,7 @@ if not L then return end
 	L["CONFIG_JUNK_SELL_CANDESTROY"] = "You have %s items that can be destroyed, please use the manual keybinding to destroy them"
 	L["CONFIG_JUNK_NOTIFY_SOLD"] = "Sold your junk items for %s."
 	L["CONFIG_JUNK_NOTIFY_DESTROYED"] = "Destroyed %s junk items."
-	L["CONFIG_JUNK_NOTIFY_LIMIT"] = "Aborting automatic sell due to buyback limit (%s) being reached."
+	L["CONFIG_JUNK_NOTIFY_LIMIT"] = "Exiting automatic sell due to buyback limit (%s) being reached."
 	L["CONFIG_JUNK_LIMIT"] = "Limit to Buyback"
 	L["CONFIG_JUNK_LIMIT_DESC"] = "As a safety precaution stop selling your junk items when the buyback limit (%i) is reached"
 	L["CONFIG_JUNK_DELETE_DESC"] = "Delete items that cannot be vendored (have no sell price)\n\nnote - you can only delete items via the keybinding, and only one item at a time"

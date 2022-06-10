@@ -71,10 +71,19 @@ function QuestieItemFixes:Load()
             [itemKeys.npcDrops] = {},
         },
         [2594] = {
-            [itemKeys.npcDrops] = {1464},
+            [itemKeys.npcDrops] = {},
+            [itemKeys.vendors] = {12794,2832,12785,5140,5611,277,1301,258,5570,1311,5111,1305,1328,5848,955,1697,465,1464,5112},
+            [itemKeys.relatedQuests] = {288},
         },
         [2633] = {
             [itemKeys.npcDrops] = {940,941,942}, -- #2433
+        },
+        [2665] = {
+            [itemKeys.relatedQuests] = {90},
+        },
+        [2686] = {
+            [itemKeys.relatedQuests] = {308},
+            [itemKeys.npcDrops] = {1247,1682,7744},
         },
         [2837] = {
             [itemKeys.relatedQuests] = {361},
@@ -89,7 +98,7 @@ function QuestieItemFixes:Load()
         },
         [2894] = { -- #1285
             [itemKeys.relatedQuests] = {384},
-            [itemKeys.npcDrops] = {1247},
+            [itemKeys.npcDrops] = {1247,1682,7744},
             [itemKeys.objectDrops] = {},
         },
         [2997] = {
@@ -214,7 +223,9 @@ function QuestieItemFixes:Load()
             [itemKeys.npcDrops] = {},
         },
         [4371] = {
-            [itemKeys.npcDrops] = {3495,5519,5175}, -- #1476
+            [itemKeys.npcDrops] = {},
+            [itemKeys.vendors] = {1448,6777,2685,11185,14637,5519,5175,3413,3133,3495,8679,1694,2687,4587,8678,6730,9544,2682,2683,2684,2688,9676},
+            [itemKeys.relatedQuests] = {174,2609},
         },
         [4502] = {
             [itemKeys.relatedQuests] = {669},
@@ -293,6 +304,9 @@ function QuestieItemFixes:Load()
             [itemKeys.relatedQuests] = {894},
             [itemKeys.npcDrops] = {},
             [itemKeys.objectDrops] = {},
+        },
+        [5179] = {
+            [itemKeys.npcDrops] = {3535}
         },
         [5184] = {
             [itemKeys.relatedQuests] = {921},
@@ -951,6 +965,9 @@ function QuestieItemFixes:Load()
         [18642] = {
             [itemKeys.npcDrops] = {4968},
         },
+        [18643] = {
+            [itemKeys.npcDrops] = {3057},
+        },
         [18746] = { -- #1344
             [itemKeys.relatedQuests] = {7666,7669,8258},
             [itemKeys.npcDrops] = {},
@@ -1119,6 +1136,38 @@ function QuestieItemFixes:Load()
         },
         [22527] = {
             [itemKeys.npcDrops] = {6520,6521,7031,7032,7132,8519,8520,8521,8522,8909,8910,8911,9017,9025,9026,9816,9878,9879,11480,11483,11484,11744,11745,11746,11747,13279,13280,14399,14400,14455,14458,14460,14462},
+        },
+        [190179] = {
+            [itemKeys.name] = "Avelina's Heart",
+            [itemKeys.npcDrops] = {185333},
+            [itemKeys.relatedQuests] = {65593},
+        },
+        [190180] = {
+            [itemKeys.name] = "Isaac's Heart",
+            [itemKeys.npcDrops] = {185334},
+            [itemKeys.relatedQuests] = {65593},
+        },
+        [190181] = {
+            [itemKeys.name] = "Lovers' Hearts",
+            [itemKeys.relatedQuests] = {65597},
+        },
+        [190186] = {
+            [itemKeys.name] = "Wooden Figurine",
+            [itemKeys.relatedQuests] = {65603},
+        },
+        [190187] = {
+            [itemKeys.name] = "Withered Scarf",
+            [itemKeys.relatedQuests] = {65604},
+        },
+        [190232] = {
+            [itemKeys.name] = "Withered Scarf",
+            [itemKeys.npcDrops] = {3782,3784},
+            [itemKeys.relatedQuests] = {65610},
+        },
+        [190309] = {
+            [itemKeys.name] = "Wooden Figurine",
+            [itemKeys.objectDrops] = {400013},
+            [itemKeys.relatedQuests] = {65602},
         },
     }
 end

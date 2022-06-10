@@ -1,4 +1,4 @@
-local L = LibStub( "AceLocale-3.0" ):NewLocale( "ArkInventory", "ruRU" )
+﻿local L = LibStub( "AceLocale-3.0" ):NewLocale( "ArkInventory", "ruRU" )
 if not L then return end
 
 -- post updated translations at http://groups.google.com/group/wow-arkinventory (modify this file and include as an attachment)
@@ -96,6 +96,7 @@ if not L then return end
 --	L["CATEGORY_CONSUMABLE_SCROLL"] = ""
 --	L["CATEGORY_CONSUMABLE_CHAMPION_EQUIPMENT"] = ""
 --	L["CATEGORY_CONSUMABLE_POWER_SYSTEM_OLD"] = ""
+--	L["CATEGORY_CONSUMABLE_ABILITIES_AND_ACTIONS"] = ""
 	
 	
 --	bag names - used to name the empty slots in the status frame
