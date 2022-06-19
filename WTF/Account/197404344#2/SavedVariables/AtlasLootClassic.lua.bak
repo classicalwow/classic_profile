@@ -20,14 +20,14 @@ AtlasLootClassicDB = {
 					nil, -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					110.2220611572266, -- [4]
-					55.33330154418945, -- [5]
+					110.5555038452148, -- [4]
+					53.33332824707031, -- [5]
 				},
 				["selected"] = {
-					"AtlasLootClassic_Crafting", -- [1]
-					"Enchanting", -- [2]
-					6, -- [3]
-					1, -- [4]
+					"AtlasLootClassic_Factions", -- [1]
+					"BroodOfNozdormu", -- [2]
+					nil, -- [3]
+					2, -- [4]
 					0, -- [5]
 				},
 			},

@@ -24,9 +24,9 @@ AtlasLootClassicDB = {
 					53.33332824707031, -- [5]
 				},
 				["selected"] = {
-					"AtlasLootClassic_Factions", -- [1]
-					"BroodOfNozdormu", -- [2]
-					nil, -- [3]
+					nil, -- [1]
+					"TheRuinsofAhnQiraj", -- [2]
+					6, -- [3]
 					2, -- [4]
 					0, -- [5]
 				},

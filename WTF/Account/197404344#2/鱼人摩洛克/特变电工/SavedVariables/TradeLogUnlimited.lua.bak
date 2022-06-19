@@ -1835,10 +1835,10 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["targetItems"] = {
 			{
-				["itemLink"] = "|cff0070dd|Hitem:22637::::::::60:::::::::|h[原始哈卡莱神像]|h|r",
 				["name"] = "原始哈卡莱神像",
 				["numItems"] = 1,
 				["tCount"] = 1,
+				["itemLink"] = "|cff0070dd|Hitem:22637::::::::60:::::::::|h[原始哈卡莱神像]|h|r",
 				["isUsable"] = true,
 				["texture"] = 135723,
 			}, -- [1]
@@ -1854,8 +1854,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "一把大铁锹",
 		["when"] = "2022-06-18 17:46:27",
-		["where"] = "祖尔格拉布",
 		["result"] = "complete",
+		["where"] = "祖尔格拉布",
 	}, -- [79]
 	{
 		["targetMoney"] = 760000,
@@ -1873,9 +1873,44 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "旺仔小人物",
 		["when"] = "2022-06-18 17:52:42",
-		["where"] = "祖尔格拉布",
 		["result"] = "complete",
+		["where"] = "祖尔格拉布",
 	}, -- [80]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 81,
+		["playerItems"] = {
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["who"] = "熬鹰队长",
+		["when"] = "2022-06-19 12:14:34",
+		["where"] = "希利苏斯",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [81]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 82,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "熬鹰队长",
+		["when"] = "2022-06-19 12:14:43",
+		["where"] = "希利苏斯",
+		["result"] = "complete",
+	}, -- [82]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

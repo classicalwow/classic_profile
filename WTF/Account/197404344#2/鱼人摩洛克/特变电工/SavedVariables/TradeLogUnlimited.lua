@@ -1876,6 +1876,140 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "祖尔格拉布",
 	}, -- [80]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 81,
+		["playerItems"] = {
+		},
+		["reason"] = "other",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "希利苏斯",
+		["who"] = "熬鹰队长",
+		["when"] = "2022-06-19 12:14:34",
+		["result"] = "cancelled",
+		["toofar"] = "no",
+	}, -- [81]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 82,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "熬鹰队长",
+		["when"] = "2022-06-19 12:14:43",
+		["result"] = "complete",
+		["where"] = "希利苏斯",
+	}, -- [82]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 1000000,
+		["id"] = 83,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			[2] = {
+				["itemLink"] = "|cffa335ee|Hitem:21220::::::::60:::::::::|h[无疤者奥斯里安的头颅]|h|r",
+				["name"] = "无疤者奥斯里安的头颅",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["texture"] = 132192,
+			},
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "喧哗演武",
+		["when"] = "2022-06-19 15:01:28",
+		["where"] = "安其拉废墟",
+		["result"] = "complete",
+	}, -- [83]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 2000000,
+		["id"] = 84,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["itemLink"] = "|cffa335ee|Hitem:21715::::::::60:::::::::|h[磨砂战锤]|h|r",
+				["name"] = "磨砂战锤",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["texture"] = 133501,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "喧哗演武",
+		["when"] = "2022-06-19 15:02:00",
+		["where"] = "安其拉废墟",
+		["result"] = "complete",
+	}, -- [84]
+	{
+		["targetMoney"] = 320000,
+		["playerMoney"] = 0,
+		["id"] = 85,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "亐丂",
+		["when"] = "2022-06-19 15:05:02",
+		["where"] = "安其拉废墟",
+		["result"] = "complete",
+	}, -- [85]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 800000,
+		["id"] = 86,
+		["playerItems"] = {
+			[7] = {
+				["name"] = "磨砂战锤",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:21715::::::::60:::::::::|h[磨砂战锤]|h|r",
+				["enchantment"] = "附魔武器 - 十字军",
+				["texture"] = 133501,
+			},
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "拦路熊",
+		["when"] = "2022-06-19 15:11:29",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [86]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"
