@@ -1487,10 +1487,10 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["targetItems"] = {
 			{
-				["itemLink"] = "|cffa335ee|Hitem:20929::::::::60:::::::::|h[上古之神的甲壳]|h|r",
 				["name"] = "上古之神的甲壳",
 				["numItems"] = 1,
 				["tCount"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:20929::::::::60:::::::::|h[上古之神的甲壳]|h|r",
 				["isUsable"] = true,
 				["texture"] = 134882,
 			}, -- [1]
@@ -1503,8 +1503,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "苦苦变形",
 		["when"] = "2022-06-11 15:53:42",
-		["where"] = "安其拉",
 		["result"] = "complete",
+		["where"] = "安其拉",
 	}, -- [63]
 	{
 		["targetMoney"] = 1000000,
@@ -1522,8 +1522,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "风涧落",
 		["when"] = "2022-06-11 16:10:38",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [64]
 	{
 		["targetMoney"] = 8700000,
@@ -1541,8 +1541,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "共助",
 		["when"] = "2022-06-11 16:13:01",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [65]
 	{
 		["targetMoney"] = 500000,
@@ -1560,9 +1560,322 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "苦苦变形",
 		["when"] = "2022-06-11 16:15:12",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [66]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 2000000,
+		["id"] = 67,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "君莫笑丨",
+		["when"] = "2022-06-18 13:38:08",
+		["result"] = "complete",
+		["where"] = "安其拉",
+	}, -- [67]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 68,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "安其拉",
+		["who"] = "君莫笑丨",
+		["when"] = "2022-06-18 15:08:12",
+		["result"] = "cancelled",
+	}, -- [68]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 69,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "其拉帝王徽记",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffa335ee|Hitem:21237::::::::60:::::::::|h[其拉帝王徽记]|h|r",
+				["texture"] = 135157,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "君莫笑丨",
+		["when"] = "2022-06-18 15:08:17",
+		["result"] = "complete",
+		["where"] = "安其拉",
+	}, -- [69]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 20000000,
+		["id"] = 70,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "苦苦闪现",
+		["when"] = "2022-06-18 15:08:29",
+		["result"] = "complete",
+		["where"] = "安其拉",
+	}, -- [70]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 71,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "铁炉堡",
+		["who"] = "君莫笑丨",
+		["when"] = "2022-06-18 16:01:37",
+		["result"] = "cancelled",
+	}, -- [71]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 72,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "源质矿石",
+				["numItems"] = 3,
+				["tCount"] = 3,
+				["itemLink"] = "|cffa335ee|Hitem:18562::::::::60:::::::::|h[源质矿石]|h|r",
+				["isUsable"] = true,
+				["texture"] = 135248,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Whitegods",
+		["when"] = "2022-06-18 16:01:48",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [72]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 2000000,
+		["id"] = 73,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "克苏恩的触须",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:21579::::::::60:::::::::|h[克苏恩的触须]|h|r",
+				["isUsable"] = true,
+				["texture"] = 133574,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "苦苦闪现",
+		["when"] = "2022-06-18 16:03:55",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [73]
+	{
+		["targetMoney"] = 500000,
+		["playerMoney"] = 0,
+		["id"] = 74,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_CLOSED", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_CLOSED", -- [4]
+			"TRADE_CLOSED", -- [5]
+			"TRADE_CLOSED", -- [6]
+			"TRADE_SHOW", -- [7]
+			"TRADE_CLOSED", -- [8]
+			"TRADE_CLOSED", -- [9]
+		},
+		["who"] = "君莫笑丨",
+		["when"] = "2022-06-18 16:25:20",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [74]
+	{
+		["targetMoney"] = 10130000,
+		["playerMoney"] = 0,
+		["id"] = 75,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "苦苦闪现",
+		["when"] = "2022-06-18 16:25:30",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [75]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 76,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "大魔法波比",
+		["when"] = "2022-06-18 16:39:00",
+		["result"] = "complete",
+		["where"] = "希利苏斯",
+	}, -- [76]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 1100000,
+		["id"] = 77,
+		["playerItems"] = {
+			[7] = {
+				["name"] = "征服者的胸甲",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:21331::::::::60:::::::::|h[征服者的胸甲]|h|r",
+				["enchantment"] = "附魔胸甲 - 强效属性",
+				["texture"] = 132747,
+			},
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "传奇小法",
+		["when"] = "2022-06-18 16:41:35",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [77]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 730000,
+		["id"] = 78,
+		["playerItems"] = {
+			[7] = {
+				["name"] = "神圣其拉战锤",
+				["numItems"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:21268::::::::60:::::::::|h[神圣其拉战锤]|h|r",
+				["enchantment"] = "附魔武器 - 十字军",
+				["texture"] = 133501,
+			},
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "传奇小法",
+		["when"] = "2022-06-18 16:41:59",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [78]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 2000000,
+		["id"] = 79,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "原始哈卡莱神像",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cff0070dd|Hitem:22637::::::::60:::::::::|h[原始哈卡莱神像]|h|r",
+				["texture"] = 135723,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_CLOSED", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_SHOW", -- [4]
+			"TRADE_CLOSED", -- [5]
+			"TRADE_CLOSED", -- [6]
+		},
+		["who"] = "一把大铁锹",
+		["when"] = "2022-06-18 17:46:27",
+		["result"] = "complete",
+		["where"] = "祖尔格拉布",
+	}, -- [79]
+	{
+		["targetMoney"] = 760000,
+		["playerMoney"] = 0,
+		["id"] = 80,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "旺仔小人物",
+		["when"] = "2022-06-18 17:52:42",
+		["result"] = "complete",
+		["where"] = "祖尔格拉布",
+	}, -- [80]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

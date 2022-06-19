@@ -200,7 +200,7 @@ AutoBarDB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["buttonDataList"] = {
 				["AutoBarButtonElixirBattle"] = {
-					["arrangeOnUse"] = 13452,
+					["arrangeOnUse"] = 9206,
 				},
 				["AutoBarButtonBuff"] = {
 					["arrangeOnUse"] = 12451,
@@ -212,7 +212,7 @@ AutoBarDB = {
 					["arrangeOnUse"] = 3825,
 				},
 				["AutoBarButtonBuffWeapon1"] = {
-					["arrangeOnUse"] = 12404,
+					["arrangeOnUse"] = 18262,
 				},
 				["AutoBarButtonQuest"] = {
 					["arrangeOnUse"] = 20742,

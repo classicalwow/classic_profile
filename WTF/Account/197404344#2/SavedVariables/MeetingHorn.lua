@@ -9,14 +9,10 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
-			["goodleader"] = {
-				["cache"] = {
-					["安其拉神殿"] = {
-						["leaderGuid"] = "Player-5458-02FDF78C",
-						["timestamp"] = 1654933879,
-						["leader"] = "君莫笑丨-鱼人摩洛克",
-						["raidName"] = "安其拉神殿",
-					},
+			["cache"] = {
+				["cooldown"] = {
+					["start"] = 1640267414,
+					["duration"] = 50,
 				},
 			},
 			["window"] = {
@@ -26,10 +22,14 @@ MEETINGHORN_DB = {
 					["scale"] = 1,
 				},
 			},
-			["cache"] = {
-				["cooldown"] = {
-					["start"] = 1640267414,
-					["duration"] = 50,
+			["goodleader"] = {
+				["cache"] = {
+					["祖尔格拉布"] = {
+						["leader"] = "一把大铁锹-鱼人摩洛克",
+						["timestamp"] = 1655545460,
+						["leaderGuid"] = "Player-5458-02F749F5",
+						["raidName"] = "祖尔格拉布",
+					},
 				},
 			},
 		},
