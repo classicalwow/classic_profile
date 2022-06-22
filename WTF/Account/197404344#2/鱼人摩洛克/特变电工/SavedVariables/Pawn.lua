@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0538,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 19372,
@@ -64,10 +66,11 @@ PawnOptions = {
 			["Level"] = 69,
 			["Link"] = "|cffa335ee|Hitem:19143::::::::60:::::::::|h[烈焰守卫护手]|h|r",
 		},
-		[5] = {
-			["ID"] = 21331,
-			["Level"] = 88,
-			["Link"] = "|cffa335ee|Hitem:21331::::::::60:::::::::|h[征服者的胸甲]|h|r",
+		[17] = {
+			["ID"] = 21268,
+			["Level"] = 79,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:21268:1900:::::::60:::::::::|h[神圣其拉战锤]|h|r",
 		},
 		[11] = {
 			["ID"] = 19384,
@@ -86,15 +89,12 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cffa335ee|Hitem:19376::::::::60:::::::::|h[阿基迪罗斯的清算之戒]|h|r",
 		},
-		[17] = {
-			["ID"] = 21268,
-			["Level"] = 79,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:21268:1900:::::::60:::::::::|h[神圣其拉战锤]|h|r",
+		[5] = {
+			["ID"] = 21331,
+			["Level"] = 88,
+			["Link"] = "|cffa335ee|Hitem:21331::::::::60:::::::::|h[征服者的胸甲]|h|r",
 		},
 	},
-	["AutoSelectScales"] = false,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
