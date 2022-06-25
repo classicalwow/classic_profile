@@ -9,10 +9,14 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
-			["cache"] = {
-				["cooldown"] = {
-					["start"] = 1640267414,
-					["duration"] = 50,
+			["goodleader"] = {
+				["cache"] = {
+					["黑翼之巢"] = {
+						["leaderGuid"] = "Player-5458-0300A92D",
+						["timestamp"] = 1655630322,
+						["leader"] = "虎大爷诅咒-鱼人摩洛克",
+						["raidName"] = "黑翼之巢",
+					},
 				},
 			},
 			["window"] = {
@@ -22,14 +26,10 @@ MEETINGHORN_DB = {
 					["scale"] = 1,
 				},
 			},
-			["goodleader"] = {
-				["cache"] = {
-					["黑翼之巢"] = {
-						["leader"] = "虎大爷诅咒-鱼人摩洛克",
-						["timestamp"] = 1655630322,
-						["leaderGuid"] = "Player-5458-0300A92D",
-						["raidName"] = "黑翼之巢",
-					},
+			["cache"] = {
+				["cooldown"] = {
+					["start"] = 1640267414,
+					["duration"] = 50,
 				},
 			},
 		},

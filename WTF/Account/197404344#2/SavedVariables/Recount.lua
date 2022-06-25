@@ -33,9 +33,9 @@ RecountDB = {
 			["MainWindow"] = {
 				["Position"] = {
 					["y"] = -480.4999847412109,
-					["x"] = -446.0001525878906,
-					["w"] = 249.9999542236328,
-					["h"] = 239.0000305175781,
+					["x"] = -446,
+					["w"] = 249.9999694824219,
+					["h"] = 239.0000152587891,
 				},
 			},
 			["FrameStrata"] = "2-LOW",
@@ -52,7 +52,7 @@ RecountDB = {
 			},
 			["DetailWindowY"] = -274.5554809570313,
 			["DetailWindowX"] = 817.111083984375,
-			["LastInstanceName"] = "黑翼之巢",
+			["LastInstanceName"] = "安其拉废墟",
 			["CurDataSet"] = "OverallData",
 			["SegmentBosses"] = true,
 			["MainWindowHeight"] = 238.9998016357422,
