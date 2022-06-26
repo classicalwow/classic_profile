@@ -11,11 +11,11 @@ MEETINGHORN_DB = {
 		["特变电工 - 鱼人摩洛克"] = {
 			["goodleader"] = {
 				["cache"] = {
-					["黑翼之巢"] = {
-						["leaderGuid"] = "Player-5458-0300A92D",
-						["timestamp"] = 1655630322,
-						["leader"] = "虎大爷诅咒-鱼人摩洛克",
-						["raidName"] = "黑翼之巢",
+					["安其拉神殿"] = {
+						["leaderGuid"] = "Player-5458-02F6B4A5",
+						["timestamp"] = 1656143511,
+						["leader"] = "剑之初-鱼人摩洛克",
+						["raidName"] = "安其拉神殿",
 					},
 				},
 			},
