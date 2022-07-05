@@ -1,11 +1,11 @@
 
 TradeShoutOptions = {
-	["xOfs"] = "-0",
+	["point"] = "TOPRIGHT",
 	["relativeTo"] = "MinimapCluster",
 	["Whisper"] = true,
 	["relativePoint"] = "BOTTOMRIGHT",
 	["yOfs"] = "20.00000028115454",
-	["Raid"] = true,
+	["xOfs"] = "-0",
 	["Party"] = true,
-	["point"] = "TOPRIGHT",
+	["Raid"] = true,
 }

@@ -21,26 +21,27 @@ DataStore_InventoryDB = {
 					"|cffa335ee|Hitem:19143:927:::::::60:::::::::|h[烈焰守卫护手]|h|r", -- [10]
 					"|cffa335ee|Hitem:21198::::::::60:::::::::|h[青铜龙军团的徽记之戒]|h|r", -- [11]
 					"|cffa335ee|Hitem:19376::::::::60:::::::::|h[阿基迪罗斯的清算之戒]|h|r", -- [12]
-					"|cff0070dd|Hitem:18854::::::::60:::::::::|h[联盟徽记]|h|r", -- [13]
+					"|cffa335ee|Hitem:19341::::::::60:::::::::|h[生命宝石]|h|r", -- [13]
 					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [14]
 					"|cffa335ee|Hitem:21701:849:::::::60:::::::::|h[强烈仇恨披风]|h|r", -- [15]
 					"|cffa335ee|Hitem:21134:37:::::::60:::::::::|h[疯狂黑暗之刃]|h|r", -- [16]
 					nil, -- [17]
 					"|cffa335ee|Hitem:19350:664:::::::60:::::::::|h[击心者]|h|r", -- [18]
 				},
-				["averageItemLvl"] = 70.4375,
-				["lastUpdate"] = 1656864467,
+				["averageItemLvl"] = 75.1875,
+				["lastUpdate"] = 1656944651,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
+				["lastUpdate"] = 1644135021,
 				["Inventory"] = {
 					[8] = "|cffffffff|Hitem:43::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[]|h|r",
 					[7] = "|cffffffff|Hitem:6118::::::::1:::::::::|h[]|h|r",
 					[4] = "|cffffffff|Hitem:6117::::::::1:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
+				["lastUpdate"] = 1645858908,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -55,7 +56,6 @@ DataStore_InventoryDB = {
 					[16] = "|cffffffff|Hitem:3193::::::678:31308416:17:::::::::|h[]|h|r",
 					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1645858908,
 			},
 		},
 		["Guilds"] = {
@@ -73,24 +73,24 @@ DataStore_InventoryDB = {
 					["Dptic"] = {
 						["averageItemLvl"] = 24,
 					},
-					["巴托里"] = {
-						["averageItemLvl"] = 54,
-					},
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
 					},
 					["莉娜"] = {
 						["averageItemLvl"] = 16,
 					},
+					["巴托里"] = {
+						["averageItemLvl"] = 54,
+					},
 				},
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["奶不住快跑啊"] = {
-						["averageItemLvl"] = 17,
-					},
 					["雪凉"] = {
 						["averageItemLvl"] = 41,
+					},
+					["奶不住快跑啊"] = {
+						["averageItemLvl"] = 17,
 					},
 				},
 			},
