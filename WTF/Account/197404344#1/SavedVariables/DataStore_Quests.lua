@@ -12,9 +12,9 @@ DataStore_QuestsDB = {
 				["lastUpdate"] = 1653123784,
 			},
 			["Default.黑龙费尔默.气不气菜鸡"] = {
-				["HistoryLastUpdate"] = 1653200277,
-				["HistoryBuild"] = "43639",
-				["lastUpdate"] = 1653200275,
+				["HistoryLastUpdate"] = 1657358760,
+				["HistoryBuild"] = "44403",
+				["lastUpdate"] = 1657358757,
 			},
 		},
 	},

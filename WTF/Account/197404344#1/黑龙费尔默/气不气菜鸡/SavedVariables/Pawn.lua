@@ -1,6 +1,8 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0538,
+	["LastPlayerFullName"] = "气不气菜鸡-黑龙费尔默",
+	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		[7] = {
 			["ID"] = 139,
@@ -13,8 +15,6 @@ PawnOptions = {
 			["Link"] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[用旧的木槌]|h|r",
 		},
 	},
-	["LastPlayerFullName"] = "气不气菜鸡-黑龙费尔默",
-	["AutoSelectScales"] = false,
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {

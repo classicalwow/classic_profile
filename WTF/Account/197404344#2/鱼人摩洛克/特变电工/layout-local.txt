@@ -55,10 +55,10 @@ X: -47
 Y: -29
 W: 800
 H: 525
-Frame: WIM3_msgFrame2
+Frame: WIM3_msgFrame1
 FrameLevel: 2
-Anchor: LEFT
-X: 380
-Y: 58
+Anchor: TOPLEFT
+X: 381
+Y: -156
 W: 333
 H: 220

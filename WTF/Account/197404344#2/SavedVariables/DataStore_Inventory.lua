@@ -29,7 +29,7 @@ DataStore_InventoryDB = {
 					"|cffa335ee|Hitem:19350:664:::::::60:::::::::|h[击心者]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 75.1875,
-				["lastUpdate"] = 1656944651,
+				["lastUpdate"] = 1657358827,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["lastUpdate"] = 1644135021,
@@ -73,14 +73,14 @@ DataStore_InventoryDB = {
 					["Dptic"] = {
 						["averageItemLvl"] = 24,
 					},
+					["巴托里"] = {
+						["averageItemLvl"] = 54,
+					},
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
 					},
 					["莉娜"] = {
 						["averageItemLvl"] = 16,
-					},
-					["巴托里"] = {
-						["averageItemLvl"] = 54,
 					},
 				},
 			},
