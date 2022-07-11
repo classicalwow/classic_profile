@@ -11,7 +11,7 @@ DataStore_TalentsDB = {
 				["Class"] = "WARRIOR",
 			},
 			["Default.黑龙费尔默.气不气菜鸡"] = {
-				["lastUpdate"] = 1653200275,
+				["lastUpdate"] = 1657358757,
 				["Class"] = "WARRIOR",
 			},
 		},

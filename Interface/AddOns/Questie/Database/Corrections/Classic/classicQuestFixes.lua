@@ -13,6 +13,7 @@ local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
 
 function QuestieQuestFixes:Load()
     QuestieDB.questData[5640] = {} -- Desperate Prayer
+    QuestieDB.questData[5678] = {} -- Arcane Feedback
 
     QuestieDB.questData[7668] = {} -- Add missing quest index
     QuestieDB.questData[7669] = {} -- Add missing quest index
@@ -82,6 +83,9 @@ function QuestieQuestFixes:Load()
         [109] = {
             [questKeys.startedBy] = {{233,237,240,261,294,963},nil,nil}, --#2158
         },
+        [117] = {
+            [questKeys.name] = "Thunderbrew",
+        },
         [148] = {
             [questKeys.preQuestSingle] = {}, -- #1173
         },
@@ -99,6 +103,9 @@ function QuestieQuestFixes:Load()
         },
         [172] = {
             [questKeys.zoneOrSort] = sortKeys.SEASONAL,
+        },
+        [201] = {
+            [questKeys.triggerEnd] = {"Locate the hunters' camp", {[zoneIDs.STRANGLETHORN_VALE]={{35.65,10.59}}}}
         },
         [219] = {
             [questKeys.triggerEnd] = {"Escort Corporal Keeshan back to Redridge", {[zoneIDs.REDRIDGE_MOUNTAINS]={{33.36,48.7}}}},
@@ -124,12 +131,14 @@ function QuestieQuestFixes:Load()
         [308] = {
             [questKeys.exclusiveTo] = {311}, -- distracting jarven can't be completed once you get the followup
             [questKeys.specialFlags] = 1,
+            [questKeys.preQuestSingle] = {},
+            [questKeys.parentQuest] = 310
         },
         [309] = {
             [questKeys.triggerEnd] = {"Escort Miran to the excavation site", {[zoneIDs.LOCH_MODAN]={{65.12,65.77}}}},
         },
         [310] = {
-            [questKeys.childQuests] = {403},
+            [questKeys.childQuests] = {308,403},
         },
         [353] = {
             [questKeys.preQuestSingle] = {}, -- #2364
@@ -637,6 +646,9 @@ function QuestieQuestFixes:Load()
         [1265] = {
             [questKeys.triggerEnd] = {"Sentry Point explored",{[zoneIDs.DUSTWALLOW_MARSH]={{59.92,40.9}}}},
         },
+        [1267] = {
+            [questKeys.startedBy] = {{4968},nil,nil},
+        },
         [1268] = {
             [questKeys.startedBy] = {nil,{21015,21016},nil}, -- #1574
         },
@@ -802,7 +814,6 @@ function QuestieQuestFixes:Load()
         },
         [1599] = {
             [questKeys.exclusiveTo] = {1598}, -- #999
-            [questKeys.preQuestSingle] = {705}, -- #1164
         },
         [1638] = {
             [questKeys.exclusiveTo] = {1666,1678,1680,1683,1686},
@@ -888,6 +899,9 @@ function QuestieQuestFixes:Load()
         },
         [1794] = {
             [questKeys.exclusiveTo] = {1649},
+        },
+        [1799] = {
+            [questKeys.preQuestSingle] = {4965,4967,4968,4969},
         },
         [1800] = {
             [questKeys.triggerEnd] = {"Go to the old Lordaeron Throne Room that lies just before descending into the Undercity.", {[zoneIDs.UNDERCITY]={{65.97,36.12}}}},
@@ -1357,10 +1371,14 @@ function QuestieQuestFixes:Load()
             [questKeys.preQuestSingle] = {4341},
         },
         [4485] = {
+            [questKeys.startedBy] = {{6179},nil,nil},
             [questKeys.exclusiveTo] = {1661,4486},
         },
         [4486] = {
             [questKeys.exclusiveTo] = {1661,4485},
+        },
+        [4490] = {
+            [questKeys.preQuestSingle] = {3631,4487,4488,4489},
         },
         [4491] = {
             [questKeys.triggerEnd] = {"Escort Ringo to Spraggle Frock at Marshal's Refuge", {[zoneIDs.UN_GORO_CRATER]={{43.71,8.29}}}},
@@ -1544,18 +1562,13 @@ function QuestieQuestFixes:Load()
         [5126] = {
             [questKeys.requiredClasses] = classIDs.WARRIOR + classIDs.PALADIN + classIDs.SHAMAN,
             [questKeys.triggerEnd] = {"Listen to Lorax's Tale", {[zoneIDs.WINTERSPRING]={{63.82,73.79}}}},
+            [questKeys.zoneOrSort] = sortKeys.BLACKSMITHING,
         },
         [5149] = {
             [questKeys.preQuestSingle] = {},
         },
         [5156] = {
             [questKeys.triggerEnd] = {"Explore the craters in Shatter Scar Vale", {[zoneIDs.FELWOOD]={{41.03,41.96}}}},
-        },
-        [5166] = {
-            [questKeys.specialFlags] = 1, -- #1335
-        },
-        [5167] = {
-            [questKeys.specialFlags] = 1, -- #1335
         },
         [5203] = {
             [questKeys.triggerEnd] = {"Protect Arko'narin out of Shadow Hold", {[zoneIDs.FELWOOD]={{35.45,59.06}}}},

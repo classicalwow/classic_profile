@@ -14,7 +14,7 @@ DataStore_SpellsDB = {
 				},
 			},
 			["Default.黑龙费尔默.气不气菜鸡"] = {
-				["lastUpdate"] = 1653200275,
+				["lastUpdate"] = 1657358757,
 				["Spells"] = {
 					["综合"] = {
 						"107|被动", -- [1]
