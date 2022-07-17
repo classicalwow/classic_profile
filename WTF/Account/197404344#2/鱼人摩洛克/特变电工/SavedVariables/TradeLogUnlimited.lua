@@ -2300,8 +2300,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "Amazeen",
 		["when"] = "2022-07-17 00:18:29",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [100]
 }
 TradeLogUnlimited_Announce_Checked = true

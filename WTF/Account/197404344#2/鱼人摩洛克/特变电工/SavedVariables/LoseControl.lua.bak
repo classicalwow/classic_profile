@@ -133,7 +133,7 @@ LoseControlDB = {
 			["frameLevel"] = 0,
 			["interruptMiniIconsAlpha"] = 0.8,
 			["interruptBackgroundAlpha"] = 0.7,
-			["swipeAlpha"] = 0.8,
+			["anchor"] = "Blizzard",
 			["alpha"] = 1,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
@@ -168,16 +168,16 @@ LoseControlDB = {
 					},
 				},
 			},
-			["compactFrame"] = {
-				["frameLevel"] = 0,
-				["size"] = 36,
-			},
+			["swipeAlpha"] = 0.8,
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["anchor"] = "Blizzard",
+			["compactFrame"] = {
+				["frameLevel"] = 0,
+				["size"] = 36,
+			},
 			["size"] = 36,
 		},
 		["nameplate14"] = {
@@ -2419,7 +2419,7 @@ LoseControlDB = {
 			["frameLevel"] = 0,
 			["interruptMiniIconsAlpha"] = 0.8,
 			["interruptBackgroundAlpha"] = 0.7,
-			["swipeAlpha"] = 0.8,
+			["anchor"] = "Blizzard",
 			["alpha"] = 1,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
@@ -2454,16 +2454,16 @@ LoseControlDB = {
 					},
 				},
 			},
-			["compactFrame"] = {
-				["frameLevel"] = 0,
-				["size"] = 36,
-			},
+			["swipeAlpha"] = 0.8,
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["anchor"] = "Blizzard",
+			["compactFrame"] = {
+				["frameLevel"] = 0,
+				["size"] = 36,
+			},
 			["size"] = 36,
 		},
 		["raid15"] = {
@@ -3614,7 +3614,7 @@ LoseControlDB = {
 			["frameLevel"] = 0,
 			["interruptMiniIconsAlpha"] = 0.8,
 			["interruptBackgroundAlpha"] = 0.7,
-			["swipeAlpha"] = 0.8,
+			["anchor"] = "Blizzard",
 			["alpha"] = 1,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
@@ -3649,16 +3649,16 @@ LoseControlDB = {
 					},
 				},
 			},
-			["compactFrame"] = {
-				["frameLevel"] = 0,
-				["size"] = 36,
-			},
+			["swipeAlpha"] = 0.8,
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["anchor"] = "Blizzard",
+			["compactFrame"] = {
+				["frameLevel"] = 0,
+				["size"] = 36,
+			},
 			["size"] = 36,
 		},
 		["raid26"] = {
@@ -3997,7 +3997,7 @@ LoseControlDB = {
 			["frameLevel"] = 0,
 			["interruptMiniIconsAlpha"] = 0.8,
 			["interruptBackgroundAlpha"] = 0.7,
-			["swipeAlpha"] = 0.8,
+			["anchor"] = "None",
 			["alpha"] = 1,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
@@ -4032,17 +4032,17 @@ LoseControlDB = {
 					},
 				},
 			},
-			["compactFrame"] = {
-				["anchor"] = "None",
-				["frameLevel"] = 0,
-				["size"] = 36,
-			},
+			["swipeAlpha"] = 0.8,
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["anchor"] = "None",
+			["compactFrame"] = {
+				["anchor"] = "None",
+				["frameLevel"] = 0,
+				["size"] = 36,
+			},
 			["size"] = 36,
 		},
 		["raid17"] = {
@@ -4508,7 +4508,7 @@ LoseControlDB = {
 			["frameLevel"] = 0,
 			["interruptMiniIconsAlpha"] = 0.8,
 			["interruptBackgroundAlpha"] = 0.7,
-			["swipeAlpha"] = 0.8,
+			["anchor"] = "Blizzard",
 			["alpha"] = 1,
 			["categoriesEnabled"] = {
 				["interrupt"] = {
@@ -4543,16 +4543,16 @@ LoseControlDB = {
 					},
 				},
 			},
-			["compactFrame"] = {
-				["frameLevel"] = 0,
-				["size"] = 36,
-			},
+			["swipeAlpha"] = 0.8,
 			["interruptBackgroundVertexColor"] = {
 				["b"] = 1,
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["anchor"] = "Blizzard",
+			["compactFrame"] = {
+				["frameLevel"] = 0,
+				["size"] = 36,
+			},
 			["size"] = 36,
 		},
 		["raid2"] = {

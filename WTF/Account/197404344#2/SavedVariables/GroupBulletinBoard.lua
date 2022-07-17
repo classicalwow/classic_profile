@@ -1,7 +1,7 @@
 
 GroupBulletinBoardDB = {
 	["TagsGerman"] = true,
-	["Y"] = 983.22216796875,
+	["Y"] = 619.111083984375,
 	["TagsEnglish"] = true,
 	["TagsRussian"] = true,
 	["MinimapButton"] = {
@@ -100,7 +100,7 @@ GroupBulletinBoardDB = {
 		["RFD"] = "",
 		["ZF"] = "",
 	},
-	["X"] = 544.111083984375,
+	["X"] = 51.94440841674805,
 	["ShowTotalTime"] = false,
 	["OnDebug"] = false,
 	["TagsCustom"] = true,

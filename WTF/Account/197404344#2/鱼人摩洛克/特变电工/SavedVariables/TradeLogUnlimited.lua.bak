@@ -2252,9 +2252,9 @@ TradeLogUnlimited_TradesHistory = {
 		["targetItems"] = {
 		},
 		["player"] = "特变电工",
+		["where"] = "安其拉",
 		["who"] = "小心心丶神",
 		["when"] = "2022-07-16 22:04:16",
-		["where"] = "安其拉",
 		["result"] = "cancelled",
 	}, -- [98]
 	{
@@ -2265,10 +2265,10 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["targetItems"] = {
 			{
-				["itemLink"] = "|cffa335ee|Hitem:21670::::::::60:::::::::|h[虫群卫士徽章]|h|r",
 				["name"] = "虫群卫士徽章",
 				["numItems"] = 1,
 				["tCount"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:21670::::::::60:::::::::|h[虫群卫士徽章]|h|r",
 				["isUsable"] = true,
 				["texture"] = 133573,
 			}, -- [1]
@@ -2281,9 +2281,28 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "苦苦变形",
 		["when"] = "2022-07-16 22:04:26",
-		["where"] = "安其拉",
 		["result"] = "complete",
+		["where"] = "安其拉",
 	}, -- [99]
+	{
+		["targetMoney"] = 7880000,
+		["playerMoney"] = 0,
+		["id"] = 100,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "Amazeen",
+		["when"] = "2022-07-17 00:18:29",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [100]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"
