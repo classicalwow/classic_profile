@@ -24,13 +24,13 @@ END
 VER 3 0000000001000005 "吐口水" "132100"
 /耳光
 END
-VER 3 0000000001000006 "喊人" "132089"
-/script C=CastSpellByName;
-/script if(GetActionCooldown(63)==0) then C("压制");end /script if(UnitHealth("target")<20) then C("斩杀");end /施放 致死打击 /script if(IsActionInRange(63)==1)then C("旋风斩");end /script if(UnitMana("Player")>39) then C("英勇打击");end
-END
 VER 3 0000000001000007 "喊人" "132089"
 /BG {十字}{十字} 鱼人服奥山荣誉2人战骑小分队 招募一个奶骑 等你起飞！！！！  {十字}{十字}{十字} 
 /5 /BG {十字}{十字} 鱼人服奥山荣誉2人战骑小分队 招募一个奶骑 等你起飞！！！！  {十字}{十字}{十字} 
+END
+VER 3 0000000001000006 "喊人" "132089"
+/script C=CastSpellByName;
+/script if(GetActionCooldown(63)==0) then C("压制");end /script if(UnitHealth("target")<20) then C("斩杀");end /施放 致死打击 /script if(IsActionInRange(63)==1)then C("旋风斩");end /script if(UnitMana("Player")>39) then C("英勇打击");end
 END
 VER 3 0000000001000009 "嗜血" "136012"
 w 
@@ -59,10 +59,9 @@ VER 3 000000000100000C "正常武器" "132324"
 /equipslot 16 item:19335
 /equipslot 17 item:18832
 END
-VER 3 000000000100000E "盾反宏" "132361"
-/equip 葛洛姆特的斧頭
-/equip 奧多爾遺產防衛者
-/cast 法術反射
+VER 3 000000000100000E "爆发" "136146"
+/use item:21670
+/cast 死亡之愿
 END
 VER 3 000000000100000F "致死" "132355"
 /startattack

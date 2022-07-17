@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Faerlina", "DBM-Naxx", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220221015134")
+mod:SetRevision("20220629223544")
 mod:SetCreatureID(15953)
 mod:SetEncounterID(1110)
 mod:SetModelID(15940)
@@ -13,8 +13,8 @@ mod:RegisterEventsInCombat(
 )
 
 local warnEmbraceActive		= mod:NewSpellAnnounce(28732, 1)
-local warnEmbraceExpire		= mod:NewAnnounce("WarningEmbraceExpire", 2, 28732)
-local warnEmbraceExpired	= mod:NewAnnounce("WarningEmbraceExpired", 3, 28732)
+local warnEmbraceExpire		= mod:NewAnnounce("WarningEmbraceExpire", 2, 28732, nil, nil, nil, 28732)
+local warnEmbraceExpired	= mod:NewAnnounce("WarningEmbraceExpired", 3, 28732, nil, nil, nil, 28732)
 local warnEnrageSoon		= mod:NewSoonAnnounce(28131, 3)
 local warnEnrageNow			= mod:NewSpellAnnounce(28131, 4)
 
