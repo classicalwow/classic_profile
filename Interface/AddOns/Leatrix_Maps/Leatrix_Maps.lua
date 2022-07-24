@@ -1,6 +1,6 @@
 ﻿
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.14.51 (13th July 2022)
+	-- 	Leatrix Maps 1.14.52 (20th July 2022)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaDropList, LeaConfigList = {}, {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.14.51"
+	LeaMapsLC["AddonVer"] = "1.14.52"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -57,7 +57,7 @@
 		WorldMapMagnifyingGlassButton:Hide()
 
 		----------------------------------------------------------------------
-		-- Show zone dropdown menu
+		-- Show zone menus
 		----------------------------------------------------------------------
 
 		if LeaMapsLC["ShowZoneMenu"] == "On" then
@@ -81,6 +81,7 @@
 			local nodd = LeaMapsLC:CreateDropDown("ZoneMapNoneMenu", "", WorldMapFrame, 180, "TOP", -80, -35, {"---"}, "")
 			nodd:ClearAllPoints()
 			nodd:SetPoint("TOPRIGHT", outerFrame, "TOPRIGHT", 0, 0)
+			nodd.btn:Disable()
 
 			-- Create Eastern Kingdoms dropdown menu
 			LeaMapsLC["ZoneMapEasternMenu"] = 1
@@ -157,18 +158,14 @@
 
 			-- Continent dropdown menu handler
 			LeaMapsCB["ListFrameZoneMapContinentMenu"]:HookScript("OnHide", function()
-				nodd:Hide()
+				ekdd:Hide(); kmdd:Hide(); nodd:Hide()
 				if LeaMapsLC["ZoneMapContinentMenu"] == 1 then
 					ekdd:Show()
-					kmdd:Hide()
 					WorldMapFrame:SetMapID(mapEasternTable[LeaMapsLC["ZoneMapEasternMenu"]].mapid)
 				elseif LeaMapsLC["ZoneMapContinentMenu"] == 2 then
-					ekdd:Hide()
 					kmdd:Show()
 					WorldMapFrame:SetMapID(mapKalimdorTable[LeaMapsLC["ZoneMapKalimdorMenu"]].mapid)
 				elseif LeaMapsLC["ZoneMapContinentMenu"] == 3 then
-					ekdd:Hide()
-					kmdd:Hide()
 					nodd:Show()
 					WorldMapFrame:SetMapID(947)
 				end
@@ -178,10 +175,13 @@
 			local function SetMapControls()
 
 				-- Show relevant dropdown menu
-				ekdd:Hide()
-				kmdd:Hide()
-				cond:Hide()
-				nodd:Hide()
+				ekdd:Hide(); kmdd:Hide(); cond:Hide(); nodd:Hide()
+
+				-- Hide dropdown menu list items
+				LeaMapsCB["ListFrameZoneMapEasternMenu"]:Hide()
+				LeaMapsCB["ListFrameZoneMapKalimdorMenu"]:Hide()
+				LeaMapsCB["ListFrameZoneMapContinentMenu"]:Hide()
+				LeaMapsCB["ListFrameZoneMapNoneMenu"]:Hide()
 
 				-- Eastern Kingdoms
 				for k, v in pairs(mapEasternTable) do
@@ -189,6 +189,7 @@
 						LeaMapsLC["ZoneMapEasternMenu"] = k
 						ekdd:Show()
 						LeaMapsLC["ZoneMapContinentMenu"] = 1; cond:Show()
+						return
 					end
 				end
 
@@ -198,25 +199,53 @@
 						LeaMapsLC["ZoneMapKalimdorMenu"] = k
 						kmdd:Show()
 						LeaMapsLC["ZoneMapContinentMenu"] = 2; cond:Show()
+						return
 					end
 				end
 
 				-- Azeroth
 				if WorldMapFrame.mapID == 947 then
-					LeaMapsLC["ZoneMapContinentMenu"] = 3; cond:Show()
 					nodd:Show()
+					LeaMapsLC["ZoneMapContinentMenu"] = 3; cond:Show()
+					return
 				end
-
-				-- Hide dropdown menu list items
-				LeaMapsCB["ListFrameZoneMapEasternMenu"]:Hide()
-				LeaMapsCB["ListFrameZoneMapKalimdorMenu"]:Hide()
-				LeaMapsCB["ListFrameZoneMapContinentMenu"]:Hide()
-				LeaMapsCB["ListFrameZoneMapNoneMenu"]:Hide()
 
 			end
 
-			-- Set dropdown menu when map changes
+			-- Set dropdown menu when map changes and when map is shown
 			hooksecurefunc(WorldMapFrame, "OnMapChanged", SetMapControls)
+			WorldMapFrame:HookScript("OnShow", SetMapControls)
+
+			-- ElvUI fixes
+			local function ElvUIFixes()
+				local E, S = unpack(ElvUI)
+				local S = E:GetModule('Skins')
+				if E.private.skins.blizzard.enable and E.private.skins.blizzard.worldmap then
+					S:HandleDropDownBox(ekdd.dd); ekdd.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
+					S:HandleDropDownBox(kmdd.dd); kmdd.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
+					S:HandleDropDownBox(cond.dd); cond.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
+					S:HandleDropDownBox(nodd.dd); nodd.bg:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = -6, top = 0, bottom = 0 }});
+					outerFrame:SetWidth(380)
+					ekdd.btn:SetHitRectInsets(ekdd.btn:GetHitRectInsets() - 10, 0, 0, 0)
+					kmdd.btn:SetHitRectInsets(kmdd.btn:GetHitRectInsets() - 10, 0, 0, 0)
+					cond.btn:SetHitRectInsets(cond.btn:GetHitRectInsets() - 10, 0, 0, 0)
+					nodd.btn:SetHitRectInsets(nodd.btn:GetHitRectInsets() - 10, 0, 0, 0)
+				end
+			end
+
+			-- Run ElvUI fixes when ElvUI has loaded
+			if IsAddOnLoaded("ElvUI") then
+				ElvUIFixes()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "ElvUI" then
+						ElvUIFixes()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
 
 		end
 
@@ -3173,6 +3202,7 @@
 
 		-- Create dropdown inside outer frame
 		local dd = CreateFrame("Frame", nil, frame); dd:SetPoint("BOTTOMLEFT", -16, -8); dd:SetPoint("BOTTOMRIGHT", 15, -4); dd:SetHeight(32);
+		frame.dd = dd
 
 		-- Create dropdown textures
 		local lt = dd:CreateTexture(nil, "ARTWORK"); lt:SetTexture("Interface\\Glues\\CharacterCreate\\CharacterCreate-LabelFrame"); lt:SetTexCoord(0, 0.1953125, 0, 1); lt:SetPoint("TOPLEFT", dd, 0, 17); lt:SetWidth(25); lt:SetHeight(64);
@@ -3195,6 +3225,8 @@
 			dbtn.tiptext = tip; dbtn:SetScript("OnEnter", LeaMapsLC.ShowTooltip)
 			dbtn:SetScript("OnLeave", GameTooltip_Hide)
 		end
+		frame.btn = dbtn
+		dd.Button = dbtn
 
 		-- Create dropdown list
 		local ddlist =  CreateFrame("Frame",nil,frame, "BackdropTemplate")
@@ -3206,6 +3238,7 @@
 		ddlist:SetFrameLevel(12)
 		ddlist:SetBackdrop({bgFile = "Interface\\DialogFrame\\UI-DialogBox-Background-Dark", edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Border", tile = false, tileSize = 0, edgeSize = 32, insets = { left = 4, right = 4, top = 4, bottom = 4 }});
 		ddlist:Hide()
+		frame.bg = ddlist
 
 		-- Hide list if parent is closed
 		parent:HookScript("OnHide", function() ddlist:Hide() end)
@@ -3214,11 +3247,6 @@
 		local ddlistchk = CreateFrame("FRAME", nil, ddlist)
 		ddlistchk:SetHeight(16); ddlistchk:SetWidth(16)
 		ddlistchk.t = ddlistchk:CreateTexture(nil, "ARTWORK"); ddlistchk.t:SetAllPoints(); ddlistchk.t:SetTexture("Interface\\Common\\UI-DropDownRadioChecks"); ddlistchk.t:SetTexCoord(0, 0.5, 0.5, 1.0);
-
-		-- Lock dropdown menu if there is only one list item and it is 3 hyphens
-		if #items == 1 and items[1] == "---" then
-			dbtn:Disable()
-		end
 
 		-- Create dropdown list items
 		for k, v in pairs(items) do

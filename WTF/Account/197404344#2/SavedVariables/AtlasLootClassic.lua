@@ -1,12 +1,12 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 2040003,
-	},
 	["profileKeys"] = {
 		["顶级程序员 - 鱼人摩洛克"] = "顶级程序员 - 鱼人摩洛克",
 		["特变电工 - 鱼人摩洛克"] = "特变电工 - 鱼人摩洛克",
 		["Javascript - 鱼人摩洛克"] = "Javascript - 鱼人摩洛克",
+	},
+	["global"] = {
+		["__addonrevision"] = 2040003,
 	},
 	["profiles"] = {
 		["顶级程序员 - 鱼人摩洛克"] = {
@@ -24,10 +24,10 @@ AtlasLootClassicDB = {
 					52.99996566772461, -- [5]
 				},
 				["selected"] = {
-					nil, -- [1]
-					"TheTempleofAhnQiraj", -- [2]
-					nil, -- [3]
-					3, -- [4]
+					"AtlasLootClassic_Crafting", -- [1]
+					"Enchanting", -- [2]
+					11, -- [3]
+					1, -- [4]
 					0, -- [5]
 				},
 			},

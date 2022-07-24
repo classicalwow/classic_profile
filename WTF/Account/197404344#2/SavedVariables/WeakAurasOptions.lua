@@ -6,8 +6,8 @@ WeakAurasOptionsSaved = {
 	["locale"] = "zhCN",
 	["needsRebuild"] = false,
 	["version"] = "4.0.2",
-	["spellCacheStrings"] = true,
 	["spellCacheAchivements"] = true,
+	["spellCacheStrings"] = true,
 	["spellCache"] = {
 		["制造塞雷布拉斯节杖"] = {
 			["spells"] = "21939=136235",
@@ -11959,7 +11959,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "26483=136235",
 		},
 		["虫群卫士徽章"] = {
-			["spells"] = "26480=133573,26480=133573",
+			["spells"] = "26480=133573",
 		},
 		["水银护盾"] = {
 			["spells"] = "26463=136235,26464=136162,26465=136162",
@@ -26623,7 +26623,7 @@ WeakAurasOptionsSaved = {
 			["spells"] = "28364=136235",
 		},
 		["死亡之愿"] = {
-			["spells"] = "12328=136146,12328=136146",
+			["spells"] = "12328=136146",
 		},
 		["喂养萨瑞鲁斯效果"] = {
 			["spells"] = "6497=135864",
