@@ -2,7 +2,7 @@
 local mod	= DBM:NewMod("Thaddius", "DBM-Naxx", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220701213717")
+mod:SetRevision("20220725233832")
 mod:SetCreatureID(15928)
 mod:SetEncounterID(1120)
 mod:SetModelID(16137)
@@ -71,8 +71,8 @@ function mod:UNIT_AURA()
 	if self.vb.phase ~=2 or (GetTime() - lastShift) > 5 or (GetTime() - lastShift) < 3 then return end
 	local charge
 	local i = 1
-	while DBM:UnitDebuff("player", i) do
-		local _, icon, count = DBM:UnitDebuff("player", i)
+	while UnitDebuff("player", i) do
+		local _, icon, count = UnitDebuff("player", i)
 		if icon == "Interface\\Icons\\Spell_ChargeNegative" or icon == 135768 then--Not sure if classic will return data ID or path, so include both
 			if count > 1 then return end
 			charge = L.Charge1

@@ -1,4 +1,4 @@
--- $Id: Atlas_Battlegrounds.lua 1575 2022-02-02 17:12:20Z arithmandar $
+-- $Id: Atlas_Battlegrounds.lua 1588 2022-07-23 14:36:47Z arithmandar $
 --[[
 
 	Atlas, a World of Warcraft instance map browser
@@ -24,6 +24,8 @@
 
 --]]
 local _G = getfenv(0)
+local select = select
+local GetBuildInfo = _G.GetBuildInfo
 
 -- ----------------------------------------------------------------------------
 -- AddOn namespace.
@@ -41,14 +43,19 @@ local BF = Atlas_GetLocaleLibBabble("LibBabble-Faction-3.0")
 local L = LibStub("AceLocale-3.0"):GetLocale(private.addon_name)
 local ALC = LibStub("AceLocale-3.0"):GetLocale("Atlas")
 
-local WoWClassicEra, WoWClassicTBC, WoWRetail
-local wowtocversion  = select(4, GetBuildInfo())
-if wowtocversion < 20000 then
+-- Determine WoW TOC Version
+local WoWClassicEra, WoWClassicTBC, WoWWOTLKC, WoWRetail
+local wowversion  = select(4, GetBuildInfo())
+if wowversion < 20000 then
 	WoWClassicEra = true
-elseif wowtocversion > 19999 and wowtocversion < 90000 then 
+elseif wowversion < 30000 then 
 	WoWClassicTBC = true
-else
+elseif wowversion < 40000 then 
+	WoWWOTLKC = true
+elseif wowversion > 90000 then
 	WoWRetail = true
+else
+	-- n/a
 end
 
 local db = {}
@@ -68,7 +75,7 @@ local BULLET = " - "
 
 db.category = L[private.category]
 
-if (WoWClassicEra or WoWClassicTBC) then
+if (WoWClassicEra or WoWClassicTBC or WoWWOTLKC) then
 	db.maps = {
 		AlteracValleyNorth = {
 			ZoneName = { BZ["Alterac Valley"]..ALC["L-Parenthesis"]..ALC["North"]..ALC["Comma"]..FACTION_ALLIANCE..ALC["R-Parenthesis"] },
@@ -253,7 +260,7 @@ if (WoWClassicEra or WoWClassicTBC) then
 			{ "B", 10002, 256, 365 }, -- Warsong Lumber Mill
 		},
 	}
-	if (WoWClassicTBC) then
+	if (WoWClassicTBC or WoWWOTLKC) then
 		db.maps["EyeOfTheStorm"] = {
 			ZoneName = { BZ["Eye of the Storm"] },
 			Location = { BZ["Netherstorm"] },
@@ -270,6 +277,59 @@ if (WoWClassicEra or WoWClassicTBC) then
 			{ GREN.."4) "..BZ["Blood Elf Tower"], 10007 },
 			{ ORNG.."1) "..ALC["Graveyard"], 10008 },
 		}
+		db.maps["HalaaPvP"] = {
+			ZoneName = { BZ["Nagrand"]..ALC["Hyphen"]..BZ["Halaa"] },
+			Location = { BZ["Nagrand"] },
+			LevelRange = "64-85",
+			MinLevel = "64",
+			WorldMapID = 107,
+			{ ORNG..PVP..ALC["Colon"]..BZ["Halaa"] },
+			{ GREN.."1) "..BZ["Halaa"], 10001 },
+			{ GREN..INDENT..FACTION_ALLIANCE },
+			{ GREN..INDENT..BULLET..L["Quartermaster Davian Vaclav"] },
+			{ GREN..INDENT..BULLET..L["Chief Researcher Kartos"] },
+			{ GREN..INDENT..BULLET..L["Aldraan <Blade Merchant>"] },
+			{ GREN..INDENT..BULLET..L["Cendrii <Food & Drink>"] },
+			{ GREN..INDENT..FACTION_HORDE },
+			{ GREN..INDENT..BULLET..L["Quartermaster Jaffrey Noreliqe"] },
+			{ GREN..INDENT..BULLET..L["Chief Researcher Amereldine"] },
+			{ GREN..INDENT..BULLET..L["Coreiel <Blade Merchant>"] },
+			{ GREN..INDENT..BULLET..L["Embelar <Food & Drink>"] },
+			{ GREN.."2) "..L["Wyvern Camp"], 10002 },
+		}
+		db.maps["HellfirePeninsulaPvP"] = {
+			ZoneName = { BZ["Hellfire Peninsula"]..ALC["Hyphen"]..L["Hellfire Fortifications"] },
+			Location = { BZ["Hellfire Peninsula"] },
+			LevelRange = "58-85",
+			MinLevel = "58",
+			WorldMapID = 100,
+			{ ORNG..PVP..ALC["Colon"]..L["Hellfire Fortifications"] },
+			{ GREN.."1) "..BZ["The Stadium"], 10001 },
+			{ GREN.."2) "..BZ["The Overlook"], 10002 },
+			{ GREN.."3) "..BZ["Broken Hill"], 10003 },
+		}
+		db.maps["TerokkarForestPvP"] = {
+			ZoneName = { BZ["Terokkar Forest"]..ALC["Hyphen"]..L["Spirit Towers"] },
+			Location = { BZ["The Bone Wastes"]..ALC["Comma"]..BZ["Terokkar Forest"] },
+			LevelRange = "62-85",
+			MinLevel = "62",
+			WorldMapID = 108,
+			{ ORNG..PVP..ALC["Colon"]..BZ["Auchindoun"].." "..L["Spirit Towers"] },
+			{ GREN.."1) "..L["Spirit Towers"], 10001 },
+		}
+		db.maps["ZangarmarshPvP"] = {
+			ZoneName = { BZ["Zangarmarsh"]..ALC["Hyphen"]..BZ["Twin Spire Ruins"] },
+			Location = { BZ["Zangarmarsh"] },
+			LevelRange = "60-85",
+			MinLevel = "60",
+			WorldMapID = 102,
+			{ ORNG..PVP..ALC["Colon"]..BZ["Twin Spire Ruins"] },
+			{ GREN.."1) "..L["West Beacon"], 10001 },
+			{ GREN.."2) "..L["East Beacon"], 10002 },
+			{ GREN.."1') "..L["Horde Field Scout"], 10003 },
+			{ GREN.."2') "..L["Alliance Field Scout"], 10004 },
+			{ ORNG.."1) "..L["Twinspire Graveyard"], 10005 },
+		}
 		db.coords["EyeOfTheStorm"] = {
 			{ "A", 10001, 238, 82 }, -- Entrance
 			{ "B", 10002, 266, 408 }, -- Entrance
@@ -282,6 +342,161 @@ if (WoWClassicEra or WoWClassicTBC) then
 			{ "1", 10008, 304, 161 }, -- Graveyard
 			{ "1", 10008, 201, 319 }, -- Graveyard
 			{ "1", 10008, 299, 316 }, -- Graveyard
+		}
+		db.coords["HalaaPvP"] = {
+			{ "1", 10001, 252, 247 }, -- Halaa
+			{ "2", 10002, 184, 207 }, -- Wyvern Camp
+			{ "2", 10002, 215, 367 }, -- Wyvern Camp
+			{ "2", 10002, 323, 164 }, -- Wyvern Camp
+			{ "2", 10002, 358, 298 }, -- Wyvern Camp
+		}
+		db.coords["HellfirePeninsulaPvP"] = {
+			{ "1", 10001, 181, 228 }, -- The Stadium
+			{ "2", 10002, 295, 183 }, -- The Overlook
+			{ "3", 10003, 302, 312 }, -- Broken Hill
+		}
+		db.coords["TerokkarForestPvP"] = {
+			{ "1", 10001, 56, 104 }, -- Spirit Towers
+			{ "1", 10001, 314, 42 }, -- Spirit Towers
+			{ "1", 10001, 482, 148 }, -- Spirit Towers
+			{ "1", 10001, 434, 355 }, -- Spirit Towers
+			{ "1", 10001, 261, 453 }, -- Spirit Towers
+		}
+		db.coords["ZangarmarshPvP"] = {
+			{ "1", 10001, 184, 208 }, -- West Beacon
+			{ "2", 10002, 321, 214 }, -- East Beacon
+			{ "1'", 10003, 56, 233 }, -- Horde Field Scout
+			{ "2'", 10004, 491, 199 }, -- Alliance Field Scout
+			{ "1", 10005, 253, 245 }, -- Twinspire Graveyard
+		}
+	end
+	if (WoWWOTLKC) then
+		db.maps["IsleOfConquest"] = {
+			ZoneName = { BZ["Isle of Conquest"] },
+			Location = { BZ["Icecrown"] },
+			LevelRange = "20-120"..ALC["L-Parenthesis"]..L["Span of 5"]..ALC["R-Parenthesis"]..ALC["Slash"].."120",
+			PlayerLimit = {40},
+			Acronym = L["IoC"],
+			WorldMapID = 169,
+			{ BLUE.."A) "..ALC["Start"]..ALC["L-Parenthesis"]..FACTION_HORDE..ALC["R-Parenthesis"], 10001 },
+			{ GREN..INDENT..L["Overlord Agmar"] },
+			{ BLUE.."B) "..ALC["Start"]..ALC["L-Parenthesis"]..FACTION_ALLIANCE..ALC["R-Parenthesis"], 10002 },
+			{ GREN..INDENT..L["High Commander Halford Wyrmbane <7th Legion>"] },
+			{ GREN.."1) "..L["The Refinery"], 10003 },
+			{ GREN.."2) "..L["The Docks"], 10004 },
+			{ GREN.."3) "..L["The Workshop"], 10005 },
+			{ GREN.."4) "..L["The Hangar"], 10006 },
+			{ GREN.."5) "..L["The Quarry"], 10007 },
+			{ ORNG.."1) "..L["Contested Graveyards"], 10008 },
+			{ ORNG.."2) "..L["Horde Graveyard"], 10009 },
+			{ ORNG.."3) "..L["Alliance Graveyard"], 10010 },
+			{ "" },
+			{ _RED..L["Gates are marked with red bars."] },
+		}
+		db.maps["StrandOfTheAncients"] = {
+			ZoneName = { BZ["Strand of the Ancients"] },
+			Location = { BZ["Dragonblight"] },
+			LevelRange = "50-120"..ALC["L-Parenthesis"]..L["Span of 5"]..ALC["R-Parenthesis"]..ALC["Slash"].."120",
+			PlayerLimit = {15},
+			Acronym = L["SotA"],
+			WorldMapID = 128,
+			{ ORNG..L["Gates are marked with their colors."] },
+			{ BLUE.."A) "..ALC["Start"]..ALC["L-Parenthesis"]..L["Attacking Team"]..ALC["R-Parenthesis"], 10001 },
+			{ BLUE.."B) "..ALC["Start"]..ALC["L-Parenthesis"]..L["Defending Team"]..ALC["R-Parenthesis"], 10002 },
+			{ _RED.."1) "..L["Massive Seaforium Charge"], 10003 },
+			{ _RED.."2) "..L["Titan Relic"], 10004 },
+			{ GREN.."1) "..L["Battleground Demolisher"], 10005 },
+			{ GREN.."2) "..L["Graveyard Flag"], 10006 },
+			{ ORNG.."1) "..L["Resurrection Point"], 10007 },
+		}
+		db.maps["WintergraspPvP"] = {
+			ZoneName = { BZ["Wintergrasp"] },
+			Location = { BZ["Wintergrasp"] },
+			LevelRange = "80-120"..ALC["L-Parenthesis"]..L["Span of 5"]..ALC["R-Parenthesis"]..ALC["Slash"].."120",
+			PlayerLimit = {40},
+			WorldMapID = 123,
+			LargeMap = "WintergraspPvP",
+			{ ORNG..PVP..ALC["Colon"]..BZ["Wintergrasp"] },
+			{ BLUE.."A) "..BZ["Wintergrasp Fortress"], 10001 },
+			{ BLUE..INDENT..BZ["Vault of Archavon"] },
+			{ BLUE.."B) "..BZ["Valiance Landing Camp"], 10002 },
+			{ BLUE.."C) "..BZ["Warsong Camp"], 10003 },
+			{ GREN.."1) "..BZ["Wintergrasp Fortress"], 10004 },
+			{ GREN..INDENT..L["Fortress Vihecal Workshop (E)"] },
+			{ GREN..INDENT..L["Fortress Vihecal Workshop (W)"] },
+			{ GREN.."2) "..BZ["The Sunken Ring"], 10005 },
+			{ GREN..INDENT..L["Sunken Ring Vihecal Workshop"] },
+			{ GREN.."3) "..BZ["The Broken Temple"], 10006 },
+			{ GREN..INDENT..L["Broken Temple Vihecal Workshop"] },
+			{ GREN.."4) "..BZ["Eastspark Workshop"], 10007 },
+			{ GREN..INDENT..L["Eastspark Vihecale Workshop"] },
+			{ GREN.."5) "..BZ["Westspark Workshop"], 10008 },
+			{ GREN..INDENT..L["Westspark Vihecale Workshop"] },
+			{ _RED.."1) "..BZ["Flamewatch Tower"], 10009 },
+			{ _RED.."2) "..BZ["Winter's Edge Tower"], 10010 },
+			{ _RED.."3) "..BZ["Shadowsight Tower"], 10011 },
+			{ ORNG.."1) "..L["Wintergrasp Graveyard"], 10012 },
+			{ ORNG.."2) "..L["Sunken Ring Graveyard"], 10013 },
+			{ ORNG.."3) "..L["Broken Temple Graveyard"], 10014 },
+			{ ORNG.."4) "..L["Southeast Graveyard"], 10015 },
+			{ ORNG.."5) "..L["Southwest Graveyard"], 10016 },
+		}
+		db.coords["IsleOfConquest"] = {
+			{ "A", 10001, 239, 90 }, -- Start
+			{ "B", 10002, 260, 428 }, -- Start
+			{ "1", 10003, 107, 93 }, -- The Refinery
+			{ "2", 10004, 105, 265 }, -- The Docks
+			{ "3", 10005, 254, 264 }, -- The Workshop
+			{ "4", 10006, 305, 251 }, -- The Hangar
+			{ "5", 10007, 365, 429 }, -- The Quarry
+			{ "1", 10008, 82, 302 }, -- Contested Graveyards
+			{ "1", 10008, 260, 89 }, -- Contested Graveyards
+			{ "1", 10008, 281, 425 }, -- Contested Graveyards
+			{ "1", 10008, 205, 261 }, -- Contested Graveyards
+			{ "1", 10008, 352, 254 }, -- Contested Graveyards
+			{ "2", 10009, 390, 141 }, -- Horde Graveyard
+			{ "3", 10010, 94, 374 }, -- Alliance Graveyard
+		}
+		db.coords["StrandOfTheAncients"] = {
+			{ "A", 10001, 202, 44 }, -- Start
+			{ "A", 10001, 264, 53 }, -- Start
+			{ "B", 10002, 251, 264 }, -- Start
+			{ "1", 10003, 186, 54 }, -- Massive Seaforium Charge
+			{ "1", 10003, 282, 56 }, -- Massive Seaforium Charge
+			{ "1", 10003, 119, 176 }, -- Massive Seaforium Charge
+			{ "1", 10003, 363, 172 }, -- Massive Seaforium Charge
+			{ "1", 10003, 210, 343 }, -- Massive Seaforium Charge
+			{ "2", 10004, 269, 443 }, -- Titan Relic
+			{ "1", 10005, 172, 68 }, -- Battleground Demolisher
+			{ "1", 10005, 294, 66 }, -- Battleground Demolisher
+			{ "1", 10005, 131, 183 }, -- Battleground Demolisher
+			{ "1", 10005, 349, 176 }, -- Battleground Demolisher
+			{ "2", 10006, 186, 191 }, -- Graveyard Flag
+			{ "2", 10006, 290, 191 }, -- Graveyard Flag
+			{ "2", 10006, 252, 244 }, -- Graveyard Flag
+			{ "1", 10007, 245, 131 }, -- Resurrection Point
+			{ "1", 10007, 132, 165 }, -- Resurrection Point
+			{ "1", 10007, 354, 158 }, -- Resurrection Point
+			{ "1", 10007, 197, 291 }, -- Resurrection Point
+			{ "1", 10007, 315, 361 }, -- Resurrection Point
+		}
+		db.coords["WintergraspPvP"] = {
+			{ "A", 10001, 237, 101, 508, 98, "Blue" }, -- Wintergrasp Fortress
+			{ "B", 10002, 414, 179, 794, 233, "Blue" }, -- Valiance Landing Camp
+			{ "C", 10003,   9, 198, 148, 260, "Blue" }, -- Warsong Camp
+			{ "1", 10004, 238, 130, 509, 148, "Green" }, -- Wintergrasp Fortress
+			{ "2", 10005, 361, 224, 706, 298, "Green" }, -- The Sunken Ring
+			{ "3", 10006,  90, 216, 275, 292, "Green" }, -- The Broken Temple
+			{ "4", 10007, 366, 380, 725, 551, "Green" }, -- Eastspark Workshop
+			{ "5", 10008, 111, 379, 307, 552, "Green" }, -- Westspark Workshop
+			{ "1", 10009, 476, 352, 896, 508, "Red" }, -- Flamewatch Tower
+			{ "2", 10010, 240, 368, 518, 535, "Red" }, -- Winter's Edge Tower
+			{ "3", 10011,  27, 325, 170, 465, "Red" }, -- Shadowsight Tower
+			{ "1", 10012, 223,  61, 486,  40, "Orange" }, -- Wintergrasp Graveyard
+			{ "2", 10013, 378, 178, 732, 235, "Orange" }, -- Sunken Ring Graveyard
+			{ "3", 10014,  75, 192, 243, 251, "Orange" }, -- Broken Temple Graveyard
+			{ "4", 10015, 350, 385, 695, 557, "Orange" }, -- Southeast Graveyard
+			{ "5", 10016, 131, 385, 323, 561, "Orange" }, -- Southwest Graveyard
 		}
 	end
 else

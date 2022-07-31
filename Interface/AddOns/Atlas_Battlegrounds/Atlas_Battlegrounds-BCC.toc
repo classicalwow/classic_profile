@@ -21,9 +21,9 @@
 # ## Notes: Battleground Maps
 # ## Notes-zhTW: Atlas 戰場地圖插件
 #@end-debug@
-## Version: v1.50.01
+## Version: v1.51.02
 ## Author: arith, Dynaletik, dubcat
-## X-Date: 2022-03-23T12:59:07Z
+## X-Date: 2022-07-23T14:36:47Z
 ## X-Credits: Dan Gilbert, Lothaer
 ## X-Email: atlas.addon at gmail.com
 ## X-Website: http://www.atlasmod.com
