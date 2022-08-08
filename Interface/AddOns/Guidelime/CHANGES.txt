@@ -1,12 +1,18 @@
-tag 5e3624a0154f7954f61409dea00ea1d7eedbd448 v2.029(Classic)
+tag 19096a847a5406a132a6e2fbf6cd153ec919ec65 v2.031(Classic)
 Author:	max-ri <51713394+max-ri@users.noreply.github.com>
-Date:	Sun May 29 18:00:11 2022 +0200
+Date:	Mon Aug 1 19:58:10 2022 +0200
 
-v2.029(Classic)
+v2.031(Classic)
 
-commit 76f764043f6171e72e516ddd3617c381606b91ff
+commit 0fffc6ce21d9d6d7f279228267535404df43aa1c
 Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sun May 29 18:00:11 2022 +0200
+Date:   Mon Aug 1 19:58:10 2022 +0200
 
-    v2.029(Classic)
+    v2.031(Classic)
+
+commit d183c648134f005601cadd2d8d8b3668a4d86afa
+Author: max-ri <51713394+max-ri@users.noreply.github.com>
+Date:   Mon Aug 1 19:56:41 2022 +0200
+
+    DK class quest restriction from Questie
 

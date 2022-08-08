@@ -8,8 +8,8 @@ DataStore_AuctionsDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1658554876,
-				["lastVisitDate"] = "2022/07/23 13:41",
+				["lastUpdate"] = 1659862935,
+				["lastVisitDate"] = "2022/08/07 17:02",
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
 				["lastUpdate"] = 1645540372,

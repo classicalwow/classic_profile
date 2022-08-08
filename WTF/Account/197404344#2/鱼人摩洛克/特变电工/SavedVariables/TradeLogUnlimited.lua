@@ -2330,10 +2330,10 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["targetItems"] = {
 			{
-				["itemLink"] = "|cffa335ee|Hitem:16959::::::::60:::::::::|h[愤怒护腕]|h|r",
 				["name"] = "愤怒护腕",
 				["numItems"] = 1,
 				["tCount"] = 1,
+				["itemLink"] = "|cffa335ee|Hitem:16959::::::::60:::::::::|h[愤怒护腕]|h|r",
 				["isUsable"] = true,
 				["texture"] = 132618,
 			}, -- [1]
@@ -2346,8 +2346,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "地狱的宠儿",
 		["when"] = "2022-07-23 14:49:36",
-		["where"] = "黑翼之巢",
 		["result"] = "complete",
+		["where"] = "黑翼之巢",
 	}, -- [102]
 	{
 		["targetMoney"] = 0,
@@ -2372,8 +2372,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "苦苦无敌",
 		["when"] = "2022-07-23 15:08:48",
-		["where"] = "黑翼之巢",
 		["result"] = "complete",
+		["where"] = "黑翼之巢",
 	}, -- [103]
 	{
 		["targetMoney"] = 0,
@@ -2398,8 +2398,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "法妹妹",
 		["when"] = "2022-07-23 15:34:37",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [104]
 	{
 		["targetMoney"] = 1000000,
@@ -2417,8 +2417,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "睡眠不足",
 		["when"] = "2022-07-23 15:44:46",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [105]
 	{
 		["targetMoney"] = 500000,
@@ -2436,8 +2436,8 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "睡眠不足",
 		["when"] = "2022-07-23 15:48:42",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [106]
 	{
 		["targetMoney"] = 3320000,
@@ -2455,9 +2455,73 @@ TradeLogUnlimited_TradesHistory = {
 		},
 		["who"] = "玉麒麟荣懿",
 		["when"] = "2022-07-23 15:58:30",
-		["where"] = "铁炉堡",
 		["result"] = "complete",
+		["where"] = "铁炉堡",
 	}, -- [107]
+	{
+		["targetMoney"] = 50000000,
+		["playerMoney"] = 0,
+		["id"] = 108,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "潮汐海灵",
+		["when"] = "2022-08-07 13:37:51",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [108]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 600000,
+		["id"] = 109,
+		["playerItems"] = {
+			[7] = {
+				["name"] = "冰川披风",
+				["numItems"] = 1,
+				["enchantment"] = "附魔披风 - 强效抗性",
+				["itemLink"] = "|cffa335ee|Hitem:22658::::::::60:::::::::|h[冰川披风]|h|r",
+				["texture"] = 133768,
+			},
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "拦路熊",
+		["when"] = "2022-08-07 14:08:59",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [109]
+	{
+		["targetMoney"] = 35000000,
+		["playerMoney"] = 0,
+		["id"] = 110,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "潮汐海灵",
+		["when"] = "2022-08-07 14:30:49",
+		["result"] = "complete",
+		["where"] = "铁炉堡",
+	}, -- [110]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

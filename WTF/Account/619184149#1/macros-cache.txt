@@ -1,0 +1,51 @@
+VER 3 0000000000000007 "5" "132089"
+/大喊 小鱼人附魔锻造；代工黑铁套、狮心头、元素磨刀石 武器/30法伤十字军22智力5伤害15敏25敏；衣服/+4属性生命法力；护腕/治疗力耐回蓝；鞋/移速敏耐；手套/骑力敏采集 披风/5抗敏甲火抗 奥金CD8
+END
+VER 3 000000000000000A "55555" "132118"
+/4 4属性 4属性 30法伤 手套20火伤 火焰能量需要的M  200收太阳塑像 240收夜晚塑像
+END
+VER 3 000000000000000F "alaGearMan0" "132293"
+/run AGM_FUNC.takeoffAll()
+END
+VER 3 0000000000000002 "Decursive" "INV_MISC_QUESTIONMARK"
+/stopcasting
+/cast [@mouseover,nomod,exists] 解除次级诅咒;  [@mouseover,exists,mod:ctrl] 变形术; [@mouseover,exists,mod:shift] 解除次级诅咒
+END
+VER 3 0000000000000006 "世界" "132133"
+/4 小鱼人附魔锻造；代工黑铁套、狮心头、元素磨刀石 武器/30法伤十字军22智力5伤害15敏25敏；衣服/+4属性生命法力；护腕/治疗力耐回蓝；鞋/移速敏耐；手套/骑力敏采集 披风/5抗敏甲火抗 奥金CD7
+END
+VER 3 0000000000000004 "冰箱" "135864"
+#showtooltip 寒冰屏障
+/stopcasting
+/cancelAura 寒冰屏障
+/castSequence reset=240 寒冰屏障,急速冷却
+END
+VER 3 0000000000000003 "吃喝" "136172"
+/use 魔法肉桂面包
+/use 魔法晶水
+/坐下
+END
+VER 3 000000000000000D "唤醒" "136075"
+#showtooltip 唤醒
+/equip [btn:1] 娅尔罗的意志
+/cast [btn:1] 唤醒
+/equip [btn:1] 暗影烈焰法杖
+END
+VER 3 0000000000000010 "宝石" "134128"
+/use 法力红宝石
+/use 法力黄水晶
+/use 法力翡翠
+/use 法力玛瑙
+END
+VER 3 000000000000000B "是" "132101"
+/说 4属性 30法伤 手套20火伤 火焰能量需要的M  200收太阳塑像 240收夜晚塑像
+END
+VER 3 000000000000000E "炸弹箱" "132762"
+#showtooltip 地精工兵炸药
+/use [target=player] 高级活动假人
+/use [target=player] 活动假人
+/use 地精工兵炸药
+/use 拉姆斯登的闪电钉
+/use 献祭之油
+/use 地精炸弹箱
+END

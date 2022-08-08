@@ -20,14 +20,14 @@ AtlasLootClassicDB = {
 					nil, -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					110.9998931884766, -- [4]
-					52.99996566772461, -- [5]
+					156.5552825927734, -- [4]
+					11.33327960968018, -- [5]
 				},
 				["selected"] = {
-					nil, -- [1]
-					"TheTempleofAhnQiraj", -- [2]
+					"AtlasLootClassic_Crafting", -- [1]
+					"Tailoring", -- [2]
 					nil, -- [3]
-					3, -- [4]
+					1, -- [4]
 					0, -- [5]
 				},
 			},

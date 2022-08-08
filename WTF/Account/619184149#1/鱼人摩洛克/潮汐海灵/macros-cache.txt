@@ -1,0 +1,4 @@
+VER 3 0000000001000001 "/script Heart_He" "132089"
+/script Heart_HealMostWounded("standard") 
+/跟随 迷彡迷
+END
