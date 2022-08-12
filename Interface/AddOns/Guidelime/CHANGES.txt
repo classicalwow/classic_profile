@@ -1,18 +1,24 @@
-tag 19096a847a5406a132a6e2fbf6cd153ec919ec65 v2.031(Classic)
+tag 4c70853f9fe576c13abd44d3ee76afe65d3b73af v2.034(Classic)
 Author:	max-ri <51713394+max-ri@users.noreply.github.com>
-Date:	Mon Aug 1 19:58:10 2022 +0200
+Date:	Thu Aug 11 14:52:55 2022 +0200
 
-v2.031(Classic)
+v2.034(Classic)
 
-commit 0fffc6ce21d9d6d7f279228267535404df43aa1c
+commit 6e62a9e9925efd087da21f41867aaebadada4413
 Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Mon Aug 1 19:58:10 2022 +0200
+Date:   Thu Aug 11 14:52:55 2022 +0200
 
-    v2.031(Classic)
+    v2.034(Classic)
 
-commit d183c648134f005601cadd2d8d8b3668a4d86afa
+commit 86fd689e7d055b2edd75b48103c16d92102c8b62
 Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Mon Aug 1 19:56:41 2022 +0200
+Date:   Thu Aug 11 14:22:23 2022 +0200
 
-    DK class quest restriction from Questie
+    wrath beta: two flight masters added in W Plaguelands
+
+commit 1722cda905e985a54057562acfee35a426d0f272
+Author: max-ri <51713394+max-ri@users.noreply.github.com>
+Date:   Thu Aug 11 14:19:14 2022 +0200
+
+    bugfix: no map marker for flight points
 

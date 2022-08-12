@@ -1,35 +1,35 @@
 
 TalentEmuSV = {
+	["loot"] = {
+	},
 	["_GlobalRef"] = {
 		["emu"] = {
 			["GameFontHighlightSmall"] = 14,
-			["ALASCR"] = 181,
+			["ALASCR"] = 182,
 			["PlayerTalentFrameTalent_OnClick"] = 43,
-			["ChatFrame_AddMessageEventFilter"] = 167,
-			["TargetFrame"] = 167,
+			["ChatFrame_AddMessageEventFilter"] = 168,
+			["TargetFrame"] = 168,
 			["TalentFrameTalent_OnClick"] = 43,
-			["GetAddOnInfo"] = 503,
-			["IsAddOnLoaded"] = 168,
+			["GetAddOnInfo"] = 506,
+			["IsAddOnLoaded"] = 169,
 			["GameFontNormal"] = 294,
 			["TalentFrame"] = 43,
-			["SlashCmdList"] = 168,
-			["GameFontHighlight"] = 223,
+			["SlashCmdList"] = 169,
+			["GameFontHighlight"] = 224,
 			["ERR_CHAT_PLAYER_NOT_FOUND_S"] = 19493,
 			["GetPlayerInfoByGUID"] = 14,
-			["alaPopup"] = 2016,
+			["alaPopup"] = 2028,
 			["PlayerTalentFrame"] = 129,
 			["ChatFrame_MessageEventHandler"] = 70,
-			["TalentFrame_Update"] = 5,
 			["PlayerTalentFrameCloseButton"] = 43,
-			["ALATEMU"] = 4382,
+			["ALATEMU"] = 4383,
+			["UISpecialFrames"] = 168,
 			["ALADROP"] = 12,
-			["UISpecialFrames"] = 167,
 			["StaticPopup_Show"] = 5,
-			["LibStub"] = 501,
-			["StaticPopupDialogs"] = 173,
+			["TalentFrame_Update"] = 5,
+			["LibStub"] = 504,
+			["StaticPopupDialogs"] = 174,
 		},
-	},
-	["loot"] = {
 	},
 	["var"] = {
 		["Player-5458-03381254"] = "4::0SIt-F0",
@@ -40,7 +40,7 @@ TalentEmuSV = {
 			["pvp剑- |cff7fbfff武器31|r 狂怒20 防护 0"] = "9OZgu9ypPU3a-tw0",
 		},
 	},
-	["_version"] = 220720,
+	["__upgraded"] = true,
 	["set"] = {
 		["minimapPos"] = 215.6378063011692,
 		["talents_in_tip"] = false,
@@ -48,7 +48,7 @@ TalentEmuSV = {
 		["credible"] = false,
 		["minimap"] = true,
 	},
-	["__upgraded"] = true,
+	["_version"] = 220720,
 	["_GlobalAssign"] = {
 		["emu"] = {
 		},

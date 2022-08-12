@@ -41,13 +41,6 @@ X: 52
 Y: -151
 W: 407
 H: 340
-Frame: PawnUIFrame
-FrameLevel: 1
-Anchor: CENTER
-X: -47
-Y: -29
-W: 800
-H: 525
 Frame: MeetingHornMainPanel
 FrameLevel: 1
 Anchor: RIGHT
@@ -55,3 +48,10 @@ X: -320
 Y: 29
 W: 818
 H: 424
+Frame: PawnUIFrame
+FrameLevel: 1
+Anchor: CENTER
+X: -47
+Y: -29
+W: 800
+H: 525

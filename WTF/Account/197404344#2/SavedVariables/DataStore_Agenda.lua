@@ -8,7 +8,7 @@ DataStore_AgendaDB = {
 	["global"] = {
 		["Characters"] = {
 			["Default.鱼人摩洛克.特变电工"] = {
-				["lastUpdate"] = 1659876626,
+				["lastUpdate"] = 1660227006,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
 				["lastUpdate"] = 1644135021,
