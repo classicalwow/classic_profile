@@ -2522,6 +2522,82 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "铁炉堡",
 	}, -- [110]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 111,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "纳克萨玛斯",
+		["who"] = "幻灭夜",
+		["when"] = "2022-08-14 14:47:07",
+		["result"] = "cancelled",
+	}, -- [111]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 1000000,
+		["id"] = 112,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "小康家",
+		["when"] = "2022-08-14 14:47:47",
+		["result"] = "complete",
+		["where"] = "纳克萨玛斯",
+	}, -- [112]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 113,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "特效治疗石",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["isUsable"] = true,
+				["itemLink"] = "|cffffffff|Hitem:19013::::::::60:::::::::|h[特效治疗石]|h|r",
+				["texture"] = 135230,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "贤斌珐师",
+		["when"] = "2022-08-14 14:51:47",
+		["result"] = "complete",
+		["where"] = "纳克萨玛斯",
+	}, -- [113]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 114,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "纳克萨玛斯",
+		["who"] = "小康家",
+		["when"] = "2022-08-14 20:25:27",
+		["result"] = "cancelled",
+	}, -- [114]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

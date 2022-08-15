@@ -2522,6 +2522,121 @@ TradeLogUnlimited_TradesHistory = {
 		["result"] = "complete",
 		["where"] = "铁炉堡",
 	}, -- [110]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 111,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "纳克萨玛斯",
+		["who"] = "幻灭夜",
+		["when"] = "2022-08-14 14:47:07",
+		["result"] = "cancelled",
+	}, -- [111]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 1000000,
+		["id"] = 112,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "小康家",
+		["when"] = "2022-08-14 14:47:47",
+		["result"] = "complete",
+		["where"] = "纳克萨玛斯",
+	}, -- [112]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 113,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+			{
+				["name"] = "特效治疗石",
+				["numItems"] = 1,
+				["tCount"] = 1,
+				["itemLink"] = "|cffffffff|Hitem:19013::::::::60:::::::::|h[特效治疗石]|h|r",
+				["isUsable"] = true,
+				["texture"] = 135230,
+			}, -- [1]
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "贤斌珐师",
+		["when"] = "2022-08-14 14:51:47",
+		["result"] = "complete",
+		["where"] = "纳克萨玛斯",
+	}, -- [113]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 0,
+		["id"] = 114,
+		["playerItems"] = {
+		},
+		["reason"] = "self",
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["where"] = "纳克萨玛斯",
+		["who"] = "小康家",
+		["when"] = "2022-08-14 20:25:27",
+		["result"] = "cancelled",
+	}, -- [114]
+	{
+		["targetMoney"] = 36060000,
+		["playerMoney"] = 0,
+		["id"] = 115,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_CLOSED", -- [1]
+			"TRADE_SHOW", -- [2]
+			"TRADE_CLOSED", -- [3]
+			"TRADE_CLOSED", -- [4]
+		},
+		["who"] = "和牛",
+		["when"] = "2022-08-14 21:37:41",
+		["where"] = "丹莫罗",
+		["result"] = "complete",
+	}, -- [115]
+	{
+		["targetMoney"] = 0,
+		["playerMoney"] = 10000,
+		["id"] = 116,
+		["playerItems"] = {
+		},
+		["targetItems"] = {
+		},
+		["player"] = "特变电工",
+		["events"] = {
+			"TRADE_SHOW", -- [1]
+			"TRADE_CLOSED", -- [2]
+			"TRADE_CLOSED", -- [3]
+		},
+		["who"] = "皮皮怪",
+		["when"] = "2022-08-14 21:39:35",
+		["where"] = "铁炉堡",
+		["result"] = "complete",
+	}, -- [116]
 }
 TradeLogUnlimited_Announce_Checked = true
 TradeLogUnlimited_AnnounceChannel = "RAID"

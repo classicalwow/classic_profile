@@ -24,10 +24,10 @@ AtlasLootClassicDB = {
 					11.33327960968018, -- [5]
 				},
 				["selected"] = {
-					"AtlasLootClassic_Crafting", -- [1]
-					"Tailoring", -- [2]
-					nil, -- [3]
-					1, -- [4]
+					nil, -- [1]
+					"Naxxramas", -- [2]
+					10, -- [3]
+					3, -- [4]
 					0, -- [5]
 				},
 			},
