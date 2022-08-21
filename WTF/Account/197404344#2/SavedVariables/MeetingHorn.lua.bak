@@ -9,10 +9,14 @@ MEETINGHORN_DB = {
 		["顶级程序员 - 鱼人摩洛克"] = {
 		},
 		["特变电工 - 鱼人摩洛克"] = {
-			["cache"] = {
-				["cooldown"] = {
-					["start"] = 1640267414,
-					["duration"] = 50,
+			["goodleader"] = {
+				["cache"] = {
+					["纳克萨玛斯"] = {
+						["leaderGuid"] = "Player-5458-02EB1F4E",
+						["timestamp"] = 1661002948,
+						["leader"] = "苦苦冲锋-鱼人摩洛克",
+						["raidName"] = "纳克萨玛斯",
+					},
 				},
 			},
 			["window"] = {
@@ -22,14 +26,10 @@ MEETINGHORN_DB = {
 					["scale"] = 1,
 				},
 			},
-			["goodleader"] = {
-				["cache"] = {
-					["纳克萨玛斯"] = {
-						["leader"] = "幻灭夜-鱼人摩洛克",
-						["timestamp"] = 1660480711,
-						["leaderGuid"] = "Player-5458-02F704A2",
-						["raidName"] = "纳克萨玛斯",
-					},
+			["cache"] = {
+				["cooldown"] = {
+					["start"] = 1640267414,
+					["duration"] = 50,
 				},
 			},
 		},
