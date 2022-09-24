@@ -24,23 +24,24 @@ DataStore_InventoryDB = {
 					"|cff0070dd|Hitem:13965::::::::60:::::::::|h[黑手饰物]|h|r", -- [13]
 					"|cffa335ee|Hitem:21670::::::::60:::::::::|h[虫群卫士徽章]|h|r", -- [14]
 					"|cffa335ee|Hitem:21701:849:::::::60:::::::::|h[强烈仇恨披风]|h|r", -- [15]
-					"|cffa335ee|Hitem:23221::::::::60:::::::::|h[遗失的义肢]|h|r", -- [16]
+					"|cffa335ee|Hitem:23221:1900:::::::60:::::::::|h[遗失的义肢]|h|r", -- [16]
 					"|cffa335ee|Hitem:21268:1900:::::::60:::::::::|h[神圣其拉战锤]|h|r", -- [17]
 					"|cffa335ee|Hitem:19350:664:::::::60:::::::::|h[击心者]|h|r", -- [18]
 				},
 				["averageItemLvl"] = 72,
-				["lastUpdate"] = 1661005827,
+				["lastUpdate"] = 1664024996,
 			},
 			["Default.鱼人摩洛克.顶级程序员"] = {
+				["lastUpdate"] = 1644135021,
 				["Inventory"] = {
 					[8] = "|cffffffff|Hitem:43::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2361::::::::1:::::::::|h[]|h|r",
 					[7] = "|cffffffff|Hitem:6118::::::::1:::::::::|h[]|h|r",
 					[4] = "|cffffffff|Hitem:6117::::::::1:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1644135021,
 			},
 			["Default.鱼人摩洛克.Javascript"] = {
+				["lastUpdate"] = 1645858908,
 				["Inventory"] = {
 					nil, -- [1]
 					nil, -- [2]
@@ -55,7 +56,6 @@ DataStore_InventoryDB = {
 					[16] = "|cffffffff|Hitem:3193::::::678:31308416:17:::::::::|h[]|h|r",
 					[15] = "|cffffffff|Hitem:4689::::::::17:::::::::|h[]|h|r",
 				},
-				["lastUpdate"] = 1645858908,
 			},
 		},
 		["Guilds"] = {
@@ -63,9 +63,6 @@ DataStore_InventoryDB = {
 				["Members"] = {
 					["夏虫不可语冰"] = {
 						["averageItemLvl"] = 61,
-					},
-					["特变电工"] = {
-						["averageItemLvl"] = 71,
 					},
 					["依咕比咕"] = {
 						["averageItemLvl"] = 65,
@@ -76,24 +73,24 @@ DataStore_InventoryDB = {
 					["Dptic"] = {
 						["averageItemLvl"] = 24,
 					},
-					["巴托里"] = {
-						["averageItemLvl"] = 54,
-					},
 					["爱你两世丶"] = {
 						["averageItemLvl"] = 3,
 					},
 					["莉娜"] = {
 						["averageItemLvl"] = 16,
 					},
+					["巴托里"] = {
+						["averageItemLvl"] = 54,
+					},
 				},
 			},
 			["Default.鱼人摩洛克.limit"] = {
 				["Members"] = {
-					["奶不住快跑啊"] = {
-						["averageItemLvl"] = 17,
-					},
 					["雪凉"] = {
 						["averageItemLvl"] = 41,
+					},
+					["奶不住快跑啊"] = {
+						["averageItemLvl"] = 17,
 					},
 				},
 			},

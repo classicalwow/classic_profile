@@ -1,8 +1,6 @@
 
 PawnOptions = {
 	["LastVersion"] = 2.0538,
-	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
-	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
 		{
 			["ID"] = 23033,
@@ -66,11 +64,10 @@ PawnOptions = {
 			["Level"] = 80,
 			["Link"] = "|cffa335ee|Hitem:22666::::::::60:::::::::|h[寒鳞护手]|h|r",
 		},
-		[17] = {
-			["ID"] = 23221,
-			["Level"] = 83,
-			["AlsoFitsIn"] = 16,
-			["Link"] = "|cffa335ee|Hitem:23221::::::::60:::::::::|h[遗失的义肢]|h|r",
+		[5] = {
+			["ID"] = 21331,
+			["Level"] = 88,
+			["Link"] = "|cffa335ee|Hitem:21331::::::::60:::::::::|h[征服者的胸甲]|h|r",
 		},
 		[11] = {
 			["ID"] = 19384,
@@ -89,12 +86,15 @@ PawnOptions = {
 			["AlsoFitsIn"] = 11,
 			["Link"] = "|cffa335ee|Hitem:19376::::::::60:::::::::|h[阿基迪罗斯的清算之戒]|h|r",
 		},
-		[5] = {
-			["ID"] = 21331,
-			["Level"] = 88,
-			["Link"] = "|cffa335ee|Hitem:21331::::::::60:::::::::|h[征服者的胸甲]|h|r",
+		[17] = {
+			["ID"] = 23221,
+			["Level"] = 83,
+			["AlsoFitsIn"] = 16,
+			["Link"] = "|cffa335ee|Hitem:23221::::::::60:::::::::|h[遗失的义肢]|h|r",
 		},
 	},
+	["AutoSelectScales"] = false,
+	["LastPlayerFullName"] = "特变电工-鱼人摩洛克",
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
