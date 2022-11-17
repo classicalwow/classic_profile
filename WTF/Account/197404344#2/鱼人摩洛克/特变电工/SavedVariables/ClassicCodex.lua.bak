@@ -17,9 +17,9 @@ CodexConfig = {
 		["callbacks"] = {
 			["distance"] = {
 			},
-			["world"] = {
-			},
 			["minimap"] = {
+			},
+			["world"] = {
 			},
 		},
 		["persistent"] = true,
@@ -30,17 +30,17 @@ CodexConfig = {
 		["crazy"] = true,
 		["world"] = true,
 	},
-	["continentIcon"] = false,
-	["currentQuestGivers"] = true,
+	["minimapButton"] = true,
+	["autoTurnin"] = false,
 	["spawnMarkerSize"] = 15,
-	["colorBySpawn"] = true,
+	["showFestival"] = false,
 	["alwaysShowId"] = false,
 	["nameplateIcon"] = false,
 	["zoneMapIcon"] = true,
-	["showFestival"] = false,
+	["colorBySpawn"] = true,
 	["miniMapIcon"] = true,
-	["autoTurnin"] = false,
-	["minimapButton"] = true,
+	["currentQuestGivers"] = true,
+	["continentIcon"] = false,
 	["questMarkerSize"] = 15,
 }
 CodexHiddenQuests = {
@@ -51,9 +51,9 @@ CodexHiddenQuests = {
 	[344] = true,
 	[1267] = true,
 	[151] = true,
-	[64] = true,
-	[741] = true,
 	[968] = true,
+	[741] = true,
+	[64] = true,
 }
 CodexBrowserFavorites = {
 	["objects"] = {
@@ -101,14 +101,14 @@ CodexColors = {
 		0.9764705882352941, -- [2]
 		0.7607843137254902, -- [3]
 	},
-	["安纳克罗斯"] = {
-		0.4823529411764706, -- [1]
-		0.4588235294117647, -- [2]
-		0.9803921568627451, -- [3]
-	},
 	["地狱野猪"] = {
 		0.207843137254902, -- [1]
 		0.06666666666666667, -- [2]
 		0.7098039215686275, -- [3]
+	},
+	["安纳克罗斯"] = {
+		0.4823529411764706, -- [1]
+		0.4588235294117647, -- [2]
+		0.9803921568627451, -- [3]
 	},
 }
