@@ -2,6 +2,7 @@
 DataStore_InventoryDB = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -28,6 +29,16 @@ DataStore_InventoryDB = {
 				},
 				["averageItemLvl"] = 11,
 				["lastUpdate"] = 1637387394,
+			},
+			["Default.伊弗斯.特變電工"] = {
+				["Inventory"] = {
+					[7] = "|cffffffff|Hitem:48::::::::1:::::::::|h[]|h|r",
+					[8] = "|cffffffff|Hitem:47::::::::1:::::::::|h[]|h|r",
+					[18] = "|cffffffff|Hitem:2947::::::::1:::::::::|h[]|h|r",
+					[4] = "|cffffffff|Hitem:49::::::::1:::::::::|h[]|h|r",
+					[16] = "|cffffffff|Hitem:2092::::::::1:::::::::|h[]|h|r",
+				},
+				["lastUpdate"] = 1683082308,
 			},
 		},
 		["Guilds"] = {

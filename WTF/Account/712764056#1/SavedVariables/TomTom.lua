@@ -2,6 +2,7 @@
 TomTomDB = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "Default",
+		["特變電工 - 伊弗斯"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -30,9 +31,12 @@ TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
 	},
 	["profiles"] = {
 		["特變電工 - 玉石礦坑"] = {
+		},
+		["特變電工 - 伊弗斯"] = {
 		},
 	},
 }

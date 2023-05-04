@@ -27,14 +27,8 @@ WIM3_Data = {
 				["autofocus"] = true,
 				["onReceive"] = true,
 			},
-			["pvp"] = {
-				["keepfocus"] = false,
-				["supress"] = true,
-				["onSend"] = true,
-				["autofocus"] = false,
-				["onReceive"] = true,
-			},
-			["party"] = {
+			["alwaysOther"] = false,
+			["raid"] = {
 				["keepfocus"] = false,
 				["supress"] = true,
 				["onSend"] = true,
@@ -48,14 +42,20 @@ WIM3_Data = {
 				["autofocus"] = false,
 				["onReceive"] = false,
 			},
-			["raid"] = {
+			["party"] = {
 				["keepfocus"] = false,
 				["supress"] = true,
 				["onSend"] = true,
 				["autofocus"] = false,
 				["onReceive"] = true,
 			},
-			["alwaysOther"] = false,
+			["pvp"] = {
+				["keepfocus"] = false,
+				["supress"] = true,
+				["onSend"] = true,
+				["autofocus"] = false,
+				["onReceive"] = true,
+			},
 		},
 		["chat"] = {
 			["other"] = {
@@ -88,14 +88,8 @@ WIM3_Data = {
 				["autofocus"] = false,
 				["onReceive"] = false,
 			},
-			["pvp"] = {
-				["keepfocus"] = false,
-				["supress"] = false,
-				["onSend"] = false,
-				["autofocus"] = false,
-				["onReceive"] = false,
-			},
-			["party"] = {
+			["alwaysOther"] = true,
+			["raid"] = {
 				["keepfocus"] = false,
 				["supress"] = false,
 				["onSend"] = false,
@@ -109,14 +103,20 @@ WIM3_Data = {
 				["autofocus"] = false,
 				["onReceive"] = false,
 			},
-			["raid"] = {
+			["party"] = {
 				["keepfocus"] = false,
 				["supress"] = false,
 				["onSend"] = false,
 				["autofocus"] = false,
 				["onReceive"] = false,
 			},
-			["alwaysOther"] = true,
+			["pvp"] = {
+				["keepfocus"] = false,
+				["supress"] = false,
+				["onSend"] = false,
+				["autofocus"] = false,
+				["onReceive"] = false,
+			},
 		},
 	},
 	["timeStampFormat"] = "%H:%M",
@@ -145,9 +145,9 @@ WIM3_Data = {
 			["custom_sml"] = "Chat Blip",
 			["say_sml"] = "Chat Blip",
 			["raid_sml"] = "Chat Blip",
+			["officer_sml"] = "Chat Blip",
 			["guild_sml"] = "Chat Blip",
 			["raidleader_sml"] = "Chat Blip",
-			["officer_sml"] = "Chat Blip",
 			["battlegroundleader_sml"] = "Chat Blip",
 			["battleground_sml"] = "Chat Blip",
 		},
@@ -171,83 +171,78 @@ WIM3_Data = {
 	["lastState"] = "other",
 	["displayColors"] = {
 		["wispOut"] = {
-			["r"] = 1,
-			["g"] = 0.0784313725490196,
 			["b"] = 0.9882352941176471,
+			["g"] = 0.0784313725490196,
+			["r"] = 1,
 		},
 		["wispIn"] = {
-			["r"] = 0.5607843137254902,
-			["g"] = 0.03137254901960784,
 			["b"] = 0.7607843137254902,
+			["g"] = 0.03137254901960784,
+			["r"] = 0.5607843137254902,
 		},
 		["sysMsg"] = {
-			["r"] = 1,
-			["g"] = 0.6627450980392157,
 			["b"] = 0,
+			["g"] = 0.6627450980392157,
+			["r"] = 1,
 		},
 		["BNwispOut"] = {
-			["r"] = 0.1725490196078431,
-			["g"] = 0.6352941176470588,
 			["b"] = 1,
+			["g"] = 0.6352941176470588,
+			["r"] = 0.1725490196078431,
 		},
 		["historyIn"] = {
-			["r"] = 0.4705882352941176,
-			["g"] = 0.4705882352941176,
 			["b"] = 0.4705882352941176,
+			["g"] = 0.4705882352941176,
+			["r"] = 0.4705882352941176,
 		},
 		["errorMsg"] = {
-			["r"] = 1,
-			["g"] = 0,
 			["b"] = 0,
-		},
-		["BNwispIn"] = {
-			["r"] = 0,
-			["g"] = 0.4862745098039216,
-			["b"] = 0.6549019607843137,
-		},
-		["useSkin"] = true,
-		["historyOut"] = {
-			["r"] = 0.7058823529411764,
-			["g"] = 0.7058823529411764,
-			["b"] = 0.7058823529411764,
+			["g"] = 0,
+			["r"] = 1,
 		},
 		["webAddress"] = {
-			["r"] = 1,
-			["g"] = 1,
 			["b"] = 1,
+			["g"] = 1,
+			["r"] = 1,
 		},
+		["BNwispIn"] = {
+			["b"] = 0.6549019607843137,
+			["g"] = 0.4862745098039216,
+			["r"] = 0,
+		},
+		["historyOut"] = {
+			["b"] = 0.7058823529411764,
+			["g"] = 0.7058823529411764,
+			["r"] = 0.7058823529411764,
+		},
+		["useSkin"] = true,
 	},
 	["fontSize"] = 12,
 	["showToolTips"] = true,
 	["minimap"] = {
 		["free_position"] = {
-			["y"] = -119.9890033406945,
-			["x"] = -161.5500472187982,
+			["y"] = -84.57883477943756,
+			["x"] = -117.333301210404,
 			["point"] = "TOPRIGHT",
 		},
-		["position"] = 200,
-		["rightClickNew"] = false,
 		["free"] = false,
+		["rightClickNew"] = false,
+		["position"] = 200,
 	},
 	["winAnimation"] = true,
 	["expose"] = {
 		["protect"] = 1,
 		["borderSize"] = 20,
 		["combat"] = true,
-		["direction"] = 1,
-		["border"] = false,
 		["groupOnly"] = false,
+		["border"] = false,
+		["direction"] = 1,
 	},
 	["alias"] = {
 		["title_string"] = "{n} - {a}",
 	},
-	["winSize"] = {
-		["height"] = 220,
-		["strata"] = "DIALOG",
-		["scale"] = 100,
-		["width"] = 333,
-	},
-	["windowOnTop"] = true,
+	["menuSortActivity"] = true,
+	["whoLookups"] = true,
 	["modules"] = {
 		["ChatSounds"] = {
 			["enabled"] = true,
@@ -288,74 +283,18 @@ WIM3_Data = {
 		["URLHandler"] = {
 			["enabled"] = true,
 		},
-		["Filters"] = {
-			["enabled"] = true,
-		},
-		["Menu"] = {
+		["Tabs"] = {
 			["enabled"] = true,
 		},
 		["ClickControl"] = {
 			["enabled"] = true,
 		},
-		["Tabs"] = {
+		["Menu"] = {
 			["enabled"] = true,
 		},
-	},
-	["ignoreArrowKeys"] = true,
-	["winLoc"] = {
-		["left"] = 217,
-		["top"] = 664,
-	},
-	["coloredNames"] = true,
-	["clampToScreen"] = true,
-	["stats"] = {
-		["startDate"] = "",
-		["versions"] = 1,
-		["whispers"] = 0,
-		["mostConvos"] = 0,
-	},
-	["winFade"] = true,
-	["skin"] = {
-		["font_outline"] = "",
-		["selected"] = "WIM Classic",
-		["font"] = "ChatFontNormal",
-		["suggest"] = true,
-	},
-	["history"] = {
-		["ageLimit"] = true,
-		["maxPer"] = true,
-		["previewCount"] = 25,
-		["whispers"] = {
-			["friends"] = true,
-			["all"] = false,
-			["guild"] = true,
+		["Filters"] = {
+			["enabled"] = true,
 		},
-		["maxAge"] = 1209600,
-		["preview"] = true,
-		["maxCount"] = 500,
-		["chat"] = {
-			["ageLimit"] = true,
-			["maxAge"] = 1209600,
-			["maxPer"] = true,
-			["preview"] = true,
-			["maxCount"] = 500,
-			["previewCount"] = 25,
-		},
-	},
-	["tabs"] = {
-		["sortBy"] = 2,
-		["whispers"] = {
-			["enabled"] = false,
-			["guild"] = false,
-			["friends"] = false,
-		},
-		["chat"] = {
-			["enabled"] = false,
-			["aswhisper"] = false,
-		},
-	},
-	["ClickControl"] = {
-		["clickSensitivity"] = 0.2,
 	},
 	["chat"] = {
 		["bn"] = {
@@ -374,10 +313,7 @@ WIM3_Data = {
 		},
 		["say"] = {
 		},
-		["world"] = {
-			["enabled"] = false,
-			["channelSettings"] = {
-			},
+		["battleground"] = {
 		},
 		["raid"] = {
 			["showAlerts"] = true,
@@ -385,12 +321,76 @@ WIM3_Data = {
 		["officer"] = {
 			["showAlerts"] = true,
 		},
-		["battleground"] = {
+		["world"] = {
+			["enabled"] = false,
+			["channelSettings"] = {
+			},
 		},
 	},
+	["ClickControl"] = {
+		["clickSensitivity"] = 0.2,
+	},
+	["tabs"] = {
+		["sortBy"] = 2,
+		["whispers"] = {
+			["enabled"] = false,
+			["guild"] = false,
+			["friends"] = false,
+		},
+		["chat"] = {
+			["enabled"] = false,
+			["aswhisper"] = false,
+		},
+	},
+	["history"] = {
+		["ageLimit"] = true,
+		["previewCount"] = 25,
+		["maxPer"] = true,
+		["whispers"] = {
+			["friends"] = true,
+			["all"] = false,
+			["guild"] = true,
+		},
+		["maxAge"] = 1209600,
+		["preview"] = true,
+		["maxCount"] = 500,
+		["chat"] = {
+			["ageLimit"] = true,
+			["maxAge"] = 1209600,
+			["previewCount"] = 25,
+			["preview"] = true,
+			["maxCount"] = 500,
+			["maxPer"] = true,
+		},
+	},
+	["skin"] = {
+		["font_outline"] = "",
+		["selected"] = "WIM Classic",
+		["font"] = "ChatFontNormal",
+		["suggest"] = true,
+	},
+	["winFade"] = true,
+	["stats"] = {
+		["startDate"] = "",
+		["versions"] = 1,
+		["whispers"] = 0,
+		["mostConvos"] = 0,
+	},
+	["clampToScreen"] = true,
+	["winLoc"] = {
+		["left"] = 217,
+		["top"] = 664,
+	},
+	["coloredNames"] = true,
+	["ignoreArrowKeys"] = true,
 	["tabAdvance"] = false,
-	["whoLookups"] = true,
-	["menuSortActivity"] = true,
+	["windowOnTop"] = true,
+	["winSize"] = {
+		["height"] = 220,
+		["strata"] = "DIALOG",
+		["scale"] = 100,
+		["width"] = 333,
+	},
 }
 WIM3_Cache = {
 	["玉石礦坑"] = {
@@ -409,18 +409,18 @@ WIM3_Cache = {
 				["|Kq14|k"] = 2,
 				["|Kq18|k"] = 2,
 				["|Kq8|k"] = 2,
-				["|Kq4|k"] = 2,
-				["|Kq15|k"] = 2,
+				["|Kq3|k"] = 2,
+				["|Kq22|k"] = 2,
 				["|Kq21|k"] = 2,
 				["嗯哼"] = 1,
 				["|Kq20|k"] = 2,
 				["|Kq13|k"] = 2,
-				["|Kq24|k"] = 2,
+				["|Kq15|k"] = 2,
 				["|Kq10|k"] = 2,
 				["|Kq7|k"] = 2,
 				["|Kq6|k"] = 2,
-				["|Kq22|k"] = 2,
-				["|Kq3|k"] = 2,
+				["|Kq24|k"] = 2,
+				["|Kq4|k"] = 2,
 			},
 			["guildList"] = {
 				["李小尤"] = 5,
@@ -456,42 +456,79 @@ WIM3_Cache = {
 				["老業"] = 30,
 				["唐伯虎舔靜香"] = 2,
 				["夏洛特煩惱"] = 15,
-				["瑟拉芬"] = 66,
 				["宮美春掐"] = 57,
 				["史丹利死單機"] = 9,
-				["小小的五"] = 62,
 				["紡織娘"] = 12,
-				["年少輕狂"] = 52,
 				["疾風"] = 54,
 				["暫逝"] = 34,
+				["特變電工"] = 36,
 				["逍遙"] = 49,
+				["呆呆的"] = 10,
+				["窮的響叮噹"] = 38,
+				["芝麻開開"] = 19,
 				["奔奔醫生"] = 44,
 				["天呀你真高"] = 43,
-				["兄弟做個人吧"] = 40,
-				["獵不了"] = 37,
-				["惡誠"] = 33,
-				["特變電工"] = 36,
-				["Azzinoth"] = 31,
-				["月靈"] = 35,
-				["瓦里安"] = 28,
-				["剩騎士"] = 21,
-				["呆呆的"] = 10,
+				["Oneoneone"] = 4,
 				["五隻魚"] = 27,
-				["窮的響叮噹"] = 38,
+				["瑟拉芬"] = 66,
+				["樂亮"] = 56,
+				["年少輕狂"] = 52,
 				["米奇老鼠"] = 11,
-				["芝麻開開"] = 19,
-				["甘蔗葉"] = 8,
-				["索拉朵"] = 13,
 				["無命客"] = 53,
 				["千歲娘"] = 42,
+				["索拉朵"] = 13,
 				["Agnes"] = 55,
 				["矮冬瓜"] = 29,
+				["甘蔗葉"] = 8,
 				["小小的三"] = 60,
-				["樂亮"] = 56,
+				["小小的五"] = 62,
 				["愛莉絲"] = 23,
-				["Oneoneone"] = 4,
+				["剩騎士"] = 21,
+				["兄弟做個人吧"] = 40,
+				["瓦里安"] = 28,
+				["月靈"] = 35,
+				["Azzinoth"] = 31,
+				["惡誠"] = 33,
+				["獵不了"] = 37,
 				["孤羽流光"] = 50,
 				["小小的一"] = 59,
+			},
+		},
+	},
+	["伊弗斯"] = {
+		["特變電工"] = {
+			["friendList"] = {
+				["|Kq19|k"] = 2,
+				["|Kq28|k"] = 2,
+				["|Kq16|k"] = 2,
+				["|Kq9|k"] = 2,
+				["|Kq3|k"] = 2,
+				["|Kq20|k"] = 2,
+				["|Kq2|k"] = 2,
+				["|Kq12|k"] = 2,
+				["|Kq26|k"] = 2,
+				["|Kq5|k"] = 2,
+				["|Kq23|k"] = 2,
+				["|Kq1|k"] = 2,
+				["|Kq11|k"] = 2,
+				["|Kq18|k"] = 2,
+				["|Kq17|k"] = 2,
+				["|Kq14|k"] = 2,
+				["|Kq4|k"] = 2,
+				["|Kq15|k"] = 2,
+				["|Kq31|k"] = 2,
+				["|Kq25|k"] = 2,
+				["|Kq22|k"] = 2,
+				["|Kq21|k"] = 2,
+				["|Kq29|k"] = 2,
+				["|Kq27|k"] = 2,
+				["|Kq13|k"] = 2,
+				["|Kq24|k"] = 2,
+				["|Kq10|k"] = 2,
+				["|Kq7|k"] = 2,
+				["|Kq30|k"] = 2,
+				["|Kq8|k"] = 2,
+				["|Kq6|k"] = 2,
 			},
 		},
 	},
@@ -505,9 +542,9 @@ WIM3_Filters = {
 		["sent"] = true,
 		["name"] = "由插件所發出的密語",
 		["received"] = true,
-		["protected"] = true,
-		["stats"] = 0,
 		["action"] = 2,
+		["stats"] = 0,
+		["protected"] = true,
 		["tag"] = "addons",
 	}, -- [1]
 	{
@@ -517,1938 +554,22 @@ WIM3_Filters = {
 		["friend"] = true,
 		["party"] = true,
 		["name"] = "密語選擇 1",
-		["stats"] = 0,
+		["guild"] = true,
 		["raid"] = true,
 		["received"] = true,
-		["guild"] = true,
+		["stats"] = 0,
 	}, -- [2]
 	{
 		["enabled"] = false,
 		["type"] = 2,
 		["name"] = "密語選擇 2",
-		["stats"] = 0,
+		["action"] = 2,
 		["all"] = true,
 		["received"] = true,
-		["action"] = 2,
+		["stats"] = 0,
 	}, -- [3]
 }
 WIM3_History = {
-	["玉石礦坑"] = {
-		["特變電工"] = {
-			["Oneonone#3565"] = {
-				{
-					["type"] = 1,
-					["time"] = 1637385256,
-					["from"] = "特變電工",
-					["msg"] = "來啊",
-					["inbound"] = false,
-					["convo"] = "Oneonone#3565",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1637385259,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "Oneonone#3565",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1637385263,
-					["from"] = "特變電工",
-					["msg"] = "速度",
-					["inbound"] = false,
-					["convo"] = "Oneonone#3565",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1637385265,
-					["from"] = "特變電工",
-					["msg"] = "聯盟",
-					["inbound"] = false,
-					["convo"] = "Oneonone#3565",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1637385273,
-					["from"] = "Oneonone#3565",
-					["msg"] = "我上過了啊  沒人的",
-					["inbound"] = true,
-					["convo"] = "Oneonone#3565",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1637385276,
-					["from"] = "特變電工",
-					["msg"] = "有",
-					["inbound"] = false,
-					["convo"] = "Oneonone#3565",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1637385280,
-					["from"] = "特變電工",
-					["msg"] = "你查詢一下",
-					["inbound"] = false,
-					["convo"] = "Oneonone#3565",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1637385361,
-					["from"] = "Oneonone#3565",
-					["msg"] = "去國服比較好感覺】",
-					["inbound"] = true,
-					["convo"] = "Oneonone#3565",
-				}, -- [8]
-				["info"] = {
-				},
-			},
-			["完美#4631"] = {
-				{
-					["type"] = 1,
-					["time"] = 1637255790,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "完美#4631",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1637255795,
-					["from"] = "特變電工",
-					["msg"] = "你也來了",
-					["inbound"] = false,
-					["convo"] = "完美#4631",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1637255808,
-					["from"] = "完美#4631",
-					["msg"] = "無聊來看看而已",
-					["inbound"] = true,
-					["convo"] = "完美#4631",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1637255819,
-					["from"] = "特變電工",
-					["msg"] = "我雙綫作戰",
-					["inbound"] = false,
-					["convo"] = "完美#4631",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1637255823,
-					["from"] = "特變電工",
-					["msg"] = "一邊一個戰士",
-					["inbound"] = false,
-					["convo"] = "完美#4631",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1637255849,
-					["from"] = "完美#4631",
-					["msg"] = "你開兩個號在玩?",
-					["inbound"] = true,
-					["convo"] = "完美#4631",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1637255853,
-					["from"] = "特變電工",
-					["msg"] = "不是",
-					["inbound"] = false,
-					["convo"] = "完美#4631",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1637255867,
-					["from"] = "特變電工",
-					["msg"] = "那邊就打打副本 周三打個競技場",
-					["inbound"] = false,
-					["convo"] = "完美#4631",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1637255901,
-					["from"] = "完美#4631",
-					["msg"] = "哦哦",
-					["inbound"] = true,
-					["convo"] = "完美#4631",
-				}, -- [9]
-				["info"] = {
-				},
-			},
-			["度咕熊#3711"] = {
-				{
-					["type"] = 1,
-					["time"] = 1637160589,
-					["from"] = "特變電工",
-					["msg"] = "來賽季服聯盟",
-					["inbound"] = false,
-					["convo"] = "度咕熊#3711",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1637163374,
-					["from"] = "特變電工",
-					["msg"] = "。。",
-					["inbound"] = false,
-					["convo"] = "度咕熊#3711",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1637163386,
-					["from"] = "特變電工",
-					["msg"] = "卡萊啥時候起飛",
-					["inbound"] = false,
-					["convo"] = "度咕熊#3711",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1637163438,
-					["from"] = "度咕熊#3711",
-					["msg"] = "23:45",
-					["inbound"] = true,
-					["convo"] = "度咕熊#3711",
-				}, -- [4]
-				["info"] = {
-				},
-			},
-			["Darker#41478"] = {
-				{
-					["type"] = 1,
-					["time"] = 1637159292,
-					["from"] = "Darker#41478",
-					["msg"] = "人呢？你跑去玩赛季服了？",
-					["inbound"] = true,
-					["convo"] = "Darker#41478",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1637159298,
-					["from"] = "特變電工",
-					["msg"] = "嗯 沒人",
-					["inbound"] = false,
-					["convo"] = "Darker#41478",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1637159308,
-					["from"] = "特變電工",
-					["msg"] = "這個游戲報廢了",
-					["inbound"] = false,
-					["convo"] = "Darker#41478",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1637159320,
-					["from"] = "Darker#41478",
-					["msg"] = "台服人少",
-					["inbound"] = true,
-					["convo"] = "Darker#41478",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1637159340,
-					["from"] = "Darker#41478",
-					["msg"] = "我都快要A了",
-					["inbound"] = true,
-					["convo"] = "Darker#41478",
-				}, -- [5]
-				["info"] = {
-				},
-			},
-			["誓約之劍#31592"] = {
-				{
-					["type"] = 1,
-					["time"] = 1637248204,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "你怎麽又跑去懷舊服了...",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1637248211,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "是大師賽季嗎",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1637248216,
-					["from"] = "特變電工",
-					["msg"] = "嗯",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1637248219,
-					["from"] = "特變電工",
-					["msg"] = "快來",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1637248220,
-					["from"] = "特變電工",
-					["msg"] = "起飛",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1637248221,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "...",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1637248238,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "人很多？",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1637248246,
-					["from"] = "特變電工",
-					["msg"] = "超多",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1637248253,
-					["from"] = "特變電工",
-					["msg"] = "排隊",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1637248267,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "真假 臺服還那麽多人呢",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1637248272,
-					["from"] = "特變電工",
-					["msg"] = "來看",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1637248290,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "算了..剛玩過60有點膩了 等下個賽季吧",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1637248301,
-					["from"] = "特變電工",
-					["msg"] = "全新改版",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1637248303,
-					["from"] = "特變電工",
-					["msg"] = "朝南",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1637248306,
-					["from"] = "特變電工",
-					["msg"] = "超難",
-					["inbound"] = false,
-					["convo"] = "誓約之劍#31592",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1637248306,
-					["from"] = "誓約之劍#31592",
-					["msg"] = "嗯",
-					["inbound"] = true,
-					["convo"] = "誓約之劍#31592",
-				}, -- [16]
-				["info"] = {
-				},
-			},
-			["嗯哼"] = {
-				{
-					["type"] = 1,
-					["time"] = 1637169829,
-					["from"] = "特變電工",
-					["msg"] = "你沒玩過",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [1]
-				{
-					["type"] = 1,
-					["time"] = 1637169833,
-					["from"] = "嗯哼",
-					["msg"] = "玩過啊",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [2]
-				{
-					["type"] = 1,
-					["time"] = 1637169836,
-					["from"] = "特變電工",
-					["msg"] = "我玩了所有職業",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [3]
-				{
-					["type"] = 1,
-					["time"] = 1637169836,
-					["from"] = "嗯哼",
-					["msg"] = "我戰士神",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [4]
-				{
-					["type"] = 1,
-					["time"] = 1637169843,
-					["from"] = "特變電工",
-					["msg"] = "只有戰士最有打擊感",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [5]
-				{
-					["type"] = 1,
-					["time"] = 1637169844,
-					["from"] = "嗯哼",
-					["msg"] = "唉呦 跟我有得比喔",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [6]
-				{
-					["type"] = 1,
-					["time"] = 1637169847,
-					["from"] = "特變電工",
-					["msg"] = "最有游戲體驗",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [7]
-				{
-					["type"] = 1,
-					["time"] = 1637169850,
-					["from"] = "特變電工",
-					["msg"] = "最複雜",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [8]
-				{
-					["type"] = 1,
-					["time"] = 1637169850,
-					["from"] = "嗯哼",
-					["msg"] = "法神",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [9]
-				{
-					["type"] = 1,
-					["time"] = 1637169853,
-					["from"] = "特變電工",
-					["msg"] = "最靠手法",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [10]
-				{
-					["type"] = 1,
-					["time"] = 1637169856,
-					["from"] = "特變電工",
-					["msg"] = "法師最簡單",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [11]
-				{
-					["type"] = 1,
-					["time"] = 1637169865,
-					["from"] = "嗯哼",
-					["msg"] = "不是賊跟獵人嗎",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [12]
-				{
-					["type"] = 1,
-					["time"] = 1637169867,
-					["from"] = "嗯哼",
-					["msg"] = "pvp",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [13]
-				{
-					["type"] = 1,
-					["time"] = 1637169905,
-					["from"] = "特變電工",
-					["msg"] = "我是臺服鰐魚單刷記錄和完美厄運記錄保持著",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [14]
-				{
-					["type"] = 1,
-					["time"] = 1637169912,
-					["from"] = "嗯哼",
-					["msg"] = "那殺小",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [15]
-				{
-					["type"] = 1,
-					["time"] = 1637169913,
-					["from"] = "嗯哼",
-					["msg"] = "= = ?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [16]
-				{
-					["type"] = 1,
-					["time"] = 1637169920,
-					["from"] = "嗯哼",
-					["msg"] = "組爾? ",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [17]
-				{
-					["type"] = 1,
-					["time"] = 1637169924,
-					["from"] = "嗯哼",
-					["msg"] = "厄運保持?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [18]
-				{
-					["type"] = 1,
-					["time"] = 1637169925,
-					["from"] = "特變電工",
-					["msg"] = "07年就是",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [19]
-				{
-					["type"] = 1,
-					["time"] = 1637169927,
-					["from"] = "嗯哼",
-					["msg"] = "你是沒遇到我吧",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [20]
-				{
-					["type"] = 1,
-					["time"] = 1637169953,
-					["from"] = "嗯哼",
-					["msg"] = "我驅散 假死冰凍 戰士遇到我都叫我爸爸",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [21]
-				{
-					["type"] = 1,
-					["time"] = 1637169965,
-					["from"] = "特變電工",
-					["msg"] = "。。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [22]
-				{
-					["type"] = 1,
-					["time"] = 1637169974,
-					["from"] = "嗯哼",
-					["msg"] = "獵人神",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [23]
-				{
-					["type"] = 1,
-					["time"] = 1637169988,
-					["from"] = "特變電工",
-					["msg"] = "我是中國頂級程序員",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [24]
-				{
-					["type"] = 1,
-					["time"] = 1637169993,
-					["from"] = "嗯哼",
-					["msg"] = "..",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [25]
-				{
-					["type"] = 1,
-					["time"] = 1637169995,
-					["from"] = "嗯哼",
-					["msg"] = "大哥 別駭客我",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [26]
-				{
-					["type"] = 1,
-					["time"] = 1637170001,
-					["from"] = "特變電工",
-					["msg"] = "這種垃圾游戲 我都不想拿來比",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [27]
-				{
-					["type"] = 1,
-					["time"] = 1637170003,
-					["from"] = "嗯哼",
-					["msg"] = "我只是會寫一點點小程序",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [28]
-				{
-					["type"] = 1,
-					["time"] = 1637170008,
-					["from"] = "特變電工",
-					["msg"] = "跟我寫代碼比",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [29]
-				{
-					["type"] = 1,
-					["time"] = 1637170016,
-					["from"] = "嗯哼",
-					["msg"] = "乾",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [30]
-				{
-					["type"] = 1,
-					["time"] = 1637170020,
-					["from"] = "嗯哼",
-					["msg"] = "可是你手速行不行",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [31]
-				{
-					["type"] = 1,
-					["time"] = 1637170023,
-					["from"] = "嗯哼",
-					["msg"] = "我lol 鑽石",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [32]
-				{
-					["type"] = 1,
-					["time"] = 1637170035,
-					["from"] = "特變電工",
-					["msg"] = "頂級程序員",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [33]
-				{
-					["type"] = 1,
-					["time"] = 1637170042,
-					["from"] = "嗯哼",
-					["msg"] = "那就是有觀念 沒操作囉",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [34]
-				{
-					["type"] = 1,
-					["time"] = 1637170042,
-					["from"] = "特變電工",
-					["msg"] = "在騰訊",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [35]
-				{
-					["type"] = 1,
-					["time"] = 1637170044,
-					["from"] = "嗯哼",
-					["msg"] = "那是我在c",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [36]
-				{
-					["type"] = 1,
-					["time"] = 1637170052,
-					["from"] = "特變電工",
-					["msg"] = "頂級工程師",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [37]
-				{
-					["type"] = 1,
-					["time"] = 1637170058,
-					["from"] = "嗯哼",
-					["msg"] = "我台灣",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [38]
-				{
-					["type"] = 1,
-					["time"] = 1637170061,
-					["from"] = "嗯哼",
-					["msg"] = "頂級廢物",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [39]
-				{
-					["type"] = 1,
-					["time"] = 1637170064,
-					["from"] = "特變電工",
-					["msg"] = "游戲都是消遣",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [40]
-				{
-					["type"] = 1,
-					["time"] = 1637170064,
-					["from"] = "嗯哼",
-					["msg"] = "怕了吧",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [41]
-				{
-					["type"] = 1,
-					["time"] = 1637170071,
-					["from"] = "特變電工",
-					["msg"] = "。。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [42]
-				{
-					["type"] = 1,
-					["time"] = 1637170074,
-					["from"] = "嗯哼",
-					["msg"] = "沒錯 我們484都收房租",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [43]
-				{
-					["type"] = 1,
-					["time"] = 1637170078,
-					["from"] = "嗯哼",
-					["msg"] = "連程序都不用打",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [44]
-				{
-					["type"] = 1,
-					["time"] = 1637170114,
-					["from"] = "嗯哼",
-					["msg"] = "改天教我寫程序阿",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [45]
-				{
-					["type"] = 1,
-					["time"] = 1637170117,
-					["from"] = "嗯哼",
-					["msg"] = "寫起來",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [46]
-				{
-					["type"] = 1,
-					["time"] = 1637170119,
-					["from"] = "特變電工",
-					["msg"] = "沒包太難受了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [47]
-				{
-					["type"] = 1,
-					["time"] = 1637170126,
-					["from"] = "特變電工",
-					["msg"] = "你先做點包出來",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [48]
-				{
-					["type"] = 1,
-					["time"] = 1637170128,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [49]
-				{
-					["type"] = 1,
-					["time"] = 1637170129,
-					["from"] = "嗯哼",
-					["msg"] = "乾 真的 我看有人武器在賣g",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [50]
-				{
-					["type"] = 1,
-					["time"] = 1637170136,
-					["from"] = "嗯哼",
-					["msg"] = "我都想換包了",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [51]
-				{
-					["type"] = 1,
-					["time"] = 1637170140,
-					["from"] = "特變電工",
-					["msg"] = "。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [52]
-				{
-					["type"] = 1,
-					["time"] = 1637170147,
-					["from"] = "嗯哼",
-					["msg"] = "我只有一個6格的 打到的",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [53]
-				{
-					["type"] = 1,
-					["time"] = 1637170179,
-					["from"] = "特變電工",
-					["msg"] = "我一個都沒",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [54]
-				{
-					["type"] = 1,
-					["time"] = 1637170182,
-					["from"] = "嗯哼",
-					["msg"] = "...",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [55]
-				{
-					["type"] = 1,
-					["time"] = 1637170185,
-					["from"] = "特變電工",
-					["msg"] = "這個服務器人太少了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [56]
-				{
-					["type"] = 1,
-					["time"] = 1637170185,
-					["from"] = "嗯哼",
-					["msg"] = "你頂得住?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [57]
-				{
-					["type"] = 1,
-					["time"] = 1637170193,
-					["from"] = "嗯哼",
-					["msg"] = "你會部會作外掛",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [58]
-				{
-					["type"] = 1,
-					["time"] = 1637170196,
-					["from"] = "特變電工",
-					["msg"] = "我想囘國服了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [59]
-				{
-					["type"] = 1,
-					["time"] = 1637170199,
-					["from"] = "嗯哼",
-					["msg"] = "做一個厲害的 給我用",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [60]
-				{
-					["type"] = 1,
-					["time"] = 1637170201,
-					["from"] = "特變電工",
-					["msg"] = "必須會",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [61]
-				{
-					["type"] = 1,
-					["time"] = 1637170211,
-					["from"] = "嗯哼",
-					["msg"] = "我送你16格包",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [62]
-				{
-					["type"] = 1,
-					["time"] = 1637170215,
-					["from"] = "特變電工",
-					["msg"] = "。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [63]
-				{
-					["type"] = 1,
-					["time"] = 1637170219,
-					["from"] = "嗯哼",
-					["msg"] = "那u甚麼問題 必須的",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [64]
-				{
-					["type"] = 1,
-					["time"] = 1637170247,
-					["from"] = "特變電工",
-					["msg"] = "對了 你是不是去過重慶旅游",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [65]
-				{
-					["type"] = 1,
-					["time"] = 1637170251,
-					["from"] = "嗯哼",
-					["msg"] = "是阿",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [66]
-				{
-					["type"] = 1,
-					["time"] = 1637170253,
-					["from"] = "嗯哼",
-					["msg"] = "超好吃 ",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [67]
-				{
-					["type"] = 1,
-					["time"] = 1637170254,
-					["from"] = "特變電工",
-					["msg"] = "對",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [68]
-				{
-					["type"] = 1,
-					["time"] = 1637170254,
-					["from"] = "嗯哼",
-					["msg"] = "茂蔡",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [69]
-				{
-					["type"] = 1,
-					["time"] = 1637170257,
-					["from"] = "嗯哼",
-					["msg"] = "神祗豆奶",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [70]
-				{
-					["type"] = 1,
-					["time"] = 1637170261,
-					["from"] = "特變電工",
-					["msg"] = "冒菜那是成都",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [71]
-				{
-					["type"] = 1,
-					["time"] = 1637170262,
-					["from"] = "嗯哼",
-					["msg"] = "台灣沒賣",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [72]
-				{
-					["type"] = 1,
-					["time"] = 1637170264,
-					["from"] = "特變電工",
-					["msg"] = "不好吃",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [73]
-				{
-					["type"] = 1,
-					["time"] = 1637170265,
-					["from"] = "嗯哼",
-					["msg"] = "有啦 我都去",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [74]
-				{
-					["type"] = 1,
-					["time"] = 1637170270,
-					["from"] = "嗯哼",
-					["msg"] = "九宮格",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [75]
-				{
-					["type"] = 1,
-					["time"] = 1637170275,
-					["from"] = "嗯哼",
-					["msg"] = "一次去兩個地方",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [76]
-				{
-					["type"] = 1,
-					["time"] = 1637170279,
-					["from"] = "特變電工",
-					["msg"] = "嗯",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [77]
-				{
-					["type"] = 1,
-					["time"] = 1637170281,
-					["from"] = "嗯哼",
-					["msg"] = "串串",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [78]
-				{
-					["type"] = 1,
-					["time"] = 1637170286,
-					["from"] = "嗯哼",
-					["msg"] = "一次吃好幾串",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [79]
-				{
-					["type"] = 1,
-					["time"] = 1637170292,
-					["from"] = "特變電工",
-					["msg"] = "跟海底撈味道如何",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [80]
-				{
-					["type"] = 1,
-					["time"] = 1637170296,
-					["from"] = "特變電工",
-					["msg"] = "R台灣有海底撈啊",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [81]
-				{
-					["type"] = 1,
-					["time"] = 1637170302,
-					["from"] = "嗯哼",
-					["msg"] = "海底撈 我沒吃過中國的",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [82]
-				{
-					["type"] = 1,
-					["time"] = 1637170305,
-					["from"] = "嗯哼",
-					["msg"] = "我只有吃過台灣的",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [83]
-				{
-					["type"] = 1,
-					["time"] = 1637170309,
-					["from"] = "嗯哼",
-					["msg"] = "我覺得你們那編好",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [84]
-				{
-					["type"] = 1,
-					["time"] = 1637170314,
-					["from"] = "嗯哼",
-					["msg"] = "很懷念",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [85]
-				{
-					["type"] = 1,
-					["time"] = 1637170361,
-					["from"] = "特變電工",
-					["msg"] = "。。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [86]
-				{
-					["type"] = 1,
-					["time"] = 1637170365,
-					["from"] = "嗯哼",
-					["msg"] = "死了?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [87]
-				{
-					["type"] = 1,
-					["time"] = 1637170369,
-					["from"] = "特變電工",
-					["msg"] = "沒",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [88]
-				{
-					["type"] = 1,
-					["time"] = 1637170372,
-					["from"] = "嗯哼",
-					["msg"] = "怎",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [89]
-				{
-					["type"] = 1,
-					["time"] = 1637170386,
-					["from"] = "特變電工",
-					["msg"] = "到時候統一了去很方便哈哈",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [90]
-				{
-					["type"] = 1,
-					["time"] = 1637170394,
-					["from"] = "嗯哼",
-					["msg"] = "統阿 季的別殺我",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [91]
-				{
-					["type"] = 1,
-					["time"] = 1637170404,
-					["from"] = "嗯哼",
-					["msg"] = "我第一個投降",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [92]
-				{
-					["type"] = 1,
-					["time"] = 1637170409,
-					["from"] = "嗯哼",
-					["msg"] = "幫我說幾句好話",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [93]
-				{
-					["type"] = 1,
-					["time"] = 1637170466,
-					["from"] = "嗯哼",
-					["msg"] = "這水喝超慢 好難受...",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [94]
-				{
-					["type"] = 1,
-					["time"] = 1637170473,
-					["from"] = "特變電工",
-					["msg"] = "。。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [95]
-				{
-					["type"] = 1,
-					["time"] = 1637170475,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [96]
-				{
-					["type"] = 1,
-					["time"] = 1637170483,
-					["from"] = "特變電工",
-					["msg"] = "你多少歲",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [97]
-				{
-					["type"] = 1,
-					["time"] = 1637170487,
-					["from"] = "嗯哼",
-					["msg"] = "怎",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [98]
-				{
-					["type"] = 1,
-					["time"] = 1637170489,
-					["from"] = "嗯哼",
-					["msg"] = "你猜",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [99]
-				{
-					["type"] = 1,
-					["time"] = 1637170491,
-					["from"] = "特變電工",
-					["msg"] = "34",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [100]
-				{
-					["type"] = 1,
-					["time"] = 1637170495,
-					["from"] = "嗯哼",
-					["msg"] = "...",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [101]
-				{
-					["type"] = 1,
-					["time"] = 1637170497,
-					["from"] = "嗯哼",
-					["msg"] = "你多少?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [102]
-				{
-					["type"] = 1,
-					["time"] = 1637170499,
-					["from"] = "特變電工",
-					["msg"] = "34",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [103]
-				{
-					["type"] = 1,
-					["time"] = 1637170507,
-					["from"] = "嗯哼",
-					["msg"] = "我少你十歲",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [104]
-				{
-					["type"] = 1,
-					["time"] = 1637170510,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [105]
-				{
-					["type"] = 1,
-					["time"] = 1637170514,
-					["from"] = "嗯哼",
-					["msg"] = "怎",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [106]
-				{
-					["type"] = 1,
-					["time"] = 1637170518,
-					["from"] = "嗯哼",
-					["msg"] = "台灣闢還",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [107]
-				{
-					["type"] = 1,
-					["time"] = 1637170520,
-					["from"] = "嗯哼",
-					["msg"] = "看過沒",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [108]
-				{
-					["type"] = 1,
-					["time"] = 1637170521,
-					["from"] = "特變電工",
-					["msg"] = "那你懷個毛的舊啊",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [109]
-				{
-					["type"] = 1,
-					["time"] = 1637170530,
-					["from"] = "嗯哼",
-					["msg"] = "白癡 我小學就玩了",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [110]
-				{
-					["type"] = 1,
-					["time"] = 1637170535,
-					["from"] = "特變電工",
-					["msg"] = "。。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [111]
-				{
-					["type"] = 1,
-					["time"] = 1637170536,
-					["from"] = "嗯哼",
-					["msg"] = "怕了吧",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [112]
-				{
-					["type"] = 1,
-					["time"] = 1637170545,
-					["from"] = "嗯哼",
-					["msg"] = "還有初戀 就在魔獸",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [113]
-				{
-					["type"] = 1,
-					["time"] = 1637170548,
-					["from"] = "特變電工",
-					["msg"] = "我06年就在臺服",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [114]
-				{
-					["type"] = 1,
-					["time"] = 1637170549,
-					["from"] = "嗯哼",
-					["msg"] = "找不到了 ",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [115]
-				{
-					["type"] = 1,
-					["time"] = 1637170550,
-					["from"] = "嗯哼",
-					["msg"] = "機掰",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [116]
-				{
-					["type"] = 1,
-					["time"] = 1637170552,
-					["from"] = "嗯哼",
-					["msg"] = "為啥",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [117]
-				{
-					["type"] = 1,
-					["time"] = 1637170558,
-					["from"] = "嗯哼",
-					["msg"] = "你要來台福",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [118]
-				{
-					["type"] = 1,
-					["time"] = 1637170562,
-					["from"] = "特變電工",
-					["msg"] = "寒冰皇冠",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [119]
-				{
-					["type"] = 1,
-					["time"] = 1637170563,
-					["from"] = "嗯哼",
-					["msg"] = "數值嗎",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [120]
-				{
-					["type"] = 1,
-					["time"] = 1637170569,
-					["from"] = "嗯哼",
-					["msg"] = "我米奈",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [121]
-				{
-					["type"] = 1,
-					["time"] = 1637170573,
-					["from"] = "嗯哼",
-					["msg"] = "乾 我有一個中國朋友",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [122]
-				{
-					["type"] = 1,
-					["time"] = 1637170574,
-					["from"] = "特變電工",
-					["msg"] = "我要來儅台灣省委書記",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [123]
-				{
-					["type"] = 1,
-					["time"] = 1637170578,
-					["from"] = "嗯哼",
-					["msg"] = "小雪 ",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [124]
-				{
-					["type"] = 1,
-					["time"] = 1637170582,
-					["from"] = "嗯哼",
-					["msg"] = "那殺小",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [125]
-				{
-					["type"] = 1,
-					["time"] = 1637170613,
-					["from"] = "嗯哼",
-					["msg"] = "雪中飛",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [126]
-				{
-					["type"] = 1,
-					["time"] = 1637170617,
-					["from"] = "嗯哼",
-					["msg"] = "我小學時候大陸朋友",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [127]
-				{
-					["type"] = 1,
-					["time"] = 1637170618,
-					["from"] = "嗯哼",
-					["msg"] = "幫我找",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [128]
-				{
-					["type"] = 1,
-					["time"] = 1637170620,
-					["from"] = "嗯哼",
-					["msg"] = "感恩",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [129]
-				{
-					["type"] = 1,
-					["time"] = 1637170629,
-					["from"] = "嗯哼",
-					["msg"] = "ㄏㄏ",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [130]
-				{
-					["type"] = 1,
-					["time"] = 1637170632,
-					["from"] = "特變電工",
-					["msg"] = "啥意思",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [131]
-				{
-					["type"] = 1,
-					["time"] = 1637170635,
-					["from"] = "特變電工",
-					["msg"] = "聽不懂",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [132]
-				{
-					["type"] = 1,
-					["time"] = 1637170638,
-					["from"] = "嗯哼",
-					["msg"] = "他id",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [133]
-				{
-					["type"] = 1,
-					["time"] = 1637170647,
-					["from"] = "嗯哼",
-					["msg"] = "大陸的",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [134]
-				{
-					["type"] = 1,
-					["time"] = 1637170650,
-					["from"] = "嗯哼",
-					["msg"] = "十年前",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [135]
-				{
-					["type"] = 1,
-					["time"] = 1637170652,
-					["from"] = "嗯哼",
-					["msg"] = "完懷舊",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [136]
-				{
-					["type"] = 1,
-					["time"] = 1637170657,
-					["from"] = "嗯哼",
-					["msg"] = "麻吉",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [137]
-				{
-					["type"] = 1,
-					["time"] = 1637170658,
-					["from"] = "特變電工",
-					["msg"] = "WLK？",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [138]
-				{
-					["type"] = 1,
-					["time"] = 1637170662,
-					["from"] = "嗯哼",
-					["msg"] = "那啥",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [139]
-				{
-					["type"] = 1,
-					["time"] = 1637170836,
-					["from"] = "特變電工",
-					["msg"] = "睡覺了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [140]
-				{
-					["type"] = 1,
-					["time"] = 1637170840,
-					["from"] = "特變電工",
-					["msg"] = "明天還要上班",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [141]
-				{
-					["type"] = 1,
-					["time"] = 1637170842,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [142]
-				{
-					["type"] = 1,
-					["time"] = 1637170846,
-					["from"] = "嗯哼",
-					["msg"] = "乾 6格包 要5s",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [143]
-				{
-					["type"] = 1,
-					["time"] = 1637170849,
-					["from"] = "特變電工",
-					["msg"] = "。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [144]
-				{
-					["type"] = 1,
-					["time"] = 1637170850,
-					["from"] = "嗯哼",
-					["msg"] = "要步要買r",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [145]
-				{
-					["type"] = 1,
-					["time"] = 1637170855,
-					["from"] = "特變電工",
-					["msg"] = "不要",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [146]
-				{
-					["type"] = 1,
-					["time"] = 1637170859,
-					["from"] = "嗯哼",
-					["msg"] = "機掰 好痛苦",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [147]
-				{
-					["type"] = 1,
-					["time"] = 1637170864,
-					["from"] = "嗯哼",
-					["msg"] = "型 改天再凱瑞你",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [148]
-				{
-					["type"] = 1,
-					["time"] = 1637170868,
-					["from"] = "嗯哼",
-					["msg"] = "早點休息 我也差不多了",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [149]
-				{
-					["type"] = 1,
-					["time"] = 1637170883,
-					["from"] = "嗯哼",
-					["msg"] = "晚安晚安",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [150]
-				{
-					["type"] = 1,
-					["time"] = 1637254396,
-					["from"] = "特變電工",
-					["msg"] = "我擦",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [151]
-				{
-					["type"] = 1,
-					["time"] = 1637254401,
-					["from"] = "嗯哼",
-					["msg"] = "你擦",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [152]
-				{
-					["type"] = 1,
-					["time"] = 1637254405,
-					["from"] = "嗯哼",
-					["msg"] = "我霍格都單挑",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [153]
-				{
-					["type"] = 1,
-					["time"] = 1637254407,
-					["from"] = "嗯哼",
-					["msg"] = "沒難度",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [154]
-				{
-					["type"] = 1,
-					["time"] = 1637254415,
-					["from"] = "特變電工",
-					["msg"] = "疾風#4455",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [155]
-				{
-					["type"] = 1,
-					["time"] = 1637254420,
-					["from"] = "嗯哼",
-					["msg"] = "嗯?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [156]
-				{
-					["type"] = 1,
-					["time"] = 1637254424,
-					["from"] = "特變電工",
-					["msg"] = "你説呢",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [157]
-				{
-					["type"] = 1,
-					["time"] = 1637254438,
-					["from"] = "嗯哼",
-					["msg"] = "你覺得我率",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [158]
-				{
-					["type"] = 1,
-					["time"] = 1637254441,
-					["from"] = "特變電工",
-					["msg"] = "。",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [159]
-				{
-					["type"] = 1,
-					["time"] = 1637254445,
-					["from"] = "嗯哼",
-					["msg"] = "麻吉啦",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [160]
-				{
-					["type"] = 1,
-					["time"] = 1637254452,
-					["from"] = "特變電工",
-					["msg"] = "你下一個guidelime",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [161]
-				{
-					["type"] = 1,
-					["time"] = 1637254460,
-					["from"] = "嗯哼",
-					["msg"] = "那蝦餃",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [162]
-				{
-					["type"] = 1,
-					["time"] = 1637254465,
-					["from"] = "嗯哼",
-					["msg"] = "我英文不太好",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [163]
-				{
-					["type"] = 1,
-					["time"] = 1637254469,
-					["from"] = "特變電工",
-					["msg"] = "然後在下一個hakurai",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [164]
-				{
-					["type"] = 1,
-					["time"] = 1637254473,
-					["from"] = "嗯哼",
-					["msg"] = "...",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [165]
-				{
-					["type"] = 1,
-					["time"] = 1637254475,
-					["from"] = "特變電工",
-					["msg"] = "保姆式任務",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [166]
-				{
-					["type"] = 1,
-					["time"] = 1637254491,
-					["from"] = "特變電工",
-					["msg"] = "最優任務路綫",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [167]
-				{
-					["type"] = 1,
-					["time"] = 1637254510,
-					["from"] = "特變電工",
-					["msg"] = "還有提示 學技能 賣垃圾 榜爐石",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [168]
-				{
-					["type"] = 1,
-					["time"] = 1637254512,
-					["from"] = "嗯哼",
-					["msg"] = "我14開A阿",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [169]
-				{
-					["type"] = 1,
-					["time"] = 1637254518,
-					["from"] = "特變電工",
-					["msg"] = "你想多了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [170]
-				{
-					["type"] = 1,
-					["time"] = 1637254520,
-					["from"] = "嗯哼",
-					["msg"] = "還跟他嘻嘻哈哈解任務?",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [171]
-				{
-					["type"] = 1,
-					["time"] = 1637254524,
-					["from"] = "特變電工",
-					["msg"] = "你不知道大師",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [172]
-				{
-					["type"] = 1,
-					["time"] = 1637254527,
-					["from"] = "嗯哼",
-					["msg"] = "我知道",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [173]
-				{
-					["type"] = 1,
-					["time"] = 1637254529,
-					["from"] = "嗯哼",
-					["msg"] = "經驗多",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [174]
-				{
-					["type"] = 1,
-					["time"] = 1637254529,
-					["from"] = "特變電工",
-					["msg"] = "改過了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [175]
-				{
-					["type"] = 1,
-					["time"] = 1637254534,
-					["from"] = "嗯哼",
-					["msg"] = "沒差 我照A",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [176]
-				{
-					["type"] = 1,
-					["time"] = 1637254537,
-					["from"] = "嗯哼",
-					["msg"] = "我是鬼",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [177]
-				{
-					["type"] = 1,
-					["time"] = 1637254549,
-					["from"] = "特變電工",
-					["msg"] = "傻不拉几的",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [178]
-				{
-					["type"] = 1,
-					["time"] = 1637254552,
-					["from"] = "嗯哼",
-					["msg"] = "...",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [179]
-				{
-					["type"] = 1,
-					["time"] = 1637254554,
-					["from"] = "嗯哼",
-					["msg"] = "你妹的",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [180]
-				{
-					["type"] = 1,
-					["time"] = 1637254555,
-					["from"] = "特變電工",
-					["msg"] = "沒正形",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [181]
-				{
-					["type"] = 1,
-					["time"] = 1637254569,
-					["from"] = "嗯哼",
-					["msg"] = "你不能這樣忌妒我的帥",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [182]
-				{
-					["type"] = 1,
-					["time"] = 1637254591,
-					["from"] = "嗯哼",
-					["msg"] = "阿你怎不去西部解任務",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [183]
-				{
-					["type"] = 1,
-					["time"] = 1637254603,
-					["from"] = "嗯哼",
-					["msg"] = "我看大家都去你那邊解",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [184]
-				{
-					["type"] = 1,
-					["time"] = 1637254613,
-					["from"] = "特變電工",
-					["msg"] = "保姆插件自帶的",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [185]
-				{
-					["type"] = 1,
-					["time"] = 1637254620,
-					["from"] = "特變電工",
-					["msg"] = "而且任務低了",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [186]
-				{
-					["type"] = 1,
-					["time"] = 1637254623,
-					["from"] = "嗯哼",
-					["msg"] = "6666 小BABY你好",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [187]
-				{
-					["type"] = 1,
-					["time"] = 1637254625,
-					["from"] = "特變電工",
-					["msg"] = "好完成",
-					["inbound"] = false,
-					["convo"] = "嗯哼",
-				}, -- [188]
-				{
-					["type"] = 1,
-					["time"] = 1637254628,
-					["from"] = "嗯哼",
-					["msg"] = "讚",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [189]
-				{
-					["type"] = 1,
-					["time"] = 1637254642,
-					["from"] = "嗯哼",
-					["msg"] = "戰士",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [190]
-				{
-					["type"] = 1,
-					["time"] = 1637254646,
-					["from"] = "嗯哼",
-					["msg"] = "打低等任務 跟切菜依樣",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [191]
-				{
-					["type"] = 1,
-					["time"] = 1637254707,
-					["from"] = "嗯哼",
-					["msg"] = "-3等開A",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [192]
-				{
-					["type"] = 1,
-					["time"] = 1637254761,
-					["from"] = "嗯哼",
-					["msg"] = "專業你學啥",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [193]
-				{
-					["type"] = 1,
-					["time"] = 1637254764,
-					["from"] = "嗯哼",
-					["msg"] = "這個難倒我了",
-					["inbound"] = true,
-					["convo"] = "嗯哼",
-				}, -- [194]
-				["info"] = {
-				},
-			},
-		},
-	},
 }
 WIM3_ChatFilters = {
 }
