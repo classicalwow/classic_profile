@@ -2,6 +2,7 @@
 DataStore_AuctionsDB = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
 	},
 	["global"] = {
 		["Characters"] = {

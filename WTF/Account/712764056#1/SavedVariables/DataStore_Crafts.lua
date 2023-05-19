@@ -32,7 +32,7 @@ DataStore_CraftsDB = {
 				},
 			},
 			["Default.伊弗斯.特變電工"] = {
-				["lastUpdate"] = 1683082308,
+				["lastUpdate"] = 1684421290,
 			},
 		},
 	},

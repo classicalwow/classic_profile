@@ -7,23 +7,22 @@ ARKINVDB = {
 					["info"] = {
 						["guid"] = "Player-5300-004CE6EB",
 						["class"] = "ROGUE",
-						["player_id"] = "特變電工 - 伊弗斯",
+						["class_local"] = "潜行者",
 						["race"] = "Human",
 						["proj"] = 2,
 						["realm"] = "伊弗斯",
 						["isplayer"] = true,
 						["gender"] = 2,
 						["itemlevel"] = 1,
-						["class_local"] = "潜行者",
 						["name"] = "特變電工",
 						["faction"] = "Alliance",
 						["race_local"] = "人类",
 						["level"] = 1,
+						["player_id"] = "特變電工 - 伊弗斯",
 						["faction_local"] = "联盟",
 					},
 					["location"] = {
 						{
-							["slot_count"] = 16,
 							["bag"] = {
 								{
 									["q"] = 0,
@@ -31,133 +30,133 @@ ARKINVDB = {
 									["slot"] = {
 										{
 											["q"] = 1,
-											["h"] = "|cffffffff|Hitem:2070::::::::1:::::::::|h[达纳苏斯奶酪]|h|r",
-											["slot_id"] = 1,
-											["sb"] = 0,
 											["loc_id"] = 1,
-											["bag_id"] = 1,
 											["count"] = 4,
+											["sb"] = 0,
+											["h"] = "|cffffffff|Hitem:2070::::::::1:::::::::|h[达纳苏斯奶酪]|h|r",
+											["bag_id"] = 1,
+											["slot_id"] = 1,
 										}, -- [1]
 										{
 											["q"] = 1,
-											["h"] = "|cffffffff|Hitem:6948::::::::1:::::::::|h[炉石]|h|r",
-											["slot_id"] = 2,
-											["sb"] = 3,
 											["loc_id"] = 1,
-											["bag_id"] = 1,
 											["count"] = 1,
+											["sb"] = 3,
+											["h"] = "|cffffffff|Hitem:6948::::::::1:::::::::|h[炉石]|h|r",
+											["bag_id"] = 1,
+											["slot_id"] = 2,
 										}, -- [2]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 3,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 3,
+											["count"] = 1,
 										}, -- [3]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 4,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 4,
+											["count"] = 1,
 										}, -- [4]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 5,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 5,
+											["count"] = 1,
 										}, -- [5]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 6,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 6,
+											["count"] = 1,
 										}, -- [6]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 7,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 7,
+											["count"] = 1,
 										}, -- [7]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 8,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 8,
+											["count"] = 1,
 										}, -- [8]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 9,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 9,
+											["count"] = 1,
 										}, -- [9]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 10,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 10,
+											["count"] = 1,
 										}, -- [10]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 11,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 11,
+											["count"] = 1,
 										}, -- [11]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 12,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 12,
+											["count"] = 1,
 										}, -- [12]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 13,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 13,
+											["count"] = 1,
 										}, -- [13]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 14,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 14,
+											["count"] = 1,
 										}, -- [14]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 15,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 15,
+											["count"] = 1,
 										}, -- [15]
 										{
 											["q"] = 0,
 											["loc_id"] = 1,
-											["count"] = 1,
+											["slot_id"] = 16,
 											["sb"] = 0,
 											["bag_id"] = 1,
-											["slot_id"] = 16,
+											["count"] = 1,
 										}, -- [16]
 									},
 									["bag_id"] = 1,
@@ -200,9 +199,9 @@ ARKINVDB = {
 									["texture"] = "Interface\\PaperDoll\\UI-PaperDoll-Slot-Bag",
 								}, -- [5]
 							},
+							["slot_count"] = 16,
 						}, -- [1]
 						{
-							["slot_count"] = 32,
 							["bag"] = {
 								{
 									["type"] = 3,
@@ -471,6 +470,7 @@ ARKINVDB = {
 									["loc_id"] = 2,
 								}, -- [1]
 							},
+							["slot_count"] = 32,
 						}, -- [2]
 						[10] = {
 							["bag"] = {
@@ -480,8 +480,57 @@ ARKINVDB = {
 								}, -- [1]
 							},
 						},
+						[16] = {
+							["bag"] = {
+								{
+									["type"] = 29,
+									["count"] = 4,
+									["slot"] = {
+										{
+											["q"] = 0,
+											["loc_id"] = 16,
+											["slot_id"] = 1,
+											["sb"] = 3,
+											["h"] = "reputation:72:友善:1000:6000:0:0:0",
+											["bag_id"] = 1,
+											["count"] = 4000,
+										}, -- [1]
+										{
+											["q"] = 0,
+											["loc_id"] = 16,
+											["slot_id"] = 2,
+											["sb"] = 3,
+											["h"] = "reputation:54:友善:100:6000:0:0:0",
+											["bag_id"] = 1,
+											["count"] = 3100,
+										}, -- [2]
+										{
+											["q"] = 0,
+											["loc_id"] = 16,
+											["slot_id"] = 3,
+											["sb"] = 3,
+											["h"] = "reputation:69:友善:100:6000:0:0:0",
+											["bag_id"] = 1,
+											["count"] = 3100,
+										}, -- [3]
+										{
+											["q"] = 0,
+											["loc_id"] = 16,
+											["slot_id"] = 4,
+											["sb"] = 3,
+											["h"] = "reputation:47:友善:100:6000:0:0:0",
+											["bag_id"] = 1,
+											["count"] = 3100,
+										}, -- [4]
+									},
+									["status"] = -3,
+									["bag_id"] = 1,
+									["loc_id"] = 16,
+								}, -- [1]
+							},
+							["slot_count"] = 4,
+						},
 						[6] = {
-							["slot_count"] = 19,
 							["bag"] = {
 								{
 									["type"] = 14,
@@ -532,10 +581,10 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 6,
 											["sb"] = 0,
+											["h"] = "|cffffffff|Hitem:49::::::::1:::::::::|h[潜行者衬衣]|h|r",
+											["bag_id"] = 1,
 											["age"] = 28051371,
 											["count"] = 1,
-											["bag_id"] = 1,
-											["h"] = "|cffffffff|Hitem:49::::::::1:::::::::|h[潜行者衬衣]|h|r",
 										}, -- [6]
 										{
 											["q"] = -1,
@@ -574,20 +623,20 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 11,
 											["sb"] = 0,
+											["h"] = "|cff9d9d9d|Hitem:48::::::::1:::::::::|h[潜行者短裤]|h|r",
+											["bag_id"] = 1,
 											["age"] = 28051371,
 											["count"] = 1,
-											["bag_id"] = 1,
-											["h"] = "|cff9d9d9d|Hitem:48::::::::1:::::::::|h[潜行者短裤]|h|r",
 										}, -- [11]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 12,
 											["sb"] = 0,
+											["h"] = "|cffffffff|Hitem:47::::::::1:::::::::|h[潜行者之鞋]|h|r",
+											["bag_id"] = 1,
 											["age"] = 28051371,
 											["count"] = 1,
-											["bag_id"] = 1,
-											["h"] = "|cffffffff|Hitem:47::::::::1:::::::::|h[潜行者之鞋]|h|r",
 										}, -- [12]
 										{
 											["q"] = -1,
@@ -626,10 +675,10 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 17,
 											["sb"] = 0,
+											["h"] = "|cffffffff|Hitem:2092::::::::1:::::::::|h[用旧的匕首]|h|r",
+											["bag_id"] = 1,
 											["age"] = 28051371,
 											["count"] = 1,
-											["bag_id"] = 1,
-											["h"] = "|cffffffff|Hitem:2092::::::::1:::::::::|h[用旧的匕首]|h|r",
 										}, -- [17]
 										{
 											["q"] = -1,
@@ -644,10 +693,10 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 19,
 											["sb"] = 0,
+											["h"] = "|cffffffff|Hitem:2947::::::::1:::::::::|h[小飞刀]|h|r",
+											["bag_id"] = 1,
 											["age"] = 28051371,
 											["count"] = 1,
-											["bag_id"] = 1,
-											["h"] = "|cffffffff|Hitem:2947::::::::1:::::::::|h[小飞刀]|h|r",
 										}, -- [19]
 									},
 									["status"] = -3,
@@ -656,56 +705,7 @@ ARKINVDB = {
 									["loc_id"] = 6,
 								}, -- [1]
 							},
-						},
-						[16] = {
-							["slot_count"] = 4,
-							["bag"] = {
-								{
-									["type"] = 29,
-									["count"] = 4,
-									["slot"] = {
-										{
-											["q"] = 0,
-											["loc_id"] = 16,
-											["slot_id"] = 1,
-											["sb"] = 3,
-											["count"] = 4000,
-											["bag_id"] = 1,
-											["h"] = "reputation:72:友善:1000:6000:0:0:0",
-										}, -- [1]
-										{
-											["q"] = 0,
-											["loc_id"] = 16,
-											["slot_id"] = 2,
-											["sb"] = 3,
-											["count"] = 3100,
-											["bag_id"] = 1,
-											["h"] = "reputation:54:友善:100:6000:0:0:0",
-										}, -- [2]
-										{
-											["q"] = 0,
-											["loc_id"] = 16,
-											["slot_id"] = 3,
-											["sb"] = 3,
-											["count"] = 3100,
-											["bag_id"] = 1,
-											["h"] = "reputation:69:友善:100:6000:0:0:0",
-										}, -- [3]
-										{
-											["q"] = 0,
-											["loc_id"] = 16,
-											["slot_id"] = 4,
-											["sb"] = 3,
-											["count"] = 3100,
-											["bag_id"] = 1,
-											["h"] = "reputation:47:友善:100:6000:0:0:0",
-										}, -- [4]
-									},
-									["status"] = -3,
-									["bag_id"] = 1,
-									["loc_id"] = 16,
-								}, -- [1]
-							},
+							["slot_count"] = 19,
 						},
 					},
 				},
@@ -730,6 +730,7 @@ ARKINVDB = {
 					},
 					["location"] = {
 						{
+							["slot_count"] = 40,
 							["bag"] = {
 								{
 									["q"] = 0,
@@ -740,38 +741,38 @@ ARKINVDB = {
 											["h"] = "|cffffffff|Hitem:4537::::::::15:::::::::|h[泰拉比姆香蕉]|h|r",
 											["slot_id"] = 1,
 											["sb"] = 0,
-											["loc_id"] = 1,
-											["bag_id"] = 1,
 											["count"] = 1,
+											["bag_id"] = 1,
+											["loc_id"] = 1,
 										}, -- [1]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:6948::::::::15:::::::::|h[爐石]|h|r",
 											["slot_id"] = 2,
 											["sb"] = 3,
-											["count"] = 1,
-											["bag_id"] = 1,
 											["loc_id"] = 1,
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [2]
 										{
 											["q"] = 2,
 											["loc_id"] = 1,
 											["count"] = 1,
 											["sb"] = 3,
+											["slot_id"] = 3,
+											["age"] = 27287580,
 											["bag_id"] = 1,
 											["h"] = "|cff1eff00|Hitem:3103::::::::15:::::::::|h[寒脊之錘]|h|r",
-											["age"] = 27287580,
-											["slot_id"] = 3,
 										}, -- [3]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:2681::::::::15:::::::::|h[烤野豬肉]|h|r",
 											["slot_id"] = 4,
 											["sb"] = 0,
+											["count"] = 15,
+											["bag_id"] = 1,
 											["age"] = 27289785,
 											["loc_id"] = 1,
-											["bag_id"] = 1,
-											["count"] = 15,
 										}, -- [4]
 										{
 											["q"] = 1,
@@ -780,119 +781,119 @@ ARKINVDB = {
 											["h"] = "|cffffffff|Hitem:5998::::::::15:::::::::|h[格林戈·雷矛的訂單]|h|r",
 											["slot_id"] = 5,
 											["sb"] = 0,
-											["bag_id"] = 1,
-											["loc_id"] = 1,
 											["count"] = 1,
+											["loc_id"] = 1,
+											["bag_id"] = 1,
 										}, -- [5]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:2679::::::::15:::::::::|h[燒烤狼肉]|h|r",
 											["slot_id"] = 6,
 											["sb"] = 0,
-											["loc_id"] = 1,
+											["age"] = 27289786,
 											["count"] = 5,
 											["bag_id"] = 1,
-											["age"] = 27289786,
+											["loc_id"] = 1,
 										}, -- [6]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:860::::::::15:::::::::|h[騎兵戰靴]|h|r",
 											["count"] = 1,
 											["sb"] = 3,
+											["loc_id"] = 1,
+											["age"] = 27289787,
 											["bag_id"] = 1,
 											["slot_id"] = 7,
-											["age"] = 27289787,
-											["loc_id"] = 1,
 										}, -- [7]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:118::::::::15:::::::::|h[初級治療藥水]|h|r",
 											["count"] = 4,
 											["sb"] = 0,
+											["slot_id"] = 8,
+											["age"] = 27287581,
 											["bag_id"] = 1,
 											["loc_id"] = 1,
-											["age"] = 27287581,
-											["slot_id"] = 8,
 										}, -- [8]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:2249::::::::15:::::::::|h[民兵圓盾]|h|r",
 											["count"] = 1,
 											["sb"] = 3,
+											["slot_id"] = 9,
+											["age"] = 27289789,
 											["bag_id"] = 1,
 											["loc_id"] = 1,
-											["age"] = 27289789,
-											["slot_id"] = 9,
 										}, -- [9]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:117::::::::15:::::::::|h[硬肉乾]|h|r",
 											["count"] = 2,
 											["sb"] = 0,
+											["slot_id"] = 10,
+											["age"] = 27287468,
 											["bag_id"] = 1,
 											["loc_id"] = 1,
-											["age"] = 27287468,
-											["slot_id"] = 10,
 										}, -- [10]
 										{
 											["q"] = 1,
 											["loc_id"] = 1,
 											["count"] = 3,
 											["sb"] = 0,
+											["slot_id"] = 11,
+											["bag_id"] = 1,
 											["age"] = 27289756,
 											["h"] = "|cffffffff|Hitem:1251::::::::15:::::::::|h[亞麻繃帶]|h|r",
-											["bag_id"] = 1,
-											["slot_id"] = 11,
 										}, -- [11]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
 											["count"] = 20,
 											["sb"] = 0,
+											["slot_id"] = 12,
+											["bag_id"] = 1,
 											["age"] = 27287629,
 											["loc_id"] = 1,
-											["bag_id"] = 1,
-											["slot_id"] = 12,
 										}, -- [12]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:3220::::::::15:::::::::|h[血腸]|h|r",
 											["count"] = 5,
 											["sb"] = 0,
-											["loc_id"] = 1,
+											["age"] = 27289785,
 											["slot_id"] = 13,
 											["bag_id"] = 1,
-											["age"] = 27289785,
+											["loc_id"] = 1,
 										}, -- [13]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:2512::::::::15:::::::::|h[劣質箭]|h|r",
 											["count"] = 149,
 											["sb"] = 0,
+											["slot_id"] = 14,
+											["age"] = 27287558,
 											["bag_id"] = 1,
 											["loc_id"] = 1,
-											["age"] = 27287558,
-											["slot_id"] = 14,
 										}, -- [14]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:1251::::::::15:::::::::|h[亞麻繃帶]|h|r",
 											["count"] = 2,
 											["sb"] = 0,
+											["slot_id"] = 15,
+											["bag_id"] = 1,
 											["age"] = 27287570,
 											["loc_id"] = 1,
-											["bag_id"] = 1,
-											["slot_id"] = 15,
 										}, -- [15]
 										{
 											["q"] = 1,
 											["h"] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
 											["count"] = 20,
 											["sb"] = 0,
+											["slot_id"] = 16,
+											["bag_id"] = 1,
 											["age"] = 27287583,
 											["loc_id"] = 1,
-											["bag_id"] = 1,
-											["slot_id"] = 16,
 										}, -- [16]
 									},
 									["bag_id"] = 1,
@@ -910,10 +911,10 @@ ARKINVDB = {
 											["h"] = "|cffffffff|Hitem:3679::::::::15:::::::::|h[食譜：血腸]|h|r",
 											["count"] = 1,
 											["sb"] = 0,
-											["loc_id"] = 1,
+											["age"] = 27289785,
 											["slot_id"] = 1,
 											["bag_id"] = 2,
-											["age"] = 27289785,
+											["loc_id"] = 1,
 										}, -- [1]
 										{
 											["q"] = 0,
@@ -981,10 +982,10 @@ ARKINVDB = {
 											["h"] = "|cffffffff|Hitem:2677::::::::15:::::::::|h[豬排]|h|r",
 											["count"] = 5,
 											["sb"] = 0,
-											["loc_id"] = 1,
+											["age"] = 27289785,
 											["slot_id"] = 2,
 											["bag_id"] = 3,
-											["age"] = 27289785,
+											["loc_id"] = 1,
 										}, -- [2]
 										{
 											["q"] = 0,
@@ -1007,10 +1008,10 @@ ARKINVDB = {
 											["loc_id"] = 1,
 											["count"] = 20,
 											["sb"] = 0,
+											["slot_id"] = 5,
+											["bag_id"] = 3,
 											["age"] = 27289719,
 											["h"] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
-											["bag_id"] = 3,
-											["slot_id"] = 5,
 										}, -- [5]
 										{
 											["q"] = 0,
@@ -1038,10 +1039,10 @@ ARKINVDB = {
 											["loc_id"] = 1,
 											["count"] = 4,
 											["sb"] = 0,
+											["slot_id"] = 1,
+											["bag_id"] = 4,
 											["age"] = 27289721,
 											["h"] = "|cffffffff|Hitem:858::::::::15:::::::::|h[次級治療藥水]|h|r",
-											["bag_id"] = 4,
-											["slot_id"] = 1,
 										}, -- [1]
 										{
 											["q"] = 0,
@@ -1072,10 +1073,10 @@ ARKINVDB = {
 											["h"] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
 											["count"] = 11,
 											["sb"] = 0,
-											["slot_id"] = 5,
+											["bag_id"] = 4,
 											["loc_id"] = 1,
 											["age"] = 27289774,
-											["bag_id"] = 4,
+											["slot_id"] = 5,
 										}, -- [5]
 										{
 											["q"] = 0,
@@ -1156,9 +1157,9 @@ ARKINVDB = {
 									["texture"] = 133622,
 								}, -- [5]
 							},
-							["slot_count"] = 40,
 						}, -- [1]
 						{
+							["slot_count"] = 32,
 							["bag"] = {
 								{
 									["type"] = 3,
@@ -1427,11 +1428,11 @@ ARKINVDB = {
 									["loc_id"] = 2,
 								}, -- [1]
 							},
-							["slot_count"] = 32,
 						}, -- [2]
 						nil, -- [3]
 						nil, -- [4]
 						{
+							["slot_count"] = 1,
 							["bag"] = {
 								{
 									["type"] = 15,
@@ -1442,9 +1443,9 @@ ARKINVDB = {
 											["loc_id"] = 5,
 											["msg_id"] = 1,
 											["att_id"] = 1,
-											["slot_id"] = 1,
-											["bag_id"] = 1,
 											["sb"] = 0,
+											["bag_id"] = 1,
+											["slot_id"] = 1,
 										}, -- [1]
 									},
 									["status"] = -3,
@@ -1453,15 +1454,15 @@ ARKINVDB = {
 									["loc_id"] = 5,
 								}, -- [1]
 								{
-									["loc_id"] = 5,
+									["type"] = 15,
 									["status"] = -3,
 									["bag_id"] = 2,
-									["type"] = 15,
+									["loc_id"] = 5,
 								}, -- [2]
 							},
-							["slot_count"] = 1,
 						}, -- [5]
 						{
+							["slot_count"] = 19,
 							["bag"] = {
 								{
 									["type"] = 14,
@@ -1496,30 +1497,30 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 4,
 											["sb"] = 3,
-											["h"] = "|cffffffff|Hitem:3070::::::::15:::::::::|h[徽記披風]|h|r",
-											["age"] = 27286025,
-											["bag_id"] = 1,
 											["count"] = 1,
+											["bag_id"] = 1,
+											["age"] = 27286025,
+											["h"] = "|cffffffff|Hitem:3070::::::::15:::::::::|h[徽記披風]|h|r",
 										}, -- [4]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 5,
 											["sb"] = 3,
-											["count"] = 1,
-											["bag_id"] = 1,
-											["age"] = 27289721,
 											["h"] = "|cffffffff|Hitem:3151::::::::15:::::::::|h[坦克駕駛員軍用外衣]|h|r",
+											["age"] = 27289721,
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [5]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 6,
 											["sb"] = 0,
-											["h"] = "|cffffffff|Hitem:2575::::::::15:::::::::|h[紅色亞麻襯衣]|h|r",
-											["bag_id"] = 1,
-											["age"] = 27286171,
 											["count"] = 1,
+											["age"] = 27286171,
+											["bag_id"] = 1,
+											["h"] = "|cffffffff|Hitem:2575::::::::15:::::::::|h[紅色亞麻襯衣]|h|r",
 										}, -- [6]
 										{
 											["q"] = -1,
@@ -1534,50 +1535,50 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 8,
 											["sb"] = 3,
-											["count"] = 1,
-											["bag_id"] = 1,
-											["age"] = 27287440,
 											["h"] = "|cffffffff|Hitem:1182::::::::15:::::::::|h[黃銅護腕]|h|r",
+											["age"] = 27287440,
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [8]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["count"] = 1,
 											["sb"] = 3,
-											["slot_id"] = 9,
-											["bag_id"] = 1,
-											["age"] = 27287561,
 											["h"] = "|cffffffff|Hitem:1360::::::::15:::::::::|h[暴風城鍊甲手套]|h|r",
+											["age"] = 27287561,
+											["bag_id"] = 1,
+											["slot_id"] = 9,
 										}, -- [9]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 10,
 											["sb"] = 0,
-											["count"] = 1,
-											["bag_id"] = 1,
-											["age"] = 27289778,
 											["h"] = "|cffffffff|Hitem:9758::::::::15:::::::::|h[軍校腰帶]|h|r",
+											["age"] = 27289778,
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [10]
 										{
 											["q"] = 0,
 											["loc_id"] = 6,
 											["slot_id"] = 11,
 											["sb"] = 0,
-											["h"] = "|cff9d9d9d|Hitem:1735::::::::15:::::::::|h[用舊的鎖甲短褲]|h|r",
-											["bag_id"] = 1,
-											["age"] = 27289721,
 											["count"] = 1,
+											["age"] = 27289721,
+											["bag_id"] = 1,
+											["h"] = "|cff9d9d9d|Hitem:1735::::::::15:::::::::|h[用舊的鎖甲短褲]|h|r",
 										}, -- [11]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 12,
 											["sb"] = 0,
-											["h"] = "|cffffffff|Hitem:9759::::::::15:::::::::|h[軍校長靴]|h|r",
-											["bag_id"] = 1,
-											["age"] = 27289721,
 											["count"] = 1,
+											["age"] = 27289721,
+											["bag_id"] = 1,
+											["h"] = "|cffffffff|Hitem:9759::::::::15:::::::::|h[軍校長靴]|h|r",
 										}, -- [12]
 										{
 											["q"] = -1,
@@ -1616,30 +1617,30 @@ ARKINVDB = {
 											["loc_id"] = 6,
 											["slot_id"] = 17,
 											["sb"] = 3,
-											["h"] = "|cff1eff00|Hitem:6985::::::::15:::::::::|h[哈加德的劍]|h|r",
-											["bag_id"] = 1,
-											["age"] = 27287506,
 											["count"] = 1,
+											["age"] = 27287506,
+											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:6985::::::::15:::::::::|h[哈加德的劍]|h|r",
 										}, -- [17]
 										{
 											["q"] = 2,
 											["loc_id"] = 6,
 											["slot_id"] = 18,
 											["sb"] = 3,
-											["h"] = "|cff1eff00|Hitem:3160::::::::15:::::::::|h[鐵板圓盾]|h|r",
-											["bag_id"] = 1,
-											["age"] = 27289789,
 											["count"] = 1,
+											["age"] = 27289789,
+											["bag_id"] = 1,
+											["h"] = "|cff1eff00|Hitem:3160::::::::15:::::::::|h[鐵板圓盾]|h|r",
 										}, -- [18]
 										{
 											["q"] = 1,
 											["loc_id"] = 6,
 											["slot_id"] = 19,
 											["sb"] = 0,
-											["count"] = 1,
-											["bag_id"] = 1,
-											["age"] = 27287558,
 											["h"] = "|cffffffff|Hitem:15807::::::::15:::::::::|h[輕弩]|h|r",
+											["age"] = 27287558,
+											["bag_id"] = 1,
+											["count"] = 1,
 										}, -- [19]
 									},
 									["status"] = -3,
@@ -1648,7 +1649,6 @@ ARKINVDB = {
 									["loc_id"] = 6,
 								}, -- [1]
 							},
-							["slot_count"] = 19,
 						}, -- [6]
 						nil, -- [7]
 						nil, -- [8]
@@ -1656,10 +1656,10 @@ ARKINVDB = {
 						{
 							["bag"] = {
 								{
-									["loc_id"] = 10,
+									["type"] = 20,
 									["status"] = -3,
 									["bag_id"] = 1,
-									["type"] = 20,
+									["loc_id"] = 10,
 								}, -- [1]
 							},
 						}, -- [10]
@@ -1669,6 +1669,7 @@ ARKINVDB = {
 						nil, -- [14]
 						nil, -- [15]
 						{
+							["slot_count"] = 4,
 							["bag"] = {
 								{
 									["type"] = 29,
@@ -1679,36 +1680,36 @@ ARKINVDB = {
 											["loc_id"] = 16,
 											["slot_id"] = 1,
 											["sb"] = 3,
-											["count"] = 7690,
-											["bag_id"] = 1,
 											["h"] = "reputation:72:友善:4690:6000:0:0:0",
+											["bag_id"] = 1,
+											["count"] = 7690,
 										}, -- [1]
 										{
 											["q"] = 0,
 											["h"] = "reputation:54:友善:626:6000:0:0:0",
 											["count"] = 3626,
 											["sb"] = 3,
-											["slot_id"] = 2,
-											["bag_id"] = 1,
 											["loc_id"] = 16,
+											["bag_id"] = 1,
+											["slot_id"] = 2,
 										}, -- [2]
 										{
 											["q"] = 0,
 											["loc_id"] = 16,
 											["slot_id"] = 3,
 											["sb"] = 3,
-											["count"] = 3318,
-											["bag_id"] = 1,
 											["h"] = "reputation:69:友善:318:6000:0:0:0",
+											["bag_id"] = 1,
+											["count"] = 3318,
 										}, -- [3]
 										{
 											["q"] = 0,
 											["h"] = "reputation:47:友善:1220:6000:0:0:0",
 											["count"] = 4220,
 											["sb"] = 3,
-											["slot_id"] = 4,
-											["bag_id"] = 1,
 											["loc_id"] = 16,
+											["bag_id"] = 1,
+											["slot_id"] = 4,
 										}, -- [4]
 									},
 									["status"] = -3,
@@ -1716,7 +1717,6 @@ ARKINVDB = {
 									["loc_id"] = 16,
 								}, -- [1]
 							},
-							["slot_count"] = 4,
 						}, -- [16]
 					},
 				},
@@ -1724,13 +1724,13 @@ ARKINVDB = {
 					["info"] = {
 						["class"] = "ACCOUNT",
 						["class_local"] = "Account",
-						["realm"] = "",
+						["faction_local"] = "",
 						["name"] = "我的账户",
 						["faction"] = "",
-						["player_id"] = "!ACCOUNT - 100",
-						["proj"] = 2,
 						["level"] = 1,
-						["faction_local"] = "",
+						["proj"] = 2,
+						["player_id"] = "!ACCOUNT - 100",
+						["realm"] = "",
 					},
 				},
 			},
@@ -2598,11 +2598,11 @@ ARKINVDB = {
 					["w"] = true,
 					["n"] = "吉兹洛克",
 				},
-				[2505] = {
+				[2403] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "巨龙军团，多彩龙",
+					["n"] = "CTF - Flag - Alliance",
 				},
 				[2402] = {
 					["r"] = false,
@@ -2628,11 +2628,11 @@ ARKINVDB = {
 					["w"] = false,
 					["n"] = "蛮锤部族",
 				},
-				[809] = {
+				[954] = {
 					["r"] = false,
-					["d"] = "一群居住在厄运之槌的精灵后裔，他们仍然具有着相当渊博的智慧与学识，并保守着一些伟大的秘密。",
-					["w"] = false,
-					["n"] = "辛德拉",
+					["d"] = "",
+					["w"] = true,
+					["n"] = "ToWoW - Flag Trigger Horde (DND)",
 				},
 				[573] = {
 					["r"] = false,
@@ -2658,17 +2658,17 @@ ARKINVDB = {
 					["w"] = true,
 					["n"] = "RC Enemies",
 				},
-				[917] = {
+				[916] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "铁炉堡军团",
+					["n"] = "异种虫类",
 				},
-				[789] = {
+				[329] = {
 					["r"] = false,
 					["d"] = "",
-					["w"] = false,
-					["n"] = "莫洛加",
+					["w"] = true,
+					["n"] = "工头费苏勒",
 				},
 				[189] = {
 					["r"] = false,
@@ -2688,17 +2688,17 @@ ARKINVDB = {
 					["w"] = true,
 					["n"] = "巨人",
 				},
-				[229] = {
+				[931] = {
 					["r"] = false,
-					["d"] = "",
+					["d"] = "This faction only exists to test the editing of faction names and descriptions...",
 					["w"] = true,
-					["n"] = "哀嚎洞穴",
+					["n"] = "Test Faction (not a real faction)",
 				},
-				[249] = {
+				[915] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "异种蝎",
+					["n"] = "克苏恩的军队",
 				},
 				[269] = {
 					["r"] = false,
@@ -2742,11 +2742,11 @@ ARKINVDB = {
 					["w"] = false,
 					["n"] = "诺兹多姆的子嗣",
 				},
-				[891] = {
+				[829] = {
 					["r"] = false,
 					["d"] = "",
-					["w"] = false,
-					["n"] = "联盟部队",
+					["w"] = true,
+					["n"] = "Ogre (Captain Kromcrush)",
 				},
 				[769] = {
 					["r"] = false,
@@ -2754,11 +2754,11 @@ ARKINVDB = {
 					["w"] = true,
 					["n"] = "吉兹洛克的假人",
 				},
-				[829] = {
+				[891] = {
 					["r"] = false,
 					["d"] = "",
-					["w"] = true,
-					["n"] = "Ogre (Captain Kromcrush)",
+					["w"] = false,
+					["n"] = "联盟部队",
 				},
 				[309] = {
 					["r"] = false,
@@ -2778,29 +2778,29 @@ ARKINVDB = {
 					["w"] = false,
 					["n"] = "暴掠龙训练师",
 				},
-				[915] = {
+				[249] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "克苏恩的军队",
+					["n"] = "异种蝎",
 				},
-				[931] = {
-					["r"] = false,
-					["d"] = "This faction only exists to test the editing of faction names and descriptions...",
-					["w"] = true,
-					["n"] = "Test Faction (not a real faction)",
-				},
-				[329] = {
+				[917] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "工头费苏勒",
+					["n"] = "铁炉堡军团",
 				},
-				[916] = {
+				[229] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "异种虫类",
+					["n"] = "哀嚎洞穴",
+				},
+				[789] = {
+					["r"] = false,
+					["d"] = "",
+					["w"] = false,
+					["n"] = "莫洛加",
 				},
 				[670] = {
 					["r"] = false,
@@ -2814,11 +2814,11 @@ ARKINVDB = {
 					["w"] = true,
 					["n"] = "Beast - Wind Serpent",
 				},
-				[954] = {
+				[809] = {
 					["r"] = false,
-					["d"] = "",
-					["w"] = true,
-					["n"] = "ToWoW - Flag Trigger Horde (DND)",
+					["d"] = "一群居住在厄运之槌的精灵后裔，他们仍然具有着相当渊博的智慧与学识，并保守着一些伟大的秘密。",
+					["w"] = false,
+					["n"] = "辛德拉",
 				},
 				[349] = {
 					["r"] = false,
@@ -2826,11 +2826,11 @@ ARKINVDB = {
 					["w"] = true,
 					["n"] = "拉文霍德",
 				},
-				[2403] = {
+				[2505] = {
 					["r"] = false,
 					["d"] = "",
 					["w"] = true,
-					["n"] = "CTF - Flag - Alliance",
+					["n"] = "巨龙军团，多彩龙",
 				},
 			},
 			["rule"] = {
@@ -3138,8 +3138,8 @@ ARKINVDB = {
 					},
 				},
 			},
-			["transmog"] = {
-				["enable"] = false,
+			["restack"] = {
+				["blizzard"] = false,
 			},
 			["tooltip"] = {
 				["battlepet"] = {
@@ -3154,8 +3154,8 @@ ARKINVDB = {
 								["anchor"] = {
 									["b"] = 347.6671447753906,
 									["l"] = 1021.557189941406,
-									["r"] = 1705.557250976563,
 									["t"] = 676.667236328125,
+									["r"] = 1705.557250976563,
 								},
 								["container"] = {
 									["height"] = 151,
@@ -3244,6 +3244,8 @@ ARKINVDB = {
 				},
 				["EVENT_ARKINV_COLLECTION_REPUTATION_UPDATE_BUCKET"] = {
 				},
+				["EVENT_ARKINV_INVENTORY_CHANGE_BUCKET"] = {
+				},
 				["EVENT_ARKINV_LDB_REPUTATION_UPDATE_BUCKET"] = {
 				},
 				["EVENT_ARKINV_AUCTION_LEAVE_BUCKET"] = {
@@ -3252,18 +3254,16 @@ ARKINVDB = {
 				},
 				["EVENT_ARKINV_BAG_UPDATE_BUCKET"] = {
 				},
-				["EVENT_ARKINV_BANK_LEAVE_BUCKET"] = {
-				},
-				["EVENT_ARKINV_INVENTORY_CHANGE_BUCKET"] = {
-				},
 				["EVENT_ARKINV_BAG_UPDATE_COOLDOWN_BUCKET"] = {
+				},
+				["EVENT_ARKINV_BANK_LEAVE_BUCKET"] = {
 				},
 				["EVENT_ARKINV_VOID_UPDATE_BUCKET"] = {
 				},
 			},
 			["version"] = 30967,
-			["restack"] = {
-				["blizzard"] = false,
+			["transmog"] = {
+				["enable"] = false,
 			},
 		},
 	},

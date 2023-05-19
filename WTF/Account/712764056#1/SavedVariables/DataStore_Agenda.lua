@@ -10,7 +10,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1637387395,
 			},
 			["Default.伊弗斯.特變電工"] = {
-				["lastUpdate"] = 1683082308,
+				["lastUpdate"] = 1684421290,
 			},
 		},
 	},

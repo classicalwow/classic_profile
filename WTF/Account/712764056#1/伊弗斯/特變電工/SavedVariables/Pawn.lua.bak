@@ -1,6 +1,6 @@
 
 PawnOptions = {
-	["LastVersion"] = 2.053,
+	["LastVersion"] = 2.0538,
 	["LastPlayerFullName"] = "特變電工-伊弗斯",
 	["AutoSelectScales"] = false,
 	["ItemLevels"] = {
@@ -98,6 +98,6 @@ PawnOptions = {
 }
 PawnMrRobotScaleProviderOptions = nil
 PawnClassicScaleProviderOptions = {
-	["LastClass"] = "WARRIOR",
+	["LastClass"] = "ROGUE",
 	["LastAdded"] = 2,
 }

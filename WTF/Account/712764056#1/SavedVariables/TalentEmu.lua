@@ -1,40 +1,40 @@
 
 TalentEmuSV = {
+	["set"] = {
+		["credible"] = false,
+		["supreme"] = false,
+		["minimapPos"] = 185,
+	},
+	["loot"] = {
+	},
 	["var"] = {
 		["Player-5300-004CE6EB"] = "610",
 		["savedTalent"] = {
 		},
 	},
-	["loot"] = {
-	},
-	["set"] = {
-		["credible"] = false,
-		["minimapPos"] = 185,
-		["supreme"] = false,
-	},
+	["__upgraded"] = true,
 	["_GlobalRef"] = {
 		["emu"] = {
-			["SaveAddOns"] = 1,
-			["ChatFrame_AddMessageEventFilter"] = 1,
-			["TargetFrame"] = 1,
-			["GetAddOnInfo"] = 3,
-			["IsAddOnLoaded"] = 1,
-			["SlashCmdList"] = 1,
-			["GameFontHighlight"] = 1,
+			["LoadAddOn"] = 1,
+			["ChatFrame_AddMessageEventFilter"] = 2,
+			["TargetFrame"] = 2,
+			["GetAddOnInfo"] = 6,
+			["IsAddOnLoaded"] = 2,
+			["SlashCmdList"] = 2,
+			["GameFontHighlight"] = 2,
 			["ERR_CHAT_PLAYER_NOT_FOUND_S"] = 5,
 			["EnableAddOn"] = 1,
 			["DisableAddOn"] = 1,
-			["LibStub"] = 3,
-			["LoadAddOn"] = 1,
-			["ALASCR"] = 1,
-			["UISpecialFrames"] = 1,
-			["alaPopup"] = 12,
+			["LibStub"] = 6,
+			["SaveAddOns"] = 1,
+			["ALASCR"] = 2,
+			["UISpecialFrames"] = 2,
+			["alaPopup"] = 24,
 			["alaTalentEmuSV"] = 1,
-			["StaticPopupDialogs"] = 1,
+			["StaticPopupDialogs"] = 2,
 		},
 	},
 	["_version"] = 220720,
-	["__upgraded"] = true,
 	["_GlobalAssign"] = {
 		["emu"] = {
 			["alaTalentEmuSV"] = 1,

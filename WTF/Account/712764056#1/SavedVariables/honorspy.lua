@@ -2,7 +2,7 @@
 HonorSpyDB = {
 	["char"] = {
 		["特變電工 - 伊弗斯"] = {
-			["last_reset"] = 1682557200,
+			["last_reset"] = 1684371600,
 		},
 	},
 	["profileKeys"] = {
@@ -12,7 +12,7 @@ HonorSpyDB = {
 		["Alliance - 伊弗斯"] = {
 			["actualCommPrefix"] = "HonorSpy7",
 			["som_Checked"] = true,
-			["last_reset"] = 1682557200,
+			["last_reset"] = 1684371600,
 		},
 	},
 }

@@ -2,6 +2,7 @@
 DataStore_CraftsDB = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
 	},
 	["global"] = {
 		["Characters"] = {
@@ -30,12 +31,16 @@ DataStore_CraftsDB = {
 					},
 				},
 			},
+			["Default.伊弗斯.特變電工"] = {
+				["lastUpdate"] = 1683082308,
+			},
 		},
 	},
 }
 DataStore_CraftsRefDB = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
 	},
 	["global"] = {
 		["Reagents"] = {

@@ -2,6 +2,7 @@
 ParrotDB = {
 	["profileKeys"] = {
 		["特變電工 - 玉石礦坑"] = "Default",
+		["特變電工 - 伊弗斯"] = "Default",
 	},
 	["namespaces"] = {
 		["CombatEvents"] = {
@@ -60,8 +61,8 @@ ParrotDB = {
 			["profiles"] = {
 				["Default"] = {
 					["dbver2"] = 0,
-					["triggers2"] = 0,
 					["dbver3"] = 1,
+					["triggers2"] = 0,
 				},
 			},
 		},
