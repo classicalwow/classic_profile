@@ -25,7 +25,7 @@
 										__onleave	[optional]
 ]=]
 
-local __version = 8;
+local __version = 220808.0;
 
 local _G = _G;
 _G.__ala_meta__ = _G.__ala_meta__ or {  };
@@ -62,15 +62,16 @@ local uireimp = __ala_meta__.uireimp;
 	local MenuButtonToHBorder = 2;
 	local MenuButtonToVBorder = 2;
 
-	local isRetail = WOW_PROJECT_ID == WOW_PROJECT_MAINLINE;
-	local isBCC = WOW_PROJECT_ID == WOW_PROJECT_BURNING_CRUSADE_CLASSIC;
+	local isRetail = __ala_meta__.BUILD == "RETAIL";
+	local isBCC = __ala_meta__.BUILD == "BCC";
+	local isWLK = __ala_meta__.BUILD == "WRATH";
 
 	local MenuList = { total = 0, used = 0, prev = nil, };
 	local frameToMenu = setmetatable({  }, { __mode = 'k', });
 
 -->			Creator
 	local MenuOnEvent = nil;
-	if isRetail then
+	if isRetail or isWLK then
 		function MenuOnEvent(Menu, event)
 			if Menu.__flag == "show" then
 				Menu.__flag = nil;
@@ -144,7 +145,7 @@ local uireimp = __ala_meta__.uireimp;
 		uireimp._SetSimpleBackdrop(Menu, -1, 1, MenuBackdropColor[1], MenuBackdropColor[2], MenuBackdropColor[3], MenuBackdropColor[4], MenuBorderColor[1], MenuBorderColor[2], MenuBorderColor[3], MenuBorderColor[4]);
 	end
 	local function CreateMenu()
-		Menu = CreateFrame("BUTTON", nil, UIParent);
+		Menu = CreateFrame('BUTTON', nil, UIParent);
 		Menu:SetFrameStrata("FULLSCREEN_DIALOG");
 		Menu:SetClampedToScreen(true);
 		Menu:Hide();
@@ -154,7 +155,7 @@ local uireimp = __ala_meta__.uireimp;
 		Menu:SetScript("OnLeave", MenuOnLeave);
 		Menu:SetScript("OnShow", MenuOnShow);
 		Menu:SetScript("OnHide", MenuOnHide);
-		if isRetail then
+		if isRetail or isWLK then
 			Menu:RegisterEvent("GLOBAL_MOUSE_UP");
 		elseif isBCC then
 			Menu:RegisterEvent("PLAYER_STARTED_LOOKING");
@@ -220,7 +221,7 @@ local uireimp = __ala_meta__.uireimp;
 
 	end
 	local function CreateMenuButton(Menu, x, y)
-		local Button = CreateFrame("BUTTON", nil, Menu);
+		local Button = CreateFrame('BUTTON', nil, Menu);
 		Button:SetPoint("TOP", Menu, "TOP", x, y);
 
 		Button.HT = Button:CreateTexture(nil, "HIGHLIGHT");
@@ -403,7 +404,7 @@ DropMenu.ShowMenu = ShowMenu;
 
 function DropMenu:Halt()
 	for index = 1, MenuList.total do
-		-- MenuOnEvent(MenuList[index], isRetail and "GLOBAL_MOUSE_UP" or (isBCC and "PLAYER_STARTED_LOOKING" or "CURSOR_UPDATE"));
+		-- MenuOnEvent(MenuList[index], (isRetail or isWLK) and "GLOBAL_MOUSE_UP" or (isBCC and "PLAYER_STARTED_LOOKING" or "CURSOR_UPDATE"));
 		MenuList[index]:Hide();
 		MenuList[index]:SetScript("OnUpdate", nil);
 		MenuList[index]:UnregisterAllEvents();

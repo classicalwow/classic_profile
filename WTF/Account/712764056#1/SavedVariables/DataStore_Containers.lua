@@ -1,40 +1,53 @@
 
 DataStore_ContainersDB = {
 	["profileKeys"] = {
-		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
 		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
+		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["冰火倆重天 - 伊弗斯"] = "冰火倆重天 - 伊弗斯",
 	},
 	["global"] = {
 		["Characters"] = {
+			["Default.伊弗斯.冰火倆重天"] = {
+				["lastUpdate"] = 1686390502,
+				["Containers"] = {
+					["Bag0"] = {
+						["ids"] = {
+							4604, -- [1]
+							[3] = 6948,
+						},
+						["links"] = {
+							"|cffffffff|Hitem:4604::::::::2:::::::::|h[森林蘑菇]|h|r", -- [1]
+							[3] = "|cffffffff|Hitem:6948::::::::2:::::::::|h[炉石]|h|r",
+						},
+						["icon"] = "Interface\\Buttons\\Button-Backpack-Up",
+						["size"] = 16,
+						["counts"] = {
+							7, -- [1]
+						},
+						["freeslots"] = 14,
+					},
+					["Bag-2"] = {
+						["icon"] = "ICONS\\INV_Misc_Key_04.blp",
+						["size"] = 32,
+						["freeslots"] = 32,
+					},
+				},
+				["numFreeBagSlots"] = 14,
+				["numBagSlots"] = 16,
+			},
 			["Default.玉石礦坑.特變電工"] = {
 				["lastUpdate"] = 1637387395,
+				["numFreeBagSlots"] = 19,
 				["Containers"] = {
 					["Bag4"] = {
 						["rarity"] = 1,
 						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
-						["size"] = 6,
-						["icon"] = 133622,
 						["freeslots"] = 6,
+						["icon"] = 133622,
+						["size"] = 6,
 					},
 					["Bag0"] = {
-						["links"] = {
-							"|cffffffff|Hitem:4537::::::::15:::::::::|h[泰拉比姆香蕉]|h|r", -- [1]
-							"|cffffffff|Hitem:6948::::::::15:::::::::|h[爐石]|h|r", -- [2]
-							"|cff1eff00|Hitem:3103::::::::15:::::::::|h[寒脊之錘]|h|r", -- [3]
-							"|cffffffff|Hitem:2681::::::::15:::::::::|h[烤野豬肉]|h|r", -- [4]
-							"|cffffffff|Hitem:5998::::::::15:::::::::|h[格林戈·雷矛的訂單]|h|r", -- [5]
-							"|cffffffff|Hitem:2679::::::::15:::::::::|h[燒烤狼肉]|h|r", -- [6]
-							"|cffffffff|Hitem:860::::::::15:::::::::|h[騎兵戰靴]|h|r", -- [7]
-							"|cffffffff|Hitem:118::::::::15:::::::::|h[初級治療藥水]|h|r", -- [8]
-							"|cffffffff|Hitem:2249::::::::15:::::::::|h[民兵圓盾]|h|r", -- [9]
-							"|cffffffff|Hitem:117::::::::15:::::::::|h[硬肉乾]|h|r", -- [10]
-							"|cffffffff|Hitem:1251::::::::15:::::::::|h[亞麻繃帶]|h|r", -- [11]
-							"|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r", -- [12]
-							"|cffffffff|Hitem:3220::::::::15:::::::::|h[血腸]|h|r", -- [13]
-							"|cffffffff|Hitem:2512::::::::15:::::::::|h[劣質箭]|h|r", -- [14]
-							"|cffffffff|Hitem:1251::::::::15:::::::::|h[亞麻繃帶]|h|r", -- [15]
-							"|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r", -- [16]
-						},
+						["size"] = 16,
 						["ids"] = {
 							4537, -- [1]
 							6948, -- [2]
@@ -53,7 +66,6 @@ DataStore_ContainersDB = {
 							1251, -- [15]
 							2589, -- [16]
 						},
-						["icon"] = "Interface\\Buttons\\Button-Backpack-Up",
 						["counts"] = {
 							nil, -- [1]
 							nil, -- [2]
@@ -72,95 +84,112 @@ DataStore_ContainersDB = {
 							2, -- [15]
 							20, -- [16]
 						},
-						["size"] = 16,
+						["icon"] = "Interface\\Buttons\\Button-Backpack-Up",
+						["links"] = {
+							"|cffffffff|Hitem:4537::::::::15:::::::::|h[泰拉比姆香蕉]|h|r", -- [1]
+							"|cffffffff|Hitem:6948::::::::15:::::::::|h[爐石]|h|r", -- [2]
+							"|cff1eff00|Hitem:3103::::::::15:::::::::|h[寒脊之錘]|h|r", -- [3]
+							"|cffffffff|Hitem:2681::::::::15:::::::::|h[烤野豬肉]|h|r", -- [4]
+							"|cffffffff|Hitem:5998::::::::15:::::::::|h[格林戈·雷矛的訂單]|h|r", -- [5]
+							"|cffffffff|Hitem:2679::::::::15:::::::::|h[燒烤狼肉]|h|r", -- [6]
+							"|cffffffff|Hitem:860::::::::15:::::::::|h[騎兵戰靴]|h|r", -- [7]
+							"|cffffffff|Hitem:118::::::::15:::::::::|h[初級治療藥水]|h|r", -- [8]
+							"|cffffffff|Hitem:2249::::::::15:::::::::|h[民兵圓盾]|h|r", -- [9]
+							"|cffffffff|Hitem:117::::::::15:::::::::|h[硬肉乾]|h|r", -- [10]
+							"|cffffffff|Hitem:1251::::::::15:::::::::|h[亞麻繃帶]|h|r", -- [11]
+							"|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r", -- [12]
+							"|cffffffff|Hitem:3220::::::::15:::::::::|h[血腸]|h|r", -- [13]
+							"|cffffffff|Hitem:2512::::::::15:::::::::|h[劣質箭]|h|r", -- [14]
+							"|cffffffff|Hitem:1251::::::::15:::::::::|h[亞麻繃帶]|h|r", -- [15]
+							"|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r", -- [16]
+						},
 					},
 					["Bag1"] = {
 						["rarity"] = 1,
-						["ids"] = {
-							3679, -- [1]
-						},
+						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
 						["links"] = {
 							"|cffffffff|Hitem:3679::::::::15:::::::::|h[食譜：血腸]|h|r", -- [1]
 						},
-						["freeslots"] = 5,
-						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
-						["icon"] = 133622,
 						["size"] = 6,
+						["ids"] = {
+							3679, -- [1]
+						},
+						["icon"] = 133622,
+						["freeslots"] = 5,
 					},
 					["Bag2"] = {
 						["rarity"] = 1,
-						["ids"] = {
-							[2] = 2677,
-							[5] = 2589,
-						},
+						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
 						["links"] = {
 							[2] = "|cffffffff|Hitem:2677::::::::15:::::::::|h[豬排]|h|r",
 							[5] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
 						},
-						["icon"] = 133622,
-						["freeslots"] = 4,
-						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
 						["counts"] = {
 							nil, -- [1]
 							5, -- [2]
 							[5] = 20,
 						},
 						["size"] = 6,
-					},
-					["Bag3"] = {
-						["rarity"] = 1,
-						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
-						["links"] = {
-							"|cffffffff|Hitem:858::::::::15:::::::::|h[次級治療藥水]|h|r", -- [1]
-							[5] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
+						["ids"] = {
+							[2] = 2677,
+							[5] = 2589,
 						},
 						["icon"] = 133622,
 						["freeslots"] = 4,
+					},
+					["Bag3"] = {
+						["rarity"] = 1,
 						["ids"] = {
 							858, -- [1]
 							[5] = 2589,
+						},
+						["links"] = {
+							"|cffffffff|Hitem:858::::::::15:::::::::|h[次級治療藥水]|h|r", -- [1]
+							[5] = "|cffffffff|Hitem:2589::::::::15:::::::::|h[亞麻布]|h|r",
 						},
 						["counts"] = {
 							4, -- [1]
 							[5] = 11,
 						},
 						["size"] = 6,
+						["link"] = "|cffffffff|Hitem:4238::::::::15:::::::::|h[亞麻包]|h|r",
+						["icon"] = 133622,
+						["freeslots"] = 4,
 					},
 					["Bag-2"] = {
-						["size"] = 32,
-						["icon"] = "ICONS\\INV_Misc_Key_04.blp",
 						["freeslots"] = 32,
+						["icon"] = "ICONS\\INV_Misc_Key_04.blp",
+						["size"] = 32,
 					},
 				},
-				["numFreeBagSlots"] = 19,
 				["numBagSlots"] = 40,
 			},
 			["Default.伊弗斯.特變電工"] = {
 				["lastUpdate"] = 1684421290,
-				["numFreeBagSlots"] = 14,
 				["Containers"] = {
 					["Bag-2"] = {
-						["freeslots"] = 32,
-						["icon"] = "ICONS\\INV_Misc_Key_04.blp",
 						["size"] = 32,
+						["icon"] = "ICONS\\INV_Misc_Key_04.blp",
+						["freeslots"] = 32,
 					},
 					["Bag0"] = {
+						["icon"] = "Interface\\Buttons\\Button-Backpack-Up",
+						["size"] = 16,
 						["ids"] = {
 							2070, -- [1]
 							6948, -- [2]
+						},
+						["freeslots"] = 14,
+						["counts"] = {
+							4, -- [1]
 						},
 						["links"] = {
 							"|cffffffff|Hitem:2070::::::::1:::::::::|h[达纳苏斯奶酪]|h|r", -- [1]
 							"|cffffffff|Hitem:6948::::::::1:::::::::|h[炉石]|h|r", -- [2]
 						},
-						["counts"] = {
-							4, -- [1]
-						},
-						["freeslots"] = 14,
-						["icon"] = "Interface\\Buttons\\Button-Backpack-Up",
-						["size"] = 16,
 					},
 				},
+				["numFreeBagSlots"] = 14,
 				["numBagSlots"] = 16,
 			},
 		},

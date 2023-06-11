@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() or not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L
@@ -67,6 +67,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     text_fontSize = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Size"],
       order = 14,
@@ -110,7 +111,10 @@ local function createOptions(parentData, data, index, subIndex)
           textWidth = " "..L["and with width |cFFFF0000%s|r and %s"]:format(data.text_fixedWidth, wordWarp)
         end
 
-        local secondline = L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s%s"]:format(textFlags, color, data.text_shadowXOffset, data.text_shadowYOffset, textRotate, textJustify, textWidth)
+        local secondline
+          = L["|cFFffcc00Font Flags:|r |cFFFF0000%s|r and shadow |c%sColor|r with offset |cFFFF0000%s/%s|r%s%s%s"]
+            :format(textFlags, color, data.text_shadowXOffset, data.text_shadowYOffset,
+                    textRotate, textJustify, textWidth)
 
         return secondline
       end,
@@ -165,6 +169,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     text_shadowXOffset = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth - indentWidth,
       name = L["Shadow X Offset"],
       softMin = -15,
@@ -175,6 +180,7 @@ local function createOptions(parentData, data, index, subIndex)
     },
     text_shadowYOffset = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = L["Shadow Y Offset"],
       softMin = -15,
@@ -241,6 +247,7 @@ local function createOptions(parentData, data, index, subIndex)
       width = WeakAuras.normalWidth - indentWidth,
       order = 53,
       type = "range",
+      control = "WeakAurasSpinBox",
       min = 1,
       softMax = 200,
       bigStep = 1,
@@ -294,15 +301,18 @@ local function createOptions(parentData, data, index, subIndex)
 
       if selfPoint then
         if xOffset == 0 and yOffset == 0 then
-          return L["|cFFffcc00Anchors:|r Anchored |cFFFF0000%s|r to frame's |cFFFF0000%s|r"]:format(selfPoint, anchorPoint)
+          return L["|cFFffcc00Anchors:|r Anchored |cFFFF0000%s|r to frame's |cFFFF0000%s|r"]
+                 :format(selfPoint, anchorPoint)
         else
-          return L["|cFFffcc00Anchors:|r Anchored |cFFFF0000%s|r to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"]:format(selfPoint, anchorPoint, xOffset, yOffset)
+          return L["|cFFffcc00Anchors:|r Anchored |cFFFF0000%s|r to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"]
+                 :format(selfPoint, anchorPoint, xOffset, yOffset)
         end
       else
         if xOffset == 0 and yOffset == 0 then
           return L["|cFFffcc00Anchors:|r Anchored to frame's |cFFFF0000%s|r"]:format(anchorPoint)
         else
-          return L["|cFFffcc00Anchors:|r Anchored to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"]:format(anchorPoint, xOffset, yOffset)
+          return L["|cFFffcc00Anchors:|r Anchored to frame's |cFFFF0000%s|r with offset |cFFFF0000%s/%s|r"]
+                 :format(anchorPoint, xOffset, yOffset)
         end
       end
     end,
@@ -367,6 +377,7 @@ local function createOptions(parentData, data, index, subIndex)
 
   options.text_anchorXOffset = {
     type = "range",
+    control = "WeakAurasSpinBox",
     width = WeakAuras.normalWidth - indentWidth,
     name = L["X Offset"],
     order = 60.4,
@@ -378,6 +389,7 @@ local function createOptions(parentData, data, index, subIndex)
 
   options.text_anchorYOffset = {
     type = "range",
+    control = "WeakAurasSpinBox",
     width = WeakAuras.normalWidth,
     name = L["Y Offset"],
     order = 60.5,
@@ -403,11 +415,28 @@ local function createOptions(parentData, data, index, subIndex)
       return true
     end
 
-    for index, subRegion in ipairs(parentData.subRegions) do
+    for _, subRegion in ipairs(parentData.subRegions) do
       if subRegion.type == "subtext" and OptionsPrivate.Private.ContainsCustomPlaceHolder(subRegion.text_text) then
         return false
       end
     end
+
+    if type(parentData.conditions) == "table" then
+      for _, condition in ipairs(parentData.conditions) do
+        if type(condition.changes) == "table" then
+          for _, change in ipairs(condition.changes) do
+            if type(change.property) == "string"
+            and change.property:match("sub%.%d+%.text_text")
+            and type(change.value) == "string"
+            and OptionsPrivate.Private.ContainsCustomPlaceHolder(change.value)
+            then
+              return false
+            end
+          end
+        end
+      end
+    end
+
     return true
   end
 
@@ -430,7 +459,8 @@ local function createOptions(parentData, data, index, subIndex)
     },
   }
 
-  OptionsPrivate.commonOptions.AddCodeOption(commonTextOptions, parentData, L["Custom Function"], "customText", "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#custom-text",
+  OptionsPrivate.commonOptions.AddCodeOption(commonTextOptions, parentData, L["Custom Function"], "customText",
+                          "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#custom-text",
                           4,  hideCustomTextOption, {"customText"}, false)
 
   -- Add Text Format Options
@@ -495,4 +525,5 @@ local function createOptions(parentData, data, index, subIndex)
   return options, commonTextOptions
 end
 
-WeakAuras.RegisterSubRegionOptions("subtext", createOptions, L["Shows one or more lines of text, which can include dynamic information such as progress or stacks"])
+WeakAuras.RegisterSubRegionOptions("subtext", createOptions,
+ L["Shows one or more lines of text, which can include dynamic information such as progress or stacks"])

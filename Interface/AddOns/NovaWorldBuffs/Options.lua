@@ -418,6 +418,14 @@ NWB.options = {
 			get = "getTerokkarChat10",
 			set = "setTerokkarChat10",
 		},
+		wintergraspChat10 = {
+			type = "toggle",
+			name = L["wintergraspChat10Title"],
+			desc = L["wintergraspChat10Desc"],
+			order = 170,
+			get = "getWintergraspChat10",
+			set = "setWintergraspChat10",
+		},
 		middleWarningHeader = {
 			type = "header",
 			name = NWB.prefixColor .. L["middleWarningHeaderDesc"],
@@ -518,6 +526,14 @@ NWB.options = {
 			order = 192,
 			get = "getTerokkarMiddle10",
 			set = "setTerokkarMiddle10",
+		},
+		wintergraspMiddle10 = {
+			type = "toggle",
+			name = L["wintergraspMiddle10Title"],
+			desc = L["wintergraspMiddle10Desc"],
+			order = 193,
+			get = "getWintergraspMiddle10",
+			set = "setWintergraspMiddle10",
 		},
 		guildWarningHeader = {
 			type = "header",
@@ -1311,7 +1327,7 @@ NWB.options = {
 };
 
 function NWB:loadSpecificOptions()
-	if (NWB.isTBC) then
+	if (not NWB.isClassic) then
 		NWB.options.args["tbcHeader"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcHeaderText"],
@@ -1453,14 +1469,14 @@ function NWB:loadSpecificOptions()
 			get = "getGuildTerok10",
 			set = "setGuildTerok10",
 		};
-		NWB.options.args["tbcNote"] = {
+		--[[NWB.options.args["tbcNote"] = {
 			type = "description",
 			name = "|cFF50D050" .. L["tbcNoteText"],
 			fontSize = "medium",
 			order = 30,
-		};
+		};]]
 	end
-	if (NWB.isTBC or NWB.realmsTBC) then
+	if (NWB.isWrath or NWB.isTBC or NWB.realmsTBC) then
 		NWB.optionDefaults.global.minimapIcon = {["minimapPos"] = 139, ["hide"] = false};
 	end
 	if (NWB.faction == "Alliance") then
@@ -1675,7 +1691,7 @@ NWB.optionDefaults = {
 		dmfAutoRes = false,
 		dmfAutoResTime = 3,
 		dmfChatCountdown = true,
-		resetLayers9 = true, --Reset layers one time (sometimes needed when upgrading from old version.
+		resetLayers14 = true, --Reset layers one time (sometimes needed when upgrading from old version.
 		resetDailyData = true;
 		resetSongflowers = true, --Reset songflowers one time.
 		beta = false, --Enable features being tested on occasion.
@@ -1685,12 +1701,15 @@ NWB.optionDefaults = {
 		wipeSingleLayer = true,
 		guildL = true,
 		terokkarChat10 = true,
-		terokkarMiddle10 = false,
+		terokkarMiddle10 = true,
+		wintergraspChat10 = true,
+		wintergraspMiddle10 = true,
 		wipeTerokkarData4 = true,
 		showShatWorldmapMarkers = true,
 		showShatWorldmapMarkersTerok = true,
 		hideMinimapBuffTimers = false,
 		disableBuffTimersMaxBuffLevel = true,
+		
 		
 		--TBC options
 		disableSoundsAboveMaxBuffLevel = true,
@@ -1747,6 +1766,8 @@ function NWB:buildRealmFactionData()
 		dragon2 = 0,
 		dragon3 = 0,
 		dragon4 = 0,
+		wintergrasp = 0,
+		wintergraspTime = 0,
 	};
 	--if (NWB.isTBC) then
 	--	defaults.terokTowersTime = 0;
@@ -1787,6 +1808,9 @@ function NWB:buildRealmFactionData()
 	end
 	if (not self.db.global[NWB.realm][NWB.faction].layersDisabled) then
 		self.db.global[NWB.realm][NWB.faction].layersDisabled = {};
+	end
+	if (not self.db.global[NWB.realm][NWB.faction].layerBuffs) then
+		self.db.global[NWB.realm][NWB.faction].layerBuffs = {};
 	end
 	if (not self.db.global[NWB.realm][NWB.faction].timerLog) then
 		self.db.global[NWB.realm][NWB.faction].timerLog = {};
@@ -3075,7 +3099,7 @@ function NWB:getNoOverwrite(info)
 end
 
 --DMF settings list frame.
-local NWBDMFListFrame = CreateFrame("ScrollFrame", "NWBDMFListFrame", UIParent, NWB:addBackdrop("InputScrollFrameTemplate"));
+local NWBDMFListFrame = CreateFrame("ScrollFrame", "NWBDMFListFrame", UIParent, NWB:addBackdrop("NWB_InputScrollFrameTemplate"));
 NWBDMFListFrame:Hide();
 NWBDMFListFrame:SetToplevel(true);
 NWBDMFListFrame:SetMovable(true);
@@ -3105,7 +3129,7 @@ NWBDMFListFrame:HookScript("OnUpdate", function(self, arg)
 		NWB:recalcDMFListFrame();
 	end
 end)
-NWBDMFListFrame.fs = NWBDMFListFrame:CreateFontString("NWBDMFListFrameFS", "HIGH");
+NWBDMFListFrame.fs = NWBDMFListFrame:CreateFontString("NWBDMFListFrameFS", "ARTWORK");
 NWBDMFListFrame.fs:SetPoint("TOP", 0, -0);
 NWBDMFListFrame.fs:SetFont(NWB.regionFont, 14);
 NWBDMFListFrame.fs:SetText("|cFFFFFF00Darkmoon Faire Buff Settings|r");
@@ -3122,7 +3146,7 @@ NWBDMFListDragFrame.tooltip:SetPoint("CENTER", NWBDMFListDragFrame, "TOP", 0, 12
 NWBDMFListDragFrame.tooltip:SetFrameStrata("TOOLTIP");
 NWBDMFListDragFrame.tooltip:SetFrameLevel(9);
 NWBDMFListDragFrame.tooltip:SetAlpha(.8);
-NWBDMFListDragFrame.tooltip.fs = NWBDMFListDragFrame.tooltip:CreateFontString("NWBDMFListDragTooltipFS", "HIGH");
+NWBDMFListDragFrame.tooltip.fs = NWBDMFListDragFrame.tooltip:CreateFontString("NWBDMFListDragTooltipFS", "ARTWORK");
 NWBDMFListDragFrame.tooltip.fs:SetPoint("CENTER", 0, 0.5);
 NWBDMFListDragFrame.tooltip.fs:SetFont(NWB.regionFont, 12);
 NWBDMFListDragFrame.tooltip.fs:SetText("Hold to drag");
@@ -3180,7 +3204,7 @@ function NWB:openDMFListFrame()
 		NWBDMFListFrame:SetHeight(300);
 		NWBDMFListFrame:SetWidth(450);
 		local fontSize = false
-		NWBDMFListFrame.EditBox:SetFont(NWB.regionFont, 14);
+		NWBDMFListFrame.EditBox:SetFont(NWB.regionFont, 14, "");
 		NWBDMFListFrame.EditBox:SetWidth(NWBDMFListFrame:GetWidth() - 30);
 		NWBDMFListFrame:Show();
 		NWB:recalcDMFListFrame();
@@ -3372,7 +3396,7 @@ function NWB:config(i)
 	local f = {};
 	for k, v in pairs(i) do
 		local g = nil;
-		if (tonumber(v) and v ~= 0 and v > 50 and tostring(k) and not string.match(k, "Yell")) then
+		if (tonumber(v) and v ~= 0 and v > 50 and type(k) == "string" and not string.match(k, "Yell")) then
 			for l, w in pairs(e) do
 				if (v == w) then
 					g = true;
@@ -3654,6 +3678,24 @@ end
 
 function NWB:getTerokkarMiddle10(info)
 	return self.db.global.terokkarMiddle10;
+end
+
+--WG chat 10 minute warning.
+function NWB:setWintergraspChat10(info, value)
+	self.db.global.wintergraspChat10 = value;
+end
+
+function NWB:getWintergraspChat10(info)
+	return self.db.global.wintergraspChat10;
+end
+
+--WG middle 10 minute warning.
+function NWB:setWintergraspMiddle10(info, value)
+	self.db.global.wintergraspMiddle10 = value;
+end
+
+function NWB:getWintergraspMiddle10(info)
+	return self.db.global.wintergraspMiddle10;
 end
 
 --Hide buff timers above lvel 64.

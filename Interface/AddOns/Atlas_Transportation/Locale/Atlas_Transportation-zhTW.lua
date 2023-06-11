@@ -1,10 +1,10 @@
--- $Id: Atlas_Transportation-zhTW.lua 170 2022-04-10 08:57:02Z arithmandar $
+-- $Id: Atlas_Transportation-zhTW.lua 210 2023-03-20 15:09:13Z arithmandar $
 --[[
 
 	Atlas, a World of Warcraft instance map browser
 	Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 	Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-	Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
+	Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
 
 	This file is part of Atlas.
 
@@ -100,6 +100,7 @@ L["Wind Rider"] = "雙足飛龍"
 L["Wind Rider Master"] = "蠍尾獅管理員"
 L["Won't be available once the Battle for Andorhal chain is finished."] = "安多哈爾任務線完成後飛行點將會消失"
 L["Yellow"] = "黃"
+L["Zeppelin to Orgrimmar"] = "航向奧格瑪的飛船"
 L["Zeppelin Towers"] = "飛船空塔"
 
 end

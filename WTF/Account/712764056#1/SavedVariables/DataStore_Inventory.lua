@@ -1,11 +1,25 @@
 
 DataStore_InventoryDB = {
 	["profileKeys"] = {
-		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
 		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
+		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
+		["冰火倆重天 - 伊弗斯"] = "冰火倆重天 - 伊弗斯",
 	},
 	["global"] = {
 		["Characters"] = {
+			["Default.伊弗斯.冰火倆重天"] = {
+				["Inventory"] = {
+					[7] = "|cff9d9d9d|Hitem:1395::::::::2:::::::::|h[学徒短裤]|h|r",
+					[8] = "|cffffffff|Hitem:55::::::::2:::::::::|h[学徒之靴]|h|r",
+					[10] = "|cffffffff|Hitem:3275::::::::2:::::::::|h[麻布手套]|h|r",
+					[9] = "|cff9d9d9d|Hitem:3365::::::::2:::::::::|h[磨损的护腕]|h|r",
+					[4] = "|cffffffff|Hitem:6096::::::::2:::::::::|h[学徒衬衣]|h|r",
+					[5] = "|cff9d9d9d|Hitem:1380::::::::2:::::::::|h[磨损的长袍]|h|r",
+					[16] = "|cffffffff|Hitem:35::::::::2:::::::::|h[弯曲的法杖]|h|r",
+				},
+				["averageItemLvl"] = 3,
+				["lastUpdate"] = 1686390496,
+			},
 			["Default.玉石礦坑.特變電工"] = {
 				["Inventory"] = {
 					nil, -- [1]
@@ -31,7 +45,6 @@ DataStore_InventoryDB = {
 				["lastUpdate"] = 1637387394,
 			},
 			["Default.伊弗斯.特變電工"] = {
-				["lastUpdate"] = 1684421290,
 				["Inventory"] = {
 					[7] = "|cffffffff|Hitem:48::::::::1:::::::::|h[]|h|r",
 					[8] = "|cffffffff|Hitem:47::::::::1:::::::::|h[]|h|r",
@@ -39,6 +52,7 @@ DataStore_InventoryDB = {
 					[4] = "|cffffffff|Hitem:49::::::::1:::::::::|h[]|h|r",
 					[16] = "|cffffffff|Hitem:2092::::::::1:::::::::|h[]|h|r",
 				},
+				["lastUpdate"] = 1684421290,
 			},
 		},
 		["Guilds"] = {

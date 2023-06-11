@@ -4,15 +4,17 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local MailingUI = TSM.UI:NewPackage("MailingUI")
+local Environment = TSM.Include("Environment")
 local L = TSM.Include("Locale").GetTable()
 local Delay = TSM.Include("Util.Delay")
 local FSM = TSM.Include("Util.FSM")
-local Event = TSM.Include("Util.Event")
 local ScriptWrapper = TSM.Include("Util.ScriptWrapper")
 local Settings = TSM.Include("Service.Settings")
+local DefaultUI = TSM.Include("Service.DefaultUI")
 local UIElements = TSM.Include("UI.UIElements")
+local UIUtils = TSM.Include("UI.UIUtils")
 local private = {
 	settings = nil,
 	topLevelPages = {},
@@ -20,6 +22,7 @@ local private = {
 	fsm = nil,
 	defaultUISwitchBtn = nil,
 	isVisible = false,
+	showTimer = nil,
 }
 local MIN_FRAME_SIZE = { width = 575, height = 400 }
 
@@ -60,7 +63,7 @@ end
 -- ============================================================================
 
 function private.CreateMainFrame()
-	TSM.UI.AnalyticsRecordPathChange("mailing")
+	UIUtils.AnalyticsRecordPathChange("mailing")
 	-- Always show the Inbox first
 	private.settings.frame.page = 1
 	local frame = UIElements.New("LargeApplicationFrame", "base")
@@ -87,7 +90,7 @@ end
 -- ============================================================================
 
 function private.BaseFrameOnHide()
-	TSM.UI.AnalyticsRecordClose("mailing")
+	UIUtils.AnalyticsRecordClose("mailing")
 	private.fsm:ProcessEvent("EV_FRAME_HIDE")
 end
 
@@ -113,14 +116,13 @@ end
 -- ============================================================================
 
 function private.FSMCreate()
-	local function MailShowDelayed()
-		private.fsm:ProcessEvent("EV_MAIL_SHOW")
-	end
-	Event.Register("MAIL_SHOW", function()
-		Delay.AfterFrame("MAIL_SHOW_DELAYED", 0, MailShowDelayed)
-	end)
-	Event.Register("MAIL_CLOSED", function()
-		private.fsm:ProcessEvent("EV_MAIL_CLOSED")
+	private.showTimer = Delay.CreateTimer("MAILING_SHOW", function() private.fsm:ProcessEvent("EV_MAIL_SHOW") end)
+	DefaultUI.RegisterMailVisibleCallback(function(visible)
+		if visible then
+			private.showTimer:RunForFrames(0)
+		else
+			private.fsm:ProcessEvent("EV_MAIL_CLOSED")
+		end
 	end)
 
 	MailFrame:UnregisterEvent("MAIL_SHOW")
@@ -152,13 +154,18 @@ function private.FSMCreate()
 		)
 		:AddState(FSM.NewState("ST_DEFAULT_OPEN")
 			:SetOnEnter(function(context, isIgnored)
-				MailFrame_OnEvent(MailFrame, "MAIL_SHOW")
+				if Environment.IsRetail() then
+					ShowUIPanel(MailFrame)
+				else
+					MailFrame_OnEvent(MailFrame, "MAIL_SHOW")
+				end
 
 				if not private.defaultUISwitchBtn then
 					private.defaultUISwitchBtn = UIElements.New("ActionButton", "switchBtn")
-						:SetSize(60, TSM.IsWowClassic() and 16 or 15)
+						:SetSize(60, Environment.IsRetail() and 15 or 16)
 						:SetFont("BODY_BODY3")
-						:AddAnchor("TOPRIGHT", TSM.IsWowClassic() and -26 or -27, TSM.IsWowClassic() and -3 or -4)
+						:AddAnchor("TOPRIGHT", Environment.IsRetail() and -27 or -26, Environment.IsRetail() and -4 or -3)
+						:SetRelativeLevel(Environment.IsRetail() and 600 or 3)
 						:DisableClickCooldown()
 						:SetText(L["TSM4"])
 						:SetScript("OnClick", private.SwitchBtnOnClick)
@@ -190,7 +197,9 @@ function private.FSMCreate()
 		)
 		:AddState(FSM.NewState("ST_FRAME_OPEN")
 			:SetOnEnter(function(context)
-				OpenAllBags()
+				if not Environment.IsRetail() then
+					OpenAllBags()
+				end
 				CheckInbox()
 				DoEmote("READ", nil, true)
 				HideUIPanel(MailFrame)
@@ -219,7 +228,9 @@ function private.FSMCreate()
 				return "ST_CLOSED"
 			end)
 			:AddEvent("EV_MAIL_SHOW", function(context)
-				OpenAllBags()
+				if not Environment.IsRetail() then
+					OpenAllBags()
+				end
 				CheckInbox()
 
 				if not context.frame then

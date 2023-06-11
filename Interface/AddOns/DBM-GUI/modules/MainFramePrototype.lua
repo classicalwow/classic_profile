@@ -1,6 +1,9 @@
 local L = DBM_GUI_L
 
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
+local isModernAPI = DBM:GetTOC() > 100000--Purposely left this way, wrath 3.4.1 doesn't like changes in THIS file
+
+local DDM = _G["LibStub"]:GetLibrary("LibDropDownMenu")
 
 local select, ipairs, mfloor, mmax, mmin = select, pairs, math.floor, math.max, math.min
 local CreateFrame, GameFontHighlightSmall, GameFontNormalSmall, GameFontNormal = CreateFrame, GameFontHighlightSmall, GameFontNormalSmall, GameFontNormal
@@ -66,16 +69,16 @@ function frame:ClearSelection()
 	end
 end
 
-local function resize(frame, first)
+local function resize(targetFrame, first)
 	local frameHeight = 20
-	for _, child in ipairs({ frame:GetChildren() }) do
+	for _, child in ipairs({ targetFrame:GetChildren() }) do
 		if child.mytype == "area" or child.mytype == "ability" then
 			if first then
 				child:SetPoint("TOPRIGHT", "DBM_GUI_OptionsFramePanelContainerFOVScrollBar", "TOPLEFT", -5, 0)
 			else
 				child:SetPoint("TOPRIGHT", "DBM_GUI_OptionsFramePanelContainerFOV", "TOPRIGHT", -5, 0)
 			end
-			local width = frame:GetWidth() - 30
+			local width = targetFrame:GetWidth() - 30
 			if not child.isStats then
 				local neededHeight, lastObject = 25, nil
 				for _, child2 in ipairs({ child:GetChildren() }) do
@@ -143,7 +146,7 @@ local function resize(frame, first)
 									end
 								end
 								dropdownText:SetText(child2.text)
-								UIDropDownMenu_SetWidth(child2, mmin(width - 55, ddWidth))
+								DDM.UIDropDownMenu_SetWidth(child2, mmin(width - 55, ddWidth))
 							end
 						end
 						neededHeight = neededHeight + (child2.myheight or child2:GetHeight())
@@ -153,7 +156,7 @@ local function resize(frame, first)
 			end
 			frameHeight = frameHeight + child:GetHeight() + 20
 		elseif child.mytype == "line" then
-			local width = frame:GetWidth() - 30
+			local width = targetFrame:GetWidth() - 30
 			child:SetWidth(width - 20)
 			_G[child:GetName() .. "BG"]:SetWidth(width - _G[child:GetName() .. "Text"]:GetWidth() - 25)
 			frameHeight = frameHeight + 32
@@ -164,24 +167,26 @@ local function resize(frame, first)
 	return frameHeight
 end
 
-function frame:DisplayFrame(frame)
-	if select("#", frame:GetChildren()) == 0 then
+function frame:DisplayFrame(targetFrame)
+	if select("#", targetFrame:GetChildren()) == 0 then
 		return
 	end
 	local scrollBar = _G["DBM_GUI_OptionsFramePanelContainerFOVScrollBar"]
 	scrollBar:Show()
-	local changed = DBM_GUI.currentViewing ~= frame
-	if DBM_GUI.currentViewing then
+	local changed = DBM_GUI.currentViewing ~= targetFrame
+	if DBM_GUI.currentViewing and changed then
 		DBM_GUI.currentViewing:Hide()
 	end
-	DBM_GUI.currentViewing = frame
+	DBM_GUI.currentViewing = targetFrame
 	_G["DBM_GUI_DropDown"]:Hide()
 	local FOV = _G["DBM_GUI_OptionsFramePanelContainerFOV"]
-	FOV:SetScrollChild(frame)
+	FOV:SetScrollChild(targetFrame)
 	FOV:Show()
-	frame:Show()
-	frame:SetSize(FOV:GetSize())
-	local mymax = resize(frame, true) - _G["DBM_GUI_OptionsFramePanelContainer"]:GetHeight()
+	if changed then
+		targetFrame:Show()
+	end
+	targetFrame:SetSize(FOV:GetSize())
+	local mymax = resize(targetFrame, true) - _G["DBM_GUI_OptionsFramePanelContainer"]:GetHeight()
 	if mymax <= 0 then
 		mymax = 0
 	end
@@ -194,7 +199,7 @@ function frame:DisplayFrame(frame)
 		scrollBar:Hide()
 		scrollBar:SetValue(0)
 		scrollBar:SetMinMaxValues(0, 0)
-		resize(frame)
+		resize(targetFrame)
 	end
 	if DBM.Options.EnableModels then
 		local bossPreview = _G["DBM_BossPreview"]
@@ -209,7 +214,7 @@ function frame:DisplayFrame(frame)
 		bossPreview.enabled = false
 		bossPreview:Hide()
 		for _, mod in ipairs(DBM.Mods) do
-			if mod.panel and mod.panel.frame and mod.panel.frame == frame then
+			if mod.panel and mod.panel.frame and mod.panel.frame == targetFrame then
 				bossPreview.currentMod = mod
 				bossPreview:Show()
 				bossPreview:ClearModel()
@@ -254,6 +259,9 @@ function frame:CreateTab(tab)
 	self.tabs[i] = tab
 	local button = CreateFrame("Button", "DBM_GUI_OptionsFrameTab" .. i, self, "OptionsFrameTabButtonTemplate")
 	local buttonText = _G[button:GetName() .. "Text"]
+	button.Text = buttonText
+	button.Left = _G[button:GetName() .. "Left"]
+	button.Right = _G[button:GetName() .. "Right"]
 	buttonText:SetText(tab.name)
 	buttonText:SetPoint("LEFT", 22, -2)
 	buttonText:Show()
@@ -261,7 +269,14 @@ function frame:CreateTab(tab)
 	if i == 1 then
 		button:SetPoint("TOPLEFT", self:GetName(), 20, -18)
 	else
-		button:SetPoint("TOPLEFT", "DBM_GUI_OptionsFrameTab" .. (i - 1), "TOPRIGHT", -15, 0)
+		button:SetPoint("TOPLEFT", "DBM_GUI_OptionsFrameTab" .. (i - 1), "TOPRIGHT", isModernAPI and 5 or -15, 0)
+	end
+	if isModernAPI then
+		button:HookScript("OnShow", function()
+			_G[button:GetName() .. "Middle"]:SetWidth(buttonText:GetWidth())
+			_G[button:GetName() .. "MiddleDisabled"]:SetWidth(buttonText:GetWidth())
+			_G[button:GetName() .. "HighlightTexture"]:SetPoint("RIGHT", 10, -4)
+		end)
 	end
 	button:SetScript("OnClick", function()
 		self:ShowTab(i)

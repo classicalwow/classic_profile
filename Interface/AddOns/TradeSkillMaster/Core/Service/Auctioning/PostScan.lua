@@ -4,17 +4,20 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local PostScan = TSM.Auctioning:NewPackage("PostScan")
+local Environment = TSM.Include("Environment")
 local L = TSM.Include("Locale").GetTable()
 local Database = TSM.Include("Util.Database")
 local TempTable = TSM.Include("Util.TempTable")
+local Table = TSM.Include("Util.Table")
 local SlotId = TSM.Include("Util.SlotId")
 local Delay = TSM.Include("Util.Delay")
 local Math = TSM.Include("Util.Math")
 local Log = TSM.Include("Util.Log")
-local Event = TSM.Include("Util.Event")
 local ItemString = TSM.Include("Util.ItemString")
+local Container = TSM.Include("Util.Container")
+local DefaultUI = TSM.Include("Service.DefaultUI")
 local Threading = TSM.Include("Service.Threading")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local BagTracking = TSM.Include("Service.BagTracking")
@@ -31,7 +34,7 @@ local private = {
 	subRowsTemp = {},
 	groupsQuery = nil, --luacheck: ignore 1004 - just stored for GC reasons
 	operationsQuery = nil, --luacheck: ignore 1004 - just stored for GC reasons
-	isAHOpen = false,
+	operationsChangedTimer = nil,
 }
 local RESET_REASON_LOOKUP = {
 	minPrice = "postResetMin",
@@ -53,9 +56,9 @@ local MAX_COMMODITY_STACKS_PER_AUCTION = 40
 -- ============================================================================
 
 function PostScan.OnInitialize()
+	private.operationsChangedTimer = Delay.CreateTimer("POST_SCAN_OPERATIONS_CHANGED", private.UpdateOperationDB)
 	BagTracking.RegisterCallback(private.UpdateOperationDB)
-	Event.Register("AUCTION_HOUSE_SHOW", private.AuctionHouseShowHandler)
-	Event.Register("AUCTION_HOUSE_CLOSED", private.AuctionHouseClosedHandler)
+	DefaultUI.RegisterAuctionHouseVisibleCallback(private.UpdateOperationDB, true)
 	private.operationDB = Database.NewSchema("AUCTIONING_OPERATIONS")
 		:AddUniqueStringField("autoBaseItemString")
 		:AddStringField("firstOperation")
@@ -126,17 +129,10 @@ function PostScan.DoProcess()
 	local itemString, stackSize, bid, buyout, itemBuyout, postTime = postRow:GetFields("itemString", "stackSize", "bid", "buyout", "itemBuyout", "postTime")
 	local bag, slot = private.GetPostBagSlot(itemString, stackSize)
 	if bag then
-		local _, bagQuantity = GetContainerItemInfo(bag, slot)
+		local _, bagQuantity = Container.GetItemInfo(bag, slot)
 		Log.Info("Posting %s x %d from %d,%d (%d)", itemString, stackSize, bag, slot, bagQuantity or -1)
-		if TSM.IsWowClassic() then
-			-- need to set the duration in the default UI to avoid Blizzard errors
-			AuctionFrameAuctions.duration = postTime
-			ClearCursor()
-			PickupContainerItem(bag, slot)
-			ClickAuctionSellItemButton(AuctionsItemButton, "LeftButton")
-			PostAuction(bid, buyout, postTime, stackSize, 1)
-			ClearCursor()
-			result = true
+		if Environment.HasFeature(Environment.FEATURES.AH_STACKS) then
+			result = AuctionHouseWrapper.PostAuction(bag, slot, bid, buyout, postTime, stackSize, 1)
 		else
 			bid = Math.Round(bid / stackSize, COPPER_PER_SILVER)
 			buyout = Math.Round(buyout / stackSize, COPPER_PER_SILVER)
@@ -277,21 +273,12 @@ end
 -- Private Helper Functions (General)
 -- ============================================================================
 
-function private.AuctionHouseShowHandler()
-	private.isAHOpen = true
-	private.UpdateOperationDB()
-end
-
-function private.AuctionHouseClosedHandler()
-	private.isAHOpen = false
-end
-
 function private.OnGroupsOperationsChanged()
-	Delay.AfterFrame("POST_GROUP_OPERATIONS_CHANGED", 1, private.UpdateOperationDB)
+	private.operationsChangedTimer:RunForFrames(1)
 end
 
 function private.UpdateOperationDB()
-	if not private.isAHOpen then
+	if not DefaultUI.IsAuctionHouseVisible() then
 		return
 	end
 	private.operationDB:TruncateAndBulkInsertStart()
@@ -417,9 +404,7 @@ function private.IsOperationValid(itemString, num, operationName, operationSetti
 
 	local stackSize = nil
 	local minPostQuantity = nil
-	if not TSM.IsWowClassic() then
-		minPostQuantity = 1
-	else
+	if Environment.HasFeature(Environment.FEATURES.AH_STACKS) then
 		-- check the stack size
 		stackSize = TSM.Auctioning.Util.GetPrice("stackSize", operationSettings, itemString)
 		if not stackSize then
@@ -447,6 +432,8 @@ function private.IsOperationValid(itemString, num, operationName, operationSetti
 			-- invalid stack size
 			return nil
 		end
+	else
+		minPostQuantity = 1
 	end
 
 	-- check that we have enough to post
@@ -526,7 +513,7 @@ function private.IsOperationValid(itemString, num, operationName, operationSetti
 			-- just a warning, not an error
 			Log.PrintfUser(L["WARNING: Your minimum price for %s is below its vendorsell price (with AH cut taken into account). Consider raising your minimum price, or vendoring the item."], ItemInfo.GetLink(itemString))
 		end
-		if TSM.IsWowClassic() then
+		if Environment.HasFeature(Environment.FEATURES.AH_STACKS) then
 			if not operationSettings.stackSizeIsCap then
 				num = Math.Floor(num, stackSize)
 			end
@@ -544,7 +531,7 @@ function private.QueryBuyoutFilter(_, row)
 end
 
 function private.QueryIsBrowseDoneFunction(query)
-	if not TSM.IsWowClassic() then
+	if Environment.IsRetail() then
 		return false
 	end
 	local isDone = true
@@ -640,10 +627,7 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 
 	local perAuction, maxCanPost = nil, nil
 	local postCap = TSM.Auctioning.Util.GetPrice("postCap", operationSettings, itemString)
-	if not TSM.IsWowClassic() then
-		perAuction = min(postCap, numHave)
-		maxCanPost = 1
-	else
+	if Environment.HasFeature(Environment.FEATURES.AH_STACKS) then
 		local stackSize = TSM.Auctioning.Util.GetPrice("stackSize", operationSettings, itemString)
 		local maxStackSize = ItemInfo.GetMaxStack(itemString)
 		if stackSize > maxStackSize and not operationSettings.stackSizeIsCap then
@@ -661,6 +645,9 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 				return "postNotEnough"
 			end
 		end
+	else
+		perAuction = min(postCap, numHave)
+		maxCanPost = 1
 	end
 
 	local lowestAuction = TempTable.Acquire()
@@ -752,15 +739,15 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	if lowestAuction then
 		TempTable.Release(lowestAuction)
 	end
-	if TSM.IsWowClassic() then
+	if Environment.HasFeature(Environment.FEATURES.AH_COPPER) then
 		bid = floor(bid)
 	else
 		bid = max(Math.Round(bid, COPPER_PER_SILVER), COPPER_PER_SILVER)
 		buyout = max(Math.Round(buyout, COPPER_PER_SILVER), COPPER_PER_SILVER)
 	end
 
-	bid = min(bid, TSM.IsWowClassic() and MAXIMUM_BID_PRICE or MAXIMUM_BID_PRICE - 99)
-	buyout = min(buyout, TSM.IsWowClassic() and MAXIMUM_BID_PRICE or MAXIMUM_BID_PRICE - 99)
+	bid = min(bid, Environment.HasFeature(Environment.FEATURES.AH_COPPER) and MAXIMUM_BID_PRICE or MAXIMUM_BID_PRICE - 99)
+	buyout = min(buyout, Environment.HasFeature(Environment.FEATURES.AH_COPPER) and MAXIMUM_BID_PRICE or MAXIMUM_BID_PRICE - 99)
 
 	-- check if we can't post anymore
 	local queueQuery = private.queueDB:NewQuery()
@@ -772,7 +759,7 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 		activeAuctions = activeAuctions + numStacks
 	end
 	queueQuery:Release()
-	if TSM.IsWowClassic() then
+	if Environment.HasFeature(Environment.FEATURES.AH_STACKS) then
 		maxCanPost = min(postCap - activeAuctions, maxCanPost)
 	else
 		perAuction = min(postCap - activeAuctions, perAuction)
@@ -781,7 +768,7 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 		return "postTooMany"
 	end
 
-	if TSM.IsWowClassic() and (bid * perAuction > MAXIMUM_BID_PRICE or buyout * perAuction > MAXIMUM_BID_PRICE) then
+	if Environment.HasFeature(Environment.FEATURES.AH_STACKS) and (bid * perAuction > MAXIMUM_BID_PRICE or buyout * perAuction > MAXIMUM_BID_PRICE) then
 		Log.PrintfUser(L["The buyout price for %s would be above the maximum allowed price. Skipping this item."], ItemInfo.GetLink(itemString))
 		return "invalidItemGroup"
 	end
@@ -790,7 +777,7 @@ function private.GeneratePosts(itemString, operationName, operationSettings, num
 	local auctionId = private.nextQueueIndex
 	local postTime = operationSettings.duration
 	local extraStack = 0
-	if TSM.IsWowClassic() then
+	if Environment.HasFeature(Environment.FEATURES.AH_STACKS)  then
 		private.AddToQueue(itemString, operationName, bid, buyout, perAuction, maxCanPost, postTime)
 		-- check if we can post an extra partial stack
 		extraStack = (maxCanPost < postCap and operationSettings.stackSizeIsCap and (numHave % perAuction)) or 0
@@ -869,16 +856,15 @@ function private.GetPostBagSlot(itemString, quantity)
 	local removeContext = TempTable.Acquire()
 	bag, slot = private.ItemBagSlotHelper(itemString, bag, slot, quantity, removeContext)
 
-	local bagItemString = ItemString.Get(GetContainerItemLink(bag, slot))
+	local bagItemString = ItemString.Get(Container.GetItemLink(bag, slot))
 	if not bagItemString or TSM.Groups.TranslateItemString(bagItemString) ~= itemString then
 		-- something changed with the player's bags so we can't post the item right now
 		TempTable.Release(removeContext)
 		private.DebugLogInsert(itemString, "Bags changed")
 		return nil, nil
 	end
-	local _, _, _, quality = GetContainerItemInfo(bag, slot)
-	assert(quality)
-	if quality == -1 then
+	local _, _, _, quality = Container.GetItemInfo(bag, slot)
+	if not quality or quality == -1 then
 		-- the game client doesn't have item info cached for this item, so we can't post it yet
 		TempTable.Release(removeContext)
 		private.DebugLogInsert(itemString, "No item info")
@@ -988,23 +974,21 @@ function private.NextProcessRowQueryHelper(row)
 end
 
 function private.DebugLogInsert(itemString, ...)
-	tinsert(private.debugLog, itemString)
-	tinsert(private.debugLog, format(...))
+	Table.InsertMultiple(private.debugLog, itemString, format(...))
 end
 
 function private.ErrorForItem(itemString, errorStr)
-	for i = 1, #private.debugLog, 2 do
-		if private.debugLog[i] == itemString then
-			Log.Info(private.debugLog[i + 1])
+	for _, debugItemString, msg in Table.StrideIterator(private.debugLog, 2) do
+		if debugItemString == itemString then
+			Log.Info(msg)
 		end
 	end
 	Log.Info("Bag state:")
-	for b = 0, NUM_BAG_SLOTS do
-		for s = 1, GetContainerNumSlots(b) do
-			if ItemString.GetBase(GetContainerItemLink(b, s)) == itemString then
-				local _, q = GetContainerItemInfo(b, s)
-				Log.Info("%d in %d, %d", q, b, s)
-			end
+	for _, slotId in Container.GetBagSlotIterator() do
+		local bag, slot = SlotId.Split(slotId)
+		if ItemString.GetBase(Container.GetItemLink(bag, slot)) == itemString then
+			local _, stackSize = Container.GetItemInfo(bag, slot)
+			Log.Info("%d in %d, %d", stackSize, bag, slot)
 		end
 	end
 	error(errorStr, 2)

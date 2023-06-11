@@ -7,7 +7,7 @@ DBM_GUI = {
 
 local isRetail = WOW_PROJECT_ID == (WOW_PROJECT_MAINLINE or 1)
 
-local next, type, pairs, strsplit, tonumber, tostring, ipairs, tinsert, tsort, mfloor = next, type, pairs, strsplit, tonumber, tostring, ipairs, table.insert, table.sort, math.floor
+local next, type, pairs, strsplit, tonumber, tostring, ipairs, tinsert, tsort, mfloor, slower = next, type, pairs, strsplit, tonumber, tostring, ipairs, table.insert, table.sort, math.floor, string.lower
 local CreateFrame, C_Timer, GetExpansionLevel, IsAddOnLoaded, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent = CreateFrame, C_Timer, GetExpansionLevel, IsAddOnLoaded, GameFontNormal, GameFontNormalSmall, GameFontHighlight, GameFontHighlightSmall, ChatFontNormal, UIParent
 local RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION = RAID_DIFFICULTY1, RAID_DIFFICULTY2, RAID_DIFFICULTY3, RAID_DIFFICULTY4, PLAYER_DIFFICULTY1, PLAYER_DIFFICULTY2, PLAYER_DIFFICULTY3, PLAYER_DIFFICULTY6, PLAYER_DIFFICULTY_TIMEWALKER, CHALLENGE_MODE, ALL, CLOSE, SPECIALIZATION
 local LibStub, DBM, DBM_GUI, DBM_OPTION_SPACER = _G["LibStub"], DBM, DBM_GUI, DBM_OPTION_SPACER
@@ -104,7 +104,7 @@ do
 				-- Filter duplicates
 				local insertme = true
 				for _, v2 in next, result do
-					if v2.value == v then
+					if slower(v2.value) == slower(v) then
 						insertme = false
 						break
 					end
@@ -118,8 +118,7 @@ do
 						ins.texture = true
 					elseif mediatype == "font" then
 						ins.font = true
-					-- Only insert paths from addons folder, ignore file data ID, since there is no clean way to handle supporitng both FDID and soundkit at same time
-					elseif mediatype == "sound" and type(v) == "string" and v:lower():find("addons") then
+					elseif mediatype == "sound" then--and type(v) == "string" and v:lower():find("addons")
 						ins.sound = true
 					end
 					if ins.texture or ins.font or ins.sound then
@@ -187,9 +186,13 @@ do
 		input:SetMultiLine(true)
 		input:EnableMouse(true)
 		input:SetAutoFocus(false)
-		input:SetMaxBytes(nil)
-		input:SetScript("OnMouseUp", input.HighlightText)
-		input:SetScript("OnEscapePressed", input.ClearFocus)
+		input:SetMaxBytes(0)
+		input:SetScript("OnMouseUp", function(self)
+			self:HighlightText()
+		end)
+		input:SetScript("OnEscapePressed", function(self)
+			self:ClearFocus()
+		end)
 		input:HighlightText()
 		input:SetFocus()
 		scrollFrame:SetScrollChild(input)
@@ -319,7 +322,7 @@ local function addOptions(mod, catpanel, v)
 			catbutton:SetScript("OnShow", function(self)
 				self:SetChecked(mod.Options[v])
 			end)
-			catbutton:SetScript("OnClick", function(self)
+			catbutton:SetScript("OnClick", function()
 				mod.Options[v] = not mod.Options[v]
 				if mod.optionFuncs and mod.optionFuncs[v] then
 					mod.optionFuncs[v]()
@@ -392,13 +395,13 @@ function DBM_GUI:CreateBossModPanel(mod)
 	local reset = panel:CreateButton(L.Mod_Reset, 155, 30, nil, GameFontNormalSmall)
 	reset.myheight = 40
 	reset:SetPoint("TOPRIGHT", panel.frame, "TOPRIGHT", -24, -4)
-	reset:SetScript("OnClick", function(self)
+	reset:SetScript("OnClick", function()
 		DBM:LoadModDefaultOption(mod)
 	end)
 	local button = panel:CreateCheckButton(L.Mod_Enabled, true)
 	button:SetChecked(mod.Options.Enabled)
 	button:SetPoint("TOPLEFT", panel.frame, "TOPLEFT", 8, -14)
-	button:SetScript("OnClick", function(self)
+	button:SetScript("OnClick", function()
 		mod:Toggle()
 	end)
 
@@ -740,16 +743,14 @@ do
 						lastArea = lastArea + 1
 						local section = sections[lastArea]
 						section.header:SetText(statTypes[statType])
-						area.frame:HookScript("OnShow", function()
-							local kills, pulls, bestRank, bestTime = mod.stats[statType .. "Kills"] or 0, mod.stats[statType .. "Pulls"] or 0, mod.stats[statType .. "BestRank"] or 0, mod.stats[statType .. "BestTime"]
-							section.value1:SetText(kills)
-							section.value2:SetText(pulls - kills)
-							if statType == "challenge" and bestRank > 0 then
-								section.value3:SetText(bestTime and ("%d:%02d (%d)"):format(mfloor(bestTime / 60), bestTime % 60) or "-", bestRank)
-							else
-								section.value3:SetText(bestTime and ("%d:%02d"):format(mfloor(bestTime / 60), bestTime % 60) or "-")
-							end
-						end)
+						local kills, pulls, bestRank, bestTime = mod.stats[statType .. "Kills"] or 0, mod.stats[statType .. "Pulls"] or 0, mod.stats[statType .. "BestRank"] or 0, mod.stats[statType .. "BestTime"]
+						section.value1:SetText(kills)
+						section.value2:SetText(pulls - kills)
+						if statType == "challenge" and bestRank > 0 then
+							section.value3:SetText(bestTime and ("%d:%02d (%d)"):format(mfloor(bestTime / 60), bestTime % 60) or "-", bestRank)
+						else
+							section.value3:SetText(bestTime and ("%d:%02d"):format(mfloor(bestTime / 60), bestTime % 60) or "-")
+						end
 					end
 				end
 				Title:SetPoint("TOPLEFT", area.frame, "TOPLEFT", 10, -10 - (L.FontHeight * 5 * noHeaderLine) - (L.FontHeight * 6 * singleLine) - (L.FontHeight * 10 * doubleLine))
@@ -767,7 +768,6 @@ do
 				end
 			end
 		end
-		_G["DBM_GUI_OptionsFrame"]:DisplayFrame(panel.frame)
 	end
 
 	local category = {}
@@ -799,6 +799,7 @@ do
 							self:Hide()
 							self.headline:Hide()
 							CreateBossModTab(self.modid, self.modid.panel)
+							_G["DBM_GUI_OptionsFrame"]:DisplayFrame(self.modid.panel.frame)
 						end
 					end)
 					button:SetPoint("CENTER", 0, -20)

@@ -1,8 +1,9 @@
 
 ParrotDB = {
 	["profileKeys"] = {
-		["特變電工 - 玉石礦坑"] = "Default",
 		["特變電工 - 伊弗斯"] = "Default",
+		["特變電工 - 玉石礦坑"] = "Default",
+		["冰火倆重天 - 伊弗斯"] = "Default",
 	},
 	["namespaces"] = {
 		["CombatEvents"] = {
@@ -21,32 +22,32 @@ ParrotDB = {
 						["Notification"] = {
 							["stickyDirection"] = "UP;CENTER",
 							["direction"] = "UP;CENTER",
-							["yOffset"] = 175,
+							["stickyAnimationStyle"] = "Pow",
 							["iconSide"] = "LEFT",
 							["xOffset"] = 0,
 							["size"] = 150,
 							["animationStyle"] = "Straight",
-							["stickyAnimationStyle"] = "Pow",
-						},
-						["Outgoing"] = {
-							["stickyDirection"] = "DOWN;LEFT",
-							["direction"] = "DOWN;RIGHT",
-							["yOffset"] = -30,
-							["iconSide"] = "LEFT",
-							["xOffset"] = 60,
-							["size"] = 260,
-							["animationStyle"] = "Parabola",
-							["stickyAnimationStyle"] = "Pow",
+							["yOffset"] = 175,
 						},
 						["Incoming"] = {
 							["stickyDirection"] = "DOWN;RIGHT",
 							["direction"] = "DOWN;LEFT",
-							["yOffset"] = -30,
+							["stickyAnimationStyle"] = "Pow",
 							["iconSide"] = "RIGHT",
 							["xOffset"] = -60,
 							["size"] = 260,
 							["animationStyle"] = "Parabola",
+							["yOffset"] = -30,
+						},
+						["Outgoing"] = {
+							["stickyDirection"] = "DOWN;LEFT",
+							["direction"] = "DOWN;RIGHT",
 							["stickyAnimationStyle"] = "Pow",
+							["iconSide"] = "LEFT",
+							["xOffset"] = 60,
+							["size"] = 260,
+							["animationStyle"] = "Parabola",
+							["yOffset"] = -30,
 						},
 					},
 					["dbver"] = 2,
@@ -60,8 +61,8 @@ ParrotDB = {
 		["Triggers"] = {
 			["profiles"] = {
 				["Default"] = {
-					["dbver3"] = 1,
 					["dbver2"] = 0,
+					["dbver3"] = 1,
 					["triggers2"] = 0,
 				},
 			},

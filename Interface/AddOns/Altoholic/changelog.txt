@@ -1,6 +1,18 @@
 Altoholic Classic Changelog (dates in dd/mm/yyyy)
 ============================
 
+1.14.005 (18/05/2023)
+
+- DataStore_Agenda is now generic and works will all versions of the game.
+
+1.14.004 (04/05/2023)
+
+- Updated Ace Libraries
+- Updated DataStore
+- Updated DataStore_Mails
+- Updated DataStore_Spells
+- Updated DataStore_Characters
+
 1.14.003 (05/06/2022)
 
 - Fixed item count not being visible in the tooltip for enchanting reagents.

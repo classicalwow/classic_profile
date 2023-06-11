@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() or not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L
@@ -25,7 +25,7 @@ local function CorrectSpellName(input)
     else
       return nil;
     end
-  elseif WeakAuras.IsClassic() and input then
+  elseif WeakAuras.IsClassicEra() and input then
     local _, _, _, _, _, _, spellId = GetSpellInfo(input)
     if spellId then
       return spellId
@@ -72,6 +72,9 @@ end
 -- Also used by the GenericTrigger
 function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum, triggertype)
   local trigger
+  -- For load options only the hidden property counts, but for the generic trigger
+  -- we look at enabled.
+  local hiddenProperty = triggertype == "load" and "hidden" or "enable"
   if(data.controlledChildren) then
     trigger = {}
   elseif(triggertype == "load") then
@@ -79,7 +82,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
   elseif data.triggers[triggernum] then
     trigger = data.triggers[triggernum].trigger
   else
-    error("Improper argument to WeakAuras.ConstructOptions - trigger number not in range");
+    error("Improper argument to OptionsPrivate.ConstructOptions - trigger number not in range");
   end
   local options = {};
   local order = startorder or 10;
@@ -88,16 +91,27 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
   local positionsForCollapseAnchor = {}
   for index, arg in pairs(prototype.args) do
     local hidden = nil;
-    if(arg.collapse and isCollapsedFunctions[arg.collapse] and type(arg.enable) == "function") then
+    if(arg.collapse and isCollapsedFunctions[arg.collapse] and type(arg[hiddenProperty]) == "function") then
       local isCollapsed = isCollapsedFunctions[arg.collapse]
-      hidden = function()
-        return isCollapsed() or not arg.enable(trigger)
+      if hiddenProperty == "hidden" then
+        hidden = function() return isCollapsed() or arg[hiddenProperty](trigger) end
+      else
+        hidden = function() return isCollapsed() or not arg[hiddenProperty](trigger) end
       end
-    elseif(type(arg.enable) == "function") then
-      hidden = function() return not arg.enable(trigger) end;
+    elseif type(arg[hiddenProperty]) == "function" then
+      if hiddenProperty == "hidden" then
+        hidden = function() return arg[hiddenProperty](trigger) end
+      else
+        hidden = function() return not arg[hiddenProperty](trigger) end
+      end
+    elseif type(arg[hiddenProperty]) == "boolean" then
+      if hiddenProperty == "hidden" then
+        hidden = arg[hiddenProperty]
+      else
+        hidden = not arg[hiddenProperty]
+      end
     elseif(arg.collapse and isCollapsedFunctions[arg.collapse]) then
       hidden = isCollapsedFunctions[arg.collapse]
-      positionsForCollapseAnchor[arg.collapse] = order
     end
     local name = arg.name;
     local validate = arg.validate;
@@ -131,7 +145,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
       isCollapsedFunctions[name] = function()
         return OptionsPrivate.IsCollapsed("trigger", name, "", true);
       end
-    elseif(name and not arg.hidden) then
+    elseif name and (hiddenProperty == "hidden" or not arg.hidden) then
       local realname = name;
       if (arg.type == "multiselect") then
         -- Ensure new line for non-toggle options
@@ -189,6 +203,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
           width = WeakAuras.normalWidth,
           name = arg.display,
           desc = function()
+            if arg.multiNoSingle then return arg.desc end
             local v = trigger["use_"..realname];
             if(v == true) then
               return L["Multiselect single tooltip"];
@@ -200,23 +215,41 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
           end,
           get = function()
             local value = trigger["use_"..realname];
-            if(value == nil) then return false;
-            elseif(value == false) then return "false";
-            else return "true"; end
+            if arg.multiNoSingle then
+              if value == nil then
+                return false;
+              else
+                return "false"
+              end
+            else
+              if(value == nil) then return false;
+              elseif(value == false) then return "false";
+              else return "true"; end
+            end
           end,
           set = function(info, v)
-            if(v) then
-              trigger["use_"..realname] = true;
-            else
-              local value = trigger["use_"..realname];
-              if(value == false) then
-                trigger["use_"..realname] = nil;
+            if arg.multiNoSingle then
+              trigger[realname] = trigger[realname] or {};
+              trigger[realname].multi = trigger[realname].multi or {};
+              if v == true then
+                trigger["use_"..realname] = false;
               else
-                trigger["use_"..realname] = false
-                trigger[realname] = trigger[realname] or {};
-                if(trigger[realname].single) then
-                  trigger[realname].multi = trigger[realname].multi or {};
-                  trigger[realname].multi[trigger[realname].single] = true;
+                trigger["use_"..realname] = nil;
+              end
+            else
+              if v then
+                trigger["use_"..realname] = true;
+              else
+                local value = trigger["use_"..realname];
+                if(value == false) then
+                  trigger["use_"..realname] = nil;
+                else
+                  trigger["use_"..realname] = false
+                  trigger[realname] = trigger[realname] or {};
+                  if(trigger[realname].single) then
+                    trigger[realname].multi = trigger[realname].multi or {};
+                    trigger[realname].multi[trigger[realname].single] = true;
+                  end
                 end
               end
             end
@@ -478,7 +511,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
           options["exact"..name] = {
             type = "toggle",
             width = WeakAuras.normalWidth - 0.1,
-            name = L["Exact Spell Match"],
+            name = arg.type == "item" and L["Exact Item Match"] or L["Exact Spell Match"],
             order = order,
             hidden = hidden,
             get = function()
@@ -529,17 +562,20 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
           disabled = function() return not trigger["use_"..realname]; end,
           get = function()
             if(arg.type == "item") then
+              local useExactSpellId = (arg.showExactOption and trigger["use_exact_"..realname])
               if(trigger["use_"..realname] and trigger[realname] and trigger[realname] ~= "") then
-                local name = GetItemInfo(trigger[realname]);
-                if(name) then
-                  return name;
-                else
+                if useExactSpellId then
                   local itemId = tonumber(trigger[realname])
                   if itemId and itemId ~= 0 then
                     return tostring(trigger[realname])
                   end
-                  return L["Invalid Item Name/ID/Link"];
+                else
+                  local name = GetItemInfo(trigger[realname]);
+                  if(name) then
+                    return name;
+                  end
                 end
+                return useExactSpellId and L["Invalid Item ID"] or L["Invalid Item Name/ID/Link"];
               else
                 return nil;
               end
@@ -598,6 +634,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
             values = WeakAuras[arg.values];
           end
         end
+        local sortOrder = arg.sorted and OptionsPrivate.Private.SortOrderForValues(values) or nil
         options[name] = {
           type = "select",
           width = WeakAuras.normalWidth,
@@ -605,6 +642,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
           order = order,
           hidden = hidden,
           values = values,
+          sorting = sortOrder,
           desc = arg.desc,
           disabled = function() return not trigger["use_"..realname]; end,
           get = function()
@@ -705,12 +743,14 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
             values = WeakAuras[arg.values];
           end
         end
+        local sortOrder = arg.sorted and OptionsPrivate.Private.SortOrderForValues(values) or nil
         options[name] = {
           type = "select",
           width = WeakAuras.normalWidth,
           name = arg.display,
           order = order,
           values = values,
+          sorting = sortOrder,
           control = arg.control,
           hidden = function()
             return (type(hidden) == "function" and hidden(trigger)) or (type(hidden) ~= "function" and hidden) or trigger["use_"..realname] == false;
@@ -771,27 +811,45 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
           order = order,
           hidden = function() return (type(hidden) == "function" and hidden(trigger)) or (type(hidden) ~= "function" and hidden) or trigger["use_"..realname] ~= false; end,
           values = values,
+          control = arg.multiUseControlWhenFalse and arg.control,
+          multiTristate = arg.multiTristate,
           get = function(info, v)
             if(trigger["use_"..realname] == false and trigger[realname] and trigger[realname].multi) then
-              return trigger[realname].multi[v];
+              if arg.multiConvertKey then
+                v = arg.multiConvertKey(trigger, v)
+              end
+              if v then
+                return trigger[realname].multi[v];
+              end
             end
           end,
           set = function(info, v, calledFromSetAll)
-            trigger[realname].multi = trigger[realname].multi or {};
-            if (calledFromSetAll) then
-              trigger[realname].multi[v] = calledFromSetAll;
-            elseif(trigger[realname].multi[v]) then
-              trigger[realname].multi[v] = nil;
-            else
-              trigger[realname].multi[v] = true;
+            if arg.multiConvertKey then
+              v = arg.multiConvertKey(trigger, v)
             end
-            WeakAuras.Add(data);
-            if (reloadOptions) then
-              WeakAuras.ClearAndUpdateOptions(data.id)
+            if v then
+              trigger[realname].multi = trigger[realname].multi or {};
+              if (calledFromSetAll or arg.multiTristate) then
+                trigger[realname].multi[v] = calledFromSetAll;
+              elseif(trigger[realname].multi[v]) then
+                trigger[realname].multi[v] = nil;
+              else
+                trigger[realname].multi[v] = true;
+              end
+              WeakAuras.Add(data);
+              if (reloadOptions) then
+                -- Hack specifally for dragon flight mini talent
+                -- That widget needs to be informed before and
+                -- after a reload
+                OptionsPrivate.Private.callbacks:Fire("BeforeReload")
+                WeakAuras.ClearAndUpdateOptions(data.id)
+                WeakAuras.FillOptions()
+                OptionsPrivate.Private.callbacks:Fire("AfterReload")
+              end
+              OptionsPrivate.Private.ScanForLoads({[data.id] = true});
+              WeakAuras.UpdateThumbnail(data);
+              OptionsPrivate.SortDisplayButtons(nil, true);
             end
-            OptionsPrivate.Private.ScanForLoads({[data.id] = true});
-            WeakAuras.UpdateThumbnail(data);
-            OptionsPrivate.SortDisplayButtons(nil, true);
           end
         };
         if(arg.required and not triggertype) then
@@ -814,8 +872,77 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
         order = order + 1;
       end
     end
+
+    if(arg.collapse and isCollapsedFunctions[arg.collapse]) then
+      positionsForCollapseAnchor[arg.collapse] = order
+      order = order +1
+    end
   end
 
+  if prototype.countEvents then
+    options.use_count = {
+      type = "toggle",
+      width = WeakAuras.normalWidth,
+      name = WeakAuras.newFeatureString .. L["Count"],
+      order = order,
+      get = function()
+        return trigger.use_count
+      end,
+      set = function(info, v)
+        trigger.use_count = v
+        WeakAuras.Add(data)
+      end
+    };
+    order = order + 1;
+    options.count = {
+      type = "input",
+      width = WeakAuras.normalWidth,
+      name = L["Count"],
+      desc = L["Occurence of the event, reset when aura is unloaded\nCan be a range of values\nCan have multiple values separated by a comma or a space\n\nExamples:\n2nd 5th and 6th events: 2, 5, 6\n2nd to 6th: 2-6\nevery 2 events: /2\nevery 3 events starting from 2nd: 2/3\nevery 3 events starting from 2nd and ending at 11th: 2-11/3"],
+      order = order,
+      disabled = function() return not trigger.use_count end,
+      get = function()
+        return trigger.count
+      end,
+      set = function(info, v)
+        trigger.count = v
+        WeakAuras.Add(data)
+      end
+    };
+    order = order + 1;
+  end
+  if prototype.delayEvents then
+    options.use_delay = {
+      type = "toggle",
+      width = WeakAuras.normalWidth,
+      name = WeakAuras.newFeatureString .. L["Delay"],
+      order = order,
+      get = function()
+        return trigger.use_delay
+      end,
+      set = function(info, v)
+        trigger.use_delay = v
+        WeakAuras.Add(data)
+      end
+    };
+    order = order + 1;
+    options.delay = {
+      type = "input",
+      width = WeakAuras.normalWidth,
+      name = L["Delay"],
+      order = order,
+      disabled = function() return not trigger.use_delay end,
+      validate = ValidateNumeric,
+      get = function()
+        return trigger.delay and tostring(trigger.delay)
+      end,
+      set = function(info, v)
+        trigger.delay = tonumber(v)
+        WeakAuras.Add(data)
+      end
+    };
+    order = order + 1;
+  end
   if prototype.timedrequired then
     options.unevent = {
       type = "select",
@@ -853,7 +980,7 @@ function OptionsPrivate.ConstructOptions(prototype, data, startorder, triggernum
       type = "description",
       name = "",
       control = "WeakAurasExpandAnchor",
-      order = order + 0.5,
+      order = order,
       arg = {
         expanderName = triggernum .. "#" .. tostring(prototype) .. "#"  .. name
       },

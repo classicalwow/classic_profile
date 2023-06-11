@@ -65,7 +65,7 @@ NWB.orgrimmarCreatures = {
 	[3335] = "Hagrus",
 	[2704] = "Hanashi",
 	[3316] = "Handor",
-	[14720] = "High Overlord Saurfang",
+	--[14720] = "High Overlord Saurfang", --This NPC has a non-org zoneID during wrath prepatch event.
 	--[14499] = "Horde Orphan",
 	--[15350] = "Horde Warbringer",
 	[3323] = "Horthus",
@@ -93,7 +93,7 @@ NWB.orgrimmarCreatures = {
 	[3348] = "Kor'geld",
 	[3189] = "Kor'ghan",
 	[3329] = "Kor'jus",
-	[14304] = "Kor'kron Elite",
+	--[14304] = "Kor'kron Elite", --This NPC has a non-org zoneID during wrath prepatch event.
 	[3360] = "Koru",
 	[5610] = "Kozish",
 	[11176] = "Krathok Moltenfist",
@@ -172,7 +172,7 @@ NWB.orgrimmarCreatures = {
 	[3366] = "Tamar",
 	[3371] = "Tamaro",
 	[6446] = "Therzok",
-	[4949] = "Thrall",
+	--[4949] = "Thrall", --This NPC has a non-org zoneID during wrath prepatch event.
 	[2857] = "Thund",
 	[5958] = "Thuul",
 	[7088] = "Thuwd",
@@ -327,7 +327,7 @@ NWB.stormwindCreatures = {
 	[1324] = "Heinrich Stone",
 	[376] = "High Priestess Laurena",
 	[5694] = "High Sorcerer Andromath",
-	[1748] = "Highlord Bolvar Fordragon",
+	--[1748] = "Highlord Bolvar Fordragon",
 	--[448] = "Hogger",
 	[5480] = "Ilsa Corbin",
 	[11916] = "Imelda",
@@ -505,6 +505,20 @@ NWB.stormwindCreatures = {
 	[1435] = "Zardeth of the Black Claw",
 	[1733] = "Zggi",
 }
+
+NWB.dalaranCreatures = {
+	[29255] = "Sunreaver Guardian Mage",
+	[29254] = "Silver Covenant Guardian Mage",
+	[35607] = "Reginald Arcfire",
+	[28675] = "Teller Rames",
+	[28677] = "Teller Hanners",
+	[28676] = "Teller Althiellis",
+	[30604] = "Teller Almeida",
+	[30605] = "Teller Gee",
+	[30607] = "Teller Plushner",
+	[32689] = "Adorean Lew",
+	[32690] = "Bitty Frostflinger",
+};
 
 NWB.companionCreatures = {
 	--Classic.
@@ -731,4 +745,43 @@ NWB.companionCreatures = {
 	[32980] = "Faithful Mule",
 	[36544] = "Night Elf Mohawk",
 	[32247] = "Zippy Copper Racer",
+	[194870] = "Pebble",
+	[194795] = "Fishspeaker Irtusk",
+	[32641] = "Drix Blackwrench", --Tundra mount.
+	[32642] = "Mojodishu", --Tundra mount.
+	[31727] = "Grunt Grikee", --Borean/Howling zepplin NPC's sometimes spawn with a diff zoneID such as barrens.
+	[31720] = "Crewman Shubbscoop",
+	[31723] = "Crewman Barrowswizzle",
+	[31726] = "Grunt Gritch",
+	[31725] = "Sky-Captain LaFontaine",
+	[31724] = "Crewman Paltertop",
+	[31704] = "Crewman Spinwheel",
+	[31705] = "Crewman Coilspan",
+	[31706] = "Crewman Stembolt",
+	[31715] = "Deathguard Hicks",
+	[31716] = "Sky-Captain Cryoflight",
+	[31708] = "Deathguard Barth",
+	[196534] = "Hoplet", --6 month sub.
 }
+
+if (NWB.isWrath) then
+	NWB.map = 125;
+	NWB.mapName = "Dalaran";
+	for k, v in pairs(NWB.dalaranCreatures) do
+		NWB.npcs[k] = v;
+	end
+else
+	if (NWB.faction == "Horde") then
+		NWB.map = 1454;
+		NWB.mapName = "Orgrimmar";
+		for k, v in pairs(NWB.orgrimmarCreatures) do
+			NWB.npcs[k] = v;
+		end
+	else
+		NWB.map = 1453;
+		NWB.mapName = "Stormwind";
+		for k, v in pairs(NWB.stormwindCreatures) do
+			NWB.npcs[k] = v;
+		end
+	end
+end

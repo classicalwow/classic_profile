@@ -79,7 +79,7 @@ end
 
 function ArkInventory.LDB.Money:Update( )
 	
-	local icon = string.format( "|T%s:0|t", ArkInventory.Const.Texture.Junk )
+	local icon = string.format( "|T%s:0|t", ArkInventory.Const.Texture.Money )
 	local hasText
 	
 	hasText = ArkInventory.MoneyText( GetMoney( ) )
@@ -674,7 +674,7 @@ function ArkInventory.LDB.Mounts.Cleanup( )
 	
 	local me = ArkInventory.GetPlayerCodex( )
 	
-	for mta, mt in pairs( ArkInventory.Const.MountTypes ) do
+	for mta, mt in pairs( ArkInventory.Const.Mount.Types ) do
 		
 		if mta ~= "x" then
 			
@@ -729,7 +729,7 @@ function ArkInventory.LDB.Mounts.IsFlyable( )
 		end
 		
 		-- you can fly here but you need a specific quest
-		if IsFlyable and ArkInventory.Const.Flying.Spell[instancemapid] then
+		if IsFlyable and ArkInventory.Const.Flying.Quest[instancemapid] then
 			local known = C_QuestLog and C_QuestLog.IsQuestFlaggedCompleted( ArkInventory.Const.Flying.Quest[instancemapid] )
 			if not known then
 				--ArkInventory.Output( "zone ", instancemapid, " but you do not have quest ", ArkInventory.Const.Flying.Spell[instancemapid] )
@@ -762,6 +762,15 @@ function ArkInventory.LDB.Mounts.IsFlyable( )
 		if ArkInventory.Const.Flying.Bug735[instancemapid] then
 			--ArkInventory.Output( "zone, instancemapid, " is not flyable, but you can actually fly here" )
 			IsFlyable = true
+		end
+		
+		
+		if ArkInventory.Collection.Mount.isDragonridingAvailable( ) then
+			local codex = ArkInventory.GetPlayerCodex( )
+			if codex.player.data.ldb.mounts.dragonriding then
+				IsFlyable = true
+				--ArkInventory.Output( "dragonriding enabled" )
+			end
 		end
 		
 	end
@@ -965,6 +974,87 @@ function ArkInventory.LDB.Mounts.GetUsable( forceAlternative )
 	
 end
 
+function ArkInventory.LDB.Mounts.GetNext( )
+	
+	ArkInventory.OutputDebug( "----- get next mount -----" )
+	
+	ArkInventory.SetMountMacro( )
+	
+	local c, r = ArkInventory.CheckPlayerHasControl( )
+	if not c then
+		-- you cant mount while you are not in control
+		ArkInventory.Output( r )
+		return
+	end
+	
+	if IsIndoors( ) then
+		-- you shouldnt be able to mount here at all
+		ArkInventory.Output( ArkInventory.Localise["LDB_MOUNTS_FAIL_NOT_ALLOWED"] )
+		return
+	end
+	
+	local codex = ArkInventory.GetPlayerCodex( )
+	
+	if IsMounted( ) then
+		
+		if IsFlying( ) then
+			if not codex.player.data.ldb.mounts.type.a.dismount then
+				ArkInventory.OutputWarning( ArkInventory.Localise["LDB_MOUNTS_FLYING_DISMOUNT_WARNING"] )
+				return
+			end
+		end
+		
+		ArkInventory.Collection.Mount.Dismiss( )
+		
+		return
+		
+	end
+	
+	if InCombatLockdown( ) or IsFlying( ) or not ArkInventory.Collection.Mount.IsReady( ) then return end
+	
+	
+	if ArkInventory.Collection.Mount.GetCount( ) == 0 then
+		--ArkInventory.Output( "you don't own any mounts" )
+		return
+	end
+	
+	local forceAlternative = IsModifiedClick( "CHATLINK" )
+	ArkInventory.LDB.Mounts.GetUsable( forceAlternative )
+	
+	--ArkInventory.Output( #companionTable, " usable mounts", companionTable )
+	
+	if #companionTable == 0 then
+		
+		ArkInventory.Output( string.format( ArkInventory.Localise["NONE_USABLE"], ArkInventory.Localise["MOUNTS"] ) )
+		return
+		
+	else
+		
+		local userandom = codex.player.data.ldb.mounts.randomise
+		
+		if #companionTable <= 3 then
+			userandom = false
+		end
+		
+		if userandom then
+			-- random
+			ArkInventory.LDB.Mounts.next = random( 1, #companionTable )
+		else
+			-- cycle
+			ArkInventory.LDB.Mounts.next = ArkInventory.LDB.Mounts.next + 1
+			if ArkInventory.LDB.Mounts.next > #companionTable then
+				ArkInventory.LDB.Mounts.next = 1
+			end
+		end
+		
+		local i = companionTable[ArkInventory.LDB.Mounts.next]
+		--local md = ArkInventory.Collection.Mount.GetMount( i )
+		--ArkInventory.Output( "use mount ", i, ": ", md.link, " ", ArkInventory.LDB.Mounts.next, " / ", #companionTable, " / usable=", (IsUsableSpell( md.spellID )), " / flight=", IsFlyableArea( ) )
+		ArkInventory.Collection.Mount.Summon( i )
+	end
+	
+end
+
 function ArkInventory.LDB.Mounts:Update( )
 	
 	local loc_id = ArkInventory.Const.Location.Mount
@@ -1003,7 +1093,7 @@ function ArkInventory.LDB.Mounts:OnTooltipShow( ... )
 			
 			local me = ArkInventory.GetPlayerCodex( )
 			
-			for mta in pairs( ArkInventory.Const.MountTypes ) do
+			for mta in pairs( ArkInventory.Const.Mount.Types ) do
 				
 				local mode = ArkInventory.Localise[string.upper( string.format( "LDB_MOUNTS_TYPE_%s", mta ) )]
 				local numusable, numtotal = ArkInventory.Collection.Mount.GetCount( mta )
@@ -1068,95 +1158,29 @@ function ArkInventory.LDB.Mounts:OnTooltipShow( ... )
 	
 end
 
-function ArkInventory.LDB.Mounts:OnClick( button )
+function ArkInventory.LDB.Mounts:OnClick( button, down )
 	
 	local loc_id = ArkInventory.Const.Location.Mount
 	
-	if not ArkInventory.isLocationMonitored( loc_id ) or not ArkInventory.Collection.Mount.IsReady( ) then
+	if not ArkInventory.isLocationMonitored( loc_id ) then
+		ArkInventory.OutputWarning( "location is not monitored" )
 		return
 	end
 	
-	ArkInventory.SetMountMacro( )
+	if not ArkInventory.Collection.Mount.IsReady( ) then
+		ArkInventory.OutputWarning( "location is not ready" )
+		return
+	end
+	
 	
 	if button == "RightButton" then
 		
-		ArkInventory.MenuLDBMountsOpen( self )
+		--ArkInventory.MenuLDBMountsOpen( self )
+		ArkInventory.Frame_Config_Show( "advanced", "ldb", "mounts" )
 		
 	else
 		
-		local c, r = ArkInventory.CheckPlayerHasControl( )
-		if not c then
-			-- you cant mount while you are not in control
-			ArkInventory.Output( r )
-			return
-		end
-		
-		if IsIndoors( ) then
-			-- you shouldnt be able to mount here at all
-			ArkInventory.Output( ArkInventory.Localise["LDB_MOUNTS_FAIL_NOT_ALLOWED"] )
-			return
-		end
-		
-		local me = ArkInventory.GetPlayerCodex( )
-		
-		if IsMounted( ) then
-			
-			if IsFlying( ) then
-				if not me.player.data.ldb.mounts.type.a.dismount then
-					ArkInventory.OutputWarning( ArkInventory.Localise["LDB_MOUNTS_FLYING_DISMOUNT_WARNING"] )
-					return
-				end
-			end
-			
-			ArkInventory.Collection.Mount.Dismiss( )
-			
-			return
-			
-		end
-		
-		if InCombatLockdown( ) or IsFlying( ) or not ArkInventory.Collection.Mount.IsReady( ) then return end
-		
-		ArkInventory.OutputDebug( "----- start mount check -----" )
-		
-		if ArkInventory.Collection.Mount.GetCount( ) == 0 then
-			--ArkInventory.Output( "you don't own any mounts" )
-			return
-		end
-		
-		local forceAlternative = IsModifiedClick( "CHATLINK" )
-		ArkInventory.LDB.Mounts.GetUsable( forceAlternative )
-		
-		--ArkInventory.Output( #companionTable, " usable mounts", companionTable )
-		
-		if #companionTable == 0 then
-			
-			ArkInventory.Output( string.format( ArkInventory.Localise["NONE_USABLE"], ArkInventory.Localise["MOUNTS"] ) )
-			return
-			
-		else
-			
-			local userandom = me.player.data.ldb.mounts.randomise
-			
-			if #companionTable <= 3 then
-				userandom = false
-			end
-			
-			if userandom then
-				-- random
-				ArkInventory.LDB.Mounts.next = random( 1, #companionTable )
-			else
-				-- cycle
-				ArkInventory.LDB.Mounts.next = ArkInventory.LDB.Mounts.next + 1
-				if ArkInventory.LDB.Mounts.next > #companionTable then
-					ArkInventory.LDB.Mounts.next = 1
-				end
-			end
-			
-			local i = companionTable[ArkInventory.LDB.Mounts.next]
-			--local md = ArkInventory.Collection.Mount.GetMount( i )
-			--ArkInventory.Output( "use mount ", i, ": ", md.link, " ", ArkInventory.LDB.Mounts.next, " / ", #companionTable, " / usable=", (IsUsableSpell( md.spellID )), " / flight=", IsFlyableArea( ) )
-			ArkInventory.Collection.Mount.Summon( i )
-		end
+		ArkInventory.LDB.Mounts.GetNext( )
 		
 	end
 	

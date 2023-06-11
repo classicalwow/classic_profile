@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Nefarian-Classic", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220330215720")
+mod:SetRevision("20220920233439")
 mod:SetCreatureID(11583)
 mod:SetEncounterID(617)
 mod:SetModelID(11380)
@@ -95,7 +95,7 @@ do
 	function mod:SPELL_AURA_APPLIED(args)
 		--if args.spellId == 22687 then
 		if args.spellName == VielShadow then
-			if self:CheckDispelFilter() then
+			if self:CheckDispelFilter("curse") then
 				specwarnVeilShadow:Show(args.destName)
 				specwarnVeilShadow:Play("dispelnow")
 			end

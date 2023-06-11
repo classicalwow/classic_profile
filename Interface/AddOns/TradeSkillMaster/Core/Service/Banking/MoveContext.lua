@@ -4,10 +4,12 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local MoveContext = TSM.Banking:NewPackage("MoveContext")
+local Environment = TSM.Include("Environment")
 local Table = TSM.Include("Util.Table")
 local SlotId = TSM.Include("Util.SlotId")
+local Container = TSM.Include("Util.Container")
 local Threading = TSM.Include("Service.Threading")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local InventoryInfo = TSM.Include("Service.InventoryInfo")
@@ -40,9 +42,9 @@ local BagToBankMoveContext = TSM.Include("LibTSMClass").DefineClass("BagToBankMo
 
 function BagToBankMoveContext.MoveSlot(self, fromSlotId, toSlotId, quantity)
 	local fromBag, fromSlot = SlotId.Split(fromSlotId)
-	SplitContainerItem(fromBag, fromSlot, quantity)
+	Container.SplitItem(fromBag, fromSlot, quantity)
 	if GetCursorInfo() == "item" then
-		PickupContainerItem(SlotId.Split(toSlotId))
+		Container.PickupItem(SlotId.Split(toSlotId))
 	end
 	ClearCursor()
 end
@@ -57,11 +59,12 @@ end
 
 function BagToBankMoveContext.GetEmptySlotsThreaded(self, emptySlotIds)
 	local sortValue = Threading.AcquireSafeTempTable()
-	if not TSM.IsWowClassic() then
+	if Environment.HasFeature(Environment.FEATURES.REAGENT_BANK) then
 		private.GetEmptySlotsHelper(REAGENTBANK_CONTAINER, emptySlotIds, sortValue)
 	end
 	private.GetEmptySlotsHelper(BANK_CONTAINER, emptySlotIds, sortValue)
-	for bag = NUM_BAG_SLOTS + 1, NUM_BAG_SLOTS + NUM_BANKBAGSLOTS do
+	local firstBankBag, lastBankBag = Container.GetBankBagIndexes()
+	for bag = firstBankBag, lastBankBag do
 		private.GetEmptySlotsHelper(bag, emptySlotIds, sortValue)
 	end
 	Table.SortWithValueLookup(emptySlotIds, sortValue)
@@ -82,9 +85,9 @@ local BankToBagMoveContext = TSM.Include("LibTSMClass").DefineClass("BankToBagMo
 
 function BankToBagMoveContext.MoveSlot(self, fromSlotId, toSlotId, quantity)
 	local fromBag, fromSlot = SlotId.Split(fromSlotId)
-	SplitContainerItem(fromBag, fromSlot, quantity)
+	Container.SplitItem(fromBag, fromSlot, quantity)
 	if GetCursorInfo() == "item" then
-		PickupContainerItem(SlotId.Split(toSlotId))
+		Container.PickupItem(SlotId.Split(toSlotId))
 	end
 	ClearCursor()
 end
@@ -120,7 +123,7 @@ local BagToGuildBankMoveContext = TSM.Include("LibTSMClass").DefineClass("BagToG
 
 function BagToGuildBankMoveContext.MoveSlot(self, fromSlotId, toSlotId, quantity)
 	local fromBag, fromSlot = SlotId.Split(fromSlotId)
-	SplitContainerItem(fromBag, fromSlot, quantity)
+	Container.SplitItem(fromBag, fromSlot, quantity)
 	if GetCursorInfo() == "item" then
 		PickupGuildBankItem(SlotId.Split(toSlotId))
 	end
@@ -176,7 +179,7 @@ function GuildBankToBagMoveContext.MoveSlot(self, fromSlotId, toSlotId, quantity
 	local fromTab, fromSlot = SlotId.Split(fromSlotId)
 	SplitGuildBankItem(fromTab, fromSlot, quantity)
 	if GetCursorInfo() == "item" then
-		PickupContainerItem(SlotId.Split(toSlotId))
+		Container.PickupItem(SlotId.Split(toSlotId))
 	end
 	ClearCursor()
 end
@@ -238,8 +241,8 @@ end
 -- ============================================================================
 
 function private.BagBankGetSlotQuantity(slotId)
-	local _, quantity = GetContainerItemInfo(SlotId.Split(slotId))
-	return quantity or 0
+	local _, stackSize = Container.GetItemInfo(SlotId.Split(slotId))
+	return stackSize or 0
 end
 
 function private.BagSlotIdIterator(itemString)
@@ -257,7 +260,7 @@ end
 
 function private.BagGetEmptySlotsThreaded(emptySlotIds)
 	local sortValue = Threading.AcquireSafeTempTable()
-	for bag = BACKPACK_CONTAINER, NUM_BAG_SLOTS do
+	for bag = BACKPACK_CONTAINER, Container.GetNumBags() do
 		private.GetEmptySlotsHelper(bag, emptySlotIds, sortValue)
 	end
 	Table.SortWithValueLookup(emptySlotIds, sortValue)
@@ -271,15 +274,19 @@ function private.GetEmptySlotsHelper(bag, emptySlotIds, sortValue)
 	elseif bag == BACKPACK_CONTAINER or bag == BANK_CONTAINER then
 		isSpecial = false
 	else
-		isSpecial = (GetItemFamily(GetInventoryItemLink("player", ContainerIDToInventoryID(bag))) or 0) ~= 0
+		isSpecial = Container.GetBagItemFamily(bag) ~= 0
 	end
-	for slot = 1, GetContainerNumSlots(bag) do
-		if not GetContainerItemInfo(bag, slot) then
+	for slot = 1, Container.GetNumSlots(bag) do
+		if not private.BagSlotHasItem(bag, slot) then
 			local slotId = SlotId.Join(bag, slot)
 			tinsert(emptySlotIds, slotId)
 			sortValue[slotId] = slotId + (isSpecial and 0 or 100000)
 		end
 	end
+end
+
+function private.BagSlotHasItem(bag, slot)
+	return Container.GetItemInfo(bag, slot) and true or false
 end
 
 function private.BagBankGetTargetSlotId(itemString, emptySlotIds)

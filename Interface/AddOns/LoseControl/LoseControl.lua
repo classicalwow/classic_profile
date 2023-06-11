@@ -1,7 +1,7 @@
 --[[
 -------------------------------------------
 -- Addon: LoseControl Classic
--- Version: 1.15
+-- Version: 1.18
 -- Authors: millanzarreta, Kouri
 -------------------------------------------
 
@@ -604,6 +604,7 @@ local spellIds = {
 	[8901]   = "CC",				-- Gas Bomb
 	[8902]   = "CC",				-- Gas Bomb
 	[9454]   = "CC",				-- Freeze
+	[7056]   = "CC",				-- Pacified
 	[7082]   = "CC",				-- Barrel Explode
 	[6537]   = "CC",				-- Call of the Forest
 	[8672]   = "CC",				-- Challenger is Dazed
@@ -634,7 +635,6 @@ local spellIds = {
 	[18812]  = "CC",				-- Knockdown
 	[13360]  = "CC",				-- Knockdown
 	[11430]  = "CC",				-- Slam
-	[28335]  = "CC",				-- Whirlwind
 	[16451]  = "CC",				-- Judge's Gavel
 	[23601]  = "CC",				-- Scatter Shot
 	[25260]  = "CC",				-- Wings of Despair
@@ -739,6 +739,7 @@ local spellIds = {
 	[13496]  = "Snare",				-- Dazed (Mug O' Hurt mace)
 	[21066]  = "Snare",				-- Void Bolt
 	[23600]  = "Snare",				-- Piercing Howl
+	[14296]  = "Snare",				-- Black Arrow
 	[3238]   = "Other",				-- Nimble Reflexes
 	[5990]   = "Other",				-- Nimble Reflexes
 	[6615]   = "Other",				-- Free Action Potion
@@ -976,6 +977,7 @@ local spellIds = {
 	[720]    = "CC",				-- Entangle
 	[731]    = "CC",				-- Entangle
 	[1121]   = "CC",				-- Entangle
+	[26662]  = "Other",				-- Berserk
 	-- -- Viscidus
 	[25937]  = "CC",				-- Viscidus Freeze
 	-- -- Princess Huhuran
@@ -1002,11 +1004,15 @@ local spellIds = {
 	[27990]  = "CC",				-- Fear
 	[28412]  = "CC",				-- Death Coil
 	[29848]  = "CC",				-- Polymorph
-	[28995]  = "Immune",			-- Stoneskin
+	[28335]  = "CC",				-- Whirlwind
+	[30112]  = "CC",				-- Frenzied Dive
+	[28995]  = "Immune",			-- Stoneskin (not immune, big health regeneration)
 	[29849]  = "Root",				-- Frost Nova
 	[30094]  = "Root",				-- Frost Nova
 	[28350]  = "Other",				-- Veil of Darkness (immune to direct healing)
-	[28440]  = "Other",				-- Veil of Shadow
+	[28440]  = "Other",				-- Veil of Shadow (healing effects reduced by 75%)
+	[28801]  = "Other",				-- Slime (all attributes reduced by 90%)
+	[30109]  = "Snare",				-- Slime Burst
 	[18328]  = "Snare",				-- Incapacitating Shout
 	[28310]  = "Snare",				-- Mind Flay
 	[30092]  = "Snare",				-- Blast Wave
@@ -1024,9 +1030,6 @@ local spellIds = {
 	[28776]  = "Other",				-- Necrotic Poison (healing taken reduced by 90%)
 	-- -- Noth the Plaguebringer
 	[29212]  = "Snare",				-- Cripple
-	-- -- Heigan the Unclean
-	[30112]  = "CC",				-- Frenzied Dive
-	[30109]  = "Snare",				-- Slime Burst
 	-- -- Instructor Razuvious
 	[29061]  = "Immune",			-- Shield Wall (not immune, 75% damage reduction)
 	[29125]  = "Other",				-- Hopeless (increases damage taken by 5000%)
@@ -1035,6 +1038,8 @@ local spellIds = {
 	[27993]  = "Snare",				-- Stomp
 	-- -- Gluth
 	[29685]  = "CC",				-- Terrifying Roar
+	-- -- Thaddius
+	[27680]  = "Other",				-- Berserk
 	-- -- Sapphiron
 	[28522]  = "CC",				-- Icebolt
 	[28547]  = "Snare",				-- Chill
@@ -1043,6 +1048,7 @@ local spellIds = {
 	[27808]  = "CC",				-- Frost Blast
 	[28478]  = "Snare",				-- Frostbolt
 	[28479]  = "Snare",				-- Frostbolt
+	[28498]  = "Other",				-- Berserk
 	------------------------
 	-- Classic World Bosses
 	-- -- Azuregos
@@ -1258,6 +1264,7 @@ local spellIds = {
 	[17244]  = "CC",				-- Possess
 	[17307]  = "CC",				-- Knockout
 	[15970]  = "CC",				-- Sleep
+	[20812]  = "Snare",				-- Cripple
 	[14897]  = "Snare",				-- Slowing Poison
 	[3589]   = "Silence",			-- Deafening Screech
 	-- -- Dire Maul
@@ -1427,6 +1434,48 @@ local anchors = {
 		nameplate38  = "NamePlate38",
 		nameplate39  = "NamePlate39",
 		nameplate40  = "NamePlate40"
+	},
+	BlizzardNameplatesUnitFrame = {
+		nameplate1   = "NamePlate1.UnitFrame",
+		nameplate2   = "NamePlate2.UnitFrame",
+		nameplate3   = "NamePlate3.UnitFrame",
+		nameplate4   = "NamePlate4.UnitFrame",
+		nameplate5   = "NamePlate5.UnitFrame",
+		nameplate6   = "NamePlate6.UnitFrame",
+		nameplate7   = "NamePlate7.UnitFrame",
+		nameplate8   = "NamePlate8.UnitFrame",
+		nameplate9   = "NamePlate9.UnitFrame",
+		nameplate10  = "NamePlate10.UnitFrame",
+		nameplate11  = "NamePlate11.UnitFrame",
+		nameplate12  = "NamePlate12.UnitFrame",
+		nameplate13  = "NamePlate13.UnitFrame",
+		nameplate14  = "NamePlate14.UnitFrame",
+		nameplate15  = "NamePlate15.UnitFrame",
+		nameplate16  = "NamePlate16.UnitFrame",
+		nameplate17  = "NamePlate17.UnitFrame",
+		nameplate18  = "NamePlate18.UnitFrame",
+		nameplate19  = "NamePlate19.UnitFrame",
+		nameplate20  = "NamePlate20.UnitFrame",
+		nameplate21  = "NamePlate21.UnitFrame",
+		nameplate22  = "NamePlate22.UnitFrame",
+		nameplate23  = "NamePlate23.UnitFrame",
+		nameplate24  = "NamePlate24.UnitFrame",
+		nameplate25  = "NamePlate25.UnitFrame",
+		nameplate26  = "NamePlate26.UnitFrame",
+		nameplate27  = "NamePlate27.UnitFrame",
+		nameplate28  = "NamePlate28.UnitFrame",
+		nameplate29  = "NamePlate29.UnitFrame",
+		nameplate30  = "NamePlate30.UnitFrame",
+		nameplate31  = "NamePlate31.UnitFrame",
+		nameplate32  = "NamePlate32.UnitFrame",
+		nameplate33  = "NamePlate33.UnitFrame",
+		nameplate34  = "NamePlate34.UnitFrame",
+		nameplate35  = "NamePlate35.UnitFrame",
+		nameplate36  = "NamePlate36.UnitFrame",
+		nameplate37  = "NamePlate37.UnitFrame",
+		nameplate38  = "NamePlate38.UnitFrame",
+		nameplate39  = "NamePlate39.UnitFrame",
+		nameplate40  = "NamePlate40.UnitFrame"
 	},
 	Perl = {
 		player       = "Perl_Player_PortraitFrame",
@@ -3954,7 +4003,7 @@ function LoseControl:RegisterUnitEvents(enabled)
 					if not autoCall and self.timerActive then return end
 					if (self.frame.enabled and not self.unlockMode and UnitExists(self.unitId)) then
 						self.unitGUID = UnitGUID(self.unitId)
-						self:UNIT_AURA(self.unitId, true, nil, 300)
+						self:UNIT_AURA(self.unitId, nil, 300)
 						self.timerActive = true
 						C_Timer.After(0.5, self.UpdateStateFuncCache)
 					else
@@ -3965,7 +4014,7 @@ function LoseControl:RegisterUnitEvents(enabled)
 				self:SetScript("OnAttributeChanged", function(self, name, value)
 					if (self.frame.enabled and not self.unlockMode) then
 						self.unitGUID = UnitGUID(self.unitId)
-						self:UNIT_AURA(self.unitId, true, nil, 200)
+						self:UNIT_AURA(self.unitId, nil, 200)
 					end
 					if value then
 						self:UpdateState()
@@ -3976,9 +4025,9 @@ function LoseControl:RegisterUnitEvents(enabled)
 					if (self.frame.enabled and not self.unlockMode) then
 						self.unitGUID = UnitGUID(self.unitId)
 						if self.frame.anchor == "Blizzard" then
-							self:UNIT_AURA(self.unitId, true, nil, -30)
+							self:UNIT_AURA(self.unitId, nil, -30)
 						else
-							self:UNIT_AURA(self.unitId, true, nil, 30)
+							self:UNIT_AURA(self.unitId, nil, 30)
 						end
 					end
 				end)
@@ -3992,7 +4041,7 @@ function LoseControl:RegisterUnitEvents(enabled)
 								C_Timer.After(0.01, function()	-- execute in some close next frame to depriorize this event
 									if ((not self.unlockMode) and (self.lastTimeUnitAuraEvent == nil or self.lastTimeUnitAuraEvent < timeCombatLogAuraEvent)) then
 										self.unitGUID = UnitGUID(self.unitId)
-										self:UNIT_AURA(self.unitId, true, nil, 40)
+										self:UNIT_AURA(self.unitId, nil, 40)
 									end
 								end)
 							end
@@ -4003,7 +4052,7 @@ function LoseControl:RegisterUnitEvents(enabled)
 								C_Timer.After(0.01, function()	-- execute in some close next frame to depriorize this event
 									if ((not self.unlockMode) and (self.lastTimeUnitAuraEvent == nil or self.lastTimeUnitAuraEvent < timeCombatLogAuraEvent)) then
 										self.unitGUID = UnitGUID(self.unitId)
-										self:UNIT_AURA(self.unitId, true, nil, 43)
+										self:UNIT_AURA(self.unitId, nil, 43)
 									end
 								end)
 							end
@@ -4070,6 +4119,22 @@ function LoseControl:RegisterUnitEvents(enabled)
 	else
 		LCframes["target"]:UnregisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
 	end
+end
+
+-- Function to get the final scale value of icon frame relative to UIParent
+function LoseControl:GetAbsoluteScaleRelativeToUIParent()
+	local resScale = 1
+	local fr = self.parent
+	local limit = 30
+	local climit = 0
+	while(fr ~= nil and fr ~= UIParent and fr ~= WorldFrame and climit < limit) do
+		if (fr.GetScale and type(fr:GetScale()) == "number") then
+			resScale = resScale * fr:GetScale()
+		end
+		fr = fr:GetParent()
+		climit = climit + 1
+	end
+	return (climit < limit) and resScale or 1
 end
 
 -- Function to update spellIds table with customSpellIds from user
@@ -4142,7 +4207,7 @@ function LoseControl:UpdateGetEnemiesBuffInformationOptionState()
 			local icon = LCframes[unitId]
 			if icon then
 				if icon:GetEnabled() and not icon.unlockMode then
-					icon:UNIT_AURA(unitId, true, nil, -1)
+					icon:UNIT_AURA(unitId, nil, -1)
 				end
 			end
 		end)
@@ -4392,13 +4457,13 @@ local function UpdateRaidIconsAnchorCompactRaidFrame(compactRaidFrame, key, valu
 								frame.x or 0,
 								frame.y or 0
 							)
-							local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+							local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 							if frameLevel < 0 then frameLevel = 0 end
 							icon:GetParent():SetFrameLevel(frameLevel)
 							icon:SetFrameLevel(frameLevel)
 						end
 						if (icon.frame and icon:GetEnabled() and (icon.frame.anchor == "BlizzardRaidFrames" or (isPartyFrame and frame.anchor == "Blizzard"))) then
-							icon:UNIT_AURA(icon.unitId, true, nil, -80)
+							icon:UNIT_AURA(icon.unitId, nil, -80)
 						end
 					end
 				end
@@ -4555,7 +4620,7 @@ function LoseControl:ADDON_LOADED(arg1)
 			_G.LoseControlDB.version = DBdefaults.version
 		end
 		LoseControlDB = _G.LoseControlDB
-		self.VERSION = "1.15"
+		self.VERSION = "1.18"
 		self.noCooldownCount = LoseControlDB.noCooldownCount
 		self.noBlizzardCooldownCount = LoseControlDB.noBlizzardCooldownCount
 		self.noGetExtraAuraDurationInformation = LoseControlDB.noGetExtraAuraDurationInformation
@@ -4648,14 +4713,24 @@ LoseControl:RegisterEvent("ADDON_LOADED")
 
 function LoseControl:CheckNameplateAnchor()
 	local newAnchor = GetNamePlateForUnit(self.unitId, false)
-	if ((newAnchor ~= nil) and not(newAnchor:IsForbidden())) then
-		if (self.anchor ~= newAnchor) then
+	local frame = self.frame or LoseControlDB.frames[self.fakeUnitId or self.unitId]
+	local usingNameplateMainFrame = (frame.anchor == "BlizzardNameplates")
+	if ((newAnchor ~= nil) and not(newAnchor:IsForbidden()) and (usingNameplateMainFrame or newAnchor.UnitFrame ~= nil)) then
+		local newAnchorUF = usingNameplateMainFrame and newAnchor or newAnchor.UnitFrame
+		if (self.anchor ~= newAnchorUF) then
 			local name = newAnchor:GetName()
 			if not name or not name:match("^NamePlate") then return end
 			anchors.BlizzardNameplates[self.unitId] = name
-			local frame = self.frame or LoseControlDB.frames[self.fakeUnitId or self.unitId]
-			if (frame.anchor == "BlizzardNameplates") then
-				self.anchor = newAnchor
+			anchors.BlizzardNameplatesUnitFrame[self.unitId] = name..".UnitFrame"
+			if (frame.anchor == "BlizzardNameplates" or frame.anchor == "BlizzardNameplatesUnitFrame") then
+				local oldAnchor = self.anchor
+				if ((oldAnchor ~= nil) and (oldAnchor ~= UIParent) and not(oldAnchor:IsForbidden()) and (usingNameplateMainFrame or oldAnchor.UnitFrame ~= nil)) then
+					local oldAnchorUF = usingNameplateMainFrame and oldAnchor or oldAnchor.UnitFrame
+					if (oldAnchorUF.lcicon == self) then
+						oldAnchorUF.lcicon = nil
+					end
+				end
+				self.anchor = newAnchorUF
 				self.parent:SetParent(self.anchor)
 				self.defaultFrameStrata = self:GetFrameStrata()
 				self:GetParent():ClearAllPoints()
@@ -4666,12 +4741,20 @@ function LoseControl:CheckNameplateAnchor()
 					frame.x or 0,
 					frame.y or 0
 				)
+				newAnchorUF.lcicon = self
 			end
 		end
 	else
 		anchors.BlizzardNameplates[self.unitId] = "UIParent"
-		local frame = self.frame or LoseControlDB.frames[self.fakeUnitId or self.unitId]
-		if (frame.anchor == "BlizzardNameplates") then
+		anchors.BlizzardNameplatesUnitFrame[self.unitId] = "UIParent"
+		if (frame.anchor == "BlizzardNameplates" or frame.anchor == "BlizzardNameplatesUnitFrame") then
+			local oldAnchor = self.anchor
+			if ((oldAnchor ~= nil) and (oldAnchor ~= UIParent) and not(oldAnchor:IsForbidden()) and (usingNameplateMainFrame or oldAnchor.UnitFrame ~= nil)) then
+				local oldAnchorUF = usingNameplateMainFrame and oldAnchor or oldAnchor.UnitFrame
+				if (oldAnchorUF.lcicon == self) then
+					oldAnchorUF.lcicon = nil
+				end
+			end
 			self.anchor = UIParent
 			self.parent:SetParent(nil)
 			self.defaultFrameStrata = self:GetFrameStrata()
@@ -4723,18 +4806,20 @@ function LoseControl:CheckAnchor(forceCheck)
 					frame.x or 0,
 					frame.y or 0
 				)
-				local PositionXEditBox, PositionYEditBox, FrameLevelEditBox
+				local PositionXEditBox, PositionYEditBox, FrameLevelEditBox, AnchorPositionDropDownAnchorLabel
 				if strfind(self.fakeUnitId or self.unitId, "party") then
 					if ((self.fakeUnitId or self.unitId) == UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanelpartyAnchorPositionPartyDropDown'])) then
 						PositionXEditBox = _G['LoseControlOptionsPanelpartyPositionXEditBox']
 						PositionYEditBox = _G['LoseControlOptionsPanelpartyPositionYEditBox']
 						FrameLevelEditBox = _G['LoseControlOptionsPanelpartyFrameLevelEditBox']
+						AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelpartyAnchorPositionDropDownAnchorLabel']
 					end
 				elseif strfind(self.fakeUnitId or self.unitId, "raid") then
 					if ((self.fakeUnitId or self.unitId) == UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanelraidAnchorPositionRaidDropDown'])) then
 						PositionXEditBox = _G['LoseControlOptionsPanelraidPositionXEditBox']
 						PositionYEditBox = _G['LoseControlOptionsPanelraidPositionYEditBox']
 						FrameLevelEditBox = _G['LoseControlOptionsPanelraidFrameLevelEditBox']
+						AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelraidAnchorPositionDropDownAnchorLabel']
 					end
 				elseif strfind(self.fakeUnitId or self.unitId, "nameplate") then
 					PositionXEditBox = _G['LoseControlOptionsPanelnameplatePositionXEditBox']
@@ -4746,6 +4831,9 @@ function LoseControl:CheckAnchor(forceCheck)
 					FrameLevelEditBox = _G['LoseControlOptionsPanel'..self.unitId..'FrameLevelEditBox']
 				end
 				if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+					if (AnchorPositionDropDownAnchorLabel) then
+						AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+					end
 					PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 					PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 					FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
@@ -4753,12 +4841,10 @@ function LoseControl:CheckAnchor(forceCheck)
 						if frame.enabled then
 							PositionXEditBox:Enable()
 							PositionYEditBox:Enable()
-							FrameLevelEditBox:Enable()
 						end
 					else
 						PositionXEditBox:Disable()
 						PositionYEditBox:Disable()
-						FrameLevelEditBox:Disable()
 					end
 					PositionXEditBox:SetCursorPosition(0)
 					PositionYEditBox:SetCursorPosition(0)
@@ -4768,7 +4854,7 @@ function LoseControl:CheckAnchor(forceCheck)
 					self:GetParent():SetFrameStrata(frame.frameStrata)
 					self:SetFrameStrata(frame.frameStrata)
 				end
-				local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+				local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 				if frameLevel < 0 then frameLevel = 0 end
 				self:GetParent():SetFrameLevel(frameLevel)
 				self:SetFrameLevel(frameLevel)
@@ -4806,18 +4892,20 @@ function LoseControl:PLAYER_ENTERING_WORLD()
 		frame.x or 0,
 		frame.y or 0
 	)
-	local PositionXEditBox, PositionYEditBox, FrameLevelEditBox
+	local PositionXEditBox, PositionYEditBox, FrameLevelEditBox, AnchorPositionDropDownAnchorLabel
 	if strfind((self.fakeUnitId or unitId), "party") then
 		if ((self.fakeUnitId or unitId) == ((_G['LoseControlOptionsPanelpartyAnchorPositionPartyDropDown'] ~= nil) and UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanelpartyAnchorPositionPartyDropDown']) or "party1")) then
 			PositionXEditBox = _G['LoseControlOptionsPanelpartyPositionXEditBox']
 			PositionYEditBox = _G['LoseControlOptionsPanelpartyPositionYEditBox']
 			FrameLevelEditBox = _G['LoseControlOptionsPanelpartyFrameLevelEditBox']
+			AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelpartyAnchorPositionDropDownAnchorLabel']
 		end
 	elseif strfind((self.fakeUnitId or unitId), "raid") then
 		if ((self.fakeUnitId or unitId) == ((_G['LoseControlOptionsPanelraidAnchorPositionRaidDropDown'] ~= nil) and UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanelraidAnchorPositionRaidDropDown']) or "raid1")) then
 			PositionXEditBox = _G['LoseControlOptionsPanelraidPositionXEditBox']
 			PositionYEditBox = _G['LoseControlOptionsPanelraidPositionYEditBox']
 			FrameLevelEditBox = _G['LoseControlOptionsPanelraidFrameLevelEditBox']
+			AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelraidAnchorPositionDropDownAnchorLabel']
 		end
 	elseif strfind((self.fakeUnitId or unitId), "nameplate") then
 		PositionXEditBox = _G['LoseControlOptionsPanelnameplatePositionXEditBox']
@@ -4829,6 +4917,9 @@ function LoseControl:PLAYER_ENTERING_WORLD()
 		FrameLevelEditBox = _G['LoseControlOptionsPanel'..(self.fakeUnitId or unitId)..'FrameLevelEditBox']
 	end
 	if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+		if (AnchorPositionDropDownAnchorLabel) then
+			AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+		end
 		PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 		PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 		FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
@@ -4840,7 +4931,7 @@ function LoseControl:PLAYER_ENTERING_WORLD()
 		self:GetParent():SetFrameStrata(frame.frameStrata)
 		self:SetFrameStrata(frame.frameStrata)
 	end
-	local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+	local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 	if frameLevel < 0 then frameLevel = 0 end
 	self:GetParent():SetFrameLevel(frameLevel)
 	self:SetFrameLevel(frameLevel)
@@ -4882,7 +4973,7 @@ function LoseControl:PLAYER_ENTERING_WORLD()
 
 	if enabled and not self.unlockMode then
 		self.maxExpirationTime = 0
-		self:UNIT_AURA(self.unitId, true, nil, 0)
+		self:UNIT_AURA(self.unitId, nil, 0)
 	end
 end
 
@@ -4901,7 +4992,7 @@ function LoseControl:GROUP_ROSTER_UPDATE()
 	end
 	if enabled and not self.unlockMode then
 		self.maxExpirationTime = 0
-		self:UNIT_AURA(unitId, true, nil, 0)
+		self:UNIT_AURA(unitId, nil, 0)
 	end
 end
 
@@ -4922,14 +5013,14 @@ function LoseControl:NAME_PLATE_UNIT_ADDED(unitId)
 			if not self.unlockMode then
 				self.maxExpirationTime = 0
 				if (UnitExists(unitId)) then
-					self:UNIT_AURA(unitId, true, nil, 0)
+					self:UNIT_AURA(unitId, nil, 0)
 				else
 					local timeCombatLogAuraEvent = GetTime()
 					C_Timer.After(0.01, function()	-- execute in some close next frame to depriorize this event
 						if (not(self.unlockMode) and (self.lastTimeUnitAuraEvent == nil or self.lastTimeUnitAuraEvent < timeCombatLogAuraEvent)) then
 							self.unitGUID = UnitGUID(unitId)
 							self:CheckNameplateAnchor()
-							self:UNIT_AURA(unitId, true, nil, 3)
+							self:UNIT_AURA(unitId, nil, 3)
 						end
 					end)
 				end
@@ -4959,9 +5050,9 @@ local function UpdateUnitAuraByUnitGUID(unitGUID, typeUpdate)
 		local enabled = v:GetEnabled()
 		if enabled and not v.unlockMode then
 			if v.unitGUID == unitGUID then
-				v:UNIT_AURA(v.unitId, true, nil, typeUpdate)
+				v:UNIT_AURA(v.unitId, nil, typeUpdate)
 				if (k == "player") and LCframeplayer2.frame.enabled and not LCframeplayer2.unlockMode then
-					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, typeUpdate)
+					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, typeUpdate)
 				end
 			end
 		end
@@ -4974,6 +5065,7 @@ local function HideTheButtonDefaultSkin(bt)
 	if bt:GetNormalTexture() ~= nil then bt:GetNormalTexture():SetAlpha(0) bt:GetNormalTexture():Hide() end
 	if bt:GetDisabledTexture() ~= nil then bt:GetDisabledTexture():SetAlpha(0) bt:GetDisabledTexture():Hide() end
 	if bt:GetHighlightTexture() ~= nil then bt:GetHighlightTexture():SetAlpha(0) bt:GetHighlightTexture():Hide() end
+	if bt.SlotBackground ~= nil then bt.SlotBackground:SetAlpha(0) bt.SlotBackground:Hide() end
 	if (bt:GetName() ~= nil) then
 		if _G[bt:GetName().."Shine"] ~= nil then _G[bt:GetName().."Shine"]:SetAlpha(0) _G[bt:GetName().."Shine"]:Hide() end
 		if _G[bt:GetName().."Count"] ~= nil then _G[bt:GetName().."Count"]:SetAlpha(0) _G[bt:GetName().."Count"]:Hide() end
@@ -4993,6 +5085,8 @@ function LoseControl:CheckStatusPartyFrameChange(value)
 		self.useCompactPartyFrames = value
 		if (value) then
 			anchors.Blizzard[unitId] = nil
+			MainHookCompactRaidFrames()
+			UpdateAllRaidIconsAnchorCompactRaidFrame()
 		else
 			local numId = -1
 			if (unitId == "party1") then
@@ -5015,8 +5109,6 @@ function LoseControl:CheckStatusPartyFrameChange(value)
 		local frame = self.frame or LoseControlDB.frames[unitId]
 		if (frame.anchor == "Blizzard") or (unitId == "partyplayer") then
 			if (value) then
-				MainHookCompactRaidFrames()
-				UpdateAllRaidIconsAnchorCompactRaidFrame()
 				if not(frame.noCompactFrame) then
 					frame.noCompactFrame = {
 						["point"] = frame.point,
@@ -5080,7 +5172,7 @@ function LoseControl:CheckStatusPartyFrameChange(value)
 				self:GetParent():SetFrameStrata(frame.frameStrata)
 				self:SetFrameStrata(frame.frameStrata)
 			end
-			local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+			local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 			if frameLevel < 0 then frameLevel = 0 end
 			self:GetParent():SetFrameLevel(frameLevel)
 			self:SetFrameLevel(frameLevel)
@@ -5138,18 +5230,20 @@ function LoseControl:CheckStatusPartyFrameChange(value)
 				local PositionXEditBox = _G['LoseControlOptionsPanelpartyPositionXEditBox']
 				local PositionYEditBox = _G['LoseControlOptionsPanelpartyPositionYEditBox']
 				local FrameLevelEditBox = _G['LoseControlOptionsPanelpartyFrameLevelEditBox']
+				local AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelpartyAnchorPositionDropDownAnchorLabel']
 				if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+					if (AnchorPositionDropDownAnchorLabel) then
+						AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+					end
 					PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 					PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 					FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
 					if (frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) then
 						PositionXEditBox:Enable()
 						PositionYEditBox:Enable()
-						FrameLevelEditBox:Enable()
 					else
 						PositionXEditBox:Disable()
 						PositionYEditBox:Disable()
-						FrameLevelEditBox:Disable()
 					end
 					PositionXEditBox:SetCursorPosition(0)
 					PositionYEditBox:SetCursorPosition(0)
@@ -5182,11 +5276,6 @@ function LoseControl:CheckStatusPartyFrameChange(value)
 				if (AnchorFrameStrataDropDown) then
 					UIDropDownMenu_Initialize(AnchorFrameStrataDropDown, AnchorFrameStrataDropDown.initialize)
 					UIDropDownMenu_SetSelectedValue(AnchorFrameStrataDropDown, frame.frameStrata or "AUTO")
-					if (frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) then
-						UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-					else
-						UIDropDownMenu_DisableDropDown(AnchorFrameStrataDropDown)
-					end
 				end
 			end
 		end
@@ -5352,7 +5441,7 @@ function LoseControl:COMBAT_LOG_EVENT_UNFILTERED()
 				local timeCombatLogAuraEvent = GetTime()
 				C_Timer.After(0.01, function()	-- execute in some close next frame to accurate use of UnitAura function
 					if ((not self.unlockMode) and (self.lastTimeUnitAuraEvent ~= timeCombatLogAuraEvent)) then
-						self:UNIT_AURA(self.unitId, true, nil, 3)
+						self:UNIT_AURA(self.unitId, nil, 3)
 					end
 				end)
 			end
@@ -5361,19 +5450,9 @@ function LoseControl:COMBAT_LOG_EVENT_UNFILTERED()
 end
 
 -- This is the main event. Check for (de)buffs and update the frame icon and cooldown.
-function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -- fired when a (de)buff is gained/lost
+function LoseControl:UNIT_AURA(unitId, updatedAuras, typeUpdate) -- fired when a (de)buff is gained/lost
 	if (((typeUpdate ~= nil and typeUpdate > 0) or (typeUpdate == nil and self.unitId == "targettarget")) and (self.lastTimeUnitAuraEvent == GetTime())) then return end
 	if (self.unitId == "targettarget" and (not UnitIsUnit(unitId, self.unitId))) then return end
-	if (isFullUpdate == false) and (updatedAuras ~= nil) then
-		local anyInterestAura = false
-		for _, v in pairs(updatedAuras) do
-			if (spellIds[v.spellId] ~= nil) then
-				anyInterestAura = true
-				break
-			end
-		end
-		if not(anyInterestAura) then return end
-	end
 	local priority = LoseControlDB.priority
 	local maxPriority = 1
 	local maxExpirationTime = 0
@@ -5382,8 +5461,8 @@ function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -
 	local forceEventUnitAuraAtEnd = false
 	self.lastTimeUnitAuraEvent = GetTime()
 
-	if ((self.anchor ~= nil and self.anchor:IsVisible() and (self.anchor ~= UIParent or self.frame.anchor == "None")) or (self.frame.anchor ~= "None" and self.frame.anchor ~= "Blizzard" and self.frame.anchor ~= "BlizzardRaidFrames" and self.frame.anchor ~= "BlizzardNameplates" and self.anchor ~= UIParent)) and UnitExists(self.unitId) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disablePlayerTargetPlayerTargetTarget) or not(UnitIsUnit("player", "target")))) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disablePlayerTargetTarget) or not(UnitIsUnit("targettarget", "player")))) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disableTargetTargetTarget) or not(UnitIsUnit("targettarget", "target")))) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disableTargetDeadTargetTarget) or (UnitHealth("target") > 0))) then
-		local reactionToPlayer = ((self.unitId == "target" or self.unitId == "targettarget") and UnitCanAttack("player", unitId)) and "enemy" or "friendly"
+	if ((self.anchor ~= nil and self.anchor:IsVisible() and (self.anchor ~= UIParent or self.frame.anchor == "None")) or (self.frame.anchor ~= "None" and self.frame.anchor ~= "Blizzard" and self.frame.anchor ~= "BlizzardRaidFrames" and self.frame.anchor ~= "BlizzardNameplates" and self.frame.anchor ~= "BlizzardNameplatesUnitFrame" and self.anchor ~= UIParent)) and UnitExists(self.unitId) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disablePlayerTargetPlayerTargetTarget) or not(UnitIsUnit("player", "target")))) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disablePlayerTargetTarget) or not(UnitIsUnit("targettarget", "player")))) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disableTargetTargetTarget) or not(UnitIsUnit("targettarget", "target")))) and ((self.unitId ~= "targettarget") or (not(LoseControlDB.disableTargetDeadTargetTarget) or (UnitHealth("target") > 0))) then
+		local reactionToPlayer = ((self.unitId == "target" or self.unitId == "targettarget" or strfind(self.unitId, "nameplate")) and UnitCanAttack("player", unitId)) and "enemy" or "friendly"
 		-- Check debuffs
 		for i = 1, 120 do
 			local localForceEventUnitAuraAtEnd = false
@@ -5415,8 +5494,8 @@ function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -
 
 			local spellCategory = spellIds[spellId]
 			local Priority = priority[spellCategory]
-			if self.frame.categoriesEnabled.debuff[reactionToPlayer] and self.frame.categoriesEnabled.debuff[reactionToPlayer][spellCategory] then
-				if Priority then
+			if Priority then
+				if self.frame.categoriesEnabled.debuff[reactionToPlayer] and self.frame.categoriesEnabled.debuff[reactionToPlayer][spellCategory] then
 					if Priority == maxPriority and expirationTime > maxExpirationTime then
 						maxExpirationTime = expirationTime
 						Duration = duration
@@ -5481,14 +5560,14 @@ function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -
 			-- exceptions
 			if (spellId == 605) or (spellId == 10911) or (spellId == 10912) or (spellId == 24020) then	-- Mind Control and Axe Flurry
 				spellId = 1
-			elseif (spellId == 19574 and (self.unitId == "pet" or (playerClass ~= 1 and playerClass ~= 2 and playerClass ~= 5 and playerClass ~= 9))) then	-- Bestial Wrath
+			elseif (spellId == 19574 and (LoseControlDB.customSpellIds[19574] ~= nil) and (self.unitId == "pet" or (playerClass ~= 1 and playerClass ~= 2 and playerClass ~= 5 and playerClass ~= 9))) then	-- Bestial Wrath
 				newCategory = "Other"
 			end
 
 			local spellCategory = newCategory or spellIds[spellId]
 			local Priority = priority[spellCategory]
-			if self.frame.categoriesEnabled.buff[reactionToPlayer] and self.frame.categoriesEnabled.buff[reactionToPlayer][spellCategory] then
-				if Priority then
+			if Priority then
+				if self.frame.categoriesEnabled.buff[reactionToPlayer] and self.frame.categoriesEnabled.buff[reactionToPlayer][spellCategory] then
 					if Priority == maxPriority and expirationTime > maxExpirationTime then
 						maxExpirationTime = expirationTime
 						Duration = duration
@@ -5544,7 +5623,7 @@ function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -
 							end
 							C_Timer.After(nextTimerUpdate, function()
 								if ((not self.unlockMode) and (self.lastTimeUnitAuraEvent == nil or self.lastTimeUnitAuraEvent < (GetTime() - 0.04))) then
-									self:UNIT_AURA(self.unitId, true, nil, 20)
+									self:UNIT_AURA(self.unitId, nil, 20)
 								end
 								for e, f in pairs(InterruptAuras) do
 									for g, h in pairs(f) do
@@ -5614,7 +5693,7 @@ function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -
 	elseif maxExpirationTime ~= self.maxExpirationTime then -- this is a different (de)buff, so initialize the cooldown
 		self.maxExpirationTime = maxExpirationTime
 		if self.anchor ~= UIParent then
-			local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((self.frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and (12 + self.frame.frameLevel) or 0) -- must be dynamic, frame level changes all the time
+			local frameLevel = (self.anchor:GetParent() and self.anchor:GetParent():GetFrameLevel() or self.anchor:GetFrameLevel())+((self.frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) and 12 or 0)+self.frame.frameLevel -- must be dynamic, frame level changes all the time
 			if frameLevel < 0 then frameLevel = 0 end
 			self:GetParent():SetFrameLevel(frameLevel)
 			self:SetFrameLevel(frameLevel)
@@ -5656,7 +5735,7 @@ function LoseControl:UNIT_AURA(unitId, isFullUpdate, updatedAuras, typeUpdate) -
 			end
 			C_Timer.After(nextTimerUpdate, function()
 				if ((not self.unlockMode) and (self.lastTimeUnitAuraEvent == nil or self.lastTimeUnitAuraEvent < (GetTime() - 0.08))) then
-					self:UNIT_AURA(self.unitId, true, nil, 4)
+					self:UNIT_AURA(self.unitId, nil, 4)
 				end
 			end)
 		end
@@ -5685,7 +5764,7 @@ function LoseControl:PLAYER_TARGET_CHANGED()
 		self.unitGUID = UnitGUID(self.unitId)
 		self:CheckAnchor(self.frame.anchor=="PitBullUF")
 		if not self.unlockMode then
-			self:UNIT_AURA(self.unitId, true, nil, -11)
+			self:UNIT_AURA(self.unitId, nil, -11)
 		end
 	end
 end
@@ -5696,7 +5775,7 @@ function LoseControl:UNIT_TARGET(unitId)
 		self.unitGUID = UnitGUID(self.unitId)
 		self:CheckAnchor(self.frame.anchor=="PitBullUF")
 		if not self.unlockMode then
-			self:UNIT_AURA(self.unitId, true, nil, -12)
+			self:UNIT_AURA(self.unitId, nil, -12)
 		end
 	end
 end
@@ -5707,7 +5786,7 @@ function LoseControl:UNIT_PET(unitId)
 		self.unitGUID = UnitGUID(self.unitId)
 		self:CheckAnchor(self.frame.anchor=="PitBullUF")
 		if not self.unlockMode then
-			self:UNIT_AURA(self.unitId, true, nil, -13)
+			self:UNIT_AURA(self.unitId, nil, -13)
 		end
 	end
 end
@@ -5769,7 +5848,7 @@ function LoseControl:StopMoving()
 		frame.x or 0,
 		frame.y or 0
 	)
-	local PositionXEditBox, PositionYEditBox, FrameLevelEditBox, AnchorPointDropDown, AnchorIconPointDropDown, AnchorFrameStrataDropDown
+	local PositionXEditBox, PositionYEditBox, FrameLevelEditBox, AnchorPointDropDown, AnchorIconPointDropDown, AnchorFrameStrataDropDown, AnchorPositionDropDownAnchorLabel
 	if strfind((self.fakeUnitId or self.unitId), "party") then
 		if ((self.fakeUnitId or self.unitId) == UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanelpartyAnchorPositionPartyDropDown'])) then
 			PositionXEditBox = _G['LoseControlOptionsPanelpartyPositionXEditBox']
@@ -5778,6 +5857,7 @@ function LoseControl:StopMoving()
 			AnchorPointDropDown = _G['LoseControlOptionsPanelpartyAnchorPointDropDown']
 			AnchorIconPointDropDown = _G['LoseControlOptionsPanelpartyAnchorIconPointDropDown']
 			AnchorFrameStrataDropDown = _G['LoseControlOptionsPanelpartyAnchorFrameStrataDropDown']
+			AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelpartyAnchorPositionDropDownAnchorLabel']
 		end
 	elseif strfind((self.fakeUnitId or self.unitId), "raid") then
 		if ((self.fakeUnitId or self.unitId) == UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanelraidAnchorPositionRaidDropDown'])) then
@@ -5787,6 +5867,7 @@ function LoseControl:StopMoving()
 			AnchorPointDropDown = _G['LoseControlOptionsPanelraidAnchorPointDropDown']
 			AnchorIconPointDropDown = _G['LoseControlOptionsPanelraidAnchorIconPointDropDown']
 			AnchorFrameStrataDropDown = _G['LoseControlOptionsPanelraidAnchorFrameStrataDropDown']
+			AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanelraidAnchorPositionDropDownAnchorLabel']
 		end
 	elseif strfind((self.fakeUnitId or self.unitId), "nameplate") then
 		PositionXEditBox = _G['LoseControlOptionsPanelnameplatePositionXEditBox']
@@ -5804,13 +5885,15 @@ function LoseControl:StopMoving()
 		AnchorFrameStrataDropDown = _G['LoseControlOptionsPanel'..(self.fakeUnitId or self.unitId)..'AnchorFrameStrataDropDown']
 	end
 	if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+		if (AnchorPositionDropDownAnchorLabel) then
+			AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+		end
 		PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 		PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 		FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
 		if (frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) then
 			PositionXEditBox:Enable()
 			PositionYEditBox:Enable()
-			FrameLevelEditBox:Enable()
 		end
 		PositionXEditBox:SetCursorPosition(0)
 		PositionYEditBox:SetCursorPosition(0)
@@ -5833,9 +5916,6 @@ function LoseControl:StopMoving()
 	if (AnchorFrameStrataDropDown) then
 		UIDropDownMenu_Initialize(AnchorFrameStrataDropDown, AnchorFrameStrataDropDown.initialize)
 		UIDropDownMenu_SetSelectedValue(AnchorFrameStrataDropDown, frame.frameStrata or "AUTO")
-		if (frame.anchor ~= "Blizzard" or self.useCompactPartyFrames) then
-			UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-		end
 	end
 	if self.MasqueGroup then
 		self.MasqueGroup:ReSkin()
@@ -5844,8 +5924,8 @@ end
 
 -- Constructor method
 function LoseControl:new(unitId)
-	local o = CreateFrame("Cooldown", addonName .. unitId, nil, 'CooldownFrameTemplate') --, UIParent)
-	local op = CreateFrame("Button", addonName .. "ButtonParent" .. unitId, nil, 'ActionButtonTemplate')
+	local o = CreateFrame("Cooldown", addonName .. unitId, nil, 'CooldownFrameTemplate')
+	local op = CreateFrame("Button", addonName .. "ButtonParent" .. unitId, nil)
 	op:EnableMouse(false)
 	HideTheButtonDefaultSkin(op)
 
@@ -6069,7 +6149,12 @@ function Unlock:LoopFunction()
 		if (not self) then return end
 	end
 	if (mathabs(GetTime()-self.nextUnlockLoopTime) < 1) then
-		self:OnClick()
+		if (self:GetChecked()) then
+			self:SetChecked(false)
+			self:OnClick()
+			self:SetChecked(true)
+			self:OnClick()
+		end
 	end
 end
 function Unlock:OnClick()
@@ -6093,6 +6178,8 @@ function Unlock:OnClick()
 						v:SetSwipeTexture("Interface\\CHARACTERFRAME\\TempPortraitAlphaMaskSmall")
 						v:SetSwipeColor(0, 0, 0, frame.swipeAlpha*0.75)
 						v.iconInterruptBackground:SetTexture("Interface\\AddOns\\LoseControl\\Textures\\lc_interrupt_background_portrait.blp")
+						local ulscale = v:GetAbsoluteScaleRelativeToUIParent()
+						v.parent:SetScale(ulscale)
 					else
 						v.texture:SetTexture(v.textureicon)
 						v:SetSwipeColor(0, 0, 0, frame.swipeAlpha)
@@ -6103,7 +6190,7 @@ function Unlock:OnClick()
 						v:GetParent():SetFrameStrata(frame.frameStrata)
 						v:SetFrameStrata(frame.frameStrata)
 					end
-					local frameLevel = (v.anchor:GetParent() and v.anchor:GetParent():GetFrameLevel() or v.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or v.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+					local frameLevel = (v.anchor:GetParent() and v.anchor:GetParent():GetFrameLevel() or v.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or v.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 					if frameLevel < 0 then frameLevel = 0 end
 					v:GetParent():SetFrameLevel(frameLevel)
 					v:SetFrameLevel(frameLevel)
@@ -6122,6 +6209,7 @@ function Unlock:OnClick()
 					v:RegisterForDrag("LeftButton")
 					v:EnableMouse(true)
 				else
+					v.parent:SetScale(1)
 					v:EnableMouse(false)
 					v:RegisterForDrag()
 					v:SetMovable(false)
@@ -6141,6 +6229,8 @@ function Unlock:OnClick()
 				LCframeplayer2:SetSwipeTexture("Interface\\CHARACTERFRAME\\TempPortraitAlphaMaskSmall")
 				LCframeplayer2:SetSwipeColor(0, 0, 0, frame.swipeAlpha*0.75)
 				LCframeplayer2.iconInterruptBackground:SetTexture("Interface\\AddOns\\LoseControl\\Textures\\lc_interrupt_background_portrait.blp")
+				local ulscale = LCframeplayer2:GetAbsoluteScaleRelativeToUIParent()
+				LCframeplayer2.parent:SetScale(ulscale)
 			else
 				LCframeplayer2.texture:SetTexture(LCframeplayer2.textureicon)
 				LCframeplayer2:SetSwipeColor(0, 0, 0, frame.swipeAlpha)
@@ -6151,7 +6241,7 @@ function Unlock:OnClick()
 				LCframeplayer2:GetParent():SetFrameStrata(frame.frameStrata)
 				LCframeplayer2:SetFrameStrata(frame.frameStrata)
 			end
-			local frameLevel = (LCframeplayer2.anchor:GetParent() and LCframeplayer2.anchor:GetParent():GetFrameLevel() or LCframeplayer2.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard") and (12 + frame.frameLevel) or 0)
+			local frameLevel = (LCframeplayer2.anchor:GetParent() and LCframeplayer2.anchor:GetParent():GetFrameLevel() or LCframeplayer2.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard") and 12 or 0)+frame.frameLevel
 			if frameLevel < 0 then frameLevel = 0 end
 			LCframeplayer2:GetParent():SetFrameLevel(frameLevel)
 			LCframeplayer2:SetFrameLevel(frameLevel)
@@ -6162,6 +6252,7 @@ function Unlock:OnClick()
 			LCframeplayer2:SetCooldown( GetTime(), 30 )
 			LCframeplayer2:GetParent():SetAlpha(frame.alpha) -- hack to apply the alpha to the cooldown timer
 		else
+			LCframeplayer2.parent:SetScale(1)
 			LCframeplayer2.text:Hide()
 			LCframeplayer2:PLAYER_ENTERING_WORLD()
 		end
@@ -6170,6 +6261,7 @@ function Unlock:OnClick()
 		for k, v in pairs(LCframes) do
 			if not(strfind(k, "nameplate")) then
 				v.unlockMode = false
+				v.parent:SetScale(1)
 				v:EnableMouse(false)
 				v:RegisterForDrag()
 				v:SetMovable(false)
@@ -6178,6 +6270,7 @@ function Unlock:OnClick()
 			end
 		end
 		LCframeplayer2.unlockMode = false
+		LCframeplayer2.parent:SetScale(1)
 		LCframeplayer2.text:Hide()
 		LCframeplayer2:PLAYER_ENTERING_WORLD()
 	end
@@ -6457,12 +6550,12 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			icon.parent:SetParent(icon.anchor:GetParent() or UIParent or nil)
 			icon.defaultFrameStrata = icon:GetFrameStrata()
 			if frame.anchor ~= "None" then -- reset the frame position so it centers on the anchor frame
-				frame.point = (DBdefaults.frames[unitId] and frame.anchor == DBdefaults.frames[unitId].anchor and DBdefaults.frames[unitId].point) or nil
-				frame.relativePoint = (DBdefaults.frames[unitId] and frame.anchor == DBdefaults.frames[unitId].anchor and DBdefaults.frames[unitId].relativePoint) or nil
-				frame.frameStrata = (DBdefaults.frames[unitId] and frame.anchor == DBdefaults.frames[unitId].anchor and DBdefaults.frames[unitId].frameStrata) or nil
-				frame.frameLevel = (DBdefaults.frames[unitId] and frame.anchor == DBdefaults.frames[unitId].anchor and DBdefaults.frames[unitId].frameLevel) or 0
-				frame.x = (DBdefaults.frames[unitId] and frame.anchor == DBdefaults.frames[unitId].anchor and DBdefaults.frames[unitId].x) or nil
-				frame.y = (DBdefaults.frames[unitId] and frame.anchor == DBdefaults.frames[unitId].anchor and DBdefaults.frames[unitId].y) or nil
+				frame.point = (DBdefaults.frames[unitId] and (frame.anchor == DBdefaults.frames[unitId].anchor or v == "nameplate") and DBdefaults.frames[unitId].point) or nil
+				frame.relativePoint = (DBdefaults.frames[unitId] and (frame.anchor == DBdefaults.frames[unitId].anchor or v == "nameplate") and DBdefaults.frames[unitId].relativePoint) or nil
+				frame.frameStrata = (DBdefaults.frames[unitId] and (frame.anchor == DBdefaults.frames[unitId].anchor or v == "nameplate") and DBdefaults.frames[unitId].frameStrata) or nil
+				frame.frameLevel = (DBdefaults.frames[unitId] and (frame.anchor == DBdefaults.frames[unitId].anchor or v == "nameplate") and DBdefaults.frames[unitId].frameLevel) or 0
+				frame.x = (DBdefaults.frames[unitId] and (frame.anchor == DBdefaults.frames[unitId].anchor or v == "nameplate") and DBdefaults.frames[unitId].x) or nil
+				frame.y = (DBdefaults.frames[unitId] and (frame.anchor == DBdefaults.frames[unitId].anchor or v == "nameplate") and DBdefaults.frames[unitId].y) or nil
 			end
 			if frame.anchor == "Blizzard" and not(icon.useCompactPartyFrames) then
 				local portrSizeValue = 36
@@ -6530,7 +6623,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				frame.x or 0,
 				frame.y or 0
 			)
-			local PositionXEditBox, PositionYEditBox, FrameLevelEditBox, AnchorPointDropDown, AnchorIconPointDropDown, AnchorFrameStrataDropDown
+			local PositionXEditBox, PositionYEditBox, FrameLevelEditBox, AnchorPointDropDown, AnchorIconPointDropDown, AnchorFrameStrataDropDown, AnchorPositionDropDownAnchorLabel
 			if v == "party" then
 				if (unitId == UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanel'..v..'AnchorPositionPartyDropDown'])) then
 					PositionXEditBox = _G['LoseControlOptionsPanel'..v..'PositionXEditBox']
@@ -6539,6 +6632,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					AnchorPointDropDown = _G['LoseControlOptionsPanel'..v..'AnchorPointDropDown']
 					AnchorIconPointDropDown = _G['LoseControlOptionsPanel'..v..'AnchorIconPointDropDown']
 					AnchorFrameStrataDropDown = _G['LoseControlOptionsPanel'..v..'AnchorFrameStrataDropDown']
+					AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanel'..v..'AnchorPositionDropDownAnchorLabel']
 				end
 			elseif v == "raid" then
 				if (unitId == UIDropDownMenu_GetSelectedValue(_G['LoseControlOptionsPanel'..v..'AnchorPositionRaidDropDown'])) then
@@ -6548,6 +6642,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					AnchorPointDropDown = _G['LoseControlOptionsPanel'..v..'AnchorPointDropDown']
 					AnchorIconPointDropDown = _G['LoseControlOptionsPanel'..v..'AnchorIconPointDropDown']
 					AnchorFrameStrataDropDown = _G['LoseControlOptionsPanel'..v..'AnchorFrameStrataDropDown']
+					AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanel'..v..'AnchorPositionDropDownAnchorLabel']
 				end
 			elseif v == "nameplate" then
 				PositionXEditBox = _G['LoseControlOptionsPanelnameplatePositionXEditBox']
@@ -6565,17 +6660,18 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				AnchorFrameStrataDropDown = _G['LoseControlOptionsPanel'..v..'AnchorFrameStrataDropDown']
 			end
 			if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+				if (AnchorPositionDropDownAnchorLabel) then
+					AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+				end
 				PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 				PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 				FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
 				if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
 					PositionXEditBox:Enable()
 					PositionYEditBox:Enable()
-					FrameLevelEditBox:Enable()
 				else
 					PositionXEditBox:Disable()
 					PositionYEditBox:Disable()
-					FrameLevelEditBox:Disable()
 				end
 				PositionXEditBox:SetCursorPosition(0)
 				PositionYEditBox:SetCursorPosition(0)
@@ -6607,18 +6703,13 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			if (AnchorFrameStrataDropDown) then
 				UIDropDownMenu_Initialize(AnchorFrameStrataDropDown, AnchorFrameStrataDropDown.initialize)
 				UIDropDownMenu_SetSelectedValue(AnchorFrameStrataDropDown, frame.frameStrata or "AUTO")
-				if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
-					UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-				else
-					UIDropDownMenu_DisableDropDown(AnchorFrameStrataDropDown)
-				end
 				UIDropDownMenu_Initialize(AnchorDropDown, AnchorDropDown.initialize)
 			end
 			if (frame.frameStrata ~= nil) then
 				icon:GetParent():SetFrameStrata(frame.frameStrata)
 				icon:SetFrameStrata(frame.frameStrata)
 			end
-			local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+			local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 			if frameLevel < 0 then frameLevel = 0 end
 			icon:GetParent():SetFrameLevel(frameLevel)
 			icon:SetFrameLevel(frameLevel)
@@ -6632,7 +6723,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			end
 			if icon:GetEnabled() and not icon.unlockMode then
 				icon.maxExpirationTime = 0
-				icon:UNIT_AURA(icon.unitId, true, nil, 0)
+				icon:UNIT_AURA(icon.unitId, nil, 0)
 			end
 		end
 	end
@@ -6714,7 +6805,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				icon:GetParent():SetFrameStrata(frame.frameStrata)
 				icon:SetFrameStrata(frame.frameStrata)
 			end
-			local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+			local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 			if frameLevel < 0 then frameLevel = 0 end
 			icon:GetParent():SetFrameLevel(frameLevel)
 			icon:SetFrameLevel(frameLevel)
@@ -6723,9 +6814,16 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			end
 			if icon:GetEnabled() and not icon.unlockMode then
 				icon.maxExpirationTime = 0
-				icon:UNIT_AURA(icon.unitId, true, nil, 0)
+				icon:UNIT_AURA(icon.unitId, nil, 0)
 			end
 		end
+	end
+
+	local AnchorPositionDropDownAnchorLabel
+	if v == "party" or v == "raid" then
+		AnchorPositionDropDownAnchorLabel = OptionsPanelFrame.container:CreateFontString(O..v.."AnchorPositionDropDownAnchorLabel", "ARTWORK", "GameFontHighlightSmall")
+		AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..")")
+		AnchorPositionDropDownAnchorLabel:SetJustifyH("LEFT")
 	end
 
 	local AnchorPositionPartyDropDown
@@ -6740,18 +6838,20 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			local PositionXEditBox = _G['LoseControlOptionsPanel'..v..'PositionXEditBox']
 			local PositionYEditBox = _G['LoseControlOptionsPanel'..v..'PositionYEditBox']
 			local FrameLevelEditBox = _G['LoseControlOptionsPanel'..v..'FrameLevelEditBox']
+			local AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanel'..v..'AnchorPositionDropDownAnchorLabel']
 			if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+				if (AnchorPositionDropDownAnchorLabel) then
+					AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+				end
 				PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 				PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 				FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
 				if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
 					PositionXEditBox:Enable()
 					PositionYEditBox:Enable()
-					FrameLevelEditBox:Enable()
 				else
 					PositionXEditBox:Disable()
 					PositionYEditBox:Disable()
-					FrameLevelEditBox:Disable()
 				end
 				PositionXEditBox:SetCursorPosition(0)
 				PositionYEditBox:SetCursorPosition(0)
@@ -6786,11 +6886,6 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			if (AnchorFrameStrataDropDown) then
 				UIDropDownMenu_Initialize(AnchorFrameStrataDropDown, AnchorFrameStrataDropDown.initialize)
 				UIDropDownMenu_SetSelectedValue(AnchorFrameStrataDropDown, frame.frameStrata or "AUTO")
-				if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
-					UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-				else
-					UIDropDownMenu_DisableDropDown(AnchorFrameStrataDropDown)
-				end
 				UIDropDownMenu_Initialize(AnchorPositionPartyDropDown, AnchorPositionPartyDropDown.initialize)
 			end
 		end
@@ -6806,18 +6901,20 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			local PositionXEditBox = _G['LoseControlOptionsPanel'..v..'PositionXEditBox']
 			local PositionYEditBox = _G['LoseControlOptionsPanel'..v..'PositionYEditBox']
 			local FrameLevelEditBox = _G['LoseControlOptionsPanel'..v..'FrameLevelEditBox']
+			local AnchorPositionDropDownAnchorLabel = _G['LoseControlOptionsPanel'..v..'AnchorPositionDropDownAnchorLabel']
 			if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+				if (AnchorPositionDropDownAnchorLabel) then
+					AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+				end
 				PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 				PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 				FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
 				if (frame.anchor ~= "Blizzard") then
 					PositionXEditBox:Enable()
 					PositionYEditBox:Enable()
-					FrameLevelEditBox:Enable()
 				else
 					PositionXEditBox:Disable()
 					PositionYEditBox:Disable()
-					FrameLevelEditBox:Disable()
 				end
 				PositionXEditBox:SetCursorPosition(0)
 				PositionYEditBox:SetCursorPosition(0)
@@ -6852,11 +6949,6 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			if (AnchorFrameStrataDropDown) then
 				UIDropDownMenu_Initialize(AnchorFrameStrataDropDown, AnchorFrameStrataDropDown.initialize)
 				UIDropDownMenu_SetSelectedValue(AnchorFrameStrataDropDown, frame.frameStrata or "AUTO")
-				if (frame.anchor ~= "Blizzard") then
-					UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-				else
-					UIDropDownMenu_DisableDropDown(AnchorFrameStrataDropDown)
-				end
 				UIDropDownMenu_Initialize(AnchorPositionRaidDropDown, AnchorPositionRaidDropDown.initialize)
 			end
 		end
@@ -7077,7 +7169,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					icon:GetParent():SetFrameStrata(frame.frameStrata)
 					icon:SetFrameStrata(frame.frameStrata)
 				end
-				local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+				local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 				if frameLevel < 0 then frameLevel = 0 end
 				icon:GetParent():SetFrameLevel(frameLevel)
 				icon:SetFrameLevel(frameLevel)
@@ -7104,7 +7196,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				val = mathfloor(val+0.5)
 				self:SetText(val)
 				frame.frameLevel = val
-				local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and (12 + frame.frameLevel) or 0)
+				local frameLevel = (icon.anchor:GetParent() and icon.anchor:GetParent():GetFrameLevel() or icon.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) and 12 or 0)+frame.frameLevel
 				if frameLevel < 0 then frameLevel = 0 end
 				icon:GetParent():SetFrameLevel(frameLevel)
 				icon:SetFrameLevel(frameLevel)
@@ -7244,7 +7336,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LCframes[frame].maxExpirationTime = 0
 				LCframes[frame]:RegisterUnitEvents(enable)
 				if enable and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7259,7 +7351,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LCframes[frame].maxExpirationTime = 0
 				LCframes[frame]:RegisterUnitEvents(enable)
 				if enable and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7277,7 +7369,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LCframes[frame].maxExpirationTime = 0
 				LCframes[frame]:RegisterUnitEvents(enable)
 				if enable and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7304,7 +7396,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LCframes[frame].maxExpirationTime = 0
 				LCframes[frame]:RegisterUnitEvents(enable)
 				if enable and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7320,7 +7412,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LCframes[v].maxExpirationTime = 0
 			LCframes[v]:RegisterUnitEvents(enable)
 			if enable and not LCframes[v].unlockMode then
-				LCframes[v]:UNIT_AURA(LCframes[v].unitId, true, nil, 0)
+				LCframes[v]:UNIT_AURA(LCframes[v].unitId, nil, 0)
 			end
 		end)
 	end
@@ -7335,7 +7427,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LCframes[v].maxExpirationTime = 0
 			LCframes[v]:RegisterUnitEvents(enable)
 			if enable and not LCframes[v].unlockMode then
-				LCframes[v]:UNIT_AURA(LCframes[v].unitId, true, nil, 0)
+				LCframes[v]:UNIT_AURA(LCframes[v].unitId, nil, 0)
 			end
 		end)
 	end
@@ -7350,7 +7442,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LCframes[v].maxExpirationTime = 0
 			LCframes[v]:RegisterUnitEvents(enable)
 			if enable and not LCframes[v].unlockMode then
-				LCframes[v]:UNIT_AURA(LCframes[v].unitId, true, nil, 0)
+				LCframes[v]:UNIT_AURA(LCframes[v].unitId, nil, 0)
 			end
 		end)
 	end
@@ -7365,7 +7457,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LCframes[v].maxExpirationTime = 0
 			LCframes[v]:RegisterUnitEvents(enable)
 			if enable and not LCframes[v].unlockMode then
-				LCframes[v]:UNIT_AURA(LCframes[v].unitId, true, nil, 0)
+				LCframes[v]:UNIT_AURA(LCframes[v].unitId, nil, 0)
 			end
 		end)
 	end
@@ -7447,9 +7539,6 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					end)
 				end
 			end
-			for _, w in ipairs(LCframes[frame].iconQueueInterruptList) do
-				w:SetAlpha(value / 100)
-			end
 			if (frame == "player") then
 				LoseControlDB.frames.player2.interruptMiniIconsAlpha = value / 100 -- the real alpha value
 				local i = 1
@@ -7466,9 +7555,6 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 							end
 						end)
 					end
-				end
-				for _, w in ipairs(LCframeplayer2.iconQueueInterruptList) do
-					w:SetAlpha(value / 100)
 				end
 			end
 		end
@@ -7769,7 +7855,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LoseControlDB.frames[frame].categoriesEnabled.interrupt.friendly = self:GetChecked()
 			LCframes[frame].maxExpirationTime = 0
 			if LoseControlDB.frames[frame].enabled and not LCframes[frame].unlockMode then
-				LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+				LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 			end
 		end
 	end)
@@ -7787,7 +7873,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LoseControlDB.frames[frame].categoriesEnabled.interrupt.enemy = self:GetChecked()
 				LCframes[frame].maxExpirationTime = 0
 				if LoseControlDB.frames[frame].enabled and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7810,7 +7896,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LoseControlDB.frames[frame].categoriesEnabled.buff.friendly[cat] = self:GetChecked()
 				LCframes[frame].maxExpirationTime = 0
 				if LoseControlDB.frames[frame].enabled and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7831,7 +7917,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LoseControlDB.frames[frame].categoriesEnabled.debuff.friendly[cat] = self:GetChecked()
 				LCframes[frame].maxExpirationTime = 0
 				if LoseControlDB.frames[frame].enabled and not LCframes[frame].unlockMode then
-					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+					LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 				end
 			end
 		end)
@@ -7849,7 +7935,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					LoseControlDB.frames[frame].categoriesEnabled.buff.enemy[cat] = self:GetChecked()
 					LCframes[frame].maxExpirationTime = 0
 					if LoseControlDB.frames[frame].enabled and not LCframes[frame].unlockMode then
-						LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+						LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 					end
 				end
 			end)
@@ -7868,7 +7954,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					LoseControlDB.frames[frame].categoriesEnabled.debuff.enemy[cat] = self:GetChecked()
 					LCframes[frame].maxExpirationTime = 0
 					if LoseControlDB.frames[frame].enabled and not LCframes[frame].unlockMode then
-						LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+						LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 					end
 				end
 			end)
@@ -7886,7 +7972,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LoseControlDB.frames.player2.categoriesEnabled.interrupt.friendly = self:GetChecked()
 			LCframeplayer2.maxExpirationTime = 0
 			if LCframeplayer2.frame.enabled and not LCframeplayer2.unlockMode then
-				LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, 0)
+				LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, 0)
 			end
 		end)
 		tblinsert(CategoriesCheckButtonsPlayer2, { frame = FriendlyInterruptPlayer2, auraType = "interrupt", reaction = "friendly", categoryType = "Interrupt", anchorPos = CategoryEnabledInterruptLabel, xPos = 310, yPos = 5 })
@@ -7898,7 +7984,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LoseControlDB.frames.player2.categoriesEnabled.buff.friendly[cat] = self:GetChecked()
 				LCframeplayer2.maxExpirationTime = 0
 				if LCframeplayer2.frame.enabled and not LCframeplayer2.unlockMode then
-					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, 0)
+					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, 0)
 				end
 			end)
 			tblinsert(CategoriesCheckButtonsPlayer2, { frame = FriendlyBuffPlayer2, auraType = "buff", reaction = "friendly", categoryType = cat, anchorPos = CategoriesLabels[cat], xPos = 310, yPos = 5 })
@@ -7909,7 +7995,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				LoseControlDB.frames.player2.categoriesEnabled.debuff.friendly[cat] = self:GetChecked()
 				LCframeplayer2.maxExpirationTime = 0
 				if LCframeplayer2.frame.enabled and not LCframeplayer2.unlockMode then
-					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, 0)
+					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, 0)
 				end
 			end)
 			tblinsert(CategoriesCheckButtonsPlayer2, { frame = FriendlyDebuffPlayer2, auraType = "debuff", reaction = "friendly", categoryType = cat, anchorPos = CategoriesLabels[cat], xPos = 419, yPos = 5 })
@@ -8016,7 +8102,6 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 					if (frame.anchor ~= "Blizzard") then
 						PositionXEditBox:Enable()
 						PositionYEditBox:Enable()
-						FrameLevelEditBox:Enable()
 					end
 					PositionXEditBox:SetCursorPosition(0)
 					PositionYEditBox:SetCursorPosition(0)
@@ -8042,15 +8127,12 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				if (AnchorFrameStrataDropDown) then
 					UIDropDownMenu_Initialize(AnchorFrameStrataDropDown, AnchorFrameStrataDropDown.initialize)
 					UIDropDownMenu_SetSelectedValue(AnchorFrameStrataDropDown, "AUTO")
-					if (frame.anchor ~= "Blizzard") then
-						UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-					end
 				end
 				if (frame.frameStrata ~= nil) then
 					LCframes.player:GetParent():SetFrameStrata(frame.frameStrata)
 					LCframes.player:SetFrameStrata(frame.frameStrata)
 				end
-				local frameLevel = (LCframes.player.anchor:GetParent() and LCframes.player.anchor:GetParent():GetFrameLevel() or LCframes.player.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard") and (12 + frame.frameLevel) or 0)
+				local frameLevel = (LCframes.player.anchor:GetParent() and LCframes.player.anchor:GetParent():GetFrameLevel() or LCframes.player.anchor:GetFrameLevel())+((frame.anchor ~= "Blizzard") and 12 or 0)+frame.frameLevel
 				if frameLevel < 0 then frameLevel = 0 end
 				LCframes.player:GetParent():SetFrameLevel(frameLevel)
 				LCframes.player:SetFrameLevel(frameLevel)
@@ -8059,7 +8141,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				end
 			end
 			if enable and not LCframeplayer2.unlockMode then
-				LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, 0)
+				LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, 0)
 			elseif Unlock:GetChecked() then
 				Unlock:OnClick()
 			end
@@ -8086,7 +8168,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				AnchorPositionPartyDropDown:OnClick()
 			end
 			if enable and not LCframes.partyplayer.unlockMode then
-				LCframes.partyplayer:UNIT_AURA(LCframes.partyplayer.unitId, true, nil, 0)
+				LCframes.partyplayer:UNIT_AURA(LCframes.partyplayer.unitId, nil, 0)
 			elseif Unlock:GetChecked() then
 				Unlock:OnClick()
 			end
@@ -8135,6 +8217,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 		PositionEditBoxLabel:SetVertexColor(NORMAL_FONT_COLOR:GetRGB())
 		AdditionalOptionsLabel:SetVertexColor(NORMAL_FONT_COLOR:GetRGB())
 		InterruptBackgroundColorLabel:SetVertexColor(NORMAL_FONT_COLOR:GetRGB())
+		if AnchorPositionDropDownAnchorLabel then AnchorPositionDropDownAnchorLabel:SetVertexColor(WHITE_FONT_COLOR:GetRGB()) end
 		BlizzardOptionsPanel_Slider_Enable(SizeSlider)
 		BlizzardOptionsPanel_Slider_Enable(AlphaSlider)
 		BlizzardOptionsPanel_Slider_Enable(AlphaSliderBackgroundInterrupt)
@@ -8177,12 +8260,11 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
 				PositionXEditBox:Enable()
 				PositionYEditBox:Enable()
-				FrameLevelEditBox:Enable()
 			else
 				PositionXEditBox:Disable()
 				PositionYEditBox:Disable()
-				FrameLevelEditBox:Disable()
 			end
+			FrameLevelEditBox:Enable()
 		end
 		if (AnchorPointDropDown) then
 			if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
@@ -8198,13 +8280,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				UIDropDownMenu_DisableDropDown(AnchorIconPointDropDown)
 			end
 		end
-		if (AnchorFrameStrataDropDown) then
-			if (frame.anchor ~= "Blizzard" or icon.useCompactPartyFrames) then
-				UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown)
-			else
-				UIDropDownMenu_DisableDropDown(AnchorFrameStrataDropDown)
-			end
-		end
+		if AnchorFrameStrataDropDown then UIDropDownMenu_EnableDropDown(AnchorFrameStrataDropDown) end
 	end
 
 	local function DisableInterfaceFrames()
@@ -8240,6 +8316,7 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 		PositionEditBoxLabel:SetVertexColor(GRAY_FONT_COLOR:GetRGB())
 		AdditionalOptionsLabel:SetVertexColor(GRAY_FONT_COLOR:GetRGB())
 		InterruptBackgroundColorLabel:SetVertexColor(GRAY_FONT_COLOR:GetRGB())
+		if AnchorPositionDropDownAnchorLabel then AnchorPositionDropDownAnchorLabel:SetVertexColor(GRAY_FONT_COLOR:GetRGB()) end
 		BlizzardOptionsPanel_Slider_Disable(SizeSlider)
 		BlizzardOptionsPanel_Slider_Disable(AlphaSlider)
 		BlizzardOptionsPanel_Slider_Disable(AlphaSliderBackgroundInterrupt)
@@ -8316,14 +8393,14 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 			LCframes[frame].maxExpirationTime = 0
 			LCframes[frame]:RegisterUnitEvents(enable)
 			if enable and not LCframes[frame].unlockMode then
-				LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, true, nil, 0)
+				LCframes[frame]:UNIT_AURA(LCframes[frame].unitId, nil, 0)
 			end
 			if (frame == "player") then
 				LoseControlDB.frames.player2.enabled = enabled and LoseControlDB.duplicatePlayerPortrait
 				LCframeplayer2.maxExpirationTime = 0
 				LCframeplayer2:RegisterUnitEvents(enabled and LoseControlDB.duplicatePlayerPortrait)
 				if LCframeplayer2.frame.enabled and not LCframeplayer2.unlockMode then
-					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, 0)
+					LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, 0)
 				end
 			end
 		end
@@ -8354,6 +8431,13 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 	PositionXEditBox:SetPoint("TOPLEFT", PositionEditBoxLabel, "BOTTOMLEFT", 27, -3)
 	PositionYEditBoxLabel:SetPoint("TOPLEFT", PositionEditBoxLabel, "BOTTOMLEFT", 90, -9)
 	PositionYEditBox:SetPoint("TOPLEFT", PositionEditBoxLabel, "BOTTOMLEFT", 107, -3)
+	if AnchorPositionDropDownAnchorLabel then
+		if (v == "party" and AnchorPositionPartyDropDown) then
+			AnchorPositionDropDownAnchorLabel:SetPoint("LEFT", AnchorPositionPartyDropDown, "RIGHT", 113, 3)
+		elseif (v == "raid" and AnchorPositionRaidDropDown) then
+			AnchorPositionDropDownAnchorLabel:SetPoint("LEFT", AnchorPositionRaidDropDown, "RIGHT", 113, 3)
+		end
+	end
 	if AnchorPositionPartyDropDown then AnchorPositionPartyDropDown:SetPoint("RIGHT", PositionYEditBox, "RIGHT", 30, 0) end
 	if AnchorPositionRaidDropDown then AnchorPositionRaidDropDown:SetPoint("RIGHT", PositionYEditBox, "RIGHT", 30, 0) end
 	AnchorPointDropDownLabel:SetPoint("TOPLEFT", PositionEditBoxLabel, "BOTTOMLEFT", 10, -37)
@@ -8477,6 +8561,9 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 		AlphaSliderSwipeCooldown.editbox:SetCursorPosition(0)
 		ColorPickerBackgroundInterrupt.texture:UpdateColor(frame)
 		if (PositionXEditBox and PositionYEditBox and FrameLevelEditBox) then
+			if (AnchorPositionDropDownAnchorLabel) then
+				AnchorPositionDropDownAnchorLabel:SetText("("..L["AnchorPositionDropDownAnchorLabel"]..(type(frame.anchor)=="string" and frame.anchor or ("["..type(frame.anchor).."]"))..")")
+			end
 			PositionXEditBox:SetText(mathfloor((frame.x or 0)+0.5))
 			PositionYEditBox:SetText(mathfloor((frame.y or 0)+0.5))
 			FrameLevelEditBox:SetText(mathfloor((frame.frameLevel or 0)+0.5))
@@ -8492,7 +8579,8 @@ for _, v in ipairs({ "player", "pet", "target", "targettarget", "party", "raid",
 				AddItem(AnchorDropDown, L["None"], "None")
 				AddItem(AnchorDropDown, "Blizzard", "BlizzardRaidFrames")
 			elseif strfind(unitId, "nameplate") then
-				AddItem(AnchorDropDown, "Blizzard", "BlizzardNameplates")
+				AddItem(AnchorDropDown, "BlizzardNP", "BlizzardNameplates")
+				AddItem(AnchorDropDown, "BlizzardNP_UF", "BlizzardNameplatesUnitFrame")
 			else
 				AddItem(AnchorDropDown, L["None"], "None")
 				AddItem(AnchorDropDown, "Blizzard", "Blizzard")
@@ -8767,6 +8855,10 @@ function SlashCmd:lock()
 	print(addonName, "locked.")
 end
 function SlashCmd:unlock()
+	if (Unlock:GetChecked()) then
+		Unlock:SetChecked(false)
+		Unlock:OnClick()
+	end
 	Unlock:SetChecked(true)
 	Unlock:OnClick()
 	print(addonName, "unlocked.")
@@ -8781,14 +8873,14 @@ function SlashCmd:enable(unitId)
 		end
 		if enabled and not LCframes[unitId].unlockMode then
 			LCframes[unitId].maxExpirationTime = 0
-			LCframes[unitId]:UNIT_AURA(LCframes[unitId].unitId, true, nil, 0)
+			LCframes[unitId]:UNIT_AURA(LCframes[unitId].unitId, nil, 0)
 		end
 		if (unitId == "player") then
 			LoseControlDB.frames.player2.enabled = LoseControlDB.duplicatePlayerPortrait
 			LCframeplayer2:RegisterUnitEvents(LoseControlDB.duplicatePlayerPortrait)
 			if LCframeplayer2.frame.enabled and not LCframeplayer2.unlockMode then
 				LCframeplayer2.maxExpirationTime = 0
-				LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, true, nil, 0)
+				LCframeplayer2:UNIT_AURA(LCframeplayer2.unitId, nil, 0)
 			end
 		elseif (unitId == "partyplayer") then
 			LoseControlDB.showPartyplayerIcon = true

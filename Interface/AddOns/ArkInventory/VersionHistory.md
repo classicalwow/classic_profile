@@ -1,4 +1,250 @@
-﻿# 3.09.67 (05-JUN-2022)
+﻿# 3.10.15 (12-FEB-2023)
+ - changed - (retail) toc updated to 100007
+ - removed - event for WEAR_EQUIPMENT_SET
+ 
+# 3.10.14 (20-JAN-2023)
+ - fixed - rule function `itemstat( )`
+ - fixed - (wrath) default bank and vault windows opening due to `PlayerInteractionFrameManager` being added to wrath
+ - changed - (wrath) toc updated to 30401
+ - added - rule function `itemstatactive( )`
+ - fixed - issue with grey item transmog detection code
+
+# 3.10.13 (08-JAN-2023)
+ - changed - profession rank icons: using the internal icons
+ - changed - profession rank icons: size range adjusted
+ - fixed - quest bucket timer should now update the icons once the value is reached, and not wait for the next window refresh
+ - added - config > settings > designs > items > general > tint unwearble (default is disabled)
+ - changed - debug output now goes to its own window (the output text is copyable)
+ - moved - debug options are now under config > advanced > debug
+ - changed - the enable debug option will now persist though reloads
+ - added - keybinding for toggling the debug window.  you can also open it from the config.
+ - changed - dragonriding zone restrictions changed to check for spell usage as there were too many instanced zones you could use them in.  so long as blizzard sets the usability of the spell correctly its more reliable.
+ - added - "you are in the wrong zone" to acceptable red text to cater for shadowlands legendarys that are actually wearable/usable
+ - fixed - issues with some of the object correction data.  cosmetic, would have shown the wrong type/subtype text in the debug menu
+ - changed - the changer frame for the vault can no longer be hidden (as its the only way to change tabs) - it ignores the hide changer option from the profile
+ - updated - CallBackHandler embedded library
+ - fixed - item counts getting added to some tooltips
+ - fixed - reputation standing text and values for the new factions
+ - updated - categorised some items
+ - changed - currency update bucket timer default increased from 1 to 3 seconds
+ - fixed - mount summon in the dragon isles with druid travel form enabled
+ - workaround - acknowledged the reagent bag tutorial so its popup wont open - if its already open then you'll need another reload for it to go away.
+ - fixed - battle pet quality borders
+ - fixed - (possibly) framelevel issue
+ - fixed - issue with GetContainerNumFreeSlots
+
+# 3.10.12 (05-DEC-2022)
+ - fixed - rule function quality( )
+ - fixed - upgrade code
+ 
+# 3.10.11 (04-DEC-2022)
+ - added - blueprint config option to main menu
+ - fixed - removed some debug output
+ - fixed - summon mount keybinding when travel form is enabled will now correctly summon a dragonriding mount when on the dragon isles
+ - fixed - wrong item quality was being saved during scanning
+ - changed - quality data is no longer saved and is retrieved when required instead
+ - fixed - missing or changed blizzard events will no longer cause errors and will generate a warning instead
+ - changed - right clicking on the LDB mount object now opens the mount config instead.  there were too many mounts for the menu system to be viable.
+ - added - mount config option to main menu
+ - added - dragonriding option in config to swap the air/land mount selection when in the dragon isles.  disabled by default.  these are per character settings.
+ - fixed - (wrath/classic) issue with tooltip unusable red text detection
+ - fixed - issue with item cache clear code
+ - fixed - dragonriding mounts in azure span
+ - changed - the default has been changed to false for pre-loading the bag and bank data (it appears to be causing some weird issues)
+ - updated - categorised some items
+
+# 3.10.10 (30-NOV-2022)
+ - fixed - when on the dragon isles your land mount will be used by default, to use a dragonriding mount press the shift button and the summon mount keybinding
+ - changed - the arkinventory icons on the default bag/bank/vault frames will now re-enable arkinventory if you have disabled it
+ - added - config > general > actions > mail > enable.  defaults to false
+ - added - config > general > actions > mail > manual.  defaults to true
+ - added - config > general > actions > vendor > enable.  defaults to false
+ - added - config > general > actions > vendor > manual.  defaults to true.
+ - added - profession tool items are now scanned, and show up in item counts
+ - fixed - toybox filters are now restored correctly after scanning
+ - changed - (dragonflight) scan tooltip functionality replaced with the new tooltip information functions
+ - fixed - (dragonflight) ItemRefTooltip should no longer disappear when the item counts refresh
+ - fixed - (classic/wrath) C_TooltipInfo issue
+ - changed - QUEST events should no longer trigger a forced refresh and will instead only set the bag window to refresh at the next update.
+ - fixed - right clicking on a no value junk item should now delete it when at a vendor/merchant
+ - added - config > profiles > controls > location > pre-load.  pre loads item data and builds the window in the background for a faster first open.  bag and bank enabled by default.
+
+# 3.10.09 (24-NOV-2022)
+ - fixed - issue with rule functions wearble/unwearble and cloaks
+ - restored - config > actions (was accidentally hidden)
+ - fixed - issue with config transmog secondary option hiding the wrong sub options
+ - restored - xml for ArkScanTooltipTemplate, OnTooltipAddMoney and OnTooltipCleared re-added both as several hundred individual MoneyFrames were being added to the scan tooltip just on entering the world.  this was the probable cause for the lag and ui crashes.
+ - removed - PLAYER_AVG_ITEM_LEVEL_UPDATE event
+ - removed - rescans should no longger trigger a full window refresh (they already update the items)
+ - added - preloading item info from the bag and bank to make their initial opens are faster.  will not happen if you enter while in combat.  opening the window before this has completed will abort the preload.
+ - added - preloading the bag and bank windows so their initial opens are faster.  will not happen if you enter while in combat.  opening the window before this has completed will abort the preload.
+ - changed - the rules module no longer triggers full window rebuilds on enable (mucks up the preload)
+ - removed - PLAYER_INTERACTION_MANAGER_FRAME_SHOW and PLAYER_INTERACTION_MANAGER_FRAME_HIDE events
+ - removed - event UNIT_INVENTORY_CHANGED
+ - changed - added yielding to every scan to alleviate any potential sources of lag
+ - changed - added extra yielding to the window draw functions
+ - changed - enforced a 25ms yield timer
+ - fixed - edit mode item menu for empty slots should now show the type of slot, not "retrieving item data"
+ - added - icons on the bag, combined bag, bank, and guild bank, frames to swap to ArkInventory control
+ - added - location sub menu to switch window back to blizzard control.
+ - fixed - issue with the conduit overlay when it had no quality set
+ 
+# 3.10.08 (24-NOV-2022)
+ - no longer available
+ 
+# 3.10.07 (19-NOV-2022)
+ - fixed - issue with pressing ESCAPE to close windows (like the map) and getting blocked when in combat
+ - added - category name as a new sort method key.  only applies to custom categories and rules.  system categories will sort by id as they have no name.
+ - added - mail action options - config > general > actions > mail
+ - fixed - keybindings are back in their own section and should not cause any taint.
+ - fixed - empty reagent bank slots should be in the correct category again
+ - fixed - should no longer generate a second frame open causing issues for other mods (like tsm) at the auction house
+ - updated - config > settings > designs > items > cooldown > on window open.  cooldowns will no longer automatically show.  you will need to enable this option and then they will update when you close/open the window.  triggering off the cooldown events generated too much lag especially in large crowds
+ - fixed - issue with mailbox scanning
+ - fixed - battlepet tooltips showing during scanning
+ - fixed - battlepets in the vault
+ - fixed - opening the config before the mount data was ready
+ - fixed - config not opening from 3.10.06
+
+# 3.10.06 (19-NOV-2022)
+ - no longer available
+ 
+# 3.10.05 (16-NOV-2022)
+ - changed - (retail) toc updated to 100002
+ - fixed - issue with bucket events that get renamed
+ - fixed - map ids for some old zone mounts
+ - added - zone restrictions for mounts so they dont get called when in the wrong zone
+ - updated - pets and mounts to 10.0.0
+ - fixed - item cooldown numbers should display properly (if you have it enabled at the blizzard level)
+ - added - config option to show numbers on the cooldown (it just lets you toggle the blizzard global cvar which is stored by the game, not by this mod)
+ - added - (workaround) a cooldown object has been directly included in the item template as it appears to not get added to the first few item objects that are created from it.
+ - changed - categoryset internal data structure
+ - added - one action can be assigned to each category/rule in a categoryset.  actions can be set to disabled, automatic, or manual
+ - changed - auto sell (junk) renamed to vendor and made an action
+ - changed - the junk sell keybinding has been renamed to manual action, and it runs all of the manual actions depending on where you are at the time.
+ - added - mail send added as a category action. you can select from any character you already have in arkinventory, or you can manually enter anything else. there are currently no options and a lot of debug output for it at the moment just to make sure its doing what its meant to
+ - changed - when at a vendor right clicking on a "no sell price" item that has a junk icon will now delete it.  the config > general > junk > delete option must be enabled for this to work.
+ - fixed - issue with external junk addons
+ - updated - profile import and export to handle the new categoryset structure.  old exports will not work for the moment
+ - changed - action data is removed from both profile exports and imports to ensure that people dont end up vendoring or mailing things off to players without them knowing
+ - fixed - BAG_UPDATE_COOLDOWN no longer provides a bag id, and no other events (that arent as prolific) are available to trigger cooldowns, so it may cause a refresh (not redraw) every second
+ - fixed - the one off (per enable) warning message if your profile is using a blueprint that no longer exists should now only trigger on valid locations for your game client
+ - updated - blueprint options in the config will now show if the currently selected option has been deleted instead of showing the default, so that you can see it and change it more easily
+ - fixed - issues with uploads to wago
+ - fixed - quest border and bang should now display (if enabled) for items that start a quest
+ - removed - workaround for taint from interactionframe.  was actually taint from the keybindings
+ - fixed - (mostly) various caged battlepet (and tooltip) issues in the vault, inbox, inventory (bank bag 0).  battlepets in the vault will show a pet cage for the time being until i can work out a way to get at that data.
+ - note - the stack size for a lot of older items has increased to 1000, please restack/cleanup to gain more free slots
+
+# 3.10.04 (04-NOV-2022)
+ - added - rule function `wearable( )`
+ - added - rule function `unwearable( )`
+ - fixed - tooltip text in edit mode for re-assignment to the default category
+ - changed - BAG_UPDATE timer reduced from 0.5 to 0.3 seconds
+ - workaround - added a config > advanced > workarounds > player interaction option to disable overriding the PlayerInteractionFrameManager.  The down side is that the default Bank and Vault frames will also open, but there should be no taint any more.
+
+# 3.10.03 (29-OCT-2022)
+ - fixed - ArkInventory.API.BlizzardBagIdToInternalId
+ - fixed - (wrath/classic) the first bank bag was being treated like a reagent bag
+ - fixed - some of the restack ignore bag options were being ignored due to a code issue
+ - fixed - xml for ArkScanTooltipTemplate, OnTooltipAddMoney (deprecated in beta) and OnTooltipCleared removed and are now cleared in OnLoad if they exist.  this should fix the lag issues.
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1634 (dragonflight) usable rule function and tinting.  tooltips are using a new red color
+ 
+# 3.10.02 (27-OCT-2022)
+ - fixed - upgrade icon should now display if using pawn
+ - changed - object data that cannot be retrieved after 10 attempts is marked as dead (should stop constant requests for unknown items)
+ - fixed - constant attempts to scan the mailbox if you had a battlepet in there
+ - fixed - (dragonflight) guild bank frame open/close now triggered off the player interaction function - blizzard removed the events)
+ - changed - (dragonflight) bank frame open/close now triggered off the player interaction function instead of the events
+ - changed - (dragonflight) mailbox frame open/close now triggered off the player interaction function instead of the events
+ - changed - (dragonflight) auction frame open/close now triggered off the player interaction function instead of the events
+ - changed - (dragonflight) void storage frame open/close now triggered off the player interaction function instead of the events
+ - changed - (dragonflight) player trade frame open/close now triggered off the player interaction function instead of the events
+ - changed - (dragonflight) transmog frame open/close now triggered off the player interaction function instead of the events
+ - changed - (dragonflight) merchant/vendor frame open/close now triggered off the player interaction function instead of the events
+ - updated - categorised some items
+ 
+# 3.10.01 (26-OCT-2022)
+ - changed - wearing location will no longer update while in combat
+ - changed - quiver and ammo bag slots will no longer update while in combat (hunters may still have issues with ammo in normal bags)
+ - fixed - alignment of the quest border texture
+ - fixed - alignment of the new item glow texture
+ - fixed - money display position in status window
+ - fixed - backpack tokens should now align properly when the empty text or money frames are not enabled
+ - fixed - wearing location should now update on trinket/ring changes
+ - changed - the status bar will now increase/decrease in height to match the selected font size
+ - changed - backpack tokens are now centered and will grow to fit the amount of available space - if there are too many tokens to fit within the space they will move to the next line down
+ - fixed - bag type and slot count issues due to blizzard changing the API
+ - fixed - removed xml OnTooltipAddMoney from ArkScanTooltipTemplate (appears to have been deprecated)
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1616 - bag types and some category names are missing/invalid.  swapped to Enum.xxxxx due to removal of all LE_ITEM_zzzzz globals, which are used to find bag types and category names, from the latest beta
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1615 - summon mount secure action button / keybind
+ - added - config > settings > item > status icons / overlays > profession quality - options for displaying as a number, and setting colour
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1507 - profession based set requirement failures should no longer be seen as not being unable to wear the actual item
+ - added - a one off (per enable) warning message if your profile is using a blueprint that no longer exists
+ - fixed - cursor not getting reset when leaving an item
+ - fixed - the normal action cursors should no longer show when in edit mode
+ - fixed - (dragonflight) new item glow not getting reset when entering an item
+ - added - if you use Peddler, junk items are now identified via it, and not via ArkInventory
+ - fixed - (dragonflight) C_TradeSkillUI.OpenTradeSkill is now a protected function so onload scans can no longer be performed and will be skipped if enabled
+ - fixed - other issues with tradeskill scanning
+ - added - https://github.com/arkayenro/arkinventory/issues/1547 - config > settings > window > scroll bar
+ - added - config > settings > item > status icons / overlays > junk > size
+ - added - config > settings > item > status icons / overlays > upgrade > size
+ - added - config > settings > item > status icons / overlays > corruption > size
+ - added - config > settings > item > status icons / overlays > quest > anchor
+ - added - config > settings > item > status icons / overlays > quest > size
+ - fixed - issue with quest icon not always showing when it should
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1609 - issue with cross client tradeskill scanning
+ - fixed - (dragonflight) the default ui bank frame should no longer open when you open the bank
+ - fixed - (dragonflight) the default ui guild bank frame should no longer open when you open the guild bank
+ - changed - money frame click has gone back to the single generic money popup, not the individual gold/silver/copper ones
+ - fixed - issue with tradeskill scanning (nil key values)
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1604 - client detection issue that caused some categories to not show
+ - changed - https://github.com/arkayenro/arkinventory/issues/1605 - outfit( ) rule function will now check using all supported outfit mods as well as the equipment manager, and not just the first one that is enabled.
+ - changed - various cross client functions for dragonflight
+ - fixed - some non battlepet items were incorrectly causing a battlepet tooltip to be generated
+ - fixed - cooldown should now display in the wearing window
+ - fixed - frame levels werent getting reset properly so the background would occasionally end up above the items and block mouse input
+ - added - cosmetic item overlay - can be disabled via config > settings > item > status icons / overlays > cosmetic
+ - added - conduit item overlay - can be disabled via config > settings > item > status icons / overlays > conduit
+ - added - professional quality item overlay - can be disabled, the position or size changed, via config > settings > item > status icons / overlays > profession quality
+ - added - profession quality as a new sort method key
+ - changed - default sort methods updated to include profession quality
+ - changed - reagent bank and reagent bags share the same slot type
+ - added - (dragonflight) restack now supports the reagent bag
+ - fixed - issues with multiple functions that reference the project id to hide data that shouldnt exist.  wrath getting a new project id sort of broke them so that check has been removed and you may see old character data appear in item counts, gold, search, and when switching to another character.  you can manually delete the old data from the switch character menus, or in the config.
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1602 - removed internal debug output
+ - fixed - (wrath) https://github.com/arkayenro/arkinventory/issues/1593 - outfit( ) rule function when using the blizzard equipment manager
+ - fixed - frame name mouseover tooltip (only applies to shortened names)
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1599 - renamed xml element for bar names
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1600 - tradeskill scanning
+ - fixed - issue with several tradeskill based tooltips
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1597 - currency based tooltips
+ - added - (dragonflight) item counts on recipe output item
+ - added - (dragonflight) item counts on recipe reagent items
+ - changed - client detection and checking code to support pre-patch
+ - added - (dragonflight) category: class evoker
+ - fixed - issue where the reagent bank wasnt being scanned when away from the bank (bank and bank bags cant be scanned away from the bank, so its partially helpful)
+ - changed - restack action menu consolidated into a single layer
+ - added - option to disable restack
+ - fixed - (wrath) https://github.com/arkayenro/arkinventory/issues/1594 - category: class death knight unhidden
+ - fixed - (wrath) https://github.com/arkayenro/arkinventory/issues/1595 - category: skill inscription unhidden
+ - changed - client detection code to support pre-patch
+ - changed - multiple categories have had their client states updated (if a category is missing or showing when it shouldnt, let me know via a ticket)
+ - added - support for 10.0 PTR prepatch - there will be issues, please log a ticket for them
+ - fixed - (dragonflight) money frame elements
+ - added  - (dragonflight) reagent bag slot (not sure if it works properly as i cant find any reagent bags)
+ - changed - right click bag slot menus to work with all game clients
+ - fixed - (dragonflight) issue with bank and reagent bank tooltips
+
+# 3.09.68 (08-SEP-2022)
+ - fixed - issue with WOW_PROJECT_ID getting a new client value for wrath (WOW_PROJECT_WRATH_CLASSIC)
+ - fixed - https://github.com/arkayenro/arkinventory/issues/1575 - issue with toybox filters not being restored to their original values after a scan
+ - changed - (Retail) toc updated to 90207
+ - updated - recategorised some items
+ - added - wrath toc file
+
+# 3.09.67 (05-JUN-2022)
  - updated - recategorised some items
  - fixed - parts of the LDB object wouldnt always update on first load (waiting for currencies and rep to become ready)
  - changed - (TBC) toc updated to 20504
@@ -6,7 +252,7 @@
  - changed - (Retail) toc updated to 90205
 
 # 3.09.66 (18-MAR-2022)
- - fixed - mythic keystone data never being ready causing sort to continually run
+ - fixed - mythic keystone data never being ready causing constant resorting
  - updated - recategorised some items
 
 # 3.09.65 (16-MAR-2022)
@@ -341,6 +587,7 @@
  - changed - reputation location icon changed to one that works in classic as well
  
 # 3.09.33 (30-AUG-2020)* [broken in retail - deleted]
+
 # 3.09.32 (29-AUG-2020)* [broken in classic - deleted]
  
 # 3.09.31 (11-AUG-2020)

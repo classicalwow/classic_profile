@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Geddon", "DBM-MC", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220122233228")
+mod:SetRevision("20230520013803")
 mod:SetCreatureID(12056)
 mod:SetEncounterID(668)
 mod:SetModelID(12129)
@@ -29,6 +29,7 @@ local yellBomb			= mod:NewYell(20475)
 local yellBombFades		= mod:NewShortFadesYell(20475)
 local specWarnInferno	= mod:NewSpecialWarningRun(19695, "Melee", nil, nil, 4, 2)
 local specWarnIgnite	= mod:NewSpecialWarningDispel(19659, "RemoveMagic", nil, nil, 1, 2)
+local specWarnGTFO		= mod:NewSpecialWarningGTFO(19698, nil, nil, nil, 1, 8)
 
 local timerInfernoCD	= mod:NewCDTimer(21, 19695, nil, nil, nil, 2)--21-27.9
 local timerInferno		= mod:NewBuffActiveTimer(8, 19695, nil, nil, nil, 2)
@@ -45,6 +46,16 @@ function mod:OnCombatStart(delay)
 	self.vb.bombIcon = 1
 	--timerIgniteManaCD:Start(7-delay)--7-19, too much variation for first
 	timerBombCD:Start(11-delay)
+	if not self:IsTank() and (self:IsDifficulty("event40") or not self:IsTrivial()) then--Only want to warn if it's a threat
+		self:RegisterShortTermEvents(
+			"SPELL_DAMAGE 19698",
+			"SPELL_MISSED 19698"
+		)
+	end
+end
+
+function mod:OnCombatEnd()
+	self:UnregisterShortTermEvents()
 end
 
 do
@@ -71,7 +82,7 @@ do
 			if self:IsSeasonal() then--3 bombs, aggregate
 				warnBomb:CombinedShow(0.5, args.destName)
 			end
-		elseif spellName == Ignite and self:CheckDispelFilter() then
+		elseif spellName == Ignite and self:CheckDispelFilter("magic") then
 			specWarnIgnite:CombinedShow(0.3, args.destName)
 			specWarnIgnite:ScheduleVoice(0.3, "helpdispel")
 		end
@@ -116,4 +127,12 @@ do
 			timerBombCD:Start(self:IsSeasonal() and 11.3 or 13.3)
 		end
 	end
+
+	function mod:SPELL_DAMAGE(_, _, _, _, destGUID, destName, _, _, spellId, spellName)
+		if spellName == Inferno and destGUID == UnitGUID("player") and self:AntiSpam(2, 1) then
+			specWarnGTFO:Show(spellName)
+			specWarnGTFO:Play("watchfeet")
+		end
+	end
+	mod.SPELL_MISSED = mod.SPELL_DAMAGE
 end

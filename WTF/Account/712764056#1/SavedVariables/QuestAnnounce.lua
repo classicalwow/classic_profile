@@ -2,6 +2,7 @@
 QuestAnnounceDB = {
 	["profileKeys"] = {
 		["特變電工 - 伊弗斯"] = "Default",
+		["冰火倆重天 - 伊弗斯"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -13,9 +14,9 @@ QuestAnnounceDB = {
 				},
 				["settings"] = {
 					["enable"] = true,
-					["every"] = 1,
-					["debug"] = false,
 					["sound"] = true,
+					["debug"] = false,
+					["every"] = 1,
 				},
 				["announceIn"] = {
 					["party"] = true,

@@ -80,15 +80,15 @@ local updateTable = {
 
 
 local itemTable = { -- key, project, 0=name | 1=itemtype | 2=itemsubtype, item id
-	{ "WOW_ITEM_PROJECTILE_ARROW", not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ), 3, 2512 },
-	{ "WOW_ITEM_PROJECTILE_BULLET", not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ), 3, 2516 },
-	{ "WOW_ITEM_SOULSHARD", not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ), 1, 6265 },
+	{ "WOW_ITEM_PROJECTILE_ARROW", ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ), 3, 2512 },
+	{ "WOW_ITEM_PROJECTILE_BULLET", ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ), 3, 2516 },
+	{ "WOW_ITEM_SOULSHARD", ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ), 1, 6265 },
 }
 
 
 local function GetWowItemData( t, id )
 	if type( id ) ~= "table" then
-		ArkInventory.TooltipSetHyperlink( ArkInventory.Global.Tooltip.Scan, string.format( "item:%s", id ) )
+		--local tooltipInfo = ArkInventory.TooltipSet( ArkInventory.Global.Tooltip.Scan, nil, nil, nil, string.format( "item:%s", id ) )
 		local info = ArkInventory.GetObjectInfo( id )
 		if t == 1 then
 			return info.name
@@ -100,7 +100,7 @@ local function GetWowItemData( t, id )
 	else
 		local x
 		for k, v in ipairs( id ) do
-			ArkInventory.TooltipSetHyperlink( ArkInventory.Global.Tooltip.Scan, string.format( "item:%s", v ) )
+			--local tooltipInfo = ArkInventory.TooltipSet( ArkInventory.Global.Tooltip.Scan, nil, nil, nil, string.format( "item:%s", v ) )
 			local info = ArkInventory.GetObjectInfo( v )
 			if t == 1 then
 				x = info.name
@@ -177,8 +177,8 @@ local spellTable = { -- key, project, table of spell ids
 --	{ "WOW_SKILL_ENCHANTING", nil, { 7411 } }, -- WOW_ITEM_CLASS_RECIPE_ENCHANTING
 --	{ "WOW_SKILL_ENGINEERING", nil, { 4036 } }, -- WOW_ITEM_CLASS_RECIPE_ENGINEERING
 --	{ "WOW_SKILL_HERBALISM", nil, { 2366 } },
---	{ "WOW_SKILL_INSCRIPTION", ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL, { 45357 } }, -- WOW_ITEM_CLASS_RECIPE_INSCRIPTION
---	{ "WOW_SKILL_JEWELCRAFTING", ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL, { 25229 } }, -- WOW_ITEM_CLASS_RECIPE_JEWELCRAFTING
+--	{ "WOW_SKILL_INSCRIPTION", nil, { 45357 } }, -- WOW_ITEM_CLASS_RECIPE_INSCRIPTION
+--	{ "WOW_SKILL_JEWELCRAFTING", nil, { 25229 } }, -- WOW_ITEM_CLASS_RECIPE_JEWELCRAFTING
 --	{ "WOW_SKILL_LEATHERWORKING", nil, { 2108 } }, -- WOW_ITEM_CLASS_RECIPE_LEATHERWORKING
 --	{ "WOW_SKILL_MINING", nil, { 2575 } },
 	{ "WOW_SKILL_SKINNING", nil, { 8613 } },
@@ -193,7 +193,7 @@ local function GetWowSpellNameHelper( id )
 	else
 		-- no cached data, ask server and well hopefully get it next time
 		--ArkInventory.Output( "spell [", id, "] failed" )
-		ArkInventory.TooltipSetHyperlink( ArkInventory.Global.Tooltip.Scan, string.format( "spell:%s", id ) )
+		--local tooltipInfo = ArkInventory.TooltipSet( ArkInventory.Global.Tooltip.Scan, nil, nil, nil, string.format( "spell:%s", id ) )
 	end
 end
 
@@ -272,9 +272,9 @@ local tooltipTable = {
 
 local function GetWowTooltipTextHelper( id )
 	
-	ArkInventory.TooltipSetHyperlink( ArkInventory.Global.Tooltip.Scan, string.format( "item:%s", id ) )
+	local tooltipInfo = ArkInventory.TooltipSet( ArkInventory.Global.Tooltip.Scan, nil, nil, nil, string.format( "item:%s", id ) )
 	
-	local _, _, skill, level = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_SKILL"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
+	local skill, level = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_SKILL"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
 	
 	if skill and level then
 		--ArkInventory.Output( "tooltip: got ", id, ", skill = ", skill, ", level = ", level )
@@ -425,9 +425,10 @@ frame:SetScript( "OnUpdate",
 				
 				--ArkInventory.ItemCacheClear( )
 				--ArkInventory.ScanLocation( )
+				
 				ArkInventory.PlayerInfoSet( )
-				ArkInventory.Tradeskill.ScanHeaders( )
-				ArkInventory.CategoryGenerate( )
+				--ArkInventory.Tradeskill.ScanHeaders( )
+				--ArkInventory.CategoryGenerate( )
 				
 				ArkInventory.Frame_Main_Generate( nil, ArkInventory.Const.Window.Draw.Recalculate )
 				

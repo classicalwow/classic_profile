@@ -21,9 +21,9 @@ module.db.statsList = {'intellect','agility','strength','haste','mastery','crit'
 module.db.statsListName = {L.InspectViewerInt,L.InspectViewerAgi,L.InspectViewerStr,L.InspectViewerHaste,L.InspectViewerMastery,L.InspectViewerCrit,L.InspectViewerSpd, L.InspectViewerMS, L.InspectViewerVer, L.InspectViewerBonusArmor, L.InspectViewerLeech, L.InspectViewerAvoidance, L.InspectViewerSpeed,ITEM_MOD_CORRUPTION}
 
 module.db.baseStats = {	--By class IDs
-	strength =  {	450,	450,	0,	0,	0,	450,	0,	0,	0,	0,	0,	0,	},
-	agility =   {	0,	0,	450,	450,	0,	0,	450,	0,	0,	450,	450,	450,	},
-	intellect = {	0,	450,	0,	0,	450,	0,	450,	450,	450,	450,	450,	0,	},
+	strength =  {	450,	450,	0,	0,	0,	450,	0,	0,	0,	0,	0,	0,	0},
+	agility =   {	0,	0,	450,	450,	0,	0,	450,	0,	0,	450,	450,	450,	0},
+	intellect = {	0,	450,	0,	0,	450,	0,	450,	450,	450,	450,	450,	0,	0},
 		--	WARRIOR,PALADIN,HUNTER,	ROGUE,	PRIEST,	DK,	SHAMAN,	MAGE,	WARLOCK,MONK,	DRUID,	DH,
 }
 module.db.raceList = {'Human','Dwarf','Night Elf','Orc','Tauren','Undead','Gnome','Troll','Blood Elf','Draenei','Goblin','Worgen','Pandaren'}
@@ -65,11 +65,25 @@ module.db.socketsBonusIDs = {
 	[4231]=true,
 	[3522]=true,
 	[3475]=true,
+	[7947]=true,
+	[4802]=true,
+	[6514]=true,
+	[6672]=true,
+	[6935]=true,
+	[7576]=true,
+	[7580]=true,
+	[7935]=true,
+	[8289]=true,
+	[8780]=true,
+	[8781]=true,
+	[8782]=true,
+	[8810]=true,
 }
 
 local IS_LOW = UnitLevel'player' < 50
 local IS_BFA = UnitLevel'player' < 60
 local IS_SL = UnitLevel'player' >= 60
+local IS_DF = UnitLevel'player' >= 70 and not ExRT.isClassic
 
 module.db.topEnchGems = IS_SL and {
 	[6202]="cloak:stamina:speed",
@@ -125,6 +139,36 @@ module.db.topEnchGems = IS_SL and {
 	[187061]="Gem:SoD:Blood",
 	[187059]="Gem:SoD:Blood",
 	[187057]="Gem:SoD:Blood",
+
+	[192991]=true,
+	[192985]=true,
+	[192982]=true,
+	[192988]=true,
+
+	[192945]=true,
+	[192952]=true,
+	[192948]=true,
+	[192955]=true,
+
+	[192961]=true,
+	[192958]=true,
+	[192964]=true,
+	[192967]=true,
+
+	[192919]=true,
+	[192925]=true,
+	[192922]=true,
+	[192928]=true,
+
+	[192935]=true,
+	[192932]=true,
+	[192938]=true,
+	[192942]=true,
+
+	[192973]=true,
+	[192970]=true,
+	[192976]=true,
+	[192979]=true,
 } or {
 	--[5938]="Ring:Crit:27",
 	--[5939]="Ring:Haste:27",
@@ -192,7 +236,16 @@ module.db.topEnchGems = IS_SL and {
 
 
 module.db.achievementsList = {
-	{	--SoD
+	{	--A
+		L.S_ZoneT30,
+		18160,18163,18164,18165,18167,18151,18152,18153,18154,18155,18156,18157,18158,18159,
+	},{	--VotI
+		L.S_ZoneT29VotI,
+		17110,17111,17112,16343,16346,16347,16348,16349,16350,16351,16352,16353,17107,17108,
+	},{	--SotFO
+		L.S_ZoneT28SFO,
+		15493,15492,15416,15418,15478,15479,15480,15481,15482,15483,15484,15485,15486,15487,15488,15489,15470,15471,
+	},{	--SoD
 		L.S_ZoneT27SoD,
 		15122,15123,15124,15125,15126,15112,15113,15114,15116,15115,15117,15118,15119,15120,15121,15128,15134,15135,
 	},{	--castle Nathria
@@ -267,7 +320,13 @@ module.db.achievementsList = {
 	},
 }
 module.db.achievementsList_statistic = {
-	{	--SoD
+	{	--A
+
+	},{	--VotI
+
+	},{	--SotFO
+
+	},{	--SoD
 		
 	},{	--CN
 		0,0,0,{14422,14419,14420,14421},{14426,14423,14424,14425},{14438,14435,14436,14437},{14434,14431,14432,14433},{14430,14427,14428,14429},{14442,14439,14440,14441},{14446,14443,14444,14445},{14450,14447,14448,14449},{14454,14451,14452,14453},{14458,14455,14456,14457},
@@ -445,6 +504,8 @@ do
 		[270] = "int",
 		[577] = "agi",
 		[581] = "agi",
+		[1467] = "int",
+		[1468] = "int",
 	}
 	function module:GetSpecMainStat(specID)
 		return specToStat[specID or 0]
@@ -471,6 +532,9 @@ function module.options:Load()
 		end
 		if clickID == 6 or clickID == 7 then
 			self.selectFunc(self.tabs[5].button)
+		end
+		if clickID == 2 then
+			module.options.talentsScrollFrame.prevState = nil
 		end
 
 		module.db.page = clickID
@@ -499,7 +563,7 @@ function module.options:Load()
 		elseif UnitLevel'player' < 51 then
 			contentID = 2
 			extra_list[#extra_list+1] = text_az
-		else
+		elseif UnitLevel'player' < 61 then
 			contentID = 3
 			extra_list[#extra_list+1] = LANDING_PAGE_SOULBIND_SECTION_HEADER
 		end
@@ -563,8 +627,8 @@ function module.options:Load()
 	module.db.colorizeLowIlvl685 = VMRT.InspectViewer.ColorizeLowIlvl685
 	module.db.colorizeNoValorUpgrade = VMRT.InspectViewer.ColorizeNoValorUpgrade
 
-	local colorizeLowIlvl630 = 183
-	local colorizeLowIlvl685 = 213
+	local colorizeLowIlvl630 = 233
+	local colorizeLowIlvl685 = 252
 	if IS_LOW then
 		colorizeLowIlvl630 = 50
 		colorizeLowIlvl685 = 80
@@ -572,6 +636,10 @@ function module.options:Load()
 	if IS_BFA then
 		colorizeLowIlvl630 = 100
 		colorizeLowIlvl685 = 120
+	end
+	if IS_DF then
+		colorizeLowIlvl630 = 376
+		colorizeLowIlvl685 = 398
 	end
 
 	self.chkItemsTrackDropDown = ELib:DropDown(self,300,6):Point(50,0):Size(50)
@@ -661,6 +729,24 @@ function module.options:Load()
 			},
 		},
 	}
+	if not ExRT.isClassic then
+		dropDownTable[4] = {
+			{
+				"_MAGE_DRUID_HUNTER",
+				"_PALADIN_PRIEST_SHAMAN",
+				"_MONK_WARRIOR_ROGUE",
+				"_DEMONHUNTER_DEATHKNIGHT_WARLOCK",
+			},
+		}
+	else
+		dropDownTable[4] = {
+			{
+				"_PALADIN_PRIEST_WARLOCK",
+				"_ROGUE_MAGE_DRUID",
+				"_WARRIOR_HUNTER_SHAMAN",
+			}
+		}
+	end
 
 	self.filterDropDown = ELib:DropDown(self,250,6):Point("TOPRIGHT",-10,-16-1):Size(150):SetText(L.InspectViewerFilter)
 	self.filterDropDown:_Size(140,18)
@@ -885,7 +971,10 @@ function module.options:Load()
 				if data then
 					local class = data.class
 					local classIconCoords = CLASS_ICON_TCOORDS[class]
-					if classIconCoords then
+					if class == "EVOKER" then
+						line.class.texture:SetTexture("interface/icons/classicon_evoker")
+						line.class.texture:SetTexCoord(0,1,0,1)
+					elseif classIconCoords then
 						line.class.texture:SetTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES")
 						line.class.texture:SetTexCoord(unpack(classIconCoords))
 					else
@@ -945,6 +1034,7 @@ function module.options:Load()
 						item.azeriteExtra = nil
 						item.star:Hide()
 						item.type_icon:Hide()
+						item.showonhover = nil
 					end
 					line.perksData = nil
 
@@ -959,6 +1049,7 @@ function module.options:Load()
 					line.otherInfoTooltipFrame:Hide()
 
 					line.ilvl:SetText("")
+					
 
 					if module.db.page == 1 then
 						line.ilvl:SetText(ilvl_def)
@@ -993,11 +1084,11 @@ function module.options:Load()
 									icon.text:SetText("|c"..(itemColor or "ffffffff")..(itemLevel or ""))
 
 									if not ExRT.isClassic and (
-										(enchantID == 0 and ((slotID == 2 and IS_LOW) or (slotID == 15 and IS_LOW) or slotID == 11 or slotID == 12 or (slotID == 16) or (slotID == 17 and module.db.specHasOffhand[spec or 0]) or (slotID == 15 and IS_SL) or (slotID == 8 and module:GetSpecMainStat(spec)=="agi" and IS_SL) or (slotID == 9 and module:GetSpecMainStat(spec)=="int" and IS_SL) or (slotID == 10 and module:GetSpecMainStat(spec)=="str" and IS_SL) or (slotID == 5 and IS_SL)) and module.db.colorizeNoEnch) or
+										(enchantID == 0 and ((slotID == 2 and IS_LOW) or (slotID == 15 and IS_LOW) or slotID == 11 or slotID == 12 or (slotID == 16) or (slotID == 17 and module.db.specHasOffhand[spec or 0]) or (slotID == 15 and IS_SL) or (slotID == 8 and ((module:GetSpecMainStat(spec)=="agi" and IS_SL) or IS_DF)) or (slotID == 9 and ((module:GetSpecMainStat(spec)=="int" and IS_SL) or IS_DF)) or (slotID == 10 and ((module:GetSpecMainStat(spec)=="str" and IS_SL) and not IS_DF)) or (slotID == 5 and IS_SL) or (slotID == 7 and IS_DF)) and module.db.colorizeNoEnch) or
 										(items_ilvl[slotID] and items_ilvl[slotID] > 0 and items_ilvl[slotID] < colorizeLowIlvl630 and module.db.colorizeLowIlvl) or
 										(module.db.colorizeNoGems and ExRT.F.IsBonusOnItem(item,module.db.socketsBonusIDs) and IsItemHasNotGem(item)) or 
 										(module.db.colorizeNoGems and (slotID == 16 or slotID == 17) and itemQuality == 6 and IsArtifactItemHasNot3rdGem(item)) or 
-										(module.db.colorizeNoTopEnchGems and not IsTopEnchAndGems(item) and ((slotID == 2 and IS_LOW) or (slotID == 15 and IS_LOW) or slotID == 11 or slotID == 12 or (slotID == 16) or (slotID == 17 and module.db.specHasOffhand[spec or 0]) or (slotID == 15 and IS_SL) or (slotID == 8 and module:GetSpecMainStat(spec)=="agi" and IS_SL) or (slotID == 9 and module:GetSpecMainStat(spec)=="int" and IS_SL) or (slotID == 10 and module:GetSpecMainStat(spec)=="str" and IS_SL) or (slotID == 5 and IS_SL))) or
+										(module.db.colorizeNoTopEnchGems and not IsTopEnchAndGems(item) and ((slotID == 2 and IS_LOW) or (slotID == 15 and IS_LOW) or slotID == 11 or slotID == 12 or (slotID == 16) or (slotID == 17 and module.db.specHasOffhand[spec or 0]) or (slotID == 15 and IS_SL) or (slotID == 8 and ((module:GetSpecMainStat(spec)=="agi" and IS_SL) or IS_DF)) or (slotID == 9 and ((module:GetSpecMainStat(spec)=="int" and IS_SL) or IS_DF)) or (slotID == 10 and ((module:GetSpecMainStat(spec)=="str" and IS_SL) and not IS_DF)) or (slotID == 5 and IS_SL))) or
 										(items_ilvl[slotID] and items_ilvl[slotID] > 0 and items_ilvl[slotID] < colorizeLowIlvl685 and module.db.colorizeLowIlvl685)
 									) then
 										icon.border:Show()
@@ -1008,7 +1099,7 @@ function module.options:Load()
 							end
 						end
 					elseif module.db.page == 2 and ExRT.isClassic then
-						local data = VMRT.Inspect and VMRT.Inspect.TalentsClassic and VMRT.Inspect.TalentsClassic[name]
+						local data = data.talentsStr or (VMRT.Inspect and VMRT.Inspect.TalentsClassic and VMRT.Inspect.TalentsClassic[name])
 
 						line.spec:Hide()
 						line.refreshSoulbind:Show()
@@ -1040,7 +1131,10 @@ function module.options:Load()
 									icon.link = "spell:"..spellID
 									icon.sid = nil
 									icon.text:SetText((rankSelected == rankMax and "|cff00ff00" or "")..rankSelected.."/"..rankMax)
-									icon:Show()
+									if not icon.hideonhover then
+										icon:Show()
+									end
+									icon.showonhover = true
 
 									it = it + 1
 								end
@@ -1053,6 +1147,8 @@ function module.options:Load()
 								line.otherInfo:Show()
 							end
 						end
+					elseif module.db.page == 2 and ExRT.is10 then
+
 					elseif module.db.page == 2 then
 						line.ilvl:SetText(ilvl_def)
 
@@ -1384,9 +1480,17 @@ function module.options:Load()
 
 					local cR,cG,cB = ExRT.F.classColorNum(class)
 					if name and UnitName(name) then
-						line.back:SetGradientAlpha("HORIZONTAL", cR,cG,cB, 0.5, cR,cG,cB, 0)
+						if ExRT.is10 or ExRT.isLK1 then
+							line.back:SetGradient("HORIZONTAL",CreateColor(cR,cG,cB, 0.5), CreateColor(cR,cG,cB, 0))
+						else
+							line.back:SetGradientAlpha("HORIZONTAL", cR,cG,cB, 0.5, cR,cG,cB, 0)
+						end
 					else
-						line.back:SetGradientAlpha("HORIZONTAL", cR,cG,cB, 0, cR,cG,cB, 0.5)
+						if ExRT.is10 or ExRT.isLK1 then
+							line.back:SetGradient("HORIZONTAL",CreateColor(cR,cG,cB, 0), CreateColor(cR,cG,cB, 0.5))
+						else
+							line.back:SetGradientAlpha("HORIZONTAL", cR,cG,cB, 0, cR,cG,cB, 0.5)
+						end
 					end
 				else
 					for j=-1,18 do
@@ -1416,7 +1520,11 @@ function module.options:Load()
 
 					line.apinfo:SetText("")
 
-					line.back:SetGradientAlpha("HORIZONTAL", 0, 0, 0, 0.5, 0, 0, 0, 0)
+					if ExRT.is10 or ExRT.isLK1 then
+						line.back:SetGradient("HORIZONTAL",CreateColor(0, 0, 0, 0.5), CreateColor(0, 0, 0, 0))
+					else
+						line.back:SetGradientAlpha("HORIZONTAL", 0, 0, 0, 0.5, 0, 0, 0, 0)
+					end
 
 					line.perksData = nil
 				end
@@ -1433,6 +1541,9 @@ function module.options:Load()
 				end
 			end
 		end
+		if module.db.page == 2 and ExRT.is10 then
+			counter = 0
+		end
 		for i=(counter+1),module.db.perPage do
 			module.options.lines[i]:Hide()
 		end
@@ -1441,6 +1552,184 @@ function module.options:Load()
 			module.options.ScrollBar:SetMinMaxValues(1,max(#nowDB-module.db.perPage+1,1),nil,true):UpdateButtons()
 		end
 		module.options.RaidIlvl()
+
+		module.options.talentsScrollFrame:SetShown(module.db.page == 2 and ExRT.is10)
+		module.options.ScrollBar:SetShown(not (module.db.page == 2 and ExRT.is10))
+		if module.db.page == 2 and ExRT.is10 then
+			local newmax = (floor(#nowDB / 2)+1)*module.options.talentsScrollFrame.HEIGHT
+			if select(2,module.options.talentsScrollFrame.ScrollBar.slider:GetMinMaxValues()) ~= newmax then
+				local val = module.options.talentsScrollFrame.ScrollBar.slider:GetValue()
+				module.options.talentsScrollFrame.ScrollBar:Range(0,newmax)
+				module.options.talentsScrollFrame.ScrollBar:SetTo(min(val,newmax))
+			end
+
+			local scrollNow = floor(module.options.talentsScrollFrame.ScrollBar.slider:GetValue() / module.options.talentsScrollFrame.HEIGHT) * 2 + 1
+			if scrollNow == module.options.talentsScrollFrame.prevState then
+				return
+			end
+			module.options.talentsScrollFrame.prevState = scrollNow
+
+			local counter = 0
+			for i=scrollNow,#nowDB do
+				local data = nowDB[i][2]
+				local isInRaid = (not VMRT.InspectViewer.HideNotInRaid) or (VMRT.InspectViewer.HideNotInRaid and data and UnitName( nowDB[i][1] ))
+				if (not module.db.filter or (data and (
+				  (module.db.filterType == 1 and module.db.filter == data.class) or 
+				  (module.db.filterType == 2 and module.db.filter == module.db.armorType[ data.class or "?" ]) or 
+				  (module.db.filterType == 3 and module.db.roleBySpec[ data.spec or 0 ] and module.db.filter:find( module.db.roleBySpec[ data.spec or 0 ] )) or
+				  (module.db.filterType == 4 and module.db.filter:find( "_"..(data.class or "unknown") ))
+				))) and isInRaid then
+					counter = counter + 1
+	
+					local name = nowDB[i][1]
+					local line = module.options.talentsScrollFrame.lines[counter]
+					if not line then
+						break
+					end
+					line.name:SetText(name)
+					line.unit = name
+
+					for j=1,#line.talentsIcons do 
+						if line.talentsIcons[j]:IsShown() then
+							line.talentsIcons[j]:Hide()
+						else
+							break
+						end
+					end
+					for j=1,#line.talentsLines do 
+						if line.talentsLines[j]:IsShown() then
+							line.talentsLines[j]:Hide()
+						else
+							break
+						end
+					end
+					if data then
+						local class = data.class
+						local cR,cG,cB = ExRT.F.classColorNum(class)
+						if name and UnitName(name) then
+							if ExRT.is10 or ExRT.isLK1 then
+								line.back:SetGradient("HORIZONTAL",CreateColor(cR,cG,cB, 0.5), CreateColor(cR,cG,cB, 0))
+							else
+								line.back:SetGradientAlpha("HORIZONTAL", cR,cG,cB, 0.5, cR,cG,cB, 0)
+							end
+						else
+							if ExRT.is10 or ExRT.isLK1 then
+								line.back:SetGradient("HORIZONTAL",CreateColor(cR,cG,cB, 0), CreateColor(cR,cG,cB, 0.5))
+							else
+								line.back:SetGradientAlpha("HORIZONTAL", cR,cG,cB, 0, cR,cG,cB, 0.5)
+							end
+						end
+
+						local classIconCoords = CLASS_ICON_TCOORDS[class]
+						if class == "EVOKER" then
+							line.class.texture:SetTexture("interface/icons/classicon_evoker")
+							line.class.texture:SetTexCoord(0,1,0,1)
+						elseif classIconCoords then
+							line.class.texture:SetTexture("Interface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES")
+							line.class.texture:SetTexCoord(unpack(classIconCoords))
+						else
+							line.class.texture:SetTexture("Interface\\Icons\\INV_MISC_QUESTIONMARK")
+						end
+	
+						local spec = data.spec
+						local specIcon = module.db.specIcons[spec]
+						if not specIcon and VMRT and VMRT.ExCD2 and VMRT.ExCD2.gnGUIDs and VMRT.ExCD2.gnGUIDs[ name ] then
+							spec = VMRT.ExCD2.gnGUIDs[ name ]
+							specIcon = module.db.specIcons[spec]
+						end
+	
+						if specIcon then
+							line.spec.texture:SetTexture(specIcon)
+							line.spec.id = spec
+						elseif ExRT.isClassic then
+							line.spec.texture:SetTexture("")
+							line.spec.id = nil
+						else
+							line.spec.texture:SetTexture("Interface\\Icons\\INV_MISC_QUESTIONMARK")
+							line.spec.id = nil
+						end
+						line.spec:Show()
+
+						local ilvl_def = format("%.2f",data.ilvl or 0)
+						line.ilvl:SetText(ilvl_def)
+
+						local tree = parentModule.db.inspectTrees[spec]
+						if tree then
+							for j=1,#tree do
+								local node = tree[j]
+								local x = (node.x - tree.minX) / (tree.maxX - tree.minX) * (line.WIDTH - 16 - 20)
+								local y = (node.y - tree.minY) / (tree.maxY - tree.minY) * (line.HEIGHT - 16 - 10)
+	
+								local icon = line:GetTalentIcon(j,true)
+								icon:SetPoint("TOPLEFT",x+10,-y-5)
+	
+								local _,_,spellTexture = GetSpellInfo(node.spellID)
+								icon.texture:SetTexture(spellTexture)
+								icon.link = GetSpellLink(node.spellID)
+								icon.spellID = node.spellID
+								icon.needRank = node.max
+	
+								icon.texture:SetDesaturated(true)
+								icon:SetAlpha(0.5)
+							end
+	
+							for j=1,1000 do
+								local spellID = data[j]
+								if not spellID then
+									break
+								end
+								local icon = line:GetTalentIcon(tree.spellIDtoNode[spellID])
+								if icon then
+									if icon.spellID ~= spellID then
+										local _,_,spellTexture = GetSpellInfo(spellID)
+										icon.texture:SetTexture(spellTexture)
+										icon.link = GetSpellLink(spellID)
+									end
+									
+									icon.texture:SetDesaturated(false)
+									icon:SetAlpha(1)
+		
+									if icon.needRank and data[-j] then
+										icon.text:SetText(data[-j])
+									end
+								end
+							end
+	
+							for j=1,#tree do
+								local node = tree[j]
+								if node.edges then
+									for k=1,#node.edges do
+										local l = line:GetTalentLine()
+	
+										local main = line:GetTalentIcon(j)
+										local target = line:GetTalentIcon(tree.nodeIDToNum[ node.edges[k] ])
+	
+										if main.texture:IsDesaturated() or target.texture:IsDesaturated() then
+											l:SetDesaturated(true)
+										else
+											l:SetDesaturated(false)
+										end
+	
+										l:SetStartPoint("CENTER",main,0,-8)
+										l:SetEndPoint("CENTER",target,0,8)
+									end
+								end
+							end
+						end
+					else
+						if ExRT.is10 or ExRT.isLK1 then
+							line.back:SetGradient("HORIZONTAL",CreateColor(0, 0, 0, 0.5), CreateColor(0, 0, 0, 0))
+						else
+							line.back:SetGradientAlpha("HORIZONTAL", 0, 0, 0, 0.5, 0, 0, 0, 0)
+						end
+					end
+					line:Show()
+				end
+			end
+			for i=(counter+1),#module.options.talentsScrollFrame.lines do
+				module.options.talentsScrollFrame.lines[i]:Hide()
+			end
+		end
 	end
 	local ScrollBar_PrevScroll = nil
 	self.ScrollBar:SetScript("OnValueChanged", function(self)
@@ -1659,10 +1948,18 @@ function module.options:Load()
 	end
 
 	local function Line_OnEnter(self)
-
+		for _,item in pairs(self.items) do
+			if item.hideonhover and item.showonhover then
+				item:Show()
+			end
+		end
 	end
-	local function Line_OnLeave()
-
+	local function Line_OnLeave(self)
+		for _,item in pairs(self.items) do
+			if item.hideonhover then
+				item:Hide()
+			end
+		end
 	end
 
 	self.lines = {}
@@ -1670,7 +1967,12 @@ function module.options:Load()
 		local line = CreateFrame("Frame",nil,self.borderList)
 		self.lines[i] = line
 		line:SetSize(678,30)
-		line:SetPoint("TOPLEFT",0,-(i-1)*30)
+		--line:SetPoint("TOPLEFT",0,-(i-1)*30)
+		if i==1 then
+			line:SetPoint("TOPLEFT",0,0)
+		else
+			line:SetPoint("TOPLEFT",self.lines[i-1],"BOTTOMLEFT",0,0)
+		end
 
 		line.name = ELib:Text(line,"Name",11):Color():Point(15,0):Size(109,30):Shadow()
 
@@ -1685,7 +1987,7 @@ function module.options:Load()
 		line.ilvl = ELib:Text(line,"630.52",11):Color():Point(180,0):Size(50,30):Shadow():Center()
 
 		line.items = {}
-		for j=-1,18 do
+		for j=-1,25 do
 			local item = ELib:Icon(line,nil,21,true):Point("LEFT",235+(24*(j-1)),0)
 			line.items[j] = item
 			item:SetScript("OnEnter",Lines_ItemIcon_OnEnter)
@@ -1716,6 +2018,10 @@ function module.options:Load()
 			item.type_icon:SetPoint("CENTER",item,"TOPLEFT",2,-2)
 			item.type_icon:SetSize(18,18)
 			item.type_icon:Hide()
+
+			if j > 18 then
+				item.hideonhover = true
+			end
 
 			item.border:Hide()
 			item:Hide()
@@ -1755,7 +2061,11 @@ function module.options:Load()
 		line.back:SetPoint("TOPLEFT",0,0)
 		line.back:SetPoint("BOTTOMRIGHT",0,0)
 		line.back:SetColorTexture(1, 1, 1, 1)
-		line.back:SetGradientAlpha("HORIZONTAL", 0, 0, 0, 1, 0, 0, 0, 0)
+		if ExRT.is10 or ExRT.isLK1 then
+			line.back:SetGradient("HORIZONTAL",CreateColor(0, 0, 0, 1), CreateColor(0, 0, 0, 0))
+		else
+			line.back:SetGradientAlpha("HORIZONTAL", 0, 0, 0, 1, 0, 0, 0, 0)
+		end
 
 		line.refreshArtifact = ELib:Button(line,REFRESH):Point("LEFT",245,0):Size(100,20):OnClick(Lines_RefreshArtifactButton_OnClick)
 		line.refreshArtifact:Hide()
@@ -1774,6 +2084,113 @@ function module.options:Load()
 		line:SetScript("OnEnter",Line_OnEnter)
 		line:SetScript("OnLeave",Line_OnLeave)
 	end
+
+
+	local function Line_GetTalentLine(self)
+		local line
+		for i=1,#self.talentsLines do
+			if not self.talentsLines[i]:IsShown() then
+				line = self.talentsLines[i]
+				break
+			end
+		end
+		if not line then
+			line = self:CreateLine(nil,"BACKGROUND",nil,2)
+			line:SetColorTexture(1,1,0,.5)
+			line:SetThickness(1)
+			self.talentsLines[#self.talentsLines+1] = line
+		end
+		line:ClearAllPoints()
+		line:Show()
+		return line
+	end
+
+	local function Line_GetTalentIcon(self,pos,isFreshCall)
+		if not pos then
+			return
+		end
+		local icon = self.talentsIcons[pos]
+		if not icon then
+			icon = ELib:Icon(self,nil,16,true)
+			self.talentsIcons[pos] = icon
+
+			icon.text = ELib:Text(icon,"",8):Color():Point("BOTTOMRIGHT",2,0):Outline()
+			icon.text:SetDrawLayer("OVERLAY")
+
+			icon:SetScript("OnEnter",Lines_ItemIcon_OnEnter)
+			icon:SetScript("OnLeave",Lines_ItemIcon_OnLeave)
+			icon:SetScript("OnClick",Lines_ItemIcon_OnClick)
+			
+			icon:Hide()
+		end
+		if isFreshCall then
+			icon.text:SetText("")
+			icon:Show()
+		end
+		return icon
+	end
+
+	local talentHeight = 250
+	self.talentsScrollFrame = ELib:ScrollFrame(self.borderList):Size(698,module.db.perPage*30):Point(0,0):Height((ceil((module.db.perPage*30)/talentHeight)+1)*talentHeight)
+	ELib:Border(self.talentsScrollFrame,0)
+	self.talentsScrollFrame:Hide()
+	self.talentsScrollFrame.HEIGHT = talentHeight
+
+	self.talentsScrollFrame.ScrollBar.slider:SetScript("OnValueChanged", function(self,value)
+		local parent = self:GetParent():GetParent()
+		parent:SetVerticalScroll(value % talentHeight)
+		local c = floor(value / talentHeight)
+		if self.prev ~= c then
+			module.options.ReloadPage()
+			self.prev = c
+		end
+		self:UpdateButtons()
+	end)
+
+	self.talentsScrollFrame.lines = {}
+	for i=1,(ceil((module.db.perPage*30)/talentHeight)+1)*2 do
+		local line = CreateFrame("Frame",nil,self.talentsScrollFrame.C)
+		self.talentsScrollFrame.lines[i] = line
+		line:SetSize(678/2,talentHeight)
+
+		line.WIDTH = 678/2
+		line.HEIGHT = talentHeight
+
+		if i==1 then
+			line:SetPoint("TOPLEFT",0,0)
+		elseif i % 2 == 0 then
+			line:SetPoint("TOPLEFT",self.talentsScrollFrame.lines[i-1],"TOPRIGHT",0,0)
+		else
+			line:SetPoint("TOPLEFT",self.talentsScrollFrame.lines[i-2],"BOTTOMLEFT",0,0)
+		end
+
+		line.name = ELib:Text(line,"Name",11):Color():Point("TOP",0,-2):Shadow():Center()
+
+		line.class = ELib:Icon(line,nil,24):Point("TOP",-13,-20)
+
+		line.spec = ELib:Icon(line,nil,24):Point("TOP",13,-20)
+		line.spec:SetScript("OnEnter",Lines_SpecIcon_OnEnter)
+		line.spec:SetScript("OnLeave",GameTooltip_Hide)
+
+		line.ilvl = ELib:Text(line,"630.52",11):Color():Point("TOP",0,-48):Shadow():Center()
+
+		line.back = line:CreateTexture(nil, "BACKGROUND", nil, -3)
+		line.back:SetPoint("TOPLEFT",0,0)
+		line.back:SetPoint("BOTTOMRIGHT",0,0)
+		line.back:SetColorTexture(1, 1, 1, 1)
+		if ExRT.is10 or ExRT.isLK1 then
+			line.back:SetGradient("HORIZONTAL",CreateColor(0, 0, 0, 1), CreateColor(0, 0, 0, 0))
+		else
+			line.back:SetGradientAlpha("HORIZONTAL", 0, 0, 0, 1, 0, 0, 0, 0)
+		end
+
+		line.talentsIcons = {}
+		line.GetTalentIcon = Line_GetTalentIcon
+
+		line.talentsLines = {}
+		line.GetTalentLine = Line_GetTalentLine
+	end
+
 	self.raidItemLevel = ELib:Text(self,"",12):Size(500,20):Point("TOPLEFT",self.borderList,"BOTTOMLEFT",3,-2):Shadow():Color()
 
 	local animationTimer = 0
@@ -1806,7 +2223,14 @@ function module.options:Load()
 	end)
 
 
-	self.moreInfoButton = ELib:Button(self,L.InspectViewerMoreInfo):Size(150,20):Point("TOPRIGHT",self.borderList,"BOTTOMRIGHT",-1,1):OnClick(function() module.options.moreInfoWindow:Show() end)
+	self.refreshAllButton = ELib:Button(self,L.InspectViewerRefreshAll):Size(120,20):Point("TOPRIGHT",self.borderList,"BOTTOMRIGHT",-1,1):OnClick(function() 
+		for _, name in ExRT.F.IterateRoster do
+			parentModule:AddToQueue(name)
+		end
+		module.options:showPage()
+	end)
+
+	self.moreInfoButton = ELib:Button(self,L.InspectViewerMoreInfo):Size(120,20):Point("RIGHT",self.refreshAllButton,"LEFT",-5,0):OnClick(function() module.options.moreInfoWindow:Show() end)
 
 	self.moreInfoWindow = ELib:Popup(L.InspectViewerMoreInfo):Size(250,170)
 	self.moreInfoWindow:SetScript("OnShow",function (self)
@@ -1864,7 +2288,7 @@ function module.options:Load()
 	end)
 	self.moreInfoWindow.textData  = ELib:Text(self.moreInfoWindow,"",11):Size(225,180):Point("TOP",0,-32):Top():Color()
 
-	self.buttonForce = ELib:Button(self,L.InspectViewerForce):Size(90,20):Point("RIGHT",self.moreInfoButton,"LEFT",-5,0):OnClick(function(self) 
+	self.buttonForce = ELib:Button(self,L.InspectViewerForce):Size(60,20):Point("RIGHT",self.moreInfoButton,"LEFT",-5,0):OnClick(function(self) 
 		parentModule:Force() 
 		self:SetEnabled(false)
 	end)
@@ -1898,7 +2322,8 @@ function module.options:Load()
 		module.options.RaidIlvl()
 	end
 	function self.UpdatePage_InspectEvent()
-		if not module.options:IsShown() then
+		module.options.talentsScrollFrame.prevState = nil
+		if not module.options:IsVisible() then
 			return
 		end
 		module.options:showPage()

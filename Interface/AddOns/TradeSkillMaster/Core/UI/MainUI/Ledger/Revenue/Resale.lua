@@ -4,7 +4,7 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local Resale = TSM.MainUI.Ledger.Revenue:NewPackage("Resale")
 local L = TSM.Include("Locale").GetTable()
 local Table = TSM.Include("Util.Table")
@@ -13,6 +13,7 @@ local Theme = TSM.Include("Util.Theme")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local Settings = TSM.Include("Service.Settings")
 local UIElements = TSM.Include("UI.UIElements")
+local UIUtils = TSM.Include("UI.UIUtils")
 local SECONDS_PER_DAY = 24 * 60 * 60
 local private = {
 	settings = nil,
@@ -20,7 +21,6 @@ local private = {
 	characters = {},
 	characterFilter = {},
 	typeFilter = {},
-	rarityList = {},
 	rarityFilter = {},
 	groupFilter = {},
 	searchFilter = "",
@@ -28,13 +28,15 @@ local private = {
 }
 local TYPE_LIST = { L["Auction"], COD, TRADE, L["Vendor"] }
 local TYPE_KEYS = { "Auction", "COD", "Trade", "Vendor" }
+local RARITY_LIST = {}
+local RARITY_KEYS = { 0, 1, 2, 3, 4, 5 }
 do
 	for _, key in ipairs(TYPE_KEYS) do
 		private.typeFilter[key] = true
 	end
-	for i = 1, 4 do
-		tinsert(private.rarityList, _G[format("ITEM_QUALITY%d_DESC", i)])
-		private.rarityFilter[i] = true
+	for _, key in ipairs(RARITY_KEYS) do
+		tinsert(RARITY_LIST, _G[format("ITEM_QUALITY%d_DESC", key)])
+		private.rarityFilter[key] = true
 	end
 end
 local TIME_LIST = { L["All Time"], L["Last 3 Days"], L["Last 7 Days"], L["Last 14 Days"], L["Last 30 Days"], L["Last 60 Days"] }
@@ -59,7 +61,7 @@ end
 -- ============================================================================
 
 function private.DrawResalePage()
-	TSM.UI.AnalyticsRecordPathChange("main", "ledger", "revenue", "resale")
+	UIUtils.AnalyticsRecordPathChange("main", "ledger", "revenue", "resale")
 	wipe(private.characters)
 	TSM.Accounting.Transactions.GetCharacters(private.characters)
 	for _, character in ipairs(private.characters) do
@@ -67,7 +69,8 @@ function private.DrawResalePage()
 	end
 
 	private.summaryQuery = private.summaryQuery or TSM.Accounting.Transactions.CreateSummaryQuery()
-		:InnerJoin(ItemInfo.GetDBForJoin(), "itemString")
+		:VirtualField("name", "string", ItemInfo.GetName, "itemString", "?")
+		:VirtualField("quality", "number", ItemInfo.GetQuality, "itemString", 0)
 		:OrderBy("name", true)
 	private.UpdateQuery()
 	local totalProfit = 0
@@ -111,7 +114,7 @@ function private.DrawResalePage()
 			)
 			:AddChild(UIElements.New("MultiselectionDropdown", "rarity")
 				:SetMargin(0, 8, 0, 0)
-				:SetItems(private.rarityList)
+				:SetItems(RARITY_LIST, RARITY_KEYS)
 				:SetSettingInfo(private, "rarityFilter")
 				:SetSelectionText(L["No Rarities"], L["%d Rarities"], L["All Rarities"])
 				:SetScript("OnSelectionChanged", private.FilterChangedCommon)
@@ -137,7 +140,7 @@ function private.DrawResalePage()
 					:SetTitle(L["Item"])
 					:SetFont("ITEM_BODY3")
 					:SetJustifyH("LEFT")
-					:SetTextInfo("itemString", TSM.UI.GetColoredItemName)
+					:SetTextInfo("itemString", UIUtils.GetDisplayItemName)
 					:SetSortInfo("name")
 					:SetTooltipInfo("itemString")
 					:DisableHiding()
@@ -195,10 +198,7 @@ function private.DrawResalePage()
 			:SetQuery(private.summaryQuery)
 			:SetScript("OnRowClick", private.TableSelectionChanged)
 		)
-		:AddChild(UIElements.New("Texture", "line")
-			:SetHeight(2)
-			:SetTexture("ACTIVE_BG")
-		)
+		:AddChild(UIElements.New("HorizontalLine", "line"))
 		:AddChild(UIElements.New("Frame", "footer")
 			:SetLayout("HORIZONTAL")
 			:SetHeight(40)
@@ -209,15 +209,13 @@ function private.DrawResalePage()
 				:SetFont("BODY_BODY2_MEDIUM")
 				:SetText(format(L["%s Items Resold"], Theme.GetColor("INDICATOR"):ColorText(FormatLargeNumber(numItems))))
 			)
-			:AddChild(UIElements.New("Texture", "line")
+			:AddChild(UIElements.New("VerticalLine", "line")
 				:SetMargin(4, 8, 0, 0)
-				:SetWidth(2)
-				:SetTexture("ACTIVE_BG")
 			)
 			:AddChild(UIElements.New("Text", "profit")
 				:SetWidth("AUTO")
 				:SetFont("BODY_BODY2_MEDIUM")
-				:SetText(format(L["%s Total Profit"], Money.ToString(totalProfit)))
+				:SetText(format(L["%s Total Profit"], Money.ToString(totalProfit, nil, "OPT_RETAIL_ROUND")))
 			)
 			:AddChild(UIElements.New("Spacer", "spacer"))
 		)
@@ -230,15 +228,15 @@ end
 -- ============================================================================
 
 function private.GetMoneyText(value)
-	return Money.ToString(value)
+	return Money.ToString(value, nil, "OPT_RETAIL_ROUND")
 end
 
 function private.GetColoredMoneyText(value)
-	return Money.ToString(value, Theme.GetFeedbackColor(value >= 0 and "GREEN" or "RED"):GetTextColorPrefix())
+	return Money.ToString(value, Theme.GetColor(value >= 0 and "FEEDBACK_GREEN" or "FEEDBACK_RED"):GetTextColorPrefix(), "OPT_RETAIL_ROUND")
 end
 
 function private.GetPctText(value)
-	return Theme.GetFeedbackColor(value >= 0 and "GREEN" or "RED"):ColorText(value.."%")
+	return Theme.GetColor(value >= 0 and "FEEDBACK_GREEN" or "FEEDBACK_RED"):ColorText(value.."%")
 end
 
 
@@ -258,7 +256,7 @@ function private.FilterChangedCommon(dropdown)
 	dropdown:GetElement("__parent.__parent.scrollingTable"):UpdateData(true)
 	local footer = dropdown:GetElement("__parent.__parent.footer")
 	footer:GetElement("num"):SetText(format(L["%s Items Resold"], Theme.GetColor("INDICATOR"):ColorText(FormatLargeNumber(numItems))))
-	footer:GetElement("profit"):SetText(format(L["%s Total Profit"], Money.ToString(totalProfit)))
+	footer:GetElement("profit"):SetText(format(L["%s Total Profit"], Money.ToString(totalProfit, nil, "OPT_RETAIL_ROUND")))
 	footer:Draw()
 end
 
@@ -289,7 +287,7 @@ function private.UpdateQuery()
 	local characterFilter = Table.Count(private.characterFilter) ~= #private.characters and private.characterFilter or nil
 	local minTime = private.timeFrameFilter ~= 0 and (time() - private.timeFrameFilter) or nil
 	TSM.Accounting.Transactions.UpdateSummaryData(groupFilter, searchFilter, typeFilter, characterFilter, minTime)
-	if Table.Count(private.rarityFilter) ~= #private.rarityList then
+	if Table.Count(private.rarityFilter) ~= #RARITY_LIST then
 		private.summaryQuery:InTable("quality", private.rarityFilter)
 	end
 end

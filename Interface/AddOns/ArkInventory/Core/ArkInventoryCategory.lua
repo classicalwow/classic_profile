@@ -21,6 +21,7 @@ ArkInventory.Const.Category = {
 		System = 1,
 		Custom = 2,
 		Rule = 3,
+		Action = 4,
 	},
 	
 	Code = {
@@ -77,6 +78,14 @@ ArkInventory.Const.Category = {
 				id = "SYSTEM_EQUIPMENT_ACCOUNTBOUND",
 				text = string.format( "%s (%s)", ArkInventory.Localise["EQUIPMENT"], ArkInventory.Localise["ITEM_BIND4"] ),
 			},
+			[457] = {
+				id = "SYSTEM_ITEM_BIND_PARTYLOOT",
+				text = string.format( "%s (%s)", ArkInventory.Localise["EQUIPMENT"], ArkInventory.Localise["ITEM_BIND_PARTYLOOT"] ),
+			},
+			[458] = {
+				id = "SYSTEM_ITEM_BIND_REFUNDABLE",
+				text = string.format( "%s (%s)", ArkInventory.Localise["EQUIPMENT"], ArkInventory.Localise["ITEM_BIND_REFUNDABLE"] ),
+			},
 			[415] = {
 				id = "SYSTEM_MOUNT_BOUND",
 				text = string.format( "%s (%s)", ArkInventory.Localise["MOUNT"], ArkInventory.Localise["BOUND"] ),
@@ -86,7 +95,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["MOUNT"],
 			},
 			[421] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_PROJECTILE",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_PROJECTILE"],
 			},
@@ -101,12 +110,12 @@ ArkInventory.Const.Category = {
 				text = string.format( "%s (%s)", ArkInventory.Localise["PET"], ArkInventory.Localise["BOUND"] ),
 			},
 			[441] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "SYSTEM_PET_BATTLE_TRADE",
 				text = ArkInventory.Localise["BATTLEPET"],
 			},
 			[442] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "SYSTEM_PET_BATTLE_BOUND",
 				text = string.format( "%s (%s)", ArkInventory.Localise["BATTLEPET"], ArkInventory.Localise["BOUND"] ),
 			},
@@ -119,7 +128,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["CURRENCY"],
 			},
 			[445] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
 				id = "SYSTEM_TOY",
 				text = ArkInventory.Localise["TOY"],
 			},
@@ -128,31 +137,23 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["CONFIG_DESIGN_ITEM_OVERRIDE_NEW"],
 			},
 			[447] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_HEIRLOOM",
 				text = ArkInventory.Localise["HEIRLOOM"],
 			},
 --			[448] = {
---				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+--				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA, ArkInventory.ENUM.EXPANSION.BFA ),
 --				id = "SYSTEM_ARTIFACT_RELIC",
 --				text = ArkInventory.Localise["WOW_ITEM_CLASS_GEM_ARTIFACTRELIC"],
 --			},
 			[451] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ),
 				id = "SYSTEM_MYTHIC_KEYSTONE",
 				text = ArkInventory.Localise["CATEGORY_SYSTEM_MYTHIC_KEYSTONE"],
 			},
 			[452] = {
 				id = "SYSTEM_CRAFTING_REAGENT",
 				text = ArkInventory.Localise["CRAFTING_REAGENT"],
-			},
-			[457] = {
-				id = "SYSTEM_ITEM_BIND_PARTYLOOT",
-				text = string.format( "%s (%s)", ArkInventory.Localise["EQUIPMENT"], ArkInventory.Localise["ITEM_BIND_PARTYLOOT"] ),
-			},
-			[458] = {
-				id = "SYSTEM_ITEM_BIND_REFUNDABLE",
-				text = string.format( "%s (%s)", ArkInventory.Localise["EQUIPMENT"], ArkInventory.Localise["ITEM_BIND_REFUNDABLE"] ),
 			},
 		},
 		Consumable = {
@@ -179,49 +180,54 @@ ArkInventory.Const.Category = {
 			[424] = {
 				id = "CONSUMABLE_POTION",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return "potion category (to be fixed)"
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_POTION"]
+					else
+						return ArkInventory.Localise["CATEGORY_CONSUMABLE_POTION"]
 					end
 				end,
 			},
 			[426] = {
 				id = "CONSUMABLE_EXPLOSIVES_AND_DEVICES",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return string.format( "%s & %s", ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_EXPLOSIVES"], ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_DEVICES"] )
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_EXPLOSIVES_AND_DEVICES"]
+					else
+						return string.format( "%s & %s", ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_EXPLOSIVES"], ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_DEVICES"] )
 					end
 				end,
 			},
 			[430] = {
 				id = "CONSUMABLE_ELIXIR",
-				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_ELIXIR"],
+				text = function( )
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
+						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_ELIXIR"]
+					else
+						return ArkInventory.Localise["CATEGORY_CONSUMABLE_ELIXIR"]
+					end
+				end,
 			},
 			[431] = {
 				id = "CONSUMABLE_FLASK",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return ArkInventory.Localise["CATEGORY_CONSUMABLE_FLASK"]
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_FLASK"]
+					else
+						return ArkInventory.Localise["CATEGORY_CONSUMABLE_FLASK"]
 					end
 				end,
 			},
 			[432] = {
 				id = "CONSUMABLE_BANDAGE",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return ArkInventory.Localise["CATEGORY_CONSUMABLE_BANDAGE"]
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_BANDAGE"]
+					else
+						return ArkInventory.Localise["CATEGORY_CONSUMABLE_BANDAGE"]
 					end
 				end,
 			},
 			[433] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
 				id = "CONSUMABLE_SCROLL",
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_SCROLL"],
 			},
@@ -236,15 +242,15 @@ ArkInventory.Const.Category = {
 			[437] = {
 				id = "CONSUMABLE_FOOD_AND_DRINK",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return string.format( "%s & %s", ArkInventory.Localise["CATEGORY_CONSUMABLE_FOOD"], ArkInventory.Localise["CATEGORY_CONSUMABLE_DRINK"] )
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_FOOD_AND_DRINK"]
+					else
+						return string.format( "%s & %s", ArkInventory.Localise["CATEGORY_CONSUMABLE_FOOD"], ArkInventory.Localise["CATEGORY_CONSUMABLE_DRINK"] )
 					end
 				end,
 			},
 			[449] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA ),
 				id = "CONSUMABLE_VANTUSRUNE",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_VANTUSRUNE"],
 			},
@@ -259,7 +265,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_ABILITIES_AND_ACTIONS"],
 			},
 			[902] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "CONSUMABLE_FOOD_PET",
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_FOOD_PET"],
 			},
@@ -268,32 +274,38 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["REPUTATION"],
 			},
 			[439] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_GLYPH",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_GLYPH"],
 			},
 			[440] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SYSTEM_ITEM_ENHANCEMENT",
-				text = ArkInventory.Localise["WOW_ITEM_CLASS_ITEM_ENHANCEMENT"],
+				text = function( )
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ) then
+						return ArkInventory.Localise["WOW_ITEM_CLASS_ITEM_ENHANCEMENT"]
+					else
+						return ArkInventory.Localise["WOW_ITEM_CLASS_CONSUMABLE_ITEM_ENHANCEMENT"]
+					end
+				end,
 			},
 			[454] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
 				id = "CONSUMABLE_CHAMPION_EQUIPMENT",
 				text = ArkInventory.Localise["CATEGORY_CONSUMABLE_CHAMPION_EQUIPMENT"],
 			},
 			[455] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
 				id = "CONSUMABLE_POWER_SHADOWLANDS_ANIMA",
 				text = string.format( "%s - %s", ArkInventory.Localise["COVENANT"], ArkInventory.Localise["ANIMA"] ),
 			},
 			[459] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
 				id = "CONSUMABLE_POWER_SHADOWLANDS_CONDUIT",
 				text = string.format( "%s - %s", ArkInventory.Localise["COVENANT"], ArkInventory.Localise["CONDUITS"] ),
 			},
 			[460] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.SHADOWLANDS ),
 				id = "CONSUMABLE_POWER_SHADOWLANDS",
 				text = string.format( "%s - %s", ArkInventory.Localise["COVENANT"], ArkInventory.Localise["OTHER"] ),
 			},
@@ -311,7 +323,7 @@ ArkInventory.Const.Category = {
 			},
 			[434] = {
 				-- cut gems only (which dont exist in classic)
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "TRADEGOODS_GEMS",
 				text = ArkInventory.Localise["GEMS"],
 			},
@@ -326,10 +338,10 @@ ArkInventory.Const.Category = {
 			[503] = {
 				id = "TRADEGOODS_ELEMENTAL",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return ArkInventory.Localise["ELEMENTAL"]
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_ELEMENTAL"]
+					else
+						return ArkInventory.Localise["ELEMENTAL"]
 					end
 				end,
 			},
@@ -344,10 +356,10 @@ ArkInventory.Const.Category = {
 			[506] = {
 				id = "TRADEGOODS_METAL_AND_STONE",
 				text = function( )
-					if not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
-						return ArkInventory.Localise["CATEGORY_TRADEGOODS_METAL_AND_STONE"]
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_METAL_AND_STONE"]
+					else
+						return ArkInventory.Localise["CATEGORY_TRADEGOODS_METAL_AND_STONE"]
 					end
 				end,
 			},
@@ -361,15 +373,15 @@ ArkInventory.Const.Category = {
 				-- uncut gems only
 				id = "TRADEGOODS_JEWELCRAFTING",
 				text = function( )
-					if ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ) then
-						return ArkInventory.Localise["GEMS"]
-					else
+					if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ) then
 						return ArkInventory.Localise["WOW_ITEM_CLASS_TRADEGOODS_JEWELCRAFTING"]
+					else
+						return ArkInventory.Localise["GEMS"]
 					end
 				end,
 			},
 			[514] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "TRADEGOODS_INSCRIPTION",
 				text = ArkInventory.Localise["WOW_SKILL_INSCRIPTION"],
 			},
@@ -408,7 +420,7 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_SKILL_HERBALISM"],
 			},
 			[109] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "SKILL_JEWELCRAFTING",
 				text = ArkInventory.Localise["WOW_SKILL_JEWELCRAFTING"],
 			},
@@ -429,12 +441,12 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_SKILL_TAILORING"],
 			},
 			[115] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "SKILL_INSCRIPTION",
 				text = ArkInventory.Localise["WOW_SKILL_INSCRIPTION"],
 			},
 			[116] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "SKILL_ARCHAEOLOGY",
 				text = ArkInventory.Localise["WOW_SKILL_ARCHAEOLOGY"],
 			},
@@ -477,19 +489,24 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_CLASS_WARRIOR"],
 			},
 			[210] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "CLASS_DEATHKNIGHT",
 				text = ArkInventory.Localise["WOW_CLASS_DEATHKNIGHT"],
 			},
 			[211] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "CLASS_MONK",
 				text = ArkInventory.Localise["WOW_CLASS_MONK"],
 			},
 			[212] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ),
 				id = "CLASS_DEMONHUNTER",
 				text = ArkInventory.Localise["WOW_CLASS_DEMONHUNTER"],
+			},
+			[213] = {
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAGONFLIGHT ),
+				id = "CLASS_EVOKER",
+				text = ArkInventory.Localise["WOW_CLASS_EVOKER"],
 			},
 		},
 		Empty = {
@@ -506,12 +523,12 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONTAINER_BAG"],
 			},
 			[303] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "EMPTY_KEYRING",
 				text = ArkInventory.Localise["KEYRING"],
 			},
 			[304] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "EMPTY_SOULSHARD",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONTAINER_SOULSHARD"],
 			},
@@ -524,54 +541,54 @@ ArkInventory.Const.Category = {
 				text = ArkInventory.Localise["WOW_SKILL_ENCHANTING"],
 			},
 			[307] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_ENGINEERING",
 				text = ArkInventory.Localise["WOW_SKILL_ENGINEERING"],
 			},
 			[308] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_JEWELCRAFTING",
 				text = ArkInventory.Localise["WOW_SKILL_JEWELCRAFTING"],
 			},
 			[309] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_MINING",
 				text = ArkInventory.Localise["WOW_SKILL_MINING"],
 			},
 			[310] = {
-				proj = not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( nil, ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "EMPTY_QUIVER",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_QUIVER"],
 			},
 			[312] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ),
 				id = "EMPTY_LEATHERWORKING",
 				text = ArkInventory.Localise["WOW_ITEM_CLASS_CONTAINER_LEATHERWORKING"],
 			},
 			[313] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ),
 				id = "EMPTY_INSCRIPTION",
 				text = ArkInventory.Localise["WOW_SKILL_INSCRIPTION"],
 			},
 			[314] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "EMPTY_FISHING",
 				text = ArkInventory.Localise["WOW_SKILL_FISHING"],
 			},
 			[315] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.CATACLYSM ),
 				id = "EMPTY_VOID",
-				text = ArkInventory.Localise["VOIDSTORAGE"],
+				text = ArkInventory.Localise["VOID_STORAGE"],
 			},
 			[316] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.PANDARIA ),
 				id = "EMPTY_COOKING",
 				text = ArkInventory.Localise["WOW_SKILL_COOKING"],
 			},
 			[317] = {
-				proj = ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ),
-				id = "EMPTY_REAGENTBANK",
-				text = ArkInventory.Localise["REAGENTBANK"],
+				proj = ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.DRAENOR ),
+				id = "EMPTY_REAGENT",
+				text = ArkInventory.Localise["CRAFTING_REAGENT"],
 			},
 		},
 		Other = { -- do NOT change the indicies - if you have to then see the DatabaseUpgradePostLoad( ) function to remap it
@@ -588,7 +605,7 @@ function ArkInventory.ObjectIDCategory( i, isRule )
 	
 	-- if you change these values then you need to upgrade the savedvariable data as well
 	
-	local soulbound = ArkInventory.Const.Bind.Never
+	local soulbound = ArkInventory.ENUM.BIND.NEVER
 	if ArkInventory.IsBound( i.sb ) then
 		soulbound = 1
 	end
@@ -628,7 +645,7 @@ end
 function ArkInventory.ObjectIDRule( i )
 	-- not saved, cached only, can be changed at any time
 	local id, ignore, codex = ArkInventory.ObjectIDCategory( i, true )
-	local rid = string.format( "%i:%i:%i:%i:%s", i.loc_id or 0, i.bag_id or 0, i.slot_id or 0, i.sb or ArkInventory.Const.Bind.Never, id )
+	local rid = string.format( "%i:%i:%i:%i:%s", i.loc_id or 0, i.bag_id or 0, i.slot_id or 0, i.sb or ArkInventory.ENUM.BIND.NEVER, id )
 	return rid, id, codex
 end
 
@@ -719,39 +736,64 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	
 	
 	-- setup tooltip for scanning.  it will be ready as we've already checked
-	ArkInventory.TooltipSetItem( ArkInventory.Global.Tooltip.Scan, i.loc_id, i.bag_id, i.slot_id, i.h, i )
+	ArkInventory.TooltipSet( ArkInventory.Global.Tooltip.Scan, i.loc_id, i.bag_id, i.slot_id, i.h, i )
 	
 	-- if enabled - already known soulbound items are junk (tooltip)
-	if ArkInventory.db.option.junk.soulbound.known then --and not ArkInventory.Global.Location[i.loc_id].isOffline
+	if ArkInventory.db.option.action.vendor.soulbound.known then --and not ArkInventory.Global.Location[i.loc_id].isOffline
 		if ArkInventory.IsBound( i.sb ) then
-			if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["ALREADY_KNOWN"], false, true, false, ArkInventory.Const.Tooltip.Search.Base ) then
+			if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["ALREADY_KNOWN"], false, true, false, ArkInventory.Const.Tooltip.Search.Base ) then
 				--ArkInventory.Output( i.h, " is junk?" )
 				return ArkInventory.CategoryGetSystemID( "SYSTEM_JUNK" )
 			end
 		end
 	end
 	
-	-- toy (tooltip)
-	if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_ITEM_TOY_ONUSE"], false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
+	-- misc (pets)
+	if ( info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT and info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.PET ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Pet" ) then
+		if ArkInventory.IsBound( i.sb ) then
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_COMPANION_BOUND" )
+		else
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_COMPANION_TRADE" )
+		end
+	end
+	
+	-- battle pet as an item
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.BATTLEPET.PARENT then
+		if ArkInventory.IsBound( i.sb ) then
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_BATTLE_BOUND" )
+		else
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_BATTLE_TRADE" )
+		end
+	end
+	
+	-- misc (mount)
+	if ( info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT and info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.MOUNT ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Mount" ) then
+		if ArkInventory.IsBound( i.sb ) then
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_MOUNT_BOUND" )
+		else
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_MOUNT_TRADE" )
+		end
+	end
+	
+	-- toy
+	if ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Toy" ) or ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ITEM_TOY_ONUSE"], false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_TOY" )
 	end
 	
 	
-	
-	
 	-- currencies and power
-	if ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
+	if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.LEGION ) then
 		
 		-- legion
-		if info.expansion == ArkInventory.Const.BLIZZARD.GLOBAL.EXPANSION.LEGION then
+		if info.expansion == ArkInventory.ENUM.EXPANSION.LEGION then
 			
 			-- artifact power (tooltip)
-			if ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_ARTIFACT_POWER"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
+			if ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ARTIFACT_POWER"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
 				return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SYSTEM_OLD" )
 			end
 			
 			-- ancient mana (tooltip)
-			if ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_ANCIENT_MANA"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
+			if ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ANCIENT_MANA"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
 				return ArkInventory.CategoryGetSystemID( "SYSTEM_CURRENCY" )
 			end
 			
@@ -760,22 +802,22 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		-- bfa used azerite which acted more like a currency you earnt than an item you collected
 		
 		-- shadowlands
-		if info.expansion == ArkInventory.Const.BLIZZARD.GLOBAL.EXPANSION.SHADOWLANDS then
+		if info.expansion == ArkInventory.ENUM.EXPANSION.SHADOWLANDS then
 			
 			if ArkInventory.CrossClient.IsAnimaItemByID( info.id ) then
 				return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SHADOWLANDS_ANIMA" )
 			end
 			
 			-- conduits (tooltip)
-			if ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_CONDUIT_POTENCY"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
+			if ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_CONDUIT_POTENCY"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
 				return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SHADOWLANDS_CONDUIT" )
 			end
 			
-			if ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_CONDUIT_FINESSE"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
+			if ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_CONDUIT_FINESSE"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
 				return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SHADOWLANDS_CONDUIT" )
 			end
 			
-			if ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_CONDUIT_ENDURANCE"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
+			if ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_CONDUIT_ENDURANCE"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short ) then
 				return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SHADOWLANDS_CONDUIT" )
 			end
 			
@@ -800,39 +842,43 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	end
 	
 	-- quest items (some are grey)
-	if info.itemtypeid == ArkInventory.Const.ItemClass.QUEST or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Quest" ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.QUEST.PARENT or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Quest" ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_QUEST" )
 	end
 	
 	-- cosmetic items (tooltip check is further down)
-	if ( info.itemtypeid == ArkInventory.Const.ItemClass.ARMOR and info.itemsubtypeid == ArkInventory.Const.ItemClass.ARMOR_COSMETIC ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Equipment.Cosmetic" ) then
+	if ( info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT and info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.ARMOR.COSMETIC ) or ArkInventory.CrossClient.IsItemCosmetic( i.h ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Equipment.Cosmetic" ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_EQUIPMENT_COSMETIC" )
 	end
 	
+	
+	
 	-- junk
-	if info.q == ArkInventory.Const.BLIZZARD.GLOBAL.ITEMQUALITY.POOR or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Junk" ) then
-		return ArkInventory.CategoryGetSystemID( "SYSTEM_JUNK" )
+	if info.q == ArkInventory.ENUM.ITEM.QUALITY.POOR or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Junk" ) then
+		--if not ArkInventory.ItemTransmogState( i.h, i.sb, i.loc_id ) then
+			return ArkInventory.CategoryGetSystemID( "SYSTEM_JUNK" )
+		--end
 	end
 	
 	-- projectiles
-	if info.itemtypeid == ArkInventory.Const.ItemClass.PROJECTILE then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.PROJECTILE.PARENT then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_PROJECTILE" )
 	end
 	
 	-- bags / containers
-	if info.itemtypeid == ArkInventory.Const.ItemClass.CONTAINER then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.CONTAINER.PARENT then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_CONTAINER" )
 	end
 	
 	-- equipable items (tooltip)
-	if info.equiploc ~= "" or info.itemtypeid == ArkInventory.Const.ItemClass.WEAPON or info.itemtypeid == ArkInventory.Const.ItemClass.ARMOR or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Armor Token" ) then
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_ITEM_COSMETIC"], false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
+	if info.equiploc ~= "" or info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.WEAPON.PARENT or info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.ARMOR.PARENT or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Armor Token" ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_ITEM_COSMETIC"], false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "SYSTEM_EQUIPMENT_COSMETIC" )
-		elseif i.sb == ArkInventory.Const.Bind.Account then
+		elseif i.sb == ArkInventory.ENUM.BIND.ACCOUNT then
 			return ArkInventory.CategoryGetSystemID( "SYSTEM_EQUIPMENT_ACCOUNTBOUND" )
-		elseif i.sb == ArkInventory.Const.Bind.Pickup then
-			if ArkInventory.db.option.junk.soulbound.equipment then
-				if not ArkInventory.TooltipCanUse( ArkInventory.Global.Tooltip.Scan, ArkInventory.db.option.junk.soulbound.known, ArkInventory.db.option.junk.soulbound.itemlevel ) then
+		elseif i.sb == ArkInventory.ENUM.BIND.PICKUP then
+			if ArkInventory.db.option.action.vendor.soulbound.equipment then
+				if not ArkInventory.TooltipCanUse( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.db.option.action.vendor.soulbound.known, ArkInventory.db.option.action.vendor.soulbound.itemlevel ) then
 					--ArkInventory.Output( i.h, " is junk" )
 					return ArkInventory.CategoryGetSystemID( "SYSTEM_JUNK" )
 				end
@@ -843,69 +889,41 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		end
 	end
 	
+	-- heirlooms
+	if info.q == ArkInventory.ENUM.ITEM.QUALITY.HEIRLOOM or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Heirloom" ) then
+		return ArkInventory.CategoryGetSystemID( "SYSTEM_HEIRLOOM" )
+	end
+	
 	-- keys
-	if info.itemtypeid == ArkInventory.Const.ItemClass.KEY or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Key" ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.KEY.PARENT or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Key" ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_KEY" )
 	end
 	
 	-- glyphs
-	if info.itemtypeid == ArkInventory.Const.ItemClass.GLYPH then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.GLYPH.PARENT then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_GLYPH" )
 	end
 	
-	-- battle pet as an item
-	if info.itemtypeid == ArkInventory.Const.ItemClass.BATTLEPET then
-		if ArkInventory.IsBound( i.sb ) then
-			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_BATTLE_BOUND" )
-		else
-			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_BATTLE_TRADE" )
-		end
-	end
-	
-	-- misc (pets)
-	if ( info.itemtypeid == ArkInventory.Const.ItemClass.MISC and info.itemsubtypeid == ArkInventory.Const.ItemClass.MISC_PET ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Pet" ) then
-		if ArkInventory.IsBound( i.sb ) then
-			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_COMPANION_BOUND" )
-		else
-			return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_COMPANION_TRADE" )
-		end
-	end
-	
-	-- misc (mount)
-	if ( info.itemtypeid == ArkInventory.Const.ItemClass.MISC and info.itemsubtypeid == ArkInventory.Const.ItemClass.MISC_MOUNT ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Mount" ) then
-		if ArkInventory.IsBound( i.sb ) then
-			return ArkInventory.CategoryGetSystemID( "SYSTEM_MOUNT_BOUND" )
-		else
-			return ArkInventory.CategoryGetSystemID( "SYSTEM_MOUNT_TRADE" )
-		end
-	end
-	
-	-- PT toy
-	if ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Toy" ) then
-		return ArkInventory.CategoryGetSystemID( "SYSTEM_TOY" )
-	end
-	
-	
 	-- gems
-	if info.itemtypeid == ArkInventory.Const.ItemClass.GEM or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Gems" ) then
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.GEM_ARTIFACTRELIC or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Gems.Artifact Relic" ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.GEM.PARENT or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Gems" ) then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.GEM.ARTIFACTRELIC or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Gems.Artifact Relic" ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SYSTEM_OLD" )
-		elseif ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ) then
-			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_GEMS" )
-		else
+		elseif ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ) then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_JEWELCRAFTING" )
+		else
+			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_GEMS" )
 		end
 	end
 	
-	if ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
+	if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.BFA ) then
 		-- artifact power.  tooltip check is lower down
-		if ArkInventory.CrossClient.IsArtifactPowerItem( info.id ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Consumable.Artifact Power" ) then
+		if ArkInventory.CrossClient.IsItemArtifactPower( info.id ) or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Consumable.Artifact Power" ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POWER_SYSTEM_OLD" )
 		end
 	end
 	
 	-- item enhancements
-	if info.itemtypeid == ArkInventory.Const.ItemClass.ITEM_ENHANCEMENT or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Item Enhancement" ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.ITEM_ENHANCEMENT.PARENT or ArkInventory.PT_ItemInSets( i.h, "ArkInventory.System.Item Enhancement" ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_ITEM_ENHANCEMENT" )
 	end
 	
@@ -964,53 +982,53 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	
 	
 	
-	if info.itemtypeid == ArkInventory.Const.ItemClass.CONSUMABLE and not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.PARENT and ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ) then
 		
 		-- classic has no subcategories
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_EXPLOSIVES_AND_DEVICES then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.EXPLOSIVES_AND_DEVICES then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_EXPLOSIVES_AND_DEVICES" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_POTION then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.POTION then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POTION" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_ELIXIR then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.ELIXIR then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_ELIXIR" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_FLASK then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.FLASK then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_FLASK" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_FOOD_AND_DRINK then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.FOOD_AND_DRINK then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_FOOD_AND_DRINK" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_BANDAGE then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.BANDAGE then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_BANDAGE" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.CONSUMABLE_VANTUSRUNE then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.VANTUSRUNE then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_VANTUSRUNE" )
 		end
 		
 	end
 	
-	if info.itemtypeid == ArkInventory.Const.ItemClass.TRADEGOODS and not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.PARENT and ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ) then
 	
 		-- old subcategories still exist but are hidden
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_EXPLOSIVES_AND_DEVICES then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.EXPLOSIVES_AND_DEVICES then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_EXPLOSIVES_AND_DEVICES" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_EXPLOSIVES then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.EXPLOSIVES then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_EXPLOSIVES_AND_DEVICES" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_DEVICES then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.DEVICES then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_EXPLOSIVES_AND_DEVICES" )
 		end
 		
@@ -1025,54 +1043,53 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	-- categorise based off characters primary professions
 	if codex.player.data.tradeskill and codex.player.data.tradeskill.priority > 0 then
 		
-		local ignore, ignore, req = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_SKILL"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short )
+		local req = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_SKILL"], false, true, false, 0, ArkInventory.Const.Tooltip.Search.Short )
 		
-		-- priority profession
+		-- the priority profession
 		for x = 1, ArkInventory.Const.Tradeskill.numPrimary do
-			
-			if codex.player.data.info.tradeskill[x] then
-				
-				local skill = ArkInventory.Const.Tradeskill.Data[codex.player.data.info.tradeskill[x]]
-				if skill and codex.player.data.tradeskill.priority == x then
+			if codex.player.data.tradeskill.priority == x then
+				if codex.player.data.info.tradeskill[x] then
 					
-					if ArkInventory.PT_ItemInSets( i.h, skill.pt ) then
-						return ArkInventory.CategoryGetSystemID( skill.id )
-					end
-					
-					if req and string.find( req, tostring( skill.text ) ) then
-						return ArkInventory.CategoryGetSystemID( skill.id )
+					local skill = ArkInventory.Const.Tradeskill.Data[codex.player.data.info.tradeskill[x]]
+					if skill then
+						
+						if req and string.find( req, tostring( skill.text ) ) then
+							return ArkInventory.CategoryGetSystemID( skill.id )
+						end
+						
+						if ArkInventory.PT_ItemInSets( i.h, skill.pt ) then
+							return ArkInventory.CategoryGetSystemID( skill.id )
+						end
+						
 					end
 					
 				end
-				
 			end
-			
 		end
 		
-		-- other profession
+		-- the other profession
 		for x = 1, ArkInventory.Const.Tradeskill.numPrimary do
-			
-			if codex.player.data.info.tradeskill[x] then
-				
-				local skill = ArkInventory.Const.Tradeskill.Data[codex.player.data.info.tradeskill[x]]
-				if skill and codex.player.data.tradeskill.priority ~= x then
+			if codex.player.data.tradeskill.priority ~= x then
+				if codex.player.data.info.tradeskill[x] then
 					
-					if ArkInventory.PT_ItemInSets( i.h, skill.pt ) then
-						return ArkInventory.CategoryGetSystemID( skill.id )
-					end
-					
-					if req and string.find( req, tostring( skill.text ) ) then
-						return ArkInventory.CategoryGetSystemID( skill.id )
+					local skill = ArkInventory.Const.Tradeskill.Data[codex.player.data.info.tradeskill[x]]
+					if skill then
+						
+						if req and string.find( req, tostring( skill.text ) ) then
+							return ArkInventory.CategoryGetSystemID( skill.id )
+						end
+						
+						if ArkInventory.PT_ItemInSets( i.h, skill.pt ) then
+							return ArkInventory.CategoryGetSystemID( skill.id )
+						end
+						
 					end
 					
 				end
-				
 			end
-			
 		end
 		
 	end
-	
 	
 	
 	-- tradegoods
@@ -1096,7 +1113,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		return ArkInventory.CategoryGetSystemID( "TRADEGOODS_ENCHANTING" )
 	end
 	
-	if ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.RETAIL ) then
+	if ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.WRATH ) then
 		
 		if ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Tradegoods.Inscription" ) then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_INSCRIPTION" )
@@ -1121,47 +1138,47 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		return ArkInventory.CategoryGetSystemID( "TRADEGOODS_COOKING" )
 	end
 	
-	if info.itemtypeid == ArkInventory.Const.ItemClass.TRADEGOODS and not ArkInventory.ClientCheck( ArkInventory.Const.BLIZZARD.CLIENT.CODE.CLASSIC ) then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.PARENT and ArkInventory.ClientCheck( ArkInventory.ENUM.EXPANSION.TBC ) then
 		
 		-- classic has no itemsubtypes
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_CLOTH then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.CLOTH then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_CLOTH" )
 		end
 	
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_LEATHER then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.LEATHER then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_LEATHER" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_METAL_AND_STONE then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.METAL_AND_STONE then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_METAL_AND_STONE" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_COOKING then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.COOKING then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_COOKING" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_HERBS then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.HERBS then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_HERBS" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_ENCHANTING then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.ENCHANTING then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_ENCHANTING" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_INSCRIPTION then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.INSCRIPTION then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_INSCRIPTION" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_JEWELCRAFTING then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.JEWELCRAFTING then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_JEWELCRAFTING" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_PARTS then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.PARTS then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_PARTS" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.TRADEGOODS_ELEMENTAL then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.ELEMENTAL then
 			return ArkInventory.CategoryGetSystemID( "TRADEGOODS_ELEMENTAL" )
 		end
 		
@@ -1178,7 +1195,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		end
 		
 		-- class requirement (via tooltip)
-		local ignore, ignore, req = ArkInventory.TooltipFind( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_CLASS"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
+		local req = ArkInventory.TooltipMatch( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_TOOLTIP_REQUIRES_CLASS"], false, true, true, 0, ArkInventory.Const.Tooltip.Search.Short )
 		if req and string.find( req, codex.player.data.info.class_local ) then
 			return ArkInventory.CategoryGetSystemID( string.format( "CLASS_%s", codex.player.data.info.class ) )
 		end
@@ -1187,45 +1204,45 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	
 	
 	-- consumable (tooltip)
-	if info.itemtypeid == ArkInventory.Const.ItemClass.CONSUMABLE then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.PARENT then
 		
 		-- food
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_ITEM_TOOLTIP_FOOD"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_ITEM_TOOLTIP_FOOD"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_FOOD" )
 		end
 		
 		-- drink
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_ITEM_TOOLTIP_DRINK"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_ITEM_TOOLTIP_DRINK"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_DRINK" )
 		end
 		
 		-- potions
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_ITEM_TOOLTIP_POTION_HEAL"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_ITEM_TOOLTIP_POTION_HEAL"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POTION_HEAL" )
 		end
 		
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_ITEM_TOOLTIP_POTION_MANA"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_ITEM_TOOLTIP_POTION_MANA"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_POTION_MANA" )
 		end
 		
 		-- elixir
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_ITEM_TOOLTIP_ELIXIR_BATTLE"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_ITEM_TOOLTIP_ELIXIR_BATTLE"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_ELIXIR_BATTLE" )
 		end
 		
-		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["WOW_ITEM_TOOLTIP_ELIXIR_GUARDIAN"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
+		if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["WOW_ITEM_TOOLTIP_ELIXIR_GUARDIAN"], false, true, true, ArkInventory.Const.Tooltip.Search.Short ) then
 			return ArkInventory.CategoryGetSystemID( "CONSUMABLE_ELIXIR_GUARDIAN" )
 		end
 		
 	end
 	
 	-- recipe (after professions so only the leftovers are categorised)
-	if info.itemtypeid == ArkInventory.Const.ItemClass.RECIPE then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.RECIPE.PARENT then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_RECIPE" )
 	end
 	
 	-- reagent
-	if info.itemtypeid == ArkInventory.Const.ItemClass.REAGENT then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.REAGENT.PARENT then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_REAGENT" )
 	end
 	
@@ -1234,29 +1251,40 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_REPUTATION" )
 	end
 	
-	-- secondary professions
-	if ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Skill.Fishing" ) then
-		return ArkInventory.CategoryGetSystemID( "SKILL_FISHING" )
+	
+	-- primary professions - non crafting reagents?
+	if not info.craft then
+		for x in pairs( codex.player.data.info.tradeskill ) do
+			local skill = ArkInventory.Const.Tradeskill.Data[codex.player.data.info.tradeskill[x]]
+			if skill and skill.primary then
+				if ArkInventory.PT_ItemInSets( i.h, skill.pt ) then
+					return ArkInventory.CategoryGetSystemID( skill.id )
+				end
+			end
+		end
 	end
 	
-	if ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Skill.Cooking" ) then
-		return ArkInventory.CategoryGetSystemID( "SKILL_COOKING" )
+	-- secondary professions - all items
+	for x in pairs( codex.player.data.info.tradeskill ) do
+		local skill = ArkInventory.Const.Tradeskill.Data[codex.player.data.info.tradeskill[x]]
+		if skill and not skill.primary then
+			if ArkInventory.PT_ItemInSets( i.h, skill.pt ) then
+				return ArkInventory.CategoryGetSystemID( skill.id )
+			end
+		end
 	end
 	
-	if ArkInventory.PT_ItemInSets( i.h, "ArkInventory.Skill.Archaeology" ) then
-		return ArkInventory.CategoryGetSystemID( "SKILL_ARCHAEOLOGY" )
-	end
 	
 	-- misc
-	if info.itemtypeid == ArkInventory.Const.ItemClass.MISC then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT then
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.MISC_REAGENT then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.REAGENT then
 			return ArkInventory.CategoryGetSystemID( "SYSTEM_REAGENT" )
 		end
 		
-		if info.itemsubtypeid == ArkInventory.Const.ItemClass.MISC_OTHER then
+		if info.itemsubtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.OTHER then
 			
-			if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ArkInventory.Localise["BATTLEPET"], false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
+			if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ArkInventory.Localise["BATTLEPET"], false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
 				if ArkInventory.IsBound( i.sb ) then
 					return ArkInventory.CategoryGetSystemID( "SYSTEM_PET_COMPANION_BOUND" )
 				else
@@ -1269,7 +1297,7 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 	end
 	
 	-- quest items (via tooltip)
-	if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, ITEM_BIND_QUEST, false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
+	if ArkInventory.TooltipContains( ArkInventory.Global.Tooltip.Scan, nil, ITEM_BIND_QUEST, false, true, false, ArkInventory.Const.Tooltip.Search.Short ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_QUEST" )
 	end
 	
@@ -1282,24 +1310,19 @@ function ArkInventory.ItemCategoryGetDefaultActual( i )
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_CRAFTING_REAGENT" )
 	end
 	
-	-- heirlooms
-	if info.q == ArkInventory.Const.BLIZZARD.GLOBAL.ITEMQUALITY.HEIRLOOM then
-		return ArkInventory.CategoryGetSystemID( "SYSTEM_HEIRLOOM" )
-	end
-	
 	if ArkInventory.IsBound( i.sb ) then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_BOUND" )
 	end
 	
-	if info.itemtypeid == ArkInventory.Const.ItemClass.TRADEGOODS then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.TRADEGOODS.PARENT then
 		return ArkInventory.CategoryGetSystemID( "TRADEGOODS_OTHER" )
 	end
 	
-	if info.itemtypeid == ArkInventory.Const.ItemClass.CONSUMABLE then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.CONSUMABLE.PARENT then
 		return ArkInventory.CategoryGetSystemID( "CONSUMABLE_OTHER" )
 	end
 	
-	if info.itemtypeid == ArkInventory.Const.ItemClass.MISC then
+	if info.itemtypeid == ArkInventory.ENUM.ITEM.TYPE.MISC.PARENT then
 		return ArkInventory.CategoryGetSystemID( "SYSTEM_MISC" )
 	end
 	
@@ -1398,11 +1421,11 @@ function ArkInventory.ItemCategoryGetDefaultEmpty( loc_id, bag_id )
 		end
 	end
 	
-	if bt == ArkInventory.Const.Slot.Type.ReagentBank then
+	if bt == ArkInventory.Const.Slot.Type.Reagent then
 		if clump then
 			return ArkInventory.CategoryGetSystemID( "EMPTY" )
 		else
-			return ArkInventory.CategoryGetSystemID( "EMPTY_REAGENTBANK" )
+			return ArkInventory.CategoryGetSystemID( "EMPTY_REAGENT" )
 		end
 	end
 	
@@ -1462,13 +1485,13 @@ function ArkInventory.ItemCategoryGetPrimary( i )
 		-- items category cache id
 		local cid, id, codex = ArkInventory.ObjectIDCategory( i )
 		
-		local cat_id = codex.catset.category.assign[id]
+		local cat_id = codex.catset.ia[id].assign
 		if cat_id then
 			-- manually assigned item to a category?
 			local cat_type, cat_num = ArkInventory.CategoryIdSplit( cat_id )
 			if cat_type == 1 then
 				return cat_id
-			elseif codex.catset.category.active[cat_type][cat_num] then -- category is active in this categoryset?
+			elseif codex.catset.ca[cat_type][cat_num].active then -- category is active in this categoryset?
 				if ArkInventory.db.option.category[cat_type].data[cat_num].used == "Y" then -- category is enabled?
 					return cat_id
 				end

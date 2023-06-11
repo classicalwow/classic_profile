@@ -1,12 +1,61 @@
-$Id: ChangeLog.txt 179 2022-07-27 14:58:40Z arithmandar $
+$Id: ChangeLog.txt 217 2023-03-30 13:59:52Z arithmandar $
 Atlas, a World of Warcraft instance map browser
 Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
+Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
 
 ==============
 = Change Log =
 ==============
+
+v1.52.02 (Mar. 20, 2023)
+------------------------
+- Toc update to support WoW 10.0.7 / 3.4.1 
+
+v1.52.01 (Nov. 20, 2022)
+------------------------
+- Toc update to support WoW 10.0.2
+- Added Dragon Isles
+
+v1.52.00 (Nov. 06, 2022)
+------------------------
+- Toc update to support WoW 10.0.0
+
+v1.51.08 (Sep. 04, 2022)
+------------------------
+- Fixed Stormwind docks' destination info
+- Foxed Ashran's portal destination info
+
+v1.51.07 (Sep. 04, 2022)
+------------------------
+- Map revamp: Retail Alliance's / Horde's Cosmos map
+- Map fixed: Retail Horde East map, correction on some nodes
+
+v1.51.06 (Aug. 30, 2022)
+------------------------
+- Added WOLTKC maps' achievements
+- Retail East / West maps revamp
+- Fixed horde Kalimor map's routing path, remove path between Everlook and Orgrimmar; added below path:
+  - Everlook and Valormok
+  - Valormok and Thunder Bluff
+- Alliance Nazjatar revision
+  - Fixed position of Wreck of the Old Blanchy
+  - Enhance the numbers's display so that it's more obserable
+  - Added Ashen Strand
+
+v1.51.05 (Aug. 21, 2022)
+------------------------
+- Fixed WOLTKC's Ship / Zeppelin route path
+- Fixed BCC Alliance sailing path, Auberdine's path should be to Menethil Harbor, not Stornwind City
+- Pandaria map revamp
+
+v1.51.04 (Aug. 20, 2022)
+------------------------
+- Added support for WOLTKC 3.4.0
+
+v1.51.03 (Aug. 17, 2022)
+------------------------
+- Toc update to support WoW 9.2.7
 
 v1.51.02 (Jul. 27, 2022)
 ------------------------

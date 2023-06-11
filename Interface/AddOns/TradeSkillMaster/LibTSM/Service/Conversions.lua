@@ -4,8 +4,8 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local Conversions = TSM.Init("Service.Conversions")
+local TSM = select(2, ...) ---@type TSM
+local Conversions = TSM.Init("Service.Conversions") ---@class Service.Conversions
 local DisenchantInfo = TSM.Include("Data.DisenchantInfo")
 local Mill = TSM.Include("Data.Mill")
 local Prospect = TSM.Include("Data.Prospect")
@@ -44,14 +44,14 @@ Conversions:OnModuleLoad(function()
 	end
 	for targetItemString in Mill.TargetItemIterator() do
 		for sourceItemString in Mill.SourceItemIterator(targetItemString) do
-			local rate, amount, minAmount, maxAmount = Mill.GetRate(targetItemString, sourceItemString)
-			private.Add(targetItemString, sourceItemString, Conversions.METHOD.MILL, rate, amount, minAmount, maxAmount)
+			local rate, amount, minAmount, maxAmount, skillRequired, targetQuality, sourceQuality = Mill.GetRate(targetItemString, sourceItemString)
+			private.Add(targetItemString, sourceItemString, Conversions.METHOD.MILL, rate, amount, minAmount, maxAmount, targetQuality, sourceQuality, skillRequired)
 		end
 	end
 	for targetItemString in Prospect.TargetItemIterator() do
 		for sourceItemString in Prospect.SourceItemIterator(targetItemString) do
-			local rate, amount, minAmount, maxAmount, skillRequired = Prospect.GetRate(targetItemString, sourceItemString)
-			private.Add(targetItemString, sourceItemString, Conversions.METHOD.PROSPECT, rate, amount, minAmount, maxAmount, skillRequired)
+			local rate, amount, minAmount, maxAmount, skillRequired, targetQuality, sourceQuality = Prospect.GetRate(targetItemString, sourceItemString)
+			private.Add(targetItemString, sourceItemString, Conversions.METHOD.PROSPECT, rate, amount, minAmount, maxAmount, targetQuality, sourceQuality, skillRequired)
 		end
 	end
 	for targetItemString in Transform.TargetItemIterator() do
@@ -119,13 +119,25 @@ function Conversions.GetSourceItems(targetItemString)
 	return private.sourceItemCache[targetItemString]
 end
 
+function Conversions.SourceItemsByMethodIterator(targetItemString, method)
+	local context = TempTable.Acquire()
+	context.targetItemString = targetItemString
+	context.method = method
+	return private.SourceItemsByMethodIteratorHelper, context, nil
+end
+
+function Conversions.GetRate(sourceItemString, targetItemString)
+	local info = private.data[targetItemString][sourceItemString]
+	return info and info.rate or nil
+end
+
 
 
 -- ============================================================================
 -- Private Helper Functions
 -- ============================================================================
 
-function private.Add(targetItemString, sourceItemString, method, rate, amount, minAmount, maxAmount, skillRequired)
+function private.Add(targetItemString, sourceItemString, method, rate, amount, minAmount, maxAmount, targetQuality, sourceQuality, skillRequired)
 	targetItemString = ItemString.GetBase(targetItemString)
 	sourceItemString = ItemString.GetBase(sourceItemString)
 	assert(targetItemString and sourceItemString)
@@ -146,6 +158,8 @@ function private.Add(targetItemString, sourceItemString, method, rate, amount, m
 		amount = amount,
 		minAmount = minAmount,
 		maxAmount = maxAmount,
+		targetQuality = targetQuality,
+		sourceQuality = sourceQuality,
 		skillRequired = skillRequired
 	}
 	ItemInfo.FetchInfo(targetItemString)
@@ -177,7 +191,25 @@ function private.TargetItemsByMethodIteratorHelper(context, index)
 		end
 		local info = items[context.sourceItemString]
 		if info and ((not context.method and info.method ~= Conversions.METHOD.CRAFT) or info.method == context.method) then
-			return index, info.rate, info.amount, info.minAmount, info.maxAmount, info.skillRequired
+			return index, info.rate, info.amount, info.minAmount, info.maxAmount, info.targetQuality, info.sourceQuality, info.skillRequired, info.method
+		end
+	end
+end
+
+function private.SourceItemsByMethodIteratorHelper(context, index)
+	if not private.data[context.targetItemString] then
+		TempTable.Release(context)
+		return
+	end
+	while true do
+		index = next(private.data[context.targetItemString], index)
+		local info = private.data[context.targetItemString][index]
+		if not info then
+			TempTable.Release(context)
+			return
+		end
+		if info.method == context.method then
+			return index, info.rate
 		end
 	end
 end

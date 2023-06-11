@@ -15,6 +15,7 @@ Other services offered by DataStore:
 
 local addonName, addon = ...
 DataStore = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "AceConsole-3.0", "AceEvent-3.0", "AceComm-3.0", "AceSerializer-3.0")
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
 addon.Version = "v" .. GetAddOnMetadata(addonName, "Version")
 
 addon.ThisAccount = "Default"
@@ -358,7 +359,7 @@ function addon:DeleteCharacter(name, realm, account)
 	if not Characters[key] or key == addon.ThisCharKey then return end	-- never delete current character
 
 	-- delete the character in all modules
-	addon:IterateModules(function(moduleDB) 
+	addon:IterateDBModules(function(moduleDB, moduleName) 
 		if moduleDB.Characters then
 			moduleDB.Characters[key] = nil
 		end
@@ -431,7 +432,7 @@ function addon:DeleteGuild(guildKey)
 	if not Guilds[guildKey] then return end
 
 	-- delete the guild in all modules
-	addon:IterateModules(function(moduleDB) 
+	addon:IterateDBModules(function(moduleDB) 
 		if moduleDB.Guilds then
 			moduleDB.Guilds[guildKey] = nil
 		end
@@ -472,7 +473,7 @@ end
 function addon:ClearAllData()
 
 	-- sub-module data
-	addon:IterateModules(function(moduleDB) 
+	addon:IterateDBModules(function(moduleDB) 
 		WipeCharacterTable(moduleDB.Characters)
 		WipeGuildTable(moduleDB.Guilds)
 	end)

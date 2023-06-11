@@ -211,7 +211,7 @@ function AutoBar.Class.Bar.prototype:UpdateObjects()
 			buttonKeyList[buttonKeyIndex] = nil
 		elseif (buttonDB.enabled) then
 			-- Recover from disabled cache
-assert(buttonDB.buttonKey == buttonKey, "AutoBar.Class.Bar.prototype:UpdateObjects mismatched keys")
+			assert(buttonDB.buttonKey == buttonKey, "AutoBar.Class.Bar.prototype:UpdateObjects mismatched keys")
 			if(AutoBar.Class[buttonDB.buttonClass] == nil) then print(buttonDB.buttonClass, "is nil"); end;
 			if (AutoBar.buttonListDisabled[buttonKey]) then
 				AutoBar.buttonList[buttonKey] = AutoBar.buttonListDisabled[buttonKey]
@@ -227,7 +227,7 @@ assert(buttonDB.buttonKey == buttonKey, "AutoBar.Class.Bar.prototype:UpdateObjec
 				assert(buttonKeyIndex)
 				assert(buttonDB)
 				assert(buttonDB.buttonClass)
-				assert(AutoBar.Class[buttonDB.buttonClass])
+				assert(AutoBar.Class[buttonDB.buttonClass], "AutoBar.Class[buttonDB.buttonClass]" .. " fails for " ..  buttonDB.buttonClass)
 				buttonList[buttonKeyIndex] = AutoBar.Class[buttonDB.buttonClass]:new(self, buttonDB)
 				AutoBar.buttonList[buttonKey] = buttonList[buttonKeyIndex]
 				--if(debug) then AutoBar:Print("AutoBar.Class.Bar.prototype:UpdateObjects new buttonKeyIndex " .. tostring(buttonKeyIndex) .. " buttonKey " .. tostring(buttonKey)) end

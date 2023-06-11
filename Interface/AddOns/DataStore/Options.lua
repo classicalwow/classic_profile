@@ -144,10 +144,10 @@ function addon:SetupOptions()
 	DataStoreGeneralOptions_Title:SetText(TEAL..format("DataStore %s", DataStore.Version))
 	
 	-- manually adjust the width of a few panes, as resolution/scale may have an impact on the layout
-	local width = InterfaceOptionsFramePanelContainer:GetWidth() - 45
-	DataStoreHelp:SetWidth(width)
-	DataStoreHelp_ScrollFrame:SetWidth(width)
-	DataStoreHelp_Text:SetWidth(width-35)
+	-- local width = InterfaceOptionsFramePanelContainer:GetWidth() - 45
+	-- DataStoreHelp:SetWidth(width)
+	-- DataStoreHelp_ScrollFrame:SetWidth(width)
+	-- DataStoreHelp_Text:SetWidth(width-35)
 end
 
 function addon:ToggleOption(frame, module, option)
@@ -224,8 +224,8 @@ local lastOptionsPanelWidth = 0
 local lastOptionsPanelHeight = 0
 
 function addon:OnUpdate(self, mandatoryResize)
-	OptionsPanelWidth = InterfaceOptionsFramePanelContainer:GetWidth()
-	OptionsPanelHeight = InterfaceOptionsFramePanelContainer:GetHeight()
+	OptionsPanelWidth = self:GetWidth()
+	OptionsPanelHeight = self:GetHeight()
 	
 	if not mandatoryResize then -- if resize is not mandatory, allow exit
 		if OptionsPanelWidth == lastOptionsPanelWidth and OptionsPanelHeight == lastOptionsPanelHeight then return end		-- no size change ? exit

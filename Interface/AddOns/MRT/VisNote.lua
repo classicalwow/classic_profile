@@ -385,7 +385,7 @@ function module.options:Load()
 	ELib:Border(self.tool_select_text,2,.24,.25,.30,1)
 	self.tool_select_text.texture:Hide()
 	self.tool_select_text.text = self.tool_select_text:CreateFontString(nil,"ARTWORK","GameFontWhite")
-	self.tool_select_text.text:SetFont(self.tool_select_text.text:GetFont(),10)
+	self.tool_select_text.text:SetFont(self.tool_select_text.text:GetFont(),10,"")
 	self.tool_select_text.text:SetPoint("CENTER")
 	self.tool_select_text.text:SetText("TEXT")
 
@@ -710,7 +710,7 @@ function module.options:Load()
 	self.textAddData.Button.isButton = true
 	self.textAddData.Button.isModern = true
 
-	self.imgpath = ELib:Edit(self,curr_imgpath):Size(250,20):Point("LEFT",self.curr_color_texture,"RIGHT",10,0):TopText("Image path:"):OnChange(function(self)
+	self.imgpath = ELib:Edit(self):Size(250,20):Point("LEFT",self.curr_color_texture,"RIGHT",10,0):TopText("Image path:"):Text(curr_imgpath):OnChange(function(self)
 		curr_imgpath = self:GetText():trim()
 		curr_imgpath = tonumber(curr_imgpath) or curr_imgpath
 		module.options.curr_color_texture:SetTexture(curr_imgpath)
@@ -793,7 +793,7 @@ function module.options:Load()
 		curr_map = arg2
 		curr_data[2] = arg2
 	end
-	self.SelectMapDropDown.Text:SetFont(self.SelectMapDropDown.Text:GetFont(),8)
+	self.SelectMapDropDown.Text:SetFont(self.SelectMapDropDown.Text:GetFont(),8,"")
 
 	local function ZoneNameFromMap(mapID)
 		return (C_Map.GetMapInfo(mapID or 0) or {}).name or ("Map ID "..mapID)
@@ -970,10 +970,94 @@ function module.options:Load()
 		{"Sunwell Plateau 2",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/sw2"}},
 
 		--141-150
+		{L.S_ZoneT28SFO..": "..L.bossName[2512],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo1"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2542],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo2"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2553],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo3"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2540],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo4"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2544],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo5"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2539],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo6"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2529],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo7"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2546],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo8"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2543],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo9"}},
+		{L.S_ZoneT28SFO..": "..L.bossName[2549],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo10"}},
+
+		--151-160
+		{L.S_ZoneT28SFO..": "..L.bossName[2537],{"Interface/AddOns/"..GlobalAddonName.."/mediamodern/sotfo11"}},
+		{"Ulduar 1",{147,nil,nil,0.8}},
+		{"Ulduar 2",{148,nil,nil,0.8}},
+		{"Ulduar 3",{149,nil,nil,0.8}},
+		{"Ulduar 4",{150,nil,nil,0.8}},
+		{"Ulduar 5",{151,nil,nil,0.8}},
+		{"Ulduar 6",{152,nil,nil,0.8}},
+		{"Trial of the Crusader 1",{172,nil,nil,0.8}},
+		{"Trial of the Crusader 2",{173,nil,nil,0.8}},
+		{"Icecrown Citadel 1",{186,nil,nil,0.8}},
+
+		--161-170
+		{"Icecrown Citadel 2",{187,nil,nil,0.8}},
+		{"Icecrown Citadel 3",{188,nil,nil,0.8}},
+		{"Icecrown Citadel 4",{189,nil,nil,0.8}},
+		{"Icecrown Citadel 5",{190,nil,nil,0.8}},
+		{"Icecrown Citadel 6",{191,nil,nil,0.8}},
+		{"Icecrown Citadel 7",{192,nil,nil,0.8}},
+		{"Icecrown Citadel 8",{193,nil,nil,0.8}},
+		{"The Ruby Sanctum",{200,nil,nil,0.8}},
+		{"Onyxia's Lair",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/ony"}},
+		{"The Eye of Eternity",{141,nil,nil,0.8}},
+
+		--171-180
+		{"The Obsidian Sanctum",{155,nil,nil,0.8}},
+		{"Naxxramas 1",{166,nil,nil,0.8}},
+		{"Naxxramas 2",{162,nil,nil,0.8}},
+		{"Naxxramas 3",{163,nil,nil,0.8}},
+		{"Naxxramas 4",{164,nil,nil,0.8}},
+		{"Naxxramas 5",{165,nil,nil,0.8}},
+		{"Naxxramas 6",{167,nil,nil,0.8}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2587],{2119,0.57,0.21,4}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2590],{2120,0.43,0.69,4}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2635],{2121,0.55,0.51,0.9}},
+
+		--181-190
+		{L.S_ZoneT29VotI..": "..L.bossName[2592],{2122,0.27,0.33,3}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2639],{2122,0.21,0.75,3}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2614],{2126,0.51,0.51,1.5}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2605],{2124,0.50,0.50,1.5}},
+		{L.S_ZoneT29VotI..": "..L.bossName[2607],{2125,0.54,0.5,1}},
+		{"Flame Leviathan",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld1"}},
+		{"Razorscale",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld2"}},
+		{"XT-002 Deconstructor",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld3"}},
+		{"Assembly of Iron",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld4"}},
+		{"Kologarn",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld5"}},
+
+		--191-200
+		{"Auriaya",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld6"}},
+		{"Hodir",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld7"}},
+		{"Thorim",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld8"}},
+		{"Freya",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld9"}},
+		{"Mimiron",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld10"}},
+		{"General Vezax",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld11"}},
+		{"Yogg-Saron",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld12"}},
+		{"Yogg-Saron room 1",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld13"}},
+		{"Yogg-Saron room 2",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld14"}},
+		{"Yogg-Saron room 3",{"Interface/AddOns/"..GlobalAddonName.."/mediaclassic/uld15"}},
+
+		--201-210
+		{L.S_ZoneT30..": "..L.bossName[2688],{2166,0.51,0.72,6}},
+		{L.S_ZoneT30..": "..L.bossName[2687],{2167,0.49,0.62,3}},
+		{L.S_ZoneT30..": "..L.bossName[2693],{2166,0.35,0.23,5}},
+		{L.S_ZoneT30..": "..L.bossName[2682],{2168,0.42,0.34,2.5}},
+		{L.S_ZoneT30..": "..L.bossName[2680],{2166,0.67,0.21,6}},
+		{L.S_ZoneT30..": "..L.bossName[2689],{2166,0.51,0.23,6}},
+		{L.S_ZoneT30..": "..L.bossName[2683],{2166,0.51,0.45,6}},
+		{L.S_ZoneT30..": "..L.bossName[2684],{2169,0.51,0.28,2.5}},
+		{L.S_ZoneT30..": "..L.bossName[2685],{2170,0.49,0.71,4}},
 	}
 	local mapsSorted = {
 		1,
 		{L.NoteColor,10,94,95,96,97,98,99},
+		{L.S_ZoneT30,209,208,207,206,205,204,203,202,201},
+		{L.S_ZoneT29VotI,185,184,183,182,181,180,179,178},
+		{L.S_ZoneT28SFO,151,150,149,148,147,146,145,144,143,142,141},
 		{L.S_ZoneT27SoD,114,115,116,124,125,123,122,121,120,119,118,117},
 		{L.S_ZoneT26CastleNathria.." Ingame",100,93,91,92,90,89,88},
 		{L.S_ZoneT26CastleNathria,77,78,79,80,81,82,83,84,85,86,87},
@@ -985,7 +1069,34 @@ function module.options:Load()
 		{L.S_ZoneT22Uldir,9,8,11,7,6,5,4,2,3},
 		{DUNGEONS..": "..EXPANSION_NAME7,41,42,43,44,12,13,14,15,16,17,18,19},
 	}
-	if ExRT.isBC then
+	if ExRT.isLK then
+		mapsSorted = {
+			1,
+			{L.NoteColor,10,94,95,96,97,98,99},
+			{"The Ruby Sanctum",168},
+			{"Icecrown Citadel",160,161,162,163,164,165,166,167},
+			{"Onyxia's Lair",169},
+			{"Trial of the Crusader",158,159},
+			{"Ulduar [visual]",186,187,188,189,190,191,192,193,194,195,196,197,198,199,200},
+			{"Ulduar",152,153,154,155,156,157},
+			{"The Eye of Eternity",170},
+			{"The Obsidian Sanctum",171},
+			{"Naxxramas",172,173,174,175,176,177},
+			{"Sunwell Plateau",139,140},
+			{"Battle for Mount Hyjal",135},
+			{"Black Temple",126,127,128,129,130,131,132,133},
+			{"Tempest Keep",138},
+			{"Serpentshrine Cavern",137},
+			{"Gruul's Lair",134},
+			{"Magtheridon's Lair",136},
+			{"Blackwing Lair","by Wollie",57,58,59,60,61,62,63,64},
+			{"Molten Core",65},
+			{"Naxxramas [classic]","by Wollie",71,72,73,74,75,76},
+			{"Ruins of Ahn'Qiraj",67},
+			{"Temple of Ahn'Qiraj",68,69,70},
+			{"Zul'gurub",66},
+		}
+	elseif ExRT.isBC then
 		mapsSorted = {
 			1,
 			{L.NoteColor,10,94,95,96,97,98,99},
@@ -2994,9 +3105,17 @@ function module.options:Load()
 	self.liveButton = ELib:Button(self,L.VisualNoteLiveSession):Size(90,20):Point("TOPLEFT",710,-55):OnClick(function(self)
 		if not isLiveSession then
 			module.options:GenerateString()
-			self.Texture:SetGradientAlpha("VERTICAL",0.05,0.26,0.09,1, 0.20,0.41,0.25,1)
+			if ExRT.is10 or ExRT.isLK1 then
+				self.Texture:SetGradient("VERTICAL",CreateColor(0.05,0.26,0.09,1), CreateColor(0.20,0.41,0.25,1))
+			else
+				self.Texture:SetGradientAlpha("VERTICAL",0.05,0.26,0.09,1, 0.20,0.41,0.25,1)
+			end
 		else
-			self.Texture:SetGradientAlpha("VERTICAL",0.05,0.06,0.09,1, 0.20,0.21,0.25,1)
+			if ExRT.is10 or ExRT.isLK1 then
+				self.Texture:SetGradient("VERTICAL",CreateColor(0.05,0.06,0.09,1), CreateColor(0.20,0.21,0.25,1))
+			else
+				self.Texture:SetGradientAlpha("VERTICAL",0.05,0.06,0.09,1, 0.20,0.21,0.25,1)
+			end
 		end
 		isLiveSession = not isLiveSession
 	end)
@@ -3280,9 +3399,14 @@ function module:UnpackString(str,sender)
 			if not module.db.await then
 				return
 			end
-			c = str:sub(3,3):byte()
+			local mapIDstr = str:match("^..([^"..string.char(254)..string.char(255).."]+)")
+			c = 0
+			for i=1,#mapIDstr do
+				c = c * 253 + mapIDstr:sub(i,i):byte() + (i > 1 and -1 or 0)
+				--function Convert(n)local res={} repeat table.insert(res,1,n%253) n=floor(n/253) until n==0 for i=2,#res do res[i]=res[i]+1 end return unpack(res) end
+			end
 			module.db.await[2] = c
-			str = str:sub(4)
+			str = str:sub(2+#mapIDstr+1)
 		end
 	end
 	if not module.db.await then
@@ -3516,13 +3640,13 @@ do
 	frame.border = ExRT.lib:Shadow(frame,20)
 
 	frame.label = frame:CreateFontString(nil,"OVERLAY","GameFontWhiteSmall")
-	frame.label:SetFont(frame.label:GetFont(),10)
+	frame.label:SetFont(frame.label:GetFont(),10,"")
 	frame.label:SetPoint("TOP",0,-4)
 	frame.label:SetTextColor(1,1,1,1)
 	frame.label:SetText("MRT: "..L.VisualNote)
 
 	frame.player = frame:CreateFontString(nil,"OVERLAY","GameFontWhiteSmall")
-	frame.player:SetFont(frame.player:GetFont(),10)
+	frame.player:SetFont(frame.player:GetFont(),10,"")
 	frame.player:SetPoint("TOP",0,-16)
 	frame.player:SetTextColor(1,1,1,1)
 	frame.player:SetText("MyName-MyRealm")

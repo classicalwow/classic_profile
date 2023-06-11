@@ -7,8 +7,8 @@ L.DBM									= "DBM" -- NO TRANSLATE
 
 local dateTable = date("*t")
 if dateTable.day and dateTable.month and dateTable.day == 1 and dateTable.month == 4 then
-	L.DEADLY_BOSS_MODS					= "Harmless Boss Mods"
-	L.DBM								= "HBM"
+	L.DEADLY_BOSS_MODS					= "Bigwigs"
+	L.DBM								= "BW"
 end
 
 L.HOW_TO_USE_MOD						= "Welcome to " .. L.DBM .. ". Type /dbm help for a list of supported commands. To access options type /dbm in your chat to begin configuration. Load specific zones manually to configure any boss specific settings to your liking as well. " .. L.DBM .. " will setup defaults for your spec, but you may want to fine tune these."
@@ -44,11 +44,11 @@ L.LOOT_SPEC_REMINDER					= "Your current spec is %s. Your current loot choice is
 
 L.BIGWIGS_ICON_CONFLICT					= L.DBM .. " has detected that you have raid icons turned on in both BigWigs and " .. L.DBM .. ". Please disable icons in one of them to avoid conflicts"
 
-L.MOD_AVAILABLE							= "%s is available for this zone. You can find download on Curse or WoWI"
+L.MOD_AVAILABLE							= "%s is available for this zone. You can find download on Curse, Wago, WoWI, or from the GitHub Releases page"
 
 L.COMBAT_STARTED						= "%s engaged. Good luck and have fun! :)"
 L.COMBAT_STARTED_IN_PROGRESS			= "Engaged an in progress fight against %s. Good luck and have fun! :)"
-L.GUILD_COMBAT_STARTED					= "%s has been engaged by guild"
+L.GUILD_COMBAT_STARTED					= "%s has been engaged by %s's guild group"
 L.SCENARIO_STARTED						= "%s started. Good luck and have fun! :)"
 L.SCENARIO_STARTED_IN_PROGRESS			= "Joined %s a scenario that's in progress. Good luck and have fun! :)"
 L.BOSS_DOWN								= "%s down after %s!"
@@ -58,14 +58,14 @@ L.BOSS_DOWN_NR							= "%s down after %s! This is a new record! (Old record was 
 L.RAID_DOWN								= "%s cleared after %s!"
 L.RAID_DOWN_L							= "%s cleared after %s! Your fastest clear took %s."
 L.RAID_DOWN_NR							= "%s cleared after %s! This is a new record! (Old record was %s)."
-L.GUILD_BOSS_DOWN						= "%s has been defeated by guild after %s!"
+L.GUILD_BOSS_DOWN						= "%s has been defeated by %s's guild group after %s!"
 L.SCENARIO_COMPLETE						= "%s completed after %s!"
 L.SCENARIO_COMPLETE_I					= "%s completed! You have %d total clears."
 L.SCENARIO_COMPLETE_L					= "%s completed after %s! Your last clear took %s and your fastest clear took %s. You have %d total clears."
 L.SCENARIO_COMPLETE_NR					= "%s completed after %s! This is a new record! (Old record was %s). You have %d total clears."
 L.COMBAT_ENDED_AT						= "Combat against %s (%s) ended after %s."
 L.COMBAT_ENDED_AT_LONG					= "Combat against %s (%s) ended after %s. You have %d total wipe(s) on this difficulty."
-L.GUILD_COMBAT_ENDED_AT					= "Guild has wiped on %s (%s) after %s."
+L.GUILD_COMBAT_ENDED_AT					= "%s's Guild group has wiped on %s (%s) after %s."
 L.SCENARIO_ENDED_AT						= "%s ended after %s."
 L.SCENARIO_ENDED_AT_LONG				= "%s ended after %s. You have %d total incompletes on this difficulty."
 L.COMBAT_STATE_RECOVERED				= "%s was engaged %s ago, recovering timers... "
@@ -176,20 +176,21 @@ L.VERSIONCHECK_ENTRY_TWO				= "%s: %s (%s) & %s (%s)"--Two Boss mods
 L.VERSIONCHECK_ENTRY_NO_DBM				= "%s: No boss mod installed"
 L.VERSIONCHECK_FOOTER					= "Found %d player(s) with " .. L.DBM .. " & %d player(s) with Bigwigs"
 L.VERSIONCHECK_OUTDATED					= "Following %d player(s) have outdated boss mod version: %s"
-L.YOUR_VERSION_OUTDATED     			= "Your version of " .. L.DEADLY_BOSS_MODS .. " is out-of-date. Please download the latest version through Curse, WoWI, or from the GitHub Releases page."
+L.YOUR_VERSION_OUTDATED     			= "Your version of " .. L.DEADLY_BOSS_MODS .. " is out-of-date. Please download the latest version through Curse, Wago, WoWI, or from the GitHub Releases page."
 L.VOICE_PACK_OUTDATED					= "Your selected " .. L.DBM .. " voice pack is missing some sounds supported by " .. L.DBM .. ". Some warning sounds will still play default sounds. Please download a newer version of voice pack or contact pack author for an update that contains missing audio"
 L.VOICE_MISSING							= "You have a " .. L.DBM .. " voice pack selected that could not be found. If this is an error, make sure your voice pack is properly installed and enabled in addons."
 L.VOICE_DISABLED						= "You currently have at least one " .. L.DBM .. " voice pack installed but none enabled. If you intend to use a voice pack, make sure it's chosen in 'Spoken Alerts', else uninstall unused voice packs to hide this message"
 L.VOICE_COUNT_MISSING					= "Countdown voice %d is set to a voice/count pack that could not be found. It has been reset to default setting: %s."
 L.BIG_WIGS								= "BigWigs"
 
-L.UPDATEREMINDER_HEADER					= "Your version of " .. L.DEADLY_BOSS_MODS.. " is out-of-date.\n Version %s (%s) is available for download through Curse, WoWI, or from GitHub Releases page"
+L.UPDATEREMINDER_HEADER					= "Your version of " .. L.DEADLY_BOSS_MODS.. " is out-of-date.\n Version %s (%s) is available for download through Curse, Wago, WoWI, or from GitHub Releases page"
 L.UPDATEREMINDER_FOOTER					= "Press " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  " to copy the download link to your clipboard."
 L.UPDATEREMINDER_FOOTER_GENERIC			= "Press " .. (IsMacClient() and "Cmd-C" or "Ctrl-C")  ..  " to copy the link to your clipboard."
-L.UPDATEREMINDER_DISABLE				= "WARNING: Due to your " .. L.DEADLY_BOSS_MODS.. " being too out of date, it has been force disabled and cannot be used until updated. This is to ensure outdated or incompatible mods do not cause poor play experience for yourself or fellow group members."
+L.UPDATEREMINDER_DISABLE				= "WARNING: Due to your " .. L.DEADLY_BOSS_MODS.. " being out of date and incompatible with newer versions of DBM, it has been force disabled and cannot be used until updated. This is to ensure incompatible mods do not cause poor play experience for yourself or fellow group members."
+L.UPDATEREMINDER_DISABLETEST			= "WARNING: Due to your " .. L.DEADLY_BOSS_MODS.. " being out of date and this being a test/beta realm, it has been force disabled and cannot be used until updated. This is to ensure out of date mods aren't being used to generate test feedback"
 L.UPDATEREMINDER_HOTFIX					= L.DBM .. " version you are on has known issues during this boss encounter that are corrected if you update to latest release"
 L.UPDATEREMINDER_HOTFIX_ALPHA			= L.DBM .. " version you are on has known issues during this boss encounter that are corrected in an upcoming release (or latest alpha version)"
-L.UPDATEREMINDER_MAJORPATCH				= "WARNING: Due to your " .. L.DEADLY_BOSS_MODS.. " being out of date, " .. L.DBM .. " has been disabled until updated, since this is a major game patch. This is to ensure old and incompatible code doesn't cause poor play experience for yourself or fellow group members. Make sure you download a newer version from Curse, WoWI, or from GitHub Releases page as soon as possible."
+L.UPDATEREMINDER_MAJORPATCH				= "WARNING: Due to your " .. L.DEADLY_BOSS_MODS.. " being out of date, " .. L.DBM .. " has been disabled until updated, since this is a major game patch. This is to ensure old and incompatible code doesn't cause poor play experience for yourself or fellow group members. Make sure you download a newer version from Curse, Wago, WoWI, or from GitHub Releases page as soon as possible."
 L.VEM									= "WARNING: You are running both " .. L.DEADLY_BOSS_MODS.. " and Voice Encounter Mods. DBM will not run in this configuration and therefore will not be loaded."
 L.OUTDATEDPROFILES						= "WARNING: DBM-Profiles not compatible with this version of " .. L.DBM .. ". It must be removed before DBM can proceed, to avoid conflict."
 L.OUTDATEDSPELLTIMERS					= "WARNING: DBM-SpellTimers breaks " .. L.DBM .. " and must be disabled for " .. L.DBM .. " to function properly."
@@ -305,6 +306,8 @@ L.AUTO_ANNOUNCE_TEXTS = {
 	targetsource						= ">%%s< cast %s on >%%s<",
 	targetcount							= "%s (%%s) on >%%s<",
 	spell								= "%s",
+	incoming							= "%s incoming debuff",
+	incomingcount						= "%s incoming debuff (%%s)",
 	ends 								= "%s ended",
 	endtarget							= "%s ended: >%%s<",
 	fades								= "%s faded",
@@ -330,6 +333,8 @@ L.AUTO_ANNOUNCE_OPTIONS = {
 	targetsource						= "Announce $spell:%s targets (with source)",
 	targetcount							= "Announce $spell:%s targets (with count)",
 	spell								= "Announce when $spell:%s has been cast",
+	incoming							= "Announce when $spell:%s has incoming debuffs",
+	incomingcount						= "Announce (with count) when $spell:%s has incoming debuffs",
 	ends								= "Announce when $spell:%s has ended",
 	endtarget							= "Announce when $spell:%s has ended (with target)",
 	fades								= "Announce when $spell:%s has faded",
@@ -382,6 +387,7 @@ L.AUTO_SPEC_WARN_TEXTS = {
 	soakcount							= "%s - soak %%s",
 	jump								= "%s - jump",
 	run									= "%s - run away",
+	runcount							= "%s - run away (%%s)",
 	cast								= "%s - stop casting",
 	lookaway							= "%s on %%s - look away",
 	reflect								= "%s on >%%s< - stop attacking",
@@ -391,6 +397,7 @@ L.AUTO_SPEC_WARN_TEXTS = {
 	switchcount							= "%s - switch targets (%%s)",
 	gtfo								= "%%s damage - move away",
 	adds								= "Incoming Adds - switch targets",--Basically a generic of switch
+	addscount							= "Incoming Adds - switch targets (%%s)",--Basically a generic of switch
 	addscustom							= "Incoming Adds - %%s",--Same as above, but more info, pretty much made for like 3 boss mods, such as akama
 	targetchange						= "Target Change - switch to %%s"
 }
@@ -430,6 +437,7 @@ L.AUTO_SPEC_WARN_OPTIONS = {
 	soakcount							= "Show special announce (with count) to soak for $spell:%s",
 	jump								= "Show special announce to move to jump for $spell:%s",
 	run 								= "Show special announce to run away from $spell:%s",
+	runcount							= "Show special announce (with count) to run away from $spell:%s",
 	cast 								= "Show special announce to stop casting for $spell:%s",--Spell Interrupt
 	lookaway							= "Show special announce to look away for $spell:%s",
 	reflect 							= "Show special announce to stop attacking $spell:%s",--Spell Reflect
@@ -439,6 +447,7 @@ L.AUTO_SPEC_WARN_OPTIONS = {
 	switchcount							= "Show special announce (with count) to switch targets for $spell:%s",
 	gtfo 								= "Show special announce to move out of bad stuff on ground",
 	adds								= "Show special announce to switch targets for incoming adds",
+	addscount							= "Show special announce (with count) to switch targets for incoming adds",
 	addscustom							= "Show special announce for incoming adds",
 	targetchange						= "Show special announce for priority target changes"
 }
@@ -467,6 +476,12 @@ L.AUTO_TIMER_TEXTS = {
 	addscustom							= "Adds (%%s)",
 	roleplay							= GUILD_INTEREST_RP or "Roleplay"
 }
+--This basically clones np only bar option and display text from regular counterparts
+L.AUTO_TIMER_TEXTS.cdnp = L.AUTO_TIMER_TEXTS.cd
+L.AUTO_TIMER_TEXTS.nextnp = L.AUTO_TIMER_TEXTS.next
+L.AUTO_TIMER_TEXTS.cdcountnp = L.AUTO_TIMER_TEXTS.cdcount
+L.AUTO_TIMER_TEXTS.nextcountnp = L.AUTO_TIMER_TEXTS.nextcount
+
 
 L.AUTO_TIMER_OPTIONS = {
 	target								= "Show timer for $spell:%s debuff",
@@ -479,10 +494,14 @@ L.AUTO_TIMER_OPTIONS = {
 	ai									= "Show AI timer for $spell:%s cooldown",
 	cd									= "Show timer for $spell:%s cooldown",
 	cdcount								= "Show timer for $spell:%s cooldown",
+	cdnp								= "Show nameplate only timer for $spell:%s cooldown",
+	cdnpcount							= "Show nameplate only timer (with count) for $spell:%s cooldown",
 	cdsource							= "Show timer (with source) for $spell:%s cooldown",--Maybe better wording?
 	cdspecial							= "Show timer for special ability cooldown",
 	next								= "Show timer for next $spell:%s",
 	nextcount							= "Show timer for next $spell:%s",
+	nextnp								= "Show nameplate only timer for next $spell:%s",
+	nextnpcount							= "Show nameplate only timer (with count) for next $spell:%s",
 	nextsource							= "Show timer (with source) for next $spell:%s",--Maybe better wording?
 	nextspecial							= "Show timer for next special ability",
 	achievement							= "Show timer for %s",
@@ -493,6 +512,8 @@ L.AUTO_TIMER_OPTIONS = {
 }
 
 L.AUTO_ICONS_OPTION_TARGETS				= "Set icons on $spell:%s targets"--Usually used for player targets with no specific sorting
+L.AUTO_ICONS_OPTION_TARGETS_TANK_A		= "Set icons on $spell:%s targets with tank over melee over ranged priority and alphabetical fallback"
+L.AUTO_ICONS_OPTION_TARGETS_TANK_R		= "Set icons on $spell:%s targets with tank over melee over ranged priority and raid roster fallback"
 L.AUTO_ICONS_OPTION_TARGETS_MELEE_A		= "Set icons on $spell:%s targets with melee and alphabetical priority"
 L.AUTO_ICONS_OPTION_TARGETS_MELEE_R		= "Set icons on $spell:%s targets with melee and raid roster priority"
 L.AUTO_ICONS_OPTION_TARGETS_RANGED_A	= "Set icons on $spell:%s targets with ranged and alphabetical priority"
@@ -535,7 +556,8 @@ L.AUTO_YELL_CUSTOM_POSITION2			= "{rt%d}%s{rt%d}"--Doesn't need translating. Has
 L.AUTO_YELL_CUSTOM_FADE					= "%s faded"
 L.AUTO_HUD_OPTION_TEXT					= "Show HudMap for $spell:%s (Retired)"
 L.AUTO_HUD_OPTION_TEXT_MULTI			= "Show HudMap for various mechanics (Retired)"
-L.AUTO_NAMEPLATE_OPTION_TEXT			= "Show Nameplate Auras for $spell:%s"
+L.AUTO_NAMEPLATE_OPTION_TEXT			= "Show Nameplate Auras for $spell:%s using compatible nameplate addon or "..L.DBM
+L.AUTO_NAMEPLATE_OPTION_TEXT_FORCED		= "Show Nameplate Auras for $spell:%s using only "..L.DBM
 L.AUTO_RANGE_OPTION_TEXT				= "Show range frame (%s) for $spell:%s"--string used for range so we can use things like "5/2" as a value for that field
 L.AUTO_RANGE_OPTION_TEXT_SHORT			= "Show range frame (%s)"--For when a range frame is just used for more than one thing
 L.AUTO_RRANGE_OPTION_TEXT				= "Show reverse range frame (%s) for $spell:%s"--Reverse range frame (green when players in range, red when not)
@@ -545,6 +567,7 @@ L.AUTO_INFO_FRAME_OPTION_TEXT2			= "Show info frame for encounter overview"
 L.AUTO_INFO_FRAME_OPTION_TEXT3			= "Show info frame for $spell:%s (when threshold of %%s is met)"
 L.AUTO_READY_CHECK_OPTION_TEXT			= "Play ready check sound when boss is pulled (even if it's not targeted)"
 L.AUTO_SPEEDCLEAR_OPTION_TEXT			= "Show timer for fastest clear of %s"
+L.AUTO_PRIVATEAURA_OPTION_TEXT			= "Play DBM sound alerts for $spell:%s private auras on this fight."
 
 -- New special warnings
 L.MOVE_WARNING_BAR						= "Announce movable"
@@ -594,6 +617,8 @@ L.DUR_CHECKING							= "Checking raid Durability... "
 L.DUR_HEADER							= L.DEADLY_BOSS_MODS.. " - Durability Results"
 L.DUR_ENTRY								= "%s: Durability [%d percent] / Gear broken [%s]"
 L.LAG_FOOTER							= "No Response: %s"
+
+L.OVERRIDE_ACTIVATED					= "Configuration overrides have been activated for this encounter by RL"
 
 --LDB
 L.LDB_TOOLTIP_HELP1						= "Click to open " .. L.DBM

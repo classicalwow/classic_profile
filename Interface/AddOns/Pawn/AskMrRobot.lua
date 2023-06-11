@@ -1,6 +1,6 @@
 ﻿-- Pawn by Vger-Azjol-Nerub
 -- www.vgermods.com
--- © 2006-2022 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
+-- © 2006-2023 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
 -- See Readme.htm for more information.
 --
 -- Ask Mr. Robot scales
@@ -8,7 +8,7 @@
 
 local ScaleProviderName = "MrRobot"
 
-PawnMrRobotLastUpdatedVersion = 2.0535
+PawnMrRobotLastUpdatedVersion = 2.0714
 
 
 function PawnMrRobotScaleProvider_AddScales()
@@ -76,6 +76,24 @@ PawnAddPluginScaleFromTemplate(
 	4, -- Restoration
 	{ Avoidance=0.02, CritRating=1.47, HasteRating=1.59, Indestructible=0.01, Intellect=3.49, Leech=0.85, MasteryRating=1.36, MovementSpeed=0.01, Versatility=1.52 }
 )
+
+if VgerCore.EvokersExist then
+
+	PawnAddPluginScaleFromTemplate(
+		ScaleProviderName,
+		13, -- Evoker
+		1, -- Devastation
+		{ }
+	)
+
+	PawnAddPluginScaleFromTemplate(
+		ScaleProviderName,
+		13, -- Evoker
+		2, -- Preservation
+		{ }
+	)
+
+end
 
 PawnAddPluginScaleFromTemplate(
 	ScaleProviderName,
@@ -291,7 +309,7 @@ end -- PawnMrRobotScaleProvider_AddScales
 
 ------------------------------------------------------------
 
-if VgerCore.IsShadowlands then
+if VgerCore.IsMainline then
 	PawnAddPluginScaleProvider(ScaleProviderName, PawnLocal.UI.AskMrRobotProvider, PawnMrRobotScaleProvider_AddScales)
 else
 	-- These scales aren't useful on WoW Classic versions, so skip them.

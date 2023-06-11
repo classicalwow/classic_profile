@@ -1,7 +1,7 @@
 local mod	= DBM:NewMod("Grobbulus", "DBM-Naxx", 2)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220116041753")
+mod:SetRevision("20221124043521")
 mod:SetCreatureID(15931)
 mod:SetEncounterID(1111)
 mod:SetUsedIcons(1, 2, 3, 4)
@@ -65,7 +65,7 @@ do
 			timerInjection:Start(args.destName)
 			if self.Options.SetIconOnInjectionTarget then
 				table.insert(mutateIcons, args.destName)
-				addIcon()
+				addIcon(self)
 			end
 			if args:IsPlayer() then
 				specWarnInjection:Show()

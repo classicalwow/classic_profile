@@ -1,6 +1,6 @@
 -- Pawn by Vger-Azjol-Nerub
 -- www.vgermods.com
--- © 2006-2022 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
+-- © 2006-2023 Travis Spomer.  This mod is released under the Creative Commons Attribution-NonCommercial-NoDerivs 3.0 license.
 -- See Readme.htm for more information.
 --
 -- Gem information (Burning Crusade Classic)
@@ -13,7 +13,7 @@ if VgerCore.IsBurningCrusade then
 --========================================
 -- Colored level 60 common-quality vendor gems
 --========================================
-local PawnGemDataCommon =
+local PawnGemData60Common =
 {
 
 
@@ -54,7 +54,7 @@ local PawnGemDataCommon =
 --========================================
 -- Colored level 70 uncommon-quality gems
 --========================================
-local PawnGemDataUncommon =
+local PawnGemData70Uncommon =
 {
 
 
@@ -131,7 +131,7 @@ local PawnGemDataUncommon =
 --========================================
 -- Colored level 70 rare-quality gems
 --========================================
-local PawnGemDataRare =
+local PawnGemData70Rare =
 {
 
 
@@ -216,7 +216,7 @@ local PawnGemDataRare =
 --========================================
 -- Colored level 70 epic-quality gems (PHASE 3+)
 --========================================
-local PawnGemDataEpic =
+local PawnGemData70Epic =
 {
 
 
@@ -301,7 +301,7 @@ local PawnGemDataEpic =
 --========================================
 -- Level 70 crafted meta gems
 --========================================
-local PawnMetaGemDataRare =
+local PawnMetaGemData70Rare =
 {
 
 	
@@ -320,19 +320,22 @@ local PawnMetaGemDataRare =
 }
 
 
+--========================================
+
+
 PawnGemQualityLevels =
 {
-	{ 151, PawnGemDataEpic }, -- Tier 6 (PHASE 3) (T4 / Karazhan is 115; T5 is 133; T6 is 151; Sunwell is 154)
-	{ 100, PawnGemDataRare }, -- Lowest-level level 70 item; heroic dungeons
-	{ 90, PawnGemDataUncommon }, -- Zangarmarsh gear gets green gems
-	{ 0, PawnGemDataCommon }, -- Hellfire Peninsula gear gets white gems
+	{ 151, PawnGemData70Epic }, -- Tier 6 (PHASE 3) (T4 / Karazhan is 115; T5 is 133; T6 is 151; Sunwell is 154)
+	{ 100, PawnGemData70Rare }, -- Lowest-level level 70 item; heroic dungeons
+	{ 90, PawnGemData70Uncommon }, -- Zangarmarsh gear gets green gems
+	{ 0, PawnGemData60Common }, -- Hellfire Peninsula gear gets white gems
 }
 
 PawnMetaGemQualityLevels =
 {
-	{ 0, PawnMetaGemDataRare },
+	{ 0, PawnMetaGemData70Rare },
 }
 
 PawnMinimumItemLevelToConsiderGems = 100
-	
+
 end -- if VgerCore.IsBurningCrusade

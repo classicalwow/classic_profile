@@ -1,10 +1,10 @@
--- $Id: Atlas.lua 400 2022-07-23 10:38:27Z arithmandar $
+-- $Id: Atlas.lua 434 2023-03-28 14:39:00Z arithmandar $
 --[[
 
 	Atlas, a World of Warcraft instance map browser
 	Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert at gmail dot com>
 	Copyright 2010 - Lothaer <lothayer at gmail dot com>, Atlas Team
-	Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
+	Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail dot com>
 
 	This file is part of Atlas.
 
@@ -39,6 +39,7 @@ local strtrim = strtrim
 local floor, fmod = math.floor, math.fmod
 local getn, tinsert, tsort = table.getn, table.insert, table.sort
 local GetAddOnInfo, GetAddOnEnableState, UnitLevel, GetBuildInfo = _G.GetAddOnInfo, _G.GetAddOnEnableState, _G.UnitLevel, _G.GetBuildInfo
+local GetLFGDungeonInfo = _G.GetLFGDungeonInfo
 local hooksecurefunc = hooksecurefunc
 
 -- Determine WoW TOC Version
@@ -439,6 +440,7 @@ function Atlas_ScrollBar_Update()
 					local id = ATLAS_SCROLL_ID[lineplusoffset][1]
 					bossButtonUpdate(button, ATLAS_SCROLL_ID[lineplusoffset][1], ATLAS_SCROLL_ID[lineplusoffset][2], false, base.Module or base.ALModule)
 				elseif (type(ATLAS_SCROLL_ID[lineplusoffset][1]) == "string") then
+					-- handling achievement
 					local spos, epos = strfind(ATLAS_SCROLL_ID[lineplusoffset][1], "ac=")
 					if (spos) then
 						local achievementID = strsub(ATLAS_SCROLL_ID[lineplusoffset][1], epos+1)
@@ -579,9 +581,14 @@ local function process_Deprecated()
 	for k, v in pairs(Deprecated_List) do
 		if ( addon:CheckAddonStatus(GetAddOnInfo(v[1])) ) then
 			local outdated = false
+			local compatibleVer
 			local currVer = GetAddOnMetadata(v[1], "Version")
-			if (v[3] and (strsub(currVer, 1, 1) == "r") and currVer < v[3]) then
-				outdated = true
+			if (v[3] and (strsub(currVer, 1, 1) == "r")) then
+				compatibleVer = tonumber(string.sub(v[3], 2))
+				currVer = tonumber(string.sub(currVer, 2))
+				if (currVer < compatibleVer) then
+					outdated = true
+				end
 			elseif (v[2] and (strsub(currVer, 1, 1) ~= "r") and currVer < v[2]) then
 				outdated = true
 			end
@@ -636,7 +643,8 @@ function Atlas_OnEvent(self, event, ...)
 	if (event=="ADDON_LOADED" and (arg1=="Atlas" or arg1=="Blizzard_EncounterJournal")) then
 		--Blizzard_EncounterJournal
 		if (IsAddOnLoaded("Blizzard_EncounterJournal") and IsAddOnLoaded("Atlas")) then
-			addon:EncounterJournal_Binding()
+			-- Added Atlas button to Encounter Journal
+			--addon:EncounterJournal_Binding()
 		end
 	end
 
@@ -808,7 +816,7 @@ function addon:MapAddNPCButton()
 			if (info_x == nil) then info_x = -18; end
 			if (info_y == nil) then info_y = -18; end
 
-			if (info_id < 10000 and profile.options.frames.showBossPotrait) then
+			if (WoWRetail and info_id < 10000 and profile.options.frames.showBossPotrait) then
 				bossbutton = _G["AtlasMapBossButton"..bossindex]
 				if (not bossbutton) then
 					bossbutton = CreateFrame("Button", "AtlasMapBossButton"..bossindex, AtlasFrame, "AtlasFrameBossButtonTemplate")
@@ -881,7 +889,7 @@ function addon:MapAddNPCButton()
 			-- Disable the set text unless one day we want the text to be added dynamatically
 			-- Or, enable it for debugging purpose
 --[[
-			local f_text = button:CreateFontString(button:GetName().."_Text", "MEDIUM", "NumberFont_Outline_Huge")
+			local f_text = button:CreateFontString(button:GetName().."_Text", "OVERLAY", "NumberFont_Outline_Huge")
 			f_text:SetPoint("CENTER", button, "CENTER", 0, 0)
 			f_text:SetText(info_mark)
 ]]
@@ -943,7 +951,7 @@ function addon:MapAddNPCButtonLarge()
 			local info_y 		= t[i][6]
 			local info_colortag	= t[i][7]
 
-			if (info_id < 10000 and info_x and info_y and profile.options.frames.showBossPotrait) then
+			if (WoWRetail and info_id < 10000 and info_x and info_y and profile.options.frames.showBossPotrait) then
 				bossbutton = _G["AtlasMapBossButtonL"..bossindex]
 				if (not bossbutton) then
 					bossbutton = CreateFrame("Button", "AtlasMapBossButtonL"..bossindex, AtlasFrameLarge, "AtlasFrameBossButtonTemplate")
@@ -1011,7 +1019,7 @@ function addon:MapAddNPCButtonLarge()
 						info_colortag == "Purple" or
 						info_colortag == "Blue") then
 						if (not text) then
-							text = button:CreateFontString(button:GetName().."_Text", "MEDIUM", "AtlasSystemFont_Large_Outline_Thick")
+							text = button:CreateFontString(button:GetName().."_Text", "OVERLAY", "AtlasSystemFont_Large_Outline_Thick")
 						end
 						text:SetPoint("CENTER", button, "CENTER", 0, 0)
 						text:SetText(info_mark)
@@ -1031,7 +1039,7 @@ function addon:MapAddNPCButtonLarge()
 						info_colortag == "MONK" or
 						info_colortag == "DEMONHUNTER") then
 						if (not text) then
-							text = button:CreateFontString(button:GetName().."_Text", "MEDIUM", "AtlasSystemFont_Large_Outline_Thick")
+							text = button:CreateFontString(button:GetName().."_Text", "OVERLAY", "AtlasSystemFont_Large_Outline_Thick")
 						end
 						local color = RAID_CLASS_COLORS[info_colortag]
 						text:SetPoint("CENTER", button, "CENTER", 0, 0)
@@ -1987,10 +1995,18 @@ local function initialization()
 	end
 	
 	check_Modules()
-	if (profile.options.worldMapButton) then
-		AtlasToggleFromWorldMap:Show()
+	if (WoWClassicEra) then
+		if (profile.options.worldMapButton) then
+			AtlasToggleFromWorldMap:Show()
+		else
+			AtlasToggleFromWorldMap:Hide()
+		end
 	else
-		AtlasToggleFromWorldMap:Hide()
+		if (profile.options.worldMapButton) then
+			addon.WorldMap.Button:Show()
+		else
+			addon.WorldMap.Button:Hide()
+		end
 	end
 end
 
@@ -2032,9 +2048,17 @@ function addon:Refresh()
 	AtlasFrame:SetClampedToScreen(profile.options.frames.clamp)
 	AtlasFrameLarge:SetClampedToScreen(profile.options.frames.clamp)
 	AtlasFrameSmall:SetClampedToScreen(profile.options.frames.clamp)
-	if (profile.options.worldMapButton) then
-		AtlasToggleFromWorldMap:Show()
+	if (WoWClassicEra) then
+		if (profile.options.worldMapButton) then
+			AtlasToggleFromWorldMap:Show()
+		else
+			AtlasToggleFromWorldMap:Hide()
+		end
 	else
-		AtlasToggleFromWorldMap:Hide()
+		if (profile.options.worldMapButton) then
+			addon.WorldMap.Button:Show()
+		else
+			addon.WorldMap.Button:Hide()
+		end
 	end
 end

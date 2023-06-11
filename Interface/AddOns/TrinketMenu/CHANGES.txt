@@ -1,16 +1,10 @@
-lightweight tag 0fab3dd7b42640b96fe8937265587baf02e8b036 9.0.7-Classic
+lightweight tag dfbd34ba02d90139089d731df4064fe7cc72ce9a 10.0.1-Classic
 Author:	Resike <resike@gmail.com>
-Date:	Sat Mar 5 22:52:39 2022 +0100
+Date:	Sat Jan 28 17:44:58 2023 +0100
 
-commit 0fab3dd7b42640b96fe8937265587baf02e8b036
+commit dfbd34ba02d90139089d731df4064fe7cc72ce9a
 Author: Resike <resike@gmail.com>
-Date:   Sat Mar 5 22:52:39 2022 +0100
+Date:   Sat Jan 28 17:44:58 2023 +0100
 
     Classic TOC
-
-commit 199f426d061fada836620c18a3308a6a88caa730
-Author: Resike <resike@gmail.com>
-Date:   Sat Mar 5 22:52:10 2022 +0100
-
-    Fix visibility issues and add "/trinket clear" command
 

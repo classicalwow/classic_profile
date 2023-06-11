@@ -1,5 +1,21 @@
-1.14.55 - 10th August 2022
-- Maintenance update.
+1.14.82 - 8th February 2023
+- For 'Show points of interest', clicking a travel icon or a portal icon will now show the destination map.
+- Updated LibDBIcon.
+
+1.14.73 - 5th December 2022
+- Adjusted world map frame strata.
+
+1.14.72 - 30th November 2022
+- Reformatted the texture file.
+
+1.14.69 - 15th November 2022
+- Updated LibDBIcon.
+
+1.14.61 - 21st September 2022
+- File structure updates.
+
+1.14.60 - 14th September 2022
+- Locale updates.
 
 1.14.53 - 27th July 2022
 - For 'Unlock map frame', added a fix for Demodal preventing the map frame from being moved to the top edge of the screen.

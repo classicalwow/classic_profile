@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() or not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 -- Lua APIs
@@ -31,7 +31,7 @@ function spellCache.Build()
   local co = coroutine.create(function()
     local id = 0
     local misses = 0
-    while misses < 50000 do
+    while misses < 80000 do
       id = id + 1
       local name, _, icon = GetSpellInfo(id)
 
@@ -166,7 +166,9 @@ function spellCache.Load(data)
     num = num + 1;
   end
 
-  if(num < 39000 or metaData.locale ~= locale or metaData.build ~= build or metaData.version ~= version or not metaData.spellCacheStrings) then
+  if(num < 39000 or metaData.locale ~= locale or metaData.build ~= build
+     or metaData.version ~= version or not metaData.spellCacheStrings)
+  then
     metaData.build = build;
     metaData.locale = locale;
     metaData.version = version;

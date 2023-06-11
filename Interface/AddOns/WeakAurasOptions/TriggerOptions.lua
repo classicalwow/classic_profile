@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() or not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L
@@ -199,8 +199,8 @@ local function DeleteConditionsForTriggerHandleSubChecks(checks, triggernum)
       check.trigger = check.trigger - 1;
     end
 
-    if (checks.checks) then
-      DeleteConditionsForTriggerHandleSubChecks(checks.checks, triggernum);
+    if (check.checks) then
+      DeleteConditionsForTriggerHandleSubChecks(check.checks, triggernum);
     end
   end
 end

@@ -1074,10 +1074,10 @@ AutoBar.Class["AutoBarButtonPoisonLethal"] = AutoBarButtonPoisonLethal
 function AutoBarButtonPoisonLethal.prototype:init(parentBar, buttonDB)
 	AutoBarButtonPoisonLethal.super.prototype.init(self, parentBar, buttonDB)
 
-	if (ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
-		self:AddCategory("Muffin.Poison.Lethal")
-	elseif (ABGData.is_mainline_wow) then
+	if (ABGData.is_mainline_wow) then
 		self:AddCategory("Spell.Poison.Lethal")
+	else --(ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
+		self:AddCategory("Muffin.Poison.Lethal")
 	end
 end
 
@@ -1087,10 +1087,10 @@ AutoBar.Class["AutoBarButtonPoisonNonlethal"] = AutoBarButtonPoisonNonlethal
 function AutoBarButtonPoisonNonlethal.prototype:init(parentBar, buttonDB)
 	AutoBarButtonPoisonNonlethal.super.prototype.init(self, parentBar, buttonDB)
 
-	if (ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
-		self:AddCategory("Muffin.Poison.Nonlethal")
-	elseif (ABGData.is_mainline_wow) then
+	if (ABGData.is_mainline_wow) then
 		self:AddCategory("Spell.Poison.Nonlethal")
+	else --(ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
+		self:AddCategory("Muffin.Poison.Nonlethal")
 	end
 
 end
@@ -1165,12 +1165,12 @@ function AutoBarButtonBuffWeapon.prototype:init(parentBar, buttonDB)
 	self:AddCategory("Consumable.Weapon Buff")
 	self:AddCategory("Spell.Buff.Weapon")
 
-	if (ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
-		self:AddCategory("Muffin.Poison.Lethal")
-		self:AddCategory("Muffin.Poison.Nonlethal")
-	elseif (ABGData.is_mainline_wow) then
+	if (ABGData.is_mainline_wow) then
 		self:AddCategory("Spell.Poison.Lethal")
 		self:AddCategory("Spell.Poison.Nonlethal")
+	else --(ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
+		self:AddCategory("Muffin.Poison.Lethal")
+		self:AddCategory("Muffin.Poison.Nonlethal")
 	end
 
 end
@@ -1228,12 +1228,12 @@ function AutoBarButtonConjure.prototype:init(parentBar, buttonDB)
 	if (AutoBar.CLASS == "MAGE") then
 		self:AddCategory("Spell.Mage.Conjure Food")
 		self:AddCategory("Spell.Mage.Create Manastone")
-		if (ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
+		if (not ABGData.is_mainline_wow) then --(ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
 			self:AddCategory("Spell.Mage.Conjure Water")
 		end
 	elseif (AutoBar.CLASS == "WARLOCK") then
 		self:AddCategory("Spell.Warlock.Create Healthstone")
-		if (ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
+		if (not ABGData.is_mainline_wow) then --(ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
 			self:AddCategory("Spell.Warlock.Create Soulstone")
 		end
 
@@ -1693,7 +1693,8 @@ function AutoBarButtonHearth.prototype:init(parentBar, buttonDB)
 		self:AddCategory("Spell.AncientDalaranPortals")
 	end
 
-	self:AddCategory("Misc.Hearth")
+	self:AddCategory("Muffin.Misc.Hearth")
+
 	if (ABGData.is_mainline_wow) then
 		AutoBarCategoryList["Muffin.Toys.Hearth"].only_favourites = buttonDB.only_favourite_hearth
 
@@ -2230,6 +2231,17 @@ function AutoBarButtonWaterBuff.prototype:init(parentBar, buttonDB)
 end
 
 
+if (LE_EXPANSION_WRATH_OF_THE_LICH_KING and LE_EXPANSION_LEVEL_CURRENT >= LE_EXPANSION_WRATH_OF_THE_LICH_KING) then
+
+	local AutoBarButtonMillHerbs = AceOO.Class(AutoBarButton)
+	AutoBar.Class["AutoBarButtonMillHerbs"] = AutoBarButtonMillHerbs
+
+	function AutoBarButtonMillHerbs.prototype:init(parentBar, buttonDB)
+		AutoBarButtonMillHerbs.super.prototype.init(self, parentBar, buttonDB)
+
+		self:AddCategory("Muffin.Herbs.Millable")
+	end
+end
 -------------------------------------------------------------------
 --
 -- WoW Classic
@@ -2267,7 +2279,6 @@ if (ABGData.is_vanilla_wow or ABGData.is_bcc_wow) then
 
 		self:AddCategory("Spell.Track")
 	end
-
 
 elseif (ABGData.is_mainline_wow) then
 
@@ -2329,15 +2340,6 @@ elseif (ABGData.is_mainline_wow) then
 		AutoBarButtonGuildSpell.super.prototype.init(self, parentBar, buttonDB)
 
 		self:AddCategory("Spell.Guild")
-	end
-
-	local AutoBarButtonMillHerbs = AceOO.Class(AutoBarButton)
-	AutoBar.Class["AutoBarButtonMillHerbs"] = AutoBarButtonMillHerbs
-
-	function AutoBarButtonMillHerbs.prototype:init(parentBar, buttonDB)
-		AutoBarButtonMillHerbs.super.prototype.init(self, parentBar, buttonDB)
-
-		self:AddCategory("Muffin.Herbs.Millable")
 	end
 
 	local AutoBarButtonSunsongRanch = AceOO.Class(AutoBarButton)
@@ -2546,7 +2548,7 @@ elseif (ABGData.is_mainline_wow) then
 
 		if (not AutoBarCategoryList["Spell.Mount"]) then
 			--AutoBarButtonMount.prototype:init hasn't run, so skip
-			print("Skipping AutoBarButtonMount.prototype:Refresh  UpdateMount:" .. tostring(updateMount));
+			--print("Skipping AutoBarButtonMount.prototype:Refresh  UpdateMount:" .. tostring(updateMount));
 			return true;
 		end
 
@@ -2677,9 +2679,6 @@ elseif (ABGData.is_mainline_wow) then
 	function AutoBarButtonPets.prototype:init(parentBar, buttonDB)
 		AutoBarButtonPets.super.prototype.init(self, parentBar, buttonDB)
 
-		if (not AutoBarCategoryList["Battle Pet.Favourites"]) then
-			AutoBarCategoryList["Battle Pet.Favourites"] = ABGCode.MacroTextCategory:new( "Battle Pet.Favourites", "inv_misc_pheonixpet_01")
-		end
 		self:AddCategory("Battle Pet.Favourites")
 
 		self:AddCategory("Macro.BattlePet.SummonRandom")
@@ -2691,12 +2690,6 @@ elseif (ABGData.is_mainline_wow) then
 
 	function AutoBarButtonPets.prototype:Refresh(parentBar, buttonDB)
 		AutoBarButtonPets.super.prototype.Refresh(self, parentBar, buttonDB)
-
-		if (not AutoBarCategoryList["Battle Pet.Favourites"]) then
-			--AutoBarButtonPets.prototype:init hasn't run, so skip
-			--print("Skipping AutoBarButtonPets.prototype:Refresh);
-			return true;
-		end
 
 		local category = AutoBarCategoryList["Battle Pet.Favourites"]
 

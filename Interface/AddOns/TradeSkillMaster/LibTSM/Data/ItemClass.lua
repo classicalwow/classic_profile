@@ -4,8 +4,9 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
-local ItemClass = TSM.Init("Data.ItemClass")
+local TSM = select(2, ...) ---@type TSM
+local ItemClass = TSM.Init("Data.ItemClass") ---@class Data.ItemClass
+local Environment = TSM.Include("Environment")
 local STATIC_DATA = {
 	classes = {},
 	subClasses = {},
@@ -21,50 +22,53 @@ local STATIC_DATA = {
 -- ============================================================================
 
 do
-	-- Needed because NUM_LE_ITEM_CLASSS contains an erroneous value
 	local ITEM_CLASS_IDS = nil
-	if not TSM.IsWowClassic() then
+	if Environment.IsRetail() then
 		ITEM_CLASS_IDS = {
-			LE_ITEM_CLASS_WEAPON,
-			LE_ITEM_CLASS_ARMOR,
-			LE_ITEM_CLASS_CONTAINER,
-			LE_ITEM_CLASS_GEM,
-			LE_ITEM_CLASS_ITEM_ENHANCEMENT,
-			LE_ITEM_CLASS_CONSUMABLE,
-			LE_ITEM_CLASS_GLYPH,
-			LE_ITEM_CLASS_TRADEGOODS,
-			LE_ITEM_CLASS_RECIPE,
-			LE_ITEM_CLASS_BATTLEPET,
-			LE_ITEM_CLASS_QUESTITEM,
-			LE_ITEM_CLASS_MISCELLANEOUS,
+			Enum.ItemClass.Weapon,
+			Enum.ItemClass.Armor,
+			Enum.ItemClass.Container,
+			Enum.ItemClass.Gem,
+			Enum.ItemClass.ItemEnhancement,
+			Enum.ItemClass.Consumable,
+			Enum.ItemClass.Glyph,
+			Enum.ItemClass.Tradegoods,
+			Enum.ItemClass.Recipe,
+			Enum.ItemClass.Profession,
+			Enum.ItemClass.Battlepet,
+			Enum.ItemClass.Questitem,
+			Enum.ItemClass.Miscellaneous,
 		}
-	elseif TSM.IsWowBCClassic() then
+	elseif Environment.IsWrathClassic() then
 		ITEM_CLASS_IDS = {
-			LE_ITEM_CLASS_WEAPON,
-			LE_ITEM_CLASS_ARMOR,
-			LE_ITEM_CLASS_CONTAINER,
-			LE_ITEM_CLASS_CONSUMABLE,
-			LE_ITEM_CLASS_TRADEGOODS,
-			LE_ITEM_CLASS_PROJECTILE,
-			LE_ITEM_CLASS_QUIVER,
-			LE_ITEM_CLASS_RECIPE,
-			LE_ITEM_CLASS_GEM,
-			LE_ITEM_CLASS_MISCELLANEOUS,
-			LE_ITEM_CLASS_QUESTITEM,
+			Enum.ItemClass.Weapon,
+			Enum.ItemClass.Armor,
+			Enum.ItemClass.Container,
+			Enum.ItemClass.Consumable,
+			Enum.ItemClass.Glyph,
+			Enum.ItemClass.Tradegoods,
+			Enum.ItemClass.Projectile,
+			Enum.ItemClass.Quiver,
+			Enum.ItemClass.Recipe,
+			Enum.ItemClass.Gem,
+			Enum.ItemClass.Miscellaneous,
+			Enum.ItemClass.Questitem,
+		}
+	elseif Environment.IsVanillaClassic() then
+		ITEM_CLASS_IDS = {
+			Enum.ItemClass.Weapon,
+			Enum.ItemClass.Armor,
+			Enum.ItemClass.Container,
+			Enum.ItemClass.Consumable,
+			Enum.ItemClass.Tradegoods,
+			Enum.ItemClass.Projectile,
+			Enum.ItemClass.Quiver,
+			Enum.ItemClass.Recipe,
+			Enum.ItemClass.Reagent,
+			Enum.ItemClass.Miscellaneous,
 		}
 	else
-		ITEM_CLASS_IDS = {
-			LE_ITEM_CLASS_WEAPON,
-			LE_ITEM_CLASS_ARMOR,
-			LE_ITEM_CLASS_CONTAINER,
-			LE_ITEM_CLASS_CONSUMABLE,
-			LE_ITEM_CLASS_TRADEGOODS,
-			LE_ITEM_CLASS_PROJECTILE,
-			LE_ITEM_CLASS_QUIVER,
-			LE_ITEM_CLASS_RECIPE,
-			LE_ITEM_CLASS_REAGENT,
-			LE_ITEM_CLASS_MISCELLANEOUS,
-		}
+		error("Invalid game version")
 	end
 
 	for _, classId in ipairs(ITEM_CLASS_IDS) do
@@ -74,10 +78,10 @@ do
 			STATIC_DATA.classLookup[class] = {}
 			STATIC_DATA.classLookup[class]._index = classId
 			local subClasses = nil
-			if TSM.IsWowClassic() then
-				subClasses = {GetAuctionItemSubClasses(classId)}
-			else
+			if Environment.HasFeature(Environment.FEATURES.C_AUCTION_HOUSE) then
 				subClasses = C_AuctionHouse.GetAuctionItemSubClasses(classId)
+			else
+				subClasses = {GetAuctionItemSubClasses(classId)}
 			end
 			for _, subClassId in pairs(subClasses) do
 				local subClassName = GetItemSubClassInfo(classId, subClassId)

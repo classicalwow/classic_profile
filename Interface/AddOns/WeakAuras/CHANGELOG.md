@@ -1,39 +1,41 @@
-# [4.0.2](https://github.com/WeakAuras/WeakAuras2/tree/4.0.2) (2022-06-01)
+# [5.5.4](https://github.com/WeakAuras/WeakAuras2/tree/5.5.4) (2023-05-21)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/4.0.1...4.0.2)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/5.5.3...5.5.4)
 
 ## Highlights
 
- - bug fixes 
+ - Add an option to un-ignore aura updates from Wago
+- Include TaintLess so we..taint less
+- Add a 4th tooltip for people to use
+- The usual amount of bugfixes 
 
 ## Commits
 
 InfusOnWoW (4):
 
-- Work around invalid geometry even harder
-- Tweak visibility handling again
-- Tweak Profiling output
-- Fix Time formatting flooring the seconds, instead of ceiling them
+- Hide tip popup on minimze and switching pages
+- Clean up code showing the bottom buttons
+- BT2: Limit size of returned tooltip for options display
+- Add a tooltip4, since a user actually wants that
 
-Jens N (1):
+Jods (1):
 
-- Fixed issue with "Array"-type options in aura groups
+- add unignoring uption for WagoUpdates (#4443)
 
-Stanzilla (2):
+Stanzilla (5):
 
-- Update TOC for Patch 9.2.5
-- CI: Speed up build times by using `plain-copy` for model path files
+- Load TaintLess in Wrath as well
+- Fix typo
+- Include TaintLess as as lib (#4437)
+- Add a few more blocked functions that were added in 10.1
+- Fix up some types
 
-mrbuds (10):
+emptyrivers (1):
 
-- clean more unused variables
-- fix chat message_voice condition not displayed correctly in options
-- remove BackdropTemplateMixin workaround
-- bufftrigger2: rename local frame to Buff2Frame
-- cleanup unused variables and functions
-- CreateFrame: use same casing for frameType
-- replace deprecated function C_LegendaryCrafting.GetRuneforgePowersByClassAndSpec
-- none of the time formatters have 2 arguments
-- rename WeakAuras.lua "frame" to "WeakAurasFrame"
-- Fix assignement ambiguity
+- simplify dragonriding detection
+
+mrbuds (2):
+
+- Fix anchored to nameplate preview with aura trigger
+- Essence trigger: fix nil error happening on import of an aura
 

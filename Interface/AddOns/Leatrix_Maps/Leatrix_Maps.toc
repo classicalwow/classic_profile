@@ -3,14 +3,17 @@
 ## Title: Leatrix Maps
 ## Notes: Enhancements for your maps.
 
-## Version: 1.14.55
+## Version: 1.14.112
 ## Author: Leatrix
 ## SavedVariables: LeaMapsDB
+
+## OptionalDeps: Leatrix_enUS
 
 ## X-Curse-Project-ID: 324034
 
 Leatrix_Maps_Library.lua
 Leatrix_Maps_Locale.lua
 Leatrix_Maps.xml
+Leatrix_Maps_Icons.lua
 Leatrix_Maps_Reveal.lua
 Leatrix_Maps.lua

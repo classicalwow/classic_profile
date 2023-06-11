@@ -1,10 +1,10 @@
--- $Id: Atlas_Transportation-koKR.lua 131 2022-02-02 17:23:30Z arithmandar $
+-- $Id: Atlas_Transportation-koKR.lua 210 2023-03-20 15:09:13Z arithmandar $
 --[[
 
 	Atlas, a World of Warcraft instance map browser
 	Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 	Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-	Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
+	Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
 
 	This file is part of Atlas.
 
@@ -107,6 +107,8 @@ L["Wind Rider"] = "와이번"
 L["Wind Rider Master"] = "와이번 조련사"
 L["Won't be available once the Battle for Andorhal chain is finished."] = "일단 안돌할 전투 연계 퀘스트를 완료하면 이용할 수 없습니다."
 L["Yellow"] = "노란색"
+--[[Translation missing --]]
+--[[ L["Zeppelin to Orgrimmar"] = ""--]] 
 L["Zeppelin Towers"] = "비행선 탑승장"
 
 end

@@ -226,7 +226,6 @@ L.WorldBuffAlert			= "Afficher une alerte et un décompte lorsqu'un évênement 
 
 L.Area_BugAlerts			= "Options des rapports de bugs"
 L.BadTimerAlert				= "Afficher un message quand DBM détecte un décompte erroné avec au moins 1 seconde de différence"
-L.BadIDAlert				= "Afficher un message quand DBM détecte une capacité ou entrée de journal erronée"
 
 -- Panel: Spoken Alerts Frame
 L.Panel_SpokenAlerts		= "Alertes vocales"
@@ -407,7 +406,6 @@ L.SWFNever					= "Jamais"
 L.FilterInterrupts			= "Si le lanceur n'est pas la cible/focus actuelle (Toujours)."
 L.FilterInterrupts2			= "Si le lanceur n'est pas la cible/focus actuelle (Toujours) ou interruption en recharge (Boss seulement)"
 L.FilterInterrupts3			= "Si le lanceur n'est pas la cible/focus actuelle (Toujours) ou interruption en recharge (Boss &amp; Trash)"
-L.FilterInterrupts4			= "Toujours filtrer les alertes d'interruption (vous ne voulez pas les voir, point)"
 L.FilterInterruptNoteName	= "Filtrer les alertes des sorts interruptibles (avec compte) si l'alerte ne contient pas votre nom dans la note personnalisée"
 L.FilterDispels				= "Filtrer les alertes de dissipations si votre sort de dissipation est en recharge"
 L.FilterTrashWarnings		= "Filtrer toutes les annonces liées aux trash dans les donjons normaux &amp; héroïques"

@@ -1,18 +1,101 @@
 # <DBM> Azeroth (Classic)
 
-## [1.14.26](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.14.26) (2022-08-02)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.14.25...1.14.26) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
+## [1.14.37](https://github.com/DeadlyBossMods/DBM-Classic/tree/1.14.37) (2023-06-06)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-Classic/compare/1.14.36...1.14.37) [Previous Releases](https://github.com/DeadlyBossMods/DBM-Classic/releases)
 
-- prep tags for all the things  
-- Update koKR (#143)  
-- Register no clicks, Fixes #140  
-- Update zhTW (#141)  
-- Update zhTW (#142)  
-- Update commonlocal.ru.lua (#139)  
-- Add common local  
-- Update koKR (#138)  
-- Prep core for Affixes module  
-- Revert \"if available, show stacks on updatePlayerDebuffRemaining infoframes\" This reverts commit 98e6fb317370d0a1d3c9f47144ae5669a90f487c.  
-- if available, show stacks on updatePlayerDebuffRemaining infoframes  
-- sync  
-- bump alphas  
+- Prep new tags for all flavors to start the new week with soundkit to file data Id migration and better private auras code for retail players  
+- Fix at least one case that'd cause private aura sound not to play  
+- Update localization.ru.lua (#227)  
+- honor voice pack global disables by sound ID in the private aura object  
+- Cleanup some minor warnings on namings  
+- change option text since sound now configurable  
+- fix alignment.  
+- fix lua errors but not actual alignment issues  
+- Completely switch over to file data Id from soundkit. There may be bugs.  
+- bump alpha  
+- prep new tag  
+- Update localization.ru.lua (#224)  
+- Update zhTW (Core) (#226)  
+- Update koKR (#223)  
+- Update localization.ru.lua (#222)  
+- Update banned mods  
+- prepare localizers for some future options that won't be deployed just yet  
+- update banned list  
+- update banned mods for latest culling/migrations  
+- Fixed a bug where the respawn timer fallback never actually started a respawn timer. Now it should start the default 29-30 second respawn timer on all bosses and then if it's wrong it'll be easier to get reports about it and fix.  
+- prep new tags for wrath classic and retail  
+- Ooh, fix a bug where vanilla onyxia is rejected on classic era. this culling only applies to wrath for now.  
+- banned mods update  
+- Update koKR (#221)  
+- Update core for wrath culling  
+- Prep core for culling phase 1  
+- Default filter timers when using plater nameplate CD icon auras Add additional filter control for regular global timer disables for those not using plater who stll want to shut off specifically boss or trash timers only.  
+- Update localization.ru.lua (#219)  
+- Sync Bugfixes: - Fixed a bug where combat rules were applied globally to syncs, causing many trash mods, and boss RP syncs to never actually sync in first place, defeating entire purpose in many cases of why syncs exist in first place. This should fix MANY rp timers. caveat, it might also cause mods that aren't correctly checking IsInCombat in their OnSync handlers to start showing stuff out of combat (this has to be fixed on a per mod level) - Fixed a bug where player syncs were given no restriction on whether or not they should be trusted. There is a reason minsyncrevision exists and an out of date players DBM shouldn't be allowed to ignore that. This code originally existed so a player in a solo raid wouldn't have broken comms entirely, but that's now handled correctly in the sendSync function which automatically passes player comms to sync handler without check if there is no one else in group with them, so all the hacky exclusion checks in RecieveSync are no longer needed.  
+- Add dawn of the infinite to instace ID table  
+- Update koKR (#218)  
+- Forgot to hookup reset button  
+- support in legacy object too  
+- Add tech to auto disable countdowns based on combat status, if the object calls for it  
+- Fix private auras without voicepack + minor voicepack selection issues (#217)  
+- Fix VPVersion and forceDisable handling in version sync (#216)  
+- This is why I hate having to maintain 3 diff versions of same mod  
+- Merge branch 'master' of https://github.com/DeadlyBossMods/DBM-Classic  
+- add GTFO alert for inferno if not tank (or at least tank spec, if you're fury tanking, you'll get spammed, can't help that. turn alert off if you're non tank spec tanking)  
+    Should help HC players die less on this boss  
+- bump alpha  
+- Fix a bug that caused cast announcements to use wrong cast time to appear if alert was using short text name (alternate spellID)  
+- Change this function. it expects a string, so it should just explicitely refuse anything that's not one.  
+- bump alpha  
+- tag new release since having spamming lua errors in mythic plus wouldn't be desirable. Plus did fix world boss bug too  
+- no message  
+- prep tag to fix couple bugs that were missed in last weeks pass  
+- Update koKR (#215)  
+- bump alpha  
+- prep tag  
+- Update localization.ru.lua (#214)  
+- Revise private aura api slightly to be per spell option for more finite control and better option grouping.  
+- Update RU locale (#213)  
+- Update koKR (#212)  
+- Fix layout bugs  
+- Forgot to hit save on this one  
+- Tidy up gui a little by moving nameplate feature control into own sub area  
+- Fix voice pack logic for private auras  
+- Refactor objects a little. Sorry localizers  
+- Didn't mean to leave that there  
+- added untestable private aura tech, cause the testing auras were removed from target dummies on live :(  
+- Add feature to show Plater Nameplate aura CDs on Plater nameplates without needing to actually show DBM timers on trash (bosses will always show timers due to those needing to exist for life timer updating functionality that trash mods don't ever need  
+- Correctly send chat on SAY channel when using :CountdownSay() (#211)  
+- Prevent pformat fallback from eating closing parenthesis (#210)  
+- Merge branch 'master' of https://github.com/DeadlyBossMods/DBM-Unified * 'master' of https://github.com/DeadlyBossMods/DBM-Unified: Update koKR (#209)  
+- Update koKR (#209)  
+- Prep new tag with all the additional fixes from tonight.  
+- prep new tag  
+- bump alpha  
+- prep day 1 fixes tag for all the raid fix goodies.  
+- bump alpha  
+- prep new core tag, for final round of pre season 2 testing  
+- Fix a bug that caused \"keep\" timers not to correctly stop if that timer received calls to :Update mid fight, such as SLG, or if a countdown was enabled on that timer  
+- make passing guid on stop also pass boss1 guid when enabled  
+- Update localization.ru.lua (#208)  
+- scope last so it's only cooldown type timers and not injecting a bunch fo random target or debuff or cast timers  
+- establish a default option  
+- Add tech to auto populate timer callback with GUID for boss timers on a case by case basis  
+- Bump alpha  
+- prep new tag  
+- Force sort core modules to top  
+- core should be using blue text  
+- Fix Lua error.  
+- bump alpha  
+- should be 10.1, not 0.36  
+- bump tocs  
+- Change core name from to to match other modules.  
+- Completely scrap usefr front end reporting of invalid spellids to cull in bug reports on valid spellids from test realm. Actual invalid spellids will just be on me to find and me alone through better testing.  
+- bump alpha  
+- prep wrath tag  
+- add another check type  
+- invert last  
+- rework last  
+- create a more robust getstage api that will auto handle nil checks in combat, as well as simplify checks in mod code  
+- Icon and font bugfixes (Closes #207) - Update default font values to match LibSharedMedia. - Fix occurance where some fonts were being force overwritten to standardFont on options load. - Add addon icon for 10.1.0.  
+- Bump alphas  

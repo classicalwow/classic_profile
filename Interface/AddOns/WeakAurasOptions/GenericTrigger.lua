@@ -1,4 +1,4 @@
-if not WeakAuras.IsCorrectVersion() or not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local L = WeakAuras.L;
@@ -104,6 +104,7 @@ local function GetCustomTriggerOptions(data, triggernum)
       type = "description",
       name = function()
         local events = trigger.custom_type == "event" and trigger.events2 or trigger.events
+        -- Check for errors
         for _, event in pairs(WeakAuras.split(events)) do
           local trueEvent
           for i in event:gmatch("[^:]+") do
@@ -119,7 +120,23 @@ local function GetCustomTriggerOptions(data, triggernum)
               if not OptionsPrivate.Private.baseUnitId[unit] and not OptionsPrivate.Private.multiUnitId[unit] then
                 return "|cFFFF0000"..L["Unit %s is not a valid unit for RegisterUnitEvent"]:format(unit)
               end
+            elseif trueEvent == "TRIGGER" then
+              local requestedTriggernum = tonumber(i)
+              if requestedTriggernum then
+                if OptionsPrivate.Private.watched_trigger_events[data.id]
+                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum]
+                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum][requestedTriggernum] then
+                  return "|cFFFF0000"..L["Reciprocal TRIGGER:# requests will be ignored!"]
+                end
+              end
             end
+          end
+        end
+
+        -- Check for warnings
+        for _, event in pairs(WeakAuras.split(events)) do
+          if event == "CLEU" or event == "COMBAT_LOG_EVENT_UNFILTERED" then
+            return "|cFFFF0000"..L["COMBAT_LOG_EVENT_UNFILTERED with no filter can trigger frame drops in raid environment."]
           end
         end
         return ""
@@ -136,6 +153,7 @@ local function GetCustomTriggerOptions(data, triggernum)
           return true
         end
         local events = trigger.custom_type == "event" and trigger.events2 or trigger.events
+        -- Check for errors
         for _, event in pairs(WeakAuras.split(events)) do
           local trueEvent
           for i in event:gmatch("[^:]+") do
@@ -150,7 +168,22 @@ local function GetCustomTriggerOptions(data, triggernum)
               if not OptionsPrivate.Private.baseUnitId[unit] then
                 return false
               end
+            elseif trueEvent == "TRIGGER" then
+              local requestedTriggernum = tonumber(i)
+              if requestedTriggernum then
+                if OptionsPrivate.Private.watched_trigger_events[data.id]
+                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum]
+                and OptionsPrivate.Private.watched_trigger_events[data.id][triggernum][requestedTriggernum] then
+                  return false
+                end
+              end
             end
+          end
+        end
+        -- Check for warnings
+        for _, event in pairs(WeakAuras.split(events)) do
+          if event == "CLEU" or event == "COMBAT_LOG_EVENT_UNFILTERED" then
+            return false
           end
         end
         return true
@@ -362,14 +395,22 @@ local function GetCustomTriggerOptions(data, triggernum)
                             17 + i / 10, hideOverlay, appendToTriggerPath("customOverlay" .. i), false, { multipath = false, extraSetFunction = extraSetFunctionReload, extraFunctions = extraFunctions});
   end
 
-  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Name Info"], "custom_name", "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#name-info",
-                          18, hideIfTriggerStateUpdate, appendToTriggerPath("customName"), false, { multipath = false, extraSetFunction = extraSetFunctionReload});
-  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Icon Info"], "custom_icon", "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#icon-info",
-                          20, hideIfTriggerStateUpdate, appendToTriggerPath("customIcon"), false, { multipath = false, extraSetFunction = extraSetFunction});
-  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Texture Info"], "custom_texture", "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#texture-info",
-                          22, hideIfTriggerStateUpdate, appendToTriggerPath("customTexture"), false, { multipath = false, extraSetFunction = extraSetFunction});
-  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Stack Info"], "custom_stacks", "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#stack-info",
-                          23, hideIfTriggerStateUpdate, appendToTriggerPath("customStacks"), false, { multipath = false, extraSetFunction = extraSetFunctionReload});
+  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Name Info"], "custom_name",
+                          "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#name-info",
+                          18, hideIfTriggerStateUpdate, appendToTriggerPath("customName"), false,
+                          { multipath = false, extraSetFunction = extraSetFunctionReload});
+  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Icon Info"], "custom_icon",
+                          "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#icon-info",
+                          20, hideIfTriggerStateUpdate, appendToTriggerPath("customIcon"), false,
+                          { multipath = false, extraSetFunction = extraSetFunction});
+  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Texture Info"], "custom_texture",
+                          "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#texture-info",
+                          22, hideIfTriggerStateUpdate, appendToTriggerPath("customTexture"), false,
+                          { multipath = false, extraSetFunction = extraSetFunction});
+  OptionsPrivate.commonOptions.AddCodeOption(customOptions, data, L["Stack Info"], "custom_stacks",
+                          "https://github.com/WeakAuras/WeakAuras2/wiki/Custom-Code-Blocks#stack-info",
+                          23, hideIfTriggerStateUpdate, appendToTriggerPath("customStacks"), false,
+                          { multipath = false, extraSetFunction = extraSetFunctionReload});
 
   return customOptions;
 end
@@ -392,9 +433,8 @@ local function GetGenericTriggerOptions(data, triggernum)
       name = "",
       order = 7.1,
       width = WeakAuras.normalWidth,
-      values = function()
-        return subtypes
-      end,
+      values = subtypes,
+      sorting = OptionsPrivate.Private.SortOrderForValues(subtypes),
       get = function(info)
         return trigger.event
       end,
@@ -403,7 +443,6 @@ local function GetGenericTriggerOptions(data, triggernum)
         WeakAuras.Add(data)
         WeakAuras.ClearAndUpdateOptions(data.id)
       end,
-      control = "WeakAurasSortedDropdown",
     }
   end
 
@@ -419,7 +458,7 @@ local function GetGenericTriggerOptions(data, triggernum)
       width = WeakAuras.normalWidth,
       order = 8,
       values = OptionsPrivate.Private.subevent_prefix_types,
-      control = "WeakAurasSortedDropdown",
+      sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.subevent_prefix_types),
       hidden = function() return not (trigger.type == combatLogCategory and trigger.event == "Combat Log"); end,
       get = function(info)
         return trigger.subeventPrefix
@@ -435,7 +474,7 @@ local function GetGenericTriggerOptions(data, triggernum)
       name = L["Message Suffix"],
       order = 9,
       values = OptionsPrivate.Private.subevent_suffix_types,
-      control = "WeakAurasSortedDropdown",
+      sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.subevent_suffix_types),
       hidden = function() return not (trigger.type == combatLogCategory and trigger.event == "Combat Log" and OptionsPrivate.Private.subevent_actual_prefix_types[trigger.subeventPrefix]); end,
       get = function(info)
         return trigger.subeventSuffix

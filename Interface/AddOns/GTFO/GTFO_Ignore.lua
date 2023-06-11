@@ -12,19 +12,26 @@ GTFO.IgnoreSpellCategory["Fatigue"] = {
 	override = true
 }
 
-if (not (GTFO.ClassicMode or GTFO.BurningCrusadeMode)) then
+GTFO.IgnoreSpellCategory["Lava"] = {
+	spellID = 16455, -- Not really the spell, but a good placeholder
+	desc = "Lava Pools & Campfires",
+	tooltip = "Alert when damaged by lava pools and campfires",
+	override = true
+}
+
+if (not (GTFO.ClassicMode or GTFO.BurningCrusadeMode or GTFO.WrathMode)) then
 
 	GTFO.IgnoreSpellCategory["HagaraWateryEntrenchment"] = {
 		-- mobID = 55689; -- Hagara the Stormbinder
 		spellID = 110317,
-		desc = "Watery Entrenchment (Hagara)"
+		desc = "Watery Entrenchment (Hagara - Cataclysm)"
 	}
 
 	GTFO.IgnoreSpellCategory["GarroshDesecrated"] = {
 		-- Garrosh Hellscream
 		spellID = 144762,
 		desc = "Desecrated Axe (Garrosh Phase 1 & 2)",
-		tooltip = "Alert from the Desecrated Axe from Garrosh Hellscream (Phase 1 & 2)",
+		tooltip = "Alert from the Desecrated Axe from Garrosh Hellscream (Phase 1 & 2 - MOP)",
 		override = true
 	}
 
@@ -33,6 +40,12 @@ if (not (GTFO.ClassicMode or GTFO.BurningCrusadeMode)) then
 		spellID = 315161,
 		desc = "Eye of Corruption (8.3 BFA)",
 		isDefault = true,
+	}
+
+	GTFO.IgnoreSpellCategory["IcyGround"] = {
+		-- 10.0 Sennarth
+		spellID = 372055,
+		desc = "Icy Ground (Sennarth - Dragonflight)"
 	}
 end
 
@@ -88,5 +101,29 @@ GTFO.IgnoreScan["356447"] = true; -- Dreadbugs
 GTFO.IgnoreScan["209858"] = true; -- Necrotic Wound
 GTFO.IgnoreScan["355951"] = true; -- Unworthy
 GTFO.IgnoreScan["366943"] = true; -- Radioactive Core
-
+GTFO.IgnoreScan["368146"] = true; -- Eternity Engine
+GTFO.IgnoreScan["362130"] = true; -- Quaking Steps
+GTFO.IgnoreScan["361818"] = true; -- Hopebreaker
+GTFO.IgnoreScan["364845"] = true; -- Fractured Core
+GTFO.IgnoreScan["360287"] = true; -- Anguishing Strike
+GTFO.IgnoreScan["360302"] = true; -- Swarm of Decay
+GTFO.IgnoreScan["360303"] = true; -- Swarm of Darkness
+GTFO.IgnoreScan["361923"] = true; -- Ravenous Hunger
+GTFO.IgnoreScan["359778"] = true; -- Ephemera Dust
+GTFO.IgnoreScan["294720"] = true; -- Bottled Enimga
+GTFO.IgnoreScan["396233"] = true; -- Thundering Presence
+GTFO.IgnoreScan["396222"] = true; -- Shattering Presence
+GTFO.IgnoreScan["396212"] = true; -- Chilling Presence
+GTFO.IgnoreScan["396201"] = true; -- Blistering Presence
+GTFO.IgnoreScan["384637"] = true; -- Raging Winds
+GTFO.IgnoreScan["388290"] = true; -- Cyclone
+GTFO.IgnoreScan["375889"] = true; -- Greatstaff of the Broodkeeper
+GTFO.IgnoreScan["381349"] = true; -- Greatstaff of the Broodkeeper
+GTFO.IgnoreScan["381250"] = true; -- Electric Lash
+GTFO.IgnoreScan["381251"] = true; -- Electric Lash
+GTFO.IgnoreScan["382541"] = true; -- Surge
+GTFO.IgnoreScan["391282"] = true; -- Crackling Energy
+GTFO.IgnoreScan["387333"] = true; -- Storm Surge
+GTFO.IgnoreScan["396328"] = true; -- Quaking Pillar
+--GTFO.IgnoreScan["375873"] = true; -- Wildfire
 

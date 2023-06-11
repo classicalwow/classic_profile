@@ -1,10 +1,10 @@
--- $Id: Atlas_Transportation-enUS.lua 156 2022-03-20 06:34:12Z arithmandar $
+-- $Id: Atlas_Transportation-enUS.lua 210 2023-03-20 15:09:13Z arithmandar $
 --[[
 
 	Atlas, a World of Warcraft instance map browser
 	Copyright 2005 ~ 2010 - Dan Gilbert <dan.b.gilbert@gmail.com>
 	Copyright 2010 - Lothaer <lothayer@gmail.com>, Atlas Team
-	Copyright 2011 ~ 2022 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
+	Copyright 2011 ~ 2023 - Arith Hsu, Atlas Team <atlas.addon at gmail.com>
 
 	This file is part of Atlas.
 
@@ -101,6 +101,7 @@ if L then
 	L["Boat to Stormwind City"] = "Boat to Stormwind City"
 	L["Boat to Echo Isles, Durotar"] = "Boat to Echo Isles, Durotar"
 	L["Honored with Sha'tari Skyguard"] = "Honored with Sha'tari Skyguard"
+	L["Zeppelin to Orgrimmar"] = "Zeppelin to Orgrimmar"
 	-- Options
 	L["Return to Zuldazar"] = "Return to Zuldazar"
 	L["Show %s's transportation maps"] = "Show %s's transportation maps"

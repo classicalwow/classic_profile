@@ -2,7 +2,7 @@ if not DBM:IsSeasonal() then return end--If not SoM, these two bosses load separ
 local mod	= DBM:NewMod("EbonrocandFlamegor", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220210235501")
+mod:SetRevision("20220808094816")
 mod:SetCreatureID(14601, 11981)
 mod:SetEncounterID(614, 615, 2566)
 mod:SetModelID(6377)

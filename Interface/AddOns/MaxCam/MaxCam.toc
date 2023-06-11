@@ -1,5 +1,5 @@
-## Interface: 11402
-## Version: v2.5.9
+## Interface: 100002
+## Version: v2.6.1
 ## Title: MaxCam
 ## Notes: Max Camera Distance
 ## Author: Ketho @ EU-Boulderfist

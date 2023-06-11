@@ -4,8 +4,9 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
-local _, TSM = ...
+local TSM = select(2, ...) ---@type TSM
 local Buy = TSM.Vendoring:NewPackage("Buy")
+local Environment = TSM.Include("Environment")
 local Database = TSM.Include("Util.Database")
 local Delay = TSM.Include("Util.Delay")
 local Event = TSM.Include("Util.Event")
@@ -13,12 +14,16 @@ local Log = TSM.Include("Util.Log")
 local TempTable = TSM.Include("Util.TempTable")
 local Theme = TSM.Include("Util.Theme")
 local ItemString = TSM.Include("Util.ItemString")
+local DefaultUI = TSM.Include("Service.DefaultUI")
 local ItemInfo = TSM.Include("Service.ItemInfo")
-local Inventory = TSM.Include("Service.Inventory")
+local BagTracking = TSM.Include("Service.BagTracking")
 local private = {
 	merchantDB = nil,
 	pendingIndex = nil,
 	pendingQuantity = 0,
+	buyTimoutTimer = nil,
+	updateTimer = nil,
+	rescanTimer = nil,
 }
 local FIRST_BUY_TIMEOUT = 5
 local FIRST_BUY_TIMEOUT_PER_STACK = 1
@@ -41,8 +46,10 @@ function Buy.OnInitialize()
 		:AddNumberField("stackSize")
 		:AddNumberField("numAvailable")
 		:Commit()
-	Event.Register("MERCHANT_SHOW", private.MerchantShowEventHandler)
-	Event.Register("MERCHANT_CLOSED", private.MerchantClosedEventHandler)
+	private.buyTimoutTimer = Delay.CreateTimer("VENDOR_BUY_TIMEOUT", private.BuyTimeout)
+	private.updateTimer = Delay.CreateTimer("VENDOR_BUY_UPDATE_DB", private.UpdateMerchantDB)
+	private.rescanTimer = Delay.CreateTimer("VENDOR_BUY_RESCAN", private.UpdateMerchantDB)
+	DefaultUI.RegisterMerchantVisibleCallback(private.MechantVisibilityHandler)
 	Event.Register("MERCHANT_UPDATE", private.MerchantUpdateEventHandler)
 	Event.Register("CHAT_MSG_LOOT", private.ChatMsgLootEventHandler)
 end
@@ -57,7 +64,7 @@ function Buy.NeedsRepair()
 end
 
 function Buy.CanGuildRepair()
-	return Buy.NeedsRepair() and not TSM.IsWowClassic() and CanGuildBankRepair()
+	return Buy.NeedsRepair() and Environment.HasFeature(Environment.FEATURES.GUILD_BANK) and CanGuildBankRepair()
 end
 
 function Buy.DoGuildRepair()
@@ -90,25 +97,10 @@ function Buy.GetMaxCanAfford(index)
 			local costItemString = ItemString.Get(costItemLink)
 			local costNumHave = nil
 			if costItemString then
-				costNumHave = Inventory.GetBagQuantity(costItemString) + Inventory.GetBankQuantity(costItemString) + Inventory.GetReagentBankQuantity(costItemString)
+				costNumHave = BagTracking.GetTotalQuantity(costItemString)
 			elseif currencyName then
-				if TSM.IsWowBCClassic() then
-					if currencyName == ARENA_POINTS then
-						local arenaCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo(Constants.CurrencyConsts.CLASSIC_ARENA_POINTS_CURRENCY_ID)
-						costNumHave = arenaCurrencyInfo.quantity
-					elseif currencyName == HONOR_POINTS then
-						local honorCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo(Constants.CurrencyConsts.CLASSIC_HONOR_CURRENCY_ID)
-						costNumHave = honorCurrencyInfo.quantity
-					end
-				else
-					for j = 1, C_CurrencyInfo.GetCurrencyListSize() do
-						local info = C_CurrencyInfo.GetCurrencyListInfo(j)
-						if not info.isHeader and info.name == currencyName then
-							costNumHave = info.quantity
-							break
-						end
-					end
-				end
+				local info = C_CurrencyInfo.GetCurrencyInfoFromLink(costItemLink)
+				costNumHave = info.quantity
 			end
 			if costNumHave then
 				maxCanAfford = min(floor(costNumHave / costNum), maxCanAfford)
@@ -142,19 +134,19 @@ end
 -- Private Helper Functions
 -- ============================================================================
 
-function private.MerchantShowEventHandler()
-	Delay.AfterFrame("UPDATE_MERCHANT_DB", 1, private.UpdateMerchantDB)
-end
-
-function private.MerchantClosedEventHandler()
-	private.ClearPendingContext()
-	Delay.Cancel("UPDATE_MERCHANT_DB")
-	Delay.Cancel("RESCAN_MERCHANT_DB")
-	private.merchantDB:Truncate()
+function private.MechantVisibilityHandler(visible)
+	if visible then
+		private.updateTimer:RunForFrames(1)
+	else
+		private.ClearPendingContext()
+		private.updateTimer:Cancel()
+		private.rescanTimer:Cancel()
+		private.merchantDB:Truncate()
+	end
 end
 
 function private.MerchantUpdateEventHandler()
-	Delay.AfterFrame("UPDATE_MERCHANT_DB", 1, private.UpdateMerchantDB)
+	private.updateTimer:RunForFrames(1)
 end
 
 function private.UpdateMerchantDB()
@@ -176,32 +168,24 @@ function private.UpdateMerchantDB()
 				assert(numAltCurrencies > 0)
 				local costItems = TempTable.Acquire()
 				for j = 1, numAltCurrencies do
-					local costTexture, costNum, costItemLink, currencyName = GetMerchantItemCostItem(i, j)
+					local _, costNum, costItemLink, currencyName = GetMerchantItemCostItem(i, j)
 					local costItemString = ItemString.Get(costItemLink)
 					local texture = nil
-					if TSM.IsWowBCClassic() then
-						if currencyName == ARENA_POINTS then
-							texture = costTexture
-							firstCostItemString = "arena"
-						elseif currencyName == HONOR_POINTS then
-							texture = costTexture
-							firstCostItemString = "honor"
-						end
-					elseif not costItemLink then
+					if not costItemLink then
 						needsRetry = true
 					elseif costItemString then
 						firstCostItemString = firstCostItemString ~= "" and firstCostItemString or costItemString
 						texture = ItemInfo.GetTexture(costItemString)
-					elseif strmatch(costItemLink, "currency:") then
+					elseif not Environment.IsVanillaClassic() and strmatch(costItemLink, "currency:") then
 						texture = C_CurrencyInfo.GetCurrencyInfoFromLink(costItemLink).iconFileID
 						firstCostItemString = strmatch(costItemLink, "(currency:%d+)")
 					else
 						error(format("Unknown item cost (%d, %d, %s)", i, costNum, tostring(costItemLink)))
 					end
 					if TSM.Vendoring.Buy.GetMaxCanAfford(i) < stackSize then
-						costNum = Theme.GetFeedbackColor("RED"):ColorText(costNum)
+						costNum = Theme.GetColor("FEEDBACK_RED"):ColorText(costNum)
 					end
-					local suffix = (TSM.IsWowBCClassic() and currencyName == HONOR_POINTS) and ":14:14:00:0:64:64:0:40:0:40|t" or ":12|t"
+					local suffix = (Environment.HasFeature(Environment.FEATURES.HONOR_POINTS) and currencyName == HONOR_POINTS) and ":14:14:00:0:64:64:0:40:0:40|t" or ":12|t"
 					tinsert(costItems, costNum.." |T"..(texture or "")..suffix)
 				end
 				costItemsText = table.concat(costItems, " ")
@@ -214,9 +198,9 @@ function private.UpdateMerchantDB()
 
 	if needsRetry then
 		Log.Err("Failed to scan merchant")
-		Delay.AfterTime("RESCAN_MERCHANT_DB", 0.2, private.UpdateMerchantDB)
+		private.rescanTimer:RunForTime(0.2)
 	else
-		Delay.Cancel("RESCAN_MERCHANT_DB")
+		private.rescanTimer:Cancel()
 	end
 end
 
@@ -253,7 +237,7 @@ function private.BuyIndex(index, quantity)
 		numStacks = numStacks + 1
 	end
 	Log.Info("Buying %d of %d (%d stacks)", private.pendingQuantity, index, numStacks)
-	Delay.AfterTime("VENDORING_BUY_TIMEOUT", numStacks * FIRST_BUY_TIMEOUT_PER_STACK + FIRST_BUY_TIMEOUT, private.BuyTimeout)
+	private.buyTimoutTimer:RunForTime(numStacks * FIRST_BUY_TIMEOUT_PER_STACK + FIRST_BUY_TIMEOUT)
 end
 
 function private.ChatMsgLootEventHandler(_, msg)
@@ -292,8 +276,8 @@ function private.ChatMsgLootEventHandler(_, msg)
 	end
 
 	-- reset the timeout
-	Delay.Cancel("VENDORING_BUY_TIMEOUT")
-	Delay.AfterTime("VENDORING_BUY_TIMEOUT", CONSECUTIVE_BUY_TIMEOUT, private.BuyTimeout)
+	private.buyTimoutTimer:Cancel()
+	private.buyTimoutTimer:RunForTime(CONSECUTIVE_BUY_TIMEOUT)
 end
 
 function private.ExtractFormatValue(str, fmtStr)
@@ -310,5 +294,5 @@ end
 function private.ClearPendingContext()
 	private.pendingIndex = nil
 	private.pendingQuantity = 0
-	Delay.Cancel("VENDORING_BUY_TIMEOUT")
+	private.buyTimoutTimer:Cancel()
 end

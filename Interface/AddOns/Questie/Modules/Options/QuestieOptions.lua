@@ -9,6 +9,10 @@ local QuestieQuest = QuestieLoader:ImportModule("QuestieQuest");
 local QuestieJourney = QuestieLoader:ImportModule("QuestieJourney");
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
+---@type ThreadLib
+local ThreadLib = QuestieLoader:ImportModule("ThreadLib")
+---@type QuestieCombatQueue
+local QuestieCombatQueue = QuestieLoader:ImportModule("QuestieCombatQueue")
 
 QuestieOptions.tabs = {...}
 QuestieConfigFrame = nil
@@ -19,30 +23,48 @@ local AceConfigDialog = LibStub("AceConfigDialog-3.0")
 -- Forward declaration
 local _CreateOptionsTable
 
+---Initializes the frames for the options menu
 function QuestieOptions:Initialize()
     Questie:Debug(Questie.DEBUG_DEVELOP, "[QuestieOptions]: Initializing...")
 
     local optionsTable = _CreateOptionsTable()
+
+    coroutine.yield()
+
     LibStub("AceConfig-3.0"):RegisterOptionsTable("Questie", optionsTable)
     AceConfigDialog:AddToBlizOptions("Questie", "Questie");
 
+    coroutine.yield()
+
+    ---@type AceGUIFrame, AceGUIFrame
     local configFrame = AceGUI:Create("Frame")
-    AceConfigDialog:SetDefaultSize("Questie", 625, 780)
+
+    configFrame:Hide()
+    coroutine.yield()
+
+    AceConfigDialog:SetDefaultSize("Questie", 640, 780)
     AceConfigDialog:Open("Questie", configFrame) -- load the options into configFrame
     configFrame:SetLayout("Fill")
-    configFrame.frame:SetMinResize(550, 400)
+    QuestieCompat.SetResizeBounds(configFrame.frame, 550, 400)
+
+    configFrame:Hide()
+    coroutine.yield()
 
     local journeyButton = AceGUI:Create("Button")
     journeyButton:SetWidth(140)
     journeyButton:SetPoint("TOPRIGHT", configFrame.frame, "TOPRIGHT", -50, -13)
     journeyButton:SetText(l10n('My Journey'))
     journeyButton:SetCallback("OnClick", function()
-        QuestieOptions:OpenConfigWindow()
-        QuestieJourney:ToggleJourneyWindow()
+        QuestieCombatQueue:Queue(function()
+            QuestieJourney:ToggleJourneyWindow()
+            QuestieOptions:OpenConfigWindow()
+        end)
     end)
-    configFrame:AddChild(journeyButton)
 
     configFrame:Hide()
+    coroutine.yield()
+
+    configFrame:AddChild(journeyButton)
     QuestieConfigFrame = configFrame
     table.insert(UISpecialFrames, "QuestieConfigFrame")
 
@@ -81,7 +103,7 @@ function QuestieOptions:SetGlobalOptionValue(info, value)
 end
 
 function QuestieOptions:AvailableQuestRedraw()
-    QuestieQuest:CalculateAndDrawAvailableQuestsIterative()
+    QuestieQuest.CalculateAndDrawAvailableQuestsIterative()
 end
 
 function QuestieOptions:ClusterRedraw()
@@ -91,22 +113,42 @@ function QuestieOptions:ClusterRedraw()
 end
 
 
+
+---@return table
 _CreateOptionsTable = function()
+    local general_tab = QuestieOptions.tabs.general:Initialize()
+    coroutine.yield()
+    local social_tab = QuestieOptions.tabs.social:Initialize()
+    coroutine.yield()
+    local minimap_tab = QuestieOptions.tabs.minimap:Initialize()
+    coroutine.yield()
+    local map_tab = QuestieOptions.tabs.map:Initialize()
+    coroutine.yield()
+    local dbm_hud_tab = QuestieOptions.tabs.dbm:Initialize()
+    coroutine.yield()
+    local tracker_tab = QuestieOptions.tabs.tracker:Initialize()
+    coroutine.yield()
+    local nameplate_tab = QuestieOptions.tabs.nameplate:Initialize()
+    coroutine.yield()
+    local tooltip_tab = QuestieOptions.tabs.tooltip:Initialize()
+    coroutine.yield()
+    local advanced_tab = QuestieOptions.tabs.advanced:Initialize()
+    coroutine.yield()
     return {
         name = "Questie",
         handler = Questie,
         type = "group",
         childGroups = "tab",
         args = {
-            general_tab = QuestieOptions.tabs.general:Initialize(),
-            social_tab = QuestieOptions.tabs.social:Initialize(),
-            minimap_tab = QuestieOptions.tabs.minimap:Initialize(),
-            map_tab = QuestieOptions.tabs.map:Initialize(),
-            dbm_hud_tab = QuestieOptions.tabs.dbm:Initialize(),
-            tracker_tab = QuestieOptions.tabs.tracker:Initialize(),
-            nameplate_tab = QuestieOptions.tabs.nameplate:Initialize(),
-            tooltip_tab = QuestieOptions.tabs.tooltip:Initialize(),
-            advanced_tab = QuestieOptions.tabs.advanced:Initialize(),
+            general_tab = general_tab,
+            social_tab = social_tab,
+            minimap_tab = minimap_tab,
+            map_tab = map_tab,
+            dbm_hud_tab = dbm_hud_tab,
+            tracker_tab = tracker_tab,
+            nameplate_tab = nameplate_tab,
+            tooltip_tab = tooltip_tab,
+            advanced_tab = advanced_tab,
         }
     }
 end

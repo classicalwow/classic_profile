@@ -1,5 +1,7 @@
-## v4.11.32 Changes
+## v4.12.39 Changes
 
-* [Retail] Reverted previous change which caused issues with posted crafted items
+* [Retail] Fixed crafting cost not showing on quality crafts with no quality mats
+* [Retail] Fixed AH not hiding when walking away from auctioneer
+* [All] Fixed issue with filtering Ledger by rarity
 
 [Known Issues](https://support.tradeskillmaster.com/en_US/known_issues)

@@ -26,15 +26,33 @@ local collection = {
 	owned = { }, -- [mta] = { } array of all mounts of that type that you own, updated here when scanned
 	usable = { }, -- [mta] = { } array of all mounts of that type that you can use at the location you called it, updated via LDB
 	
-	filter = {
-		ignore = false,
-		search = nil,
-		collected = true,
-		uncollected = true,
-		family = { },
-		source = { },
-		backup = false,
-	},
+--	filter = {
+--		ignore = false,
+--		search = nil,
+--		collected = true,
+--		uncollected = true,
+--		family = { },
+--		source = { },
+--		backup = false,
+--	},
+	
+}
+
+-- /dump C_Map.GetBestMapForUnit( "player" )
+local ZoneRestrictions = {
+	[25953] = ArkInventory.Const.Mount.Zone.AhnQiraj, -- Blue Qiraji Battle Tank
+	[26054] = ArkInventory.Const.Mount.Zone.AhnQiraj, -- Red Qiraji Battle Tank
+	[26055] = ArkInventory.Const.Mount.Zone.AhnQiraj, -- Yellow Qiraji Battle Tank
+	[26056] = ArkInventory.Const.Mount.Zone.AhnQiraj, -- Green Qiraji Battle Tank
+	
+	[75207] = ArkInventory.Const.Mount.Zone.Vashjir, -- Vashj'ir Seahorse
+	
+	[360954] = ArkInventory.Const.Mount.Zone.DragonIsles, -- Highland Drake
+	[368896] = ArkInventory.Const.Mount.Zone.DragonIsles, -- Renewed Proto-Drake
+	[368899] = ArkInventory.Const.Mount.Zone.DragonIsles, -- Windborne Velocidrake
+	[368901] = ArkInventory.Const.Mount.Zone.DragonIsles, -- Cliffside Wylderdrake
+	
+--	[294143] = { [85]=1 }, -- X-995 Mechanocat, testing in org
 	
 }
 
@@ -52,13 +70,6 @@ local ImportCrossRefTable = {
 -- may no longer exist
 {343550,{186480}}, -- Battle-Hardened Aquilon
 {346136,{}}, -- Viridian Phase-Hunter
-
--- zone restrictions
-{25953,{},{766,717}}, -- Blue Qiraji Battle Tank
-{26054,{},{766,717}}, -- Red Qiraji Battle Tank
-{26055,{},{766,717}}, -- Yellow Qiraji Battle Tank
-{26056,{},{766,717}}, -- Green Qiraji Battle Tank
-{75207,{},{610,613,614,615}}, -- Vashj'ir Seahorse
 
 -- extracted from wowhead
 {458,{5656}}, -- Brown Horse / Brown Horse Bridle
@@ -981,10 +992,13 @@ local ImportCrossRefTable = {
 {348770,{186178}}, -- Vicious War Gorm
 {349823,{187642}}, -- Vicious Warstalker
 {349824,{187644}}, -- Vicious Warstalker
+{349935,{}}, -- Noble Elderhorn
+{350219,{192777}}, -- Magmashell
 {351195,{186642}}, -- Vengeance / Vengeance's Reins
 {352309,{185973}}, -- Hand of Bahmethra / Chain of Bahmethra
 {352441,{186000}}, -- Wild Hunt Legsplitter / Legsplitter War Harness
 {352742,{186103}}, -- Undying Darkhound / Undying Darkhound's Harness
+{352926,{192800}}, -- Skyskin Hornstrider
 {353036,{186177}}, -- Unchained Gladiator's Soul Eater
 {353263,{186638}}, -- Cartel Master's Gearglider
 {353264,{186639}}, -- Pilfered Gearglider
@@ -1037,13 +1051,19 @@ local ImportCrossRefTable = {
 {359376,{187670}}, -- Bronze Helicid
 {359377,{187671}}, -- Unsuccessful Prototype Fleetpod
 {359378,{187672}}, -- Scarlet Helicid
+{359379,{187675}}, -- Shimmering Aurelid
 {359381,{187673}}, -- Cryptic Aurelid
 {359401,{187677}}, -- Genesis Crawler
 {359402,{187678}}, -- Tarachnid Creeper
 {359403,{187679}}, -- Ineffable Skitterer
 {359407,{187682}}, -- Wastewarped Deathwalker
+{359408,{198821}}, -- Divine Kiss of Ohn'ahra
+{359409,{198871}}, -- Iskaara Trader's Ottuk
 {359413,{187683}}, -- Goldplate Bufonid
 {359545,{190771}}, -- Carcinized Zerethsteed / Fractal Cypher of the Carcinized Zerethsteed
+{359622,{201440}}, -- Liberated Slyvern / Reins of the Liberated Slyvern
+{359843,{}}, -- Tangled Dreamweaver
+{360954,{194106,194705}}, -- Highland Drake
 {363136,{188696}}, -- Colossal Ebonclaw Mawrat / Sturdy Soulsteel Mawrat Harness
 {363178,{188700}}, -- Colossal Umbrahide Mawrat / Sturdy Silver Mawrat Harness
 {363297,{188736}}, -- Colossal Soulshredder Mawrat / Sturdy Gilded Mawrat Harness
@@ -1052,10 +1072,46 @@ local ImportCrossRefTable = {
 {363703,{188809}}, -- Prototype Leaper
 {363706,{188810}}, -- Russet Bufonid
 {365559,{189507}}, -- Cosmic Gladiator's Soul Eater
+{366791,{190170}}, -- Jigglesworth Sr. / Jigglesworth, Sr.
+{367190,{}}, -- JZB Test Mount
 {367673,{190580}}, -- Heartbond Lupine
+{367676,{190581}}, -- Nether-Gorged Greatwyrm
 {368105,{190765}}, -- Colossal Plaguespew Mawrat / Iska's Mawrat Leash
 {368128,{190766}}, -- Colossal Wraithbound Mawrat / Spectral Mawrat's Tail
 {368158,{190768}}, -- Zereth Overseer / Fractal Cypher of the Zereth Overseer
+{368896,{194034}}, -- Renewed Proto-Drake
+{368899,{194549}}, -- Windborne Velocidrake
+{368901,{194521}}, -- Cliffside Wylderdrake
+{369666,{191123}}, -- Grimhowl / Grimhowl's Face Axe
+{370346,{191290}}, -- Eternal Gladiator's Soul Eater
+{370620,{191566}}, -- Elusive Emerald Hawkstrider
+{370770,{}}, -- Tuskarr Shoreglider
+{372995,{}}, -- Swift Spectral Drake
+{373859,{192601}}, -- Loyal Magmammoth
+{374032,{192761}}, -- Tamed Skitterfly
+{374034,{192762}}, -- Azure Skitterfly
+{374048,{192764}}, -- Verdant Skitterfly
+{374098,{192775}}, -- Stormhide Salamanther
+{374138,{192779}}, -- Scorchpath
+{374196,{192791}}, -- Plainswalker Bearer
+{374247,{192799}}, -- Thunderspine Tramper / Lizi's Reins
+{374263,{192804}}, -- Restless Hornstrider
+{376873,{198870}}, -- Splish-Splash
+{376875,{198872}}, -- Brown Scouting Ottuk
+{376879,{198873}}, -- Ivory Trader's Ottuk
+{376912,{198654}}, -- Otterworldly Ottuk Carrier / Carrier Ottuk
+{377071,{}}, -- [PH] Gladiator Drake2
+{381529,{}}, -- Telix the Stormhorn
+{385115,{198810}}, -- Majestic Armored Vorquin / Swift Armored Vorquin
+{385131,{198809}}, -- Armored Vorquin Leystrider
+{385134,{198811}}, -- Swift Armored Vorquin / Majestic Armored Vorquin
+{385266,{198825}}, -- Zenet Hatchling
+{386452,{}}, -- Frostbrood Proto-Wyrm
+{387948,{}}, -- [PH] Wind Proto-Drake
+{394216,{201702}}, -- Crimson Vorquin
+{394218,{201704}}, -- Sapphire Vorquin
+{394219,{201720}}, -- Bronze Vorquin
+{394220,{201719}}, -- Obsidian Vorquin
 -- end of live
 
 -- ptr
@@ -1155,10 +1211,39 @@ function ArkInventory.Collection.Mount.GetMount( index )
 	end
 end
 
+function ArkInventory.Collection.Mount.ZoneCheck( mapid_table )
+	
+	local mapid = C_Map.GetBestMapForUnit( "player" )
+	
+	for _, id in ipairs( mapid_table ) do
+		if mapid == id then
+			return true
+		end
+	end
+end
+
 function ArkInventory.Collection.Mount.GetUsable( mta )
 	if mta then
 		return collection.usable[mta]
 	end
+end
+
+function ArkInventory.Collection.Mount.isDragonridingAvailable( )
+	for _, id in pairs( ArkInventory.Const.Flying.Dragonriding ) do
+		if IsUsableSpell( id ) then
+			return true
+		end
+	end
+end
+
+function ArkInventory.Collection.Mount.getDragonridingMounts( )
+	local tbl = { }
+	for _, md in ArkInventory.Collection.Mount.Iterate( "a" ) do
+		if md.mountTypeID == 402 then
+			tbl[md.index] = md
+		end
+	end
+	return tbl
 end
 
 function ArkInventory.Collection.Mount.GetMountBySpell( spellID )
@@ -1212,8 +1297,47 @@ function ArkInventory.Collection.Mount.isUsable( id )
 	
 	local md = ArkInventory.Collection.Mount.GetMount( id )
 	if md then
-		local mu = select( 5, C_MountJournal.GetMountInfoByID( id ) ) -- is not always correct
-		return IsOutdoors( ) and mu and ( IsUsableSpell( md.spellID ) ) -- so check outdoors, mount, and spell
+		
+		if IsUsableSpell( md.spellID ) then
+			
+			local mz = false
+			
+			local mu = select( 5, C_MountJournal.GetMountInfoByID( id ) ) -- is not always correct
+			if mu then
+				
+				if ZoneRestrictions[md.spellID] then
+					
+					ArkInventory.OutputDebug( "mount ", md.spellID, " has zone restrictions ", ZoneRestrictions[md.spellID] )
+					
+					if #ZoneRestrictions == 0 then
+						
+						mz = true
+						
+					else
+						
+						local map = C_Map.GetBestMapForUnit( "player" )
+						for _, z in pairs( ZoneRestrictions[md.spellID] ) do
+							if map == z then
+								mz = true
+								break
+							end
+						end
+						
+					end
+					
+					if not mz then
+						ArkInventory.OutputDebug( "mount ", md.spellID, " cannot be used here [zone=", map, "]" )
+						mu = false
+					end
+					
+				end
+				
+			end
+			
+			return mu, mz
+			
+		end
+		
 	end
 	
 end
@@ -1270,7 +1394,7 @@ end
 
 function ArkInventory.Collection.Mount.UpdateOwned( )
 	
-	for mta, mt in pairs( ArkInventory.Const.MountTypes ) do
+	for mta, mt in pairs( ArkInventory.Const.Mount.Types ) do
 		if not collection.owned[mta] then
 			collection.owned[mta] = { }
 		else
@@ -1288,7 +1412,7 @@ end
 
 function ArkInventory.Collection.Mount.UpdateUsable( )
 	
-	for mta in pairs( ArkInventory.Const.MountTypes ) do
+	for mta in pairs( ArkInventory.Const.Mount.Types ) do
 		if not collection.usable[mta] then
 			collection.usable[mta] = { }
 		else
@@ -1303,29 +1427,45 @@ function ArkInventory.Collection.Mount.UpdateUsable( )
 	
 	local me = ArkInventory.GetPlayerCodex( )
 	
-	for mta, mt in pairs( ArkInventory.Const.MountTypes ) do
+	for mta, mt in pairs( ArkInventory.Const.Mount.Types ) do
 		
-		for _, md in ArkInventory.Collection.Mount.Iterate( mta ) do
+		for zr = 0, 1 do
+			-- 0 = only select zone specific mounts
+			-- 1 = pick any mount
 			
-			local usable = true
-			
-			if me.player.data.ldb.mounts.type[mta].selected[md.spellID] == false then
-				usable = false
-			elseif not me.player.data.ldb.mounts.type[mta].useall then
-				usable = me.player.data.ldb.mounts.type[mta].selected[md.spellID]
+			for _, md in ArkInventory.Collection.Mount.Iterate( mta ) do
+				
+				local usable = true
+				local mz = false
+				
+				if me.player.data.ldb.mounts.type[mta].selected[md.spellID] == false then
+					usable = false
+				elseif not me.player.data.ldb.mounts.type[mta].useall then
+					usable = me.player.data.ldb.mounts.type[mta].selected[md.spellID]
+				end
+				
+				if usable then
+					usable, mz = ArkInventory.Collection.Mount.isUsable( md.index )
+					if zr == 0 and usable and not mz then
+						usable = false
+					end
+				end
+				
+				if usable then
+					collection.usable[mta][md.index] = md
+				end
+				
 			end
 			
-			if usable then
-				usable = ArkInventory.Collection.Mount.isUsable( md.index )
+			if mta == "l" then
+				--ArkInventory.Output( "usable [", zr, "] ", mta, " = ", collection.usable[mta] )
 			end
 			
-			if usable then
-				collection.usable[mta][md.index] = md
+			if ArkInventory.Table.Elements( collection.usable[mta] ) > 0 then
+				break
 			end
 			
 		end
-		
-		--ArkInventory.Output( "usable ", mta, " = ", collection.usable[mta] )
 		
 	end
 	
@@ -1350,7 +1490,7 @@ function ArkInventory.Collection.Mount.ApplyUserCorrections( )
 				--ArkInventory.Output( "correcting mount ", md.spellID, ": system=", md.mt, ", correction=", correction )
 				md.mt = correction
 				
-				for mta, mt in pairs( ArkInventory.Const.MountTypes ) do
+				for mta, mt in pairs( ArkInventory.Const.Mount.Types ) do
 					if md.mt == mt then
 						md.mta = mta
 						break
@@ -1402,7 +1542,7 @@ local function Scan_Threaded( thread_id )
 		numTotal = numTotal + 1
 		YieldCount = YieldCount + 1
 		
-		local name, spellID, icon, isActive, isUsable, source, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID = C_MountJournal.GetMountInfoByID( index )
+		local name, spellID, icon, isActive, isUsable, source, isFavorite, isFactionSpecific, faction, shouldHideOnChar, isCollected, mountID, isDragonriding = C_MountJournal.GetMountInfoByID( index )
 		local creatureDisplayInfoID, description, source2, isSelfMount, mountTypeID, uiModelSceneID = C_MountJournal.GetMountInfoExtraByID( index )
 --		local isFavorite, canSetFavorite = C_MountJournal.GetIsFavorite( i )
 		
@@ -1447,26 +1587,17 @@ local function Scan_Threaded( thread_id )
 			c[i].isSelfMount = isSelfMount
 			c[i].mountTypeID = mountTypeID
 			c[i].uiModelSceneID = uiModelSceneID
+			c[i].isDragonriding = isDragonriding
 			
 			c[i].link = GetSpellLink( spellID )
 			
-			local mta = "x"
-			if mountTypeID == 230 or mountTypeID == 241 or mountTypeID == 284 then
-				-- land
-				mta = "l"
-			elseif mountTypeID == 248 or mountTypeID == 247 or mountTypeID == 242 then
-				-- flying
-				mta = "a"
-			elseif mountTypeID == 231 or mountTypeID == 232 or mountTypeID == 254 then
-				--underwater
-				mta = "u"
---			elseif mountTypeID == 269 then
---				-- surface
---				mta = "s"
+			local mta = ( mountTypeID and ArkInventory.Const.Mount.TypeID[mountTypeID] ) or "x"
+			if mta == "x" then
+				ArkInventory.OutputDebug( "unknown mount type [", mountTypeID, "] for ", name )
 			end
 			
 			c[i].mta = mta
-			c[i].mt = ArkInventory.Const.MountTypes[mta]
+			c[i].mt = ArkInventory.Const.Mount.Types[mta]
 			c[i].mto = c[i].mt -- save original mount type (user corrections can override the other value)
 			
 		end

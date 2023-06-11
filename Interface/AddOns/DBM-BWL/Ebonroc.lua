@@ -2,7 +2,7 @@ if DBM:IsSeasonal() then return end--In SoM Flamegor and Ebonroc are a single en
 local mod	= DBM:NewMod("Ebonroc", "DBM-BWL", 1)
 local L		= mod:GetLocalizedStrings()
 
-mod:SetRevision("20220208052442")
+mod:SetRevision("20220808094816")
 mod:SetCreatureID(14601)
 mod:SetEncounterID(614)
 mod:SetModelID(6377)

@@ -199,10 +199,10 @@ L["North-West of Irontree Woods"] = "North-West of Irontree Woods";
 L["South of Irontree Woods"] = "South of Irontree Woods";
 
 L["worldMapBuffsMsg"] = "Type /buffs to view all your\ncharacters current world buffs.";
-L["cityMapLayerMsgHorde"] = "Currently on %s\nTarget any NPC in Orgrimmar\nto update your layer after changing zones.|r";
-L["cityMapLayerMsgAlliance"] = "Currently on %s\nTarget any NPC in Stormwind\nto update your layer after changing zones.|r";
-L["noLayerYetHorde"] = "Please target any NPC in Orgrimmar\nto find your current layer.";
-L["noLayerYetAlliance"] = "Please target any NPC in Stormwind\nto find your current layer.";
+L["cityMapLayerMsgHorde"] = "Currently on %s\nTarget any NPC\nto update your layer after changing zones.|r";
+L["cityMapLayerMsgAlliance"] = "Currently on %s\nTarget any NPC\nto update your layer after changing zones.|r";
+L["noLayerYetHorde"] = "Please target any NPC\nto find your current layer.";
+L["noLayerYetAlliance"] = "Please target any NPC\nto find your current layer.";
 L["Reset Data"] = "Reset Data"; --A button to Reset buffs window data.
 
 ---New translations to do---
@@ -730,7 +730,7 @@ L["Mind Control"] = "Mind Control";
 L["Gnomish Mind Control Cap"] = "Gnomish Mind Control Cap";
 
 
-L["tbcHeaderText"] = "The Burning Crusade Options";
+L["tbcHeaderText"] = "Expansion Options";
 L["tbcNoteText"] = "Note: All guild chat msgs are also disabled on TBC realms.";
 
 L["disableSoundsAboveMaxBuffLevelTitle"] = "Disable Sounds Above Level 64+";
@@ -808,6 +808,9 @@ L["guildLDesc"] = "Share what layer you are on with your guild? You can see your
 L["terokkarTimer"] = "Terokkar";
 L["terokkarWarning"] = "Terokkar Forest towers reset in %s";
 
+L["wintergraspTimer"] = "Wintergrasp";
+L["wintergraspWarning"] = "Wintergrasp starts in %s";
+
 L["Nazgrel"] = "Nazgrel";
 L["Hellfire Citadel is ours"] = "Hellfire Citadel is ours";
 L["The time for us to rise"] = "The time for us to rise";
@@ -821,8 +824,8 @@ L["terokkarChat10Desc"] = "Print a msg in chat when 10 minutes left on terokkar 
 L["terokkarMiddle10Title"] = "Terokkar 10 Minutes";
 L["terokkarMiddle10Desc"] = "Show a raid warning style msg in the middle of the screen when 10 minutes left on terokkar spirit towers.";
 
-L["showShatWorldmapMarkersTitle"] = "Dailies Shattrath Worldmap";
-L["showShatWorldmapMarkersDesc"] = "Show dungeon daily markers on the Shattrath world map?";
+L["showShatWorldmapMarkersTitle"] = "Dailies Worldmap";
+L["showShatWorldmapMarkersDesc"] = "Show dungeon daily markers on the Capital City world map?";
 
 L["disableBuffTimersMaxBuffLevelTitle"] = "Disable Minimap Buff Timers 64+";
 L["disableBuffTimersMaxBuffLevelDesc"] = "Hide world buff timers when you hover over the minimap icon for characters level 64+? You will only see the terokkar tower timers and dailies etc.";
@@ -830,16 +833,19 @@ L["disableBuffTimersMaxBuffLevelDesc"] = "Hide world buff timers when you hover 
 L["hideMinimapBuffTimersTitle"] = "Disable Minimap Buff Timers All Levels";
 L["hideMinimapBuffTimersDesc"] = "Hide world buff timers when you hover over the minimap icon for characters all levels? You will only see the terokkar tower timers and dailies etc.";
 
-L["guildTerok10Title"] = "Guild Chat Terokkar 10 Minutes";
-L["guildTerok10Desc"] = "Send a message to guild chat when there's 10 minutes left on terokkar towers?";
+L["guildTerok10Title"] = "Guild Terok/WG 10 Minutes";
+L["guildTerok10Desc"] = "Send a message to guild chat when there's 10 minutes left on terokkar towers if TBC or wintergrasp if wrath.";
 
-L["showShatWorldmapMarkersTerokTitle"] = "Terokkar Shattrath Worldmap";
-L["showShatWorldmapMarkersTerokDesc"] = "Show terokkar tower markers on the Shattrath world map?";
+L["showShatWorldmapMarkersTerokTitle"] = "Towers/Wintergrasp Worldmap";
+L["showShatWorldmapMarkersTerokDesc"] = "Show terokkar tower or wintergrasp markers on the Capitcal City world map?";
 
 L["Completed PvP dailies"] = "Completed PvP dailies";
 L["Hellfire Towers"] = "Hellfire Towers";
 L["Terokkar Towers"] = "Terokkar Towers";
 L["Nagrand Halaa"] = "Nagrand Halaa";
 
-L["wintergraspTimer"] = "Wintergrasp";
-L["wintergraspWarning"] = "Wintergrasp resets in %s";
+L["wintergraspChat10Title"] = "Wintergrasp 10 Minutes";
+L["wintergraspChat10Desc"] = "Print a msg in chat when 10 minutes left on Wintergrasp spirit towers.";
+
+L["wintergraspMiddle10Title"] = "Wintergrasp 10 Minutes";
+L["wintergraspMiddle10Desc"] = "Show a raid warning style msg in the middle of the screen when 10 minutes left on Wintergrasp spirit towers.";

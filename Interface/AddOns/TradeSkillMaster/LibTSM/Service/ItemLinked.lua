@@ -4,11 +4,8 @@
 --    All Rights Reserved - Detailed license information included with addon.     --
 -- ------------------------------------------------------------------------------ --
 
---- ItemLinked Functions.
--- @module ItemLinked
-
-local _, TSM = ...
-local ItemLinked = TSM.Init("Service.ItemLinked")
+local TSM = select(2, ...) ---@type TSM
+local ItemLinked = TSM.Init("Service.ItemLinked") ---@class Service.ItemLinked
 local Table = TSM.Include("Util.Table")
 local ItemInfo = TSM.Include("Service.ItemInfo")
 local private = {
@@ -24,12 +21,12 @@ local private = {
 
 ItemLinked:OnModuleLoad(function()
 	local origHandleModifiedItemClick = HandleModifiedItemClick
-	HandleModifiedItemClick = function(link)
-		return private.ItemLinkedHook(origHandleModifiedItemClick, link)
+	HandleModifiedItemClick = function(...)
+		return private.ItemLinkedHook(origHandleModifiedItemClick, ...)
 	end
 	local origChatEdit_InsertLink = ChatEdit_InsertLink
-	ChatEdit_InsertLink = function(link)
-		return private.ItemLinkedHook(origChatEdit_InsertLink, link)
+	ChatEdit_InsertLink = function(...)
+		return private.ItemLinkedHook(origChatEdit_InsertLink, ...)
 	end
 end)
 
@@ -39,11 +36,17 @@ end)
 -- Module Functions
 -- ============================================================================
 
-function ItemLinked.RegisterCallback(callback, priority)
+function ItemLinked.RegisterCallback(callback, highPriority)
 	assert(type(callback) == "function")
 	tinsert(private.callbacks, callback)
-	private.priorityLookup[callback] = (priority or 0) + #private.callbacks * 0.01
-	Table.SortWithValueLookup(private.callbacks, private.priorityLookup)
+	private.priorityLookup[callback] = highPriority and 1 or 0
+	Table.SortWithValueLookup(private.callbacks, private.priorityLookup, false, true)
+end
+
+function ItemLinked.UnregisterCallback(callback)
+	assert(type(callback) == "function")
+	private.priorityLookup[callback] = nil
+	assert(Table.RemoveByValue(private.callbacks, callback) == 1)
 end
 
 
@@ -52,11 +55,12 @@ end
 -- Private Helper Functions
 -- ============================================================================
 
-function private.ItemLinkedHook(origFunc, itemLink)
-	local putIntoChat = origFunc(itemLink)
+function private.ItemLinkedHook(origFunc, ...)
+	local putIntoChat = origFunc(...)
 	if putIntoChat then
 		return putIntoChat
 	end
+	local itemLink = ...
 	local name = ItemInfo.GetName(itemLink)
 	if not name or not private.HandleItemLinked(name, itemLink) then
 		return putIntoChat

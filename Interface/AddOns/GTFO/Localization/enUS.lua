@@ -52,7 +52,7 @@ GTFOLocal =
 	UI_VolumeNormal = "3: Normal (Recommended)",
 	UI_VolumeQuiet = "1: Quiet",
 	UI_VolumeSoft = "2: Soft",
-	UI_VolumeLouder = "5: Loud",
+	UI_VolumeLouder = "5: That Bastard Chap",
 	-- 3.0
 	UI_Unmute = "Play sounds when muted",
 	-- 3.1
@@ -100,5 +100,10 @@ GTFOLocal =
 	UI_Vibration = "Vibration",
 	UI_VibrationDescription = "This enables gamepad vibration when sounding alerts.",
 	UI_CustomSounds = "Custom Sounds",
-	UI_CustomSoundsHeader = "Override existing sound alerts"
+	UI_CustomSoundsHeader = "Override existing sound alerts",
+	UI_Reset = "Reset",
+	UI_ResetCustomSounds = "Reset this sound to use the default sound.",
+	-- 5.0
+	UI_CustomSounds_Set = "Custom sound for |cFFFFFFFF%s|r alert set.",
+	UI_CustomSounds_Removed = "Custom sound for |cFFFFFFFF%s|r alert is now set to default.",
 }

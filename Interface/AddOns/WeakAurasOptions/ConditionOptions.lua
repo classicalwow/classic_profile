@@ -44,7 +44,7 @@
 --   - setter: The setter function, called both on activating and deactivating a property change
 ---  - action: The action function, called on activating a condition
 --   - type: The type
-if not WeakAuras.IsCorrectVersion() or not WeakAuras.IsLibsOK() then return end
+if not WeakAuras.IsLibsOK() then return end
 local AddonName, OptionsPrivate = ...
 
 local WeakAuras = WeakAuras;
@@ -187,13 +187,22 @@ local function filterUsedProperties(indexToProperty, allDisplays, usedProperties
   return filtered;
 end
 
+--- @type number? the time at which the last sound was played, so that we don't play
+---  a sound from each setter
+local lastPlayedSoundFromSet
 local function wrapWithPlaySound(func, kit)
   return function(info, v)
     func(info, v);
     if (tonumber(v)) then
-      pcall(PlaySound, tonumber(v), "Master");
+      if lastPlayedSoundFromSet ~= GetTime() then
+        pcall(PlaySound, tonumber(v), "Master")
+        lastPlayedSoundFromSet = GetTime()
+      end
     else
-      pcall(PlaySoundFile, v, "Master");
+      if lastPlayedSoundFromSet ~= GetTime() then
+        pcall(PlaySoundFile, v, "Master")
+        lastPlayedSoundFromSet = GetTime()
+      end
     end
   end
 end
@@ -444,6 +453,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
       local properties = allProperties.propertyMap[property];
       if (properties.min or properties.softMin) and (properties.max or properties.softMax) then
         args["condition" .. i .. "value" .. j].type = "range";
+        args["condition" .. i .. "value" .. j].control = "WeakAurasSpinBox"
         args["condition" .. i .. "value" .. j].min = properties.min;
         args["condition" .. i .. "value" .. j].softMin = properties.softMin;
         args["condition" .. i .. "value" .. j].max = properties.max;
@@ -456,6 +466,19 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
         args["condition" .. i .. "value" .. j].validate = WeakAuras.ValidateNumeric;
       end
     end
+  elseif (propertyType == "string") then
+    args["condition" .. i .. "value" .. j] = {
+      type = "input",
+      width = WeakAuras.normalWidth,
+      name = blueIfNoValue(data, conditions[i].changes[j], "value", L["Text"]),
+      desc = descIfNoValue(data, conditions[i].changes[j], "value", propertyType),
+      order = order,
+      get = function()
+        return conditions[i].changes[j].value;
+      end,
+      set = setValue
+    }
+    order = order + 1;
   elseif (propertyType == "icon") then
     args["condition" .. i .. "value" .. j] = {
       type = "input",
@@ -557,6 +580,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
       type = "select",
       width = WeakAuras.normalWidth,
       values = OptionsPrivate.Private.sound_types,
+      sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.sound_types),
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "sound", L["Differences"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "sound", propertyType, OptionsPrivate.Private.sound_types),
       order = order,
@@ -564,7 +588,6 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
         return type(conditions[i].changes[j].value) == "table" and conditions[i].changes[j].value.sound;
       end,
       set = wrapWithPlaySound(setValueComplex("sound")),
-      control = "WeakAurasSortedDropdown",
       hidden = function() return not (anySoundType("Play") or anySoundType("Loop")) end
     }
     order = order + 1;
@@ -586,6 +609,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
 
     args["condition" .. i .. "value" .. j .. "sound_repeat"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       min = 0,
       softMax = 60,
@@ -660,6 +684,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
       type = "select",
       width = WeakAuras.normalWidth,
       values = OptionsPrivate.Private.send_chat_message_types,
+      sorting = OptionsPrivate.Private.SortOrderForValues(OptionsPrivate.Private.send_chat_message_types),
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "message_type", L["Differences"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "message_type", propertyType, OptionsPrivate.Private.send_chat_message_types),
       order = order,
@@ -667,7 +692,6 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
         return type(conditions[i].changes[j].value) == "table" and conditions[i].changes[j].value.message_type;
       end,
       set = setValueComplex("message_type"),
-      control = "WeakAurasSortedDropdown"
     }
     order = order + 1;
 
@@ -1157,6 +1181,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_lines"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_lines", L["Lines & Particles"], L["Lines & Particles"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_lines", propertyType),
@@ -1175,6 +1200,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_frequency"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_frequency", L["Frequency"], L["Frequency"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_frequency", propertyType),
@@ -1193,6 +1219,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_length"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_length", L["Length"], L["Length"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_length", propertyType),
@@ -1211,6 +1238,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_thickness"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_thickness", L["Thickness"], L["Thickness"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_thickness", propertyType),
@@ -1229,6 +1257,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_XOffset"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_XOffset", L["X-Offset"], L["X-Offset"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_XOffset", propertyType),
@@ -1247,6 +1276,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_YOffset"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_YOffset", L["Y-Offset"], L["Y-Offset"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_YOffset", propertyType),
@@ -1265,6 +1295,7 @@ local function addControlsForChange(args, order, data, conditionVariable, totalA
     order = order + 1
     args["condition" .. i .. "value" .. j .. "glow_scale"] = {
       type = "range",
+      control = "WeakAurasSpinBox",
       width = WeakAuras.normalWidth,
       name = blueIfNoValue2(data, conditions[i].changes[j], "value", "glow_scale", L["Scale"], L["Scale"]),
       desc = descIfNoValue2(data, conditions[i].changes[j], "value", "glow_scale", propertyType),
