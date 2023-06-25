@@ -85,7 +85,7 @@ local function playerIsValid(player)
 		or player.last_checked > GetServerTime()
 		or not player.thisWeekHonor or type(player.thisWeekHonor) ~= "number" or player.thisWeekHonor < 0
 		-- Avoids storing players that were not reset properly by blizzard in the first 12h after the weekly reset
-		or (player.last_checked < HonorSpy.db.char.last_reset + 12 * 60 * 60 and player.thisWeekHonor > 1)
+		or (player.last_checked < HonorSpy.db.char.last_reset + 12 * 60 * 60 and player.thisWeekHonor > 0)
 		or not player.lastWeekHonor or type(player.lastWeekHonor) ~= "number"
 		or not player.standing or type(player.standing) ~= "number"
 		or not player.RP or type(player.RP) ~= "number"
@@ -137,11 +137,13 @@ end
 local function broadcast(originalMessage, skip_yell)
 
 	local encodedMessage = prepareMessageForComms(originalMessage)
+
 	if (IsInGroup(LE_PARTY_CATEGORY_INSTANCE) and IsInInstance()) then
 		HonorSpy:SendCommMessage(commPrefix, encodedMessage, "INSTANCE_CHAT");
 	elseif (IsInRaid()) then
 		HonorSpy:SendCommMessage(commPrefix, encodedMessage, "RAID");
 	end
+
 	if (GetGuildInfo("player") ~= nil) then
 		HonorSpy:SendCommMessage(commPrefix, encodedMessage, "GUILD");
 	end
@@ -156,7 +158,6 @@ end
 local function processInspect(player, name, todayHK, thisweekHK, thisWeekHonor, lastWeekHonor, standing, rankProgress)
     if (thisweekHK < 15) and (todayHK >= 15) then
         thisweekHK = todayHK
-        thisWeekHonor = 1
     end
     
     player.thisWeekHonor = thisWeekHonor;
@@ -267,7 +268,7 @@ function HonorSpy:INSPECT_HONOR_UPDATE()
 	local todayHK, _, _, _, thisweekHK, thisWeekHonor, _, lastWeekHonor, standing = GetInspectHonorData();
     local rankProgress = GetInspectPVPRankProgress()
 	
-    if (lastPlayer and (thisWeekHonor ~= 1) and lastPlayer.honor == thisWeekHonor and lastPlayer.name ~= inspectedPlayerName) then
+    if (lastPlayer and lastPlayer.honor == thisWeekHonor and lastPlayer.name ~= inspectedPlayerName) then
 		return
 	end
 	lastPlayer = {name = inspectedPlayerName, honor = thisWeekHonor}
@@ -669,12 +670,13 @@ function HonorSpy:broadcastPlayers(skipYell)
 		filtered_players[playerName] = player;
 		count = count + 1;
 		if (count == 10) then
-			broadcast(self:Serialize("filtered_players", filtered_players), skipYell)
+			HonorSpy:addWork(broadcast, self:Serialize("filtered_players", filtered_players), skipYell)
 			filtered_players, count = {}, 0;
 		end
 	end
 	if (count > 0) then
-		broadcast(self:Serialize("filtered_players", filtered_players), skipYell)
+		HonorSpy:addWork(broadcast, self:Serialize("filtered_players", filtered_players), skipYell)
+
 	end
 end
 
@@ -811,7 +813,7 @@ local function getResetTime()
 	local currentUnixTime = GetServerTime()
 	local regionId = GetCurrentRegion()
 	local resetDay = 3 -- wed
-	local resetHour = 7 -- 7 AM UTC
+	local resetHour = 4 -- 4 AM UTC (5 AM CET) https://eu.forums.blizzard.com/en/wow/t/weekly-reset-time-changing-to-0500-cet-on-16-november/398498
 
 	if (regionId == 1) then -- US + BR + Oceania: 3 PM UTC Tue (7 AM PST Tue)
 		resetDay = 2
