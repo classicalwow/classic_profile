@@ -12,12 +12,6 @@ PawnCommon = {
 	["ShowTooltipIcons"] = true,
 	["Digits"] = 1,
 	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
-	["LastVersion"] = 2.0801,
-	["ButtonPosition"] = 2,
-	["ShowLootUpgradeAdvisor"] = true,
-	["ShowQuestUpgradeAdvisor"] = true,
-	["IgnoreGemsWhileLeveling"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
 			["PerCharacterOptions"] = {
@@ -38,6 +32,9 @@ PawnCommon = {
 		},
 		["\"Classic\":MAGE3"] = {
 			["PerCharacterOptions"] = {
+				["冰火兩重天-特雷姆斯"] = {
+					["Visible"] = true,
+				},
 				["冰火倆重天-伊弗斯"] = {
 					["Visible"] = true,
 				},
@@ -69,6 +66,9 @@ PawnCommon = {
 		},
 		["\"Classic\":MAGE1"] = {
 			["PerCharacterOptions"] = {
+				["冰火兩重天-特雷姆斯"] = {
+					["Visible"] = true,
+				},
 				["冰火倆重天-伊弗斯"] = {
 					["Visible"] = true,
 				},
@@ -86,6 +86,9 @@ PawnCommon = {
 		},
 		["\"Classic\":MAGE2"] = {
 			["PerCharacterOptions"] = {
+				["冰火兩重天-特雷姆斯"] = {
+					["Visible"] = true,
+				},
 				["冰火倆重天-伊弗斯"] = {
 					["Visible"] = true,
 				},
@@ -103,6 +106,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN2"] = {
 			["PerCharacterOptions"] = {
+				["急翔如溢-伊弗斯"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["LocalizedName"] = "圣骑士: 防护",
@@ -277,6 +283,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN3"] = {
 			["PerCharacterOptions"] = {
+				["急翔如溢-伊弗斯"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["LocalizedName"] = "圣骑士: 惩戒",
@@ -410,6 +419,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PALADIN1"] = {
 			["PerCharacterOptions"] = {
+				["急翔如溢-伊弗斯"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "f48cba",
 			["LocalizedName"] = "圣骑士: 神圣",
@@ -454,4 +466,10 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 	},
+	["LastVersion"] = 2.0804,
+	["ButtonPosition"] = 2,
+	["ShowLootUpgradeAdvisor"] = true,
+	["ShowQuestUpgradeAdvisor"] = true,
+	["IgnoreGemsWhileLeveling"] = true,
+	["ShowSpecIcons"] = true,
 }

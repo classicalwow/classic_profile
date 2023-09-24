@@ -2,8 +2,10 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local pairs, unpack = pairs, unpack
+local pairs, ipairs, unpack = pairs, ipairs, unpack
+
 local hooksecurefunc = hooksecurefunc
+local UnitIsUnit = UnitIsUnit
 local CreateFrame = CreateFrame
 
 local function SkinNavBarButtons(self)
@@ -30,6 +32,12 @@ local function SkinNavBarButtons(self)
 	end
 end
 
+local function ClearSetTexture(texture, tex)
+	if tex ~= nil then
+		texture:SetTexture()
+	end
+end
+
 function S:BlizzardMiscFrames()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.misc) then return end
 
@@ -43,6 +51,29 @@ function S:BlizzardMiscFrames()
 		_G[skins[i]]:StripTextures()
 		_G[skins[i]]:SetTemplate('Transparent')
 	end
+
+	-- here we reskin all 'normal' buttons
+	S:HandleButton(_G.ReadyCheckFrameYesButton)
+	S:HandleButton(_G.ReadyCheckFrameNoButton)
+
+	local ReadyCheckFrame = _G.ReadyCheckFrame
+	_G.ReadyCheckFrameYesButton:SetParent(ReadyCheckFrame)
+	_G.ReadyCheckFrameNoButton:SetParent(ReadyCheckFrame)
+	_G.ReadyCheckFrameYesButton:ClearAllPoints()
+	_G.ReadyCheckFrameNoButton:ClearAllPoints()
+	_G.ReadyCheckFrameYesButton:Point('TOPRIGHT', ReadyCheckFrame, 'CENTER', -3, -5)
+	_G.ReadyCheckFrameNoButton:Point('TOPLEFT', ReadyCheckFrame, 'CENTER', 3, -5)
+	_G.ReadyCheckFrameText:SetParent(ReadyCheckFrame)
+	_G.ReadyCheckFrameText:ClearAllPoints()
+	_G.ReadyCheckFrameText:Point('TOP', 0, -15)
+
+	_G.ReadyCheckListenerFrame:SetAlpha(0)
+	ReadyCheckFrame:HookScript('OnShow', function(self)
+		-- bug fix, don't show it if player is initiator
+		if self.initiator and UnitIsUnit('player', self.initiator) then
+			self:Hide()
+		end
+	end)
 
 	S:HandleButton(_G.StaticPopup1ExtraButton)
 
@@ -96,20 +127,22 @@ function S:BlizzardMiscFrames()
 	end)
 
 	local ChatMenus = {
-		'ChatMenu',
-		'EmoteMenu',
-		'LanguageMenu',
-		'VoiceMacroMenu',
+		_G.ChatMenu,
+		_G.EmoteMenu,
+		_G.LanguageMenu,
+		_G.VoiceMacroMenu,
 	}
 
-	for i = 1, #ChatMenus do
-		if _G[ChatMenus[i]] == _G.ChatMenu then
-			_G[ChatMenus[i]]:HookScript('OnShow', function(menu) menu:SetTemplate('Transparent', true) menu:SetBackdropColor(unpack(E.media.backdropfadecolor)) menu:ClearAllPoints() menu:Point('BOTTOMLEFT', _G.ChatFrame1, 'TOPLEFT', 0, 30) end)
+	for _, frame in ipairs(ChatMenus) do
+		if frame == _G.ChatMenu then
+			frame:HookScript('OnShow', function(menu) menu:SetTemplate('Transparent', true) menu:SetBackdropColor(unpack(E.media.backdropfadecolor)) menu:ClearAllPoints() menu:Point('BOTTOMLEFT', _G.ChatFrame1, 'TOPLEFT', 0, 30) end)
 		else
-			_G[ChatMenus[i]]:HookScript('OnShow', function(menu) menu:SetTemplate('Transparent', true) menu:SetBackdropColor(unpack(E.media.backdropfadecolor)) end)
+			frame:HookScript('OnShow', function(menu) menu:SetTemplate('Transparent', true) menu:SetBackdropColor(unpack(E.media.backdropfadecolor)) end)
 		end
 	end
 
+	-- Emotes NineSlice
+	_G.ChatMenu.NineSlice:SetTemplate()
 
 	-- reskin popup buttons
 	for i = 1, 4 do
@@ -151,22 +184,14 @@ function S:BlizzardMiscFrames()
 		_G['StaticPopup'..i..'ItemFrame'].IconBorder:SetAlpha(0)
 		_G['StaticPopup'..i..'ItemFrameIconTexture']:SetTexCoord(unpack(E.TexCoords))
 		_G['StaticPopup'..i..'ItemFrameIconTexture']:SetInside()
+
 		local normTex = _G['StaticPopup'..i..'ItemFrame']:GetNormalTexture()
 		if normTex then
 			normTex:SetTexture()
-			hooksecurefunc(normTex, 'SetTexture', function(texture, tex)
-				if tex ~= nil then texture:SetTexture() end
-			end)
+			hooksecurefunc(normTex, 'SetTexture', ClearSetTexture)
 		end
 
-		-- Quality IconBorder
-		hooksecurefunc(_G['StaticPopup'..i..'ItemFrame'].IconBorder, 'SetVertexColor', function(frame, r, g, b)
-			frame:GetParent():SetBackdropBorderColor(r, g, b)
-			frame:SetTexture()
-		end)
-		hooksecurefunc(_G['StaticPopup'..i..'ItemFrame'].IconBorder, 'Hide', function(frame)
-			frame:GetParent():SetBackdropBorderColor(unpack(E.media.bordercolor))
-		end)
+		S:HandleIconBorder(_G['StaticPopup'..i..'ItemFrame'].IconBorder)
 	end
 
 	_G.OpacityFrame:StripTextures()
@@ -182,7 +207,7 @@ function S:BlizzardMiscFrames()
 			expandArrow:SetNormalTexture(E.Media.Textures.ArrowUp)
 			normTex:SetVertexColor(unpack(E.media.rgbvaluecolor))
 			normTex:SetRotation(S.ArrowRotation.right)
-			expandArrow:Size(12, 12)
+			expandArrow:Size(12)
 		end
 
 		local Backdrop = _G[listFrameName..'Backdrop']
@@ -238,13 +263,13 @@ function S:BlizzardMiscFrames()
 				if co == 0 then
 					check:SetTexture([[Interface\Buttons\UI-CheckBox-Check]])
 					check:SetVertexColor(r, g, b, 1)
-					check:Size(20, 20)
+					check:Size(20)
 					check:SetDesaturated(true)
 					button.backdrop:SetInside(check, 4, 4)
 				else
 					check:SetTexture(E.media.normTex)
 					check:SetVertexColor(r, g, b, 1)
-					check:Size(10, 10)
+					check:Size(10)
 					check:SetDesaturated(false)
 					button.backdrop:SetOutside(check)
 				end
@@ -252,7 +277,7 @@ function S:BlizzardMiscFrames()
 				button.backdrop:Show()
 				check:SetTexCoord(0, 1, 0, 1)
 			else
-				check:Size(16, 16)
+				check:Size(16)
 			end
 		end
 	end)

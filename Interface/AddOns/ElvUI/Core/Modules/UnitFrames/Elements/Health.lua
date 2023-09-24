@@ -1,5 +1,6 @@
 local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
+local ElvUF = E.oUF
 
 local random = random
 local strmatch = strmatch
@@ -13,10 +14,6 @@ local UnitIsDeadOrGhost = UnitIsDeadOrGhost
 local UnitIsCharmed = UnitIsCharmed
 local UnitIsEnemy = UnitIsEnemy
 
-local _, ns = ...
-local ElvUF = ns.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
-
 function UF.HealthClipFrame_OnUpdate(clipFrame)
 	UF.HealthClipFrame_HealComm(clipFrame.__frame)
 
@@ -28,8 +25,8 @@ function UF:Construct_HealthBar(frame, bg, text, textPos)
 	UF.statusbars[health] = true
 
 	health:SetFrameLevel(10) --Make room for Portrait and Power which should be lower by default
-	health.PostUpdate = self.PostUpdateHealth
-	health.PostUpdateColor = self.PostUpdateHealthColor
+	health.PostUpdate = UF.PostUpdateHealth
+	health.PostUpdateColor = UF.PostUpdateHealthColor
 
 	if bg then
 		health.bg = health:CreateTexture(nil, 'BORDER')
@@ -57,11 +54,11 @@ function UF:Configure_HealthBar(frame)
 
 	health:SetColorTapping(true)
 	health:SetColorDisconnected(true)
-	E:SetSmoothing(health, self.db.smoothbars)
+	E:SetSmoothing(health, UF.db.smoothbars)
 
 	--Text
 	if db.health and health.value then
-		local attachPoint = self:GetObjectAnchorPoint(frame, db.health.attachTextTo)
+		local attachPoint = UF:GetObjectAnchorPoint(frame, db.health.attachTextTo)
 		health.value:ClearAllPoints()
 		health.value:Point(db.health.position, attachPoint, db.health.position, db.health.xOffset, db.health.yOffset)
 		frame:Tag(health.value, db.health.text_format)
@@ -78,22 +75,22 @@ function UF:Configure_HealthBar(frame)
 		health.colorClass = true
 		health.colorReaction = true
 	elseif db.colorOverride and db.colorOverride == 'FORCE_OFF' then
-		if self.db.colors.colorhealthbyvalue then
+		if UF.db.colors.colorhealthbyvalue then
 			health.colorSmooth = true
 		else
 			health.colorHealth = true
 		end
 	else
-		if E.Retail and self.db.colors.healthselection then
+		if E.Retail and UF.db.colors.healthselection then
 			colorSelection = true
-		elseif self.db.colors.healthclass ~= true then
-			if self.db.colors.colorhealthbyvalue then
+		elseif UF.db.colors.healthclass ~= true then
+			if UF.db.colors.colorhealthbyvalue then
 				health.colorSmooth = true
 			else
 				health.colorHealth = true
 			end
 		else
-			health.colorClass = (not self.db.colors.forcehealthreaction)
+			health.colorClass = (not UF.db.colors.forcehealthreaction)
 			health.colorReaction = true
 		end
 	end
@@ -120,10 +117,10 @@ function UF:Configure_HealthBar(frame)
 			health.WIDTH = health.WIDTH - (UF.BORDER + UF.SPACING + (frame.PVPINFO_WIDTH or 0)) - (UF.BORDER + UF.SPACING + frame.PORTRAIT_WIDTH)
 			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.BORDER + UF.SPACING + frame.BOTTOM_OFFSET)
 		elseif frame.USE_MINI_POWERBAR then
-			health:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', frame.PORTRAIT_WIDTH + UF.BORDER + UF.SPACING, UF.SPACING + (frame.POWERBAR_HEIGHT/2))
+			health:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', frame.PORTRAIT_WIDTH + UF.BORDER + UF.SPACING, UF.SPACING + (frame.POWERBAR_HEIGHT*0.5))
 
 			health.WIDTH = health.WIDTH - (UF.BORDER + UF.SPACING + (frame.PVPINFO_WIDTH or 0)) - (UF.BORDER + UF.SPACING + frame.PORTRAIT_WIDTH)
-			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.SPACING + frame.POWERBAR_HEIGHT / 2)
+			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.SPACING + frame.POWERBAR_HEIGHT * 0.5)
 		else
 			health:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', frame.PORTRAIT_WIDTH + UF.BORDER + UF.SPACING, UF.BORDER + UF.SPACING + frame.BOTTOM_OFFSET)
 
@@ -145,10 +142,10 @@ function UF:Configure_HealthBar(frame)
 			health.WIDTH = health.WIDTH - (UF.BORDER + UF.SPACING + (frame.PVPINFO_WIDTH or 0)) - (UF.BORDER + UF.SPACING + frame.PORTRAIT_WIDTH)
 			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.BORDER + UF.SPACING + frame.BOTTOM_OFFSET)
 		elseif frame.USE_MINI_POWERBAR then
-			health:Point('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -frame.PORTRAIT_WIDTH - UF.BORDER - UF.SPACING, UF.SPACING + (frame.POWERBAR_HEIGHT/2))
+			health:Point('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -frame.PORTRAIT_WIDTH - UF.BORDER - UF.SPACING, UF.SPACING + (frame.POWERBAR_HEIGHT*0.5))
 
 			health.WIDTH = health.WIDTH - (UF.BORDER + UF.SPACING + (frame.PVPINFO_WIDTH or 0)) - (UF.BORDER + UF.SPACING + frame.PORTRAIT_WIDTH)
-			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.SPACING + frame.POWERBAR_HEIGHT / 2)
+			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.SPACING + frame.POWERBAR_HEIGHT * 0.5)
 		else
 			health:Point('BOTTOMRIGHT', frame, 'BOTTOMRIGHT', -frame.PORTRAIT_WIDTH - UF.BORDER - UF.SPACING, UF.BORDER + UF.SPACING + frame.BOTTOM_OFFSET)
 
@@ -170,10 +167,10 @@ function UF:Configure_HealthBar(frame)
 			health.WIDTH = health.WIDTH - (UF.BORDER + UF.SPACING + (frame.PVPINFO_WIDTH or 0)) - (UF.BORDER + UF.SPACING)
 			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.BORDER + UF.SPACING + frame.BOTTOM_OFFSET)
 		elseif frame.USE_MINI_POWERBAR then
-			health:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', UF.BORDER + UF.SPACING, UF.SPACING + (frame.POWERBAR_HEIGHT/2))
+			health:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', UF.BORDER + UF.SPACING, UF.SPACING + (frame.POWERBAR_HEIGHT*0.5))
 
 			health.WIDTH = health.WIDTH - (UF.BORDER + UF.SPACING + (frame.PVPINFO_WIDTH or 0)) - (UF.BORDER + UF.SPACING)
-			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.SPACING + frame.POWERBAR_HEIGHT / 2)
+			health.HEIGHT = health.HEIGHT - (UF.BORDER + UF.SPACING + frame.CLASSBAR_YOFFSET) - (UF.SPACING + frame.POWERBAR_HEIGHT * 0.5)
 		else
 			health:Point('BOTTOMLEFT', frame, 'BOTTOMLEFT', frame.PORTRAIT_WIDTH + UF.BORDER + UF.SPACING, UF.BORDER + UF.SPACING + frame.BOTTOM_OFFSET)
 
@@ -218,25 +215,44 @@ function UF:PostUpdateHealthColor(unit, r, g, b)
 	local parent = self:GetParent()
 	local colors = E.db.unitframe.colors
 
+	local isTapped = UnitIsTapDenied(unit)
+	local isDeadOrGhost = UnitIsDeadOrGhost(unit)
+	local healthBreak = not isTapped and colors.healthBreak
+
 	if not b then r, g, b = colors.health.r, colors.health.g, colors.health.b end
 	local newr, newg, newb -- fallback for bg if custom settings arent used
-	if ((colors.healthclass and colors.colorhealthbyvalue) or (colors.colorhealthbyvalue and parent.isForced)) and not UnitIsTapDenied(unit) then
+	if ((colors.healthclass and colors.colorhealthbyvalue) or (colors.colorhealthbyvalue and parent.isForced)) and not isTapped then
 		newr, newg, newb = ElvUF:ColorGradient(self.cur, self.max, 1, 0, 0, 1, 1, 0, r, g, b)
 		self:SetStatusBarColor(newr, newg, newb)
+	elseif healthBreak and healthBreak.enabled then
+		local breakPoint = self.max > 0 and (self.cur / self.max) or 1
+		local onlyLow, color = healthBreak.onlyLow
+
+		if breakPoint <= healthBreak.low then
+			color = healthBreak.bad
+		elseif breakPoint >= healthBreak.high and breakPoint ~= 1 and not onlyLow then
+			color = healthBreak.good
+		elseif breakPoint >= healthBreak.low and breakPoint < healthBreak.high and not onlyLow then
+			color = colors.healthBreak.neutral
+		end
+
+		if color then
+			self:SetStatusBarColor(color.r, color.g, color.b)
+		end
 	end
 
 	-- Charmed player should have hostile color
 	if unit and (strmatch(unit, "raid%d+") or strmatch(unit, "party%d+")) then
-		if not UnitIsDeadOrGhost(unit) and UnitIsConnected(unit) and UnitIsCharmed(unit) and UnitIsEnemy("player", unit) then
+		if not isDeadOrGhost and UnitIsConnected(unit) and UnitIsCharmed(unit) and UnitIsEnemy("player", unit) then
 			local color = parent.colors.reaction[HOSTILE_REACTION]
-			if color then self:SetStatusBarColor(color[1], color[2], color[3]) end
+			if color then self:SetStatusBarColor(color.r, color.g, color.b) end
 		end
 	end
 
 	if self.bg then
 		self.bg.multiplier = (colors.healthMultiplier > 0 and colors.healthMultiplier) or 0.35
 
-		if colors.useDeadBackdrop and UnitIsDeadOrGhost(unit) then
+		if colors.useDeadBackdrop and isDeadOrGhost then
 			self.bg:SetVertexColor(colors.health_backdrop_dead.r, colors.health_backdrop_dead.g, colors.health_backdrop_dead.b)
 		elseif colors.customhealthbackdrop then
 			self.bg:SetVertexColor(colors.health_backdrop.r, colors.health_backdrop.g, colors.health_backdrop.b)
@@ -251,7 +267,7 @@ function UF:PostUpdateHealthColor(unit, r, g, b)
 			end
 
 			if color then
-				self.bg:SetVertexColor(color[1] * self.bg.multiplier, color[2] * self.bg.multiplier, color[3] * self.bg.multiplier)
+				self.bg:SetVertexColor(color.r * self.bg.multiplier, color.g * self.bg.multiplier, color.b * self.bg.multiplier)
 			end
 		elseif newb then
 			self.bg:SetVertexColor(newr * self.bg.multiplier, newg * self.bg.multiplier, newb * self.bg.multiplier)

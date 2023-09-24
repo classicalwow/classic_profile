@@ -3,7 +3,9 @@ local DT = E:GetModule('DataTexts')
 
 local _G = _G
 local next, wipe, ipairs = next, wipe, ipairs
-local format, sort, pairs, select = format, sort, pairs, select
+local format, sort, select = format, sort, select
+
+local EasyMenu = EasyMenu
 local GetMouseFocus = GetMouseFocus
 local HideUIPanel = HideUIPanel
 local IsShiftKeyDown = IsShiftKeyDown
@@ -14,7 +16,6 @@ local C_Garrison_HasGarrison = C_Garrison.HasGarrison
 local C_Garrison_GetBuildings = C_Garrison.GetBuildings
 local C_Garrison_GetInProgressMissions = C_Garrison.GetInProgressMissions
 local C_Garrison_GetLandingPageShipmentInfo = C_Garrison.GetLandingPageShipmentInfo
-local C_Garrison_GetLandingPageGarrisonType = C_Garrison.GetLandingPageGarrisonType
 local C_Garrison_GetCompleteTalent = C_Garrison.GetCompleteTalent
 local C_Garrison_GetFollowerShipments = C_Garrison.GetFollowerShipments
 local C_Garrison_GetLandingPageShipmentInfoByContainerID = C_Garrison.GetLandingPageShipmentInfoByContainerID
@@ -25,7 +26,6 @@ local C_Garrison_GetTalentTreeIDsByClassID = C_Garrison.GetTalentTreeIDsByClassI
 local C_Garrison_GetTalentTreeInfo = C_Garrison.GetTalentTreeInfo
 local C_QuestLog_IsQuestFlaggedCompleted = C_QuestLog.IsQuestFlaggedCompleted
 local C_IslandsQueue_GetIslandsWeeklyQuestID = C_IslandsQueue.GetIslandsWeeklyQuestID
-local C_CurrencyInfo_GetCurrencyInfo = C_CurrencyInfo.GetCurrencyInfo
 local C_Covenants_GetActiveCovenantID = C_Covenants.GetActiveCovenantID
 local C_CovenantCallings_AreCallingsUnlocked = C_CovenantCallings.AreCallingsUnlocked
 local CovenantCalling_Create = CovenantCalling_Create
@@ -45,11 +45,11 @@ local ISLANDS_HEADER = ISLANDS_HEADER
 local ISLANDS_QUEUE_FRAME_TITLE = ISLANDS_QUEUE_FRAME_TITLE
 local ISLANDS_QUEUE_WEEKLY_QUEST_PROGRESS = ISLANDS_QUEUE_WEEKLY_QUEST_PROGRESS
 local LE_EXPANSION_BATTLE_FOR_AZEROTH = LE_EXPANSION_BATTLE_FOR_AZEROTH
-local GARRISONFOLLOWERTYPE_6_0 = Enum.GarrisonFollowerType.FollowerType_6_0
-local GARRISONFOLLOWERTYPE_7_0 = Enum.GarrisonFollowerType.FollowerType_7_0
-local GARRISONFOLLOWERTYPE_8_0 = Enum.GarrisonFollowerType.FollowerType_8_0
-local GARRISONFOLLOWERTYPE_6_2 = Enum.GarrisonFollowerType.FollowerType_6_2
-local GARRISONFOLLOWERTYPE_9_0 = Enum.GarrisonFollowerType.FollowerType_9_0
+local GARRISONFOLLOWERTYPE_6_0_BOAT = Enum.GarrisonFollowerType.FollowerType_6_0_Boat
+local GARRISONFOLLOWERTYPE_6_0 = Enum.GarrisonFollowerType.FollowerType_6_0_GarrisonFollower
+local GARRISONFOLLOWERTYPE_7_0 = Enum.GarrisonFollowerType.FollowerType_7_0_GarrisonFollower
+local GARRISONFOLLOWERTYPE_8_0 = Enum.GarrisonFollowerType.FollowerType_8_0_GarrisonFollower
+local GARRISONFOLLOWERTYPE_9_0 = Enum.GarrisonFollowerType.FollowerType_9_0_GarrisonFollower
 local GARRISONTYPE_6_0 = Enum.GarrisonType.Type_6_0
 local GARRISONTYPE_7_0 = Enum.GarrisonType.Type_7_0
 local GARRISONTYPE_8_0 = Enum.GarrisonType.Type_8_0
@@ -61,15 +61,20 @@ local EXPANSION_NAME6 = EXPANSION_NAME6 -- 'Legion'
 local EXPANSION_NAME7 = EXPANSION_NAME7 -- 'Battle for Azeroth'
 local EXPANSION_NAME8 = EXPANSION_NAME8 -- 'Shadowlands'
 
-local MAIN_CURRENCY = 1813
-local iconString = '|T%s:16:16:0:0:64:64:4:60:4:60|t'
 local numMissions = 0
+local MAIN_CURRENCY = 2003 -- Dragon Isles Supplies
 local callingsData = {}
 local covenantTreeIDs = {
 	[1] = {308, 312, 316, 320, 327},
 	[2] = {309, 314, 317, 324, 326},
 	[3] = {307, 311, 315, 319, 328},
 	[4] = {310, 313, 318, 321, 329}
+}
+
+local garrisonPages = {
+	'SoulbindPanel',
+	'CovenantCallings',
+	'ArdenwealdGardeningPanel'
 }
 
 local function sortFunction(a, b)
@@ -84,7 +89,7 @@ local function LandingPage(_, ...)
 	if _G.GarrisonLandingPage then
 		HideUIPanel(_G.GarrisonLandingPage)
 
-		for _, frame in pairs({ 'SoulbindPanel', 'CovenantCallings', 'ArdenwealdGardeningPanel' }) do
+		for _, frame in next, garrisonPages do
 			if _G.GarrisonLandingPage[frame] then
 				_G.GarrisonLandingPage[frame]:Hide()
 			end
@@ -185,14 +190,9 @@ local function AddTalentInfo(garrisonType, currentCovenant)
 	end
 end
 
-local function GetInfo(id)
-	local info = C_CurrencyInfo_GetCurrencyInfo(id)
-	return info.quantity, info.name, (info.iconFileID and format(iconString, info.iconFileID)) or '136012'
-end
-
 local function AddInfo(id)
-	local quantity, _, icon = GetInfo(id)
-	return format('%s %s', icon, BreakUpLargeNumbers(quantity))
+	local info, _, icon = DT:CurrencyInfo(id)
+	return format('%s %s', icon, BreakUpLargeNumbers(info.quantity or 0))
 end
 
 local function OnEnter()
@@ -287,7 +287,7 @@ local function OnEnter()
 
 		DT.tooltip:AddLine(' ')
 		DT.tooltip:AddDoubleLine(L["Naval Mission(s) Report:"], AddInfo(1101), nil, nil, nil, 1, 1 , 1)
-		AddInProgressMissions(GARRISONFOLLOWERTYPE_6_2)
+		AddInProgressMissions(GARRISONFOLLOWERTYPE_6_0_BOAT)
 
 		--Buildings
 		data = C_Garrison_GetBuildings(GARRISONTYPE_6_0)
@@ -322,14 +322,10 @@ local function OnClick(self, btn)
 	if InCombatLockdown() then _G.UIErrorsFrame:AddMessage(E.InfoColor.._G.ERR_NOT_IN_COMBAT) return end
 
 	if btn == 'RightButton' then
-		DT:SetEasyMenuAnchor(DT.EasyMenu, self)
-		_G.EasyMenu(menuList, DT.EasyMenu, nil, nil, nil, 'MENU')
-	else
-		if _G.GarrisonLandingPage and _G.GarrisonLandingPage:IsShown() then
-			HideUIPanel(_G.GarrisonLandingPage)
-		else
-			LandingPage(nil, C_Garrison_GetLandingPageGarrisonType())
-		end
+		E:SetEasyMenuAnchor(E.EasyMenu, self)
+		EasyMenu(menuList, E.EasyMenu, nil, nil, nil, 'MENU')
+	elseif _G.ExpansionLandingPageMinimapButton:IsShown() then
+		_G.ExpansionLandingPageMinimapButton:ToggleLandingPage()
 	end
 end
 
@@ -357,8 +353,8 @@ local function OnEvent(self, event, ...)
 		numMissions = #C_Garrison_GetCompleteMissions(GARRISONFOLLOWERTYPE_9_0)
 		+ #C_Garrison_GetCompleteMissions(GARRISONFOLLOWERTYPE_8_0)
 		+ #C_Garrison_GetCompleteMissions(GARRISONFOLLOWERTYPE_7_0)
+		+ #C_Garrison_GetCompleteMissions(GARRISONFOLLOWERTYPE_6_0_BOAT)
 		+ #C_Garrison_GetCompleteMissions(GARRISONFOLLOWERTYPE_6_0)
-		+ #C_Garrison_GetCompleteMissions(GARRISONFOLLOWERTYPE_6_2)
 	end
 
 	if numMissions > 0 then

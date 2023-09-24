@@ -1,10 +1,10 @@
-lightweight tag dfbd34ba02d90139089d731df4064fe7cc72ce9a 10.0.1-Classic
+lightweight tag 7d7fc0acf265c6a7693014f3f0f00ba552b9676c 10.0.2-Classic
 Author:	Resike <resike@gmail.com>
-Date:	Sat Jan 28 17:44:58 2023 +0100
+Date:	Wed Aug 23 15:29:15 2023 +0200
 
-commit dfbd34ba02d90139089d731df4064fe7cc72ce9a
+commit 7d7fc0acf265c6a7693014f3f0f00ba552b9676c
 Author: Resike <resike@gmail.com>
-Date:   Sat Jan 28 17:44:58 2023 +0100
+Date:   Wed Aug 23 15:29:15 2023 +0200
 
     Classic TOC
 

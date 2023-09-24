@@ -1,9 +1,6 @@
 local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
-
-local _, ns = ...
-local ElvUF = ns.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
+local ElvUF = E.oUF
 
 local _G = _G
 local InCombatLockdown = InCombatLockdown
@@ -57,6 +54,7 @@ function UF:Construct_PartyFrames()
 		self.AuraHighlight = UF:Construct_AuraHighlight(self)
 		self.ResurrectIndicator = UF:Construct_ResurrectionIcon(self)
 		self.SummonIndicator = UF:Construct_SummonIcon(self)
+		self.CombatIndicator = UF:Construct_CombatIndicator(self)
 		self.GroupRoleIndicator = UF:Construct_RoleIcon(self)
 		self.RaidRoleFramesAnchor = UF:Construct_RaidRoleFrames(self)
 		self.MouseGlow = UF:Construct_MouseGlow(self)
@@ -80,6 +78,7 @@ function UF:Construct_PartyFrames()
 
 	self.Fader = UF:Construct_Fader()
 	self.Cutaway = UF:Construct_Cutaway(self)
+	self.PrivateAuras = UF:Construct_PrivateAuras(self)
 
 	return self
 end
@@ -111,7 +110,7 @@ function UF:Update_PartyFrames(frame, db)
 		frame.USE_POWERBAR_OFFSET = (db.power.width == 'offset' and db.power.offset ~= 0) and frame.USE_POWERBAR and not frame.POWERBAR_DETACHED
 		frame.POWERBAR_OFFSET = frame.USE_POWERBAR_OFFSET and db.power.offset or 0
 		frame.POWERBAR_HEIGHT = not frame.USE_POWERBAR and 0 or db.power.height
-		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))/2 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
+		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))*0.5 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
 		frame.USE_PORTRAIT = db.portrait and db.portrait.enable
 		frame.USE_PORTRAIT_OVERLAY = frame.USE_PORTRAIT and (db.portrait.overlay or frame.ORIENTATION == 'MIDDLE')
 		frame.PORTRAIT_WIDTH = (frame.USE_PORTRAIT_OVERLAY or not frame.USE_PORTRAIT) and 0 or db.portrait.width
@@ -123,7 +122,7 @@ function UF:Update_PartyFrames(frame, db)
 		frame.USE_MINI_CLASSBAR = db.classbar.fill == 'spaced' and frame.USE_CLASSBAR
 		frame.CLASSBAR_HEIGHT = frame.USE_CLASSBAR and db.classbar.height or 0
 		frame.CLASSBAR_WIDTH = frame.UNIT_WIDTH - frame.PORTRAIT_WIDTH - (frame.ORIENTATION == 'MIDDLE' and (frame.POWERBAR_OFFSET*2) or frame.POWERBAR_OFFSET)
-		frame.CLASSBAR_YOFFSET = (not frame.USE_CLASSBAR or not frame.CLASSBAR_SHOWN or frame.CLASSBAR_DETACHED) and 0 or (frame.USE_MINI_CLASSBAR and (UF.SPACING+(frame.CLASSBAR_HEIGHT/2)) or (frame.CLASSBAR_HEIGHT - (UF.BORDER-UF.SPACING)))
+		frame.CLASSBAR_YOFFSET = (not frame.USE_CLASSBAR or not frame.CLASSBAR_SHOWN or frame.CLASSBAR_DETACHED) and 0 or (frame.USE_MINI_CLASSBAR and (UF.SPACING+(frame.CLASSBAR_HEIGHT*0.5)) or (frame.CLASSBAR_HEIGHT - (UF.BORDER-UF.SPACING)))
 		frame.USE_INFO_PANEL = not frame.USE_MINI_POWERBAR and not frame.USE_POWERBAR_OFFSET and db.infoPanel.enable
 		frame.INFO_PANEL_HEIGHT = frame.USE_INFO_PANEL and db.infoPanel.height or 0
 		frame.BOTTOM_OFFSET = UF:GetHealthBottomOffset(frame)
@@ -145,17 +144,23 @@ function UF:Update_PartyFrames(frame, db)
 		frame.BOTTOM_OFFSET = 0
 
 		frame.db = frame.childType == 'target' and db.targetsGroup or db.petsGroup
+
+		-- these are just coming in from the main group and will not export
+		frame.db.disableMouseoverGlow = db.disableMouseoverGlow
+		frame.db.disableTargetGlow = db.disableMouseoverGlow
+		frame.db.disableFocusGlow = db.disableMouseoverGlow
+
 		db = frame.db
 
 		frame:Size(db.width, db.height)
 
 		if not InCombatLockdown() then
-			if db.enable then
-				frame:Enable()
+			local enabled = db.enable
+			frame:SetEnabled(enabled)
+
+			if enabled then
 				frame:ClearAllPoints()
 				frame:Point(E.InversePoints[db.anchorPoint], frame.originalParent, db.anchorPoint, db.xOffset, db.yOffset)
-			else
-				frame:Disable()
 			end
 		end
 
@@ -173,8 +178,8 @@ function UF:Update_PartyFrames(frame, db)
 
 		UF:EnableDisable_Auras(frame)
 		UF:Configure_AllAuras(frame)
-		UF:Configure_HealthBar(frame)
 		UF:Configure_InfoPanel(frame)
+		UF:Configure_HealthBar(frame)
 		UF:Configure_PhaseIcon(frame)
 		UF:Configure_Power(frame)
 		UF:Configure_Portrait(frame)
@@ -187,6 +192,7 @@ function UF:Update_PartyFrames(frame, db)
 		UF:Configure_ReadyCheckIcon(frame)
 		UF:Configure_ClassBar(frame)
 		UF:Configure_CustomTexts(frame)
+		UF:Configure_CombatIndicator(frame)
 
 		if E.Retail then
 			UF:Configure_AltPowerBar(frame)
@@ -201,6 +207,7 @@ function UF:Update_PartyFrames(frame, db)
 	UF:Configure_Threat(frame)
 	UF:Configure_Fader(frame)
 	UF:Configure_Cutaway(frame)
+	UF:Configure_PrivateAuras(frame)
 	UF:Configure_AuraHighlight(frame)
 
 	UF:HandleRegisterClicks(frame)

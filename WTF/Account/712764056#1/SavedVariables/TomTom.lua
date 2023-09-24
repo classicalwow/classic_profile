@@ -1,19 +1,21 @@
 
 TomTomDB = {
 	["profileKeys"] = {
-		["特變電工 - 伊弗斯"] = "Default",
+		["急翔如溢 - 伊弗斯"] = "Default",
 		["特變電工 - 玉石礦坑"] = "Default",
 		["冰火倆重天 - 伊弗斯"] = "Default",
+		["冰火兩重天 - 特雷姆斯"] = "Default",
+		["特變電工 - 伊弗斯"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["arrow"] = {
 				["position"] = {
-					"BOTTOM", -- [1]
+					"CENTER", -- [1]
 					nil, -- [2]
-					"BOTTOM", -- [3]
-					2.222092866897583, -- [4]
-					207.3332366943359, -- [5]
+					"CENTER", -- [3]
+					-11.11126708984375, -- [4]
+					-289.4445495605469, -- [5]
 				},
 			},
 			["block"] = {
@@ -31,16 +33,53 @@ TomTomDB = {
 TomTomWaypoints = nil
 TomTomWaypointsM = {
 	["profileKeys"] = {
-		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
+		["急翔如溢 - 伊弗斯"] = "急翔如溢 - 伊弗斯",
 		["特變電工 - 玉石礦坑"] = "特變電工 - 玉石礦坑",
 		["冰火倆重天 - 伊弗斯"] = "冰火倆重天 - 伊弗斯",
+		["冰火兩重天 - 特雷姆斯"] = "冰火兩重天 - 特雷姆斯",
+		["特變電工 - 伊弗斯"] = "特變電工 - 伊弗斯",
 	},
 	["profiles"] = {
-		["特變電工 - 伊弗斯"] = {
+		["急翔如溢 - 伊弗斯"] = {
 		},
 		["特變電工 - 玉石礦坑"] = {
 		},
 		["冰火倆重天 - 伊弗斯"] = {
+		},
+		["冰火兩重天 - 特雷姆斯"] = {
+			[1434] = {
+				["1434:424449877.75061:332518337.40831:劈颅战士"] = {
+					1434, -- [1]
+					0.4244498777506113, -- [2]
+					0.3325183374083129, -- [3]
+					["arrivaldistance"] = 15,
+					["crazy"] = true,
+					["persistent"] = true,
+					["minimap"] = true,
+					["cleardistance"] = 10,
+					["title"] = "劈颅战士",
+					["from"] = "Questie",
+					["callbacks"] = {
+						["distance"] = {
+							[10] = nil --[[ skipped inline function ]],
+							[15] = nil --[[ skipped inline function ]],
+						},
+						["world"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+						["minimap"] = {
+							["onclick"] = nil --[[ skipped inline function ]],
+							["tooltip_update"] = nil --[[ skipped inline function ]],
+							["tooltip_show"] = nil --[[ skipped inline function ]],
+						},
+					},
+					["world"] = true,
+				},
+			},
+		},
+		["特變電工 - 伊弗斯"] = {
 		},
 	},
 }

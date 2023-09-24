@@ -1,0 +1,6258 @@
+
+RecountPerCharDB = {
+	["version"] = "1.3",
+	["combatants"] = {
+		["术士士"] = {
+			["GUID"] = "Player-5298-0063A62E",
+			["LastEventHealth"] = {
+				1446, -- [1]
+				1446, -- [2]
+				1446, -- [3]
+				1449, -- [4]
+				1393, -- [5]
+				1393, -- [6]
+				1393, -- [7]
+				1397, -- [8]
+				1334, -- [9]
+				1334, -- [10]
+				1338, -- [11]
+				1338, -- [12]
+				1276, -- [13]
+				1276, -- [14]
+				1344, -- [15]
+				1348, -- [16]
+				1348, -- [17]
+				1351, -- [18]
+				1355, -- [19]
+				1355, -- [20]
+				1355, -- [21]
+				1359, -- [22]
+				1516, -- [23]
+				1516, -- [24]
+				1516, -- [25]
+				1456, -- [26]
+				1460, -- [27]
+				1460, -- [28]
+				1460, -- [29]
+				1374, -- [30]
+				1377, -- [31]
+				1377, -- [32]
+				1482, -- [33]
+				1482, -- [34]
+				1486, -- [35]
+				1486, -- [36]
+				1490, -- [37]
+				1493, -- [38]
+				1493, -- [39]
+				1497, -- [40]
+				1497, -- [41]
+				1497, -- [42]
+				1497, -- [43]
+				1500, -- [44]
+				1500, -- [45]
+				1504, -- [46]
+				1504, -- [47]
+				1504, -- [48]
+				1508, -- [49]
+				1508, -- [50]
+			},
+			["LastAttackedBy"] = "丛林捕猎者",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+				"DAMAGE", -- [46]
+				"DAMAGE", -- [47]
+				"DAMAGE", -- [48]
+				"DAMAGE", -- [49]
+				"DAMAGE", -- [50]
+			},
+			["TimeWindows"] = {
+				["DamageTaken"] = {
+					653, -- [1]
+				},
+				["ActiveTime"] = {
+					45.84, -- [1]
+				},
+				["TimeDamage"] = {
+					45.84, -- [1]
+				},
+				["Healing"] = {
+					0, -- [1]
+				},
+				["DOT_Time"] = {
+					129, -- [1]
+				},
+				["Damage"] = {
+					3730, -- [1]
+				},
+			},
+			["enClass"] = "WARLOCK",
+			["unit"] = "术士士",
+			["level"] = 39,
+			["LastDamageAbility"] = "肉搏",
+			["LastFightIn"] = 2,
+			["LastDamageTaken"] = 62,
+			["type"] = "Ungrouped",
+			["FightsSaved"] = 5,
+			["LastEventHealthMax"] = {
+				1766, -- [1]
+				1766, -- [2]
+				1766, -- [3]
+				1766, -- [4]
+				1766, -- [5]
+				1766, -- [6]
+				1766, -- [7]
+				1766, -- [8]
+				1766, -- [9]
+				1766, -- [10]
+				1766, -- [11]
+				1766, -- [12]
+				1766, -- [13]
+				1766, -- [14]
+				1766, -- [15]
+				1766, -- [16]
+				1766, -- [17]
+				1766, -- [18]
+				1766, -- [19]
+				1766, -- [20]
+				1766, -- [21]
+				1766, -- [22]
+				1766, -- [23]
+				1766, -- [24]
+				1766, -- [25]
+				1766, -- [26]
+				1766, -- [27]
+				1766, -- [28]
+				1766, -- [29]
+				1766, -- [30]
+				1766, -- [31]
+				1766, -- [32]
+				1766, -- [33]
+				1766, -- [34]
+				1766, -- [35]
+				1766, -- [36]
+				1766, -- [37]
+				1766, -- [38]
+				1766, -- [39]
+				1766, -- [40]
+				1766, -- [41]
+				1766, -- [42]
+				1766, -- [43]
+				1766, -- [44]
+				1766, -- [45]
+				1766, -- [46]
+				1766, -- [47]
+				1766, -- [48]
+				1766, -- [49]
+				1766, -- [50]
+			},
+			["TimeLast"] = {
+				["DamageTaken"] = 16020.121,
+				["Healing"] = 15970.118,
+				["ActiveTime"] = 16038.121,
+				["TimeDamage"] = 16038.121,
+				["OVERALL"] = 16038.121,
+				["DOT_Time"] = 16037.121,
+				["Damage"] = 16038.121,
+			},
+			["Owner"] = false,
+			["Pet"] = {
+				"卡爾拉斯 <术士士>", -- [1]
+			},
+			["NextEventNum"] = 23,
+			["LastDamageTime"] = 16038.859,
+			["LastEvents"] = {
+				"术士士 暗影箭 丛林捕猎者 Hit -232 (Shadow)", -- [1]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -33 (Fire)", -- [2]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -44 (Shadow)", -- [3]
+				"丛林捕猎者 肉搏 术士士 Hit -56 (Physical)", -- [4]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -43 (14 被抵抗) (Shadow)", -- [5]
+				"术士士 射击 丛林捕猎者 Hit -34 (11 被抵抗) (Frost)", -- [6]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -44 (Shadow)", -- [7]
+				"丛林捕猎者 肉搏 术士士 Hit -63 (Physical)", -- [8]
+				"术士士 射击 丛林捕猎者 Hit -38 (12 被抵抗) (Frost)", -- [9]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -65 (Shadow)", -- [10]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -57 (Shadow)", -- [11]
+				"丛林捕猎者 肉搏 术士士 Hit -62 (Physical)", -- [12]
+				"术士士 射击 丛林捕猎者 Hit -57 (Frost)", -- [13]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -65 (Shadow)", -- [14]
+				"术士士 献祭 丛林捕猎者 Hit -101 (Fire)", -- [15]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -22 (Shadow)", -- [16]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -33 (Fire)", -- [17]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -17 (6 被抵抗) (Shadow)", -- [18]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -33 (Fire)", -- [19]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -23 (Shadow)", -- [20]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -57 (Shadow)", -- [21]
+				"术士士 暗影箭 丛林捕猎者 Hit -229 (Shadow)", -- [22]
+				"术士士 射击 丛林捕猎者 Hit -32 (Frost)", -- [23]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -33 (32 被抵抗) (Shadow)", -- [24]
+				"丛林捕猎者 肉搏 术士士 Hit -60 (Physical)", -- [25]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -57 (Shadow)", -- [26]
+				"术士士 射击 丛林捕猎者 Hit -50 (Frost)", -- [27]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -49 (16 被抵抗) (Shadow)", -- [28]
+				"丛林捕猎者 肉搏 术士士 Crushing -86 (Physical)", -- [29]
+				"术士士 射击 丛林捕猎者 Resist (Physical)", -- [30]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -43 (14 被抵抗) (Shadow)", -- [31]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -65 (Shadow)", -- [32]
+				"术士士 献祭 丛林捕猎者 Hit -100 (Fire)", -- [33]
+				"术士士 痛苦诅咒 丛林捕猎者 Resist (Shadow)", -- [34]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -33 (Fire)", -- [35]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -23 (Shadow)", -- [36]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -22 (Shadow)", -- [37]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -25 (8 被抵抗) (Fire)", -- [38]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -22 (Shadow)", -- [39]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -57 (Shadow)", -- [40]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -33 (Fire)", -- [41]
+				"术士士 暗影箭 丛林捕猎者 Hit -232 (Shadow)", -- [42]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -22 (Shadow)", -- [43]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -57 (Shadow)", -- [44]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -33 (11 被抵抗) (Shadow)", -- [45]
+				"术士士 献祭 (伤害/跳) 丛林捕猎者 Tick -25 (8 被抵抗) (Fire)", -- [46]
+				"术士士 暗影箭 丛林捕猎者 Hit -237 (Shadow)", -- [47]
+				"术士士 痛苦诅咒 (伤害/跳) 丛林捕猎者 Tick -43 (Shadow)", -- [48]
+				"术士士 腐蚀术 (伤害/跳) 丛林捕猎者 Tick -58 (Shadow)", -- [49]
+				"丛林捕猎者 肉搏 术士士 Hit -62 (Physical)", -- [50]
+			},
+			["Name"] = "术士士",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				true, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				true, -- [8]
+				false, -- [9]
+				false, -- [10]
+				false, -- [11]
+				true, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				false, -- [16]
+				false, -- [17]
+				false, -- [18]
+				false, -- [19]
+				false, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				false, -- [24]
+				true, -- [25]
+				false, -- [26]
+				false, -- [27]
+				false, -- [28]
+				true, -- [29]
+				false, -- [30]
+				false, -- [31]
+				false, -- [32]
+				false, -- [33]
+				false, -- [34]
+				false, -- [35]
+				false, -- [36]
+				false, -- [37]
+				false, -- [38]
+				false, -- [39]
+				false, -- [40]
+				false, -- [41]
+				false, -- [42]
+				false, -- [43]
+				false, -- [44]
+				false, -- [45]
+				false, -- [46]
+				false, -- [47]
+				false, -- [48]
+				false, -- [49]
+				true, -- [50]
+			},
+			["LastEventTimes"] = {
+				16014.519, -- [1]
+				16015.119, -- [2]
+				16015.705, -- [3]
+				16016.521, -- [4]
+				16017.228, -- [5]
+				16017.459, -- [6]
+				16017.705, -- [7]
+				16018.521, -- [8]
+				16019.228, -- [9]
+				16019.69, -- [10]
+				16020.182, -- [11]
+				16020.474, -- [12]
+				16021.182, -- [13]
+				16021.705, -- [14]
+				16030.828, -- [15]
+				16033.151, -- [16]
+				16033.844, -- [17]
+				16035.151, -- [18]
+				16036.767, -- [19]
+				16037.136, -- [20]
+				16037.613, -- [21]
+				16038.859, -- [22]
+				15980.38, -- [23]
+				15980.38, -- [24]
+				15980.687, -- [25]
+				15980.887, -- [26]
+				15981.934, -- [27]
+				15982.395, -- [28]
+				15982.687, -- [29]
+				15983.395, -- [30]
+				15983.964, -- [31]
+				15984.472, -- [32]
+				16000.027, -- [33]
+				16000.135, -- [34]
+				16003.135, -- [35]
+				16003.704, -- [36]
+				16005.704, -- [37]
+				16006.135, -- [38]
+				16007.627, -- [39]
+				16008.227, -- [40]
+				16009.15, -- [41]
+				16009.15, -- [42]
+				16009.704, -- [43]
+				16011.243, -- [44]
+				16011.658, -- [45]
+				16012.089, -- [46]
+				16012.227, -- [47]
+				16013.719, -- [48]
+				16014.181, -- [49]
+				16014.427, -- [50]
+			},
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["DOTs"] = {
+						["痛苦诅咒 (伤害/跳)"] = {
+							["Details"] = {
+								["丛林捕猎者"] = {
+									["count"] = 63,
+								},
+							},
+							["amount"] = 63,
+						},
+						["腐蚀术 (伤害/跳)"] = {
+							["Details"] = {
+								["丛林捕猎者"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 33,
+						},
+						["献祭 (伤害/跳)"] = {
+							["Details"] = {
+								["丛林捕猎者"] = {
+									["count"] = 33,
+								},
+							},
+							["amount"] = 33,
+						},
+					},
+					["ElementDoneResist"] = {
+						["Shadow"] = 118,
+						["Frost"] = 23,
+						["Fire"] = 16,
+					},
+					["TimeSpent"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["痛苦诅咒"] = {
+									["count"] = 0.11,
+								},
+								["暗影箭"] = {
+									["count"] = 3.42,
+								},
+								["痛苦诅咒 (伤害/跳)"] = {
+									["count"] = 13.96,
+								},
+								["献祭"] = {
+									["count"] = 3,
+								},
+								["射击"] = {
+									["count"] = 9.969999999999999,
+								},
+								["腐蚀术 (伤害/跳)"] = {
+									["count"] = 8.8,
+								},
+								["献祭 (伤害/跳)"] = {
+									["count"] = 6.58,
+								},
+							},
+							["amount"] = 45.84,
+						},
+					},
+					["DamageTaken"] = 653,
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 10,
+						},
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 0,
+						},
+					},
+					["ActiveTime"] = 45.84,
+					["ElementTaken"] = {
+						["Melee"] = 653,
+					},
+					["DOT_Time"] = 129,
+					["Damage"] = 3730,
+					["Healing"] = 0,
+					["ElementDone"] = {
+						["Shadow"] = 2811,
+						["Frost"] = 371,
+						["Fire"] = 548,
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Crushing"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 10,
+						},
+					},
+					["DamagedWho"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["暗影箭"] = {
+									["count"] = 1406,
+								},
+								["痛苦诅咒 (伤害/跳)"] = {
+									["count"] = 819,
+								},
+								["献祭"] = {
+									["count"] = 201,
+								},
+								["射击"] = {
+									["count"] = 371,
+								},
+								["腐蚀术 (伤害/跳)"] = {
+									["count"] = 586,
+								},
+								["献祭 (伤害/跳)"] = {
+									["count"] = 347,
+								},
+							},
+							["amount"] = 3730,
+						},
+					},
+					["TimeDamage"] = 45.84,
+					["TimeDamaging"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["痛苦诅咒"] = {
+									["count"] = 0.11,
+								},
+								["暗影箭"] = {
+									["count"] = 3.42,
+								},
+								["痛苦诅咒 (伤害/跳)"] = {
+									["count"] = 13.96,
+								},
+								["献祭"] = {
+									["count"] = 3,
+								},
+								["射击"] = {
+									["count"] = 9.969999999999999,
+								},
+								["腐蚀术 (伤害/跳)"] = {
+									["count"] = 8.8,
+								},
+								["献祭 (伤害/跳)"] = {
+									["count"] = 6.58,
+								},
+							},
+							["amount"] = 45.84,
+						},
+					},
+					["Attacks"] = {
+						["痛苦诅咒"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["暗影箭"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 242,
+									["min"] = 229,
+									["count"] = 6,
+									["amount"] = 1406,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 1406,
+						},
+						["痛苦诅咒 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 65,
+									["min"] = 17,
+									["count"] = 21,
+									["amount"] = 819,
+								},
+							},
+							["count"] = 21,
+							["amount"] = 819,
+						},
+						["献祭"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 101,
+									["min"] = 100,
+									["count"] = 2,
+									["amount"] = 201,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 201,
+						},
+						["射击"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 57,
+									["min"] = 32,
+									["count"] = 9,
+									["amount"] = 371,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 371,
+						},
+						["腐蚀术 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 58,
+									["min"] = 43,
+									["count"] = 11,
+									["amount"] = 586,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 586,
+						},
+						["献祭 (伤害/跳)"] = {
+							["Details"] = {
+								["Tick"] = {
+									["max"] = 33,
+									["min"] = 25,
+									["count"] = 11,
+									["amount"] = 347,
+								},
+							},
+							["count"] = 11,
+							["amount"] = 347,
+						},
+					},
+					["WhoDamaged"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 653,
+								},
+							},
+							["amount"] = 653,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Shadow"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+								["Tick"] = {
+									["count"] = 32,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 39,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 2,
+								},
+								["Tick"] = {
+									["count"] = 11,
+								},
+							},
+							["amount"] = 13,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 15969.121,
+			["LastActive"] = 16038.121,
+		},
+		["卡爾拉斯 <术士士>"] = {
+			["GUID"] = "Pet-0-5295-0-148-1860-02002D661F",
+			["LastEventHealth"] = {
+				1681, -- [1]
+				1681, -- [2]
+				1681, -- [3]
+				1681, -- [4]
+				1681, -- [5]
+				1681, -- [6]
+				1681, -- [7]
+				1900, -- [8]
+				1900, -- [9]
+				1858, -- [10]
+				1858, -- [11]
+				1858, -- [12]
+				1858, -- [13]
+				1817, -- [14]
+				1817, -- [15]
+				1766, -- [16]
+				1766, -- [17]
+				1766, -- [18]
+				1766, -- [19]
+				1682, -- [20]
+				1682, -- [21]
+				1682, -- [22]
+				1682, -- [23]
+				1682, -- [24]
+				1872, -- [25]
+				1872, -- [26]
+				1833, -- [27]
+				1833, -- [28]
+				1788, -- [29]
+				1788, -- [30]
+				1739, -- [31]
+				1739, -- [32]
+			},
+			["LastAttackedBy"] = "丛林捕猎者",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+			},
+			["TimeWindows"] = {
+				["TimeDamage"] = {
+					32.72, -- [1]
+				},
+				["Damage"] = {
+					364, -- [1]
+				},
+				["DamageTaken"] = {
+					449, -- [1]
+				},
+				["ActiveTime"] = {
+					32.72, -- [1]
+				},
+			},
+			["enClass"] = "PET",
+			["unit"] = "卡爾拉斯",
+			["level"] = 1,
+			["LastDamageAbility"] = "肉搏",
+			["LastFightIn"] = 2,
+			["type"] = "Pet",
+			["FightsSaved"] = 5,
+			["ownerName"] = "术士士",
+			["LastDamageTaken"] = 98,
+			["TimeLast"] = {
+				["ActiveTime"] = 16037.121,
+				["TimeDamage"] = 16037.121,
+				["OVERALL"] = 16037.121,
+				["DamageTaken"] = 16037.121,
+				["Damage"] = 16037.121,
+			},
+			["LastEventHealthMax"] = {
+				1900, -- [1]
+				1900, -- [2]
+				1900, -- [3]
+				1900, -- [4]
+				1900, -- [5]
+				1900, -- [6]
+				1900, -- [7]
+				1900, -- [8]
+				1900, -- [9]
+				1900, -- [10]
+				1900, -- [11]
+				1900, -- [12]
+				1900, -- [13]
+				1900, -- [14]
+				1900, -- [15]
+				1900, -- [16]
+				1900, -- [17]
+				1900, -- [18]
+				1900, -- [19]
+				1900, -- [20]
+				1900, -- [21]
+				1900, -- [22]
+				1900, -- [23]
+				1900, -- [24]
+				1900, -- [25]
+				1900, -- [26]
+				1900, -- [27]
+				1900, -- [28]
+				1900, -- [29]
+				1900, -- [30]
+				1900, -- [31]
+				1900, -- [32]
+			},
+			["NextEventNum"] = 33,
+			["LastDamageTime"] = 16037.951,
+			["LastEvents"] = {
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -17 (Physical)", -- [1]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Glancing -17 (Physical)", -- [2]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Miss (1)", -- [3]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -18 (Physical)", -- [4]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -20 (Physical)", -- [5]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -17 (Physical)", -- [6]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -18 (Physical)", -- [7]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -18 (Physical)", -- [8]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Hit -42 (Physical)", -- [9]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -18 (Physical)", -- [10]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Miss (1)", -- [11]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Crit -40 (Physical)", -- [12]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Hit -41 (Physical)", -- [13]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Glancing -18 (Physical)", -- [14]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Hit -51 (Physical)", -- [15]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Parry (1)", -- [16]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Parry (1)", -- [17]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Block (1)", -- [18]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Crit -84 (Physical)", -- [19]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Crit -40 (Physical)", -- [20]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Glancing -14 (Physical)", -- [21]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Glancing -17 (Physical)", -- [22]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -20 (Physical)", -- [23]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -18 (Physical)", -- [24]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -18 (Physical)", -- [25]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Hit -39 (Physical)", -- [26]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Miss (1)", -- [27]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Hit -45 (Physical)", -- [28]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Hit -21 (Physical)", -- [29]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Hit -49 (Physical)", -- [30]
+				"卡爾拉斯 <术士士> 肉搏 丛林捕猎者 Glancing -15 (Physical)", -- [31]
+				"丛林捕猎者 肉搏 卡爾拉斯 <术士士> Crit -98 (Physical)", -- [32]
+			},
+			["Name"] = "卡爾拉斯",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				false, -- [5]
+				false, -- [6]
+				false, -- [7]
+				false, -- [8]
+				true, -- [9]
+				false, -- [10]
+				true, -- [11]
+				false, -- [12]
+				true, -- [13]
+				false, -- [14]
+				true, -- [15]
+				false, -- [16]
+				true, -- [17]
+				false, -- [18]
+				true, -- [19]
+				false, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				false, -- [24]
+				false, -- [25]
+				true, -- [26]
+				false, -- [27]
+				true, -- [28]
+				false, -- [29]
+				true, -- [30]
+				false, -- [31]
+				true, -- [32]
+			},
+			["LastEventTimes"] = {
+				15970.441, -- [1]
+				15972.472, -- [2]
+				15974.503, -- [3]
+				15976.441, -- [4]
+				15978.549, -- [5]
+				15980.534, -- [6]
+				15982.549, -- [7]
+				16000.335, -- [8]
+				16000.335, -- [9]
+				16002.335, -- [10]
+				16002.335, -- [11]
+				16004.35, -- [12]
+				16004.35, -- [13]
+				16006.35, -- [14]
+				16006.35, -- [15]
+				16008.35, -- [16]
+				16008.35, -- [17]
+				16009.566, -- [18]
+				16010.335, -- [19]
+				16011.566, -- [20]
+				16014.058, -- [21]
+				16016.09, -- [22]
+				16018.074, -- [23]
+				16020.044, -- [24]
+				16031.936, -- [25]
+				16031.936, -- [26]
+				16033.951, -- [27]
+				16033.951, -- [28]
+				16035.89, -- [29]
+				16035.982, -- [30]
+				16037.951, -- [31]
+				16037.951, -- [32]
+			},
+			["Fights"] = {
+				["LastFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["CurrentFightData"] = {
+					["DOTs"] = {
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["ElementHitsTaken"] = {
+					},
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+					},
+					["ElementTakenAbsorb"] = {
+					},
+					["ElementTaken"] = {
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+					},
+					["PartialAbsorb"] = {
+					},
+					["DamagedWho"] = {
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+					},
+					["WhoHealed"] = {
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["ElementDoneBlock"] = {
+						["Melee"] = 17,
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Miss"] = {
+									["count"] = 1,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 6,
+								},
+							},
+							["amount"] = 10,
+						},
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 10,
+							["amount"] = 0,
+						},
+					},
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 10,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 10,
+						},
+					},
+					["Attacks"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["max"] = 18,
+									["min"] = 14,
+									["count"] = 5,
+									["amount"] = 81,
+								},
+								["Hit"] = {
+									["max"] = 21,
+									["min"] = 17,
+									["count"] = 11,
+									["amount"] = 203,
+								},
+								["Miss"] = {
+									["count"] = 2,
+									["amount"] = 0,
+								},
+								["Block"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 40,
+									["min"] = 40,
+									["count"] = 2,
+									["amount"] = 80,
+								},
+								["Parry"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 22,
+							["amount"] = 364,
+						},
+					},
+					["TimeSpent"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 32.72,
+								},
+							},
+							["amount"] = 32.72,
+						},
+					},
+					["DamageTaken"] = 449,
+					["WhoDamaged"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 449,
+								},
+							},
+							["amount"] = 449,
+						},
+					},
+					["ElementDone"] = {
+						["Melee"] = 364,
+					},
+					["ElementHitsDone"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Glancing"] = {
+									["count"] = 5,
+								},
+								["Hit"] = {
+									["count"] = 11,
+								},
+								["Miss"] = {
+									["count"] = 2,
+								},
+								["Block"] = {
+									["count"] = 2,
+								},
+								["Crit"] = {
+									["count"] = 2,
+								},
+								["Parry"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 23,
+						},
+					},
+					["DamagedWho"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 364,
+								},
+							},
+							["amount"] = 364,
+						},
+					},
+					["TimeDamage"] = 32.72,
+					["TimeDamaging"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 32.72,
+								},
+							},
+							["amount"] = 32.72,
+						},
+					},
+					["ElementTaken"] = {
+						["Melee"] = 449,
+					},
+					["ActiveTime"] = 32.72,
+					["Damage"] = 364,
+				},
+			},
+			["UnitLockout"] = 15970.118,
+			["LastActive"] = 16037.121,
+		},
+		["冰火兩重天"] = {
+			["GUID"] = "Player-5298-00544971",
+			["LastEventHealth"] = {
+				1352, -- [1]
+				1352, -- [2]
+				1352, -- [3]
+				1352, -- [4]
+				1352, -- [5]
+				1352, -- [6]
+				1352, -- [7]
+				1352, -- [8]
+				1137, -- [9]
+				1085, -- [10]
+				1085, -- [11]
+				1029, -- [12]
+				1352, -- [13]
+				1352, -- [14]
+				1352, -- [15]
+				1352, -- [16]
+				1352, -- [17]
+				1352, -- [18]
+				1352, -- [19]
+				1352, -- [20]
+				1352, -- [21]
+				1352, -- [22]
+				1352, -- [23]
+				1352, -- [24]
+				1352, -- [25]
+				1352, -- [26]
+				1352, -- [27]
+				1352, -- [28]
+				1352, -- [29]
+				1352, -- [30]
+				1310, -- [31]
+				1269, -- [32]
+				1269, -- [33]
+				1352, -- [34]
+				1352, -- [35]
+				1352, -- [36]
+				1352, -- [37]
+				1352, -- [38]
+				1352, -- [39]
+				1352, -- [40]
+				1352, -- [41]
+				1352, -- [42]
+				1352, -- [43]
+				1352, -- [44]
+				1352, -- [45]
+				1352, -- [46]
+				1352, -- [47]
+				1352, -- [48]
+				1352, -- [49]
+				1352, -- [50]
+			},
+			["LastAttackedBy"] = "巴尔瑟拉",
+			["LastEventType"] = {
+				"DAMAGE", -- [1]
+				"DAMAGE", -- [2]
+				"DAMAGE", -- [3]
+				"DAMAGE", -- [4]
+				"DAMAGE", -- [5]
+				"DAMAGE", -- [6]
+				"DAMAGE", -- [7]
+				"DAMAGE", -- [8]
+				"DAMAGE", -- [9]
+				"DAMAGE", -- [10]
+				"DAMAGE", -- [11]
+				"DAMAGE", -- [12]
+				"DAMAGE", -- [13]
+				"DAMAGE", -- [14]
+				"DAMAGE", -- [15]
+				"DAMAGE", -- [16]
+				"DAMAGE", -- [17]
+				"DAMAGE", -- [18]
+				"DAMAGE", -- [19]
+				"DAMAGE", -- [20]
+				"DAMAGE", -- [21]
+				"DAMAGE", -- [22]
+				"DAMAGE", -- [23]
+				"DAMAGE", -- [24]
+				"DAMAGE", -- [25]
+				"DAMAGE", -- [26]
+				"DAMAGE", -- [27]
+				"DAMAGE", -- [28]
+				"DAMAGE", -- [29]
+				"DAMAGE", -- [30]
+				"DAMAGE", -- [31]
+				"DAMAGE", -- [32]
+				"DAMAGE", -- [33]
+				"DAMAGE", -- [34]
+				"DAMAGE", -- [35]
+				"DAMAGE", -- [36]
+				"DAMAGE", -- [37]
+				"DAMAGE", -- [38]
+				"DAMAGE", -- [39]
+				"DAMAGE", -- [40]
+				"DAMAGE", -- [41]
+				"DAMAGE", -- [42]
+				"DAMAGE", -- [43]
+				"DAMAGE", -- [44]
+				"DAMAGE", -- [45]
+				"DAMAGE", -- [46]
+				"DAMAGE", -- [47]
+				"DAMAGE", -- [48]
+				"DAMAGE", -- [49]
+				"DAMAGE", -- [50]
+			},
+			["TimeWindows"] = {
+				["Absorbs"] = {
+					2744, -- [1]
+				},
+				["TimeHeal"] = {
+					36, -- [1]
+				},
+				["Interrupts"] = {
+					1, -- [1]
+				},
+				["ActiveTime"] = {
+					304.72, -- [1]
+				},
+				["HealingTaken"] = {
+					2744, -- [1]
+				},
+				["TimeDamage"] = {
+					268.72, -- [1]
+				},
+				["DamageTaken"] = {
+					5744, -- [1]
+				},
+				["Damage"] = {
+					61557, -- [1]
+				},
+			},
+			["enClass"] = "MAGE",
+			["unit"] = "冰火兩重天",
+			["level"] = 43,
+			["LastDamageAbility"] = "撕裂肉体 (伤害/跳)",
+			["LastFightIn"] = 31,
+			["LastHealTime"] = 17410.679,
+			["type"] = "Self",
+			["FightsSaved"] = 5,
+			["LastDamageTaken"] = 51,
+			["TimeLast"] = {
+				["TimeHeal"] = 17410.125,
+				["OVERALL"] = 17414.125,
+				["DamageTaken"] = 17410.125,
+				["Absorbs"] = 17410.125,
+				["HealingTaken"] = 17410.125,
+				["TimeDamage"] = 17414.125,
+				["Interrupts"] = 16743.122,
+				["ActiveTime"] = 17414.125,
+				["Damage"] = 17414.125,
+			},
+			["Owner"] = false,
+			["LastEventHealthMax"] = {
+				1352, -- [1]
+				1352, -- [2]
+				1352, -- [3]
+				1352, -- [4]
+				1352, -- [5]
+				1352, -- [6]
+				1352, -- [7]
+				1352, -- [8]
+				1352, -- [9]
+				1352, -- [10]
+				1352, -- [11]
+				1352, -- [12]
+				1352, -- [13]
+				1352, -- [14]
+				1352, -- [15]
+				1352, -- [16]
+				1352, -- [17]
+				1352, -- [18]
+				1352, -- [19]
+				1352, -- [20]
+				1352, -- [21]
+				1352, -- [22]
+				1352, -- [23]
+				1352, -- [24]
+				1352, -- [25]
+				1352, -- [26]
+				1352, -- [27]
+				1352, -- [28]
+				1352, -- [29]
+				1352, -- [30]
+				1352, -- [31]
+				1352, -- [32]
+				1352, -- [33]
+				1352, -- [34]
+				1352, -- [35]
+				1352, -- [36]
+				1352, -- [37]
+				1352, -- [38]
+				1352, -- [39]
+				1352, -- [40]
+				1352, -- [41]
+				1352, -- [42]
+				1352, -- [43]
+				1352, -- [44]
+				1352, -- [45]
+				1352, -- [46]
+				1352, -- [47]
+				1352, -- [48]
+				1352, -- [49]
+				1352, -- [50]
+			},
+			["NextEventNum"] = 9,
+			["LastDamageTime"] = 17414.694,
+			["LastEvents"] = {
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Crit -548 (Frost)", -- [1]
+				"巴尔瑟拉 撕裂肉体 (伤害/跳) 冰火兩重天 Absorb -51 (51 被吸收) (Physical)", -- [2]
+				"冰火兩重天 火焰冲击 巴尔瑟拉 Hit -295 (Fire)", -- [3]
+				"巴尔瑟拉 撕裂肉体 (伤害/跳) 冰火兩重天 Absorb -51 (51 被吸收) (Physical)", -- [4]
+				"冰火兩重天 冰锥术 巴尔瑟拉 Hit -239 (Frost)", -- [5]
+				"巴尔瑟拉 撕裂肉体 (伤害/跳) 冰火兩重天 Absorb -51 (51 被吸收) (Physical)", -- [6]
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Crit -545 (Frost)", -- [7]
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Hit -269 (Frost)", -- [8]
+				"风险投资公司露天矿工 肉搏 冰火兩重天 Hit -52 (Physical)", -- [9]
+				"风险投资公司露天矿工 肉搏 冰火兩重天 Hit -56 (Physical)", -- [10]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -270 (Frost)", -- [11]
+				"冰火兩重天 火焰冲击 风险投资公司露天矿工 Hit -264 (Fire)", -- [12]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -279 (Frost)", -- [13]
+				"冰火兩重天 火焰冲击 风险投资公司露天矿工 Crit -420 (Fire)", -- [14]
+				"冰火兩重天 冰锥术 风险投资公司露天矿工 Hit -225 (Frost)", -- [15]
+				"风险投资公司露天矿工 肉搏 冰火兩重天 Absorb -61 (61 被吸收) (1)", -- [16]
+				"冰火兩重天 冰霜新星 风险投资公司露天矿工 Hit -58 (Frost)", -- [17]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Crit -528 (Frost)", -- [18]
+				"风险投资公司露天矿工 肉搏 冰火兩重天 Absorb -99 (99 被吸收) (1)", -- [19]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -260 (Frost)", -- [20]
+				"冰火兩重天 火焰冲击 风险投资公司露天矿工 Crit -420 (Fire)", -- [21]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -264 (Frost)", -- [22]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -266 (Frost)", -- [23]
+				"风险投资公司露天矿工 炸药 冰火兩重天 Absorb -228 (228 被吸收) (Fire)", -- [24]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Crit -553 (Frost)", -- [25]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -273 (Frost)", -- [26]
+				"冰火兩重天 寒冰箭 风险投资公司露天矿工 Hit -278 (Frost)", -- [27]
+				"冰火兩重天 火焰冲击 风险投资公司露天矿工 Hit -296 (Fire)", -- [28]
+				"Environment Falling 冰火兩重天 Hit -43 (Physical)", -- [29]
+				"深喉猎豹 肉搏 冰火兩重天 Hit -42 (Physical)", -- [30]
+				"深喉猎豹 肉搏 冰火兩重天 Hit -41 (Physical)", -- [31]
+				"丛林大猩猩 肉搏 冰火兩重天 Absorb -57 (57 被吸收) (1)", -- [32]
+				"丛林大猩猩 肉搏 冰火兩重天 Absorb -115 (115 被吸收) (1)", -- [33]
+				"深喉猎豹 肉搏 冰火兩重天 Absorb -66 (66 被吸收) (1)", -- [34]
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Hit -271 (Frost)", -- [35]
+				"冰火兩重天 火焰冲击 巴尔瑟拉 Hit -284 (Fire)", -- [36]
+				"冰火兩重天 冰锥术 巴尔瑟拉 Hit -234 (Frost)", -- [37]
+				"深喉猎豹 肉搏 冰火兩重天 Absorb -37 (37 被吸收) (1)", -- [38]
+				"冰火兩重天 冰霜新星 巴尔瑟拉 Hit -62 (Frost)", -- [39]
+				"冰火兩重天 冰霜新星 深喉猎豹 Crit -124 (Frost)", -- [40]
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Crit -520 (Frost)", -- [41]
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Crit -556 (Frost)", -- [42]
+				"巴尔瑟拉 肉搏 冰火兩重天 Dodge (1)", -- [43]
+				"冰火兩重天 火焰冲击 巴尔瑟拉 Hit -283 (Fire)", -- [44]
+				"冰火兩重天 冰锥术 巴尔瑟拉 Hit -219 (Frost)", -- [45]
+				"冰火兩重天 火焰冲击 巴尔瑟拉 Hit -283 (Fire)", -- [46]
+				"巴尔瑟拉 肉搏 冰火兩重天 Absorb -72 (72 被吸收) (1)", -- [47]
+				"冰火兩重天 寒冰箭 巴尔瑟拉 Hit -271 (Frost)", -- [48]
+				"冰火兩重天 冰霜新星 巴尔瑟拉 Hit -63 (Frost)", -- [49]
+				"巴尔瑟拉 撕裂肉体 (伤害/跳) 冰火兩重天 Absorb -51 (51 被吸收) (Physical)", -- [50]
+			},
+			["Name"] = "冰火兩重天",
+			["LastEventIncoming"] = {
+				false, -- [1]
+				true, -- [2]
+				false, -- [3]
+				true, -- [4]
+				false, -- [5]
+				true, -- [6]
+				false, -- [7]
+				false, -- [8]
+				true, -- [9]
+				true, -- [10]
+				false, -- [11]
+				false, -- [12]
+				false, -- [13]
+				false, -- [14]
+				false, -- [15]
+				true, -- [16]
+				false, -- [17]
+				false, -- [18]
+				true, -- [19]
+				false, -- [20]
+				false, -- [21]
+				false, -- [22]
+				false, -- [23]
+				true, -- [24]
+				false, -- [25]
+				false, -- [26]
+				false, -- [27]
+				false, -- [28]
+				true, -- [29]
+				true, -- [30]
+				true, -- [31]
+				true, -- [32]
+				true, -- [33]
+				true, -- [34]
+				false, -- [35]
+				false, -- [36]
+				false, -- [37]
+				true, -- [38]
+				false, -- [39]
+				false, -- [40]
+				false, -- [41]
+				false, -- [42]
+				true, -- [43]
+				false, -- [44]
+				false, -- [45]
+				false, -- [46]
+				true, -- [47]
+				false, -- [48]
+				false, -- [49]
+				true, -- [50]
+			},
+			["LastEventTimes"] = {
+				17403.74, -- [1]
+				17404.679, -- [2]
+				17405.094, -- [3]
+				17407.679, -- [4]
+				17407.679, -- [5]
+				17410.679, -- [6]
+				17412.263, -- [7]
+				17414.694, -- [8]
+				16928.09, -- [9]
+				16930.66, -- [10]
+				16930.66, -- [11]
+				16931.583, -- [12]
+				16985.583, -- [13]
+				16986.383, -- [14]
+				16988.244, -- [15]
+				16988.798, -- [16]
+				16989.644, -- [17]
+				16994.336, -- [18]
+				16995.844, -- [19]
+				16996.383, -- [20]
+				16997.075, -- [21]
+				17010.336, -- [22]
+				17012.767, -- [23]
+				17013.075, -- [24]
+				17015.275, -- [25]
+				17017.721, -- [26]
+				17020.029, -- [27]
+				17021.044, -- [28]
+				17038.202, -- [29]
+				17110.306, -- [30]
+				17112.213, -- [31]
+				17116.413, -- [32]
+				17119.049, -- [33]
+				17209.413, -- [34]
+				17369.14, -- [35]
+				17371.294, -- [36]
+				17373.063, -- [37]
+				17374.294, -- [38]
+				17375.74, -- [39]
+				17375.74, -- [40]
+				17381.74, -- [41]
+				17383.909, -- [42]
+				17384.017, -- [43]
+				17384.771, -- [44]
+				17386.863, -- [45]
+				17392.786, -- [46]
+				17398.601, -- [47]
+				17399.001, -- [48]
+				17399.402, -- [49]
+				17401.679, -- [50]
+			},
+			["Fights"] = {
+				["Fight5"] = {
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 99,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 160,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 160,
+						},
+					},
+					["DOTs"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 160,
+					["RageGainedFrom"] = {
+					},
+					["Absorbs"] = 160,
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 2,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 160,
+						["Fire"] = 0,
+					},
+					["ElementTaken"] = {
+						["Melee"] = 160,
+						["Fire"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 2190,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 3,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Fire"] = 840,
+						["Frost"] = 1350,
+					},
+					["PartialAbsorb"] = {
+						["炸药"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 99,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 160,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 160,
+						},
+					},
+					["DamagedWho"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰锥术"] = {
+									["count"] = 225,
+								},
+								["寒冰箭"] = {
+									["count"] = 1067,
+								},
+								["火焰冲击"] = {
+									["count"] = 840,
+								},
+								["冰霜新星"] = {
+									["count"] = 58,
+								},
+							},
+							["amount"] = 2190,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 160,
+								},
+								["炸药"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 160,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 2,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 160,
+								},
+							},
+							["amount"] = 160,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰锥术"] = {
+									["count"] = 1.5,
+								},
+								["寒冰箭"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 1.49,
+								},
+								["冰霜新星"] = {
+									["count"] = 1.4,
+								},
+							},
+							["amount"] = 8.889999999999999,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 99,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 160,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 160,
+						},
+					},
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 160,
+								},
+							},
+							["amount"] = 160,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 11.89,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["冰锥术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 225,
+									["min"] = 225,
+									["count"] = 1,
+									["amount"] = 225,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 225,
+						},
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 528,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 528,
+								},
+								["Hit"] = {
+									["max"] = 279,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 539,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 1067,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 420,
+									["min"] = 420,
+									["count"] = 2,
+									["amount"] = 840,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 840,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 58,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 58,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 58,
+						},
+					},
+					["HealingTaken"] = 160,
+					["RageGain"] = 0,
+					["TimeDamage"] = 8.889999999999999,
+					["TimeDamaging"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰锥术"] = {
+									["count"] = 1.5,
+								},
+								["寒冰箭"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 1.49,
+								},
+								["冰霜新星"] = {
+									["count"] = 1.4,
+								},
+							},
+							["amount"] = 8.889999999999999,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight2"] = {
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["TimeSpent"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["射击"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["DamageTaken"] = 66,
+					["PartialResist"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 66,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 66,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 66,
+						},
+					},
+					["ActiveTime"] = 1.5,
+					["ElementTaken"] = {
+						["Physical"] = 0,
+						["Melee"] = 66,
+						["Fire"] = 0,
+					},
+					["Damage"] = 0,
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 66,
+								},
+							},
+							["amount"] = 66,
+						},
+					},
+					["TimeHeal"] = 1.5,
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 1,
+								},
+								["Dodge"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 66,
+								},
+							},
+							["amount"] = 66,
+						},
+					},
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 66,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 66,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 66,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["Absorbs"] = 66,
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 66,
+						["Fire"] = 0,
+					},
+					["ElementDone"] = {
+						["Fire"] = 0,
+						["Frost"] = 0,
+					},
+					["HealingTaken"] = 66,
+					["DamagedWho"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["射击"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["射击"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["Attacks"] = {
+						["射击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoDamaged"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+								["炸药"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["深喉猎豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 66,
+								},
+							},
+							["amount"] = 66,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 66,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 66,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 66,
+						},
+					},
+				},
+				["CurrentFightData"] = {
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DOTs"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 0,
+					["RageGainedFrom"] = {
+					},
+					["Absorbs"] = 0,
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Fire"] = 0,
+					},
+					["ElementTaken"] = {
+						["Melee"] = 0,
+						["Fire"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 0,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Fire"] = 0,
+						["Frost"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+								["炸药"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 0,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 0,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight3"] = {
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 115,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 172,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 172,
+						},
+					},
+					["DOTs"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 255,
+					["RageGainedFrom"] = {
+					},
+					["Absorbs"] = 172,
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 0,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Melee"] = 172,
+						["Fire"] = 0,
+					},
+					["ElementTaken"] = {
+						["Fire"] = 0,
+						["Melee"] = 255,
+						["Physical"] = 0,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 0,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 3,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Fire"] = 0,
+						["Frost"] = 0,
+					},
+					["PartialAbsorb"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 115,
+									["min"] = 57,
+									["count"] = 2,
+									["amount"] = 172,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 172,
+						},
+					},
+					["DamagedWho"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["深喉猎豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 83,
+								},
+							},
+							["amount"] = 83,
+						},
+						["丛林大猩猩"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 172,
+								},
+							},
+							["amount"] = 172,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+								["炸药"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 172,
+								},
+							},
+							["amount"] = 172,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 3,
+								},
+							},
+							["amount"] = 3,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 115,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 172,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 172,
+						},
+					},
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 172,
+								},
+							},
+							["amount"] = 172,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 3,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["HealingTaken"] = 172,
+					["RageGain"] = 0,
+					["TimeDamage"] = 0,
+					["TimeDamaging"] = {
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight4"] = {
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 228,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 228,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 228,
+						},
+					},
+					["DOTs"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Melee"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 228,
+					["RageGainedFrom"] = {
+					},
+					["Absorbs"] = 228,
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 5,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Fire"] = 228,
+					},
+					["ElementTaken"] = {
+						["Melee"] = 0,
+						["Fire"] = 228,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 1930,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 1.5,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Fire"] = 296,
+						["Frost"] = 1634,
+					},
+					["PartialAbsorb"] = {
+						["炸药"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 228,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 228,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 228,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["DamagedWho"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["射击"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["火焰冲击"] = {
+									["count"] = 296,
+								},
+								["寒冰箭"] = {
+									["count"] = 1634,
+								},
+							},
+							["amount"] = 1930,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["冰锥术"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["炸药"] = {
+									["count"] = 228,
+								},
+							},
+							["amount"] = 228,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 1,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 228,
+								},
+							},
+							["amount"] = 228,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["射击"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["火焰冲击"] = {
+									["count"] = 1.02,
+								},
+								["寒冰箭"] = {
+									["count"] = 7.5,
+								},
+							},
+							["amount"] = 8.52,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["火球术 (法术反制)"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 228,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 228,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 228,
+						},
+					},
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 228,
+								},
+							},
+							["amount"] = 228,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 10.02,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["冰霜新星"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["冰锥术"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 553,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 553,
+								},
+								["Hit"] = {
+									["max"] = 278,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 1081,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 1634,
+						},
+						["射击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 296,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 296,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 296,
+						},
+					},
+					["HealingTaken"] = 228,
+					["RageGain"] = 0,
+					["TimeDamage"] = 8.52,
+					["TimeDamaging"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["射击"] = {
+									["count"] = 0,
+								},
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["火焰冲击"] = {
+									["count"] = 1.02,
+								},
+								["寒冰箭"] = {
+									["count"] = 7.5,
+								},
+							},
+							["amount"] = 8.52,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["LastFightData"] = {
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 313,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 313,
+						},
+					},
+					["DOTs"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Absorb"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 313,
+					["RageGainedFrom"] = {
+					},
+					["Absorbs"] = 313,
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 5,
+								},
+								["Hit"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 13,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Fire"] = 0,
+						["Melee"] = 109,
+						["Physical"] = 204,
+					},
+					["ElementTaken"] = {
+						["Fire"] = 0,
+						["Melee"] = 109,
+						["Physical"] = 204,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 5066,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 9,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Fire"] = 1145,
+						["Frost"] = 3921,
+					},
+					["PartialAbsorb"] = {
+						["炸药"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["撕裂肉体 (伤害/跳)"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 51,
+									["min"] = 51,
+									["count"] = 4,
+									["amount"] = 204,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 204,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 109,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 109,
+						},
+					},
+					["DamagedWho"] = {
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 125,
+								},
+								["寒冰箭"] = {
+									["count"] = 2980,
+								},
+								["冰锥术"] = {
+									["count"] = 692,
+								},
+								["火焰冲击"] = {
+									["count"] = 1145,
+								},
+							},
+							["amount"] = 4942,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["深喉猎豹"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 124,
+								},
+							},
+							["amount"] = 124,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["撕裂肉体 (伤害/跳)"] = {
+									["count"] = 204,
+								},
+								["肉搏"] = {
+									["count"] = 72,
+								},
+							},
+							["amount"] = 276,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+								["炸药"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["深喉猎豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 37,
+								},
+							},
+							["amount"] = 37,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["撕裂肉体 (伤害/跳)"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 3,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 313,
+								},
+							},
+							["amount"] = 313,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.9,
+								},
+								["寒冰箭"] = {
+									["count"] = 10.5,
+								},
+								["冰锥术"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 5.21,
+								},
+							},
+							["amount"] = 22.11,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 313,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 313,
+						},
+					},
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 313,
+								},
+							},
+							["amount"] = 313,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 31.11,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["冰冻"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 124,
+									["min"] = 124,
+									["count"] = 1,
+									["amount"] = 124,
+								},
+								["Hit"] = {
+									["max"] = 63,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 125,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 249,
+						},
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 556,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 2169,
+								},
+								["Hit"] = {
+									["max"] = 271,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 811,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 2980,
+						},
+						["冰锥术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 239,
+									["min"] = 219,
+									["count"] = 3,
+									["amount"] = 692,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 692,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 295,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 1145,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 1145,
+						},
+					},
+					["HealingTaken"] = 313,
+					["RageGain"] = 0,
+					["TimeDamage"] = 22.11,
+					["TimeDamaging"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.9,
+								},
+								["寒冰箭"] = {
+									["count"] = 10.5,
+								},
+								["冰锥术"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 5.21,
+								},
+							},
+							["amount"] = 22.11,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["Fight1"] = {
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 313,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 313,
+						},
+					},
+					["DOTs"] = {
+					},
+					["ElementHitsTaken"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Absorb"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 2,
+								},
+								["Hit"] = {
+									["count"] = 0,
+								},
+								["Dodge"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 3,
+						},
+						["Physical"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+					},
+					["ElementDoneResist"] = {
+					},
+					["Ressed"] = 0,
+					["DamageTaken"] = 313,
+					["RageGainedFrom"] = {
+					},
+					["Absorbs"] = 313,
+					["DeathCount"] = 0,
+					["HOT_Time"] = 0,
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Hit"] = {
+									["count"] = 4,
+								},
+							},
+							["amount"] = 4,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+								},
+								["Crit"] = {
+									["count"] = 5,
+								},
+								["Hit"] = {
+									["count"] = 8,
+								},
+							},
+							["amount"] = 13,
+						},
+					},
+					["ElementTakenAbsorb"] = {
+						["Fire"] = 0,
+						["Melee"] = 109,
+						["Physical"] = 204,
+					},
+					["ElementTaken"] = {
+						["Fire"] = 0,
+						["Melee"] = 109,
+						["Physical"] = 204,
+					},
+					["DOT_Time"] = 0,
+					["Damage"] = 5066,
+					["ElementTakenBlock"] = {
+					},
+					["TimeHeal"] = 9,
+					["RessedWho"] = {
+					},
+					["Dispels"] = 0,
+					["ElementTakenResist"] = {
+					},
+					["ElementDoneAbsorb"] = {
+					},
+					["FAttacks"] = {
+					},
+					["RunicPowerGainedFrom"] = {
+					},
+					["ElementDone"] = {
+						["Fire"] = 1145,
+						["Frost"] = 3921,
+					},
+					["PartialAbsorb"] = {
+						["炸药"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+								["被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["撕裂肉体 (伤害/跳)"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 51,
+									["min"] = 51,
+									["count"] = 4,
+									["amount"] = 204,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 204,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 109,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 109,
+						},
+					},
+					["DamagedWho"] = {
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 125,
+								},
+								["寒冰箭"] = {
+									["count"] = 2980,
+								},
+								["冰锥术"] = {
+									["count"] = 692,
+								},
+								["火焰冲击"] = {
+									["count"] = 1145,
+								},
+							},
+							["amount"] = 4942,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["深喉猎豹"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 124,
+								},
+							},
+							["amount"] = 124,
+						},
+					},
+					["PartialBlock"] = {
+					},
+					["WhoDamaged"] = {
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["撕裂肉体 (伤害/跳)"] = {
+									["count"] = 204,
+								},
+								["肉搏"] = {
+									["count"] = 72,
+								},
+							},
+							["amount"] = 276,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 0,
+								},
+								["炸药"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["深喉猎豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 37,
+								},
+							},
+							["amount"] = 37,
+						},
+					},
+					["EnergyGainedFrom"] = {
+					},
+					["PartialResist"] = {
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["撕裂肉体 (伤害/跳)"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 3,
+						},
+					},
+					["CCBroken"] = {
+					},
+					["ElementDoneBlock"] = {
+					},
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["OverHeals"] = {
+					},
+					["ManaGainedFrom"] = {
+					},
+					["RunicPowerGained"] = {
+					},
+					["CCBreak"] = 0,
+					["RageGained"] = {
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 313,
+								},
+							},
+							["amount"] = 313,
+						},
+					},
+					["EnergyGain"] = 0,
+					["ManaGained"] = {
+					},
+					["FDamage"] = 0,
+					["Interrupts"] = 0,
+					["Overhealing"] = 0,
+					["TimeSpent"] = {
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.9,
+								},
+								["寒冰箭"] = {
+									["count"] = 10.5,
+								},
+								["冰锥术"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 5.21,
+								},
+							},
+							["amount"] = 22.11,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 9,
+								},
+							},
+							["amount"] = 9,
+						},
+					},
+					["WhoDispelled"] = {
+					},
+					["InterruptData"] = {
+					},
+					["RunicPowerGain"] = 0,
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 72,
+									["min"] = 0,
+									["count"] = 6,
+									["amount"] = 313,
+								},
+							},
+							["count"] = 6,
+							["amount"] = 313,
+						},
+					},
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 313,
+								},
+							},
+							["amount"] = 313,
+						},
+					},
+					["EnergyGained"] = {
+					},
+					["ActiveTime"] = 31.11,
+					["Healing"] = 0,
+					["FDamagedWho"] = {
+					},
+					["Dispelled"] = 0,
+					["Attacks"] = {
+						["冰冻"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 0,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 0,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 124,
+									["min"] = 124,
+									["count"] = 1,
+									["amount"] = 124,
+								},
+								["Hit"] = {
+									["max"] = 63,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 125,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 249,
+						},
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 556,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 2169,
+								},
+								["Hit"] = {
+									["max"] = 271,
+									["min"] = 0,
+									["count"] = 3,
+									["amount"] = 811,
+								},
+							},
+							["count"] = 7,
+							["amount"] = 2980,
+						},
+						["冰锥术"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 239,
+									["min"] = 219,
+									["count"] = 3,
+									["amount"] = 692,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 692,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 295,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 1145,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 1145,
+						},
+					},
+					["HealingTaken"] = 313,
+					["RageGain"] = 0,
+					["TimeDamage"] = 22.11,
+					["TimeDamaging"] = {
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 0,
+								},
+								["火焰冲击"] = {
+									["count"] = 0,
+								},
+								["冰霜新星"] = {
+									["count"] = 0,
+								},
+							},
+							["amount"] = 0,
+						},
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.9,
+								},
+								["寒冰箭"] = {
+									["count"] = 10.5,
+								},
+								["冰锥术"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 5.21,
+								},
+							},
+							["amount"] = 22.11,
+						},
+					},
+					["ManaGain"] = 0,
+					["HOTs"] = {
+					},
+					["DispelledWho"] = {
+					},
+				},
+				["OverallData"] = {
+					["TimeHealing"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 36,
+								},
+							},
+							["amount"] = 36,
+						},
+					},
+					["TimeSpent"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 6,
+								},
+								["射击"] = {
+									["count"] = 1.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 9,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 8.040000000000001,
+								},
+								["冰锥术"] = {
+									["count"] = 1.5,
+								},
+								["寒冰箭"] = {
+									["count"] = 147.14,
+								},
+								["射击"] = {
+									["count"] = 3,
+								},
+								["火焰冲击"] = {
+									["count"] = 7.629999999999999,
+								},
+							},
+							["amount"] = 167.31,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 4.5,
+								},
+								["冰霜新星"] = {
+									["count"] = 0.92,
+								},
+							},
+							["amount"] = 5.42,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 9,
+								},
+								["火焰冲击"] = {
+									["count"] = 0.66,
+								},
+								["冰霜新星"] = {
+									["count"] = 0.43,
+								},
+							},
+							["amount"] = 10.09,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 46.79,
+								},
+								["冰霜新星"] = {
+									["count"] = 2.84,
+								},
+								["火焰冲击"] = {
+									["count"] = 3.66,
+								},
+							},
+							["amount"] = 53.28999999999999,
+						},
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.9,
+								},
+								["寒冰箭"] = {
+									["count"] = 10.5,
+								},
+								["冰锥术"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 5.21,
+								},
+							},
+							["amount"] = 22.11,
+						},
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 36,
+								},
+							},
+							["amount"] = 36,
+						},
+					},
+					["DamageTaken"] = 5744,
+					["PartialResist"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 2,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 18,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 18,
+						},
+						["撕裂肉体 (伤害/跳)"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 4,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 4,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["未被抵抗"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 33,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 0,
+							["amount"] = 33,
+						},
+					},
+					["PartialAbsorb"] = {
+						["Falling"] = {
+							["Details"] = {
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 2,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 2,
+							["amount"] = 0,
+						},
+						["炸药"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 228,
+									["min"] = 174,
+									["count"] = 9,
+									["amount"] = 1857,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 9,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 1857,
+						},
+						["撕裂肉体 (伤害/跳)"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 51,
+									["min"] = 51,
+									["count"] = 4,
+									["amount"] = 204,
+								},
+							},
+							["count"] = 4,
+							["amount"] = 204,
+						},
+						["肉搏"] = {
+							["Details"] = {
+								["被吸收"] = {
+									["max"] = 115,
+									["min"] = 12,
+									["count"] = 11,
+									["amount"] = 683,
+								},
+								["未被吸收"] = {
+									["max"] = 0,
+									["min"] = 0,
+									["count"] = 22,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 33,
+							["amount"] = 683,
+						},
+					},
+					["ActiveTime"] = 304.72,
+					["InterruptData"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["火球术 (法术反制)"] = {
+									["count"] = 1,
+								},
+							},
+							["amount"] = 1,
+						},
+					},
+					["ElementTaken"] = {
+						["Physical"] = 332,
+						["Melee"] = 1883,
+						["Fire"] = 3529,
+					},
+					["Interrupts"] = 1,
+					["Damage"] = 61557,
+					["WhoHealed"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 2744,
+								},
+							},
+							["amount"] = 2744,
+						},
+					},
+					["TimeHeal"] = 36,
+					["ElementHitsTaken"] = {
+						["Physical"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 4,
+								},
+								["Hit"] = {
+									["count"] = 2,
+								},
+							},
+							["amount"] = 6,
+						},
+						["Melee"] = {
+							["Details"] = {
+								["Dodge"] = {
+									["count"] = 3,
+								},
+								["Absorb"] = {
+									["count"] = 12,
+								},
+								["Crit"] = {
+									["count"] = 1,
+								},
+								["Hit"] = {
+									["count"] = 17,
+								},
+							},
+							["amount"] = 33,
+						},
+						["Fire"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["count"] = 8,
+								},
+								["Hit"] = {
+									["count"] = 10,
+								},
+							},
+							["amount"] = 18,
+						},
+					},
+					["HealedWho"] = {
+						["冰火兩重天"] = {
+							["Details"] = {
+								["寒冰护体"] = {
+									["count"] = 2744,
+								},
+							},
+							["amount"] = 2744,
+						},
+					},
+					["Heals"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["Absorb"] = {
+									["max"] = 228,
+									["min"] = 12,
+									["count"] = 24,
+									["amount"] = 2744,
+								},
+							},
+							["count"] = 24,
+							["amount"] = 2744,
+						},
+					},
+					["ElementHitsDone"] = {
+						["Fire"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 3,
+								},
+								["Hit"] = {
+									["count"] = 17,
+								},
+							},
+							["amount"] = 21,
+						},
+						["Frost"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+								},
+								["Crit"] = {
+									["count"] = 50,
+								},
+								["Hit"] = {
+									["count"] = 128,
+								},
+							},
+							["amount"] = 179,
+						},
+					},
+					["Absorbs"] = 2744,
+					["ElementTakenAbsorb"] = {
+						["Fire"] = 1857,
+						["Melee"] = 683,
+						["Physical"] = 204,
+					},
+					["ElementDone"] = {
+						["Fire"] = 5253,
+						["Frost"] = 56304,
+					},
+					["HealingTaken"] = 2744,
+					["DamagedWho"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 1327,
+								},
+								["射击"] = {
+									["count"] = 37,
+								},
+								["火焰冲击"] = {
+									["count"] = 296,
+								},
+							},
+							["amount"] = 1660,
+						},
+						["深喉猎豹"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 124,
+								},
+							},
+							["amount"] = 124,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 609,
+								},
+								["冰锥术"] = {
+									["count"] = 225,
+								},
+								["寒冰箭"] = {
+									["count"] = 35061,
+								},
+								["射击"] = {
+									["count"] = 70,
+								},
+								["火焰冲击"] = {
+									["count"] = 2643,
+								},
+							},
+							["amount"] = 38608,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 1351,
+								},
+								["冰锥术"] = {
+									["count"] = 461,
+								},
+								["冰霜新星"] = {
+									["count"] = 57,
+								},
+							},
+							["amount"] = 1869,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 1880,
+								},
+								["火焰冲击"] = {
+									["count"] = 278,
+								},
+								["冰霜新星"] = {
+									["count"] = 59,
+								},
+							},
+							["amount"] = 2217,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 62,
+								},
+							},
+							["amount"] = 62,
+						},
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 125,
+								},
+								["寒冰箭"] = {
+									["count"] = 2980,
+								},
+								["冰锥术"] = {
+									["count"] = 692,
+								},
+								["火焰冲击"] = {
+									["count"] = 1145,
+								},
+							},
+							["amount"] = 4942,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 10993,
+								},
+								["冰霜新星"] = {
+									["count"] = 298,
+								},
+								["火焰冲击"] = {
+									["count"] = 784,
+								},
+							},
+							["amount"] = 12075,
+						},
+					},
+					["TimeDamage"] = 268.72,
+					["TimeDamaging"] = {
+						["风险投资公司修理工"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 6,
+								},
+								["射击"] = {
+									["count"] = 1.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 9,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 8.040000000000001,
+								},
+								["冰锥术"] = {
+									["count"] = 1.5,
+								},
+								["寒冰箭"] = {
+									["count"] = 147.14,
+								},
+								["射击"] = {
+									["count"] = 3,
+								},
+								["火焰冲击"] = {
+									["count"] = 7.629999999999999,
+								},
+							},
+							["amount"] = 167.31,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 4.5,
+								},
+								["冰霜新星"] = {
+									["count"] = 0.92,
+								},
+							},
+							["amount"] = 5.42,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 9,
+								},
+								["火焰冲击"] = {
+									["count"] = 0.66,
+								},
+								["冰霜新星"] = {
+									["count"] = 0.43,
+								},
+							},
+							["amount"] = 10.09,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.5,
+								},
+							},
+							["amount"] = 1.5,
+						},
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["冰霜新星"] = {
+									["count"] = 1.9,
+								},
+								["寒冰箭"] = {
+									["count"] = 10.5,
+								},
+								["冰锥术"] = {
+									["count"] = 4.5,
+								},
+								["火焰冲击"] = {
+									["count"] = 5.21,
+								},
+							},
+							["amount"] = 22.11,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["寒冰箭"] = {
+									["count"] = 46.79,
+								},
+								["冰霜新星"] = {
+									["count"] = 2.84,
+								},
+								["火焰冲击"] = {
+									["count"] = 3.66,
+								},
+							},
+							["amount"] = 53.28999999999999,
+						},
+					},
+					["Attacks"] = {
+						["冰冻"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+							},
+							["count"] = 1,
+							["amount"] = 0,
+						},
+						["冰霜新星"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 124,
+									["min"] = 124,
+									["count"] = 1,
+									["amount"] = 124,
+								},
+								["Hit"] = {
+									["max"] = 63,
+									["min"] = 57,
+									["count"] = 20,
+									["amount"] = 1210,
+								},
+							},
+							["count"] = 21,
+							["amount"] = 1334,
+						},
+						["冰锥术"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 461,
+									["min"] = 461,
+									["count"] = 1,
+									["amount"] = 461,
+								},
+								["Hit"] = {
+									["max"] = 239,
+									["min"] = 219,
+									["count"] = 4,
+									["amount"] = 917,
+								},
+							},
+							["count"] = 5,
+							["amount"] = 1378,
+						},
+						["寒冰箭"] = {
+							["Details"] = {
+								["Crit"] = {
+									["max"] = 558,
+									["min"] = 516,
+									["count"] = 48,
+									["amount"] = 25655,
+								},
+								["Hit"] = {
+									["max"] = 279,
+									["min"] = 257,
+									["count"] = 104,
+									["amount"] = 27937,
+								},
+							},
+							["count"] = 152,
+							["amount"] = 53592,
+						},
+						["射击"] = {
+							["Details"] = {
+								["Hit"] = {
+									["max"] = 39,
+									["min"] = 31,
+									["count"] = 3,
+									["amount"] = 107,
+								},
+							},
+							["count"] = 3,
+							["amount"] = 107,
+						},
+						["火焰冲击"] = {
+							["Details"] = {
+								["Resist"] = {
+									["count"] = 1,
+									["amount"] = 0,
+								},
+								["Crit"] = {
+									["max"] = 423,
+									["min"] = 420,
+									["count"] = 3,
+									["amount"] = 1263,
+								},
+								["Hit"] = {
+									["max"] = 296,
+									["min"] = 255,
+									["count"] = 14,
+									["amount"] = 3883,
+								},
+							},
+							["count"] = 18,
+							["amount"] = 5146,
+						},
+					},
+					["WhoDamaged"] = {
+						["深喉猎豹"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 219,
+								},
+							},
+							["amount"] = 219,
+						},
+						["丛林捕猎者"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 188,
+								},
+							},
+							["amount"] = 188,
+						},
+						["巴尔瑟拉"] = {
+							["Details"] = {
+								["撕裂肉体 (伤害/跳)"] = {
+									["count"] = 204,
+								},
+								["肉搏"] = {
+									["count"] = 72,
+								},
+							},
+							["amount"] = 276,
+						},
+						["丛林大猩猩"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 172,
+								},
+							},
+							["amount"] = 172,
+						},
+						["风险投资公司露天矿工"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 933,
+								},
+								["炸药"] = {
+									["count"] = 3529,
+								},
+							},
+							["amount"] = 4462,
+						},
+						["Environment"] = {
+							["Details"] = {
+								["Falling"] = {
+									["count"] = 128,
+								},
+							},
+							["amount"] = 128,
+						},
+						["风险投资公司工头"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 121,
+								},
+							},
+							["amount"] = 121,
+						},
+						["微型收割机"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 119,
+								},
+							},
+							["amount"] = 119,
+						},
+						["冷眼蜥蜴"] = {
+							["Details"] = {
+								["肉搏"] = {
+									["count"] = 59,
+								},
+							},
+							["amount"] = 59,
+						},
+					},
+					["Absorbed"] = {
+						["寒冰护体"] = {
+							["Details"] = {
+								["冰火兩重天"] = {
+									["max"] = 228,
+									["min"] = 12,
+									["count"] = 24,
+									["amount"] = 2744,
+								},
+							},
+							["count"] = 24,
+							["amount"] = 2744,
+						},
+					},
+				},
+			},
+			["UnitLockout"] = 15973.118,
+			["LastActive"] = 17414.125,
+		},
+	},
+	["FightNum"] = 32,
+	["CombatTimes"] = {
+		{
+			15968.123, -- [1]
+			15987.118, -- [2]
+			"14:23:56", -- [3]
+			"14:24:14", -- [4]
+			"丛林捕猎者", -- [5]
+		}, -- [1]
+		{
+			15999.119, -- [1]
+			16023.121, -- [2]
+			"14:24:27", -- [3]
+			"14:24:50", -- [4]
+			"丛林捕猎者", -- [5]
+		}, -- [2]
+		{
+			16030.121, -- [1]
+			16059.121, -- [2]
+			"14:24:58", -- [3]
+			"14:25:26", -- [4]
+			"丛林捕猎者", -- [5]
+		}, -- [3]
+		{
+			16077.121, -- [1]
+			16092.121, -- [2]
+			"14:25:44", -- [3]
+			"14:25:59", -- [4]
+			"丛林捕猎者", -- [5]
+		}, -- [4]
+		{
+			16100.12, -- [1]
+			16126.122, -- [2]
+			"14:26:07", -- [3]
+			"14:26:33", -- [4]
+			"丛林捕猎者", -- [5]
+		}, -- [5]
+		{
+			16140.122, -- [1]
+			16157.113, -- [2]
+			"14:26:47", -- [3]
+			"14:27:04", -- [4]
+			"丛林捕猎者", -- [5]
+		}, -- [6]
+		{
+			16195.122, -- [1]
+			16217.118, -- [2]
+			"14:27:42", -- [3]
+			"14:28:04", -- [4]
+			"冷眼蜥蜴", -- [5]
+		}, -- [7]
+		{
+			16223.118, -- [1]
+			16235.118, -- [2]
+			"14:28:10", -- [3]
+			"14:28:22", -- [4]
+			"深喉猎豹", -- [5]
+		}, -- [8]
+		{
+			16270.118, -- [1]
+			16284.118, -- [2]
+			"14:28:57", -- [3]
+			"14:29:11", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [9]
+		{
+			16292.12, -- [1]
+			16305.124, -- [2]
+			"14:29:20", -- [3]
+			"14:29:32", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [10]
+		{
+			16309.123, -- [1]
+			16327.122, -- [2]
+			"14:29:36", -- [3]
+			"14:29:54", -- [4]
+			"风险投资公司工头", -- [5]
+		}, -- [11]
+		{
+			16368.123, -- [1]
+			16384.123, -- [2]
+			"14:30:35", -- [3]
+			"14:30:51", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [12]
+		{
+			16393.123, -- [1]
+			16416.124, -- [2]
+			"14:31:01", -- [3]
+			"14:31:23", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [13]
+		{
+			16426.124, -- [1]
+			16441.124, -- [2]
+			"14:31:33", -- [3]
+			"14:31:48", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [14]
+		{
+			16447.124, -- [1]
+			16459.124, -- [2]
+			"14:31:54", -- [3]
+			"14:32:06", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [15]
+		{
+			16495.119, -- [1]
+			16508.119, -- [2]
+			"14:32:43", -- [3]
+			"14:32:55", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [16]
+		{
+			16526.119, -- [1]
+			16538.119, -- [2]
+			"14:33:13", -- [3]
+			"14:33:25", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [17]
+		{
+			16549.119, -- [1]
+			16565.119, -- [2]
+			"14:33:36", -- [3]
+			"14:33:52", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [18]
+		{
+			16584.119, -- [1]
+			16646.119, -- [2]
+			"14:34:11", -- [3]
+			"14:35:13", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [19]
+		{
+			16666.115, -- [1]
+			16678.115, -- [2]
+			"14:35:33", -- [3]
+			"14:35:45", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [20]
+		{
+			16683.115, -- [1]
+			16700.115, -- [2]
+			"14:35:51", -- [3]
+			"14:36:07", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [21]
+		{
+			16706.115, -- [1]
+			16723.115, -- [2]
+			"14:36:14", -- [3]
+			"14:36:30", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [22]
+		{
+			16741.122, -- [1]
+			16765.122, -- [2]
+			"14:36:49", -- [3]
+			"14:37:12", -- [4]
+			"风险投资公司修理工", -- [5]
+		}, -- [23]
+		{
+			16829.121, -- [1]
+			16843.121, -- [2]
+			"14:38:16", -- [3]
+			"14:38:30", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [24]
+		{
+			16847.121, -- [1]
+			16866.121, -- [2]
+			"14:38:35", -- [3]
+			"14:38:53", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [25]
+		{
+			16871.121, -- [1]
+			16889.121, -- [2]
+			"14:38:59", -- [3]
+			"14:39:16", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [26]
+		{
+			16915.121, -- [1]
+			16933.121, -- [2]
+			"14:39:42", -- [3]
+			"14:40:00", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [27]
+		{
+			16985.121, -- [1]
+			17003.121, -- [2]
+			"14:40:52", -- [3]
+			"14:41:10", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [28]
+		{
+			17010.121, -- [1]
+			17022.121, -- [2]
+			"14:41:17", -- [3]
+			"14:41:29", -- [4]
+			"风险投资公司露天矿工", -- [5]
+		}, -- [29]
+		{
+			17110.121, -- [1]
+			17130.117, -- [2]
+			"14:42:57", -- [3]
+			"14:43:17", -- [4]
+			"深喉猎豹", -- [5]
+		}, -- [30]
+		{
+			17209.121, -- [1]
+			17228.122, -- [2]
+			"14:44:36", -- [3]
+			"14:44:55", -- [4]
+			"深喉猎豹", -- [5]
+		}, -- [31]
+		{
+			17369.124, -- [1]
+			17415.125, -- [2]
+			"14:47:16", -- [3]
+			"14:48:02", -- [4]
+			"巴尔瑟拉", -- [5]
+		}, -- [32]
+	},
+	["FoughtWho"] = {
+		"巴尔瑟拉 14:47:16-14:48:02", -- [1]
+		"深喉猎豹 14:44:36-14:44:55", -- [2]
+		"深喉猎豹 14:42:57-14:43:17", -- [3]
+		"风险投资公司露天矿工 14:41:17-14:41:29", -- [4]
+		"风险投资公司露天矿工 14:40:52-14:41:10", -- [5]
+	},
+}

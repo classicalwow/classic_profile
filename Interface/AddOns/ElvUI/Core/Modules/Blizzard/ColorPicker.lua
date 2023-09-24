@@ -9,6 +9,7 @@ local S = E:GetModule('Skins')
 local _G = _G
 local strlen, strjoin, gsub, next = strlen, strjoin, gsub, next
 local tonumber, floor, strsub, wipe = tonumber, floor, strsub, wipe
+
 local CreateFrame = CreateFrame
 local IsControlKeyDown = IsControlKeyDown
 local IsModifierKeyDown = IsModifierKeyDown
@@ -33,7 +34,7 @@ local function UpdateAlpha(tbox)
 		num = 100
 	end
 
-	_G.OpacitySliderFrame:SetValue(1 - (num / 100))
+	_G.OpacitySliderFrame:SetValue(1 - (num * 0.01))
 end
 
 local function expandFromThree(r, g, b)
@@ -110,15 +111,19 @@ local function delayCall()
 		delayFunc = nil
 	end
 end
+
+local last = {r = 0, g = 0, b = 0, a = 0}
 local function onColorSelect(frame, r, g, b)
-	if frame.noColorCallback then return end
+	if frame.noColorCallback then
+		return -- prevent error from E:GrabColorPickerValues, better note in that function
+	elseif r ~= last.r or g ~= last.g or b ~= last.b then
+		last.r, last.g, last.b = r, g, b
+	else -- colors match so we don't need to update, most likely mouse is held down
+		return
+	end
 
 	_G.ColorSwatch:SetColorTexture(r, g, b)
 	UpdateColorTexts(r, g, b)
-
-	if r == 0 and g == 0 and b == 0 then
-		return
-	end
 
 	if not frame:IsVisible() then
 		delayCall()
@@ -128,23 +133,25 @@ local function onColorSelect(frame, r, g, b)
 	end
 end
 
-local function onValueChanged(frame, value)
+local function onValueChanged(_, value)
 	local alpha = alphaValue(value)
-	if frame.lastAlpha ~= alpha then
-		frame.lastAlpha = alpha
+	if last.a ~= alpha then
+		last.a = alpha
+	else -- alpha matched so we don't need to update
+		return
+	end
 
-		UpdateAlphaText(alpha)
+	UpdateAlphaText(alpha)
 
-		if not _G.ColorPickerFrame:IsVisible() then
-			delayCall()
-		else
-			local opacityFunc = _G.ColorPickerFrame.opacityFunc
-			if delayFunc and (delayFunc ~= opacityFunc) then
-				delayFunc = opacityFunc
-			elseif not delayFunc then
-				delayFunc = opacityFunc
-				E:Delay(delayWait, delayCall)
-			end
+	if not _G.ColorPickerFrame:IsVisible() then
+		delayCall()
+	else
+		local opacityFunc = _G.ColorPickerFrame.opacityFunc
+		if delayFunc and (delayFunc ~= opacityFunc) then
+			delayFunc = opacityFunc
+		elseif not delayFunc then
+			delayFunc = opacityFunc
+			E:Delay(delayWait, delayCall)
 		end
 	end
 end
@@ -173,6 +180,13 @@ function B:EnhanceColorPicker()
 	S:HandleButton(_G.ColorPickerOkayButton)
 	S:HandleButton(_G.ColorPickerCancelButton)
 
+	-- Memory Fix, Colorpicker will call the self.func() 100x per second, causing fps/memory issues,
+	-- We overwrite these two scripts and set a limit on how often we allow a call their update functions
+	_G.OpacitySliderFrame:SetScript('OnValueChanged', onValueChanged)
+
+	-- Keep the colors updated
+	Picker:SetScript('OnColorSelect', onColorSelect)
+
 	Picker:HookScript('OnShow', function(frame)
 		-- get color that will be replaced
 		local r, g, b = frame:GetColorRGB()
@@ -184,20 +198,16 @@ function B:EnhanceColorPicker()
 			_G.ColorPPBoxLabelA:Show()
 			_G.ColorPPBoxH:SetScript('OnTabPressed', ColorPPBoxA_SetFocus)
 			UpdateAlphaText()
-			UpdateColorTexts()
 			frame:Width(405)
 		else
 			_G.ColorPPBoxA:Hide()
 			_G.ColorPPBoxLabelA:Hide()
 			_G.ColorPPBoxH:SetScript('OnTabPressed', ColorPPBoxR_SetFocus)
-			UpdateColorTexts()
 			frame:Width(345)
 		end
 
-		-- Memory Fix, Colorpicker will call the self.func() 100x per second, causing fps/memory issues,
-		-- We overwrite these two scripts and set a limit on how often we allow a call their update functions
-		_G.OpacitySliderFrame:SetScript('OnValueChanged', onValueChanged)
-		frame:SetScript('OnColorSelect', onColorSelect)
+		-- update the color boxes
+		UpdateColorTexts(nil, nil, nil, _G.ColorPPBoxH)
 	end)
 
 	-- move the Color Swatch
@@ -211,7 +221,7 @@ function B:EnhanceColorPicker()
 	originalColor:SetColorTexture(0,0,0)
 	-- OldColorSwatch to appear beneath ColorSwatch
 	originalColor:SetDrawLayer('BORDER')
-	originalColor:Point('BOTTOMLEFT', 'ColorSwatch', 'TOPRIGHT', -(swatchWidth/2), -(swatchHeight/3))
+	originalColor:Point('BOTTOMLEFT', 'ColorSwatch', 'TOPRIGHT', -(swatchWidth*0.5), -(swatchHeight/3))
 
 	-- add Color Swatch for the copied color
 	local copiedColor = Picker:CreateTexture('ColorPPCopyColorSwatch')
@@ -314,12 +324,14 @@ function B:EnhanceColorPicker()
 		box:SetJustifyH('RIGHT')
 		box:Height(24)
 		box:SetID(i)
+
 		S:HandleEditBox(box)
+		box:SetFontObject('ElvUIFontNormal')
 
 		-- hex entry box
 		if i == 4 then
 			box:SetMaxLetters(6)
-			box:Width(56)
+			box:Width(65)
 			box:SetNumeric(false)
 		else
 			box:SetMaxLetters(3)
@@ -328,7 +340,7 @@ function B:EnhanceColorPicker()
 		end
 
 		-- label
-		local label = box:CreateFontString('ColorPPBoxLabel'..rgb, 'ARTWORK', 'GameFontNormalSmall')
+		local label = box:CreateFontString('ColorPPBoxLabel'..rgb, 'ARTWORK', 'ElvUIFontNormal')
 		label:Point('RIGHT', 'ColorPPBox'..rgb, 'LEFT', -5, 0)
 		label:SetText(i == 4 and '#' or rgb)
 		label:SetTextColor(1, 1, 1)

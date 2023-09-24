@@ -1,12 +1,11 @@
 local E, L, V, P, G = unpack(ElvUI)
 local mod = E:GetModule('NamePlates')
 local LSM = E.Libs.LSM
-
+local LCG = E.Libs.CustomGlow
 local ElvUF = E.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
 
 local _G = _G
-local ipairs, next, pairs, select = ipairs, next, pairs, select
+local ipairs, next, pairs = ipairs, next, pairs
 local setmetatable, tostring, tonumber, type, unpack = setmetatable, tostring, tonumber, type, unpack
 local strmatch, tinsert, tremove, sort, wipe = strmatch, tinsert, tremove, sort, wipe
 
@@ -17,10 +16,11 @@ local GetSpecializationInfo = GetSpecializationInfo
 local GetSpellCharges = GetSpellCharges
 local GetSpellCooldown = GetSpellCooldown
 local GetSpellInfo = GetSpellInfo
-local GetTalentInfo = GetTalentInfo
 local GetTime = GetTime
 local IsEquippedItem = IsEquippedItem
+local IsPlayerSpell = IsPlayerSpell
 local IsResting = IsResting
+local IsSpellKnownOrOverridesKnown = IsSpellKnownOrOverridesKnown
 local UnitAffectingCombat = UnitAffectingCombat
 local UnitAura = UnitAura
 local UnitCanAttack = UnitCanAttack
@@ -53,7 +53,8 @@ local UnitThreatSituation = UnitThreatSituation
 
 local C_Timer_NewTimer = C_Timer.NewTimer
 local C_PetBattles_IsInBattle = C_PetBattles and C_PetBattles.IsInBattle
-local C_SpecializationInfo_GetPvpTalentSlotInfo = C_SpecializationInfo and C_SpecializationInfo.GetPvpTalentSlotInfo
+
+local BleedList = E.Libs.Dispel:GetBleedList()
 
 local FallbackColor = {r=1, b=1, g=1}
 
@@ -95,7 +96,7 @@ mod.TriggerConditions = {
 		[2] = 'goodTransition',
 		[3] = 'bad'
 	},
-	difficulties = {
+	difficulties = { -- also has IDs maintained in Difficulty Datatext
 		-- dungeons
 		[1] = 'normal',
 		[2] = 'heroic',
@@ -105,6 +106,7 @@ mod.TriggerConditions = {
 		-- raids
 		[7] = 'lfr',
 		[17] = 'lfr',
+		[151] = 'timewalking', -- lfr
 		[14] = 'normal',
 		[15] = 'heroic',
 		[16] = 'mythic',
@@ -113,14 +115,39 @@ mod.TriggerConditions = {
 		[4] = 'legacy25normal',
 		[5] = 'legacy10heroic',
 		[6] = 'legacy25heroic',
+		-- pvp
+		[25] = 'pvp', -- Scenario: World PvP
+		[29] = 'pvp', -- Scenario: PvEvP
+		[32] = 'pvp', -- Scenario: World PvP
+		[34] = 'pvp',
+		[45] = 'pvp', -- Scenario: PvP
+		-- scenario
+		[11] = 'scenario', -- Scenario: Heroic
+		[12] = 'scenario', -- Scenario: Normal
+		[30] = 'scenario', -- Event
+		[38] = 'scenario', -- Normal
+		[39] = 'scenario', -- Heroic
+		[40] = 'scenario', -- Mythic
+		[147] = 'scenario', -- Warfronts
+		[149] = 'scenario', -- Warfronts: Heroic
+		[152] = 'scenario', -- Visions of N'Zoth
+		[153] = 'scenario', -- Teeming Island
+		-- event
+		[18] = 'event', -- raid
+		[19] = 'event', -- party
+		[20] = 'event', -- scenario
 		-- classic / tbc
 		[9] = 'legacy40normal',
 		[148] = 'legacy20normal',
 		[173] = 'normal',
 		[174] = 'heroic',
-		-- wotlk (pretty sure)
-		--[175] = 'legacy10heroic',
-		--[176] = 'legacy25heroic',
+		[185] = 'legacy20normal',
+		[186] = 'legacy40normal',
+		-- wotlk
+		[175] = 'legacy10normal',
+		[176] = 'legacy25normal',
+		[193] = 'legacy10heroic',
+		[194] = 'legacy25heroic'
 	}
 }
 
@@ -333,56 +360,83 @@ end
 
 function mod:StyleFilterDispelCheck(frame, filter)
 	local index = 1
-	local name, _, _, debuffType, _, _, _, isStealable = UnitAura(frame.unit, index, filter)
+	local name, _, _, auraType, _, _, _, isStealable, _, spellID = UnitAura(frame.unit, index, filter)
 	while name do
 		if filter == 'HELPFUL' then
 			if isStealable then
 				return true
 			end
-		elseif debuffType and E:IsDispellableByMe(debuffType) then
+		elseif auraType and E:IsDispellableByMe(auraType) then
+			return true
+		elseif not auraType and BleedList[spellID] and E:IsDispellableByMe('Bleed') then
 			return true
 		end
 
 		index = index + 1
-		name, _, _, debuffType, _, _, _, isStealable = UnitAura(frame.unit, index, filter)
+		name, _, _, auraType, _, _, _, isStealable, _, spellID = UnitAura(frame.unit, index, filter)
 	end
 end
 
-function mod:StyleFilterAuraCheck(frame, names, tickers, filter, mustHaveAll, missing, minTimeLeft, maxTimeLeft, fromMe, fromPet)
-	local total, matches = 0, 0
+function mod:StyleFilterAuraData(frame, filter, unit)
+	local temp = {}
+
+	if unit then
+		local index = 1
+		local name, _, count, _, _, expiration, source, _, _, spellID, _, _, _, _, modRate = UnitAura(unit, index, filter)
+		while name do
+			local info = temp[name] or temp[spellID]
+			if not info then info = {} end
+
+			temp[name] = info
+			temp[spellID] = info
+
+			info[index] = { count = count, expiration = expiration, source = source, modRate = modRate }
+
+			index = index + 1
+			name, _, count, _, _, expiration, source, _, _, spellID, _, _, _, _, modRate = UnitAura(unit, index, filter)
+		end
+	end
+
+	return temp
+end
+
+function mod:StyleFilterAuraCheck(frame, names, tickers, filter, mustHaveAll, missing, minTimeLeft, maxTimeLeft, fromMe, fromPet, onMe, onPet)
+	local total, matches, now = 0, 0, GetTime()
+	local temp -- data of current auras
+
 	for key, value in pairs(names) do
 		if value then -- only if they are turned on
 			total = total + 1 -- keep track of the names
 
-			local index = 1
-			local name, _, count, _, _, expiration, source, _, _, spellID, _, _, _, _, modRate = UnitAura(frame.unit, index, filter)
-			while name do
-				local spell, stacks, failed = strmatch(key, mod.StyleFilterStackPattern)
-				if stacks ~= '' then failed = not (count and count >= tonumber(stacks)) end
-				if not failed and ((name and name == spell) or (spellID and spellID == tonumber(spell))) then
-					local isMe, isPet = source == 'player' or source == 'vehicle', source == 'pet'
-					if fromMe and fromPet and (isMe or isPet) or (fromMe and isMe) or (fromPet and isPet) or (not fromMe and not fromPet) then
-						local hasMinTime = minTimeLeft and minTimeLeft ~= 0
-						local hasMaxTime = maxTimeLeft and maxTimeLeft ~= 0
-						local timeLeft = (hasMinTime or hasMaxTime) and expiration and ((expiration - GetTime()) / (modRate or 1))
-						local minTimeAllow = not hasMinTime or (timeLeft and timeLeft > minTimeLeft)
-						local maxTimeAllow = not hasMaxTime or (timeLeft and timeLeft < maxTimeLeft)
-
-						if minTimeAllow and maxTimeAllow then
-							matches = matches + 1 -- keep track of how many matches we have
-						end
-
-						if timeLeft then -- if we use a min/max time setting; we must create a delay timer
-							if not tickers[matches] then tickers[matches] = {} end
-							if hasMinTime then mod:StyleFilterAuraWait(frame, tickers[matches], 'hasMinTimer', timeLeft, minTimeLeft) end
-							if hasMaxTime then mod:StyleFilterAuraWait(frame, tickers[matches], 'hasMaxTimer', timeLeft, maxTimeLeft) end
-						end
-					end
-				end
-
-				index = index + 1
-				name, _, count, _, _, expiration, source, _, _, spellID, _, _, _, _, modRate = UnitAura(frame.unit, index, filter)
+			if not temp then
+				temp = mod:StyleFilterAuraData(frame, filter, (onMe and 'player') or (onPet and 'pet') or frame.unit)
 			end
+
+			local spell, count = strmatch(key, mod.StyleFilterStackPattern)
+			local info = temp[spell] or temp[tonumber(spell)]
+
+			if info then
+				local stacks = tonumber(count) -- send stacks to nil or int
+				local hasMinTime = minTimeLeft and minTimeLeft ~= 0
+				local hasMaxTime = maxTimeLeft and maxTimeLeft ~= 0
+
+				for _, data in pairs(info) do -- need to loop for the sources, not all the spells though
+					if not stacks or (data.count and data.count >= stacks) then
+						local isMe, isPet = data.source == 'player' or data.source == 'vehicle', data.source == 'pet'
+						if fromMe and fromPet and (isMe or isPet) or (fromMe and isMe) or (fromPet and isPet) or (not fromMe and not fromPet) then
+							local timeLeft = (hasMinTime or hasMaxTime) and data.expiration and ((data.expiration - now) / (data.modRate or 1))
+							local minTimeAllow = not hasMinTime or (timeLeft and timeLeft > minTimeLeft)
+							local maxTimeAllow = not hasMaxTime or (timeLeft and timeLeft < maxTimeLeft)
+
+							if minTimeAllow and maxTimeAllow then
+								matches = matches + 1 -- keep track of how many matches we have
+							end
+
+							if timeLeft then -- if we use a min/max time setting; we must create a delay timer
+								if not tickers[matches] then tickers[matches] = {} end
+								if hasMinTime then mod:StyleFilterAuraWait(frame, tickers[matches], 'hasMinTimer', timeLeft, minTimeLeft) end
+								if hasMaxTime then mod:StyleFilterAuraWait(frame, tickers[matches], 'hasMaxTimer', timeLeft, maxTimeLeft) end
+			end end end end end
 
 			local stale = matches + 1
 			local ticker = tickers[stale]
@@ -392,8 +446,10 @@ function mod:StyleFilterAuraCheck(frame, names, tickers, filter, mustHaveAll, mi
 
 				stale = stale + 1
 				ticker = tickers[stale]
-			end
-		end
+	end end end
+
+	if temp then
+		wipe(temp) -- dont need it anymore
 	end
 
 	if total == 0 then
@@ -457,7 +513,7 @@ function mod:StyleFilterSetupFlash(FlashTexture)
 	return anim
 end
 
-function mod:StyleFilterBaseUpdate(frame, show)
+function mod:StyleFilterBaseUpdate(frame, state)
 	if not frame.StyleFilterBaseAlreadyUpdated then -- skip updates from UpdatePlateBase
 		mod:UpdatePlate(frame, true) -- enable elements back
 	end
@@ -481,7 +537,7 @@ function mod:StyleFilterBaseUpdate(frame, show)
 		mod:SetupTarget(frame, db.nameOnly) -- so the classbar will show up
 	end
 
-	if show and not mod.SkipFading then
+	if state and not mod.SkipFading then
 		mod:PlateFade(frame, mod.db.fadeIn and 1 or 0, 0, 1) -- fade those back in so it looks clean
 	end
 end
@@ -503,87 +559,24 @@ do
 	end
 end
 
-function mod:StyleFilterSetChanges(frame, actions, HealthColor, PowerColor, Borders, HealthFlash, HealthTexture, Scale, Alpha, NameTag, PowerTag, HealthTag, TitleTag, LevelTag, Portrait, NameOnly, Visibility)
+function mod:StyleFilterSetChanges(frame, actions, HealthColor, PowerColor, Borders, HealthFlash, HealthTexture, HealthGlow, Scale, Alpha, NameTag, PowerTag, HealthTag, TitleTag, LevelTag, Portrait, NameOnly, Visibility)
 	local c = frame.StyleFilterChanges
 	if not c then return end
 
 	local db = mod:PlateDB(frame)
 
-	if Visibility then
-		c.Visibility = true
-		mod:DisablePlate(frame) -- disable the plate elements
-		frame:ClearAllPoints() -- lets still move the frame out cause its clickable otherwise
-		frame:Point('TOP', E.UIParent, 'BOTTOM', 0, -500)
-		return -- We hide it. Lets not do other things (no point)
-	end
-	if HealthColor then
-		local hc = (actions.color.healthClass and frame.classColor) or actions.color.healthColor
-		c.HealthColor = hc -- used by Health_UpdateColor
+	if Visibility or NameOnly then
+		c.NameOnly, c.Visibility = NameOnly, Visibility
 
-		frame.Health:SetStatusBarColor(hc.r, hc.g, hc.b, hc.a or 1)
-		frame.Cutaway.Health:SetVertexColor(hc.r * 1.5, hc.g * 1.5, hc.b * 1.5, hc.a or 1)
-	end
-	if PowerColor then
-		local pc = (actions.color.powerClass and frame.classColor) or actions.color.powerColor
-		c.PowerColor = true
+		mod:DisablePlate(frame, NameOnly, NameOnly)
 
-		frame.Power:SetStatusBarColor(pc.r, pc.g, pc.b, pc.a or 1)
-		frame.Cutaway.Power:SetVertexColor(pc.r * 1.5, pc.g * 1.5, pc.b * 1.5, pc.a or 1)
-	end
-	if Borders then
-		local bc = (actions.color.borderClass and frame.classColor) or actions.color.borderColor
-		c.Borders = true
-
-		mod:StyleFilterBorderLock(frame.Health.backdrop, bc.r, bc.g, bc.b, bc.a or 1)
-
-		if frame.Power.backdrop and db.power.enable then
-			mod:StyleFilterBorderLock(frame.Power.backdrop, bc.r, bc.g, bc.b, bc.a or 1)
+		if Visibility then
+			frame:ClearAllPoints() -- lets still move the frame out cause its clickable otherwise
+			frame:Point('TOP', E.UIParent, 'BOTTOM', 0, -500)
+			return -- We hide it. Lets not do other things (no point)
 		end
 	end
-	if HealthFlash then
-		local fc = (actions.flash.class and frame.classColor) or actions.flash.color
-		c.HealthFlash = true
 
-		if not HealthTexture then
-			frame.HealthFlashTexture:SetTexture(LSM:Fetch('statusbar', mod.db.statusbar))
-		end
-
-		frame.HealthFlashTexture:SetVertexColor(fc.r, fc.g, fc.b)
-
-		local anim = frame.HealthFlashTexture.anim or mod:StyleFilterSetupFlash(frame.HealthFlashTexture)
-		anim.fadein:SetToAlpha(fc.a or 1)
-		anim.fadeout:SetFromAlpha(fc.a or 1)
-
-		frame.HealthFlashTexture:Show()
-		E:Flash(frame.HealthFlashTexture, actions.flash.speed * 0.1, true)
-	end
-	if HealthTexture then
-		local tx = LSM:Fetch('statusbar', actions.texture.texture)
-		c.HealthTexture = true
-
-		frame.Health:SetStatusBarTexture(tx)
-
-		if HealthFlash then
-			frame.HealthFlashTexture:SetTexture(tx)
-		end
-	end
-	if Scale then
-		c.Scale = true
-		mod:ScalePlate(frame, actions.scale)
-	end
-	if Alpha then
-		c.Alpha = true
-		mod:PlateFade(frame, mod.db.fadeIn and 1 or 0, frame:GetAlpha(), actions.alpha / 100)
-	end
-	if Portrait then
-		c.Portrait = true
-		mod:Update_Portrait(frame)
-		frame.Portrait:ForceUpdate()
-	end
-	if NameOnly then
-		c.NameOnly = true
-		mod:DisablePlate(frame, true, true)
-	end
 	-- Keeps Tag changes after NameOnly
 	if NameTag then
 		c.NameTag = true
@@ -610,26 +603,133 @@ function mod:StyleFilterSetChanges(frame, actions, HealthColor, PowerColor, Bord
 		frame:Tag(frame.Level, actions.tags.level)
 		frame.Level:UpdateTag()
 	end
-end
 
-function mod:StyleFilterClearChanges(frame, HealthColor, PowerColor, Borders, HealthFlash, HealthTexture, Scale, Alpha, NameTag, PowerTag, HealthTag, TitleTag, LevelTag, Portrait, NameOnly, Visibility)
-	local db = mod:PlateDB(frame)
-
-	if frame.StyleFilterChanges then
-		wipe(frame.StyleFilterChanges)
+	-- generic stuff
+	if Scale then
+		c.Scale = true
+		mod:ScalePlate(frame, actions.scale)
+	end
+	if Alpha then
+		c.Alpha = true
+		mod:PlateFade(frame, mod.db.fadeIn and 1 or 0, frame:GetAlpha(), actions.alpha * 0.01)
+	end
+	if Portrait then
+		c.Portrait = true
+		mod:Update_Portrait(frame)
+		frame.Portrait:ForceUpdate()
 	end
 
-	if Visibility then
-		mod:StyleFilterBaseUpdate(frame, true)
+	if NameOnly then
+		return -- skip the other stuff now
+	end
+
+	-- bar stuff
+	if HealthColor then
+		local hc = (actions.color.healthClass and frame.classColor) or actions.color.healthColor
+		c.HealthColor = hc -- used by Health_UpdateColor
+
+		frame.Health:SetStatusBarColor(hc.r, hc.g, hc.b, hc.a or 1)
+		frame.Cutaway.Health:SetVertexColor(hc.r * 1.5, hc.g * 1.5, hc.b * 1.5, hc.a or 1)
+	end
+	if PowerColor then
+		local pc = (actions.color.powerClass and frame.classColor) or actions.color.powerColor
+		c.PowerColor = true
+
+		frame.Power:SetStatusBarColor(pc.r, pc.g, pc.b, pc.a or 1)
+		frame.Cutaway.Power:SetVertexColor(pc.r * 1.5, pc.g * 1.5, pc.b * 1.5, pc.a or 1)
+	end
+	if Borders then
+		local bc = (actions.color.borderClass and frame.classColor) or actions.color.borderColor
+		c.Borders = true
+
+		mod:StyleFilterBorderLock(frame.Health.backdrop, bc.r, bc.g, bc.b, bc.a or 1)
+
+		if frame.Power.backdrop and db.power.enable then
+			mod:StyleFilterBorderLock(frame.Power.backdrop, bc.r, bc.g, bc.b, bc.a or 1)
+		end
+	end
+	if HealthGlow then
+		c.HealthGlow = actions.glow.style
+		LCG.ShowOverlayGlow(frame.Health, actions.glow)
+	end
+	if HealthFlash then
+		local fc = (actions.flash.class and frame.classColor) or actions.flash.color
+		c.HealthFlash = true
+
+		if not HealthTexture then
+			frame.HealthFlashTexture:SetTexture(LSM:Fetch('statusbar', mod.db.statusbar))
+		end
+
+		frame.HealthFlashTexture:SetVertexColor(fc.r, fc.g, fc.b)
+
+		local anim = frame.HealthFlashTexture.anim or mod:StyleFilterSetupFlash(frame.HealthFlashTexture)
+		anim.fadein:SetToAlpha(fc.a or 1)
+		anim.fadeout:SetFromAlpha(fc.a or 1)
+
+		frame.HealthFlashTexture:Show()
+		E:Flash(frame.HealthFlashTexture, actions.flash.speed * 0.1, true)
+	end
+	if HealthTexture then
+		local tx = LSM:Fetch('statusbar', actions.texture.texture)
+		c.HealthTexture = true
+
+		frame.Health.barTexture:SetTexture(tx)
+
+		if HealthFlash then
+			frame.HealthFlashTexture:SetTexture(tx)
+		end
+	end
+end
+
+function mod:StyleFilterClearVisibility(frame, previous)
+	local state = mod:StyleFilterHiddenState(frame.StyleFilterChanges)
+
+	if (previous == 1 or previous == 3) and (state ~= 1 and state ~= 3) then
 		frame:ClearAllPoints() -- pull the frame back in
 		frame:Point('CENTER')
 	end
+
+	if previous and not state then
+		mod:StyleFilterBaseUpdate(frame, state == 1)
+	end
+end
+
+function mod:StyleFilterClearChanges(frame, HealthColor, PowerColor, Borders, HealthFlash, HealthTexture, HealthGlow, Scale, Alpha, NameTag, PowerTag, HealthTag, TitleTag, LevelTag, Portrait, NameOnly, Visibility)
+	local db = mod:PlateDB(frame)
+
+	local c = frame.StyleFilterChanges
+	if c then wipe(c) end
+
+	if not NameOnly then -- Only update these if it wasn't NameOnly. Otherwise, it leads to `Update_Tags` which does the job.
+		if NameTag then frame:Tag(frame.Name, db.name.format) frame.Name:UpdateTag() end
+		if PowerTag then frame:Tag(frame.Power.Text, db.power.text.format) frame.Power.Text:UpdateTag() end
+		if HealthTag then frame:Tag(frame.Health.Text, db.health.text.format) frame.Health.Text:UpdateTag() end
+		if TitleTag then frame:Tag(frame.Title, db.title.format) frame.Title:UpdateTag() end
+		if LevelTag then frame:Tag(frame.Level, db.level.format) frame.Level:UpdateTag() end
+	end
+
+	-- generic stuff
+	if Scale then
+		mod:ScalePlate(frame, frame.ThreatScale or 1)
+	end
+	if Alpha then
+		mod:PlateFade(frame, mod.db.fadeIn and 1 or 0, (frame.FadeObject and frame.FadeObject.endAlpha) or 0.5, 1)
+	end
+	if Portrait then
+		mod:Update_Portrait(frame)
+		frame.Portrait:ForceUpdate()
+	end
+
+	-- bar stuff
 	if HealthColor then
 		local h = frame.Health
 		if h.r and h.g and h.b then
 			h:SetStatusBarColor(h.r, h.g, h.b)
 			frame.Cutaway.Health:SetVertexColor(h.r * 1.5, h.g * 1.5, h.b * 1.5, 1)
 		end
+	end
+	if HealthGlow then
+		LCG.HideOverlayGlow(frame.Health, HealthGlow)
 	end
 	if PowerColor then
 		local pc = mod.db.colors.power[frame.Power.token] or _G.PowerBarColor[frame.Power.token] or FallbackColor
@@ -649,26 +749,7 @@ function mod:StyleFilterClearChanges(frame, HealthColor, PowerColor, Borders, He
 	end
 	if HealthTexture then
 		local tx = LSM:Fetch('statusbar', mod.db.statusbar)
-		frame.Health:SetStatusBarTexture(tx)
-	end
-	if Scale then
-		mod:ScalePlate(frame, frame.ThreatScale or 1)
-	end
-	if Alpha then
-		mod:PlateFade(frame, mod.db.fadeIn and 1 or 0, (frame.FadeObject and frame.FadeObject.endAlpha) or 0.5, 1)
-	end
-	if Portrait then
-		mod:Update_Portrait(frame)
-		frame.Portrait:ForceUpdate()
-	end
-	if NameOnly then
-		mod:StyleFilterBaseUpdate(frame)
-	else -- Only update these if it wasn't NameOnly. Otherwise, it leads to `Update_Tags` which does the job.
-		if NameTag then frame:Tag(frame.Name, db.name.format) frame.Name:UpdateTag() end
-		if PowerTag then frame:Tag(frame.Power.Text, db.power.text.format) frame.Power.Text:UpdateTag() end
-		if HealthTag then frame:Tag(frame.Health.Text, db.health.text.format) frame.Health.Text:UpdateTag() end
-		if TitleTag then frame:Tag(frame.Title, db.title.format) frame.Title:UpdateTag() end
-		if LevelTag then frame:Tag(frame.Level, db.level.format) frame.Level:UpdateTag() end
+		frame.Health.barTexture:SetTexture(tx)
 	end
 end
 
@@ -893,13 +974,13 @@ function mod:StyleFilterConditionCheck(frame, filter, trigger)
 	end
 
 	-- Player Vehicle
-	if E.Retail and (trigger.inVehicle or trigger.outOfVehicle) then
+	if (E.Retail or E.Wrath) and (trigger.inVehicle or trigger.outOfVehicle) then
 		local inVehicle = UnitInVehicle('player')
 		if (trigger.inVehicle and inVehicle) or (trigger.outOfVehicle and not inVehicle) then passed = true else return end
 	end
 
 	-- Unit Vehicle
-	if E.Retail and (trigger.inVehicleUnit or trigger.outOfVehicleUnit) then
+	if (E.Retail or E.Wrath) and (trigger.inVehicleUnit or trigger.outOfVehicleUnit) then
 		if (trigger.inVehicleUnit and frame.inVehicle) or (trigger.outOfVehicleUnit and not frame.inVehicle) then passed = true else return end
 	end
 
@@ -1047,34 +1128,20 @@ function mod:StyleFilterConditionCheck(frame, filter, trigger)
 		end
 	end
 
-	-- Talents
-	if E.Retail and trigger.talent.enabled then
-		local pvpTalent = trigger.talent.type == 'pvp'
-		local selected, complete
-
-		for i = 1, (pvpTalent and 4) or 7 do
-			local Tier = 'tier'..i
-			local Talent = trigger.talent[Tier]
-			if trigger.talent[Tier..'enabled'] and Talent.column > 0 then
-				if pvpTalent then
-					-- column is actually the talentID for pvpTalents
-					local slotInfo = C_SpecializationInfo_GetPvpTalentSlotInfo(i)
-					selected = (slotInfo and slotInfo.selectedTalentID) == Talent.column
+	-- Known Spells (new talents)
+	if trigger.known and trigger.known.spells and next(trigger.known.spells) then
+		for spell, value in pairs(trigger.known.spells) do
+			if value then -- only run if at least one is selected
+				local known
+				if trigger.known.playerSpell then
+					known = IsPlayerSpell(spell)
 				else
-					selected = select(4, GetTalentInfo(i, Talent.column, 1))
+					known = IsSpellKnownOrOverridesKnown(spell)
 				end
 
-				if (selected and not Talent.missing) or (Talent.missing and not selected) then
-					complete = true
-					if not trigger.talent.requireAll then
-						break -- break when not using requireAll because we matched one
-					end
-				elseif trigger.talent.requireAll then
-					complete = false -- fail because requireAll
-					break
-		end end end
-
-		if complete then passed = true else return end
+				if (not trigger.known.notKnown and known) or (trigger.known.notKnown and not known) then passed = true else return end
+			end
+		end
 	end
 
 	-- Casting
@@ -1129,7 +1196,7 @@ function mod:StyleFilterConditionCheck(frame, filter, trigger)
 
 		-- Names / Spell IDs
 		if trigger.buffs.names and next(trigger.buffs.names) then
-			local buff = mod:StyleFilterAuraCheck(frame, trigger.buffs.names, frame.Buffs_.tickers, 'HELPFUL', trigger.buffs.mustHaveAll, trigger.buffs.missing, trigger.buffs.minTimeLeft, trigger.buffs.maxTimeLeft, trigger.buffs.fromMe, trigger.buffs.fromPet)
+			local buff = mod:StyleFilterAuraCheck(frame, trigger.buffs.names, frame.Buffs_.tickers, 'HELPFUL', trigger.buffs.mustHaveAll, trigger.buffs.missing, trigger.buffs.minTimeLeft, trigger.buffs.maxTimeLeft, trigger.buffs.fromMe, trigger.buffs.fromPet, trigger.buffs.onMe, trigger.buffs.onPet)
 			if buff ~= nil then -- ignore if none are selected
 				if buff then passed = true else return end
 			end
@@ -1145,7 +1212,7 @@ function mod:StyleFilterConditionCheck(frame, filter, trigger)
 		end
 
 		-- Names / Spell IDs
-		local debuff = mod:StyleFilterAuraCheck(frame, trigger.debuffs.names, frame.Debuffs_.tickers, 'HARMFUL', trigger.debuffs.mustHaveAll, trigger.debuffs.missing, trigger.debuffs.minTimeLeft, trigger.debuffs.maxTimeLeft, trigger.debuffs.fromMe, trigger.debuffs.fromPet)
+		local debuff = mod:StyleFilterAuraCheck(frame, trigger.debuffs.names, frame.Debuffs_.tickers, 'HARMFUL', trigger.debuffs.mustHaveAll, trigger.debuffs.missing, trigger.debuffs.minTimeLeft, trigger.debuffs.maxTimeLeft, trigger.debuffs.fromMe, trigger.debuffs.fromPet, trigger.debuffs.onMe, trigger.debuffs.onPet)
 		if debuff ~= nil then -- ignore if none are selected
 			if debuff then passed = true else return end
 		end
@@ -1196,6 +1263,7 @@ function mod:StyleFilterPass(frame, actions)
 		(healthBarShown and actions.color and actions.color.border and frame.Health.backdrop), --Borders
 		(healthBarShown and actions.flash and actions.flash.enable and frame.HealthFlashTexture), --HealthFlash
 		(healthBarShown and actions.texture and actions.texture.enable), --HealthTexture
+		(healthBarShown and actions.glow and actions.glow.enable), --HealthGlow
 		(healthBarShown and actions.scale and actions.scale ~= 1), --Scale
 		(actions.alpha and actions.alpha ~= -1), --Alpha
 		(actions.tags and actions.tags.name and actions.tags.name ~= ''), --NameTag
@@ -1214,7 +1282,7 @@ function mod:StyleFilterClear(frame)
 
 	local c = frame.StyleFilterChanges
 	if c and next(c) then
-		mod:StyleFilterClearChanges(frame, c.HealthColor, c.PowerColor, c.Borders, c.HealthFlash, c.HealthTexture, c.Scale, c.Alpha, c.NameTag, c.PowerTag, c.HealthTag, c.TitleTag, c.LevelTag, c.Portrait, c.NameOnly, c.Visibility)
+		mod:StyleFilterClearChanges(frame, c.HealthColor, c.PowerColor, c.Borders, c.HealthFlash, c.HealthTexture, c.HealthGlow, c.Scale, c.Alpha, c.NameTag, c.PowerTag, c.HealthTag, c.TitleTag, c.LevelTag, c.Portrait, c.NameOnly, c.Visibility)
 	end
 end
 
@@ -1226,7 +1294,12 @@ end
 
 function mod:StyleFilterVehicleFunction(_, unit)
 	unit = unit or self.unit
-	self.inVehicle = E.Retail and UnitInVehicle(unit) or nil
+	self.inVehicle = (E.Retail or E.Wrath) and UnitInVehicle(unit) or nil
+end
+
+function mod:StyleFilterTargetFunction(_, unit)
+	unit = unit or self.unit
+	self.isTargetingMe = UnitIsUnit(unit..'target', 'player') or nil
 end
 
 mod.StyleFilterEventFunctions = { -- a prefunction to the injected ouf watch
@@ -1239,20 +1312,24 @@ mod.StyleFilterEventFunctions = { -- a prefunction to the injected ouf watch
 	RAID_TARGET_UPDATE = function(self)
 		self.RaidTargetIndex = self.unit and GetRaidTargetIndex(self.unit) or nil
 	end,
-	UNIT_TARGET = function(self, _, unit)
-		unit = unit or self.unit
-		self.isTargetingMe = UnitIsUnit(unit..'target', 'player') or nil
-	end,
+	UNIT_TARGET = mod.StyleFilterTargetFunction,
+	UNIT_THREAT_LIST_UPDATE = mod.StyleFilterTargetFunction,
 	UNIT_ENTERED_VEHICLE = mod.StyleFilterVehicleFunction,
 	UNIT_EXITED_VEHICLE = mod.StyleFilterVehicleFunction,
 	VEHICLE_UPDATE = mod.StyleFilterVehicleFunction
+}
+
+mod.StyleFilterSetVariablesIgnored = {
+	UNIT_THREAT_LIST_UPDATE = true,
+	UNIT_ENTERED_VEHICLE = true,
+	UNIT_EXITED_VEHICLE = true
 }
 
 function mod:StyleFilterSetVariables(nameplate)
 	if nameplate == _G.ElvNP_Test then return end
 
 	for event, func in pairs(mod.StyleFilterEventFunctions) do
-		if event ~= 'UNIT_ENTERED_VEHICLE' and event ~= 'UNIT_EXITED_VEHICLE' then -- just need one call to StyleFilterVehicleFunction
+		if not mod.StyleFilterSetVariablesIgnored[event] then -- ignore extras as we just need one call to Vehicle and Target
 			func(nameplate)
 		end
 	end
@@ -1304,10 +1381,10 @@ mod.StyleFilterDefaultEvents = { -- list of events style filter uses to populate
 	VEHICLE_UPDATE = true
 }
 
-if E.Retail then
-	mod.StyleFilterDefaultEvents.UNIT_HEALTH = false
-else
+if E.Classic then
 	mod.StyleFilterDefaultEvents.UNIT_HEALTH_FREQUENT = false
+else
+	mod.StyleFilterDefaultEvents.UNIT_HEALTH = false
 end
 
 mod.StyleFilterCastEvents = {
@@ -1365,12 +1442,16 @@ function mod:StyleFilterConfigure()
 					end
 				end
 
-				if t.isTapDenied or t.isNotTapDenied then	events.UNIT_FLAGS = 1 end
-				if t.targetMe or t.notTargetMe then			events.UNIT_TARGET = 1 end
 				if t.keyMod and t.keyMod.enable then		events.MODIFIER_STATE_CHANGED = 1 end
 				if t.isFocus or t.notFocus then				events.PLAYER_FOCUS_CHANGED = 1 end
 				if t.isResting then							events.PLAYER_UPDATE_RESTING = 1 end
+				if t.isTapDenied or t.isNotTapDenied then	events.UNIT_FLAGS = 1 end
 				if t.isPet then								events.UNIT_PET = 1 end
+
+				if t.targetMe or t.notTargetMe then
+					events.UNIT_THREAT_LIST_UPDATE = 1
+					events.UNIT_TARGET = 1
+				end
 
 				if t.raidTarget and (t.raidTarget.star or t.raidTarget.circle or t.raidTarget.diamond or t.raidTarget.triangle or t.raidTarget.moon or t.raidTarget.square or t.raidTarget.cross or t.raidTarget.skull) then
 					events.RAID_TARGET_UPDATE = 1
@@ -1385,10 +1466,10 @@ function mod:StyleFilterConfigure()
 				if t.healthThreshold then
 					events.UNIT_MAXHEALTH = 1
 
-					if E.Retail then
-						events.UNIT_HEALTH = 1
-					else
+					if E.Classic then
 						events.UNIT_HEALTH_FREQUENT = 1
+					else
+						events.UNIT_HEALTH = 1
 					end
 				end
 
@@ -1503,8 +1584,14 @@ function mod:StyleFilterConfigure()
 	end
 end
 
+function mod:StyleFilterHiddenState(c)
+	return c and ((c.NameOnly and c.Visibility and 3) or (c.NameOnly and 2) or (c.Visibility and 1))
+end
+
 function mod:StyleFilterUpdate(frame, event)
 	if frame == _G.ElvNP_Test or not frame.StyleFilterChanges or not mod.StyleFilterTriggerEvents[event] then return end
+
+	local state = mod:StyleFilterHiddenState(frame.StyleFilterChanges)
 
 	mod:StyleFilterClear(frame)
 
@@ -1514,6 +1601,8 @@ function mod:StyleFilterUpdate(frame, event)
 			mod:StyleFilterConditionCheck(frame, filter, filter.triggers)
 		end
 	end
+
+	mod:StyleFilterClearVisibility(frame, state)
 end
 
 do -- oUF style filter inject watch functions without actually registering any events
@@ -1548,7 +1637,7 @@ do -- oUF style filter inject watch functions without actually registering any e
 		end
 
 		local auraEvent = event == 'UNIT_AURA'
-		if auraEvent and ElvUF:ShouldSkipAuraUpdate(frame, event, arg1, arg2, arg3) then
+		if auraEvent and E.Retail and ElvUF:ShouldSkipAuraUpdate(frame, event, arg1, arg2, arg3) then
 			return
 		end
 

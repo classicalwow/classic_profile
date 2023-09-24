@@ -7,8 +7,9 @@ local S = E:GetModule('Skins')
 local _G = _G
 local unpack = unpack
 local format = format
-local pairs = pairs
 local ipairs = ipairs
+local pairs = pairs
+local strsub = strsub
 local tinsert = tinsert
 
 local SetCVar = SetCVar
@@ -24,11 +25,11 @@ local FCF_OpenNewWindow = FCF_OpenNewWindow
 local FCF_ResetChatWindows = FCF_ResetChatWindows
 local FCF_SetChatWindowFontSize = FCF_SetChatWindowFontSize
 local FCF_SavePositionAndDimensions = FCF_SavePositionAndDimensions
+local SetChatColorNameByClass = SetChatColorNameByClass
 local ChatFrame_AddChannel = ChatFrame_AddChannel
 local ChatFrame_RemoveChannel = ChatFrame_RemoveChannel
 local ChatFrame_AddMessageGroup = ChatFrame_AddMessageGroup
 local ChatFrame_RemoveAllMessageGroups = ChatFrame_RemoveAllMessageGroups
-local ToggleChatColorNamesByClassGroup = ToggleChatColorNamesByClassGroup
 local VoiceTranscriptionFrame_UpdateEditBox = VoiceTranscriptionFrame_UpdateEditBox
 local VoiceTranscriptionFrame_UpdateVisibility = VoiceTranscriptionFrame_UpdateVisibility
 local VoiceTranscriptionFrame_UpdateVoiceTab = VoiceTranscriptionFrame_UpdateVoiceTab
@@ -54,6 +55,17 @@ local ELV_TOONS = {
 	['Zinxbe-Spirestone']		= true,
 	['Whorlock-Spirestone']		= true,
 }
+
+local function ToggleChatColorNamesByClassGroup(checked, group)
+	local info = _G.ChatTypeGroup[group]
+	if info then
+		for _, value in pairs(info) do
+			SetChatColorNameByClass(strsub(value, 10), checked)
+		end
+	else
+		SetChatColorNameByClass(group, checked)
+	end
+end
 
 function E:SetupChat(noDisplayMsg)
 	FCF_ResetChatWindows()
@@ -117,9 +129,9 @@ function E:SetupChat(noDisplayMsg)
 	end
 
 	-- Adjust Chat Colors
-	ChangeChatColor('CHANNEL1', 195/255, 230/255, 232/255) -- General
-	ChangeChatColor('CHANNEL2', 232/255, 158/255, 121/255) -- Trade
-	ChangeChatColor('CHANNEL3', 232/255, 228/255, 121/255) -- Local Defense
+	ChangeChatColor('CHANNEL1', 0.76, 0.90, 0.91) -- General
+	ChangeChatColor('CHANNEL2', 0.91, 0.62, 0.47) -- Trade
+	ChangeChatColor('CHANNEL3', 0.91, 0.89, 0.47) -- Local Defense
 
 	if E.private.chat.enable then
 		CH:PositionChats()
@@ -152,6 +164,7 @@ function E:SetupCVars(noDisplayMsg)
 	SetCVar('threatWarning', 3)
 	SetCVar('alwaysShowActionBars', 1)
 	SetCVar('lockActionBars', 1)
+	SetCVar('ActionButtonUseKeyDown', 1)
 	SetCVar('fstack_preferParentKeys', 0) -- Add back the frame names via fstack!
 
 	if E.Retail then
@@ -160,8 +173,11 @@ function E:SetupCVars(noDisplayMsg)
 		SetCVar('chatClassColorOverride', 0)
 	end
 
-	_G.InterfaceOptionsActionBarsPanelPickupActionKeyDropDown:SetValue('SHIFT')
-	_G.InterfaceOptionsActionBarsPanelPickupActionKeyDropDown:RefreshValue()
+	local ActionButtonPickUp = _G.InterfaceOptionsActionBarsPanelPickupActionKeyDropDown
+	if ActionButtonPickUp then
+		ActionButtonPickUp:SetValue('SHIFT')
+		ActionButtonPickUp:RefreshValue()
+	end
 
 	if E.private.nameplates.enable then
 		NP:CVarReset()
@@ -229,7 +245,7 @@ function E:SetupTheme(theme, noDisplayMsg)
 	if theme == 'class' then
 		E.db.general.valuecolor = E:GetColor(classColor.r, classColor.g, classColor.b)
 	else
-		E.db.general.valuecolor = E:GetColor(23/255, 132/255, 209/255)
+		E.db.general.valuecolor = E:GetColor(0.09, 0.52, 0.82)
 	end
 
 	E:UpdateStart(true, true)
@@ -251,6 +267,7 @@ function E:SetupLayout(layout, noDataReset, noDisplayMsg)
 
 		--Shared base layout, tweaks to individual layouts will be below
 		E:ResetMovers()
+
 		if not E.db.movers then
 			E.db.movers = {}
 		end
@@ -315,18 +332,17 @@ function E:SetupLayout(layout, noDataReset, noDisplayMsg)
 			E.db.general.totems.size = 50
 			E.db.general.totems.spacing = 8
 			E.db.general.autoTrackReputation = true
-			E.db.general.bonusObjectivePosition = "AUTO"
 		--Movers
 			for mover, position in pairs(E.LayoutMoverPositions.ALL) do
 				E.db.movers[mover] = position
 				E:SaveMoverDefaultPosition(mover)
 			end
+
 		--Tooltip
-			E.db.tooltip.healthBar.fontOutline = 'MONOCHROMEOUTLINE'
-			E.db.tooltip.healthBar.height = 12
 			E.db.movers.TooltipMover = nil --ensure that this mover gets completely reset.. yes E:ResetMover call above doesn't work.
-			E.db.tooltip.healthBar.font = "PT Sans Narrow"
-			E.db.tooltip.healthBar.fontOutline = "NONE"
+			E.db.tooltip.healthBar.height = 12
+			E.db.tooltip.healthBar.font = 'PT Sans Narrow'
+			E.db.tooltip.healthBar.fontOutline = 'NONE'
 			E.db.tooltip.healthBar.fontSize = 12
 		--Nameplates
 			E.db.nameplates.colors.castNoInterruptColor = {r = 0.78, g=0.25, b=0.25}
@@ -338,15 +354,13 @@ function E:SetupLayout(layout, noDataReset, noDisplayMsg)
 			E.db.nameplates.colors.threat.badColor = {r = 0.78, g=0.25, b=0.25}
 			E.db.nameplates.colors.threat.goodColor = {r = 0.29, g=0.67, b=0.30}
 			E.db.nameplates.colors.threat.goodTransition = {r = 0.85, g=0.76, b=0.36}
-			E.db.nameplates.units.ENEMY_NPC.health.text.format = ""
-			E.db.nameplates.units.ENEMY_PLAYER.health.text.format = ""
+			E.db.nameplates.units.ENEMY_NPC.health.text.format = ''
+			E.db.nameplates.units.ENEMY_PLAYER.health.text.format = ''
 			E.db.nameplates.units.ENEMY_PLAYER.portrait.classicon = false
 			E.db.nameplates.units.ENEMY_PLAYER.portrait.enable = true
-			E.db.nameplates.units.ENEMY_PLAYER.portrait.position = "LEFT"
+			E.db.nameplates.units.ENEMY_PLAYER.portrait.position = 'LEFT'
 			E.db.nameplates.units.ENEMY_PLAYER.portrait.xOffset = 0
 			E.db.nameplates.units.ENEMY_PLAYER.portrait.yOffset = 0
-
-
 		--UnitFrames
 			E.db.unitframe.smoothbars = true
 			E.db.unitframe.thinBorders = true
@@ -427,29 +441,23 @@ function E:SetupLayout(layout, noDataReset, noDisplayMsg)
 			--Party
 				E.db.unitframe.units.party.height = 74
 				E.db.unitframe.units.party.power.height = 13
-				E.db.unitframe.units.party.rdebuffs.font = 'PT Sans Narrow'
 				E.db.unitframe.units.party.width = 231
 			--Raid
-				E.db.unitframe.units.raid.growthDirection = 'RIGHT_UP'
-				E.db.unitframe.units.raid.infoPanel.enable = true
-				E.db.unitframe.units.raid.name.attachTextTo = 'InfoPanel'
-				E.db.unitframe.units.raid.name.position = 'BOTTOMLEFT'
-				E.db.unitframe.units.raid.name.xOffset = 2
-				E.db.unitframe.units.raid.numGroups = 8
-				E.db.unitframe.units.raid.rdebuffs.font = 'PT Sans Narrow'
-				E.db.unitframe.units.raid.rdebuffs.size = 30
-				E.db.unitframe.units.raid.rdebuffs.xOffset = 30
-				E.db.unitframe.units.raid.rdebuffs.yOffset = 25
-				E.db.unitframe.units.raid.resurrectIcon.attachTo = 'BOTTOMRIGHT'
-				E.db.unitframe.units.raid.roleIcon.attachTo = 'InfoPanel'
-				E.db.unitframe.units.raid.roleIcon.position = 'BOTTOMRIGHT'
-				E.db.unitframe.units.raid.roleIcon.size = 12
-				E.db.unitframe.units.raid.roleIcon.xOffset = 0
-				E.db.unitframe.units.raid.visibility = '[@raid6,noexists] hide;show'
-				E.db.unitframe.units.raid.width = 92
-			--Raid40
-				E.db.unitframe.units.raid40.enable = false
-				E.db.unitframe.units.raid40.rdebuffs.font = 'PT Sans Narrow'
+				E.db.unitframe.units.raid1.growthDirection = 'RIGHT_UP'
+				E.db.unitframe.units.raid1.infoPanel.enable = true
+				E.db.unitframe.units.raid1.name.attachTextTo = 'InfoPanel'
+				E.db.unitframe.units.raid1.name.position = 'BOTTOMLEFT'
+				E.db.unitframe.units.raid1.name.xOffset = 2
+				E.db.unitframe.units.raid1.numGroups = 8
+				E.db.unitframe.units.raid1.rdebuffs.size = 30
+				E.db.unitframe.units.raid1.rdebuffs.xOffset = 30
+				E.db.unitframe.units.raid1.rdebuffs.yOffset = 25
+				E.db.unitframe.units.raid1.resurrectIcon.attachTo = 'BOTTOMRIGHT'
+				E.db.unitframe.units.raid1.roleIcon.attachTo = 'InfoPanel'
+				E.db.unitframe.units.raid1.roleIcon.position = 'BOTTOMRIGHT'
+				E.db.unitframe.units.raid1.roleIcon.size = 12
+				E.db.unitframe.units.raid1.roleIcon.xOffset = 0
+				E.db.unitframe.units.raid1.width = 92
 
 			--[[
 				Layout Tweaks will be handled below,
@@ -553,11 +561,11 @@ function E:SetupReset()
 	_G.InstallSlider:SetScript('OnValueChanged', nil)
 	_G.InstallSlider:SetScript('OnMouseUp', nil)
 
-	ElvUIInstallFrame.SubTitle:SetText('')
-	ElvUIInstallFrame.Desc1:SetText('')
-	ElvUIInstallFrame.Desc2:SetText('')
-	ElvUIInstallFrame.Desc3:SetText('')
-	ElvUIInstallFrame:Size(550, 400)
+	E.InstallFrame.SubTitle:SetText('')
+	E.InstallFrame.Desc1:SetText('')
+	E.InstallFrame.Desc2:SetText('')
+	E.InstallFrame.Desc3:SetText('')
+	E.InstallFrame:Size(550, 400)
 end
 
 function E:SetPage(PageNum)
@@ -568,19 +576,10 @@ function E:SetPage(PageNum)
 	_G.InstallStatus.anim.progress:Play()
 	_G.InstallStatus.text:SetText(CURRENT_PAGE..' / '..MAX_PAGE)
 
-	if PageNum == MAX_PAGE then
-		_G.InstallNextButton:Disable()
-	else
-		_G.InstallNextButton:Enable()
-	end
+	_G.InstallNextButton:SetEnabled(PageNum ~= MAX_PAGE)
+	_G.InstallPrevButton:SetEnabled(PageNum ~= 1)
 
-	if PageNum == 1 then
-		_G.InstallPrevButton:Disable()
-	else
-		_G.InstallPrevButton:Enable()
-	end
-
-	local f = ElvUIInstallFrame
+	local f = E.InstallFrame
 	local InstallOption1Button = _G.InstallOption1Button
 	local InstallOption2Button = _G.InstallOption2Button
 	local InstallOption3Button = _G.InstallOption3Button
@@ -749,12 +748,12 @@ function E:SetPage(PageNum)
 		f.Desc1:SetText(L["You are now finished with the installation process. If you are in need of technical support please join our Discord."])
 		f.Desc2:SetText(L["Please click the button below so you can setup variables and ReloadUI."])
 		InstallOption1Button:Show()
-		InstallOption1Button:SetScript('OnClick', function() E:StaticPopup_Show('ELVUI_EDITBOX', nil, nil, 'https://discord.gg/xFWcfgE') end)
+		InstallOption1Button:SetScript('OnClick', function() E:StaticPopup_Show('ELVUI_EDITBOX', nil, nil, 'https://discord.tukui.org') end)
 		InstallOption1Button:SetText(L["Discord"])
 		InstallOption2Button:Show()
 		InstallOption2Button:SetScript('OnClick', function() E:SetupComplete(true) end)
 		InstallOption2Button:SetText(L["Finished"])
-		ElvUIInstallFrame:Size(550, 350)
+		E.InstallFrame:Size(550, 350)
 	end
 end
 
@@ -821,7 +820,7 @@ function E:Install()
 	end
 
 	--Create Frame
-	if not ElvUIInstallFrame then
+	if not E.InstallFrame then
 		local f = CreateFrame('Button', 'ElvUIInstallFrame', E.UIParent)
 		f.SetPage = E.SetPage
 		f:Size(550, 400)
@@ -974,9 +973,11 @@ function E:Install()
 		logo2:SetTexture(E.Media.Textures.LogoBottom)
 		logo2:Point('BOTTOM', 0, 70)
 		f.tutorialImage2 = logo2
+
+		E.InstallFrame = f
 	end
 
-	ElvUIInstallFrame.tutorialImage:SetVertexColor(unpack(E.media.rgbvaluecolor))
-	ElvUIInstallFrame:Show()
+	E.InstallFrame.tutorialImage:SetVertexColor(unpack(E.media.rgbvaluecolor))
+	E.InstallFrame:Show()
 	E:NextPage()
 end

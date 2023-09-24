@@ -17,6 +17,7 @@ local tooltipString = '%d%%'
 local totalDurability = 0
 local invDurability = {}
 local totalRepairCost
+local db
 
 local slots = {
 	[1] = _G.INVTYPE_HEAD,
@@ -41,27 +42,37 @@ local function OnEvent(self)
 	for index in pairs(slots) do
 		local currentDura, maxDura = GetInventoryItemDurability(index)
 		if currentDura and maxDura > 0 then
-			local perc = (currentDura/maxDura)*100
+			local perc, repairCost = (currentDura/maxDura)*100
 			invDurability[index] = perc
 
 			if perc < totalDurability then
 				totalDurability = perc
 			end
 
-			totalRepairCost = totalRepairCost + select(3, E.ScanTooltip:SetInventoryItem('player', index))
+			if E.Retail and E.ScanTooltip.GetTooltipData then
+				E.ScanTooltip:SetInventoryItem('player', index)
+				E.ScanTooltip:Show()
+
+				local data = E.ScanTooltip:GetTooltipData()
+				repairCost = data and data.repairCost
+			else
+				repairCost = select(3, E.ScanTooltip:SetInventoryItem('player', index))
+			end
+
+			totalRepairCost = totalRepairCost + (repairCost or 0)
 		end
 	end
 
 	local r, g, b = E:ColorGradient(totalDurability * .01, 1, .1, .1, 1, 1, .1, .1, 1, .1)
 	local hex = E:RGBToHex(r, g, b)
 
-	if E.global.datatexts.settings.Durability.NoLabel then
+	if db.NoLabel then
 		self.text:SetFormattedText('%s%d%%|r', hex, totalDurability)
 	else
-		self.text:SetFormattedText('%s%s%d%%|r', E.global.datatexts.settings.Durability.Label ~= '' and E.global.datatexts.settings.Durability.Label or (DURABILITY..': '), hex, totalDurability)
+		self.text:SetFormattedText('%s%s%d%%|r', db.Label ~= '' and db.Label or (DURABILITY..': '), hex, totalDurability)
 	end
 
-	if totalDurability <= E.global.datatexts.settings.Durability.percThreshold then
+	if totalDurability <= db.percThreshold then
 		E:Flash(self, 0.53, true)
 	else
 		E:StopFlash(self)
@@ -88,4 +99,10 @@ local function OnEnter()
 	DT.tooltip:Show()
 end
 
-DT:RegisterDatatext('Durability', nil, {'UPDATE_INVENTORY_DURABILITY', 'MERCHANT_SHOW'}, OnEvent, nil, Click, OnEnter, nil, DURABILITY)
+local function ApplySettings(self)
+	if not db then
+		db = E.global.datatexts.settings[self.name]
+	end
+end
+
+DT:RegisterDatatext('Durability', nil, {'UPDATE_INVENTORY_DURABILITY', 'MERCHANT_SHOW'}, OnEvent, nil, Click, OnEnter, nil, DURABILITY, nil, ApplySettings)

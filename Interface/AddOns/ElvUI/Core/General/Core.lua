@@ -6,7 +6,7 @@ local LCS = E.Libs.LCS
 local _G = _G
 local tonumber, pairs, ipairs, error, unpack, select, tostring = tonumber, pairs, ipairs, error, unpack, select, tostring
 local strsplit, strjoin, wipe, sort, tinsert, tremove, tContains = strsplit, strjoin, wipe, sort, tinsert, tremove, tContains
-local format, find, strrep, strlen, sub, gsub = format, strfind, strrep, strlen, strsub, gsub
+local format, strfind, strrep, strlen, sub, gsub = format, strfind, strrep, strlen, strsub, gsub
 local assert, type, pcall, xpcall, next, print = assert, type, pcall, xpcall, next, print
 local rawget, rawset, setmetatable = rawget, rawset, setmetatable
 
@@ -27,12 +27,13 @@ local GetBindingKey = GetBindingKey
 local SetBinding = SetBinding
 local SaveBindings = SaveBindings
 local GetCurrentBindingSet = GetCurrentBindingSet
-local GetSpecialization = not E.Retail and LCS.GetSpecialization or GetSpecialization
+local GetSpecialization = (E.Classic or E.Wrath) and LCS.GetSpecialization or GetSpecialization
 
 local ERR_NOT_IN_COMBAT = ERR_NOT_IN_COMBAT
 local LE_PARTY_CATEGORY_HOME = LE_PARTY_CATEGORY_HOME
 local LE_PARTY_CATEGORY_INSTANCE = LE_PARTY_CATEGORY_INSTANCE
 local C_ChatInfo_SendAddonMessage = C_ChatInfo.SendAddonMessage
+local GetAddOnMetadata = C_AddOns and C_AddOns.GetAddOnMetadata or GetAddOnMetadata
 -- GLOBALS: ElvCharacterDB
 
 --Modules
@@ -48,31 +49,32 @@ local Layout = E:GetModule('Layout')
 local Minimap = E:GetModule('Minimap')
 local NamePlates = E:GetModule('NamePlates')
 local Tooltip = E:GetModule('Tooltip')
-local Totems = E:GetModule('Totems')
+local TotemTracker = E:GetModule('TotemTracker')
 local UnitFrames = E:GetModule('UnitFrames')
 local LSM = E.Libs.LSM
 
 --Constants
 E.noop = function() end
 E.title = format('%s%s|r', E.InfoColor, 'ElvUI')
-E.version = tonumber(GetAddOnMetadata('ElvUI', 'Version'))
 E.toc = tonumber(GetAddOnMetadata('ElvUI', 'X-Interface'))
+E.version = tonumber(GetAddOnMetadata('ElvUI', 'Version'))
 E.myfaction, E.myLocalizedFaction = UnitFactionGroup('player')
-E.mylevel = UnitLevel('player')
 E.myLocalizedClass, E.myclass, E.myClassID = UnitClass('player')
-E.myLocalizedRace, E.myrace = UnitRace('player')
+E.myLocalizedRace, E.myrace, E.myRaceID = UnitRace('player')
+E.mylevel = UnitLevel('player')
 E.myname = UnitName('player')
 E.myrealm = GetRealmName()
 E.mynameRealm = format('%s - %s', E.myname, E.myrealm) -- contains spaces/dashes in realm (for profile keys)
-E.myspec = GetSpecialization()
-E.wowpatch, E.wowbuild, E.wowdate, E.wowtoc = GetBuildInfo()
+E.myspec = E.Retail and GetSpecialization()
 E.wowbuild = tonumber(E.wowbuild)
 E.physicalWidth, E.physicalHeight = GetPhysicalScreenSize()
 E.screenWidth, E.screenHeight = GetScreenWidth(), GetScreenHeight()
 E.resolution = format('%dx%d', E.physicalWidth, E.physicalHeight)
 E.perfect = 768 / E.physicalHeight
 E.NewSign = [[|TInterface\OptionsFrame\UI-OptionsFrame-NewFeatureIcon:14:14|t]]
+E.NewSignNoWhatsNew = [[|TInterface\OptionsFrame\UI-OptionsFrame-NewFeatureIcon:14:14:0:0|t]]
 E.TexturePath = [[Interface\AddOns\ElvUI\Media\Textures\]] -- for plugins?
+E.ClearTexture = 0 -- used to clear: Set (Normal, Disabled, Checked, Pushed, Highlight) Texture
 E.UserList = {}
 
 -- oUF Defines
@@ -118,34 +120,10 @@ E.InverseAnchors = {
 	TOPRIGHT = 'BOTTOMLEFT'
 }
 
-E.DispelClasses = {
-	PALADIN = { Poison = true, Disease = true },
-	PRIEST = { Magic = true, Disease = true },
-	MONK = { Disease = true, Poison = true },
-	DRUID = { Curse = true, Poison = true },
-	MAGE = { Curse = true },
-	WARLOCK = {},
-	SHAMAN = {}
-}
-
-if E.Retail then
-	E.DispelClasses.SHAMAN.Curse = true
-else
-	E.DispelClasses.SHAMAN.Poison = true
-	E.DispelClasses.SHAMAN.Disease = true
-
-	E.DispelClasses.PALADIN.Magic = true
-end
-
-E.BadDispels = {
-	[34914]		= 'Vampiric Touch',		-- horrifies
-	[233490]	= 'Unstable Affliction'	-- silences
-}
-
---Workaround for people wanting to use white and it reverting to their class color.
+-- Workaround for people wanting to use white and it reverting to their class color.
 E.PriestColors = { r = 0.99, g = 0.99, b = 0.99, colorStr = 'fffcfcfc' }
 
--- Socket Type info from 8.2
+-- Socket Type info from 10.0.7
 E.GemTypeInfo = {
 	Yellow			= { r = 0.97, g = 0.82, b = 0.29 },
 	Red				= { r = 1.00, g = 0.47, b = 0.47 },
@@ -157,6 +135,10 @@ E.GemTypeInfo = {
 	PunchcardRed	= { r = 1.00, g = 0.47, b = 0.47 },
 	PunchcardYellow	= { r = 0.97, g = 0.82, b = 0.29 },
 	PunchcardBlue	= { r = 0.47, g = 0.67, b = 1.00 },
+	Domination		= { r = 0.24, g = 0.50, b = 0.70 },
+	Cypher			= { r = 1.00, g = 0.80, b = 0.00 },
+	Tinker			= { r = 1.00, g = 0.47, b = 0.47 },
+	Primordial		= { r = 1.00, g = 0.00, b = 1.00 },
 }
 
 --This frame everything in ElvUI should be anchored to for Eyefinity support.
@@ -167,10 +149,16 @@ E.UIParent:SetPoint('BOTTOM')
 E.UIParent.origHeight = E.UIParent:GetHeight()
 E.snapBars[#E.snapBars + 1] = E.UIParent
 
-E.HiddenFrame = CreateFrame('Frame')
+E.UFParent = _G.ElvUFParent -- created in oUF
+E.UFParent:SetParent(E.UIParent)
+E.UFParent:SetFrameStrata('LOW')
+
+E.HiddenFrame = CreateFrame('Frame', nil, _G.UIParent)
+E.HiddenFrame:SetPoint('BOTTOM')
+E.HiddenFrame:SetSize(1,1)
 E.HiddenFrame:Hide()
 
-do -- used in optionsUI
+do -- used in options
 	E.DEFAULT_FILTER = {}
 	for filter, tbl in pairs(G.unitframe.aurafilters) do
 		E.DEFAULT_FILTER[filter] = tbl.type
@@ -202,7 +190,7 @@ function E:GrabColorPickerValues(r, g, b)
 	local oldR, oldG, oldB = _G.ColorPickerFrame:GetColorRGB()
 
 	-- set and define the new values
-	_G.ColorPickerFrame:SetColorRGB(r, g, b)
+	_G.ColorPickerFrame:SetColorRGB(r or 1, g or 1, b or 1)
 	r, g, b = _G.ColorPickerFrame:GetColorRGB()
 
 	-- swap back to the old values
@@ -246,7 +234,10 @@ function E:SetColorTable(t, data)
 	end
 
 	if t and (type(t) == 'table') then
-		t[1], t[2], t[3], t[4] = E:UpdateColorTable(data)
+		local r, g, b, a = E:UpdateColorTable(data)
+
+		t.r, t.g, t.b, t.a = r, g, b, a
+		t[1], t[2], t[3], t[4] = r, g, b, a
 	else
 		t = E:GetColorTable(data)
 	end
@@ -254,21 +245,21 @@ function E:SetColorTable(t, data)
 	return t
 end
 
+function E:VerifyColorTable(data)
+	if data.r > 1 or data.r < 0 then data.r = 1 end
+	if data.g > 1 or data.g < 0 then data.g = 1 end
+	if data.b > 1 or data.b < 0 then data.b = 1 end
+	if data.a and (data.a > 1 or data.a < 0) then data.a = 1 end
+end
+
 function E:UpdateColorTable(data)
 	if not data.r or not data.g or not data.b then
 		error('UpdateColorTable: Could not unpack color values.')
 	end
 
-	if data.r > 1 or data.r < 0 then data.r = 1 end
-	if data.g > 1 or data.g < 0 then data.g = 1 end
-	if data.b > 1 or data.b < 0 then data.b = 1 end
-	if data.a and (data.a > 1 or data.a < 0) then data.a = 1 end
+	E:VerifyColorTable(data)
 
-	if data.a then
-		return data.r, data.g, data.b, data.a
-	else
-		return data.r, data.g, data.b
-	end
+	return data.r, data.g, data.b, data.a
 end
 
 function E:GetColorTable(data)
@@ -276,16 +267,10 @@ function E:GetColorTable(data)
 		error('GetColorTable: Could not unpack color values.')
 	end
 
-	if data.r > 1 or data.r < 0 then data.r = 1 end
-	if data.g > 1 or data.g < 0 then data.g = 1 end
-	if data.b > 1 or data.b < 0 then data.b = 1 end
-	if data.a and (data.a > 1 or data.a < 0) then data.a = 1 end
+	E:VerifyColorTable(data)
 
-	if data.a then
-		return {data.r, data.g, data.b, data.a}
-	else
-		return {data.r, data.g, data.b}
-	end
+	local r, g, b, a = data.r, data.g, data.b, data.a
+	return { r, g, b, a, r = r, g = g, b = b, a = a }
 end
 
 function E:UpdateMedia(mediaType)
@@ -380,15 +365,18 @@ function E:GeneralMedia_ApplyToAll()
 	E.db.tooltip.healthBar.font = font
 	E.db.unitframe.font = font
 	E.db.unitframe.units.party.rdebuffs.font = font
-	E.db.unitframe.units.raid.rdebuffs.font = font
-	E.db.unitframe.units.raid40.rdebuffs.font = font
+	E.db.unitframe.units.raid1.rdebuffs.font = font
+	E.db.unitframe.units.raid2.rdebuffs.font = font
+	E.db.unitframe.units.raid3.rdebuffs.font = font
 
 	E:StaggeredUpdateAll()
 end
 
 function E:ValueFuncCall()
 	local hex, r, g, b = E.media.hexvaluecolor, unpack(E.media.rgbvaluecolor)
-	for func in pairs(E.valueColorUpdateFuncs) do func(hex, r, g, b) end
+	for obj, func in pairs(E.valueColorUpdateFuncs) do
+		func(obj, hex, r, g, b)
+	end
 end
 
 function E:UpdateFrameTemplates()
@@ -527,7 +515,15 @@ end
 
 function E:IsIncompatible(module, addons)
 	for _, addon in ipairs(addons) do
-		if E:IsAddOnEnabled(addon) then
+		local incompatible
+		if addon == 'Leatrix_Plus' then
+			local db = _G.LeaPlusDB
+			incompatible = db and db.MinimapMod == 'On'
+		else
+			incompatible = E:IsAddOnEnabled(addon)
+		end
+
+		if incompatible then
 			E:IncompatibleAddOn(addon, module, addons.info)
 			return true
 		end
@@ -570,14 +566,12 @@ do
 		},
 		Minimap = {
 			info = {
-				enabled = function()
-					local db = E.private.general.minimap.enable and _G.LeaPlusDB
-					return db and db.MinimapMod == 'On'
-				end,
+				enabled = function() return E.private.general.minimap.enable end,
 				accept = function() E.private.general.minimap.enable = false; ReloadUI() end,
 				name = 'ElvUI Minimap',
 			},
-			'Leatrix_Plus'
+			'Leatrix_Plus', -- has custom check in IsIncompatible
+			'SexyMap'
 		},
 	}
 
@@ -601,14 +595,17 @@ do
 	end
 end
 
-function E:CopyTable(current, default)
+function E:CopyTable(current, default, merge)
 	if type(current) ~= 'table' then
 		current = {}
 	end
 
 	if type(default) == 'table' then
 		for option, value in pairs(default) do
-			current[option] = (type(value) == 'table' and E:CopyTable(current[option], value)) or value
+			local isTable = type(value) == 'table'
+			if not merge or (isTable or current[option] == nil) then
+				current[option] = (isTable and E:CopyTable(current[option], value, merge)) or value
+			end
 		end
 	end
 
@@ -866,7 +863,7 @@ do	--Split string by multi-character delimiter (the strsplit / string.split func
 
 		-- find each instance of a string followed by the delimiter
 		while true do
-			local pos = find(str, delim, start, true) -- plain find
+			local pos = strfind(str, delim, start, true) -- plain find
 			if not pos then break end
 
 			tinsert(splitTable, sub(str, start, pos - 1))
@@ -896,19 +893,22 @@ do
 
 	local SendRecieveGroupSize = 0
 	local PLAYER_NAME = format('%s-%s', E.myname, E:ShortenRealm(E.myrealm))
-	local function SendRecieve(_, event, prefix, message, _, sender)
+	local function SendRecieve(_, event, prefix, message, _, senderOne, senderTwo)
 		if event == 'CHAT_MSG_ADDON' then
-			if sender == PLAYER_NAME then return end
-			if prefix == 'ELVUI_VERSIONCHK' then
-				local msg, ver = tonumber(message), E.version
-				local inCombat = InCombatLockdown()
+			local sender = strfind(senderOne, '-') and senderOne or senderTwo
+			if sender == PLAYER_NAME then
+				return
+			elseif prefix == 'ELVUI_VERSIONCHK' then
+				local ver, msg, inCombat = E.version, tonumber(message), InCombatLockdown()
 
 				E.UserList[E:StripMyRealm(sender)] = msg
 
 				if msg and (msg > ver) and not E.recievedOutOfDateMessage then -- you're outdated D:
-					E:Print(L["ElvUI is out of date. You can download the newest version from www.tukui.org. Get premium membership and have ElvUI automatically updated with the Tukui Client!"])
+					E:Print(L["ElvUI is out of date. You can download the newest version from tukui.org."])
 
 					if msg and ((msg - ver) >= 0.05) and not inCombat then
+						E.PopupDialogs.ELVUI_UPDATE_AVAILABLE.text = L["ElvUI is five or more revisions out of date. You can download the newest version from tukui.org."]..format('\n\nSender %s : Version %s', sender, msg)
+
 						E:StaticPopup_Show('ELVUI_UPDATE_AVAILABLE')
 					end
 
@@ -1017,7 +1017,7 @@ do -- BFA Convert, deprecated..
 				E.db.unitframe.OORAlpha = nil
 			end
 
-			for _, unit in ipairs({'target','targettarget','targettargettarget','focus','focustarget','pet','pettarget','boss','arena','party','raid','raid40','raidpet','tank','assist'}) do
+			for _, unit in ipairs({'target','targettarget','targettargettarget','focus','focustarget','pet','pettarget','boss','arena','party','raid1','raid2','raid3','raidpet','tank','assist'}) do
 				if E.db.unitframe.units[unit].rangeCheck ~= nil then
 					local enabled = E.db.unitframe.units[unit].rangeCheck
 					E.db.unitframe.units[unit].fader.enable = enabled
@@ -1093,7 +1093,7 @@ do -- BFA Convert, deprecated..
 		end
 
 		--Heal Prediction is now a table instead of a bool
-		for _, unit in ipairs({'player','target','focus','pet','arena','party','raid','raid40','raidpet'}) do
+		for _, unit in ipairs({'player','target','focus','pet','arena','party','raid1','raid2','raid3','raidpet'}) do
 			if type(E.db.unitframe.units[unit].healPrediction) ~= 'table' then
 				local enabled = E.db.unitframe.units[unit].healPrediction
 				E.db.unitframe.units[unit].healPrediction = {}
@@ -1320,10 +1320,10 @@ function E:DBConvertSL()
 	if E.db.unitframe.units.party.groupBy == 'ROLE2' or E.db.unitframe.units.party.groupBy == 'CLASSROLE' then
 		E.db.unitframe.units.party.groupBy = 'ROLE'
 	end
-	if E.db.unitframe.units.raid.groupBy == 'ROLE2' or E.db.unitframe.units.raid.groupBy == 'CLASSROLE' then
+	if E.db.unitframe.units.raid and (E.db.unitframe.units.raid.groupBy == 'ROLE2' or E.db.unitframe.units.raid.groupBy == 'CLASSROLE') then
 		E.db.unitframe.units.raid.groupBy = 'ROLE'
 	end
-	if E.db.unitframe.units.raid40.groupBy == 'ROLE2' or E.db.unitframe.units.raid40.groupBy == 'CLASSROLE' then
+	if E.db.unitframe.units.raid40 and (E.db.unitframe.units.raid40.groupBy == 'ROLE2' or E.db.unitframe.units.raid40.groupBy == 'CLASSROLE') then
 		E.db.unitframe.units.raid40.groupBy = 'ROLE'
 	end
 	if E.db.unitframe.units.raidpet.groupBy == 'ROLE2' or E.db.unitframe.units.raidpet.groupBy == 'CLASSROLE' then
@@ -1333,6 +1333,62 @@ function E:DBConvertSL()
 	for name, infoTable in pairs(G.unitframe.aurafilters) do -- cause people change things they aren't supposed to.
 		if E.global.unitframe.aurafilters[name] and E.global.unitframe.aurafilters[name].type ~= infoTable.type then
 			E.global.unitframe.aurafilters[name].type = infoTable.type
+		end
+	end
+
+	-- rune convert
+	for _, data in ipairs({E.db.unitframe.colors.classResources.DEATHKNIGHT, E.db.nameplates.colors.classResources.DEATHKNIGHT}) do
+		if data.r or data.g or data.b then
+			data[0].r, data[0].g, data[0].b = data.r, data.g, data.b
+			data.r, data.g, data.b = nil, nil, nil
+		end
+	end
+
+	-- raid 1-3 converts
+	E.db.unitframe.smartRaidFilter = nil
+
+	if E.db.unitframe.units.raid then
+		E.db.unitframe.units.raid.visibility = nil
+		E.db.unitframe.units.raid.enable = nil
+		E:CopyTable(E.db.unitframe.units.raid1, E.db.unitframe.units.raid)
+		E.db.unitframe.units.raid = nil
+	end
+
+	if E.db.unitframe.units.raid40 then
+		E.db.unitframe.units.raid40.visibility = nil
+		E.db.unitframe.units.raid40.enable = nil
+		E:CopyTable(E.db.unitframe.units.raid3, E.db.unitframe.units.raid40)
+		E.db.unitframe.units.raid40 = nil
+	end
+
+	if E.db.movers and E.db.movers.ElvUF_RaidMover then
+		E.db.movers.ElvUF_Raid1Mover = E.db.movers.ElvUF_RaidMover
+		E.db.movers.ElvUF_RaidMover = nil
+	end
+	if E.db.movers and E.db.movers.ElvUF_Raid40Mover then
+		E.db.movers.ElvUF_Raid3Mover = E.db.movers.ElvUF_Raid40Mover
+		E.db.movers.ElvUF_Raid40Mover = nil
+	end
+
+	-- new multiple ranks aura indicator
+	local auraConvert = E.global.unitframe.aurawatch[E.myclass]
+	if auraConvert then
+		for auraID in next, auraConvert do
+			if E.Filters.Included[auraID] then
+				auraConvert[auraID] = nil
+			end
+		end
+	end
+end
+
+function E:DBConvertDF()
+	local currency = E.global.datatexts.customCurrencies
+	if currency then
+		for id, data in next, E.global.datatexts.customCurrencies do
+			local info = { name = data.NAME, showMax = data.SHOW_MAX, currencyTooltip = data.DISPLAY_IN_MAIN_TOOLTIP, nameStyle = data.DISPLAY_STYLE and (strfind(data.DISPLAY_STYLE, 'ABBR') and 'abbr' or strfind(data.DISPLAY_STYLE, 'TEXT') and 'full' or 'none') or nil }
+			if next(info) then
+				E.global.datatexts.customCurrencies[id] = info
+			end
 		end
 	end
 end
@@ -1353,7 +1409,7 @@ function E:UpdateDB()
 	NamePlates.db = E.db.nameplates
 	Tooltip.db = E.db.tooltip
 	UnitFrames.db = E.db.unitframe
-	Totems.db = E.db.general.totems
+	TotemTracker.db = E.db.general.totems
 
 	--Not part of staggered update
 end
@@ -1378,6 +1434,7 @@ end
 
 function E:UpdateMediaItems(skipCallback)
 	E:UpdateMedia()
+	E:UpdateDispelColors()
 	E:UpdateFrameTemplates()
 	E:UpdateStatusBars()
 
@@ -1405,6 +1462,10 @@ function E:UpdateActionBars(skipCallback)
 
 	if E.Retail then
 		ActionBars:UpdateExtraButtons()
+	end
+
+	if E.Wrath and E.myclass == 'SHAMAN' then
+		ActionBars:UpdateTotemBindings()
 	end
 
 	if not skipCallback then
@@ -1482,10 +1543,9 @@ function E:UpdateMisc(skipCallback)
 	AFK:Toggle()
 
 	if E.Retail then
-		Blizzard:SetObjectiveFrameHeight()
-		Totems:PositionAndSize()
-	elseif E.TBC then
-		Totems:PositionAndSize()
+		TotemTracker:PositionAndSize()
+	elseif E.Wrath then
+		ActionBars:PositionAndSizeTotemBar()
 	end
 
 	if not skipCallback then
@@ -1805,6 +1865,7 @@ function E:DBConversions()
 	end
 
 	-- development converts
+	E:DBConvertDF()
 
 	-- always convert
 	if not ElvCharacterDB.ConvertKeybindings then
@@ -1814,13 +1875,11 @@ function E:DBConversions()
 end
 
 function E:ConvertActionBarKeybinds()
-	for oldKeybind, newKeybind in pairs({ ELVUIBAR6BUTTON = 'ELVUIBAR2BUTTON', EXTRABAR7BUTTON = 'ELVUIBAR7BUTTON', EXTRABAR8BUTTON = 'ELVUIBAR8BUTTON', EXTRABAR9BUTTON = 'ELVUIBAR9BUTTON', EXTRABAR10BUTTON = 'ELVUIBAR10BUTTON' }) do
+	for oldcmd, newcmd in pairs({ ELVUIBAR6BUTTON = 'ELVUIBAR2BUTTON', EXTRABAR7BUTTON = 'ELVUIBAR7BUTTON', EXTRABAR8BUTTON = 'ELVUIBAR8BUTTON', EXTRABAR9BUTTON = 'ELVUIBAR9BUTTON', EXTRABAR10BUTTON = 'ELVUIBAR10BUTTON' }) do
 		for i = 1, 12 do
-			local keys = { GetBindingKey(format('%s%d', oldKeybind, i)) }
-			if next(keys) then
-				for _, key in pairs(keys) do
-					SetBinding(key, format('%s%d', newKeybind, i))
-				end
+			local oldkey, newkey = format('%s%d', oldcmd, i), format('%s%d', newcmd, i)
+			for _, key in next, { GetBindingKey(oldkey) } do
+				SetBinding(key, newkey)
 			end
 		end
 	end
@@ -1834,8 +1893,10 @@ end
 function E:RefreshModulesDB()
 	-- this function is specifically used to reference the new database
 	-- onto the unitframe module, its useful dont delete! D:
-	wipe(UnitFrames.db) --old ref, dont need so clear it
-	UnitFrames.db = E.db.unitframe --new ref
+	if UnitFrames.db then
+		wipe(UnitFrames.db) --old ref, dont need so clear it
+		UnitFrames.db = E.db.unitframe --new ref
+	end
 end
 
 do
@@ -1904,22 +1965,35 @@ function E:Initialize()
 	E:RefreshModulesDB()
 	E:LoadMovers()
 	E:UpdateMedia()
+	E:UpdateDispelColors()
 	E:UpdateCooldownSettings('all')
 	E:Contruct_StaticPopups()
 
 	if E.Retail then
-		E.Libs.DualSpec:EnhanceDatabase(E.data, 'ElvUI')
 		E:Tutorials()
+	end
+
+	if E.Retail or E.Wrath then
+		E.Libs.DualSpec:EnhanceDatabase(E.data, 'ElvUI')
 	end
 
 	E.initialized = true
 
-	if E.db.general.smoothingAmount and (E.db.general.smoothingAmount ~= 0.33) then
+	if E.db.general.tagUpdateRate and (E.db.general.tagUpdateRate ~= P.general.tagUpdateRate) then
+		E:TagUpdateRate(E.db.general.tagUpdateRate)
+	end
+
+	if E.db.general.smoothingAmount and (E.db.general.smoothingAmount ~= P.general.smoothingAmount) then
 		E:SetSmoothingAmount(E.db.general.smoothingAmount)
 	end
 
 	if not E.private.install_complete then
 		E:Install()
+	end
+
+	if E.version ~= E.Libs.version then
+		E.updateRequestTriggered = true
+		E:StaticPopup_Show('UPDATE_REQUEST')
 	end
 
 	if GetCVarBool('scriptProfile') and not E:IsAddOnEnabled('ElvUI_CPU') then

@@ -8,20 +8,19 @@ local _G = _G
 local wipe, max, next = wipe, max, next
 local type, ipairs, pairs, unpack = type, ipairs, pairs, unpack
 local strfind, strlen, tonumber, tostring = strfind, strlen, tonumber, tostring
+local hooksecurefunc = hooksecurefunc
 
 local CreateFrame = CreateFrame
 local GetAddOnEnableState = GetAddOnEnableState
 local GetBattlefieldArenaFaction = GetBattlefieldArenaFaction
 local GetInstanceInfo = GetInstanceInfo
 local GetNumGroupMembers = GetNumGroupMembers
-local GetSpecialization = not E.Retail and LCS.GetSpecialization or GetSpecialization
-local GetSpecializationRole = not E.Retail and LCS.GetSpecializationRole or GetSpecializationRole
-local hooksecurefunc = hooksecurefunc
+local HideUIPanel = HideUIPanel
 local InCombatLockdown = InCombatLockdown
 local IsAddOnLoaded = IsAddOnLoaded
 local IsInRaid = IsInRaid
 local IsLevelAtEffectiveMaxLevel = IsLevelAtEffectiveMaxLevel
-local IsSpellKnown = IsSpellKnown
+local IsRestrictedAccount = IsRestrictedAccount
 local IsTrialAccount = IsTrialAccount
 local IsVeteranTrialAccount = IsVeteranTrialAccount
 local IsWargame = IsWargame
@@ -38,11 +37,12 @@ local UnitInRaid = UnitInRaid
 local UnitIsMercenary = UnitIsMercenary
 local UnitIsUnit = UnitIsUnit
 
-local HideUIPanel = HideUIPanel
-local GameMenuButtonAddons = GameMenuButtonAddons
-local GameMenuButtonLogout = GameMenuButtonLogout
-local GameMenuFrame = GameMenuFrame
+local GetSpecialization = (E.Classic or E.Wrath) and LCS.GetSpecialization or GetSpecialization
+local GetSpecializationRole = (E.Classic or E.Wrath) and LCS.GetSpecializationRole or GetSpecializationRole
 
+local C_MountJournal_GetMountIDs = C_MountJournal and C_MountJournal.GetMountIDs
+local C_MountJournal_GetMountInfoByID = C_MountJournal and C_MountJournal.GetMountInfoByID
+local C_MountJournal_GetMountInfoExtraByID = C_MountJournal and C_MountJournal.GetMountInfoExtraByID
 local C_PetBattles_IsInBattle = C_PetBattles and C_PetBattles.IsInBattle
 local C_PvP_IsRatedBattleground = C_PvP and C_PvP.IsRatedBattleground
 
@@ -50,7 +50,17 @@ local ERR_NOT_IN_COMBAT = ERR_NOT_IN_COMBAT
 local FACTION_ALLIANCE = FACTION_ALLIANCE
 local FACTION_HORDE = FACTION_HORDE
 local PLAYER_FACTION_GROUP = PLAYER_FACTION_GROUP
+
+local GameMenuButtonAddons = GameMenuButtonAddons
+local GameMenuButtonLogout = GameMenuButtonLogout
+local GameMenuFrame = GameMenuFrame
 -- GLOBALS: ElvDB, ElvUF
+
+local DebuffColors = E.Libs.Dispel:GetDebuffTypeColor()
+
+E.MountIDs = {}
+E.MountText = {}
+E.MountDragons = {}
 
 function E:ClassColor(class, usePriestColor)
 	if not class then return end
@@ -73,7 +83,7 @@ end
 
 function E:InverseClassColor(class, usePriestColor, forceCap)
 	local color = E:CopyTable({}, E:ClassColor(class, usePriestColor))
-	local capColor = class == "PRIEST" or forceCap
+	local capColor = class == 'PRIEST' or forceCap
 
 	color.r = capColor and max(1-color.r,0.35) or (1-color.r)
 	color.g = capColor and max(1-color.g,0.35) or (1-color.g)
@@ -153,7 +163,7 @@ do
 			return ...
 		else
 			index = index + 1
-			FindAura(value, key, unit, index, filter, UnitAura(unit, index, filter))
+			return FindAura(key, value, unit, index, filter, UnitAura(unit, index, filter))
 		end
 	end
 
@@ -169,7 +179,7 @@ end
 function E:GetThreatStatusColor(status, nothreat)
 	local color = ElvUF.colors.threat[status]
 	if color then
-		return color[1], color[2], color[3], color[4] or 1
+		return color.r, color.g, color.b, color.a or 1
 	elseif nothreat then
 		if status == -1 then -- how or why?
 			return 1, 1, 1, 1
@@ -180,66 +190,40 @@ function E:GetThreatStatusColor(status, nothreat)
 end
 
 function E:GetPlayerRole()
-	local role = E.Retail and UnitGroupRolesAssigned('player') or 'NONE'
+	local role = (E.Retail or E.Wrath) and UnitGroupRolesAssigned('player') or 'NONE'
 	return (role == 'NONE' and E.myspec and GetSpecializationRole(E.myspec)) or role
 end
 
 function E:CheckRole()
-	E.myspec = GetSpecialization()
+	E.myspec = E.Retail and GetSpecialization()
 	E.myrole = E:GetPlayerRole()
-
-	if E.Retail then
-		E:UpdateDispelClasses()
-	end
-end
-
-do -- keep this synced with oUF_AuraHighlight and oUF_RaidDebuffs
-	local SingeMagic = 89808
-	local DevourMagic = {
-		[19505] = 'Rank 1',
-		[19731] = 'Rank 2',
-		[19734] = 'Rank 3',
-		[19736] = 'Rank 4',
-		[27276] = 'Rank 5',
-		[27277] = 'Rank 6'
-	}
-
-	local ExcludeClass = {
-		PRIEST = true, -- has Mass Dispel on Shadow
-		WARLOCK = true, -- uses PET check only
-	}
-
-	local function CheckPetSpells()
-		if E.Retail then
-			return IsSpellKnown(SingeMagic, true)
-		else
-			for spellID in next, DevourMagic do
-				if IsSpellKnown(spellID, true) then
-					return true
-				end
-			end
-		end
-	end
-
-	function E:UpdateDispelClasses(event, arg1)
-		local dispel = E.DispelClasses[E.myclass]
-		if dispel == nil then return end
-
-		if event == 'UNIT_PET' then
-			if arg1 == 'player' and E.myclass == 'WARLOCK' then
-				dispel.Magic = CheckPetSpells()
-			end
-		elseif event == 'CHARACTER_POINTS_CHANGED' and arg1 > 0 then
-			return -- Not interested in gained points from leveling
-		elseif E.myrole and not ExcludeClass[E.myclass] then
-			dispel.Magic = (E.myrole == 'HEALER')
-		end
-	end
 end
 
 function E:IsDispellableByMe(debuffType)
-	local dispel = E.DispelClasses[E.myclass]
-	return dispel and dispel[debuffType]
+	return E.Libs.Dispel:IsDispellableByMe(debuffType)
+end
+
+function E:UpdateDispelColors()
+	local colors = E.db.general.debuffColors
+	for debuffType, db in next, colors do
+		local color = DebuffColors[debuffType]
+		if color then
+			E:UpdateClassColor(db)
+			color.r, color.g, color.b = db.r, db.g, db.b
+		end
+	end
+end
+
+function E:UpdateDispelColor(debuffType, r, g, b)
+	local color = DebuffColors[debuffType]
+	if color then
+		color.r, color.g, color.b = r, g, b
+	end
+
+	local db = E.db.general.debuffColors[debuffType]
+	if db then
+		db.r, db.g, db.b = r, g, b
+	end
 end
 
 do
@@ -435,7 +419,7 @@ function E:RegisterObjectForVehicleLock(object, originalParent)
 	end
 
 	--Check if we are already in a vehicles
-	if E.Retail and UnitHasVehicleUI('player') then
+	if (E.Retail or E.Wrath) and UnitHasVehicleUI('player') then
 		object:SetParent(E.HiddenFrame)
 	end
 
@@ -515,17 +499,17 @@ function E:PLAYER_ENTERING_WORLD(_, initLogin, isReload)
 end
 
 function E:PLAYER_REGEN_ENABLED()
-	if E.ShowOptionsUI then
-		E:ToggleOptionsUI()
+	if E.ShowOptions then
+		E:ToggleOptions()
 
-		E.ShowOptionsUI = nil
+		E.ShowOptions = nil
 	end
 end
 
 function E:PLAYER_REGEN_DISABLED()
 	local err
 
-	if IsAddOnLoaded('ElvUI_OptionsUI') then
+	if IsAddOnLoaded('ElvUI_Options') then
 		local ACD = E.Libs.AceConfigDialog
 		if ACD and ACD.OpenFrames and ACD.OpenFrames.ElvUI then
 			ACD:Close('ElvUI')
@@ -553,7 +537,7 @@ function E:XPIsUserDisabled()
 end
 
 function E:XPIsTrialMax()
-	return E.Retail and (IsTrialAccount() or IsVeteranTrialAccount()) and (E.myLevel == 20)
+	return E.Retail and (IsRestrictedAccount() or IsTrialAccount() or IsVeteranTrialAccount()) and (E.myLevel == 20)
 end
 
 function E:XPIsLevelMax()
@@ -605,8 +589,8 @@ function E:PositionGameMenuButton()
 	end
 	GameMenuFrame:Height(GameMenuFrame:GetHeight() + GameMenuButtonLogout:GetHeight() - 4)
 
-	local button = GameMenuFrame[E.name]
-	button:SetFormattedText('%s%s|r', E.media.hexvaluecolor, E.name)
+	local button = GameMenuFrame.ElvUI
+	button:SetFormattedText('%sElvUI|r', E.media.hexvaluecolor)
 
 	local _, relTo, _, _, offY = GameMenuButtonLogout:GetPoint()
 	if relTo ~= button then
@@ -625,28 +609,66 @@ function E:PLAYER_LEVEL_UP(_, level)
 	E.mylevel = level
 end
 
+function E:ClickGameMenu()
+	E:ToggleOptions() -- we already prevent it from opening in combat
+
+	if not InCombatLockdown() then
+		HideUIPanel(GameMenuFrame)
+	end
+end
+
+function E:SetupGameMenu()
+	local button = CreateFrame('Button', nil, GameMenuFrame, 'GameMenuButtonTemplate')
+	button:SetScript('OnClick', E.ClickGameMenu)
+	GameMenuFrame.ElvUI = button
+
+	if not E:IsAddOnEnabled('ConsolePortUI_Menu') then
+		button:Size(GameMenuButtonLogout:GetWidth(), GameMenuButtonLogout:GetHeight())
+		button:Point('TOPLEFT', GameMenuButtonAddons, 'BOTTOMLEFT', 0, -1)
+		hooksecurefunc('GameMenuFrame_UpdateVisibleButtons', E.PositionGameMenuButton)
+	end
+end
+
+function E:IsDragonRiding() -- currently unused, was used to help actionbars fade
+	for spellID in next, E.MountDragons do
+		if E:GetAuraByID('player', spellID, 'HELPFUL') then
+			return true
+		end
+	end
+end
+
 function E:LoadAPI()
 	E:RegisterEvent('PLAYER_LEVEL_UP')
 	E:RegisterEvent('PLAYER_ENTERING_WORLD')
 	E:RegisterEvent('PLAYER_REGEN_ENABLED')
 	E:RegisterEvent('PLAYER_REGEN_DISABLED')
 	E:RegisterEvent('UI_SCALE_CHANGED', 'PixelScaleChanged')
-	E:RegisterEvent('UNIT_PET', 'UpdateDispelClasses')
+
+	E:SetupGameMenu()
 
 	if E.Retail then
+		for _, mountID in next, C_MountJournal_GetMountIDs() do
+			local _, _, sourceText = C_MountJournal_GetMountInfoExtraByID(mountID)
+			local _, spellID, _, _, _, _, _, _, _, _, _, _, isForDragonriding = C_MountJournal_GetMountInfoByID(mountID)
+			E.MountIDs[spellID] = mountID
+			E.MountText[mountID] = sourceText
+
+			if isForDragonriding then
+				E.MountDragons[spellID] = mountID
+			end
+		end
+
 		E:RegisterEvent('NEUTRAL_FACTION_SELECT_RESULT')
 		E:RegisterEvent('PET_BATTLE_CLOSE', 'AddNonPetBattleFrames')
 		E:RegisterEvent('PET_BATTLE_OPENING_START', 'RemoveNonPetBattleFrames')
 		E:RegisterEvent('PLAYER_SPECIALIZATION_CHANGED', 'CheckRole')
-		E:RegisterEvent('CHARACTER_POINTS_CHANGED', 'UpdateDispelClasses')
-		E:RegisterEvent('PLAYER_TALENT_UPDATE', 'UpdateDispelClasses')
-	else
-		E:RegisterEvent('CHARACTER_POINTS_CHANGED', 'CheckRole')
 	end
 
 	if E.Retail or E.Wrath then
 		E:RegisterEvent('UNIT_ENTERED_VEHICLE', 'EnterVehicleHideFrames')
 		E:RegisterEvent('UNIT_EXITED_VEHICLE', 'ExitVehicleShowFrames')
+	else
+		E:RegisterEvent('CHARACTER_POINTS_CHANGED', 'CheckRole')
 	end
 
 	do -- setup cropIcon texCoords
@@ -679,20 +701,5 @@ function E:LoadAPI()
 				Frame:UnregisterEvent(event)
 			end
 		end)
-	end
-
-	local GameMenuButton = CreateFrame('Button', nil, GameMenuFrame, 'GameMenuButtonTemplate')
-	GameMenuButton:SetScript('OnClick', function()
-		E:ToggleOptionsUI() --We already prevent it from opening in combat
-		if not InCombatLockdown() then
-			HideUIPanel(GameMenuFrame)
-		end
-	end)
-	GameMenuFrame[E.name] = GameMenuButton
-
-	if not E:IsAddOnEnabled('ConsolePortUI_Menu') then
-		GameMenuButton:Size(GameMenuButtonLogout:GetWidth(), GameMenuButtonLogout:GetHeight())
-		GameMenuButton:Point('TOPLEFT', GameMenuButtonAddons, 'BOTTOMLEFT', 0, -1)
-		hooksecurefunc('GameMenuFrame_UpdateVisibleButtons', E.PositionGameMenuButton)
 	end
 end

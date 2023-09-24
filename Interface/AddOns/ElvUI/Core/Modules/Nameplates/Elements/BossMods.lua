@@ -12,6 +12,8 @@ local GetTime = GetTime
 local UnitGUID = UnitGUID
 local CreateFrame = CreateFrame
 
+local DebuffColors = E.Libs.Dispel:GetDebuffTypeColor()
+
 NP.BossMods_ActiveUnitGUID = {}
 NP.BossMods_TextureCache = {}
 
@@ -26,8 +28,7 @@ function NP:BossMods_CreateIcon(element)
 	local cooldown = CreateFrame('Cooldown', '$parentCooldown', button, 'CooldownFrameTemplate')
 	cooldown:SetReverse(true)
 	cooldown:SetInside(button)
-	cooldown.CooldownOverride = 'nameplates'
-	E:RegisterCooldown(cooldown)
+	E:RegisterCooldown(cooldown, 'nameplates')
 
 	local icon = button:CreateTexture(nil, 'ARTWORK')
 	icon:SetTexCoord(unpack(E.TexCoords))
@@ -153,7 +154,7 @@ function NP:BossMods_AddIcon(unitGUID, texture, duration, desaturate, skip)
 	if desaturate then
 		button:SetBackdropBorderColor(unpack(E.media.bordercolor))
 	else
-		local color = _G.DebuffTypeColor.none
+		local color = DebuffColors.none
 		button:SetBackdropBorderColor(color.r * 0.6, color.g * 0.6, color.b * 0.6)
 	end
 
@@ -192,7 +193,7 @@ function NP:BossMods_UpdateIcon(plate, removed)
 
 	if not active then
 		local element = plate.BossMods
-		if next(element.activeIcons) then
+		if element and next(element.activeIcons) then
 			for texture in pairs(element.activeIcons) do
 				NP:BossMods_ClearIcon(plate, texture)
 			end

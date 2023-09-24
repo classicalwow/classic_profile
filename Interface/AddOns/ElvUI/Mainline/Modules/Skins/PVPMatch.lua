@@ -16,8 +16,8 @@ function S:Blizzard_PVPMatch()
 	PVPMatchScoreboard.Content:StripTextures()
 	PVPMatchScoreboard.Content.TabContainer.InsetBorderTop:Hide()
 
-	S:HandleScrollBar(PVPMatchScoreboard.Content.ScrollFrame.ScrollBar)
 	S:HandleCloseButton(PVPMatchScoreboard.CloseButton)
+	S:HandleTrimScrollBar(PVPMatchScoreboard.Content.ScrollBar)
 
 	--Also have a look at the tabs
 	local tabs = {
@@ -41,10 +41,10 @@ function S:Blizzard_PVPMatch()
 	PVPMatchResults.content:StripTextures()
 	PVPMatchResults.content.tabContainer:StripTextures()
 
-	S:HandleScrollBar(PVPMatchResults.content.scrollFrame.scrollBar)
 	S:HandleCloseButton(PVPMatchResults.CloseButton)
 	S:HandleButton(PVPMatchResults.buttonContainer.leaveButton)
 	S:HandleButton(PVPMatchResults.buttonContainer.requeueButton)
+	S:HandleTrimScrollBar(PVPMatchResults.content.scrollBar)
 
 	local tabz = {
 		PVPMatchResults.content.tabContainer.tabGroup.tab1,

@@ -2,9 +2,10 @@ local E, L, V, P, G = unpack(ElvUI)
 local M = E:GetModule('Misc')
 local B = E:GetModule('Bags')
 local CH = E:GetModule('Chat')
-local MM = E:GetModule('Minimap')
 
 local _G = _G
+local next = next
+local wipe = wipe
 local select = select
 local format = format
 local strmatch = strmatch
@@ -59,18 +60,38 @@ local LE_GAME_ERR_NOT_ENOUGH_MONEY = LE_GAME_ERR_NOT_ENOUGH_MONEY
 local MAX_PARTY_MEMBERS = MAX_PARTY_MEMBERS
 local UNKNOWN = UNKNOWN
 
+local function KillFeedback(frame)
+	local debug = true
+	if not debug then
+		frame:Kill()
+		frame.TriggerEvent = E.noop
+		wipe(frame.Data.RegisteredEvents)
+	end
+end
+
 local BOOST_THANKSFORPLAYING_SMALLER = SOUNDKIT.UI_70_BOOST_THANKSFORPLAYING_SMALLER
 local INTERRUPT_MSG = L["Interrupted %s's |cff71d5ff|Hspell:%d:0|h[%s]|h|r!"]
-if not E.Retail then
+if not (E.Retail or E.Wrath) then
 	INTERRUPT_MSG = INTERRUPT_MSG:gsub('|cff71d5ff|Hspell:%%d:0|h(%[%%s])|h|r','%1')
 end
 
 function M:ErrorFrameToggle(event)
 	if not E.db.general.hideErrorFrame then return end
+
 	if event == 'PLAYER_REGEN_DISABLED' then
 		_G.UIErrorsFrame:UnregisterEvent('UI_ERROR_MESSAGE')
 	else
 		_G.UIErrorsFrame:RegisterEvent('UI_ERROR_MESSAGE')
+	end
+end
+
+function M:ZoneTextToggle()
+	if E.db.general.hideZoneText then
+		_G.ZoneTextFrame:UnregisterAllEvents()
+	else
+		_G.ZoneTextFrame:RegisterEvent('ZONE_CHANGED')
+		_G.ZoneTextFrame:RegisterEvent('ZONE_CHANGED_INDOORS')
+		_G.ZoneTextFrame:RegisterEvent('ZONE_CHANGED_NEW_AREA')
 	end
 end
 
@@ -79,7 +100,7 @@ function M:COMBAT_LOG_EVENT_UNFILTERED()
 	if not inGroup then return end
 
 	local _, event, _, sourceGUID, _, _, _, destGUID, destName, _, _, _, _, _, spellID, spellName = CombatLogGetCurrentEventInfo()
-	local announce = strmatch(event, '_INTERRUPT') and (sourceGUID == E.myguid or sourceGUID == UnitGUID('pet')) and destGUID ~= E.myguid
+	local announce = spellName and (destGUID ~= E.myguid) and (sourceGUID == E.myguid or sourceGUID == UnitGUID('pet')) and strmatch(event, '_INTERRUPT')
 	if not announce then return end -- No announce-able interrupt from player or pet, exit.
 
 	local inRaid, inPartyLFG = IsInRaid(), E.Retail and IsPartyLFG()
@@ -97,7 +118,7 @@ function M:COMBAT_LOG_EVENT_UNFILTERED()
 	end
 
 	local channel = E.db.general.interruptAnnounce
-	local msg = E.Retail and format(INTERRUPT_MSG, destName or UNKNOWN, spellID, spellName) or format(INTERRUPT_MSG, destName or UNKNOWN, spellName)
+	local msg = (E.Retail or E.Wrath) and format(INTERRUPT_MSG, destName or UNKNOWN, spellID, spellName) or format(INTERRUPT_MSG, destName or UNKNOWN, spellName)
 	if channel == 'PARTY' then
 		SendChatMessage(msg, inPartyLFG and 'INSTANCE_CHAT' or 'PARTY')
 	elseif channel == 'RAID' then
@@ -229,7 +250,7 @@ function M:AutoInvite(event, _, _, _, _, _, _, inviterGUID)
 	if event == 'PARTY_INVITE_REQUEST' then
 		if not inviterGUID or inviterGUID == '' or IsInGroup() then return end
 
-		local queueButton = MM:GetQueueStatusButton() -- don't auto accept during a queue
+		local queueButton = M:GetQueueStatusButton() -- don't auto accept during a queue
 		if queueButton and queueButton:IsShown() then return end
 
 		if CH.BNGetGameAccountInfoByGUID(inviterGUID) or C_FriendList_IsFriend(inviterGUID) or IsGuildMember(inviterGUID) then
@@ -255,6 +276,8 @@ end
 function M:ADDON_LOADED(_, addon)
 	if addon == 'Blizzard_InspectUI' then
 		M:SetupInspectPageInfo()
+	elseif addon == 'Blizzard_PTRFeedback' then
+		KillFeedback(_G.PTR_IssueReporter)
 	end
 end
 
@@ -306,11 +329,15 @@ end
 
 function M:Initialize()
 	M.Initialized = true
+
 	M:LoadRaidMarker()
 	M:LoadLootRoll()
 	M:LoadChatBubbles()
 	M:LoadLoot()
 	M:ToggleItemLevelInfo(true)
+	M:LoadQueueStatus()
+	M:ZoneTextToggle()
+
 	M:RegisterEvent('MERCHANT_SHOW')
 	M:RegisterEvent('RESURRECT_REQUEST')
 	M:RegisterEvent('PLAYER_REGEN_DISABLED', 'ErrorFrameToggle')
@@ -322,9 +349,16 @@ function M:Initialize()
 	M:RegisterEvent('GROUP_ROSTER_UPDATE', 'AutoInvite')
 	M:RegisterEvent('COMBAT_TEXT_UPDATE')
 	M:RegisterEvent('QUEST_COMPLETE')
+	M:RegisterEvent('ADDON_LOADED')
+
+	for _, addon in next, { 'Blizzard_InspectUI', 'Blizzard_PTRFeedback' } do
+		if IsAddOnLoaded(addon) then
+			M:ADDON_LOADED(nil, addon)
+		end
+	end
 
 	do	-- questRewardMostValueIcon
-		local MostValue = CreateFrame('Frame', 'ElvUI_QuestRewardGoldIconFrame', _G.UIParent)
+		local MostValue = CreateFrame('Frame', 'ElvUI_QuestRewardGoldIconFrame', _G.QuestInfoRewardsFrame)
 		MostValue:SetFrameStrata('HIGH')
 		MostValue:Size(19)
 		MostValue:Hide()
@@ -345,12 +379,6 @@ function M:Initialize()
 
 	if E.db.general.interruptAnnounce ~= 'NONE' then
 		M:RegisterEvent('COMBAT_LOG_EVENT_UNFILTERED')
-	end
-
-	if IsAddOnLoaded('Blizzard_InspectUI') then
-		M:SetupInspectPageInfo()
-	else
-		M:RegisterEvent('ADDON_LOADED')
 	end
 
 	if E.Retail then

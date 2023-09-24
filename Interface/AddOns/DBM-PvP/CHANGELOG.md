@@ -1,7 +1,8 @@
-# <DBM> PvP
+# <DBM Mod> PvP
 
-## [r146](https://github.com/DeadlyBossMods/DBM-PvP/tree/r146) (2023-06-20)
-[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r145...r146) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
+## [r150](https://github.com/DeadlyBossMods/DBM-PvP/tree/r150) (2023-08-22)
+[Full Changelog](https://github.com/DeadlyBossMods/DBM-PvP/compare/r149...r150) [Previous Releases](https://github.com/DeadlyBossMods/DBM-PvP/releases)
 
-- wrath toc bump  
-- adjust mod prio  
+- Don't send D4 comms  
+- TOC update for classic era  
+- Update DBM-PvP.toc (#117)  

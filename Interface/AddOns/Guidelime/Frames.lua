@@ -136,7 +136,7 @@ function F.createPopupFrame(message, okFunc, hasCancel, height)
 		insets = { left = 11, right = 12, top = 12, bottom = 11}
 	})
 	F.popupFrame:SetBackdropColor(0,0,0,1)
-	--F.popupFrame:SetFrameStrata("DIALOG")
+	F.popupFrame:SetFrameStrata("DIALOG")
 	F.popupFrame:SetFrameLevel(F.popupFrame:GetParent():GetFrameLevel() + 2)
 	F.popupFrame:SetMovable(true)
 	F.popupFrame:SetScript("OnKeyDown", function(self,key) 
@@ -215,4 +215,13 @@ function F.showCopyPopup(value, text, textwidth, height, multiline)
 	popup.textbox:HighlightText()
 	popup:Show()
 	return popup
+end
+
+function F.SetResizeBounds(frame, minW, minH, maxW, maxH)
+	if frame.SetResizeBounds ~= nil then
+		frame:SetResizeBounds(minW, minH, maxW, maxH)
+	else
+		frame:SetMinResize(minW, minH)
+		if maxW ~= nil or maxH ~= nil then frame:SetMaxResize(max) end
+	end
 end

@@ -8,10 +8,6 @@ local TSM = select(2, ...) ---@type TSM
 local Environment = TSM.Init("Environment") ---@class Environment
 local EnumType = TSM.Include("Util.EnumType")
 Environment.FEATURES = EnumType.New("FEATURES", {
-	TEXTURE_SET_GRADIENT = EnumType.CreateValue(),
-	REGION_SET_RESIZE_BOUNDS = EnumType.CreateValue(),
-	PLAYER_INTERACTION_MANAGER = EnumType.CreateValue(),
-	C_CONTAINER = EnumType.CreateValue(),
 	REAGENT_BAG = EnumType.CreateValue(),
 	CONNECTED_FACTION_AH = EnumType.CreateValue(),
 	HONOR_POINTS = EnumType.CreateValue(),
@@ -31,6 +27,7 @@ Environment.FEATURES = EnumType.New("FEATURES", {
 	C_TOOLTIP_INFO = EnumType.CreateValue(),
 	REAGENT_BANK = EnumType.CreateValue(),
 	BLACK_MARKET_AH = EnumType.CreateValue(),
+	REGION_WIDE_TRADING = EnumType.CreateValue(),
 })
 local private = {
 	features = nil,
@@ -57,10 +54,6 @@ end
 
 Environment:OnModuleLoad(function()
 	private.features = {
-		[Environment.FEATURES.TEXTURE_SET_GRADIENT] = not Environment.IsVanillaClassic(),
-		[Environment.FEATURES.REGION_SET_RESIZE_BOUNDS] = not Environment.IsVanillaClassic(),
-		[Environment.FEATURES.PLAYER_INTERACTION_MANAGER] = not Environment.IsVanillaClassic(),
-		[Environment.FEATURES.C_CONTAINER] = not Environment.IsVanillaClassic(),
 		[Environment.FEATURES.REAGENT_BAG] = Environment.IsRetail(),
 		[Environment.FEATURES.CONNECTED_FACTION_AH] = Environment.IsRetail(),
 		[Environment.FEATURES.HONOR_POINTS] = Environment.IsWrathClassic(),
@@ -80,6 +73,7 @@ Environment:OnModuleLoad(function()
 		[Environment.FEATURES.C_TOOLTIP_INFO] = Environment.IsRetail(),
 		[Environment.FEATURES.REAGENT_BANK] = Environment.IsRetail(),
 		[Environment.FEATURES.BLACK_MARKET_AH] = Environment.IsRetail(),
+		[Environment.FEATURES.REGION_WIDE_TRADING] = Environment.IsRetail(),
 	}
 end)
 

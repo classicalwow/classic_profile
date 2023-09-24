@@ -1,9 +1,6 @@
 local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
-
-local _, ns = ...
-local ElvUF = ns.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
+local ElvUF = E.oUF
 
 local max = max
 local InCombatLockdown = InCombatLockdown
@@ -24,6 +21,7 @@ function UF:Construct_AssistFrames()
 	self.HealthPrediction = UF:Construct_HealComm(self)
 	self.Fader = UF:Construct_Fader()
 	self.Cutaway = UF:Construct_Cutaway(self)
+	self.PrivateAuras = UF:Construct_PrivateAuras(self)
 
 	if not self.isChild then
 		self.Buffs = UF:Construct_Buffs(self)
@@ -31,6 +29,7 @@ function UF:Construct_AssistFrames()
 		self.AuraWatch = UF:Construct_AuraWatch(self)
 		self.RaidDebuffs = UF:Construct_RaidDebuffs(self)
 		self.AuraHighlight = UF:Construct_AuraHighlight(self)
+		self.customTexts = {}
 
 		self.unitframeType = 'assist'
 	else
@@ -46,8 +45,6 @@ function UF:Update_AssistHeader(header, db)
 	header:Hide()
 	header.db = db
 
-	UF:ClearChildPoints(header:GetChildren())
-
 	if not header.isForced and db.enable then
 		RegisterAttributeDriver(header, 'state-visibility', '[@raid1,exists] show;hide')
 	end
@@ -58,6 +55,7 @@ function UF:Update_AssistHeader(header, db)
 
 	if not header.positioned then
 		header:ClearAllPoints()
+		header:ClearChildPoints()
 		header:Point('TOPLEFT', E.UIParent, 'TOPLEFT', 4, -248)
 
 		local width, height = header:GetSize()
@@ -103,12 +101,12 @@ function UF:Update_AssistFrames(frame, db)
 		frame:Size(childDB.width, childDB.height)
 
 		if not InCombatLockdown() then
-			if childDB.enable then
-				frame:Enable()
+			local enabled = childDB.enable
+			frame:SetEnabled(enabled)
+
+			if enabled then
 				frame:ClearAllPoints()
 				frame:Point(E.InversePoints[childDB.anchorPoint], frame.originalParent, childDB.anchorPoint, childDB.xOffset, childDB.yOffset)
-			else
-				frame:Disable()
 			end
 		end
 	else
@@ -120,6 +118,7 @@ function UF:Update_AssistFrames(frame, db)
 	UF:UpdateNameSettings(frame)
 	UF:Configure_Fader(frame)
 	UF:Configure_Cutaway(frame)
+	UF:Configure_PrivateAuras(frame)
 	UF:Configure_HealComm(frame)
 	UF:Configure_RaidIcon(frame)
 
@@ -129,6 +128,7 @@ function UF:Update_AssistFrames(frame, db)
 		UF:Configure_RaidDebuffs(frame)
 		UF:Configure_AuraHighlight(frame)
 		UF:Configure_AuraWatch(frame)
+		UF:Configure_CustomTexts(frame)
 	end
 
 	UF:HandleRegisterClicks(frame)

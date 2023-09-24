@@ -1,43 +1,22 @@
 
 TalentEmuSV = {
+	["_GlobalRef"] = {
+	},
 	["set"] = {
 		["credible"] = false,
-		["supreme"] = false,
 		["minimapPos"] = 185,
-	},
-	["loot"] = {
+		["supreme"] = false,
 	},
 	["var"] = {
+		["Player-5300-004EE602"] = "!T12320110!E120+^+^+^+^+ET1:82:9+YJ:82:9+^+nJ:82:9+r:82:9+Zo:82:9+=n:82:9+^+^+^+^+^+X:82:9+^+^+^",
+		["Player-5298-00544971"] = "!T12310110!E120+^+^+^+^+ET1:81:9+s:81:9+^+nJ:81:9+r:81:9+^+^+^+^+^+^+^+X:81:9+^+^+^",
 		["Player-5300-004CE6EB"] = "610",
+		["Player-5300-0050AF05"] = "!T124S0110!E120+^+^+^+Vh:8S:9+ZT1:8S:9+tH:8S:9+Rj2:8S:9+mX1:8S:9+aK:8S:9+2d1:8S:9+LI:8S:9+6C1:8S:9+bI:8S:9+^+^+IN2:6V1:10wSGY1:1S:9+rO1:8S:9+^+^+^",
+		["Player-5298-005448C3"] = "!T12910110!E120+^+^+^+^+a:81:9+^+^+b:81:9+c:81:9+^+^+^+^+^+^+^+N:81:9+uY:81:9+^+^",
 		["savedTalent"] = {
 		},
 	},
-	["__upgraded"] = true,
-	["_GlobalRef"] = {
-		["emu"] = {
-			["LoadAddOn"] = 1,
-			["ChatFrame_AddMessageEventFilter"] = 2,
-			["TargetFrame"] = 2,
-			["GetAddOnInfo"] = 6,
-			["IsAddOnLoaded"] = 2,
-			["SlashCmdList"] = 2,
-			["GameFontHighlight"] = 2,
-			["ERR_CHAT_PLAYER_NOT_FOUND_S"] = 5,
-			["EnableAddOn"] = 1,
-			["DisableAddOn"] = 1,
-			["LibStub"] = 6,
-			["SaveAddOns"] = 1,
-			["ALASCR"] = 2,
-			["UISpecialFrames"] = 2,
-			["alaPopup"] = 24,
-			["alaTalentEmuSV"] = 1,
-			["StaticPopupDialogs"] = 2,
-		},
-	},
-	["_version"] = 220720,
+	["_version"] = 220811,
 	["_GlobalAssign"] = {
-		["emu"] = {
-			["alaTalentEmuSV"] = 1,
-		},
 	},
 }

@@ -405,18 +405,29 @@ function DBM_GUI:CreateBossModPanel(mod)
 		mod:Toggle()
 	end)
 
-	if mod.addon and not mod.addon.oldOptions and DBM.Options.GroupOptionsBySpell then
+	if mod.addon then
 		for spellID, options in getmetatable(mod.groupOptions).__pairs(mod.groupOptions) do
 			if spellID:find("^line") then
 				panel:CreateLine(options)
 			else
 				local title, desc, _, icon
-				if tonumber(spellID) then
-					local _title = DBM:GetSpellInfo(spellID)
-					if _title then
-						title, desc, icon = _title, tonumber(spellID), GetSpellTexture(spellID)
-					else--Not a valid spellid (Such as a ptr/beta mod loaded on live
-						title, desc, icon = spellID, L.NoDescription, 136116
+				local usedSpellID
+				if mod.groupOptions[spellID] and mod.groupOptions[spellID].customKeys then
+					usedSpellID = mod.groupOptions[spellID].customKeys--Color coding would be done in customKeys, not here
+				end
+				if mod.groupOptions[spellID].title then--Custom title, it's a bogus spellId, so we completely ignore it and bundle with localized custom title
+					title, desc, icon = mod.groupOptions[spellID].title, L.CustomOptions, 136116
+				elseif tonumber(spellID) then
+					spellID = tonumber(spellID)
+					if spellID < 0 then
+					    title, desc, _, icon = DBM:EJ_GetSectionInfo(-spellID)
+					else
+						local _title = DBM:GetSpellInfo(spellID)
+						if _title then
+							title, desc, icon = _title, tonumber(spellID), GetSpellTexture(spellID)
+						else--Not a valid spellid (Such as a ptr/beta mod loaded on live
+							title, desc, icon = spellID, L.NoDescription, 136116
+						end
 					end
 				elseif spellID:find("^ej") then
 					title, desc, _, icon = DBM:EJ_GetSectionInfo(spellID:gsub("ej", ""))
@@ -426,7 +437,10 @@ function DBM_GUI:CreateBossModPanel(mod)
 				else
 					title = spellID
 				end
-				local catpanel = panel:CreateAbility(title, icon)
+				if not usedSpellID then
+					usedSpellID = "|Hgarrmission:DBM:wacopy:"..spellID.."|h|cff69ccf0"..spellID.."|r|h"
+				end
+				local catpanel = panel:CreateAbility(title, icon, usedSpellID)
 				if desc then
 					catpanel:CreateSpellDesc(desc)
 				end
@@ -725,7 +739,7 @@ do
 				}
 				if (mod.addon.type == "PARTY" or mod.addon.type == "SCENARIO") or -- Fixes dungeons being labled incorrectly
 					(mod.addon.type == "RAID" and statSplit["timewalker"]) or -- Fixes raids with timewalker being labled incorrectly
-					(mod.addon.modId == "DBM-SiegeOfOrgrimmarV2") then -- Fixes SoO being labled incorrectly
+					(mod.instanceId == 369) then -- Fixes SoO being labled incorrectly
 					statTypes.normal = PLAYER_DIFFICULTY1
 					statTypes.heroic = PLAYER_DIFFICULTY2
 				end

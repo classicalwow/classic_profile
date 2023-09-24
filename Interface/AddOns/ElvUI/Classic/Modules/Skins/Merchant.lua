@@ -2,7 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local select, unpack = select, unpack
+local unpack = unpack
 
 local CreateFrame = CreateFrame
 local GetItemInfo = GetItemInfo
@@ -13,6 +13,18 @@ local GetItemQualityColor = GetItemQualityColor
 local hooksecurefunc = hooksecurefunc
 
 local MERCHANT_ITEMS_PER_PAGE = MERCHANT_ITEMS_PER_PAGE
+
+local function merchantItemPoint()
+	S:HandlePointXY(_G.MerchantItem1, 6, -40)
+
+	for i = 2, _G.BUYBACK_ITEMS_PER_PAGE do
+		if E:IsEvenNumber(i) then
+			S:HandlePointXY(_G['MerchantItem'..i], 12, 0)
+		else
+			S:HandlePointXY(_G['MerchantItem'..i], 0, -16)
+		end
+	end
+end
 
 function S:MerchantFrame()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.merchant) then return end
@@ -33,13 +45,13 @@ function S:MerchantFrame()
 		local slot = _G['MerchantItem'..i..'SlotTexture']
 
 		item:StripTextures(true)
-		item:CreateBackdrop('Default')
+		item:CreateBackdrop('Transparent')
 		item.backdrop:Point('TOPLEFT', -1, 3)
 		item.backdrop:Point('BOTTOMRIGHT', 2, -3)
 
 		button:StripTextures()
 		button:StyleButton()
-		button:SetTemplate('Default', true)
+		button:SetTemplate(nil, true)
 		button:Size(40)
 		button:Point('TOPLEFT', item, 'TOPLEFT', 4, -2)
 
@@ -58,7 +70,7 @@ function S:MerchantFrame()
 			local currencyIcon = _G['MerchantItem'..i..'AltCurrencyFrameItem'..j..'Texture']
 
 			currencyIcon.backdrop = CreateFrame('Frame', nil, currencyItem)
-			currencyIcon.backdrop:SetTemplate('Default')
+			currencyIcon.backdrop:SetTemplate()
 			currencyIcon.backdrop:SetFrameLevel(currencyItem:GetFrameLevel())
 			currencyIcon.backdrop:SetOutside(currencyIcon)
 
@@ -105,7 +117,7 @@ function S:MerchantFrame()
 
 	_G.MerchantBuyBackItemItemButton:StripTextures()
 	_G.MerchantBuyBackItemItemButton:StyleButton()
-	_G.MerchantBuyBackItemItemButton:SetTemplate('Default', true)
+	_G.MerchantBuyBackItemItemButton:SetTemplate(nil, true)
 	_G.MerchantBuyBackItemItemButton:Size(40)
 	_G.MerchantBuyBackItemItemButton:Point('TOPLEFT', 4, -2)
 
@@ -119,39 +131,29 @@ function S:MerchantFrame()
 	_G.MerchantBuyBackItemMoneyFrame:ClearAllPoints()
 	_G.MerchantBuyBackItemMoneyFrame:Point('BOTTOMLEFT', _G.MerchantBuyBackItemItemButton, 'BOTTOMRIGHT', 3, 0)
 
-	local function merchantItemPoint()
-		S:HandlePointXY(_G.MerchantItem1, 6, -40)
-
-		-- evens
-		for i = 3, _G.BUYBACK_ITEMS_PER_PAGE, 2 do
-			S:HandlePointXY(_G['MerchantItem'..i], 0, -16)
-		end
-		-- odds
-		for i = 2, _G.BUYBACK_ITEMS_PER_PAGE, 2 do
-			S:HandlePointXY(_G['MerchantItem'..i], 12, 0)
-		end
-	end
-
 	-- skin tabs
 	for i = 1, 2 do
 		S:HandleTab(_G['MerchantFrameTab'..i])
 	end
 
+	-- Reposition Tabs
+	_G.MerchantFrameTab1:ClearAllPoints()
+	_G.MerchantFrameTab1:Point('TOPLEFT', _G.MerchantFrame, 'BOTTOMLEFT', -15, -1)
+	_G.MerchantFrameTab2:Point('TOPLEFT', _G.MerchantFrameTab1, 'TOPRIGHT', -19, 0)
+
 	hooksecurefunc('MerchantFrame_UpdateMerchantInfo', function()
 		local numMerchantItems = GetMerchantNumItems()
 		local index = (MerchantFrame.page - 1) * MERCHANT_ITEMS_PER_PAGE
-		local button, name, quality
 
 		for i = 1, _G.BUYBACK_ITEMS_PER_PAGE do
 			index = index + 1
 
 			if index <= numMerchantItems then
-				button = _G['MerchantItem'..i..'ItemButton']
-				name = _G['MerchantItem'..i..'Name']
+				local button = _G['MerchantItem'..i..'ItemButton']
+				local name = _G['MerchantItem'..i..'Name']
 
 				if button.link then
-					quality = select(3, GetItemInfo(button.link))
-
+					local _, _, quality = GetItemInfo(button.link)
 					if quality and quality > 1 then
 						local r, g, b = GetItemQualityColor(quality)
 						button:SetBackdropBorderColor(r, g, b)
@@ -168,8 +170,7 @@ function S:MerchantFrame()
 
 			local itemName = GetBuybackItemInfo(GetNumBuybackItems())
 			if itemName then
-				quality = select(3, GetItemInfo(itemName))
-
+				local _, _, quality = GetItemInfo(itemName)
 				if quality and quality > 1 then
 					local r, g, b = GetItemQualityColor(quality)
 					_G.MerchantBuyBackItemItemButton:SetBackdropBorderColor(r, g, b)
@@ -190,17 +191,15 @@ function S:MerchantFrame()
 
 	hooksecurefunc('MerchantFrame_UpdateBuybackInfo', function()
 		local numBuybackItems = GetNumBuybackItems()
-		local button, name, quality
 
 		for i = 1, _G.BUYBACK_ITEMS_PER_PAGE do
 			if i <= numBuybackItems then
 				local itemName = GetBuybackItemInfo(i)
 
 				if itemName then
-					button = _G['MerchantItem'..i..'ItemButton']
-					name = _G['MerchantItem'..i..'Name']
-					quality = select(3, GetItemInfo(itemName))
-
+					local button = _G['MerchantItem'..i..'ItemButton']
+					local name = _G['MerchantItem'..i..'Name']
+					local _, _, quality = GetItemInfo(itemName)
 					if quality and quality > 1 then
 						local r, g, b = GetItemQualityColor(quality)
 						button:SetBackdropBorderColor(r, g, b)

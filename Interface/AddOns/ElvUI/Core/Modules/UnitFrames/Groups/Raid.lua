@@ -1,9 +1,8 @@
 local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
+local ElvUF = E.oUF
 
-local _, ns = ...
-local ElvUF = ns.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
+local format = format
 
 function UF:Construct_RaidFrames()
 	self:SetScript('OnEnter', UF.UnitFrame_OnEnter)
@@ -36,6 +35,7 @@ function UF:Construct_RaidFrames()
 	self.HealthPrediction = UF:Construct_HealComm(self)
 	self.Fader = UF:Construct_Fader()
 	self.Cutaway = UF:Construct_Cutaway(self)
+	self.PrivateAuras = UF:Construct_PrivateAuras(self)
 	self.customTexts = {}
 
 	if E.Retail then
@@ -44,7 +44,7 @@ function UF:Construct_RaidFrames()
 		self.ClassBar = 'AlternativePower'
 	end
 
-	self.unitframeType = 'raid'
+	self.unitframeType = self:GetParent().groupName
 
 	return self
 end
@@ -56,8 +56,14 @@ function UF:Update_RaidHeader(header, db)
 	if not parent.positioned then
 		parent:ClearAllPoints()
 		parent:Point('BOTTOMLEFT', E.UIParent, 'BOTTOMLEFT', 4, 248)
-		E:CreateMover(parent, parent:GetName()..'Mover', L["Raid Frames"], nil, nil, nil, 'ALL,RAID', nil, 'unitframe,groupUnits,raid,generalGroup')
+		E:CreateMover(parent, parent:GetName()..'Mover', format(L["Raid %d Frames"], parent.raidFrameN), nil, nil, nil, 'ALL,RAID', nil, format('unitframe,groupUnits,%s,generalGroup', parent.groupName))
 		parent.positioned = true
+	end
+
+	if db.customName ~= '' then
+		parent.mover:SetFormattedText('%s - %s', format(L["Raid %d Frames"], parent.raidFrameN), db.customName)
+	else
+		parent.mover:SetFormattedText(L["Raid %d Frames"], parent.raidFrameN)
 	end
 end
 
@@ -77,7 +83,7 @@ function UF:Update_RaidFrames(frame, db)
 		frame.USE_POWERBAR_OFFSET = (db.power.width == 'offset' and db.power.offset ~= 0) and frame.USE_POWERBAR and not frame.POWERBAR_DETACHED
 		frame.POWERBAR_OFFSET = frame.USE_POWERBAR_OFFSET and db.power.offset or 0
 		frame.POWERBAR_HEIGHT = not frame.USE_POWERBAR and 0 or db.power.height
-		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))/2 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
+		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))*0.5 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
 		frame.USE_PORTRAIT = db.portrait and db.portrait.enable
 		frame.USE_PORTRAIT_OVERLAY = frame.USE_PORTRAIT and (db.portrait.overlay or frame.ORIENTATION == 'MIDDLE')
 		frame.PORTRAIT_WIDTH = (frame.USE_PORTRAIT_OVERLAY or not frame.USE_PORTRAIT) and 0 or db.portrait.width
@@ -89,7 +95,7 @@ function UF:Update_RaidFrames(frame, db)
 		frame.USE_MINI_CLASSBAR = db.classbar.fill == 'spaced' and frame.USE_CLASSBAR
 		frame.CLASSBAR_HEIGHT = frame.USE_CLASSBAR and db.classbar.height or 0
 		frame.CLASSBAR_WIDTH = frame.UNIT_WIDTH - frame.PORTRAIT_WIDTH - (frame.ORIENTATION == 'MIDDLE' and (frame.POWERBAR_OFFSET*2) or frame.POWERBAR_OFFSET)
-		frame.CLASSBAR_YOFFSET = (not frame.USE_CLASSBAR or not frame.CLASSBAR_SHOWN or frame.CLASSBAR_DETACHED) and 0 or (frame.USE_MINI_CLASSBAR and (UF.SPACING+(frame.CLASSBAR_HEIGHT/2)) or (frame.CLASSBAR_HEIGHT - (UF.BORDER-UF.SPACING)))
+		frame.CLASSBAR_YOFFSET = (not frame.USE_CLASSBAR or not frame.CLASSBAR_SHOWN or frame.CLASSBAR_DETACHED) and 0 or (frame.USE_MINI_CLASSBAR and (UF.SPACING+(frame.CLASSBAR_HEIGHT*0.5)) or (frame.CLASSBAR_HEIGHT - (UF.BORDER-UF.SPACING)))
 		frame.USE_INFO_PANEL = not frame.USE_MINI_POWERBAR and not frame.USE_POWERBAR_OFFSET and db.infoPanel.enable
 		frame.INFO_PANEL_HEIGHT = frame.USE_INFO_PANEL and db.infoPanel.height or 0
 		frame.BOTTOM_OFFSET = UF:GetHealthBottomOffset(frame)
@@ -125,6 +131,7 @@ function UF:Update_RaidFrames(frame, db)
 	UF:Configure_CustomTexts(frame)
 	UF:Configure_PhaseIcon(frame)
 	UF:Configure_Cutaway(frame)
+	UF:Configure_PrivateAuras(frame)
 	UF:Configure_ClassBar(frame)
 	UF:UpdateNameSettings(frame)
 
@@ -138,4 +145,6 @@ function UF:Update_RaidFrames(frame, db)
 	frame:UpdateAllElements('ElvUI_UpdateAllElements')
 end
 
-UF.headerstoload.raid = true
+for i = 1, 3 do
+	UF.headerstoload['raid'..i] = true
+end

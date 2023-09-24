@@ -5,10 +5,13 @@
 -- ------------------------------------------------------------------------------ --
 
 local TSM = select(2, ...) ---@type TSM
+local MatString = TSM.Include("Util.MatString")
+local SlotId = TSM.Include("Util.SlotId")
+local ItemInfo = TSM.Include("Service.ItemInfo")
 local Rectangle = TSM.Include("UI.Rectangle")
 local Tooltip = TSM.Include("UI.Tooltip")
+local BagTracking = TSM.Include("Service.BagTracking")
 local UIElements = TSM.Include("UI.UIElements")
-local ItemInfo = TSM.Include("Service.ItemInfo")
 local L = TSM.Include("Locale").GetTable()
 local private = {}
 local CORNER_RADIUS = 6
@@ -23,8 +26,7 @@ local ItemSelector = UIElements.Define("ItemSelector", "Button") ---@class ItemS
 ItemSelector:_ExtendStateSchema()
 	:AddBooleanField("disabled", false)
 	:AddBooleanField("mouseOver", false)
-	:AddStringField("selection", "")
-	:AddNumberField("itemQuality", 0)
+	:AddOptionalStringField("selection")
 	:Commit()
 
 
@@ -54,17 +56,33 @@ function ItemSelector:__init(button)
 	self._quality:SetPoint("TOPLEFT", -2, 10)
 	self._quality:SetJustifyH("LEFT")
 
+	self._quantity = UIElements.CreateFontString(self, frame)
+	self._quantity:SetHeight(16)
+	self._quantity:TSMSetFont("TABLE_TABLE1_OUTLINE")
+	self._quantity:SetPoint("BOTTOMLEFT", 1, 1)
+	self._quantity:SetPoint("BOTTOMRIGHT", -1, 1)
+	self._quantity:SetJustifyH("RIGHT")
+
 	self._addIcon = UIElements.CreateTexture(self, frame, "ARTWORK")
 	self._addIcon:SetPoint("BOTTOMRIGHT", -2, 2)
 	self._addIcon:TSMSetTextureAndSize("iconPack.14x14/Add/Default")
 
 	self._items = {}
+	self._selectionSlotId = nil
+	self._requiredQty = nil
+	self._onSelectionChanged = nil
 end
 
 function ItemSelector:Acquire()
 	self.__super:Acquire()
 
 	self:EnableRightClick()
+
+	-- Set our own state
+	self._state:PublisherForKeyChange("selection")
+		:Share(2)
+		:CallMethod(self, "SetTooltip")
+		:CallMethod(self, "SetBackgroundWithItemHighlight")
 
 	-- Set the background state
 	self._state:Publisher()
@@ -74,18 +92,15 @@ function ItemSelector:Acquire()
 		:CallMethod(self._background, "SubscribeColor")
 
 	self._state:PublisherForKeyChange("selection")
-		:MapBooleanEquals("")
+		:MapBooleanEquals(nil)
+		:Share(3)
 		:CallMethod(self._background, "SetShown")
-	self._state:PublisherForKeyChange("selection")
-		:MapBooleanEquals("")
 		:CallMethod(self._backgroundOverlay, "SetShown")
-	self._state:PublisherForKeyChange("selection")
-		:MapBooleanEquals("")
 		:CallMethod(self._addIcon, "SetShown")
 
 	-- Set the quality state
-	self._state:PublisherForKeyChange("itemQuality")
-		:MapWithFunction(private.StateToQualityText)
+	self._state:PublisherForKeyChange("selection")
+		:MapWithFunction(private.SelectionToQualityText)
 		:CallMethod(self._quality, "SetText")
 end
 
@@ -96,27 +111,69 @@ function ItemSelector:Release()
 	self._backgroundOverlay:CancelAll()
 
 	wipe(self._items)
+	self._selectionSlotId = nil
+	self._requiredQty = nil
+	self._onSelectionChanged = nil
 end
 
----Sets the selectable items that can be picked
+---Sets the selectable items that can be picked.
 ---@param items string[] The indexed table that contains the possible selections
+---@return ItemSelector
 function ItemSelector:SetItems(items)
 	wipe(self._items)
+	self:SetDisabled(not next(items))
 	for _, itemString in ipairs(items) do
 		tinsert(self._items, itemString)
 	end
 	return self
 end
 
----Clears the current selection
-function ItemSelector:ClearSelection()
-	self._state.selection = ""
+---Sets the list of items from a mat string.
+---@param matString string The mat string
+---@param requiredQuantity? number The required stack size for this mat
+---@return ItemSelector
+function ItemSelector:SetMatString(matString, requiredQty)
+	wipe(self._items)
+	self._requiredQty = requiredQty
+	if matString then
+		for itemString in MatString.ItemIterator(matString) do
+			if not requiredQty or private.GetBagSlotId(itemString, requiredQty) then
+				tinsert(self._items, itemString)
+			end
+		end
+	end
+	self:SetDisabled(not next(self._items))
+	self:SetSelection(self._state.selection, true)
 	return self
 end
 
----Returns the current selection of the ItemSelector
+---Get the currently selected item.
+---@return The selected item
 function ItemSelector:GetSelection()
 	return self._state.selection
+end
+
+---Get the next targetable salvage slot id
+---@return ItemLocation
+function ItemSelector:GetNextSalvageSlotId()
+	if not self._state.selection then
+		return nil
+	end
+	return self:IsSelectionSlotValid() and self._selectionSlotId or private.GetBagSlotId(self._state.selection, self._requiredQty)
+end
+
+---Sets the current selection of the ItemSelector.
+---@param selection? string The item to select or nil to clear the selection
+---@return ItemSelector
+function ItemSelector:SetSelection(selection, silent)
+	self._state.selection = selection
+	local slotId = self:IsSelectionSlotValid() and self._selectionSlotId or private.GetBagSlotId(self._state.selection, self._requiredQty)
+	self._selectionSlotId = slotId
+	self._quantity:SetText(slotId and BagTracking.GetQuantityBySlotId(slotId) or "")
+	if not silent and self._onSelectionChanged then
+		self:_onSelectionChanged(selection)
+	end
+	return self
 end
 
 ---Set whether or not the item selector is disabled.
@@ -124,6 +181,19 @@ end
 ---@return ItemSelector
 function ItemSelector:SetDisabled(disabled)
 	self._state.disabled = disabled and true or false
+	return self
+end
+
+---Registers a script handler.
+---@param script "OnSelectionChanged"
+---@param handler fun(itemSelector: ItemSelector, ...: any) The handler
+---@return ItemSelector
+function ItemSelector:SetScript(script, handler)
+	if script == "OnSelectionChanged" then
+		self._onSelectionChanged = handler
+	else
+		self.__super:SetScript(script, handler)
+	end
 	return self
 end
 
@@ -139,10 +209,7 @@ function ItemSelector.__private:_HandleClick(_, mouseButton)
 	end
 
 	if mouseButton == "RightButton" then
-		self._state.selection = ""
-		self._state.itemQuality = 0
-		self:SetBackground(nil)
-		self:SetTooltip(nil)
+		self:SetSelection(nil)
 		Tooltip.Hide()
 		return
 	end
@@ -167,7 +234,7 @@ function ItemSelector.__private:_HandleClick(_, mouseButton)
 			:SetRoundedBackgroundColor("ACTIVE_BG")
 			:AddChild(UIElements.New("Text", "title")
 				:SetMargin(18, 8, -4, 0)
-				:SetFont("ITEM_BODY3")
+				:SetFont("BODY_BODY3")
 				:SetJustifyH("CENTER")
 				:SetText(L["Item Selection"])
 			)
@@ -187,16 +254,11 @@ function ItemSelector.__private:_HandleClick(_, mouseButton)
 				:SetPadding(12, 8, 4, 4)
 				:AddChild(UIElements.New("Frame", "items")
 					:SetLayout("FLOW")
-					:SetContext(self)
-					:AddChildrenWithFunction(private.CreateItems, self)
+					:AddChildrenWithFunction(self:__closure("_CreateItems"))
 				)
 			)
 		)
 	)
-end
-
-function ItemSelector.__private:_CloseDialog()
-	self:GetBaseElement():HideDialog()
 end
 
 function ItemSelector.__private:_HandleFrameOnHide()
@@ -213,42 +275,12 @@ function ItemSelector.__private:_HandleFrameLeave()
 end
 
 function ItemSelector.__private:_HandleButtonOnClick(button)
-	self._state.selection = button:GetContext()
-	self._state.itemQuality = ItemInfo.GetCraftedQuality(self._state.selection) or 0
-
+	self:SetSelection(button:GetContext())
 	self:GetBaseElement():HideDialog()
-	self:SetBackgroundWithItemHighlight(self._state.selection)
-	self:SetTooltip(self._state.selection)
 end
 
-
-
--- ============================================================================
--- Private Helper Functions
--- ============================================================================
-
-function private.StateToBackgroundColorKey(state)
-	if state.disabled then
-		return "ACTIVE_BG"
-	else
-		if state.mouseOver then
-			return "TEXT_ALT+HOVER"
-		else
-			return "TEXT_ALT"
-		end
-	end
-end
-
-function private.StateToQualityText(itemQuality)
-	if itemQuality > 0 then
-		return Professions.GetChatIconMarkupForQuality(itemQuality, true)
-	else
-		return ""
-	end
-end
-
-function private.CreateItems(frame, self)
-	for _, itemString in ipairs(frame:GetContext()._items) do
+function ItemSelector.__private:_CreateItems(frame)
+	for _, itemString in ipairs(self._items) do
 		local craftQuality = ItemInfo.GetCraftedQuality(itemString)
 		frame:AddChild(UIElements.New("Frame", "content")
 			:SetLayout("HORIZONTAL")
@@ -269,4 +301,51 @@ function private.CreateItems(frame, self)
 			)
 		)
 	end
+end
+
+function ItemSelector.__private:IsSelectionSlotValid()
+	if not self._state.selection or not self._selectionSlotId then
+		return false
+	end
+	local selectionQuantity = BagTracking.GetQuantityBySlotId(self._selectionSlotId)
+	local salvageItemLocation = ItemLocation:CreateFromBagAndSlot(SlotId.Split(self._selectionSlotId))
+	return pcall(C_Item.DoesItemExist, salvageItemLocation) and self._requiredQty and selectionQuantity and selectionQuantity >= self._requiredQty
+end
+
+
+
+-- ============================================================================
+-- Private Helper Functions
+-- ============================================================================
+
+function private.StateToBackgroundColorKey(state)
+	if state.disabled then
+		return "ACTIVE_BG"
+	else
+		if state.mouseOver then
+			return "TEXT_ALT+HOVER"
+		else
+			return "TEXT_ALT"
+		end
+	end
+end
+
+function private.SelectionToQualityText(selection)
+	local itemQuality = selection and ItemInfo.GetCraftedQuality(selection)
+	if not itemQuality then
+		return ""
+	end
+	return Professions.GetChatIconMarkupForQuality(itemQuality, true)
+end
+
+function private.GetBagSlotId(itemString, requiredQuantity)
+	if not itemString or not requiredQuantity then
+		return nil
+	end
+	return BagTracking.CreateQueryBagsBank()
+		:Select("slotId")
+		:GreaterThanOrEqual("quantity", requiredQuantity)
+		:Equal("itemString", itemString)
+		:OrderBy("quantity", false)
+		:GetFirstResultAndRelease()
 end

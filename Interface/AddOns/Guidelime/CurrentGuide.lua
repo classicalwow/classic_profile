@@ -87,7 +87,7 @@ function CG.loadCurrentGuide(reset)
 		for _, element in ipairs(step.elements) do
 			if not element.generated and
 				((element.text ~= nil and element.text ~= "") or 
-				(element.t ~= "TEXT" and element.t ~= "NAME" and element.t ~= "NEXT" and element.t ~= "DETAILS" and element.t ~= "GUIDE_APPLIES" and element.t ~= "APPLIES" and 
+				(element.t ~= "TEXT" and element.t ~= "NAME" and element.t ~= "NEXT" and element.t ~= "DETAILS" and element.t ~= "GUIDE_APPLIES" and 
 				element.t ~= "DOWNLOAD" and element.t ~= "AUTO_ADD_COORDINATES_GOTO" and element.t ~= "AUTO_ADD_COORDINATES_LOC" and element.t ~= "AUTO_ADD_USE_ITEM"))
 			then
 				table.insert(filteredElements, element)
@@ -140,18 +140,22 @@ function CG.loadCurrentGuide(reset)
 							end
 						end
 					end
-					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not element.optional then
+					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not step.optional then
 						if CG.addElement(CG.updatePosElement(PT.getQuestPosition(element.questId, element.t, element.objective, lastGoto), {t = "GOTO"}), element) then
 							i = i + 1 
 						end
 					end
+					if element.races ~= nil or element.classes ~= nil then
+						CG.addElement({t = "APPLIES", races = element.races, classes = element.classes, faction = element.faction}, element)
+						i = i + 1
+					end
 				elseif element.t == "FLY" then
-					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not element.optional then
+					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not step.optional then
 						CG.addElement({t = "GOTO", specialLocation = "NEAREST_FLIGHT_POINT", radius = CG.DEFAULT_GOTO_RADIUS}, element)
 						i = i + 1
 					end						
 				elseif element.t == "GET_FLIGHT_POINT" then
-					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not element.optional then
+					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not step.optional then
 						if CG.addElement(CG.updatePosElement(FM.getFlightPoint(element.flightmaster), {t = "GOTO"}), element) then
 							i = i + 1 
 						end
@@ -162,7 +166,7 @@ function CG.loadCurrentGuide(reset)
 					end
 					if step.manual == nil then step.manual = false end
 					if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and 
-						not step.hasGoto and not element.optional and not step.targetElement then
+						not step.hasGoto and not step.optional and not step.targetElement then
 						if CG.addElement(CG.updatePosElement(PT.getItemPosition(element.itemId, lastGoto), {t = "GOTO"}), element) then
 							i = i + 1 
 						end
@@ -172,7 +176,7 @@ function CG.loadCurrentGuide(reset)
 				elseif element.t == "TARGET" then
 					if not element.generated then 
 						step.targetElement = true
-						if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not element.optional then
+						if guide.autoAddCoordinatesGOTO and (GuidelimeData.showMapMarkersGOTO or GuidelimeData.showMinimapMarkersGOTO) and not step.hasGoto and not step.optional then
 							if CG.addElement(CG.updatePosElement(PT.getNPCPosition(element.targetNpcId, lastGoto), {t = "GOTO"}), element) then	
 								i = i + 1 
 							end
@@ -278,9 +282,12 @@ local function loadStepOnActivation(i)
 				if positions ~= nil then
 					local objectives = QT.getQuestObjectives(element.questId, element.t)						
 					for _, pos in ipairs(positions) do
-						CG.addElement(CG.updatePosElement(pos, {t = "LOC", 
-								markerTyp = objectives and pos.objectives and pos.objectives[1] and objectives[pos.objectives[1]] and objectives[pos.objectives[1]].type or "LOC"
-							}),	element, 0, true)
+						local locElement = CG.addElement(CG.updatePosElement(pos, {t = "LOC"}),	element, 0, true)
+						if element.t == "COMPLETE" then
+							locElement.markerTyp = objectives and pos.objectives and pos.objectives[1] and objectives[pos.objectives[1]] and objectives[pos.objectives[1]].type or "LOC"
+						else
+							locElement.markerTyp = element.t
+						end
 						j = j + 1
 					end
 					for k = j, #step.elements do
@@ -494,6 +501,17 @@ function CG.getElementIcon(element, prevElement)
 		end
 	elseif element.t == "USE_ITEM" and element.title ~= "" then
 		return "|T" .. (GetItemIcon(element.useItemId) or addon.icons.item) .. ":12|t"
+	elseif element.t == "APPLIES" then
+		local text = ""
+		if D.contains(element.races, D.race) and element.faction == nil then
+			--text = text .. "|T" .. addon.icons[D.race:upper()] .. ":12|t"
+			text = text .. D.getRaceIconText(D.race, D.sex) 
+		end
+		if D.contains(element.classes, D.class) then
+			--text = text .. "|T" .. addon.icons[D.class:upper()] .. ":12|t"
+			text = text .. D.getClassIconText(D.class)
+		end
+		return text
 	elseif addon.icons[element.t] ~= nil and (not prevElement or element.t ~= prevElement.t) then
 		return "|T" .. addon.icons[element.t] .. ":12|t"
 	end
@@ -604,10 +622,11 @@ function CG.getStepText(step)
 				end
 			end
 		elseif element.t == "TARGET" and element.title ~= "" then
-			if element.targetButton then
+			local npc = QT.getNPCName(element.targetNpcId)
+			if element.targetButton and element.targetButton.npc == npc then
 				text = text .. AB.getTargetButtonIconText(element.targetButton.index)
 			end
-			local name = element.title or QT.getNPCName(element.targetNpcId)
+			local name = element.title or npc
 			if name and name ~= "" then
 				if step.active then
 					text = text .. MW.COLOR_WHITE .. name .. "|r"
@@ -1015,23 +1034,24 @@ function CG.scrollToFirstActive()
 				MW.mainFrame.steps ~= nil and
 				MW.mainFrame.steps[CG.currentGuide.firstActiveIndex] ~= nil and
 				MW.mainFrame.steps[CG.currentGuide.firstActiveIndex]:GetTop() ~= nil and
-				MW.mainFrame.steps[CG.currentGuide.firstActiveIndex]:GetTop() + 20
+				MW.mainFrame.steps[CG.currentGuide.firstActiveIndex]:GetTop() + MW.GAP
 			local bottom = MW.mainFrame.bottomElement and MW.mainFrame.bottomElement:GetBottom()
 			for _, message in ipairs(MW.mainFrame.message or {}) do
 				if message:IsShown() then 
 					bottom = message:GetBottom() 
-					if not top then top = message:GetTop() + 20 end
+					if not top then top = message:GetTop() + MW.GAP end
 				end
 			end
-			if bottom and MW.mainFrame:GetTop() - bottom + MW.mainFrame.scrollFrame:GetVerticalScroll() <= MW.mainFrame:GetHeight() then
+			if bottom and MW.mainFrame.scrollFrame:GetTop() - bottom + MW.mainFrame.scrollFrame:GetVerticalScroll() <= MW.mainFrame.scrollFrame:GetHeight() then
 				MW.mainFrame.scrollFrame:SetVerticalScroll(0)
-			elseif bottom and top and top < bottom + MW.mainFrame:GetHeight() then
+			elseif bottom and top and top < bottom + MW.mainFrame.scrollFrame:GetHeight() then
 				MW.mainFrame.scrollFrame:SetVerticalScroll(MW.mainFrame.scrollFrame:GetVerticalScroll() + 
-					MW.mainFrame:GetTop() - bottom - MW.mainFrame:GetHeight())
+					MW.mainFrame.scrollFrame:GetTop() - bottom - MW.mainFrame.scrollFrame:GetHeight())
 			elseif top then
 				MW.mainFrame.scrollFrame:SetVerticalScroll(MW.mainFrame.scrollFrame:GetVerticalScroll() + 
-					MW.mainFrame:GetTop() - top)
+					MW.mainFrame.scrollFrame:GetTop() - top)
 			end
+			if addon.debugging then print("LIME: scrollToFirstActive", MW.mainFrame.scrollFrame:GetVerticalScroll()) end
 		end
 	end)
 end
@@ -1068,11 +1088,11 @@ function CG.updateSteps(completedIndexes)
 	--if addon.debugging then print("LIME: updateFirstActiveIndex " .. math.floor(debugprofilestop() - time) .. " ms"); time = debugprofilestop() end
 	M.updateStepsMapIcons()
 	--if addon.debugging then print("LIME: updateStepsMapIcons " .. math.floor(debugprofilestop() - time) .. " ms"); time = debugprofilestop() end
+	AB.updateTargetButtons()
+	AB.updateUseItemButtons()
 	CG.updateStepsText()
 	if scrollToFirstActive then	CG.scrollToFirstActive() end
 	--if addon.debugging then print("LIME: updateStepsText " .. math.floor(debugprofilestop() - time) .. " ms"); time = debugprofilestop() end
-	AB.updateTargetButtons()
-	AB.updateUseItemButtons()
 
 	if customCodeData then
 		for i,v in ipairs(customCodeData) do
@@ -1142,21 +1162,18 @@ function CG.completeSemiAutomatic(element)
 	element.completed = true
 	local step = element.step
 	local complete = true
-	if not step.manual then
+	if not step.manual and not step.optional then
 		for _, element in ipairs(step.elements) do
-			if not element.optional then
-				if element.t == "ACCEPT" or
-					element.t == "COMPLETE" or
-					element.t == "TURNIN" or
-					element.t == "XP" or 
-					element.t == "REPUTATION" or
-					element.t == "LEARN" or
-					element.t == "SKILL" then
-					if not element.completed then 
-						CG.updateSteps()
-						return
-					end
-				end
+			if not element.completed and
+				(element.t == "ACCEPT" or
+				element.t == "COMPLETE" or
+				element.t == "TURNIN" or
+				element.t == "XP" or 
+				element.t == "REPUTATION" or
+				element.t == "LEARN" or
+				element.t == "SKILL") then
+				CG.updateSteps()
+				return
 			end
 		end
 	end

@@ -2,7 +2,6 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local strfind = strfind
 local unpack, select = unpack, select
 
 local GetItemInfo = GetItemInfo
@@ -37,7 +36,7 @@ function S:Blizzard_TradeSkillUI()
 	TradeSkillCollapseAllButton:GetNormalTexture():SetPoint('LEFT', 3, 2)
 	TradeSkillCollapseAllButton:GetNormalTexture():Size(15)
 
-	TradeSkillCollapseAllButton:SetHighlightTexture('')
+	TradeSkillCollapseAllButton:SetHighlightTexture(E.ClearTexture)
 	TradeSkillCollapseAllButton.SetHighlightTexture = E.noop
 
 	TradeSkillCollapseAllButton:SetDisabledTexture(E.Media.Textures.MinusButton)
@@ -59,39 +58,26 @@ function S:Blizzard_TradeSkillUI()
 
 	for i = 1, _G.TRADE_SKILLS_DISPLAYED do
 		local button = _G['TradeSkillSkill'..i]
+		S:HandleCollapseTexture(button, nil, true)
+
+		local normal = button:GetNormalTexture()
+		if normal then
+			normal:Size(14)
+			normal:SetPoint('LEFT', 2, 1)
+		end
+
 		local highlight = _G['TradeSkillSkill'..i..'Highlight']
-
-		button:GetNormalTexture():Size(14)
-		button:GetNormalTexture():SetPoint('LEFT', 2, 1)
-
-		highlight:SetTexture('')
-		highlight.SetTexture = E.noop
+		if highlight then
+			highlight:SetTexture(E.ClearTexture)
+			highlight.SetTexture = E.noop
+		end
 	end
-
-	hooksecurefunc('TradeSkillFrame_Update', function()
-		for i = 1, _G.TRADE_SKILLS_DISPLAYED do
-			local button = _G['TradeSkillSkill'..i]
-			local texture = button:GetNormalTexture():GetTexture()
-			if texture then
-				if strfind(texture, 'MinusButton') then
-					button:SetNormalTexture(E.Media.Textures.MinusButton)
-				elseif strfind(texture, 'PlusButton') then
-					button:SetNormalTexture(E.Media.Textures.PlusButton)
-				end
-			end
-		end
-
-		if TradeSkillCollapseAllButton.collapsed then
-			TradeSkillCollapseAllButton:SetNormalTexture(E.Media.Textures.PlusButton)
-		else
-			TradeSkillCollapseAllButton:SetNormalTexture(E.Media.Textures.MinusButton)
-		end
-	end)
 
 	_G.TradeSkillDetailScrollFrame:StripTextures()
 	_G.TradeSkillListScrollFrame:StripTextures()
 	_G.TradeSkillDetailScrollChildFrame:StripTextures()
 
+	S:HandleCollapseTexture(_G.TradeSkillCollapseAllButton, nil, true)
 	S:HandleScrollBar(_G.TradeSkillListScrollFrameScrollBar)
 	S:HandleScrollBar(_G.TradeSkillDetailScrollFrameScrollBar)
 
@@ -111,7 +97,7 @@ function S:Blizzard_TradeSkillUI()
 	end
 
 	_G.TradeSkillHighlight:SetTexture(E.Media.Textures.Highlight)
-	_G.TradeSkillHighlight:SetAlpha(0.35)
+	_G.TradeSkillHighlight:SetAlpha(0.3)
 
 	S:HandleButton(_G.TradeSkillCancelButton)
 	S:HandleButton(_G.TradeSkillCreateButton)
@@ -135,13 +121,10 @@ function S:Blizzard_TradeSkillUI()
 		end
 
 		local skillLink = GetTradeSkillItemLink(id)
-		local r, g, b
-
 		if skillLink then
-			local quality = select(3, GetItemInfo(skillLink))
-
+			local _, _, quality = GetItemInfo(skillLink)
 			if quality and quality > 1 then
-				r, g, b = GetItemQualityColor(quality)
+				local r, g, b = GetItemQualityColor(quality)
 
 				_G.TradeSkillSkillIcon.backdrop:SetBackdropBorderColor(r, g, b)
 				_G.TradeSkillSkillName:SetTextColor(r, g, b)
@@ -157,11 +140,10 @@ function S:Blizzard_TradeSkillUI()
 
 			if reagentLink then
 				local icon = _G['TradeSkillReagent'..i..'IconTexture']
-				local quality = select(3, GetItemInfo(reagentLink))
-
+				local _, _, quality = GetItemInfo(reagentLink)
 				if quality and quality > 1 then
 					local name = _G['TradeSkillReagent'..i..'Name']
-					r, g, b = GetItemQualityColor(quality)
+					local r, g, b = GetItemQualityColor(quality)
 
 					icon.backdrop:SetBackdropBorderColor(r, g, b)
 
@@ -179,4 +161,3 @@ function S:Blizzard_TradeSkillUI()
 end
 
 S:AddCallbackForAddon('Blizzard_TradeSkillUI')
-

@@ -554,7 +554,7 @@ function QuestieDB.IsDoable(questId, debugPrint)
     if (requiredMinRep or requiredMaxRep) then
         local aboveMinRep, hasMinFaction, belowMaxRep, hasMaxFaction = QuestieReputation:HasFactionAndReputationLevel(requiredMinRep, requiredMaxRep)
         if (not ((aboveMinRep and hasMinFaction) and (belowMaxRep and hasMaxFaction))) then
-            Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet reputation requirements for", questId)
+            if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet reputation requirements for", questId) end
 
             --- If we haven't got the faction for min or max we blacklist it
             if not hasMinFaction or not hasMaxFaction then -- or not belowMaxRep -- This is something we could have done, but would break if you rep downwards
@@ -642,13 +642,20 @@ function QuestieDB.IsDoable(questId, debugPrint)
     local requiredSpell = QuestieDB.QueryQuestSingle(questId, "requiredSpell")
     if (requiredSpell) and (requiredSpell ~= 0) then
         local hasSpell = IsSpellKnownOrOverridesKnown(math.abs(requiredSpell))
-        if (requiredSpell > 0) and (not hasSpell) then --if requiredSpell is positive, we make the quest ineligible if the player does NOT have the spell
+        local hasProfSpell = IsPlayerSpell(math.abs(requiredSpell))
+        if (requiredSpell > 0) and (not hasSpell) and (not hasProfSpell) then --if requiredSpell is positive, we make the quest ineligible if the player does NOT have the spell
             if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet spell requirements for", questId) end
             return false
-        elseif (requiredSpell < 0) and hasSpell then --if requiredSpell is negative, we make the quest ineligible if the player DOES  have the spell
+        elseif (requiredSpell < 0) and (hasSpell or hasProfSpell) then --if requiredSpell is negative, we make the quest ineligible if the player DOES  have the spell
             if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet spell requirements for", questId) end
             return false
         end
+    end
+
+    -- Check and see if the Quest requires an achievement before showing as available
+    if _QuestieDB:CheckAchievementRequirements(questId) == false then
+        if debugPrint then Questie:Debug(Questie.DEBUG_SPAM, "[QuestieDB.IsDoable] Player does not meet achievement requirements for", questId) end
+        return false
     end
 
     return true
@@ -658,13 +665,17 @@ end
 ---@return number @Complete = 1, Failed = -1, Incomplete = 0
 function QuestieDB.IsComplete(questId)
     local questLogEntry = QuestLogCache.questLog_DO_NOT_MODIFY[questId] -- DO NOT MODIFY THE RETURNED TABLE
+    local noQuestItem = not QuestieQuest:CheckQuestSourceItem(questId)
+
     --[[ pseudo:
     if no questLogEntry then return 0
     if has questLogEntry.isComplete then return questLogEntry.isComplete
+    if no objectives and an item is needed but not obtained then return 0
     if no objectives then return 1
     return 0
-    ]]--
-    return questLogEntry and (questLogEntry.isComplete or (questLogEntry.objectives[1] and 0) or 1) or 0
+    --]]
+
+    return questLogEntry and (questLogEntry.isComplete or (questLogEntry.objectives[1] and 0) or (#questLogEntry.objectives == 0 and noQuestItem and 0) or 1) or 0
 end
 
 ---@param self Quest
@@ -673,9 +684,10 @@ function _QuestieDB._QO_IsComplete(self)
     return QuestieDB.IsComplete(self.Id)
 end
 
+---@param questLevel number the level of the quest
 ---@return boolean @Returns true if the quest should be grey, false otherwise
-local function _IsTrivial(self)
-    local levelDiff = self.level - QuestiePlayer.GetPlayerLevel();
+function QuestieDB.IsTrivial(questLevel)
+    local levelDiff = questLevel - QuestiePlayer.GetPlayerLevel();
     if (levelDiff >= 5) then
         return false -- Red
     elseif (levelDiff >= 3) then
@@ -902,15 +914,31 @@ function QuestieDB:GetQuest(questId) -- /dump QuestieDB:GetQuest(867)
 
     ---@type ItemId[]
     local requiredSourceItems = rawdata[questKeys.requiredSourceItems]
-    if requiredSourceItems ~= nil then --required source items
+    if requiredSourceItems ~= nil then
         for _, itemId in pairs(requiredSourceItems) do
             if itemId ~= nil then
-                QO.SpecialObjectives[itemId] = {
-                    Type = "item",
-                    Id = itemId,
-                    ---@type string @We have to hard-type it here because of the function
-                    Description = QuestieDB.QueryItemSingle(itemId, "name")
-                }
+                -- Make sure requiredSourceItems aren't already an objective
+                local itemObjPresent = false
+                if objectives[3] ~= nil then
+                    for _, itemObjective in pairs(objectives[3]) do
+                        if itemObjective ~= nil then
+                            if itemId == itemObjective[1] then
+                                itemObjPresent = true
+                                break
+                            end
+                        end
+                    end
+                end
+
+                -- Make an objective for requiredSourceItem
+                if not itemObjPresent then
+                    QO.SpecialObjectives[itemId] = {
+                        Type = "item",
+                        Id = itemId,
+                        ---@type string @We have to hard-type it here because of the function
+                        Description = QuestieDB.QueryItemSingle(itemId, "name")
+                    }
+                end
             end
         end
     end
@@ -924,8 +952,6 @@ function QuestieDB:GetQuest(questId) -- /dump QuestieDB:GetQuest(867)
         end
     end
 
-    QO.IsTrivial = _IsTrivial
-
     ---@type ExtraObjective[]
     local extraObjectives = rawdata[questKeys.extraObjectives]
     if extraObjectives then
@@ -933,6 +959,7 @@ function QuestieDB:GetQuest(questId) -- /dump QuestieDB:GetQuest(867)
             QO.SpecialObjectives[index] = {
                 Icon = o[2],
                 Description = o[3],
+                RealObjectiveIndex = o[4],
             }
             if o[1] then -- custom spawn
                 QO.SpecialObjectives[index].spawnList = {{
@@ -1122,6 +1149,23 @@ end
 
 ---------------------------------------------------------------------------------------------------
 -- Modifications to questDB
+
+function _QuestieDB:CheckAchievementRequirements(questId)
+    -- So far the only Quests that we know of that requires an earned Achievement are the ones offered by:
+    -- https://www.wowhead.com/wotlk/npc=35094/crusader-silverdawn
+    -- Get Kraken (14108)
+    -- The Fate Of The Fallen (14107)
+    -- This NPC requires these earned Achievements baseed on a Players home faction:
+    -- https://www.wowhead.com/wotlk/achievement=2817/exalted-argent-champion-of-the-alliance
+    -- https://www.wowhead.com/wotlk/achievement=2816/exalted-argent-champion-of-the-horde
+    if questId == 14101 or questId == 14102 or questId == 14104 or questId == 14105 or questId == 14107 or questId == 14108 then
+        if select(13, GetAchievementInfo(2817)) or select(13, GetAchievementInfo(2816)) then
+            return true
+        end
+
+        return false
+    end
+end
 
 function _QuestieDB:HideClassAndRaceQuests()
     local questKeys = QuestieDB.questKeys

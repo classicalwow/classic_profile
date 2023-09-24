@@ -1,10 +1,10 @@
-lightweight tag 6302546702f7e9617f9519aefe511bd52c56a61f v1.2.3
+lightweight tag e7a1fceee7a29120588f788b240581efc4063bc8 v1.3.1
 Author:	Simon Hirsig <simon.hirsig@gmail.com>
-Date:	Sat Apr 9 13:06:45 2022 +0200
+Date:	Wed Aug 23 22:00:45 2023 +0200
 
-commit 6302546702f7e9617f9519aefe511bd52c56a61f
+commit e7a1fceee7a29120588f788b240581efc4063bc8
 Author: Simon Hirsig <simon.hirsig@gmail.com>
-Date:   Sat Apr 9 13:06:45 2022 +0200
+Date:   Wed Aug 23 22:00:45 2023 +0200
 
-    removing unused code
+    client version bump
 

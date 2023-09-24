@@ -2,28 +2,28 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
+local next, strsplit = next, strsplit
 local unpack, sort, gsub, wipe = unpack, sort, gsub, wipe
 local strupper, ipairs, tonumber = strupper, ipairs, tonumber
 local floor, select, type, min = floor, select, type, min
 local pairs, tinsert, tContains = pairs, tinsert, tContains
-local strsplit = strsplit
 
 local hooksecurefunc = hooksecurefunc
 local EnableAddOn = EnableAddOn
 local LoadAddOn = LoadAddOn
-local GetAddOnMetadata = GetAddOnMetadata
 local GetAddOnInfo = GetAddOnInfo
 local CreateFrame = CreateFrame
 local IsAddOnLoaded = IsAddOnLoaded
 local InCombatLockdown = InCombatLockdown
 local IsControlKeyDown = IsControlKeyDown
 local IsAltKeyDown = IsAltKeyDown
+local EditBox_HighlightText = EditBox_HighlightText
 local EditBox_ClearFocus = EditBox_ClearFocus
 local ERR_NOT_IN_COMBAT = ERR_NOT_IN_COMBAT
 local RESET = RESET
 -- GLOBALS: ElvUIMoverPopupWindow, ElvUIMoverNudgeWindow, ElvUIMoverPopupWindowDropDown
 
-local ConfigTooltip = CreateFrame('GameTooltip', 'ElvUIConfigTooltip', E.UIParent, 'SharedTooltipTemplate')
+local ConfigTooltip = CreateFrame('GameTooltip', 'ElvUIConfigTooltip', E.UIParent, 'GameTooltipTemplate')
 
 local grid
 E.ConfigModeLayouts = {
@@ -77,7 +77,7 @@ function E:ToggleMoveMode(which)
 		mode = true
 	end
 
-	self:ToggleMovers(mode, which)
+	E:ToggleMovers(mode, which)
 
 	if mode then
 		E:Grid_Show()
@@ -90,7 +90,7 @@ function E:ToggleMoveMode(which)
 		ElvUIMoverPopupWindow:Show()
 		_G.UIDropDownMenu_SetSelectedValue(ElvUIMoverPopupWindowDropDown, strupper(which))
 
-		if IsAddOnLoaded('ElvUI_OptionsUI') then
+		if IsAddOnLoaded('ElvUI_Options') then
 			E:Config_CloseWindow()
 		end
 	else
@@ -122,10 +122,8 @@ function E:Grid_Create()
 		grid:SetFrameStrata('BACKGROUND')
 	else
 		grid.regionCount = 0
-		local numRegions = grid:GetNumRegions()
-		for i = 1, numRegions do
-			local region = select(i, grid:GetRegions())
-			if region and region.IsObjectType and region:IsObjectType('Texture') then
+		for _, region in next, { grid:GetRegions() } do
+			if region.IsObjectType and region:IsObjectType('Texture') then
 				grid.regionCount = grid.regionCount + 1
 				region:SetAlpha(0)
 			end
@@ -133,10 +131,10 @@ function E:Grid_Create()
 	end
 
 	local width, height = E.UIParent:GetSize()
-	local size, half = E.mult / 2, height / 2
+	local size, half = E.mult * 0.5, height * 0.5
 
 	local gSize = E.db.gridSize
-	local gHalf = gSize / 2
+	local gHalf = gSize * 0.5
 
 	local ratio = width / height
 	local hHeight = height * ratio
@@ -173,7 +171,7 @@ function E:Grid_Create()
 		tx:SetPoint('BOTTOMRIGHT', grid, 'TOPRIGHT', 0, -(half + size))
 	end
 
-	local hSteps = floor((height/2)/hStep)
+	local hSteps = floor((height*0.5)/hStep)
 	for i = 1, hSteps do
 		local ihStep = i*hStep
 
@@ -288,14 +286,14 @@ function E:CreateMoverPopup()
 	f.desc = desc
 
 	local snapName = f:GetName()..'CheckButton'
-	local snapping = CreateFrame('CheckButton', snapName, f, 'OptionsCheckButtonTemplate')
+	local snapping = CreateFrame('CheckButton', snapName, f, 'UICheckButtonTemplate')
 	snapping:SetScript('OnShow', function(cb) cb:SetChecked(E.db.general.stickyFrames) end)
 	snapping:SetScript('OnClick', function(cb) E.db.general.stickyFrames = cb:GetChecked() end)
 	snapping.text = _G[snapName..'Text']
 	snapping.text:SetText(L["Sticky Frames"])
 	f.snapping = snapping
 
-	local lock = CreateFrame('Button', f:GetName()..'CloseButton', f, 'OptionsButtonTemplate')
+	local lock = CreateFrame('Button', f:GetName()..'CloseButton', f, 'UIPanelButtonTemplate')
 	lock.Text:SetText(L["Lock"])
 	lock:SetScript('OnClick', function()
 		E:ToggleMoveMode()
@@ -303,7 +301,7 @@ function E:CreateMoverPopup()
 		if E.ConfigurationToggled then
 			E.ConfigurationToggled = nil
 
-			if IsAddOnLoaded('ElvUI_OptionsUI') then
+			if IsAddOnLoaded('ElvUI_Options') then
 				E:Config_OpenWindow()
 			end
 		end
@@ -334,7 +332,7 @@ function E:CreateMoverPopup()
 	align:SetScript('OnEditFocusLost', function(eb)
 		eb:SetText(E.db.gridSize)
 	end)
-	align:SetScript('OnEditFocusGained', align.HighlightText)
+	align:SetScript('OnEditFocusGained', EditBox_HighlightText)
 	align:SetScript('OnShow', function(eb)
 		EditBox_ClearFocus(eb)
 		eb:SetText(E.db.gridSize)
@@ -442,7 +440,7 @@ function E:CreateMoverPopup()
 	xOffset:SetScript('OnEditFocusLost', function(eb)
 		eb:SetText(E:Round(xOffset.currentValue))
 	end)
-	xOffset:SetScript('OnEditFocusGained', xOffset.HighlightText)
+	xOffset:SetScript('OnEditFocusGained', EditBox_HighlightText)
 	xOffset:SetScript('OnShow', function(eb)
 		EditBox_ClearFocus(eb)
 		eb:SetText(E:Round(xOffset.currentValue))
@@ -477,7 +475,7 @@ function E:CreateMoverPopup()
 	yOffset:SetScript('OnEditFocusLost', function(eb)
 		eb:SetText(E:Round(yOffset.currentValue))
 	end)
-	yOffset:SetScript('OnEditFocusGained', yOffset.HighlightText)
+	yOffset:SetScript('OnEditFocusGained', EditBox_HighlightText)
 	yOffset:SetScript('OnShow', function(eb)
 		EditBox_ClearFocus(eb)
 		eb:SetText(E:Round(yOffset.currentValue))
@@ -553,10 +551,14 @@ function E:Config_UpdateSize(reset)
 	if not frame then return end
 
 	local maxWidth, maxHeight = self.UIParent:GetSize()
-	frame:SetMinResize(800, 600)
-	frame:SetMaxResize(maxWidth-50, maxHeight-50)
+	if frame.SetResizeBounds then
+		frame:SetResizeBounds(800, 600, maxWidth-50, maxHeight-50)
+	else
+		frame:SetMinResize(800, 600)
+		frame:SetMaxResize(maxWidth-50, maxHeight-50)
+	end
 
-	self.Libs.AceConfigDialog:SetDefaultSize(E.name, E:Config_GetDefaultSize())
+	self.Libs.AceConfigDialog:SetDefaultSize('ElvUI', E:Config_GetDefaultSize())
 
 	local status = frame.obj and frame.obj.status
 	if status then
@@ -628,21 +630,21 @@ local function Config_SortButtons(a,b)
 	end
 end
 
-local function ConfigSliderOnMouseWheel(self, offset)
-	local _, maxValue = self:GetMinMaxValues()
+local function ConfigSliderOnMouseWheel(frame, offset)
+	local _, maxValue = frame:GetMinMaxValues()
 	if maxValue == 0 then return end
 
-	local newValue = self:GetValue() - offset
+	local newValue = frame:GetValue() - offset
 	if newValue < 0 then newValue = 0 end
 	if newValue > maxValue then return end
 
-	self:SetValue(newValue)
-	self.buttons:Point('TOPLEFT', 0, newValue * 36)
+	frame:SetValue(newValue)
+	frame.buttons:Point('TOPLEFT', 0, newValue * 36)
 end
 
-local function ConfigSliderOnValueChanged(self, value)
-	self:SetValue(value)
-	self.buttons:Point('TOPLEFT', 0, value * 36)
+local function ConfigSliderOnValueChanged(frame, value)
+	frame:SetValue(value)
+	frame.buttons:Point('TOPLEFT', 0, value * 36)
 end
 
 function E:Config_SetButtonText(btn, noColor)
@@ -667,8 +669,9 @@ function E:Config_CreateSeparatorLine(frame, lastButton)
 end
 
 function E:Config_SetButtonColor(btn, disabled)
+	btn:SetEnabled(not disabled)
+
 	if disabled then
-		btn:Disable()
 		btn.Text:SetTextColor(1, 1, 1)
 		E:Config_SetButtonText(btn, true)
 
@@ -677,7 +680,6 @@ function E:Config_SetButtonColor(btn, disabled)
 			btn:SetBackdropBorderColor(1, .82, 0, 1)
 		end
 	else
-		btn:Enable()
 		btn.Text:SetTextColor(1, .82, 0)
 		E:Config_SetButtonText(btn)
 
@@ -871,12 +873,12 @@ end
 
 function E:Config_GetWindow()
 	local ACD = E.Libs.AceConfigDialog
-	local ConfigOpen = ACD and ACD.OpenFrames and ACD.OpenFrames[E.name]
+	local ConfigOpen = ACD and ACD.OpenFrames and ACD.OpenFrames.ElvUI
 	return ConfigOpen and ConfigOpen.frame
 end
 
 local ConfigLogoTop
-E.valueColorUpdateFuncs[function(_, r, g, b)
+E.valueColorUpdateFuncs.ConfigLogo = function(_, _, r, g, b)
 	if ConfigLogoTop then
 		ConfigLogoTop:SetVertexColor(r, g, b)
 	end
@@ -884,7 +886,7 @@ E.valueColorUpdateFuncs[function(_, r, g, b)
 	if ElvUIMoverNudgeWindow and ElvUIMoverNudgeWindow.shadow then
 		ElvUIMoverNudgeWindow.shadow:SetBackdropBorderColor(r, g, b, 0.9)
 	end
-end] = true
+end
 
 function E:Config_WindowClosed()
 	if not self.bottomHolder then return end
@@ -983,7 +985,7 @@ function E:Config_CreateBottomButtons(frame, unskinned)
 			desc = L["Run the installation process."],
 			func = function()
 				E:Install()
-				E:ToggleOptionsUI()
+				E:ToggleOptions()
 			end
 		},
 		{
@@ -991,7 +993,7 @@ function E:Config_CreateBottomButtons(frame, unskinned)
 			name = L["Toggle Tutorials"],
 			func = function()
 				E:Tutorials(true)
-				E:ToggleOptionsUI()
+				E:ToggleOptions()
 			end
 		},
 		{
@@ -1000,7 +1002,7 @@ function E:Config_CreateBottomButtons(frame, unskinned)
 			desc = L["Shows a frame with needed info for support."],
 			func = function()
 				E:ShowStatusReport()
-				E:ToggleOptionsUI()
+				E:ToggleOptions()
 				E.StatusReportToggled = true
 			end
 		}
@@ -1071,32 +1073,30 @@ function E:Config_GetToggleMode(frame, msg)
 	end
 end
 
-function E:ToggleOptionsUI(msg)
+function E:ToggleOptions(msg)
 	if InCombatLockdown() then
-		self:Print(ERR_NOT_IN_COMBAT)
-		self.ShowOptionsUI = true
+		E:Print(ERR_NOT_IN_COMBAT)
+		self.ShowOptions = true
 		return
 	end
 
-	if not IsAddOnLoaded('ElvUI_OptionsUI') then
-		local noConfig
-		local _, _, _, _, reason = GetAddOnInfo('ElvUI_OptionsUI')
+	if not IsAddOnLoaded('ElvUI_Options') then
+		local _, _, _, _, reason = GetAddOnInfo('ElvUI_Options')
 
-		if reason ~= 'MISSING' then
-			EnableAddOn('ElvUI_OptionsUI')
-			LoadAddOn('ElvUI_OptionsUI')
-
-			-- version check elvui options if it's actually enabled
-			if GetAddOnMetadata('ElvUI_OptionsUI', 'Version') ~= '1.07' then
-				self:StaticPopup_Show('CLIENT_UPDATE_REQUEST')
-			end
-		else
-			noConfig = true
-		end
-
-		if noConfig then
-			self:Print('|cffff0000Error -- Addon "ElvUI_OptionsUI" not found.|r')
+		if reason == 'MISSING' then
+			E:Print('|cffff0000Error|r -- Addon "ElvUI_Options" not found.')
 			return
+		else
+			EnableAddOn('ElvUI_Options')
+			LoadAddOn('ElvUI_Options')
+
+			-- version check if it's actually enabled
+			local config = E.Config and E.Config[1]
+			if not config or (E.version ~= config.version) then
+				E.updateRequestTriggered = true
+				E:StaticPopup_Show('UPDATE_REQUEST')
+				return
+			end
 		end
 	end
 
@@ -1110,7 +1110,7 @@ function E:ToggleOptionsUI(msg)
 			ACD.OpenHookedElvUI = true
 		end
 
-		ACD[mode](ACD, E.name)
+		ACD[mode](ACD, 'ElvUI')
 	end
 
 	if not frame then
@@ -1128,8 +1128,7 @@ function E:ToggleOptionsUI(msg)
 		if not frame.bottomHolder then -- window was released or never opened
 			frame:HookScript('OnHide', E.Config_WindowClosed)
 
-			for i=1, frame:GetNumChildren() do
-				local child = select(i, frame:GetChildren())
+			for _, child in next, { frame:GetChildren() } do
 				if child:IsObjectType('Button') and child:GetText() == _G.CLOSE then
 					frame.originalClose = child
 					child:Hide()
@@ -1142,8 +1141,7 @@ function E:ToggleOptionsUI(msg)
 
 			local unskinned = not E.private.skins.ace3Enable
 			if unskinned then
-				for i=1, frame:GetNumRegions() do
-					local region = select(i, frame:GetRegions())
+				for _, region in next, { frame:GetRegions() } do
 					if region:IsObjectType('Texture') and region:GetTexture() == 131080 then
 						region:SetAlpha(0)
 					end
@@ -1160,7 +1158,7 @@ function E:ToggleOptionsUI(msg)
 			close:SetScript('OnClick', E.Config_CloseClicked)
 			close:SetFrameLevel(1000)
 			close:Point('TOPRIGHT', unskinned and -8 or 1, unskinned and -8 or 2)
-			close:Size(32, 32)
+			close:Size(32)
 			close.originalClose = frame.originalClose
 			frame.closeButton = close
 
@@ -1236,7 +1234,7 @@ function E:ToggleOptionsUI(msg)
 		end
 
 		if ACD and pages then
-			ACD:SelectGroup(E.name, unpack(pages))
+			ACD:SelectGroup('ElvUI', unpack(pages))
 		end
 	end
 end

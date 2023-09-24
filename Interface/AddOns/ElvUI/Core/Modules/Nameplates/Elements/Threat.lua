@@ -7,10 +7,10 @@ local UnitIsUnit = UnitIsUnit
 local UnitIsTapDenied = UnitIsTapDenied
 
 NP.ThreatPets = {
-	["61146"] = true,	-- Monk's Black Ox Statue
-	["103822"] = true,	-- Druid's Force of Nature Treants
-	["95072"] = true,	-- Shaman's Earth Elemental
-	["61056"] = true,	-- Primal Earth Elemental
+	['61146'] = true,	-- Monk's Black Ox Statue
+	['103822'] = true,	-- Druid's Force of Nature Treants
+	['95072'] = true,	-- Shaman's Earth Elemental
+	['61056'] = true,	-- Primal Earth Elemental
 }
 
 function NP:ThreatIndicator_PreUpdate(unit, pass)
@@ -73,7 +73,7 @@ end
 
 function NP:Construct_ThreatIndicator(nameplate)
 	local ThreatIndicator = nameplate:CreateTexture(nil, 'OVERLAY')
-	ThreatIndicator:Size(16, 16)
+	ThreatIndicator:Size(16)
 	ThreatIndicator:Hide()
 	ThreatIndicator:Point('CENTER', nameplate, 'TOPRIGHT')
 

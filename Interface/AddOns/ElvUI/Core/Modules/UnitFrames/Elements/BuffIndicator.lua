@@ -8,9 +8,8 @@ function UF:Construct_AuraWatch(frame)
 	local auras = CreateFrame('Frame', frame:GetName() .. 'AuraWatch', frame)
 	auras:SetFrameLevel(frame.RaisedElementParent.AuraWatchLevel)
 	auras:SetInside(frame.Health)
-	auras.presentAlpha = 1
-	auras.missingAlpha = 0
-	auras.strictMatching = true
+
+	auras.allowStacks = UF.SourceStacks -- fake stacking (same spell id)
 	auras.PostCreateIcon = UF.BuffIndicator_PostCreateIcon
 	auras.PostUpdateIcon = UF.BuffIndicator_PostUpdateIcon
 
@@ -18,7 +17,7 @@ function UF:Construct_AuraWatch(frame)
 end
 
 function UF:Configure_AuraWatch(frame, isPet)
-	local db = frame.db.buffIndicator
+	local db = frame.db and frame.db.buffIndicator
 	if db and db.enable then
 		if not frame:IsElementEnabled('AuraWatch') then
 			frame:EnableElement('AuraWatch')
@@ -34,7 +33,7 @@ function UF:Configure_AuraWatch(frame, isPet)
 			if db.profileSpecific then
 				auraTable = E.db.unitframe.filters.aurawatch
 			else
-				auraTable = E:CopyTable({}, E.global.unitframe.aurawatch[E.myclass])
+				auraTable = E.Filters.Expand({}, E.global.unitframe.aurawatch[E.myclass] or {})
 				E:CopyTable(auraTable, E.global.unitframe.aurawatch.GLOBAL)
 			end
 			frame.AuraWatch:SetNewTable(auraTable)
@@ -45,10 +44,9 @@ function UF:Configure_AuraWatch(frame, isPet)
 end
 
 function UF:BuffIndicator_PostCreateIcon(button)
-	button.cd.CooldownOverride = 'unitframe'
 	button.cd.skipScale = true
 
-	E:RegisterCooldown(button.cd)
+	E:RegisterCooldown(button.cd, 'unitframe')
 
 	local blizzCooldownText = button.cd:GetRegions()
 	if blizzCooldownText:IsObjectType('FontString') then
@@ -116,6 +114,8 @@ function UF:BuffIndicator_PostUpdateIcon(_, button)
 			button.icon:SetTexCoord(unpack(E.TexCoords))
 		end
 
+		button.count:ClearAllPoints()
+		button.count:Point(settings.countAnchor or 'BOTTOMRIGHT', settings.countX or 1, settings.countY or 1)
 		button.count:FontTemplate(nil, self.countFontSize or 12, 'OUTLINE')
 
 		if textureIcon and button.filter == 'HARMFUL' then

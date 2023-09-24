@@ -1,0 +1,7 @@
+VER 3 0000000001000001 "target" "INV_MISC_QUESTIONMARK"
+/target 血怒游荡者
+/script SetRaidTarget("target",8)
+END
+VER 3 0000000001000002 "自动攻击" "133052"
+/startattack
+END

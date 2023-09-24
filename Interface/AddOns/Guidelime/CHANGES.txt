@@ -1,18 +1,18 @@
-tag b254f35f5a35d39b0e88952593d59fe4cec08f8d v3.025
+tag a3be58e4ade4bef428ef55283c5d3c462037537c v3.034
 Author:	max-ri <51713394+max-ri@users.noreply.github.com>
-Date:	Tue Apr 25 10:28:14 2023 +0200
+Date:	Thu Aug 24 18:00:58 2023 +0200
 
-v3.025
+v3.034
 
-commit 74cfb4c2abd6fbbd59a96a72b9fff97e133d5ac0
+commit 7d0aba73a5632ded358b2294682a16b1f51ca6c8
 Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Tue Apr 25 10:28:14 2023 +0200
+Date:   Thu Aug 24 18:00:58 2023 +0200
 
-    v3.025
+    v3.034
 
-commit dc7fcedb95a05355a1cccf85efbe3e2b2409cd75
+commit a35a205cd0097c45765764df114a597b9eb9a773
 Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Tue Apr 25 10:26:02 2023 +0200
+Date:   Thu Aug 24 18:00:52 2023 +0200
 
-    bugfix (Classic Era): minimap button is not shown / error when closing window
+    bugfix: error when loading a part from a guide where another part has a parsing error
 

@@ -3471,6 +3471,10 @@ function NWB:setLayered()
 	if (C_Seasons and C_Seasons.HasActiveSeason()) then
 		NWB.isLayered = true;
 	end
+	--Blanket enable hardcore realms for now.
+	if (C_GameRules and C_GameRules.IsHardcoreActive()) then
+		NWB.isLayered = true;
+	end
 end
 
 function NWB:setLayerLimit()

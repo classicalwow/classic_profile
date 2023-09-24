@@ -200,7 +200,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Lower Blackrock Spire-229J/229M (6)  --
+--  Lower Blackrock Spire-229J/229M (6L/3C)  --
 -----------------------------
 --  Highlord Omokk  --
 -----------------------------
@@ -658,7 +658,7 @@ L:SetGeneralLocalization{
 -------------------------
 --  Ragefire Chasm (7L/9C)  --
 -----------------------------
---  Adarogg  --
+--  Oggleflint  --
 -----------------------------
 L = DBM:GetModLocalization("Oggleflint")
 
@@ -1088,7 +1088,7 @@ L:SetGeneralLocalization{
 }
 
 -------------------------
---  Stormwind Stockade 34M (10L/15C)  --
+--  Stormwind Stockaid 34M (10L/15C)  --
 -----------------------------
 --  Targorr the Dread  --
 -----------------------------

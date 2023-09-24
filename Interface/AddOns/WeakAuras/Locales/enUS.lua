@@ -69,6 +69,16 @@ L["Action Button Glow"] = "Action Button Glow"
 L["Action Usable"] = "Action Usable"
 L["Actions"] = "Actions"
 L["Active"] = "Active"
+L[ [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+L[ [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["Add"] = "Add"
 L["Add Missing Auras"] = "Add Missing Auras"
 L["Additional Trigger Replacements"] = "Additional Trigger Replacements"
@@ -199,6 +209,10 @@ L["Blood-Queen Lana'thel"] = "Blood-Queen Lana'thel"
 L["Border"] = "Border"
 L["Boss"] = "Boss"
 L["Boss Emote"] = "Boss Emote"
+L["Boss Mod Announce"] = "Boss Mod Announce"
+L["Boss Mod Stage"] = "Boss Mod Stage"
+L["Boss Mod Stage (Event)"] = "Boss Mod Stage (Event)"
+L["Boss Mod Timer"] = "Boss Mod Timer"
 L["Boss Whisper"] = "Boss Whisper"
 L["Bottom"] = "Bottom"
 L["Bottom Left"] = "Bottom Left"
@@ -395,6 +409,7 @@ L["Dungeon (Timewalking)"] = "Dungeon (Timewalking)"
 L["Dungeons"] = "Dungeons"
 L["Durability Damage"] = "Durability Damage"
 L["Durability Damage All"] = "Durability Damage All"
+L["Duration"] = "Duration"
 L["Duration Function"] = "Duration Function"
 L["Duration Function (fallback state)"] = "Duration Function (fallback state)"
 L["Dynamic Information"] = "Dynamic Information"
@@ -801,6 +816,11 @@ L["Neutral"] = "Neutral"
 L["Never"] = "Never"
 L["Next Combat"] = "Next Combat"
 L["Next Encounter"] = "Next Encounter"
+L[ [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["No Extend"] = "No Extend"
 L["No Instance"] = "No Instance"
 L["No Profiling information saved."] = "No Profiling information saved."
@@ -947,6 +967,7 @@ L["Precision"] = "Precision"
 L["Preset"] = "Preset"
 L["Princess Huhuran"] = "Princess Huhuran"
 L["Print Profiling Results"] = "Print Profiling Results"
+L["Proc Glow"] = "Proc Glow"
 L["Professor Putricide"] = "Professor Putricide"
 L["Profiling already started."] = "Profiling already started."
 L["Profiling automatically started."] = "Profiling automatically started."
@@ -1169,6 +1190,7 @@ L["Stamina"] = "Stamina"
 L["Stance/Form/Aura"] = "Stance/Form/Aura"
 L["Standing"] = "Standing"
 L["Star Shake"] = "Star Shake"
+L["Start Animation"] = "Start Animation"
 L["Start Now"] = "Start Now"
 L["Status"] = "Status"
 L["Status Bar"] = "Status Bar"

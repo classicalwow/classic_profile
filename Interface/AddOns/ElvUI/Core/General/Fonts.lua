@@ -6,6 +6,11 @@ local strmatch = strmatch
 
 local function SetFont(obj, font, size, style, sr, sg, sb, sa, sox, soy, r, g, b)
 	if not obj then return end
+
+	if style == 'NONE' or not style then
+		style = ''
+	end
+
 	obj:SetFont(font, size, style)
 
 	if sr and sg and sb then

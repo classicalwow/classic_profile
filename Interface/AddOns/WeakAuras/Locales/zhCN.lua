@@ -73,6 +73,18 @@ L["Action Button Glow"] = "动作条按钮发光"
 L["Action Usable"] = "动作可以使用"
 L["Actions"] = "动作"
 L["Active"] = "活跃"
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00BigWigs|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
+--[[Translation missing --]]
+L[ [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[Active boss mod addon: |cFFffcc00DBM|r
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["Add"] = "添加"
 L["Add Missing Auras"] = "添加缺少的光环"
 L["Additional Trigger Replacements"] = "额外触发器动态文字"
@@ -201,6 +213,14 @@ L["Blood-Queen Lana'thel"] = "兰娜瑟尔女王"
 L["Border"] = "边框"
 L["Boss"] = "首领"
 L["Boss Emote"] = "首领表情"
+--[[Translation missing --]]
+L["Boss Mod Announce"] = "Boss Mod Announce"
+--[[Translation missing --]]
+L["Boss Mod Stage"] = "Boss Mod Stage"
+--[[Translation missing --]]
+L["Boss Mod Stage (Event)"] = "Boss Mod Stage (Event)"
+--[[Translation missing --]]
+L["Boss Mod Timer"] = "Boss Mod Timer"
 L["Boss Whisper"] = "首领密语"
 L["Bottom"] = "下"
 L["Bottom Left"] = "左下"
@@ -392,6 +412,7 @@ L["Dungeon (Timewalking)"] = "地下城（时空漫游）"
 L["Dungeons"] = "地下城"
 L["Durability Damage"] = "耐久度下降"
 L["Durability Damage All"] = "耐久度上限下降"
+L["Duration"] = "持续时间"
 L["Duration Function"] = "持续时间函数"
 L["Duration Function (fallback state)"] = "持续时间函数（后备状态）"
 L["Dynamic Information"] = "动态信息"
@@ -795,6 +816,12 @@ L["Neutral"] = "中立"
 L["Never"] = "从不"
 L["Next Combat"] = "下次战斗"
 L["Next Encounter"] = "下次首领战斗"
+--[[Translation missing --]]
+L[ [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=] ] = [=[No active boss mod addon detected.
+
+Note: This trigger will use BigWigs or DBM, in that order if both are installed.]=]
 L["No Extend"] = "不伸展"
 L["No Instance"] = "野外"
 L["No Profiling information saved."] = "没有已保存的性能分析信息。"
@@ -941,6 +968,7 @@ L["Precision"] = "精度"
 L["Preset"] = "预设"
 L["Princess Huhuran"] = "哈霍兰公主"
 L["Print Profiling Results"] = "输出性能分析结果"
+L["Proc Glow"] = "触发发光"
 L["Professor Putricide"] = "普崔塞德教授"
 L["Profiling already started."] = "性能分析已开始。"
 L["Profiling automatically started."] = "性能分析自动开始。"
@@ -1162,6 +1190,7 @@ L["Stamina"] = "耐力"
 L["Stance/Form/Aura"] = "姿态/形态/光环"
 L["Standing"] = "级别"
 L["Star Shake"] = "摇动"
+L["Start Animation"] = "开始动画"
 L["Start Now"] = "现在开始"
 L["Status"] = "状态"
 L["Status Bar"] = "状态条"

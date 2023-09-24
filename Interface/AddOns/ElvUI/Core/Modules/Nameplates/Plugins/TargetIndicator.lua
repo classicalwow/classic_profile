@@ -1,8 +1,6 @@
 local E, L, V, P, G = unpack(ElvUI)
 local NP = E:GetModule('NamePlates')
-
-local _, ns = ...
-local oUF = ns.oUF
+local ElvUF = E.oUF
 
 local UnitHealth = UnitHealth
 local UnitIsUnit = UnitIsUnit
@@ -74,7 +72,7 @@ local function Update(self)
 			local perc = (maxHealth > 0 and health/maxHealth) or 0
 
 			-- color tables are class updated in UpdateMedia
-			if perc <= element.lowHealthThreshold / 2 then
+			if perc <= element.lowHealthThreshold * 0.5 then
 				ShowIndicators(element, isTarget, NP.db.colors.lowHealthHalf)
 			elseif perc <= element.lowHealthThreshold then
 				ShowIndicators(element, isTarget, NP.db.colors.lowHealthColor)
@@ -130,10 +128,10 @@ local function Enable(self)
 			element.RightIndicator:SetTexCoord(1, 1, 0, 1, 1, 0, 0, 0) --Flips texture horizontally (Right facing arrow to face left)
 		end
 
-		if E.Retail then
-			self:RegisterEvent('UNIT_HEALTH', Path)
-		else
+		if E.Classic then
 			self:RegisterEvent('UNIT_HEALTH_FREQUENT', Path)
+		else
+			self:RegisterEvent('UNIT_HEALTH', Path)
 		end
 
 		self:RegisterEvent('UNIT_MAXHEALTH', Path)
@@ -148,10 +146,10 @@ local function Disable(self)
 	if element then
 		HideIndicators(element)
 
-		if E.Retail then
-			self:UnregisterEvent('UNIT_HEALTH', Path)
-		else
+		if E.Classic then
 			self:UnregisterEvent('UNIT_HEALTH_FREQUENT', Path)
+		else
+			self:UnregisterEvent('UNIT_HEALTH', Path)
 		end
 
 		self:UnregisterEvent('UNIT_MAXHEALTH', Path)
@@ -159,4 +157,4 @@ local function Disable(self)
 	end
 end
 
-oUF:AddElement('TargetIndicator', Path, Enable, Disable)
+ElvUF:AddElement('TargetIndicator', Path, Enable, Disable)

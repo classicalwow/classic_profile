@@ -4,6 +4,7 @@ local UF = E:GetModule('UnitFrames')
 local LSM = E.Libs.LSM
 
 local _G = _G
+local wipe = wipe
 local unpack = unpack
 local CreateFrame = CreateFrame
 
@@ -13,7 +14,7 @@ function NP:Construct_Auras(nameplate)
 	local Buffs = CreateFrame('Frame', frameName..'Buffs', nameplate)
 	Buffs:SetFrameStrata(nameplate:GetFrameStrata())
 	Buffs:SetFrameLevel(5)
-	Buffs:Size(1, 1)
+	Buffs:Size(1)
 	Buffs.size = 27
 	Buffs.num = 4
 	Buffs.spacing = E.Border * 2
@@ -32,7 +33,7 @@ function NP:Construct_Auras(nameplate)
 	local Debuffs = CreateFrame('Frame', frameName..'Debuffs', nameplate)
 	Debuffs:SetFrameStrata(nameplate:GetFrameStrata())
 	Debuffs:SetFrameLevel(5)
-	Debuffs:Size(1, 1)
+	Debuffs:Size(1)
 	Debuffs.size = 27
 	Debuffs.num = 4
 	Debuffs.spacing = E.Border * 2
@@ -51,15 +52,15 @@ function NP:Construct_Auras(nameplate)
 	Buffs.PreUpdate = UF.PreUpdateAura
 	Buffs.PreSetPosition = UF.SortAuras
 	Buffs.SetPosition = UF.SetPosition
-	Buffs.PostCreateIcon = NP.Construct_AuraIcon
-	Buffs.PostUpdateIcon = UF.PostUpdateAura
+	Buffs.PostCreateButton = NP.Construct_AuraIcon
+	Buffs.PostUpdateButton = UF.PostUpdateAura
 	Buffs.CustomFilter = UF.AuraFilter
 
 	Debuffs.PreUpdate = UF.PreUpdateAura
 	Debuffs.PreSetPosition = UF.SortAuras
 	Debuffs.SetPosition = UF.SetPosition
-	Debuffs.PostCreateIcon = NP.Construct_AuraIcon
-	Debuffs.PostUpdateIcon = UF.PostUpdateAura
+	Debuffs.PostCreateButton = NP.Construct_AuraIcon
+	Debuffs.PostUpdateButton = UF.PostUpdateAura
 	Debuffs.CustomFilter = UF.AuraFilter
 
 	nameplate.Buffs_, nameplate.Debuffs_ = Buffs, Debuffs
@@ -68,23 +69,23 @@ end
 
 function NP:Construct_AuraIcon(button)
 	if not button then return end
+
 	button:SetTemplate(nil, nil, nil, nil, nil, true, true)
 
-	button.cd:SetReverse(true)
-	button.cd:SetInside(button)
+	button.Cooldown:SetReverse(true)
+	button.Cooldown:SetInside(button)
 
-	button.icon:SetDrawLayer('ARTWORK')
-	button.icon:SetInside()
+	button.Icon:SetDrawLayer('ARTWORK')
+	button.Icon:SetInside()
 
-	button.count:ClearAllPoints()
-	button.count:Point('BOTTOMRIGHT', 1, 1)
-	button.count:SetJustifyH('RIGHT')
+	button.Count:ClearAllPoints()
+	button.Count:Point('BOTTOMRIGHT', 1, 1)
+	button.Count:SetJustifyH('RIGHT')
 
-	button.overlay:SetTexture()
-	button.stealable:SetTexture()
+	button.Overlay:SetTexture()
+	button.Stealable:SetTexture()
 
-	button.cd.CooldownOverride = 'nameplates'
-	E:RegisterCooldown(button.cd)
+	E:RegisterCooldown(button.Cooldown, 'nameplates')
 
 	local auras = button:GetParent()
 	if auras and auras.type then
@@ -171,12 +172,18 @@ function NP:UpdateAuraSettings(button)
 	local db = button.db
 	if db then
 		local point = db.countPosition or 'CENTER'
-		button.count:ClearAllPoints()
-		button.count:SetJustifyH(point:find('RIGHT') and 'RIGHT' or 'LEFT')
-		button.count:Point(point, db.countXOffset, db.countYOffset)
-		button.count:FontTemplate(LSM:Fetch('font', db.countFont), db.countFontSize, db.countFontOutline)
+		button.Count:ClearAllPoints()
+		button.Count:SetJustifyH(point:find('RIGHT') and 'RIGHT' or 'LEFT')
+		button.Count:Point(point, db.countXOffset, db.countYOffset)
+		button.Count:FontTemplate(LSM:Fetch('font', db.countFont), db.countFontSize, db.countFontOutline)
 	end
 
-	button.needsIconTrim = true
+	if button.auraInfo then
+		wipe(button.auraInfo)
+	else
+		button.auraInfo = {}
+	end
+
+	button.needsButtonTrim = true
 	button.needsUpdateCooldownPosition = true
 end

@@ -2,6 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
+local next = next
 local unpack, select = unpack, select
 
 local CreateFrame = CreateFrame
@@ -217,7 +218,7 @@ local function SkinInvasionAlert(frame)
 
 			-- Icon border
 			if icon and icon:IsObjectType('Texture') then
-				if icon:GetTexture() == [[Interface\Icons\Ability_Warlock_DemonicPower]] then
+				if icon:GetTexture() == 236293 then -- interface/icons/ability_warlock_demonicpower
 					icon.b = CreateFrame('Frame', nil, frame)
 					icon.b:SetTemplate()
 					icon.b:SetOutside(icon)
@@ -247,12 +248,9 @@ local function SkinScenarioAlert(frame)
 	end
 
 	-- Background
-	for i = 1, frame:GetNumRegions() do
-		local region = select(i, frame:GetRegions())
-		if region:IsObjectType('Texture') then
-			if region:GetAtlas() == 'Toast-IconBG' or region:GetAtlas() == 'Toast-Frame' then
-				region:Kill()
-			end
+	for _, region in next, { frame:GetRegions() } do
+		if region:IsObjectType('Texture') and (region:GetAtlas() == 'Toast-IconBG' or region:GetAtlas() == 'Toast-Frame') then
+			region:Kill()
 		end
 	end
 
@@ -310,8 +308,7 @@ local function SkinGarrisonFollowerAlert(frame, _, _, _, quality)
 
 		--Background
 		if frame.GetNumRegions then
-			for i = 1, frame:GetNumRegions() do
-				local region = select(i, frame:GetRegions())
+			for _, region in next, { frame:GetRegions() } do
 				if region:IsObjectType('Texture') then
 					if region:GetAtlas() == 'Garr_MissionToast' then
 						region:Kill()
@@ -554,7 +551,7 @@ local function SkinLootWonAlert(frame)
 	lootItem.Icon:SetTexCoord(0.1, 0.9, 0.1, 0.9)
 	lootItem.Icon:SetDrawLayer('BORDER')
 	lootItem.IconBorder:Kill()
-	lootItem.SpecRing:SetTexture('')
+	lootItem.SpecRing:SetTexture(E.ClearTexture)
 
 	frame.glow:Kill()
 	frame.shine:Kill()
@@ -793,6 +790,7 @@ function S:AlertSystem()
 	-- Achievements
 	hooksecurefunc(_G.AchievementAlertSystem, 'setUpFunction', SkinAchievementAlert)
 	hooksecurefunc(_G.CriteriaAlertSystem, 'setUpFunction', SkinCriteriaAlert)
+	hooksecurefunc(_G.MonthlyActivityAlertSystem, 'setUpFunction', SkinCriteriaAlert) -- untested needs testing
 
 	-- Encounters
 	hooksecurefunc(_G.DungeonCompletionAlertSystem, 'setUpFunction', SkinDungeonCompletionAlert)
@@ -828,6 +826,9 @@ function S:AlertSystem()
 	hooksecurefunc(_G.NewPetAlertSystem, 'setUpFunction', SkinNewPetAlert)
 	hooksecurefunc(_G.NewMountAlertSystem, 'setUpFunction', SkinNewPetAlert)
 	hooksecurefunc(_G.NewToyAlertSystem, 'setUpFunction', SkinNewPetAlert)
+
+	-- Cosmetics
+	hooksecurefunc(_G.NewCosmeticAlertFrameSystem, 'setUpFunction', SkinNewPetAlert)
 
 	--Bonus Roll Money
 	local frame = _G.BonusRollMoneyWonFrame

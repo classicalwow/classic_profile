@@ -1,11 +1,7 @@
 local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
+local ElvUF = E.oUF
 
-local _, ns = ...
-local ElvUF = ns.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
-
-local _G = _G
 local CreateFrame = CreateFrame
 local MAX_BOSS_FRAMES = 8
 
@@ -30,15 +26,15 @@ function UF:Construct_BossFrames(frame)
 	frame.RaidTargetIndicator = UF:Construct_RaidIcon(frame)
 	frame.Fader = UF:Construct_Fader()
 	frame.Cutaway = UF:Construct_Cutaway(frame)
+	frame.PrivateAuras = UF:Construct_PrivateAuras(frame)
 	frame.MouseGlow = UF:Construct_MouseGlow(frame)
 	frame.TargetGlow = UF:Construct_TargetGlow(frame)
 	frame.FocusGlow = UF:Construct_FocusGlow(frame)
 	frame.HealthPrediction = UF:Construct_HealComm(frame)
-	frame:SetAttribute('type2', 'focus')
 	frame.customTexts = {}
 
 	BossHeader:Point('BOTTOMRIGHT', E.UIParent, 'RIGHT', -105, -165)
-	E:CreateMover(BossHeader, BossHeader:GetName()..'Mover', L["Boss Frames"], nil, nil, nil, 'ALL,PARTY,RAID', nil, 'unitframe,groupUnits,boss,generalGroup')
+	E:CreateMover(BossHeader, 'BossHeaderMover', L["Boss Frames"], nil, nil, nil, 'ALL,PARTY,RAID', nil, 'unitframe,groupUnits,boss,generalGroup')
 	frame.mover = BossHeader.mover
 
 	frame.unitframeType = 'boss'
@@ -59,7 +55,7 @@ function UF:Update_BossFrames(frame, db)
 		frame.USE_POWERBAR_OFFSET = (db.power.width == 'offset' and db.power.offset ~= 0) and frame.USE_POWERBAR and not frame.POWERBAR_DETACHED
 		frame.POWERBAR_OFFSET = frame.USE_POWERBAR_OFFSET and db.power.offset or 0
 		frame.POWERBAR_HEIGHT = not frame.USE_POWERBAR and 0 or db.power.height
-		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))/2 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
+		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))*0.5 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
 		frame.USE_PORTRAIT = db.portrait and db.portrait.enable
 		frame.USE_PORTRAIT_OVERLAY = frame.USE_PORTRAIT and (db.portrait.overlay or frame.ORIENTATION == 'MIDDLE')
 		frame.PORTRAIT_WIDTH = (frame.USE_PORTRAIT_OVERLAY or not frame.USE_PORTRAIT) and 0 or db.portrait.width
@@ -84,29 +80,31 @@ function UF:Update_BossFrames(frame, db)
 	UF:Configure_CustomTexts(frame)
 	UF:Configure_Fader(frame)
 	UF:Configure_Cutaway(frame)
+	UF:Configure_PrivateAuras(frame)
 	UF:Configure_HealComm(frame)
 	UF:Configure_AuraWatch(frame)
 
 	frame:ClearAllPoints()
+
 	if frame.index == 1 then
 		if db.growthDirection == 'UP' then
-			frame:Point('BOTTOMRIGHT', BossHeaderMover, 'BOTTOMRIGHT')
+			frame:Point('BOTTOMRIGHT', BossHeader.mover, 'BOTTOMRIGHT')
 		elseif db.growthDirection == 'RIGHT' then
-			frame:Point('LEFT', BossHeaderMover, 'LEFT')
+			frame:Point('LEFT', BossHeader.mover, 'LEFT')
 		elseif db.growthDirection == 'LEFT' then
-			frame:Point('RIGHT', BossHeaderMover, 'RIGHT')
+			frame:Point('RIGHT', BossHeader.mover, 'RIGHT')
 		else --Down
-			frame:Point('TOPRIGHT', BossHeaderMover, 'TOPRIGHT')
+			frame:Point('TOPRIGHT', BossHeader.mover, 'TOPRIGHT')
 		end
 	else
 		if db.growthDirection == 'UP' then
-			frame:Point('BOTTOMRIGHT', _G['ElvUF_Boss'..frame.index-1], 'TOPRIGHT', 0, db.spacing)
+			frame:Point('BOTTOMRIGHT', UF['boss'..frame.index-1], 'TOPRIGHT', 0, db.spacing)
 		elseif db.growthDirection == 'RIGHT' then
-			frame:Point('LEFT', _G['ElvUF_Boss'..frame.index-1], 'RIGHT', db.spacing, 0)
+			frame:Point('LEFT', UF['boss'..frame.index-1], 'RIGHT', db.spacing, 0)
 		elseif db.growthDirection == 'LEFT' then
-			frame:Point('RIGHT', _G['ElvUF_Boss'..frame.index-1], 'LEFT', -db.spacing, 0)
+			frame:Point('RIGHT', UF['boss'..frame.index-1], 'LEFT', -db.spacing, 0)
 		else --Down
-			frame:Point('TOPRIGHT', _G['ElvUF_Boss'..frame.index-1], 'BOTTOMRIGHT', 0, -db.spacing)
+			frame:Point('TOPRIGHT', UF['boss'..frame.index-1], 'BOTTOMRIGHT', 0, -db.spacing)
 		end
 	end
 
@@ -123,6 +121,6 @@ function UF:Update_BossFrames(frame, db)
 	frame:UpdateAllElements('ElvUI_UpdateAllElements')
 end
 
-if E.Retail then
+if not E.Classic then
 	UF.unitgroupstoload.boss = {MAX_BOSS_FRAMES}
 end

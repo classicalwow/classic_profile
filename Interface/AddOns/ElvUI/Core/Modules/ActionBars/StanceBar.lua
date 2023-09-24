@@ -3,7 +3,8 @@ local AB = E:GetModule('ActionBars')
 
 local _G = _G
 local gsub = gsub
-local format, ipairs = format, ipairs
+local ipairs = ipairs
+local format = format
 local CreateFrame = CreateFrame
 local GetBindingKey = GetBindingKey
 local GetNumShapeshiftForms = GetNumShapeshiftForms
@@ -13,12 +14,13 @@ local GetShapeshiftFormInfo = GetShapeshiftFormInfo
 local GetSpellTexture = GetSpellTexture
 local InCombatLockdown = InCombatLockdown
 local RegisterStateDriver = RegisterStateDriver
-local NUM_STANCE_SLOTS = NUM_STANCE_SLOTS
+local NUM_STANCE_SLOTS = NUM_STANCE_SLOTS or 10
 
 local Masque = E.Masque
 local MasqueGroup = Masque and Masque:Group('ElvUI', 'Stance Bar')
 local WispSplode = [[Interface\Icons\Spell_Nature_WispSplode]]
 local bar = CreateFrame('Frame', 'ElvUI_StanceBar', E.UIParent, 'SecureHandlerStateTemplate')
+bar.MasqueGroup = MasqueGroup
 bar.buttons = {}
 
 function AB:UPDATE_SHAPESHIFT_COOLDOWN()
@@ -56,7 +58,9 @@ function AB:StyleShapeShift()
 				button.cooldown:SetAlpha(texture and 1 or 0)
 
 				if isActive then
-					_G.StanceBarFrame.lastSelected = button:GetID()
+					if not E.Retail then
+						_G.StanceBarFrame.lastSelected = button:GetID()
+					end
 
 					button:SetChecked(numForms == 1 and darken)
 					button.checked:SetColorTexture(1, 1, 1, 0.3)
@@ -93,7 +97,6 @@ function AB:PositionAndSizeBarShapeShift()
 	local buttonsPerRow = db.buttonsPerRow
 	local numButtons = db.buttons
 	local point = db.point
-	local visibility = db.visibility
 
 	bar.db = db
 	bar.mouseover = db.mouseover
@@ -111,8 +114,10 @@ function AB:PositionAndSizeBarShapeShift()
 	bar:SetAlpha(bar.mouseover and 0 or db.alpha)
 	AB:FadeBarBlings(bar, bar.mouseover and 0 or db.alpha)
 
-	bar.backdrop:SetShown(db.backdrop)
-	bar.backdrop:ClearAllPoints()
+	if bar.backdrop then
+		bar.backdrop:SetShown(db.backdrop)
+		bar.backdrop:ClearAllPoints()
+	end
 
 	AB:MoverMagic(bar)
 
@@ -136,7 +141,7 @@ function AB:PositionAndSizeBarShapeShift()
 		end
 
 		if i > numButtons then
-			button:SetScale(0.0001)
+			button:SetScale(0.00001)
 			button:SetAlpha(0)
 			button.handleBackdrop = nil
 		else
@@ -162,21 +167,16 @@ function AB:PositionAndSizeBarShapeShift()
 	AB:HandleBackdropMover(bar, backdropSpacing)
 
 	if db.enabled then
-		visibility = gsub(visibility,'[\n\r]','')
-
-		RegisterStateDriver(bar, 'visibility', (GetNumShapeshiftForms() == 0 and 'hide') or visibility)
-		E:EnableMover(bar.mover:GetName())
+		E:EnableMover(bar.mover.name)
 	else
-		RegisterStateDriver(bar, 'visibility', 'hide')
-		E:DisableMover(bar.mover:GetName())
+		E:DisableMover(bar.mover.name)
 	end
 
-	if useMasque then
-		MasqueGroup:ReSkin()
+	local visibility = gsub(db.visibility, '[\n\r]', '')
+	RegisterStateDriver(bar, 'visibility', (not db.enabled or GetNumShapeshiftForms() == 0) and 'hide' or visibility)
 
-		for _, btn in ipairs(bar.buttons) do
-			AB:TrimIcon(btn, true)
-		end
+	if useMasque then
+		AB:UpdateMasque(bar)
 	end
 end
 
@@ -196,6 +196,7 @@ function AB:AdjustMaxStanceButtons(event)
 		if not bar.buttons[i] then
 			bar.buttons[i] = CreateFrame('CheckButton', format(bar:GetName()..'Button%d', i), bar, 'StanceButtonTemplate')
 			bar.buttons[i]:SetID(i)
+			bar.buttons[i].parentName = 'ElvUI_StanceBar'
 
 			AB:HookScript(bar.buttons[i], 'OnEnter', 'Button_OnEnter')
 			AB:HookScript(bar.buttons[i], 'OnLeave', 'Button_OnLeave')
@@ -227,6 +228,7 @@ function AB:UpdateStanceBindings()
 
 		button.HotKey:SetText(GetBindingKey('SHAPESHIFTBUTTON'..i))
 		AB:FixKeybindText(button)
+		AB:FixKeybindColor(button)
 	end
 end
 

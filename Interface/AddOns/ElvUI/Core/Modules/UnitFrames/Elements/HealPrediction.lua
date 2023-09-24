@@ -3,6 +3,7 @@ local UF = E:GetModule('UnitFrames')
 local LSM = E.Libs.LSM
 
 local CreateFrame = CreateFrame
+
 function UF.HealthClipFrame_HealComm(frame)
 	if frame.HealthPrediction then
 		UF:SetAlpha_HealComm(frame.HealthPrediction, 1)
@@ -66,7 +67,7 @@ function UF:SetSize_HealComm(frame)
 	if not height or height <= 0 then height = health.HEIGHT end
 
 	if orientation == 'HORIZONTAL' then
-		local barHeight = db.height
+		local barHeight = db.height or height
 		if barHeight == -1 or barHeight > height then barHeight = height end
 
 		pred.myBar:SetSize(width, barHeight)
@@ -75,7 +76,7 @@ function UF:SetSize_HealComm(frame)
 		pred.absorbBar:SetSize(width, barHeight)
 		pred.parent:SetSize(width * (pred.maxOverflow or 0), height)
 	else
-		local barWidth = db.height -- this is really width now not height
+		local barWidth = db.height or width -- this is really width now not height
 		if barWidth == -1 or barWidth > width then barWidth = width end
 
 		pred.myBar:SetSize(barWidth, height)
@@ -87,9 +88,8 @@ function UF:SetSize_HealComm(frame)
 end
 
 function UF:Configure_HealComm(frame)
-	local db = frame.db.healPrediction
+	local db = frame.db and frame.db.healPrediction
 	if db and db.enable then
-
 		local pred = frame.HealthPrediction
 		local parent = pred.parent
 		local myBar = pred.myBar

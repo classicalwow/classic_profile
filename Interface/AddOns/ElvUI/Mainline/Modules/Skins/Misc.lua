@@ -6,6 +6,7 @@ local next = next
 local unpack = unpack
 
 local CreateFrame = CreateFrame
+local UnitIsUnit = UnitIsUnit
 local hooksecurefunc = hooksecurefunc
 
 local NavBarCheck = {
@@ -43,54 +44,50 @@ local function SkinNavBarButtons(self)
 	end
 end
 
+local function ClearSetTexture(texture, tex)
+	if tex ~= nil then
+		texture:SetTexture()
+	end
+end
+
 function S:BlizzardMiscFrames()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.misc) then return end
+
+	local compartment = _G.AddonCompartmentFrame
+	if compartment then
+		compartment:StripTextures()
+		compartment:SetTemplate('Transparent')
+	end
 
 	for _, frame in next, { _G.AutoCompleteBox, _G.QueueStatusFrame } do
 		frame:StripTextures()
 		frame:SetTemplate('Transparent')
 	end
 
+	-- ReadyCheck thing
+	S:HandleButton(_G.ReadyCheckFrameYesButton)
+	S:HandleButton(_G.ReadyCheckFrameNoButton)
+
+	local ReadyCheckFrame = _G.ReadyCheckFrame
+	S:HandleFrame(_G.ReadyCheckListenerFrame)
+	_G.ReadyCheckPortrait:Kill()
+	_G.ReadyCheckFrameYesButton:SetParent(ReadyCheckFrame)
+	_G.ReadyCheckFrameNoButton:SetParent(ReadyCheckFrame)
+	_G.ReadyCheckFrameYesButton:ClearAllPoints()
+	_G.ReadyCheckFrameNoButton:ClearAllPoints()
+	_G.ReadyCheckFrameYesButton:Point('TOPRIGHT', ReadyCheckFrame, 'CENTER', -3, -5)
+	_G.ReadyCheckFrameNoButton:Point('TOPLEFT', ReadyCheckFrame, 'CENTER', 3, -5)
+	_G.ReadyCheckFrameText:ClearAllPoints()
+	_G.ReadyCheckFrameText:Point('TOP', 0, -15)
+
+	-- Bug fix, don't show it if player is initiator
+	ReadyCheckFrame:HookScript('OnShow', function(frame)
+		if frame.initiator and UnitIsUnit('player', frame.initiator) then
+			frame:Hide()
+		end
+	end)
+
 	S:HandleButton(_G.StaticPopup1ExtraButton)
-
-	hooksecurefunc('QueueStatusEntry_SetFullDisplay', function(entry, _, _, _, isTank, isHealer, isDPS)
-		if not entry then return end
-		local nextRoleIcon = 1
-		if isDPS then
-			local icon = entry['RoleIcon'..nextRoleIcon]
-			if icon then
-				icon:SetTexture(E.Media.Textures.RolesHQ)
-				icon:SetTexCoord(_G.LFDQueueFrameRoleButtonDPS.background:GetTexCoord())
-				nextRoleIcon = nextRoleIcon + 1
-			end
-		end
-		if isHealer then
-			local icon = entry['RoleIcon'..nextRoleIcon]
-			if icon then
-				icon:SetTexture(E.Media.Textures.RolesHQ)
-				icon:SetTexCoord(_G.LFDQueueFrameRoleButtonHealer.background:GetTexCoord())
-				nextRoleIcon = nextRoleIcon + 1
-			end
-		end
-		if isTank then
-			local icon = entry['RoleIcon'..nextRoleIcon]
-			if icon then
-				icon:SetTexture(E.Media.Textures.RolesHQ)
-				icon:SetTexCoord(_G.LFDQueueFrameRoleButtonTank.background:GetTexCoord())
-			end
-		end
-	end)
-
-	hooksecurefunc('QueueStatusFrame_Update', function()
-		for frame in _G.QueueStatusFrame.statusEntriesPool:EnumerateActive() do
-			frame.HealersFound.Texture:SetTexture(E.Media.Textures.RolesHQ)
-			frame.TanksFound.Texture:SetTexture(E.Media.Textures.RolesHQ)
-			frame.DamagersFound.Texture:SetTexture(E.Media.Textures.RolesHQ)
-			frame.HealersFound.Texture:SetTexCoord(_G.LFDQueueFrameRoleButtonHealer.background:GetTexCoord())
-			frame.TanksFound.Texture:SetTexCoord(_G.LFDQueueFrameRoleButtonTank.background:GetTexCoord())
-			frame.DamagersFound.Texture:SetTexCoord(_G.LFDQueueFrameRoleButtonDPS.background:GetTexCoord())
-		end
-	end)
 
 	-- reskin all esc/menu buttons
 	if not E:IsAddOnEnabled('ConsolePortUI_Menu') then
@@ -175,12 +172,9 @@ function S:BlizzardMiscFrames()
 		roleButton:DisableDrawLayer('OVERLAY')
 
 		--[=[ these use the ready check icons, which are more square
-		for i=1, roleButton:GetNumRegions() do
-			local region = select(i, roleButton:GetRegions())
-			if region and region:IsObjectType('Texture') then
-				if region:GetTexture() == [[Interface\LFGFrame\UI-LFG-ICON-ROLES]] then
-					region:SetTexture(E.Media.Textures.RoleIcons)
-				end
+		for _, region in next, { roleButton:GetRegions() } do
+			if region:IsObjectType('Texture') and region:GetTexture() == [[Interface\LFGFrame\UI-LFG-ICON-ROLES]] then
+				region:SetTexture(E.Media.Textures.RoleIcons)
 			end
 		end
 		]=]
@@ -234,10 +228,7 @@ function S:BlizzardMiscFrames()
 		local normTex = itemFrame:GetNormalTexture()
 		if normTex then
 			normTex:SetTexture()
-
-			hooksecurefunc(normTex, 'SetTexture', function(s, tex)
-				if tex ~= nil then s:SetTexture() end
-			end)
+			hooksecurefunc(normTex, 'SetTexture', ClearSetTexture)
 		end
 	end
 
@@ -258,7 +249,7 @@ function S:BlizzardMiscFrames()
 		local button = CreateFrame('Frame', nil, _G.GhostFrameContentsFrameIcon:GetParent())
 		button:Point('TOPLEFT', _G.GhostFrameContentsFrameIcon, -x, x)
 		button:Point('BOTTOMRIGHT', _G.GhostFrameContentsFrameIcon, x, -x)
-		_G.GhostFrameContentsFrameIcon:Size(37,38)
+		_G.GhostFrameContentsFrameIcon:Size(37, 38)
 		_G.GhostFrameContentsFrameIcon:SetParent(button)
 		button:SetTemplate()
 	end
@@ -276,7 +267,7 @@ function S:BlizzardMiscFrames()
 			expandArrow:SetNormalTexture(E.Media.Textures.ArrowUp)
 			normTex:SetVertexColor(unpack(E.media.rgbvaluecolor))
 			normTex:SetRotation(S.ArrowRotation.right)
-			expandArrow:Size(12, 12)
+			expandArrow:Size(12)
 		end
 
 		local Backdrop = _G[listFrameName..'Backdrop']
@@ -328,13 +319,13 @@ function S:BlizzardMiscFrames()
 				if co == 0 then
 					check:SetTexture([[Interface\Buttons\UI-CheckBox-Check]])
 					check:SetVertexColor(r, g, b, 1)
-					check:Size(20, 20)
+					check:Size(20)
 					check:SetDesaturated(true)
 					button.backdrop:SetInside(check, 4, 4)
 				else
 					check:SetTexture(E.media.normTex)
 					check:SetVertexColor(r, g, b, 1)
-					check:Size(10, 10)
+					check:Size(10)
 					check:SetDesaturated(false)
 					button.backdrop:SetOutside(check)
 				end
@@ -343,7 +334,7 @@ function S:BlizzardMiscFrames()
 				check:SetTexCoord(0, 1, 0, 1)
 			else
 				button.backdrop:Hide()
-				check:Size(16, 16)
+				check:Size(16)
 			end
 		end
 	end)
@@ -385,6 +376,18 @@ function S:BlizzardMiscFrames()
 
 	--NavBar Buttons (Used in WorldMapFrame, EncounterJournal and HelpFrame)
 	hooksecurefunc('NavBar_AddButton', SkinNavBarButtons)
+
+	-- Basic Message Dialog
+	local MessageDialog = _G.BasicMessageDialog
+	if MessageDialog then
+		S:HandleFrame(MessageDialog)
+		S:HandleButton(_G.BasicMessageDialogButton)
+	end
+
+	-- SplashFrame (Whats New)
+	local SplashFrame = _G.SplashFrame
+	S:HandleCloseButton(SplashFrame.TopCloseButton)
+	S:HandleButton(SplashFrame.BottomCloseButton)
 end
 
 S:AddCallback('BlizzardMiscFrames')

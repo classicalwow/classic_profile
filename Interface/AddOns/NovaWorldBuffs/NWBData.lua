@@ -2501,6 +2501,10 @@ function NWB:setLayerFrameTimerLogButtonText()
 	end
 end
 
+--function NWB:isTimerLogEntryValid(entryNum)
+
+--end
+
 function NWB:recalcTimerLogFrame()
 	NWBTimerLogFrame.EditBox:SetText("\n\n\n");
 	if (type(NWB.data.timerLog) ~= "table" or not next(NWB.data.timerLog)) then
@@ -2578,7 +2582,7 @@ function NWB:recalcTimerLogFrame()
 							end
 						end
 						layerText = "|cff00ff00[Layers " .. layerString .. "]|r ";]]
-						layerText = "|cff00ff00[All Layers]|r ";
+						layerText = "|cff00ff00[Unknown Layer]|r ";
 						layers = {};
 					elseif (NWB.isLayered) then
 						layerText = "|cff00ff00[Layer " .. layerNum .. "]|r ";

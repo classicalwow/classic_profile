@@ -2,7 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local unpack, pairs, strfind = unpack, pairs, strfind
+local unpack, pairs = unpack, pairs
 
 local HasPetUI = HasPetUI
 local GetPetHappiness = GetPetHappiness
@@ -14,6 +14,52 @@ local NUM_FACTIONS_DISPLAYED = NUM_FACTIONS_DISPLAYED
 local CHARACTERFRAME_SUBFRAMES = CHARACTERFRAME_SUBFRAMES
 local hooksecurefunc = hooksecurefunc
 
+local ResistanceCoords = {
+	[1] = { 0.21875, 0.8125, 0.25, 0.32421875 },		--Arcane
+	[2] = { 0.21875, 0.8125, 0.0234375, 0.09765625 },	--Fire
+	[3] = { 0.21875, 0.8125, 0.13671875, 0.2109375 },	--Nature
+	[4] = { 0.21875, 0.8125, 0.36328125, 0.4375},		--Frost
+	[5] = { 0.21875, 0.8125, 0.4765625, 0.55078125},	--Shadow
+}
+
+local function HandleHappiness(frame)
+	local happiness = GetPetHappiness()
+	local _, isHunterPet = HasPetUI()
+	if not (happiness and isHunterPet) then return end
+
+	local texture = frame:GetRegions()
+	if happiness == 1 then
+		texture:SetTexCoord(0.41, 0.53, 0.06, 0.30)
+	elseif happiness == 2 then
+		texture:SetTexCoord(0.22, 0.345, 0.06, 0.30)
+	elseif happiness == 3 then
+		texture:SetTexCoord(0.04, 0.15, 0.06, 0.30)
+	end
+end
+
+local function HandleResistanceFrame(frameName)
+	for i = 1, 5 do
+		local frame, icon, text = _G[frameName..i], _G[frameName..i]:GetRegions()
+		frame:Size(24)
+		frame:SetTemplate()
+
+		if i ~= 1 then
+			frame:ClearAllPoints()
+			frame:Point('TOP', _G[frameName..i - 1], 'BOTTOM', 0, -1)
+		end
+
+		if icon then
+			icon:SetInside()
+			icon:SetTexCoord(unpack(ResistanceCoords[i]))
+			icon:SetDrawLayer('ARTWORK')
+		end
+
+		if text then
+			text:SetDrawLayer('OVERLAY')
+		end
+	end
+end
+
 function S:CharacterFrame()
 	if not (E.private.skins.blizzard.enable and E.private.skins.blizzard.character) then return end
 
@@ -23,11 +69,25 @@ function S:CharacterFrame()
 
 	S:HandleCloseButton(_G.CharacterFrameCloseButton, CharacterFrame.backdrop)
 
+	_G.PaperDollFrame:StripTextures()
+
 	for i = 1, #CHARACTERFRAME_SUBFRAMES do
 		S:HandleTab(_G['CharacterFrameTab'..i])
 	end
 
-	_G.PaperDollFrame:StripTextures()
+	-- Reposition Tabs
+	_G.CharacterFrameTab1:ClearAllPoints()
+	_G.CharacterFrameTab1:Point('TOPLEFT', _G.CharacterFrame, 'BOTTOMLEFT', 1, 76)
+
+	if E.myclass == 'HUNTER' or E.myclass == 'WARLOCK' then
+		_G.CharacterFrameTab2:Point('TOPLEFT', _G.CharacterFrameTab1, 'TOPRIGHT', -19, 0)
+		_G.CharacterFrameTab3:Point('TOPLEFT', _G.CharacterFrameTab2, 'TOPRIGHT', -19, 0)
+	else
+		_G.CharacterFrameTab3:Point('TOPLEFT', _G.CharacterFrameTab1, 'TOPRIGHT', -19, 0)
+	end
+
+	_G.CharacterFrameTab4:Point('TOPLEFT', _G.CharacterFrameTab3, 'TOPRIGHT', -19, 0)
+	_G.CharacterFrameTab5:Point('TOPLEFT', _G.CharacterFrameTab4, 'TOPRIGHT', -19, 0)
 
 	S:HandleRotateButton(_G.CharacterModelFrameRotateLeftButton)
 	_G.CharacterModelFrameRotateLeftButton:Point('TOPLEFT', 3, -3)
@@ -36,47 +96,19 @@ function S:CharacterFrame()
 
 	_G.CharacterAttributesFrame:StripTextures()
 
-	local ResistanceCoords = {
-		[1] = { 0.21875, 0.8125, 0.25, 0.32421875 },		--Arcane
-		[2] = { 0.21875, 0.8125, 0.0234375, 0.09765625 },	--Fire
-		[3] = { 0.21875, 0.8125, 0.13671875, 0.2109375 },	--Nature
-		[4] = { 0.21875, 0.8125, 0.36328125, 0.4375},		--Frost
-		[5] = { 0.21875, 0.8125, 0.4765625, 0.55078125},	--Shadow
-	}
-
-	local function HandleResistanceFrame(frameName)
-		for i = 1, 5 do
-			local frame, icon, text = _G[frameName..i], _G[frameName..i]:GetRegions()
-			frame:Size(24)
-			frame:SetTemplate('Default')
-
-			if i ~= 1 then
-				frame:ClearAllPoints()
-				frame:Point('TOP', _G[frameName..i - 1], 'BOTTOM', 0, -1)
-			end
-
-			if icon then
-				icon:SetInside()
-				icon:SetTexCoord(unpack(ResistanceCoords[i]))
-				icon:SetDrawLayer('ARTWORK')
-			end
-
-			if text then
-				text:SetDrawLayer('OVERLAY')
-			end
-		end
-	end
-
 	HandleResistanceFrame('MagicResFrame')
 
 	for _, slot in pairs({ _G.PaperDollItemsFrame:GetChildren() }) do
 		if slot:IsObjectType('Button') then
-			local icon = _G[slot:GetName()..'IconTexture']
-			local cooldown = _G[slot:GetName()..'Cooldown']
+			local name = slot:GetName()
+			local icon = _G[name..'IconTexture']
+			local cooldown = _G[name..'Cooldown']
 
 			slot:StripTextures()
-			slot:SetTemplate('Default', true, true)
+			slot:SetTemplate(nil, true, true)
 			slot:StyleButton()
+
+			slot.characterSlot = true -- for color function
 
 			S:HandleIcon(icon)
 			icon:SetInside()
@@ -87,13 +119,14 @@ function S:CharacterFrame()
 		end
 	end
 
-	hooksecurefunc('PaperDollItemSlotButton_Update', function(self)
-		if self.SetBackdropBorderColor then
-			local rarity = GetInventoryItemQuality('player', self:GetID())
+	hooksecurefunc('PaperDollItemSlotButton_Update', function(frame)
+		if frame.characterSlot then
+			local rarity = GetInventoryItemQuality('player', frame:GetID())
 			if rarity and rarity > 1 then
-				self:SetBackdropBorderColor(GetItemQualityColor(rarity))
+				local r, g, b = GetItemQualityColor(rarity)
+				frame:SetBackdropBorderColor(r, g, b)
 			else
-				self:SetBackdropBorderColor(unpack(E.media.bordercolor))
+				frame:SetBackdropBorderColor(unpack(E.media.bordercolor))
 			end
 		end
 	end)
@@ -112,7 +145,7 @@ function S:CharacterFrame()
 
 	_G.PetAttributesFrame:StripTextures()
 
-	_G.PetResistanceFrame:CreateBackdrop('Default')
+	_G.PetResistanceFrame:CreateBackdrop()
 	_G.PetResistanceFrame.backdrop:SetOutside(_G.PetMagicResFrame1, nil, nil, _G.PetMagicResFrame5)
 
 	HandleResistanceFrame('PetMagicResFrame')
@@ -120,33 +153,18 @@ function S:CharacterFrame()
 	_G.PetPaperDollFrameExpBar:StripTextures()
 	_G.PetPaperDollFrameExpBar:SetStatusBarTexture(E.media.normTex)
 	E:RegisterStatusBar(_G.PetPaperDollFrameExpBar)
-	_G.PetPaperDollFrameExpBar:CreateBackdrop('Default')
-
-	local function updHappiness(self)
-		local happiness = GetPetHappiness()
-		local _, isHunterPet = HasPetUI()
-		if not (happiness and isHunterPet) then return end
-
-		local texture = self:GetRegions()
-		if happiness == 1 then
-			texture:SetTexCoord(0.41, 0.53, 0.06, 0.30)
-		elseif happiness == 2 then
-			texture:SetTexCoord(0.22, 0.345, 0.06, 0.30)
-		elseif happiness == 3 then
-			texture:SetTexCoord(0.04, 0.15, 0.06, 0.30)
-		end
-	end
+	_G.PetPaperDollFrameExpBar:CreateBackdrop()
 
 	local PetPaperDollPetInfo = _G.PetPaperDollPetInfo
 	PetPaperDollPetInfo:Point('TOPLEFT', _G.PetModelFrameRotateLeftButton, 'BOTTOMLEFT', 9, -3)
 	PetPaperDollPetInfo:GetRegions():SetTexCoord(0.04, 0.15, 0.06, 0.30)
 	PetPaperDollPetInfo:SetFrameLevel(_G.PetModelFrame:GetFrameLevel() + 2)
-	PetPaperDollPetInfo:CreateBackdrop('Default')
+	PetPaperDollPetInfo:CreateBackdrop()
 	PetPaperDollPetInfo:Size(24)
 
 	PetPaperDollPetInfo:RegisterEvent('UNIT_HAPPINESS')
-	PetPaperDollPetInfo:SetScript('OnEvent', updHappiness)
-	PetPaperDollPetInfo:SetScript('OnShow', updHappiness)
+	PetPaperDollPetInfo:SetScript('OnEvent', HandleHappiness)
+	PetPaperDollPetInfo:SetScript('OnShow', HandleHappiness)
 
 	-- Reputation Frame
 	_G.ReputationFrame:StripTextures()
@@ -158,7 +176,7 @@ function S:CharacterFrame()
 		local factionWar = _G['ReputationBar'..i..'AtWarCheck']
 
 		factionBar:StripTextures()
-		factionBar:CreateBackdrop('Default')
+		factionBar:CreateBackdrop()
 		factionBar:SetStatusBarTexture(E.media.normTex)
 		factionBar:Size(108, 13)
 		E:RegisterStatusBar(factionBar)
@@ -172,7 +190,7 @@ function S:CharacterFrame()
 		factionName.SetWidth = E.noop
 
 		factionHeader:GetNormalTexture():Size(14)
-		factionHeader:SetHighlightTexture(nil)
+		factionHeader:SetHighlightTexture(E.ClearTexture)
 		factionHeader:Point('TOPLEFT', factionBar, 'TOPLEFT', -175, 0)
 
 		factionWar:StripTextures()
@@ -222,17 +240,9 @@ function S:CharacterFrame()
 	_G.SkillFrameExpandButtonFrame:DisableDrawLayer('BACKGROUND')
 	_G.SkillFrameCollapseAllButton:GetNormalTexture():Size(15)
 	_G.SkillFrameCollapseAllButton:Point('LEFT', _G.SkillFrameExpandTabLeft, 'RIGHT', -40, -3)
+	_G.SkillFrameCollapseAllButton:SetHighlightTexture(E.ClearTexture)
 
-	_G.SkillFrameCollapseAllButton:SetHighlightTexture(nil)
-
-	hooksecurefunc('SkillFrame_UpdateSkills', function()
-		if strfind(_G.SkillFrameCollapseAllButton:GetNormalTexture():GetTexture(), 'MinusButton') then
-			_G.SkillFrameCollapseAllButton:SetNormalTexture(E.Media.Textures.MinusButton)
-		else
-			_G.SkillFrameCollapseAllButton:SetNormalTexture(E.Media.Textures.PlusButton)
-		end
-	end)
-
+	S:HandleCollapseTexture(_G.SkillFrameCollapseAllButton, nil, true)
 	S:HandleButton(_G.SkillFrameCancelButton)
 
 	for i = 1, _G.SKILLS_TO_DISPLAY do
@@ -241,7 +251,7 @@ function S:CharacterFrame()
 		local border = _G['SkillRankFrame'..i..'Border']
 		local background = _G['SkillRankFrame'..i..'Background']
 
-		bar:CreateBackdrop('Default')
+		bar:CreateBackdrop()
 		bar:SetStatusBarTexture(E.media.normTex)
 		E:RegisterStatusBar(bar)
 
@@ -249,17 +259,9 @@ function S:CharacterFrame()
 		background:SetTexture(nil)
 
 		label:GetNormalTexture():Size(14)
-		label:SetHighlightTexture(nil)
+		label:SetHighlightTexture(E.ClearTexture)
+		S:HandleCollapseTexture(label, nil, true)
 	end
-
-	hooksecurefunc('SkillFrame_SetStatusBar', function(statusBarID, skillIndex, numSkills)
-		local skillLine = _G['SkillTypeLabel'..statusBarID]
-		if strfind(skillLine:GetNormalTexture():GetTexture(), 'MinusButton') then
-			skillLine:SetNormalTexture(E.Media.Textures.MinusButton)
-		else
-			skillLine:SetNormalTexture(E.Media.Textures.PlusButton)
-		end
-	end)
 
 	_G.SkillListScrollFrame:StripTextures()
 	S:HandleScrollBar(_G.SkillListScrollFrameScrollBar)
@@ -269,7 +271,7 @@ function S:CharacterFrame()
 
 	_G.SkillDetailStatusBar:StripTextures()
 	_G.SkillDetailStatusBar:SetParent(_G.SkillDetailScrollFrame)
-	_G.SkillDetailStatusBar:CreateBackdrop('Default')
+	_G.SkillDetailStatusBar:CreateBackdrop()
 	_G.SkillDetailStatusBar:SetStatusBarTexture(E.media.normTex)
 	E:RegisterStatusBar(_G.SkillDetailStatusBar)
 

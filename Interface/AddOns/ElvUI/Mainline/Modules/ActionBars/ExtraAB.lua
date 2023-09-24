@@ -29,6 +29,7 @@ function AB:ExtraButtons_BossStyle(frame)
 
 		button.HotKey:SetText(GetBindingKey(button.commandName))
 		AB:FixKeybindText(button)
+		AB:FixKeybindColor(button)
 
 		AB:ExtraButtons_BossAlpha(button)
 
@@ -58,8 +59,7 @@ function AB:ExtraButtons_ZoneStyle()
 				spellButton:HookScript('OnLeave', AB.ExtraButtons_OnLeave)
 
 				if spellButton.Cooldown then
-					spellButton.Cooldown.CooldownOverride = 'actionbar'
-					E:RegisterCooldown(spellButton.Cooldown)
+					E:RegisterCooldown(spellButton.Cooldown, 'actionbar')
 					spellButton.Cooldown:SetInside(spellButton)
 				end
 
@@ -160,17 +160,20 @@ function AB:SetupExtraButton()
 
 	ExtraActionBarHolder = CreateFrame('Frame', nil, E.UIParent)
 	ExtraActionBarHolder:Point('BOTTOM', E.UIParent, 'BOTTOM', -150, 300)
+	E.FrameLocks[ExtraActionBarHolder] = true
 
 	ZoneAbilityHolder = CreateFrame('Frame', nil, E.UIParent)
 	ZoneAbilityHolder:Point('BOTTOM', E.UIParent, 'BOTTOM', 150, 300)
+	E.FrameLocks[ZoneAbilityHolder] = true
 
 	ZoneAbilityFrame.SpellButtonContainer.holder = ZoneAbilityHolder
 	ZoneAbilityFrame.SpellButtonContainer:HookScript('OnEnter', AB.ExtraButtons_OnEnter)
 	ZoneAbilityFrame.SpellButtonContainer:HookScript('OnLeave', AB.ExtraButtons_OnLeave)
 
 	-- try to shutdown the container movement and taints
-	_G.UIPARENT_MANAGED_FRAME_POSITIONS.ExtraAbilityContainer = nil
 	ExtraAbilityContainer.SetSize = E.noop
+	ExtraAbilityContainer.SetPoint = E.noop
+	ExtraAbilityContainer:KillEditMode()
 
 	AB:ExtraButtons_Reparent()
 
@@ -218,5 +221,6 @@ function AB:UpdateExtraBindings()
 	for _, button in pairs(ExtraButtons) do
 		button.HotKey:SetText(GetBindingKey(button.commandName))
 		AB:FixKeybindText(button)
+		AB:FixKeybindColor(button)
 	end
 end

@@ -60,11 +60,17 @@ function S:MailFrame()
 	S:HandleTab(_G.MailFrameTab1)
 	S:HandleTab(_G.MailFrameTab2)
 
+	-- Reposition Tabs
+	_G.MailFrameTab1:ClearAllPoints()
+	_G.MailFrameTab2:ClearAllPoints()
+	_G.MailFrameTab1:Point('TOPLEFT', _G.MailFrame, 'BOTTOMLEFT', -3, 0)
+	_G.MailFrameTab2:Point('TOPLEFT', _G.MailFrameTab1, 'TOPRIGHT', -5, 0)
+
 	-- send mail
 	_G.SendMailScrollFrame:StripTextures(true)
 	_G.SendMailScrollFrame:SetTemplate()
 
-	S:HandleScrollBar(_G.SendMailScrollFrameScrollBar)
+	S:HandleTrimScrollBar(_G.SendMailScrollFrame.ScrollBar)
 
 	S:HandleEditBox(_G.SendMailNameEditBox)
 	S:HandleEditBox(_G.SendMailSubjectEditBox)
@@ -87,8 +93,8 @@ function S:MailFrame()
 
 	hooksecurefunc('SendMailFrame_Update', MailFrameSkin)
 
-	S:HandleButton(_G.SendMailMailButton)
-	S:HandleButton(_G.SendMailCancelButton)
+	S:HandleButton(_G.SendMailMailButton, true)
+	S:HandleButton(_G.SendMailCancelButton, true)
 
 	S:HandleRadioButton(_G.SendMailSendMoneyButton)
 	S:HandleRadioButton(_G.SendMailCODButton)
@@ -99,11 +105,11 @@ function S:MailFrame()
 	_G.OpenMailFrameInset:Kill()
 
 	S:HandleCloseButton(_G.OpenMailFrameCloseButton)
-	S:HandleButton(_G.OpenMailReportSpamButton)
-	S:HandleButton(_G.OpenMailReplyButton)
-	S:HandleButton(_G.OpenMailDeleteButton)
-	S:HandleButton(_G.OpenMailCancelButton)
-	S:HandleButton(_G.OpenAllMail)
+	S:HandleButton(_G.OpenMailReportSpamButton, true)
+	S:HandleButton(_G.OpenMailReplyButton, true)
+	S:HandleButton(_G.OpenMailDeleteButton, true)
+	S:HandleButton(_G.OpenMailCancelButton, true)
+	S:HandleButton(_G.OpenAllMail, true)
 
 	_G.InboxFrame:StripTextures()
 	_G.MailFrameInset:Kill()
@@ -111,7 +117,7 @@ function S:MailFrame()
 	_G.OpenMailScrollFrame:StripTextures(true)
 	_G.OpenMailScrollFrame:SetTemplate()
 
-	S:HandleScrollBar(_G.OpenMailScrollFrameScrollBar)
+	S:HandleTrimScrollBar(_G.OpenMailScrollFrame.ScrollBar)
 
 	_G.InboxPrevPageButton:Point('BOTTOMLEFT', 30, 100)
 	_G.InboxNextPageButton:Point('BOTTOMRIGHT', -80, 100)

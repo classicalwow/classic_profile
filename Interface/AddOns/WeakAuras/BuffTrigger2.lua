@@ -90,7 +90,7 @@ local scanFuncGeneralGroup = {}
 
 -- Contains all scanFuncs that should be check if the existence of a unit changed
 local unitExistScanFunc = {}
--- Which units exist
+-- Which units exist, actually contains the GUID for the unit
 local existingUnits = {}
 
 -- Contains all scanFuncs that fetch the role + roleIcon
@@ -122,11 +122,15 @@ local matchDataChanged = {}
 local nameplateExists = {}
 local unitVisible = {}
 
+-- Returns whether a unit id exists. If it exists, the GUID is returned
+-- Otherwise false
+-- Work around a issue where UnitExists returns true for nameplates even
+-- if the nameplate doesn't exist anymore
 local function UnitExistsFixed(unit)
   if #unit > 9 and unit:sub(1, 9) == "nameplate" then
-    return nameplateExists[unit]
+    return nameplateExists[unit] or false
   end
-  return UnitExists(unit) or UnitGUID(unit)
+  return UnitExists(unit) and UnitGUID(unit) or false
 end
 
 local function UnitIsVisibleFixed(unit)
@@ -1351,7 +1355,7 @@ local function UpdateTriggerState(time, id, triggernum)
     local cloneId = ""
 
     local useMatch = true
-    if triggerInfo.unitExists ~= nil and not existingUnits[triggerInfo.unit] then
+    if triggerInfo.unitExists ~= nil and not UnitExistsFixed(triggerInfo.unit) then
       useMatch = triggerInfo.unitExists
     else
       useMatch = SatisfiesGroupMatchCount(triggerInfo, unitCount, maxUnitCount, matchCount)
@@ -1404,7 +1408,7 @@ local function UpdateTriggerState(time, id, triggernum)
     end
 
     local useMatches = true
-    if triggerInfo.unitExists ~= nil and not existingUnits[triggerInfo.unit] then
+    if triggerInfo.unitExists ~= nil and not UnitExistsFixed(triggerInfo.unit) then
       useMatches = triggerInfo.unitExists
     else
       useMatches = SatisfiesGroupMatchCount(triggerInfo, unitCount, maxUnitCount, matchCount)
@@ -2059,7 +2063,7 @@ local function EventHandler(frame, event, arg1, arg2, ...)
       end
     end
   elseif event == "NAME_PLATE_UNIT_ADDED" then
-    nameplateExists[arg1] = true
+    nameplateExists[arg1] = UnitGUID(arg1)
     RecheckActiveForUnitType("nameplate", arg1, deactivatedTriggerInfos)
   elseif event == "NAME_PLATE_UNIT_REMOVED" then
     nameplateExists[arg1] = false
@@ -2091,8 +2095,11 @@ local function EventHandler(frame, event, arg1, arg2, ...)
     unitVisible = {}
     for unit in GetAllUnits("group", true, "PlayersAndPets") do
       RecheckActiveForUnitType("group", unit, deactivatedTriggerInfos)
-      if not UnitExistsFixed(unit) then
+      local exists = UnitExistsFixed(unit)
+      if not exists then
         tinsert(unitsToRemove, unit)
+      else
+        ScanGroupUnit(time, matchDataChanged, "group", unit, nil)
       end
     end
     ScanGroupRoleScanFunc(matchDataChanged)
@@ -2132,6 +2139,13 @@ local function EventHandler(frame, event, arg1, arg2, ...)
     end
   elseif event == "RAID_TARGET_UPDATE" then
     ScanRaidMarkScanFunc(matchDataChanged)
+  elseif event == "UNIT_TARGETABLE_CHANGED" then
+    local exists = UnitExistsFixed(arg1)
+    if not exists then
+      tinsert(unitsToRemove, arg1)
+    else
+      ScanUnit(time, arg1)
+    end
   end
 
   DeactivateScanFuncs(deactivatedTriggerInfos)
@@ -2189,6 +2203,7 @@ Buff2Frame:RegisterEvent("GROUP_ROSTER_UPDATE")
 Buff2Frame:RegisterEvent("PLAYER_ENTERING_WORLD")
 Buff2Frame:RegisterEvent("PARTY_MEMBER_DISABLE")
 Buff2Frame:RegisterEvent("PARTY_MEMBER_ENABLE")
+Buff2Frame:RegisterEvent("UNIT_TARGETABLE_CHANGED")
 Buff2Frame:SetScript("OnEvent", EventHandler)
 
 Buff2Frame:SetScript("OnUpdate", function()

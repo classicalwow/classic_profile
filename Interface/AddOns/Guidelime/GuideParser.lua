@@ -321,7 +321,7 @@ function GP.parseLine(step, guide, strict, nameOnly)
 				element.t = "ACCEPT"
 			elseif element.t == "WORK" then
 				element.t = "COMPLETE"
-				element.optional = true
+				step.optional = true
 			elseif element.t == "QUEST" then
 				element.t = "COMPLETE"
 			end
@@ -347,19 +347,21 @@ function GP.parseLine(step, guide, strict, nameOnly)
 					elseif title ~= "" --[[ and (not strict or DB.questsDB[element.questId] == nil or title ~= DB.questsDB[element.questId].name) ]] then
 						element.title = title
 					end
-					if step.races == nil and QT.getQuestRaces(element.questId) ~= nil then 
-						step.races = {}
-						for i, r in pairs(QT.getQuestRaces(element.questId)) do step.races[i] = r end
+					local races = QT.getQuestRaces(element.questId)
+					if step.races == nil and races ~= nil then 
+						step.races = races;	element.races = races
 					end
-					if step.classes == nil and QT.getQuestClasses(element.questId) ~= nil then 
-						step.classes = {}
-						for i, r in pairs(QT.getQuestClasses(element.questId)) do step.classes[i] = r end
+					local classes = QT.getQuestClasses(element.questId)
+					if step.classes == nil and classes ~= nil then 
+						step.classes = classes;	element.classes = classes
 					end
-					if step.faction == nil and QT.getQuestFaction(element.questId) ~= nil then 
-						step.faction = QT.getQuestFaction(element.questId) 
+					local faction = QT.getQuestFaction(element.questId)
+					if step.faction == nil and faction ~= nil then 
+						step.faction = faction; element.faction = faction
 					end
-					if step.reputation == nil and QT.getQuestReputation(element.questId) ~= nil then
-						step.reputation, step.repMin, step.repMax = QT.getQuestReputation(element.questId)
+					local reputation, repMin, repMax = QT.getQuestReputation(element.questId)
+					if step.reputation == nil and reputation ~= nil then
+						step.reputation = reputation; step.repMin = repMin; step.repMax = repMax
 					end
 					-- here we use internal data only intentionally
 					-- guides should not parse with errors or not depending on data source used
@@ -482,8 +484,8 @@ function GP.parseLine(step, guide, strict, nameOnly)
 					err = true
 				end
 			end)
-			if #classes > 0 then step.classes = classes end
-			if #races > 0 then step.races = races end
+			if #classes > 0 then step.classes = classes; element.classes = classes end
+			if #races > 0 then step.races = races; element.races = races end
 		elseif element.t == "GOTO" then
 			local _, c = tag:gsub("%s*(%d+%.?%d*)%s?,%s?(%d+%.?%d*)%s?,?%s?(%d*%.?%d*)%s?(.*)", function(x, y, radius, zone)
 				element.x = tonumber(x)
@@ -583,8 +585,19 @@ function GP.parseLine(step, guide, strict, nameOnly)
 				--if addon.debugging then print("LIME: LEARN", c, value1, value2, text) end
 				c = c:upper():gsub(" ","")
 				if c == "SP" and value1 ~= "" then
-					element.spell = SP.getSpellById(tonumber(value1))
-					element.spellMin = tonumber(value2) or 1
+					local spell = SP.getSpellById(tonumber(value1))
+					if SK.isSkill(spell) then
+						element.skill = SK.getSkill(spell)
+						if element.skill == "RIDING" then
+							element.skillMin = tonumber(value2) or 1
+						else
+							element.maxSkillMin = tonumber(value2) or 1
+						end
+					else
+						element.spellId = tonumber(value1)
+						element.spell = tonumber(value1)
+						element.spellMin = tonumber(value2) or SP.getSpellRankById(tonumber(value1))
+					end
 				elseif value2 ~= "" then
 					F.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
 					err = true
@@ -613,6 +626,10 @@ function GP.parseLine(step, guide, strict, nameOnly)
 						element.text = SK.getLocalizedName(element.skill)
 					end
 					element.textInactive = element.text
+					if element.spellMin ~= nil and element.spellMin > 1 then
+						element.text = element.text .. " |cFFD1B38A(" .. RANK .. " " .. element.spellMin .. ")|r"
+						element.textInactive = element.textInactive .. " (" .. RANK .. " " .. element.spellMin .. ")"
+					end
 				end
 				lastAutoStep = element
 			end, 1)
@@ -732,7 +749,7 @@ function GP.parseLine(step, guide, strict, nameOnly)
 			local _, c = tag:gsub("%s*([%w%d]+)%s*(.-)%s*$", function(spell, title)	
 				element.spellId = tonumber(spell)
 				element.spell = element.spellId and SP.getSpellById(element.spellId) or SP.getSpell(spell)
-				if element.spellId or element.spell then
+				if element.spell then
 					if title == "-" then
 						element.title = ""
 					elseif title ~= "" then

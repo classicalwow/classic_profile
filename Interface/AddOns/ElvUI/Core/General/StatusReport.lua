@@ -18,7 +18,7 @@ function E:AreOtherAddOnsEnabled()
 
 	for i = 1, GetNumAddOns() do
 		local name = GetAddOnInfo(i)
-		if name ~= 'ElvUI' and name ~= 'ElvUI_OptionsUI' and name ~= 'ElvUI_CPU' and E:IsAddOnEnabled(name) then
+		if name ~= 'ElvUI' and name ~= 'ElvUI_Options' and name ~= 'ElvUI_Libraries' and name ~= 'ElvUI_CPU' and E:IsAddOnEnabled(name) then
 			if EP[name] then plugins = true else addons = true end
 		end
 	end
@@ -43,6 +43,7 @@ local EnglishClassName = {
 	SHAMAN = 'Shaman',
 	WARLOCK = 'Warlock',
 	WARRIOR = 'Warrior',
+	EVOKER = 'Evoker'
 }
 
 local EnglishSpecName = {
@@ -75,13 +76,16 @@ local EnglishSpecName = {
 	[263] = 'Enhancement',
 	[264] = 'Restoration',
 	[265] = 'Affliction',
-	[266] = 'Demonoligy',
+	[266] = 'Demonology',
 	[267] = 'Destruction',
 	[71] = 'Arms',
 	[72] = 'Fury',
 	[73] = 'Protection',
 	[577] = 'Havoc',
 	[581] = 'Vengeance',
+	[1467] = 'Devastation',
+	[1468] = 'Preservation',
+	[1473] = 'Augmentation',
 }
 
 local function GetSpecName()
@@ -122,7 +126,7 @@ end
 local function CloseClicked()
 	if E.StatusReportToggled then
 		E.StatusReportToggled = nil
-		E:ToggleOptionsUI()
+		E:ToggleOptions()
 	end
 end
 
@@ -259,8 +263,7 @@ function E:UpdateStatusFrame()
 	local PluginSection = PluginFrame.SectionP
 	PluginSection.Header.Text:SetFormattedText('%sPlugins|r', valueColor)
 
-	local verWarning = E.recievedOutOfDateMessage and 'ff3333' or E.shownUpdatedWhileRunningPopup and 'ff9933'
-	StatusFrame.Section1.Content.Line1.Text:SetFormattedText('Version of ElvUI: |cff%s%.2f|r', verWarning or '33ff33', E.version)
+	StatusFrame.Section1.Content.Line1.Text:SetFormattedText('Version of ElvUI: |cff%s%.2f|r', (E.recievedOutOfDateMessage and 'ff3333') or (E.updateRequestTriggered and 'ff9933') or '33ff33', E.version)
 
 	local addons, plugins = E:AreOtherAddOnsEnabled()
 	StatusFrame.Section1.Content.Line2.Text:SetFormattedText('Other AddOns Enabled: |cff%s|r', (not addons and plugins and 'ff9933Plugins') or (addons and 'ff3333Yes') or '33ff33No')

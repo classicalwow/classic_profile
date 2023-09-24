@@ -2,11 +2,15 @@ local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
 local LSM = E.Libs.LSM
 
-local _G = _G
+local wipe = wipe
 local ipairs = ipairs
 local unpack = unpack
 local strfind = strfind
+
 local CreateFrame = CreateFrame
+local GetSpellInfo = GetSpellInfo
+
+local DebuffColors = E.Libs.Dispel:GetDebuffTypeColor()
 
 function UF:Construct_AuraBars(bar)
 	bar:CreateBackdrop(nil, nil, nil, nil, true)
@@ -15,7 +19,7 @@ function UF:Construct_AuraBars(bar)
 	bar:Point('RIGHT')
 
 	bar.spark:SetTexture(E.media.blankTex)
-	bar.spark:SetVertexColor(1, 1, 1, 0.4)
+	bar.spark:SetVertexColor(0.9, 0.9, 0.9, 0.6)
 	bar.spark:Width(2)
 
 	bar.icon:CreateBackdrop(nil, nil, nil, nil, true)
@@ -44,7 +48,13 @@ function UF:AuraBars_UpdateBar(bar)
 	local bars = bar:GetParent()
 	bar.db = bars.db
 
-	bar:SetReverseFill(bars.reverseFill)
+	if bar.auraInfo then
+		wipe(bar.auraInfo)
+	else
+		bar.auraInfo = {}
+	end
+
+	bar:SetReverseFill(not not bars.reverseFill)
 	bar.spark:ClearAllPoints()
 	bar.spark:Point(bars.reverseFill and 'LEFT' or 'RIGHT', bar:GetStatusBarTexture())
 	bar.spark:Point('BOTTOM')
@@ -111,13 +121,13 @@ function UF:Configure_AuraBars(frame)
 			bars.Holder = holder
 
 			if frame.unitframeType == 'player' then
-				E:CreateMover(holder, 'ElvUF_PlayerAuraMover', 'Player Aura Bars', nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,player,aurabar')
+				E:CreateMover(holder, 'ElvUF_PlayerAuraMover', L["Player Aura Bars"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,player,aurabar')
 			elseif frame.unitframeType == 'target' then
-				E:CreateMover(holder, 'ElvUF_TargetAuraMover', 'Target Aura Bars', nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,target,aurabar')
+				E:CreateMover(holder, 'ElvUF_TargetAuraMover', L["Target Aura Bars"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,target,aurabar')
 			elseif frame.unitframeType == 'pet' then
-				E:CreateMover(holder, 'ElvUF_PetAuraMover', 'Pet Aura Bars', nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,pet,aurabar')
+				E:CreateMover(holder, 'ElvUF_PetAuraMover', L["Pet Aura Bars"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,pet,aurabar')
 			elseif frame.unitframeType == 'focus' then
-				E:CreateMover(holder, 'ElvUF_FocusAuraMover', 'Focus Aura Bars', nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,focus,aurabar')
+				E:CreateMover(holder, 'ElvUF_FocusAuraMover', L["Focus Aura Bars"], nil, nil, nil, 'ALL,SOLO', nil, 'unitframe,individualUnits,focus,aurabar')
 			end
 		end
 
@@ -129,22 +139,22 @@ function UF:Configure_AuraBars(frame)
 			attachTo = frame.Buffs
 		elseif debuffs then
 			attachTo = frame.Debuffs
-		elseif db.attachTo == 'PLAYER_AURABARS' and _G.ElvUF_Player then
-			attachTo = _G.ElvUF_Player.AuraBars
+		elseif db.attachTo == 'PLAYER_AURABARS' then
+			attachTo = UF.units.player.AuraBars
 			xOffset = 0
 		end
 
 		local px = UF.thinBorders and 0 or 2
 		local POWER_OFFSET, BAR_WIDTH = 0
 		if detached then
-			E:EnableMover(bars.Holder.mover:GetName())
+			E:EnableMover(bars.Holder.mover.name)
 			BAR_WIDTH = db.detachedWidth
 
 			yOffset = below and BORDER or -(db.height + px)
 
 			bars.Holder:Size(db.detachedWidth, db.height + (BORDER * 2))
 		else
-			E:DisableMover(bars.Holder.mover:GetName())
+			E:DisableMover(bars.Holder.mover.name)
 			BAR_WIDTH = frame.UNIT_WIDTH
 
 			local offset = db.yOffset + px
@@ -167,7 +177,7 @@ function UF:Configure_AuraBars(frame)
 		local p2 = detached and p1 or (buffs or debuffs) and attachTo.anchorPoint or 'TOPLEFT'
 		if p2 == 'TOP' or p2 == 'BOTTOM' then
 			bars.initialAnchor = 'BOTTOM'
-			bars:Point(p2, attachTo, p2, (bars.height / 2) + -(detached and px or UF.BORDER), yOffset)
+			bars:Point(p2, attachTo, p2, (bars.height * 0.5) + -(detached and px or UF.BORDER), yOffset)
 		else
 			local right = strfind(p2, 'RIGHT')
 			local p3, p4 = below and 'TOP' or 'BOTTOM', right and 'RIGHT' or 'LEFT'
@@ -183,11 +193,7 @@ end
 local GOTAK_ID = 86659
 local GOTAK = GetSpellInfo(GOTAK_ID)
 function UF:PostUpdateBar_AuraBars(_, bar, _, _, _, _, debuffType) -- unit, bar, index, position, duration, expiration, debuffType, isStealable
-	local spellID = bar.spellID
-	local spellName = bar.name
-
-	bar.db = self.db
-
+	local spellID, spellName = bar.spellID, bar.spell
 	local colors = E.global.unitframe.AuraBarColors[spellID] and E.global.unitframe.AuraBarColors[spellID].enable and E.global.unitframe.AuraBarColors[spellID].color
 
 	if E.db.unitframe.colors.auraBarTurtle and (E.global.unitframe.aurafilters.TurtleBuffs.spells[spellID] or E.global.unitframe.aurafilters.TurtleBuffs.spells[spellName]) and not colors and (spellName ~= GOTAK or (spellName == GOTAK and spellID == GOTAK_ID)) then
@@ -199,13 +205,20 @@ function UF:PostUpdateBar_AuraBars(_, bar, _, _, _, _, debuffType) -- unit, bar,
 			if not debuffType or (debuffType == '' or debuffType == 'none') then
 				colors = UF.db.colors.auraBarDebuff
 			else
-				colors = _G.DebuffTypeColor[debuffType]
+				colors = DebuffColors[debuffType]
 			end
 		elseif bar.filter == 'HARMFUL' then
 			colors = UF.db.colors.auraBarDebuff
 		else
 			colors = UF.db.colors.auraBarBuff
 		end
+	end
+
+	local text = (self.db and self.db.abbrevName and E.TagFunctions.Abbrev(spellName)) or spellName
+	if bar.count > 1 then
+		bar.nameText:SetFormattedText('[%d] %s', bar.count, text)
+	else
+		bar.nameText:SetText(text)
 	end
 
 	bar.custom_backdrop = UF.db.colors.customaurabarbackdrop and UF.db.colors.aurabar_backdrop

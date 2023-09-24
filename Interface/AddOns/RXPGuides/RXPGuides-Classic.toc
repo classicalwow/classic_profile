@@ -1,11 +1,11 @@
 ## Interface: 11403
-## Title: RestedXP Guides MrBCat汉化
+## Title: RestedXP Guides
 ## Notes: In-game leveling guides
-## Notes-zhCN: MrBCat汉化20-60经典怀旧服部分
+## Notes-zhCN: TODO
 ## Author: RestedXP
-## Version: v4.3.4
-## OptionalDeps: Questie, unitscan
-## SavedVariables: RXPData, RXPDB
+## Version: v4.5.19
+## OptionalDeps: Questie, RXPGuides_Themes
+## SavedVariables: RXPData, RXPDB, RXPSettings
 ## SavedVariablesPerCharacter: RXPCData, RXPCTrackingData, RXPCComms, RXPCSettings
 ## X-Curse-Project-ID: 486246
 
@@ -13,21 +13,32 @@ libs\embeds.xml
 locale\locales.xml
 
 Locale.lua
+Themes.lua
 RXPGuides.lua
 GuideWindow.lua
 Help.lua
 SettingsPanel.lua
+
+DB/classic.xml
+
 HSBatching.lua
 QuestLog.lua
 ActiveItemFrame.lua
 LevelingTracker.lua
 Timers.lua
 Communications.lua
+Targeting.lua
+Tips.lua
 
-DB/classic.xml
 
 map.lua
 functions.lua
 GuideLoader.lua
+HardcoreIntroUI.lua
 
 Guides/GuideList-classic.xml
+
+Talents.lua
+Guides/Talents/classic.xml
+
+CptStadicsVendorTreasures.lua

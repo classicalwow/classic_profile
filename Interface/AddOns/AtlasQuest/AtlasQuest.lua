@@ -40,6 +40,9 @@ local BLACK = "|c0000000F";
 -- Variables
 -----------------------------------------------------------------------------
 
+AtlasQuestConfig = {
+	offsetX = {left=12,right=0},
+}
 AQ = {};
 
 local Initialized = nil; -- the variables are not loaded yet
@@ -51,7 +54,7 @@ AQINSTANZ = 1; -- currently shown instance-pic (see AtlasQuest_Instanzen.lua)
 AQINSTATM = ""; -- variable to check whether AQINSTANZ has changed (see function AtlasQuestSetTextandButtons())
 
 -- Sets the max number of instances and quests to check for. 
-local AQMAXINSTANCES = "38"
+local AQMAXINSTANCES = "94"
 local AQMAXQUESTS = "23"
 
 
@@ -61,15 +64,15 @@ local AQVERSION = GetAddOnMetadata("AtlasQuest","Version");
 
 -- Checks WoW version and sets warning message in AtlasQuest title if wrong version.  Experimental.  Inspired by code from Atlas.
 local WoWVersion  = select(4, GetBuildInfo())
-if WoWVersion < 20000 then
+--[[if WoWVersion < 20000 then
 	-- CLASSIC
-	ATLASQUEST_VERSION = ""..BLUE.."AtlasQuest "..AQVERSION;
-elseif WoWVersion > 19999 and WoWVersion < 90000 then 
-	-- TBC CLASSIC
-	ATLASQUEST_VERSION = AQ_MSG_WRONGVERSION;
+	ATLASQUEST_VERSION = AQ_MSG_WRONGVERSION]]
+if WoWVersion < 90000 then 
+	--  CLASSIC
+	ATLASQUEST_VERSION = ""..BLUE.."AtlasQuest Classic "..AQVERSION
 else
 	-- RETAIL / SHADOWLANDS
-	ATLASQUEST_VERSION = AQ_MSG_WRONGVERSION;
+	ATLASQUEST_VERSION = AQ_MSG_WRONGVERSION
 end
 
 
@@ -200,7 +203,7 @@ function AQ_OnLoad()
     AtlasQuestFrame:RegisterEvent("ADDON_LOADED");
     AQSetButtontext(); -- translation for all buttons
     if ( AtlasFrame ) then
-    	AQATLASMAP = AtlasMapSmall:GetTexture()
+    	AQATLASMAP = AtlasMap:GetTexture()
     else
 	  AQATLASMAP = 36;
     end
@@ -285,21 +288,17 @@ end
 --  AlphaMap parent change
 -----------------------------------------------------------------------------
 function AQ_AtlasOrAlphamap()
-        if ((AtlasFrame ~= nil) and (AtlasFrame:IsVisible())) then
-           AtlasORAlphaMap = "Atlas";
-           --
-           AtlasQuestFrame:SetParent(AtlasFrame);
-           if (AQ_ShownSide == "Right" ) then
-               AtlasQuestFrame:ClearAllPoints();
-               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 607, -65);
-           else
-               AtlasQuestFrame:ClearAllPoints();
-               AtlasQuestFrame:SetPoint("TOP","AtlasFrame", -597, -65);
-           end
-           AtlasQuestInsideFrame:SetParent(AtlasFrame);
-           AtlasQuestInsideFrame:ClearAllPoints();
-           AtlasQuestInsideFrame:SetPoint("TOPLEFT","AtlasFrame", 18, -84);
-        end
+	if ((AtlasFrame ~= nil) and (AtlasFrame:IsVisible())) then
+		AtlasORAlphaMap = "Atlas";
+		local _, relativeTo, _, _, offsetY = AtlasQuestFrame:GetPoint()
+		if (AQ_ShownSide == "Right" ) then
+			AtlasQuestFrame:ClearAllPoints();
+			AtlasQuestFrame:SetPoint("TOPLEFT", relativeTo, "TOPRIGHT", AtlasQuestConfig.offsetX.right, offsetY)
+		else
+			AtlasQuestFrame:ClearAllPoints();
+			AtlasQuestFrame:SetPoint("TOPRIGHT", relativeTo, "TOPLEFT", AtlasQuestConfig.offsetX.left, offsetY)
+		end
+	end
 end
 
 
@@ -362,7 +361,7 @@ local AQQuestfarbe2
                      AQQuestfarbe = YELLOW;
                    elseif ( AQQuestlevelf > UnitLevel("player") + 2 and AQQuestlevelf <= UnitLevel("player") + 4) then
                      AQQuestfarbe = ORANGE;
-                   elseif ( AQQuestlevelf >= UnitLevel("player") + 5 and AQQuestlevelf ~= 200) then
+                   elseif ( AQQuestlevelf >= UnitLevel("player") + 5 and AQQuestlevelf ~= 100) then
                      AQQuestfarbe = RED;
                    elseif ( AQQuestlevelf < UnitLevel("player") - 7) then
                      AQQuestfarbe = GREY;
@@ -372,7 +371,7 @@ local AQQuestfarbe2
                    if (AQNOColourCheck) then
                       AQQuestfarbe = YELLOW;
                    end
-                   if ( AQQuestlevelf == 200 or AQCompareQLtoAQ(b)) then
+                   if ( AQQuestlevelf == 100 or AQCompareQLtoAQ(b)) then
                       AQQuestfarbe = BLUE;
                    end
                    if ( AQ[ "AQFinishedQuest_Inst"..AQINSTANZ.."Quest"..b ] == 1) then
@@ -415,7 +414,7 @@ local AQQuestfarbe2
                      AQQuestfarbe = YELLOW;
                    elseif ( AQQuestlevelf > UnitLevel("player") + 2 and AQQuestlevelf <= UnitLevel("player") + 4) then
                      AQQuestfarbe = ORANGE;
-                   elseif ( AQQuestlevelf >= UnitLevel("player") + 5 and AQQuestlevelf ~= 200) then
+                   elseif ( AQQuestlevelf >= UnitLevel("player") + 5 and AQQuestlevelf ~= 100) then
                      AQQuestfarbe = RED;
                    elseif ( AQQuestlevelf < UnitLevel("player") - 7) then
                      AQQuestfarbe = GREY;
@@ -425,7 +424,7 @@ local AQQuestfarbe2
                    if (AQNOColourCheck) then
                       AQQuestfarbe = YELLOW;
                    end
-                   if ( AQQuestlevelf == 200 or AQCompareQLtoAQ(b)) then
+                   if ( AQQuestlevelf == 100 or AQCompareQLtoAQ(b)) then
                       AQQuestfarbe = BLUE;
                    end
                    if ( AQ[ "AQFinishedQuest_Inst"..AQINSTANZ.."Quest"..b.."_HORDE" ] == 1) then
@@ -530,18 +529,19 @@ end
 -----------------------------------------------------------------------------
 original_Atlas_OnShow = Atlas_OnShow; -- new line #1
 function Atlas_OnShow()
-   if ( AQAtlasAuto == 1) then
-     ShowUIPanel(AtlasQuestFrame);
-    else
-     HideUIPanel(AtlasQuestFrame);
-    end
-    HideUIPanel(AtlasQuestInsideFrame);
-   -- AQ_AtlasOrAlphamap();
-   if (AQ_ShownSide == "Right") then
-       AtlasQuestFrame:ClearAllPoints();
-       AtlasQuestFrame:SetPoint("TOP","AtlasFrame", 607, -65);
-  end
-  original_Atlas_OnShow(); -- new line #2
+	if ( AQAtlasAuto == 1) then
+		ShowUIPanel(AtlasQuestFrame);
+	else
+		HideUIPanel(AtlasQuestFrame);
+	end
+		HideUIPanel(AtlasQuestInsideFrame);
+		-- AQ_AtlasOrAlphamap();
+	if (AQ_ShownSide == "Right") then
+		local _, relativeTo, _, _, offsetY = AtlasQuestFrame:GetPoint()
+		AtlasQuestFrame:ClearAllPoints();
+		AtlasQuestFrame:SetPoint("TOPLEFT" ,relativeTo ,"TOPRIGHT" , AtlasQuestConfig.offsetX.right, offsetY)
+	end
+	original_Atlas_OnShow(); -- new line #2
 end
 
 

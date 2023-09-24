@@ -1,20 +1,13 @@
 local E, L, V, P, G = unpack(ElvUI)
 local UF = E:GetModule('UnitFrames')
-
-local _, ns = ...
-local ElvUF = ns.oUF
-assert(ElvUF, 'ElvUI was unable to locate oUF.')
+local ElvUF = E.oUF
 
 local _G = _G
 local max = max
 local tinsert = tinsert
 
 local CreateFrame = CreateFrame
-local CastingBarFrame_OnLoad = CastingBarFrame_OnLoad
-local CastingBarFrame_SetUnit = CastingBarFrame_SetUnit
-local PetCastingBarFrame_OnLoad = PetCastingBarFrame_OnLoad
 local MAX_COMBO_POINTS = MAX_COMBO_POINTS
--- GLOBALS: ElvUF_Target
 
 function UF:Construct_PlayerFrame(frame)
 	frame.ThreatIndicator = UF:Construct_Threat(frame)
@@ -50,8 +43,10 @@ function UF:Construct_PlayerFrame(frame)
 	frame.AuraBars = UF:Construct_AuraBarHeader(frame)
 	frame.InfoPanel = UF:Construct_InfoPanel(frame)
 	frame.PvPIndicator = UF:Construct_PvPIcon(frame)
+	frame.AuraWatch = UF:Construct_AuraWatch(frame)
 	frame.Fader = UF:Construct_Fader()
 	frame.Cutaway = UF:Construct_Cutaway(frame)
+	frame.PrivateAuras = UF:Construct_PrivateAuras(frame)
 	frame.customTexts = {}
 
 	if not E.Retail and E.myclass ~= 'WARRIOR' then
@@ -79,7 +74,7 @@ function UF:Update_PlayerFrame(frame, db)
 		frame.USE_POWERBAR_OFFSET = (db.power.width == 'offset' and db.power.offset ~= 0) and frame.USE_POWERBAR and not frame.POWERBAR_DETACHED
 		frame.POWERBAR_OFFSET = frame.USE_POWERBAR_OFFSET and db.power.offset or 0
 		frame.POWERBAR_HEIGHT = not frame.USE_POWERBAR and 0 or db.power.height
-		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))/2 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
+		frame.POWERBAR_WIDTH = frame.USE_MINI_POWERBAR and (frame.UNIT_WIDTH - (UF.BORDER*2))*0.5 or (frame.POWERBAR_DETACHED and db.power.detachedWidth or (frame.UNIT_WIDTH - ((UF.BORDER+UF.SPACING)*2)))
 		frame.USE_PORTRAIT = db.portrait and db.portrait.enable
 		frame.USE_PORTRAIT_OVERLAY = frame.USE_PORTRAIT and (db.portrait.overlay or frame.ORIENTATION == 'MIDDLE')
 		frame.PORTRAIT_WIDTH = (frame.USE_PORTRAIT_OVERLAY or not frame.USE_PORTRAIT) and 0 or db.portrait.width
@@ -92,7 +87,7 @@ function UF:Update_PlayerFrame(frame, db)
 		frame.CLASSBAR_HEIGHT = frame.USE_CLASSBAR and db.classbar.height or 0
 		frame.CLASSBAR_WIDTH = frame.UNIT_WIDTH - frame.PORTRAIT_WIDTH - (frame.ORIENTATION == 'MIDDLE' and (frame.POWERBAR_OFFSET*2) or frame.POWERBAR_OFFSET)
 		--If formula for frame.CLASSBAR_YOFFSET changes, then remember to update it in classbars.lua too
-		frame.CLASSBAR_YOFFSET = (not frame.USE_CLASSBAR or not frame.CLASSBAR_SHOWN or frame.CLASSBAR_DETACHED) and 0 or (frame.USE_MINI_CLASSBAR and (UF.SPACING+(frame.CLASSBAR_HEIGHT/2)) or (frame.CLASSBAR_HEIGHT - (UF.BORDER-UF.SPACING)))
+		frame.CLASSBAR_YOFFSET = (not frame.USE_CLASSBAR or not frame.CLASSBAR_SHOWN or frame.CLASSBAR_DETACHED) and 0 or (frame.USE_MINI_CLASSBAR and (UF.SPACING+(frame.CLASSBAR_HEIGHT*0.5)) or (frame.CLASSBAR_HEIGHT - (UF.BORDER-UF.SPACING)))
 		frame.USE_INFO_PANEL = not frame.USE_MINI_POWERBAR and not frame.USE_POWERBAR_OFFSET and db.infoPanel.enable
 		frame.INFO_PANEL_HEIGHT = frame.USE_INFO_PANEL and db.infoPanel.height or 0
 		frame.BOTTOM_OFFSET = UF:GetHealthBottomOffset(frame)
@@ -126,27 +121,19 @@ function UF:Update_PlayerFrame(frame, db)
 	UF:Configure_AuraBars(frame)
 	UF:Configure_PVPIcon(frame)
 	UF:Configure_Cutaway(frame)
+	UF:Configure_PrivateAuras(frame)
 	UF:Configure_CustomTexts(frame)
 	UF:Configure_CombatIndicator(frame)
 	UF:Configure_ClassBar(frame)
 	UF:Configure_PVPText(frame)
 	UF:Configure_PartyIndicator(frame)
 	UF:Configure_ResurrectionIcon(frame)
-
-	frame:DisableElement('Castbar')
+	UF:Configure_AuraWatch(frame)
 	UF:Configure_Castbar(frame)
 	UF:Configure_Fader(frame)
 
 	if not E.Retail and E.myclass ~= 'WARRIOR' then
 		UF:Configure_EnergyManaRegen(frame)
-	end
-
-	if (UF.db.units.player.enable and UF.db.units.player.castbar.enable) or E.private.unitframe.disabledBlizzardFrames.castbar then
-		CastingBarFrame_SetUnit(_G.CastingBarFrame)
-		CastingBarFrame_SetUnit(_G.PetCastingBarFrame)
-	else
-		CastingBarFrame_OnLoad(_G.CastingBarFrame, 'player', true, false)
-		PetCastingBarFrame_OnLoad(_G.PetCastingBarFrame)
 	end
 
 	--We need to update Target AuraBars if attached to Player AuraBars

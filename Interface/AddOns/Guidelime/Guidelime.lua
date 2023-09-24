@@ -64,19 +64,8 @@ addon.icons = {
 	GOTO = "Interface\\Addons\\" .. addonName .. "\\Icons\\lime0",
 	LOC = "Interface\\Addons\\" .. addonName .. "\\Icons\\lime",
 	TARGET_BUTTON = "Interface\\Icons\\Ability_Hunter_Snipershot",
-	MULTI_TARGET_BUTTON = "Interface\\Icons\\Ability_Hunter_FocusedAim",
-	-- normally class icons could be obtained by using SetTextCoord with CLASS_ICON_TCOORDS[class] on "Interface\\GLUES\\CHARACTERCREATE\\UI-CHARACTERCREATE-CLASSES"
-	-- but since this is not so easily done e.g. in EasyMenu we provide alternative class icons here (cf https://wowpedia.fandom.com/wiki/Class_icon)
-	DEATHKNIGHT = "Interface\\Icons\\spell_deathknight_classicon",
-	DRUID = "Interface\\Icons\\inv_misc_monsterclaw_04",
-	HUNTER = "Interface\\Icons\\inv_weapon_bow_07",
-	MAGE = "Interface\\Icons\\inv_staff_13",
-	PALADIN = "Interface\\Icons\\inv_hammer_01",
-	PRIEST = "Interface\\Icons\\inv_staff_30",
-	ROGUE = "Interface\\Icons\\inv_throwingknife_04",
-	SHAMAN = "Interface\\Icons\\inv_jewelry_talisman_04",
-	WARLOCK = "Interface\\Icons\\spell_nature_drowsy",
-	WARRIOR = "Interface\\Icons\\inv_sword_27",
+	MULTI_TARGET_BUTTON = "Interface\\Icons\\Ability_Marksmanship",
+	SCROLL_THUMB = "Interface\\Addons\\" .. addonName .. "\\Icons\\scroll",
 
 	--LOC = "Interface\\Icons\\Ability_Tracking",
 	--KILL = "Interface\\Icons\\Ability_Creature_Cursed_02",
@@ -164,21 +153,29 @@ function addon.loadData()
 		editorFrameX = 0,
 		editorFrameY = 0,
 		editorFrameRelative = "CENTER",
-		guideSkip = {},
-		guideSize = {},
 		version = GetAddOnMetadata(addonName, "version"),
-		completedSteps = {},
 		showTargetButtons = "LEFT",
 		showUseItemButtons = "LEFT",
-		showMinimapButton = true
+		showMinimapButton = true,
+		maxNumOfTargetButtons = 8,
+		maxNumOfItemButtons = 8
+	}
+	local noSnapshotOptionsChar = {
+		currentGuide = "",
+		guideSkip = {},
+		guideSize = {},
+		completedSteps = {},
 	}
 	if GuidelimeData == nil then GuidelimeData = {} end
 	if GuidelimeDataChar == nil then GuidelimeDataChar = {} end
 	for option, default in pairs(defaultOptions) do
 		if GuidelimeData[option] == nil then GuidelimeData[option] = default end
 	end
-	for option, default in pairs(defaultOptionsChar) do
+	for option, default in pairs(noSnapshotOptionsChar) do
 		if GuidelimeDataChar[option] == nil then GuidelimeDataChar[option] = default end
+	end
+	for option, default in pairs(GuidelimeData.defaultCharOptions or defaultOptionsChar) do
+		if GuidelimeDataChar[option] == nil and noSnapshotOptionsChar[option] == nil then GuidelimeDataChar[option] = default end
 	end
 
 	GuidelimeDataChar.version:gsub("(%d+).(%d+)", function(major, minor)
@@ -277,7 +274,7 @@ function addon.loadData()
 
 	addon.CG.loadCurrentGuide(false)
 
-	addon.G.fillGuides()
+	--addon.G.fillGuides()
 	addon.O.fillOptions()
 
 	addon.dataLoaded = true

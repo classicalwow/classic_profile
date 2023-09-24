@@ -87,9 +87,11 @@ function S:WorldMapFrame()
 	end
 
 	SkinHeaders(QuestScrollFrame.Contents.StoryHeader)
-	S:HandleScrollBar(QuestScrollFrameScrollBar)
-	QuestScrollFrameScrollBar:Point('TOPLEFT', QuestScrollFrame.DetailFrame, 'TOPRIGHT', 1, -15)
-	QuestScrollFrameScrollBar:Point('BOTTOMLEFT', QuestScrollFrame.DetailFrame, 'BOTTOMRIGHT', 6, 10)
+	S:HandleTrimScrollBar(QuestScrollFrameScrollBar)
+	QuestScrollFrameScrollBar:Point('TOPLEFT', QuestScrollFrame.DetailFrame, 'TOPRIGHT', 4, -15)
+	QuestScrollFrameScrollBar:Point('BOTTOMLEFT', QuestScrollFrame.DetailFrame, 'BOTTOMRIGHT', 9, 10)
+
+	QuestScrollFrame.Edge:SetAlpha(0)
 
 	S:HandleButton(QuestMapFrame.DetailsFrame.BackButton, true)
 	QuestMapFrame.DetailsFrame.BackButton:SetFrameLevel(5)
@@ -105,13 +107,12 @@ function S:WorldMapFrame()
 	local CampaignOverview = QuestMapFrame.CampaignOverview
 	SkinHeaders(CampaignOverview.Header)
 	CampaignOverview.ScrollFrame:StripTextures()
-	S:HandleScrollBar(_G.QuestMapFrameScrollBar)
 
 	if E.private.skins.blizzard.tooltip then
 		TT:SetStyle(QuestMapFrame.QuestsFrame.StoryTooltip)
 	end
 
-	S:HandleScrollBar(_G.QuestMapDetailsScrollFrame.ScrollBar)
+	S:HandleTrimScrollBar(_G.QuestMapDetailsScrollFrame.ScrollBar)
 
 	QuestMapFrame.DetailsFrame.CompleteQuestFrame:StripTextures()
 
@@ -120,8 +121,6 @@ function S:WorldMapFrame()
 
 	S:HandleCloseButton(WorldMapFrame.BorderFrame.CloseButton)
 	S:HandleMaxMinFrame(WorldMapFrame.BorderFrame.MaximizeMinimizeFrame)
-	WorldMapFrame.BorderFrame.MaximizeMinimizeFrame:ClearAllPoints()
-	WorldMapFrame.BorderFrame.MaximizeMinimizeFrame:Point('RIGHT', WorldMapFrame.BorderFrame.CloseButton, 'LEFT', 12, 0)
 
 	if E.global.general.disableTutorialButtons then
 		WorldMapFrame.BorderFrame.Tutorial:Kill()
@@ -156,9 +155,9 @@ function S:WorldMapFrame()
 	}
 
 	hooksecurefunc(QuestMapFrame.QuestSessionManagement, 'UpdateExecuteCommandAtlases', function(s, command)
-		s.ExecuteSessionCommand:SetNormalTexture('')
-		s.ExecuteSessionCommand:SetPushedTexture('')
-		s.ExecuteSessionCommand:SetDisabledTexture('')
+		s.ExecuteSessionCommand:SetNormalTexture(E.ClearTexture)
+		s.ExecuteSessionCommand:SetPushedTexture(E.ClearTexture)
+		s.ExecuteSessionCommand:SetDisabledTexture(E.ClearTexture)
 
 		local atlas = sessionCommandToButtonAtlas[command]
 		if atlas then
@@ -176,7 +175,7 @@ function S:WorldMapFrame()
 
 			if dialog.MinimizeButton then
 				dialog.MinimizeButton:StripTextures()
-				dialog.MinimizeButton:Size(16, 16)
+				dialog.MinimizeButton:Size(16)
 
 				dialog.MinimizeButton.tex = dialog.MinimizeButton:CreateTexture(nil, 'OVERLAY')
 				dialog.MinimizeButton.tex:SetTexture(E.Media.Textures.MinusButton)

@@ -322,6 +322,12 @@ function QuestieWotlkItemFixes:Load()
         [37727] = {
             [itemKeys.npcDrops] = {},
         },
+        [37888] = {
+            [itemKeys.class] = 12,
+        },
+        [38303] = {
+            [itemKeys.npcDrops] = {26620,26639,27431},
+        },
         [38305] = {
             [itemKeys.npcDrops] = {28006},
         },
@@ -395,8 +401,56 @@ function QuestieWotlkItemFixes:Load()
         [43148] = {
             [itemKeys.npcDrops] = {},
         },
+        [43151] = {
+            [itemKeys.npcDrops] = {28923},
+        },
         [43225] = {
             [itemKeys.npcDrops] = {30856,30860,30861,30862,30863,30864,30865,30868,31041,31123,31228,31229,31231,31233,31236,31401,31402,31403,31404,33422},
+        },
+        [43238] = {
+            [itemKeys.objectDrops] = {192941},
+        },
+        [43411] = {
+            [itemKeys.npcDrops] = {29120},
+        },
+        [43494] = {
+            [itemKeys.npcDrops] = {31104},
+        },
+        [43512] = {
+            [itemKeys.npcDrops] = {30329},
+        },
+        [43662] = {
+            [itemKeys.npcDrops] = {23954},
+        },
+        [43665] = {
+            [itemKeys.npcDrops] = {26723},
+        },
+        [43668] = {
+            [itemKeys.objectDrops] = {193603},
+        },
+        [43669] = {
+            [itemKeys.npcDrops] = {26861},
+        },
+        [43670] = {
+            [itemKeys.npcDrops] = {26632},
+        },
+        [43693] = {
+            [itemKeys.npcDrops] = {29306},
+        },
+        [43699] = {
+            [itemKeys.npcDrops] = {27978},
+        },
+        [43724] = {
+            [itemKeys.npcDrops] = {28923},
+        },
+        [43726] = {
+            [itemKeys.npcDrops] = {29120},
+        },
+        [43821] = {
+            [itemKeys.npcDrops] = {29311},
+        },
+        [43823] = {
+            [itemKeys.npcDrops] = {31134},
         },
         [44319] = {
             [itemKeys.npcDrops] = {},
@@ -425,8 +479,38 @@ function QuestieWotlkItemFixes:Load()
         [45500] = {
             [itemKeys.npcDrops] = {33738,33739,33740,33743,33744,33745,33746,33747,33748,33749},
         },
-        [46859] = {
-            [itemKeys.npcDrops] = {34838,34839,34965},
+        [45784] = {
+            [itemKeys.objectDrops] = {194313},
+        },
+        [45786] = {
+            [itemKeys.objectDrops] = {194200},
+        },
+        [45787] = {
+            [itemKeys.objectDrops] = {194957},
+        },
+        [45788] = {
+            [itemKeys.objectDrops] = {194327},
+        },
+        [45814] = {
+            [itemKeys.objectDrops] = {194331},
+        },
+        [45815] = {
+            [itemKeys.objectDrops] = {194201},
+        },
+        [45816] = {
+            [itemKeys.objectDrops] = {194958},
+        },
+        [45817] = {
+            [itemKeys.objectDrops] = {194314},
+        },
+        [45897] = {
+            [itemKeys.npcDrops] = {33288},
+        },
+        [46895] = {
+            [itemKeys.class] = 12,
+        },
+        [48418] = {
+            [itemKeys.npcDrops] = {35451},
         },
         [49867] = {
             [itemKeys.npcDrops] = {37671,38065},

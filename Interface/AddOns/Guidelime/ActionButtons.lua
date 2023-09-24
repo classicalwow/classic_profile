@@ -20,8 +20,6 @@ for i = 2, 5 do
 	_G["BINDING_NAME_GUIDELIME_USE_ITEM_" .. i] = string.format(L.USE_ITEM_X, i)
 end
 
-AB.MAX_NUM_OF_TARGET_BUTTONS = 10
-
 function AB.resetButtons(buttons)
 	if not buttons then return end
 	for _, button in pairs(buttons) do
@@ -42,10 +40,8 @@ AB.targetRaidMarkerIndex = {4, 6, 2, 3, 1, 5, 7, 8}
 
 function AB.getTargetButtonIconText(i, raidMarker)
 	local marker = AB.targetRaidMarkerIndex[i]
-	if marker and (GuidelimeData.targetRaidMarkersor or raidMarker) then
-		local x1, y1 = (marker - 1) % 4 * 0.25, marker > 4 and 0.25 or 0
-		local x2, y2 = x1 + 0.25, y1 + 0.25
-		return "|TInterface\\TargetingFrame\\UI-RaidTargetingIcons:12:12:0:0:512:512:" .. (x1*512) .. ":" .. (x2*512) .. ":" .. (y1*512) .. ":".. (y2*512) .. "|t"
+	if marker and (GuidelimeData.targetRaidMarkers or raidMarker) then
+		return "|TInterface\\TargetingFrame\\UI-RaidTargetingIcon_" .. marker .. ":12|t"
 	end
 	return "|T" .. addon.icons.TARGET_BUTTON .. ":12|t"
 end
@@ -159,10 +155,15 @@ function AB.updateTargetButtons()
 						return 
 					end
 					local name = QT.getNPCName(element.targetNpcId)
-					if name and not D.contains(targets, function(t) return t.name == name end) then
-						targets[i] = {name = name, element = element, index = i, marker = GuidelimeData.targetRaidMarkers and AB.targetRaidMarkerIndex[i]}
-						i = i + 1
-						if i > AB.MAX_NUM_OF_TARGET_BUTTONS then break end
+					if name then
+						local t = D.find(targets, function(t) return t.name == name end)
+						if not t then
+							targets[i] = {name = name, elements = {element}, index = i, marker = GuidelimeData.targetRaidMarkers and AB.targetRaidMarkerIndex[i]}
+							if GuidelimeDataChar.maxNumOfTargetButtons > 0 and i >= GuidelimeDataChar.maxNumOfTargetButtons then break end
+							i = i + 1
+						else
+							table.insert(t.elements, element)
+						end
 					end
 				end
 			end
@@ -181,7 +182,9 @@ function AB.updateTargetButtons()
 	end
 	for _, t in ipairs(targets) do
 		local button = AB.createTargetButton(t.index)
-		t.element.targetButton = button
+		for _, element in ipairs(t.elements) do
+			element.targetButton = button
+		end
 		button:SetPoint("TOP" .. GuidelimeDataChar.showTargetButtons, MW.mainFrame, "TOP" .. GuidelimeDataChar.showTargetButtons, 
 			GuidelimeDataChar.showTargetButtons == "LEFT" and -36 or (GuidelimeDataChar.mainFrameShowScrollBar and 60 or 37), 
 			39 - pos * 41)
@@ -217,7 +220,7 @@ function AB.createUseItemButton(i)
 			if self.spellId then
             	start, duration, enable = GetSpellCooldown(self.spellId)
 			else
-            	start, duration, enable = C_Container.GetItemCooldown(self.itemId)
+            	start, duration, enable = QT.GetItemCooldown(self.itemId)
 			end
             if enable == 1 and duration > 0 then
                 self.cooldown:Show()
@@ -263,10 +266,7 @@ function AB.updateUseItemButtons()
 						39 - i * 41 - startPos)
 					button.itemId = element.useItemId
 					button.texture:SetTexture(GetItemIcon(button.itemId))
-					local count = GetItemCount(button.itemId)
-					button.count:SetText(count > 1 and count or "")
-					button.texture:SetAlpha((count > 0 and 1) or 0.2)
-					local name = QT.getItemName(button.itemId)
+					local name = EV.GetItemInfo(button.itemId)
 					if name then
 						button:SetAttribute("type", "item")
 						button:SetAttribute("item", name)
@@ -277,6 +277,9 @@ function AB.updateUseItemButtons()
 						end)
 						keyBindButton(button, "GUIDELIME_USE_ITEM_" .. i, "GuidelimeUseItemButton" .. i, name)
 					end
+					local count = GetItemCount(button.itemId) or 0
+					button.count:SetText(count ~= 1 and count or "")
+					button.texture:SetAlpha((count > 0 and 1) or 0.5)
 					button:Show()
 					button:Update()
 					table.insert(previousIds, element.useItemId)
@@ -318,6 +321,7 @@ function AB.updateUseItemButtons()
 						keyBindButton(button, "GUIDELIME_USE_ITEM_" .. i, "GuidelimeUseItemButton" .. i, name)
 						button:Show()
 						button:Update()
+						if GuidelimeDataChar.maxNumOfItemButtons > 0 and i >= GuidelimeDataChar.maxNumOfItemButtons then break end
 						i = i + 1
 					end
 				end

@@ -2,7 +2,7 @@ local E, L, V, P, G = unpack(ElvUI)
 local S = E:GetModule('Skins')
 
 local _G = _G
-local unpack, select = unpack, select
+local unpack = unpack
 
 local GetInboxHeaderInfo = GetInboxHeaderInfo
 local GetInboxItemLink = GetInboxItemLink
@@ -32,7 +32,7 @@ function S:MailFrame()
 		local icon = _G['MailItem'..i..'ButtonIcon']
 
 		mail:StripTextures()
-		mail:CreateBackdrop('Default')
+		mail:CreateBackdrop('Transparent')
 		mail.backdrop:Point('TOPLEFT', 42, -3)
 		mail.backdrop:Point('BOTTOMRIGHT', -2, 5)
 
@@ -56,10 +56,10 @@ function S:MailFrame()
 				if packageIcon and not isGM then
 					local itemlink = GetInboxItemLink(index, 1)
 					if itemlink then
-						local quality = select(3, GetItemInfo(itemlink))
-
+						local _, _, quality = GetItemInfo(itemlink)
 						if quality and quality > 1 then
-							mail.backdrop:SetBackdropBorderColor(GetItemQualityColor(quality))
+							local r, g, b = GetItemQualityColor(quality)
+							mail.backdrop:SetBackdropBorderColor(r, g, b)
 						else
 							mail.backdrop:SetBackdropBorderColor(unpack(E.media.bordercolor))
 						end
@@ -92,15 +92,20 @@ function S:MailFrame()
 		local tab = _G['MailFrameTab'..i]
 
 		tab:StripTextures()
+		tab:ClearAllPoints()
 		S:HandleTab(tab)
 	end
+
+	-- Reposition Tabs
+	_G.MailFrameTab1:Point('TOPLEFT', _G.MailFrame, 'BOTTOMLEFT', -15, 0)
+	_G.MailFrameTab2:Point('TOPLEFT', _G.MailFrameTab1, 'TOPRIGHT', -19, 0)
 
 	-- Send Mail Frame
 	_G.SendMailFrame:StripTextures()
 	_G.SendStationeryBackgroundLeft:Hide()
 	_G.SendStationeryBackgroundRight:Hide()
 	_G.MailEditBox.ScrollBox:StripTextures(true)
-	_G.MailEditBox.ScrollBox:SetTemplate('Default')
+	_G.MailEditBox.ScrollBox:SetTemplate()
 	_G.MailEditBox.ScrollBox.EditBox:SetTextColor(1, 1, 1)
 
 	_G.SendMailTitleText:Point('CENTER', _G.SendMailFrame, 'TOP', -10, -17)
@@ -110,15 +115,16 @@ function S:MailFrame()
 			local button = _G['SendMailAttachment'..i]
 			if not button.template then
 				button:StripTextures()
-				button:SetTemplate('Default', true)
+				button:SetTemplate(nil, true)
 				button:StyleButton(nil, true)
 			end
 
 			local name = GetSendMailItem(i)
 			if name then
-				local quality = select(3, GetItemInfo(name))
+				local _, _, quality = GetItemInfo(name)
 				if quality and quality > 1 then
-					button:SetBackdropBorderColor(GetItemQualityColor(quality))
+					local r, g, b = GetItemQualityColor(quality)
+					button:SetBackdropBorderColor(r, g, b)
 				else
 					button:SetBackdropBorderColor(unpack(E.media.bordercolor))
 				end
@@ -180,7 +186,7 @@ function S:MailFrame()
 		local count = _G['OpenMailAttachmentButton'..i..'Count']
 
 		button:StripTextures()
-		button:SetTemplate('Default', true)
+		button:SetTemplate(nil, true)
 		button:StyleButton()
 
 		if icon then
@@ -198,9 +204,10 @@ function S:MailFrame()
 			local button = _G['OpenMailAttachmentButton'..i]
 
 			if itemLink then
-				local quality = select(3, GetItemInfo(itemLink))
+				local _, _, quality = GetItemInfo(itemLink)
 				if quality and quality > 1 then
-					button:SetBackdropBorderColor(GetItemQualityColor(quality))
+					local r, g, b = GetItemQualityColor(quality)
+					button:SetBackdropBorderColor(r, g, b)
 				else
 					button:SetBackdropBorderColor(unpack(E.media.bordercolor))
 				end
@@ -221,19 +228,19 @@ function S:MailFrame()
 	S:HandleButton(_G.OpenMailCancelButton)
 
 	_G.OpenMailScrollFrame:StripTextures(true)
-	_G.OpenMailScrollFrame:SetTemplate('Default')
+	_G.OpenMailScrollFrame:SetTemplate()
 
 	S:HandleScrollBar(_G.OpenMailScrollFrameScrollBar)
 
-	_G.OpenMailBodyText:SetTextColor(1, 1, 1)
-	_G.InvoiceTextFontNormal:SetFont(E.media.normFont, 13)
+	-- _G.OpenMailBodyText:SetTextColor(1, 1, 1)
+	_G.InvoiceTextFontNormal:FontTemplate(nil, 13)
 	_G.InvoiceTextFontNormal:SetTextColor(1, 1, 1)
 	_G.OpenMailInvoiceBuyMode:SetTextColor(1, 0.80, 0.10)
 
 	_G.OpenMailArithmeticLine:Kill()
 
 	_G.OpenMailLetterButton:StripTextures()
-	_G.OpenMailLetterButton:SetTemplate('Default', true)
+	_G.OpenMailLetterButton:SetTemplate(nil, true)
 	_G.OpenMailLetterButton:StyleButton()
 
 	_G.OpenMailLetterButtonIconTexture:SetTexCoord(unpack(E.TexCoords))
@@ -243,7 +250,7 @@ function S:MailFrame()
 	_G.OpenMailLetterButtonCount:SetDrawLayer('OVERLAY')
 
 	_G.OpenMailMoneyButton:StripTextures()
-	_G.OpenMailMoneyButton:SetTemplate('Default', true)
+	_G.OpenMailMoneyButton:SetTemplate(nil, true)
 	_G.OpenMailMoneyButton:StyleButton()
 
 	_G.OpenMailMoneyButtonIconTexture:SetTexCoord(unpack(E.TexCoords))

@@ -138,18 +138,24 @@
 		<HighlightTexture alphaMode="ADD" file="Interface\Minimap\UI-Minimap-ZoomButton-Highlight"/>
 	</Button>
 	
-	<Frame inherits="BackdropTemplate" name="MBB_OptionsFrame" toplevel="true" enableMouse="true" movable="true" parent="UIParent" hidden="true">
+	<Frame name="MBB_OptionsFrame" toplevel="true" enableMouse="true" movable="true" parent="UIParent" hidden="true">
 		<Size>
-			<AbsDimension x="315" y="290" />
+			<AbsDimension x="300" y="290" />
 		</Size>
 		<Anchors>
 			<Anchor point="CENTER" />
 		</Anchors>
-		<KeyValues>
-        <KeyValue key="backdropInfo" value="BACKDROP_TOOLTIP_OPTIONS" type="global" />
-        <!-- <KeyValue key="backdropBorderColor" value="LEGENDARY_ORANGE_COLOR" type="global"/> -->
-        <!-- <KeyValue key="backdropBorderColorAlpha" value="0.25" type="number"/> -->
-    	</KeyValues>
+		<Backdrop bgFile="Interface\DialogFrame\UI-DialogBox-Background" edgeFile="Interface\DialogFrame\UI-DialogBox-Border" tile="true">
+			<BackgroundInsets>
+				<AbsInset left="11" right="12" top="12" bottom="11" />
+			</BackgroundInsets>
+			<TileSize>
+				<AbsValue val="32" />
+			</TileSize>
+			<EdgeSize>
+				<AbsValue val="32" />
+			</EdgeSize>
+		</Backdrop>
 		<Layers>
 			<Layer level="ARTWORK">
 				<Texture name="$parent_Header" file="Interface\DialogFrame\UI-DialogBox-Header">
@@ -242,15 +248,15 @@
 						</FontString>
 					</Layer>
 				</Layers>
-				<Scripts >
+				<Scripts>
 					<OnValueChanged>
 						if( self:GetValue() == 0 ) then
 							getglobal(self:GetName().."Text"):SetText(MBB_OPTIONS_SLIDEROFF);
 						else
-							getglobal(self:GetName().."Text"):SetText(string.format("%.3f", self:GetValue()) .. " " .. MBB_OPTIONS_SLIDERSEK);
+							getglobal(self:GetName().."Text"):SetText(self:GetValue() .. " " .. MBB_OPTIONS_SLIDERSEK);
 						end
 					</OnValueChanged>
-					<OnLoad inherit="prepend">
+					<OnLoad>
 						self:SetMinMaxValues(0,5);
 						self:SetValueStep(1);
 						getglobal(self:GetName().."High"):SetText("5 " .. MBB_OPTIONS_SLIDERSEK);
@@ -265,7 +271,7 @@
 						end
 					</OnShow>
 				</Scripts>
-			</Slider>	
+			</Slider>
 			<CheckButton name="$parent_LeftRadio" inherits="UIRadioButtonTemplate">
 				<Anchors>
 					<Anchor point="LEFT" relativeTo="$parent_ExpansionLabel" relativePoint="RIGHT">
@@ -410,11 +416,15 @@
 					</OnShow>
 				</Scripts>
 			</CheckButton>
-			<EditBox inherits="BackdropTemplate" name="$parent_MaxButtonsTextBox" enableMouse="true" ignoreArrows="false" letters="3" autoFocus="false">
-				<KeyValues>
-				<KeyValue key="backdropInfo" value="BACKDROP_MAXBUTTONS_OPTIONS" type="global" />
-
-    			</KeyValues>
+			<EditBox name="$parent_MaxButtonsTextBox" enableMouse="true" ignoreArrows="false" letters="3" autoFocus="false">
+				<Backdrop edgeFile="Interface\Tooltips\UI-Tooltip-Border" tile="true">
+					<TileSize>
+						<AbsValue val="8" />
+					</TileSize>
+					<EdgeSize>
+						<AbsValue val="8" />
+					</EdgeSize>
+				</Backdrop>
 				<Layers>
 					<Layer level="ARTWORK">
 						<FontString name="$parentInfo" inherits="GameFontHighlight" justifyH="LEFT" text="MBB_OPTIONS_MAXBUTTONSINFO">
@@ -468,7 +478,7 @@
 						MBB_UpdateAltRadioButtons();
 						self:ClearFocus();
 					</OnEnterPressed>
-					<OnLoad inherit="prepend">
+					<OnLoad>
 						self:SetTextInsets(2, 4, 2, 2);
 					</OnLoad>
 					<OnShow>
