@@ -11,6 +11,11 @@ END
 VER 3 000000000000006D "12" "132112"
 /4 {十字}{十字}{十字} H 奴隸監獄 {十字}{十字}{十字} 徵 坦 補 術~
 END
+VER 3 0000000000000072 "dd" "132112"
+/console cameraDistanceMaxZoomFactor 4
+/console ffxDeath 0
+/script C_CVar.SetCVar("nameplateMaxDistance",41)
+END
 VER 3 0000000000000071 "dd" "132112"
 /console cameraDistanceMaxZoomFactor 4
 /console ffxDeath 0
@@ -22,11 +27,6 @@ END
 VER 3 0000000000000070 "dd" "132112"
 /console cameraDistanceMaxZoomFactor 4
 /console ffxDeath 0
-END
-VER 3 0000000000000072 "dd" "132112"
-/console cameraDistanceMaxZoomFactor 4
-/console ffxDeath 0
-/script C_CVar.SetCVar("nameplateMaxDistance",41)
 END
 VER 3 000000000000002D "Decursive" "134400"
 /script DecursiveRootTable.Dcr:Println('沒有可用法術')
@@ -55,14 +55,14 @@ VER 3 0000000000000074 "target" "132092"
 /target 幽暗的工人
 /script SetRaidTarget("target",8)
 END
-VER 3 0000000000000037 "VuhDoDCShieldData" "132281"
-P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1HR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]0__
+VER 3 0000000000000032 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1RM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
-VER 3 0000000000000032 "VuhDoDCShieldData" "132281"
-R8LR1SH1WM1MR2RM2IH2HR3MR3WM3DH8RM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]8WM0__[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+VER 3 0000000000000033 "VuhDoDCShieldData" "Ability_Repair"
+P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1IH[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
-VER 3 0000000000000033 "VuhDoDCShieldData" "132281"
-R[x]1IH3MR3IH4MR4IH6HR6IH7LR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]7HR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+VER 3 0000000000000037 "VuhDoDCShieldData" "Ability_Repair"
+P1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1RM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
 VER 3 000000000000006A "VuhDoDCShieldData" "132281"
 P[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1HR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
@@ -79,8 +79,8 @@ END
 VER 3 0000000000000034 "VuhDoDCShieldData" "132281"
 R[x]1LR1WM[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]1HR[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]0__
 END
-VER 3 000000000000003C "VuhDoDCShieldNames" "132281"
-N[x]斷風五初夏的Nat給本仙屁縫子韓森蓋魅惑夜民主的[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Dde[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+VER 3 000000000000006B "VuhDoDCShieldNames" "Ability_Repair"
+N乐兮我[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]红杉沈[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
 VER 3 0000000000000040 "VuhDoDCShieldNames" "132281"
 N毛皮皮[x]瑪嘉黛妮妮唲[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Dde[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]鬆餅給
@@ -112,8 +112,16 @@ END
 VER 3 0000000000000041 "VuhDoDCShieldNames" "132281"
 N[x]快刀千葉熊信晴毛皮皮術我難卡莉米歪溪騷年嘎了嗲[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Dde[x][x][x][x][x]卡爾利[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
 END
-VER 3 000000000000006B "VuhDoDCShieldNames" "132281"
-N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]Dde[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+VER 3 000000000000003C "VuhDoDCShieldNames" "Ability_Repair"
+N[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]红杉沈[x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x][x]
+END
+VER 3 0000000000000045 "假死" "INV_Misc_QuestionMark"
+#showtooltip
+/petpassive
+/petfollow
+/stopcasting
+/cleartarget
+/castsequence reset=10 假死,獻祭陷阱
 END
 VER 3 0000000000000044 "假死" "INV_Misc_QuestionMark"
 #showtooltip
@@ -135,14 +143,6 @@ VER 3 0000000000000046 "假死" "INV_Misc_QuestionMark"
 /stopcasting
 /cleartarget
 /castsequence reset=10 假死,冰凍陷阱
-END
-VER 3 0000000000000045 "假死" "INV_Misc_QuestionMark"
-#showtooltip
-/petpassive
-/petfollow
-/stopcasting
-/cleartarget
-/castsequence reset=10 假死,獻祭陷阱
 END
 VER 3 0000000000000047 "假死爆" "INV_Misc_QuestionMark"
 #showtooltip

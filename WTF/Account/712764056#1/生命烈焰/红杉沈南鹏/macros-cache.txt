@@ -1,0 +1,7 @@
+VER 3 0000000001000001 "attack" "132324"
+/startattack
+END
+VER 3 0000000001000002 "target" "134400"
+/target 戈
+/script SetRaidTarget("target",8) 
+END

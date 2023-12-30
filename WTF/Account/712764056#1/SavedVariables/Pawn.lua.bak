@@ -10,6 +10,8 @@ PawnCommon = {
 	["Debug"] = false,
 	["ColorTooltipBorder"] = true,
 	["ShowTooltipIcons"] = true,
+	["ShowSpecIcons"] = true,
+	["ShowSocketingAdvisor"] = true,
 	["Scales"] = {
 		["\"Classic\":WARRIOR2"] = {
 			["PerCharacterOptions"] = {
@@ -30,10 +32,10 @@ PawnCommon = {
 		},
 		["\"Classic\":MAGE3"] = {
 			["PerCharacterOptions"] = {
-				["冰火倆重天-伊弗斯"] = {
+				["冰火兩重天-特雷姆斯"] = {
 					["Visible"] = true,
 				},
-				["冰火兩重天-特雷姆斯"] = {
+				["冰火倆重天-伊弗斯"] = {
 					["Visible"] = true,
 				},
 			},
@@ -64,10 +66,10 @@ PawnCommon = {
 		},
 		["\"Classic\":MAGE1"] = {
 			["PerCharacterOptions"] = {
-				["冰火倆重天-伊弗斯"] = {
+				["冰火兩重天-特雷姆斯"] = {
 					["Visible"] = true,
 				},
-				["冰火兩重天-特雷姆斯"] = {
+				["冰火倆重天-伊弗斯"] = {
 					["Visible"] = true,
 				},
 			},
@@ -84,10 +86,10 @@ PawnCommon = {
 		},
 		["\"Classic\":MAGE2"] = {
 			["PerCharacterOptions"] = {
-				["冰火倆重天-伊弗斯"] = {
+				["冰火兩重天-特雷姆斯"] = {
 					["Visible"] = true,
 				},
-				["冰火兩重天-特雷姆斯"] = {
+				["冰火倆重天-伊弗斯"] = {
 					["Visible"] = true,
 				},
 			},
@@ -121,6 +123,9 @@ PawnCommon = {
 		},
 		["\"Classic\":HUNTER2"] = {
 			["PerCharacterOptions"] = {
+				["诺安蔡嵩松-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "aad372",
 			["LocalizedName"] = "猎人: 射击",
@@ -135,6 +140,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST1"] = {
 			["PerCharacterOptions"] = {
+				["查理芒格-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "牧师: 戒律",
@@ -180,6 +188,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST3"] = {
 			["PerCharacterOptions"] = {
+				["查理芒格-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "牧师: 暗影",
@@ -208,6 +219,9 @@ PawnCommon = {
 		},
 		["\"Classic\":HUNTER3"] = {
 			["PerCharacterOptions"] = {
+				["诺安蔡嵩松-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "aad372",
 			["LocalizedName"] = "猎人: 生存",
@@ -222,6 +236,9 @@ PawnCommon = {
 		},
 		["\"Classic\":HUNTER1"] = {
 			["PerCharacterOptions"] = {
+				["诺安蔡嵩松-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "aad372",
 			["LocalizedName"] = "猎人: 野兽控制",
@@ -254,6 +271,9 @@ PawnCommon = {
 		["\"Classic\":ROGUE1"] = {
 			["PerCharacterOptions"] = {
 				["特變電工-伊弗斯"] = {
+					["Visible"] = true,
+				},
+				["红杉沈南鹏-生命烈焰"] = {
 					["Visible"] = true,
 				},
 			},
@@ -306,6 +326,9 @@ PawnCommon = {
 				["特變電工-伊弗斯"] = {
 					["Visible"] = true,
 				},
+				["红杉沈南鹏-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["DoNotShow1HUpgrades"] = false,
 			["LocalizedName"] = "潜行者: 副手",
@@ -317,6 +340,9 @@ PawnCommon = {
 		["\"Classic\":ROGUE3"] = {
 			["PerCharacterOptions"] = {
 				["特變電工-伊弗斯"] = {
+					["Visible"] = true,
+				},
+				["红杉沈南鹏-生命烈焰"] = {
 					["Visible"] = true,
 				},
 			},
@@ -334,6 +360,9 @@ PawnCommon = {
 		["\"Classic\":ROGUE2"] = {
 			["PerCharacterOptions"] = {
 				["特變電工-伊弗斯"] = {
+					["Visible"] = true,
+				},
+				["红杉沈南鹏-生命烈焰"] = {
 					["Visible"] = true,
 				},
 			},
@@ -451,6 +480,9 @@ PawnCommon = {
 		},
 		["\"Classic\":PRIEST2"] = {
 			["PerCharacterOptions"] = {
+				["查理芒格-生命烈焰"] = {
+					["Visible"] = true,
+				},
 			},
 			["Color"] = "ffffff",
 			["LocalizedName"] = "牧师: 神圣",
@@ -464,12 +496,10 @@ PawnCommon = {
 			["SpecID"] = 2,
 		},
 	},
-	["ShowSocketingAdvisor"] = true,
-	["ShowSpecIcons"] = true,
 	["IgnoreGemsWhileLeveling"] = true,
 	["ButtonPosition"] = 2,
 	["ShowLootUpgradeAdvisor"] = true,
 	["ShowQuestUpgradeAdvisor"] = true,
-	["LastVersion"] = 2.0804,
+	["LastVersion"] = 2.0807,
 	["Digits"] = 1,
 }

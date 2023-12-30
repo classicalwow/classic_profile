@@ -1,4 +1,4 @@
 VER 3 0000000001000001 "target" "134400"
-/target 老
+/target 拇指
 /script SetRaidTarget("target",8)
 END

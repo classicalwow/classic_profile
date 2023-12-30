@@ -347,7 +347,513 @@ BugGrabberDB = {
 			["session"] = 4,
 			["counter"] = 1,
 		}, -- [44]
+		{
+			["message"] = "Interface/AddOns/BugSack/core.lua:130: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/core.lua\":130: in function <Interface/AddOns/BugSack/core.lua:75>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:19",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [45]
+		{
+			["message"] = "Interface/AddOns/RXPGuides/HSBatching.lua:29: hooksecurefunc(): UseContainerItem is not a function:\n[string \"=[C]\"]: in function `hooksecurefunc':\n<string>:\"@Interface/AddOns/RXPGuides/HSBatching.lua\":29: in main chunk\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:20",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [46]
+		{
+			["message"] = "<string>:\"*TradeLogUnlimitedFrame.xml:1016_OnLoad\":3: attempt to call method 'SetBackdrop' (a nil value)\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:20",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [47]
+		{
+			["message"] = "Interface/AddOns/WideQuestLog/WideQuestLog.lua:98: attempt to index local 'texturefile' (a number value):\n<string>:\"@Interface/AddOns/WideQuestLog/WideQuestLog.lua\":98: in main chunk\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:21",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [48]
+		{
+			["message"] = {
+				"Interface/AddOns/RXPGuides/ActiveItemFrame.lua:45: attempt to call global 'GetContainerNumSlots' (a nil value):\n<string>:\"@Interface/AddOns/RXPGuides/ActiveItemFrame.lua\":45: in function <Interface/AddOns/RXPGuides/ActiveItemFrame.lua:8>\n<string>:\"@Interface/AddOns/RXPGuides/ActiveItemFrame.lua\":225: in function `UpdateItemFrame'\n<string>:\"@Interface/AddOns/RXPGuides/GuideWindow.lua\":713: in function `SetStep'\n<string>:\"@Interface/AddOns/RXPGuides/GuideWindow.lua\":1266: in function `LoadGuide'\n<string>:\"@Interface/AddOns/RXPGuides/RXPGuides.lua\":450: in function <Interface/AddOns/RXPGuides/RXPGuides.lua:437>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/Attune/Libs/AceAddon-3.0/AceAddon-3.0.lua\":70: in function <...ace/AddOns/Attune/Libs/AceAddon-3.0/AceAddon-3.0.lua:65>\n<string>:\"@Interface/AddOns/Attune/Libs/AceAddon-3.0/AceAddon-3.0.lua\":527: in function `EnableAddon'\n<string>:\"@Interface/AddOns/Attune/Libs/AceAddon-3.0/AceAddon-3.0.lua\":630: in function <...ac", -- [1]
+				"e/AddOns/Attune/Libs/AceAddon-3.0/AceAddon-3.0.lua:615>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:21",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [49]
+		{
+			["message"] = "Interface/AddOns/AutoBarClassic/AutoBarDB.lua:1363: attempt to index field 'account' (a nil value):\n<string>:\"@Interface/AddOns/AutoBarClassic/AutoBarDB.lua\":1363: in function `UpgradeVersion'\n<string>:\"@Interface/AddOns/AutoBarClassic/AutoBarDB.lua\":133: in function `InitializeDB'\n<string>:\"@Interface/AddOns/AutoBarClassic/Core.lua\":241: in function `InitializeZero'\n<string>:\"@Interface/AddOns/AutoBarClassic/Core.lua\":418: in function `?'\n<string>:\"@Interface/AddOns/AutoBarClassic/Core.lua\":141: in function <Interface/AddOns/AutoBarClassic/Core.lua:136>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:21",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [50]
+		{
+			["message"] = "...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:1077: attempt to call global 'GetContainerItemInfo' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":1077: in function `hook'\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":406: in function <...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:402>\n<string>:\"@Interface/AddOns/TradeSkillMaster/LibTSM/Service/ItemTooltipClasses/Wrapper.lua\":106: in function <...Master/LibTSM/Service/ItemTooltipClasses/Wrapper.lua:104>\n[string \"=[C]\"]: in function `SetBagItem':\n<string>:\"@Interface/FrameXML/ContainerFrame_Shared.lua\":1362: in function `ContainerFrameItemButton_OnEnter'\n<string>:\"*ContainerFrame.xml:184_OnEnter\":1: in function <[string \"*ContainerFrame.xml:184_OnEnter\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:28",
+			["session"] = 5,
+			["counter"] = 12,
+		}, -- [51]
+		{
+			["message"] = {
+				"...ce/AddOns/BestInSlotClassic/modules/bisc_options.lua:58: attempt to call global 'logger' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/modules/bisc_options.lua\":58: in function `OnRefresh'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":9: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:7>\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":596: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:595>\n[string \"=[C]\"]: in function `xpcall':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":559: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:556>\n[string \"=[C]\"]: in function `secureexecuterange':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":567: in function `ForEachCanvas'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":595: in function `CallRefreshOnCanvases'\n<string>:\"@Interface/SharedXML/Setti", -- [1]
+				"ngs/Blizzard_SettingsPanel.lua\":253: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:221>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `Show':\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":2146: in function `SetUIPanel'\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":1952: in function `ShowUIPanel'\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":1859: in function <Interface_Vanilla/FrameXML/UIParent.lua:1855>\n[string \"=[C]\"]: in function `SetAttribute':\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":2638: in function `ShowUIPanel'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":354: in function `Open'\n<string>:\"*GameMenuFrame.xml:77_OnClick\":2: in function <[string \"*GameMenuFrame.xml:77_OnClick\"]:1>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:36",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [52]
+		{
+			["message"] = "...e/AddOns/AutoBarClassic/libs/AceDB-2.0/AceDB-2.0.lua:654: bad argument #1 to 'pairs' (table expected, got nil):\n<string>:\"@Interface/AddOns/AutoBarClassic/libs/AceEvent-2.0/AceEvent-2.0.lua\":910: in function <...ns/AutoBarClassic/libs/AceEvent-2.0/AceEvent-2.0.lua:903>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/08/26 17:18:43",
+			["session"] = 5,
+			["counter"] = 1,
+		}, -- [53]
+		{
+			["message"] = "Interface/AddOns/BugSack/core.lua:130: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/core.lua\":130: in function <Interface/AddOns/BugSack/core.lua:75>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:36",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [54]
+		{
+			["message"] = "...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1264: attempt to call method 'SetMinResize' (a nil value):\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1264: in function <...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1263>\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1414: in function `GroupBulletinBoard_OnEvent'\n<string>:\"*GroupBulletinBoard.xml:215_OnEvent\":1: in function <[string \"*GroupBulletinBoard.xml:215_OnEvent\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:37",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [55]
+		{
+			["message"] = "<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:39",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [56]
+		{
+			["message"] = "bad argument #3 to '?' (outside of expected range 0 to 4294967295 - Usage: self:SetAnimation(anim [, variation])):\n[string \"=[C]\"]: in function `SetAnimation':\n<string>:\"*Template.xml:407_OnLoad\":1: in function <[string \"*Template.xml:407_OnLoad\"]:1>\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:39",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [57]
+		{
+			["message"] = {
+				"<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":13: in function `CreateInstance'\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":21: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/UI/MainPanel.lua\":52: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function", -- [1]
+				" <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:39",
+			["session"] = 6,
+			["counter"] = 10,
+		}, -- [58]
+		{
+			["message"] = "<string>:\"*TradeLogUnlimitedFrame.xml:1016_OnLoad\":3: attempt to call method 'SetBackdrop' (a nil value)\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:40",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [59]
+		{
+			["message"] = "Interface/AddOns/WideQuestLog/WideQuestLog.lua:98: attempt to index local 'texturefile' (a number value):\n<string>:\"@Interface/AddOns/WideQuestLog/WideQuestLog.lua\":98: in main chunk\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:41",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [60]
+		{
+			["message"] = {
+				"Interface/AddOns/Atlas/Core/Atlas.lua:203: attempt to index field 'db' (a nil value):\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":203: in function <Interface/AddOns/Atlas/Core/Atlas.lua:199>\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":2033: in function <Interface/AddOns/Atlas/Core/Atlas.lua:2031>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventor", -- [1]
+				"yTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:43",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [61]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1028: attempt to index local 'icon' (a nil value):\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1028: in function `HandleIcon'\n<string>:\"@Interface/AddOns/ElvUI/Classic/Modules/Skins/Character.lua\":113: in function <...ace/AddOns/ElvUI/Classic/Modules/Skins/Character.lua:63>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1875: in function <Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1870>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1813: in function `CallLoadFunc'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1828: in function `CallLoadedModule'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1854: in function `InitializeModules'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1964: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/E", -- [1]
+				"lvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0", -- [2]
+				".lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [3]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:44",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [62]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1967: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/ElvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `L", -- [1]
+				"oadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:44",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [63]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/API.lua\":482: in function `?'\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":109: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":19: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":54: in function `Fire'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua\":120: in function <...rkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua:119>\n\n  --", -- [1]
+				"-", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:00:45",
+			["session"] = 6,
+			["counter"] = 1,
+		}, -- [64]
+		{
+			["message"] = "Interface/AddOns/BugSack/ldb.lua:42: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/ldb.lua\":42: in function `OnTooltipShow'\n<string>:\"@Interface/AddOns/AtlasLootClassic/Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua\":73: in function `oenter'\n<string>:\"@Interface/AddOns/MBB/MBB.lua\":467: in function <Interface/AddOns/MBB/MBB.lua:449>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:01:14",
+			["session"] = 6,
+			["counter"] = 2,
+		}, -- [65]
+		{
+			["message"] = "Interface/AddOns/BugSack/sack.lua:45: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/sack.lua\":45: in function <Interface/AddOns/BugSack/sack.lua:32>\n<string>:\"@Interface/AddOns/BugSack/sack.lua\":458: in function <Interface/AddOns/BugSack/sack.lua:453>\n<string>:\"@Interface/AddOns/BugSack/sack.lua\":477: in function `OpenSack'\n<string>:\"@Interface/AddOns/BugSack/ldb.lua\":28: in function `OnClick'\n<string>:\"@Interface/AddOns/AtlasLootClassic/Libs/LibDBIcon-1.0/LibDBIcon-1.0.lua\":170: in function `oclick'\n<string>:\"@Interface/AddOns/MBB/MBB.lua\":409: in function <Interface/AddOns/MBB/MBB.lua:397>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:01:15",
+			["session"] = 6,
+			["counter"] = 7,
+		}, -- [66]
+		{
+			["message"] = "Interface/AddOns/BugSack/core.lua:130: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/core.lua\":130: in function <Interface/AddOns/BugSack/core.lua:75>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:20",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [67]
+		{
+			["message"] = "...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1264: attempt to call method 'SetMinResize' (a nil value):\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1264: in function <...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1263>\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1414: in function `GroupBulletinBoard_OnEvent'\n<string>:\"*GroupBulletinBoard.xml:215_OnEvent\":1: in function <[string \"*GroupBulletinBoard.xml:215_OnEvent\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:20",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [68]
+		{
+			["message"] = "<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:22",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [69]
+		{
+			["message"] = "bad argument #3 to '?' (outside of expected range 0 to 4294967295 - Usage: self:SetAnimation(anim [, variation])):\n[string \"=[C]\"]: in function `SetAnimation':\n<string>:\"*Template.xml:407_OnLoad\":1: in function <[string \"*Template.xml:407_OnLoad\"]:1>\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:22",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [70]
+		{
+			["message"] = {
+				"<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":13: in function `CreateInstance'\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":21: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/UI/MainPanel.lua\":52: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function", -- [1]
+				" <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:22",
+			["session"] = 7,
+			["counter"] = 10,
+		}, -- [71]
+		{
+			["message"] = "<string>:\"*TradeLogUnlimitedFrame.xml:1016_OnLoad\":3: attempt to call method 'SetBackdrop' (a nil value)\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:23",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [72]
+		{
+			["message"] = "Interface/AddOns/WideQuestLog/WideQuestLog.lua:98: attempt to index local 'texturefile' (a number value):\n<string>:\"@Interface/AddOns/WideQuestLog/WideQuestLog.lua\":98: in main chunk\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:24",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [73]
+		{
+			["message"] = {
+				"Interface/AddOns/Atlas/Core/Atlas.lua:203: attempt to index field 'db' (a nil value):\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":203: in function <Interface/AddOns/Atlas/Core/Atlas.lua:199>\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":2033: in function <Interface/AddOns/Atlas/Core/Atlas.lua:2031>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventor", -- [1]
+				"yTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:25",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [74]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1028: attempt to index local 'icon' (a nil value):\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1028: in function `HandleIcon'\n<string>:\"@Interface/AddOns/ElvUI/Classic/Modules/Skins/Character.lua\":113: in function <...ace/AddOns/ElvUI/Classic/Modules/Skins/Character.lua:63>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1875: in function <Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1870>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1813: in function `CallLoadFunc'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1828: in function `CallLoadedModule'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1854: in function `InitializeModules'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1964: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/E", -- [1]
+				"lvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0", -- [2]
+				".lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [3]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:25",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [75]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1967: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/ElvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `L", -- [1]
+				"oadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:25",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [76]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/API.lua\":482: in function `?'\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":109: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":19: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":54: in function `Fire'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua\":120: in function <...rkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua:119>\n\n  --", -- [1]
+				"-", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:03:26",
+			["session"] = 7,
+			["counter"] = 1,
+		}, -- [77]
+		{
+			["message"] = {
+				"...ce/AddOns/BestInSlotClassic/modules/bisc_options.lua:58: attempt to call global 'logger' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/modules/bisc_options.lua\":58: in function `OnRefresh'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":9: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:7>\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":614: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:613>\n[string \"=[C]\"]: in function `xpcall':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":577: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:574>\n[string \"=[C]\"]: in function `secureexecuterange':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":585: in function `ForEachCanvas'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":613: in function `CallRefreshOnCanvases'\n<string>:\"@Interface/SharedXML/Setti", -- [1]
+				"ngs/Blizzard_SettingsPanel.lua\":264: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:231>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `Show':\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":2160: in function `SetUIPanel'\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":1966: in function `ShowUIPanel'\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":1873: in function <Interface_Vanilla/FrameXML/UIParent.lua:1869>\n[string \"=[C]\"]: in function `SetAttribute':\n<string>:\"@Interface_Vanilla/FrameXML/UIParent.lua\":2652: in function `ShowUIPanel'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":369: in function `Open'\n<string>:\"*GameMenuFrame.xml:74_OnClick\":2: in function <[string \"*GameMenuFrame.xml:74_OnClick\"]:1>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:05:03",
+			["session"] = 7,
+			["counter"] = 4,
+		}, -- [78]
+		{
+			["message"] = {
+				"...ce/AddOns/BestInSlotClassic/modules/bisc_options.lua:46: attempt to call global 'logger' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/modules/bisc_options.lua\":46: in function `OnCommit'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":601: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:599>\n[string \"=[C]\"]: in function `xpcall':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":577: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:574>\n[string \"=[C]\"]: in function `secureexecuterange':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":585: in function `ForEachCanvas'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":599: in function `CommitCanvases'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":310: in function `Commit'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":85: in function <...erfac", -- [1]
+				"e/SharedXML/Settings/Blizzard_SettingsPanel.lua:84>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:05:09",
+			["session"] = 7,
+			["counter"] = 4,
+		}, -- [79]
+		{
+			["message"] = {
+				"...ce/AddOns/BestInSlotClassic/modules/bisc_options.lua:46: attempt to call global 'logger' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/modules/bisc_options.lua\":46: in function `OnCommit'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":601: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:599>\n[string \"=[C]\"]: in function `xpcall':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":577: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:574>\n[string \"=[C]\"]: in function `secureexecuterange':\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":585: in function `ForEachCanvas'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":599: in function `CommitCanvases'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":310: in function `Commit'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":346: in function `ExitWit", -- [1]
+				"hCommit'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":320: in function `Close'\n<string>:\"@Interface/SharedXML/Settings/Blizzard_SettingsPanel.lua\":76: in function <...erface/SharedXML/Settings/Blizzard_SettingsPanel.lua:75>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:05:17",
+			["session"] = 7,
+			["counter"] = 4,
+		}, -- [80]
+		{
+			["message"] = "...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:1077: attempt to call global 'GetContainerItemInfo' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":1077: in function `hook'\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":406: in function <...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:402>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `SetBagItem':\n<string>:\"@Interface/AddOns/ItemRack/ItemRack.lua\":1595: in function `func'\n<string>:\"@Interface/AddOns/ItemRack/ItemRack.lua\":968: in function `OnUpdate'\n<string>:\"*ItemRack.xml:7_OnUpdate\":1: in function <[string \"*ItemRack.xml:7_OnUpdate\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:11:34",
+			["session"] = 7,
+			["counter"] = 42,
+		}, -- [81]
+		{
+			["message"] = "Interface/AddOns/BugSack/core.lua:130: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/core.lua\":130: in function <Interface/AddOns/BugSack/core.lua:75>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:29",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [82]
+		{
+			["message"] = "...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1264: attempt to call method 'SetMinResize' (a nil value):\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1264: in function <...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1263>\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1414: in function `GroupBulletinBoard_OnEvent'\n<string>:\"*GroupBulletinBoard.xml:215_OnEvent\":1: in function <[string \"*GroupBulletinBoard.xml:215_OnEvent\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:29",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [83]
+		{
+			["message"] = "<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:29",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [84]
+		{
+			["message"] = "bad argument #3 to '?' (outside of expected range 0 to 4294967295 - Usage: self:SetAnimation(anim [, variation])):\n[string \"=[C]\"]: in function `SetAnimation':\n<string>:\"*Template.xml:407_OnLoad\":1: in function <[string \"*Template.xml:407_OnLoad\"]:1>\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:29",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [85]
+		{
+			["message"] = {
+				"<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":13: in function `CreateInstance'\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":21: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/UI/MainPanel.lua\":52: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function", -- [1]
+				" <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:29",
+			["session"] = 8,
+			["counter"] = 10,
+		}, -- [86]
+		{
+			["message"] = "<string>:\"*TradeLogUnlimitedFrame.xml:1016_OnLoad\":3: attempt to call method 'SetBackdrop' (a nil value)\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:31",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [87]
+		{
+			["message"] = "Interface/AddOns/WideQuestLog/WideQuestLog.lua:98: attempt to index local 'texturefile' (a number value):\n<string>:\"@Interface/AddOns/WideQuestLog/WideQuestLog.lua\":98: in main chunk\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:32",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [88]
+		{
+			["message"] = {
+				"Interface/AddOns/Atlas/Core/Atlas.lua:203: attempt to index field 'db' (a nil value):\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":203: in function <Interface/AddOns/Atlas/Core/Atlas.lua:199>\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":2033: in function <Interface/AddOns/Atlas/Core/Atlas.lua:2031>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventor", -- [1]
+				"yTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:33",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [89]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1028: attempt to index local 'icon' (a nil value):\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1028: in function `HandleIcon'\n<string>:\"@Interface/AddOns/ElvUI/Classic/Modules/Skins/Character.lua\":113: in function <...ace/AddOns/ElvUI/Classic/Modules/Skins/Character.lua:63>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1875: in function <Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1870>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1813: in function `CallLoadFunc'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1828: in function `CallLoadedModule'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1854: in function `InitializeModules'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1964: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/E", -- [1]
+				"lvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0", -- [2]
+				".lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [3]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:33",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [90]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1967: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/ElvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `L", -- [1]
+				"oadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:33",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [91]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/API.lua\":482: in function `?'\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":109: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":19: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":54: in function `Fire'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua\":120: in function <...rkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua:119>\n\n  --", -- [1]
+				"-", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:34",
+			["session"] = 8,
+			["counter"] = 1,
+		}, -- [92]
+		{
+			["message"] = "...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:1077: attempt to call global 'GetContainerItemInfo' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":1077: in function `hook'\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":406: in function <...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:402>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `SetBagItem':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTooltip.lua\":308: in function <...ace/AddOns/ArkInventory/Core/ArkInventoryTooltip.lua:300>\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTooltip.lua\":457: in function `TooltipSet'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":8770: in function `Frame_Item_OnEnter'\n<string>:\"*ArkInventory.xml:484_OnEnter\":1: in function <[string \"*ArkInventory.xml:484_OnEnter\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:12:37",
+			["session"] = 8,
+			["counter"] = 5,
+		}, -- [93]
+		{
+			["message"] = "Interface/AddOns/BugSack/core.lua:130: attempt to call method 'GetSessionId' (a nil value):\n<string>:\"@Interface/AddOns/BugSack/core.lua\":130: in function <Interface/AddOns/BugSack/core.lua:75>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:02",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [94]
+		{
+			["message"] = "...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1264: attempt to call method 'SetMinResize' (a nil value):\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1264: in function <...ace/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua:1263>\n<string>:\"@Interface/AddOns/GroupBulletinBoard/GroupBulletinBoard.lua\":1414: in function `GroupBulletinBoard_OnEvent'\n<string>:\"*GroupBulletinBoard.xml:215_OnEvent\":1: in function <[string \"*GroupBulletinBoard.xml:215_OnEvent\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:03",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [95]
+		{
+			["message"] = "<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:03",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [96]
+		{
+			["message"] = "bad argument #3 to '?' (outside of expected range 0 to 4294967295 - Usage: self:SetAnimation(anim [, variation])):\n[string \"=[C]\"]: in function `SetAnimation':\n<string>:\"*Template.xml:407_OnLoad\":1: in function <[string \"*Template.xml:407_OnLoad\"]:1>\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:03",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [97]
+		{
+			["message"] = {
+				"<string>:\"*GoodLeader.xml:55_OnLoad\":4: attempt to call method 'SetGradientAlpha' (a nil value)\n[string \"=[C]\"]: in function `CreateFrame':\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":13: in function `CreateInstance'\n<string>:\"@Interface/AddOns/MeetingHorn/UI/GoodLeader.lua\":21: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/UI/MainPanel.lua\":52: in function `ctor'\n<string>:\"@Interface/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua\":61: in function <...e/AddOns/MeetingHorn/Libs/LibClass-2.0/Class-2.0.lua:53>\n[string \"=(tail call)\"]: ?:\n<string>:\"@Interface/AddOns/MeetingHorn/Addon.lua\":75: in function <Interface/AddOns/MeetingHorn/Addon.lua:48>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function", -- [1]
+				" <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":494: in function `InitializeAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":619: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:03",
+			["session"] = 9,
+			["counter"] = 10,
+		}, -- [98]
+		{
+			["message"] = "<string>:\"*TradeLogUnlimitedFrame.xml:1016_OnLoad\":3: attempt to call method 'SetBackdrop' (a nil value)\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:04",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [99]
+		{
+			["message"] = "Interface/AddOns/WideQuestLog/WideQuestLog.lua:98: attempt to index local 'texturefile' (a number value):\n<string>:\"@Interface/AddOns/WideQuestLog/WideQuestLog.lua\":98: in main chunk\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:06",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [100]
+		{
+			["message"] = {
+				"Interface/AddOns/Atlas/Core/Atlas.lua:203: attempt to index field 'db' (a nil value):\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":203: in function <Interface/AddOns/Atlas/Core/Atlas.lua:199>\n<string>:\"@Interface/AddOns/Atlas/Core/Atlas.lua\":2033: in function <Interface/AddOns/Atlas/Core/Atlas.lua:2031>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventor", -- [1]
+				"yTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:06",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [101]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1028: attempt to index local 'icon' (a nil value):\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1028: in function `HandleIcon'\n<string>:\"@Interface/AddOns/ElvUI/Classic/Modules/Skins/Character.lua\":113: in function <...ace/AddOns/ElvUI/Classic/Modules/Skins/Character.lua:63>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua\":1875: in function <Interface/AddOns/ElvUI/Core/Modules/Skins/Skins.lua:1870>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1813: in function `CallLoadFunc'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1828: in function `CallLoadedModule'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1854: in function `InitializeModules'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1964: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/E", -- [1]
+				"lvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `LoadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0", -- [2]
+				".lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [3]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:07",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [102]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":1967: in function `Initialize'\n<string>:\"@Interface/AddOns/ElvUI/Core/init.lua\":273: in function <Interface/AddOns/ElvUI/Core/init.lua:272>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `L", -- [1]
+				"oadAddOn':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":11473: in function `LoadAddOn'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTradeskill.lua\":749: in function `ScanHeaders'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":3224: in function <Interface/AddOns/ArkInventory/Core/ArkInventory.lua:3048>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":66: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:61>\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":523: in function `EnableAddon'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua\":626: in function <...rkInventory/Externals/Ace3/AceAddon/AceAddon-3.0.lua:611>\n\n  ---", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:07",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [103]
+		{
+			["message"] = {
+				"Interface/AddOns/ElvUI/Core/General/Core.lua:378: attempt to call local 'func' (a boolean value):\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":378: in function `ValueFuncCall'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/Core.lua\":330: in function `UpdateMedia'\n<string>:\"@Interface/AddOns/ElvUI/Core/General/API.lua\":482: in function `?'\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":109: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:109>\n[string \"=[C]\"]: ?:\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":19: in function <...ack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua:15>\n<string>:\"@Interface/AddOns/ItemRack/Libs/CallbackHandler-1.0/CallbackHandler-1.0.lua\":54: in function `Fire'\n<string>:\"@Interface/AddOns/ArkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua\":120: in function <...rkInventory/Externals/Ace3/AceEvent/AceEvent-3.0.lua:119>\n\n  --", -- [1]
+				"-", -- [2]
+			},
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:07",
+			["session"] = 9,
+			["counter"] = 1,
+		}, -- [104]
+		{
+			["message"] = "...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:1077: attempt to call global 'GetContainerItemInfo' (a nil value):\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":1077: in function `hook'\n<string>:\"@Interface/AddOns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua\":406: in function <...ns/BestInSlotClassic/lib/LibExtraTip/LibExtraTip.lua:402>\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: ?:\n[string \"=[C]\"]: in function `SetBagItem':\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTooltip.lua\":308: in function <...ace/AddOns/ArkInventory/Core/ArkInventoryTooltip.lua:300>\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventoryTooltip.lua\":457: in function `TooltipSet'\n<string>:\"@Interface/AddOns/ArkInventory/Core/ArkInventory.lua\":8770: in function `Frame_Item_OnEnter'\n<string>:\"*ArkInventory.xml:484_OnEnter\":1: in function <[string \"*ArkInventory.xml:484_OnEnter\"]:1>\n\n  ---",
+			["type"] = "error",
+			["time"] = "2023/12/10 22:13:10",
+			["session"] = 9,
+			["counter"] = 9,
+		}, -- [105]
 	},
 	["save"] = true,
-	["session"] = 4,
+	["session"] = 9,
 }

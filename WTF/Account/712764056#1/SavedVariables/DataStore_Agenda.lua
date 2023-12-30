@@ -22,7 +22,7 @@ DataStore_AgendaDB = {
 				["lastUpdate"] = 1693019663,
 			},
 			["Default.特雷姆斯.冰火兩重天"] = {
-				["lastUpdate"] = 1695451852,
+				["lastUpdate"] = 1696396023,
 			},
 		},
 	},

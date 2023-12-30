@@ -1,0 +1,17 @@
+
+MBB_Exclude = {
+	"LibDBIcon10_VuhDo", -- [1]
+	"Lib_GPI_Minimap_LFGBulletinBoard", -- [2]
+}
+MBB_Options = {
+	["CollapseTimeout"] = 1,
+	["AltExpandDirection"] = 4,
+	["AttachToMinimap"] = 1,
+	["ExpandDirection"] = 1,
+	["DetachedButtonPos"] = "TOPLEFT",
+	["ButtonPos"] = {
+		7.966380119323731, -- [1]
+		-122.3273620605469, -- [2]
+	},
+	["MaxButtonsPerLine"] = 6,
+}

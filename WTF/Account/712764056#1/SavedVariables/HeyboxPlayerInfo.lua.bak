@@ -1,6 +1,6 @@
 
 HEYBOX_SAVED_PLAYER_INFOS = {
-	["冰火兩重天-特雷姆斯"] = {
-		["class"] = "MAGE",
+	["红杉沈南鹏-生命烈焰"] = {
+		["class"] = "ROGUE",
 	},
 }

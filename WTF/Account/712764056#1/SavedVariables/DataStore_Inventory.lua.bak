@@ -48,10 +48,10 @@ DataStore_InventoryDB = {
 					[7] = "|cff9d9d9d|Hitem:1395::::::::2:::::::::|h[学徒短裤]|h|r",
 					[8] = "|cffffffff|Hitem:55::::::::2:::::::::|h[学徒之靴]|h|r",
 					[10] = "|cffffffff|Hitem:3275::::::::2:::::::::|h[麻布手套]|h|r",
-					[5] = "|cff9d9d9d|Hitem:1380::::::::2:::::::::|h[磨损的长袍]|h|r",
-					[4] = "|cffffffff|Hitem:6096::::::::2:::::::::|h[学徒衬衣]|h|r",
 					[16] = "|cffffffff|Hitem:35::::::::2:::::::::|h[弯曲的法杖]|h|r",
+					[4] = "|cffffffff|Hitem:6096::::::::2:::::::::|h[学徒衬衣]|h|r",
 					[9] = "|cff9d9d9d|Hitem:3365::::::::2:::::::::|h[磨损的护腕]|h|r",
+					[5] = "|cff9d9d9d|Hitem:1380::::::::2:::::::::|h[磨损的长袍]|h|r",
 				},
 				["averageItemLvl"] = 3,
 				["lastUpdate"] = 1686390496,
@@ -78,27 +78,27 @@ DataStore_InventoryDB = {
 				},
 			},
 			["Default.特雷姆斯.冰火兩重天"] = {
+				["lastUpdate"] = 1696212656,
 				["Inventory"] = {
-					"|cffffffff|Hitem:7432::::::781:1415903104:43:::::::::|h[]|h|r", -- [1]
-					"|cffffffff|Hitem:5003::::::::43:::::::::|h[]|h|r", -- [2]
-					"|cffffffff|Hitem:3560::::::::43:::::::::|h[]|h|r", -- [3]
-					"|cffffffff|Hitem:2575::::::::43:::::::::|h[]|h|r", -- [4]
-					"|cffffffff|Hitem:15455:18:::::::43:::::::::|h[]|h|r", -- [5]
-					"|cffffffff|Hitem:14235::::::773:2047579264:43:::::::::|h[]|h|r", -- [6]
-					"|cffffffff|Hitem:7431::::::866:1070330368:43:::::::::|h[]|h|r", -- [7]
-					"|cffffffff|Hitem:15697::::::::43:::::::::|h[]|h|r", -- [8]
-					"|cffffffff|Hitem:16791::::::::43:::::::::|h[]|h|r", -- [9]
-					"|cffffffff|Hitem:3759::::::::43:::::::::|h[]|h|r", -- [10]
-					"|cffffffff|Hitem:11983::::::1017:2114999168:43:::::::::|h[]|h|r", -- [11]
-					"|cffffffff|Hitem:4535::::::::43:::::::::|h[]|h|r", -- [12]
+					"|cffffffff|Hitem:7432::::::781:1415903104:45:::::::::|h[]|h|r", -- [1]
+					"|cffffffff|Hitem:7673::::::::45:::::::::|h[]|h|r", -- [2]
+					"|cffffffff|Hitem:9912::::::1964:349329152:45:::::::::|h[]|h|r", -- [3]
+					"|cffffffff|Hitem:2575::::::::45:::::::::|h[]|h|r", -- [4]
+					"|cffffffff|Hitem:9415::::::::45:::::::::|h[]|h|r", -- [5]
+					"|cffffffff|Hitem:14235::::::773:2047579264:45:::::::::|h[]|h|r", -- [6]
+					"|cffffffff|Hitem:9407::::::::45:::::::::|h[]|h|r", -- [7]
+					"|cffffffff|Hitem:15697::::::::45:::::::::|h[]|h|r", -- [8]
+					"|cffffffff|Hitem:11469::::::::45:::::::::|h[]|h|r", -- [9]
+					"|cffffffff|Hitem:3759::::::::45:::::::::|h[]|h|r", -- [10]
+					"|cffffffff|Hitem:11983::::::1017:2114999168:45:::::::::|h[]|h|r", -- [11]
+					"|cffffffff|Hitem:4535::::::::45:::::::::|h[]|h|r", -- [12]
 					nil, -- [13]
 					nil, -- [14]
-					"|cffffffff|Hitem:4732::::::::43:::::::::|h[]|h|r", -- [15]
-					"|cffffffff|Hitem:2950::::::::43:::::::::|h[]|h|r", -- [16]
+					"|cffffffff|Hitem:4732::::::::45:::::::::|h[]|h|r", -- [15]
+					"|cffffffff|Hitem:2950::::::::45:::::::::|h[]|h|r", -- [16]
 					nil, -- [17]
-					"|cffffffff|Hitem:5249::::::::43:::::::::|h[]|h|r", -- [18]
+					"|cffffffff|Hitem:5249::::::::45:::::::::|h[]|h|r", -- [18]
 				},
-				["lastUpdate"] = 1695450047,
 			},
 		},
 		["Guilds"] = {
@@ -140,8 +140,8 @@ DataStore_InventoryDB = {
 					["猎火"] = {
 						["averageItemLvl"] = 3,
 					},
-					["無限火力"] = {
-						["averageItemLvl"] = 10,
+					["時空神話"] = {
+						["averageItemLvl"] = 9,
 					},
 					["白牧瀧"] = {
 						["averageItemLvl"] = 14,
@@ -152,8 +152,8 @@ DataStore_InventoryDB = {
 					["守望先鋒"] = {
 						["averageItemLvl"] = 6,
 					},
-					["時空神話"] = {
-						["averageItemLvl"] = 9,
+					["無限火力"] = {
+						["averageItemLvl"] = 10,
 					},
 				},
 			},
